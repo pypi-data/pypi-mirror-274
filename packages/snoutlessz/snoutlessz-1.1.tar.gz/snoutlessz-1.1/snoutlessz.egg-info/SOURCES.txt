@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+snoutlessz/__init__.py
+snoutlessz/main.py
+snoutlessz.egg-info/PKG-INFO
+snoutlessz.egg-info/SOURCES.txt
+snoutlessz.egg-info/dependency_links.txt
+snoutlessz.egg-info/requires.txt
+snoutlessz.egg-info/top_level.txt
