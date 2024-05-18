@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+geologizingz/__init__.py
+geologizingz/main.py
+geologizingz.egg-info/PKG-INFO
+geologizingz.egg-info/SOURCES.txt
+geologizingz.egg-info/dependency_links.txt
+geologizingz.egg-info/requires.txt
+geologizingz.egg-info/top_level.txt
