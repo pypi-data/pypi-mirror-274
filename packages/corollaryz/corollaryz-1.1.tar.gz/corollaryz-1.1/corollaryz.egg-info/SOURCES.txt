@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+corollaryz/__init__.py
+corollaryz/main.py
+corollaryz.egg-info/PKG-INFO
+corollaryz.egg-info/SOURCES.txt
+corollaryz.egg-info/dependency_links.txt
+corollaryz.egg-info/requires.txt
+corollaryz.egg-info/top_level.txt
