@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+preremuneratedz/__init__.py
+preremuneratedz/main.py
+preremuneratedz.egg-info/PKG-INFO
+preremuneratedz.egg-info/SOURCES.txt
+preremuneratedz.egg-info/dependency_links.txt
+preremuneratedz.egg-info/requires.txt
+preremuneratedz.egg-info/top_level.txt
