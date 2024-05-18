@@ -1,0 +1,10 @@
+
+[examples]
+ecdsa==0.18.0
+galois==0.3.7
+numpy==1.25.2
+pandas==2.2.0
+scipy==1.12.0
+scikit-learn==1.4.0
+torch==2.2.0
+torchvision==0.17.0
