@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/origametry/__init__.py
+src/origametry/constants.py
+src/origametry/fold.py
+src/origametry/helpers.py
+src/origametry/line.py
+src/origametry/point.py
+src/origametry/reflect.py
+src/origametry.egg-info/PKG-INFO
+src/origametry.egg-info/SOURCES.txt
+src/origametry.egg-info/dependency_links.txt
+src/origametry.egg-info/top_level.txt
