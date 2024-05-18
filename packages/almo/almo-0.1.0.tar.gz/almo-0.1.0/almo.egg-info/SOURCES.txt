@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+almo.egg-info/PKG-INFO
+almo.egg-info/SOURCES.txt
+almo.egg-info/dependency_links.txt
+almo.egg-info/not-zip-safe
+almo.egg-info/top_level.txt
