@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flushyz/__init__.py
+flushyz/main.py
+flushyz.egg-info/PKG-INFO
+flushyz.egg-info/SOURCES.txt
+flushyz.egg-info/dependency_links.txt
+flushyz.egg-info/requires.txt
+flushyz.egg-info/top_level.txt
