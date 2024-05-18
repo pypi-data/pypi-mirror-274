@@ -1,0 +1,6 @@
+pyyaml
+
+[dev]
+unittest
+black
+build
