@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+myxinoideiz/__init__.py
+myxinoideiz/main.py
+myxinoideiz.egg-info/PKG-INFO
+myxinoideiz.egg-info/SOURCES.txt
+myxinoideiz.egg-info/dependency_links.txt
+myxinoideiz.egg-info/requires.txt
+myxinoideiz.egg-info/top_level.txt
