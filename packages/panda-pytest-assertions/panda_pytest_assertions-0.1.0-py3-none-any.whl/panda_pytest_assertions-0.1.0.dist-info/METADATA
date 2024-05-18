@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: panda-pytest-assertions
+Version: 0.1.0
+Summary: Complex assertions that can be used when writing test with pytest
+Home-page: https://github.com/KRunchPL/panda-pytest-assertions
+License: Apache-2.0
+Author: Cyber Panda
+Author-email: krunchfrompoland@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest (>4.6.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Project-URL: Documentation, https://github.com/KRunchPL/panda-pytest-assertions
+Project-URL: Repository, https://github.com/KRunchPL/panda-pytest-assertions
+Description-Content-Type: text/markdown
+
+# panda-pytest-assertions
+
+Complex assertions that can be used when writing test with pytest.
+
+See [documentation page](https://krunchpl.github.io/panda-pytest-assertions/).
+
+## Additional Documentation
+
+[Development documentation](README-DEV.md)
+
+[Changelog](CHANGELOG.md)
+
