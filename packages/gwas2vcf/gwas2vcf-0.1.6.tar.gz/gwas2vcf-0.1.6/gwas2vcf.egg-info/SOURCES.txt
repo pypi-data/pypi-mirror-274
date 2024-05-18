@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gwas2vcf/__init__.py
+gwas2vcf/convert_to_vcf.py
+gwas2vcf.egg-info/PKG-INFO
+gwas2vcf.egg-info/SOURCES.txt
+gwas2vcf.egg-info/dependency_links.txt
+gwas2vcf.egg-info/entry_points.txt
+gwas2vcf.egg-info/requires.txt
+gwas2vcf.egg-info/top_level.txt
