@@ -1,0 +1,11 @@
+py92/__init__.py,sha256=jR_LaLvtFKGW8e1tr3M7MIxMu4AgLqZrcmV52FV7c7U,1145
+py92/cn_schools.csv,sha256=WDweG5Lm1VJ3shF9TfPc3nOK7rtXlgAUDCvmZOJPK4w,186832
+py92/config.py,sha256=mx9p9Ae19-fKbBFOJZ9zOyE0Z4Ndm7JItMEQCpxCVwQ,128
+py92/py92utils.py,sha256=E9f6B_pABL72d_cznkdDmwo5UOAam9CNQ7UhmB3FR1s,2713
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_module.py,sha256=PLZEIwHuTunkxoWqpHM6Cq_hEin_tmm2uNX1x9fZchY,907
+py92-1.0.1.dist-info/LICENSE,sha256=CtEH3S4wRS682v6TjKPY4fgUBqdC-TGhm282tEAk5b8,1087
+py92-1.0.1.dist-info/METADATA,sha256=005tm2zr9rHL01FP9j2JUIUhIOYLjaBb57tC4VsYtJc,2949
+py92-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py92-1.0.1.dist-info/top_level.txt,sha256=oPq8WatBHMRGqSurniEj-Pc29I1LLG0LNnkNz8s8UyY,11
+py92-1.0.1.dist-info/RECORD,,
