@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+omnibenevolentz/__init__.py
+omnibenevolentz/main.py
+omnibenevolentz.egg-info/PKG-INFO
+omnibenevolentz.egg-info/SOURCES.txt
+omnibenevolentz.egg-info/dependency_links.txt
+omnibenevolentz.egg-info/requires.txt
+omnibenevolentz.egg-info/top_level.txt
