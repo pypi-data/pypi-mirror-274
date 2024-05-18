@@ -1,0 +1,9 @@
+wsppchem/__init__.py,sha256=Wx_i8-mGoAzxDMvMvYyRnA4AZNDyO_s4DE84inYMlqM,25
+wsppchem/wspp_functions.py,sha256=mmQYsCnXOt-HAX5cbOPcMjS3kLxFMzTUFlDeT9qJ0mo,9138
+wsppchem/model_and_scaler/LGBM_model.pkl,sha256=Sy9UHVNQqzcfS_HfqLa9CJV7KvMWF4WOuID00YA6-J0,3354127
+wsppchem/model_and_scaler/LGBM_scaler.pkl,sha256=JL1R-xcV299k7bdWKToUirDDuaAUZpu46C4N0nvVC9I,10174
+wsppchem-0.2.dist-info/LICENSE,sha256=5H1J4Lyj2vxO7tEKmVP6wSLRgYPAhfvHlRt4j-1LUWs,1073
+wsppchem-0.2.dist-info/METADATA,sha256=UKeolTyxZMoyh0UoVNIbQ4J0oE2qa2Zdfcwu39ZO8XM,4775
+wsppchem-0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+wsppchem-0.2.dist-info/top_level.txt,sha256=oDEpj3jRK2Xsuq9lPALZ6T3nQsfE9TX-Ds_bsSGZiWI,9
+wsppchem-0.2.dist-info/RECORD,,
