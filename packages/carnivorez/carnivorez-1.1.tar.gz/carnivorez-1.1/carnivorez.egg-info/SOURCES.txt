@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+carnivorez/__init__.py
+carnivorez/main.py
+carnivorez.egg-info/PKG-INFO
+carnivorez.egg-info/SOURCES.txt
+carnivorez.egg-info/dependency_links.txt
+carnivorez.egg-info/requires.txt
+carnivorez.egg-info/top_level.txt
