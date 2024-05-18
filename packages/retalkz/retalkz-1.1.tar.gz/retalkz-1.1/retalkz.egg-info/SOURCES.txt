@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+retalkz/__init__.py
+retalkz/main.py
+retalkz.egg-info/PKG-INFO
+retalkz.egg-info/SOURCES.txt
+retalkz.egg-info/dependency_links.txt
+retalkz.egg-info/requires.txt
+retalkz.egg-info/top_level.txt
