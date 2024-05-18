@@ -1,0 +1,8 @@
+pandas
+numpy
+polars
+scipy
+collections
+seaborn
+matplotlib
+random
