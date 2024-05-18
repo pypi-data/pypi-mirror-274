@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rachitomousz/__init__.py
+rachitomousz/main.py
+rachitomousz.egg-info/PKG-INFO
+rachitomousz.egg-info/SOURCES.txt
+rachitomousz.egg-info/dependency_links.txt
+rachitomousz.egg-info/requires.txt
+rachitomousz.egg-info/top_level.txt
