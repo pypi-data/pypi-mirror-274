@@ -1,0 +1,14 @@
+PyQt6
+PyQt6-QScintilla
+chardet
+requests
+jdTranslationHelper
+EditorConfig
+pyenchant
+lxml
+
+[use-cchardet]
+cchardet
+
+[use-charset-normalizer]
+charset_normalizer
