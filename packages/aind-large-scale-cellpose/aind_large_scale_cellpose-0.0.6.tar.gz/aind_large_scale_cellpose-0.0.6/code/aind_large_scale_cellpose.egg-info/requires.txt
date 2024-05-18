@@ -1,0 +1,15 @@
+aind-large-scale-prediction==1.0.0
+scikit-image==0.22.0
+matplotlib==3.9.0
+scipy==1.11.3
+cellpose==3.0.5
+numba==0.59.1
+
+[dev]
+black
+coverage
+flake8
+interrogate
+isort
+Sphinx
+furo
