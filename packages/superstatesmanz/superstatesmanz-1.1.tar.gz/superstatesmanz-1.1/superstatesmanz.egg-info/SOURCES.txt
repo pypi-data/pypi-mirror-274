@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+superstatesmanz/__init__.py
+superstatesmanz/main.py
+superstatesmanz.egg-info/PKG-INFO
+superstatesmanz.egg-info/SOURCES.txt
+superstatesmanz.egg-info/dependency_links.txt
+superstatesmanz.egg-info/requires.txt
+superstatesmanz.egg-info/top_level.txt
