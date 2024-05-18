@@ -1,0 +1,3 @@
+[console_scripts]
+fxlive = jgtfxlive.ptoLiveChartDataExport.LiveChartDataExport:main
+fxliveconf = jgtfxlive.config_generator:main
