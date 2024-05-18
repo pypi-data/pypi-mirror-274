@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "game-generators"
+version = "0.1.4"
+description = "Efficiently generate games for research and experimentation"
+authors = ["Willem Röpke <willem.ropke@vub.be>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/wilrop/game-generators"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.2"
+scipy = {version="1.11.3", python="<3.13"}
+matplotlib = "^3.8.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
