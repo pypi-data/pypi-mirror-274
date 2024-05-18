@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dinornithidaez/__init__.py
+dinornithidaez/main.py
+dinornithidaez.egg-info/PKG-INFO
+dinornithidaez.egg-info/SOURCES.txt
+dinornithidaez.egg-info/dependency_links.txt
+dinornithidaez.egg-info/requires.txt
+dinornithidaez.egg-info/top_level.txt
