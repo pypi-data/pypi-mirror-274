@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+LinkExpander/__init__.py
+LinkExpander/linktypes.py
+LinkExpander/main.py
+LinkExpander.egg-info/PKG-INFO
+LinkExpander.egg-info/SOURCES.txt
+LinkExpander.egg-info/dependency_links.txt
+LinkExpander.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+[project]
+name = "LinkExpander"
+authors = [{name="devdagoat", email="fidevran@hotmail.com"},]
+version = "1.0.0r2"
+description = "Link expander in Python which parses and returns the URLs and information in common link domains."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+[project.urls]
+"Homepage" = "https://github.com/devdagoat/LinkExpander"
+[tool.setuptools.dynamic]
+dependencies = {file=["requirements.txt"]}
+[tool.setuptools.packages.find]
+include = ["LinkExpander*"]
