@@ -1,0 +1,17 @@
+ats_evaluator/__init__.py,sha256=E3iXzfTyrqr9vg31uxq82Zb8YHzcKABtAekpBL6IcBQ,232
+ats_evaluator/main.py,sha256=6Kw4iSZ-czDd1U9Ig1rDiLsmHWUNuP_qGH4vklmzl9g,2982
+ats_evaluator/analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ats_evaluator/analysis/basic_analysis.py,sha256=xQ2paUBcc7RkamQl3wORL63zI0LeCd4NBu6REwsilDc,1136
+ats_evaluator/analysis/diff_analysis.py,sha256=2JMq0Dp7QZZ9vg1Fmk3ex-zRFLPB9YCNGh9REq9yx-8,1216
+ats_evaluator/analysis/pos_analysis.py,sha256=t9jEoSLhD7RDF2Dic5bAJX3HCddzd3SaF9GVOA3qv9U,1886
+ats_evaluator/analysis/readability_analysis.py,sha256=XiR9ffPWMkUiwaT6Y9DN_bPMAUSlB7OlIDJ27I8Rz9s,1080
+ats_evaluator/analysis/similarity_analysis.py,sha256=xQ4lJaSI6FER2Mw1fC2v83HjB69WTGot9FNtQ21ieYA,847
+ats_evaluator/analysis/vdb_analysis.py,sha256=98W9jyn6-VhZy8Q6aC9vhTXFDGYYbh-CzxLzedTz2X0,1031
+ats_evaluator/nvdb/AD.txt,sha256=NjT-X9tTQk1SUi0MsmoktRuUiVjcqn0j60AC43qGXu0,22711
+ats_evaluator/nvdb/AU.txt,sha256=2lkawcighCrbPskJ0hBguiFQ7RPv3VQeKwe53DkHovk,30633
+ats_evaluator/nvdb/FO.txt,sha256=47RecnvHWdvO30Dyrhhf6Qv0im5_QeraFMQFl0Af9jY,18082
+italian_ats_evaluator-1.0.0.dist-info/LICENSE,sha256=TFtwf88943GW73nstfyqG2wZN_z5To5TD30gA3-XKR8,1093
+italian_ats_evaluator-1.0.0.dist-info/METADATA,sha256=p56Zjt8o_pYVtqF9jv-GdgwriFLWReQyopWJsG1zTE4,673
+italian_ats_evaluator-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+italian_ats_evaluator-1.0.0.dist-info/top_level.txt,sha256=IJ3OZ3EOPZgYfM1FE0Cjz74hgg0t78t-3kBe7lYjsPw,14
+italian_ats_evaluator-1.0.0.dist-info/RECORD,,

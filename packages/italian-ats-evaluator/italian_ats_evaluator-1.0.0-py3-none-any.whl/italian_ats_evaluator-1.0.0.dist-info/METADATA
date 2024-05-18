@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: italian-ats-evaluator
+Version: 1.0.0
+Home-page: https://github.com/RedHitMark/italian-ats-evaluator
+Author: RedHitMark
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: spacy >=3.7.4
+Requires-Dist: pyphen >=0.15.0
+Requires-Dist: editdistance ==0.8.1
+Requires-Dist: sentence-transformers >=2.7.0
+
+# ats-evalautor
+
+This is an open source project to evaluate the performance of an italian ATS (Automatic Text Simplifier) on a set of texts. 
+The project is developed in Python and uses the Gensim library to compute the similarity between the original text and the simplified text.
