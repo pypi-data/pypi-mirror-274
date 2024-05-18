@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cousinhoodz/__init__.py
+cousinhoodz/main.py
+cousinhoodz.egg-info/PKG-INFO
+cousinhoodz.egg-info/SOURCES.txt
+cousinhoodz.egg-info/dependency_links.txt
+cousinhoodz.egg-info/requires.txt
+cousinhoodz.egg-info/top_level.txt
