@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_balance_deepdiff.egg-info/PKG-INFO
+yandex_balance_deepdiff.egg-info/SOURCES.txt
+yandex_balance_deepdiff.egg-info/dependency_links.txt
+yandex_balance_deepdiff.egg-info/top_level.txt
