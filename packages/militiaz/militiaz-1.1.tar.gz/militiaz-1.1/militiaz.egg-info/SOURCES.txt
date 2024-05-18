@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+militiaz/__init__.py
+militiaz/main.py
+militiaz.egg-info/PKG-INFO
+militiaz.egg-info/SOURCES.txt
+militiaz.egg-info/dependency_links.txt
+militiaz.egg-info/requires.txt
+militiaz.egg-info/top_level.txt
