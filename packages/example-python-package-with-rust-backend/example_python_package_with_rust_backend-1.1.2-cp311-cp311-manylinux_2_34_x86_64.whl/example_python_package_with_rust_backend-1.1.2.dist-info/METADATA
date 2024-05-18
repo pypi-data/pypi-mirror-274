@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: example_python_package_with_rust_backend
+Version: 1.1.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE.txt
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+A minimal a Python package with a Rust back end
+
+install 
+
+```bash
+pip install example_python_package_with_rust_backend
+```
+
+Usage
+```
+python examples/usage.py
+```
