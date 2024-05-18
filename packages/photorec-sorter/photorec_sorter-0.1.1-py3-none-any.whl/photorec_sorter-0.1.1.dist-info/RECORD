@@ -1,0 +1,11 @@
+photorec_sorter/__init__.py,sha256=KCeOAdjjfOezNxFKYkcRa-sUZOekBVXHAhL06mcClDQ,126
+photorec_sorter/__main__.py,sha256=Juf_E-y7FsG-xhJQSQWIXT_9btjziGprKWVTznsEXTA,69
+photorec_sorter/cli.py,sha256=FvB8Lt82h8rvKRvyyuIB2_HHYhHcpRy8cboEhIVlDtY,2458
+photorec_sorter/files_per_folder_limiter.py,sha256=U1aoQOkitnp4ArpkJesYb8TLdCmW9cBtqXHJxOKy4X4,1202
+photorec_sorter/jpg_sorter.py,sha256=pi4d__4GDKrEoRCJbmBLZVrMG-uCe2dwujATDIRm35I,4935
+photorec_sorter/recovery.py,sha256=FS9L4lLgCGFU332bhqljObpdQIHlZpVihF74CrqqSpM,4882
+photorec_sorter-0.1.1.dist-info/METADATA,sha256=Wuzi95Ksuu3oJKTsaUOPRgytHELxdci0fyZ8Ii61cbA,6392
+photorec_sorter-0.1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+photorec_sorter-0.1.1.dist-info/entry_points.txt,sha256=Dbq85QAml7-OenI5v_RiDT0ZTNhEDxk1zbHoTxNhdgs,65
+photorec_sorter-0.1.1.dist-info/licenses/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+photorec_sorter-0.1.1.dist-info/RECORD,,
