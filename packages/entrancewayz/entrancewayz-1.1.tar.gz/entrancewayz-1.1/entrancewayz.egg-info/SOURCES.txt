@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+entrancewayz/__init__.py
+entrancewayz/main.py
+entrancewayz.egg-info/PKG-INFO
+entrancewayz.egg-info/SOURCES.txt
+entrancewayz.egg-info/dependency_links.txt
+entrancewayz.egg-info/requires.txt
+entrancewayz.egg-info/top_level.txt
