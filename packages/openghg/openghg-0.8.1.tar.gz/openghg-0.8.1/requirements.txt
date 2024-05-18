@@ -1,0 +1,27 @@
+addict
+dask
+filelock
+h5netcdf
+icoscp
+ipywidgets
+matplotlib
+msgpack
+nbformat
+numcodecs
+nc-time-axis
+netcdf4
+numexpr
+numpy
+openghg_defs
+pandas >= 2.0
+plotly
+pyvis
+rapidfuzz
+requests >= 2.25
+rich
+scipy
+tinydb
+toml
+urllib3 >= 1.26.3
+xarray
+zarr
