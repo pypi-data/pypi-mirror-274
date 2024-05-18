@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+diaphonez/__init__.py
+diaphonez/main.py
+diaphonez.egg-info/PKG-INFO
+diaphonez.egg-info/SOURCES.txt
+diaphonez.egg-info/dependency_links.txt
+diaphonez.egg-info/requires.txt
+diaphonez.egg-info/top_level.txt
