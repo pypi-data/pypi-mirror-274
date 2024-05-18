@@ -1,0 +1,7 @@
+setup.py
+pygetcsv/__init__.py
+pygetcsv/pygetcsv.py
+pygetcsv.egg-info/PKG-INFO
+pygetcsv.egg-info/SOURCES.txt
+pygetcsv.egg-info/dependency_links.txt
+pygetcsv.egg-info/top_level.txt
