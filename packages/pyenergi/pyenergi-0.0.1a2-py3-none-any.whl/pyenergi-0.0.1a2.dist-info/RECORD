@@ -1,0 +1,10 @@
+pyenergi/__init__.py,sha256=V_iNpSR1tJQPhwIpH0lxHfYkkvFKfP3kNoRm_re_26A,316
+pyenergi/client.py,sha256=IFE7nKLocSMLqbSIBVk-DofNnMEHwhQGE372qTgknQs,18730
+pyenergi/exceptions.py,sha256=qFAPbrwAYZhboJGkn1T5MO_kXcDNAV9vCxjNLDNx2tg,416
+pyenergi/schemas.py,sha256=lgjjBr2a8nX5z3F9eQshvFachPsBQTxE0gWW8Y_doSI,4804
+pyenergi/test_client_authentication.py,sha256=TPNmm0_dYMwjm7zH4teFLbuH8Onctq8IHTWfagqjyWE,1317
+pyenergi/test_client_zappi.py,sha256=jxz5gysVfo6F1oHxmLaq3Ny_5DfKk0KIciJd0S383no,253
+pyenergi-0.0.1a2.dist-info/METADATA,sha256=SfQ9FzEWsi6yJLkhqlBXNd4253CRgicfsOQR_E_Cqj8,42315
+pyenergi-0.0.1a2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+pyenergi-0.0.1a2.dist-info/licenses/LICENSE,sha256=21Lj2q2SYKHMY4768_a3pr3q0jY2VYamAHipoodhMDc,34273
+pyenergi-0.0.1a2.dist-info/RECORD,,
