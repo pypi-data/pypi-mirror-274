@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+edifiedz/__init__.py
+edifiedz/main.py
+edifiedz.egg-info/PKG-INFO
+edifiedz.egg-info/SOURCES.txt
+edifiedz.egg-info/dependency_links.txt
+edifiedz.egg-info/requires.txt
+edifiedz.egg-info/top_level.txt
