@@ -1,0 +1,12 @@
+githide/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+githide/add_command.py,sha256=oFi8apNwEwcH5PThAjEdewnfWhubG_vILX3WHhK8jcc,359
+githide/cli.py,sha256=bWCafD56IvAXU9OsKL6dus3Zp116ltzhJNvmoOnwp3Q,1437
+githide/init_command.py,sha256=ois2VFbs_TTOqHjKgWkjbLWV93v6MTeLpIyydMjwpYs,1063
+githide/list_command.py,sha256=KpoB2mX4d6Yj4rUO-6OfEN4yHzpiiHptLruJZvjovGY,393
+githide/remove_command.py,sha256=6K5wyADj-fInHef8QoQLf_7f_m6Z3Iu5zGuvvYcwCss,515
+githide/undo_command.py,sha256=EpysIqQ8iWFSw30zavchj-byAXy5uOj6miJ-TsyqEJE,447
+githide-0.1.0.dist-info/METADATA,sha256=fKFve_fmk3jVtWG8AIbA_2OIYVgheKnVp8-gV4GkXLs,2747
+githide-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+githide-0.1.0.dist-info/entry_points.txt,sha256=9zNyn9Sp6vu4p64mw_AeKBBbhWNsfZN5DebXSmeGhQk,45
+githide-0.1.0.dist-info/top_level.txt,sha256=78H-rYAWMb3wC3_OTzUDRBsHrOF8z6DFkrVb3JoxXTQ,8
+githide-0.1.0.dist-info/RECORD,,
