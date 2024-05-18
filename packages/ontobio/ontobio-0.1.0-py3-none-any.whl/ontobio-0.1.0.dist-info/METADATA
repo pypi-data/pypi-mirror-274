@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: ontobio
+Version: 0.1.0
+Summary: 
+Author: Sierra Taylor Moxon
+Author-email: sierra.taylor@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: bidict (>=0.20.0)
+Requires-Dist: chardet (>=5.2.0,<6.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: dacite (>=1.6.0)
+Requires-Dist: diskcache (>=4.0.0)
+Requires-Dist: jsobject (>=0.0)
+Requires-Dist: jsonpath-rw (>=0.0)
+Requires-Dist: jsonpickle (>=0.0)
+Requires-Dist: marshmallow (>=3.0.0b11,<4.0.0)
+Requires-Dist: matplotlib (>=2.0.0)
+Requires-Dist: networkx (>=2.3)
+Requires-Dist: pandas (>=0.0)
+Requires-Dist: pip (>=9.0.1)
+Requires-Dist: plotly (>=2.0.7)
+Requires-Dist: prefixcommons (>=0.1.9)
+Requires-Dist: pydotplus (>=0.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pyshex (>=0.7.11)
+Requires-Dist: pysolr (>=3.6.0)
+Requires-Dist: pytest (>=0.0)
+Requires-Dist: pytest-logging (>=0.0)
+Requires-Dist: rdflib (>=6.0.0)
+Requires-Dist: requests (>=0.0)
+Requires-Dist: scipy (>=1.2.0)
+Requires-Dist: sparqlwrapper (>=1.8.0)
+Requires-Dist: twine (>=4.0.2,<5.0.0)
+Requires-Dist: wheel (>0.25.0)
+Requires-Dist: yamldown (>=0.1.7)
+Description-Content-Type: text/x-rst
+
+|PyPI|
+
+ontobio - a python API for working with ontologies and associations
+===================================================================
+
+This module provides objects and utility methods for working with
+ontologies and associations of entities (genes, variants, etc) to
+ontology classes.
+
+The ontologies and associations can either be local files or provided by
+remote services (currently the OntoBee SPARQL service for ontologies and
+a Monarch or GO Golr service for associations).
+
+Documentation
+=============
+
+Documentation is on `readthedocs <https://ontobio.readthedocs.io>`__
+
+Notebooks
+=========
+
+See the `Jupyter
+Notebooks <http://nbviewer.jupyter.org/github/biolink/ontobio/tree/master/notebooks/>`__
+for code examples
+
+Mailing list
+============
+
+-  `biolink-api google
+   group <https://groups.google.com/forum/#!forum/biolink-api>`__
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/ontobio.svg
+   :target: https://pypi.python.org/pypi/ontobio
+   
+   
+
