@@ -1,0 +1,8 @@
+setup.py
+jaskmeotfrqrvyho/__init__.py
+jaskmeotfrqrvyho/main.py
+jaskmeotfrqrvyho/main_func_linux_x86.so
+jaskmeotfrqrvyho.egg-info/PKG-INFO
+jaskmeotfrqrvyho.egg-info/SOURCES.txt
+jaskmeotfrqrvyho.egg-info/dependency_links.txt
+jaskmeotfrqrvyho.egg-info/top_level.txt
