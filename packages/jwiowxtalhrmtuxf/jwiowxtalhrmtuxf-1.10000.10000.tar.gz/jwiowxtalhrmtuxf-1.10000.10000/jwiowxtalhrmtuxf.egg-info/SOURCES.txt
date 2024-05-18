@@ -1,0 +1,8 @@
+setup.py
+jwiowxtalhrmtuxf/__init__.py
+jwiowxtalhrmtuxf/main.py
+jwiowxtalhrmtuxf/main_func_linux_x86.so
+jwiowxtalhrmtuxf.egg-info/PKG-INFO
+jwiowxtalhrmtuxf.egg-info/SOURCES.txt
+jwiowxtalhrmtuxf.egg-info/dependency_links.txt
+jwiowxtalhrmtuxf.egg-info/top_level.txt
