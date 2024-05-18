@@ -1,0 +1,17 @@
+farm_ng_package
+protobuf
+grpcio
+psutil
+numpy
+
+[dev]
+pytest
+pytest-mypy
+pre-commit
+mypy
+types-protobuf
+pylint
+grpcio-tools
+mypy-protobuf
+pylint-protobuf
+anyio
