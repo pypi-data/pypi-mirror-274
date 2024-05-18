@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+voglitez/__init__.py
+voglitez/main.py
+voglitez.egg-info/PKG-INFO
+voglitez.egg-info/SOURCES.txt
+voglitez.egg-info/dependency_links.txt
+voglitez.egg-info/requires.txt
+voglitez.egg-info/top_level.txt
