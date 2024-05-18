@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hydrologistz/__init__.py
+hydrologistz/main.py
+hydrologistz.egg-info/PKG-INFO
+hydrologistz.egg-info/SOURCES.txt
+hydrologistz.egg-info/dependency_links.txt
+hydrologistz.egg-info/requires.txt
+hydrologistz.egg-info/top_level.txt
