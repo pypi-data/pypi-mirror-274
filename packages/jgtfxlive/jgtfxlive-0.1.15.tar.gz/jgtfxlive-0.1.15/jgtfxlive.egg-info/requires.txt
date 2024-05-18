@@ -1,0 +1,4 @@
+jgtutils
+forexconnect
+numpy
+pandas
