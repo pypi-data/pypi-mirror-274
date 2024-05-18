@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+poppyz/__init__.py
+poppyz/main.py
+poppyz.egg-info/PKG-INFO
+poppyz.egg-info/SOURCES.txt
+poppyz.egg-info/dependency_links.txt
+poppyz.egg-info/requires.txt
+poppyz.egg-info/top_level.txt
