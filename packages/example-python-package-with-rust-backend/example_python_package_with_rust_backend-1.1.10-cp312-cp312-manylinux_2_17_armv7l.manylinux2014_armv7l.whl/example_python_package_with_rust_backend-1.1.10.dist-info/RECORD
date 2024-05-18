@@ -1,0 +1,6 @@
+example_python_package_with_rust_backend-1.1.10.dist-info/METADATA,sha256=3RKZcVm7kWkGPCgeqSCVJo0u9QnFs9ZiVzSufzLfyq4,1473
+example_python_package_with_rust_backend-1.1.10.dist-info/WHEEL,sha256=9wbZrsKxLX7aIc9FEM8GMBtMr-YCa8lHsCR4DhSE9-k,129
+example_python_package_with_rust_backend-1.1.10.dist-info/license_files/LICENSE.txt,sha256=CyekMNehE4Y3-KxwfqH9Q-isIIkH39aotA1EFOICLXQ,1073
+example_python_package_with_rust_backend/__init__.py,sha256=zerjMGe0BB_s7yciEMhQr1evHACocMM6zISiyKKoU3w,243
+example_python_package_with_rust_backend/example_python_package_with_rust_backend.cpython-312-arm-linux-gnueabihf.so,sha256=6zbR0XKIP5A2bCi5i_pRUNDkzGOAevp_K9z62C7ArKo,3672632
+example_python_package_with_rust_backend-1.1.10.dist-info/RECORD,,
