@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: markrunner-server
+Version: 0.1.6
+Summary: Jupyter server package for Markrunner
+Author: Taichi Maeda
+Author-email: taichi.maeda.up@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ipykernel (>=6.29.4,<7.0.0)
+Requires-Dist: jupyterlab-server (>=2.27.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Markrunner Server
+

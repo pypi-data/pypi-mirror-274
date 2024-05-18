@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "markrunner-server"
+version = "0.1.6"
+description = "Jupyter server package for Markrunner"
+authors = ["Taichi Maeda <taichi.maeda.up@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "__main__.py" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyterlab-server = "^2.27.1"
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
