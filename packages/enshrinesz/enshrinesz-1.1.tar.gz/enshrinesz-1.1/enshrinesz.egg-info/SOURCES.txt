@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+enshrinesz/__init__.py
+enshrinesz/main.py
+enshrinesz.egg-info/PKG-INFO
+enshrinesz.egg-info/SOURCES.txt
+enshrinesz.egg-info/dependency_links.txt
+enshrinesz.egg-info/requires.txt
+enshrinesz.egg-info/top_level.txt
