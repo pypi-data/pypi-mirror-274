@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trullerz/__init__.py
+trullerz/main.py
+trullerz.egg-info/PKG-INFO
+trullerz.egg-info/SOURCES.txt
+trullerz.egg-info/dependency_links.txt
+trullerz.egg-info/requires.txt
+trullerz.egg-info/top_level.txt
