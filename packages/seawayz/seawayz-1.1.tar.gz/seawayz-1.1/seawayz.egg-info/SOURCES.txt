@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+seawayz/__init__.py
+seawayz/main.py
+seawayz.egg-info/PKG-INFO
+seawayz.egg-info/SOURCES.txt
+seawayz.egg-info/dependency_links.txt
+seawayz.egg-info/requires.txt
+seawayz.egg-info/top_level.txt
