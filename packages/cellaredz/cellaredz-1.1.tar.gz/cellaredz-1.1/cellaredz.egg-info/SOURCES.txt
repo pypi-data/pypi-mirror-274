@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cellaredz/__init__.py
+cellaredz/main.py
+cellaredz.egg-info/PKG-INFO
+cellaredz.egg-info/SOURCES.txt
+cellaredz.egg-info/dependency_links.txt
+cellaredz.egg-info/requires.txt
+cellaredz.egg-info/top_level.txt
