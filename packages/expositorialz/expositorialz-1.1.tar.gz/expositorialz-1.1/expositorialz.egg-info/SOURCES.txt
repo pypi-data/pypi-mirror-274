@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+expositorialz/__init__.py
+expositorialz/main.py
+expositorialz.egg-info/PKG-INFO
+expositorialz.egg-info/SOURCES.txt
+expositorialz.egg-info/dependency_links.txt
+expositorialz.egg-info/requires.txt
+expositorialz.egg-info/top_level.txt
