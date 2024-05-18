@@ -1,0 +1,3 @@
+[console_scripts]
+vaers = vaers:main
+
