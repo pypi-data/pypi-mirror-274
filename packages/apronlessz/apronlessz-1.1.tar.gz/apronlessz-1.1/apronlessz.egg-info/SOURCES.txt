@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+apronlessz/__init__.py
+apronlessz/main.py
+apronlessz.egg-info/PKG-INFO
+apronlessz.egg-info/SOURCES.txt
+apronlessz.egg-info/dependency_links.txt
+apronlessz.egg-info/requires.txt
+apronlessz.egg-info/top_level.txt
