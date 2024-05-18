@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aoudadz/__init__.py
+aoudadz/main.py
+aoudadz.egg-info/PKG-INFO
+aoudadz.egg-info/SOURCES.txt
+aoudadz.egg-info/dependency_links.txt
+aoudadz.egg-info/requires.txt
+aoudadz.egg-info/top_level.txt
