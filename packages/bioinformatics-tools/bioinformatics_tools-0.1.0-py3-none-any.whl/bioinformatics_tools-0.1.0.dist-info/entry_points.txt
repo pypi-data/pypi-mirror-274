@@ -1,0 +1,2 @@
+[console_scripts]
+fileflux = bioinformatics_tools.FileClasses.main:cli
