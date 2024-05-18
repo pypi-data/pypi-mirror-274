@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+scanerr.egg-info/PKG-INFO
+scanerr.egg-info/SOURCES.txt
+scanerr.egg-info/dependency_links.txt
+scanerr.egg-info/entry_points.txt
+scanerr.egg-info/requires.txt
+scanerr.egg-info/top_level.txt
+src/__init__.py
+src/scanerr/__init__.py
+src/scanerr/api.py
+src/scanerr/root.py
