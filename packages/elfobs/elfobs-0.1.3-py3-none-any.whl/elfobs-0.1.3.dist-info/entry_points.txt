@@ -1,0 +1,3 @@
+[console_scripts]
+elfobs=elfobs.cli:app
+
