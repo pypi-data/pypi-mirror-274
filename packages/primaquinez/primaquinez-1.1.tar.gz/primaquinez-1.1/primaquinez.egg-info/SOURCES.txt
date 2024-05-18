@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+primaquinez/__init__.py
+primaquinez/main.py
+primaquinez.egg-info/PKG-INFO
+primaquinez.egg-info/SOURCES.txt
+primaquinez.egg-info/dependency_links.txt
+primaquinez.egg-info/requires.txt
+primaquinez.egg-info/top_level.txt
