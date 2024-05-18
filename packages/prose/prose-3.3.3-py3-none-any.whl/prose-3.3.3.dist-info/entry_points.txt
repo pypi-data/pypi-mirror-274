@@ -1,0 +1,3 @@
+[console_scripts]
+fitsmanager=prose.scripts.fitsmanager:main
+
