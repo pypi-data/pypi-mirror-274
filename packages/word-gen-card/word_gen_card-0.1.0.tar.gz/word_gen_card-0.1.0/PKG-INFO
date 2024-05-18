@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: word-gen-card
+Version: 0.1.0
+Summary: a dict export word list generate anki card tool
+Author-Email: jay lau <cappyclear@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: genanki==0.13.1
+Requires-Dist: edge-tts==6.1.11
+Description-Content-Type: text/markdown
+
+# word-gen-card
