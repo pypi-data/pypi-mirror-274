@@ -1,0 +1,10 @@
+educelab-cmdparse>=0.2
+imageio
+numpy
+scipy
+scikit-image
+scikit-learn
+
+[docs]
+sphinx
+sphinx_rtd_theme
