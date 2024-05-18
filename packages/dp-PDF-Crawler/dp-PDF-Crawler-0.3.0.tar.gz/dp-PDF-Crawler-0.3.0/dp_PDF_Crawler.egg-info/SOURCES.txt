@@ -1,0 +1,6 @@
+lib-setup.py
+dp_PDF_Crawler.egg-info/PKG-INFO
+dp_PDF_Crawler.egg-info/SOURCES.txt
+dp_PDF_Crawler.egg-info/dependency_links.txt
+dp_PDF_Crawler.egg-info/requires.txt
+dp_PDF_Crawler.egg-info/top_level.txt
