@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wrg
+Version: 0.1.2
+Summary: Work with WRG files in python.
+Author: Goyo
+Author-email: goyodiaz@gmail.com
+License: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: <3.14,>=3.10
+License-File: LICENSE.txt
+Requires-Dist: numpy<2,>=1
+Requires-Dist: scipy<2,>=1

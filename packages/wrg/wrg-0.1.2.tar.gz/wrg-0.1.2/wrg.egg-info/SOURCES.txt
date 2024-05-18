@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+wrg.py
+wrg.egg-info/PKG-INFO
+wrg.egg-info/SOURCES.txt
+wrg.egg-info/dependency_links.txt
+wrg.egg-info/requires.txt
+wrg.egg-info/top_level.txt
