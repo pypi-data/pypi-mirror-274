@@ -1,0 +1,10 @@
+logtools_vrb/__init__.py,sha256=GiE1_9kZj2t0rg_RobjOSMtbBMTmAInxLRwHkhNBbG8,398
+logtools_vrb/__version__.py,sha256=rxfV3s8HEjXn--wqBeFFxIUuw_ku__LeSejqoW2tzpg,19
+logtools_vrb/formatting.py,sha256=sSLo_FBoQ-KMyLktI7TefIsqQuzAWlAvjK_EcXCZBiM,6292
+logtools_vrb/logtools.py,sha256=2BbdIrFgRhnJQUqI3KZnNdrDhJ9eKeFamEiJFk8rj_o,14655
+logtools_vrb/mailloghandler.py,sha256=8uibNa_ven88nL0ytJ52dX5LqoXiM23QaOH3bwtGxeE,6423
+logtools_vrb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logtools_vrb-0.0.1.dist-info/METADATA,sha256=E5Swla6SCp3qyiQ6G1ZepnIIfZ4-pU3eqBH9ZjAslDs,1193
+logtools_vrb-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+logtools_vrb-0.0.1.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+logtools_vrb-0.0.1.dist-info/RECORD,,
