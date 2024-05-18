@@ -1,0 +1,9 @@
+airflow/providers/tabular/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/tabular/__init__.py,sha256=08TlePEkep2dMDQLKF8xmDe9X2QlmzCnd7yflQRk9Qo,1494
+airflow/providers/tabular/get_provider_info.py,sha256=-6x4PK5NthYDzdldGQS1bqrnbmAw-SfkvTYI4GsXg4Y,1995
+airflow/providers/tabular/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/tabular/hooks/tabular.py,sha256=SDFsBILuk-Xr7UFcF4fchRpErJMvCSKENdd5AK5FJx0,1259
+apache_airflow_providers_tabular-1.5.1.dist-info/entry_points.txt,sha256=W7Y930hWK_AHXN6ZI91BaQ_LmoUM6RC0l5u1v_58lCQ,103
+apache_airflow_providers_tabular-1.5.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_tabular-1.5.1.dist-info/METADATA,sha256=er4iAK_fhq4lZqwRzKZFwGehX6B4mQtSSlW6w_zk29g,6109
+apache_airflow_providers_tabular-1.5.1.dist-info/RECORD,,
