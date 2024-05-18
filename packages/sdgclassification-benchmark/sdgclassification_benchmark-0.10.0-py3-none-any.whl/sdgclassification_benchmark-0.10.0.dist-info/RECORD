@@ -1,0 +1,15 @@
+LICENSE,sha256=DZA4mVrO56dM-6yxOoregqPwZR9f8z711mNOrIwPjoI,1088
+sdgclassification/benchmark/resources/benchmark.csv,sha256=Ebi28_hRrYdQyEHAs9KHmS75EijP_tAek-Ch9-riNA4,420049
+sdgclassification/benchmark/Benchmark.py,sha256=mPcNxUcxvxLfhU-21uGUxXtxjnAW2bK7u-CWgKba9Cs,2594
+sdgclassification/benchmark/Metrics.py,sha256=jb5f1WvpGXMbr5cR96fR-fmlx1cjBJMJ20ug5uy3nw4,4357
+sdgclassification/benchmark/Result.py,sha256=5Txhs4apUveREiMptuJ-AH_rLXfehNP3mHes0i8faHg,675
+sdgclassification/benchmark/ResultSet.py,sha256=7PdZOh0Ws2sSUI638b4pp8M7qUNB5HRkmBgn9bg07BU,1508
+sdgclassification/benchmark/Stats.py,sha256=R-7VQTGPXacOzQhdiJVkrhat4bkoYAzh7yVPYWDAUUo,2806
+sdgclassification/benchmark/__init__.py,sha256=dh-dakPb4_LB6lcrktwtdqkhwp3aNvx4_cXV3Wh6dAM,353
+sdgclassification/benchmark/load_benchmark_df.py,sha256=_KnCJOw5pfURk64rdgWrQkB-VxHUCfZpoCwry2W0LBg,600
+sdgclassification/benchmark/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdgclassification/benchmark/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdgclassification_benchmark-0.10.0.dist-info/LICENSE,sha256=DZA4mVrO56dM-6yxOoregqPwZR9f8z711mNOrIwPjoI,1088
+sdgclassification_benchmark-0.10.0.dist-info/METADATA,sha256=MbcaVQhb4h1w_hY6Dj9-LlCxsHa4twUhvIoOS5vsNSI,17813
+sdgclassification_benchmark-0.10.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sdgclassification_benchmark-0.10.0.dist-info/RECORD,,
