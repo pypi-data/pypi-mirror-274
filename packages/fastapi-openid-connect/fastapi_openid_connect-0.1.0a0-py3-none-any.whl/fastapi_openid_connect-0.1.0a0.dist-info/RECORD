@@ -1,0 +1,10 @@
+fastapi_openid_connect/__init__.py,sha256=vxqycRQ030Dz5L5hucHOUVP09vcZ6vNuNVf5UZv-oNg,265
+fastapi_openid_connect/models.py,sha256=1X856j6ltNOuIL681VxyOneggxStzM31_GQWU0JGj3c,14165
+fastapi_openid_connect/provider.py,sha256=PtNG-iBTNgPpjvLGplCNmzXOdE9Qg_KzQz2rGc1HtGU,12085
+fastapi_openid_connect/types.py,sha256=IEutkg9hOWG2sQbmTCSNlk2uZbov0UGki0s00tcnRD0,663
+fastapi_openid_connect/validators.py,sha256=_jKY9cNYvVPP-wozY38aLKOu52ZtHxDkv8jffVBHVYc,1039
+fastapi_openid_connect-0.1.0a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastapi_openid_connect-0.1.0a0.dist-info/METADATA,sha256=lZn2UVRevR97g6CijLHFZHIcAIgjq-jKlnriOd693ak,1344
+fastapi_openid_connect-0.1.0a0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fastapi_openid_connect-0.1.0a0.dist-info/top_level.txt,sha256=nTSZAT7CT5lzVY981Z95jT6niHZV0sL4a-rB3v79G5M,23
+fastapi_openid_connect-0.1.0a0.dist-info/RECORD,,
