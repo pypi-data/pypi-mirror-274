@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+outmovez/__init__.py
+outmovez/main.py
+outmovez.egg-info/PKG-INFO
+outmovez.egg-info/SOURCES.txt
+outmovez.egg-info/dependency_links.txt
+outmovez.egg-info/requires.txt
+outmovez.egg-info/top_level.txt
