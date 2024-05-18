@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+cfgc/__init__.py
+cfgc/center.py
+config_center.egg-info/PKG-INFO
+config_center.egg-info/SOURCES.txt
+config_center.egg-info/dependency_links.txt
+config_center.egg-info/top_level.txt
