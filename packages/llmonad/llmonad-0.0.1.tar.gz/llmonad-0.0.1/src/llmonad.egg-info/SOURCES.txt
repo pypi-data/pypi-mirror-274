@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/llmonad/__init__.py
+src/llmonad.egg-info/PKG-INFO
+src/llmonad.egg-info/SOURCES.txt
+src/llmonad.egg-info/dependency_links.txt
+src/llmonad.egg-info/top_level.txt

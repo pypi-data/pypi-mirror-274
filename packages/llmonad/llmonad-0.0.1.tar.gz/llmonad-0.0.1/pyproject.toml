@@ -1,0 +1,12 @@
+[project]
+name = "llmonad"
+version = "0.0.1"
+authors = [
+    { name="Hudson Cooper", email="hncooper96@gmail.com" },
+]
+description = "Compositional framework for LLMs"
+dependencies = []
+
+[project.urls]
+source = "https://github.com/hudson-ai/llmonad"
+download = "https://pypi.org/project/llmonad/#files"

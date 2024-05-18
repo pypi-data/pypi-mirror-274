@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: llmonad
+Version: 0.0.1
+Summary: Compositional framework for LLMs
+Author-email: Hudson Cooper <hncooper96@gmail.com>
+Project-URL: source, https://github.com/hudson-ai/llmonad
+Project-URL: download, https://pypi.org/project/llmonad/#files
