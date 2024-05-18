@@ -1,0 +1,7 @@
+pyserial
+python-can
+pytest
+pydronecan
+pycyphal
+pytest-asyncio
+yakut
