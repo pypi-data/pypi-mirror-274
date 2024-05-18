@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+verifiesz/__init__.py
+verifiesz/main.py
+verifiesz.egg-info/PKG-INFO
+verifiesz.egg-info/SOURCES.txt
+verifiesz.egg-info/dependency_links.txt
+verifiesz.egg-info/requires.txt
+verifiesz.egg-info/top_level.txt
