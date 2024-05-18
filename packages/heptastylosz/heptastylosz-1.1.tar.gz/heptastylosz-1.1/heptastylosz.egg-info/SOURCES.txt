@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+heptastylosz/__init__.py
+heptastylosz/main.py
+heptastylosz.egg-info/PKG-INFO
+heptastylosz.egg-info/SOURCES.txt
+heptastylosz.egg-info/dependency_links.txt
+heptastylosz.egg-info/requires.txt
+heptastylosz.egg-info/top_level.txt
