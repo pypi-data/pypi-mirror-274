@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pdb_multi
+Version: 1.1
+Summary: Pdb designed for multiprocessing
+Home-page: https://github.com/claserken/pdb-multi
+Description-Content-Type: text/markdown
+
+After installing, add the line 
+```
+export PYTHONBREAKPOINT="pdb_multi.set_trace"
+```
+and use the breakpoint function as you normally would with pdb in Python 3.7+. 
+
+All code is courtesy https://stackoverflow.com/a/23654936/4462692. 
