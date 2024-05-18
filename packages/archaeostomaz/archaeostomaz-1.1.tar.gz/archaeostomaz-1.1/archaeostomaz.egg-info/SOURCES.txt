@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+archaeostomaz/__init__.py
+archaeostomaz/main.py
+archaeostomaz.egg-info/PKG-INFO
+archaeostomaz.egg-info/SOURCES.txt
+archaeostomaz.egg-info/dependency_links.txt
+archaeostomaz.egg-info/requires.txt
+archaeostomaz.egg-info/top_level.txt
