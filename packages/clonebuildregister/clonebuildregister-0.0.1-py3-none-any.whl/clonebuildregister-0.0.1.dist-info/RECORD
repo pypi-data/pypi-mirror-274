@@ -1,0 +1,12 @@
+clonebuildregister/__init__.py,sha256=iwSxaGaSubQg39EJPLOH6dwmgLUf395SFHX5e_m4mV0,64
+clonebuildregister/__main__.py,sha256=vuJz62xt1ljmbvmgA3o4Bjyf7jS2GKVbCTeetBHwhTo,5725
+clonebuildregister/build_image.py,sha256=MTtDn4O-jB7TEiXX3730imoDnl7KcR-wCrey_defRPM,2681
+clonebuildregister/clone_repo.py,sha256=T6n8nVw6r1IE5TZUoMHDY2Bx1rEXLmR-Tat7et2QSsk,1325
+clonebuildregister/clonebuildregister.py,sha256=qzn_0wVrLWsjobMGbCI-U4DTKub2_s5rZLob-zgMFUY,3672
+clonebuildregister/exceptions.py,sha256=l-ac4T7cqipWUz2WoJvZXB6SnmUZ89p2ywRcTZuUmT4,2658
+clonebuildregister/register_image.py,sha256=IbMj0cNPecO9So7VweTkzbKbbcq6Pu9V5X98NhsTM94,3033
+clonebuildregister-0.0.1.dist-info/LICENSE,sha256=vLlZmDWgGj4wa6SitlDHLxBnZQd0Xr1OAtfF0VfZbAg,1498
+clonebuildregister-0.0.1.dist-info/METADATA,sha256=3sfmTwJV7k5yBrMOwJJpS09ItQ9D6ZYFJgTSFqUU1xk,6423
+clonebuildregister-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+clonebuildregister-0.0.1.dist-info/top_level.txt,sha256=aFidEkxhXQ9kDgSldV5HaMpnCG4fG8W5dXLGH7b-SkM,19
+clonebuildregister-0.0.1.dist-info/RECORD,,
