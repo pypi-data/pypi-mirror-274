@@ -1,0 +1,2 @@
+[console_scripts]
+scanerr = src.scanerr.root:root
