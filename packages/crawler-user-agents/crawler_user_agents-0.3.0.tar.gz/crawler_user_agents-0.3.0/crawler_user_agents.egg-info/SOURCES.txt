@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+composer.json
+crawler-user-agents.json
+package-lock.json
+package.json
+pyproject.toml
+crawler_user_agents.egg-info/PKG-INFO
+crawler_user_agents.egg-info/SOURCES.txt
+crawler_user_agents.egg-info/dependency_links.txt
+crawler_user_agents.egg-info/top_level.txt
