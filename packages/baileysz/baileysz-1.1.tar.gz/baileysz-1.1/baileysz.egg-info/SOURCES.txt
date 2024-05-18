@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+baileysz/__init__.py
+baileysz/main.py
+baileysz.egg-info/PKG-INFO
+baileysz.egg-info/SOURCES.txt
+baileysz.egg-info/dependency_links.txt
+baileysz.egg-info/requires.txt
+baileysz.egg-info/top_level.txt
