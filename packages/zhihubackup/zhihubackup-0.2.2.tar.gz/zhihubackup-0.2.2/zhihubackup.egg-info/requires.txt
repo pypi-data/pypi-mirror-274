@@ -1,0 +1,7 @@
+requests
+tqdm
+nodejs-wheel-binaries>=20.13.1
+
+[test]
+pytest
+pytest-cov
