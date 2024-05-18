@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+inventoryz/__init__.py
+inventoryz/main.py
+inventoryz.egg-info/PKG-INFO
+inventoryz.egg-info/SOURCES.txt
+inventoryz.egg-info/dependency_links.txt
+inventoryz.egg-info/requires.txt
+inventoryz.egg-info/top_level.txt
