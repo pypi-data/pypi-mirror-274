@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dufterz/__init__.py
+dufterz/main.py
+dufterz.egg-info/PKG-INFO
+dufterz.egg-info/SOURCES.txt
+dufterz.egg-info/dependency_links.txt
+dufterz.egg-info/requires.txt
+dufterz.egg-info/top_level.txt
