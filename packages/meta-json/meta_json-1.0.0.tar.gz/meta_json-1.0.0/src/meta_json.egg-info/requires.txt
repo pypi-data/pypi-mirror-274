@@ -1,0 +1,7 @@
+
+[test]
+coverage
+pytest
+black
+flake8
+mypy
