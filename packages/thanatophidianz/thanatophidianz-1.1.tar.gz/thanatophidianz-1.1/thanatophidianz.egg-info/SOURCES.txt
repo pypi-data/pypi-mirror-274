@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+thanatophidianz/__init__.py
+thanatophidianz/main.py
+thanatophidianz.egg-info/PKG-INFO
+thanatophidianz.egg-info/SOURCES.txt
+thanatophidianz.egg-info/dependency_links.txt
+thanatophidianz.egg-info/requires.txt
+thanatophidianz.egg-info/top_level.txt
