@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+testpackage1290/__init__.py
+testpackage1290/math.py
+testpackage1290.egg-info/PKG-INFO
+testpackage1290.egg-info/SOURCES.txt
+testpackage1290.egg-info/dependency_links.txt
+testpackage1290.egg-info/top_level.txt

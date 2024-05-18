@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: testpackage1290
+Version: 0.0.3
+Summary: A simple example package
+Home-page: https://pypi.org/project/testpackage1290/
+Author: Stefan Jansen
+Author-email: stefanjansen95@hotmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Testing Publishing PyPi Package
+
+Very cool indeed.
+
+
+## Setup
+##### Create virtual environment
+`python -m venv venv`
+`source venv/bin/activate`
+`pip install -r requirements.txt`
+##### Create virtual environment (publishing)
+`python -m venv venv_publish`
+`source venv_publish/bin/activate`
+`pip install wheel twine`
+
+##### Publish first version of the package
+Set version to "0.0.1" `setup.py`.
+`source venv_publish/bin/activate`
+`python setup.py sdist bdist_wheel`
+`twine upload dist/*`
+
+
+## Testing
+##### Activate virtual environment
+`source venv/bin/activate`
+##### Run all tests
+`python -m unittest discover -v tests`
+##### Run specific test
+`python -m unittest -v tests.xxx`
+
+
+## Publishing
+##### Publish new version of the package
+Increment version in `setup.py`.
+`source venv_publish/bin/activate`
+`python setup.py sdist bdist_wheel`
+`twine upload dist/*`
