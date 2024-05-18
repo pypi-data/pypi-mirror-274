@@ -1,0 +1,10 @@
+landusemix/__init__.py,sha256=5MDJV7F0WI4HFGA166jL9AuQUaOCqoPJtrgLxZV3xj4,40
+landusemix/indices.py,sha256=JSD86ibw2G51JIo3E0mkZTdrUzYNcMyAUiKcnYKGjgQ,650
+landusemix/utils.py,sha256=4bELCHDW9CmBaMgo5SpTPj4tRfS2norCzd3Yc9OqReY,1265
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_landusemix.py,sha256=vg0ACmnnrA1oraxvbK7EFiHBPmaRxRhbZxn9yloATGg,832
+landusemix-0.0.3.dist-info/LICENSE,sha256=uKb5f4eWX_alP3VtAOvW9RZyHPDHonX5oGTbTqlOrPg,1073
+landusemix-0.0.3.dist-info/METADATA,sha256=qyqsuxTqB84ls3K4K_g3o8Jufjw8y9-b6mB5nVE45KA,4281
+landusemix-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+landusemix-0.0.3.dist-info/top_level.txt,sha256=B_Kgq2ASEUFdh9ZUMmyv6yux6QjU2A-nRoDdPHKyUD0,17
+landusemix-0.0.3.dist-info/RECORD,,
