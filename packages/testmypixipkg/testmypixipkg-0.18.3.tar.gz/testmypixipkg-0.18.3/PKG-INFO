@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: testmypixipkg
+Version: 0.18.3
+Summary: Add a short description here
+Project-URL: homepage, https://github.com/jjjermiah/pypackage
+Project-URL: repository, https://github.com/jjjermiah/pypackage
+Project-URL: documentation, https://jjjermiah.github.io/pypackage/
+Project-URL: changelog, https://github.com/jjjermiah/pypackage/blob/main/docs/CHANGELOG.md
+Project-URL: issues, https://github.com/jjjermiah/pypackage/issues
+Author-email: Jermiah Joseph <jermiahjoseph98@gmail.com>
+Maintainer-email: Jermiah Joseph <jermiahjoseph98@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: package,pixi,python,template,testmypixipkg
+Requires-Python: >=3.11
+Requires-Dist: rich
+Requires-Dist: rich-click
+Description-Content-Type: text/markdown
+
+# testmypixipkg
+
+This will eventually be made into a cookiecutter template for creating a new pypackage.
+
+Questions:
+
+  1. Full Name of the author
+  2. Email address of the author
+`authors = [{ name = "John Doe", email = "jd@email.com" }]`
+  3. Project Name
+  4. Distribution Name
+  5. Package Name
+  6. Git Init? (y/n)
+    6.1 Git Username/organization for repository.
+    6.2 Repository name.
+  7. License
+    Choose from:
+    7.1 MIT
+    7.2 Apache 2.0
+    7.3 GNU GPL v3
+    7.4 BSD License
+    7.5 Not sure yet
+    7.6 Not Open Source
+  8. Python Version
+  
