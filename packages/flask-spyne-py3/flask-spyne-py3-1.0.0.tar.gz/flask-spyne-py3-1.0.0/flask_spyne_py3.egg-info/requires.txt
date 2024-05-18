@@ -1,0 +1,7 @@
+flask
+spyne
+sec-wall-py3
+pyyaml
+lxml
+suds-py3
+requests

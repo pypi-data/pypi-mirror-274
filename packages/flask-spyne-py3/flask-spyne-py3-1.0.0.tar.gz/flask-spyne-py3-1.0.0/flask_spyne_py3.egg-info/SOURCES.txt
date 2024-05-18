@@ -1,0 +1,10 @@
+README.rst
+setup.py
+flask_spyne/__init__.py
+flask_spyne/flask_spyne.py
+flask_spyne_py3.egg-info/PKG-INFO
+flask_spyne_py3.egg-info/SOURCES.txt
+flask_spyne_py3.egg-info/dependency_links.txt
+flask_spyne_py3.egg-info/not-zip-safe
+flask_spyne_py3.egg-info/requires.txt
+flask_spyne_py3.egg-info/top_level.txt

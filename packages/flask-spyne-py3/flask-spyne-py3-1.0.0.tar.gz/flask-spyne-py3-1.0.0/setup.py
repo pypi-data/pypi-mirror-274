@@ -1,0 +1,53 @@
+from setuptools import setup
+
+requirements = [
+    "flask",
+    "spyne",
+    "sec-wall-py3",
+    "pyyaml",
+    "lxml",
+    "suds-py3",
+    "requests",
+]
+
+setup(
+    author="Alejo Sarmiento",
+    author_email="asarmiento@leafnoise.io",
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Environment :: Web Environment",
+        "Intended Audience :: Developers",
+        "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Topic :: Internet :: WWW/HTTP",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
+    description="A Flask extension, provides support for Spyne.",
+    long_description=open("README.rst").read(),
+    download_url="http://pypi.python.org/pypi/flask-spyne-py3",
+    install_requires=requirements,
+    include_package_data=True,
+    keywords=[
+        "flask",
+        "spyne",
+        "soap",
+        "wsdl",
+        "wsgi",
+        "zeromq",
+        "rest",
+        "rpc",
+        "json",
+        "http",
+        "msgpack",
+        "xml",
+        "werkzeug",
+        "yaml",
+    ],
+    license="CC0 1.0",
+    name="flask-spyne-py3",
+    platforms="any",
+    packages=["flask_spyne"],
+    version="1.0.0",
+    zip_safe=False,
+)
