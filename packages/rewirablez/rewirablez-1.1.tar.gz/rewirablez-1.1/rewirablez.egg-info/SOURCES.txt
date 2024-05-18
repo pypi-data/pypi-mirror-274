@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rewirablez/__init__.py
+rewirablez/main.py
+rewirablez.egg-info/PKG-INFO
+rewirablez.egg-info/SOURCES.txt
+rewirablez.egg-info/dependency_links.txt
+rewirablez.egg-info/requires.txt
+rewirablez.egg-info/top_level.txt
