@@ -1,0 +1,2 @@
+[console_scripts]
+pyfxr = pyfxr_gui:main [gui]
