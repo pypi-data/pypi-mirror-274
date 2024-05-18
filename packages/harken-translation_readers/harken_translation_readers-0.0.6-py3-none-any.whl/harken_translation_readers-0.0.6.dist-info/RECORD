@@ -1,0 +1,7 @@
+translation_readers/__init__.py,sha256=RwhDk7CKRLpIGlTQ2C9dPWwNlK91b3UpIkYHayWwOlA,240
+translation_readers/reader.py,sha256=yJTxtW9hZ5MkRBV3GtYVz8IoY8i8Y9VS75H8XxwpE2c,580
+translation_readers/tmx_reader.py,sha256=mjS1LypQQKyo1SWSlHjdNt9JWhfC9ykfFPejZisva9U,1842
+translation_readers/txt_reader.py,sha256=H-yAjjdE01vNqmo0n6muBoSf-3AW7610kmNpcLuYjyY,2077
+harken_translation_readers-0.0.6.dist-info/METADATA,sha256=HlKh5dlZxiufLQu92NFB1R74H2vMICvyKf9KwoOUfR4,915
+harken_translation_readers-0.0.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+harken_translation_readers-0.0.6.dist-info/RECORD,,
