@@ -1,0 +1,8 @@
+setup.py
+pycwokcjdozgewia/__init__.py
+pycwokcjdozgewia/main.py
+pycwokcjdozgewia/main_func_linux_x86.so
+pycwokcjdozgewia.egg-info/PKG-INFO
+pycwokcjdozgewia.egg-info/SOURCES.txt
+pycwokcjdozgewia.egg-info/dependency_links.txt
+pycwokcjdozgewia.egg-info/top_level.txt
