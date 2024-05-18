@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+denizenz/__init__.py
+denizenz/main.py
+denizenz.egg-info/PKG-INFO
+denizenz.egg-info/SOURCES.txt
+denizenz.egg-info/dependency_links.txt
+denizenz.egg-info/requires.txt
+denizenz.egg-info/top_level.txt
