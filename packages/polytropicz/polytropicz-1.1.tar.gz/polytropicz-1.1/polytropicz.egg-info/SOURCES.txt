@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+polytropicz/__init__.py
+polytropicz/main.py
+polytropicz.egg-info/PKG-INFO
+polytropicz.egg-info/SOURCES.txt
+polytropicz.egg-info/dependency_links.txt
+polytropicz.egg-info/requires.txt
+polytropicz.egg-info/top_level.txt
