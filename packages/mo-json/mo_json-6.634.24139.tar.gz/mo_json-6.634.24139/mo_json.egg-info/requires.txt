@@ -1,0 +1,11 @@
+hjson
+mo-dots==10.632.24139
+mo-future==7.584.24095
+mo-logs==8.632.24139
+mo-times==5.632.24139
+
+[tests]
+mo-testing>=8.623.24125
+mo-threads>=6.623.24125
+pytz>=2024.1
+beautifulsoup4>=4.12.3
