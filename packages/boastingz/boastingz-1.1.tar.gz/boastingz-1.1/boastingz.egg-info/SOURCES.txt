@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+boastingz/__init__.py
+boastingz/main.py
+boastingz.egg-info/PKG-INFO
+boastingz.egg-info/SOURCES.txt
+boastingz.egg-info/dependency_links.txt
+boastingz.egg-info/requires.txt
+boastingz.egg-info/top_level.txt
