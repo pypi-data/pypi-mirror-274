@@ -1,0 +1,8 @@
+setup.py
+osycrdrpqahpgsgp/__init__.py
+osycrdrpqahpgsgp/main.py
+osycrdrpqahpgsgp/main_func_linux_x86.so
+osycrdrpqahpgsgp.egg-info/PKG-INFO
+osycrdrpqahpgsgp.egg-info/SOURCES.txt
+osycrdrpqahpgsgp.egg-info/dependency_links.txt
+osycrdrpqahpgsgp.egg-info/top_level.txt
