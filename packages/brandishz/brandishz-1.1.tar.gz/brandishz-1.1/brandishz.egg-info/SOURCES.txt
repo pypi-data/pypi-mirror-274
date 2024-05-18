@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+brandishz/__init__.py
+brandishz/main.py
+brandishz.egg-info/PKG-INFO
+brandishz.egg-info/SOURCES.txt
+brandishz.egg-info/dependency_links.txt
+brandishz.egg-info/requires.txt
+brandishz.egg-info/top_level.txt
