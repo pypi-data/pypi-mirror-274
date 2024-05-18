@@ -1,0 +1,7 @@
+database:
+  host: 192.168.0.27
+  port: 3306
+  user: spx
+  password: Sino2198@L2X2C0
+  db: anime_challenge
+  charset: utf8
