@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+gmdapi_python/__init__.py
+gmdapi_python/gmdapi_python.py
+gmdapi_python.egg-info/PKG-INFO
+gmdapi_python.egg-info/SOURCES.txt
+gmdapi_python.egg-info/dependency_links.txt
+gmdapi_python.egg-info/requires.txt
+gmdapi_python.egg-info/top_level.txt
