@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ungagz/__init__.py
+ungagz/main.py
+ungagz.egg-info/PKG-INFO
+ungagz.egg-info/SOURCES.txt
+ungagz.egg-info/dependency_links.txt
+ungagz.egg-info/requires.txt
+ungagz.egg-info/top_level.txt
