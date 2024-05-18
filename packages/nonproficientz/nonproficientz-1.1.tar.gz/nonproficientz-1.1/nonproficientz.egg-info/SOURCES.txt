@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonproficientz/__init__.py
+nonproficientz/main.py
+nonproficientz.egg-info/PKG-INFO
+nonproficientz.egg-info/SOURCES.txt
+nonproficientz.egg-info/dependency_links.txt
+nonproficientz.egg-info/requires.txt
+nonproficientz.egg-info/top_level.txt
