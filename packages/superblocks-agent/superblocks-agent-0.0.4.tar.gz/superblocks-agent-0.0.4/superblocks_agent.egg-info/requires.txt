@@ -1,0 +1,3 @@
+google-api-core~=2.18.0
+grpcio~=1.63.0
+superblocks-types==0.0.10
