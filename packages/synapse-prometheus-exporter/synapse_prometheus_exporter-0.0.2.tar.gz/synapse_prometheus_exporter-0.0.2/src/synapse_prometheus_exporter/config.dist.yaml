@@ -1,0 +1,18 @@
+hosts: # List of database hosts
+  # Each host must have a user, password, host, database, and optionally port (default is 5432)
+  # A name can be provided to identify the host in the metrics instead of the host address
+  - name: "mymatrix"
+    user: "user1"
+    password: "password1"
+    host: "host1"
+    port: "5432"
+    database: "synapse"
+  - user: "user2"
+    password: "password2"
+    host: "host2"
+    port: "5432"
+    database: "synapse"
+    # As no name is provided, the host address "host2" will be used to identify the host in the metrics
+exporter:
+  host: "localhost" # Network address on which the exporter will listen
+  port: 8999 # Port on which the exporter will listen
