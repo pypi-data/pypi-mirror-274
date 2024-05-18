@@ -1,0 +1,11 @@
+imutils
+jsonpatch
+uuid
+opencv-python
+numpy
+tqdm
+tabulate
+shapely
+pillow
+scikit-learn
+jsonpointer
