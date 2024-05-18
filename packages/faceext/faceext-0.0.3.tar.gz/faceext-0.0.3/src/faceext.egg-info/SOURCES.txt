@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/faceext.py
+src/faceext.egg-info/PKG-INFO
+src/faceext.egg-info/SOURCES.txt
+src/faceext.egg-info/dependency_links.txt
+src/faceext.egg-info/entry_points.txt
+src/faceext.egg-info/top_level.txt
