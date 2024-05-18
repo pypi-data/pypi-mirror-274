@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+audiotapez/__init__.py
+audiotapez/main.py
+audiotapez.egg-info/PKG-INFO
+audiotapez.egg-info/SOURCES.txt
+audiotapez.egg-info/dependency_links.txt
+audiotapez.egg-info/requires.txt
+audiotapez.egg-info/top_level.txt
