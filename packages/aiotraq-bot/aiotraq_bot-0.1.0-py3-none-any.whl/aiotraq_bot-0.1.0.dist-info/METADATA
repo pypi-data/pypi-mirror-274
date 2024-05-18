@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: aiotraq-bot
+Version: 0.1.0
+Summary: Async ready traQ Bot library
+Home-page: https://github.com/toshi-pono/aiotraq
+License: MIT
+Keywords: traQ,bot,async,aiotraq
+Author: toshi00
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.100.0)
+Requires-Dist: uvicorn[standard] (>=0.12.0)
+Project-URL: Repository, https://github.com/toshi-pono/aiotraq
+Project-URL: Source Code, https://github.com/toshi-pono/aiotraq/tree/main/libs/bot
+Description-Content-Type: text/markdown
+
+# aiotraq-bot
+
+Async ready traQ Bot library written in Python.
+
+## Installation
+
+TODO
+
+## Usage
+
+```python
+import os
+from aiotraq_bot import TraqHttpBot
+
+bot = TraqHttpBot(verification_token=os.getenv("BOT_VERIFICATION_TOKEN"))
+
+@bot.event()
+async def on_message(payload: MessageCreatedPayload):
+    print(payload)
+
+if __name__ == "__main__":
+  bot.run()
+```
+
+### Event handler の登録
+
+イベントの登録は `@bot.event()` デコレータを使って行うことができます。
+event の引数として対象のイベントを指定するか、関数の型ヒントを使って指定することができます。
+
+`MESSAGE_CREATED` イベントを型ヒントを使って指定する場合
+
+```python
+@bot.event()
+async def on_message(payload: MessageCreatedPayload):
+    print(payload)
+```
+
+`MESSAGE_CREATED`イベントを引数を用いて指定する場合
+
+```python
+@bot.event("MESSAGE_CREATED")
+async def on_message(payload):
+    print(payload)
+```
+
+## Acknowledgements
+
+This project is inspired by [python-traq-bot](https://github.com/eyemono-moe/python-traq-bot).
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
