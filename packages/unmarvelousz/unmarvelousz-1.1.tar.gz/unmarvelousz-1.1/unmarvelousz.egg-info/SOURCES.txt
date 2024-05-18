@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unmarvelousz/__init__.py
+unmarvelousz/main.py
+unmarvelousz.egg-info/PKG-INFO
+unmarvelousz.egg-info/SOURCES.txt
+unmarvelousz.egg-info/dependency_links.txt
+unmarvelousz.egg-info/requires.txt
+unmarvelousz.egg-info/top_level.txt
