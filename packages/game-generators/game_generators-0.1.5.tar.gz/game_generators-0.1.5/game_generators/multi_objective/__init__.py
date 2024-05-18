@@ -1,0 +1,2 @@
+from game_generators.multi_objective.from_nfg import from_nfg
+from game_generators.multi_objective.identity import identity
