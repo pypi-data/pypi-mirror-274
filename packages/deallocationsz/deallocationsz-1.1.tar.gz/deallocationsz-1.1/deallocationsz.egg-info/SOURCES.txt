@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+deallocationsz/__init__.py
+deallocationsz/main.py
+deallocationsz.egg-info/PKG-INFO
+deallocationsz.egg-info/SOURCES.txt
+deallocationsz.egg-info/dependency_links.txt
+deallocationsz.egg-info/requires.txt
+deallocationsz.egg-info/top_level.txt
