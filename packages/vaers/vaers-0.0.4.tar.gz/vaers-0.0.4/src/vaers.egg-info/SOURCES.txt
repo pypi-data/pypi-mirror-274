@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/vaers.py
+src/vaers.egg-info/PKG-INFO
+src/vaers.egg-info/SOURCES.txt
+src/vaers.egg-info/dependency_links.txt
+src/vaers.egg-info/entry_points.txt
+src/vaers.egg-info/top_level.txt
