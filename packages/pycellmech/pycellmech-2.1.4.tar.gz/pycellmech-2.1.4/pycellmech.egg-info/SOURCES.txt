@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pycellmech.egg-info/PKG-INFO
+pycellmech.egg-info/SOURCES.txt
+pycellmech.egg-info/dependency_links.txt
+pycellmech.egg-info/entry_points.txt
+pycellmech.egg-info/requires.txt
+pycellmech.egg-info/top_level.txt
