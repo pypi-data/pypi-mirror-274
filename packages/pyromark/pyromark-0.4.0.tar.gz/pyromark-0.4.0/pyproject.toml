@@ -1,0 +1,50 @@
+[build-system]
+requires = ["maturin>=1,<2"]
+build-backend = "maturin"
+
+[project]
+name = "pyromark"
+description = "Blazingly fast Markdown parser"
+readme = "README.md"
+keywords = ["converter", "html"]
+authors = [{ name = "monosans", email = "hsyqixco@protonmail.com" }]
+requires-python = ">=3.7"
+classifiers = [
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Programming Language :: Rust",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/monosans/pyromark"
+Documentation = "https://pyromark.readthedocs.io"
+Repository = "https://github.com/monosans/pyromark"
+
+[project.scripts]
+pyromark = "pyromark.__main__:main"
+
+[tool.maturin]
+python-source = "python"
+module-name = "pyromark._pyromark"
+features = ["pyo3/extension-module"]
