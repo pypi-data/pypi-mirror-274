@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shavez/__init__.py
+shavez/main.py
+shavez.egg-info/PKG-INFO
+shavez.egg-info/SOURCES.txt
+shavez.egg-info/dependency_links.txt
+shavez.egg-info/requires.txt
+shavez.egg-info/top_level.txt
