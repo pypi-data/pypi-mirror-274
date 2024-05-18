@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unprimitivenessz/__init__.py
+unprimitivenessz/main.py
+unprimitivenessz.egg-info/PKG-INFO
+unprimitivenessz.egg-info/SOURCES.txt
+unprimitivenessz.egg-info/dependency_links.txt
+unprimitivenessz.egg-info/requires.txt
+unprimitivenessz.egg-info/top_level.txt
