@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gnocchettiz/__init__.py
+gnocchettiz/main.py
+gnocchettiz.egg-info/PKG-INFO
+gnocchettiz.egg-info/SOURCES.txt
+gnocchettiz.egg-info/dependency_links.txt
+gnocchettiz.egg-info/requires.txt
+gnocchettiz.egg-info/top_level.txt
