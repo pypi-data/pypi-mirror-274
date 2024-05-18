@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+blackseedz/__init__.py
+blackseedz/main.py
+blackseedz.egg-info/PKG-INFO
+blackseedz.egg-info/SOURCES.txt
+blackseedz.egg-info/dependency_links.txt
+blackseedz.egg-info/requires.txt
+blackseedz.egg-info/top_level.txt
