@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+benedictsz/__init__.py
+benedictsz/main.py
+benedictsz.egg-info/PKG-INFO
+benedictsz.egg-info/SOURCES.txt
+benedictsz.egg-info/dependency_links.txt
+benedictsz.egg-info/requires.txt
+benedictsz.egg-info/top_level.txt
