@@ -1,0 +1,2 @@
+[console_scripts]
+notebook2md = notebook2md.converter:convert_ipynb_to_md
