@@ -1,0 +1,158 @@
+Metadata-Version: 2.1
+Name: tatc
+Version: 3.2.0
+Summary: Tradespace Analysis Toolkit for Constellations (TAT-C)
+Author-email: "Paul T. Grogan" <paul.grogan@asu.edu>
+License: BSD License
+Project-URL: Homepage, https://tatc.readthedocs.io
+Project-URL: Repository, https://github.com/code-lab-org/tatc
+Project-URL: Documentation, https://tatc.readthedocs.io
+Project-URL: Issues, https://github.com/code-lab-org/tatc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: <3.11,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: geopandas >=0.14
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pydantic >=2.6
+Requires-Dist: shapely >=2
+Requires-Dist: skyfield >=1.48
+Requires-Dist: sgp4
+Provides-Extra: app
+Requires-Dist: aiofiles ; extra == 'app'
+Requires-Dist: aiohttp ; extra == 'app'
+Requires-Dist: aiosqlite ; extra == 'app'
+Requires-Dist: celery[librabbitmq,redis] ; extra == 'app'
+Requires-Dist: fastapi >=0.110.0 ; extra == 'app'
+Requires-Dist: fastapi-users[sqlalchemy] ; extra == 'app'
+Requires-Dist: geojson-pydantic ; extra == 'app'
+Requires-Dist: msgpack-asgi ; extra == 'app'
+Requires-Dist: python-dotenv ; extra == 'app'
+Requires-Dist: tzlocal ; extra == 'app'
+Requires-Dist: uvicorn[standard] ; extra == 'app'
+Provides-Extra: appdev
+Requires-Dist: httpx ; extra == 'appdev'
+Provides-Extra: dev
+Requires-Dist: black[jupyter] >=24.2 ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pylint-pydantic ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: autodoc-pydantic >=2 ; extra == 'docs'
+Requires-Dist: docutils ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: sphinx >=7 ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: examples
+Requires-Dist: ipykernel ; extra == 'examples'
+Requires-Dist: joblib ; extra == 'examples'
+Requires-Dist: matplotlib ; extra == 'examples'
+Provides-Extra: osse
+Requires-Dist: netcdf4 ; extra == 'osse'
+Requires-Dist: pydap ; extra == 'osse'
+Requires-Dist: rioxarray ; extra == 'osse'
+Requires-Dist: scipy ; extra == 'osse'
+Requires-Dist: scikit-learn ; extra == 'osse'
+Requires-Dist: seaborn ; extra == 'osse'
+
+# Tradespace Analysis Toolkit for Constellations (TAT-C)
+
+The Tradespace Analysis Toolkit for Constellations (TAT-C) provides low-level
+data structures and functions for systems engineering analysis and design of
+Earth-observing space missions suitable for pre-Phase A concept studies.
+
+Documentation: https://tatc.readthedocs.io
+
+Repository: https://github.com/code-lab-org/tatc
+
+## Installation
+
+TAT-C uses the pip build system to manage dependencies. Install the tatc library in "editable" mode:
+```shell
+pip install -e .
+```
+
+Note: the following optional dependencies are available with bracket notation: 
+ * `pip install -e .[dev]`: for development (unit testing, coverage, and linting)
+ * `pip install -e .[docs]`: for generating documentation
+ * `pip install -e .[examples]`: for running optional examples
+ * `pip install -e .[osse]`: for running optional observing system simulation experiment (OSSE) examples
+ * `pip install -e .[app]`: for running the web application
+ * `pip install -e .[appdev]`: for development (unit testing) of the web application
+
+Multiple optional dependencies can be installed with a comma-separated list (e.g., `pip install -e .[dev,examples]`)
+
+## Development Tools
+
+Development tools are applicable when working with the source code.
+
+### Docker and Docker-Compose
+
+TAT-C includes a Dockerfile (`Dockerfile`) that specifies build targets for a base runtime (the TAT-C library), an application server, and a distributed task worker.
+
+To build images, run:
+```shell
+docker build -t tatc .
+```
+
+### Unit Tests
+
+Run unit tests with:
+```shell
+python -m unittest
+```
+
+Optionally, run a test coverage report:
+```shell
+coverage run -m unittest
+```
+including html output:
+```shell
+coverage html
+```
+
+### Documentation
+
+Generate documentation from the `docs` directory using the command:
+```shell
+make html
+```
+
+### Code Style
+
+This project uses the black code style, applied from the project root:
+```shell
+black .
+```
+
+## Contact
+
+Paul T. Grogan <paul.grogan@asu.edu>
+
+## Acknowledgements
+
+This project was supported in part by the National Aeronautics and Space
+Administration (NASA) Earth Science Division (ESD) Earth Science Technology
+Office (ESTO) Advanced Information Systems Technology (AIST) program under
+grant numbers: NNX17AE06G, 80NSSC17K0586, 80NSSC20K1118, 80NSSC21K1515, 
+80NSSC22K1705 and 80NSSC24K0575 and NASA Jet Propulsion Laboratory 
+contracts: 1074657, 1689594, 1686623, 1705655.
+
+Current Project Team
+ * PI: Paul T. Grogan <paul.grogan@asu.edu>
+ * I. Josue Tapia-Tamayo <josue.tapia@asu.edu>
+ * Suvan Kumar <skuma208@asu.edu>
+
+Project Alumni
+ * Isaac Feldman
+ * Hayden Daly
+ * Lindsay Portelli
+ * Matthew Sabatini
+ * Evan Abel
+ * Sigfried Hache
