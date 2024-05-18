@@ -1,0 +1,9 @@
+torch
+numpy
+transformers
+pandas
+scipy
+pot
+langvae
+saf-nlp
+saf-datasets
