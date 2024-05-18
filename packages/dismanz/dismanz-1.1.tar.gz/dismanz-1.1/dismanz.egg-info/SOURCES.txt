@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dismanz/__init__.py
+dismanz/main.py
+dismanz.egg-info/PKG-INFO
+dismanz.egg-info/SOURCES.txt
+dismanz.egg-info/dependency_links.txt
+dismanz.egg-info/requires.txt
+dismanz.egg-info/top_level.txt
