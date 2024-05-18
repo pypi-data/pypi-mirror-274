@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+mkdocs_pygments.egg-info/PKG-INFO
+mkdocs_pygments.egg-info/SOURCES.txt
+mkdocs_pygments.egg-info/dependency_links.txt
+mkdocs_pygments.egg-info/top_level.txt
