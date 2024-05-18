@@ -1,0 +1,15 @@
+xpa/URLs.py,sha256=3LNFibIRhqOr1LS_pqZypk01Q_9fsWpisdKKtj3j88E,4903
+xpa/XPA.py,sha256=vrtHmgyFkvSj1sHPZ5SOo2T1TLyY0HAlwiDj8UOCKsM,29965
+xpa/__init__.py,sha256=bZxiUelmUy2UmYWvqLfvbhIZKvLD2Lbdcp09Y4N9PPI,21
+xpa/classes/ACCOUNT_INFO_GAMERTAG.py,sha256=0plVgbCY5mgmeu-qZeHZLuLQCmkmYyiZoSfwxMGSQOg,2220
+xpa/classes/ACCOUNT_INFO_XUID.py,sha256=J4hngb6YfaqyO-Ri_uff6ztZBRX7x1Eqz1G8khrtdbM,487
+xpa/classes/CLUB_DETAILS.py,sha256=uE_3vQIPo93oAP1AS2NwnhQu9335IowT97u3hshijdg,2610
+xpa/classes/FRIEND_INFO_GAMERTAG.py,sha256=CRPNiXe9REkYxrmhr8Pu6pBt6ftRnopCcxCYuc0PB8c,596
+xpa/classes/PLAYER_SUMMARY.py,sha256=BVg-ytBbPCDAmaLTY9aTmu5Hmn3XVfOJreLCp4GhPFQ,2065
+xpa/classes/XUID_PRESENCE.py,sha256=OyxS9ODwNkiilNXt4VAuvYbHZalB9Xdoh0TN4qrBynI,389
+xpa/classes/__init__.py,sha256=456XIGZLQtufw5x2onA_erPmMCsaPB3mBlelYQW3JSc,284
+xbox_python_api-0.1.2.4.dist-info/LICENSE,sha256=p1DVjAkKmdddFTUs9KGg50n4mXSzPbFnuDh8ua7Rv_8,1063
+xbox_python_api-0.1.2.4.dist-info/METADATA,sha256=gQh_wx4PRduO_PSzZINCSOlBhTRpdGQUYI5KXE429ik,893
+xbox_python_api-0.1.2.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xbox_python_api-0.1.2.4.dist-info/top_level.txt,sha256=FFyESq-esHF9qCrtFfv3DaPjzV8B3HC_YIviTh2Rm8s,4
+xbox_python_api-0.1.2.4.dist-info/RECORD,,

@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: xbox-python-api
+Version: 0.1.2.4
+Summary: Xbox API library
+Home-page: https://github.com/Rarmash/Xbox-Python-API
+Author: Rarmash
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests ==2.31.0
+
+# Xbox Python API
+Xbox Python API wrapper based on https://xbl.io.
+
+## Installation
+```bash
+pip install xbox-python-api
+```
+
+## Usage
+Create an instance of the `XPA` class with your API key.
+```python
+from xpa import XPA
+
+xpa = XPA(api_key="YOUR_API_KEY")
+```
+
+## Code example
+```python
+from xpa import XPA
+
+xpa = XPA(api_key="YOUR_API_KEY")
+
+# Get account gamertag
+account_info = xpa.get_account_info_xuid(xuid="xuid")
+print(account_info.Gamertag)
+
+
+# Get user presence
+presence = xpa.get_presence(xuid="xuid")
+print(presence.state)
+```
+
+Full documentation can be found [here](https://github.com/Rarmash/Xbox-Python-API/tree/master/docs).
