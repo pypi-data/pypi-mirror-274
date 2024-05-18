@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+electroopticallyz/__init__.py
+electroopticallyz/main.py
+electroopticallyz.egg-info/PKG-INFO
+electroopticallyz.egg-info/SOURCES.txt
+electroopticallyz.egg-info/dependency_links.txt
+electroopticallyz.egg-info/requires.txt
+electroopticallyz.egg-info/top_level.txt
