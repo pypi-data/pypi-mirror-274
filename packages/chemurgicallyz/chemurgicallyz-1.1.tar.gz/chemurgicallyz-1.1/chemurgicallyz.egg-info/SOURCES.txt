@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chemurgicallyz/__init__.py
+chemurgicallyz/main.py
+chemurgicallyz.egg-info/PKG-INFO
+chemurgicallyz.egg-info/SOURCES.txt
+chemurgicallyz.egg-info/dependency_links.txt
+chemurgicallyz.egg-info/requires.txt
+chemurgicallyz.egg-info/top_level.txt
