@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonnephriticz/__init__.py
+nonnephriticz/main.py
+nonnephriticz.egg-info/PKG-INFO
+nonnephriticz.egg-info/SOURCES.txt
+nonnephriticz.egg-info/dependency_links.txt
+nonnephriticz.egg-info/requires.txt
+nonnephriticz.egg-info/top_level.txt
