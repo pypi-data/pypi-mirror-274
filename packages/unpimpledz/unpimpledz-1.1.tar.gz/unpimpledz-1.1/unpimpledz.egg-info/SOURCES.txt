@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unpimpledz/__init__.py
+unpimpledz/main.py
+unpimpledz.egg-info/PKG-INFO
+unpimpledz.egg-info/SOURCES.txt
+unpimpledz.egg-info/dependency_links.txt
+unpimpledz.egg-info/requires.txt
+unpimpledz.egg-info/top_level.txt
