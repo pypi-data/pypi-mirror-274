@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+caramelizingz/__init__.py
+caramelizingz/main.py
+caramelizingz.egg-info/PKG-INFO
+caramelizingz.egg-info/SOURCES.txt
+caramelizingz.egg-info/dependency_links.txt
+caramelizingz.egg-info/requires.txt
+caramelizingz.egg-info/top_level.txt
