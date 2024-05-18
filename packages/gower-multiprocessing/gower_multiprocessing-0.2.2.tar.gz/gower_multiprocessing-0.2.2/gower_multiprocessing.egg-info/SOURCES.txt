@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+gower_multiprocessing/__init__.py
+gower_multiprocessing/gower_dist.py
+gower_multiprocessing.egg-info/PKG-INFO
+gower_multiprocessing.egg-info/SOURCES.txt
+gower_multiprocessing.egg-info/dependency_links.txt
+gower_multiprocessing.egg-info/top_level.txt
