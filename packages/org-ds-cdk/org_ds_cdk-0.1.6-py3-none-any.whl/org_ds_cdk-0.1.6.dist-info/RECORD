@@ -1,0 +1,10 @@
+org_dist_cdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+org_dist_cdk/apigateway.py,sha256=JRBUhekhKDxuVphI6Gt4keYxf7TID46qzJMMQ9knyYI,1919
+org_dist_cdk/multilambda.py,sha256=yMbJZd2MrMBOSvj0rGBm-1ZhBleQttX0o5Pf3CXa2MY,1349
+org_ds_cdk/__init__.py,sha256=0xk0cnHud8uyEeskN74JVw_y8ve_3-SNrRnqPELIeac,133
+org_ds_cdk/apigateway.py,sha256=JRBUhekhKDxuVphI6Gt4keYxf7TID46qzJMMQ9knyYI,1919
+org_ds_cdk/multilambda.py,sha256=yMbJZd2MrMBOSvj0rGBm-1ZhBleQttX0o5Pf3CXa2MY,1349
+org_ds_cdk-0.1.6.dist-info/METADATA,sha256=i3pJcV-_9PCCU3LXxptbNmpDycDpsUToUhbchEPfNNs,1293
+org_ds_cdk-0.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+org_ds_cdk-0.1.6.dist-info/top_level.txt,sha256=ggLEfA-s__Degb86moJrzzCeD0Svs6EPcGbkWroMq-4,11
+org_ds_cdk-0.1.6.dist-info/RECORD,,
