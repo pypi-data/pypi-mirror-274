@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: corv
+Version: 0.2
+Summary: compact object radial velocities
+Author-email: Vedant Chandra <vedant.chandra@cfa.harvard.edu>, Stefan Arseneau <arseneau@bu.edu>
+Project-URL: Homepage, https://github.com/vedantchandra/corv
+Project-URL: Issues, https://github.com/vedantchandra/corv/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# corv: Compact Object Radial Velocities
+
+this package contains routines to model the spectra of compact objects (e.g. white dwarfs and M-dwarfs), and estimate their radial velocities. 
+
+NOTE: `corv` returns statistical errors only. There's an additional systematic error in the measurements from the choice of templates. `corv` RVs are generally good to ~12-18 km/s.
+    Also, the montreal DA models don't work on this branch right now. Working on it!
+
+## Contributors
+
+[Vedant Chandra](https://vedantchandra.com/) (Harvard)
+
+[Stefan Arseneau](https://stefanarseneau.github.io) (Johns Hopkins)
+
+[Keith P. Inight](https://warwick.ac.uk/fac/sci/physics/research/astro/people/keithinight/) (Warwick)
