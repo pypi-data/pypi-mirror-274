@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+comitalz/__init__.py
+comitalz/main.py
+comitalz.egg-info/PKG-INFO
+comitalz.egg-info/SOURCES.txt
+comitalz.egg-info/dependency_links.txt
+comitalz.egg-info/requires.txt
+comitalz.egg-info/top_level.txt
