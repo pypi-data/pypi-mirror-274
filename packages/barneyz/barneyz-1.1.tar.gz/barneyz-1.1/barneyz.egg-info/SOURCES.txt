@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+barneyz/__init__.py
+barneyz/main.py
+barneyz.egg-info/PKG-INFO
+barneyz.egg-info/SOURCES.txt
+barneyz.egg-info/dependency_links.txt
+barneyz.egg-info/requires.txt
+barneyz.egg-info/top_level.txt
