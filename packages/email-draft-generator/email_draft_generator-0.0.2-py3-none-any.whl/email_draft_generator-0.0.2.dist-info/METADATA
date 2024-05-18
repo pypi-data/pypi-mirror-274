@@ -1,0 +1,80 @@
+Metadata-Version: 2.3
+Name: email_draft_generator
+Version: 0.0.2
+Summary: A utility to generate E-mail drafts from a list of E-mail addresses.
+Project-URL: Homepage, https://github.com/fodfodfod/Email-Generator
+Project-URL: Bug Reports, https://github.com/fodfodfod/Email-Generator/issues
+Project-URL: Source, https://github.com/fodfodfod/Email-Generator
+Author-email: Brandon Clague <94200657+fodfodfod@users.noreply.github.com>, Max Nargang <CoffeeCoder1@outlook.com>
+Maintainer-email: Brandon Clague <94200657+fodfodfod@users.noreply.github.com>, Max Nargang <CoffeeCoder1@outlook.com>
+License: MIT License
+        
+        Copyright (c) 2024 fodfodfod
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: email,email-generator,email-template,gmail
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Customer Service
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Email :: Mailing List Servers
+Requires-Python: >=3.8
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Description-Content-Type: text/markdown
+
+# Email Generator
+
+## Installation
+Download the latest release as a `tar.gz` file.
+
+## Setup
+### Build program
+Run `setup.sh` (can be run by simply double-clicking on the file).
+
+### Set up the Google API
+Follow the guide at https://developers.google.com/gmail/api/quickstart/python#set_up_your_environment to generate OAuth2 credentials, and, when you are at the step to configure the OAuth consent screen, add the `gmail.compose` scope so the script can edit drafts. Download them into `.credentials/credentials.json` (you will have to create this directory yourself, and show hidden files to see it on MacOS).
+
+### Set up the template
+Update the email template in `data/template.json`.
+
+#### Template Format
+| Key                      | Value                                            |
+|--------------------------|--------------------------------------------------|
+| `subject` (formatted)    | E-mail subject                                   |
+| `body` (formatted)       | E-mail body                                      |
+| `attachments` (optional) | Paths to any attachments that should be included |
+
+Formatted fields can include the following variables
+| Variable  | Data           |
+|-----------|----------------|
+| `{name}`  | Company name   |
+| `{email}` | Company E-mail |
+
+## Usage
+### Prepare data
+Copy and paste the table into `data/email-list.txt`.
+### Run the program
+Run `run.sh` (can be run by double-clicking as well)
+The first time it is run, you will need to authenticate with the account that you want to upload the drafts to. A browser window should be opened automatically to do this in (if it is not, copy and paste the URL from the terminal window into your browser). The authentication flow may not work in Firefox or other Gecko-based browsers, so try Chrome, Safari, or another Chromium- or Webkit-based browser if it doesn't work for you.
+
+## Building from source
+Install the `build` tool with pip and run `python3 -m build` to build the package.
