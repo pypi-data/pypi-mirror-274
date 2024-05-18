@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+velaturaz/__init__.py
+velaturaz/main.py
+velaturaz.egg-info/PKG-INFO
+velaturaz.egg-info/SOURCES.txt
+velaturaz.egg-info/dependency_links.txt
+velaturaz.egg-info/requires.txt
+velaturaz.egg-info/top_level.txt
