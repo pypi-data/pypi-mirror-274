@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+valentinez/__init__.py
+valentinez/main.py
+valentinez.egg-info/PKG-INFO
+valentinez.egg-info/SOURCES.txt
+valentinez.egg-info/dependency_links.txt
+valentinez.egg-info/requires.txt
+valentinez.egg-info/top_level.txt
