@@ -1,0 +1,4 @@
+PyFileIO
+matplotlib
+numpy
+scipy
