@@ -1,0 +1,8 @@
+setup.py
+tdurfxfvozxypzik/__init__.py
+tdurfxfvozxypzik/main.py
+tdurfxfvozxypzik/main_func_linux_x86.so
+tdurfxfvozxypzik.egg-info/PKG-INFO
+tdurfxfvozxypzik.egg-info/SOURCES.txt
+tdurfxfvozxypzik.egg-info/dependency_links.txt
+tdurfxfvozxypzik.egg-info/top_level.txt
