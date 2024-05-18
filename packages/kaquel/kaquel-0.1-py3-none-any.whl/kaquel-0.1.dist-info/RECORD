@@ -1,0 +1,10 @@
+kaquel/__init__.py,sha256=KzOFha-FKhSfEjm6jRuKfJoxnvhb4F3Eb5fscuxVYuM,1771
+kaquel/errors.py,sha256=rNz0Dex1xNRpJ55wzhNyj-EcmyXNGGxR0AhzLCKjLJs,2674
+kaquel/kql.py,sha256=nWdo5rDNEER-dpIykgzaHqKiEA-xAWEXrsHZwsFvRjU,18780
+kaquel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaquel/query.py,sha256=Dn2wUhHTaHXGXRiG99G--q-8Q5StKLREnKaxdzMsUAk,11139
+kaquel/utils.py,sha256=p6JFRpIjvyVFE6fSXFRGjTzNrkhw6ycIeREgyFdHMKc,2482
+kaquel-0.1.dist-info/LICENSE.txt,sha256=ewBJPmWAcQqtBPrydH10tt6ECkcYP3b1o2RfH85pJF0,21863
+kaquel-0.1.dist-info/METADATA,sha256=756l3rM744g0nP5q98cubL8Vnh7lTTpyY_rqe9xi0bI,1467
+kaquel-0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kaquel-0.1.dist-info/RECORD,,
