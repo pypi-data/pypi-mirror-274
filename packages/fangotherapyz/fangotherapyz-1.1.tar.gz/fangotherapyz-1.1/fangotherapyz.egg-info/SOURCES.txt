@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fangotherapyz/__init__.py
+fangotherapyz/main.py
+fangotherapyz.egg-info/PKG-INFO
+fangotherapyz.egg-info/SOURCES.txt
+fangotherapyz.egg-info/dependency_links.txt
+fangotherapyz.egg-info/requires.txt
+fangotherapyz.egg-info/top_level.txt
