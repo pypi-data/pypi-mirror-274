@@ -1,0 +1,57 @@
+
+
+
+<pre>
+
+	<h1>theme_park</h1>
+		# theme_park
+		# rollecoaster
+		# vortex
+
+	
+
+	<h2>on</h2>
+		<h3>terminal 1</h3>
+			docker compose up -d;
+			docker exec -it pheromone.1 bash
+		
+		<h3>terminal 2</h3>
+			docker exec -it pheromone.1 bash
+			source /habitat/_controls/source_2.sh
+
+	<h2>publishing</h2>
+		
+		#
+		#	statuses
+		#
+		python3 /habitat/venues/stages/theme_park/_status/status.proc.py
+		
+		#
+		#	git push
+		#
+		#		if Circle CI is successful, then publish
+		#
+		
+		#
+		#	increase version
+		#
+		
+		#
+		#	poetry auth
+		#
+		(pip install poetry && cd /habitat && rm -rf dist && poetry build --format sdist --verbose && chmod -R 777 /habitat && poetry publish --verbose;)
+
+
+	
+
+	<h2>docker with custom IP address</h2>
+		docker network create --subnet=192.168.0.0/24 bios_net
+		docker run --network bios_net --ip 192.168.0.34 -v .:/theme_park -v /online/locker/vaccines_theme_park:/online/locker/vaccines_theme_park -it jumps:v2.1.0
+		docker exec -it f524ed410d13 bash
+
+	<h2>dockers</h2>
+		docker run -p 127.0.0.1:20000:20000 -v .:/theme_park -v /online/crowns_safes/mint:/online/crowns_safes/mint -it jumps:v2.1.0
+		docker exec -it 598cd384d874 bash
+
+
+</pre>
