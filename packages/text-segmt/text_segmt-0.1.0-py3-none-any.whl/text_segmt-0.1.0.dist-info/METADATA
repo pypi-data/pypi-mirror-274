@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: text-segmt
+Version: 0.1.0
+Summary: Text Segmentation Package
+Author: LugandaOCR
+Author-email: beijukab@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Requires-Dist: opencv-python (>=4.0)
+Requires-Dist: tensorflow (==2.14.0)
+
