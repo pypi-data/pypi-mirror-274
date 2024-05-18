@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_nanny_yp_proto.egg-info/PKG-INFO
+yandex_nanny_yp_proto.egg-info/SOURCES.txt
+yandex_nanny_yp_proto.egg-info/dependency_links.txt
+yandex_nanny_yp_proto.egg-info/top_level.txt
