@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+materials_commons/script/__init__.py
+materials_commons/script/script.py
+materials_commons_script.egg-info/PKG-INFO
+materials_commons_script.egg-info/SOURCES.txt
+materials_commons_script.egg-info/dependency_links.txt
+materials_commons_script.egg-info/not-zip-safe
+materials_commons_script.egg-info/requires.txt
+materials_commons_script.egg-info/top_level.txt
