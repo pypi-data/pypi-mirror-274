@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tetrasomez/__init__.py
+tetrasomez/main.py
+tetrasomez.egg-info/PKG-INFO
+tetrasomez.egg-info/SOURCES.txt
+tetrasomez.egg-info/dependency_links.txt
+tetrasomez.egg-info/requires.txt
+tetrasomez.egg-info/top_level.txt
