@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+superordinatedz/__init__.py
+superordinatedz/main.py
+superordinatedz.egg-info/PKG-INFO
+superordinatedz.egg-info/SOURCES.txt
+superordinatedz.egg-info/dependency_links.txt
+superordinatedz.egg-info/requires.txt
+superordinatedz.egg-info/top_level.txt
