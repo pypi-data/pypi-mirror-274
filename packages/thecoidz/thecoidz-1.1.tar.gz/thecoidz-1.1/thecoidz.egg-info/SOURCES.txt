@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+thecoidz/__init__.py
+thecoidz/main.py
+thecoidz.egg-info/PKG-INFO
+thecoidz.egg-info/SOURCES.txt
+thecoidz.egg-info/dependency_links.txt
+thecoidz.egg-info/requires.txt
+thecoidz.egg-info/top_level.txt
