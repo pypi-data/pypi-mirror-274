@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nemasz/__init__.py
+nemasz/main.py
+nemasz.egg-info/PKG-INFO
+nemasz.egg-info/SOURCES.txt
+nemasz.egg-info/dependency_links.txt
+nemasz.egg-info/requires.txt
+nemasz.egg-info/top_level.txt
