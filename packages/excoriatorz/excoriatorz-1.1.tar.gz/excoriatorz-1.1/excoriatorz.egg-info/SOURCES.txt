@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+excoriatorz/__init__.py
+excoriatorz/main.py
+excoriatorz.egg-info/PKG-INFO
+excoriatorz.egg-info/SOURCES.txt
+excoriatorz.egg-info/dependency_links.txt
+excoriatorz.egg-info/requires.txt
+excoriatorz.egg-info/top_level.txt
