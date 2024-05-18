@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+platbandz/__init__.py
+platbandz/main.py
+platbandz.egg-info/PKG-INFO
+platbandz.egg-info/SOURCES.txt
+platbandz.egg-info/dependency_links.txt
+platbandz.egg-info/requires.txt
+platbandz.egg-info/top_level.txt
