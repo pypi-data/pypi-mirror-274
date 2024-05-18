@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+psychonomyz/__init__.py
+psychonomyz/main.py
+psychonomyz.egg-info/PKG-INFO
+psychonomyz.egg-info/SOURCES.txt
+psychonomyz.egg-info/dependency_links.txt
+psychonomyz.egg-info/requires.txt
+psychonomyz.egg-info/top_level.txt
