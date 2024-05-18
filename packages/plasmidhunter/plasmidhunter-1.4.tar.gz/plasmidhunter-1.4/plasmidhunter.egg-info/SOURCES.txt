@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.py
+PlasmidHunter/PlasmidHunter.py
+PlasmidHunter/__init__.py
+PlasmidHunter/functions.py
+PlasmidHunter/model/feature_genes.gz
+PlasmidHunter/model/guassiannb_model_params.json.gz
+plasmidhunter.egg-info/PKG-INFO
+plasmidhunter.egg-info/SOURCES.txt
+plasmidhunter.egg-info/dependency_links.txt
+plasmidhunter.egg-info/entry_points.txt
+plasmidhunter.egg-info/requires.txt
+plasmidhunter.egg-info/top_level.txt
