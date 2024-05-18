@@ -1,0 +1,6 @@
+bio
+matplotlib
+numpy
+pandas
+pyyaml==6.*
+python-json-logger==2.0.7
