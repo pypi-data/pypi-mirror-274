@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gnarrsz/__init__.py
+gnarrsz/main.py
+gnarrsz.egg-info/PKG-INFO
+gnarrsz.egg-info/SOURCES.txt
+gnarrsz.egg-info/dependency_links.txt
+gnarrsz.egg-info/requires.txt
+gnarrsz.egg-info/top_level.txt
