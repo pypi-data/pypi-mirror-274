@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scufflerz/__init__.py
+scufflerz/main.py
+scufflerz.egg-info/PKG-INFO
+scufflerz.egg-info/SOURCES.txt
+scufflerz.egg-info/dependency_links.txt
+scufflerz.egg-info/requires.txt
+scufflerz.egg-info/top_level.txt
