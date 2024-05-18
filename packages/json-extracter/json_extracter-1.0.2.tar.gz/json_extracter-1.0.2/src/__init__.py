@@ -1,0 +1,1 @@
+from src.example_package_edyMartin.modulo import json_parse
