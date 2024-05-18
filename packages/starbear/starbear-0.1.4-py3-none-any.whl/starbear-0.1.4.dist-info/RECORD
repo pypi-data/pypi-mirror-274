@@ -1,0 +1,16 @@
+starbear/__init__.py,sha256=brcuMxwXbiDPJgnsAgIjQC42Tsa51pEyoTwXnG0rwwc,383
+starbear/bearlib-template.html,sha256=N-1fAXtoWrzE-REdSZiIlnCUX-Kudqcm4CPPr4Zlpok,276
+starbear/bearlib.js,sha256=ZOiRwRPb3ciJNDXq81hX8JTulcj3Xs5jdAOwP44Z4c0,23883
+starbear/bearstyle.css,sha256=k2vZ032le-yKxMfY9z988p-67ed_kXBVHi2vZO8jrSI,1049
+starbear/constructors.py,sha256=2iq7gyLHOR28mT1HMj3xaS5YocE_8aaTSzHMbUyq6HQ,2206
+starbear/page-template.html,sha256=ugILeBqAMc6wEMyWbV9aBs85Mw8UC4kZr4iUN4U4C9E,322
+starbear/page.py,sha256=y5uEuu9OmmJsJJylMcRz3tHTm1xcX2z0IuEOP6GyCms,10370
+starbear/ref.py,sha256=pmOridTEsUHu16OKM3or8D6gRTUe9addl6hodxaOT7s,2226
+starbear/repr.py,sha256=5cfjLL3blcYzavo6PytWVy1bSqhMKnzoQIekhX2U0As,7708
+starbear/serve.py,sha256=MkYIrTK34oENlae0rhtPT7TXjJQOMpZ4mRs36SwoFUw,19006
+starbear/templating.py,sha256=c2ObeQASqrIRCMfQsQbNkCFpdjHWR1la8CYgMzQfLdk,4117
+starbear/utils.py,sha256=92aim3MRUI41tzIhE-iPivQp1nEP0ThiL4Wgs0-EU3Y,4831
+starbear/version.py,sha256=tVHHGZCNoOKftKv7v8sDg-78N6kJHq-L6dpD2WYhuH8,18
+starbear-0.1.4.dist-info/METADATA,sha256=XE-9KFrm1Mfjt7nHp3R2gqvfJJlDWcHpGz3Imy1au28,700
+starbear-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+starbear-0.1.4.dist-info/RECORD,,
