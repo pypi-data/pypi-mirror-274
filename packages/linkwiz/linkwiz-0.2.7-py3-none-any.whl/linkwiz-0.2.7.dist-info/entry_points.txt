@@ -1,0 +1,3 @@
+[console_scripts]
+linkwiz = linkwiz.__main__:main
+
