@@ -1,0 +1,8 @@
+sigma/backends/microsoft365defender/__init__.py,sha256=8vuIRNHiTY3-MMJmB_z_p2XCJAxcN3FEG5102oHNrmE,407
+sigma/backends/microsoft365defender/microsoft365defender.py,sha256=aI6T_Kz2TIy5iTFc2P6WvkQNbBwFL-R4h1UPCQKGidY,14140
+sigma/pipelines/microsoft365defender/__init__.py,sha256=7GdX_-Uu7Uxwxh_2JSEDoU1N6dm_hWcqen0TeGCSmuY,315
+sigma/pipelines/microsoft365defender/microsoft365defender.py,sha256=6oiN8Oo7wz4F7AkiyACZS3l0VtcOAYmRUi9QJp2uw14,33657
+pysigma_backend_microsoft365defender-0.2.6.dist-info/LICENSE,sha256=3IXI3x1RN4jDR2PonpWF1guc33zagcTgpq_VnboE3UU,7653
+pysigma_backend_microsoft365defender-0.2.6.dist-info/METADATA,sha256=gGoBXSCTH74NTWc6RbdabB_fuaKfSufzVBOJyPIHV-M,869
+pysigma_backend_microsoft365defender-0.2.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pysigma_backend_microsoft365defender-0.2.6.dist-info/RECORD,,
