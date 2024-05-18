@@ -1,0 +1,24 @@
+{%- from 'includes/type_hint.py.jinja' import type_hint %}
+{%- macro attribute(attr) %}
+    {{ attr.name }}: typing.Annotated[
+        {{ type_hint(attr.annotation.type, path) }},
+        pydantic.Field(
+    {%- for key, value in attr.annotation.field_props.items() | sort %}
+            {{ key }}={{ value }},
+    {%- endfor %}
+        )
+    ]{% if attr.required is false %} = None{% endif %}
+{%- endmacro %}
+class {{ model.class_name }}({{ type_hint(model.base_type, path) }}):
+{%- for attr in model.attributes if attr.required %}
+{{- attribute(attr) }}
+{% endfor %}
+{%- for attr in model.attributes if not attr.required %}
+{{- attribute(attr) }}
+{% endfor %}
+
+{%- if model.allow_extra %}
+    model_config = pydantic.ConfigDict(
+        extra='allow'
+    )
+{%- endif %}
