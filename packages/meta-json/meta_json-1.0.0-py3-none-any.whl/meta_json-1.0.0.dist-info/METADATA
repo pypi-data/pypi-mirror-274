@@ -1,0 +1,174 @@
+Metadata-Version: 2.1
+Name: meta_json
+Version: 1.0.0
+Summary: Extract metadata from a deserialized JSON.
+Home-page: https://github.com/juangcr/meta_json
+Author: Juan Cortés
+Author-email: Juan Cortés <juang.cortes@outlook.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, 
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of the copyright holder nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Repository, https://github.com/juangcr/meta_json
+Keywords: metadata,json
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+
+# meta_json
+
+Given a JSON response as a dictionary, extract the metadata such as its structure and data model. 
+
+
+## Introduction
+
+This package is intended to help with JSON analysis by extracting its metadata and ease the data modeling tasks regularly used in design of databases, data catalogs, data warehouses, APIs, etc. 
+
+
+## Installation
+
+This package is available in PyPI and GitHub. Just run:
+
+```python
+  pip install meta-json
+```
+
+Or clone the repository:
+
+```console
+  git clone https://github.com/juangcr/meta_json.git 
+  cd meta_json
+  python setup.py install
+```
+
+## Usage
+
+```python
+  from meta_json import MetaJson
+  
+  your_json_data_as_dict = {
+    "name": "John Doe",
+    "contact": "john_doe@mail.net",
+    "status": {
+      "start_date": "1970-01-01",
+      "active": "true",
+      "credits": {
+        "due": 10,
+        "remaining": 90
+        }
+    }
+  }
+
+  meta = MetaJson(your_json_data_as_dict)
+  
+  meta.types()  # Returns every data type available.
+```
+
+```console
+  {
+    "name": "str",
+    "contact": "str", 
+    "status": {
+      "start_date": "datetime",
+      "active": "str",
+      "credits": {
+        "due": "int",
+        "remaining": "int"
+        }
+    }
+  }
+```
+
+Keep in mind that the datetime recognition supports the following patterns:
+
+- YYYY-MM-DD
+- YYYY/MM/DD
+- DD-MM-YYYY
+- DD/MM/YYYY
+- MM-DD-YYYY
+- MM/DD/YYYY
+
+```python
+  meta.attributes()  # Returns a list with two elements: the grouped main keys
+                   # and the rest of the subkeys alltogether.
+```
+
+```console
+  [
+    [
+      "name",
+      "contact",
+      "status"
+    ],
+    [
+      "start_date",
+      "active",
+      "credits",
+      "due",
+      "remaining"
+    ]
+  ]
+```
+
+```python
+  meta.layers()  # Returns all keys grouped by layer depth.
+```
+
+```console
+  {
+    "layer_0" :[
+      "name",
+      "contact",
+      "status"
+    ],
+    "layer_1": [
+      "start_date",
+      "active",
+      "credits"
+    ],
+    "layer_2": [
+      "due",
+      "remaining"
+    ]
+  ]
+```
+
