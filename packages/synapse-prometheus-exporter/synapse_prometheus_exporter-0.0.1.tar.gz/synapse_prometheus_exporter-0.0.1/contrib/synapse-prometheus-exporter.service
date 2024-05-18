@@ -1,0 +1,13 @@
+[Unit]
+Description=Synapse Prometheus Exporter
+After=network.target
+
+[Service]
+User=synapse-prometheus-exporter
+Group=synapse-prometheus-exporter
+ExecStart=/srv/synapse-prometheus-exporter/bin/synapse-prometheus-exporter
+Restart=always
+WorkingDirectory=/srv/synapse-prometheus-exporter
+
+[Install]
+WantedBy=multi-user.target
