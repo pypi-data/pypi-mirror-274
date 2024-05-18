@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jacobinz/__init__.py
+jacobinz/main.py
+jacobinz.egg-info/PKG-INFO
+jacobinz.egg-info/SOURCES.txt
+jacobinz.egg-info/dependency_links.txt
+jacobinz.egg-info/requires.txt
+jacobinz.egg-info/top_level.txt
