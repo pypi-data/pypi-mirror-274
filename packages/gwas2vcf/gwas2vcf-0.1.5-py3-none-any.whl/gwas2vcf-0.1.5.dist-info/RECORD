@@ -1,0 +1,7 @@
+gwas2vcf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gwas2vcf/convert_to_vcf.py,sha256=J2pg01v0CxWZYOqDQhURyeCWO7Kv7OdKp8m1ISbsSJ8,3227
+gwas2vcf-0.1.5.dist-info/METADATA,sha256=NIta5XGrlwfd1nyynIylzdP4V0MtqqldUuR64py70Hk,948
+gwas2vcf-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gwas2vcf-0.1.5.dist-info/entry_points.txt,sha256=nDK5qq_dLNsHX9rw4YZAJzzCHsUZwVvRUjyOA3aUqfk,58
+gwas2vcf-0.1.5.dist-info/top_level.txt,sha256=nLOJnyyiOBvby2Zk0SpmR3Vmgp6_6ilE4HBFRpjmqPU,9
+gwas2vcf-0.1.5.dist-info/RECORD,,
