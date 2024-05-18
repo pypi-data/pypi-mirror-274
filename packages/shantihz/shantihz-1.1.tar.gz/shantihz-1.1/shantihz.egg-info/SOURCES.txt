@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shantihz/__init__.py
+shantihz/main.py
+shantihz.egg-info/PKG-INFO
+shantihz.egg-info/SOURCES.txt
+shantihz.egg-info/dependency_links.txt
+shantihz.egg-info/requires.txt
+shantihz.egg-info/top_level.txt
