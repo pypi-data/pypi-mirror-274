@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ptosesz/__init__.py
+ptosesz/main.py
+ptosesz.egg-info/PKG-INFO
+ptosesz.egg-info/SOURCES.txt
+ptosesz.egg-info/dependency_links.txt
+ptosesz.egg-info/requires.txt
+ptosesz.egg-info/top_level.txt
