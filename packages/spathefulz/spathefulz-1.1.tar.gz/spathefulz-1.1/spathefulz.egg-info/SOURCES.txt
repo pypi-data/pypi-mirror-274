@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spathefulz/__init__.py
+spathefulz/main.py
+spathefulz.egg-info/PKG-INFO
+spathefulz.egg-info/SOURCES.txt
+spathefulz.egg-info/dependency_links.txt
+spathefulz.egg-info/requires.txt
+spathefulz.egg-info/top_level.txt
