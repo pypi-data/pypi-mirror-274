@@ -1,0 +1,17 @@
+rufus-0.1.0.dist-info/METADATA,sha256=RNPUrYv2d_pbvkNbq25_D6ux7tBQcHmh56KIJyjzynA,1011
+rufus-0.1.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+rufus/__init__.py,sha256=vqzRYakWHakW48clYxQjm4n2wBv9VcdhXXL7u9oCbuU,12634
+rufus/documents.py,sha256=VN9H3mL6_6hevIudluFEqY5JgJtiO--nWjrieq3-cic,5534
+rufus/models/__init__.py,sha256=C0XY5FkMAYjEe3AMSkDCet1dfX74f4dBco_sbK1oAgQ,459
+rufus/models/_base.py,sha256=kpDlDD0UfWsEvnQDiKckjnzOA2chfB_Mtw_GryvBdJo,3179
+rufus/models/huggingface.py,sha256=SYtPA8OADRaLyEl0dged96pi1f6w20lCMKe9EIR0cM0,1585
+rufus/models/openai.py,sha256=MDgjdQ9i2wCvsOYqTnPucTRfCRcm8KDqG83UFXKTRbo,2570
+rufus/models/sentence_transformers.py,sha256=peVf3T7nXQJWZLbIINIdKNzIDAY8ljBTjuD0f_JkwlE,2360
+rufus/text/__init__.py,sha256=mW068SPaM0WQXmhx_Te7MGDG7MPokT65mK5ipFez1ug,4478
+rufus/text/bm25.py,sha256=nnkZfTsQN8O2uTlL-MYQMHqGkJji8-FuG8uy-xe_etA,2422
+rufus/tools.py,sha256=2EVH0TknHvYvu4fIvlAaf2UiivjBrJUkBjjwB_bFGeE,2101
+rufus/vector/__init__.py,sha256=5kHI1fBN2TGTkabeMOqB4WEP8RxrZFyh7IY0uFfpdcw,227
+rufus/vector/_base.py,sha256=waCR4mrM4mfBRkvBxxVe8bqncLxR65wwE6l2p3r0xGQ,6266
+rufus/vector/annoy.py,sha256=WxiEJkvLiN-DVSMrKnx3W2-c0Qj21EaldKwVHDb-A1k,3814
+rufus/vector/voyager.py,sha256=tWCntViW_C1o0goQQZB4r4-_Tgmv3eWq_drG6MhuLag,5682
+rufus-0.1.0.dist-info/RECORD,,
