@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+latticiniiz/__init__.py
+latticiniiz/main.py
+latticiniiz.egg-info/PKG-INFO
+latticiniiz.egg-info/SOURCES.txt
+latticiniiz.egg-info/dependency_links.txt
+latticiniiz.egg-info/requires.txt
+latticiniiz.egg-info/top_level.txt
