@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+whineyz/__init__.py
+whineyz/main.py
+whineyz.egg-info/PKG-INFO
+whineyz.egg-info/SOURCES.txt
+whineyz.egg-info/dependency_links.txt
+whineyz.egg-info/requires.txt
+whineyz.egg-info/top_level.txt
