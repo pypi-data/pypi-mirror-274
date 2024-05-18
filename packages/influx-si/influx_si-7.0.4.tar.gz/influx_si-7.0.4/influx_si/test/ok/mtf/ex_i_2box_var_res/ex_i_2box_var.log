@@ -1,0 +1,22 @@
+"/home/sokol/.local/bin/influx_i" "--pref" "e_coli_i" "--pref" "e_coli_iv" "--pref" "ex_i_2box_var" "--pref" "../prl_exp/mtf/e_coli_GX_prl"
+code gen: 2024-05-17 18:27:46
+calcul  : 2024-05-17 18:27:47
+load    : 2024-05-17 18:27:47.88 cpu=0.854
+rinit   : 2024-05-17 18:27:47.88 cpu=0.861
+r_flux  : 2024-05-17 18:27:47.88 cpu=0.861
+Afl qr(): 2024-05-17 18:27:47.90 cpu=0.877
+dfl_dffg: 2024-05-17 18:27:47.91 cpu=0.883
+spAbr   : 2024-05-17 18:27:47.91 cpu=0.885
+weight  1: 2024-05-17 18:27:47.91 cpu=0.885
+measure : 2024-05-17 18:27:47.91 cpu=0.893
+ineq    : 2024-05-17 18:27:47.92 cpu=0.898
+preopt  : 2024-05-17 18:27:48.19 cpu=1.143
+labargs : 2024-05-17 18:27:48.19 cpu=1.145
+run    1: 2024-05-17 18:27:48.19 cpu=1.146
+
+Starting point
+residjac: 2024-05-17 18:27:48.28 cpu=1.222
+postopt : 2024-05-17 18:27:48.34 cpu=1.27
+linstats: 2024-05-17 18:27:48.43 cpu=1.347
+***Warning: chi2: Measurement number 0 is lower or equal to parameter number 2. Chi2 test cannot be done.
+rend    : 2024-05-17 18:27:48.43 cpu=1.348

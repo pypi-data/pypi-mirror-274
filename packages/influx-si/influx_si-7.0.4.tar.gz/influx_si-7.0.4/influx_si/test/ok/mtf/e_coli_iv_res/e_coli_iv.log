@@ -1,0 +1,29 @@
+"/home/sokol/.local/bin/influx_i" "--pref" "e_coli_i" "--pref" "e_coli_iv" "--pref" "ex_i_2box_var" "--pref" "../prl_exp/mtf/e_coli_GX_prl"
+code gen: 2024-05-17 18:27:46
+calcul  : 2024-05-17 18:27:47
+load    : 2024-05-17 18:27:47.96 cpu=0.919
+rinit   : 2024-05-17 18:27:47.97 cpu=0.925
+r_flux  : 2024-05-17 18:27:47.97 cpu=0.925
+Afl qr(): 2024-05-17 18:27:48.02 cpu=0.976
+dfl_dffg: 2024-05-17 18:27:48.03 cpu=0.981
+spAbr   : 2024-05-17 18:27:48.03 cpu=0.983
+weight  1: 2024-05-17 18:27:48.03 cpu=0.983
+weight  2: 2024-05-17 18:27:48.03 cpu=0.985
+weight  3: 2024-05-17 18:27:48.04 cpu=0.986
+weight  4: 2024-05-17 18:27:48.04 cpu=0.988
+weight  5: 2024-05-17 18:27:48.04 cpu=0.989
+weight  6: 2024-05-17 18:27:48.04 cpu=0.99
+measure : 2024-05-17 18:27:48.09 cpu=1.041
+ineq    : 2024-05-17 18:27:48.12 cpu=1.064
+preopt  : 2024-05-17 18:27:48.21 cpu=1.145
+labargs : 2024-05-17 18:27:48.21 cpu=1.147
+cl expor: 2024-05-17 18:27:48.49 cpu=1.151
+cl sourc: 2024-05-17 18:27:49.95 cpu=1.355
+run    1: 2024-05-17 18:27:50.11 cpu=1.36
+
+Starting point
+residjac: 2024-05-17 18:27:50.75 cpu=1.364
+postopt : 2024-05-17 18:27:57.42 cpu=1.37
+linstats: 2024-05-17 18:27:57.72 cpu=1.451
+***Warning: chi2: Measurement number 7 is lower or equal to parameter number 26. Chi2 test cannot be done.
+rend    : 2024-05-17 18:27:57.73 cpu=1.462

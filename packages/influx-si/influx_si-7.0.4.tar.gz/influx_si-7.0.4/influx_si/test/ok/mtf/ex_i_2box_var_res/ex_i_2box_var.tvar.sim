@@ -1,0 +1,9 @@
+Id	Comment	Name	Kind	Type	Value	SD	Struct_identif
+		v1	NET	C	1	0	yes
+		v1	XCH	C	0	0	yes
+		v2	NET	D	1	0	yes
+		v2	XCH	C	0	0	yes
+		v3	NET	D	1	0	yes
+		v3	XCH	C	0	0	yes
+		B	METAB	F	1	0.00568304048403233	yes
+		C	METAB	F	0.5	0.00752954774892275	yes

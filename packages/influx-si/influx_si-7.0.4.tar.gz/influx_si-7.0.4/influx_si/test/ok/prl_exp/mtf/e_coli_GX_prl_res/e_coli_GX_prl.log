@@ -1,0 +1,43 @@
+"/home/sokol/.local/bin/influx_i" "--pref" "e_coli_i" "--pref" "e_coli_iv" "--pref" "ex_i_2box_var" "--pref" "../prl_exp/mtf/e_coli_GX_prl"
+code gen: 2024-05-17 18:27:46
+calcul  : 2024-05-17 18:27:47
+load    : 2024-05-17 18:27:47.97 cpu=0.908
+rinit   : 2024-05-17 18:27:47.97 cpu=0.914
+r_flux  : 2024-05-17 18:27:47.97 cpu=0.914
+Afl qr(): 2024-05-17 18:27:47.99 cpu=0.931
+dfl_dffg: 2024-05-17 18:27:47.99 cpu=0.937
+spAbr   : 2024-05-17 18:27:48.00 cpu=0.939
+weight  1: 2024-05-17 18:27:48.00 cpu=0.939
+weight  2: 2024-05-17 18:27:48.00 cpu=0.941
+weight  3: 2024-05-17 18:27:48.00 cpu=0.942
+weight  4: 2024-05-17 18:27:48.00 cpu=0.943
+weight  5: 2024-05-17 18:27:48.00 cpu=0.944
+weight  6: 2024-05-17 18:27:48.00 cpu=0.946
+weight  7: 2024-05-17 18:27:48.00 cpu=0.947
+weight  8: 2024-05-17 18:27:48.00 cpu=0.948
+weight  9: 2024-05-17 18:27:48.01 cpu=0.948
+measure : 2024-05-17 18:27:48.05 cpu=0.984
+ineq    : 2024-05-17 18:27:48.17 cpu=1.1
+preopt  : 2024-05-17 18:27:48.28 cpu=1.216
+labargs : 2024-05-17 18:27:48.29 cpu=1.218
+run    1: 2024-05-17 18:27:48.29 cpu=1.219
+
+Starting point
+check ja: 2024-05-17 18:27:50.57 cpu=3.374
+optim   : 2024-05-17 18:28:03.86 cpu=16.542
+it=0	res=46.694
+it=1	res=46.48103	normstep=2.927638	btk=0.25
+it=2	res=46.344	normstep=2.248907	btk=0.25
+it=3	res=46.25468	normstep=1.772153	btk=0.25
+it=4	res=46.19203	normstep=1.431594	btk=0.25
+it=5	res=46.14514	normstep=1.158672	btk=0.25
+it=6	res=46.1077	normstep=0.9127221	btk=0.25
+it=7	res=46.07336	normstep=0.7505174	btk=0.25
+it=8	res=46.03924	normstep=0.6463508	btk=0.25
+it=9	res=46.00498	normstep=0.5895323	btk=0.25
+it=10	res=45.9741	normstep=0.5662715	btk=0.25
+it=20	res=45.88456	normstep=0.005092575	btk=1
+it=27	res=45.88455	normstep=7.951334e-06	btk=1
+postopt : 2024-05-17 18:28:43.30 cpu=53.101
+linstats: 2024-05-17 18:28:43.79 cpu=53.551
+rend    : 2024-05-17 18:28:43.81 cpu=53.562
