@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: xbox-python-api
+Version: 0.1
+Summary: Xbox API library
+Home-page: https://github.com/Rarmash/XPA
+Author: Rarmash
+License-File: LICENSE
+Requires-Dist: requests ==2.31.0
+
