@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: EnclaveSDK
+Version: 1.5.5
+Summary: BeeKeeperAI EscrowAI Enclave API
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: engineering@beekeeperai.com
+Keywords: OpenAPI,OpenAPI-Generator,BeeKeeperAI EscrowAI Enclave API
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3 <2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic >=2
+Requires-Dist: typing-extensions >=4.7.1
+
+    Described below is the EscrowAI Enclave API that provides functionality inside a BeeKeeperAI environment. Included are data engineering endpoints and reporting endpoints.
+    
