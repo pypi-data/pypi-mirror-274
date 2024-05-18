@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+janteez/__init__.py
+janteez/main.py
+janteez.egg-info/PKG-INFO
+janteez.egg-info/SOURCES.txt
+janteez.egg-info/dependency_links.txt
+janteez.egg-info/requires.txt
+janteez.egg-info/top_level.txt
