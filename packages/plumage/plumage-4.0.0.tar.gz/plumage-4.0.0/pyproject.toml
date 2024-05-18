@@ -1,0 +1,100 @@
+[tool.poetry]
+# Docs: https://python-poetry.org/docs/pyproject/
+name = "plumage"
+version = "4.0.0"
+description = "Clean and tidy theme for Pelican."
+license = 'GPL-2.0-or-later'
+authors = ["Kevin Deldycke <kevin@deldycke.com>"]
+readme = "readme.md"
+homepage = 'https://github.com/kdeldycke/plumage'
+repository = 'https://github.com/kdeldycke/plumage'
+documentation = 'https://github.com/kdeldycke/plumage#settings'
+keywords = [
+    'pelican',
+    'pelican-theme',
+    'stork',
+    'static-search',
+    'masonry',
+    'myst',
+    'theme',
+    'bootstrap',
+    'jquery',
+]
+classifiers = [
+    # See: https://pypi.org/pypi?%3Aaction=list_classifiers
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Plugins',
+    'Environment :: Web Environment',
+    'Framework :: Pelican :: Themes',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Information Technology',
+    'Operating System :: OS Independent',
+    'Programming Language :: JavaScript',
+    'Programming Language :: Other',
+    'Topic :: Internet :: WWW/HTTP',
+    'Topic :: Internet :: WWW/HTTP :: Indexing/Search',
+    'Topic :: Text Processing :: Markup :: HTML',
+    'Topic :: Text Processing :: Markup :: Markdown',
+    'Typing :: Typed',
+]
+
+[tool.poetry.urls]
+"Funding" = "https://github.com/sponsors/kdeldycke"
+"Issues" = "https://github.com/kdeldycke/plumage/issues"
+"Changelog" = "https://github.com/kdeldycke/plumage/blob/main/changelog.md#changelog"
+
+[tool.poetry.dependencies]
+# List of python versions and their support status:
+# https://en.wikipedia.org/wiki/History_of_Python#Support
+python = "^3.9"
+closure = "^20191111"            # XXX Unmaintained!
+cssmin = "^0.2.0"                # XXX Unmaintained!
+libsass = "^0.23.0"
+pelican = "^4.8.0"
+pelican-myst-reader = "^1.3.0b1"
+# pelican-myst-reader = { git = "https://github.com/ashwinvis/myst-reader.git", branch = "main" }
+# pelican-myst-reader = { path = "../myst-reader/", develop = false } # XXX Dev!
+pelican-webassets = "^2.0.0"
+pynpm = "^0.2.0"
+pyquery = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+djlint = "^1.30.2"
+mypy = "^1.1"
+
+[tool.mypy]
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+warn_unreachable = true
+pretty = true
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = ["pyquery", "pynpm", "pelican.*"]
+
+[tool.bumpversion]
+current_version = "4.0.0"
+allow_dirty = true
+
+[[tool.bumpversion.files]]
+# Update Python package version in any __init__.py file.
+glob = "./**/__init__.py"
+ignore_missing_version = true
+
+[[tool.bumpversion.files]]
+# Update version in Poetry section.
+filename = "./pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+# Update the version in standard Markdown changelog.
+filename = "./changelog.md"
+search = "## [{current_version} (unreleased)]("
+replace = "## [{new_version} (unreleased)]("
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
