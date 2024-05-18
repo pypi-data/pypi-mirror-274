@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sporransz/__init__.py
+sporransz/main.py
+sporransz.egg-info/PKG-INFO
+sporransz.egg-info/SOURCES.txt
+sporransz.egg-info/dependency_links.txt
+sporransz.egg-info/requires.txt
+sporransz.egg-info/top_level.txt
