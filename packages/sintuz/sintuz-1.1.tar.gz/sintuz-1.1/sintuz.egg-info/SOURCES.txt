@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sintuz/__init__.py
+sintuz/main.py
+sintuz.egg-info/PKG-INFO
+sintuz.egg-info/SOURCES.txt
+sintuz.egg-info/dependency_links.txt
+sintuz.egg-info/requires.txt
+sintuz.egg-info/top_level.txt
