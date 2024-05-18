@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vimineousz/__init__.py
+vimineousz/main.py
+vimineousz.egg-info/PKG-INFO
+vimineousz.egg-info/SOURCES.txt
+vimineousz.egg-info/dependency_links.txt
+vimineousz.egg-info/requires.txt
+vimineousz.egg-info/top_level.txt
