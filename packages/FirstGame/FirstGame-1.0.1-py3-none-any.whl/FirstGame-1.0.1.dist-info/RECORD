@@ -1,0 +1,13 @@
+FirstGame/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FirstGame/get_data.py,sha256=XEnUQj8wwt20RC7t-739oDyb_Rz-wNz61ek6-vb_lW4,4732
+FirstGame/list_mysql.py,sha256=kEQN4bH87i-4a-HikLmd0wgU15QK-1fjkzZMWk6qP-0,935
+FirstGame/main.py,sha256=by4MhX9ExmfgYYVmwzF4Cb6KW1VzvOyXQpCvbshO5H8,44130
+FirstGame/test_mysql.py,sha256=VFL9V6Jlp3meSf6hi2lEiq7fxp-JMOsBvkxzSfYL8bw,3033
+FirstGame/get_data_dir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FirstGame/get_data_dir/get_data.py,sha256=XEnUQj8wwt20RC7t-739oDyb_Rz-wNz61ek6-vb_lW4,4732
+FirstGame-1.0.1.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+FirstGame-1.0.1.dist-info/METADATA,sha256=OFb5yaL__CSiBwOs4WEW_4VRuaeOHW2RTeBxCaSfg_E,664
+FirstGame-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+FirstGame-1.0.1.dist-info/entry_points.txt,sha256=TPDCQ5NfkqvjcH9S3SWoGGapF60sdTY-YuT2w9A-wsM,50
+FirstGame-1.0.1.dist-info/top_level.txt,sha256=EMJEdVXn_jrQlOcctswBbcbq2KmuQiE96iI7z5Smuts,10
+FirstGame-1.0.1.dist-info/RECORD,,
