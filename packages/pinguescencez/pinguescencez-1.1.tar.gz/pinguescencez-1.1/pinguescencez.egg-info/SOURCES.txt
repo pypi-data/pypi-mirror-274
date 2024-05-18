@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pinguescencez/__init__.py
+pinguescencez/main.py
+pinguescencez.egg-info/PKG-INFO
+pinguescencez.egg-info/SOURCES.txt
+pinguescencez.egg-info/dependency_links.txt
+pinguescencez.egg-info/requires.txt
+pinguescencez.egg-info/top_level.txt
