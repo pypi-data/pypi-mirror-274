@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+marsdeniaz/__init__.py
+marsdeniaz/main.py
+marsdeniaz.egg-info/PKG-INFO
+marsdeniaz.egg-info/SOURCES.txt
+marsdeniaz.egg-info/dependency_links.txt
+marsdeniaz.egg-info/requires.txt
+marsdeniaz.egg-info/top_level.txt
