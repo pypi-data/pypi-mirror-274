@@ -1,0 +1,43 @@
+LICENSE.txt
+README.md
+setup.py
+FirstGame/Better Day.mp3
+FirstGame/Ethereal Vistas.mp3
+FirstGame/Host.mp3
+FirstGame/Mellow Future Bass.mp3
+FirstGame/Midnight Forest.mp3
+FirstGame/Movement.mp3
+FirstGame/Sad Soul.mp3
+FirstGame/Separation.mp3
+FirstGame/__init__.py
+FirstGame/anime_bg.jpg
+FirstGame/anime_bg2.jpg
+FirstGame/anime_bg3.jpg
+FirstGame/anime_menu.jpg
+FirstGame/anime_result.jpg
+FirstGame/anime_result2.jpg
+FirstGame/anime_result3.jpg
+FirstGame/anime_result4.jpg
+FirstGame/anime_result5.jpg
+FirstGame/database.yml
+FirstGame/get_data.py
+FirstGame/icon.ico
+FirstGame/kpop_bg.jpg
+FirstGame/kpop_menu.jpg
+FirstGame/kpop_result.jpg
+FirstGame/kpop_result2.jpg
+FirstGame/list_mysql.py
+FirstGame/main.py
+FirstGame/sign_up.jpg
+FirstGame/start.png
+FirstGame/test_mysql.py
+FirstGame/topic_menu.jpg
+FirstGame.egg-info/PKG-INFO
+FirstGame.egg-info/SOURCES.txt
+FirstGame.egg-info/dependency_links.txt
+FirstGame.egg-info/entry_points.txt
+FirstGame.egg-info/not-zip-safe
+FirstGame.egg-info/requires.txt
+FirstGame.egg-info/top_level.txt
+FirstGame/get_data_dir/__init__.py
+FirstGame/get_data_dir/get_data.py
