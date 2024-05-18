@@ -1,0 +1,3 @@
+[console_scripts]
+markrunner-server=main:main
+
