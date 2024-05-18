@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+epichilez/__init__.py
+epichilez/main.py
+epichilez.egg-info/PKG-INFO
+epichilez.egg-info/SOURCES.txt
+epichilez.egg-info/dependency_links.txt
+epichilez.egg-info/requires.txt
+epichilez.egg-info/top_level.txt
