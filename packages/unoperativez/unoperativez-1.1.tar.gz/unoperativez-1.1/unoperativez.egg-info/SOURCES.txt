@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unoperativez/__init__.py
+unoperativez/main.py
+unoperativez.egg-info/PKG-INFO
+unoperativez.egg-info/SOURCES.txt
+unoperativez.egg-info/dependency_links.txt
+unoperativez.egg-info/requires.txt
+unoperativez.egg-info/top_level.txt
