@@ -1,0 +1,94 @@
+[build-system]
+requires = [
+    "setuptools >= 57.0.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tatc"
+description = "Tradespace Analysis Toolkit for Constellations (TAT-C)"
+authors = [
+    {name = "Paul T. Grogan", email = "paul.grogan@asu.edu"}
+]
+readme = "README.md"
+requires-python = ">=3.9, <3.11"
+license = {text = "BSD License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta"
+]
+dependencies = [
+    "geopandas >= 0.14",
+    "numba",
+    "numpy",
+    "pandas",
+    "pydantic >= 2.6",
+    "shapely >= 2",
+    "skyfield >= 1.48",
+    "sgp4"
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://tatc.readthedocs.io"
+Repository = "https://github.com/code-lab-org/tatc"
+Documentation = "https://tatc.readthedocs.io"
+Issues = "https://github.com/code-lab-org/tatc/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests."]
+
+[tool.setuptools.package-data]
+"tatc" = ["resources/*.bsp"]
+
+[project.optional-dependencies]
+dev = [
+    "black[jupyter] >= 24.2",
+    "coverage",
+    "pylint",
+    "pylint-pydantic",
+    "pytest"
+]
+docs = [
+    "autodoc_pydantic >= 2",
+    "docutils",
+    "myst-parser",
+    "nbsphinx",
+    "sphinx >= 7",
+    "sphinx-rtd-theme"
+]
+examples = [
+    "ipykernel",
+    "joblib",
+    "matplotlib"
+]
+osse = [
+    "netcdf4",
+    "pydap",
+    "rioxarray",
+    "scipy",
+    "scikit-learn",
+    "seaborn"
+]
+app = [
+    "aiofiles",
+    "aiohttp",
+    "aiosqlite",
+    "celery[librabbitmq,redis]",
+    "fastapi >= 0.110.0",
+    "fastapi-users[sqlalchemy]",
+    "geojson-pydantic",
+    "msgpack-asgi",
+    "python-dotenv",
+    "tzlocal",
+    "uvicorn[standard]"
+]
+appdev = [
+    "httpx"
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "tatc.__version__"}
