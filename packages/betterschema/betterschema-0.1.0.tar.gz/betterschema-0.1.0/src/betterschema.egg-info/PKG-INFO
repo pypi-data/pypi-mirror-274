@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: betterschema
+Version: 0.1.0
+Summary: A library for schema support in Python
+Author: Wilson Wang
+Author-email: wilsonny371@gmail.com
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: unittest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: build; extra == "dev"
