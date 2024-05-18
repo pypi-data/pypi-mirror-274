@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+interplacentalz/__init__.py
+interplacentalz/main.py
+interplacentalz.egg-info/PKG-INFO
+interplacentalz.egg-info/SOURCES.txt
+interplacentalz.egg-info/dependency_links.txt
+interplacentalz.egg-info/requires.txt
+interplacentalz.egg-info/top_level.txt
