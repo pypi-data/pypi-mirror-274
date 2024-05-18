@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+predistrustz/__init__.py
+predistrustz/main.py
+predistrustz.egg-info/PKG-INFO
+predistrustz.egg-info/SOURCES.txt
+predistrustz.egg-info/dependency_links.txt
+predistrustz.egg-info/requires.txt
+predistrustz.egg-info/top_level.txt
