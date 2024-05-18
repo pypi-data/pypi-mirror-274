@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+taguchi/__init__.py
+taguchi/__main__.py
+taguchi/database.json
+taguchi.egg-info/PKG-INFO
+taguchi.egg-info/SOURCES.txt
+taguchi.egg-info/dependency_links.txt
+taguchi.egg-info/entry_points.txt
+taguchi.egg-info/not-zip-safe
+taguchi.egg-info/top_level.txt
