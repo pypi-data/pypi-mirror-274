@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: rufus
+Version: 0.1.0
+Summary: Tools for hybrid search ranking.
+Author-Email: Dan Turkel <daturkel@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/daturkel/rufus
+Project-URL: Bug tracker, https://github.com/daturkel/rufus/issues
+Project-URL: Author's website, https://danturkel.com
+Requires-Python: >=3.10
+Requires-Dist: torch==2.2
+Requires-Dist: annoy>=1.17.3
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: openai>=1.23.6
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: rank-bm25>=0.2.2
+Requires-Dist: scipy>=1.13.0
+Requires-Dist: sentence-transformers>=2.7.0
+Requires-Dist: sqlite-utils>=3.36
+Requires-Dist: tiktoken>=0.6.0
+Requires-Dist: transformers>=4.40.1
+Requires-Dist: voyager>=2.0.6
+Requires-Dist: duckdb>=0.10.2
+Description-Content-Type: text/markdown
+
+# 🐕 rufus
