@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+enslavesz/__init__.py
+enslavesz/main.py
+enslavesz.egg-info/PKG-INFO
+enslavesz.egg-info/SOURCES.txt
+enslavesz.egg-info/dependency_links.txt
+enslavesz.egg-info/requires.txt
+enslavesz.egg-info/top_level.txt
