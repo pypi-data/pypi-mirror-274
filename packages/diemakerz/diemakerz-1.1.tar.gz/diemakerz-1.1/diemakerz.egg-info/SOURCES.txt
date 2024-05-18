@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+diemakerz/__init__.py
+diemakerz/main.py
+diemakerz.egg-info/PKG-INFO
+diemakerz.egg-info/SOURCES.txt
+diemakerz.egg-info/dependency_links.txt
+diemakerz.egg-info/requires.txt
+diemakerz.egg-info/top_level.txt
