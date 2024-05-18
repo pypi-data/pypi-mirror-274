@@ -1,0 +1,16 @@
+jaims/__init__.py,sha256=l4DuUiGPGjHFZZw4L0l7hUvaZBHjexfv1M4nt8Zt40o,580
+jaims/agent.py,sha256=0QoW6bzOuc0iviVoCNoqjIlk0AIIyHsBDlesc_I5jfI,6384
+jaims/default_history_manager.py,sha256=7vE2KCGGeWastfFRjHzAJWJxwgYNZyucPXA5VEZ50uE,1640
+jaims/default_tool_manager.py,sha256=LNfEPkktBZbS1fBopXfwsBwQljpkJRCGHNNm0w0NRHY,1200
+jaims/entities.py,sha256=pNKVpxT4G3ZU-pPM7ZN6OW4ocP0GRejbItUECeCzPaY,10024
+jaims/interfaces.py,sha256=g5NbxOLRfcn2CCX1oAv2TFl7t5pk8-byX-dOPHIjCqA,1408
+jaims/adapters/__init__.py,sha256=xtxJYvLzO86RoAR3cG5Jkwrria3_EIBnDZkz1iWzOOc,30
+jaims/adapters/google_generative_ai_adapter/__init__.py,sha256=fK4n6SSVCEJcy4muzJHnR0fTcTzM0QE093CIYzTvPzs,112
+jaims/adapters/google_generative_ai_adapter/adapter.py,sha256=GoDZ36UkXzzhJtQNIljRCm86QYdHfpP8sus8wHBrt2c,8620
+jaims/adapters/google_generative_ai_adapter/constants.py,sha256=z5bPtLr1-PCrF3oyo4wHALTvOqoJdnvAkeCsgLTJtLo,358
+jaims/adapters/openai_adapter/__init__.py,sha256=OIeXVVlBM0BtZUkhfUDVJck7gd4Dkh6geH1jsW2wcoU,205
+jaims/adapters/openai_adapter/adapter.py,sha256=HZYH_XoAqvyjiL5Ewz-riPBN0ZRYFp_sD7nKEKk2FKM,29457
+jaims_py-2.0.0b1.dist-info/METADATA,sha256=VFqxOdpioG_ExMgJ6JwjIh98smqrKbLG0oX4jO2Q7_g,4411
+jaims_py-2.0.0b1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+jaims_py-2.0.0b1.dist-info/top_level.txt,sha256=ebAk2lxuw48ulICbhP7UYcFE0xLBX2-1Gn8YtOVz6M4,6
+jaims_py-2.0.0b1.dist-info/RECORD,,
