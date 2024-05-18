@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "salduba_poetry_sample"
+version = "0.1.0"
+description = ""
+authors = ["Miguel Pinilla <miguel.pinilla@saldubatech.com>"]
+readme = "README.md"
+license = "LICENSE"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Typing :: Typed"
+]
+packages = [
+  {include = "salduba", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+requests = "^2.31.0"
+click = "^8.1.7"
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+sphinx = "^7.3.7"
+mypy = "^1.10.0"
+pytest-cov = "^5.0.0"
+pre-commit = "^3.7.1"
+flake8 = "^7.0.0"
+
+# https://github.com/jvllmr/poetry-types
+isort = "^5.13.2"
+black = "^24.4.2"
+[tool.poetry.group.types.dependencies]
+types-requests = "^2.31.0.20240406"
+types-click = "^7.1.8"
+types-flake8 = "^7.0.0.20240511"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+# This is what defines what "top-level" scripts will be published.
+weather = "salduba.weather.cli:cli"
+
+[tool.pytest.ini_options]
+addopts = "--cov=salduba"
+
+[tool.mypy]
+strict_optional = true
+python_version = "3.11"
+
+[[tool.mypy.overrides]]
+module = 'mypy-ibapi.*'
+ignore_missing_imports = true
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 130
+
+[tool.black]
+line-length = 130
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
