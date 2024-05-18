@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pygetcsv
+Version: 0.0.1
+Summary: Convert a Binary file into a CSV file, a Excel file
+Author: UNshubh (UnOfficialShubh)
+Author-email: <shubhashishpresent@gmail.com>
+Keywords: python,Binary,csv,excel,dat,pickle
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
