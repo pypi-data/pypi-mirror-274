@@ -1,0 +1,49 @@
+name: Python package
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install hatch
+    - name: Lint
+      run: |
+        hatch run lint:all
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Allow password-less ssh into localhost for tests
+      run: |
+        ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
+        cat > ~/.ssh/config <<EOF
+          HOST *
+            StrictHostKeyChecking no
+        EOF
+        chmod og-rw ~
+        cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install hatch
+    - name: Test with pytest
+      run: |
+        hatch run test-cov -s -vv
+        hatch run cov-report
