@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+whoresonsz/__init__.py
+whoresonsz/main.py
+whoresonsz.egg-info/PKG-INFO
+whoresonsz.egg-info/SOURCES.txt
+whoresonsz.egg-info/dependency_links.txt
+whoresonsz.egg-info/requires.txt
+whoresonsz.egg-info/top_level.txt
