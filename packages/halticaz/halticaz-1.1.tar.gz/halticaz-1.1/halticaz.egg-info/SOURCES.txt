@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+halticaz/__init__.py
+halticaz/main.py
+halticaz.egg-info/PKG-INFO
+halticaz.egg-info/SOURCES.txt
+halticaz.egg-info/dependency_links.txt
+halticaz.egg-info/requires.txt
+halticaz.egg-info/top_level.txt
