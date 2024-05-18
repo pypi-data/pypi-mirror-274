@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: dbdoyen
+Version: 0.1.0
+Summary: This package is currently under development and not ready for use.
+Home-page: https://github.com/furiousengineering/dbdoyen
+Author: Stephen Nolan
+Author-email: stephen@furiousengineering.com
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Your Project Name
+
+dbdoyen
+
+## Description
+
+This package is currently under development and not ready for use. 
+
+## Installation
+
+This package is not yet available for installation. Please check back later.
+
+## Usage
+
+There is no usage information available at this time as the package is still under development.
+
+## Contributing
+
+If you are interested in contributing, please reach out to the author via email.
+
+## License
+
+This project is licensed under the MIT License.
