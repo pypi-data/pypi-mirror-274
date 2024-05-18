@@ -1,0 +1,16 @@
+educelab/imgproc/__init__.py,sha256=im3FCycciWwb_29xFJ7eXVkraiZ8wcN-z5vXIXF4kVo,364
+educelab/imgproc/adjust.py,sha256=RpnmVhh-VUeMT2gVbrMuFFPHsLS0HvZoJOJIETWH-m8,2071
+educelab/imgproc/conversion.py,sha256=7uYP49-ncdwYtaQA080gb9Av6Wn2hq-o9WJRjrhA9Ss,715
+educelab/imgproc/correction.py,sha256=ZCp_RltajaoQGub2cNANr9fVpeWrTRCSoqMA3yDDjRA,835
+educelab/imgproc/enhance.py,sha256=x6gNZr1BpuzuWxel-ajmm9HAH3jLJzVqfhRiO4_aaMs,3910
+educelab/imgproc/exiftool.py,sha256=tfVEUY1eWahZjNvLATZC-1_4luFwvNhDen1bKYNU0p8,2702
+educelab/imgproc/filters.py,sha256=g_QCzoDflq4oK08LJIRzWiay9w8uJGK4GFRJj8TK8gY,241
+educelab/imgproc/pca.py,sha256=bbf7LhOXbuODFS-cbNL-NORN79Vuvi8fNPUX9ECAla8,2048
+educelab/imgproc/pipeline.py,sha256=dYXEZQU77O50YckjZqGcUznmtAoRBYlbDA439vUm_wg,5566
+educelab/imgproc/properties.py,sha256=3qdKQBF6s7aCt4lk4hzHY9fuHzb-lYzLiRGykDtdb-4,718
+educelab/imgproc/roi.py,sha256=pbwGbRJr6KtyNuKmwb4eDP_gUqysm6PSYtBPH8nSjvU,1027
+educelab_imgproc-0.6.dev1.dist-info/LICENSE,sha256=gzgP8JeOIG-N1jHOxiJDo2P0TyY8kKaS2X8Qd-yX33k,34458
+educelab_imgproc-0.6.dev1.dist-info/METADATA,sha256=5Sl_FJZAyqzwe9hbY23i9QZaoiqclSY2yAOsK4PX8AA,1610
+educelab_imgproc-0.6.dev1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+educelab_imgproc-0.6.dev1.dist-info/top_level.txt,sha256=-paFElhvDv0wMM5bhDGEv2rijmjH2FCzFCtL2KVBPpo,9
+educelab_imgproc-0.6.dev1.dist-info/RECORD,,
