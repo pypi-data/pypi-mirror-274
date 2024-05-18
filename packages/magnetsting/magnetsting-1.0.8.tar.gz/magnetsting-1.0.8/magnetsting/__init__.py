@@ -1,0 +1,1 @@
+from .magnetsting import MagnetSting

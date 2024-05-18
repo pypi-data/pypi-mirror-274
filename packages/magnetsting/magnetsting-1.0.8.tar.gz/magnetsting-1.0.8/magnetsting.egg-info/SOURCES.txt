@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+magnetsting/__init__.py
+magnetsting/magnetsting.py
+magnetsting.egg-info/PKG-INFO
+magnetsting.egg-info/SOURCES.txt
+magnetsting.egg-info/dependency_links.txt
+magnetsting.egg-info/top_level.txt
