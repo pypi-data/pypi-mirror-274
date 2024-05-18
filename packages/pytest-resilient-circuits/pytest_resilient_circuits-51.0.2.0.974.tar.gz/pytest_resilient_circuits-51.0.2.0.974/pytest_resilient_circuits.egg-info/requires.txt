@@ -1,0 +1,11 @@
+resilient-circuits>=51.0.2.0
+
+[:python_version == "2.7"]
+requests-mock<1.12
+ConfigParser~=4.0
+pytest~=4.6
+
+[:python_version >= "3.6"]
+requests-mock~=1.12
+ConfigParser~=5.2
+pytest~=7.0
