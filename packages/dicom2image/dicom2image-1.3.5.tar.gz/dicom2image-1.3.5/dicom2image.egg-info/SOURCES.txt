@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dicom2image.egg-info/PKG-INFO
+dicom2image.egg-info/SOURCES.txt
+dicom2image.egg-info/dependency_links.txt
+dicom2image.egg-info/requires.txt
+dicom2image.egg-info/top_level.txt
