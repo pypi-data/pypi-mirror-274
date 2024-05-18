@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: picozk
+Version: 0.4
+Summary: PicoZK library & compiler for writing zero-knowledge statements
+Author-email: Joe Near <jnear@uvm.edu>
+License: MIT License
+        
+        Copyright (c) 2023 Joseph Near and others
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/uvm-plaid/picozk
+Requires-Python: <=3.11.7,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: examples
+Requires-Dist: ecdsa ==0.18.0 ; extra == 'examples'
+Requires-Dist: galois ==0.3.7 ; extra == 'examples'
+Requires-Dist: numpy ==1.25.2 ; extra == 'examples'
+Requires-Dist: pandas ==2.2.0 ; extra == 'examples'
+Requires-Dist: scipy ==1.12.0 ; extra == 'examples'
+Requires-Dist: scikit-learn ==1.4.0 ; extra == 'examples'
+Requires-Dist: torch ==2.2.0 ; extra == 'examples'
+Requires-Dist: torchvision ==0.17.0 ; extra == 'examples'
+
+# PicoZK
+
+Integrated, Efficient, and Extensible Zero-Knowledge Proof Engineering
+
+----
+
+## Installation
+
+You can install the library from PyPI using `pip install`:
+
+```
+pip install picozk
+```
+
+Or, clone the repository and then install with `pip install` (This library
+requires Python3):
+
+```
+git clone git@github.com:uvm-plaid/picozk.git
+cd picozk
+pip install .
+```
+
+If you want to run the [examples](examples), you'll need to install
+some extra Python packages (which are optional and are not required to
+install the core library). These dependent packages can be done by
+running the command `pip install ".[examples]"`.
+
+
+## Usage
+
+To generate a zero-knowledge (ZK) statement, write a Python program
+that uses the PicoZK library, and then run the program to generate the
+statement. For example, the following program corresponds to a ZK
+statement that the prover knows a number `x` such that `x + x * x` is
+30:
+
+```python
+from picozk import *
+
+with PicoZKCompiler('picozk_test'):
+    x = SecretInt(5)
+    z = x + x * x
+    assert0(z + -30)
+```
+
+Running this program results in three files:
+- `picozk_test.rel`: the *relation*, which is the statement itself
+  (known to both prover and verifier)
+- `picozk_test.type0.ins`: the *instance*, which holds public
+  information (known to both prover and verifier, always empty in our
+  setting)
+- `picozk_test.type0.wit`: the *witness*, which holds secret
+  information (known only to prover)
+
+These files can be used to generate a ZK proof using any backend
+compatible with the [SIEVE intermediate representation
+(IR)](https://stealthsoftwareinc.github.io/wizkit-blog/2021/09/20/introducing-the-sieve-ir.html) -
+for example, the [EMP Toolkit](https://github.com/emp-toolkit/emp-ir).
+
+## Licensing and Acknowledgments
+
+PicoZK is made available under the MIT License.
+
+DISTRIBUTION A: Approved for Public Release. Distribution is
+Unlimited. This material is based upon work supported by DARPA under
+Contract No. HR001120C0087 and by the Broad Agency Announcement
+Program and the Cold Regions Research and Engineering Laboratory
+(ERDC-CRREL) under Contract W913E521C0003. Any opinions, findings and
+conclusions or recommendations expressed in this material are those of
+the author(s) and do not necessarily reflect the views of DARPA or
+ERDC-CRREL.
