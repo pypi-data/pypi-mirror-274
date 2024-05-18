@@ -1,0 +1,8 @@
+README.md
+setup.py
+ntdgotv_langtools/__init__.py
+ntdgotv_langtools/main.py
+ntdgotv_langtools.egg-info/PKG-INFO
+ntdgotv_langtools.egg-info/SOURCES.txt
+ntdgotv_langtools.egg-info/dependency_links.txt
+ntdgotv_langtools.egg-info/top_level.txt
