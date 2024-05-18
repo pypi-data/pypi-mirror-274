@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+requisitorz/__init__.py
+requisitorz/main.py
+requisitorz.egg-info/PKG-INFO
+requisitorz.egg-info/SOURCES.txt
+requisitorz.egg-info/dependency_links.txt
+requisitorz.egg-info/requires.txt
+requisitorz.egg-info/top_level.txt
