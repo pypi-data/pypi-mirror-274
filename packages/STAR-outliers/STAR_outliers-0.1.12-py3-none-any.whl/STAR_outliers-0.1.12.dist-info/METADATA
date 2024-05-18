@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: STAR_outliers
+Version: 0.1.12
+Requires-Python: >=3.6,<=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: scipy
+Requires-Dist: mock
+
+STAR_outliers (Skew and Tail-heaviness Adjusted Removal of outliers) is an open source python package that determines which points are outliers relative to their distributions shapes. An exponential tail fit is used to determine outlier status if the distribution behaves in a sufficiently exponential-like manner. Otherwise, the data is transformed and fitted to a four parameteter tukey distribution as described in the paper titled 'Outlier identification for skewed and/or heavy-tailed unimodal multivariate distributions'. 
+
+please visit the [github page](https://github.com/EpistasisLab/STAR_outliers) for more information.
