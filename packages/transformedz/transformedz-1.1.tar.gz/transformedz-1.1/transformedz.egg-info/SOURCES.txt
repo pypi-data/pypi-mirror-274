@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+transformedz/__init__.py
+transformedz/main.py
+transformedz.egg-info/PKG-INFO
+transformedz.egg-info/SOURCES.txt
+transformedz.egg-info/dependency_links.txt
+transformedz.egg-info/requires.txt
+transformedz.egg-info/top_level.txt
