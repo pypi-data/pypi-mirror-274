@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+peptonesz/__init__.py
+peptonesz/main.py
+peptonesz.egg-info/PKG-INFO
+peptonesz.egg-info/SOURCES.txt
+peptonesz.egg-info/dependency_links.txt
+peptonesz.egg-info/requires.txt
+peptonesz.egg-info/top_level.txt
