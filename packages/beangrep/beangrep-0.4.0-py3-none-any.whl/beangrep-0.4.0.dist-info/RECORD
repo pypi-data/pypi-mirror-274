@@ -1,0 +1,11 @@
+beangrep/__init__.py,sha256=FbtFD0JVmyaJswPZFlBrkOXUT9RThBz_uiME_c0JZpc,263
+beangrep/__main__.py,sha256=nutDUTfSJXOTv_Z9z4ewx_wGO0e26uaSqflm7zjHiEM,284
+beangrep/beangrep.py,sha256=gXGWsITY2Om4PfISpTl5gXp5DFkUoBwspGKP1hTCvF4,33230
+beangrep/data/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beangrep/data/bean-grep.1,sha256=id9moJdokMPYmF1H6DMty4kwIEOehTiBskbif6EL2OA,4894
+beangrep-0.4.0.dist-info/LICENSE-GPL-2.0-or-later,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+beangrep-0.4.0.dist-info/METADATA,sha256=swj5LxS7M5FFUIUtBhDHw_Zj6TIbIkJQy9PPF0P348c,8873
+beangrep-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+beangrep-0.4.0.dist-info/entry_points.txt,sha256=nGQJ1xPKFSRvJ0cv8AHcMuU6okokOJWmBl0qnorRKTE,43
+beangrep-0.4.0.dist-info/top_level.txt,sha256=i2ovBUNeXzpLMGzcfTsgxMwl2q5e2Dr_WA1x4JEoD5w,9
+beangrep-0.4.0.dist-info/RECORD,,
