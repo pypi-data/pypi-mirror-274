@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+itineratedz/__init__.py
+itineratedz/main.py
+itineratedz.egg-info/PKG-INFO
+itineratedz.egg-info/SOURCES.txt
+itineratedz.egg-info/dependency_links.txt
+itineratedz.egg-info/requires.txt
+itineratedz.egg-info/top_level.txt
