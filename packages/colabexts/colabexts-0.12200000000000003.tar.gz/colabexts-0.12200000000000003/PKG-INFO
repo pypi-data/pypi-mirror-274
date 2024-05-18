@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: colabexts
+Version: 0.12200000000000003
+Summary: Some simple Utilities
+Home-page: https://github.com/meyers007/colabext.git
+Author: Code Red
+Author-email: meyers@geospaces.org
+License: Apache License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: matplotlib
+Requires-Dist: openpyxl
