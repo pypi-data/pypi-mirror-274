@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+authoressesz/__init__.py
+authoressesz/main.py
+authoressesz.egg-info/PKG-INFO
+authoressesz.egg-info/SOURCES.txt
+authoressesz.egg-info/dependency_links.txt
+authoressesz.egg-info/requires.txt
+authoressesz.egg-info/top_level.txt
