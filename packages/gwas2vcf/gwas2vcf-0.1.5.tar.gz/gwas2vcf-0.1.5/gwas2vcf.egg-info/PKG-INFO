@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gwas2vcf
+Version: 0.1.5
+Summary: A tool to convert GWAS TSV files to VCF format
+Home-page: https://github.com/VJ-Ulaganathan/gwas2vcf/
+Author: Pr (France). Dr. rer. nat. Vijay K. ULAGANATHAN
+Author-email: vijay-kumar.ulaganathan@uni-tuebingen.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: tqdm
+
+The tool gwas2vcf can convert GWAS results files, like the .tsv.bgz files from UK Biobank studies, into the standard VCF 4.0 format.
+
+For best results, it's recommended to create a virtual environment with Python 3.11.6, as that's the version this tool was tested with.
+
+USAGE:: $ gwas2vcf [-h] -i INPUT -o OUTPUT
+
+Convert GWAS file VCF format.
+
+options:
+  -h, --help   show this help message and exit
+  -v, --version
+
