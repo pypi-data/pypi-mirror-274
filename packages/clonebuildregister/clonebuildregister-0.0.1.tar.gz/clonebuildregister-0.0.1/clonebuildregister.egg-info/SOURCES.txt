@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.py
+clonebuildregister/__init__.py
+clonebuildregister/__main__.py
+clonebuildregister/build_image.py
+clonebuildregister/clone_repo.py
+clonebuildregister/clonebuildregister.py
+clonebuildregister/exceptions.py
+clonebuildregister/register_image.py
+clonebuildregister.egg-info/PKG-INFO
+clonebuildregister.egg-info/SOURCES.txt
+clonebuildregister.egg-info/dependency_links.txt
+clonebuildregister.egg-info/not-zip-safe
+clonebuildregister.egg-info/requires.txt
+clonebuildregister.egg-info/top_level.txt

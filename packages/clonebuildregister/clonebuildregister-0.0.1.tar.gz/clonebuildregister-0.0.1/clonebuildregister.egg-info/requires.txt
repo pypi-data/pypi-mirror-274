@@ -1,0 +1,6 @@
+docker
+gitpython
+github3.py
+python-dotenv
+google-cloud-artifact-registry
+grpcio-status
