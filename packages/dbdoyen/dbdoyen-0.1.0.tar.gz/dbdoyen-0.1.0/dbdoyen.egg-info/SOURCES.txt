@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dbdoyen.egg-info/PKG-INFO
+dbdoyen.egg-info/SOURCES.txt
+dbdoyen.egg-info/dependency_links.txt
+dbdoyen.egg-info/top_level.txt
