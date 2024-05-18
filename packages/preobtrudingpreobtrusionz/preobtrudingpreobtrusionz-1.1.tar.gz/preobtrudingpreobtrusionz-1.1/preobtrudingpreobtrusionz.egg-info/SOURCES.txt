@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+preobtrudingpreobtrusionz/__init__.py
+preobtrudingpreobtrusionz/main.py
+preobtrudingpreobtrusionz.egg-info/PKG-INFO
+preobtrudingpreobtrusionz.egg-info/SOURCES.txt
+preobtrudingpreobtrusionz.egg-info/dependency_links.txt
+preobtrudingpreobtrusionz.egg-info/requires.txt
+preobtrudingpreobtrusionz.egg-info/top_level.txt
