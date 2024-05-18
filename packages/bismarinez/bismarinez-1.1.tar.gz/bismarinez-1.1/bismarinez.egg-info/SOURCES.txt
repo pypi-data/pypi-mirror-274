@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bismarinez/__init__.py
+bismarinez/main.py
+bismarinez.egg-info/PKG-INFO
+bismarinez.egg-info/SOURCES.txt
+bismarinez.egg-info/dependency_links.txt
+bismarinez.egg-info/requires.txt
+bismarinez.egg-info/top_level.txt
