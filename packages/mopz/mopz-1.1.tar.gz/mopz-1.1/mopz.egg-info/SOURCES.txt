@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mopz/__init__.py
+mopz/main.py
+mopz.egg-info/PKG-INFO
+mopz.egg-info/SOURCES.txt
+mopz.egg-info/dependency_links.txt
+mopz.egg-info/requires.txt
+mopz.egg-info/top_level.txt
