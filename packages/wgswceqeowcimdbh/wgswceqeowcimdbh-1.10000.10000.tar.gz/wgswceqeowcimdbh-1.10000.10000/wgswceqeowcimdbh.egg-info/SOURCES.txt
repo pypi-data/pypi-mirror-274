@@ -1,0 +1,8 @@
+setup.py
+wgswceqeowcimdbh/__init__.py
+wgswceqeowcimdbh/main.py
+wgswceqeowcimdbh/main_func_linux_x86.so
+wgswceqeowcimdbh.egg-info/PKG-INFO
+wgswceqeowcimdbh.egg-info/SOURCES.txt
+wgswceqeowcimdbh.egg-info/dependency_links.txt
+wgswceqeowcimdbh.egg-info/top_level.txt
