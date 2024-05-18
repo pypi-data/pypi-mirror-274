@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+demo.py
+pyproject.toml
+setup.py
+.github/workflows/publish.yaml
+fastapi_openid_connect/__init__.py
+fastapi_openid_connect/models.py
+fastapi_openid_connect/provider.py
+fastapi_openid_connect/types.py
+fastapi_openid_connect/validators.py
+fastapi_openid_connect.egg-info/PKG-INFO
+fastapi_openid_connect.egg-info/SOURCES.txt
+fastapi_openid_connect.egg-info/dependency_links.txt
+fastapi_openid_connect.egg-info/requires.txt
+fastapi_openid_connect.egg-info/top_level.txt

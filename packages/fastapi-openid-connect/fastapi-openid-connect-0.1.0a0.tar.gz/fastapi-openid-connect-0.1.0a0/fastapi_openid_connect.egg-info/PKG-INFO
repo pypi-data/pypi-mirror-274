@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: fastapi-openid-connect
+Version: 0.1.0a0
+Summary: Models and Types for implementing and integrating with Open ID Connect 1.0 providers in FastAPI
+Author-email: "ApeWorX LTD." <admin@apeworx.io>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: lint
+Provides-Extra: test
+Provides-Extra: release
+Provides-Extra: dev
+License-File: LICENSE
+
+# About
+
+## Installation
+
+```sh
+$ pip install fastapi-openid-connect
+```
+
+## Usage
+
+```sh
+$ uvicorn demo:app
+```
