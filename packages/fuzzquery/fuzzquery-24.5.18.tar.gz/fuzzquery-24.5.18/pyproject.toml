@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fuzzquery"
+version = "24.5.18"
+description = "A lightweight package for performing fuzzy string matching with a very simple token system"
+dependencies = ["regex>=2024.5.15",]
+keywords = ["fuzzy", "string", "matching", "token", "regex"]
+authors = [{ name="Oyster Shucker", email="onemadgypsy@gmail.com" },]
+maintainers = [{ name="Oyster Shucker", email="onemadgypsy@gmail.com" },]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/OneMadGypsy/fuzzquery"
+Issues = "https://github.com/OneMadGypsy/fuzzquery/issues"
