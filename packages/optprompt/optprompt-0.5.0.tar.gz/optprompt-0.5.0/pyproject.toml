@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "optprompt"
+version = "0.5.0"
+authors = [
+  { name="Dylan Stephano-Shachter", email="dylan@theone.ninja" }
+]
+description = "A prompting option parser"
+readme = "README.md"
+requires-python = ">=3.2"  # Required for callable()
+classifiers = [
+  "Programming Language :: Python",
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+  "Development Status :: 4 - Beta",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/dstathis/optprompt"
+"Bug Tracker" = "https://github.com/dstathis/optprompt/issues"

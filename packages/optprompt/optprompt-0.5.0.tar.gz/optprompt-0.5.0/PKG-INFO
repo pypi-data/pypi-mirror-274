@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: optprompt
+Version: 0.5.0
+Summary: A prompting option parser
+Project-URL: Homepage, https://github.com/dstathis/optprompt
+Project-URL: Bug Tracker, https://github.com/dstathis/optprompt/issues
+Author-email: Dylan Stephano-Shachter <dylan@theone.ninja>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+
+# Optprompt
+A prompting option parser
+
+## Example
+
+```python
+import optprompt
+
+parser = optprompt.OptionPrompter(config_files=['./example.toml'])
+parser.add_argument('-n', '--name', prompt='What is your name')
+parser.add_argument('-r', '--race', prompt='What is your race', default='elf')
+parser.add_argument('-e', '--edition')
+opts = parser.parse_args()
+print(opts)
+```
+
+With the config file
+
+```
+[defaults]
+edition = '3.5'
+```
+
+Will produce the following output
+
+```
+(venv) [dylan@voyager examples]$ PYTHONPATH=$(pwd)/.. python example.py
+What is your name : Bob
+What is your race [elf]:
+Namespace(edition='3.5', name='Bob', race='elf')
+```
