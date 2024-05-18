@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+preexcludedz/__init__.py
+preexcludedz/main.py
+preexcludedz.egg-info/PKG-INFO
+preexcludedz.egg-info/SOURCES.txt
+preexcludedz.egg-info/dependency_links.txt
+preexcludedz.egg-info/requires.txt
+preexcludedz.egg-info/top_level.txt
