@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unglorifyz/__init__.py
+unglorifyz/main.py
+unglorifyz.egg-info/PKG-INFO
+unglorifyz.egg-info/SOURCES.txt
+unglorifyz.egg-info/dependency_links.txt
+unglorifyz.egg-info/requires.txt
+unglorifyz.egg-info/top_level.txt
