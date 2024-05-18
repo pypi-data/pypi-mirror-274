@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+proangiospermicz/__init__.py
+proangiospermicz/main.py
+proangiospermicz.egg-info/PKG-INFO
+proangiospermicz.egg-info/SOURCES.txt
+proangiospermicz.egg-info/dependency_links.txt
+proangiospermicz.egg-info/requires.txt
+proangiospermicz.egg-info/top_level.txt
