@@ -1,0 +1,8 @@
+celery_debug/__init__.py,sha256=qjr2bTCE6aNNg4thAS9eoM1YWaU65xXRFYRT-DvRlKE,110
+celery_debug/tasks.py,sha256=GDBcmZf4ptyX3JpFkvBfRQ2_mDkuNeh5i263YtYTXRg,397
+celery_debug/utils.py,sha256=pntQAgOM0oKLXkh_4LtTy3uYUKy9KFynGRNBmJSGmKI,1483
+celery_debug-0.1.1.dist-info/LICENSE,sha256=UIp30ue1HZit7tMmSK0SS3swJBqOcLLnLJn5LY5YdNE,1036
+celery_debug-0.1.1.dist-info/METADATA,sha256=kP3tVK2jCN6ptlXqvsE2I9rhn4aQhvWsTgzhGePq8eo,1587
+celery_debug-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+celery_debug-0.1.1.dist-info/top_level.txt,sha256=ZKw3OwNCqEmJLSXSfAUKzeBEq8ukN2cXW2PWEla1BcI,13
+celery_debug-0.1.1.dist-info/RECORD,,
