@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+compassesz/__init__.py
+compassesz/main.py
+compassesz.egg-info/PKG-INFO
+compassesz.egg-info/SOURCES.txt
+compassesz.egg-info/dependency_links.txt
+compassesz.egg-info/requires.txt
+compassesz.egg-info/top_level.txt
