@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: nmuwd
+Version: 0.0.8
+Summary: New Mexico Water Data Integration Engine
+Home-page: https://github.com/DataIntegrationGroup/PyWeaver
+Author: Jake Ross
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: httpx
+Requires-Dist: geopandas
+Requires-Dist: frost_sta_client
+
+# New Mexico Unified Water Data: Data Integration Engine
+
+This package provides a command line interface to New Mexico Water Data Initiaive's data integration engine.
+Data Integration Engine. This tool is used to integrate the water data from multiple sources.
+
+
+## Sources
+ - Bureau of Reclamation
+ - USGS (NWIS)
+ - ST2 (NMWDI)
+   - Pecos Valley Artesian Conservancy District
+   - Elephant Butte Irrigation District
+ - OSE Roswell District Office
+ - ISC Seven Rivers
+ - New Mexico Bureau of Geology and Mineral Resources (AMP)
+ 
+
+## Installation
+
+```bash
+pip install nmuwd
+```
+
+## Usage
+
+```bash
+weave waterlevels --county eddy
+```
+```bash
+weave analytes TDS --county eddy
+```
+```bash
+weave analytes TDS --county eddy --no-bor
+```
