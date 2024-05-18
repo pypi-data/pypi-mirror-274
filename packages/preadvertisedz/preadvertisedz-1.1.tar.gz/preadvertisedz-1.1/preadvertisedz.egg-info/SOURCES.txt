@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+preadvertisedz/__init__.py
+preadvertisedz/main.py
+preadvertisedz.egg-info/PKG-INFO
+preadvertisedz.egg-info/SOURCES.txt
+preadvertisedz.egg-info/dependency_links.txt
+preadvertisedz.egg-info/requires.txt
+preadvertisedz.egg-info/top_level.txt
