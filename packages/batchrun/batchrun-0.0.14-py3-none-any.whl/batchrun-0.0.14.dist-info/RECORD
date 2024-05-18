@@ -1,0 +1,7 @@
+batchrun/__init__.py,sha256=fLrpCmA4mfPy0eNailfiT5OKY3reWj3MlWbF0vcWyEA,29
+batchrun/cli.py,sha256=LK-utpvgMwkibYFrrgA3xtfV5UxNhvJcN4kE_vOr4-4,8657
+batchrun/spec.py,sha256=y-KNiSKt8yN5M-66OCSJvCs_7Py-OGmvIfHM-SwYmfk,2407
+batchrun-0.0.14.dist-info/METADATA,sha256=tyFWIFH7_ztTAGwzVw5VURM5pYP_XMiim7kn9KAA_A8,2677
+batchrun-0.0.14.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+batchrun-0.0.14.dist-info/entry_points.txt,sha256=zMcDNEl6PzrJmNvPXhpMuBFX3dtsHgDhKqtoyeZAm9A,45
+batchrun-0.0.14.dist-info/RECORD,,
