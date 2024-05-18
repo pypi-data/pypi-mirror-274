@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+limacinesz/__init__.py
+limacinesz/main.py
+limacinesz.egg-info/PKG-INFO
+limacinesz.egg-info/SOURCES.txt
+limacinesz.egg-info/dependency_links.txt
+limacinesz.egg-info/requires.txt
+limacinesz.egg-info/top_level.txt
