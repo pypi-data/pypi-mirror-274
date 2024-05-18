@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: python-gpapi2
+Version: 0.1.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE-APACHE
+License-File: LICENSE-MIT
+Summary: An unofficial Python API that let you search, browse and download Android apps from Google Play Store
+Author: Xiangsong Zeng
+License: MIT OR Apache-2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/zengxs/python-gpapi2
+Project-URL: Bug Tracker, https://github.com/zengxs/python-gpapi2/issues
+
+# python-gplay2
+
+An unofficial Python API that let you search, browse and download Android apps from Google Play Store.
+
+
+
