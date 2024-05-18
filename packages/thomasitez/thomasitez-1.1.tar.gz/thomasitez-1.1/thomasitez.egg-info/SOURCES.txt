@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+thomasitez/__init__.py
+thomasitez/main.py
+thomasitez.egg-info/PKG-INFO
+thomasitez.egg-info/SOURCES.txt
+thomasitez.egg-info/dependency_links.txt
+thomasitez.egg-info/requires.txt
+thomasitez.egg-info/top_level.txt
