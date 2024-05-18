@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pesteredz/__init__.py
+pesteredz/main.py
+pesteredz.egg-info/PKG-INFO
+pesteredz.egg-info/SOURCES.txt
+pesteredz.egg-info/dependency_links.txt
+pesteredz.egg-info/requires.txt
+pesteredz.egg-info/top_level.txt
