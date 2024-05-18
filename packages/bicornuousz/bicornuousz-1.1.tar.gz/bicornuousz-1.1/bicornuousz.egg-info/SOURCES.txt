@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bicornuousz/__init__.py
+bicornuousz/main.py
+bicornuousz.egg-info/PKG-INFO
+bicornuousz.egg-info/SOURCES.txt
+bicornuousz.egg-info/dependency_links.txt
+bicornuousz.egg-info/requires.txt
+bicornuousz.egg-info/top_level.txt
