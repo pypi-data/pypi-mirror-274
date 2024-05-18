@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bauhiniasz/__init__.py
+bauhiniasz/main.py
+bauhiniasz.egg-info/PKG-INFO
+bauhiniasz.egg-info/SOURCES.txt
+bauhiniasz.egg-info/dependency_links.txt
+bauhiniasz.egg-info/requires.txt
+bauhiniasz.egg-info/top_level.txt
