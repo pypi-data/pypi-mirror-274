@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simblotz/__init__.py
+simblotz/main.py
+simblotz.egg-info/PKG-INFO
+simblotz.egg-info/SOURCES.txt
+simblotz.egg-info/dependency_links.txt
+simblotz.egg-info/requires.txt
+simblotz.egg-info/top_level.txt
