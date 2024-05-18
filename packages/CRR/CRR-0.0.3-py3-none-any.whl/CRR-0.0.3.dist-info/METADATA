@@ -1,0 +1,225 @@
+Metadata-Version: 2.1
+Name: CRR
+Version: 0.0.3
+Summary: Tool for doing retention rate analysis
+Author: Areg Hovakimyan, Arutiun Dzhilavyan, Karen Sahakyan, Leonid Sarkisyan, Melik Tigranyan
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.10, <3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: anyio ==4.3.0
+Requires-Dist: appnope ==0.1.4
+Requires-Dist: asttokens ==2.4.1
+Requires-Dist: click ==8.1.7
+Requires-Dist: comm ==0.2.2
+Requires-Dist: debugpy ==1.8.1
+Requires-Dist: decorator ==5.1.1
+Requires-Dist: exceptiongroup ==1.2.0
+Requires-Dist: executing ==2.0.1
+Requires-Dist: Faker ==24.8.0
+Requires-Dist: fastapi ==0.110.1
+Requires-Dist: ghp-import ==2.1.0
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: idna ==3.6
+Requires-Dist: install ==1.3.5
+Requires-Dist: ipykernel ==6.29.4
+Requires-Dist: ipython ==8.23.0
+Requires-Dist: jedi ==0.19.1
+Requires-Dist: Jinja2 ==3.1.3
+Requires-Dist: joblib ==1.4.0
+Requires-Dist: jupyter-client ==8.6.1
+Requires-Dist: jupyter-core ==5.7.2
+Requires-Dist: Markdown ==3.6
+Requires-Dist: MarkupSafe ==2.1.5
+Requires-Dist: matplotlib-inline ==0.1.6
+Requires-Dist: mergedeep ==1.3.4
+Requires-Dist: mkdocs ==1.6.0
+Requires-Dist: mkdocs-get-deps ==0.2.0
+Requires-Dist: nest-asyncio ==1.6.0
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: packaging ==24.0
+Requires-Dist: pandas ==2.2.1
+Requires-Dist: parso ==0.8.4
+Requires-Dist: pathspec ==0.12.1
+Requires-Dist: pexpect ==4.9.0
+Requires-Dist: platformdirs ==4.2.0
+Requires-Dist: prompt-toolkit ==3.0.43
+Requires-Dist: psutil ==5.9.8
+Requires-Dist: ptyprocess ==0.7.0
+Requires-Dist: pure-eval ==0.2.2
+Requires-Dist: pydantic ==2.6.4
+Requires-Dist: pydantic-core ==2.16.3
+Requires-Dist: Pygments ==2.17.2
+Requires-Dist: python-dateutil ==2.9.0.post0
+Requires-Dist: pytz ==2024.1
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: pyyaml-env-tag ==0.1
+Requires-Dist: pyzmq ==25.1.2
+Requires-Dist: scikit-learn ==1.4.1.post1
+Requires-Dist: scipy ==1.13.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: sniffio ==1.3.1
+Requires-Dist: SQLAlchemy ==2.0.29
+Requires-Dist: stack-data ==0.6.3
+Requires-Dist: starlette ==0.37.2
+Requires-Dist: threadpoolctl ==3.4.0
+Requires-Dist: tornado ==6.4
+Requires-Dist: traitlets ==5.14.2
+Requires-Dist: typing-extensions ==4.11.0
+Requires-Dist: tzdata ==2024.1
+Requires-Dist: uvicorn ==0.29.0
+Requires-Dist: watchdog ==4.0.0
+Requires-Dist: wcwidth ==0.2.13
+
+# Mkdocs Weblink: https://areg-hovakimyan.github.io/CRR/
+
+
+# API Documentation
+
+This API is designed to manage customers, products, orders, modeling, and churn rates for a retail business application.
+
+## Setup
+
+Follow these steps to get your API up and running on your local machine:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/areg-hovakimyan/CRR
+    ```
+2. **Move to project directory**
+   ```bash
+   cd CRR
+    ```
+3. **Install required libraries**
+   ```bash
+   pip install -r requirements.txt
+    ```    
+
+3. **Run the Application**
+   ```bash
+   uvicorn run:app 
+    ```       
+
+
+
+### Base URL
+
+All URLs referenced in the documentation have the following base:
+
+http://127.0.0.1:8000/docs
+
+### Customer Endpoints
+
+- **Get Customer Emails by Cluster**
+  - `Get /emails/`
+  - Creates a new customer record.
+  - Swagger UI: [Get Emails by Cluster](http://127.0.0.1:8000/docs#/default/get_customer_emails_by_cluster_customers_cluster__cluster_id__emails_get)
+
+- **Create a Customer**
+  - `POST /customers/`
+  - Creates a new customer record.
+  - Swagger UI: [Create Customer](http://127.0.0.1:8000/docs#/default/create_customer_customers__post)
+
+- **Get a Customer**
+  - `GET /customers/{customer_id}`
+  - Retrieves a customer by ID.
+  - Swagger UI: [Get Customer](http://127.0.0.1:8000/docs#/default/get_customer_customers__customer_id__get)
+
+- **Delete a Customer**
+  - `DELETE /customers/{customer_id}`
+  - Deletes a customer by ID.
+  - Swagger UI: [Delete Customer](http://127.0.0.1:8000/docs#/default/delete_customer_customers__customer_id__delete)
+
+- **Update a Customer**
+  - `PATCH /customers/{customer_id}`
+  - Updates an existing customer.
+  - Swagger UI: [Update Customer](http://127.0.0.1:8000/docs#/default/update_customer_customers__customer_id__patch)
+
+### Product Endpoints
+
+- **Create a Product**
+  - `POST /products/`
+  - Creates a new product record.
+  - Swagger UI: [Create Product](http://127.0.0.1:8000/docs#/default/create_product_products__post)
+
+- **Get a Product**
+  - `GET /products/{product_id}`
+  - Retrieves a product by ID.
+  - Swagger UI: [Get Product](http://127.0.0.1:8000/docs#/default/get_product_products__product_id__get)
+
+- **Delete a Product**
+  - `DELETE /products/{product_id}`
+  - Deletes a product by ID.
+  - Swagger UI: [Delete Product](http://127.0.0.1:8000/docs#/default/delete_product_products__product_id__delete)
+
+- **Update a Product**
+  - `PATCH /products/{product_id}`
+  - Updates an existing product.
+  - Swagger UI: [Update Product](http://127.0.0.1:8000/docs#/default/update_product_products__product_id__patch)
+
+### Order Endpoints
+
+- **Create an Order**
+  - `POST /orders/`
+  - Creates a new order.
+  - Swagger UI: [Create Order](http://127.0.0.1:8000/docs#/default/create_order_orders__post)
+
+- **Get an Order**
+  - `GET /orders/{order_id}`
+  - Retrieves an order by ID.
+  - Swagger UI: [Get Order](http://127.0.0.1:8000/docs#/default/get_order_orders__order_id__get)
+
+- **Delete an Order**
+  - `DELETE /orders/{order_id}`
+  - Deletes an order by ID.
+  - Swagger UI: [Delete Order](http://127.0.0.1:8000/docs#/default/delete_order_orders__order_id__delete)
+
+- **Update an Order**
+  - `PATCH /orders/{order_id}`
+  - Updates an existing order.
+  - Swagger UI: [Update Order](http://127.0.0.1:8000/docs#/default/update_order_orders__order_id__patch)
+
+### Modeling Endpoints
+
+- **Create a Modeling Record**
+  - `POST /modeling/`
+  - Creates a new modeling record for a customer.
+  - Swagger UI: [Create Modeling](http://127.0.0.1:8000/docs#/default/create_modeling_modeling__post)
+
+- **Get a Modeling Record**
+  - `GET /modeling/{customer_id}`
+  - Retrieves a modeling record by customer ID.
+  - Swagger UI: [Get Modeling](http://127.0.0.1:8000/docs#/default/get_modeling_modeling__customer_id__get)
+
+- **Delete a Modeling Record**
+  - `DELETE /modeling/{customer_id}`
+  - Deletes a modeling record by customer ID.
+  - Swagger UI: [Delete Modeling](http://127.0.0.1:8000/docs#/default/delete_modeling_modeling__customer_id__delete)
+
+- **Update a Modeling Record**
+  - `PATCH /modeling/{customer_id}`
+  - Updates an existing modeling record.
+  - Swagger UI: [Update Modeling](http://127.0.0.1:8000/docs#/default/update_modeling_modeling__customer_id__patch)
+
+### Churn Rate Endpoints
+
+- **Create a Churn Rate Record**
+  - `POST /churnrate/`
+  - Creates a new churn rate record.
+  - Swagger UI: [Create Churn Rate](http://127.0.0.1:8000/docs#/default/create_churnrate_churnrate__post)
+
+- **Get a Churn Rate Record**
+  - `GET /churnrate/{risk_level}`
+  - Retrieves a churn rate record by risk level.
+  - Swagger UI: [Get Churn Rate](http://127.0.0.1:8000/docs#/default/get_churnrate_churnrate__risk_level__get)
+
+- **Delete a Churn Rate Record**
+  - `DELETE /churnrate/{risk_level}`
+  - Deletes a churn rate record by risk level.
+  - Swagger UI: [Delete Churn Rate](http://127.0.0.1:8000/docs#/default/delete_churnrate_churnrate__risk_level__delete)
+
+- **Update a Churn Rate Record**
+  - `PATCH /churnrate/{risk_level}`
+  - Updates an existing churn rate record.
+  - Swagger UI: [Update Churn Rate](http://127.0.0.1:8000/docs#/default/update_churnrate_churnrate__risk_level__patch)
