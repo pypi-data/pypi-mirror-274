@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+thyratronz/__init__.py
+thyratronz/main.py
+thyratronz.egg-info/PKG-INFO
+thyratronz.egg-info/SOURCES.txt
+thyratronz.egg-info/dependency_links.txt
+thyratronz.egg-info/requires.txt
+thyratronz.egg-info/top_level.txt
