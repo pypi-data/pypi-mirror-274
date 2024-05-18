@@ -1,0 +1,8 @@
+novnc/__init__.py,sha256=kAeUzZg3XlMPu95CdU68mRuHjtC-iTyn5OldrhhIUng,1859
+novnc/__main__.py,sha256=JwyWw4783oF5AqKqrd2FWGWqUxtu7s_LW1g5FDxxvxA,60
+novnc/resources/novnc_server.zip,sha256=Y_vHbtk-5WHov_jBzTVTCcfcOK8lVMx_G9PkunU8woY,11857305
+novnc-1.0.1.dist-info/METADATA,sha256=cHkH7vXrANM5UbHC01rBd7YQtdQeGRTMMyDeO_YiTrg,2829
+novnc-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+novnc-1.0.1.dist-info/entry_points.txt,sha256=4bMuKSnS1jSRZLc7UgCBR2WkU_6_vHCosUtSPwFHP9A,37
+novnc-1.0.1.dist-info/top_level.txt,sha256=a2fza7JAzFT7nHUlGiKk0x6Jw-wgi6jv6e9zdsDo5AI,6
+novnc-1.0.1.dist-info/RECORD,,
