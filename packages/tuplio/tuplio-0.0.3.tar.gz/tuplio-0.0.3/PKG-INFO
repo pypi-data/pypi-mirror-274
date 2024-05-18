@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tuplio
+Version: 0.0.3
+Summary: tuplio CLI
+Home-page: https://github.com/project-tuplio/tuplio-python-client
+Author: TUPLIO contributors
+Author-email: carloscamachoucv@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Testing
+Description-Content-Type: text/markdown
+
+# (tuplio)
+
+This project is about
+
+

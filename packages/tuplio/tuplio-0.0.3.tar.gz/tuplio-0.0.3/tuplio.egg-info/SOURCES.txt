@@ -1,0 +1,14 @@
+MANIFEST.in
+requirements.txt
+setup.cfg
+setup.py
+tuplio/.pypirc
+tuplio/__init__.py
+tuplio/cli.py
+tuplio/get_banner.py
+tuplio.egg-info/PKG-INFO
+tuplio.egg-info/SOURCES.txt
+tuplio.egg-info/dependency_links.txt
+tuplio.egg-info/entry_points.txt
+tuplio.egg-info/requires.txt
+tuplio.egg-info/top_level.txt
