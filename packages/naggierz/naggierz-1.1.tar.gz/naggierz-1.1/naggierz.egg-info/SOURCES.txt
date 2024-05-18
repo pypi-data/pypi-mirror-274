@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+naggierz/__init__.py
+naggierz/main.py
+naggierz.egg-info/PKG-INFO
+naggierz.egg-info/SOURCES.txt
+naggierz.egg-info/dependency_links.txt
+naggierz.egg-info/requires.txt
+naggierz.egg-info/top_level.txt
