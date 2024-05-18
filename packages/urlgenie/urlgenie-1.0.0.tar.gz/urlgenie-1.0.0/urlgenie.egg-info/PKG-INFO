@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: urlgenie
+Version: 1.0.0
+Summary: Tool to make URL extraction, generalization, validation, and filtration easy.
+Download-URL: https://github.com/bluestero/urlgenie/archive/refs/tags/1.0.0.tar.gz
+Author: Ahmed Khatib
+Author-email: ahmedkhatib99@gmail.com
+Maintainer: Ahmed Khatib
+Maintainer-email: ahmedkhatib99@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/bluestero/urlgenie/blob/main/README.md
+Project-URL: Source, https://github.com/bluestero/urlgenie
+Project-URL: Tracker, https://github.com/bluestero/urlgenie/issues
+Keywords: url-parsing,data-cleaning,data-curation,generalization,data-cleansing,data-processing,data-sanitization,url-generalization
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# URLGENIE
+A Python package to handle URLs flexibly and generalize them based on extensive research to handle URLs in a flexible manner, enhancing script and project development.

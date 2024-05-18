@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+urlgenie/__init__.py
+urlgenie/social_gens.py
+urlgenie/url_gen.py
+urlgenie.egg-info/PKG-INFO
+urlgenie.egg-info/SOURCES.txt
+urlgenie.egg-info/dependency_links.txt
+urlgenie.egg-info/requires.txt
+urlgenie.egg-info/top_level.txt
