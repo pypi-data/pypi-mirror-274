@@ -1,0 +1,15 @@
+cpimerge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpimerge/__main__.py,sha256=S1npqc6CZv_-wW6ODYoJZ2UehelVhi69oDOIFbnAboA,247
+cpimerge/backup.py,sha256=t3pCFV--YMEB7wKUhkbSKdKatRFhX2ztDoeG9Y3SVek,230
+cpimerge/config.py,sha256=j7FYb2-VeC51EKDXeQEwdoKg3jekOWjyQAJasEM38EQ,1019
+cpimerge/descriptions.py,sha256=JqR_trTI4TCSH4P-l0ktLmbG_6oUBJvy_uyrNByByWE,738
+cpimerge/exclusions.py,sha256=7g3p4dGJDw4rro0RP9XDnCU9yR4kRacjGNYKuVxULlc,891
+cpimerge/gui.py,sha256=cCy4biIYZ6osiLSPu1oZPUgfgcDIP10F9W4XjwrkJ1Q,6170
+cpimerge/ical.py,sha256=0KNQ40nKe8qkYexvOPM_WLq26qo3Kgu2tZ8MCVhzA_8,951
+cpimerge/load.py,sha256=i_-fvzrDgovvBUP9rhKs29ZFI_aGkE6-ZPHeaq7jF8Q,3160
+cpimerge/merge.py,sha256=T099WRTlcIme9aGAeNdDLCIZ9jmCgKOOACJu_R4w00U,5684
+cpimerge-0.2.0.dist-info/METADATA,sha256=NVjDqi4l3FkJZcjf_xzn-BLweWou8-na246FOFKoFnI,446
+cpimerge-0.2.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+cpimerge-0.2.0.dist-info/entry_points.txt,sha256=7o9gpwVzU9DJoA91AOZEgWlKyj-8tq3zFfMTvUvs4YI,48
+cpimerge-0.2.0.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+cpimerge-0.2.0.dist-info/RECORD,,
