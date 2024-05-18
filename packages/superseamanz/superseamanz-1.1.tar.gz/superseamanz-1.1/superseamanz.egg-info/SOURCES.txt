@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+superseamanz/__init__.py
+superseamanz/main.py
+superseamanz.egg-info/PKG-INFO
+superseamanz.egg-info/SOURCES.txt
+superseamanz.egg-info/dependency_links.txt
+superseamanz.egg-info/requires.txt
+superseamanz.egg-info/top_level.txt
