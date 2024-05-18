@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+orthotoluicz/__init__.py
+orthotoluicz/main.py
+orthotoluicz.egg-info/PKG-INFO
+orthotoluicz.egg-info/SOURCES.txt
+orthotoluicz.egg-info/dependency_links.txt
+orthotoluicz.egg-info/requires.txt
+orthotoluicz.egg-info/top_level.txt
