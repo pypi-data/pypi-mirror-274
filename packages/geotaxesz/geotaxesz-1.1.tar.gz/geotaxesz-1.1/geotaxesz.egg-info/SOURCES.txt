@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+geotaxesz/__init__.py
+geotaxesz/main.py
+geotaxesz.egg-info/PKG-INFO
+geotaxesz.egg-info/SOURCES.txt
+geotaxesz.egg-info/dependency_links.txt
+geotaxesz.egg-info/requires.txt
+geotaxesz.egg-info/top_level.txt
