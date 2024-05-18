@@ -1,0 +1,8 @@
+README.md
+setup.py
+gsmyexapmle/__init__.py
+gsmyexapmle/main.py
+gsmyexapmle.egg-info/PKG-INFO
+gsmyexapmle.egg-info/SOURCES.txt
+gsmyexapmle.egg-info/dependency_links.txt
+gsmyexapmle.egg-info/top_level.txt
