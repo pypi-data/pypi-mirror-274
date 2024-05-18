@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+brimmeringz/__init__.py
+brimmeringz/main.py
+brimmeringz.egg-info/PKG-INFO
+brimmeringz.egg-info/SOURCES.txt
+brimmeringz.egg-info/dependency_links.txt
+brimmeringz.egg-info/requires.txt
+brimmeringz.egg-info/top_level.txt
