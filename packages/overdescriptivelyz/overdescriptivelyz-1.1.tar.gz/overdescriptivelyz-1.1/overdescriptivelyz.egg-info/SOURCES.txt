@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+overdescriptivelyz/__init__.py
+overdescriptivelyz/main.py
+overdescriptivelyz.egg-info/PKG-INFO
+overdescriptivelyz.egg-info/SOURCES.txt
+overdescriptivelyz.egg-info/dependency_links.txt
+overdescriptivelyz.egg-info/requires.txt
+overdescriptivelyz.egg-info/top_level.txt
