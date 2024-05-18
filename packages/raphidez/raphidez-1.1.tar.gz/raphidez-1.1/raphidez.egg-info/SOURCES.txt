@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+raphidez/__init__.py
+raphidez/main.py
+raphidez.egg-info/PKG-INFO
+raphidez.egg-info/SOURCES.txt
+raphidez.egg-info/dependency_links.txt
+raphidez.egg-info/requires.txt
+raphidez.egg-info/top_level.txt
