@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+matarz/__init__.py
+matarz/main.py
+matarz.egg-info/PKG-INFO
+matarz.egg-info/SOURCES.txt
+matarz.egg-info/dependency_links.txt
+matarz.egg-info/requires.txt
+matarz.egg-info/top_level.txt
