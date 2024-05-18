@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dowsabelz/__init__.py
+dowsabelz/main.py
+dowsabelz.egg-info/PKG-INFO
+dowsabelz.egg-info/SOURCES.txt
+dowsabelz.egg-info/dependency_links.txt
+dowsabelz.egg-info/requires.txt
+dowsabelz.egg-info/top_level.txt
