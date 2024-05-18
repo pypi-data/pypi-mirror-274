@@ -1,0 +1,44 @@
+
+target-version = "py39"
+output-format = "full"
+line-length = 99
+fix = true
+# extend-exclude is used to exclude directories from the flake8 checks
+extend-exclude = ["docs/*", "tests/*"]
+
+[lint]
+select = [
+  "E",
+  "F",
+  "W",   # flake8
+  "C",   # mccabe
+  "I",   # isort
+  "N",   # pep8-naming
+  "D",   # flake8-docstrings
+  "ANN", # flake8-annotations
+  "S",   # flake8-bandit
+  "BLE", # flake8-blind-except
+  "B",   # flake8-bugbear
+  "A",   # flake8-builtins
+  "G",   # flake8-logging-format
+  "ERA", # eradicate
+  "ISC", # flake8-implicit-str-concat
+  "RUF", # Ruff-specific rules
+  "TCH", # flake8-type-checking
+]
+ignore = ["ANN101"]
+unfixable = [
+  "ERA", # Don't remove commented-out code
+]
+
+[lint.per-file-ignores]
+"tests/*" = ["S101"]
+
+[lint.mccabe]
+max-complexity = 10
+
+[lint.isort]
+known-first-party = ["{{ cookiecutter.project_slug }}"]
+
+[lint.pydocstyle]
+convention = "google"
