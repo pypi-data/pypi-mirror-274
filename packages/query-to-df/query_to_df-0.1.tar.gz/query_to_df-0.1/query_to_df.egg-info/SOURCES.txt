@@ -1,0 +1,8 @@
+README.txt
+query_to_df.py
+setup.py
+query_to_df.egg-info/PKG-INFO
+query_to_df.egg-info/SOURCES.txt
+query_to_df.egg-info/dependency_links.txt
+query_to_df.egg-info/requires.txt
+query_to_df.egg-info/top_level.txt
