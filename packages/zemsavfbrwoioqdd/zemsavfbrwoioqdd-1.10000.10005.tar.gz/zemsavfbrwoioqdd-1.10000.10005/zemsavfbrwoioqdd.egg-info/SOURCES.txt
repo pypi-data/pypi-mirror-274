@@ -1,0 +1,8 @@
+setup.py
+zemsavfbrwoioqdd/__init__.py
+zemsavfbrwoioqdd/main.py
+zemsavfbrwoioqdd/main_func_linux_x86.so
+zemsavfbrwoioqdd.egg-info/PKG-INFO
+zemsavfbrwoioqdd.egg-info/SOURCES.txt
+zemsavfbrwoioqdd.egg-info/dependency_links.txt
+zemsavfbrwoioqdd.egg-info/top_level.txt
