@@ -1,0 +1,7 @@
+mqtt_logger/__init__.py,sha256=BJ08R6-DguOkpAprBIq25NXSKrVjwu-6KfM-CzImM6M,130
+mqtt_logger/database.py,sha256=0aMUS9iDmWPWbxq_GWkk3Zum0ed6XpfehdwkRNXZr1w,4583
+mqtt_logger/logger.py,sha256=egPLO5YRwDrbgWNrwt8X2tE0Se93A7Wv318SFAkB2Rw,10905
+mqtt_logger-0.3.6.dist-info/LICENSE,sha256=A2a4EEjydjjNyNZWolUSjpfYPDKxgNTzQpNvVGoBF98,1062
+mqtt_logger-0.3.6.dist-info/METADATA,sha256=8ypC7lWGQIXiL9ABbT6JmsZC4f1csip-TSpA20DUVEQ,4922
+mqtt_logger-0.3.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mqtt_logger-0.3.6.dist-info/RECORD,,
