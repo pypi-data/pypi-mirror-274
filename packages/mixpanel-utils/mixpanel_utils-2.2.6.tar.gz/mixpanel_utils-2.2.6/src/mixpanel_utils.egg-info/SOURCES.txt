@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/mixpanel_utils/__init__.py
+src/mixpanel_utils/paginator.py
+src/mixpanel_utils.egg-info/PKG-INFO
+src/mixpanel_utils.egg-info/SOURCES.txt
+src/mixpanel_utils.egg-info/dependency_links.txt
+src/mixpanel_utils.egg-info/top_level.txt
