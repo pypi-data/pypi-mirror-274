@@ -1,0 +1,2 @@
+[console_scripts]
+NanoMethCluster = NanoMethCluster.cli:main
