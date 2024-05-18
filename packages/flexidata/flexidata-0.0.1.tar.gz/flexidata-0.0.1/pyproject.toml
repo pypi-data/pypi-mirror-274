@@ -1,0 +1,26 @@
+[project]
+name = "flexidata"
+version = "0.0.1"
+authors = [
+  { name="Kalyanakannan Padivasu", email="Kalyanakannan.p@gmail.com" },
+]
+description = "FlexiData is an open-source Python package designed for processing unstructured data."
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["PDF,DOCX document parsing"]
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/kalyanakannan/flexidata"
+Issues = "https://github.com/kalyanakannan/flexidata/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
