@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scrumpz/__init__.py
+scrumpz/main.py
+scrumpz.egg-info/PKG-INFO
+scrumpz.egg-info/SOURCES.txt
+scrumpz.egg-info/dependency_links.txt
+scrumpz.egg-info/requires.txt
+scrumpz.egg-info/top_level.txt
