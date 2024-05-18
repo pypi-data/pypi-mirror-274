@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+morigerousz/__init__.py
+morigerousz/main.py
+morigerousz.egg-info/PKG-INFO
+morigerousz.egg-info/SOURCES.txt
+morigerousz.egg-info/dependency_links.txt
+morigerousz.egg-info/requires.txt
+morigerousz.egg-info/top_level.txt
