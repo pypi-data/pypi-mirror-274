@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+taxeopodz/__init__.py
+taxeopodz/main.py
+taxeopodz.egg-info/PKG-INFO
+taxeopodz.egg-info/SOURCES.txt
+taxeopodz.egg-info/dependency_links.txt
+taxeopodz.egg-info/requires.txt
+taxeopodz.egg-info/top_level.txt
