@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+towheadedz/__init__.py
+towheadedz/main.py
+towheadedz.egg-info/PKG-INFO
+towheadedz.egg-info/SOURCES.txt
+towheadedz.egg-info/dependency_links.txt
+towheadedz.egg-info/requires.txt
+towheadedz.egg-info/top_level.txt
