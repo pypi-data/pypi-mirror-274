@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+grottyz/__init__.py
+grottyz/main.py
+grottyz.egg-info/PKG-INFO
+grottyz.egg-info/SOURCES.txt
+grottyz.egg-info/dependency_links.txt
+grottyz.egg-info/requires.txt
+grottyz.egg-info/top_level.txt
