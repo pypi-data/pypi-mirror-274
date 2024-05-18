@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: query_to_df
+Version: 0.1
+Summary: A function to convert database query results to DataFrame
+Author: Elias Attias
+Author-email: attiaselias@gmail.com
+Requires-Dist: pandas
+Requires-Dist: snowflake.connector
+
