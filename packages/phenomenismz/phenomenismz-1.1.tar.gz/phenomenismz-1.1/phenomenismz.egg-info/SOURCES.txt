@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+phenomenismz/__init__.py
+phenomenismz/main.py
+phenomenismz.egg-info/PKG-INFO
+phenomenismz.egg-info/SOURCES.txt
+phenomenismz.egg-info/dependency_links.txt
+phenomenismz.egg-info/requires.txt
+phenomenismz.egg-info/top_level.txt
