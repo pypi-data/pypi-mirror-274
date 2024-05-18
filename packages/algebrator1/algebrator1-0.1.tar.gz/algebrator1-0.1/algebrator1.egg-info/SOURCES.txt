@@ -1,0 +1,8 @@
+README.md
+setup.py
+algebrator1/__init__.py
+algebrator1/main.py
+algebrator1.egg-info/PKG-INFO
+algebrator1.egg-info/SOURCES.txt
+algebrator1.egg-info/dependency_links.txt
+algebrator1.egg-info/top_level.txt
