@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jungliz/__init__.py
+jungliz/main.py
+jungliz.egg-info/PKG-INFO
+jungliz.egg-info/SOURCES.txt
+jungliz.egg-info/dependency_links.txt
+jungliz.egg-info/requires.txt
+jungliz.egg-info/top_level.txt
