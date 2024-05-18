@@ -1,0 +1,7 @@
+README.md
+setup.py
+lib/org_ds_cdk.egg-info/PKG-INFO
+lib/org_ds_cdk.egg-info/SOURCES.txt
+lib/org_ds_cdk.egg-info/dependency_links.txt
+lib/org_ds_cdk.egg-info/requires.txt
+lib/org_ds_cdk.egg-info/top_level.txt
