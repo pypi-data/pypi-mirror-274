@@ -1,0 +1,60 @@
+site_name: 'Panoramax'
+site_url: https://docs.panoramax.fr
+
+theme:
+  name: material
+  logo: https://gitlab.com/panoramax/gitlab-profile/-/raw/main/images/logo_full.png
+  features:
+    - navigation.footer
+    - navigation.tracking
+    - navigation.sections
+    - search.suggest
+    - search.share
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://mapstodon.space/@panoramax
+      name: Panoramax on Mapstodon
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/panoramax/
+      name: Panoramax on GitLab
+
+nav:
+  - Home: 'index.md'
+  - 'Installing':
+    - 'Database setup': '07_Database_setup.md'
+    - 'Install classic': '10_Install_Classic.md'
+    - 'Install on Scalingo': '10_Install_Scalingo.md'
+  - Configuration: 
+    - 'Server settings': 11_Server_settings.md
+    - 'How to setup OAuth2': 12_External_Identity_Providers.md
+    - 'Pictures processing': 13_Pictures_processing.md
+  - Running:
+    - 'Running classic': 14_Running_Classic.md
+    - 'Running with Docker': 14_Running_Docker.md
+  - Using:
+    - 'Requirements on the pictures': 15_Pictures_requirements.md
+    - 'Using the API': 16_Using_API.md
+    - 'Blur API': 17_Blur_API.md
+  - Developping:
+    - 'Developping': 19_Develop_server.md
+    - 'STAC Compatibility': 80_STAC_Compatibility.md
+    - 'How to release': 90_Releases.md
