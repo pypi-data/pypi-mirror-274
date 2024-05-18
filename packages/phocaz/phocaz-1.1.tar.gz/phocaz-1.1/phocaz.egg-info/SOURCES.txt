@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+phocaz/__init__.py
+phocaz/main.py
+phocaz.egg-info/PKG-INFO
+phocaz.egg-info/SOURCES.txt
+phocaz.egg-info/dependency_links.txt
+phocaz.egg-info/requires.txt
+phocaz.egg-info/top_level.txt
