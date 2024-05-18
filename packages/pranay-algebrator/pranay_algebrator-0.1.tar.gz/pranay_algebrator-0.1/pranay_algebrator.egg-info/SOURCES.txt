@@ -1,0 +1,8 @@
+README.md
+setup.py
+pranay_algebrator.egg-info/PKG-INFO
+pranay_algebrator.egg-info/SOURCES.txt
+pranay_algebrator.egg-info/dependency_links.txt
+pranay_algebrator.egg-info/top_level.txt
+pranay_algebrator_pro/__init__.py
+pranay_algebrator_pro/main.py
