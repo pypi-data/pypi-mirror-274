@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+autostarter/__init__.py
+autostarter/autostarter.py
+autostarter/util.py
+autostarter.egg-info/PKG-INFO
+autostarter.egg-info/SOURCES.txt
+autostarter.egg-info/dependency_links.txt
+autostarter.egg-info/top_level.txt
+autostarter/systems/__init__.py
+autostarter/systems/darwin.py
+autostarter/systems/linux.py
+autostarter/systems/windows.py
