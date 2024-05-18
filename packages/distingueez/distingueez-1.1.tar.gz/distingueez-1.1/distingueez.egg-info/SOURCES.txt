@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+distingueez/__init__.py
+distingueez/main.py
+distingueez.egg-info/PKG-INFO
+distingueez.egg-info/SOURCES.txt
+distingueez.egg-info/dependency_links.txt
+distingueez.egg-info/requires.txt
+distingueez.egg-info/top_level.txt
