@@ -1,0 +1,6 @@
+edx-drf-extensions
+rules<4.0
+celery
+Django<5.0
+attrs
+djangorestframework<4.0
