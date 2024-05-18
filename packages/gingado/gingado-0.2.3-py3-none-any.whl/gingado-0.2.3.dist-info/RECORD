@@ -1,0 +1,16 @@
+gingado/__init__.py,sha256=o4ScPsx3ebE9pX-fF55Y4NZwE-gZl1putS6aE2pTVtI,23
+gingado/augmentation.py,sha256=qGt3J3RI5QHHOTzBm8SvuK-Bubw8tvmLBEo_unfQkmk,7064
+gingado/benchmark.py,sha256=DcdRFtJ36aOhzNqt8L5jvv086uKvUmIim6EVAoGjF0Y,11593
+gingado/datasets.py,sha256=7dfTpg3DCUa3QjvyAq16IQl_LmS1agVJXTsZ6ud8YKE,12554
+gingado/estimators.py,sha256=LczL1iX7kEOt85SOkbBoJxeh_2SlIMkWEjdOgenFjaY,13162
+gingado/internals.py,sha256=PuZT80FGwqh-Be6DCVvoP-PMIiUvEjW6NSEpDhC8VrE,6130
+gingado/model_documentation.py,sha256=z_i5tQlR6UigSpwU8VVU1j7IpV0LW2b-i-VHCIrxvSQ,15766
+gingado/settings.py,sha256=jPO5qMKxCt9q0GHf3cuN7UqqErnuYlqYf2vyFjA_4qU,828
+gingado/utils.py,sha256=cwGC7aZWFnxfhD18JxUys95GTIVVro2b0SZmUcdLhDs,6415
+gingado/data/GrowthData.mat,sha256=-hU6nfTj7eCYgsGG76v07-yT7rMspdy0FrPghR5gwdI,24145
+gingado/data/dataset_BarroLee_1994.csv,sha256=KtS9aIF2pAc6phq9dUwaIZkuq7zer9KlFPonjBl7R6M,45016
+gingado-0.2.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gingado-0.2.3.dist-info/METADATA,sha256=R1gW1ZTShAEFaIz710aja_QNLM76slJpe68OKF54dsE,6093
+gingado-0.2.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gingado-0.2.3.dist-info/top_level.txt,sha256=e69SculYItaz4Z00maoM8VV9Q4Zx822pjvO46iCqLyY,8
+gingado-0.2.3.dist-info/RECORD,,
