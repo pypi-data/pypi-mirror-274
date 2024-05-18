@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+holdoversz/__init__.py
+holdoversz/main.py
+holdoversz.egg-info/PKG-INFO
+holdoversz.egg-info/SOURCES.txt
+holdoversz.egg-info/dependency_links.txt
+holdoversz.egg-info/requires.txt
+holdoversz.egg-info/top_level.txt
