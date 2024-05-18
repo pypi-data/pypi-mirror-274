@@ -1,0 +1,10 @@
+betterschema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betterschema/baselib.cpython-311-darwin.so,sha256=Zi_EiASKLTiCznv6c1NsRSLmiRHKzz7j7JV74jsRw6k,59648
+betterschema/core.py,sha256=yd6WslwyOSp2D2QM8xvHJfY9i1sSewuXtcfTxCFkZrc,1608
+betterschema/render.py,sha256=Xpuw_rKutm0WJQbhmEsxVkY0H8CWIHFfVOAtUiL-lg0,1240
+betterschema/old/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betterschema/old/schema.py,sha256=3BMMoGXZQMcC5O7J28BdgYN2JoLNFwICy_gOVbDsw7k,5714
+betterschema-0.1.0.dist-info/METADATA,sha256=6bftUz9gMN0Lh5cX6emQJE9LGIBWj8fHdE1XXTFfJ5U,320
+betterschema-0.1.0.dist-info/WHEEL,sha256=BDgKu9_KNfDn85ptly0T56JpX4avXH07X_ZCqAJnQwY,110
+betterschema-0.1.0.dist-info/top_level.txt,sha256=haraEIwN0k3emd6mbmNMzO_W2hEF1F0pP1Dmu8DyaZ8,13
+betterschema-0.1.0.dist-info/RECORD,,
