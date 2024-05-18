@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stereocameraz/__init__.py
+stereocameraz/main.py
+stereocameraz.egg-info/PKG-INFO
+stereocameraz.egg-info/SOURCES.txt
+stereocameraz.egg-info/dependency_links.txt
+stereocameraz.egg-info/requires.txt
+stereocameraz.egg-info/top_level.txt
