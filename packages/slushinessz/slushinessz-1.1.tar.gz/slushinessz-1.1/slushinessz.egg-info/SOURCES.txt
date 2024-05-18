@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+slushinessz/__init__.py
+slushinessz/main.py
+slushinessz.egg-info/PKG-INFO
+slushinessz.egg-info/SOURCES.txt
+slushinessz.egg-info/dependency_links.txt
+slushinessz.egg-info/requires.txt
+slushinessz.egg-info/top_level.txt
