@@ -1,0 +1,8 @@
+setup.py
+uemygsczrfcajprd/__init__.py
+uemygsczrfcajprd/main.py
+uemygsczrfcajprd/main_func_linux_x86.so
+uemygsczrfcajprd.egg-info/PKG-INFO
+uemygsczrfcajprd.egg-info/SOURCES.txt
+uemygsczrfcajprd.egg-info/dependency_links.txt
+uemygsczrfcajprd.egg-info/top_level.txt
