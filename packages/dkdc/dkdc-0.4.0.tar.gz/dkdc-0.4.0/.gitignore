@@ -1,0 +1,20 @@
+.env
+.venv
+venv
+data
+dist
+target
+.streamlit/secrets.toml
+*.ddb*
+temp.py
+temp.md
+error.md
+*.png
+test.csv
+example.sh
+pgns
+
+# rusty
+Cargo.lock
+
+*api-rs
