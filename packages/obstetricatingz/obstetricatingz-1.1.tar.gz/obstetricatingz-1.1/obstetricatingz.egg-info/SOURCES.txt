@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+obstetricatingz/__init__.py
+obstetricatingz/main.py
+obstetricatingz.egg-info/PKG-INFO
+obstetricatingz.egg-info/SOURCES.txt
+obstetricatingz.egg-info/dependency_links.txt
+obstetricatingz.egg-info/requires.txt
+obstetricatingz.egg-info/top_level.txt
