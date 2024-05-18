@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: kvalchemy
+Version: 0.0.2
+Summary: A project for kvalchemy
+Author-email: csm10495 <csm10495@gmail.com>
+License: MIT License
+Project-URL: homepage, https://github.com/csm10495/kvalchemy
+Project-URL: repository, https://github.com/csm10495/kvalchemy
+Project-URL: documentation, https://csm10495.github.io/kvalchemy
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# kvalchemy
+
+A repo for kvalchemy
