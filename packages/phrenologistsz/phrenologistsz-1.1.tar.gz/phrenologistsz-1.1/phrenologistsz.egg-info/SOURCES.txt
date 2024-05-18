@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+phrenologistsz/__init__.py
+phrenologistsz/main.py
+phrenologistsz.egg-info/PKG-INFO
+phrenologistsz.egg-info/SOURCES.txt
+phrenologistsz.egg-info/dependency_links.txt
+phrenologistsz.egg-info/requires.txt
+phrenologistsz.egg-info/top_level.txt
