@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: aggregate-root
+Version: 0.0.1
+Summary: A small Python library for defining domain-driven design aggregates and domain events.
+Project-URL: Homepage, https://github.com/willemse-and-co/aggregate-root
+Project-URL: Issues, https://github.com/willemse-and-co/aggregate-root/issues
+Author-email: Jeremy Willemse <jeremy@willemse.co>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Aggregate Root
+
+The `aggregate-root` library provides a simple abstract class for defining Domain-Driven Design (DDD) aggregates in your Python projects.
