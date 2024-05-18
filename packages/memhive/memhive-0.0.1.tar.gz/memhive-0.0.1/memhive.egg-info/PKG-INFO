@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: memhive
+Version: 0.0.1
+Summary: Memory Hive
+Home-page: https://github.com/MagicStack/immutables
+Author: MagicStack Inc
+Author-email: hello@magic.io
+License: Apache License, Version 2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Provides: memhive
+Requires-Python: >=3.12
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: flake8~=5.0.4; extra == "test"
+Requires-Dist: pycodestyle~=2.9.1; extra == "test"
+Requires-Dist: mypy==0.971; extra == "test"
+Requires-Dist: pytest~=6.2.4; extra == "test"
