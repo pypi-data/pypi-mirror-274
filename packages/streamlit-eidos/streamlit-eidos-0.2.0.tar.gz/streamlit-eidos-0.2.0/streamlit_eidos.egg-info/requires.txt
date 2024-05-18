@@ -1,0 +1,2 @@
+streamlit>=1.2
+oceanum[eidos]>=0.1.0

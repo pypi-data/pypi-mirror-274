@@ -1,0 +1,4 @@
+include src/streamlit_eidos/frontend/dist/index.html
+include src/streamlit_eidos/frontend/dist/*
+include README.md
+include LICENSE
