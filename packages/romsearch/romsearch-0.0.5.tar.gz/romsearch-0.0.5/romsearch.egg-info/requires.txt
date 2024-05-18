@@ -1,0 +1,12 @@
+colorlog
+discordwebhook
+numpy
+packaging
+pathvalidate
+PySide6
+pyyaml
+xmltodict
+
+[docs]
+sphinx-automodapi
+sphinx-rtd-theme
