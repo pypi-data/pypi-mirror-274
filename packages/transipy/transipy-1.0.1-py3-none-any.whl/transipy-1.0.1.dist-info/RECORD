@@ -1,0 +1,11 @@
+transipy/__init__.py,sha256=iJZi1IjZnbrhwF5J8O6JnAHSGiUsI3uxWiA_4Hg9XPM,30
+transipy/main.py,sha256=vqDg8zFrRaA2PeW40W8EiN8gA2RBvYaXAkAch_-x7wQ,5422
+transipy/trans_helper.py,sha256=pjLSMyQjcmTzBAidAx9WFduin4iSCKR4ao-lXQ5pJH0,5405
+transipy/translator.py,sha256=vqDg8zFrRaA2PeW40W8EiN8gA2RBvYaXAkAch_-x7wQ,5422
+transipy/utils.py,sha256=YWGpqKlweykwkJZOwKUbeY7NptHH0jBHyk8JSbhGvXU,1327
+transipy-1.0.1.dist-info/LICENSE,sha256=OwvMprHdav1DqsfNksoM0nHCaDGYyzPre1do1Q-UL2E,1064
+transipy-1.0.1.dist-info/METADATA,sha256=Bp-Iy4zeQ4kX6k9XyrdSorhCuPwXMv6wCo52ZU4sFKQ,9863
+transipy-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+transipy-1.0.1.dist-info/entry_points.txt,sha256=uAG8fCEhpjNeCzry8ecKBPGa3UjM3fPSHteRTiA0Stc,43
+transipy-1.0.1.dist-info/top_level.txt,sha256=dncMXmWWn46to5Y1xfBc604NPibQknnCfbe5KPJeqeA,9
+transipy-1.0.1.dist-info/RECORD,,
