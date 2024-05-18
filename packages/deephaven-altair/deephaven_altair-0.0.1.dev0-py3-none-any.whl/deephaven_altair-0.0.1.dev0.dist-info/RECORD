@@ -1,0 +1,12 @@
+deephaven_altair/__init__.py,sha256=PmDXk-J7OYeTrLcPlOPf-DHUiR_IX7W8dWC9GrPBFaU,115
+deephaven_altair/deephaven_altair_type.py,sha256=KaWpXFvkelkdlhjmwUYDIT90A2b8GonQm0DS5ODd3SU,3132
+deephaven_altair/js_plugin.py,sha256=rtbCneQszG5CsLohpenv0u-6JJlXYM1nes7h31zEeQY,757
+deephaven_altair/register.py,sha256=4Kq9zQns-Fhl2V2yzeaNgCTvPvMb62V4kI287kzZtxk,957
+deephaven_altair/_js/package.json,sha256=Dc2o49uRF5zuvV1EdVZDkJGt6NY07Lk3J5_oxpYOaww,1091
+deephaven_altair/_js/dist/index.js,sha256=vfmOxYXZ_z9M6W9RRLUVxKztikpXH6x7PfUTzhxgxw8,1861908
+deephaven_altair-0.0.1.dev0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+deephaven_altair-0.0.1.dev0.dist-info/METADATA,sha256=j5--kfiEwAvqLmx0ckKjRmBwWQRewJy62Yz-U0iHJ7g,2133
+deephaven_altair-0.0.1.dev0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+deephaven_altair-0.0.1.dev0.dist-info/entry_points.txt,sha256=ZrxI3KcO5OK6uvZcOtJUXcPeA8RnR2H9r5VqOWrWTvY,92
+deephaven_altair-0.0.1.dev0.dist-info/top_level.txt,sha256=2B_4w5UiMxrykhjV3zHDsioAo7m847zaQxcX0UF9u6Y,20
+deephaven_altair-0.0.1.dev0.dist-info/RECORD,,
