@@ -1,0 +1,8 @@
+README.md
+setup.py
+p7_package/__init__.py
+p7_package/main.py
+p7_package.egg-info/PKG-INFO
+p7_package.egg-info/SOURCES.txt
+p7_package.egg-info/dependency_links.txt
+p7_package.egg-info/top_level.txt
