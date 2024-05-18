@@ -1,0 +1,14 @@
+codeinsight_sdk/__init__.py,sha256=uiqFZYPC8v7PD6fCgwWZNLhR4tkMPA3APvYIspUxuRQ,476
+codeinsight_sdk/client.py,sha256=B3vDhp-ZPEXgEu7sj9lYRqpzyWxEbdMGhM9J5SDKiXo,3141
+codeinsight_sdk/exceptions.py,sha256=D7K0IVBOQ8TYyCD0m3IK07w09crFT1taMP9Ayj-FlLg,1018
+codeinsight_sdk/experimental.py,sha256=4SbBG6iGDtrsgLtXnvX076vMW2ogXVmdIrd2Ek-ompA,1405
+codeinsight_sdk/handler.py,sha256=1o8YSVGtu-lagLN3CCIl0QrHI5qXrszqTq0-MORdjec,203
+codeinsight_sdk/handlers/__init__.py,sha256=CAlH3jXViZ9yjt5owr9ujXpbHbR82ztPoGj8RPEh7FY,110
+codeinsight_sdk/handlers/inventory.py,sha256=kADYn2nLA8Zyq4BkdpE2Pwx-Uor1VT_k_7tOo_1O8RQ,1553
+codeinsight_sdk/handlers/project.py,sha256=ywFegrOGVe2swrjvI7sGOYCmZRwRh1JLDN4Ts9R7QFY,7234
+codeinsight_sdk/handlers/report.py,sha256=dgmyspAYKOQz2gSj3cZJTakuoDcUM1CRFcLHDxIAhIQ,1303
+codeinsight_sdk/models.py,sha256=Uo1rxz1IlDTLI-9EmKZkUM54d6MY_TrHAziZaj1Xg9s,1998
+codeinsight_sdk-0.0.12.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+codeinsight_sdk-0.0.12.dist-info/METADATA,sha256=BU3dYqnjI4nJ37c0W2K5o9tOY0JQpl_XsMbBoHLq63g,1728
+codeinsight_sdk-0.0.12.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+codeinsight_sdk-0.0.12.dist-info/RECORD,,

@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: codeinsight-sdk
+Version: 0.0.12
+Summary: A Python client for the Revenera Code Insight
+Home-page: https://github.com/zkarpinski/codeinsight-sdk-python
+License: Apache-2.0
+Keywords: revenera,api,flexera,code insight,sdk
+Author: Zachary Karpinski
+Author-email: 1206496+zkarpinski@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dataclasses-json (>=0.6.3,<0.7.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/zkarpinski/codeinsight-sdk-python
+Description-Content-Type: text/markdown
+
+# codeinsight-sdk
+A Python client for Revenera Code Insight
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+![Python 3.9](https://upload.wikimedia.org/wikipedia/commons/1/1b/Blue_Python_3.9_Shield_Badge.svg)
+[![PyPI](https://img.shields.io/pypi/v/codeinsight-sdk?style=plastic)](https://pypi.org/project/codeinsight-sdk/)
+[![Download Stats](https://img.shields.io/pypi/dm/codeinsight-sdk)](https://pypistats.org/packages/codeinsight-sdk)
+
+## Basic Usage
+
+```python
+import codeinsight_sdk as cia
+client = cia.CodeInsightClient("<your-base-url>","<your-api-token>")
+
+projects = client.projects.all()
+```
+
+
+## References
+* [Code Insight Rest API Documentation](https://codeinsightapi-2023r2.redoc.ly/)
+* [Code Insight Rest API Python Examples](https://github.com/flexera-public/sca-codeinsight-restapi-python/tree/master)
