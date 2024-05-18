@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_mathvista.egg-info/PKG-INFO
+yandex_mathvista.egg-info/SOURCES.txt
+yandex_mathvista.egg-info/dependency_links.txt
+yandex_mathvista.egg-info/top_level.txt
