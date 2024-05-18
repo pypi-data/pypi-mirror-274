@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+markdownz/__init__.py
+markdownz/main.py
+markdownz.egg-info/PKG-INFO
+markdownz.egg-info/SOURCES.txt
+markdownz.egg-info/dependency_links.txt
+markdownz.egg-info/requires.txt
+markdownz.egg-info/top_level.txt
