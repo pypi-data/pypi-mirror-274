@@ -1,0 +1,5 @@
+setup.py
+mypackagetest20240517.egg-info/PKG-INFO
+mypackagetest20240517.egg-info/SOURCES.txt
+mypackagetest20240517.egg-info/dependency_links.txt
+mypackagetest20240517.egg-info/top_level.txt
