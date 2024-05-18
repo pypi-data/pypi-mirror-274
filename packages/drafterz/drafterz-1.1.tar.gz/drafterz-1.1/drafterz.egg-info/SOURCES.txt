@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+drafterz/__init__.py
+drafterz/main.py
+drafterz.egg-info/PKG-INFO
+drafterz.egg-info/SOURCES.txt
+drafterz.egg-info/dependency_links.txt
+drafterz.egg-info/requires.txt
+drafterz.egg-info/top_level.txt
