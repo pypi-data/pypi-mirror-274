@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+swanknessz/__init__.py
+swanknessz/main.py
+swanknessz.egg-info/PKG-INFO
+swanknessz.egg-info/SOURCES.txt
+swanknessz.egg-info/dependency_links.txt
+swanknessz.egg-info/requires.txt
+swanknessz.egg-info/top_level.txt
