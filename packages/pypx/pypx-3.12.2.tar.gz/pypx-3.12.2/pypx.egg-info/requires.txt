@@ -1,0 +1,14 @@
+pudb
+terminaltables
+python-dateutil
+pydicom
+pfmisc
+dask
+retry
+psutil
+python-swiftclient
+pfstate
+webob
+seahash
+aiohttp
+python-chrisclient
