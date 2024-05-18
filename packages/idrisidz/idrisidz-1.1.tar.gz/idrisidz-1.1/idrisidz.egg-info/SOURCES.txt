@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+idrisidz/__init__.py
+idrisidz/main.py
+idrisidz.egg-info/PKG-INFO
+idrisidz.egg-info/SOURCES.txt
+idrisidz.egg-info/dependency_links.txt
+idrisidz.egg-info/requires.txt
+idrisidz.egg-info/top_level.txt
