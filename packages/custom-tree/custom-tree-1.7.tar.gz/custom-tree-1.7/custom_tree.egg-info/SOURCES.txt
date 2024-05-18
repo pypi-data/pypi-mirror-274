@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+custom_tree/__init__.py
+custom_tree/main.py
+custom_tree.egg-info/PKG-INFO
+custom_tree.egg-info/SOURCES.txt
+custom_tree.egg-info/dependency_links.txt
+custom_tree.egg-info/entry_points.txt
+custom_tree.egg-info/top_level.txt
