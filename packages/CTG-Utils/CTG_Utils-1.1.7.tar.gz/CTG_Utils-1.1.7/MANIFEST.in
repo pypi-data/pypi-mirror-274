@@ -1,0 +1,3 @@
+include CTG_Utils/CTG_Func/CTG_RefFiles/*.*
+include make_exe.bat
+include make_venv.bat
