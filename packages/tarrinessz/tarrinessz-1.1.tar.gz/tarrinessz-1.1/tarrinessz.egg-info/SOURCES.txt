@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tarrinessz/__init__.py
+tarrinessz/main.py
+tarrinessz.egg-info/PKG-INFO
+tarrinessz.egg-info/SOURCES.txt
+tarrinessz.egg-info/dependency_links.txt
+tarrinessz.egg-info/requires.txt
+tarrinessz.egg-info/top_level.txt
