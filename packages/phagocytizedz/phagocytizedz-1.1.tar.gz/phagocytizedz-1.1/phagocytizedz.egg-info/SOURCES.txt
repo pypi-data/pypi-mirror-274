@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+phagocytizedz/__init__.py
+phagocytizedz/main.py
+phagocytizedz.egg-info/PKG-INFO
+phagocytizedz.egg-info/SOURCES.txt
+phagocytizedz.egg-info/dependency_links.txt
+phagocytizedz.egg-info/requires.txt
+phagocytizedz.egg-info/top_level.txt
