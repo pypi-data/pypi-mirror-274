@@ -1,0 +1,16 @@
+README.md
+preprocess_images.py
+setup.py
+src/imgproc/__init__.py
+src/imgproc/cpp/Binarization.cpp
+src/imgproc/cpp/Binarization.hpp
+src/imgproc/cpp/LineSegmentation.cpp
+src/imgproc/cpp/LineSegmentation.hpp
+src/imgproc/cpp/Scanner.cpp
+src/imgproc/cpp/Scanner.hpp
+src/imgproc/cpp/main.cpp
+src/text_segmt.egg-info/PKG-INFO
+src/text_segmt.egg-info/SOURCES.txt
+src/text_segmt.egg-info/dependency_links.txt
+src/text_segmt.egg-info/requires.txt
+src/text_segmt.egg-info/top_level.txt
