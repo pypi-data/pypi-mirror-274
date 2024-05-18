@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+garishz/__init__.py
+garishz/main.py
+garishz.egg-info/PKG-INFO
+garishz.egg-info/SOURCES.txt
+garishz.egg-info/dependency_links.txt
+garishz.egg-info/requires.txt
+garishz.egg-info/top_level.txt
