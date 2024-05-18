@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rolledz/__init__.py
+rolledz/main.py
+rolledz.egg-info/PKG-INFO
+rolledz.egg-info/SOURCES.txt
+rolledz.egg-info/dependency_links.txt
+rolledz.egg-info/requires.txt
+rolledz.egg-info/top_level.txt
