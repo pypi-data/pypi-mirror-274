@@ -1,0 +1,65 @@
+name: Lint and test
+
+# Global environment variables for all jobs
+env:
+  POSTGRES_DB: etlhelper
+  POSTGRES_USER: etlhelper_user
+  POSTGRES_PASSWORD: etlhelper_pw
+  TEST_PG_PASSWORD: etlhelper_pw
+
+on:
+  push:
+    paths:
+      - '**.py'
+
+jobs:
+  flake8_py3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install flake8
+        run: pip install flake8
+      - name: Run flake8
+        uses: suo/flake8-github-action@releases/v1
+        with:
+          checkName: 'flake8_py3'
+
+  pytest:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        # Accessed directly from host at localhost, because tests are not
+        # running in a container
+        image: postgis/postgis:15-3.4
+        ports:
+          - 5432:5432
+        # Copy env vars from above - substitution didn't work
+        env:
+          POSTGRES_DB: etlhelper
+          POSTGRES_USER: etlhelper_user
+          POSTGRES_PASSWORD: etlhelper_pw
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    strategy:
+      matrix:
+        python-version: [3.9, '3.10', 3.11]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install requirements
+        run: pip install -r requirements-dev.txt
+      - name: Run pytest
+        run: pytest -vrsx --cov=etlhelper --cov-report term test/
