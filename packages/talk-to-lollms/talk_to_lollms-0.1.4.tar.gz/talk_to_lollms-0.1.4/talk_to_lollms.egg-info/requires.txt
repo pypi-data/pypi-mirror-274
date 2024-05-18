@@ -1,0 +1,4 @@
+requests
+pydantic
+lollms_client>=0.5.9
+requests
