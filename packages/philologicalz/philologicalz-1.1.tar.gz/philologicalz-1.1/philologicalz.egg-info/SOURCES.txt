@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+philologicalz/__init__.py
+philologicalz/main.py
+philologicalz.egg-info/PKG-INFO
+philologicalz.egg-info/SOURCES.txt
+philologicalz.egg-info/dependency_links.txt
+philologicalz.egg-info/requires.txt
+philologicalz.egg-info/top_level.txt
