@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/simpilfont/__init__.py
+src/simpilfont/font.py
+src/simpilfont.egg-info/PKG-INFO
+src/simpilfont.egg-info/SOURCES.txt
+src/simpilfont.egg-info/dependency_links.txt
+src/simpilfont.egg-info/requires.txt
+src/simpilfont.egg-info/top_level.txt

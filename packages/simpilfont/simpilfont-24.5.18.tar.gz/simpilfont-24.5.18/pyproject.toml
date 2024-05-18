@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simpilfont"
+version = "24.5.18"
+authors = [
+  { name="Oyster Shucker", email="onemadgypsy@gmail.com" },
+]
+maintainers = [
+  { name="Oyster Shucker", email="onemadgypsy@gmail.com" },
+]
+description = "A \"family size style\" request system that simplifies loading remote fonts with PIL"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "Pillow",
+]
+keywords = ["PIL", "Pillow", "font", "ImageFont"]
+
+[project.urls]
+Homepage = "https://github.com/OneMadGypsy/SimPIL-Font/"
+Issues = "https://github.com/OneMadGypsy/SimPIL-Font/issues"
