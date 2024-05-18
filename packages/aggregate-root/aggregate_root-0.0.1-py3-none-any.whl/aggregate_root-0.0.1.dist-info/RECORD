@@ -1,0 +1,7 @@
+aggregate_root/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aggregate_root/aggregate_root.py,sha256=ndAwktpy1fCM3PbY6W2oTruMF3uyPYlNiC6Zhi5dtgE,3216
+aggregate_root/domain_event.py,sha256=oDqMQhUzNXV6ZoQydDdQu2JTffY_Nsegj-LS3mJb2V0,1415
+aggregate_root-0.0.1.dist-info/METADATA,sha256=a_IkbktjT__07snjNyWQRGLYSof8ilvtnIEHvfhuwW4,787
+aggregate_root-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+aggregate_root-0.0.1.dist-info/licenses/LICENSE,sha256=Wbu5BTaztYtomQy202l2CGPbO1Fm-qEGFIcIiqmcIbY,1072
+aggregate_root-0.0.1.dist-info/RECORD,,
