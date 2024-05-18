@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sprauchlez/__init__.py
+sprauchlez/main.py
+sprauchlez.egg-info/PKG-INFO
+sprauchlez.egg-info/SOURCES.txt
+sprauchlez.egg-info/dependency_links.txt
+sprauchlez.egg-info/requires.txt
+sprauchlez.egg-info/top_level.txt
