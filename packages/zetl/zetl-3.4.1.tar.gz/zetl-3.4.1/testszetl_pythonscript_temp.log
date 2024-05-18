@@ -1,0 +1,19 @@
+
+ file 1.somethings.sql, step 1
+DROP TABLE IF EXISTS thistable
+dsn=default; usr=root; svr=localhost; port=3306; DB Name=atlas
+
+ file 1.somethings.sql, step 2
+CREATE TABLE thistable AS
+SELECT CURRENT_DATE as rightnow
+WHERE 1 = 1
+dsn=default; usr=root; svr=localhost; port=3306; DB Name=atlas
+
+ file 1.somethings.sql, step 3
+SELECT *
+FROM thistable
+dsn=default; usr=root; svr=localhost; port=3306; DB Name=atlas
+
+rightnow
+2023-12-01
+
