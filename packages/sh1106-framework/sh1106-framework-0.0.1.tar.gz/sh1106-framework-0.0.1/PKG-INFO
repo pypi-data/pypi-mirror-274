@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sh1106-framework
+Version: 0.0.1
+Summary: A state manager, graphics, image, and custom font drawing package for the SH1106 OLED screen based on the luma.oled package. It works with Raspberry Pi and other Linux-based single-board computers.
+Author: Dan Convey
+Author-email: Dan Convey <author@example.com>
+License: Apache License 2.0
+Project-URL: Homepage, https://github.com/danspage/sh1106-framework
+Project-URL: Issues, https://github.com/danspage/sh1106-framework/issues
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Other OS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sh1106-framework
+A state manager, graphics, image, and custom font drawing package for the SH1106 OLED screen based on the luma.oled package. It works with Raspberry Pi and other Linux-based single-board computers.
