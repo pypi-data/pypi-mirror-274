@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pamlicoz/__init__.py
+pamlicoz/main.py
+pamlicoz.egg-info/PKG-INFO
+pamlicoz.egg-info/SOURCES.txt
+pamlicoz.egg-info/dependency_links.txt
+pamlicoz.egg-info/requires.txt
+pamlicoz.egg-info/top_level.txt
