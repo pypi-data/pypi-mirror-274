@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+enteromyiasisz/__init__.py
+enteromyiasisz/main.py
+enteromyiasisz.egg-info/PKG-INFO
+enteromyiasisz.egg-info/SOURCES.txt
+enteromyiasisz.egg-info/dependency_links.txt
+enteromyiasisz.egg-info/requires.txt
+enteromyiasisz.egg-info/top_level.txt
