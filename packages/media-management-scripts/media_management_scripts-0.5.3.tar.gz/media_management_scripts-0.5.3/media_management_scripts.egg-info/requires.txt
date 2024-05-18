@@ -1,0 +1,9 @@
+pycaption
+pyparsing
+python-magic
+pythondialog
+pyyaml
+requests
+tempita
+texttable
+tmdbsimple
