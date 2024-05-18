@@ -1,0 +1,2 @@
+[sourmash.cli_script]
+plot2_command = sourmash_plugin_betterplot:Command_Plot2
