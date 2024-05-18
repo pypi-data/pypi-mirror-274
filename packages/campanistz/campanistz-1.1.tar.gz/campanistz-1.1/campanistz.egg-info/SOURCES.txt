@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+campanistz/__init__.py
+campanistz/main.py
+campanistz.egg-info/PKG-INFO
+campanistz.egg-info/SOURCES.txt
+campanistz.egg-info/dependency_links.txt
+campanistz.egg-info/requires.txt
+campanistz.egg-info/top_level.txt
