@@ -1,0 +1,2 @@
+[console_scripts]
+synapse-prometheus-exporter = synapse_prometheus_exporter.__main__:main

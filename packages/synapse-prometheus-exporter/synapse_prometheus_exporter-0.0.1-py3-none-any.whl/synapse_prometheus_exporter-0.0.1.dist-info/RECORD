@@ -1,0 +1,8 @@
+synapse_prometheus_exporter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synapse_prometheus_exporter/__main__.py,sha256=da-XJcwniYsysOZsK-qlD5NgPr_K10n4YZ1lHAIRl7o,8671
+synapse_prometheus_exporter/config.dist.yaml,sha256=XMVe8-GsiommHnxBvvs93KddqPqQkwLJl1p4tQwY0v4,686
+synapse_prometheus_exporter-0.0.1.dist-info/METADATA,sha256=awGugoShDaILMRN1qR3W8h6ZhoipM0gtTPz4wglzfb8,4185
+synapse_prometheus_exporter-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+synapse_prometheus_exporter-0.0.1.dist-info/entry_points.txt,sha256=2VBooxtMj-XLyCwBK8iNjh6R5G-7UpvuOgyyFym-uLw,90
+synapse_prometheus_exporter-0.0.1.dist-info/licenses/LICENSE,sha256=I-uucWoUg-3p7qsBbMzDOf975-VfjyfLYgPo6mGqME8,1098
+synapse_prometheus_exporter-0.0.1.dist-info/RECORD,,
