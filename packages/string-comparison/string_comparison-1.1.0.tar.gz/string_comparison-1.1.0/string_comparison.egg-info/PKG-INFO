@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: string-comparison
+Version: 1.1.0
+Summary: Utility to assist with string comparisons.
+Home-page: https://github.com/bbelyeu/string_comparison/
+Author: Brad Belyeu
+Author-email: bradley.belyeu@life.church
+License: MIT
+Download-URL: https://github.com/bbelyeu/string_comparison/archive/1.1.0.zip
+Description: # String Comparison
+        
+        Text normalization for string comparison in Python.
+        
+        This maps a Unicode code point key represented as an integer to a corresponding ASCII
+        character mapping. In some cases such as Hebrew niqqud & cantillation, we remove the
+        character altogether or replace certain punctuation with a space.
+        
+        In addition, some characters are removed prior to normalization. For example, Unicode control chars.
+        
+        ## Requirements
+        
+        This project requires Python 3.7+
+        
+        ## Installation
+        
+        To install with pip
+        
+            pip install string_comparison
+        
+        ## Usage
+        
+            import string_comparison
+            normalized = string_comparison.normalize("é")
+            assert normalized == "e"
+        
+Keywords: unicode
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.7.0
+Description-Content-Type: text/markdown
