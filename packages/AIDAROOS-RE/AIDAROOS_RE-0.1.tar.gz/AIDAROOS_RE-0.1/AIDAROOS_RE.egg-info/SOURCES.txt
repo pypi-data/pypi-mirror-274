@@ -1,0 +1,5 @@
+setup.py
+AIDAROOS_RE.egg-info/PKG-INFO
+AIDAROOS_RE.egg-info/SOURCES.txt
+AIDAROOS_RE.egg-info/dependency_links.txt
+AIDAROOS_RE.egg-info/top_level.txt
