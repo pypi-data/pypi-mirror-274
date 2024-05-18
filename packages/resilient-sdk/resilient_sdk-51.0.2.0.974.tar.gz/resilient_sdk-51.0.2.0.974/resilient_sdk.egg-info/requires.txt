@@ -1,0 +1,17 @@
+resilient>=51.0.2.0
+
+[:python_version <= "3.6"]
+genson==1.2
+
+[:python_version == "2.7"]
+jinja2~=2.0
+packaging~=20.9
+
+[:python_version == "3.6"]
+packaging~=21.3
+jinja2~=3.0
+
+[:python_version > "3.6"]
+packaging~=24.0
+jinja2~=3.1
+genson~=1.3
