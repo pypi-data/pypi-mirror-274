@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+oviniaz/__init__.py
+oviniaz/main.py
+oviniaz.egg-info/PKG-INFO
+oviniaz.egg-info/SOURCES.txt
+oviniaz.egg-info/dependency_links.txt
+oviniaz.egg-info/requires.txt
+oviniaz.egg-info/top_level.txt
