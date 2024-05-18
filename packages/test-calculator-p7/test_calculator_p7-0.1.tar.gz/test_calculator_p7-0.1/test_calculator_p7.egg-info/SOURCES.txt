@@ -1,0 +1,8 @@
+README.md
+setup.py
+test_calculator_p7/__init__.py
+test_calculator_p7/main.py
+test_calculator_p7.egg-info/PKG-INFO
+test_calculator_p7.egg-info/SOURCES.txt
+test_calculator_p7.egg-info/dependency_links.txt
+test_calculator_p7.egg-info/top_level.txt
