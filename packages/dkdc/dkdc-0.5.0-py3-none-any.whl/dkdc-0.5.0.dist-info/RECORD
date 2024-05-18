@@ -1,0 +1,14 @@
+dkdc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dkdc/ai.py,sha256=yq0Ddcrwyj_DZk-A7WyqZ03BX_D1oxZelexrMi3WsBA,201
+dkdc/cli.py,sha256=oiPN9B0adA7aHCMDQWQCsleuc4yhj0RMMiMEha1Pp0c,2071
+dkdc/config.py,sha256=7qpFIAO-GgPKDc8QMaJXZE0BumAlyMul66HCY-L7kbg,294
+dkdc/defaults.py,sha256=StC9iGzcHggNP2IMn4HuqLJa0zfyCubnFo-SFq1HGp4,500
+dkdc/image.py,sha256=6xpM2OIqOLNoOXqdg8tv4hrYzYqwSiCwJUGgvHllkQI,275
+dkdc/open.py,sha256=Pm39tNyz2g2JTnLjSJfgk1NR1NMjY7a0X4TVLrGXqaw,836
+dkdc/utils/config.py,sha256=SlIA3rP3OrUw0WlueMGvNcshNWS18umVdRYAwKNJjHw,231
+dkdc/utils/envvar.py,sha256=El4NOgzbpOjP8SLaXJhaz0mBTtab5dQWsKNOqlAwovg,206
+dkdc-0.5.0.dist-info/METADATA,sha256=QCJPF6lG8GMnnjeJZONmkgHEDvz6eMNwtz2uDu7iNzs,704
+dkdc-0.5.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+dkdc-0.5.0.dist-info/entry_points.txt,sha256=8hFipGY95HKT_iL6nBQmQJORZ7v1BQ60eGZJOJ7v6ug,38
+dkdc-0.5.0.dist-info/licenses/LICENSE,sha256=JI7scmwZKNFl859I8UbdX_vsbdSgzIOdrtgqng_mYF0,1048
+dkdc-0.5.0.dist-info/RECORD,,
