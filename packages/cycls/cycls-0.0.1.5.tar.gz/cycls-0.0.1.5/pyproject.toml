@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "cycls"
+version = "0.0.1.5"
+description = "Publish your chat app with cycls"
+authors = ["Khalid Alrasheed <khalid@cycls.io>"]
+packages = [{ include = "cycls" }]
+license = "MIT"
+readme = "README.md"
+homepage = "https://www.cycls.com/"
+documentation = "https://docs.cycls.com/"
+keywords = ["AI", "chat"]
+exclude = ["demo"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+asyncio = "^3.4.3"
+certifi = "^2023.11.17"
+httpx = "^0.25.2"
+pydantic = "^2.5.2"
+python-socketio = {extras = ["asyncio-client", "client"], version = "^5.11.2"}
+
+[tool.poetry.group.dev.dependencies]
+black = { version = "^23.11.0", allow-prereleases = true }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
