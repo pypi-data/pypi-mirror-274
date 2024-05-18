@@ -1,0 +1,17 @@
+flexidata/Logger.py,sha256=xIcNvx_zwlQpVrtbw6BrsDnqb0BlI9ztJUtRvS1DhVQ,1838
+flexidata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexidata/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexidata/models/base.py,sha256=K2I6ZkPTvT4Yz0Ns2P_-LR0d_2fyS0kbIhMqycpEE3Y,562
+flexidata/models/detectron2.py,sha256=ePXnQkdshXEyebG3klR3XXIB4oDQr0jROCWK5zQNENA,3117
+flexidata/parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexidata/parser/pdf.py,sha256=Y0YAkPv5qku5N7mkjL0B-Wy6Hfz9yakO7JpJVbm-rKA,21772
+flexidata/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexidata/utils/common.py,sha256=nRPfoU_Whti5ewlRxO5eSCqV40_xLMhfj6nHRu_4U6w,266
+flexidata/utils/constants.py,sha256=j_CCYAxyBC9K2Sq_XdhqXcE0NeGcFn0sKoGSfFhV4UE,2001
+flexidata/utils/pdf.py,sha256=uJ_j8gUWFG0Ab12cXvSQb1uYSwJwxrvtgKSckBJl_8c,4740
+flexidata/utils/text.py,sha256=87FHUp8yzab7T60y54NE6LRR2CLxsFf-2WVItiOdxEI,10010
+flexidata-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+flexidata-0.0.1.dist-info/METADATA,sha256=iJDvA-DdFAAJDJKFupxn0WXkRrO6k0m_Ge4NwFMEpQQ,15371
+flexidata-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flexidata-0.0.1.dist-info/top_level.txt,sha256=gBhHc0nANcGNThR5iEjRCUfkJL6M6l36LCgyqxCZVP8,10
+flexidata-0.0.1.dist-info/RECORD,,
