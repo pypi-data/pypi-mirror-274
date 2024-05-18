@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/wsppchem/Template.csv
+src/wsppchem/__init__.py
+src/wsppchem/wspp_functions.py
+src/wsppchem.egg-info/PKG-INFO
+src/wsppchem.egg-info/SOURCES.txt
+src/wsppchem.egg-info/dependency_links.txt
+src/wsppchem.egg-info/requires.txt
+src/wsppchem.egg-info/top_level.txt
+src/wsppchem/model_and_scaler/LGBM_model.pkl
+src/wsppchem/model_and_scaler/LGBM_scaler.pkl
