@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kootcharz/__init__.py
+kootcharz/main.py
+kootcharz.egg-info/PKG-INFO
+kootcharz.egg-info/SOURCES.txt
+kootcharz.egg-info/dependency_links.txt
+kootcharz.egg-info/requires.txt
+kootcharz.egg-info/top_level.txt
