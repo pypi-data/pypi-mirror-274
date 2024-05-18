@@ -1,0 +1,16 @@
+lollms_client/__init__.py,sha256=nltDfmME08CGd9JQ5qMB1Fgo3Yrb1PD6v2VKBoA5ckw,518
+lollms_client/lollms_config.py,sha256=goEseDwDxYJf3WkYJ4IrLXwg3Tfw73CXV2Avg45M_hE,21876
+lollms_client/lollms_core.py,sha256=ygrQjvtqWX5YdIGyfRMn-WtqUsXRClDcFgGYovZdF0M,25190
+lollms_client/lollms_discussion.py,sha256=9b83m0D894jwpgssWYTQHbVxp1gJoI-J947Ui_dRXII,2073
+lollms_client/lollms_functions.py,sha256=p8SFtmEPqvVCsIz2fZ5HxyOHaxjrAo5c12uTzJnb6m8,3594
+lollms_client/lollms_personality.py,sha256=5B509gG6lh2McGXLvbRzVDY2pRvt-fEzMEhCRjqjiNg,20548
+lollms_client/lollms_personality_worker.py,sha256=rQbZg9Gn-R3b6x0Ryb4JPWJzBfn4fObDzj5IWYez_9o,65331
+lollms_client/lollms_tasks.py,sha256=wMBdklT_E4SKnTdTuGN409ga330QBhMCRDEIDWG6kwg,36906
+lollms_client/lollms_types.py,sha256=uuaADVVfi1sZucY7gT8v-EDN5xrMI3vy_4M7k7Uz3eU,2170
+lollms_client/lollms_utilities.py,sha256=GPsdw-RvDwLjTgqberNBBEC9Gv72fTqBNwUF7g7SLuI,6171
+lollms_client/lollms_xtts.py,sha256=cyLwH0LdfvR6AS2nYHvcFfxt-yWjq-hh6F-ZbYMvoVA,1571
+lollms_client-0.6.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+lollms_client-0.6.0.dist-info/METADATA,sha256=MGtnLWkpZpFnE3DZ3AXm72qPVk4HuHU_5artYwpcN9c,3258
+lollms_client-0.6.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+lollms_client-0.6.0.dist-info/top_level.txt,sha256=Bk_kz-ri6Arwsk7YG-T5VsRorV66uVhcHGvb_g2WqgE,14
+lollms_client-0.6.0.dist-info/RECORD,,
