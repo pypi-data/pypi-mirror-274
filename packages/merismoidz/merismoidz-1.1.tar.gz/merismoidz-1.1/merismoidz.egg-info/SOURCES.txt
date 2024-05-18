@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+merismoidz/__init__.py
+merismoidz/main.py
+merismoidz.egg-info/PKG-INFO
+merismoidz.egg-info/SOURCES.txt
+merismoidz.egg-info/dependency_links.txt
+merismoidz.egg-info/requires.txt
+merismoidz.egg-info/top_level.txt
