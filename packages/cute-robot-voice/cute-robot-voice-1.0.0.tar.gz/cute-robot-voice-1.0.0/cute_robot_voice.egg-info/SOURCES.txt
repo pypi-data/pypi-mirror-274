@@ -1,0 +1,9 @@
+README.md
+setup.py
+cute_robot_voice/__init__.py
+cute_robot_voice/cute_robot_voice.py
+cute_robot_voice.egg-info/PKG-INFO
+cute_robot_voice.egg-info/SOURCES.txt
+cute_robot_voice.egg-info/dependency_links.txt
+cute_robot_voice.egg-info/requires.txt
+cute_robot_voice.egg-info/top_level.txt
