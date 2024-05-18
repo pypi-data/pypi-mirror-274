@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+instancedz/__init__.py
+instancedz/main.py
+instancedz.egg-info/PKG-INFO
+instancedz.egg-info/SOURCES.txt
+instancedz.egg-info/dependency_links.txt
+instancedz.egg-info/requires.txt
+instancedz.egg-info/top_level.txt
