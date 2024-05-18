@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+isokurticz/__init__.py
+isokurticz/main.py
+isokurticz.egg-info/PKG-INFO
+isokurticz.egg-info/SOURCES.txt
+isokurticz.egg-info/dependency_links.txt
+isokurticz.egg-info/requires.txt
+isokurticz.egg-info/top_level.txt
