@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+epistylarz/__init__.py
+epistylarz/main.py
+epistylarz.egg-info/PKG-INFO
+epistylarz.egg-info/SOURCES.txt
+epistylarz.egg-info/dependency_links.txt
+epistylarz.egg-info/requires.txt
+epistylarz.egg-info/top_level.txt
