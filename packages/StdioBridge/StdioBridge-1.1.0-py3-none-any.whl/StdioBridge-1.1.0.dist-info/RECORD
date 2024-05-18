@@ -1,0 +1,15 @@
+StdioBridge/__init__.py,sha256=zz40wQsDIjNPElP0hH31PneKw1ac1ihuetwp5WW1hIo,59
+StdioBridge/_config.py,sha256=mLogIM1sYODaWXnpkC3MUaWSWIRVFccFKS3YgKq5rDQ,18
+StdioBridge/api/__init__.py,sha256=MGqae6i-ThcaxeZCk0fkVbZ6ROVzgF6ki2oG2ByrDhc,120
+StdioBridge/api/_api.py,sha256=qI8ON9K3jhBNe7gcX8-_t9mCV_fQhVFXGJlvjJmhU2E,5476
+StdioBridge/api/_response.py,sha256=_AUttbQmwRddzwIAT_rM2BbUMj9bb4c_kAwBbfq-2Yg,822
+StdioBridge/api/_router.py,sha256=72kAmaPPFshD82NrfsFuQ0F2O64vDJVkcL7bacSHybU,2165
+StdioBridge/api/errors.py,sha256=IPbG_ppDwqk5hczi6iKMCPz9toxXIwubl1fv8eUCvQo,1424
+StdioBridge/client/__init__.py,sha256=Ug2__9wXA0oADI1PPvC89EPIxLAmhgBrGQxuHGqAOyY,112
+StdioBridge/client/_client.py,sha256=Y-v_BgyqzjTO3D5tnsd1ATsowO2YBvgDr5CjfrCIwUc,4046
+StdioBridge/client/_response.py,sha256=OaIext9H6ogBjc0b1iMX6CQv1iEuarQpNw-HwhUA5RI,1334
+StdioBridge-1.1.0.dist-info/LICENSE,sha256=XU5Oa-ZwhrWJa41JlibYiZ9-cc4X-5bQbs6dMsA3EjA,1069
+StdioBridge-1.1.0.dist-info/METADATA,sha256=KC1muGfGR74lagSahfBX7KxJ0F0oqCNIdPbeE476sJs,3570
+StdioBridge-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+StdioBridge-1.1.0.dist-info/top_level.txt,sha256=d9_rEzSMCgWO1g6qx1haPT2rXhmCbDQiY26DxXtMR50,12
+StdioBridge-1.1.0.dist-info/RECORD,,
