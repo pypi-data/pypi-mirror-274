@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shoreberryz/__init__.py
+shoreberryz/main.py
+shoreberryz.egg-info/PKG-INFO
+shoreberryz.egg-info/SOURCES.txt
+shoreberryz.egg-info/dependency_links.txt
+shoreberryz.egg-info/requires.txt
+shoreberryz.egg-info/top_level.txt
