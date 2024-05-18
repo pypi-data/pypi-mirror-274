@@ -1,0 +1,9 @@
+pyfred24/__init__.py,sha256=ST6NcLDGekONZktl9pNLv_ZK_zzUpmmfZAWp41K3gFI,33
+pyfred24/branch.py,sha256=9SsFeUQLtk5o-6AUp0oBxvjrcN8b0xN9HsMrQQ_-0JM,489
+pyfred24/client.py,sha256=zO0-pRFUzVfEiej7W5UPs6QTgNYiFAshdrLcj44EdX4,702
+pyfred24/fred_helper.py,sha256=SP5Mwg97jyZ4D7PTxRdHuLs_KpvmTYwOnOecwbMUcC4,4374
+pyfred24/leaf.py,sha256=cOi2fzt8cg8SkhGARBakUHgIF6Jw8rUqRik6hha0gGo,1093
+pyfred24-0.1.dist-info/METADATA,sha256=KzFnJrz22fv_UfQnmNAvaCw9x97cMThqYWqkP9LOcE0,1720
+pyfred24-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyfred24-0.1.dist-info/top_level.txt,sha256=A2nvGNnMHutFhtjXepTC7NyofWU7Prq9Ge-9WfNh69Q,9
+pyfred24-0.1.dist-info/RECORD,,
