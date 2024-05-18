@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hiresz/__init__.py
+hiresz/main.py
+hiresz.egg-info/PKG-INFO
+hiresz.egg-info/SOURCES.txt
+hiresz.egg-info/dependency_links.txt
+hiresz.egg-info/requires.txt
+hiresz.egg-info/top_level.txt
