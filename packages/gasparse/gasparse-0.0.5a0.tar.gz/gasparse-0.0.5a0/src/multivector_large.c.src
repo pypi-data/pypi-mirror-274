@@ -1,0 +1,1792 @@
+#include <Python.h>
+#include "types.h"
+#include "common.h"
+#include "multivector_types.h"
+
+// macro to append bitmap and values to the end of the graph
+#define GRAPH_APPEND_NEXT(bitmap_,graph,addr,value_,size) \
+    if(!addr[bitmap_]){        \
+        graph->next = (BasisElement*)PyMem_RawMalloc(sizeof(BasisElement));\
+        graph = graph->next;\
+        graph->bitmap = bitmap_;\
+        graph->value = (value_);\
+        addr[bitmap_] = graph;\
+        graph->next = NULL;\
+        (size)++;\
+    } else\
+        addr[bitmap_]->value += (value_);\
+
+static Py_ssize_t *init_grade_size(PyAlgebraObject *ga){
+    Py_ssize_t *gsize = (Py_ssize_t*)PyMem_RawMalloc((MAX_GRADE(ga)+1)*sizeof(Py_ssize_t));
+    if(!gsize){
+        PyErr_SetString(PyExc_MemoryError,"Error allocating memory for grade size array");
+        return NULL;
+    }
+    for(Py_ssize_t i = 0; i <= MAX_GRADE(ga); i++)
+        gsize[i] = 0;
+    return gsize;
+}
+
+
+static BladesMultivector sparse_dense_to_blades_sparse(SparseMultivector dense, PyAlgebraObject *ga){
+    BladesMultivector sparse = {.size = -1};
+    Py_ssize_t ssize = 0, grade = -1;
+    Py_ssize_t *gsize = init_grade_size(ga);
+    Py_ssize_t *gindex = init_grade_size(ga);
+    if(!gsize || !gindex){
+        PyMem_RawFree(gsize);
+        PyMem_RawFree(gindex);
+        return sparse;
+    }
+    int bitmap;
+    for(Py_ssize_t i = 0; i < dense.size; i++){
+        if(dense.bitmap[i] == -1) continue;
+        grade = GRADE(dense.bitmap[i]);
+        if(!gsize[grade]) gindex[grade] = ssize++; // first time incrementing
+        gsize[grade]++;
+    }
+
+    if(!ssize){
+        sparse.data = NULL;
+        sparse.grade = NULL;
+        sparse.size = 0;
+        PyMem_RawFree(gsize);
+        PyMem_RawFree(gindex);
+        return sparse;
+    }
+
+    sparse.data = (SparseMultivector*)PyMem_RawMalloc(ssize*sizeof(SparseMultivector));
+    sparse.grade =  (Py_ssize_t*)PyMem_RawMalloc(ssize*sizeof(Py_ssize_t));
+    if(!sparse.data || !sparse.grade){
+        PyMem_RawFree(gsize);
+        PyMem_RawFree(gindex);
+        sparse.size = -1;
+        PyErr_SetString(PyExc_MemoryError,"Error allocating memory");
+        return sparse;
+    }
+    sparse.size = ssize;
+
+    // initialize each grade
+    for(Py_ssize_t i = 0; i <= MAX_GRADE(ga); i++){ // iterate over grades
+        if(!gsize[i]) continue;
+        sparse.data[gindex[i]] = init_sparse_empty(gsize[i]);
+        sparse.grade[gindex[i]] = i;
+    }
+
+    for(Py_ssize_t i = 0; i < dense.size; i++){
+        bitmap = dense.bitmap[i];
+        if(bitmap == -1) continue;
+        grade = GRADE(bitmap); gsize[grade]--;
+        sparse.data[gindex[grade]].bitmap[gsize[grade]] = bitmap;
+        sparse.data[gindex[grade]].value[gsize[grade]] = dense.value[i];
+    }
+
+    PyMem_RawFree(gsize);
+    PyMem_RawFree(gindex);
+    return sparse;
+}
+
+
+
+static BladesMultivector blades_init_(int *bitmap, ga_float *value, Py_ssize_t size, PyAlgebraObject *ga){
+    if(!size){
+        BladesMultivector blades = {.size = 0,.grade = NULL, .data = NULL};
+        return blades;
+    }
+    SparseMultivector ssparse = {.bitmap = bitmap, .value = value, .size = size};
+    return sparse_dense_to_blades_sparse(ssparse,ga);
+}
+
+static int cast_to_blades(PyMultivectorIter *from, void *to, PyAlgebraObject *GA){
+    BladesMultivector *pblades = (BladesMultivector*)to;
+    
+    if(!from || !pblades){
+        return 0;
+    }
+
+    SparseMultivector sparse = {.size = from->niters, .value = NULL, .bitmap = NULL};
+    sparse.value = (ga_float*)PyMem_RawMalloc(from->niters*sizeof(ga_float));
+    sparse.bitmap = (int*)PyMem_RawMalloc(from->niters*sizeof(int));
+    Py_ssize_t i = 0;
+    while(from->next(from)){
+        sparse.value[i] = from->value;
+        sparse.bitmap[i] = from->bitmap;
+        i++;
+    }
+    *pblades = sparse_dense_to_blades_sparse(sparse,GA);
+    sparse_free_(sparse);
+    
+    return 1;
+}
+
+
+static SparseMultivector graph_to_sparse_multivector(BasisElement *graph, Py_ssize_t size){
+    SparseMultivector sparse = alloc_sparse(size);
+    BasisElement *prev;
+
+    Py_ssize_t i = 0;
+    while(graph){
+        sparse.value[i] = graph->value;
+        sparse.bitmap[i] = graph->bitmap;
+        i++;
+        prev = graph;
+        graph = graph->next;
+        PyMem_RawFree(prev);
+    }
+    return sparse;
+}
+
+static void graph_free(BasisElement *graph){
+    BasisElement *prev;
+
+    while(graph){
+        prev = graph;
+        graph = graph->next;
+        PyMem_RawFree(prev);
+    }
+}
+
+static BasisElement* graph_remove_rel_small(BasisElement *graph, Py_ssize_t *size, ga_float percentage){
+    ga_float max = 0;
+    BasisElement *head = graph;
+    BasisElement *prev = NULL;
+
+    while(graph){
+        if(max < fabsl(graph->value))
+            max = fabsl(graph->value);
+
+        graph = graph->next;
+    }
+    graph = head;
+
+    while(graph){
+        if(fabsl(graph->value) < max*percentage){ // is the value relatively small
+            // the previous does not change prev <- prev
+            if(prev){
+                prev->next = graph->next; // skip the element
+                PyMem_RawFree(graph);
+                graph = prev->next;
+            } else{ // The head of the graph
+                head = graph->next;
+                PyMem_RawFree(graph);
+                graph = head;
+            }
+            
+            (*size)--;
+        }else{
+            prev = graph; // remember the previous
+            graph = graph->next; // next element in the graph
+        }
+        
+    }
+    return head;
+
+}
+
+{% macro COMP_GRADE_SPECIAL_INNER(grade0,grade1,grade) -%}
+if(labs((_grade0={{grade0}})-{{grade1}})!={{grade}}||!_grade0||!{{grade1}}) continue;
+{%- endmacro %}
+{% macro COMP_GRADE_INNER(grade0,grade1,grade) -%}
+if(labs({{grade0}}-{{grade1}})!={{grade}}||!{{grade0}}||!{{grade1}}) continue;
+{%- endmacro %}
+{% macro COMP_GRADE_OUTER(grade0,grade1,grade) -%}
+if({{grade0}}+{{grade1}}!={{grade}}) continue;
+{%- endmacro %}
+{%- macro COMP_GRADE_GEOMETRIC(grade0,grade1,grade) -%}
+{%- endmacro -%}
+{% set declare_grade %}
+Py_ssize_t _grade0, _grade1;
+{% endset %}
+{% macro COMP_OUTER(bitmap0,bitmap1,bitmap) -%}
+if(GRADE({{bitmap0}})+GRADE({{bitmap1}})!=GRADE({{bitmap}})) continue;
+{%- endmacro %}
+{% macro COMP_INNER(bitmap0,bitmap1,bitmap) -%}
+if(labs((_grade0=GRADE({{bitmap0}}))-(_grade1=GRADE({{bitmap1}})))!=GRADE({{bitmap}})||!_grade0||!_grade1) continue;
+{%- endmacro %}
+{% macro COMP_GEOMETRIC(bitmap0,bitmap1,bitmap) -%}
+{%- endmacro %}
+{% set comp_array = [(COMP_GEOMETRIC,"geometric",""),(COMP_OUTER,"outer",""),(COMP_INNER,"inner",declare_grade)] %}
+{% set comp_grade_array = [(COMP_GRADE_GEOMETRIC,"geometric"),(COMP_GRADE_OUTER,"outer"),(COMP_GRADE_INNER,"inner")] %}
+{% for comp,pname,declare in comp_array %}
+
+static SparseMultivector binary_sparse_{{pname}}product0_(SparseMultivector sparse0, SparseMultivector sparse1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    SparseMultivector sparse = {.size = -1};
+    SparseMultivector dense = init_sparse_empty(m.size);
+    if(dense.size == -1) return sparse;
+    {{declare}}
+    Py_ssize_t size = 0;
+    Py_ssize_t bitmap;
+    int sign;
+
+    for(Py_ssize_t i = 0; i < sparse0.size; i++){
+        for(Py_ssize_t j = 0; j < sparse1.size; j++){
+            if(!(sign = m.sign[sparse0.bitmap[i]][sparse1.bitmap[j]])) continue;
+            bitmap = sparse0.bitmap[i] ^ sparse1.bitmap[j];
+            {{comp("sparse0.bitmap[i]","sparse1.bitmap[j]","bitmap")}}
+            if(dense.bitmap[bitmap] == -1) dense.bitmap[bitmap] = bitmap, size++;
+            dense.value[bitmap] += sparse0.value[i]*sparse1.value[j]*sign;
+        }
+    }
+
+    sparse_remove_small(dense,ga->precision,&size);
+    sparse = sparse_dense_to_sparse_sparse(dense,size);
+    sparse_free_(dense);
+    return sparse;
+}
+
+static SparseMultivector binary_sparse_{{pname}}product_(SparseMultivector sparse0, SparseMultivector sparse1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+
+    SparseMultivector sparse = {.size = -1};
+
+    // initiallize the addresses to null: addr[i] <- NULL
+    BasisElement **addr = (BasisElement**)PyMem_RawCalloc(m.size,sizeof(BasisElement*)); // A list of addresses for all basis elements
+    BasisElement *head = (BasisElement*)PyMem_RawMalloc(sizeof(BasisElement)); // The head of the graph
+    BasisElement *graph = head;
+
+    graph->next = NULL;
+    graph->bitmap = -1;
+    graph->value = 0;
+
+    {{declare}}
+    Py_ssize_t size = 0;
+    Py_ssize_t bitmap;
+    int sign;
+
+    for(Py_ssize_t i = 0; i < sparse0.size; i++){
+        for(Py_ssize_t j = 0; j < sparse1.size; j++){
+            if(!(sign = m.sign[sparse0.bitmap[i]][sparse1.bitmap[j]])) continue;
+            bitmap = sparse0.bitmap[i] ^ sparse1.bitmap[j];
+            {{comp("sparse0.bitmap[i]","sparse1.bitmap[j]","bitmap")}}
+            GRAPH_APPEND_NEXT(bitmap,graph,addr,sparse0.value[i]*sparse1.value[j]*sign,size)
+        }
+    }
+    graph->next = NULL;
+    graph = graph_remove_rel_small(head->next,&size,ga->precision);
+    sparse = graph_to_sparse_multivector(graph,size); // also frees memory for the graph 
+    PyMem_RawFree(addr);
+    PyMem_RawFree(head);
+    return sparse;
+}
+
+
+static SparseMultivector ternary_sparse_{{pname}}product_(SparseMultivector sparse0, SparseMultivector sparse1, SparseMultivector sparse2, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+
+    SparseMultivector sparse = {.size = -1};
+
+    // initiallize the addresses to null: addr[i] <- NULL
+    BasisElement **addr = (BasisElement**)PyMem_RawCalloc(m.size,sizeof(BasisElement*)); // A list of addresses for all basis elements
+    BasisElement *head = (BasisElement*)PyMem_RawMalloc(sizeof(BasisElement)); // The head of the graph
+    BasisElement *graph = head;
+
+    BasisElement *head1 = (BasisElement*)PyMem_RawMalloc(sizeof(BasisElement)); // The head1 of the graph1
+    BasisElement *graph1 = head1;
+
+    graph->next = NULL;
+    graph->bitmap = -1;
+    graph->value = 0;
+    {{declare}}
+    Py_ssize_t size = 0;
+    Py_ssize_t bitmap;
+    int sign;
+
+    for(Py_ssize_t i = 0; i < sparse0.size; i++){
+        for(Py_ssize_t j = 0; j < sparse1.size; j++){
+            if(!(sign = m.sign[sparse0.bitmap[i]][sparse1.bitmap[j]])) continue;
+            bitmap = sparse0.bitmap[i] ^ sparse1.bitmap[j];
+            {{comp("sparse0.bitmap[i]","sparse1.bitmap[j]","bitmap")}}
+            GRAPH_APPEND_NEXT(bitmap,graph,addr,sparse0.value[i]*sparse1.value[j]*sign,size)
+        }
+    }
+
+    memset(addr,0,m.size*sizeof(BasisElement*));// reset the address array
+    
+    size = 0;
+    graph = head->next;
+    while(graph){
+        for(Py_ssize_t i = 0; i < sparse2.size; i++){
+            if(!(sign = m.sign[graph->bitmap][sparse2.bitmap[i]])) continue;
+            bitmap = graph->bitmap ^ sparse2.bitmap[i];
+            {{comp("graph->bitmap","sparse2.bitmap[i]","bitmap")}}
+            GRAPH_APPEND_NEXT(bitmap,graph1,addr,graph->value*sparse2.value[i]*sign,size)
+        }
+
+        graph = graph->next;
+    }
+    
+
+    graph1->next = NULL;
+    graph1 = graph_remove_rel_small(head1->next,&size,ga->precision);
+    sparse = graph_to_sparse_multivector(graph1,size); // also frees memory for the graph
+    
+    graph_free(head);
+    PyMem_RawFree(addr);
+    PyMem_RawFree(head1);
+
+    return sparse;
+}
+
+static SparseMultivector ternary_sparse_{{pname}}product0_(SparseMultivector sparse0, SparseMultivector sparse1, SparseMultivector sparse2, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    SparseMultivector sparse = {.size = -1};
+    SparseMultivector dense0 = init_sparse_empty(m.size);
+    SparseMultivector dense1;
+    if(dense0.size == -1) return sparse;
+    {{declare}}
+    Py_ssize_t size = 0;
+    Py_ssize_t bitmap;
+    int sign;
+
+    // dense0 = product(sparse0,sparse1)
+    for(Py_ssize_t i = 0; i < sparse0.size; i++){
+        for(Py_ssize_t j = 0; j < sparse1.size; j++){
+            sign = m.sign[sparse0.bitmap[i]][sparse1.bitmap[j]];
+            if(!sign) continue;
+            bitmap = sparse0.bitmap[i] ^ sparse1.bitmap[j];
+            {{comp("sparse0.bitmap[i]","sparse1.bitmap[j]","bitmap")}}
+            if(dense0.bitmap[bitmap] == -1) dense0.bitmap[bitmap] = bitmap, size++;
+            dense0.value[bitmap] += sparse0.value[i]*sparse1.value[j]*sign;
+        }
+    }
+    dense1 = init_sparse_empty(size--);
+    if(dense1.size == -1){
+        sparse_free_(dense0);
+        return sparse;
+    }
+    // dense1 = copy(dense0)
+    // dense0 = reset(dense0)
+    for(Py_ssize_t i = 0; i < dense0.size; i++){
+        if(dense0.bitmap[i] != -1 && size >= 0){
+            dense1.value[size] = dense0.value[i];
+            dense1.bitmap[size] = dense0.bitmap[i];
+            size--;
+        }
+        dense0.bitmap[i] = -1;
+        dense0.value[i] = 0;
+    }
+
+    // dense0 = product(dense1,sparse2)
+    size = 0;
+    for(Py_ssize_t i = 0; i < dense1.size; i++){
+        for(Py_ssize_t j = 0; j < sparse2.size; j++){
+            sign = m.sign[dense1.bitmap[i]][sparse2.bitmap[j]];
+            if(!sign) continue;
+            bitmap = dense1.bitmap[i] ^ sparse2.bitmap[j];
+            {{comp("dense1.bitmap[i]","sparse2.bitmap[j]","bitmap")}}
+            if(dense0.bitmap[bitmap] == -1) dense0.bitmap[bitmap] = bitmap, size++;
+            dense0.value[bitmap] += dense1.value[i]*sparse2.value[j]*sign;
+        }
+    }
+
+    sparse_remove_small(dense0,ga->precision,&size);
+    sparse = sparse_dense_to_sparse_sparse(dense0,size);
+    if(sparse.size == -1){
+        sparse_free_(dense0);
+        sparse_free_(dense1);
+        return sparse;
+    }
+
+    sparse_free_(dense0);
+    sparse_free_(dense1);
+    return sparse;
+}
+
+{% endfor %}
+
+static SparseMultivector binary_sparse_regressiveproduct0_(SparseMultivector sparse0, SparseMultivector sparse1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    DualMap dm = ga->dm;
+    SparseMultivector sparse = {.size = -1};
+    SparseMultivector dense = init_sparse_empty(m.size);
+    if(dense.size == -1) return sparse;
+    Py_ssize_t _grade0;
+    Py_ssize_t size = 0;
+    Py_ssize_t bitmap,inner_bitmap;
+    int undualsign = MAX_GRADE(ga) & 2 ? -1 : 1; // sign of reversing the pseudoscalar
+    Py_ssize_t pss = ga->asize - 1;
+    Py_ssize_t l,r; int lsign;
+
+    for(Py_ssize_t i = 0; i < sparse0.size; i++){
+        l = pss ^ sparse0.bitmap[i];
+        _grade0 = GRADE(l);
+        lsign = undualsign*dm.sign[sparse0.bitmap[i]];
+        for(Py_ssize_t j = 0; j < sparse1.size; j++){
+            r = pss ^ sparse1.bitmap[j];
+            bitmap = pss^(inner_bitmap = l^r);
+            if(_grade0 + GRADE(r) != GRADE(inner_bitmap)) continue;
+            if(dense.bitmap[bitmap] == -1) dense.bitmap[bitmap] = bitmap, size++;
+            dense.value[bitmap] += sparse0.value[i]*sparse1.value[j]*m.sign[l][r]*dm.sign[sparse1.bitmap[j]]*lsign;
+        }
+    }
+
+    sparse_remove_small(dense,ga->precision,&size);
+    sparse = sparse_dense_to_sparse_sparse(dense,size);
+    sparse_free_(dense);
+    return sparse;
+}
+
+static SparseMultivector binary_sparse_regressiveproduct_(SparseMultivector sparse0, SparseMultivector sparse1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    DualMap dm = ga->dm;
+    SparseMultivector sparse = {.size = -1};
+
+    // initiallize the addresses to null: addr[i] <- NULL
+    BasisElement **addr = (BasisElement**)PyMem_RawCalloc(m.size,sizeof(BasisElement*)); // A list of addresses for all basis elements
+    BasisElement *head = (BasisElement*)PyMem_RawMalloc(sizeof(BasisElement)); // The head of the graph
+    BasisElement *graph = head;
+
+    graph->next = NULL;
+    graph->bitmap = -1;
+    graph->value = 0;
+
+    Py_ssize_t _grade0;
+    Py_ssize_t size = 0;
+    Py_ssize_t bitmap,inner_bitmap;
+    int undualsign = MAX_GRADE(ga) & 2 ? -1 : 1; // sign of reversing the pseudoscalar
+    Py_ssize_t pss = ga->asize - 1;
+    Py_ssize_t l,r; int lsign,sign;
+
+    for(Py_ssize_t i = 0; i < sparse0.size; i++){
+        l = pss ^ sparse0.bitmap[i];
+        _grade0 = GRADE(l);
+        lsign = undualsign*dm.sign[sparse0.bitmap[i]];
+        for(Py_ssize_t j = 0; j < sparse1.size; j++){
+            r = pss ^ sparse1.bitmap[j];
+            if(!(sign = m.sign[l][r])) continue;
+            bitmap = pss^(inner_bitmap = l^r);
+            if(_grade0 + GRADE(r) != GRADE(inner_bitmap)) continue;
+            GRAPH_APPEND_NEXT(bitmap,graph,addr,sparse0.value[i]*sparse1.value[j]*sign*dm.sign[sparse1.bitmap[j]]*lsign,size)
+        }
+    }
+
+    graph->next = NULL;
+    graph = graph_remove_rel_small(head->next,&size,ga->precision);
+    sparse = graph_to_sparse_multivector(graph,size); // also frees memory for the graph
+    PyMem_RawFree(addr);
+    PyMem_RawFree(head);
+    return sparse;
+}
+
+static int unary_sparse_gradeproject(void *out, void *data0, PyAlgebraObject *ga, int *grades, Py_ssize_t grade_size){
+    SparseMultivector *sparse0 = (SparseMultivector*)data0;
+    SparseMultivector *sparse = (SparseMultivector*)out;
+    Py_ssize_t *g = get_grade_bool(grades,grade_size,MAX_GRADE(ga) + 1);
+    if(!g)
+        return 0;
+
+    int size = 0;
+    for(Py_ssize_t i = 0; i < sparse0->size; i++)
+        if(g[GRADE(sparse0->bitmap[i])])
+            size++;
+
+    *sparse = init_sparse_empty(size--);
+    if(sparse->size == -1){
+        PyMem_RawFree(g);
+        return 0;
+    }
+
+    // copies the values of the selected grades
+    for(Py_ssize_t i = 0; i < sparse0->size; i++){
+        if(g[GRADE(sparse0->bitmap[i])]){
+            sparse->value[size] = sparse0->value[i];
+            sparse->bitmap[size] = sparse0->bitmap[i];
+            size--;
+            if(size < 0)
+                break;
+        }
+    }
+
+    PyMem_RawFree(g);
+    return 1;
+}
+
+
+
+static int unary_sparse_reverse(void *out, void *data0, PyAlgebraObject *ga){
+    SparseMultivector *sparse0 = (SparseMultivector*)data0;
+    SparseMultivector *sparse = (SparseMultivector*)out;
+    *sparse = init_sparse_empty(sparse0->size);
+
+    if(sparse->size == -1)
+        return 0;
+
+    for(Py_ssize_t i = 0; i < sparse0->size; i++){
+        int sign = (GRADE(sparse0->bitmap[i]) & 2) ? -1 : 1;
+        sparse->value[i] = sign*sparse0->value[i];
+        sparse->bitmap[i] = sparse0->bitmap[i];
+    }
+
+    return 1;
+}
+
+static int unary_sparse_dual(void *out, void *data0, PyAlgebraObject *ga){
+    SparseMultivector *sparse0 = (SparseMultivector*)data0;
+    SparseMultivector *sparse = (SparseMultivector*)out;
+    DualMap dm = ga->dm;
+    Py_ssize_t pss = ga->asize-1;
+    *sparse = init_sparse_empty(sparse0->size);
+    if(sparse->size == -1)
+        return 0;
+
+    for(Py_ssize_t i = 0; i < sparse0->size; i++){
+        Py_ssize_t bitmap = sparse0->bitmap[i];
+        sparse->value[i] = dm.sign[bitmap]*sparse0->value[i];
+        sparse->bitmap[i] = pss ^ bitmap;
+    }
+
+    return 1;
+}
+
+static int unary_sparse_undual(void *out, void *data0, PyAlgebraObject *ga){
+    SparseMultivector *sparse0 = (SparseMultivector*)data0;
+    SparseMultivector *sparse = (SparseMultivector*)out;
+    *sparse = init_sparse_empty(sparse0->size);
+    DualMap dm = ga->dm;
+    Py_ssize_t pss = ga->asize-1;
+    
+    if(sparse->size == -1)
+        return 0;
+    int sign = MAX_GRADE(ga) & 2 ? -1 : 1; // sign of reversing the pseudoscalar
+
+    for(Py_ssize_t i = 0; i < sparse0->size; i++){
+        Py_ssize_t bitmap = sparse0->bitmap[i];
+        sparse->value[i] = sign*dm.sign[bitmap]*sparse0->value[i];
+        sparse->bitmap[i] = pss ^ bitmap;
+    }
+
+    return 1;
+}
+
+static int binary_sparse_add(void *out, void *data0, void *data1, PyAlgebraObject *ga, int sign){
+    SparseMultivector *sparse0 = (SparseMultivector*)data0; 
+    SparseMultivector *sparse1 = (SparseMultivector*)data1;
+    SparseMultivector *sparse = (SparseMultivector*)out;
+    
+    BasisElement **addr = (BasisElement**)PyMem_RawCalloc(ga->product->size,sizeof(BasisElement*)); // A list of addresses for all basis elements
+    BasisElement *head = (BasisElement*)PyMem_RawMalloc(sizeof(BasisElement)); // The head of the graph
+    BasisElement *graph = head;
+
+    graph->next = NULL;
+    graph->bitmap = -1;
+    graph->value = 0;
+
+    Py_ssize_t bitmap;
+    Py_ssize_t size = 0;
+
+
+
+    for(Py_ssize_t i = 0; i < sparse0->size; i++){
+        bitmap = sparse0->bitmap[i];
+        GRAPH_APPEND_NEXT(bitmap,graph,addr,sparse0->value[i],size)
+    }
+
+    for(Py_ssize_t i = 0; i < sparse1->size; i++){
+        bitmap = sparse1->bitmap[i];
+        GRAPH_APPEND_NEXT(bitmap,graph,addr,sign*sparse1->value[i],size)
+    }
+
+    graph->next = NULL;
+    graph = graph_remove_rel_small(head->next,&size,ga->precision);
+    *sparse = graph_to_sparse_multivector(graph,size); // also frees memory for the graph 
+    PyMem_RawFree(addr);
+    PyMem_RawFree(head);
+
+    return 1;
+}
+
+static int binary_blades_add(void *out, void *data0, void *data1,  PyAlgebraObject *ga, int sign){
+    BladesMultivector *blades0 = (BladesMultivector*)data0;
+    BladesMultivector *blades1 = (BladesMultivector*)data1;
+    BladesMultivector *sparse = (BladesMultivector*)out;
+
+    SparseMultivector dense = init_sparse_empty(ga->asize);
+    if(dense.size == -1)
+        return 0;
+
+    SparseMultivector sub;
+    Py_ssize_t bitmap;
+    ga_float precision = ga->precision;
+
+    for(Py_ssize_t i = 0; i < blades0->size; i++){
+        sub = blades0->data[i];
+        for(Py_ssize_t j = 0; j < sub.size; j++){
+            bitmap = sub.bitmap[j];
+            dense.bitmap[bitmap] = bitmap;
+            dense.value[bitmap] += sub.value[j];
+        }
+    }
+
+    for(Py_ssize_t i = 0; i < blades1->size; i++){
+        sub = blades1->data[i];
+        for(Py_ssize_t j = 0; j < sub.size; j++){
+            bitmap = sub.bitmap[j];
+            dense.bitmap[bitmap] = bitmap;
+            dense.value[bitmap] += sign*sub.value[j];
+        }
+    }
+
+    // remove small values
+    for(Py_ssize_t i = 0; i < dense.size; i++)
+        if(dense.bitmap[i] != -1 && comp_abs(dense.value[i],precision))
+            dense.bitmap[i] = -1;
+
+    *sparse = sparse_dense_to_blades_sparse(dense,ga);
+    if(sparse->size == -1){
+        sparse_free_(dense);
+        return 0;
+    }
+
+    sparse_free_(dense);
+    return 1;
+}
+
+
+{% for comp,pname in comp_grade_array %}
+
+static BladesMultivector binary_blades_{{pname}}product_(BladesMultivector blades0, BladesMultivector blades1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    ga_float precision = ga->precision;
+
+    Py_ssize_t bitmap;
+    int sign;
+    SparseMultivector ssparse0, ssparse1;
+{% if pname != "geometric" %}
+    Py_ssize_t grade0,grade1;
+{% endif %}
+    BladesMultivector sparse = {.size = -1};
+    SparseMultivector dense = init_sparse_empty(m.size);
+    if(dense.size == -1)
+        return sparse;
+
+    for(Py_ssize_t i = 0; i < blades0.size; i++){
+        ssparse0 = blades0.data[i];
+{% if pname != "geometric" %}
+        grade0 = blades0.grade[i];
+{% endif %}
+        for(Py_ssize_t j = 0; j < blades1.size; j++){
+            ssparse1 = blades1.data[j];
+{% if pname != "geometric" %}
+            grade1 = blades1.grade[j];
+{% endif %}
+            for(Py_ssize_t k = 0; k < ssparse1.size; k++){
+                for(Py_ssize_t l = 0; l < ssparse0.size; l++){
+                    sign = m.sign[ssparse0.bitmap[l]][ssparse1.bitmap[k]];
+                    if(!sign) continue;
+                    bitmap = ssparse0.bitmap[l] ^ ssparse1.bitmap[k];
+                    {{comp("grade0","grade1","GRADE(bitmap)")}}
+                    dense.bitmap[bitmap] = bitmap;
+                    dense.value[bitmap] += ssparse0.value[l]*ssparse1.value[k]*sign;
+                }
+            }
+        }
+    }
+
+    // remove small values
+    for(Py_ssize_t i = 0; i < dense.size; i++)
+        if(dense.bitmap[i] != -1 && comp_abs(dense.value[i],precision))
+            dense.bitmap[i] = -1;
+
+    sparse = sparse_dense_to_blades_sparse(dense,ga);
+    if(sparse.size == -1){
+        sparse_free_(dense);
+        return sparse;
+    }
+
+    sparse_free_(dense);
+    return sparse;
+}
+
+static BladesMultivector ternary_blades_{{pname}}product_(BladesMultivector blades0, BladesMultivector blades1, BladesMultivector blades2, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    ga_float precision = ga->precision;
+    Py_ssize_t size = 0;
+    Py_ssize_t bitmap;
+    int sign;
+{% if pname != "geometric" %}
+    Py_ssize_t grade0,grade1,grade2;
+{% endif %}
+    SparseMultivector ssparse0, ssparse1, ssparse2;
+
+    BladesMultivector sparse = {.size = -1};
+    SparseMultivector dense0 = init_sparse_empty(m.size);
+    SparseMultivector dense1;
+{% if pname == "inner" %}
+    Py_ssize_t _grade0;
+{% endif %}
+
+    if(dense0.size == -1)
+        return sparse;
+
+    for(Py_ssize_t i = 0; i < blades0.size; i++){
+        ssparse0 = blades0.data[i];
+{% if pname != "geometric" %}
+        grade0 = blades0.grade[i];
+{% endif %}
+        for(Py_ssize_t j = 0; j < blades1.size; j++){
+            ssparse1 = blades1.data[j];
+{% if pname != "geometric" %}
+            grade1 = blades1.grade[j];
+{% endif %}
+            for(Py_ssize_t k = 0; k < ssparse1.size; k++){
+                for(Py_ssize_t l = 0; l < ssparse0.size; l++){
+                    sign = m.sign[ssparse0.bitmap[l]][ssparse1.bitmap[k]];
+                    if(!sign) continue;
+                    bitmap = ssparse0.bitmap[l] ^ ssparse1.bitmap[k];
+                    {{comp("grade0","grade1","GRADE(bitmap)")}}
+                    if(dense0.bitmap[bitmap] == -1) dense0.bitmap[bitmap] = bitmap, size++;
+                    dense0.value[bitmap] += ssparse0.value[l]*ssparse1.value[k]*sign;
+                }
+            }
+        }
+    }
+
+    dense1 = init_sparse_empty(size--);
+    if(dense1.size == -1){
+        sparse_free_(dense0);
+        return sparse;
+    }
+    for(Py_ssize_t i = 0; i < dense0.size; i++){
+        if(dense0.bitmap[i] != -1 && size >= 0){
+            dense1.bitmap[size] = dense0.bitmap[i];
+            dense1.value[size] = dense0.value[i];
+            size--;
+        }
+        dense0.bitmap[i] = -1;
+        dense0.value[i] = 0;
+    }
+
+    for(Py_ssize_t i = 0; i < dense1.size; i++){
+        for(Py_ssize_t j = 0; j < blades2.size; j++){
+            ssparse2 = blades2.data[j];
+{% if pname != "geometric" %}
+            grade2 = blades2.grade[j];
+{% endif %}
+            for(Py_ssize_t k = 0; k < ssparse2.size; k++){
+                sign = m.sign[dense1.bitmap[i]][ssparse2.bitmap[k]];
+                if(!sign) continue;
+                bitmap = dense1.bitmap[i] ^ ssparse2.bitmap[k];
+{% if pname == "inner" %}
+                {{COMP_GRADE_SPECIAL_INNER("GRADE(dense1.bitmap[i])","grade2","GRADE(bitmap)")}}
+{% else %}
+                {{comp("GRADE(dense1.bitmap[i])","grade2","GRADE(bitmap)")}}
+{% endif %}
+                dense0.bitmap[bitmap] = bitmap;
+                dense0.value[bitmap] += dense1.value[i]*ssparse2.value[k]*sign;
+            }
+        }
+    }
+
+    // remove small values
+    for(Py_ssize_t i = 0; i < dense0.size; i++)
+        if(dense0.bitmap[i] != -1 && comp_abs(dense0.value[i],precision))
+            dense0.bitmap[i] = -1;
+
+    sparse = sparse_dense_to_blades_sparse(dense0,ga);
+    if(sparse.size == -1){
+        sparse_free_(dense0);
+        sparse_free_(dense1);
+        return sparse;
+    }
+
+    sparse_free_(dense0);
+    sparse_free_(dense1);
+    return sparse;
+}
+{% endfor %}
+
+static BladesMultivector binary_blades_regressiveproduct_(BladesMultivector blades0, BladesMultivector blades1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    DualMap dm = ga->dm;
+    Py_ssize_t pss = ga->asize - 1;
+    ga_float precision = ga->precision;
+    Py_ssize_t max_grade = MAX_GRADE(ga);
+    Py_ssize_t l,r; int lsign;
+    int undualsign = METRIC_SIZE(ga) & 2 ? -1 : 1; // sign of reversing the pseudoscalar
+
+    Py_ssize_t bitmap,inner_bitmap;
+    SparseMultivector ssparse0, ssparse1;
+    Py_ssize_t grade0,grade1;
+    BladesMultivector sparse = {.size = -1};
+    SparseMultivector dense = init_sparse_empty(m.size);
+    if(dense.size == -1)
+        return sparse;
+
+    for(Py_ssize_t i = 0; i < blades0.size; i++){
+        ssparse0 = blades0.data[i];
+        grade0 = max_grade - blades0.grade[i];
+        for(Py_ssize_t j = 0; j < blades1.size; j++){
+            ssparse1 = blades1.data[j];
+            grade1 = max_grade - blades1.grade[j];
+            for(Py_ssize_t n = 0; n < ssparse0.size; n++){
+                l = pss ^ ssparse0.bitmap[n]; // product with the pseudoscalar
+                lsign = undualsign*dm.sign[ssparse0.bitmap[n]];
+                for(Py_ssize_t k = 0; k < ssparse1.size; k++){
+                    r = pss ^ ssparse1.bitmap[k];
+                    bitmap = pss^(inner_bitmap = l ^ r);
+                    if(grade0 + grade1 != GRADE(inner_bitmap)) continue;
+                    dense.bitmap[bitmap] = bitmap;
+                    dense.value[bitmap] += ssparse0.value[n]*ssparse1.value[k]*m.sign[l][r]*dm.sign[ssparse1.bitmap[k]]*lsign;
+                }
+            }
+        }
+    }
+
+    // remove small values
+    for(Py_ssize_t i = 0; i < dense.size; i++)
+        if(dense.bitmap[i] != -1 && comp_abs(dense.value[i],precision))
+            dense.bitmap[i] = -1;
+
+    sparse = sparse_dense_to_blades_sparse(dense,ga);
+    if(sparse.size == -1){
+        sparse_free_(dense);
+        return sparse;
+    }
+
+    sparse_free_(dense);
+    return sparse;
+}
+
+
+static int unary_blades_dual(void *out, void *data0, PyAlgebraObject *ga){
+    BladesMultivector *blades0 = (BladesMultivector*)data0;
+    BladesMultivector *blades = (BladesMultivector*)out;
+
+    DualMap dm = ga->dm;
+    Py_ssize_t pss = ga->asize-1;
+    Py_ssize_t max_grade = MAX_GRADE(ga);
+    *blades = init_blades_empty(blades0->size);
+    if(blades->size == -1)
+        return 0;
+
+    for(Py_ssize_t i = 0; i < blades0->size; i++){
+        Py_ssize_t bsize = blades0->data[i].size;
+        blades->data[i].bitmap = (int*)PyMem_RawMalloc(bsize*sizeof(int));
+        blades->data[i].value = (ga_float*)PyMem_RawMalloc(bsize*sizeof(ga_float));
+        if(!blades->data[i].bitmap || !blades->data[i].value){
+            blades_free_(*blades);
+            return 0;
+        }
+        blades->data[i].size = bsize;
+        blades->grade[i] = max_grade - blades0->grade[i];
+        for(Py_ssize_t j = 0; j < bsize; j++){
+            Py_ssize_t bitmap = blades0->data[i].bitmap[j];
+            blades->data[i].bitmap[j] = pss^bitmap;
+            blades->data[i].value[j] = dm.sign[bitmap]*blades0->data[i].value[j];
+        }
+    }
+
+    return 1;
+}
+
+static int unary_blades_undual(void *out, void *data0, PyAlgebraObject *ga){
+    BladesMultivector *blades0 = (BladesMultivector*)data0;
+    BladesMultivector *blades = (BladesMultivector*)out;
+    DualMap dm = ga->dm;
+    *blades = init_blades_empty(blades0->size);
+    if(blades->size == -1)
+        return 0;
+    Py_ssize_t pss = ga->asize-1;
+    Py_ssize_t max_grade = MAX_GRADE(ga);
+    int sign = max_grade & 2 ? -1 : 1; // sign of reversing the pseudoscalar
+    for(Py_ssize_t i = 0; i < blades0->size; i++){
+        Py_ssize_t bsize = blades0->data[i].size;
+        blades->data[i].bitmap = (int*)PyMem_RawMalloc(bsize*sizeof(int));
+        blades->data[i].value = (ga_float*)PyMem_RawMalloc(bsize*sizeof(ga_float));
+        if(!blades->data[i].bitmap || !blades->data[i].value){
+            blades_free_(*blades);
+            return 0;
+        }
+        blades->data[i].size = bsize;
+        blades->grade[i] = max_grade - blades0->grade[i];
+        for(Py_ssize_t j = 0; j < bsize; j++){
+            Py_ssize_t bitmap = blades0->data[i].bitmap[j];
+            blades->data[i].bitmap[j] = pss^bitmap;
+            blades->data[i].value[j] = sign*dm.sign[bitmap]*blades0->data[i].value[j];
+        }
+    }
+
+    return 1;
+}
+
+
+{% for comp,pname,declare in comp_array %}
+
+static DenseMultivector binary_dense_{{pname}}product_(DenseMultivector dense0, DenseMultivector dense1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    DenseMultivector dense = {.size = -1};
+    Py_ssize_t bitmap;
+    {{declare}}
+    dense = init_dense_empty(m.size);
+    if(dense.size == -1) return dense;
+    int sign;
+    for(Py_ssize_t i = 0; i < dense0.size; i++){
+        for(Py_ssize_t j = 0; j < dense1.size; j++){
+            sign = m.sign[i][j];
+            if(!sign) continue;
+            bitmap = i^j;
+            {{comp("i","j","bitmap")}}
+            dense.value[bitmap] += dense0.value[i]*dense1.value[j]*sign;
+        }
+    }
+
+    return dense;
+}
+
+static DenseMultivector ternary_dense_{{pname}}product_(DenseMultivector dense0, DenseMultivector dense1, DenseMultivector dense2, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    DenseMultivector dense = {.size = -1};
+    DenseMultivector temp = {.size = -1};
+    dense = init_dense_empty(m.size);
+    temp = init_dense_empty(m.size);
+    if(temp.size == -1) return temp;
+    if(dense.size == -1) return dense;
+    int sign;
+    Py_ssize_t bitmap;
+    {{declare}}
+    for(Py_ssize_t i = 0; i < m.size; i++){
+        for(Py_ssize_t j = 0; j < m.size; j++){
+            sign = m.sign[i][j];
+            if(!sign) continue;
+            bitmap = i^j;
+            {{comp("i","j","bitmap")}}
+            temp.value[bitmap] += dense0.value[i]*dense1.value[j]*sign;
+        }
+    }
+
+    for(Py_ssize_t i = 0; i < m.size; i++){
+        for(Py_ssize_t j = 0; j < m.size; j++){
+            sign = m.sign[i][j];
+            if(!sign) continue;
+            bitmap = i^j;
+            {{comp("i","j","bitmap")}}
+            dense.value[bitmap] += temp.value[i]*dense2.value[j]*sign;
+        }
+    }
+    dense_free_(temp);
+    return dense;
+}
+{% endfor %}
+
+static DenseMultivector binary_dense_regressiveproduct_(DenseMultivector dense0, DenseMultivector dense1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    DualMap dm = ga->dm;
+    DenseMultivector dense = {.size = -1};
+    Py_ssize_t bitmap,inner_bitmap;
+    Py_ssize_t _grade0;
+    Py_ssize_t pss = ga->asize - 1;
+    dense = init_dense_empty(m.size);
+    if(dense.size == -1) return dense;
+
+    Py_ssize_t l,r; int lsign;
+    int undualsign = METRIC_SIZE(ga) & 2 ? -1 : 1; // sign of reversing the pseudoscalar
+
+    for(Py_ssize_t i = 0; i < dense0.size; i++){
+        l = pss ^ i; // dual of the left multivector
+        lsign = undualsign*dm.sign[i];
+        _grade0 = GRADE(l);
+        for(Py_ssize_t j = 0; j < dense1.size; j++){
+            r = pss ^ j; // dual of the right multivector
+            bitmap = pss^(inner_bitmap = l^r);
+            if(_grade0 + GRADE(r) != GRADE(inner_bitmap)) continue;
+            dense.value[bitmap] += dense0.value[i]*dense1.value[j]*m.sign[l][r]*dm.sign[j]*lsign;
+        }
+    }
+
+    return dense;
+}
+
+static int unary_dense_gradeproject(void *out, void *data0, PyAlgebraObject *ga, int *grades, Py_ssize_t grade_size){
+    DenseMultivector *dense0 = (DenseMultivector*)data0;
+    DenseMultivector *dense = (DenseMultivector*)out;
+    
+    Py_ssize_t *g = get_grade_bool(grades,grade_size,MAX_GRADE(ga)+1);
+    if(!g) return 0;
+    *dense = init_dense_empty(dense0->size);
+    for(Py_ssize_t i = 0; i < dense->size; i++)
+        if(g[GRADE(i)])
+            dense->value[i] = dense0->value[i];
+
+    PyMem_RawFree(g);
+    return 1;
+}
+
+static int unary_dense_reverse(void *out, void *data0, PyAlgebraObject *ga){
+    DenseMultivector *dense0 = (DenseMultivector*)data0;
+    DenseMultivector *dense = (DenseMultivector*)out;
+
+    *dense = init_dense_empty(dense0->size);
+    if(dense->size == -1)
+        return 0;
+
+    for(Py_ssize_t i = 0; i < dense0->size; i++){
+        int sign = (GRADE(i) & 2) ? -1 : 1;
+        dense->value[i] = sign*dense0->value[i];
+    }
+
+    return 1;
+}
+
+static int unary_dense_dual(void *out, void *data0, PyAlgebraObject *ga){
+    DenseMultivector *dense0 = (DenseMultivector*)data0;
+    DenseMultivector *dense = (DenseMultivector*)out;
+
+    DualMap dm = ga->dm;
+    Py_ssize_t pss = ga->asize-1;
+    *dense = init_dense_empty(dense0->size);
+    if(dense->size == -1)
+        return 0;
+
+    for(Py_ssize_t i = 0; i < dense0->size; i++)
+        dense->value[pss^i] = dm.sign[i]*dense0->value[i];
+
+    return 1;
+}
+
+static int unary_dense_undual(void *out, void *data0, PyAlgebraObject *ga){
+    DenseMultivector *dense0 = (DenseMultivector*)data0;
+    DenseMultivector *dense = (DenseMultivector*)out;
+
+    DualMap dm = ga->dm;
+    Py_ssize_t pss = ga->asize-1;
+    *dense = init_dense_empty(dense0->size);
+    if(dense->size == -1)
+        return 0;
+
+    int sign = MAX_GRADE(ga) & 2 ? -1 : 1; // sign of reversing the pseudoscalar
+    for(Py_ssize_t i = 0; i < dense0->size; i++)
+        dense->value[pss^i] = sign*dm.sign[i]*dense0->value[i];
+
+    return 1;
+}
+
+
+{% set type_list = ["sparse","dense","blades"] %}
+{% set Type_list = ["Sparse","Dense","Blades"] %}
+{% set args_str_list = ["unary","binary","ternary"] %}
+{% set op_list = ["gradeproject","reverse","dual","undual","norm"]%}
+{% set args_index_list = [[0],[0],[0],[0],[0]] %}
+{% set OP_args_list = [", int *grades, Py_ssize_t size","","","",""]%}
+{% set op_args_list = [", grades, size","","","",""]%}
+
+{% for comp,pname,declare in comp_array %}
+
+static SparseMultivector atomic_sparse_{{pname}}product_(SparseMultivector *data, Py_ssize_t dsize, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+
+    SparseMultivector sparse = {.size = -1};
+
+    // initiallize the addresses to null: addr[i] <- NULL
+    BasisElement **addr = (BasisElement**)PyMem_RawCalloc(m.size,sizeof(BasisElement*)); // A list of addresses for all basis elements
+    BasisElement *head = (BasisElement*)PyMem_RawMalloc(sizeof(BasisElement)); // The head of the graph
+    BasisElement *graph = head;
+
+    BasisElement *head_out = (BasisElement*)PyMem_RawMalloc(sizeof(BasisElement)); // The head of the graph
+    BasisElement *graph_out = head_out;
+
+    BasisElement *prev = NULL;
+
+    graph->next = NULL;
+    graph->bitmap = 0;
+    graph->value = 1;
+
+    graph_out->next = NULL;
+    graph_out->bitmap = -1;
+    graph_out->value = 0;
+    {{declare}}
+
+    int sign; Py_ssize_t bitmap,size=0;
+    for(Py_ssize_t i = 0; i < dsize; i++){ // iterate over multivectors
+        size = 0;
+        while(graph){
+            for(Py_ssize_t j = 0; j < data[i].size; j++){
+                sign = m.sign[graph->bitmap][data[i].bitmap[j]];
+                if(!sign) continue;
+                bitmap = graph->bitmap ^ data[i].bitmap[j];
+                {{comp("graph->bitmap","data[i].bitmap[j]","bitmap")}}
+                GRAPH_APPEND_NEXT(bitmap,graph_out,addr,data[i].value[j]*graph->value*sign,size)
+            }
+            graph =  graph->next;
+        }
+        
+        graph_free(prev); // release memory for graph needed in the previous computation 
+        memset(addr,0,m.size*sizeof(BasisElement*));// reset the address array
+        
+        prev = head;
+        graph = head = head_out->next;
+        head_out->next = NULL;
+        graph_out = head_out;
+    }
+
+    graph_out->next = NULL;
+    graph_out = graph_remove_rel_small(head,&size,ga->precision);
+    sparse = graph_to_sparse_multivector(graph_out,size); // also frees memory for the graph
+    
+    graph_free(prev);
+    PyMem_RawFree(addr);
+    PyMem_RawFree(head_out);
+
+    return sparse;
+}
+
+
+static SparseMultivector atomic_sparse_{{pname}}product0_(SparseMultivector *data, Py_ssize_t dsize, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+
+    // Allocate memory for a dense y
+    SparseMultivector dense = init_sparse_empty(m.size);
+    if(dense.size == -1) return dense;
+    SparseMultivector temp = init_sparse_empty(m.size);
+    if(temp.size == -1) {
+        sparse_free_(dense);
+        return temp;
+    }
+
+    SparseMultivector sparse;
+    Py_ssize_t tsize = 1;
+    {{declare}}
+    *temp.bitmap = 0; *temp.value = 1; // initialize temp to unit scalar
+
+    int sign; Py_ssize_t bitmap;
+    for(Py_ssize_t i = 0; i < dsize; i++){ // iterate over multivectors
+        for(Py_ssize_t j = 0; j < data[i].size; j++){
+            for(Py_ssize_t k = 0; k < tsize; k++){
+                if(temp.bitmap[k] == -1) continue;
+                sign = m.sign[temp.bitmap[k]][data[i].bitmap[j]];
+                if(!sign) continue;
+                bitmap = temp.bitmap[k] ^ data[i].bitmap[j];
+                {{comp("temp.bitmap[k]","data[i].bitmap[j]","bitmap")}}
+                dense.bitmap[bitmap] = bitmap;
+                dense.value[bitmap] += temp.value[k]*data[i].value[j]*sign;
+            }
+        }
+        tsize = 0;
+        for(Py_ssize_t l = 0; l < dense.size; l++){
+            if(dense.bitmap[l] != -1){
+                temp.bitmap[tsize] = dense.bitmap[l];
+                temp.value[tsize] = dense.value[l];
+                tsize++;
+            }
+            dense.bitmap[l] = -1;
+            dense.value[l] = 0;
+        }
+    }
+
+    sparse_remove_small(temp,ga->precision,&tsize);
+    sparse = sparse_dense_to_sparse_sparse(temp,tsize);
+    if(sparse.size == -1){
+        sparse_free_(dense);
+        sparse_free_(temp);
+        return sparse;
+    }
+
+    sparse_free_(dense);
+    sparse_free_(temp);
+    return sparse;
+}
+
+{% endfor %}
+
+static int atomic_blades_add(void *out, void *data0, PyAlgebraObject *ga, Py_ssize_t size){
+    BladesMultivector *data = (BladesMultivector*)data0;
+    BladesMultivector *sparse = (BladesMultivector*)out;
+
+    SparseMultivector dense = init_sparse_empty(ga->asize);
+    if(dense.size == -1) return 0;
+    SparseMultivector sub;
+    Py_ssize_t bitmap;
+    ga_float precision = ga->precision;
+
+    for(Py_ssize_t k = 0; k < size; k++){
+        for(Py_ssize_t i = 0; i < data[k].size; i++){
+            sub = data[k].data[i];
+            for(Py_ssize_t j = 0; j < sub.size; j++){
+                bitmap = sub.bitmap[j];
+                dense.bitmap[bitmap] = bitmap;
+                dense.value[bitmap] += sub.value[j];
+            }
+        }
+    }
+
+    // remove small values
+    for(Py_ssize_t i = 0; i < dense.size; i++)
+        if(dense.bitmap[i] != -1 && comp_abs(dense.value[i],precision))
+            dense.bitmap[i] = -1;
+
+    *sparse = sparse_dense_to_blades_sparse(dense,ga);
+    sparse_free_(dense);
+    return 1;
+}
+
+static int atomic_sparse_add(void *out, void *data0, PyAlgebraObject *ga, Py_ssize_t dsize){
+    SparseMultivector *data = (SparseMultivector*)data0;
+    SparseMultivector *sparse = (SparseMultivector*)out;
+
+    BasisElement **addr = (BasisElement**)PyMem_RawCalloc(ga->product->size,sizeof(BasisElement*)); // A list of addresses for all basis elements
+    BasisElement *head = (BasisElement*)PyMem_RawMalloc(sizeof(BasisElement)); // The head of the graph
+    BasisElement *graph = head;
+
+    graph->next = NULL;
+    graph->bitmap = -1;
+    graph->value = 0;
+
+    Py_ssize_t bitmap;
+    Py_ssize_t size = 0;
+
+    for(Py_ssize_t j = 0; j < dsize; j++){
+        for(Py_ssize_t i = 0; i < data[j].size; i++){
+            bitmap = data[j].bitmap[i];
+            GRAPH_APPEND_NEXT(bitmap,graph,addr,data[j].value[i],size)
+        }
+    }
+
+    graph = graph_remove_rel_small(head->next,&size,ga->precision);
+    *sparse = graph_to_sparse_multivector(graph,size); // also frees memory for the graph 
+    PyMem_RawFree(addr);
+    PyMem_RawFree(head);
+    return 1;
+}
+
+{% for comp,pname in comp_grade_array %}
+static BladesMultivector atomic_blades_{{pname}}product_(BladesMultivector *data, Py_ssize_t dsize, PyAlgebraObject *ga){
+    BladesMultivector sparse = {.size = -1};
+    CliffordMap m = *ga->product;
+    SparseMultivector dense = init_sparse_empty(m.size);
+    if(dense.size == -1) return sparse;
+    SparseMultivector temp = init_sparse_empty(m.size);
+    if(temp.size == -1){
+        sparse_free_(dense);
+        return sparse;
+    }
+    *temp.bitmap = 0; *temp.value = 1; // initialize temp to unit scalar
+    Py_ssize_t tsize = 1;
+{% if pname != "geometric"%}
+    Py_ssize_t sgrade;
+{% endif %}
+{% if pname == "inner" %}
+    Py_ssize_t _grade0;
+{% endif %}
+    int sign; int bitmap;
+    for(Py_ssize_t i = 0; i < dsize; i++){ // iterate over multivectors
+        for(Py_ssize_t j = 0; j < tsize; j++){ // iterate over temp
+            if(temp.bitmap[j] == -1) continue; // ignore if value not set
+            for(Py_ssize_t k = 0; k < data[i].size; k++){ // iterate over grades
+                SparseMultivector sdata = data[i].data[k];
+{% if pname != "geometric"%}
+                sgrade = data[i].grade[k];
+{% endif %}
+                for(Py_ssize_t l = 0; l < sdata.size; l++){ // iterate over values and bitmaps of data[i]
+                    sign = m.sign[temp.bitmap[j]][sdata.bitmap[l]];
+                    if(!sign) continue;
+                    bitmap = temp.bitmap[j] ^ sdata.bitmap[l];
+                    {% if pname == "inner" %}
+                    {{COMP_GRADE_SPECIAL_INNER("GRADE(temp.bitmap[j])","sgrade","GRADE(bitmap)")}}
+                    {% else %}
+                    {{comp("GRADE(temp.bitmap[j])","sgrade","GRADE(bitmap)")}}
+                    {% endif %}
+                    dense.bitmap[bitmap] = bitmap;
+                    dense.value[bitmap] += temp.value[j]*sdata.value[l]*sign;
+                }
+            }
+        }
+        tsize = 0;
+        for(Py_ssize_t l = 0; l < dense.size; l++){
+            if(dense.bitmap[l] != -1){
+                temp.bitmap[tsize] = dense.bitmap[l];
+                temp.value[tsize] = dense.value[l];
+                tsize++;
+            }
+            dense.bitmap[l] = -1;
+            dense.value[l] = 0;
+        }
+    }
+
+    sparse_remove_small(temp,ga->precision,&tsize);
+    sparse = sparse_dense_to_blades_sparse(temp,ga);
+    sparse_free_(dense);
+    sparse_free_(temp);
+    return sparse;
+}
+{% endfor %}
+
+{% for comp,pname,declare in comp_array %}
+static DenseMultivector atomic_dense_{{pname}}product_(DenseMultivector *data, Py_ssize_t dsize, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    DenseMultivector dense = init_dense_empty(m.size);
+    if(dense.size == -1) return dense;
+    DenseMultivector temp = init_dense_empty(m.size);
+    if(temp.size == -1) {
+        dense_free_(dense);
+        return temp;
+    }
+
+    *temp.value = 1; // initialize temp to unit scalar
+    {{declare}}
+    Py_ssize_t bitmap;
+    int sign;
+    for(Py_ssize_t i = 0; i < dsize; i++){ // iterate over multivectors
+        for(Py_ssize_t j = 0; j < data[i].size; j++){
+            for(Py_ssize_t k = 0; k < temp.size; k++){
+                sign = m.sign[k][j];
+                if(!sign) continue;
+                bitmap = k ^ j;
+                {{comp("k","j","bitmap")}}
+                dense.value[bitmap] += temp.value[k]*data[i].value[j]*sign;
+            }
+        }
+        // copy values
+        for(Py_ssize_t l = 0; l < dense.size; l++){
+            temp.value[l] = dense.value[l];
+            dense.value[l] = 0;
+        }
+    }
+
+    dense_free_(dense);
+    return temp;
+}
+{% endfor %}
+
+static SparseMultivector binary_mixed_regressiveproduct_(PyMultivectorIter *iter0, PyMultivectorIter *iter1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    DualMap dm = ga->dm;
+    Py_ssize_t pss = ga->asize - 1;
+    SparseMultivector dense = init_sparse_empty(m.size);
+    if(dense.size == -1) return dense;
+
+    int undualsign = METRIC_SIZE(ga) & 2 ? -1 : 1; // sign of reversing the pseudoscalar
+    Py_ssize_t _grade0;
+    SparseMultivector sparse;
+    Py_ssize_t size = 0;
+    Py_ssize_t l,r; int lsign;
+
+    Py_ssize_t bitmap, inner_bitmap;
+    while(iter0->next(iter0)){
+        l = pss^iter0->bitmap;
+        lsign = undualsign*dm.sign[iter0->bitmap];
+        _grade0 = GRADE(l);
+        while(iter1->next(iter1)){
+            r = pss^iter1->bitmap;
+            bitmap = pss^(inner_bitmap = l^r);
+            if(_grade0 + GRADE(r) != GRADE(inner_bitmap)) continue;
+            if(dense.bitmap[bitmap] == -1) dense.bitmap[bitmap] = bitmap, size++;
+            dense.value[bitmap] += iter0->value*iter1->value*m.sign[l][r]*lsign*dm.sign[iter1->bitmap];
+        }
+    }
+
+    sparse_remove_small(dense,ga->precision,&size);
+    sparse = sparse_dense_to_sparse_sparse(dense,size);
+    sparse_free_(dense);
+    return sparse;
+}
+
+
+
+{% for comp,pname,declare in comp_array %}
+static SparseMultivector binary_mixed_{{pname}}product_(PyMultivectorIter *iter0, PyMultivectorIter *iter1, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+
+    SparseMultivector dense = init_sparse_empty(m.size);
+    if(dense.size == -1) return dense;
+
+    SparseMultivector sparse;
+    Py_ssize_t size = 0;
+    {{declare}}
+    int sign; Py_ssize_t bitmap;
+    while(iter0->next(iter0)){
+        while(iter1->next(iter1)){
+            sign = m.sign[iter0->bitmap][iter1->bitmap];
+            if(!sign) continue;
+            bitmap = iter0->bitmap ^ iter1->bitmap;
+            {{comp("iter0->bitmap","iter1->bitmap","bitmap")}}
+            if(dense.bitmap[bitmap] == -1) dense.bitmap[bitmap] = bitmap, size++;
+            dense.value[bitmap] += iter0->value*iter1->value*sign;
+        }
+    }
+
+    sparse_remove_small(dense,ga->precision,&size);
+    sparse = sparse_dense_to_sparse_sparse(dense,size);
+    sparse_free_(dense);
+    return sparse;
+}
+
+
+static SparseMultivector atomic_mixed_{{pname}}product_(PyMultivectorIter *iter, Py_ssize_t size, PyAlgebraObject *ga){
+    CliffordMap m = *ga->product;
+    SparseMultivector dense = init_sparse_empty(m.size);
+    if(dense.size == -1) return dense;
+    SparseMultivector temp = init_sparse_empty(m.size);
+    if(temp.size == -1){
+        sparse_free_(dense);
+        return temp;
+    }
+
+    SparseMultivector sparse;
+    Py_ssize_t tsize = 1;
+    {{declare}}
+    *temp.bitmap = 0; *temp.value = 1; // initialize temp to unit scalar
+    int sign; Py_ssize_t bitmap;
+    for(Py_ssize_t i = 0; i < size; i++){ // iterate over multivectors
+        while(iter->next(iter)){
+            for(Py_ssize_t k = 0; k < tsize; k++){
+                if(temp.bitmap[k] == -1) continue;
+                sign = m.sign[temp.bitmap[k]][iter->bitmap];
+                if(!sign) continue;
+                bitmap = temp.bitmap[k] ^ iter->bitmap;
+                {{comp("temp.bitmap[k]","iter->bitmap","bitmap")}}
+                dense.bitmap[bitmap] = bitmap;
+                dense.value[bitmap] += temp.value[k]*iter->value*sign;
+            }
+        }iter++;
+        tsize = 0;
+        for(Py_ssize_t l = 0; l < dense.size; l++){
+            if(dense.bitmap[l] != -1){
+                temp.bitmap[tsize] = dense.bitmap[l];
+                temp.value[tsize] = dense.value[l];
+                tsize++;
+            }
+            dense.bitmap[l] = -1;
+            dense.value[l] = 0;
+        }
+    }
+
+    sparse_remove_small(temp,ga->precision,&tsize);
+    sparse = sparse_dense_to_sparse_sparse(temp,tsize);
+    sparse_free_(dense);
+    sparse_free_(temp);
+    return sparse;
+}
+{% endfor %}
+/*
+
+{% for j in range(3)%} {# iterate over types #}
+{% set type = type_list[j] %}
+{% set Type = Type_list[j] %}
+{% for k in range(4) %} {# iterate over operation #}
+{% set OP_args = OP_args_list[k] %}
+{% set op_args = op_args_list[k] %}
+{% set operation = op_list[k] %}
+{% if not((operation == "reverse" and type == "blades") or (operation == "gradeproject" and type == "blades")) %}
+{% for args_i in args_index_list[k] %} {# iterate over arg size #}
+{% set args_str = args_str_list[args_i] %}
+
+static int {{args_str}}_{{type}}_{{operation}}__(void *out, void *data0
+{%- for i in range(1,args_i+1) -%}
+    , void *data{{i}}
+{%- endfor -%}{{OP_args}}){
+    {{Type}}Multivector *{{type}}_out = ({{Type}}Multivector*)out;
+{% for i in range(args_i + 1) %}
+    {{Type}}Multivector *{{type}}{{i}} = ({{Type}}Multivector*)data{{i}};
+{% endfor %}
+
+    *{{type}}_out = {{args_str}}_{{type}}_{{operation}}_(
+{%- for i in range(args_i + 1) -%}
+        *{{type}}{{i}},
+{%- endfor %}data0->GA{{op_args}});
+
+    if({{type}}_out->size == -1){
+        PyMem_RawFree({{type}}_out);
+        return 0;
+    }
+
+    return 1;
+}
+
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+*/
+{% set product_names = ["geometric","inner","outer","regressive"] %}
+{% set args_str_list = ["binary","ternary"] %}
+{% set ninputs = [2,3] %}
+
+{% for j in range(3) %} {# iterate over types #}
+{% for i in range(2) %} {# iterate over operation type arguments #}
+{% set type = type_list[j] %}
+{% set Type = Type_list[j] %}
+{% set args_str = args_str_list[i] %}
+{% set n = ninputs[i] %}
+{% set ss = 0 %}
+{% if args_str == "ternary" %}
+{% set ss = 1 %}
+{% endif %}
+static int {{args_str}}_{{type}}_product(void *out,
+{%- for i in range(n) -%}
+void *data{{i}},{{" "}}
+{%- endfor %} PyAlgebraObject *GA, ProductType ptype){
+{% for i in range(n) %}
+    {{Type}}Multivector *p{{type}}{{i}} = ({{Type}}Multivector*)data{{i}};
+{% endfor %}
+    {{Type}}Multivector *p{{type}}  = ({{Type}}Multivector*)out;
+    if(
+{%- for i in range(n) -%}
+!p{{type}}{{i}} ||
+{%- endfor -%}
+ !p{{type}} || !out){
+        return 0; // raise error
+    }
+
+    switch(ptype){
+{% for z in range(4-ss) %}
+        case ProductType_{{product_names[z]}}:
+            *p{{type}} = {{args_str}}_{{type}}_{{product_names[z]}}product_(
+{%- for i in range(n) -%}
+        *p{{type}}{{i}},
+{%- endfor %}GA);
+            break;
+{% endfor %}
+        default:
+            return 0;
+    }
+
+    return 1;
+}
+{% endfor %}
+{% endfor %}
+
+
+{% set product_names = ["geometric","inner","outer"] %}
+{% for type in type_list %}
+{% set Type = Type_list[loop.index0] %}
+static int atomic_{{type}}_product(void *out, void *data0, PyAlgebraObject *GA, Py_ssize_t size, ProductType ptype){
+    {{Type}}Multivector *p{{type}}0 = ({{Type}}Multivector*)data0;
+    {{Type}}Multivector *p{{type}}  = ({{Type}}Multivector*)out;
+    if(!p{{type}}0 || !p{{type}}){
+        return 0; // raise error
+    }
+
+    switch(ptype){
+{% for product_name in product_names %}
+        case ProductType_{{product_name}}:
+            *p{{type}} = atomic_{{type}}_{{product_name}}product_(p{{type}}0,size,GA);
+            break;
+{% endfor %}
+        default:
+            return 0;
+    }
+
+    return 1;
+}
+{% endfor %}
+/*
+{# generating code for same type atomic operations #}
+{% set type_list_ = ["blades"] %}
+{% set Type_list_ = ["Blades"] %}
+{% set op_list = ["add"] %}
+{% set OP_args_list = [""] %}
+{% set op_args_list = [""] %}
+{% for j in range(1)%} {# iterate over types #}
+{% set type = type_list_[j] %}
+{% set Type = Type_list_[j] %}
+{% for k in range(1) %} {# iterate over operation #}
+{% set OP_args = OP_args_list[k] %}
+{% set op_args = op_args_list[k] %}
+{% set operation = op_list[k] %}
+static int atomic_{{type}}_{{operation}}(void *out, void *data, PyAlgebraObject *GA, Py_ssize_t size{{OP_args}}){
+    {{Type}}Multivector *{{type}} = ({{Type}}Multivector*)out;
+    {{Type}}Multivector *{{type}}_array = ({{Type}}Multivector*)data;
+
+    *{{type}} = atomic_{{type}}_{{operation}}_({{type}}_array,size,GA{{op_args}});
+
+    if({{type}}->size == -1){
+        return 0;
+    }
+
+    return out;
+}
+{% endfor %}
+{% endfor %}
+*/
+
+{% set product_names = ["geometric","inner","outer"] %}
+static int atomic_mixed_product(void *out, PyMultivectorIter *iter, PyAlgebraObject *GA, Py_ssize_t size, ProductType ptype){    
+    SparseMultivector *psparse = (SparseMultivector*)out;
+
+    if(!iter || !psparse || !out){
+        return 0; // raise error
+    }
+
+    switch(ptype){
+{% for product_name in product_names %}
+        case ProductType_{{product_name}}:
+            *psparse = atomic_mixed_{{product_name}}product_(iter,size,GA);
+            break;
+{% endfor %}
+        default:
+            return 0;
+    }
+
+    return 1;
+}
+
+{% set product_names = ["geometric","inner","outer","regressive"] %}
+static int binary_mixed_product(void *out, PyMultivectorIter *iter0, PyMultivectorIter *iter1, PyAlgebraObject *GA, ProductType ptype){
+    SparseMultivector *psparse = (SparseMultivector*)out;
+    if(!iter1 || !iter0 || !psparse || !out ){
+        return 0;
+    }
+
+    switch(ptype){
+{% for pname in product_names %}
+        case ProductType_{{pname}}:
+            *psparse = binary_mixed_{{pname}}product_(iter0,iter1,GA);
+            break;
+{% endfor %}
+        default:
+            return 0;
+    }
+
+    if(psparse->size == -1){
+        return 0;
+    }
+    
+    return 1;
+}
+
+
+{% set type = "blades" %}
+{% set Type = "Blades" %}
+static int {{type}}_init(void *data, PyAlgebraObject *ga, int *bitmap, ga_float *value, Py_ssize_t size){
+    {{Type}}Multivector *{{type}} = data;
+    *{{type}} = {{type}}_init_(bitmap,value,size,ga);
+    return 1;
+}
+
+
+PyMultivectorMixedMath_Funcs largemultivector_mixed_fn = {
+  .add = NULL,
+  .product = binary_mixed_product,
+  .atomic_add = NULL,
+  .atomic_product = atomic_mixed_product,
+  .type_names = {"sparselarge","denselarge","bladeslarge",NULL},
+};
+
+
+{# {% for j in range(2) %}  #}
+{# {% set type = type_list[j] %}#}
+{# {% set Type = Type_list[j] %}#}
+{% set type = 'dense' %}
+PyMultivectorMath_Funcs largemultivector_{{type}}_math_fn = {
+    .product = binary_{{type}}_product,
+    .atomic_product = atomic_{{type}}_product,
+    .ternary_product = ternary_{{type}}_product,
+    .grade_project = unary_{{type}}_gradeproject,
+    .reverse = unary_{{type}}_reverse,
+    .add = NULL,
+    .atomic_add = NULL,
+    .scalar_product = NULL,
+    .scalar_add = NULL,
+    .dual = unary_{{type}}_dual,
+    .undual = unary_{{type}}_undual,
+};
+{# {% endfor %} #}
+
+{% set type = 'sparse' %}
+PyMultivectorMath_Funcs largemultivector_{{type}}_math_fn = {
+    .product = binary_{{type}}_product,
+    .atomic_product = atomic_{{type}}_product,
+    .ternary_product = ternary_{{type}}_product,
+    .grade_project = unary_{{type}}_gradeproject,
+    .reverse = unary_{{type}}_reverse,
+    .add = binary_sparse_add,
+    .atomic_add = atomic_sparse_add,
+    .scalar_product = NULL,
+    .scalar_add = NULL,
+    .dual = unary_{{type}}_dual,
+    .undual = unary_{{type}}_undual,
+};
+
+{% set type = type_list[2] %}
+PyMultivectorMath_Funcs largemultivector_{{type}}_math_fn = {
+    .product = binary_{{type}}_product,
+    .atomic_product = atomic_{{type}}_product,
+    .ternary_product = ternary_{{type}}_product,
+    .grade_project = NULL,
+    .reverse = NULL,
+    .add = binary_{{type}}_add,
+    .atomic_add = atomic_{{type}}_add,
+    .scalar_product = NULL,
+    .scalar_add = NULL,
+    .dual = unary_{{type}}_dual,
+    .undual = unary_{{type}}_undual,
+};
+
+
+{% for j in range(2)%} {# iterate over types #}
+{% set type = type_list[j] %}
+{% set Type = Type_list[j] %}
+
+PyMultivectorData_Funcs largemultivector_{{type}}_data_fn = {
+    .free = NULL,
+    .init = NULL,
+    .iter_next = NULL,
+    .iter_init = NULL,
+};
+{% endfor %}
+
+PyMultivectorData_Funcs largemultivector_blades_data_fn = {
+    .free = NULL,
+    .init = blades_init,
+    .cast = cast_to_blades,
+    .iter_next = NULL,
+    .iter_init = NULL,
+};
+
+
+{% for j in range(3)%} {# iterate over types #}
+{% set type = type_list[j] %}
+{% set Type = Type_list[j] %}
+const PyMultivectorSubType large{{type}}_subtype = {
+    .math_funcs = &largemultivector_{{type}}_math_fn,
+    .data_funcs = &largemultivector_{{type}}_data_fn,
+    .name = "",
+    .type_name = "{{type}}large", 
+    .generated = 0,
+    .metric = {-2},
+    .msize = -1,
+    .ntype = MultivectorType_{{type}},
+    .basic_size = sizeof({{Type}}Multivector),
+};
+{% endfor %}
+
+
+PyMultivectorSubType largemultivector_subtypes_array[3] = {
+{% for j in range(3)%} {# iterate over types #}
+{% set type = type_list[j] %}
+{% set Type = Type_list[j] %}
+ {
+    .math_funcs = &largemultivector_{{type}}_math_fn,
+    .data_funcs = &largemultivector_{{type}}_data_fn,
+    .name = "",
+    .type_name = "{{type}}large", 
+    .generated = 0,
+    .metric = {-2},
+    .msize = -1,
+    .ntype = MultivectorType_{{type}},
+    .basic_size = sizeof({{Type}}Multivector),
+},
+{% endfor %}
+};
+
+// PyMultivectorSubType largemultivector_subtypes_array[3] = {largesparse_subtype,largedense_subtype,largeblades_subtype};
+
+{% set dnames = ["free","init","iter_next","iter_init","cast"] %}
+{% set mnames = ["product","atomic_product","ternary_product","grade_project","reverse","add","atomic_add","scalar_product","scalar_add","dual","undual"] %}
+
+void fill_missing_funcs(void){
+     for(Py_ssize_t i = 0; i < 3; i++){
+{% for dname in dnames %}
+         if(largemultivector_subtypes_array[i].data_funcs->{{dname}} == NULL)
+            largemultivector_subtypes_array[i].data_funcs->{{dname}} = multivector_subtypes_array[i].data_funcs->{{dname}};
+{% endfor %}
+{% for mname in mnames %}
+         if(largemultivector_subtypes_array[i].math_funcs->{{mname}} == NULL)
+            largemultivector_subtypes_array[i].math_funcs->{{mname}} = multivector_subtypes_array[i].math_funcs->{{mname}};
+{% endfor %}
+     }
+
+     largemultivector_mixed_fn.add = multivector_mixed_fn.add;
+     largemultivector_mixed_fn.atomic_add = multivector_mixed_fn.atomic_add;
+}
