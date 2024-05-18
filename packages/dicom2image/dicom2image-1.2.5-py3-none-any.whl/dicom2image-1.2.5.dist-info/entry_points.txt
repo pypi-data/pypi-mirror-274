@@ -1,0 +1,2 @@
+[console_scripts]
+dicom2image = dicom2image.cli:main
