@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+resectionalz/__init__.py
+resectionalz/main.py
+resectionalz.egg-info/PKG-INFO
+resectionalz.egg-info/SOURCES.txt
+resectionalz.egg-info/dependency_links.txt
+resectionalz.egg-info/requires.txt
+resectionalz.egg-info/top_level.txt
