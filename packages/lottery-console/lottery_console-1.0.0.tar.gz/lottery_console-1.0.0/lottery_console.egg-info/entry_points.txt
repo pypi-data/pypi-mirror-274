@@ -1,0 +1,2 @@
+[console_scripts]
+lottery_console = lottery_console.main:main
