@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ingatheredz/__init__.py
+ingatheredz/main.py
+ingatheredz.egg-info/PKG-INFO
+ingatheredz.egg-info/SOURCES.txt
+ingatheredz.egg-info/dependency_links.txt
+ingatheredz.egg-info/requires.txt
+ingatheredz.egg-info/top_level.txt
