@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mazerz/__init__.py
+mazerz/main.py
+mazerz.egg-info/PKG-INFO
+mazerz.egg-info/SOURCES.txt
+mazerz.egg-info/dependency_links.txt
+mazerz.egg-info/requires.txt
+mazerz.egg-info/top_level.txt
