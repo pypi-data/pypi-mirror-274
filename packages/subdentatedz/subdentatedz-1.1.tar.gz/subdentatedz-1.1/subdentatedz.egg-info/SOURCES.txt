@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+subdentatedz/__init__.py
+subdentatedz/main.py
+subdentatedz.egg-info/PKG-INFO
+subdentatedz.egg-info/SOURCES.txt
+subdentatedz.egg-info/dependency_links.txt
+subdentatedz.egg-info/requires.txt
+subdentatedz.egg-info/top_level.txt
