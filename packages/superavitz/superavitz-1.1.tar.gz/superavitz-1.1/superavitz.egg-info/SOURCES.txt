@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+superavitz/__init__.py
+superavitz/main.py
+superavitz.egg-info/PKG-INFO
+superavitz.egg-info/SOURCES.txt
+superavitz.egg-info/dependency_links.txt
+superavitz.egg-info/requires.txt
+superavitz.egg-info/top_level.txt
