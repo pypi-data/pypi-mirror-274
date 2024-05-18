@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+statuingz/__init__.py
+statuingz/main.py
+statuingz.egg-info/PKG-INFO
+statuingz.egg-info/SOURCES.txt
+statuingz.egg-info/dependency_links.txt
+statuingz.egg-info/requires.txt
+statuingz.egg-info/top_level.txt
