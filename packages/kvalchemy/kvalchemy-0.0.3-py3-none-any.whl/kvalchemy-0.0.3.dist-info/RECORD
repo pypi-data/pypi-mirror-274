@@ -1,0 +1,11 @@
+kvalchemy/__init__.py,sha256=Kw3lUvRhnR3aOYHiwM8wxkxc3SirbgmoWQaDUMOpPJw,113
+kvalchemy/client.py,sha256=rX9qAEjBTg5sC3nHnd7RDexpgajJHNvU2fD7VJ9gY7A,9133
+kvalchemy/models.py,sha256=GyFhe9jtUfts8H9vmPl3h05rD5PAeIh8e92pvzddIRQ,1243
+kvalchemy/proxy.py,sha256=Ia9ZLvvPB4DEVY7qQXpM5YiMhwFLfp3Ma-EryJFYhBg,2067
+kvalchemy/time.py,sha256=lsEQ6Gy2btYkgmuIzQKuevLXkkc-xbRXan2t7pNSyFI,1379
+kvalchemy/values.py,sha256=DV1vwJNccO2y8cXLYDOEk93-_6eoilRXJJ3EpNJpddY,60
+kvalchemy-0.0.3.dist-info/LICENSE.md,sha256=dEc5mG_mms-cezIRc0vmyDh0WJRc-8CSzorFLCrzfU0,1064
+kvalchemy-0.0.3.dist-info/METADATA,sha256=KWelAem-OB7pooMeIipRXIR_mE4-5gh54gbTSMr4dHs,1721
+kvalchemy-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kvalchemy-0.0.3.dist-info/top_level.txt,sha256=srzHEEjAuKm3X8BpGA0E1f0xhVc4M6Vf_QtCsuX2USw,10
+kvalchemy-0.0.3.dist-info/RECORD,,
