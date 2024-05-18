@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lumpingz/__init__.py
+lumpingz/main.py
+lumpingz.egg-info/PKG-INFO
+lumpingz.egg-info/SOURCES.txt
+lumpingz.egg-info/dependency_links.txt
+lumpingz.egg-info/requires.txt
+lumpingz.egg-info/top_level.txt
