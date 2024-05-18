@@ -1,0 +1,7 @@
+{
+  "files.readonlyInclude": {
+    "LICENSE-*": true,
+    ".github/workflows/ci.yaml": true,
+    "**/Cargo.lock": true
+  }
+}

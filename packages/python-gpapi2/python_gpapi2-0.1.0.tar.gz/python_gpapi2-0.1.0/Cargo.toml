@@ -1,0 +1,22 @@
+[package]
+name = "python-gpapi2"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "gpapi2"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+gpapi = "*"
+once_cell = "1.19.0"
+pyo3 = "0.21.2"
+serde_json = "1.0.117"
+tokio = { version = "1.37.0", features = ["full"] }
+
+[patch.crates-io]
+gpapi = { git = "https://github.com/zengxs/rs-google-play", branch = "serde" }
+googleplay-protobuf = { git = "https://github.com/zengxs/rs-google-play", branch = "serde" }
+tokio-dl-stream-to-disk = { git = "https://github.com/zengxs/rs-google-play", branch = "serde" }
