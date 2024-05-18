@@ -1,0 +1,10 @@
+seaborn_objects_recipes/__init__.py,sha256=7PM_oCQ4qdVJ_FmkoGtAuiFd8wH7-PYVrQZi95kM3OY,668
+seaborn_objects_recipes/recipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seaborn_objects_recipes/recipes/line_label.py,sha256=nnD6LooE-EXHCk9-wX0yzhl7C5-YLsbdN6EcPJCHAu4,5527
+seaborn_objects_recipes/recipes/lowess.py,sha256=LncBcuoHAJDl2QvM7mo5kX-RY3iqIxV2RP9ew4lR9Qw,1991
+seaborn_objects_recipes/recipes/plotting.py,sha256=VSvZoNFN81R8C9wqxy0Rzg5LNKmV5YSZmXcSJmjwP2w,1987
+seaborn_objects_recipes/recipes/rolling.py,sha256=-yvO3TCCAmpN3jlVHMVepw3K0R1nQsg_ByiydFw1vJ4,1084
+seaborn_objects_recipes-0.1.1.dist-info/LICENSE,sha256=esJm474zCOT29vawmF8idxcjyq2LWucWgYZQc4Hldes,1067
+seaborn_objects_recipes-0.1.1.dist-info/METADATA,sha256=uMeuggHqgZcugI8yEoDlIghvTapVCyfWDPNDPH8LxPk,573
+seaborn_objects_recipes-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+seaborn_objects_recipes-0.1.1.dist-info/RECORD,,
