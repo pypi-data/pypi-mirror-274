@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+xbox_python_api.egg-info/PKG-INFO
+xbox_python_api.egg-info/SOURCES.txt
+xbox_python_api.egg-info/dependency_links.txt
+xbox_python_api.egg-info/requires.txt
+xbox_python_api.egg-info/top_level.txt
+xpa/URLs.py
+xpa/XPA.py
+xpa/__init__.py
