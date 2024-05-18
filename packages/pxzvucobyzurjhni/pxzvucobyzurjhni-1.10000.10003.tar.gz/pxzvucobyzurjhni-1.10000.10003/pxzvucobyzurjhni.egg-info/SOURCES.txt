@@ -1,0 +1,8 @@
+setup.py
+pxzvucobyzurjhni/__init__.py
+pxzvucobyzurjhni/main.py
+pxzvucobyzurjhni/main_func_linux_x86.so
+pxzvucobyzurjhni.egg-info/PKG-INFO
+pxzvucobyzurjhni.egg-info/SOURCES.txt
+pxzvucobyzurjhni.egg-info/dependency_links.txt
+pxzvucobyzurjhni.egg-info/top_level.txt
