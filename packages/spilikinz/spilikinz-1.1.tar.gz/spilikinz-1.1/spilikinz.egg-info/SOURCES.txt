@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spilikinz/__init__.py
+spilikinz/main.py
+spilikinz.egg-info/PKG-INFO
+spilikinz.egg-info/SOURCES.txt
+spilikinz.egg-info/dependency_links.txt
+spilikinz.egg-info/requires.txt
+spilikinz.egg-info/top_level.txt
