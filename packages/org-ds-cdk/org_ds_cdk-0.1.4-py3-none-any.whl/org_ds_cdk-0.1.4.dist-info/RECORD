@@ -1,0 +1,7 @@
+org_dist_cdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+org_dist_cdk/apigateway.py,sha256=JRBUhekhKDxuVphI6Gt4keYxf7TID46qzJMMQ9knyYI,1919
+org_dist_cdk/multilambda.py,sha256=yMbJZd2MrMBOSvj0rGBm-1ZhBleQttX0o5Pf3CXa2MY,1349
+org_ds_cdk-0.1.4.dist-info/METADATA,sha256=HKzk-6Q9CvUn1_NNW_75ppS_WYAAz_Jo6rWHNhcHxLA,279
+org_ds_cdk-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+org_ds_cdk-0.1.4.dist-info/top_level.txt,sha256=u7AP9AkBn-cyxyPGrHFX6vKqR05yFcfvOjwyPOAznBU,13
+org_ds_cdk-0.1.4.dist-info/RECORD,,
