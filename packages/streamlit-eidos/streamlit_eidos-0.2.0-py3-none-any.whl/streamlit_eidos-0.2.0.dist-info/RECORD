@@ -1,0 +1,17 @@
+streamlit_eidos/__init__.py,sha256=YtOwWrRUPmIOm96IY6or5k_rRHcoxCJqjsD_UTD_S84,1536
+streamlit_eidos/frontend/.eslintrc.cjs,sha256=h_EO2d3ydx0y4RRpHhW14D42FGHb_VQto95Z6TtkKyg,566
+streamlit_eidos/frontend/.gitignore,sha256=_nGOe6uxTzy60tl_CIibnOUhXtP-DkOyuM-_s7m4ROg,253
+streamlit_eidos/frontend/README.md,sha256=-mEavqkVgw1l9bNDu36LD6LweeTCZR547VyN_93d-HQ,43
+streamlit_eidos/frontend/index.html,sha256=nwAYeNZ3GXEWT7cIGWiS6Tz0AyX0uX52p0rDdfXCrK4,292
+streamlit_eidos/frontend/package-lock.json,sha256=-vcPT9HEXYuzwlKu8CLcbS3sGc--bgqM51a9P79GBhE,162845
+streamlit_eidos/frontend/package.json,sha256=H0mtqlbG87-B9ccy5jq10rN4KwVnFWep_3FgDuPJ2HY,694
+streamlit_eidos/frontend/vite.config.js,sha256=4PDEcd2hilx0kUkFqBLvOz997dNjDVgFWfVgbuaIDNo,180
+streamlit_eidos/frontend/dist/index.html,sha256=QP3wFAXHGlWdvG9761YIF7E3u8ZW17ERHc33CSXyl3M,317
+streamlit_eidos/frontend/dist/assets/index-Sp77uM4B.js,sha256=4nUQiXQQMyU3-b2WFIuxSXYqHzlsKqBFTBI_X8Aw80E,322333
+streamlit_eidos/frontend/src/Component.jsx,sha256=ftRHt3y3Gxe806EzPh8deogM_6e-s22ekEJW8naqv_A,1764
+streamlit_eidos/frontend/src/main.jsx,sha256=lOhI4csagtnua4XLDK1cXkaTGlM2ahNqfhXA8qKGP4I,235
+streamlit_eidos-0.2.0.dist-info/LICENSE,sha256=h0TX9DoqqU2U8SZ8nEwddeUtKgvxigwwptBs63OXW_I,1066
+streamlit_eidos-0.2.0.dist-info/METADATA,sha256=vkrVcLkgcDE_AwQD3cTuGBjJJ5Nbuh5VcoDbOyvkfIQ,2727
+streamlit_eidos-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+streamlit_eidos-0.2.0.dist-info/top_level.txt,sha256=l2QcMpeIfkmCXA0ZyI42TSr3AbKcxxGZsjoH0_RcL2U,16
+streamlit_eidos-0.2.0.dist-info/RECORD,,
