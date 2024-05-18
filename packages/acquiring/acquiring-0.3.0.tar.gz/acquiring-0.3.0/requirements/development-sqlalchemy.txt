@@ -1,0 +1,4 @@
+-r development.txt
+
+# Alembic to perform database migrations
+alembic
