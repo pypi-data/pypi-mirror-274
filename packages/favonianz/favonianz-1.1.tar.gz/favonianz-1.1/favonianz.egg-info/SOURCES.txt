@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+favonianz/__init__.py
+favonianz/main.py
+favonianz.egg-info/PKG-INFO
+favonianz.egg-info/SOURCES.txt
+favonianz.egg-info/dependency_links.txt
+favonianz.egg-info/requires.txt
+favonianz.egg-info/top_level.txt
