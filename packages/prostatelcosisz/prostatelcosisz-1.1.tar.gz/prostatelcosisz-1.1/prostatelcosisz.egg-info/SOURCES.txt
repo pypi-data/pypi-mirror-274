@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+prostatelcosisz/__init__.py
+prostatelcosisz/main.py
+prostatelcosisz.egg-info/PKG-INFO
+prostatelcosisz.egg-info/SOURCES.txt
+prostatelcosisz.egg-info/dependency_links.txt
+prostatelcosisz.egg-info/requires.txt
+prostatelcosisz.egg-info/top_level.txt
