@@ -1,0 +1,21 @@
+[project]
+name = "pyqt5-concurrent"
+version = "0.1.5"
+description = "QThreadPool based task concurrency library in pyqt5"
+authors = [
+    { name = "AresConnor", email = "aresconnor867@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.7,<3.13"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
