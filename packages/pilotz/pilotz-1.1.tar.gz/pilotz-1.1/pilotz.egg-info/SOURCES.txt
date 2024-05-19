@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pilotz/__init__.py
+pilotz/main.py
+pilotz.egg-info/PKG-INFO
+pilotz.egg-info/SOURCES.txt
+pilotz.egg-info/dependency_links.txt
+pilotz.egg-info/requires.txt
+pilotz.egg-info/top_level.txt
