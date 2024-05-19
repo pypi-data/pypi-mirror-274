@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+omphalodiaz/__init__.py
+omphalodiaz/main.py
+omphalodiaz.egg-info/PKG-INFO
+omphalodiaz.egg-info/SOURCES.txt
+omphalodiaz.egg-info/dependency_links.txt
+omphalodiaz.egg-info/requires.txt
+omphalodiaz.egg-info/top_level.txt
