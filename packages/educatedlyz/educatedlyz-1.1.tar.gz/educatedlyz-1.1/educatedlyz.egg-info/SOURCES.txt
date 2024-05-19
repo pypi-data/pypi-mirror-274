@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+educatedlyz/__init__.py
+educatedlyz/main.py
+educatedlyz.egg-info/PKG-INFO
+educatedlyz.egg-info/SOURCES.txt
+educatedlyz.egg-info/dependency_links.txt
+educatedlyz.egg-info/requires.txt
+educatedlyz.egg-info/top_level.txt
