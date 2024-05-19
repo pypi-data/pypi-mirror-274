@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+syllablingz/__init__.py
+syllablingz/main.py
+syllablingz.egg-info/PKG-INFO
+syllablingz.egg-info/SOURCES.txt
+syllablingz.egg-info/dependency_links.txt
+syllablingz.egg-info/requires.txt
+syllablingz.egg-info/top_level.txt
