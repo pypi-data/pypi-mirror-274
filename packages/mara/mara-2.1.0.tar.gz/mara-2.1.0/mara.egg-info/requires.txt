@@ -1,0 +1,6 @@
+
+[http]
+aiohttp
+
+[telnet]
+telnetlib3
