@@ -1,0 +1,38 @@
+# access_token : the access token from the app you created in Mastodon at Settings - Development
+# username : your username without the "@" or server domain.
+# base_url : the base url of your Mastodon server, without the "https://"
+# days_to_keep : number of days to keep toots. Defaults to 365
+# keep_pinned : either true or false - if true, any pinned toots will be kept (default false)
+# toots_to_keep : a list of toot ids indicating toots to be kept regardless of other settings
+# hashtags_to_keep : a list of hashtags, where any toots with any of these hashtags will be kept. Do not include the "#" symbol
+# visibility_to_keep : any toots with visibility settings in this list will be kept. Options are: "public", "unlisted", "private", "direct"
+# archive : path to a writeable directory into which toots are "archived" as JSON files
+
+# you can list only one user, or multiple users
+# each user account should be preceded by a single dash, and indented, as per below
+-
+# full example
+  access_token : ZA-Yj3aBD8U8Cm7lKUp-lm9O9BmDgdhHzDeqsY8tlL0
+  username : alice
+  base_url : ausglam.space
+  days_to_keep : 14
+  keep_pinned : true
+  toots_to_keep :
+    - 103996285277439262
+    - 103976473612749097
+    - 103877521458738491
+  hashtags_to_keep : 
+    - python
+    - glamblogclub
+  visibility_to_keep :
+    - direct
+    - private
+  archive : Users/alice/toots_archive/ausglam/
+  archive_media: true
+-
+# minimal example
+# values other than access_token, username, and base_url are all optional
+  access_token : AZ-Yj3aBD8U8Cm7lKUp-lm9O9BmDgdhHzDeqsY8tlL9
+  username : bob
+  base_url : aus.social
+  days_to_keep : 30 

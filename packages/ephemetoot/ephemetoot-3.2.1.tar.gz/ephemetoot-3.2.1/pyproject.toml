@@ -1,0 +1,38 @@
+[project]
+name = "ephemetoot"
+version = "3.2.1"
+description = "A command line tool to delete your old toots"
+requires-python = ">=3.8"
+authors = [
+    {name = "Hugh Rundle", email = "ephemetoot@hugh.run"}
+    ]
+license = { text = "GPL-3.0-or-later"}
+readme = "pypi-readme.md"
+keywords = ["mastodon", "api", "microblogging"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Communications"
+]
+dependencies = [
+    "requests>=2.31.0",
+    "mastodon.py>=1.8.1",
+    "pyyaml>=6.0.1"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=6"]
+
+[project.scripts]
+ephemetoot = 'ephemetoot.console:main'
+
+[project.urls]
+homepage = "https://ephemetoot.hugh.run"
+repository = "https://github.com/hughrun/ephemetoot"
+
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
