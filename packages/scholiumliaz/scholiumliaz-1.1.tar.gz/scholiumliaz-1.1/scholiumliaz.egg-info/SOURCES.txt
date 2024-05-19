@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scholiumliaz/__init__.py
+scholiumliaz/main.py
+scholiumliaz.egg-info/PKG-INFO
+scholiumliaz.egg-info/SOURCES.txt
+scholiumliaz.egg-info/dependency_links.txt
+scholiumliaz.egg-info/requires.txt
+scholiumliaz.egg-info/top_level.txt
