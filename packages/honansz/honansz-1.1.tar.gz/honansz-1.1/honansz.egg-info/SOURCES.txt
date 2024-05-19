@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+honansz/__init__.py
+honansz/main.py
+honansz.egg-info/PKG-INFO
+honansz.egg-info/SOURCES.txt
+honansz.egg-info/dependency_links.txt
+honansz.egg-info/requires.txt
+honansz.egg-info/top_level.txt
