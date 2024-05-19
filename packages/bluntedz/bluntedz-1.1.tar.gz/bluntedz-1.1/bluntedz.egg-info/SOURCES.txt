@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bluntedz/__init__.py
+bluntedz/main.py
+bluntedz.egg-info/PKG-INFO
+bluntedz.egg-info/SOURCES.txt
+bluntedz.egg-info/dependency_links.txt
+bluntedz.egg-info/requires.txt
+bluntedz.egg-info/top_level.txt
