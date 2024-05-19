@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+racialityz/__init__.py
+racialityz/main.py
+racialityz.egg-info/PKG-INFO
+racialityz.egg-info/SOURCES.txt
+racialityz.egg-info/dependency_links.txt
+racialityz.egg-info/requires.txt
+racialityz.egg-info/top_level.txt
