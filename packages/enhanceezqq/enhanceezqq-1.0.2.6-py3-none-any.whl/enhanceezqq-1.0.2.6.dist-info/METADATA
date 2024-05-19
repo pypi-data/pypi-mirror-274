@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: enhanceezqq
+Version: 1.0.2.6
+Summary: 用于对ezqq模块增强功能，能够获取历史数据保存到数据库，并从数据库读取历史数据
+Author: Frank Gong
+Author-email: 583983716@qq.com
+License: BSD
+Requires-Dist: pandas (~=1.5.2)
+Requires-Dist: numpy (~=1.24.1)
+Requires-Dist: openpyxl
+Requires-Dist: argparse
+Requires-Dist: pathlib
+Requires-Dist: selenium
+Requires-Dist: requests
+Requires-Dist: xlrd
+Requires-Dist: bottle
+Requires-Dist: dftrans
+Requires-Dist: chardet
+Requires-Dist: nuitka
+Requires-Dist: PyQt5
+Requires-Dist: pycryptodomex
+Requires-Dist: datacompy
+Requires-Dist: akshare
+Requires-Dist: shortuuid
+Requires-Dist: sqlalchemy (==1.4.46)
+Requires-Dist: mysql-connector-python
+Requires-Dist: ipy
+Requires-Dist: pathos
+Requires-Dist: pymysql
+Requires-Dist: colorlog
+Requires-Dist: matplotlib (~=3.7.2)
+Requires-Dist: pypinyin
+Requires-Dist: pyxlsb
+Requires-Dist: jsonlines
+Requires-Dist: easyquotation
+Requires-Dist: Jinja2
+Requires-Dist: bs4
+
