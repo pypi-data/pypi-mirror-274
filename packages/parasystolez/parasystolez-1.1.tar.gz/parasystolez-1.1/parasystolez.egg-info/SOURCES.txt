@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+parasystolez/__init__.py
+parasystolez/main.py
+parasystolez.egg-info/PKG-INFO
+parasystolez.egg-info/SOURCES.txt
+parasystolez.egg-info/dependency_links.txt
+parasystolez.egg-info/requires.txt
+parasystolez.egg-info/top_level.txt
