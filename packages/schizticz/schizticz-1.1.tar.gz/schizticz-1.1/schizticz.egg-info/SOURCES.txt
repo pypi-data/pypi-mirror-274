@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+schizticz/__init__.py
+schizticz/main.py
+schizticz.egg-info/PKG-INFO
+schizticz.egg-info/SOURCES.txt
+schizticz.egg-info/dependency_links.txt
+schizticz.egg-info/requires.txt
+schizticz.egg-info/top_level.txt
