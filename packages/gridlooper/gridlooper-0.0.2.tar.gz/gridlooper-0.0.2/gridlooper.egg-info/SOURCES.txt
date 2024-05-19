@@ -1,0 +1,10 @@
+LICENSE
+README.md
+gridlooper/__init__.py
+gridlooper/gridlooper.py
+gridlooper/setup.py
+gridlooper.egg-info/PKG-INFO
+gridlooper.egg-info/SOURCES.txt
+gridlooper.egg-info/dependency_links.txt
+gridlooper.egg-info/requires.txt
+gridlooper.egg-info/top_level.txt
