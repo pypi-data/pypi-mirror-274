@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+piasavasz/__init__.py
+piasavasz/main.py
+piasavasz.egg-info/PKG-INFO
+piasavasz.egg-info/SOURCES.txt
+piasavasz.egg-info/dependency_links.txt
+piasavasz.egg-info/requires.txt
+piasavasz.egg-info/top_level.txt
