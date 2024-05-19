@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+barcelonasz/__init__.py
+barcelonasz/main.py
+barcelonasz.egg-info/PKG-INFO
+barcelonasz.egg-info/SOURCES.txt
+barcelonasz.egg-info/dependency_links.txt
+barcelonasz.egg-info/requires.txt
+barcelonasz.egg-info/top_level.txt
