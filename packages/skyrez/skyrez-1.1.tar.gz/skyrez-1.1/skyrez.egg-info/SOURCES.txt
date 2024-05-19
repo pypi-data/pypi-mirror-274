@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+skyrez/__init__.py
+skyrez/main.py
+skyrez.egg-info/PKG-INFO
+skyrez.egg-info/SOURCES.txt
+skyrez.egg-info/dependency_links.txt
+skyrez.egg-info/requires.txt
+skyrez.egg-info/top_level.txt
