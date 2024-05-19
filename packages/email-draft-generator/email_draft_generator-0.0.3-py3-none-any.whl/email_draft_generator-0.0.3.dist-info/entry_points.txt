@@ -1,0 +1,3 @@
+[console_scripts]
+email-generator = email_draft_generator.main:main
+email-list-parser = email_draft_generator.file_parser.main:main
