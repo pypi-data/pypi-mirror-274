@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+incoronatez/__init__.py
+incoronatez/main.py
+incoronatez.egg-info/PKG-INFO
+incoronatez.egg-info/SOURCES.txt
+incoronatez.egg-info/dependency_links.txt
+incoronatez.egg-info/requires.txt
+incoronatez.egg-info/top_level.txt
