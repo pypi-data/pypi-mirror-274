@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sentry-k8s-libsonnet
+Version: 0.0.2
+Summary: k8s-libsonnet repackaged as a python package
+Author-email: Filippo Pacifici <fpacifici@sentry.io>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sentry-k8s-libsonnet
+Repackaging of k8slibsonnet library to make it available to python 
