@@ -1,0 +1,16 @@
+odoo/addons/account_portal_hide_invoice/README.rst,sha256=3-xjGaDBys0Y3OKl18dS3dBeRDrUIEgOlwMWEpljxMY,3870
+odoo/addons/account_portal_hide_invoice/__init__.py,sha256=KHINIWADUPjrC25LpOr-yG1vfXkxssaweHaw91ohHtQ,109
+odoo/addons/account_portal_hide_invoice/__manifest__.py,sha256=SFDixCRD_w7BbztH1XTm6B9spXEoy9T9pQo9a9KeV24,659
+odoo/addons/account_portal_hide_invoice/i18n/account_portal_hide_invoice.pot,sha256=BIyTShSvBhiJMqh2td4QGlxB8SDDzDZd0Pqu6WZgBR8,341
+odoo/addons/account_portal_hide_invoice/i18n/es.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/account_portal_hide_invoice/readme/CONTRIBUTORS.rst,sha256=Bpg3pv6LBdCxOgiHB1WczFh_zirRNfBhHSMOdQKdHn0,200
+odoo/addons/account_portal_hide_invoice/readme/CREDITS.rst,sha256=EVedyRo1IN4lB-DuELUvccEQNG14WX_4PudLju10bCg,132
+odoo/addons/account_portal_hide_invoice/readme/DESCRIPTION.rst,sha256=_vwwEn-lCwI_9euKQlU6m4K0Fv3vB-A_2uQGeusTErs,46
+odoo/addons/account_portal_hide_invoice/readme/ROADMAP.rst,sha256=hQbPIypoKfyHFlU8hTHSluXTmZ4G5vpgk3IqeC60aiM,270
+odoo/addons/account_portal_hide_invoice/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/account_portal_hide_invoice/static/description/index.html,sha256=0creCecC3kSqugI88xyQmihgUjtwQmOfDv6tzV9RF5c,14057
+odoo/addons/account_portal_hide_invoice/views/account_portal_templates.xml,sha256=5yf3tPeB7GMJ5TgXVU8YWc7yJU13eqrnNudBRJtreu0,196
+odoo_addon_account_portal_hide_invoice-15.0.1.0.0.3.dist-info/METADATA,sha256=EQXhD0IWRb36xyUTtPwGg1eGZWjKvzI8wlX8C2E6EXU,4474
+odoo_addon_account_portal_hide_invoice-15.0.1.0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo_addon_account_portal_hide_invoice-15.0.1.0.0.3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_account_portal_hide_invoice-15.0.1.0.0.3.dist-info/RECORD,,
