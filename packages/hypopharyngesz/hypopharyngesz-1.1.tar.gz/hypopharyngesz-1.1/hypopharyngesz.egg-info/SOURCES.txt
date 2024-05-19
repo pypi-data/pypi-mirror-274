@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hypopharyngesz/__init__.py
+hypopharyngesz/main.py
+hypopharyngesz.egg-info/PKG-INFO
+hypopharyngesz.egg-info/SOURCES.txt
+hypopharyngesz.egg-info/dependency_links.txt
+hypopharyngesz.egg-info/requires.txt
+hypopharyngesz.egg-info/top_level.txt
