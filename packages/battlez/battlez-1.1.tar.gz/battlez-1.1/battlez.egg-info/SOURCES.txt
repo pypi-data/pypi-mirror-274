@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+battlez/__init__.py
+battlez/main.py
+battlez.egg-info/PKG-INFO
+battlez.egg-info/SOURCES.txt
+battlez.egg-info/dependency_links.txt
+battlez.egg-info/requires.txt
+battlez.egg-info/top_level.txt
