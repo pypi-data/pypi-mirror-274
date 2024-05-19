@@ -1,0 +1,2 @@
+[console_scripts]
+cheatshh = src.run_cheatshh:main
