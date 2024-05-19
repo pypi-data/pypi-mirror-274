@@ -1,0 +1,10 @@
+README.md
+setup.py
+llm_parametrizer/__init__.py
+llm_parametrizer/llm_parametrizer.py
+llm_parametrizer/open_AI_models.py
+llm_parametrizer.egg-info/PKG-INFO
+llm_parametrizer.egg-info/SOURCES.txt
+llm_parametrizer.egg-info/dependency_links.txt
+llm_parametrizer.egg-info/requires.txt
+llm_parametrizer.egg-info/top_level.txt
