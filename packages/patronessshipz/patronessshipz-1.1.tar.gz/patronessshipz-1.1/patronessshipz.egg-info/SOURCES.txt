@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+patronessshipz/__init__.py
+patronessshipz/main.py
+patronessshipz.egg-info/PKG-INFO
+patronessshipz.egg-info/SOURCES.txt
+patronessshipz.egg-info/dependency_links.txt
+patronessshipz.egg-info/requires.txt
+patronessshipz.egg-info/top_level.txt
