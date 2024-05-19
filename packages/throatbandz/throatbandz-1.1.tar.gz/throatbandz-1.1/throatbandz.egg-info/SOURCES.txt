@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+throatbandz/__init__.py
+throatbandz/main.py
+throatbandz.egg-info/PKG-INFO
+throatbandz.egg-info/SOURCES.txt
+throatbandz.egg-info/dependency_links.txt
+throatbandz.egg-info/requires.txt
+throatbandz.egg-info/top_level.txt
