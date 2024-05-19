@@ -1,0 +1,6 @@
+cleaning
+datahandling
+errorhandling
+exploration
+machine_learning
+manipulation
