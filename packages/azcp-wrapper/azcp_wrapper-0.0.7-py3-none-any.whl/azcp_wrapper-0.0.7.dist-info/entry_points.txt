@@ -1,0 +1,2 @@
+[console_scripts]
+azcp-init = azcp_wrapper.setup:main
