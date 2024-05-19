@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+overslownessz/__init__.py
+overslownessz/main.py
+overslownessz.egg-info/PKG-INFO
+overslownessz.egg-info/SOURCES.txt
+overslownessz.egg-info/dependency_links.txt
+overslownessz.egg-info/requires.txt
+overslownessz.egg-info/top_level.txt
