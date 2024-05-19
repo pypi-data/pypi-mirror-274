@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pywincolor"
+version = "5.18.2024"
+description = "Windows module to add color to the command-line text. Add color codes manually, or with automatic features."
+authors = [
+    { name = "Warren"  }
+]
+dependencies = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows"
+]
+
+[tool.setuptools]
+packages = ["pywincolor"]
+
+[tool.setuptools.package-data]
+"pywincolor" = ["*.py"]
+
+[project.urls]
+Homepage = "https://pypi.org/project/pywincolor/"
+

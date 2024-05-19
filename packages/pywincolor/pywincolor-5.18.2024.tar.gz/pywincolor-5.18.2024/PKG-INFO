@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pywincolor
+Version: 5.18.2024
+Summary: Windows module to add color to the command-line text. Add color codes manually, or with automatic features.
+Author: Warren
+Project-URL: Homepage, https://pypi.org/project/pywincolor/
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows

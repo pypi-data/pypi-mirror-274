@@ -1,0 +1,7 @@
+pyproject.toml
+pywincolor/__init__.py
+pywincolor/pywincolor.py
+pywincolor.egg-info/PKG-INFO
+pywincolor.egg-info/SOURCES.txt
+pywincolor.egg-info/dependency_links.txt
+pywincolor.egg-info/top_level.txt
