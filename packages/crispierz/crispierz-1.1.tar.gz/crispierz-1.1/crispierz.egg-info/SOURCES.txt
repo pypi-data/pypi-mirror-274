@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+crispierz/__init__.py
+crispierz/main.py
+crispierz.egg-info/PKG-INFO
+crispierz.egg-info/SOURCES.txt
+crispierz.egg-info/dependency_links.txt
+crispierz.egg-info/requires.txt
+crispierz.egg-info/top_level.txt
