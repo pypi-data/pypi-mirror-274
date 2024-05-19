@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cauchoz/__init__.py
+cauchoz/main.py
+cauchoz.egg-info/PKG-INFO
+cauchoz.egg-info/SOURCES.txt
+cauchoz.egg-info/dependency_links.txt
+cauchoz.egg-info/requires.txt
+cauchoz.egg-info/top_level.txt
