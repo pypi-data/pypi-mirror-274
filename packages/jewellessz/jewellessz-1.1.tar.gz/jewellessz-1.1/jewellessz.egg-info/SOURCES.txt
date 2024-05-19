@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jewellessz/__init__.py
+jewellessz/main.py
+jewellessz.egg-info/PKG-INFO
+jewellessz.egg-info/SOURCES.txt
+jewellessz.egg-info/dependency_links.txt
+jewellessz.egg-info/requires.txt
+jewellessz.egg-info/top_level.txt
