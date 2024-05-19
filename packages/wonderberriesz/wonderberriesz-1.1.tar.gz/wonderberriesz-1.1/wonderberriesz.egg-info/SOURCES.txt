@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wonderberriesz/__init__.py
+wonderberriesz/main.py
+wonderberriesz.egg-info/PKG-INFO
+wonderberriesz.egg-info/SOURCES.txt
+wonderberriesz.egg-info/dependency_links.txt
+wonderberriesz.egg-info/requires.txt
+wonderberriesz.egg-info/top_level.txt
