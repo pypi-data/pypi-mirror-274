@@ -1,0 +1,23 @@
+{
+  "test_strip.py::test_to_stripped_dicom": true,
+  "test_types.py::TestSimpleImageType::test_from_str[2d]": true,
+  "test_types.py::TestSimpleImageType::test_from_str[s-view]": true,
+  "test_types.py::TestSimpleImageType::test_from_str[tomo]": true,
+  "test_types.py::TestSimpleImageType::test_from_str[unknown]": true,
+  "test_anonymize.py::test_get_year[20200101-2020]": true,
+  "test_anonymize.py::test_get_year[/home/tim/code/dicom-utils/env/lib/python3.10/site-packages/pydicom/data/test_files/SC_rgb_jpeg_gdcm.dcm-None-????]": true,
+  "test_anonymize.py::test_get_year[/home/tim/code/dicom-utils/env/lib/python3.10/site-packages/pydicom/data/test_files/SC_rgb_jpeg_lossy_gdcm.dcm-None-????]": true,
+  "test_anonymize.py::test_get_year[/home/tim/code/dicom-utils/env/lib/python3.10/site-packages/pydicom/data/test_files/SC_rgb_dcmtk_+eb+cy+n1.dcm-None-????]": true,
+  "test_anonymize.py::test_get_year[/home/tim/code/dicom-utils/env/lib/python3.10/site-packages/pydicom/data/test_files/SC_rgb_jpeg_gdcm.dcm-19901212-2020]": true,
+  "test_anonymize.py::test_get_year[/home/tim/code/dicom-utils/env/lib/python3.10/site-packages/pydicom/data/test_files/SC_rgb_jpeg_lossy_gdcm.dcm-19901212-2020]": true,
+  "test_anonymize.py::test_get_year[/home/tim/code/dicom-utils/env/lib/python3.10/site-packages/pydicom/data/test_files/SC_rgb_dcmtk_+eb+cy+n1.dcm-19901212-2020]": true,
+  "test_private.py::test_get_year[20200101-2020]": true,
+  "test_private.py::test_get_year[19901231-1990]": true,
+  "test_private.py::test_get_year[-????]": true,
+  "test_volume.py::TestReduceVolume::test_dicom[RLELossless-1]": true,
+  "test_volume.py::TestReduceVolume::test_dicom[RLELossless-8]": true,
+  "test_dicom.py::TestReadDicomImage::test_nvjpeg[0]": true,
+  "test_dicom.py::TestReadDicomImage::test_nvjpeg[1]": true,
+  "test_dicom.py::TestReadDicomImage::test_nvjpeg[2]": true,
+  "test_dicom.py::TestReadDicomImage::test_nvjpeg": true
+}
