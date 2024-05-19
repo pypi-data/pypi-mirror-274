@@ -1,0 +1,12 @@
+
+[dev]
+aioboto3
+build
+coverage
+moto[server]
+nox
+pytest
+pytest-asyncio
+pytest-cov
+pytz
+twine
