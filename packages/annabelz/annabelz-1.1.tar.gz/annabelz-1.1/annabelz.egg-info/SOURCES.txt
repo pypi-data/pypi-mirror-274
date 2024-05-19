@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+annabelz/__init__.py
+annabelz/main.py
+annabelz.egg-info/PKG-INFO
+annabelz.egg-info/SOURCES.txt
+annabelz.egg-info/dependency_links.txt
+annabelz.egg-info/requires.txt
+annabelz.egg-info/top_level.txt
