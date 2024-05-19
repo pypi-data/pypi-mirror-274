@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "data-transformation-library-ingri"
+version = "0.1.1"
+description = "The Data Transformation Library is a Python package designed to provide a set of functions for common data transformation tasks, such as transposing matrices, performing convolutions."
+authors = ["Ingrida <ingrida.vilkancaite@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+numpy = "^1.26.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
