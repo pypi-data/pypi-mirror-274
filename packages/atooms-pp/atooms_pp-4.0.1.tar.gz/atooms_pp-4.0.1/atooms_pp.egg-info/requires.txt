@@ -1,0 +1,5 @@
+atooms>=2
+numpy
+argh
+tqdm
+f2py_jit
