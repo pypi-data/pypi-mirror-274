@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lepidospermaez/__init__.py
+lepidospermaez/main.py
+lepidospermaez.egg-info/PKG-INFO
+lepidospermaez.egg-info/SOURCES.txt
+lepidospermaez.egg-info/dependency_links.txt
+lepidospermaez.egg-info/requires.txt
+lepidospermaez.egg-info/top_level.txt
