@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: HiggsML
+Version: 0.0.3
+Summary: A Black Swan test package
+Project-URL: Homepage, https://github.com/blackSwanCS/black_swan_pkg
+Project-URL: Issues, https://github.com/blackSwanCS/black_swan_pkg/issues
+Author-email: Ragansu Chakkappai <ragansu.chakkappai@universite-paris-saclay.fr>, David Rousseau <david.rousseau@uijclab.in2p3.fr>, "V. Estrade" <v.estrade@centralesupelec.fr>, Ihsan Ullah <ihsan.ullah@universite-paris-saclay.fr>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: frozendict
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: setuptools
+Description-Content-Type: text/markdown
+
+# HiggsML BlackSwan Package
+
+you can install this package by 
+```shell
+pip install HiggsML
+```
