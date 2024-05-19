@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+subtractorz/__init__.py
+subtractorz/main.py
+subtractorz.egg-info/PKG-INFO
+subtractorz.egg-info/SOURCES.txt
+subtractorz.egg-info/dependency_links.txt
+subtractorz.egg-info/requires.txt
+subtractorz.egg-info/top_level.txt
