@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+implicationalz/__init__.py
+implicationalz/main.py
+implicationalz.egg-info/PKG-INFO
+implicationalz.egg-info/SOURCES.txt
+implicationalz.egg-info/dependency_links.txt
+implicationalz.egg-info/requires.txt
+implicationalz.egg-info/top_level.txt
