@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: baosight
+Version: 0.0.3
+Summary: baosight tools
+Home-page: https://cuddlebugs.asia
+Author: Hao Zhao
+Author-email: 601095001@qq.com
+License: OSI Approved :: MIT License
+Platform: Linux/Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-gitlab ==4.5.0
+Requires-Dist: requests ==2.31.0
+Requires-Dist: setuptools ==69.5.1
+
+# baosight工具包
+
+## gitlab
+
+### gitlab runner
+
+```shell
+baosight gl-runner --quite  # 使用当前目录config.json静默安装runner
+baosight gl-runner # 使用gui选择配置文件并安装
+```
