@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+soppiestz/__init__.py
+soppiestz/main.py
+soppiestz.egg-info/PKG-INFO
+soppiestz.egg-info/SOURCES.txt
+soppiestz.egg-info/dependency_links.txt
+soppiestz.egg-info/requires.txt
+soppiestz.egg-info/top_level.txt
