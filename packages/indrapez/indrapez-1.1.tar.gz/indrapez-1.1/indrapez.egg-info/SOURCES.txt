@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+indrapez/__init__.py
+indrapez/main.py
+indrapez.egg-info/PKG-INFO
+indrapez.egg-info/SOURCES.txt
+indrapez.egg-info/dependency_links.txt
+indrapez.egg-info/requires.txt
+indrapez.egg-info/top_level.txt
