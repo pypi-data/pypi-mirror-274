@@ -1,0 +1,918 @@
+"""AlphaZero-like approaches to solve the game.
+
+Current code is designed for two player games.
+"""
+import math
+import os.path
+import random
+import datetime
+from typing import Iterable, Protocol, Optional, Sequence, Callable
+from itertools import cycle
+from functools import partial
+
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import torch.nn.functional as F
+from torch.utils.tensorboard import SummaryWriter
+
+from corso.model import (Corso, Action, DEFAULT_BOARD_SIZE, DEFAULT_PLAYER_NUM,
+                         Player)
+from corso.utils import SavableModule, bitmap_cell
+from corso.evaluation import AgentEvaluationStrategy
+
+
+MCTSTrajectory = list[tuple['MCTSNode', Optional[int]]]
+
+
+class PriorPredictorProtocol(Protocol):
+    """Protocol for state predictors (neural networks) for AZ."""
+
+    def state_features(self, state: Corso) -> torch.Tensor:
+        """Retrieve a tensor representing a game state.
+
+        Return shape is arbitrary, shall be compliant with the inference
+        mechanism defined in :meth:`__call__`.
+        """
+
+    def __call__(self, batch: torch.Tensor) -> tuple[torch.Tensor,
+                                                     torch.Tensor]:
+        """Prediction of the priors.
+
+        Must return a batch of non-normalized policies (logits) of
+        shape ``(batch_size, height * width)`` and a batch of state
+        values of shape ``(batch_size, 1)``.
+        """
+
+
+class AZDenseNetwork(nn.Module, SavableModule):
+    """Simple dense network for AZ.
+
+    Outputs the tuple ``(policy, value)``, as part of the parameters
+    are shared between the policy network and value network. Output
+    shapes as described by :meth:`PriorPredictorProtocol.__call__`.
+    """
+
+    def __init__(self, board_size=(DEFAULT_BOARD_SIZE, DEFAULT_BOARD_SIZE),
+                 shared_layers_sizes: Iterable[int] = (),
+                 policy_hidden_layers_sizes: Iterable[int] = (),
+                 value_function_hidden_layers_sizes: Iterable[int] = (),
+                 num_players=DEFAULT_PLAYER_NUM,
+                 dropout=0.0):
+        super().__init__()
+
+        self.shared_layers_sizes = tuple(shared_layers_sizes)
+        self.policy_hidden_layers_sizes = tuple(policy_hidden_layers_sizes)
+        self.value_function_hidden_layers_sizes = tuple(
+            value_function_hidden_layers_sizes)
+        self.num_players = num_players
+        self.dropout = dropout
+
+        board_w, board_h = board_size
+        self.board_size = board_size
+
+        # Shared layers
+        # W * H * players * 2 + 1 is the input size
+        # If the number of shared layers is 0, fall back to this
+        # dimentions.
+        # Initialize shared weights
+        shared_output_size = board_w * board_h * num_players * 2 + 1
+
+        shared_layers = []
+
+        for shared_layer_size in shared_layers_sizes:
+            shared_layers.append(nn.Linear(shared_output_size,
+                                           shared_layer_size))
+            shared_output_size = shared_layer_size
+
+        self.shared_layers = nn.ModuleList(shared_layers)
+
+        # Policy head
+        policy_hidden_output_size = shared_output_size
+
+        policy_hidden_layers = []
+
+        for policy_layer_size in policy_hidden_layers_sizes:
+            policy_hidden_layers.append(nn.Linear(policy_hidden_output_size,
+                                                  policy_layer_size))
+            policy_hidden_output_size = policy_layer_size
+
+        self.policy_hidden_layers = nn.ModuleList(policy_hidden_layers)
+
+        # Output of policy head is always width * height
+        self.policy_output = nn.Linear(policy_hidden_output_size,
+                                       board_w * board_h)
+
+        # Value head
+        value_function_hidden_output_size = shared_output_size
+
+        value_function_hidden_layers = []
+
+        for value_function_layer_size in value_function_hidden_layers_sizes:
+            value_function_hidden_layers.append(
+                nn.Linear(value_function_hidden_output_size,
+                          value_function_layer_size))
+            value_function_hidden_output_size = value_function_layer_size
+
+        self.value_function_hidden_layers = nn.ModuleList(
+            value_function_hidden_layers)
+
+        # Output of policy head is always 1
+        self.value_function_output = nn.Linear(
+            value_function_hidden_output_size, 1)
+
+    def get_config(self) -> dict:
+        """Return a configuration dict: used to save/load the model."""
+        return {'board_size': self.board_size,
+                'shared_layers_sizes': self.shared_layers_sizes,
+                'policy_hidden_layers_sizes': self.policy_hidden_layers_sizes,
+                'value_function_hidden_layers_sizes':
+                self.value_function_hidden_layers_sizes,
+                'num_players': self.num_players}
+
+    def state_features(self, state: Corso) -> torch.Tensor:
+        """Retrieve a tensor representing a game state.
+
+        Return shape: ``[1, height * width * num_players * 2 + 1]``.
+        """
+        # This comes with some necessary reallocations before feeding the
+        # structure to the tensor constructor. Things are cached where
+        # possible. Time cost of this transformation (5x5 board): ~1.5e-5
+        # Organizing the Corso state in a way that is more friendly w.r.t.
+        # this representation (e.g. with one hot encoded tuples as cell
+        # states instead of the abstract CellState class) is the most viable
+        # option after this one.
+
+        board_tensor = torch.Tensor(
+            tuple(tuple(map(bitmap_cell, row)) for row in state.board))
+
+        # Concatenate current player information
+        board_tensor = torch.cat([board_tensor.flatten(),
+                                  torch.tensor([state.player_index - 1])])
+
+        return board_tensor.unsqueeze(0)
+
+    def forward(self, batch: torch.Tensor):
+        # Invalid move masking:
+        # Reshape input as a grid and collapse it into a bitmap of
+        # invalid locations
+        with torch.no_grad():
+            board_w, board_h = self.board_size
+
+            current_player = batch[:, -1]
+            reshaped_input = batch[:, :-1].view(-1, board_h, board_w,
+                                                self.num_players * 2)
+            # Moves that are invalid because dyed
+            invalid_moves_dyed = reshaped_input[:, :, :, [0, 2]].sum(dim=-1)
+            # Moves that are invalid because occupied by opponent marble
+            # (only works for two players)
+
+            invalid_moves_marble = reshaped_input[
+                np.arange(0, len(reshaped_input)), :, :,
+                1 + 2 * (1 - current_player.int())].flatten(2)
+
+            invalid_moves = (invalid_moves_dyed + invalid_moves_marble).bool()
+            invalid_moves = invalid_moves.view(-1, board_w * board_h)
+
+        # Shared layers
+        for layer in self.shared_layers:
+            batch = F.relu(layer(batch))
+            batch = F.dropout(batch, self.dropout, self.training)
+
+        policy_batch = batch
+        for layer in self.policy_hidden_layers:
+            policy_batch = F.relu(layer(policy_batch))
+            policy_batch = F.dropout(policy_batch, self.dropout, self.training)
+        policy_batch = self.policy_output(policy_batch)
+
+        # Invalid moves are set to an extremely negative value.
+        # Extremely negative logits will results in 0 probability of
+        # choosing the action
+        policy_batch[invalid_moves] = -1e10
+
+        value_batch = batch
+        for layer in self.value_function_hidden_layers:
+            value_batch = F.relu(layer(value_batch))
+            value_batch = F.dropout(value_batch, self.dropout, self.training)
+        value_batch = F.tanh(self.value_function_output(value_batch))
+
+        return policy_batch, value_batch
+
+
+class AZConvNetwork(nn.Module, SavableModule):
+    """Simple convolutional network for AZ.
+
+    No residual connections are inserted.
+
+    Outputs the tuple ``(policy, value)``, as part of the parameters
+    are shared between the policy network and value network. Output
+    shapes as described by :meth:`PriorPredictorProtocol.__call__`.
+    """
+
+    def __init__(self, board_size=(DEFAULT_BOARD_SIZE, DEFAULT_BOARD_SIZE),
+                 shared_layers_channels: Iterable[int] = (),
+                 policy_hidden_layers_channels: Iterable[int] = (),
+                 value_function_input_channels: int = 2,
+                 value_function_hidden_layers_sizes: Iterable[int] = (),
+                 kernel_size: int = 3,
+                 num_players=DEFAULT_PLAYER_NUM,
+                 dropout=0.0):
+        super().__init__()
+
+        self.shared_layers_channels = tuple(shared_layers_channels)
+        self.policy_hidden_layers_channels = tuple(
+            policy_hidden_layers_channels)
+        self.value_function_input_channels = value_function_input_channels
+        self.value_function_hidden_layers_sizes = tuple(
+            value_function_hidden_layers_sizes)
+        self.kernel_size = kernel_size
+        self.num_players = num_players
+        self.dropout = dropout
+
+        board_w, board_h = board_size
+        self.board_size = board_size
+
+        # Shared layers
+        # player * 2 + 1 is the input channel size: two channels per
+        # player, + 1 for the current turn.
+        # If the number of shared layers is 0, fall back to this
+        # dimentions.
+        # Initialize shared weights
+        shared_output_channels = num_players * 2 + 1
+
+        shared_layers = []
+
+        for shared_layer_channels in shared_layers_channels:
+            shared_layers.append(
+                nn.Conv2d(shared_output_channels, shared_layer_channels,
+                          kernel_size, 1, kernel_size // 2)
+            )
+            shared_output_channels = shared_layer_channels
+
+        self.shared_layers = nn.ModuleList(shared_layers)
+
+        # Batch normalization layers for each convolution
+        self.shared_batch_norm = nn.ModuleList(
+            nn.BatchNorm2d(shared_layer_channels) for shared_layer_channels
+            in shared_layers_channels)
+
+        # Policy head
+        policy_hidden_output_channels = shared_output_channels
+
+        policy_hidden_layers = []
+
+        for policy_layer_channels in policy_hidden_layers_channels:
+            policy_hidden_layers.append(
+                nn.Conv2d(policy_hidden_output_channels, policy_layer_channels,
+                          kernel_size, 1, kernel_size // 2)
+            )
+            policy_hidden_output_channels = policy_layer_channels
+
+        self.policy_hidden_layers = nn.ModuleList(policy_hidden_layers)
+
+        # Output of policy head is always width * height, flatten
+        # channels with a 1x1 convolution.
+        self.policy_output = nn.Conv2d(policy_hidden_output_channels, 1, 1, 1,
+                                       0)
+
+        # Batch normalization layers for each convolution in policy head
+        self.policy_batch_norm = nn.ModuleList(
+            nn.BatchNorm2d(policy_layer_channels) for policy_layer_channels
+            in policy_hidden_layers_channels)
+
+        # Value head
+        # Shared net output is compressed via a 1x1 convolution to
+        # reduce number of parameters of subsequent dense layers.
+        value_function_hidden_output_size = (
+            value_function_input_channels * board_w * board_h)
+        self.value_function_input_conv = nn.Conv2d(
+            shared_output_channels, value_function_input_channels,
+            1, 1)
+        self.value_function_input_batch_norm = nn.BatchNorm2d(
+            value_function_input_channels)
+
+        value_function_hidden_layers = []
+
+        for value_function_layer_size in value_function_hidden_layers_sizes:
+            value_function_hidden_layers.append(
+                nn.Linear(value_function_hidden_output_size,
+                          value_function_layer_size))
+            value_function_hidden_output_size = value_function_layer_size
+
+        self.value_function_hidden_layers = nn.ModuleList(
+            value_function_hidden_layers)
+
+        # Output of policy head is always 1
+        self.value_function_output = nn.Linear(
+            value_function_hidden_output_size, 1)
+
+    def get_config(self) -> dict:
+        """Return a configuration dict: used to save/load the model."""
+        return {'board_size': self.board_size,
+                'shared_layers_channels': self.shared_layers_channels,
+                'policy_hidden_layers_channels':
+                self.policy_hidden_layers_channels,
+                'value_function_input_channels':
+                self.value_function_input_channels,
+                'value_function_hidden_layers_sizes':
+                self.value_function_hidden_layers_sizes,
+                'kernel_size': self.kernel_size,
+                'num_players': self.num_players}
+
+    def state_features(self, state: Corso) -> torch.Tensor:
+        """Retrieve a tensor representing a game state.
+
+        Return shape: ``[1, height, width, num_players * 2 + 1]``.
+        """
+        # This comes with some necessary reallocations before feeding the
+        # structure to the tensor constructor. Things are cached where
+        # possible. Time cost of this transformation (5x5 board): ~1.5e-5
+        # Organizing the Corso state in a way that is more friendly w.r.t.
+        # this representation (e.g. with one hot encoded tuples as cell
+        # states instead of the abstract CellState class) is the most viable
+        # option after this one.
+
+        board_tensor = torch.tensor(
+            tuple(tuple(map(bitmap_cell, row)) for row in state.board))
+
+        # Append current player info
+        player_plane = torch.full((state.height, state.width, 1),
+                                  state.player_index - 1.)
+
+        return torch.cat((board_tensor, player_plane), 2).unsqueeze(0)
+
+    def forward(self, batch: torch.Tensor):
+        # Invalid move masking:
+        # Reshape input as a grid and collapse it into a bitmap of
+        # invalid locations
+        with torch.no_grad():
+            board_w, board_h = self.board_size
+
+            current_player = batch[:, 0, 0, -1]
+            # Moves that are invalid because dyed
+            invalid_moves_dyed = batch[
+                :, :, :, [0, 2]].sum(dim=-1)
+            # Moves that are invalid because occupied by opponent marble
+            # (only works for two players)
+
+            invalid_moves_marble = batch[
+                np.arange(0, len(batch)), :, :,
+                1 + 2 * (1 - current_player.int())].flatten(2)
+
+            invalid_moves = (invalid_moves_dyed + invalid_moves_marble).bool()
+
+        # Reshape input to accomodate for convolutions
+        batch = torch.transpose(batch, 2, 3)
+        batch = torch.transpose(batch, 1, 2)
+
+        # Shared layers
+        for layer, batch_norm in zip(self.shared_layers,
+                                     self.shared_batch_norm):
+            batch = F.relu(batch_norm(layer(batch)))
+
+        # Policy head
+        policy_batch = batch
+        for layer, batch_norm in zip(self.policy_hidden_layers,
+                                     self.policy_batch_norm):
+            policy_batch = F.relu(batch_norm(layer(policy_batch)))
+        # Output layer leads to shape: [N, 1, H, W]
+        # Squeeze channel dimension in order to apply invalid moves mask
+        policy_batch = self.policy_output(policy_batch).squeeze(1)
+
+        # Invalid moves are set to an extremely negative value.
+        # Extremely negative logits will results in 0 probability of
+        # choosing the action
+        policy_batch[invalid_moves] = -1e10
+
+        policy_batch = policy_batch.view(-1, board_w * board_h)
+
+        # Value head
+        value_batch = F.relu(
+            self.value_function_input_batch_norm(
+                self.value_function_input_conv(batch))).flatten(1)
+        for layer in self.value_function_hidden_layers:
+            value_batch = F.relu(layer(value_batch))
+            value_batch = F.dropout(value_batch, self.dropout, self.training)
+        value_batch = F.tanh(self.value_function_output(value_batch))
+
+        return policy_batch, value_batch
+
+
+def puct_siblings(priors: np.ndarray, counts: np.ndarray,
+                  c_puct: float = 1, epsilon: float = 1e-6):
+    """Compute PUCT algorithm for siblings.
+
+    As defined by Silver et al. 2017. in "Mastering the game of Go
+    without human knowledge".
+
+    The algorithm is computed on a "batch" of siblings. That is,
+    ``counts`` shall be the visit counts of sibling nodes in a
+    state-action tree.
+    """
+    return c_puct * priors * (np.sqrt(counts.sum() + epsilon) / (1 + counts))
+
+
+class MCTSNode:
+    """MTCS variation as described by AZ.
+
+    Single threaded version.
+    """
+
+    def __init__(self, network: PriorPredictorProtocol, state: Corso,
+                 parent: Optional['MCTSNode'] = None, value: float = 0,
+                 priors: np.ndarray = np.array([]),
+                 device='cpu'):
+        self.network: PriorPredictorProtocol = network
+        self.device = device
+
+        self.state = state
+        self.parent: Optional['MCTSNode'] = parent
+        self.value: float = value
+
+        # All saved metrics are referred to the children of the node
+        self.children: list['MCTSNode'] = []
+        self.visits = np.array([])
+        self.q_values = np.array([])
+        self.cumulative_values = np.array([])
+        self.actions: list[Action] = []
+        self.priors = priors
+
+    @classmethod
+    def create_root(cls, network: PriorPredictorProtocol,
+                    state: Corso, device='cpu') -> 'MCTSNode':
+        """Generate a root node, initializing priors from the network."""
+        with torch.no_grad():
+            priors, value = network(network.state_features(state).to(device))
+            priors = F.softmax(priors, dim=-1)
+
+        return cls(network, state, value=value.item(),
+                   priors=priors.cpu().numpy().squeeze(),
+                   device=device)
+
+    def select(self) -> MCTSTrajectory:
+        """Explore existing tree and select node to expand.
+
+        Return the trajectory for the selection (used for backup).
+        Return format is
+        ``[(root_node, selected_index), ..., (node_to_expand, None)]``.
+        """
+        selected_node = self
+        trajectory = []
+
+        # Compute factors to shift Q values based on current player
+        # 1 if current player is player1, -1 if player2.
+        initial_player_factor = -2 * self.state.player_index + 3
+        player_factor = cycle((initial_player_factor, -initial_player_factor))
+
+        while selected_node.children:
+            # Q + U
+            bounds = (next(player_factor) * selected_node.q_values
+                      + puct_siblings(selected_node.priors,
+                                      selected_node.visits))
+
+            selected_index = bounds.argmax()
+            selected_node.visits[selected_index] += 1
+
+            # Push current node with the selected child index
+            trajectory.append((selected_node, selected_index))
+
+            # Select new node
+            selected_node = selected_node.children[selected_index]
+
+        trajectory.append((selected_node, None))
+        return trajectory
+
+    def expand(self):
+        """Expand children.
+
+        Completely populate children nodes and their metrics. Priors
+        are predicted through :attr:`network`. This include the rollout
+        step which is replaced with neural network predictions of the
+        state value function.
+        """
+        if self.state.terminal[0]:
+            return
+
+        # Expand self actions and select the correct subset of priors
+        self.actions = self.state.actions
+        action_indeces = [action.row * self.state.width + action.column
+                          for action in self.actions]
+        self.priors = self.priors[action_indeces]
+
+        # Compute priors and state values
+        children_states = [self.state.step(action) for action
+                           in self.actions]
+
+        children_tensor = torch.cat([self.network.state_features(state) for
+                                     state in children_states]).to(self.device)
+        with torch.no_grad():
+            logits, predicted_values = self.network(children_tensor)
+
+            all_priors = torch.softmax(logits, dim=-1).cpu().numpy()
+
+        # If the generated node is terminal, use the true game outcome
+        # as backup value (only works for two players)
+        terminal_map = np.array(
+            [state.terminal for state in children_states], dtype=int)
+        values = predicted_values.cpu().numpy().flatten()
+        is_terminal = terminal_map[:, 0].astype(np.bool_)
+        # Map winner to {-1, 1}
+        values[is_terminal] = -2 * terminal_map[is_terminal, 1] + 3
+
+        self.children = [MCTSNode(self.network, state, self, value, priors,
+                                  device=self.device)
+                         for state, value, priors
+                         in zip(children_states, values, all_priors)]
+
+        # Initialize other metrics
+        self.visits = np.ones_like(self.children, dtype=int)
+        self.q_values = np.zeros_like(self.children)
+        self.cumulative_values = np.zeros_like(self.children)
+
+    @staticmethod
+    def backup(trajectory: MCTSTrajectory):
+        """Backup value along the given trajectory."""
+        backup_value = trajectory[-1][0].value
+
+        for node, child_index in trajectory:
+            if child_index is None:
+                break
+
+            # Move here increment to visits?
+            node.cumulative_values[child_index] += backup_value
+            node.q_values[child_index] = (node.cumulative_values[child_index]
+                                          / node.visits[child_index])
+
+    def search(self):
+        """Run selection, expansion, rollout and backup.
+
+        Expansion and rollout steps are unified for convenience. Rollout
+        is replaced with immediate predictions from the neural network.
+        """
+        trajectory = self.select()
+        trajectory[-1][0].expand()
+        self.backup(trajectory)
+
+
+def visits_policy(mcts_root: MCTSNode,
+                  temperature: float = 1.,
+                  epsilon: float = 1e-2) -> np.ndarray:
+    """Return normalized policy, based on exponential visit counts.
+
+    Temperature controls exploration (temp of zero: no exploration,
+    temp of one: exploration is proportional to the original visit
+    counts).
+
+    Output is an array of shape ``(n_actions,)`` where ``n_actions`` is
+    the number of legal actions according to the given ``mcts_root`` (
+    i.e. ``len(mcts_root.actions)``).
+    """
+    exponential_visits = mcts_root.visits ** (1 / (temperature + epsilon))
+    return exponential_visits / exponential_visits.sum()
+
+
+class AZPlayer(Player):
+    """Corso player based on AZ agent.
+
+    Works for two player games only.
+    """
+
+    def __init__(self, network: PriorPredictorProtocol,
+                 mcts_simulations: int,
+                 temperature: float = 1.,
+                 seed=None,
+                 device='cpu',
+                 verbose=False):
+        self.network = network
+        self.mcts_simulations = mcts_simulations
+        self.temperature = temperature
+        self.rng = random.Random(seed)
+        self.device = device
+        self.verbose = verbose
+
+        self._mcts_tree: Optional[MCTSNode] = None
+        self.last_policy = np.array([])
+
+    def select_action(self, state: Corso,
+                      mcts_tree: Optional[MCTSNode] = None) -> Action:
+        """Select action based on MCTS and internal pretrained network.
+
+        If ``mcts_tree`` is given, use it as starting node for the
+        simulations. It must be true that ``mcts_tree.state == state``.
+        Ultimately, it will also replace the internal tree,
+        which is discarded.
+        Otherwise, the internally stored tree is
+        used. This assumes a two player game, and that the internal tree
+        root is either uninitilized or positioned in a way such that
+        ``state`` can be found in its immediate children. This is only
+        true if this object is used consistently in a two player game.
+        If ``state`` is not found in the immediate children, a new
+        internal tree is created. This ensures correctness even in the
+        case of inconsistent queries, but in such circumstances loses
+        efficiency and potentially optimality.
+
+        After selection of the action is done, :attr:`last_policy` is
+        populated, which can be used to retrieve the policy that was
+        used to make such decision. This is mostly useful for training.
+        """
+        if mcts_tree is None:
+            children_states = ()
+            if self._mcts_tree is not None:
+                children_states = [node.state for node
+                                   in self._mcts_tree.children]
+
+            if state in children_states:
+                # Be aware of the double list lookup
+                # (state in children, children.index)
+                mcts_tree = self._mcts_tree.children[
+                    children_states.index(state)]
+            else:
+                mcts_tree = MCTSNode.create_root(self.network, state,
+                                                 device=self.device)
+
+        for _ in range(self.mcts_simulations):
+            mcts_tree.search()
+
+        self.last_policy = visits_policy(mcts_tree,
+                                         temperature=self.temperature)
+
+        if self.verbose:
+            expanded_policy = _expand_policy(mcts_tree.actions,
+                                             self.last_policy,
+                                             state.width, state.height)
+            print(expanded_policy.reshape((state.height, state.width))
+                                 .round(2))
+
+        selected_index, = self.rng.choices(
+            range(len(mcts_tree.actions)), weights=self.last_policy,
+            k=1)
+
+        # Move tree search to the selected child in order to preserve
+        # tree during turns
+        self._mcts_tree = mcts_tree.children[selected_index]
+
+        return mcts_tree.actions[selected_index]
+
+
+def episode(az_network: PriorPredictorProtocol,
+            simulations: int,
+            starting_state: Corso = Corso(), device='cpu') -> tuple[
+                list[torch.Tensor], list[torch.Tensor], list[int]]:
+    """Play a full episode of selfplay and return trajectory info.
+
+    Two player games only. Draws are not supported (w * h in board size
+    must be odd).
+
+    Return in order:
+
+    - A list of state tensors
+    - A list of predicted expert policies
+    - A list of returns (1 if won by player1, -1 if player2)
+    """
+    state_tensors = []
+    policies = []
+    winner = 1
+
+    state = starting_state
+
+    # Build two players, but use same network and tree in practice.
+    # This is just for convenience due to implementation details
+    # of AZPlayer
+    mcts = MCTSNode.create_root(az_network, starting_state, device=device)
+    players = cycle((AZPlayer(az_network, simulations, device=device),
+                     AZPlayer(az_network, simulations, device=device)))
+
+    # Iterations: max number of moves in a game of corso is w * h
+    # as the longest game would see each player placing a marble
+    # without expanding.
+    for _ in range(state.width * state.height + 1):
+        player: AZPlayer = next(players)
+
+        action = player.select_action(state, mcts)
+
+        state_tensors.append(az_network.state_features(state))
+        policies.append(
+            _expand_policy(mcts.actions, player.last_policy, mcts.state.width,
+                           mcts.state.height))
+
+        state = state.step(action)
+        mcts = player._mcts_tree
+
+        terminal, winner = state.terminal
+        if terminal:
+            break
+
+    # Assign reward (not accounting for draws)
+    returns = [-2 * winner + 3] * len(state_tensors)
+
+    return state_tensors, policies, returns
+
+
+# Dims [1, 2] identify the board plane according to AZConvNetwork
+# encodings
+SYMMETRIES = (
+    # Rotations
+    lambda s: s,        # Rotate 0 degrees, identity function
+    partial(torch.rot90, k=1, dims=[1, 2]),
+    partial(torch.rot90, k=2, dims=[1, 2]),
+    partial(torch.rot90, k=3, dims=[1, 2]),
+
+    # Reflections (orthogonal)
+    partial(torch.flip, dims=(1,)),
+    partial(torch.flip, dims=(2,)),
+    # Reflections (diagonal)
+    lambda s: torch.rot90(torch.flip(s, (1,)), k=1, dims=[1, 2]),
+    lambda s: torch.rot90(torch.flip(s, (2,)), k=1, dims=[1, 2])
+)
+
+
+def symmetry_augmentation(states: torch.Tensor, expert_policies: torch.Tensor,
+                          returns: torch.Tensor,
+                          generator: torch.Generator,
+                          symmetries=SYMMETRIES
+                          ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+    """Augment states by exploiting board symmetries."""
+    samples = len(states)
+    augmented_states = torch.zeros_like(states)
+
+    # Reshape policies to transform them accordingly to state
+    # augmentations
+    expert_policies_reshaped = expert_policies.view(states.shape[:-1])
+    augmented_expert_policies = torch.zeros_like(expert_policies_reshaped)
+
+    permutation_index = torch.randperm(samples, generator=generator)
+    batch_size = math.ceil(samples / len(symmetries))
+
+    for batch_start, transformation in zip(range(0, samples, batch_size),
+                                           SYMMETRIES):
+        perm_batch = permutation_index[batch_start                  # NOQA
+                                       : batch_start + batch_size]
+        augmented_states[perm_batch] = transformation(states[perm_batch])
+        augmented_expert_policies[perm_batch] = transformation(
+            expert_policies_reshaped[perm_batch])
+
+    return (augmented_states, augmented_expert_policies.view(samples, -1),
+            returns)
+
+
+def inversion_augmentation(states: torch.Tensor, expert_policies: torch.Tensor,
+                           returns: torch.Tensor,
+                           generator: torch.Generator,
+                           inversion_probability=0.5) -> torch.Tensor:
+    """Augment states by inverting current player."""
+    samples = len(states)
+    augmented_states = states.clone()
+    augmented_returns = returns.clone()
+
+    inversion_map = torch.bernoulli(
+        torch.tensor([inversion_probability]).expand(samples),
+        generator=generator).bool()
+
+    # Invert point of view on selected
+    augmented_states[inversion_map] = states[inversion_map][
+        :, :, :, [2, 3, 0, 1, 4]]
+    # Invert current turn
+    augmented_states[inversion_map, :, :, 4] = 1 - states[
+        inversion_map, :, :, 4]
+    # Invert returns
+    augmented_returns[inversion_map] = -returns[inversion_map]
+
+    return augmented_states, expert_policies, augmented_returns
+
+
+def train(network: PriorPredictorProtocol, optimizer: optim.Optimizer,
+          states: torch.Tensor, expert_policies: torch.Tensor,
+          returns: torch.Tensor, epochs=1, batch_size=64,
+          augmentations: Sequence[Callable] = ()):
+    """Train network with generated data."""
+    samples = len(states)
+    minibatches = math.ceil(samples / batch_size)
+
+    total_loss = 0              # Used to compute mean return value
+    for epoch in range(epochs):
+        epoch_permutation = torch.randperm(samples)
+
+        # Apply augmentations
+        # Unless enormous models are used, batching this transformations
+        # is not necessary, as they don't even involve gradients.
+        # In case of limited resources or great number of samples
+        # (hence, played episodes) it may become necessary to batch.
+        augmented_states = states
+        augmented_expert_policies = expert_policies
+        augmented_returns = returns
+        for augmentation in augmentations:
+            # TODO: proper seeding
+            augmented_states, augmented_expert_policies, augmented_returns = \
+                augmentation(augmented_states, augmented_expert_policies,
+                             augmented_returns, torch.default_generator)
+
+        for batch_start in range(0, samples, batch_size):
+            # Shuffle
+            perm_batch = epoch_permutation[batch_start                  # NOQA
+                                           : batch_start + batch_size]
+            states_batch = augmented_states[perm_batch]
+            expert_policies_batch = augmented_expert_policies[perm_batch]
+            returns_batch = augmented_returns[perm_batch]
+
+            # Fit
+            optimizer.zero_grad()
+
+            policies_batch, values_batch = network(states_batch)
+            # Loss: MSE for the values (targets are empirical returns)
+            # and CE for policies (targets are expert policies, computed
+            # through MCTS).
+            values_loss = F.mse_loss(values_batch.flatten(), returns_batch)
+            policy_loss = F.cross_entropy(policies_batch,
+                                          expert_policies_batch)
+            loss = values_loss + policy_loss
+
+            total_loss += loss.detach()
+
+            loss.backward()
+            optimizer.step()
+
+    return total_loss / (minibatches * epochs)
+
+
+def _expand_policy(actions: Iterable[Action], policy: np.ndarray,
+                   width=DEFAULT_BOARD_SIZE,
+                   height=DEFAULT_BOARD_SIZE) -> np.ndarray:
+    """Expand a MCTS policy, adding invalid moves (probability 0).
+
+    NB: this step is a slowdown (how slow?) since it has to recompute
+    action indeces, which are already naturally computed internally
+    by :class:`MCTSNode`. Potentially, this step can be merged with
+    the MCTS minimizing lookups and reallocations.
+    """
+    action_indeces = [action.row * width + action.column
+                      for action in actions]
+    expanded_policy = np.zeros(height * width)
+    expanded_policy[action_indeces] = policy
+    return expanded_policy
+
+
+def alphazero(network: PriorPredictorProtocol,
+              iterations=100, episodes=100, simulations=100,
+              epochs_per_iteration=1, learning_rate=1e-3,
+              weight_decay=1e-4,
+              augmentations: Sequence[Callable] = (
+                symmetry_augmentation, inversion_augmentation),
+              starting_state: Corso = Corso(),
+              evaluation_strageties: Sequence[AgentEvaluationStrategy] = (),
+              writer: Optional[SummaryWriter] = None, seed=None,
+              device='cpu'):
+    """Run alphazero training loop."""
+    # Build a default writer if not provided
+    if writer is None:
+        writer = SummaryWriter(
+            os.path.join('runs',
+                         datetime.datetime.now().strftime(r'%F-%H-%M-%S')))
+
+    optimizer = optim.Adam(network.parameters(), learning_rate,
+                           weight_decay=weight_decay)
+
+    evaluation_rng = random.Random(seed)
+
+    for iteration_index in range(iterations):
+        # print(iteration_index)
+        state_tensors = []
+        policies = []
+        returns = []
+
+        # Collect data
+        network.eval()
+        for episode_index in range(episodes):
+            # print('episode', episode_index)
+            ep_state_tensors, ep_policies, ep_returns = episode(
+                network, simulations, starting_state=starting_state,
+                device=device)
+
+            state_tensors += ep_state_tensors
+            policies += ep_policies
+            returns += ep_returns
+
+        # Train network
+        network.train()
+        mean_loss = train(network, optimizer,
+                          torch.cat(state_tensors).to(device),
+                          torch.from_numpy(np.stack(policies)).to(device),
+                          torch.tensor(returns,
+                                       dtype=torch.float32).to(device),
+                          epochs=epochs_per_iteration,
+                          augmentations=augmentations)
+        writer.add_scalar('train/loss', mean_loss, iteration_index)
+
+        # Evaluate
+        network.eval()
+
+        policy_player = AZPlayer(network, simulations, 0,
+                                 seed=evaluation_rng.random(),
+                                 device=device)
+        for evaluation_stragety in evaluation_strageties:
+            evaluation_results = evaluation_stragety.evaluate(
+                policy_player, starting_state=starting_state)
+
+            writer.add_scalars(f'eval/{evaluation_stragety.get_name()}',
+                               evaluation_results._asdict(),
+                               iteration_index)

@@ -1,0 +1,3 @@
+include requirements.txt
+include requirements_az.txt
+include requirements_pg.txt
