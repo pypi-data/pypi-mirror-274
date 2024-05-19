@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyflagoras/flags/pyflagoras.egg-info/PKG-INFO
+src/pyflagoras/flags/pyflagoras.egg-info/SOURCES.txt
+src/pyflagoras/flags/pyflagoras.egg-info/dependency_links.txt
+src/pyflagoras/flags/pyflagoras.egg-info/entry_points.txt
+src/pyflagoras/flags/pyflagoras.egg-info/requires.txt
+src/pyflagoras/flags/pyflagoras.egg-info/top_level.txt
+src/pyflagoras/flags/pyflagoras.egg-info/PKG-INFO
+src/pyflagoras/flags/pyflagoras.egg-info/SOURCES.txt
+src/pyflagoras/flags/pyflagoras.egg-info/dependency_links.txt
+src/pyflagoras/flags/pyflagoras.egg-info/entry_points.txt
+src/pyflagoras/flags/pyflagoras.egg-info/requires.txt
+src/pyflagoras/flags/pyflagoras.egg-info/top_level.txt
