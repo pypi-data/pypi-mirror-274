@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+anguishousz/__init__.py
+anguishousz/main.py
+anguishousz.egg-info/PKG-INFO
+anguishousz.egg-info/SOURCES.txt
+anguishousz.egg-info/dependency_links.txt
+anguishousz.egg-info/requires.txt
+anguishousz.egg-info/top_level.txt
