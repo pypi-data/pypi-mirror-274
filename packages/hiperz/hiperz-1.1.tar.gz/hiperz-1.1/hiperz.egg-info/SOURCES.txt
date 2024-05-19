@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hiperz/__init__.py
+hiperz/main.py
+hiperz.egg-info/PKG-INFO
+hiperz.egg-info/SOURCES.txt
+hiperz.egg-info/dependency_links.txt
+hiperz.egg-info/requires.txt
+hiperz.egg-info/top_level.txt
