@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+anteposthumousz/__init__.py
+anteposthumousz/main.py
+anteposthumousz.egg-info/PKG-INFO
+anteposthumousz.egg-info/SOURCES.txt
+anteposthumousz.egg-info/dependency_links.txt
+anteposthumousz.egg-info/requires.txt
+anteposthumousz.egg-info/top_level.txt
