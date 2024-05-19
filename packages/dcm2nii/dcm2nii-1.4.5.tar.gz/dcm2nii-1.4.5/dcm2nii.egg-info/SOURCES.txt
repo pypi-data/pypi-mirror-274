@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dcm2nii.egg-info/PKG-INFO
+dcm2nii.egg-info/SOURCES.txt
+dcm2nii.egg-info/dependency_links.txt
+dcm2nii.egg-info/requires.txt
+dcm2nii.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+numpy==1.24.4
+pydicom==2.0.0
+tqdm==4.66.2
+nibabel==4.0.2
