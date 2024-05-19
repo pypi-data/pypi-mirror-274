@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonpejorativez/__init__.py
+nonpejorativez/main.py
+nonpejorativez.egg-info/PKG-INFO
+nonpejorativez.egg-info/SOURCES.txt
+nonpejorativez.egg-info/dependency_links.txt
+nonpejorativez.egg-info/requires.txt
+nonpejorativez.egg-info/top_level.txt
