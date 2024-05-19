@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/netbox4_interface_sync/setup.py
+src/netbox4_interface_sync.egg-info/PKG-INFO
+src/netbox4_interface_sync.egg-info/SOURCES.txt
+src/netbox4_interface_sync.egg-info/dependency_links.txt
+src/netbox4_interface_sync.egg-info/top_level.txt
+src/netbox4_interface_sync/netbox4_interface_sync/__init__.py
+src/netbox4_interface_sync/netbox4_interface_sync/forms.py
+src/netbox4_interface_sync/netbox4_interface_sync/template_content.py
+src/netbox4_interface_sync/netbox4_interface_sync/urls.py
+src/netbox4_interface_sync/netbox4_interface_sync/utils.py
+src/netbox4_interface_sync/netbox4_interface_sync/views.py
+src/netbox4_interface_sync/netbox4_interface_sync/templates/netbox4_interface_sync/compare_interfaces_button.html
+src/netbox4_interface_sync/netbox4_interface_sync/templates/netbox4_interface_sync/interface_comparison.html
+src/netbox4_interface_sync/netbox4_interface_sync/templates/netbox4_interface_sync/number_of_interfaces_panel.html

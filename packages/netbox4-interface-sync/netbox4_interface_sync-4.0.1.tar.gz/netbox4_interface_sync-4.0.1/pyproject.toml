@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netbox4_interface_sync"
+version = "4.0.1"
+authors = [
+  { name="Keith Knowles", email="mkknowles@outlook.com" },
+]
+description = "Syncing Device Interfaces with the Interfaces from Device Type for NetBox 4"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.html"]
+
+[project.urls]
+Homepage = "https://github.com/NetTech2001/netbox4-interface-sync"
+Issues = "https://github.com/NetTech2001/netbox4-interface-sync/issues"
