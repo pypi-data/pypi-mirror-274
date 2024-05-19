@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sixtracktools
+Version: 0.0.10
+Summary: Python tools for sixtrack
+Home-page: https://github.com/rdemaria/sixtracktools
+Author: Riccardo De Maria
+Author-email: riccardo.de.maria@cern.ch
+Requires-Dist: numpy
