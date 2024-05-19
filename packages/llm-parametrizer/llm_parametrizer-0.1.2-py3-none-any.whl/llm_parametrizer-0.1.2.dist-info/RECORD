@@ -1,0 +1,7 @@
+llm_parametrizer/__init__.py,sha256=s8pZJjfPpdyIXlZ0L5MSK84x_PcXWlR01xONM4H_oxg,84
+llm_parametrizer/llm_parametrizer.py,sha256=OwLXaWD49awg1cZR-ZiYL05wqKNiDwn4psudwEJ8xIA,6677
+llm_parametrizer/open_AI_models.py,sha256=e5U6toic5JzQEPBzbNBEK6orULojkFsyOuPGDrcVcNs,2307
+llm_parametrizer-0.1.2.dist-info/METADATA,sha256=PHd6tRfXyux_UmP9-9y7vCOvZos-Op8IYpELTXIMuqE,5494
+llm_parametrizer-0.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+llm_parametrizer-0.1.2.dist-info/top_level.txt,sha256=8vLU9n5Bq6Ae4KLojPrFwdpPJihfvVt648JfyfES1Bo,17
+llm_parametrizer-0.1.2.dist-info/RECORD,,
