@@ -1,0 +1,12 @@
+README.md
+setup.py
+RNASQLite/__init__.py
+RNASQLite/cli.py
+RNASQLite/db_utils.py
+RNASQLite/process_file.py
+RNASQLite.egg-info/PKG-INFO
+RNASQLite.egg-info/SOURCES.txt
+RNASQLite.egg-info/dependency_links.txt
+RNASQLite.egg-info/entry_points.txt
+RNASQLite.egg-info/requires.txt
+RNASQLite.egg-info/top_level.txt
