@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+attitudinizerz/__init__.py
+attitudinizerz/main.py
+attitudinizerz.egg-info/PKG-INFO
+attitudinizerz.egg-info/SOURCES.txt
+attitudinizerz.egg-info/dependency_links.txt
+attitudinizerz.egg-info/requires.txt
+attitudinizerz.egg-info/top_level.txt
