@@ -1,0 +1,8 @@
+click>=7.0
+numpy
+ase>=3.22.1
+pyyaml
+spglib
+docstring_parser
+expyre-wfl
+universalSOAP
