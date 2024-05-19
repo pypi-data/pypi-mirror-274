@@ -1,0 +1,16 @@
+django_model_versioning/lib/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_model_versioning/lib/apps.py,sha256=WI5q-NFWaYgFWk7Da40CVGXvpJXyj8hnHkkySLbm8mw,270
+django_model_versioning/lib/config.py,sha256=QrX3X1RzTIlbwpCaL0mpfuQgs5t3MJiwU0JUOofhA8k,93
+django_model_versioning/lib/core.py,sha256=3n16MsaDgOmRMWYUf08P0hRqlx4uNL-BdBEkiGdh3AE,250
+django_model_versioning/lib/fields.py,sha256=_6KaycbfdEovQQZaliNdddLReTLvLYL2ERLYYxmuuXc,1065
+django_model_versioning/lib/register.py,sha256=pY4vD2HFx6NNcQbKq1zsHBhgiWQRuSn4JQf17rmiCbs,2008
+django_model_versioning/lib/signals.py,sha256=2s7csca9OgJDyoaP5v7_plwAoRsra8BBXtbNVPvozms,77
+django_model_versioning/lib/types.py,sha256=i7kmRcSKgdoqeN7RKOyqH_za2U_gZFQzpefA7wjcS0o,396
+django_model_versioning/lib/versioned_foreign_key.py,sha256=MtrTxjE8jSio_zw-kLxUIt5DWYKRK0fVwqutZUB1fEQ,3517
+django_model_versioning/lib/versioned_model.py,sha256=YEIkDcrjJAU-TNeDmYagoF5CLuVMPl4OvZDnQ39IAvY,3623
+django_model_versioning/lib/versioning_field.py,sha256=OZI8mGMw59ZFFzBTgBHJOWf949vyBOUE1usGKjwi558,1716
+django_model_versioning/lib/versioning_options.py,sha256=uaub3y-kQYcNVmxSA6TDzTUPjyFYT7NGKkDpQs5bpUc,1002
+django_model_versioning-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_model_versioning-0.1.0.dist-info/METADATA,sha256=rzZaXXEBDc1KockItLsRtWpWkwO2_ri15rWLLVgBmdo,4046
+django_model_versioning-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_model_versioning-0.1.0.dist-info/RECORD,,
