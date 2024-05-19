@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+manywaysz/__init__.py
+manywaysz/main.py
+manywaysz.egg-info/PKG-INFO
+manywaysz.egg-info/SOURCES.txt
+manywaysz.egg-info/dependency_links.txt
+manywaysz.egg-info/requires.txt
+manywaysz.egg-info/top_level.txt
