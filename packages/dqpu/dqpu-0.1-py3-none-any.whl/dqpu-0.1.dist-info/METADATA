@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dqpu
+Version: 0.1
+Author: Davide Gessa
+Author-email: gessadavide@gmail.com
+License-File: LICENSE
+Requires-Dist: numpy
+

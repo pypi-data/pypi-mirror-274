@@ -1,0 +1,2 @@
+[console_scripts]
+dqpu = dqpu.main:main
