@@ -1,0 +1,2 @@
+[console_scripts]
+twinlib = twinlib_pkg:hello
