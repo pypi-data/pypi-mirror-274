@@ -1,0 +1,3 @@
+[console_scripts]
+p3g=p3g.client:main
+
