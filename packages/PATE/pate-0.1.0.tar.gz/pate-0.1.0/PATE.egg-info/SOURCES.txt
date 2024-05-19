@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PATE.egg-info/PKG-INFO
+PATE.egg-info/SOURCES.txt
+PATE.egg-info/dependency_links.txt
+PATE.egg-info/requires.txt
+PATE.egg-info/top_level.txt
+pate/PATE_metric.py
+pate/PATE_utils.py
+pate/__init__.py
