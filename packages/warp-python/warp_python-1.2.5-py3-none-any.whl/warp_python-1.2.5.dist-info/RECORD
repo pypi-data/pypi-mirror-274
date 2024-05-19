@@ -1,0 +1,11 @@
+warp/__init__.py,sha256=dzLdDPSSXJuEx5-xeWQ46tmBly6_RBbE8S-QwifZKzE,116
+warp/resolve.py,sha256=yDHqCB-MXELXL9U-jOHAU_uVc9aj4AfFa5wAx1KIOzQ,812
+warp/servers.py,sha256=PIovP5S5xGGX98_4yWLoVb6MG3vDsEx0u06vqRV3pIo,79
+warp/set_ip.py,sha256=IywCiymar_OwuCahDFyHbI9FYDEVc7IrYGAXRE97D94,956
+warp/host/__init__.py,sha256=d8oz4AZQ38SUVW_gUtHaoAwn5HPy_asypnTn9D9U9E0,67
+warp/host/host.py,sha256=IeiokXgEnmbl2m4380OLakV8EyqL3oaB5_S6_UobTj0,4461
+warp_python-1.2.5.dist-info/LICENSE,sha256=B64JUb1rsvlFIRiqctzGipFeuC9Qz6QKHWaBzZeKUwI,1069
+warp_python-1.2.5.dist-info/METADATA,sha256=NCkEbgwZEPNZZctmu63cdNjfAMLOp8aqiKOb4h478PU,760
+warp_python-1.2.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+warp_python-1.2.5.dist-info/top_level.txt,sha256=8pupHORyKoiN_BYWlTmv5OFBWdhqpppiBYQV5KxgEvg,5
+warp_python-1.2.5.dist-info/RECORD,,
