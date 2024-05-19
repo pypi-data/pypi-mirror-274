@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+skiplanesz/__init__.py
+skiplanesz/main.py
+skiplanesz.egg-info/PKG-INFO
+skiplanesz.egg-info/SOURCES.txt
+skiplanesz.egg-info/dependency_links.txt
+skiplanesz.egg-info/requires.txt
+skiplanesz.egg-info/top_level.txt
