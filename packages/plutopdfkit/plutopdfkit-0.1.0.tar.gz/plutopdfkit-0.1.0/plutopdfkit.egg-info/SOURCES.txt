@@ -1,0 +1,7 @@
+setup.py
+plutopdfkit/__init__.py
+plutopdfkit.egg-info/PKG-INFO
+plutopdfkit.egg-info/SOURCES.txt
+plutopdfkit.egg-info/dependency_links.txt
+plutopdfkit.egg-info/requires.txt
+plutopdfkit.egg-info/top_level.txt
