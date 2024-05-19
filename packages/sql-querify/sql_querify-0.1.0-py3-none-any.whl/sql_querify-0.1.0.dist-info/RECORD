@@ -1,0 +1,17 @@
+querify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+querify/database/__init__.py,sha256=lnc0uiaGLF0qMi_rWhCpRSFvaj0CJEiMCAl6Yqn1ZiA,21
+querify/database/client.py,sha256=trpG2afxrwaRTX4bmrOOaAKJB9xk6ZEBxjANuuqAq8A,1611
+querify/query.py,sha256=JOAsuEvHHOTsLsl1yWBiig6YXw5Gc_aRFbC1ZTJQu0s,1135
+querify/sources/__init__.py,sha256=_TkZJodg1aaYn70UpWw7qyew4Gq8FgqEu21aG-W9BLw,291
+querify/sources/base_source.py,sha256=lUnSpdaCzoQf5oV8p31GpZtfsd_BGcl7vKC4OWgdaGc,271
+querify/sources/clients/__init__.py,sha256=wIAo3WIpIEI_Yr6r_35qHzhCfUHxbNxgnHN60JSe_qI,44
+querify/sources/clients/process.py,sha256=sgR84c5sR0ZaIFH_t4mxMNKVYiEvKeBf6RYNYnxwUy0,660
+querify/sources/clients/storage.py,sha256=4Tt81twgQ0dk9oby-6QD-t4Vl72TlQxHbWhYBMohxMw,2221
+querify/sources/dirs.py,sha256=YOpeF6Dh3VH9OJoMSLRGnSl1DePmiCNPYSoWA5ZqiPE,451
+querify/sources/files.py,sha256=nyJrXOjQ-jhV1Q8pXmgBm5Idq2N4bxBrhhbm3xEKxRw,457
+querify/sources/process.py,sha256=TVoUA9Rq3Lf4ydc4Mw-DP8jkGPTWQ_ZailQ5UQXrs8A,471
+sql_querify-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sql_querify-0.1.0.dist-info/METADATA,sha256=zHqstw-dpxuzhk21OodG3nGI1ZYRpIVubs1AmAJKJP4,831
+sql_querify-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sql_querify-0.1.0.dist-info/entry_points.txt,sha256=YRRq9x4eP92HZ3zlelIzUMGQWRWlI5zxjbe63cgfIFo,41
+sql_querify-0.1.0.dist-info/RECORD,,

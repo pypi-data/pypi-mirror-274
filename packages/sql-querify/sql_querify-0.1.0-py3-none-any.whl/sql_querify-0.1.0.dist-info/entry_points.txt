@@ -1,0 +1,3 @@
+[console_scripts]
+qy=querify.query:main
+
