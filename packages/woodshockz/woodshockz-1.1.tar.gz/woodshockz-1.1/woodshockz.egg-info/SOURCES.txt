@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+woodshockz/__init__.py
+woodshockz/main.py
+woodshockz.egg-info/PKG-INFO
+woodshockz.egg-info/SOURCES.txt
+woodshockz.egg-info/dependency_links.txt
+woodshockz.egg-info/requires.txt
+woodshockz.egg-info/top_level.txt
