@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/boardsonfire_client/__init__.py
+src/boardsonfire_client/client.py
+src/boardsonfire_client/endpoints.py
+src/boardsonfire_client/exceptions.py
+src/boardsonfire_sdk.egg-info/PKG-INFO
+src/boardsonfire_sdk.egg-info/SOURCES.txt
+src/boardsonfire_sdk.egg-info/dependency_links.txt
+src/boardsonfire_sdk.egg-info/requires.txt
+src/boardsonfire_sdk.egg-info/top_level.txt
+tests/tests.py
