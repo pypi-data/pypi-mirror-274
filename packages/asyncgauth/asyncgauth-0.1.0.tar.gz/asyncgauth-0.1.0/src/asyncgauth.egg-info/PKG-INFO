@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: asyncgauth
+Version: 0.1.0
+Summary: Async Google Auth
+Author-email: Hong Shick Pak <hong@hspak.com>
+Project-URL: Homepage, https://github.com/hspak/asyncgauth
+Project-URL: Issues, https://github.com/pypa/asyncgauth/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# asyncgauth
+### Async Google Auth
+
+WIP

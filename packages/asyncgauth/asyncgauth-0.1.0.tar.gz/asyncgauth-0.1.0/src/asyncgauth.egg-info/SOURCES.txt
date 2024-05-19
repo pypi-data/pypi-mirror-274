@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/test.py
+src/asyncgauth/__init__.py
+src/asyncgauth/constants.py
+src/asyncgauth/default.py
+src/asyncgauth/exceptions.py
+src/asyncgauth/metadata_server_auth.py
+src/asyncgauth/oauth.py
+src/asyncgauth/types.py
+src/asyncgauth.egg-info/PKG-INFO
+src/asyncgauth.egg-info/SOURCES.txt
+src/asyncgauth.egg-info/dependency_links.txt
+src/asyncgauth.egg-info/top_level.txt
