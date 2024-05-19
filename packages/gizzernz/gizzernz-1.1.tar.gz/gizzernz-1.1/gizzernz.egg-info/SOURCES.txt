@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gizzernz/__init__.py
+gizzernz/main.py
+gizzernz.egg-info/PKG-INFO
+gizzernz.egg-info/SOURCES.txt
+gizzernz.egg-info/dependency_links.txt
+gizzernz.egg-info/requires.txt
+gizzernz.egg-info/top_level.txt
