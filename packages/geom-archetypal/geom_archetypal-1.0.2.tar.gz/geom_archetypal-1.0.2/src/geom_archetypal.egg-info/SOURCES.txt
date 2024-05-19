@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/geom_archetypal/__init__.py
+src/geom_archetypal/geom_archetypal.py
+src/geom_archetypal.egg-info/PKG-INFO
+src/geom_archetypal.egg-info/SOURCES.txt
+src/geom_archetypal.egg-info/dependency_links.txt
+src/geom_archetypal.egg-info/top_level.txt
