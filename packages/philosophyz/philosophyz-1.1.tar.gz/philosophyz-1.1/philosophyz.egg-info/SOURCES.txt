@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+philosophyz/__init__.py
+philosophyz/main.py
+philosophyz.egg-info/PKG-INFO
+philosophyz.egg-info/SOURCES.txt
+philosophyz.egg-info/dependency_links.txt
+philosophyz.egg-info/requires.txt
+philosophyz.egg-info/top_level.txt
