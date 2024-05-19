@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+musketz/__init__.py
+musketz/main.py
+musketz.egg-info/PKG-INFO
+musketz.egg-info/SOURCES.txt
+musketz.egg-info/dependency_links.txt
+musketz.egg-info/requires.txt
+musketz.egg-info/top_level.txt
