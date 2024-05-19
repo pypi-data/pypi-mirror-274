@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+recordancez/__init__.py
+recordancez/main.py
+recordancez.egg-info/PKG-INFO
+recordancez.egg-info/SOURCES.txt
+recordancez.egg-info/dependency_links.txt
+recordancez.egg-info/requires.txt
+recordancez.egg-info/top_level.txt
