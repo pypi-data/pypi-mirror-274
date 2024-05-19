@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: py_dchcaptcha
+Version: 0.0.1
+Summary: A wrapper for dchcaptcha.com
+Author-email: Sysys242 <sysys@deobfuscate.fr>
+Project-URL: Homepage, https://github.com/Sysys242/DCHcaptcha-py
+Project-URL: Issues, https://github.com/Sysys242/DCHcaptcha-py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Py-DCHcaptcha
+
+A simplep python wrapper for [dchcaptcha.com](https://dchcaptcha.com/).
+
+## Setup
+`pip install py_dchcaptcha`
+
+## How to use
+```python
+from py_dchcaptcha import DCHcaptcha
+
+key = DCHcaptcha.solve(
+    'site_key', # HCaptcha site key of your website.
+    'link', # Link of the page where you are solving it.
+    'proxy', # HTTP Proxy, format: user:pass@ip:port or ip:port
+    'rqdata' # Optional, used for silent captcha, ex: discord join.
+)
+print(key)
+```

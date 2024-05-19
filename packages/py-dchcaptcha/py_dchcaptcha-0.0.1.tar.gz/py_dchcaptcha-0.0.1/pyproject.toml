@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "tls_client"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_dchcaptcha"
+version = "0.0.1"
+authors = [
+  { name="Sysys242", email="sysys@deobfuscate.fr" },
+]
+description = "A wrapper for dchcaptcha.com"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Sysys242/DCHcaptcha-py"
+Issues = "https://github.com/Sysys242/DCHcaptcha-py/issues"

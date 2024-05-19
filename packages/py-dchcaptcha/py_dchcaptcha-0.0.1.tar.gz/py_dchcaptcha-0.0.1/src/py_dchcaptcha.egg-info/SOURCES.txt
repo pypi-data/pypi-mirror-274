@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/py_dchcaptcha/__init__.py
+src/py_dchcaptcha.egg-info/PKG-INFO
+src/py_dchcaptcha.egg-info/SOURCES.txt
+src/py_dchcaptcha.egg-info/dependency_links.txt
+src/py_dchcaptcha.egg-info/top_level.txt
