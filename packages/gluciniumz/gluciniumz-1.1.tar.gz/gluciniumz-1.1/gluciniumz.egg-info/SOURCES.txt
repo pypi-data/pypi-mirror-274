@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gluciniumz/__init__.py
+gluciniumz/main.py
+gluciniumz.egg-info/PKG-INFO
+gluciniumz.egg-info/SOURCES.txt
+gluciniumz.egg-info/dependency_links.txt
+gluciniumz.egg-info/requires.txt
+gluciniumz.egg-info/top_level.txt
