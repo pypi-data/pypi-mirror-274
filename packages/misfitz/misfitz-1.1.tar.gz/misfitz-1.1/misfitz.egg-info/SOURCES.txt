@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+misfitz/__init__.py
+misfitz/main.py
+misfitz.egg-info/PKG-INFO
+misfitz.egg-info/SOURCES.txt
+misfitz.egg-info/dependency_links.txt
+misfitz.egg-info/requires.txt
+misfitz.egg-info/top_level.txt
