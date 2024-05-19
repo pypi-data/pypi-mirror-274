@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+affydavyz/__init__.py
+affydavyz/main.py
+affydavyz.egg-info/PKG-INFO
+affydavyz.egg-info/SOURCES.txt
+affydavyz.egg-info/dependency_links.txt
+affydavyz.egg-info/requires.txt
+affydavyz.egg-info/top_level.txt
