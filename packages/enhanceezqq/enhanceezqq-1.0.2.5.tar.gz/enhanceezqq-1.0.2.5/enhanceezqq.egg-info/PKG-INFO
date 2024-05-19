@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: enhanceezqq
+Version: 1.0.2.5
+Summary: 用于对ezqq模块增强功能，能够获取历史数据保存到数据库，并从数据库读取历史数据
+Author: Frank Gong
+Author-email: 583983716@qq.com
+License: BSD
