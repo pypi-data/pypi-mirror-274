@@ -1,0 +1,16 @@
+mercapy/__init__.py,sha256=JCGnNZUnCWCSddklk20wTfWvWgWt9NAkizUKZoHNZwk,49
+mercapy/constants.py,sha256=Wtpf8XZZ8r1EEXujHfjBtABK2z4RjMlB826l-BE7O3U,211
+mercapy/merca.py,sha256=yl7NktItW5VUdm4id0El9SLDHhVtZM6hirFVGtO34J4,1898
+mercapy/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mercapy/exceptions/product.py,sha256=LyptJk27TmXVibtvcoO6ggqHxcDHTMgRqs_v0jllTs0,342
+mercapy/product/__init__.py,sha256=CIDjgci7kII40mA-6ajOGjNBxqu_i7XVhvG75IEyzh0,29
+mercapy/product/photo.py,sha256=ykNqtdVv8GqSrZu3NE7RHha9OptoMjywRZ3FKbJ5zAY,1202
+mercapy/product/product.py,sha256=YmlAX6D_f288rGAFZSvuNibbF8Dr2WzVKRC6XUGq6yo,3300
+mercapy/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mercapy/utils/api.py,sha256=xdAXoF9b6SpAERD50iKkPMVYmvMPMDq3P1zKZzck1m8,1089
+mercapy/utils/urls.py,sha256=OQvUfU7w98QAwxL7DNlhLumS325k3_mF3UQkgOTOhHE,231
+mercapy-0.1.0.dist-info/LICENSE,sha256=ZrjcMTWOJi2DFL3FK0oDmRIq4dgEJm_gosFkkpy8iFU,1068
+mercapy-0.1.0.dist-info/METADATA,sha256=cgG_ksRZHZWCIv432qaowlyRh9Vq3IhlbgEpyH7xKzw,2426
+mercapy-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mercapy-0.1.0.dist-info/top_level.txt,sha256=t4Q-sAtZZqaQFEakUmewThDM7BKFLbciMh-U-mJRrjw,8
+mercapy-0.1.0.dist-info/RECORD,,
