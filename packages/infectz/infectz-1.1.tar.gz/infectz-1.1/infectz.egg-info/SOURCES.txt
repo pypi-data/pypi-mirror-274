@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+infectz/__init__.py
+infectz/main.py
+infectz.egg-info/PKG-INFO
+infectz.egg-info/SOURCES.txt
+infectz.egg-info/dependency_links.txt
+infectz.egg-info/requires.txt
+infectz.egg-info/top_level.txt
