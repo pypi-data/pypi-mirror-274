@@ -1,0 +1,10 @@
+langchain_openai
+langchain
+sentence_transformers
+langchain-community
+langchain-openai
+langchain-experimental
+neo4j
+wikipedia
+tiktoken
+pypdf2
