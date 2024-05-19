@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: psgspecialelements
+Version: 1.0.3
+Summary: special elements based on pysimplegui elements
+Author: Frank Gong
+Author-email: 583983716@qq.com
+License: BSD
+Requires-Dist: PySimpleGUI (~=4.59.0)
+Requires-Dist: pandas (~=1.5.2)
+Requires-Dist: numpy (~=1.24.1)
+Requires-Dist: openpyxl
+Requires-Dist: dataclasses
+Requires-Dist: pycryptodomex
+
