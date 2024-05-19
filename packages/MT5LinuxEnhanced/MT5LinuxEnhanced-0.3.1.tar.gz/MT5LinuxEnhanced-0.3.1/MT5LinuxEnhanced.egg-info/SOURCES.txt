@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+MT5LinuxEnhanced.egg-info/PKG-INFO
+MT5LinuxEnhanced.egg-info/SOURCES.txt
+MT5LinuxEnhanced.egg-info/dependency_links.txt
+MT5LinuxEnhanced.egg-info/requires.txt
+MT5LinuxEnhanced.egg-info/top_level.txt
+mt5linux/__init__.py
+mt5linux/__main__.py
+tests/test_01.py
+tests/test_02.py
