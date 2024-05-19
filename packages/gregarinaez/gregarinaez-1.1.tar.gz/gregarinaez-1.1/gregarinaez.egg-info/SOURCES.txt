@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gregarinaez/__init__.py
+gregarinaez/main.py
+gregarinaez.egg-info/PKG-INFO
+gregarinaez.egg-info/SOURCES.txt
+gregarinaez.egg-info/dependency_links.txt
+gregarinaez.egg-info/requires.txt
+gregarinaez.egg-info/top_level.txt
