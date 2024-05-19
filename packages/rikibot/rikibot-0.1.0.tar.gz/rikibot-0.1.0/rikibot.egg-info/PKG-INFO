@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: rikibot
+Version: 0.1.0
+Summary: A simple Python package named rikibot.
+Home-page: https://github.com/anhvu-sg/rikibot
+Author: Vu Nguyen
+Author-email: anhvusg.it@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rikibot
+
+A simple Python package named rikibot.
+
+## Installation
+
+```bash
+pip install rikibot
+
+```
+
+### Usage
+
+```bash
+from rikibot import hello_world
+
+print(hello_world())
+```
