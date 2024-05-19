@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chelingasz/__init__.py
+chelingasz/main.py
+chelingasz.egg-info/PKG-INFO
+chelingasz.egg-info/SOURCES.txt
+chelingasz.egg-info/dependency_links.txt
+chelingasz.egg-info/requires.txt
+chelingasz.egg-info/top_level.txt
