@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+buncoingz/__init__.py
+buncoingz/main.py
+buncoingz.egg-info/PKG-INFO
+buncoingz.egg-info/SOURCES.txt
+buncoingz.egg-info/dependency_links.txt
+buncoingz.egg-info/requires.txt
+buncoingz.egg-info/top_level.txt
