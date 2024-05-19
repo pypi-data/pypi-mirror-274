@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+prederivez/__init__.py
+prederivez/main.py
+prederivez.egg-info/PKG-INFO
+prederivez.egg-info/SOURCES.txt
+prederivez.egg-info/dependency_links.txt
+prederivez.egg-info/requires.txt
+prederivez.egg-info/top_level.txt
