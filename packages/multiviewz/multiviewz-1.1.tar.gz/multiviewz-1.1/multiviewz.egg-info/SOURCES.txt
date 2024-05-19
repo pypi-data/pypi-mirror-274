@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+multiviewz/__init__.py
+multiviewz/main.py
+multiviewz.egg-info/PKG-INFO
+multiviewz.egg-info/SOURCES.txt
+multiviewz.egg-info/dependency_links.txt
+multiviewz.egg-info/requires.txt
+multiviewz.egg-info/top_level.txt
