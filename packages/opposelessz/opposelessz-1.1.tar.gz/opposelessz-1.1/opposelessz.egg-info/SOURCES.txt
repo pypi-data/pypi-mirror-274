@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+opposelessz/__init__.py
+opposelessz/main.py
+opposelessz.egg-info/PKG-INFO
+opposelessz.egg-info/SOURCES.txt
+opposelessz.egg-info/dependency_links.txt
+opposelessz.egg-info/requires.txt
+opposelessz.egg-info/top_level.txt
