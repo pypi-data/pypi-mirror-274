@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+catafalquez/__init__.py
+catafalquez/main.py
+catafalquez.egg-info/PKG-INFO
+catafalquez.egg-info/SOURCES.txt
+catafalquez.egg-info/dependency_links.txt
+catafalquez.egg-info/requires.txt
+catafalquez.egg-info/top_level.txt
