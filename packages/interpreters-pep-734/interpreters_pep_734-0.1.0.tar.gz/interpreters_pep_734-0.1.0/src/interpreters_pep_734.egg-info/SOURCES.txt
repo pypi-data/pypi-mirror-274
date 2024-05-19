@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/interpreters/__init__.py
+src/interpreters/channels.py
+src/interpreters/queues.py
+src/interpreters_pep_734.egg-info/PKG-INFO
+src/interpreters_pep_734.egg-info/SOURCES.txt
+src/interpreters_pep_734.egg-info/dependency_links.txt
+src/interpreters_pep_734.egg-info/top_level.txt
