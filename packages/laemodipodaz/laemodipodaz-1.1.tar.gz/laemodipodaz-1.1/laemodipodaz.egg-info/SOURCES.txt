@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+laemodipodaz/__init__.py
+laemodipodaz/main.py
+laemodipodaz.egg-info/PKG-INFO
+laemodipodaz.egg-info/SOURCES.txt
+laemodipodaz.egg-info/dependency_links.txt
+laemodipodaz.egg-info/requires.txt
+laemodipodaz.egg-info/top_level.txt
