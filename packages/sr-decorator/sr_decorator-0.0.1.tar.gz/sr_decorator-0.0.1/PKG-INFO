@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: sr_decorator
+Version: 0.0.1
+Summary: Some commonly used decorations
+Home-page: https://blog.fcloud.host
+Author: CivetWyan
+Author-email: wyan978826399@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Games/Entertainment 
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+You can use it to test your Python Programme more quickly.
+You only should type some like this:
+"
+from sr_Decorator import *
+"
+
+
