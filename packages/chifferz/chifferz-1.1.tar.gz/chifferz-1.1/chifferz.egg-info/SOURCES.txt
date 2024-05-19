@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chifferz/__init__.py
+chifferz/main.py
+chifferz.egg-info/PKG-INFO
+chifferz.egg-info/SOURCES.txt
+chifferz.egg-info/dependency_links.txt
+chifferz.egg-info/requires.txt
+chifferz.egg-info/top_level.txt
