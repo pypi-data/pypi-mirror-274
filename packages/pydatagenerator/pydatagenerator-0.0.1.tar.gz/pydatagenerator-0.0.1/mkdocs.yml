@@ -1,0 +1,9 @@
+site_name: Pydatagenerator Docs
+
+theme:
+ name: "material"
+
+nav:
+- Reference: reference/reference.md
+plugins:
+- mkdocstrings
