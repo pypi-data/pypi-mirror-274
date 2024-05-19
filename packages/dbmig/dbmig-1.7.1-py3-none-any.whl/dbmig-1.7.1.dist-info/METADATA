@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dbmig
+Version: 1.7.1
+Summary: Simple tool to run SQL migration scripts against an RDBMS. dbmig supports PosgreSQL and should be easy to adapt to any backend supported by SQLAlchemy.
+Home-page: https://bitbucket.org/msldev/dbmig/
+Author: Julien Demoor
+Author-email: julien@jdemoor.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Database
+Requires-Dist: SQLAlchemy ~=2.0.0
+
