@@ -1,0 +1,5 @@
+llama_index/embeddings/nvidia/__init__.py,sha256=Fv-zWlbwHsGA8OnJAMKGKuTWWnv6tz3_uTbR5VKuEgs,94
+llama_index/embeddings/nvidia/base.py,sha256=M7sGyeOtZxZjxIFL551gONnS4aFbOHYPClr9B1rhZu4,9260
+llama_index_embeddings_nvidia-0.1.3.dist-info/METADATA,sha256=h8GiH4JQy0TMByjHUA4DWAQzLzrQ52n-QY6g5fngXwk,1253
+llama_index_embeddings_nvidia-0.1.3.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_embeddings_nvidia-0.1.3.dist-info/RECORD,,
