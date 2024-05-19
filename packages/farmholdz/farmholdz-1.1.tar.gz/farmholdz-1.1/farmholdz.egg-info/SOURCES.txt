@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+farmholdz/__init__.py
+farmholdz/main.py
+farmholdz.egg-info/PKG-INFO
+farmholdz.egg-info/SOURCES.txt
+farmholdz.egg-info/dependency_links.txt
+farmholdz.egg-info/requires.txt
+farmholdz.egg-info/top_level.txt
