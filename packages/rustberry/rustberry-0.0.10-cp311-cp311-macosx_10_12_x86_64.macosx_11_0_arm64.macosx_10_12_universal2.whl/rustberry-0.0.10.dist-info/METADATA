@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: rustberry
+Version: 0.0.10
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Python Bindings for Apollo-RS
+This is a basic prototype. Use with caution and for testing only!
+
+## build
+```shell
+pip install maturin 
+maturin build --release
+```
+
+## test
+Adjust the wheel path in `test_parser/pyproject.toml`
+
+```shell
+cd test_parser
+poetry install
+source .venv/bin/activate
+python test_rust.py
+python test_graphql_core.py
+```
