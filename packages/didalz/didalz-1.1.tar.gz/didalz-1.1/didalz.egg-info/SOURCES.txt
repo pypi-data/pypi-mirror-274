@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+didalz/__init__.py
+didalz/main.py
+didalz.egg-info/PKG-INFO
+didalz.egg-info/SOURCES.txt
+didalz.egg-info/dependency_links.txt
+didalz.egg-info/requires.txt
+didalz.egg-info/top_level.txt
