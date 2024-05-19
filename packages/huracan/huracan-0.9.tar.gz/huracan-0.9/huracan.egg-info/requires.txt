@@ -1,0 +1,2 @@
+numpy>=1.21.2
+mpl_plotter>=4.0.2
