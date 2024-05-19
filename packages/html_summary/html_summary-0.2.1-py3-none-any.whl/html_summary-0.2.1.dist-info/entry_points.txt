@@ -1,0 +1,3 @@
+[console_scripts]
+html-summary=html_summary.cli:main
+
