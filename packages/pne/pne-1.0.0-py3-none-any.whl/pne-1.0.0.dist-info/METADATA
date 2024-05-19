@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pne
+Version: 1.0.0
+Summary: 🚀 Simplified promptulate call. Now you can use `import pne` to call promptulate.
+Home-page: https://github.com/Undertone0809/pne
+License: Apache Software License 2.0
+Keywords: promptulate,pne,prompt,agent,openai,chatgpt,gpt,llm,openai,langchain,litellm
+Author: Undertone0809
+Author-email: zeeland4work@gmail.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: promptulate (>=1.16.5,<2.0.0)
+Project-URL: Repository, https://github.com/Undertone0809/pne
+Description-Content-Type: text/markdown
+
+# pne
+
+<div align="center">
+
+
+[![Python Version](https://img.shields.io/pypi/pyversions/pne.svg)](https://pypi.org/project/pne/)
+[![Dependencies Status](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)](https://github.com/Undertone0809/pne/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aapp%2Fdependabot)
+[![Semantic Versions](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--versions-e10079.svg)](https://github.com/Undertone0809/pne/releases)
+[![License](https://img.shields.io/github/license/Undertone0809/pne)](https://github.com/Undertone0809/pne/blob/main/LICENSE)
+
+
+🚀 Simplified promptulate call. Now you can use `import pne` to call [promptulate](https://github.com/Undertone0809/promptulate).
+
+</div>
+
+## Quick start
+
+Conda package manager is recommended. Create a conda environment.
+
+```bash
+pip install pne
+```
+
+Then you can anything function like promptulate:
+
+```python
+import pne
+
+pne.chat(messages="Hello, world!", model="gpt-4-turbo")
+```
+
+## Credits [![🚀 Your next Python package needs a bleeding-edge project structure.](https://img.shields.io/badge/3PG-%F0%9F%9A%80-brightgreen)](https://github.com/Undertone0809/python-package-template)
+
+This project was generated with [3PG](https://github.com/Undertone0809/3PG)
+
