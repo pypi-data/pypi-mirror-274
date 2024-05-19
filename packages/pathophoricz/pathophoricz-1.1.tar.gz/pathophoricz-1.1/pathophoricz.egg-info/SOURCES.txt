@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pathophoricz/__init__.py
+pathophoricz/main.py
+pathophoricz.egg-info/PKG-INFO
+pathophoricz.egg-info/SOURCES.txt
+pathophoricz.egg-info/dependency_links.txt
+pathophoricz.egg-info/requires.txt
+pathophoricz.egg-info/top_level.txt
