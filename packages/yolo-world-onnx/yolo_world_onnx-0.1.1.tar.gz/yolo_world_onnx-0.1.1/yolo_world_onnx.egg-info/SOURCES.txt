@@ -1,0 +1,9 @@
+README.md
+setup.py
+yolo_world_onnx/__init__.py
+yolo_world_onnx/model.py
+yolo_world_onnx.egg-info/PKG-INFO
+yolo_world_onnx.egg-info/SOURCES.txt
+yolo_world_onnx.egg-info/dependency_links.txt
+yolo_world_onnx.egg-info/requires.txt
+yolo_world_onnx.egg-info/top_level.txt
