@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bozalz/__init__.py
+bozalz/main.py
+bozalz.egg-info/PKG-INFO
+bozalz.egg-info/SOURCES.txt
+bozalz.egg-info/dependency_links.txt
+bozalz.egg-info/requires.txt
+bozalz.egg-info/top_level.txt
