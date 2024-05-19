@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+archispermz/__init__.py
+archispermz/main.py
+archispermz.egg-info/PKG-INFO
+archispermz.egg-info/SOURCES.txt
+archispermz.egg-info/dependency_links.txt
+archispermz.egg-info/requires.txt
+archispermz.egg-info/top_level.txt
