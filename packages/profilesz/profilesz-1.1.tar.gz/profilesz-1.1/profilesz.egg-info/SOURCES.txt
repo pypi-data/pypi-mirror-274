@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+profilesz/__init__.py
+profilesz/main.py
+profilesz.egg-info/PKG-INFO
+profilesz.egg-info/SOURCES.txt
+profilesz.egg-info/dependency_links.txt
+profilesz.egg-info/requires.txt
+profilesz.egg-info/top_level.txt
