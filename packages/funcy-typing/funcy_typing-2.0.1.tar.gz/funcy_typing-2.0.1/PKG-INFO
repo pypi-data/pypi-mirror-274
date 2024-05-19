@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: funcy-typing
+Version: 2.0.1
+Summary: Stubs for funcy package
+Home-page: https://github.com/feodor-ra/funcy-stubs
+License: MIT
+Keywords: funcy,types,typing,stubs
+Author: Ratschew Fedor
+Author-email: feodor.ra@me.com
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Stubs Only
+Requires-Dist: typing-extensions (>=4.11,<5.0)
+Project-URL: Repository, https://github.com/feodor-ra/funcy-stubs
+Description-Content-Type: text/markdown
+
+# funcy-typing
+
+Type stubs for [funcy](https://pypi.org/project/funcy/) package
+
+Support all funcy modules:
+
+- calc
+- colls
+- debug
+- decorators
+- flow
+- funcmakers
+- funcools
+- funcs
+- objects
+- primitives
+- seqs
+- strings
+- tree
+- types
+
+All functions that use `make_func` and `make_pred` are written for all cases of their use via @overload
+
