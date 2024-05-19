@@ -1,0 +1,53 @@
+; USB Composite Device INF
+[Version]
+Signature="$Windows NT$"
+Class=USBDevice
+ClassGuid={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%ManufacturerName%
+DriverVer=05/18/2024,1.0.0.0
+
+[Manufacturer]
+%ManufacturerName%=CompositeDevice,NTx86,NTamd64
+
+[CompositeDevice.NTx86]
+%CompositeDeviceDescription%=CompositeDevice_Install, USB\VID_2E8A&PID_A701
+
+[CompositeDevice.NTamd64]
+%CompositeDeviceDescription%=CompositeDevice_Install, USB\VID_2E8A&PID_A701
+
+[SourceDisksFiles]
+
+[SourceDisksNames]
+
+; Installation section for the composite device
+[CompositeDevice_Install]
+Include=usb.inf
+Needs=Composite.Dev.NT
+
+[CompositeDevice_Install.Services]
+Include=usb.inf
+AddService=usbccgp,0x00000002,CompositeDevice_ServiceInstall
+
+; Generic Bulk Device Interface 0
+[CompositeDevice_Install.HW]
+AddReg=CompositeDevice_AddReg
+
+[CompositeDevice_AddReg]
+HKR,,DeviceType,0x00010001,0x02
+HKR,,DeviceSubType,0x00010001,0x00
+
+; CDC Device Interface 1
+[CompositeDevice_Install.Interfaces]
+AddInterface=%USB\Class_02.DeviceDesc%, "GLOBAL", CDC_Device_Interface
+
+[CDC_Device_Interface]
+AddReg=CDC_Device_Interface_AddReg
+
+[CDC_Device_Interface_AddReg]
+HKR,,DeviceType,0x00010001,0x02
+HKR,,DeviceSubType,0x00010001,0x00
+
+[Strings]
+ManufacturerName="Redhill Embedded"
+CompositeDeviceDescription="Lumos LED Controller"
+USB\Class_02.DeviceDesc="Lumos Serial"
