@@ -1,0 +1,7 @@
+README.md
+setup.py
+FleekAPI.egg-info/PKG-INFO
+FleekAPI.egg-info/SOURCES.txt
+FleekAPI.egg-info/dependency_links.txt
+FleekAPI.egg-info/requires.txt
+FleekAPI.egg-info/top_level.txt
