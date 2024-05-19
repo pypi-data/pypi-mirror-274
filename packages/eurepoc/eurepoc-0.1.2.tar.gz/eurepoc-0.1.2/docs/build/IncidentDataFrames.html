@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>IncidentDataFrames &#8212; EuRepoC 0.1.0 documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/pydoctheme.css?v=bb723527" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="_static/pygments_dark.css?v=b20cc3f5" />
+    
+    <script src="_static/documentation_options.js?v=01f34227"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="flag_type" href="flag_type.html" /><link rel="stylesheet" href="_static/pydoctheme_dark.css" media="(prefers-color-scheme: dark)" id="pydoctheme_dark_css">
+    <link rel="shortcut icon" type="image/png" href="_static/py.svg" />
+            <script type="text/javascript" src="_static/copybutton.js"></script>
+            <script type="text/javascript" src="_static/menu.js"></script>
+            <script type="text/javascript" src="_static/search-focus.js"></script>
+            <script type="text/javascript" src="_static/themetoggle.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <nav class="nav-content" role="navigation">
+        <label for="menuToggler" class="toggler__label">
+            <span></span>
+        </label>
+        <span class="nav-items-wrapper">
+            <a href="https://www.python.org/" class="nav-logo">
+                <img src="_static/py.svg" alt="Python logo"/>
+            </a>
+            <span class="version_switcher_placeholder"></span>
+            <form role="search" class="search" action="search.html" method="get">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                    <path fill-rule="nonzero" fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+                <input placeholder="Quick search" aria-label="Quick search" type="search" name="q" />
+                <input type="submit" value="Go"/>
+            </form>
+        </span>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <div class="language_switcher_placeholder"></div>
+            
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label>
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">IncidentDataFrames</a><ul>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames</span></code></a><ul>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.attribution_sources"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.attribution_sources()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.attributions"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.attributions()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.cyber_conflict_issues"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.cyber_conflict_issues()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.cyber_intensity"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.cyber_intensity()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.il_breach_indicator"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.il_breach_indicator()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.impact_indicator"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.impact_indicator()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.incident_types"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.incident_types()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.inclusion_criteria"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.inclusion_criteria()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.initiators"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.initiators()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.legal_responses"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.legal_responses()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.legal_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.legal_variables()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.main_data"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.main_data()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.mitre_impact"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.mitre_impact()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.mitre_initial_access"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.mitre_initial_access()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.offline_conflicts"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.offline_conflicts()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.operation_types"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.operation_types()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.political_responses"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.political_responses()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.receivers"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.receivers()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.source_names"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.source_names()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.source_of_disclosure"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.source_of_disclosure()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.sources_urls"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.sources_urls()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.technical_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.technical_variables()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="flag_type.html"
+                          title="previous chapter">flag_type</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/IncidentDataFrames.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="flag_type.html" title="flag_type"
+             accesskey="P">previous</a> |</li>
+          <li><img src="_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">EuRepoC 0.1.0 documentation</a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">IncidentDataFrames</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="search" name="q" id="search-box" />
+          <input type="submit" value="Go" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-incident_dataframes">
+<span id="incidentdataframes"></span><h1>IncidentDataFrames<a class="headerlink" href="#module-incident_dataframes" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">incident_dataframes.</span></span><span class="sig-name descname"><span class="pre">IncidentDataFrames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">incident_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class used for returning pandas DataFrames for specific variables/aspects of the incident to enable analysis.
+The different dfs can subsequently be joined through the <cite>incident_id</cite> column. Refer to the EuRepoC Codebook
+for more information about the substantive meaning of each variable (i.e. df column).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>incident_data</strong> (<em>list</em>) – List of incident data dictionaries, retrieved by using the <cite>get_data()</cite> method of the <cite>IncidentDataFrames</cite> class.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The data within the returned dfs are “exploded” over multiple rows for variables that contain multiple
+possible values. When performing analyses with pandas counting numbers of incidents, remember to use
+the <cite>nunique()</cite> method instead of the <cite>count()</cite> method.</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.attribution_sources">
+<span class="sig-name descname"><span class="pre">attribution_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.attribution_sources"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.attribution_sources" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, attribution_source_url</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.attributions">
+<span class="sig-name descname"><span class="pre">attributions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.attributions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.attributions" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: attribution_id, incident_id, settled_attribution, attribution_date, attribution_updated_at,
+attribution_created_at, attribution_basis, attribution_type, attribution_subtype, attributing_country, attributing_actor,
+attributing_company, attribution_legal_reference, attribution_legal_reference_subcode, initiator_id,
+initiator_name, initiator_country, initiator_category, initiator_subcategory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.cyber_conflict_issues">
+<span class="sig-name descname"><span class="pre">cyber_conflict_issues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.cyber_conflict_issues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.cyber_conflict_issues" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, cyber_conflict_issue</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.cyber_intensity">
+<span class="sig-name descname"><span class="pre">cyber_intensity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.cyber_intensity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.cyber_intensity" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, disruption, hijacking, data_theft, physical_effects_spatial, physical_effects_temporal,
+target_multiplier, unweighted_intensity, weighted_intensity</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.il_breach_indicator">
+<span class="sig-name descname"><span class="pre">il_breach_indicator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.il_breach_indicator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.il_breach_indicator" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, il_breach_indicator, il_breach_indicator_subcode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.impact_indicator">
+<span class="sig-name descname"><span class="pre">impact_indicator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.impact_indicator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.impact_indicator" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, impact_indicator_score, impact_indicator_label, functional_impact, intelligence_impact,
+economic_impact, economic_impact_value, economic_impact_currency, affected_entities, affected_entities_value,
+affected_eu_countries, affected_eu_countries_value, affected_third_countries, affected_third_countries_value</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.incident_types">
+<span class="sig-name descname"><span class="pre">incident_types</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.incident_types"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.incident_types" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, incident_type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.inclusion_criteria">
+<span class="sig-name descname"><span class="pre">inclusion_criteria</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.inclusion_criteria"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.inclusion_criteria" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, inclusion_criterion, inclusion_criterion_subcode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.initiators">
+<span class="sig-name descname"><span class="pre">initiators</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">settled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.initiators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.initiators" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: initiator_id, incident_id, attribution_id, settled_initiator, initiator_name,
+initiator_country, initiator_category, initiator_subcategory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.legal_responses">
+<span class="sig-name descname"><span class="pre">legal_responses</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.legal_responses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.legal_responses" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: legal_response_id, incident_id, legal_response_date, legal_response_responding_country,
+legal_response_responding_actor, legal_response_type, legal_response_subtype</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.legal_variables">
+<span class="sig-name descname"><span class="pre">legal_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.legal_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.legal_variables" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, state_responsibility_actor, evidence_for_sanctions_indicator, response_indicator</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.main_data">
+<span class="sig-name descname"><span class="pre">main_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.main_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.main_data" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, name, description, added_to_db, start_date, end_date, operation_type, status, updated_at,
+number_attributions, number_political_responses, number_legal_responses, casualties</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.mitre_impact">
+<span class="sig-name descname"><span class="pre">mitre_impact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.mitre_impact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.mitre_impact" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, mitre_impact</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.mitre_initial_access">
+<span class="sig-name descname"><span class="pre">mitre_initial_access</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.mitre_initial_access"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.mitre_initial_access" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, mitre_initial_access</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.offline_conflicts">
+<span class="sig-name descname"><span class="pre">offline_conflicts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.offline_conflicts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.offline_conflicts" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, offline_conflict_issue, offline_conflict_name, offline_conflict_intensity,
+offline_conflict_intensity_subcode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.operation_types">
+<span class="sig-name descname"><span class="pre">operation_types</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.operation_types"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.operation_types" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, operation_type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.political_responses">
+<span class="sig-name descname"><span class="pre">political_responses</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.political_responses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.political_responses" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: political_response_id, incident_id, political_response_date, political_response_responding_country,
+political_response_responding_actor, political_response_type, political_response_subtype</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.receivers">
+<span class="sig-name descname"><span class="pre">receivers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.receivers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.receivers" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: receiver_id, incident_id, receiver_name, receiver_country, receiver_country_alpha_2_code, receiver_country_alpha_3_code,
+receiver_category, receiver_subcategory, receiver_regions (this is a list)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.source_names">
+<span class="sig-name descname"><span class="pre">source_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.source_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.source_names" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: source_url_id, incident_id, source_name</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.source_of_disclosure">
+<span class="sig-name descname"><span class="pre">source_of_disclosure</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.source_of_disclosure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.source_of_disclosure" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, source_disclosure</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.sources_urls">
+<span class="sig-name descname"><span class="pre">sources_urls</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.sources_urls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.sources_urls" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: source_urls_id, incident_id, source_url</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="incident_dataframes.IncidentDataFrames.technical_variables">
+<span class="sig-name descname"><span class="pre">technical_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/incident_dataframes.html#IncidentDataFrames.technical_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#incident_dataframes.IncidentDataFrames.technical_variables" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, zero_days, zero_days_subcode, has_disruption, user_interaction</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">IncidentDataFrames</a><ul>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames</span></code></a><ul>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.attribution_sources"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.attribution_sources()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.attributions"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.attributions()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.cyber_conflict_issues"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.cyber_conflict_issues()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.cyber_intensity"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.cyber_intensity()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.il_breach_indicator"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.il_breach_indicator()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.impact_indicator"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.impact_indicator()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.incident_types"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.incident_types()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.inclusion_criteria"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.inclusion_criteria()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.initiators"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.initiators()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.legal_responses"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.legal_responses()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.legal_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.legal_variables()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.main_data"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.main_data()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.mitre_impact"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.mitre_impact()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.mitre_initial_access"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.mitre_initial_access()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.offline_conflicts"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.offline_conflicts()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.operation_types"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.operation_types()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.political_responses"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.political_responses()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.receivers"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.receivers()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.source_names"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.source_names()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.source_of_disclosure"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.source_of_disclosure()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.sources_urls"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.sources_urls()</span></code></a></li>
+<li><a class="reference internal" href="#incident_dataframes.IncidentDataFrames.technical_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrames.technical_variables()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="flag_type.html"
+                          title="previous chapter">flag_type</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/IncidentDataFrames.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="flag_type.html" title="flag_type"
+             >previous</a> |</li>
+          <li><img src="_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">EuRepoC 0.1.0 documentation</a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">IncidentDataFrames</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="search" name="q" id="search-box" />
+          <input type="submit" value="Go" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; 
+    Copyright
+     .
+    <br />
+    This page is licensed under the Python Software Foundation License Version 2.
+    <br />
+    Examples, recipes, and other code in the documentation are additionally licensed under the Zero Clause BSD License.
+    <br />
+    
+    
+    <br />
+
+    The Python Software Foundation is a non-profit corporation.
+<a href="https://www.python.org/psf/donations/">Please donate.</a>
+<br />
+    <br />
+    
+    <br />
+
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+
+  </body>
+</html>
