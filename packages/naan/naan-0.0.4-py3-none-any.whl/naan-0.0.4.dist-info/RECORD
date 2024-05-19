@@ -1,0 +1,10 @@
+naan/__about__.py,sha256=hPo_GQKdXcDKDbHw3Pb1zO5HnS_o93pISn-lEhSiNMg,132
+naan/__init__.py,sha256=sJm_qMdhfb_cWyNEUMSqCbsPH0z5acwaJiZlHwnILI8,157
+naan/document.py,sha256=5oBNyeqbvSjRRZJ3CKnzBiPuWIRXU5i03xySlZZouyc,163
+naan/filesystem.py,sha256=XOfecA2z_62mKnZMwi3Li5UPynsFxMtGkjs7D995lc8,1539
+naan/naan.py,sha256=iG98CKd-Y899jEnd-b0p3iah2L3-syqH1EhYL0gWfRA,3595
+naan/queries.py,sha256=N-tRt6uPWn55IJ6Im_usVW3n_Bhj1kro5RVBmXVBh7s,718
+naan-0.0.4.dist-info/METADATA,sha256=gDLCkLjdxYRUIbcXPZo51_riJDCPNX90fCCxzYE44i0,3371
+naan-0.0.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+naan-0.0.4.dist-info/licenses/LICENSE,sha256=nn6zVzaRzbeoHTGhuQ5bNElKJ2qWBT-BjrCN-yTg0-8,1075
+naan-0.0.4.dist-info/RECORD,,
