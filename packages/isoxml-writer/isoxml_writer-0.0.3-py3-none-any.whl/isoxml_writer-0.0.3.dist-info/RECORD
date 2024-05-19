@@ -1,0 +1,13 @@
+isoxml_writer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isoxml_writer/ddi.py,sha256=lJ3PxMVnkUMOEAZ39kUdLihDkkW3hY6-bfODwK4lkTk,2131
+isoxml_writer/isoxml.py,sha256=azhidjWGKv5-x2JsnZT1WFqCiiRhIY1MARLjMpj28YA,8962
+isoxml_writer/ISOXML_schema/ISO11783_Common_V4-3.xsd,sha256=fr5oOR3HI9vlcKsDsav-VO7eUUtthgtiylyxjaMk_z8,144216
+isoxml_writer/ISOXML_schema/ISO11783_ExternalFile_V4-3.xsd,sha256=po_usiD8j53fE4d5sBG9xCwurpWV8pK5Rhlf8og50HQ,4021
+isoxml_writer/ISOXML_schema/ISO11783_LinkListFile_V4-3.xsd,sha256=M1srhppkz6IzBozFSsjWC0PgFHlveIfqR1E73GIhi4o,7913
+isoxml_writer/ISOXML_schema/ISO11783_TaskFile_V4-3.xsd,sha256=eX4fVZurkJLftEN74JQzm0pGA6043dUbJVhnCfKlwdc,15740
+isoxml_writer/ISOXML_schema/ISO11783_TimeLog_V4-3.xsd,sha256=nHWpW257MNDxocr7WgXSO7_aXTJGUSVkq7_Jc3xLyY4,12258
+isoxml_writer-0.0.3.dist-info/LICENSE,sha256=xqF1XkB-iR4PFDtIJoSiuyhYLQjfIicDfQO_KTc3LnQ,1082
+isoxml_writer-0.0.3.dist-info/METADATA,sha256=LAMdu2fuK7QYCW739I5qLqTKlr0Y14PPYMMdm0kwqS0,1800
+isoxml_writer-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+isoxml_writer-0.0.3.dist-info/top_level.txt,sha256=HitXpIGcqcm_xJkcOwqrjEfu77pL6mEJnrWd2obm1g4,14
+isoxml_writer-0.0.3.dist-info/RECORD,,
