@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+paroecismz/__init__.py
+paroecismz/main.py
+paroecismz.egg-info/PKG-INFO
+paroecismz.egg-info/SOURCES.txt
+paroecismz.egg-info/dependency_links.txt
+paroecismz.egg-info/requires.txt
+paroecismz.egg-info/top_level.txt
