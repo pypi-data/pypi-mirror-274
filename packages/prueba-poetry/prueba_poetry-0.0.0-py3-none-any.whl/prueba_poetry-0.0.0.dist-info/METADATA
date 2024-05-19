@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: prueba-poetry
+Version: 0.0.0
+Summary: 
+Author: Erik Alejandro Abdala
+Author-email: c332633@quilmes.com.ar
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
