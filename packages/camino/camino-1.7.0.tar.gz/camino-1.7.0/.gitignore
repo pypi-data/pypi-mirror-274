@@ -1,0 +1,13 @@
+/venv
+/.idea
+/.vscode
+
+*.pyc
+*.zip
+
+/examples/CaminoExample/*
+!/examples/CaminoExample/*.ino
+
+/dist
+/camino.egg-info
+.eggs/
