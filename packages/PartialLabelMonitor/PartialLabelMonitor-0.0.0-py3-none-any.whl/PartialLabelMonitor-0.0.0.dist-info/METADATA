@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PartialLabelMonitor
+Version: 0.0.0
+Summary: Monitoring models with partially labeled data.
+Home-page: https://github.com/joao-1988/PartialLabelMonitor
+Author: João Flávio Andrade Silva
+Author-email: joaoflavio1988@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+# PartialLabelMonitor
+Monitoring models with partially labeled data.
+
+
