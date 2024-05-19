@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sms-message-inforu-local
+Version: 0.0.4
+Summary: PyPI Package for Circles Project SMS
+Home-page: https://github.com/circles-zone/sms-message-inforu-local-python-package
+Author: Circles
+Author-email: info@circles.life
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: logger-local>=0.0.135
+Requires-Dist: message-local>=0.0.123
+Requires-Dist: database-mysql-local>=0.0.290
+Requires-Dist: python-sdk-remote>=0.0.93
+
+PyPI Package for Circles Project SMS
