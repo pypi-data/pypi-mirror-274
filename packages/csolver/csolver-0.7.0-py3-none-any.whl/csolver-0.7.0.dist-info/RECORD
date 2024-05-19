@@ -1,0 +1,11 @@
+csolver-0.7.0.dist-info/METADATA,sha256=v3vd_x-1MibVEpvK9xeNhgUx7cFddXN0tdAF8WH1uFs,221
+csolver-0.7.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+csolver/__init__.py,sha256=X0dX9hPXs3sr-IOsJAy63OuQK9vDGdfN6J7wUT7kGpY,128
+csolver/__version__.py,sha256=ajTK5wfIoYH8aWQwP_zJwo3EbdBalwQXjY0rhcbfYCU,18
+csolver/check_captcha.py,sha256=XJxU_6cz7KM6_pnDE4rn4YLyzeIxFVhJNeTo6x1JHyw,631
+csolver/lib/__init__.py,sha256=453i42oJ9ufTB-vb8LON7Q2Ex1STrk37RidaqFqXCBI,474019
+csolver/lib/common.onnx,sha256=kOQyY1v7EArGuFYiChCxhgUyZMwwfdBJ1Y6OomQ8tuk,54088521
+csolver/lib/common_det.onnx,sha256=b6qOqFqMGmNOUFDEoTj8oQ8wGU4NervpreH81COvbtY,20127694
+csolver/lib/common_old.onnx,sha256=sdXhNElUNVsQtAYyBiuKne8GvMMyKftmcnRmK_Mdzz8,13606198
+csolver/read_captcha.py,sha256=Kx4Xe9CSQdmVFS1u-quqPxEntXkyujtcDdbCo89qgto,311
+csolver-0.7.0.dist-info/RECORD,,
