@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+porosez/__init__.py
+porosez/main.py
+porosez.egg-info/PKG-INFO
+porosez.egg-info/SOURCES.txt
+porosez.egg-info/dependency_links.txt
+porosez.egg-info/requires.txt
+porosez.egg-info/top_level.txt
