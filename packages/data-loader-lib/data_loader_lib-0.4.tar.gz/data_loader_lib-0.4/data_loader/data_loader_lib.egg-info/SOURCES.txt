@@ -1,0 +1,10 @@
+README.md
+setup.py
+data_loader/data_loader_lib.egg-info/PKG-INFO
+data_loader/data_loader_lib.egg-info/SOURCES.txt
+data_loader/data_loader_lib.egg-info/dependency_links.txt
+data_loader/data_loader_lib.egg-info/requires.txt
+data_loader/data_loader_lib.egg-info/top_level.txt
+tests/test_bigquery_extractor.py
+tests/test_local_extractor.py
+tests/test_sftp_extractor.py
