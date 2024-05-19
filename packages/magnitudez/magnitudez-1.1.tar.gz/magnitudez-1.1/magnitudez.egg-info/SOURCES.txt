@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+magnitudez/__init__.py
+magnitudez/main.py
+magnitudez.egg-info/PKG-INFO
+magnitudez.egg-info/SOURCES.txt
+magnitudez.egg-info/dependency_links.txt
+magnitudez.egg-info/requires.txt
+magnitudez.egg-info/top_level.txt
