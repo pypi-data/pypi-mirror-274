@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+detenuez/__init__.py
+detenuez/main.py
+detenuez.egg-info/PKG-INFO
+detenuez.egg-info/SOURCES.txt
+detenuez.egg-info/dependency_links.txt
+detenuez.egg-info/requires.txt
+detenuez.egg-info/top_level.txt
