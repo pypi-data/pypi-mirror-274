@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dispositionsz/__init__.py
+dispositionsz/main.py
+dispositionsz.egg-info/PKG-INFO
+dispositionsz.egg-info/SOURCES.txt
+dispositionsz.egg-info/dependency_links.txt
+dispositionsz.egg-info/requires.txt
+dispositionsz.egg-info/top_level.txt
