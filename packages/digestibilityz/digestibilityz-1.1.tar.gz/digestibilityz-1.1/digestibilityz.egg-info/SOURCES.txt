@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+digestibilityz/__init__.py
+digestibilityz/main.py
+digestibilityz.egg-info/PKG-INFO
+digestibilityz.egg-info/SOURCES.txt
+digestibilityz.egg-info/dependency_links.txt
+digestibilityz.egg-info/requires.txt
+digestibilityz.egg-info/top_level.txt
