@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: WeatherPlug
+Version: 1.0.2
+Requires-Dist: Requests>=2.31.0
