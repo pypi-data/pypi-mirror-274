@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+horribilityz/__init__.py
+horribilityz/main.py
+horribilityz.egg-info/PKG-INFO
+horribilityz.egg-info/SOURCES.txt
+horribilityz.egg-info/dependency_links.txt
+horribilityz.egg-info/requires.txt
+horribilityz.egg-info/top_level.txt
