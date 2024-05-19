@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shriekproofz/__init__.py
+shriekproofz/main.py
+shriekproofz.egg-info/PKG-INFO
+shriekproofz.egg-info/SOURCES.txt
+shriekproofz.egg-info/dependency_links.txt
+shriekproofz.egg-info/requires.txt
+shriekproofz.egg-info/top_level.txt
