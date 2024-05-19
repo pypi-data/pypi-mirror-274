@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+riksmalz/__init__.py
+riksmalz/main.py
+riksmalz.egg-info/PKG-INFO
+riksmalz.egg-info/SOURCES.txt
+riksmalz.egg-info/dependency_links.txt
+riksmalz.egg-info/requires.txt
+riksmalz.egg-info/top_level.txt
