@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+aiconn/__init__.py
+aiconn/gemini.py
+aiconn/utils.py
+aiconn.egg-info/PKG-INFO
+aiconn.egg-info/SOURCES.txt
+aiconn.egg-info/dependency_links.txt
+aiconn.egg-info/top_level.txt
