@@ -1,0 +1,3 @@
+[console_scripts]
+sqoolerkey=sqooler.cli:cli_private_key_str
+
