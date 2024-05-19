@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+melkdb/__init__.py
+melkdb/__version__.py
+melkdb/_block.py
+melkdb/_item.py
+melkdb/crypto.py
+melkdb/exceptions.py
+melkdb/melkdb.py
+melkdb/utils.py
+melkdb.egg-info/PKG-INFO
+melkdb.egg-info/SOURCES.txt
+melkdb.egg-info/dependency_links.txt
+melkdb.egg-info/requires.txt
+melkdb.egg-info/top_level.txt
