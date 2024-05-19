@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonconviviallyz/__init__.py
+nonconviviallyz/main.py
+nonconviviallyz.egg-info/PKG-INFO
+nonconviviallyz.egg-info/SOURCES.txt
+nonconviviallyz.egg-info/dependency_links.txt
+nonconviviallyz.egg-info/requires.txt
+nonconviviallyz.egg-info/top_level.txt
