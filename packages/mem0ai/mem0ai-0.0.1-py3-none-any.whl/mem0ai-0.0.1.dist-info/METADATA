@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mem0ai
+Version: 0.0.1
+Summary: mem0ai
+Author: Taranjeet Singh
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# mem0ai
