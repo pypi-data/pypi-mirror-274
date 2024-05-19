@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unsanenessz/__init__.py
+unsanenessz/main.py
+unsanenessz.egg-info/PKG-INFO
+unsanenessz.egg-info/SOURCES.txt
+unsanenessz.egg-info/dependency_links.txt
+unsanenessz.egg-info/requires.txt
+unsanenessz.egg-info/top_level.txt
