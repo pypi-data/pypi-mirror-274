@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: image-processing-dev
+Version: 0.1.0
+Summary: A simple image processing package to crop images and convert them to black and white or sepia.
+Home-page: UNKNOWN
+Author: Devin
+Author-email: devin@devin-ai.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: Pillow (>=8.0.0)
+
+UNKNOWN
+
