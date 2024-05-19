@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nosticz/__init__.py
+nosticz/main.py
+nosticz.egg-info/PKG-INFO
+nosticz.egg-info/SOURCES.txt
+nosticz.egg-info/dependency_links.txt
+nosticz.egg-info/requires.txt
+nosticz.egg-info/top_level.txt
