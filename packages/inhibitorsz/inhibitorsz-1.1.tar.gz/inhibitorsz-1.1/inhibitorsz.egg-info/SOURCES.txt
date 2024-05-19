@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+inhibitorsz/__init__.py
+inhibitorsz/main.py
+inhibitorsz.egg-info/PKG-INFO
+inhibitorsz.egg-info/SOURCES.txt
+inhibitorsz.egg-info/dependency_links.txt
+inhibitorsz.egg-info/requires.txt
+inhibitorsz.egg-info/top_level.txt
