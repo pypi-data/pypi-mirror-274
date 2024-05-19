@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+storkishz/__init__.py
+storkishz/main.py
+storkishz.egg-info/PKG-INFO
+storkishz.egg-info/SOURCES.txt
+storkishz.egg-info/dependency_links.txt
+storkishz.egg-info/requires.txt
+storkishz.egg-info/top_level.txt
