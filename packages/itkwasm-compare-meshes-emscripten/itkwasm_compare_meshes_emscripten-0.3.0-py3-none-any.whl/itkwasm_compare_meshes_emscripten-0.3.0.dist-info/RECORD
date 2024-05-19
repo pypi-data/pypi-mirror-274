@@ -1,0 +1,7 @@
+itkwasm_compare_meshes_emscripten/__init__.py,sha256=s0YGLlnns0wSYrRzf3PVlNGAjPNLLNtQPbXrhE4lNYU,268
+itkwasm_compare_meshes_emscripten/_version.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+itkwasm_compare_meshes_emscripten/compare_meshes_async.py,sha256=3twi79xGOqVESD6lHfcOp9-I2Nb5qf-4i2xHCv2vSS4,3952
+itkwasm_compare_meshes_emscripten/js_package.py,sha256=hVx6XX7FFFxSzemUsRY3L-qhAEPLkmDHKi1X28Vo8pg,184325
+itkwasm_compare_meshes_emscripten-0.3.0.dist-info/METADATA,sha256=5TPsgXVWfZb60TRW_mf_ZQ1wyymHcx_3kSH-B1Rp020,1832
+itkwasm_compare_meshes_emscripten-0.3.0.dist-info/WHEEL,sha256=uNdcs2TADwSd5pVaP0Z_kcjcvvTUklh2S7bxZMF8Uj0,87
+itkwasm_compare_meshes_emscripten-0.3.0.dist-info/RECORD,,
