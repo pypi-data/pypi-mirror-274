@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: GraphRetrieval
+Version: 0.1
+Summary: Graph retrieval
+Home-page: https://github.com/jayavibhavnk/GraphRetrieval
+Author: JVNK
+Author-email: jaya11vibhav@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Requires-Dist: langchain-openai
+Requires-Dist: langchain
+Requires-Dist: sentence-transformers
+Requires-Dist: langchain-community
+Requires-Dist: langchain-experimental
+Requires-Dist: neo4j
+Requires-Dist: wikipedia
+Requires-Dist: tiktoken
+Requires-Dist: pypdf2
+
+Graph retrieval
