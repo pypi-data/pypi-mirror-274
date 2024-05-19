@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+canafistoloz/__init__.py
+canafistoloz/main.py
+canafistoloz.egg-info/PKG-INFO
+canafistoloz.egg-info/SOURCES.txt
+canafistoloz.egg-info/dependency_links.txt
+canafistoloz.egg-info/requires.txt
+canafistoloz.egg-info/top_level.txt
