@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+syntalitiesz/__init__.py
+syntalitiesz/main.py
+syntalitiesz.egg-info/PKG-INFO
+syntalitiesz.egg-info/SOURCES.txt
+syntalitiesz.egg-info/dependency_links.txt
+syntalitiesz.egg-info/requires.txt
+syntalitiesz.egg-info/top_level.txt
