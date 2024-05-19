@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+noneducationallyz/__init__.py
+noneducationallyz/main.py
+noneducationallyz.egg-info/PKG-INFO
+noneducationallyz.egg-info/SOURCES.txt
+noneducationallyz.egg-info/dependency_links.txt
+noneducationallyz.egg-info/requires.txt
+noneducationallyz.egg-info/top_level.txt
