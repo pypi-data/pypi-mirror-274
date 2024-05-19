@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+syenodioritez/__init__.py
+syenodioritez/main.py
+syenodioritez.egg-info/PKG-INFO
+syenodioritez.egg-info/SOURCES.txt
+syenodioritez.egg-info/dependency_links.txt
+syenodioritez.egg-info/requires.txt
+syenodioritez.egg-info/top_level.txt
