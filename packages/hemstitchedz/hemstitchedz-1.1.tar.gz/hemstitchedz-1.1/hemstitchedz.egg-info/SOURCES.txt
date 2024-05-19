@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hemstitchedz/__init__.py
+hemstitchedz/main.py
+hemstitchedz.egg-info/PKG-INFO
+hemstitchedz.egg-info/SOURCES.txt
+hemstitchedz.egg-info/dependency_links.txt
+hemstitchedz.egg-info/requires.txt
+hemstitchedz.egg-info/top_level.txt
