@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ammosz/__init__.py
+ammosz/main.py
+ammosz.egg-info/PKG-INFO
+ammosz.egg-info/SOURCES.txt
+ammosz.egg-info/dependency_links.txt
+ammosz.egg-info/requires.txt
+ammosz.egg-info/top_level.txt
