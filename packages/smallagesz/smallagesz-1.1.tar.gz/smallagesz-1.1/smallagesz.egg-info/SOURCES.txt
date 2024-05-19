@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+smallagesz/__init__.py
+smallagesz/main.py
+smallagesz.egg-info/PKG-INFO
+smallagesz.egg-info/SOURCES.txt
+smallagesz.egg-info/dependency_links.txt
+smallagesz.egg-info/requires.txt
+smallagesz.egg-info/top_level.txt
