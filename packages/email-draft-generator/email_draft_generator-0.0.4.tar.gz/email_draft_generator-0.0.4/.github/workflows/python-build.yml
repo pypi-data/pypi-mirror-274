@@ -1,0 +1,62 @@
+# Builds the package, and, if the commit has a tag assigned to it, create a release for it and publish it to PyPI
+name: Build CI/CD
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  # Builds the package and uploads a build artifiact
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5.1.0
+      with:
+        python-version: '3.12'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+    - name: Build package
+      run: python -m build
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4.3.3
+      with:
+        name: distribution-archives
+        path: dist/*
+  # Creates a release if the commit has a tag associated with it
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Download build
+      uses: actions/download-artifact@v4.1.7
+      with:
+        name: distribution-archives
+        path: dist
+    - name: Create release
+      uses: softprops/action-gh-release@v2
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: dist/*
+  # Publish to PyPI if the commit has a tag associated with it
+  publish:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Download build
+      uses: actions/download-artifact@v4.1.7
+      with:
+        name: distribution-archives
+        path: dist
+    - name: Publish package
+      uses: pypa/gh-action-pypi-publish@81e9d935c883d0b210363ab89cf05f3894778450
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
