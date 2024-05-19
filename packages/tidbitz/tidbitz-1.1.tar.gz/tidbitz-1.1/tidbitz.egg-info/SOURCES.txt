@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tidbitz/__init__.py
+tidbitz/main.py
+tidbitz.egg-info/PKG-INFO
+tidbitz.egg-info/SOURCES.txt
+tidbitz.egg-info/dependency_links.txt
+tidbitz.egg-info/requires.txt
+tidbitz.egg-info/top_level.txt
