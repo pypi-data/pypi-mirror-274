@@ -1,0 +1,2 @@
+[console_scripts]
+hydromodel = hydromodel.cli:main
