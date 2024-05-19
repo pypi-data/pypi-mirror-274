@@ -1,0 +1,11 @@
+pyircsdk/__about__.py,sha256=SDAyVisZ-7taKyWcFf8n8Y_ePXsESROLrhwbMNIqOME,135
+pyircsdk/__init__.py,sha256=lTUDhiyg1lfvv17VUeRopivaXGa0kA2xbvpDug4END4,150
+pyircsdk/command.py,sha256=EjDxxxzY37vkjBWSblkF1vZgMpjnA-ZEDUHW7Bik0zI,1103
+pyircsdk/message.py,sha256=8-dda85Dk0GSVEn5Gb5w8aLegNfN78YD3-RVChuQlIg,591
+pyircsdk/pyircsdk.py,sha256=MqybAq5xmh_FxvsOMcSvqtkbBznfQdh1LFzxL0xPJwo,9138
+pyircsdk/event/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyircsdk/event/event.py,sha256=SNT_kwnAbiF8xOJ6FTfpu5WytOpcoIlTKPHsfTyhLx0,843
+pyircsdk-1.5.2.dist-info/METADATA,sha256=Oub1p0K2JR_gUhVEx3WIc4IoP-rAOx7VxddkfLpeL3A,1319
+pyircsdk-1.5.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+pyircsdk-1.5.2.dist-info/licenses/LICENSE,sha256=qhphJZzgmbC51d5cDTsNCc8CFWC710umb1Y47Ps28QQ,1062
+pyircsdk-1.5.2.dist-info/RECORD,,
