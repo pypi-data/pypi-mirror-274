@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+relentlesslyz/__init__.py
+relentlesslyz/main.py
+relentlesslyz.egg-info/PKG-INFO
+relentlesslyz.egg-info/SOURCES.txt
+relentlesslyz.egg-info/dependency_links.txt
+relentlesslyz.egg-info/requires.txt
+relentlesslyz.egg-info/top_level.txt
