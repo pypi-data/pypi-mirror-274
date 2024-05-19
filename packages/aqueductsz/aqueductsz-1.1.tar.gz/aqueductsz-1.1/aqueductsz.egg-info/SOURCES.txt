@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aqueductsz/__init__.py
+aqueductsz/main.py
+aqueductsz.egg-info/PKG-INFO
+aqueductsz.egg-info/SOURCES.txt
+aqueductsz.egg-info/dependency_links.txt
+aqueductsz.egg-info/requires.txt
+aqueductsz.egg-info/top_level.txt
