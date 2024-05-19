@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: clean-alchemy
+Version: 0.1.13
+Summary: A framework for implementing Clean Architecture using SQLAlchemy for FastAPI.
+Home-page: https://github.com/davidswords/clean-alchemy
+Author: David Swords
+Author-email: furuer_svette.0k@icloud.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12.3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: annotated-types==0.6.0
+Requires-Dist: certifi==2024.2.2
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: docutils==0.21.2
+Requires-Dist: exceptiongroup==1.2.1
+Requires-Dist: idna==3.7
+Requires-Dist: importlib_metadata==7.1.0
+Requires-Dist: jaraco.classes==3.4.0
+Requires-Dist: jaraco.context==5.3.0
+Requires-Dist: jaraco.functools==4.0.1
+Requires-Dist: keyring==25.2.1
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: more-itertools==10.2.0
+Requires-Dist: nh3==0.2.17
+Requires-Dist: packaging==24.0
+Requires-Dist: pkginfo==1.10.0
+Requires-Dist: platformdirs==4.2.1
+Requires-Dist: psycopg2==2.9.9
+Requires-Dist: pydantic==2.7.1
+Requires-Dist: pydantic_core==2.18.2
+Requires-Dist: Pygments==2.18.0
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: readme_renderer==43.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.7.1
+Requires-Dist: setuptools==69.5.1
+Requires-Dist: six==1.16.0
+Requires-Dist: SQLAlchemy==2.0.30
+Requires-Dist: termcolor==2.4.0
+Requires-Dist: typing_extensions==4.11.0
+Requires-Dist: urllib3==2.2.1
+Requires-Dist: wheel==0.43.0
+Requires-Dist: zipp==3.18.1
+Provides-Extra: dev
+Requires-Dist: backports.tarfile==1.1.1; extra == "dev"
+Requires-Dist: black==24.4.2; extra == "dev"
+Requires-Dist: factory-boy==3.3.0; extra == "dev"
+Requires-Dist: Faker==25.0.1; extra == "dev"
+Requires-Dist: iniconfig==2.0.0; extra == "dev"
+Requires-Dist: mypy-extensions==1.0.0; extra == "dev"
+Requires-Dist: pathspec==0.12.1; extra == "dev"
+Requires-Dist: pluggy==1.5.0; extra == "dev"
+Requires-Dist: pytest==8.2.0; extra == "dev"
+Requires-Dist: pytest-mock==3.14.0; extra == "dev"
+Requires-Dist: pytest-sugar==1.0.0; extra == "dev"
+Requires-Dist: tomli==2.0.1; extra == "dev"
+Requires-Dist: twine==5.0.0; extra == "dev"
+
+# CleanAlchemy
+
+CleanAlchemy is a Python package that provides a framework for implementing Clean Architecture using SQLAlchemy. It includes base classes for entities, DAOs, services, and repositories, making it easier to structure and organize your code. While it is intended to be framework-agnostic, it currently only supports FastAPI.
+
+## Features
+
+- **Abstract Base Classes**: For DAOs, repositories, and services.
+- **SQLAlchemy Integration**: Simplifies database interactions.
+- **Clean Architecture Principles**: Promotes separation of concerns and maintainability.
+- **Framework Agnostic**: Can be used with FastAPI, Flask, Django, etc.
+- **Pydantic Integration**: For data validation and settings management.
+
+## Installation
+
+You can install CleanAlchemy using pip:
+
+```bash
+pip install clean-alchemy
