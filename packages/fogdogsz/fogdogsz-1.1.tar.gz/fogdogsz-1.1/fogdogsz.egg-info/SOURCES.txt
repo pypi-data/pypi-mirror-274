@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fogdogsz/__init__.py
+fogdogsz/main.py
+fogdogsz.egg-info/PKG-INFO
+fogdogsz.egg-info/SOURCES.txt
+fogdogsz.egg-info/dependency_links.txt
+fogdogsz.egg-info/requires.txt
+fogdogsz.egg-info/top_level.txt
