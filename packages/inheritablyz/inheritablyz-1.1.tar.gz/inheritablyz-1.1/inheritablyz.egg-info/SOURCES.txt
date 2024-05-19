@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+inheritablyz/__init__.py
+inheritablyz/main.py
+inheritablyz.egg-info/PKG-INFO
+inheritablyz.egg-info/SOURCES.txt
+inheritablyz.egg-info/dependency_links.txt
+inheritablyz.egg-info/requires.txt
+inheritablyz.egg-info/top_level.txt
