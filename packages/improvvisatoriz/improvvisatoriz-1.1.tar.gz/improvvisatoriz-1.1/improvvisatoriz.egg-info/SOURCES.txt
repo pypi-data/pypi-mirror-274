@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+improvvisatoriz/__init__.py
+improvvisatoriz/main.py
+improvvisatoriz.egg-info/PKG-INFO
+improvvisatoriz.egg-info/SOURCES.txt
+improvvisatoriz.egg-info/dependency_links.txt
+improvvisatoriz.egg-info/requires.txt
+improvvisatoriz.egg-info/top_level.txt
