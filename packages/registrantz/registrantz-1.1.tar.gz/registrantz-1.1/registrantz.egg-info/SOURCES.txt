@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+registrantz/__init__.py
+registrantz/main.py
+registrantz.egg-info/PKG-INFO
+registrantz.egg-info/SOURCES.txt
+registrantz.egg-info/dependency_links.txt
+registrantz.egg-info/requires.txt
+registrantz.egg-info/top_level.txt
