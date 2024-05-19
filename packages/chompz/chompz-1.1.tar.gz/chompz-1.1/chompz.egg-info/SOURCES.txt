@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chompz/__init__.py
+chompz/main.py
+chompz.egg-info/PKG-INFO
+chompz.egg-info/SOURCES.txt
+chompz.egg-info/dependency_links.txt
+chompz.egg-info/requires.txt
+chompz.egg-info/top_level.txt
