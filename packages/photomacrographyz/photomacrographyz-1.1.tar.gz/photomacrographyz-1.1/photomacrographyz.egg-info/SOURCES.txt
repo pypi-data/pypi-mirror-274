@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+photomacrographyz/__init__.py
+photomacrographyz/main.py
+photomacrographyz.egg-info/PKG-INFO
+photomacrographyz.egg-info/SOURCES.txt
+photomacrographyz.egg-info/dependency_links.txt
+photomacrographyz.egg-info/requires.txt
+photomacrographyz.egg-info/top_level.txt
