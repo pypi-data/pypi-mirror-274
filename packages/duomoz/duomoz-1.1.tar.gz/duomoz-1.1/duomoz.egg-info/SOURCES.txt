@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+duomoz/__init__.py
+duomoz/main.py
+duomoz.egg-info/PKG-INFO
+duomoz.egg-info/SOURCES.txt
+duomoz.egg-info/dependency_links.txt
+duomoz.egg-info/requires.txt
+duomoz.egg-info/top_level.txt
