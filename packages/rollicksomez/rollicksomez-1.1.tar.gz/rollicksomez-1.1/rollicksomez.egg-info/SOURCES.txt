@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rollicksomez/__init__.py
+rollicksomez/main.py
+rollicksomez.egg-info/PKG-INFO
+rollicksomez.egg-info/SOURCES.txt
+rollicksomez.egg-info/dependency_links.txt
+rollicksomez.egg-info/requires.txt
+rollicksomez.egg-info/top_level.txt
