@@ -1,0 +1,12 @@
+donware/__init__.py,sha256=TO9yrtXi3vx-nX8m2CZQI6ukC34BkwQNRjO4iJRkzGg,219
+donware/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/utils/images.py,sha256=-ISMuSBCFlK5BbEv86N6JDRr2dYe70xqk75Jy3EXkuU,2052
+donware/src/utils/package.py,sha256=isAkuDHDHvVjw4omo9lYFqBPaJVFy_SBAE9on7WnaNk,929
+donware/src/utils/terminal.py,sha256=XNiYLcrcCkCzBSA00uWQktHdKh0JxTQCS1R81mmhydg,1611
+donware-0.1.14.dist-info/LICENSE,sha256=UHmaoMb-BhUaEzpwbRwWvGH9u205djhB80MysRic_zg,1064
+donware-0.1.14.dist-info/METADATA,sha256=G98yibJz0zu-tXsRoYl6xoIWiCM1yez9BkewqMxi8dM,587
+donware-0.1.14.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+donware-0.1.14.dist-info/top_level.txt,sha256=6AlFIXOstFefcQtH-LhyVeTqrB8RTtQNR60rqoSH04c,8
+donware-0.1.14.dist-info/RECORD,,
