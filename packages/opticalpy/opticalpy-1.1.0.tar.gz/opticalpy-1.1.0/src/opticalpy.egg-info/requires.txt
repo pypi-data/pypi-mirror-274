@@ -1,0 +1,4 @@
+autograd
+matplotlib
+astropy
+scipy
