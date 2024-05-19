@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unhopinglyz/__init__.py
+unhopinglyz/main.py
+unhopinglyz.egg-info/PKG-INFO
+unhopinglyz.egg-info/SOURCES.txt
+unhopinglyz.egg-info/dependency_links.txt
+unhopinglyz.egg-info/requires.txt
+unhopinglyz.egg-info/top_level.txt
