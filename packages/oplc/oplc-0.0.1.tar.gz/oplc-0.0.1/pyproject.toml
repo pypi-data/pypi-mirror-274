@@ -1,0 +1,104 @@
+# Poetry pyproject.toml: https://python-poetry.org/docs/pyproject/
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "oplc"
+version = "0.0.1"
+description = "🚀A simple way to use langchain framework."
+readme = "README.md"
+authors = ["aslf <zeeland4work@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/Undertone0809/aslf"
+homepage = "https://github.com/Undertone0809/aslf"
+keywords = ["langchain", "aslf", "llm", "openai", "chatgpt", "promptulate"]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+langchain = ">=0.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.3"
+pytest-html = "^3.1.1"
+pytest-cov = "^3.0.0"
+ruff = "^0.1.6"
+coverage = "^6.1.2"
+coverage-badge = "^1.1.0"
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/settings/
+# https://docs.astral.sh/ruff/configuration/
+line-length = 88
+
+# https://beta.ruff.rs/docs/rules/
+lint.select = ["E", "W", "F", "I"]
+lint.extend-select = ["I"]
+lint.ignore = ["F401"]
+
+# Exclude a variety of commonly ignored directories.
+respect-gitignore = true
+lint.ignore-init-module-imports = true
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/6.2.x/customize.html#pyproject-toml
+# Directories that are not visited by pytest collector:
+norecursedirs =["hooks", "*.egg", ".eggs", "dist", "build", "docs", ".tox", ".git", "__pycache__"]
+doctest_optionflags = ["NUMBER", "NORMALIZE_WHITESPACE", "IGNORE_EXCEPTION_DETAIL"]
+
+# Extra options:
+addopts = [
+  "--strict-markers",
+  "--tb=short",
+  "--doctest-modules",
+  "--doctest-continue-on-failure",
+]
+
+[tool.coverage.run]
+source = ["tests"]
+
+[coverage.paths]
+source = "aslf"
+
+[coverage.run]
+branch = true
+
+[coverage.report]
+fail_under = 50
+show_missing = true
