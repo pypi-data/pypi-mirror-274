@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: criteria-local
+Version: 0.0.19
+Home-page: https://github.com/circles-zone/criteria-local-python-package
+Author: Circles
+Author-email: info@circles.life
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: database-mysql-local
+Requires-Dist: logger-local
+
+criteria-local
