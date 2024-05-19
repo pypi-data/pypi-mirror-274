@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+peruserz/__init__.py
+peruserz/main.py
+peruserz.egg-info/PKG-INFO
+peruserz.egg-info/SOURCES.txt
+peruserz.egg-info/dependency_links.txt
+peruserz.egg-info/requires.txt
+peruserz.egg-info/top_level.txt
