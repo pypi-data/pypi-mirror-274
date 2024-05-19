@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+acroticz/__init__.py
+acroticz/main.py
+acroticz.egg-info/PKG-INFO
+acroticz.egg-info/SOURCES.txt
+acroticz.egg-info/dependency_links.txt
+acroticz.egg-info/requires.txt
+acroticz.egg-info/top_level.txt
