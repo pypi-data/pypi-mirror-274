@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+foctopus/__init__.py
+foctopus/foctopus.py
+foctopus.egg-info/PKG-INFO
+foctopus.egg-info/SOURCES.txt
+foctopus.egg-info/dependency_links.txt
+foctopus.egg-info/requires.txt
+foctopus.egg-info/top_level.txt
