@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: mkdocs-gentags
+Version: 0.0.1
+Summary: A mkdocs plugin to generate tag files based on metadata information.
+Project-URL: Documentation, https://github.com/georgeyk/mkdocs-gentags/#README.md
+Project-URL: Issues, https://github.com/georgeyk/mkdocs-gentags/issues
+Project-URL: Source, https://github.com/georgeyk/mkdocs-gentags
+Author-email: "George Y. Kussumoto" <georgeyk.dev@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: mkdocs,mkdocs-plugin,plugin,tag,tagging,tags
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: mkdocs<2,>=1.6
+Description-Content-Type: text/markdown
+
+# mkdocs-gentags
+
+![](https://github.com/georgeyk/mkdocs-gentags/actions/workflows/tests.yml/badge.svg?branch=main)
+![](https://github.com/georgeyk/mkdocs-gentags/actions/workflows/lint.yml/badge.svg?branch=main)
+---
+
+A [mkdocs][1] plugin to generate tags from metadata (aka frontmatter).
+
+Generates virtual files for tags, and inject context in the page objects to
+facilitate rendering in custom templates. The virtual files behave as normal
+files, they can be linked, indexed and so on.
+
+In particular, this plugin is useful for those who want to customize their tags page.
+
+For more information, installation steps and examples, see the [documentation][2].
+
+## Related
+
+Similar plugins:
+
+- https://github.com/jldiaz/mkdocs-plugin-tags
+- https://github.com/timmeinerzhagen/mkdocs-meta-manager
+
+
+[1]: https://www.mkdocs.org
+[2]: https://georgeyk.github.io/mkdocs-gentags/
