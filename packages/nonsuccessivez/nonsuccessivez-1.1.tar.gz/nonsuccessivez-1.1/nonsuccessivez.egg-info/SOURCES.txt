@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonsuccessivez/__init__.py
+nonsuccessivez/main.py
+nonsuccessivez.egg-info/PKG-INFO
+nonsuccessivez.egg-info/SOURCES.txt
+nonsuccessivez.egg-info/dependency_links.txt
+nonsuccessivez.egg-info/requires.txt
+nonsuccessivez.egg-info/top_level.txt
