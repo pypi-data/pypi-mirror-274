@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: automatic-code-review-commons
+Version: 1.0.1
+Summary: Biblioteca com funções genéricas para revisões automáticas de código do projeto ACR
+Home-page: https://github.com/automatic-code-review/automatic-code-review-commons
+Author: Kielson Zinn da Silva
+Author-email: automatic.code.review@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# automatic-code-review-commons
+
+Biblioteca com funções genéricas para revisões automáticas de código da ferramenta ACR.
+
+- [DOCS](https://github.com/automatic-code-review/docs/wiki)
+- [VERSIONS](https://pypi.org/project/automatic-code-review-commons)
+
+## Install
+
+```sh
+pip install automatic-code-review-commons
+```
+
+## Publish
+
+```sh
+rm -rf dist
+rm -rf build
+rm -rf automatic_code_review_commons.egg-info
+pip install setuptools wheel twine
+python setup.py sdist bdist_wheel
+twine upload dist/*
+```
+
