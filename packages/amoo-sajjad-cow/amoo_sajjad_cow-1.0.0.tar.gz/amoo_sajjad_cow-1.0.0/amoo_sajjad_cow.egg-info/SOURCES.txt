@@ -1,0 +1,11 @@
+MANIFEST.in
+readme.md
+requirements.txt
+setup.py
+amoo_sajjad_cow/__init__.py
+amoo_sajjad_cow/amoo_sajjad_cow.py
+amoo_sajjad_cow.egg-info/PKG-INFO
+amoo_sajjad_cow.egg-info/SOURCES.txt
+amoo_sajjad_cow.egg-info/dependency_links.txt
+amoo_sajjad_cow.egg-info/top_level.txt
+tests/test_cow.py
