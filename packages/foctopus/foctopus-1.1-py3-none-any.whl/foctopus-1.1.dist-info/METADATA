@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: foctopus
+Version: 1.1
+Summary: Many functions for python
+Home-page: https://github.com/ForestBu/foctopus
+Author: ForestBu
+Author-email: tvc55.admn@gmail.com
+Keywords: login password logout reg register regitration functions pause time sleep stop shell
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.25.1
+
+Many functions for python
