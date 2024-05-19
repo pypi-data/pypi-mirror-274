@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+yomz/__init__.py
+yomz/main.py
+yomz.egg-info/PKG-INFO
+yomz.egg-info/SOURCES.txt
+yomz.egg-info/dependency_links.txt
+yomz.egg-info/requires.txt
+yomz.egg-info/top_level.txt
