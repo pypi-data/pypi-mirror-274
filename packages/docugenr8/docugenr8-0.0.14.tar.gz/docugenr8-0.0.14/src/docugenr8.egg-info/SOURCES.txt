@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+version.txt
+src/docugenr8/__init__.py
+src/docugenr8/document.py
+src/docugenr8.egg-info/PKG-INFO
+src/docugenr8.egg-info/SOURCES.txt
+src/docugenr8.egg-info/dependency_links.txt
+src/docugenr8.egg-info/requires.txt
+src/docugenr8.egg-info/top_level.txt
+tests/test_init.py
