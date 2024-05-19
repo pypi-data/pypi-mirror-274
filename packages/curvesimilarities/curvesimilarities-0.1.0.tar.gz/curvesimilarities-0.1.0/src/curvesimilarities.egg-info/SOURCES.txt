@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/curvesimilarities/__init__.py
+src/curvesimilarities/frechet.py
+src/curvesimilarities.egg-info/PKG-INFO
+src/curvesimilarities.egg-info/SOURCES.txt
+src/curvesimilarities.egg-info/dependency_links.txt
+src/curvesimilarities.egg-info/requires.txt
+src/curvesimilarities.egg-info/top_level.txt
+tests/test_fd.py
