@@ -1,0 +1,39 @@
+# Package Overview
+package_name: kitchen_ware_model_package
+
+# Dataset Folders
+train_data_file: train.csv
+test_data_file: test.csv
+# pipeline_save_file: str
+
+# Model parameters and variables
+modelname: kitchenware_cnn_model
+
+img_size: 150
+
+batch_size: 32
+
+random_state:  42
+
+test_size: 0.2
+
+epoch: 10 
+
+class_names: 
+  glass: 2 
+  cup: 0
+  spoon: 5 
+  plate: 4 
+  knife: 3
+  fork: 1
+
+image_set: image
+
+learning_rate: 0.0005
+
+drop_rate: 0.2
+
+dense_layer_first_inner_size: 100
+
+# for test purposes
+sample_test_image: 0412.jpg
