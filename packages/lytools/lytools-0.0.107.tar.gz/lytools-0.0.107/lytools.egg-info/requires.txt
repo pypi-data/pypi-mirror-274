@@ -1,0 +1,13 @@
+basemap
+gdal
+matplotlib
+netCDF4
+numpy
+outdated
+pandas
+psutil
+requests
+scikit-learn
+scipy
+seaborn
+tqdm
