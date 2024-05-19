@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fillowitez/__init__.py
+fillowitez/main.py
+fillowitez.egg-info/PKG-INFO
+fillowitez.egg-info/SOURCES.txt
+fillowitez.egg-info/dependency_links.txt
+fillowitez.egg-info/requires.txt
+fillowitez.egg-info/top_level.txt
