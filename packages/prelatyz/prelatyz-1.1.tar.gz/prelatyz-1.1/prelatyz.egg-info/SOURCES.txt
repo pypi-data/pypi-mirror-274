@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+prelatyz/__init__.py
+prelatyz/main.py
+prelatyz.egg-info/PKG-INFO
+prelatyz.egg-info/SOURCES.txt
+prelatyz.egg-info/dependency_links.txt
+prelatyz.egg-info/requires.txt
+prelatyz.egg-info/top_level.txt
