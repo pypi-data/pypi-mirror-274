@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+overlicentiousz/__init__.py
+overlicentiousz/main.py
+overlicentiousz.egg-info/PKG-INFO
+overlicentiousz.egg-info/SOURCES.txt
+overlicentiousz.egg-info/dependency_links.txt
+overlicentiousz.egg-info/requires.txt
+overlicentiousz.egg-info/top_level.txt
