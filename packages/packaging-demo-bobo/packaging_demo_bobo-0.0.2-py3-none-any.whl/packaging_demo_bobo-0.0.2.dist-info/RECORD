@@ -1,0 +1,12 @@
+packaging_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_demo/colorized_demo.py,sha256=hIHsqiYwBW8HXuO6Hxwg8DFRFRZQdaSSQRLC-9_2hII,86
+packaging_demo/my_file.py,sha256=KnMW0V9oFbeRwM4u_zEBGxdmJM7vrrDN7d7V_1XzK_A,234
+packaging_demo/my_other_file.py,sha256=0aN49sqgGDmwpkpdMPt8X_INvubqPr_CkEyeazBG_wc,16
+packaging_demo/states_info.py,sha256=mJtZYU51stLq9O76yakAQQfBK2Kf5ZGQ0O_iHDhoBDg,696
+packaging_demo/my_folder/__init__.py,sha256=Bu289DNhZaJx5lJAJaZDnDyqMkb9B5bxFncieXB6UyU,6
+packaging_demo/my_folder/cities.json,sha256=dES2K8WTzmCxc0Qx6KqHPC3waDggBmAYgPGgbJGioTg,4634
+packaging_demo/my_folder/my_nested_file.py,sha256=AzH2l1elkNGZG2TWJrC_VPN6Y6KOvauLrg4J30YKdPY,111
+packaging_demo_bobo-0.0.2.dist-info/METADATA,sha256=sdv_2XiP-X5iEC8q8P511HV2KggTx01RSO9dhvQVUTg,696
+packaging_demo_bobo-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+packaging_demo_bobo-0.0.2.dist-info/top_level.txt,sha256=JQYuoHLSBUdWNZjDus5DYc3ohopasuGzDPZpph3ynKg,15
+packaging_demo_bobo-0.0.2.dist-info/RECORD,,
