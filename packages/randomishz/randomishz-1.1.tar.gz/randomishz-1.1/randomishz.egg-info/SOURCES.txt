@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+randomishz/__init__.py
+randomishz/main.py
+randomishz.egg-info/PKG-INFO
+randomishz.egg-info/SOURCES.txt
+randomishz.egg-info/dependency_links.txt
+randomishz.egg-info/requires.txt
+randomishz.egg-info/top_level.txt
