@@ -1,0 +1,6 @@
+setup.py
+webframe_py.egg-info/PKG-INFO
+webframe_py.egg-info/SOURCES.txt
+webframe_py.egg-info/dependency_links.txt
+webframe_py.egg-info/requires.txt
+webframe_py.egg-info/top_level.txt
