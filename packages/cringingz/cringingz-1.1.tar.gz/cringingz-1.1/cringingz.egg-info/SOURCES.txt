@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cringingz/__init__.py
+cringingz/main.py
+cringingz.egg-info/PKG-INFO
+cringingz.egg-info/SOURCES.txt
+cringingz.egg-info/dependency_links.txt
+cringingz.egg-info/requires.txt
+cringingz.egg-info/top_level.txt
