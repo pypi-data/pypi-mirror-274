@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+decussativelyz/__init__.py
+decussativelyz/main.py
+decussativelyz.egg-info/PKG-INFO
+decussativelyz.egg-info/SOURCES.txt
+decussativelyz.egg-info/dependency_links.txt
+decussativelyz.egg-info/requires.txt
+decussativelyz.egg-info/top_level.txt
