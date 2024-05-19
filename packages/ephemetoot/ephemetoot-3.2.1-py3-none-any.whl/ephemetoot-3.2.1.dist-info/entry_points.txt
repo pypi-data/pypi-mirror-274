@@ -1,0 +1,2 @@
+[console_scripts]
+ephemetoot = ephemetoot.console:main
