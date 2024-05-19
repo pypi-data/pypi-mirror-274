@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+thigz/__init__.py
+thigz/main.py
+thigz.egg-info/PKG-INFO
+thigz.egg-info/SOURCES.txt
+thigz.egg-info/dependency_links.txt
+thigz.egg-info/requires.txt
+thigz.egg-info/top_level.txt
