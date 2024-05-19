@@ -1,0 +1,11 @@
+mlx
+mlx-data
+setuptools
+
+[dev]
+black>=23.7.0
+ruff>=0.0.282
+pre-commit>=3.3.0
+pip-tools
+pyright
+ruff-lsp
