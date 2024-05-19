@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+juicez/__init__.py
+juicez/main.py
+juicez.egg-info/PKG-INFO
+juicez.egg-info/SOURCES.txt
+juicez.egg-info/dependency_links.txt
+juicez.egg-info/requires.txt
+juicez.egg-info/top_level.txt
