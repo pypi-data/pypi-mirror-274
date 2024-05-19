@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+dbmig/__init__.py
+dbmig/main.py
+dbmig.egg-info/PKG-INFO
+dbmig.egg-info/SOURCES.txt
+dbmig.egg-info/dependency_links.txt
+dbmig.egg-info/entry_points.txt
+dbmig.egg-info/not-zip-safe
+dbmig.egg-info/requires.txt
+dbmig.egg-info/top_level.txt
