@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+redbaitedz/__init__.py
+redbaitedz/main.py
+redbaitedz.egg-info/PKG-INFO
+redbaitedz.egg-info/SOURCES.txt
+redbaitedz.egg-info/dependency_links.txt
+redbaitedz.egg-info/requires.txt
+redbaitedz.egg-info/top_level.txt
