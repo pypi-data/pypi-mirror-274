@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+glandaceousz/__init__.py
+glandaceousz/main.py
+glandaceousz.egg-info/PKG-INFO
+glandaceousz.egg-info/SOURCES.txt
+glandaceousz.egg-info/dependency_links.txt
+glandaceousz.egg-info/requires.txt
+glandaceousz.egg-info/top_level.txt
