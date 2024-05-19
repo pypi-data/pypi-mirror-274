@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+downfoldedz/__init__.py
+downfoldedz/main.py
+downfoldedz.egg-info/PKG-INFO
+downfoldedz.egg-info/SOURCES.txt
+downfoldedz.egg-info/dependency_links.txt
+downfoldedz.egg-info/requires.txt
+downfoldedz.egg-info/top_level.txt
