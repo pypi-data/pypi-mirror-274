@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pytest-parameterize-from-files
+Version: 0.12
+Summary: pytest-parameterize-from-files is now pytest-scenario-files
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: pytest-scenario-files
+
+# pytest-parameterize-from-files is now pytest-scenario-files
+
+This package has been renamed. Use `pip install pytest-scenario-files` instead.
+
+New package: https://pypi.org/project/pytest-scenario-files/
