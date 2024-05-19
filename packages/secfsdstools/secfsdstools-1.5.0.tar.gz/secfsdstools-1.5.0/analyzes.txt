@@ -1,0 +1,310 @@
+IS
+--
+  Main Rules
+    Revenues:
+
+        1. Prio: Revenues
+
+                + SalesRevenueGoodsNet     <- SalesRevenueGoodsGross
+                + SalesRevenueServicesNet  <- SalesRevenueServicesGross
+                + OtherSalesRevenueNet
+                --------------
+                = SalesRevenueNet
+
+        2. Prio: SalesRevenueNet
+
+                RevenueFromContractWithCustomerIncludingAssessedTax
+                - ExciseAndSalesTaxes
+                ---------------------
+                = RevenueFromContractWithCustomerExcludingAssessedTax
+
+        3. Prio: RevenueFromContractWithCustomerExcludingAssessedTax
+        4. Prio: RevenueFromContractWithCustomerIncludingAssessedTax
+        5. Prio: RevenuesExcludingInterestAndDividends
+
+                + RegulatedAndUnregulatedOperatingRevenue
+                + HealthCareOrganizationPatientServiceRevenue
+                + ContractsRevenue
+                + RevenueOilAndGasServices
+                  ...
+                ------------------
+                = RevenuesSum
+
+        6. Prio: RevenuesSum
+        7. Prio: InvestmentIncomeInterest
+        8. Prio: CostOfRevenue + GrossProfit
+
+
+    CostOfRevenue
+
+        1. Prio CostOfRevenue
+
+                + CostOfGoodsSoldExcludingDepreciationDepletionAndAmortization
+                + CostOfGoodsSoldDepreciationDepletionAndAmortization
+                + CostOfGoodsSoldDepletion
+                + CostOfGoodsSoldDepreciation
+                + ...
+                ------------
+                = CostOfGoodsSold (if not set)
+
+
+                + CostOfServicesExcludingDepreciationDepletionAndAmortization
+                + CostOfServicesDepreciation
+                + CostOfServicesDepreciationAndAmortization
+                + CostOfServicesCatering
+                + ...
+                ------------
+                = CostOfServices (if not set)
+
+
+                + CostOfGoodsAndServicesSoldDepreciationAndAmortization
+                + CostOfGoodsAndServicesSoldAmortization
+                + CostOfGoodsAndServicesSoldOverhead
+                + CostOfGoodsAndServicesSoldDepreciation
+                + CostOfGoodsAndServicesEnergyCommoditiesAndServices
+                + CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortizatio
+                ------------
+                = CostOfGoodsAndServicesSold (if not set)
+
+
+              CostOfGoodsSold
+            + CostOfServices
+            ---------------
+            = CostOfGoodsAndServicesSold (if not set)
+
+        2. Prio CostOfGoodsAndServicesSold
+        3. Prio Revenues - GrossProfit
+
+    GrossProfit
+
+        1. Prio GrossProfit
+        2. Prio Revenues - CostOfRevenue
+        3. Prio GrossInvestmentIncomeOperating
+        4. Prio InterestAndDividendIncomeOperating
+
+    OperatingExpenses
+
+        1. Prio OperatingExpenses
+        2. Prio GrossProfit - OperatingIncomeLoss
+
+            + SellingGeneralAndAdministrativeExpense
+            + GeneralAndAdministrativeExpense
+            + ResearchAndDevelopmentExpense
+            + SellingAndMarketingExpense
+            + ... (96 most expense tags)
+            ----------------------------
+            = OperatingExpensesSum
+
+        3. Prio OperatingExpensesSum
+
+
+    OperatingIncomeLoss
+
+        1. Prio OperatingIncomeLoss
+        2. Prio GrossProfit - OperatingExpenses
+
+
+    IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit
+
+        1. Prio IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit <- (rename) IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest
+        2. Prio
+            + IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+            + (optional) IncomeLossFromEquityMethodInvestments
+            --------------------
+            = IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit
+        3. Prio IncomeLossFromContinuingOperations + AllIncomeTaxExpenseBenefit
+
+    ProfitLoss
+
+        1. Prio ProfitLoss
+        2. Prio
+            IncomeLossFromContinuingOperations
+
+                1. Prio IncomeLossFromContinuingOperations <- (rename) IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest
+
+                    + IncomeTaxExpenseBenefit
+                    + DeferredIncomeTaxExpenseBenefit
+                    + (optional) IncomeLossFromEquityMethodInvestments
+                    ---------------------------------
+                    = AllIncomeTaxExpenseBenefit
+
+                2. Prio IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit - AllIncomeTaxExpenseBenefit
+
+
+            IncomeLossFromDiscontinuedOperationsNetOfTax
+
+                1. Prio IncomeLossFromDiscontinuedOperationsNetOfTax <- IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity
+
+
+            ProfitLoss = IncomeLossFromContinuingOperations + IncomeLossFromDiscontinuedOperationsNetOfTax
+
+        3. Prio NetIncomeLoss
+
+
+    NetIncomeLossAttributableToNoncontrollingInterest
+        1. Prio NetIncomeLossAttributableToNoncontrollingInterest
+        2. Prio ProfitLoss - NetIncomeLoss
+
+    NetIncomeLoss
+
+        1. Prio NetIncomeLoss
+        2. Prio NetIncomeLossAvailableToCommonStockholdersBasic
+        3. Prio NetIncomeLossAllocatedToLimitedPartners
+        3. Prio ProfitLoss
+        4. Prio ProfitLossIncludingRedeemableNonControllingInterest
+        5. Prio OtherComprehensiveIncomeLossNetOfTax
+        6. Prio ComprehensiveIncomeNetOfTax
+        7. Prio IncomeLossAttributableToParent
+        8. Prio NetInvestmentIncome
+
+  Post Rule (Cleanup)
+    Fix Sign of AllIncomeTaxExpenseBenefit (should be positive if taxed were paid)
+        expected equation to be true:
+           IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit - AllIncomeTaxExpenseBenefit = ProfitLoss
+
+        invert sign of AllIncomeTaxExpenseBenefit if the following equation is true:
+           IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit + AllIncomeTaxExpenseBenefit = ProfitLoss
+
+    Fix sign of NetIncomeLossAttributableToNoncontrollingInterest
+        expected equation to be true:
+           ProfitLoss - NetIncomeLossAttributableToNoncontrollingInterest = NetIncomeLoss
+
+        invert sign of NetIncomeLossAttributableToNoncontrollingInterest if the following equation is true:
+           ProfitLoss + NetIncomeLossAttributableToNoncontrollingInterest = NetIncomeLoss
+
+    If Revenues was not set, but there is a GrossProfit, set it to GrossProfit,
+          since was no CostOfRevenue found
+
+    If GrossProfit couldn't be set, but there is Revenues, set it to Revenues
+          since was no CostOfRevenue found
+
+    if CostORevenues couldn't be set, but Revenues and GrossProfit are present, set it to Revenues - Grossprofit
+
+    if OperatingIncomeLoss is not set yet, and GrossProfit (available now) and OperatingExpenses are present,
+         set it to GrossProfit - OperatingExpenses
+
+    If there is no IncomeLossFromContinuingOperations, set it to ProfitLoss
+    if there is no IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit, set it to IncomeLossFromContinuingOperations
+    if there is no AllIncomeTaxExpenseBenefit, set it to IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit - AllIncomeTaxExpenseBenefit
+
+    set IncomeLossFromDiscontinuedOperationsNetOfTax to 0.0 if not present
+
+    If there is no IncomeLossFromContinuingOperations, set it to IncomeLossFromContinuingOperationsBeforeIncomeTaxExpenseBenefit
+    If there is no ProfitLoss, set it to IncomeLossFromContinuingOperations + IncomeLossFromDiscontinuedOperationsNetOfTax
+    If there is no NetIncomeLoss, set it to ProfitLoss
+    If there is no NetIncomeLossAttributableToNoncontrollingInterest, set it to ProfitLoss - NetIncomeLoss
+
+Todos
+-----
+
+- EarningsPerShare
+
+
+Revenue
+-------
+us-gaap:Revenues
+  us-gaap:SalesRevenueNet
+    us-gaap:ProductSalesRevenue
+    us-gaap:ServiceRevenue
+
+
+Cost of Revenue
+----------------
+- hint: wenn Revenue und GrossProfit vorhanden
+  standardized_bag.result_df[standardized_bag.result_df.CostOfRevenue.isna() & ~standardized_bag.result_df.GrossProfit.isna() ]
+
+
+Cost of Operating
+----------------
+- standardized_bag.result_df[standardized_bag.result_df.OperatingExpenses.isna() & ~standardized_bag.result_df.OperatingIncomeLoss.isna() ]
+- idee:
+   filter for reports with GrossProfit and OperatingIncomeLoss
+   get all tags with line > GrossProfit.line and line < OperatingIncomeLoss.line
+   -> sollte eine gute Liste ergeben, mit allem was Operating Cost sein kann.
+
+
+Achtung:
+- wir haben oft daten in IS und CI (comprehensive Income)
+- prüfen, ob 10-Q immer Q? Einträge in fp hat und ob 10-K immer ein FY hat
+
+
+
+Banks
+----
+
+
+Todos:
+es gibt negative costOfRevenue Einträge
+
+- 0001558370-23-014929 -> hier ist der Wert für NetIncomeLoss nicht getagged.
+  könnte aus
+
+  IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest und
+  IncomeTaxBenefitExpense berechnet werden:
+   -> https://www.sec.gov/ix?doc=/Archives/edgar/data/1872356/000155837023014929/mkul-20230630x10q.htm
+
+
+
+- Generell muss jeder Tag geprüft und korrigiert werden, für welchen klar ist, ob
+  er einen positiven oder negativen Wert darstellt. Bzw. diese Tags müssen immer gleich behandelt werden
+  auch im BS
+
+
+- das CI müsste man eigentlich auch beachten.
+
+
+     + SalesRevenueGoodsNet
+     + SalesRevenueServicesNet
+     + OtherSalesRevenueNet
+     --------------
+  or SalesRevenueNet
+
+  or RevenuesSum
+        RevenueFromContractWithCustomerExcludingAssessedTax
+        RevenueFromContractWithCustomerIncludingAssessedTax
+        RevenuesExcludingInterestAndDividends
+        RegulatedAndUnregulatedOperatingRevenue
+        ...
+
+  or InterestAndDividendIncomeOperating
+  --------
+  Revenues
+  ========
+
+
+IncomeLossFromDiscontinuedOperationsNetOfTax
+IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToNoncontrollingInterest
+IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntity
+
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingGeneralPartnershipUnit1
+
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipAndGeneralPartnershipUnitBasic
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipAndGeneralPartnershipUnitBasicAndDiluted'
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipUnit
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipUnitDiluted
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipUnitBasic
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerOutstandingLimitedPartnershipUnitDiluted1
+
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerBasicShare
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerDilutedShare
+IncomeLossFromDiscontinuedOperationsNetOfTaxPerBasicAndDilutedShare
+
+
+NetIncomeLossFromDiscontinuedOperationsAvailableToCommonShareholdersBasic
+NetIncomeLossFromDiscontinuedOperationsAvailableToCommonShareholdersDiluted
+
+
+
+
+
+
+
+Sonstiges
+---------
+Falls Firmen nur die Resultate für Q2 und Q3 seit Beginn angeben, könnte man die Differenz für das einzelne Quartal
+nachträglich berechnen. Wenn man beim Standardizer angeben könnte, ob qrtrs ein Bestandteil des Keys ist, könnte man diese auch direkt
+berechnen und dann in einem Post Schritt das ganze cleanen, so, dass nur "einzelne Quarter" als Ergebnisse angezeigt werden.
+
+Dazu müsste man eigentlich nur die adshs für Q2 und Q3 ermitteln, welche nur ein einziges Qrtr angeben. Von allen Q2 und Q3
+werden dann diese abgezogen und es bleiben diejenigen übrig, die für Q2 und Q3 zwei, bzw. drei qrtr angeben.
+dort kann man dann von Q2 Q1 abziehen und von Q3 das Ergebnis von Q2-Q1
