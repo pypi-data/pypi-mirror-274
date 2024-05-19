@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bescribblez/__init__.py
+bescribblez/main.py
+bescribblez.egg-info/PKG-INFO
+bescribblez.egg-info/SOURCES.txt
+bescribblez.egg-info/dependency_links.txt
+bescribblez.egg-info/requires.txt
+bescribblez.egg-info/top_level.txt
