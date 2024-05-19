@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tickeyz/__init__.py
+tickeyz/main.py
+tickeyz.egg-info/PKG-INFO
+tickeyz.egg-info/SOURCES.txt
+tickeyz.egg-info/dependency_links.txt
+tickeyz.egg-info/requires.txt
+tickeyz.egg-info/top_level.txt
