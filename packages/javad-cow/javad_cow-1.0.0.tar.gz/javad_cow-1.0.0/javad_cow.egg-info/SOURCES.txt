@@ -1,0 +1,11 @@
+MANIFEST.in
+readme.md
+requirements.txt
+setup.py
+javad_cow/__init__.py
+javad_cow/javad_cow.py
+javad_cow.egg-info/PKG-INFO
+javad_cow.egg-info/SOURCES.txt
+javad_cow.egg-info/dependency_links.txt
+javad_cow.egg-info/top_level.txt
+tests/test_cow.py
