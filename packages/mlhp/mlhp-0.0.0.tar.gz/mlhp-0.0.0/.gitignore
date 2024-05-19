@@ -1,0 +1,9 @@
+*.vscode
+*.swp
+*.vs
+CMakeSettings.json
+out/
+build/
+html/
+latex/
+dist/
