@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+loitersz/__init__.py
+loitersz/main.py
+loitersz.egg-info/PKG-INFO
+loitersz.egg-info/SOURCES.txt
+loitersz.egg-info/dependency_links.txt
+loitersz.egg-info/requires.txt
+loitersz.egg-info/top_level.txt
