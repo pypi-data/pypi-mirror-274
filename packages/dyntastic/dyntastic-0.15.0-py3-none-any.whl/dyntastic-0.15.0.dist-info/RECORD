@@ -1,0 +1,13 @@
+dyntastic/__init__.py,sha256=Y_WwELUbbsT4lKenQGPlvQdsr4JpOlzd1HrixLwWcBQ,259
+dyntastic/attr.py,sha256=jkupnKqfZ2AVAPlnoHMDFpxDhaRSFQPFqdUu4oL_S_M,9815
+dyntastic/batch.py,sha256=IYLUByK7FVlRstab5p5Zn-BVPkoAdT4L-y1N3yicCww,1828
+dyntastic/exceptions.py,sha256=qz70awM-FAxwuhUsXMCMrbtEG7-nyW60iyAvqkAmREw,40
+dyntastic/main.py,sha256=uDXaHQ4tcFx2EWOqGYE1XlmfxhjT9DKrnN-aW1tDgWo,28518
+dyntastic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dyntastic/pydantic_compat.py,sha256=8u0U4_l9Cl67UldWkQ-FfBLDNy3JRsWn5GTPVJdZWP4,5348
+dyntastic/transact.py,sha256=_NTzT649BM3wdrVEGu5fk9sJFUJHTtxwWyxC0dGQ0B4,3409
+dyntastic-0.15.0.dist-info/LICENSE,sha256=NpX09BNPcqJOGR_6-LjdmfN5YMtxVyMR5NtcXv9SX1g,1069
+dyntastic-0.15.0.dist-info/METADATA,sha256=1kAZRmfuiKXIb693Oq6vtPzREkBonwe0TYqhsxFua5k,16863
+dyntastic-0.15.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dyntastic-0.15.0.dist-info/top_level.txt,sha256=5f0JTEIKoEJ8lNoSwWkC0J0L6hqg-izEDnp7fTGPmfY,10
+dyntastic-0.15.0.dist-info/RECORD,,
