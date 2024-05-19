@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+intendednessz/__init__.py
+intendednessz/main.py
+intendednessz.egg-info/PKG-INFO
+intendednessz.egg-info/SOURCES.txt
+intendednessz.egg-info/dependency_links.txt
+intendednessz.egg-info/requires.txt
+intendednessz.egg-info/top_level.txt
