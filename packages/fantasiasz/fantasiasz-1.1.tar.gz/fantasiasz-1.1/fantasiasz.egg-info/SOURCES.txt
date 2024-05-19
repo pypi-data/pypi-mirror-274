@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fantasiasz/__init__.py
+fantasiasz/main.py
+fantasiasz.egg-info/PKG-INFO
+fantasiasz.egg-info/SOURCES.txt
+fantasiasz.egg-info/dependency_links.txt
+fantasiasz.egg-info/requires.txt
+fantasiasz.egg-info/top_level.txt
