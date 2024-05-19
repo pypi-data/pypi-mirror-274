@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+idealnessz/__init__.py
+idealnessz/main.py
+idealnessz.egg-info/PKG-INFO
+idealnessz.egg-info/SOURCES.txt
+idealnessz.egg-info/dependency_links.txt
+idealnessz.egg-info/requires.txt
+idealnessz.egg-info/top_level.txt
