@@ -1,0 +1,4 @@
+[console_scripts]
+ollama_data_adapter = ollama_data_tools.ollama_data_adapter:main
+ollama_data_export = ollama_data_tools.ollama_data_export:main
+ollama_data_query = ollama_data_tools.ollama_data_query:main
