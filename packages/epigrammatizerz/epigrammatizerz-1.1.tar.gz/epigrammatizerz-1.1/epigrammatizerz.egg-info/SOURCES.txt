@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+epigrammatizerz/__init__.py
+epigrammatizerz/main.py
+epigrammatizerz.egg-info/PKG-INFO
+epigrammatizerz.egg-info/SOURCES.txt
+epigrammatizerz.egg-info/dependency_links.txt
+epigrammatizerz.egg-info/requires.txt
+epigrammatizerz.egg-info/top_level.txt
