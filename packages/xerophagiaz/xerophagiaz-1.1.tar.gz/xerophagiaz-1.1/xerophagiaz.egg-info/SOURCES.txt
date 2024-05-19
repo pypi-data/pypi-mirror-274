@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xerophagiaz/__init__.py
+xerophagiaz/main.py
+xerophagiaz.egg-info/PKG-INFO
+xerophagiaz.egg-info/SOURCES.txt
+xerophagiaz.egg-info/dependency_links.txt
+xerophagiaz.egg-info/requires.txt
+xerophagiaz.egg-info/top_level.txt
