@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+installsz/__init__.py
+installsz/main.py
+installsz.egg-info/PKG-INFO
+installsz.egg-info/SOURCES.txt
+installsz.egg-info/dependency_links.txt
+installsz.egg-info/requires.txt
+installsz.egg-info/top_level.txt
