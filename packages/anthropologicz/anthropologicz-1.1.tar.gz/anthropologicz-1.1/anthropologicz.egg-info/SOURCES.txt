@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+anthropologicz/__init__.py
+anthropologicz/main.py
+anthropologicz.egg-info/PKG-INFO
+anthropologicz.egg-info/SOURCES.txt
+anthropologicz.egg-info/dependency_links.txt
+anthropologicz.egg-info/requires.txt
+anthropologicz.egg-info/top_level.txt
