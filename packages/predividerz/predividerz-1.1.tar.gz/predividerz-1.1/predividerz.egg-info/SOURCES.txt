@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+predividerz/__init__.py
+predividerz/main.py
+predividerz.egg-info/PKG-INFO
+predividerz.egg-info/SOURCES.txt
+predividerz.egg-info/dependency_links.txt
+predividerz.egg-info/requires.txt
+predividerz.egg-info/top_level.txt
