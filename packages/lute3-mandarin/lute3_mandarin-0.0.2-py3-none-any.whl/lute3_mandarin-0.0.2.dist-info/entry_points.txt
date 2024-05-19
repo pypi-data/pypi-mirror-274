@@ -1,0 +1,3 @@
+[lute.plugin.parse]
+lute_mandarin=lute_mandarin_parser.parser:MandarinParser
+

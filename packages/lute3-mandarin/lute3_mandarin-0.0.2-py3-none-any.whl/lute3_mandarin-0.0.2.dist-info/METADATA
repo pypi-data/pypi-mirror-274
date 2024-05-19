@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lute3-mandarin
+Version: 0.0.2
+Summary: Learning Using Texts - Chinese Parser
+Author: Chris Ghyzel
+Requires-Python: >=3.8
+Requires-Dist: lute3>=3.4.0
+Requires-Dist: jieba>=0.42.1
+Requires-Dist: pypinyin>=0.51.0
