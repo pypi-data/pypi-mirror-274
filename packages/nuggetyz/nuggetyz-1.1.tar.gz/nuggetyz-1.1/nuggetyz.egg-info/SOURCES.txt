@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nuggetyz/__init__.py
+nuggetyz/main.py
+nuggetyz.egg-info/PKG-INFO
+nuggetyz.egg-info/SOURCES.txt
+nuggetyz.egg-info/dependency_links.txt
+nuggetyz.egg-info/requires.txt
+nuggetyz.egg-info/top_level.txt
