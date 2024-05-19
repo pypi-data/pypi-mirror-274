@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+appendicealz/__init__.py
+appendicealz/main.py
+appendicealz.egg-info/PKG-INFO
+appendicealz.egg-info/SOURCES.txt
+appendicealz.egg-info/dependency_links.txt
+appendicealz.egg-info/requires.txt
+appendicealz.egg-info/top_level.txt
