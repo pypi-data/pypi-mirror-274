@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+antisiphonz/__init__.py
+antisiphonz/main.py
+antisiphonz.egg-info/PKG-INFO
+antisiphonz.egg-info/SOURCES.txt
+antisiphonz.egg-info/dependency_links.txt
+antisiphonz.egg-info/requires.txt
+antisiphonz.egg-info/top_level.txt
