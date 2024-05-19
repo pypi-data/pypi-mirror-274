@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jiggermastz/__init__.py
+jiggermastz/main.py
+jiggermastz.egg-info/PKG-INFO
+jiggermastz.egg-info/SOURCES.txt
+jiggermastz.egg-info/dependency_links.txt
+jiggermastz.egg-info/requires.txt
+jiggermastz.egg-info/top_level.txt
