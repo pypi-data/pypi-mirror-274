@@ -1,0 +1,10 @@
+README.md
+setup.py
+QRClipboard/__init__.py
+QRClipboard/main.py
+QRClipboard.egg-info/PKG-INFO
+QRClipboard.egg-info/SOURCES.txt
+QRClipboard.egg-info/dependency_links.txt
+QRClipboard.egg-info/entry_points.txt
+QRClipboard.egg-info/requires.txt
+QRClipboard.egg-info/top_level.txt
