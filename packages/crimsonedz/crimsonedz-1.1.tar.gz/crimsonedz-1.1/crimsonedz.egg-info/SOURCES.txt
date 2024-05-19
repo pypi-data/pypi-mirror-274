@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+crimsonedz/__init__.py
+crimsonedz/main.py
+crimsonedz.egg-info/PKG-INFO
+crimsonedz.egg-info/SOURCES.txt
+crimsonedz.egg-info/dependency_links.txt
+crimsonedz.egg-info/requires.txt
+crimsonedz.egg-info/top_level.txt
