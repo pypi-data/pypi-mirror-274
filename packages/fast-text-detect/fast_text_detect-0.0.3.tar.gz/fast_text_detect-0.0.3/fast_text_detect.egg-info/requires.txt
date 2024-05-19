@@ -1,0 +1,17 @@
+torch
+torchvision
+Pillow
+opencv-python
+shapely
+tqdm
+numpy
+pyclipper
+anyascii
+scipy
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
