@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "openai-schema"
+version = "0.1.1"
+description = ""
+authors = ["Masum Billal <billalmasum93@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.7.1"
+openai = "^1.28.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+coverage = "^7.5.1"
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.3.7"
+tomlkit = "^0.12.5"
+furo = "^2024.5.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
