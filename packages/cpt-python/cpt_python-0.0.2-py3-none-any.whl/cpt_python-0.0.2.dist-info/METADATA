@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: cpt_python
+Version: 0.0.2
+Summary: A python package to connect to and parse payloads from CPT thermometers.
+Project-URL: Homepage, https://github.com/declanjscott/cpt_python
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Declan Scott <declanjscott@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+#CPT Python
+
+This package enables you to connect to and parse advertisements from CPT thermometers that speak the [Predictive Probe BLE Spec](https://github.com/combustion-inc/combustion-documentation/blob/main/probe_ble_specification.rst).
