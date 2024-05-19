@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+curratowz/__init__.py
+curratowz/main.py
+curratowz.egg-info/PKG-INFO
+curratowz.egg-info/SOURCES.txt
+curratowz.egg-info/dependency_links.txt
+curratowz.egg-info/requires.txt
+curratowz.egg-info/top_level.txt
