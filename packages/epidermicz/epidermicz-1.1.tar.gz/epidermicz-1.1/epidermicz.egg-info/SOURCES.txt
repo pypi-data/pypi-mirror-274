@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+epidermicz/__init__.py
+epidermicz/main.py
+epidermicz.egg-info/PKG-INFO
+epidermicz.egg-info/SOURCES.txt
+epidermicz.egg-info/dependency_links.txt
+epidermicz.egg-info/requires.txt
+epidermicz.egg-info/top_level.txt
