@@ -1,0 +1,17 @@
+pure_cv/__init__.py,sha256=mF4M_d6EiHbB9U9W_oKlKXYIyh8ZFn3gxe_382VXiLI,95
+pure_cv/__init__.pyi,sha256=_s94HW9iuUacXspuMSu3AB0Z6jMNQ4brjWeYNXCNoPs,685
+pure_cv/colors.py,sha256=dFGfmyBvT58YmKh3YI-1zcpWUPc_6340-V-5q8qFCH0,309
+pure_cv/encoding.py,sha256=5HiEh4ZaWI9QWi2j5mmjzVjlz3HOiyl7JQoa_X6Cd1E,1403
+pure_cv/img_types.py,sha256=caWEuenHInBlunUfpkKJhKZ6zKJw5-RvQJgv5kevTrU,213
+pure_cv/misc.py,sha256=EQxwIheg-ZBlASmd87n3ye0AwdQArQW0JcvXSTLgFLE,178
+pure_cv/opencv.py,sha256=WLz3Ikc9BoWjzIHwAbm23RdXJH2TtgviNc06HbhLN4U,1648
+pure_cv/plot.py,sha256=HTWOK4yzpapaK7r5R2ZatkDD9mLk6vC4UawLvEsWR1g,1267
+pure_cv/rescaling.py,sha256=X0PVyh1clHawc5w1MPRSr7Ze0B7Koai9sp9-hMhHWiM,860
+pure_cv/rotation.py,sha256=E6xelGF-q7hK2dktyF7N8RDVIrV8Fbar-yrN_blXKJU,478
+pure_cv/types_.py,sha256=xYntmH_NfBxtm_WWqrb7X31nEZhGG45sEt5k9LduQug,60
+pure_cv/draw/__init__.py,sha256=oj7TFFJrdi8gEeeoRqGsv_rLLt8ZNp5yx-TVoDmo-BY,59
+pure_cv/draw/draw.py,sha256=O6lVUk8w9ofLgK79z5i6RV-PelwwUdcacigRNMDwVio,2955
+pure_cv-0.1.11.dist-info/METADATA,sha256=NjR_A7IZpUkpwpanVFof8zxwbr4hN2wR8NHIwySETSY,456
+pure_cv-0.1.11.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pure_cv-0.1.11.dist-info/top_level.txt,sha256=mtAUbaWk_QH96ovKFW-0_lse72Tk_7_KwViJ6ZQX2kY,8
+pure_cv-0.1.11.dist-info/RECORD,,
