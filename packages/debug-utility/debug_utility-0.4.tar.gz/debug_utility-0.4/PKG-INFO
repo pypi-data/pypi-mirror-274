@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: debug_utility
+Version: 0.4
+Summary: common functions used while programming in python
+Home-page: 
+Author: Hien Quoc
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# utility
+Utility commonly used for debug
+        
+Setup Required inputs
+# required inputs "ri" for utility_class.load_file_as_string(ri)
+        ri = { 
+            "full_path_file_name": None,
+        }
+      
+
+# required inputs "ri" for utility_class.load_configuration_file(ri)
+    ri = {
+             "configuration_full_path_file_name": None,
+         }
+
+# required inputs for debug_class()
+Pass a dictionary as an argument to print out the contents
+
+    debug_utility.debug_file.debug_class({
+        "title": "execute()",
+        "df": df,
+    }, True)
