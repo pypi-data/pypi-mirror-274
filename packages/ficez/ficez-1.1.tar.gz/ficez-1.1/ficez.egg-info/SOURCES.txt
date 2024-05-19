@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ficez/__init__.py
+ficez/main.py
+ficez.egg-info/PKG-INFO
+ficez.egg-info/SOURCES.txt
+ficez.egg-info/dependency_links.txt
+ficez.egg-info/requires.txt
+ficez.egg-info/top_level.txt
