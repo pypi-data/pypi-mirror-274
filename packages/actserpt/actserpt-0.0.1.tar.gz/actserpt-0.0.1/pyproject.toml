@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "actserpt"
+version = "0.0.1"
+description = "Creating files for Pyhton."
+authors = ["Aras Kuzey SULTAR <teknobilimmail@gmail.com>"]
+readme = "README.md"
+license = "arass0101"
+keywords = ["example", "library"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
