@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+apportioningz/__init__.py
+apportioningz/main.py
+apportioningz.egg-info/PKG-INFO
+apportioningz.egg-info/SOURCES.txt
+apportioningz.egg-info/dependency_links.txt
+apportioningz.egg-info/requires.txt
+apportioningz.egg-info/top_level.txt
