@@ -1,0 +1,9 @@
+traitgpt/__init__.py,sha256=1EXkP68KPYedsxpvRjmtpYGbHhvWh2cxQN8LpoC8nIE,432
+traitgpt/cli.py,sha256=PePUopMzqQmQTbfs0rxn9xlmAXU8uRrwpYMSxIv0pFQ,2771
+traitgpt/prompts.py,sha256=ZAuEEUgIS1sZCzafqOBI_xS9bXz6QPGvc5jtW8z-qvc,844
+traitgpt/traitgpt.py,sha256=q6W5EYq5UWjyj0HOe1gs2t2YVLVwxkwZ7FrXagdrZpg,4827
+traitgpt-0.0.8.dist-info/LICENSE,sha256=Zg_pD3Ia8sQJgj6WxrhjBtZzNbSbVf1z5bw-VW5em0E,1070
+traitgpt-0.0.8.dist-info/METADATA,sha256=KduSdhhmiz2xrahvnpzv_5gdq_dGIszr38ET01pVWOg,2008
+traitgpt-0.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+traitgpt-0.0.8.dist-info/entry_points.txt,sha256=LHAUHuRCqtsteW86PyWSdTGTpBKAGyuJZnFGmeNxRuU,45
+traitgpt-0.0.8.dist-info/RECORD,,
