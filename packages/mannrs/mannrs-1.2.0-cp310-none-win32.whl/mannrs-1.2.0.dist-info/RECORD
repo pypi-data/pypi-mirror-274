@@ -1,0 +1,10 @@
+mannrs-1.2.0.dist-info/METADATA,sha256=7jOSjPN2770sORiLTq9E9qHR7_gvwJGtucA4-2SLWoI,3308
+mannrs-1.2.0.dist-info/WHEEL,sha256=9RmYUj-esIKQx6TApE6-yhBl_9k8cOHeP1-5vFYOkbg,91
+mannrs-1.2.0.dist-info/entry_points.txt,sha256=ui0k2XOGceqraMj_IZ82h5PNh_T8v81TlrpLmNngCgU,40
+mannrs-1.2.0.dist-info/license_files/license.md,sha256=Y_nnsOL33MEdSxRfd1YkNyCvwNVhMjiFhVIFwEKyylc,1109
+mannrs/CLI.py,sha256=8VwumV6WzBhe84Y24LX2Wsk2Auaas738ZP4LuDp62PQ,4607
+mannrs/Mann.py,sha256=wj7KwYUSTdQq_iiDWp4ztDQwqOuIx7hX9YWx1WS4p2c,4370
+mannrs/Tensor.py,sha256=yDlkadZoEPa57_RhmfLNk3Zb7bmcZ93iLDJbhZ6Pfvw,2242
+mannrs/__init__.py,sha256=kBGJIhzVrpT00ogaxkXXbLkY75VuNG6YGPvLVs4oQkY,101
+mannrs/mannrs.cp310-win32.pyd,sha256=romcWNGsoi_d0qwpQ2AwI_hJC6gZ4yoYingm207jo6U,796672
+mannrs-1.2.0.dist-info/RECORD,,
