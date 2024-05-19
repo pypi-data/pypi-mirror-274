@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+communistz/__init__.py
+communistz/main.py
+communistz.egg-info/PKG-INFO
+communistz.egg-info/SOURCES.txt
+communistz.egg-info/dependency_links.txt
+communistz.egg-info/requires.txt
+communistz.egg-info/top_level.txt
