@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+frustulaz/__init__.py
+frustulaz/main.py
+frustulaz.egg-info/PKG-INFO
+frustulaz.egg-info/SOURCES.txt
+frustulaz.egg-info/dependency_links.txt
+frustulaz.egg-info/requires.txt
+frustulaz.egg-info/top_level.txt
