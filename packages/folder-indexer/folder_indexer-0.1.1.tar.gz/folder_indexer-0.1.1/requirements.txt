@@ -1,0 +1,4 @@
+polars>=*
+python-magic>=*
+loguru>=*
+tqdm>=*
