@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+phytotronz/__init__.py
+phytotronz/main.py
+phytotronz.egg-info/PKG-INFO
+phytotronz.egg-info/SOURCES.txt
+phytotronz.egg-info/dependency_links.txt
+phytotronz.egg-info/requires.txt
+phytotronz.egg-info/top_level.txt
