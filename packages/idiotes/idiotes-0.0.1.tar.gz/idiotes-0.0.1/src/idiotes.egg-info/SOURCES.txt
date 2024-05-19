@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/idiotes/__init__.py
+src/idiotes.egg-info/PKG-INFO
+src/idiotes.egg-info/SOURCES.txt
+src/idiotes.egg-info/dependency_links.txt
+src/idiotes.egg-info/top_level.txt
