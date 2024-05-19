@@ -1,0 +1,2 @@
+[console_scripts]
+rikibot = rikibot.__main__:main
