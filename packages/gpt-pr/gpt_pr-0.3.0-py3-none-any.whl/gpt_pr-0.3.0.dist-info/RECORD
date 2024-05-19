@@ -1,0 +1,15 @@
+gptpr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gptpr/config.py,sha256=YVQgTuJYVwqAabqK-E3xSzlc4QUvZb0q4dUW-_pY2cg,2609
+gptpr/consolecolor.py,sha256=_JmBMNjIflWMlgP2VkCWu6uQLR9oHBy52uV3TRJJgF4,800
+gptpr/gh.py,sha256=uSWY_TzbrAM00neOBkyfV5vxDO4FzMtIrs-Zczp-Tck,1127
+gptpr/gitutil.py,sha256=NBD3iRnbFEPRU47w7c5TowwtZieDYkU4zybvv0PoOU0,5783
+gptpr/main.py,sha256=tc1iLkGVWa0O2gGRAPlGP8MTRA3B1xryIX1Hi6MCn9w,2595
+gptpr/prdata.py,sha256=ejx4zLRViJ83OmqvlxGWnw7alo8RPL_YdlwEJFhMQ8g,6183
+gptpr/test_config.py,sha256=_vP-3RJf8WXGGQESr5bCUbmxf8owc1uVJXMSBF_MtH0,2712
+gptpr/test_prdata.py,sha256=rSJ-yqOdw-iYdBWyqnA2SXbdrhT8KgIkRTTf9SY1S1g,474
+gptpr/version.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+gpt_pr-0.3.0.dist-info/METADATA,sha256=sva8MD89gNrCtK1xWkfHyJvP1A5JOhW15SS1nC-TwwQ,2638
+gpt_pr-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gpt_pr-0.3.0.dist-info/entry_points.txt,sha256=WhcbcQXqo5-IGliYWiYMhop4-Wm7bcH2ljFKLWrmO7c,81
+gpt_pr-0.3.0.dist-info/top_level.txt,sha256=DZcbzlsjh4BD8njGcvhOeCZ83U_oYWgCn0w8qx5--04,6
+gpt_pr-0.3.0.dist-info/RECORD,,
