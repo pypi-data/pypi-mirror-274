@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "nokey"
+version = "0.6.0"
+description = "A python package for accessing APIs that require no key."
+authors = ["Spyder Rex <billyjohnsonauthor@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/SpyderRex/nokey"
+repository = "https://github.com/SpyderRex/nokey"
+license = "MIT"
+keywords = ["API", "requests", "xmltodict"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+xmltodict = "==0.13.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
