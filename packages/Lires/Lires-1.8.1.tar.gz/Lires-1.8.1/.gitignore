@@ -1,0 +1,74 @@
+*__pycache__
+*.swp
+*.vscode
+*.spec
+*/conf_dev.json
+*.egg-info
+dist
+build
+.venv
+.env.local
+.vite
+venv
+*/log.txt
+*/log.txt.1
+*_tmp*
+.DS_Store
+.TempDir
+.cache
+
+lires_server/assets/pdf-viewer
+lires_server/assets/pdfjs_downloading.lock
+lires_server/assets/js-api
+lires_server/assets/docs
+lires_server/assets/obsidian-plugin
+
+# building process generated
+**/package-lock.json
+**/Cargo.lock
+compile_commands.json
+**/.vitepress/cache
+
+# Binaries
+*.pptx
+*.psd
+
+# databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite-journal
+
+# Logs
+logs
+*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/lerna-debug.log*
+
+# binaries
+**/node_modules
+**/dist
+**/dist-api
+**/dist-ssr
+**/coverage
+**/*.local
+
+# Editor directories and files
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# test environment
+test/_sandbox
+test/_cache
+.pytest_cache
+
+# casual test
+_test
