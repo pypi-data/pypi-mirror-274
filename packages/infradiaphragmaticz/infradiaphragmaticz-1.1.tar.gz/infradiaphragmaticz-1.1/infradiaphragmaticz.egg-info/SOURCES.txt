@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+infradiaphragmaticz/__init__.py
+infradiaphragmaticz/main.py
+infradiaphragmaticz.egg-info/PKG-INFO
+infradiaphragmaticz.egg-info/SOURCES.txt
+infradiaphragmaticz.egg-info/dependency_links.txt
+infradiaphragmaticz.egg-info/requires.txt
+infradiaphragmaticz.egg-info/top_level.txt
