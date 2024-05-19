@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+otpwidget/OTPWidgetAPIClient.py
+otpwidget/__init__.py
+otpwidget.egg-info/PKG-INFO
+otpwidget.egg-info/SOURCES.txt
+otpwidget.egg-info/dependency_links.txt
+otpwidget.egg-info/requires.txt
+otpwidget.egg-info/top_level.txt
