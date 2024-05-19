@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: quantization
+Version: 0.0.1
+Summary: 
+License: MIT
+Author: hupe1980
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: torch (>=2.3.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# quantization
