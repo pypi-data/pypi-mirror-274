@@ -1,0 +1,2 @@
+[console_scripts]
+gphotos-sync = gphotos_sync.__main__:main
