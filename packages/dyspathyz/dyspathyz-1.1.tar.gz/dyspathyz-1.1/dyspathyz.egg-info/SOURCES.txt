@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dyspathyz/__init__.py
+dyspathyz/main.py
+dyspathyz.egg-info/PKG-INFO
+dyspathyz.egg-info/SOURCES.txt
+dyspathyz.egg-info/dependency_links.txt
+dyspathyz.egg-info/requires.txt
+dyspathyz.egg-info/top_level.txt
