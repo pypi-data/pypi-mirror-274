@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+opiniatez/__init__.py
+opiniatez/main.py
+opiniatez.egg-info/PKG-INFO
+opiniatez.egg-info/SOURCES.txt
+opiniatez.egg-info/dependency_links.txt
+opiniatez.egg-info/requires.txt
+opiniatez.egg-info/top_level.txt
