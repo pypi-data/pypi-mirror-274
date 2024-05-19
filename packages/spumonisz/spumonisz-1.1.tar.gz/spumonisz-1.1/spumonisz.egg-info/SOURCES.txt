@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spumonisz/__init__.py
+spumonisz/main.py
+spumonisz.egg-info/PKG-INFO
+spumonisz.egg-info/SOURCES.txt
+spumonisz.egg-info/dependency_links.txt
+spumonisz.egg-info/requires.txt
+spumonisz.egg-info/top_level.txt
