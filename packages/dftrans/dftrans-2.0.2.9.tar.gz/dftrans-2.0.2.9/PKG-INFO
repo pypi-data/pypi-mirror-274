@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dftrans
+Version: 2.0.2.9
+Summary: 用于批量处理excel、sql数据库表、jsonl、csv等数据源的文件，并输出到数据库表或这excel文件
+Home-page: https://gitee.com/Frank_583983716/dftrans
+Author: Frank Gong
+Author-email: 583983716@qq.com
+License: BSD
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+轻量级ETL工具，用于批量处理excel、sql数据库表、jsonl、csv等数据源的文件，并输出到数据库表或excel文件，可以对相关功能进行持续扩展
