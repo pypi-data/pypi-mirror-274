@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/ci.yml
+.github/workflows/test.yml
+src/handlebars/__init__.py
+src/handlebars/handlebars_js.py
+src/handlebars.egg-info/PKG-INFO
+src/handlebars.egg-info/SOURCES.txt
+src/handlebars.egg-info/dependency_links.txt
+src/handlebars.egg-info/requires.txt
+src/handlebars.egg-info/top_level.txt
+tests/basic_test.py
