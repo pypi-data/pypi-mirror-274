@@ -1,0 +1,7 @@
+openai_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_schema/chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_schema/chat/completion.py,sha256=TqsRebU-qlBS7DQBMJPsY5LS_c-OGGKJGwPNnXdoD40,1940
+openai_schema-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+openai_schema-0.1.1.dist-info/METADATA,sha256=o2AjKWeem7cCCjdL15l8rUaetgw6O_7N5PMX_v4ZX8Y,451
+openai_schema-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+openai_schema-0.1.1.dist-info/RECORD,,
