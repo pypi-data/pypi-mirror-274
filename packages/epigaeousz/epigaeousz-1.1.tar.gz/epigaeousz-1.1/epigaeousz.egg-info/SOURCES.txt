@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+epigaeousz/__init__.py
+epigaeousz/main.py
+epigaeousz.egg-info/PKG-INFO
+epigaeousz.egg-info/SOURCES.txt
+epigaeousz.egg-info/dependency_links.txt
+epigaeousz.egg-info/requires.txt
+epigaeousz.egg-info/top_level.txt
