@@ -1,0 +1,8 @@
+LICENSE
+README.md
+myswiki.py
+setup.py
+my_swiki.egg-info/PKG-INFO
+my_swiki.egg-info/SOURCES.txt
+my_swiki.egg-info/dependency_links.txt
+my_swiki.egg-info/top_level.txt
