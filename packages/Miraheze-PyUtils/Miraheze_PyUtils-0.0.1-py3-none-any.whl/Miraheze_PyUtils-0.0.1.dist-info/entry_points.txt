@@ -1,0 +1,3 @@
+[console_scripts]
+partial-reset-wiki = miraheze.salt.mwcli.partial_reset_wiki:main
+rename-wiki = miraheze.salt.mwcli.rename_wiki:main
