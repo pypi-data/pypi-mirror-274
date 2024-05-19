@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cpt_python"
+version = "0.0.1"
+authors = [
+  { name="Declan Scott", email="declanjscott@gmail.com" },
+]
+description = "A python package to connect to and parse payloads from CPT thermometers."
+readme = "README.md"
+requires-python = ">=3.8"
+
+
+[project.urls]
+Homepage = "https://github.com/declanjscott/cpt-python"
+Issues = "https://github.com/pypa/sampleproject/issues"
