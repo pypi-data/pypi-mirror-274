@@ -1,0 +1,13 @@
+wxauto/__init__.py,sha256=sWCfLnMj4_Vn_G_N1Je0NxvRHLOA1kDS5tnG8OyOiKY,148
+wxauto/a.dll,sha256=7zmCGKqeIEFkX0xnm6oCn4xu-azSCVDugVGCqFMtzWc,11776
+wxauto/color.py,sha256=9OEFyCnqykfODxXErrmY89q-oJ0lLiRsIm4es31xf0E,8728
+wxauto/elements.py,sha256=ImI1S9zaI2fv_gASkour1_FzgB2TRGmzqSnrLOp1mWw,24235
+wxauto/errors.py,sha256=rEfkIjgfs2BzJxRZ67GxrYTxJ1n6109Iflh291XU2bs,49
+wxauto/languages.py,sha256=41_43I9s8F_jX9a_I4uN8Kw3mnt2yPdU4NCnZOSFIfU,5489
+wxauto/uiautomation.py,sha256=8kDtxp9OAB4gpFbKqoNx62pLTZp0TYeRRc4LO9OT1tk,366752
+wxauto/utils.py,sha256=wEMCPgadSJIjPTGKDlmT_M_NrsCwAChVjxZ0Uq484AI,11545
+wxauto/wxauto.py,sha256=nE7aPn80EHZyoO3sa0m0RSn4iZ4qe4m5CHvr8Nk_5ro,30013
+wxauto-3.9.8.15.8.dist-info/METADATA,sha256=gYnb09-nRz7qLq-z2b9DI8h2yVw741ZSHeP2-X9_F58,3746
+wxauto-3.9.8.15.8.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+wxauto-3.9.8.15.8.dist-info/top_level.txt,sha256=gvzUUFeVZ43QovapBXaSEo4FYgJq_TxuvWNZ857Y3Zw,7
+wxauto-3.9.8.15.8.dist-info/RECORD,,
