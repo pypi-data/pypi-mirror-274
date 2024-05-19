@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cassianz/__init__.py
+cassianz/main.py
+cassianz.egg-info/PKG-INFO
+cassianz.egg-info/SOURCES.txt
+cassianz.egg-info/dependency_links.txt
+cassianz.egg-info/requires.txt
+cassianz.egg-info/top_level.txt
