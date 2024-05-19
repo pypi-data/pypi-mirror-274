@@ -1,0 +1,9 @@
+sequence_align-0.1.2.dist-info/METADATA,sha256=K7vQKXeDaqdTpTRKTmgYTkS8sh7m99tcWPorM_N-sdY,7493
+sequence_align-0.1.2.dist-info/WHEEL,sha256=2KdwICnFEHl2ghwQAXqeXd9gNxeAiTvogEqUIMDbYbo,94
+sequence_align-0.1.2.dist-info/license_files/LICENSE,sha256=j9q0KoZXpK8fT1GXnUEV0DfgbGQv8XIn35OREXVn920,11566
+sequence_align-0.1.2.dist-info/license_files/AUTHORS.md,sha256=zgfGnnTADSip5x0UBLZc4zlz8y5MHAa7c40hrPBddqE,59
+sequence_align/pairwise.py,sha256=Mji0Easoy3nQpWD5BAwOwHnnlRu95SLjy9Cvb2IMV98,6792
+sequence_align/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_align/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_align/_sequence_align.pyd,sha256=rD6kJIAtqd8kNW54g_d0vtYh1ABWzXNpVcTkiFJFLL4,199680
+sequence_align-0.1.2.dist-info/RECORD,,
