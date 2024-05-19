@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+labiovelarizez/__init__.py
+labiovelarizez/main.py
+labiovelarizez.egg-info/PKG-INFO
+labiovelarizez.egg-info/SOURCES.txt
+labiovelarizez.egg-info/dependency_links.txt
+labiovelarizez.egg-info/requires.txt
+labiovelarizez.egg-info/top_level.txt
