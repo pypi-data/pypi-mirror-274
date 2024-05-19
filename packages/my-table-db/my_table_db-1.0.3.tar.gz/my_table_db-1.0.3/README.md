@@ -1,0 +1,104 @@
+# Функция Library
+
+Этот Python-скрипт определяет функцию library, которая форматирует набор именованных аргументов и их соответствующих значений в строку. Выходная строка структурирована с определенным форматом, где каждая пара имя-значение разделена символом | и дополнена до выравнивания в столбцах.
+
+***
+### Установка
+` pip install my_table_db `
+
+
+## Использование
+Функция library принимает именованные аргументы (name_arg1, name_arg2, ..., name_arg7) и их соответствующие значения (arg1, arg2, ..., arg7). Она форматирует эти входные данные в аккуратную строку с каждой парой имя-значение, разделенной символом |. Функция может обрабатывать различное количество аргументов, от одного до семи пар.
+
+***
+
+# Параметры
+
+* name_arg1 до name_arg7: Опциональные строки, представляющие имена аргументов.
+* arg1 до arg7: Опциональные значения, соответствующие каждому имени.
+
+***
+
+# Возвращаемое значение
+Форматированная строка, выравнивающая предоставленные пары имя-значение в столбцы.
+
+***
+
+# Установка
+
+` pip install my_table_db `
+
+## Пример 1
+Пример использования функции library:
+
+```python
+from my_table_db import my_table_db
+
+print(my_table_db('ID', 1, 'Name', 'Alice', 'Salary', 50000))
+
+```
+### Вывод
+```shell
+ID:1         |        Name:Alice     |        Salary:50000
+
+```
+
+## Пример 2
+
+Содержимое таблицы
+```csv
+id  name    salary
+1   Alice   50000
+2   Bob     60000
+```
+Код с использованием my_table_db
+
+```python
+import psycopg2
+from my_table_db import my_table_db
+
+def fetch_data():
+    conn = None
+    try:
+        conn = con = psycopg2.connect(
+            dbname=...,
+            user=...,
+            password=...,
+            host=...,
+            port=...)
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM employees")
+        rows = cur.fetchall()
+        for row in rows:
+            print(my_table_db('ID', row[0], 'Name', row[1], 'Salary', row[2]))
+        cur.close()
+    except (Exception, psycopg2.DatabaseError) as error:
+        print(error)
+    finally:
+        if conn is not None:
+            conn.close()
+            print()
+            print("Database connection closed.")
+
+
+fetch_data()
+```
+
+#### Вывод
+
+```shell
+ID:1         |        Name:Alice     |        Salary:50000
+ID:2         |        Name:Bob       |        Salary:60000
+
+Database connection closed.
+```
+
+***
+
+# Заключение
+#### Функция my_table_db полезна для форматирования и отображения наборов пар имя-значение в структурированном и читаемом формате. Она может обрабатывать различное количество аргументов и гарантирует, что вывод останется выровненным и легко читаемым.
+
+***
+### Автор
+
+Автор: k0ng999
