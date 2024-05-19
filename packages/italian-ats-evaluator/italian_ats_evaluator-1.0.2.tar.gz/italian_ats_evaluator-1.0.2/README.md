@@ -1,0 +1,83 @@
+# italian-ats-evalautor
+This is an open source project to evaluate the performance of an italian ATS (Automatic Text Simplifier) on a set of texts.
+
+You can analyze a single text extracting the following features:
+- Overall:
+  - Number of tokens
+  - Number of tokens (including punctuation)
+  - Number of characters
+  - Number of characters (including punctuation)
+  - Number of words
+  - Number of syllables
+  - Number of unique lemmas
+  - Number of sentences
+- Readability:
+  - Type-Token Ratio (TTR)
+  - Gulpease Index
+  - Flesch-Vacca Index
+  - Lexical Density
+- Part of Speech (POS) distribution
+- Verbs distribution
+  - Active Verbs
+  - Passive Verbs
+- Italian Basic Vocabulary (VdB) by [Tullio De Mauro](https://dizionario.internazionale.it/)
+  - All
+  - FO (Fundamentals)
+  - AU (High Usage)
+  - AD (High Availability)
+
+
+You can also compare two texts and get the following metrics:
+- Semantic:
+  - Semantic Similarity 
+- Character diff:
+  - Edit Distance
+- Token diff:
+  - Amount of tokens added
+  - Amount of tokens removed
+  - Amount of VdB tokens removed
+  - Amount of VdB tokens added
+
+
+## Installation
+```bash
+pip install italian-ats-evaluator
+```
+
+## Usage
+
+```python
+import italian_ats_evaluator
+
+text_analyzed = italian_ats_evaluator.analyze_text("Il gatto mangia il topo")
+```
+
+```python
+import italian_ats_evaluator
+
+text_analyzed, simplified_analyzed, comparion =  italian_ats_evaluator.compare(
+    ref_text="Il felino mangia il roditore",
+    simplified_text="Il gatto mangia il topo",
+)
+```
+
+## Development
+Create a virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+Install the package in editable mode
+```bash
+pip install -e .
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
+## Acknowledgements
+This project is part of the research project "VerbACxSS: su verbi analitici, complessità, verbi sintetici, e semplificazione. Per l’accessibilità." funded by the Italian Ministry of University and Research (MUR) under the PRIN 2020 program.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
