@@ -1,0 +1,2 @@
+[console_scripts]
+RNASQLite = RNASQLite.cli:main
