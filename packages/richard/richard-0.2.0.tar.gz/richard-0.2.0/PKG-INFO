@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: richard
+Version: 0.2.0
+Summary: A Natural Language Understanding and Execution library
+Home-page: https://github.com/garfix/richard
+Author: Patrick van Bergen
+Author-email: patrick.vanbergen@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+
