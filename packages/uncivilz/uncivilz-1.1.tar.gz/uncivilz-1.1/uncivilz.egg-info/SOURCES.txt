@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+uncivilz/__init__.py
+uncivilz/main.py
+uncivilz.egg-info/PKG-INFO
+uncivilz.egg-info/SOURCES.txt
+uncivilz.egg-info/dependency_links.txt
+uncivilz.egg-info/requires.txt
+uncivilz.egg-info/top_level.txt
