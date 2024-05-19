@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+rikibot/__init__.py
+rikibot/__main__.py
+rikibot/core.py
+rikibot.egg-info/PKG-INFO
+rikibot.egg-info/SOURCES.txt
+rikibot.egg-info/dependency_links.txt
+rikibot.egg-info/entry_points.txt
+rikibot.egg-info/top_level.txt
