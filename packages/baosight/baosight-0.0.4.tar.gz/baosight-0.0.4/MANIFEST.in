@@ -1,0 +1,7 @@
+include MANIFEST.in
+include *.md
+recursive-include * *.yaml *.ui
+prune test
+include LICENSE
+exclude pack.py
+exclude install.py
