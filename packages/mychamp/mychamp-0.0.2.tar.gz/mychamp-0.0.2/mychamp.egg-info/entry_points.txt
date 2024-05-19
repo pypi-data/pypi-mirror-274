@@ -1,0 +1,2 @@
+[console_scripts]
+mychamp = mychamp.__main__:main
