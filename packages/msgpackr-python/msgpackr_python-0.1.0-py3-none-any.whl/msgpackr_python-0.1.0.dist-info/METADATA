@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: msgpackr-python
+Version: 0.1.0
+Summary: Re-implementation of kriszyp's msgpackr Javascript module
+Home-page: https://github.com/Aedial/msgpackr-python
+License: MIT
+Keywords: python,msgpack,msgpackr
+Author: Aedial
+Author-email: aedial.dev@gmail.com
+Requires-Python: >=3.8.10,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Bug Tracker, https://github.com/Aedial/msgpackr-python/issues
+Project-URL: Repository, https://github.com/Aedial/msgpackr-python
+Description-Content-Type: text/markdown
+
+# msgpackr-python
+Re-implementation of kriszyp's msgpackr Javascript module
+
