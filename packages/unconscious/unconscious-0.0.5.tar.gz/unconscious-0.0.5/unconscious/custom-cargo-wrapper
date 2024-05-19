@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Run maturin build
+maturin build --release
+
+# Run the actual cargo build command
+# cargo build "$@"
