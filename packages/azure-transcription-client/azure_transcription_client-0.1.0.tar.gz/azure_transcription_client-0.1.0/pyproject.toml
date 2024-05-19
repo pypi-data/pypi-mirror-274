@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+
+[project]
+name = "azure-transcription-client"
+description = "Speech to Text API v3.0"
+readme = "README.md"
+authors = [{ name = "Vito Stamatti", email = "vitostamatti@gmail.com" }]
+dependencies = [
+    "certifi>=2017.4.17",
+    "python-dateutil>=2.1",
+    "six>=1.10",
+    "urllib3>=1.23",
+]
+requires-python = ">= 3.10"
+version = "0.1.0"
+
+
+[project.urls]
+Homepage = "https://github.com/vitostamatti/azure-transcription-python-client"
+"Source code" = "https://github.com/vitostamatti/azure-transcription-python-client"
