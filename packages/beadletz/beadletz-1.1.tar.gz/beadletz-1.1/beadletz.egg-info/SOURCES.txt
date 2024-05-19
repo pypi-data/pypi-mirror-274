@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+beadletz/__init__.py
+beadletz/main.py
+beadletz.egg-info/PKG-INFO
+beadletz.egg-info/SOURCES.txt
+beadletz.egg-info/dependency_links.txt
+beadletz.egg-info/requires.txt
+beadletz.egg-info/top_level.txt
