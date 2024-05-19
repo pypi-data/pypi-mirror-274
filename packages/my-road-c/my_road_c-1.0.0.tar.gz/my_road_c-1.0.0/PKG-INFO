@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: my_road_c
+Version: 1.0.0
+Summary: A small library for formatting decimals
+Author: k0ng999
+Author-email: baydar_14@mail.ru
+License: MIT
+License-File: LICENSE
