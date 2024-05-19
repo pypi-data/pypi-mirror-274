@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pointsz/__init__.py
+pointsz/main.py
+pointsz.egg-info/PKG-INFO
+pointsz.egg-info/SOURCES.txt
+pointsz.egg-info/dependency_links.txt
+pointsz.egg-info/requires.txt
+pointsz.egg-info/top_level.txt
