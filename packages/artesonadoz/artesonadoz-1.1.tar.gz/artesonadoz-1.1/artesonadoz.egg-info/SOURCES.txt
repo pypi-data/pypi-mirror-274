@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+artesonadoz/__init__.py
+artesonadoz/main.py
+artesonadoz.egg-info/PKG-INFO
+artesonadoz.egg-info/SOURCES.txt
+artesonadoz.egg-info/dependency_links.txt
+artesonadoz.egg-info/requires.txt
+artesonadoz.egg-info/top_level.txt
