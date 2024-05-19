@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "stockprophet-api"
+version = "0.1.0"
+description = "StockProphet.ai HTTP and Websocket API based on OpenApi 2.1 and FastApi"
+authors = ["Mac <mac@macanderson.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.63.0"
+beanie = "^0.4.0"
+scipy = "^1.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+uvicorn = "^0.13.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

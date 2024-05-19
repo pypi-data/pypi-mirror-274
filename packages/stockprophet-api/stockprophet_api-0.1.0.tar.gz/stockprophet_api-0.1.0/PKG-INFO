@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: stockprophet-api
+Version: 0.1.0
+Summary: StockProphet.ai HTTP and Websocket API based on OpenApi 2.1 and FastApi
+Author: Mac
+Author-email: mac@macanderson.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beanie (>=0.4.0,<0.5.0)
+Requires-Dist: fastapi (>=0.63.0,<0.64.0)
+Requires-Dist: scipy (>=1.6.0,<2.0.0)
