@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: mintlemon-turkish-nlp
+Version: 0.2.8
+Summary: Mint & Lemon Turkish NLP Library developed by Mint & Lemon Development Team.
+Home-page: https://github.com/Teknofest-Nane-Limon/mintlemon-turkish-nlp
+Author: Mint&Lemon
+License: Apache License, Version 2.0
+Project-URL: Tracker, https://github.com/Teknofest-Nane-Limon/mintlemon-turkish-nlp/issues
+Project-URL: Documentation, https://mintlemon-turkish-nlp.readthedocs.io
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: numpy >=1.20.0
+Requires-Dist: regex >=2021.4.4
+Requires-Dist: zeyrek >=0.1.3
+Requires-Dist: nltk >=3.8.1
+Requires-Dist: pandas >=1.3.4
+Requires-Dist: scikit-learn >=1.2.0
+Provides-Extra: dev
+Requires-Dist: yapf ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+<h1 align = 'Center'>Mintlemon Türkçe Doğal Dil İşleme Kütüphanesi</h1>
+
+|    | 
+|----|
+|![1](https://user-images.githubusercontent.com/83168207/229226994-d6023420-c88b-48c8-abaf-8429ce050c1f.jpg)|Türkçe Doğal Dil İşleme Kütüphanesi.|
+
+--- 
+
+## Mint-Lemon-Turkish NLP Kütüphanesine'e Katkı Sağlama
+
+Bu projeye doğrudan katkıda bulunmak istiyorsanız, lütfen [CONTRIBUTING](CONTRIBUTING.rst) dosyasına bir göz atın.
+
+
+## Dökümantasyon & Örnekler
+
+* Ek olarak, [ilgili klasöre](examples/) bakarak örneklerden yararlanabilirsiniz.
+
+
+
+|    | 
+|----|
+|<img width="1792" alt="Ekran Resmi 2023-04-06 13 00 48" src="https://user-images.githubusercontent.com/83168207/230344345-4dfe39a3-46f4-4147-bd47-61ee9548c948.png">|
+
+
+
+### Lisans
+
+Bu proje [LİSANS](LICENSE) altında açık kaynaklıdır.
+
+-   Lütfen dikkat edin, bu proje "olduğu gibi" sunulmaktadır ve hiçbir garanti verilmez. (Bu yazılımın kullanımı lisans sözleşmesinin şartlarına tabidir.) Bu yazılım Apache 2.0 lisansı altında lisanslanmıştır. [LİSANS](LICENSE) sayfasına bakın.
+
+### Referanslar
+
+* [Koehn, P. ve Schroeder, J. (n.d.)](https://github.com/mediacloud/sentence-splitter). 
+* ["Türkçe Deasciification Yöntemleri Üzerine Karşılaştırmalı Bir Çalışma"](https://www.sciencedirect.com/science/article/pii/S221509862200101X), Türkçe Deasciification için çeşitli yöntemlerin karşılaştırmasını sunan bir bilimsel makale.
+* [Python ile örnek Türkçe Deasciifier Uygulaması.](https://github.com/aysnrgenc/TurkishDeasciifier)
+* [Bu dizinde bir istatistiksel modele dayalı Python'da bir Türkçe Deasciifier uygulaması bulunmaktadır.](https://github.com/emres/turkish-deasciifier)
+* [Turkish Language Repository ~ TDD.](https://tdd.ai)
