@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ministatez/__init__.py
+ministatez/main.py
+ministatez.egg-info/PKG-INFO
+ministatez.egg-info/SOURCES.txt
+ministatez.egg-info/dependency_links.txt
+ministatez.egg-info/requires.txt
+ministatez.egg-info/top_level.txt
