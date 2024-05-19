@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+selfwardz/__init__.py
+selfwardz/main.py
+selfwardz.egg-info/PKG-INFO
+selfwardz.egg-info/SOURCES.txt
+selfwardz.egg-info/dependency_links.txt
+selfwardz.egg-info/requires.txt
+selfwardz.egg-info/top_level.txt
