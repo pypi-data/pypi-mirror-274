@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+skeltonicsz/__init__.py
+skeltonicsz/main.py
+skeltonicsz.egg-info/PKG-INFO
+skeltonicsz.egg-info/SOURCES.txt
+skeltonicsz.egg-info/dependency_links.txt
+skeltonicsz.egg-info/requires.txt
+skeltonicsz.egg-info/top_level.txt
