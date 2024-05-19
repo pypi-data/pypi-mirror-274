@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: utia-mint
+Version: 0.1.0
+Summary: 
+Author: Mark Baggett
+Author-email: mbagget1@utk.edu
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: black (>=24.4.2,<25.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: lxml (>=5.2.2,<6.0.0)
+Requires-Dist: ruff (>=0.4.4,<0.5.0)
+Description-Content-Type: text/markdown
+
+# UTIA Mint
+
+## About
+
+Utility to help UT Extension agents think about how they might model DOI minting for their projects.
+
+## Installation
+
+Easiest way to install is to use `pipx`:
+
+```shell
+pipx install utia_mint
+```
+
+If not, you can install with `pip`:
+
+```shell
+
+pip install utia_mint
+```
+
+## Usage
+
+To use, download a CSV file that follows the UTIA model and run
+
+```shell
+mintdoi batch -c example.csv -o doibatch.xml
+```
+
+For more information, run
+
+```shell
+mintdoi --help
+```
+
