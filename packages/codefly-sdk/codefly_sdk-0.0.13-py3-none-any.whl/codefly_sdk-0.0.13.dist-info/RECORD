@@ -1,0 +1,5 @@
+codefly_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codefly_sdk/codefly.py,sha256=SQxxlWfS6gfZaDQrHpVZHazKU3CwEcVGVIFJFQ7dHa8,5994
+codefly_sdk-0.0.13.dist-info/METADATA,sha256=atTbEI0rZxsicqYWmG6elz8BjOq5Z_DJcF7CjC9bANQ,445
+codefly_sdk-0.0.13.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+codefly_sdk-0.0.13.dist-info/RECORD,,
