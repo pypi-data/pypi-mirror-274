@@ -1,0 +1,7 @@
+typescript/demo-app/
+typescript/src/version.ts
+dist/
+test/
+package-lock.json
+typescript/test/browser/demo-app/public
+micromamba/
