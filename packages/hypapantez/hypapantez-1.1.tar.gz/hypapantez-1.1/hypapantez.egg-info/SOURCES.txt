@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hypapantez/__init__.py
+hypapantez/main.py
+hypapantez.egg-info/PKG-INFO
+hypapantez.egg-info/SOURCES.txt
+hypapantez.egg-info/dependency_links.txt
+hypapantez.egg-info/requires.txt
+hypapantez.egg-info/top_level.txt
