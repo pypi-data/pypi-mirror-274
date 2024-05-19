@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+infinituplez/__init__.py
+infinituplez/main.py
+infinituplez.egg-info/PKG-INFO
+infinituplez.egg-info/SOURCES.txt
+infinituplez.egg-info/dependency_links.txt
+infinituplez.egg-info/requires.txt
+infinituplez.egg-info/top_level.txt
