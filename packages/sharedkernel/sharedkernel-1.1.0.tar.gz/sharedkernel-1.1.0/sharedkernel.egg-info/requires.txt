@@ -1,0 +1,7 @@
+numpy
+requests
+pymongo
+fastapi==0.89.1
+PyJWT
+pymilvus
+chromadb
