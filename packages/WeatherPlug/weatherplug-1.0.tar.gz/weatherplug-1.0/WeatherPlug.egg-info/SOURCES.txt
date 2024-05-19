@@ -1,0 +1,9 @@
+README.md
+setup.py
+GetWeather/Main.py
+GetWeather/__init__.py
+WeatherPlug.egg-info/PKG-INFO
+WeatherPlug.egg-info/SOURCES.txt
+WeatherPlug.egg-info/dependency_links.txt
+WeatherPlug.egg-info/requires.txt
+WeatherPlug.egg-info/top_level.txt
