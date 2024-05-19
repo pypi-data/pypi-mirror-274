@@ -1,0 +1,8 @@
+compute_horde_facilitator_sdk-0.0.3.dist-info/METADATA,sha256=AWuDeAp7LCV7oxS-HpSeymJr2ezNT3OffRxdzms-nNw,1450
+compute_horde_facilitator_sdk-0.0.3.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+compute_horde_facilitator_sdk-0.0.3.dist-info/licenses/LICENSE,sha256=U-bNzrKLs0FWj4Fe9N0H_tc0AFlwO40lba0WM57eilY,1079
+compute_horde_facilitator_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compute_horde_facilitator_sdk/_internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compute_horde_facilitator_sdk/_internal/sdk.py,sha256=iD_WUx2sHgvdQ8upcFXNnE4uO8Nnm1jbBlHpCna-fUE,3498
+compute_horde_facilitator_sdk/v1.py,sha256=rCWsNPK19Mpkvp8xAw7z3oFlZ1fY6c5daaCk8VU4Vpo,139
+compute_horde_facilitator_sdk-0.0.3.dist-info/RECORD,,
