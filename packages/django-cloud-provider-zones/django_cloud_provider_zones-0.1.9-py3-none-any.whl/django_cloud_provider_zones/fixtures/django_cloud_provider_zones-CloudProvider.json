@@ -1,0 +1,17 @@
+[
+{
+    "model": "django_cloud_provider_zones.cloudprovider",
+    "pk": "aws",
+    "fields": {}
+},
+{
+    "model": "django_cloud_provider_zones.cloudprovider",
+    "pk": "azu",
+    "fields": {}
+},
+{
+    "model": "django_cloud_provider_zones.cloudprovider",
+    "pk": "gcp",
+    "fields": {}
+}
+]
