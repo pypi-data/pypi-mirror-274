@@ -1,0 +1,16 @@
+email_draft_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+email_draft_generator/__main__.py,sha256=Z9B3860wC46ZPC-jFKiB0LKXiV1_AZtVgS5b-i1xjTo,96
+email_draft_generator/email_creator.py,sha256=pK_xoKzY0vVUK8LIZknFM-yapBRK1lEWST_7EOzUo8s,852
+email_draft_generator/gmail.py,sha256=wVEaK_O8FA_k2Yanaaadn6AnXDJ9ZnDODQ7uhYE7EQk,2621
+email_draft_generator/mail_util.py,sha256=kBN6J3N4xmhSq3gXQtUeyE93bfXLInu-kwPjKgQqsMY,420
+email_draft_generator/main.py,sha256=0wS4j36WiVwJZ2CQlQS7pcx9iue7UAgCC7U0WNus_68,2040
+email_draft_generator/file_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+email_draft_generator/file_parser/__main__.py,sha256=z4d365xJHflp4mG-vlQHENlcub1d3dEjQMwJtp4ufGM,120
+email_draft_generator/file_parser/csv_parser.py,sha256=a8JshxCuMzOviRk38JmO2KPGIaON83zUBtzLQ90gKW8,344
+email_draft_generator/file_parser/main.py,sha256=eWfPM8ToDN2JFVgt4dZp_WO_d_eIFBApho-HtLA0g1k,866
+email_draft_generator/file_parser/text_parser.py,sha256=Oou9_VFz93VNgE186XzxChVSJPlhHuB9Y-rpST25vS0,531
+email_draft_generator-0.0.4.dist-info/METADATA,sha256=9BzUqZEe87EyC8rzgEYdsWnTd4T_ANiL8iie6Z-VSCE,4318
+email_draft_generator-0.0.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+email_draft_generator-0.0.4.dist-info/entry_points.txt,sha256=oE3b-p0uwJPdKHh7KQeVJqIIurkMF6b1rafKeqFy5Wo,132
+email_draft_generator-0.0.4.dist-info/licenses/LICENSE,sha256=59Y7GAArsJXpSjjc58K1UpPxiDpXdaSlBa0Yc465AAE,1066
+email_draft_generator-0.0.4.dist-info/RECORD,,
