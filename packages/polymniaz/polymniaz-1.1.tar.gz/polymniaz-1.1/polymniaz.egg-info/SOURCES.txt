@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+polymniaz/__init__.py
+polymniaz/main.py
+polymniaz.egg-info/PKG-INFO
+polymniaz.egg-info/SOURCES.txt
+polymniaz.egg-info/dependency_links.txt
+polymniaz.egg-info/requires.txt
+polymniaz.egg-info/top_level.txt
