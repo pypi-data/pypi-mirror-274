@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+predestinationismz/__init__.py
+predestinationismz/main.py
+predestinationismz.egg-info/PKG-INFO
+predestinationismz.egg-info/SOURCES.txt
+predestinationismz.egg-info/dependency_links.txt
+predestinationismz.egg-info/requires.txt
+predestinationismz.egg-info/top_level.txt
