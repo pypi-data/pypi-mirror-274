@@ -1,0 +1,3 @@
+[console_scripts]
+mintdoi=utia_mint.mintdoi:cli
+
