@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+physisz/__init__.py
+physisz/main.py
+physisz.egg-info/PKG-INFO
+physisz.egg-info/SOURCES.txt
+physisz.egg-info/dependency_links.txt
+physisz.egg-info/requires.txt
+physisz.egg-info/top_level.txt
