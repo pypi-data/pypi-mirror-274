@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+ergate/__init__.py
+ergate.egg-info/PKG-INFO
+ergate.egg-info/SOURCES.txt
+ergate.egg-info/dependency_links.txt
+ergate.egg-info/top_level.txt
