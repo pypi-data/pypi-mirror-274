@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tipsifierz/__init__.py
+tipsifierz/main.py
+tipsifierz.egg-info/PKG-INFO
+tipsifierz.egg-info/SOURCES.txt
+tipsifierz.egg-info/dependency_links.txt
+tipsifierz.egg-info/requires.txt
+tipsifierz.egg-info/top_level.txt
