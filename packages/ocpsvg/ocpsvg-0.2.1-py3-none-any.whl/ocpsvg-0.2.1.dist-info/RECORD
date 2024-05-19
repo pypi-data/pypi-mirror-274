@@ -1,0 +1,9 @@
+ocpsvg/__init__.py,sha256=YcPysn_LwZsnggFeIjOLNEg3ptKv6YjJJO9TsKm-npM,320
+ocpsvg/hlr.py,sha256=4kEa5GPxI82G8mSXUmFqZSlNiJ3g1zidXjKA-vGV_O4,11286
+ocpsvg/ocp.py,sha256=xMdACXjnFHw2WtsRH8fbB9pNq_LP3jTBqZMIoqtrvKM,13896
+ocpsvg/svg.py,sha256=tGhI0p72Ollf7eellAQ2adMzLaFIj06XVD0hY3LQsbQ,25438
+ocpsvg-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ocpsvg-0.2.1.dist-info/METADATA,sha256=e45Jzi5Hz-dzAyWVYotmcZ8Jf7_RDKIMon1nCWNpq3M,756
+ocpsvg-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ocpsvg-0.2.1.dist-info/top_level.txt,sha256=eDOle-SoYU1ibnjPR30GnwzNeQH92QVZIADcV5XfQho,7
+ocpsvg-0.2.1.dist-info/RECORD,,
