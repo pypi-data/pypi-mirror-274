@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+covalentlyz/__init__.py
+covalentlyz/main.py
+covalentlyz.egg-info/PKG-INFO
+covalentlyz.egg-info/SOURCES.txt
+covalentlyz.egg-info/dependency_links.txt
+covalentlyz.egg-info/requires.txt
+covalentlyz.egg-info/top_level.txt
