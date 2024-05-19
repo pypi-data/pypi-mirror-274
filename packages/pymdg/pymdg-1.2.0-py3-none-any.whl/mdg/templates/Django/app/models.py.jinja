@@ -1,0 +1,58 @@
+from django.utils.translation import gettext_lazy as _
+from django.db import models
+
+{% for cls in package.classes %}{% if cls.generalization != None and cls.generalization.package != package %}
+from {{ cls.generalization.package.name | case_package }}.models import {{ cls.generalization.name | case_class }}{% endif %}{% for attr in cls.attributes %}{% if attr.classification and attr.classification.package != package %}
+from {{ attr.classification.package.name | case_package }}.models import ENUM_{{ attr.classification.name | case_class }}{% endif %}{% endfor %}{% endfor %}
+
+{% for enum in package.enumerations %}class ENUM_{{ enum.name | case_class }}(models.TextChoices):{% for attr in enum.values %}
+    {{ attr | case_class | replace("/","_") | replace("-","_") }} = '{{ attr }}', _('{{ attr }}'){% endfor %}
+
+{% endfor %}{% for cls in package.classes %}{% if cls.is_abstract %}class {{ cls.name | case_class }}( models.Model ):{% for attr in cls.attributes %}{% if attr.classification %}
+    {{ attr.name | snakecase }} = models.CharField( max_length=100, choices=ENUM_{{ attr.classification.name}}.choices, blank=True, null=True ){% else %}
+    {{ attr.name | snakecase }} = models.{% if "Auto" in attr.stereotypes %}AutoField{% else %}{{ attr.dest_type }}{% endif %}( {% if attr.is_id %}primary_key=True, {% else %}blank=True, null=True, {% endif %}{% if attr.length %}max_length={{ attr.length }}{% endif %} )
+{% endif %}{% endfor %}
+    class Meta:
+        abstract = True
+{% endif %}{% endfor %}
+
+{% for cls in package.classes %}{% if not cls.is_abstract and cls.specialized_by | length > 0 %}class {{ cls.name | case_class }}( {% if cls.generalization %}{{ cls.generalization.name | case_class }}{% else %}models.Model{% endif %} ):{% for attr in cls.attributes %}{% if attr.classification %}
+    {{ attr.name | snakecase }} = models.CharField( max_length=100, choices=ENUM_{{ attr.classification.name | case_class }}.choices, blank=True, null=True ){% else %}
+    {{ attr.name | snakecase }} = models.{% if "Auto" in attr.stereotypes %}AutoField{% else %}{{ attr.dest_type }}{% endif %}( {% if attr.is_id %}primary_key=True, {% else %}blank=True, null=True, {% endif %}{% if attr.dest_type == "DecimalField" %}max_digits=10, decimal_places=2, {% endif %}{% if attr.length %}max_length={{ attr.length }}{% endif %}{% if attr.validations != [] %}validators=[validate_even]{% endif %} )
+{% endif %}{% endfor %}{% for rel in cls.associations_from %}{% if rel.association_type.name == "ASSOCIATION" %}{% if rel.cardinality.name == "ONE_TO_ONE" %}
+    {{ rel.destination_name | snakecase }} = models.OneToOneField( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', on_delete=models.CASCADE, blank=True, null=True ){% elif rel.cardinality.name == "MANY_TO_ONE" %}
+    {{ rel.destination_name | snakecase }} = models.ForeignKey( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', related_name='{{ rel.source_name | snakecase }}', on_delete=models.CASCADE, blank=True, null=True ){% elif rel.cardinality.name == "MANY_TO_MANY" %}
+    {{ rel.destination_name | snakecase }} = models.ManyToManyField( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', blank=True ){% endif %}{% elif rel.association_type.name == "COMPOSITION" %}{% if rel.cardinality.name == "ONE_TO_ONE" %}
+    {{ rel.destination_name | snakecase }} = models.OneToOneField( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', related_name='{{ rel.source_name | snakecase }}', on_delete=models.CASCADE ){% else %}
+    {{ rel.destination_name | snakecase }} = models.ForeignKey( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', related_name='{{ rel.source_name | snakecase }}', on_delete=models.CASCADE ){% endif %}
+{% endif %}{% endfor %}{% for rel in cls.associations_to %}{% if rel.association_type.name != "COMPOSITION" %}{% if rel.cardinality.name == "ONE_TO_MANY" %}
+    {{ rel.source_name | snakecase }} = models.ForeignKey( '{{ rel.source.package.name | case_package }}.{{ rel.source.name | case_class }}', on_delete=models.CASCADE, related_name='{{ rel.destination_name | snakecase }}', blank=True, null=True ){% endif %}
+{% endif %}{% endfor %}{% set uniques = [] %}{% for attr in cls.attributes %}{% if "UniqueKey" in attr.stereotypes %}{{ uniques.append( attr.name ) | default("", True) }}{% endif %}{% endfor %}{% for rel in cls.associations_from %}{% if "UniqueKey" in rel.destination_stereotypes %}{{ uniques.append( rel.destination_name ) | default("", True) }}{% endif %}{% endfor %}{% if uniques != [] %}
+
+    class Meta():
+        constraints = [
+                models.UniqueConstraint(fields=[{% for unique in uniques%}'{{ unique | snakecase }}',{% endfor %}], name='unique {% for unique in uniques%}{{ unique | snakecase }}__{% endfor %}')
+            ]
+{% endif %}
+
+{% endif %}{% endfor %}
+{% for cls in package.classes %}{% if not cls.is_abstract and cls.specialized_by | length == 0 %}class {{ cls.name | case_class }}( {% if cls.generalization %}{{ cls.generalization.name | case_class }}{% else %}models.Model{% endif %} ):{% for attr in cls.attributes %}{% if attr.classification %}
+    {{ attr.name | snakecase }} = models.CharField( max_length=100, choices=ENUM_{{ attr.classification.name | case_class }}.choices, blank=True, null=True ){% else %}
+    {{ attr.name | snakecase }} = models.{% if "Auto" in attr.stereotypes %}AutoField{% else %}{{ attr.dest_type }}{% endif %}( {% if attr.is_id %}primary_key=True, {% else %}blank=True, null=True, {% endif %}{% if attr.dest_type == "DecimalField" %}max_digits=10, decimal_places=2, {% endif %}{% if attr.length %}max_length={{ attr.length }}{% endif %}{% if attr.validations != [] %}validators=[validate_even]{% endif %} )
+{% endif %}{% endfor %}{% for rel in cls.associations_from %}{% if rel.association_type.name == "ASSOCIATION" %}{% if rel.cardinality.name == "ONE_TO_ONE" %}
+    {{ rel.destination_name | snakecase }} = models.OneToOneField( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', on_delete=models.CASCADE, blank=True, null=True ){% elif rel.cardinality.name == "MANY_TO_ONE" %}
+    {{ rel.destination_name | snakecase }} = models.ForeignKey( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', related_name='{{ rel.source_name | snakecase }}', on_delete=models.CASCADE, blank=True, null=True ){% elif rel.cardinality.name == "MANY_TO_MANY" %}
+    {{ rel.destination_name | snakecase }} = models.ManyToManyField( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', blank=True ){% endif %}{% elif rel.association_type.name == "COMPOSITION" %}{% if rel.cardinality.name == "ONE_TO_ONE" %}
+    {{ rel.destination_name | snakecase }} = models.OneToOneField( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', related_name='{{ rel.source_name | snakecase }}', on_delete=models.CASCADE ){% else %}
+    {{ rel.destination_name | snakecase }} = models.ForeignKey( '{{ rel.destination.package.name | case_package }}.{{ rel.destination.name | case_class }}', related_name='{{ rel.source_name | snakecase }}', on_delete=models.CASCADE ){% endif %}
+{% endif %}{% endfor %}{% for rel in cls.associations_to %}{% if rel.association_type.name != "COMPOSITION" %}{% if rel.cardinality.name == "ONE_TO_MANY" %}
+    {{ rel.source_name | snakecase }} = models.ForeignKey( '{{ rel.source.package.name | case_package }}.{{ rel.source.name | case_class }}', on_delete=models.CASCADE, related_name='{{ rel.destination_name | snakecase }}', blank=True, null=True ){% endif %}
+{% endif %}{% endfor %}{% set uniques = [] %}{% for attr in cls.attributes %}{% if "UniqueKey" in attr.stereotypes %}{{ uniques.append( attr.name ) | default("", True) }}{% endif %}{% endfor %}{% for rel in cls.associations_from %}{% if "UniqueKey" in rel.destination_stereotypes %}{{ uniques.append( rel.destination_name ) | default("", True) }}{% endif %}{% endfor %}{% if uniques != [] %}
+
+    class Meta():
+        constraints = [
+                models.UniqueConstraint(fields=[{% for unique in uniques%}'{{ unique | snakecase }}',{% endfor %}], name='unique {% for unique in uniques%}{{ unique | snakecase }}__{% endfor %}')
+            ]
+{% endif %}
+
+{% endif %}{% endfor %}
