@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+blamsz/__init__.py
+blamsz/main.py
+blamsz.egg-info/PKG-INFO
+blamsz.egg-info/SOURCES.txt
+blamsz.egg-info/dependency_links.txt
+blamsz.egg-info/requires.txt
+blamsz.egg-info/top_level.txt
