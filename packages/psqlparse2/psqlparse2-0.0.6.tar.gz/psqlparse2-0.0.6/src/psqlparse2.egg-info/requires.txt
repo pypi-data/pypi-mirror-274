@@ -1,0 +1,10 @@
+protobuf<5.0,>=4.21.6
+types-protobuf<5.0,>=4.21.6
+
+[dev]
+black>=24.4.2
+ruff>=0.4.4
+mypy>=1.10.0
+pytest<9,>=8.2
+pytest-cov<6,>=5.0.0
+grpcio-tools<1.70,>=1.60.0
