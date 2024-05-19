@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+deixisz/__init__.py
+deixisz/main.py
+deixisz.egg-info/PKG-INFO
+deixisz.egg-info/SOURCES.txt
+deixisz.egg-info/dependency_links.txt
+deixisz.egg-info/requires.txt
+deixisz.egg-info/top_level.txt
