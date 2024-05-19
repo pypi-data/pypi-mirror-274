@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chippyz/__init__.py
+chippyz/main.py
+chippyz.egg-info/PKG-INFO
+chippyz.egg-info/SOURCES.txt
+chippyz.egg-info/dependency_links.txt
+chippyz.egg-info/requires.txt
+chippyz.egg-info/top_level.txt
