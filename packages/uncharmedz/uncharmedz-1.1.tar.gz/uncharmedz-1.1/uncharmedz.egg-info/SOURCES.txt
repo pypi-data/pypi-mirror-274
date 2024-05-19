@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+uncharmedz/__init__.py
+uncharmedz/main.py
+uncharmedz.egg-info/PKG-INFO
+uncharmedz.egg-info/SOURCES.txt
+uncharmedz.egg-info/dependency_links.txt
+uncharmedz.egg-info/requires.txt
+uncharmedz.egg-info/top_level.txt
