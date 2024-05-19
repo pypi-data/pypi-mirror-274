@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+epistolizedz/__init__.py
+epistolizedz/main.py
+epistolizedz.egg-info/PKG-INFO
+epistolizedz.egg-info/SOURCES.txt
+epistolizedz.egg-info/dependency_links.txt
+epistolizedz.egg-info/requires.txt
+epistolizedz.egg-info/top_level.txt
