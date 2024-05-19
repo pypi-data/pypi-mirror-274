@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+netez/__init__.py
+netez/main.py
+netez.egg-info/PKG-INFO
+netez.egg-info/SOURCES.txt
+netez.egg-info/dependency_links.txt
+netez.egg-info/requires.txt
+netez.egg-info/top_level.txt
