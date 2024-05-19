@@ -1,0 +1,9 @@
+setup.py
+src/data_loader_lib.egg-info/PKG-INFO
+src/data_loader_lib.egg-info/SOURCES.txt
+src/data_loader_lib.egg-info/dependency_links.txt
+src/data_loader_lib.egg-info/requires.txt
+src/data_loader_lib.egg-info/top_level.txt
+tests/test_bigquery_loader.py
+tests/test_local_file_loader.py
+tests/test_sftp_file_loader.py
