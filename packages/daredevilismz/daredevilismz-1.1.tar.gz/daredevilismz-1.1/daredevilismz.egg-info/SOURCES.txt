@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+daredevilismz/__init__.py
+daredevilismz/main.py
+daredevilismz.egg-info/PKG-INFO
+daredevilismz.egg-info/SOURCES.txt
+daredevilismz.egg-info/dependency_links.txt
+daredevilismz.egg-info/requires.txt
+daredevilismz.egg-info/top_level.txt
