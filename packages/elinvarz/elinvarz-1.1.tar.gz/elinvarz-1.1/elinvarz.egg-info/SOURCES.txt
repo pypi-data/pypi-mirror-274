@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+elinvarz/__init__.py
+elinvarz/main.py
+elinvarz.egg-info/PKG-INFO
+elinvarz.egg-info/SOURCES.txt
+elinvarz.egg-info/dependency_links.txt
+elinvarz.egg-info/requires.txt
+elinvarz.egg-info/top_level.txt
