@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: zibuyu-llm
+Version: 2.1.20
+Summary: 子不语个人工具包-LLM
+Author: 子不语
+License: MIT
+Keywords: zibuyu
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: fake-useragent
+Requires-Dist: filetype
+Requires-Dist: idna
+Requires-Dist: importlib-resources
+Requires-Dist: requests
+Requires-Dist: urllib3
+Requires-Dist: zipp
+Requires-Dist: aiohttp
+
+个人工具-LLM调用
