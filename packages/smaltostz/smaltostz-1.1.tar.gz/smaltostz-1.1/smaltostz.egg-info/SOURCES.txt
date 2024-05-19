@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+smaltostz/__init__.py
+smaltostz/main.py
+smaltostz.egg-info/PKG-INFO
+smaltostz.egg-info/SOURCES.txt
+smaltostz.egg-info/dependency_links.txt
+smaltostz.egg-info/requires.txt
+smaltostz.egg-info/top_level.txt
