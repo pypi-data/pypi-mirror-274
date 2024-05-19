@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+denouementsz/__init__.py
+denouementsz/main.py
+denouementsz.egg-info/PKG-INFO
+denouementsz.egg-info/SOURCES.txt
+denouementsz.egg-info/dependency_links.txt
+denouementsz.egg-info/requires.txt
+denouementsz.egg-info/top_level.txt
