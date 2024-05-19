@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+branglingz/__init__.py
+branglingz/main.py
+branglingz.egg-info/PKG-INFO
+branglingz.egg-info/SOURCES.txt
+branglingz.egg-info/dependency_links.txt
+branglingz.egg-info/requires.txt
+branglingz.egg-info/top_level.txt
