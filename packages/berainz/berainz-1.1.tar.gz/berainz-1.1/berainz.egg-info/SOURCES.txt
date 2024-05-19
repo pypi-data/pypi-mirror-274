@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+berainz/__init__.py
+berainz/main.py
+berainz.egg-info/PKG-INFO
+berainz.egg-info/SOURCES.txt
+berainz.egg-info/dependency_links.txt
+berainz.egg-info/requires.txt
+berainz.egg-info/top_level.txt
