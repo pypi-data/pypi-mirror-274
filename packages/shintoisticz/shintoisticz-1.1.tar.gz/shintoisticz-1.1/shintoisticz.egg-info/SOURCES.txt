@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shintoisticz/__init__.py
+shintoisticz/main.py
+shintoisticz.egg-info/PKG-INFO
+shintoisticz.egg-info/SOURCES.txt
+shintoisticz.egg-info/dependency_links.txt
+shintoisticz.egg-info/requires.txt
+shintoisticz.egg-info/top_level.txt
