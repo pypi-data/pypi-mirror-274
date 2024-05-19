@@ -1,0 +1,7 @@
+dist
+emscripten-build/
+wasi-build/
+package-lock.json
+test/
+micromamba/
+typescript/src/version.ts
