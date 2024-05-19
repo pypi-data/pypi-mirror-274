@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+portendingz/__init__.py
+portendingz/main.py
+portendingz.egg-info/PKG-INFO
+portendingz.egg-info/SOURCES.txt
+portendingz.egg-info/dependency_links.txt
+portendingz.egg-info/requires.txt
+portendingz.egg-info/top_level.txt
