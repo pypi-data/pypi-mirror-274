@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: data-preprocessing-lib-byarat
+Version: 0.1.0
+Summary: A easy peasy comprehensive library for data preprocessing tasks
+Author: Mehdi Miraç ARAT, Latif Şimşek
+Author-email: mehdimirac.arat@stu.fsm.edu.tr, latif.simsek@stu.fsm.edu.tr
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: nltk
+
