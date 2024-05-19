@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dawenz/__init__.py
+dawenz/main.py
+dawenz.egg-info/PKG-INFO
+dawenz.egg-info/SOURCES.txt
+dawenz.egg-info/dependency_links.txt
+dawenz.egg-info/requires.txt
+dawenz.egg-info/top_level.txt
