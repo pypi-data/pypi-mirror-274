@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pyflagoras
+Version: 0.1.0
+Summary: Generate pride flags from images
+Author-email: Annabel Quach <annabelquach13@gmail.com>
+Project-URL: Homepage, https://github.com/phthallo/pyflagoras
+Project-URL: Bug Tracker, https://github.com/phthallo/pyflagoras/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pillow>=10.3.0
+
+# pyflagoras
+A command line interface tool to generate pride flags from images.
+
+## Setup 
+You can install this package from [pypi.org](https://pypi.org)!
+```python
+pip install pyflagoras
+```
+
+## Adding other flags 
+The current pride flags are sourced from @/JoeHart's [Pride Flag API](https://github.com/JoeHart/pride-flag-api). To add a new flag, open a pull request with the file name `<flag_name>_<year_of_release>.json`. Make sure this `.json` file follows the format of the other flags under `/src/pyflagoras/flags`
+
+## Notes
+Mainly inspired by [Twitter](https://x.com/search?q=color%20pick%20flag&src=typed_query)/[Tumblr](https://www.tumblr.com/colourpickingpride)/other fandom spaces colour picking pride flags from pictures of their favourite characters.
+
+See also the [prideflagbot](https://twitter.com/prideflagbot) account (gone but not forgotten!) run by @/michalpazur, which was a big inspiration. 
+
