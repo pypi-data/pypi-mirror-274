@@ -1,0 +1,12 @@
+vsdpir/__init__.py,sha256=DPOCl72P6e-rFCiKlqixihLKZsNLZ6QG9vEbtdUG4cg,15807
+vsdpir/__main__.py,sha256=YC0lk6_VwvF8PwUCOwEXF_c0zQ1Zh_x03EFjXr8vUOU,922
+vsdpir/basicblock.py,sha256=JgSHEeEWi4t2x1ZlDzjbQA2PH5gSECaN83ql0cN3Ptw,21548
+vsdpir/network_unet.py,sha256=4WzY7UAmfMlhYazd-tfeOOIz_mktNcU_OL4ZrgTJoY8,2757
+vsdpir/models/drunet_color.pth,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsdpir/models/drunet_deblocking_color.pth,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsdpir/models/drunet_deblocking_gray.pth,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsdpir/models/drunet_gray.pth,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsdpir-4.1.0.dist-info/METADATA,sha256=Bik9ROo8A1UYalzEHetaiysOOYJKmDuwhr_c7q4kFRg,1774
+vsdpir-4.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+vsdpir-4.1.0.dist-info/licenses/LICENSE,sha256=TOnHjjjk72COaBl3aWUvIQWIiDASReAL7xEEGPSGN3E,1084
+vsdpir-4.1.0.dist-info/RECORD,,
