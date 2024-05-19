@@ -1,0 +1,7 @@
+data_extractor
+data_processing
+database
+notion
+tiger_brokers
+user_automation
+visualisation
