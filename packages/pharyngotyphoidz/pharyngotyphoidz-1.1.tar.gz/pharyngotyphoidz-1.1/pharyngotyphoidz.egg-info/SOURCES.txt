@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pharyngotyphoidz/__init__.py
+pharyngotyphoidz/main.py
+pharyngotyphoidz.egg-info/PKG-INFO
+pharyngotyphoidz.egg-info/SOURCES.txt
+pharyngotyphoidz.egg-info/dependency_links.txt
+pharyngotyphoidz.egg-info/requires.txt
+pharyngotyphoidz.egg-info/top_level.txt
