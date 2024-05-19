@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gogr_tools
+Version: 0.0.12
+Summary: Package for Personal use in DataScience
+Author: Grzegorz Gomza
+Author-email: Grzegorz Gomza <gomza.datascience@gmail.com>
+Project-URL: Homepage, https://github.com/grzegorz-gomza/GOGR-Tools
+Project-URL: Issues, https://github.com/grzegorz-gomza/GOGR-Tools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# GG_Tools
+Tools made for personal use
+
+## How to use
+for the time being - check the docstrings of classes / functions
