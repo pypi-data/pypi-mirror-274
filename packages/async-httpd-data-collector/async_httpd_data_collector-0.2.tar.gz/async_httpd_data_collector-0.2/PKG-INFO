@@ -1,0 +1,152 @@
+Metadata-Version: 2.3
+Name: async-httpd-data-collector
+Version: 0.2
+Summary: Gateway facilitating asyncronous communication between sensory data-emitting devices, InfluxDB and the user.
+Project-URL: Repository, https://github.com/straightchlorine/async-httpd-data-collector
+Project-URL: Issues, https://github.com/straightchlorine/async-httpd-data-collector/issues
+Author-email: Piotr Krzysztof Lis <piotrlis555@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2021 InfluxData
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: arduino,async,collector,data,http,influxdb,json,nodemcu,sensors
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: aiocsv
+Requires-Dist: aiohttp
+Requires-Dist: aiosignal
+Requires-Dist: attrs
+Requires-Dist: certifi
+Requires-Dist: frozenlist
+Requires-Dist: idna
+Requires-Dist: influxdb-client[async]
+Requires-Dist: multidict
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: reactivex
+Requires-Dist: setuptools
+Requires-Dist: six
+Requires-Dist: typing-extensions
+Requires-Dist: tzdata
+Requires-Dist: urllib3
+Requires-Dist: yarl
+Provides-Extra: test
+Requires-Dist: blinker; extra == 'test'
+Requires-Dist: charset-normalizer; extra == 'test'
+Requires-Dist: click; extra == 'test'
+Requires-Dist: dash; extra == 'test'
+Requires-Dist: dash-core-components; extra == 'test'
+Requires-Dist: dash-html-components; extra == 'test'
+Requires-Dist: dash-table; extra == 'test'
+Requires-Dist: flask; extra == 'test'
+Requires-Dist: importlib-metadata; extra == 'test'
+Requires-Dist: iniconfig; extra == 'test'
+Requires-Dist: itsdangerous; extra == 'test'
+Requires-Dist: jinja2; extra == 'test'
+Requires-Dist: markupsafe; extra == 'test'
+Requires-Dist: nest-asyncio; extra == 'test'
+Requires-Dist: packaging; extra == 'test'
+Requires-Dist: plotly; extra == 'test'
+Requires-Dist: pluggy; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+Requires-Dist: requests; extra == 'test'
+Requires-Dist: retrying; extra == 'test'
+Requires-Dist: tenacity; extra == 'test'
+Requires-Dist: werkzeug; extra == 'test'
+Requires-Dist: zipp; extra == 'test'
+Description-Content-Type: text/markdown
+
+# influx-cli
+
+CLI for managing resources in InfluxDB v2
+
+## Motivation
+
+This repository decouples the `influx` CLI from the OSS `influxdb` codebase. Our goals are to:
+1. Make it easier to keep the CLI up-to-date with InfluxDB Cloud API changes
+2. Enable faster turn-around on fixes/features that only affect the CLI
+3. Allow the CLI to be built & released for a wider range of platforms than the server can support
+
+## Building the CLI
+
+Follow these steps to build the CLI. If you're updating your CLI build, see *Updating openapi* below.
+1. Clone this repo (influx-cli) and change to your _influx-cli_ directory.
+
+   ```
+   git clone git@github.com:influxdata/influx-cli.git
+   cd influx-cli
+   ```
+   
+2. Build the CLI. The `make` and `make influx` commands write the new binary to `bin/$(GOOS)/influx`.
+   
+   ```
+   make
+   ```
+   
+### Updating openapi
+
+If you change or update your branch, you may also need to update `influx-cli/openapi` and regenerate the client code.
+`influx-cli/openapi` is a Git submodule that contains the underlying API contracts and client used by the CLI.
+We use [`OpenAPITools/openapi-generator`](https://github.com/OpenAPITools/openapi-generator) to generate
+the HTTP client.
+
+To update, run the following commands in your `influx-cli` repo:
+
+1. Update the _openapi_ Git submodule. The following command pulls the latest commits for the branch and all submodules.
+
+   `git pull --recurse-submodules`
+   
+2. With [Docker](https://docs.docker.com/get-docker/) running locally, regenerate _openapi_.
+
+   `make openapi`
+   
+3. Rebuild the CLI
+
+   `make`
+ 
+## Running the CLI
+
+After building, use `influx -h` to see the list of available commands.
+
+### Enabling Completions
+
+The CLI supports generating completions for `bash`, `zsh`, and `powershell`. To enable completions for a
+single shell session, run one of these commands:
+```
+# For bash:
+source <(influx completion bash)
+# For zsh:
+source <(influx completion zsh)
+# For pwsh:
+Invoke-Expression ((influx completion powershell) -join "`n`")
+```
+To enable completions across sessions, add the appropriate line to your shell's login profile (i.e. `~/.bash_profile`).
+
+## Testing
+
+Run `make test` to run unit tests.
