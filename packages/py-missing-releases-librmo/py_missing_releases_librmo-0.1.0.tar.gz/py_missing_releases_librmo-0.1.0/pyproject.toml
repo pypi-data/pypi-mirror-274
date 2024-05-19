@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+[project]
+name = "py_missing_releases_librmo"
+version = "0.1.0"
+authors = [
+    { name = "Samuel Shiels" },
+]
+description = "Uses information stored in librmo to discover missing album releases from your music artists"
+readme = "README.md"
+requires-python = ">=3.11.5"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Other Environment",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "music_brainz_api_micro",
+]
