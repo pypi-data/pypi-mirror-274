@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+eavesdroppersz/__init__.py
+eavesdroppersz/main.py
+eavesdroppersz.egg-info/PKG-INFO
+eavesdroppersz.egg-info/SOURCES.txt
+eavesdroppersz.egg-info/dependency_links.txt
+eavesdroppersz.egg-info/requires.txt
+eavesdroppersz.egg-info/top_level.txt
