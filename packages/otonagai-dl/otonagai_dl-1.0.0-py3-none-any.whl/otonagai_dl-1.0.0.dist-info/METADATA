@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: otonagai-dl
+Version: 1.0.0
+Summary: A basic CLI tool to keep track of your favourite anime/manga/comics/pop culture merchandise
+Author: Clavin Dsouza
+Author-email: clavind12@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: inquirerpy (==0.3.4)
+Requires-Dist: readchar
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Description-Content-Type: text/markdown
+
+# Otonagai-dl
+
+Otonagai is a CLI-based app that keeps track of your favourite merchandise from anime/video games/ manga/ comic books from HobbyLinkJapan.
+
+Originally, this was being made to keep track of build progress of gunpla (Gundam Model Kits), but I thought it would be better to expand it to action figures and other merch available.
+
+# Installation
+
+You can install the app through pip in Python by using
+
+```
+pip install otonagai-dl
+```
+
+After installing the package locally, go into your terminal of choice by typing
+
+```
+otonagai-dl
+```
+
+and press "Enter".
+
+# Tutorial 
+
+For the tutorial, visit the following [wiki](https://weebmogul.gitbook.io/otonagai-dl/)
+
