@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aggradationz/__init__.py
+aggradationz/main.py
+aggradationz.egg-info/PKG-INFO
+aggradationz.egg-info/SOURCES.txt
+aggradationz.egg-info/dependency_links.txt
+aggradationz.egg-info/requires.txt
+aggradationz.egg-info/top_level.txt
