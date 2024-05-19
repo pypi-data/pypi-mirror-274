@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dextrinatez/__init__.py
+dextrinatez/main.py
+dextrinatez.egg-info/PKG-INFO
+dextrinatez.egg-info/SOURCES.txt
+dextrinatez.egg-info/dependency_links.txt
+dextrinatez.egg-info/requires.txt
+dextrinatez.egg-info/top_level.txt
