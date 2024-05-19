@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mentalisticz/__init__.py
+mentalisticz/main.py
+mentalisticz.egg-info/PKG-INFO
+mentalisticz.egg-info/SOURCES.txt
+mentalisticz.egg-info/dependency_links.txt
+mentalisticz.egg-info/requires.txt
+mentalisticz.egg-info/top_level.txt
