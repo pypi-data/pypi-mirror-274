@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+disencharmz/__init__.py
+disencharmz/main.py
+disencharmz.egg-info/PKG-INFO
+disencharmz.egg-info/SOURCES.txt
+disencharmz.egg-info/dependency_links.txt
+disencharmz.egg-info/requires.txt
+disencharmz.egg-info/top_level.txt
