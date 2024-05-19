@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "p3orm"
+version = "1.0.0rc1"
+description = "Utilitarian Python ORM for Postgres, backed by asyncpg and PyPika"
+authors = ["Rafal Stapinski <stapinskirafal@gmail.com>"]
+keywords = ["postgres", "async", "orm"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://rafalstapinski.github.io/p3orm"
+repository = "https://github.com/rafalstapinski/p3orm"
+packages = [{ include = "p3orm" }, { include = "p3orm/py.typed" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+asyncpg = { version = "0.29.0" }
+pypika = "^0.48.9"
+
+[tool.poetry.extras]
+pydantic = ["pydantic"]
+
+[tool.poetry.group.dev.dependencies]
+tomli = "^2.0.1"
+asyncpg = "^0.29.0"
+aiosqlite = "^0.19.0"
+ruff = "^0.1.6"
+isort = "^5.12.0"
+mypy = "^1.7.1"
+black = "^23.12.0"
+pylint = "^3.0.3"
+pydantic = "^2.7.1"
+
+[tool.poetry.group.publish.dependencies]
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.4.14"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+pytest-postgresql = "^5.0.0"
+psycopg = { extras = ["binary"], version = "^3.1.13" }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+known_local_folder = ["test"]
+
+[tool.ruff]
+line-length = 120
+exclude = [".venv", "__pycache__"]
+indent-width = 4
+target-version = "py312"
+fixable = ["ALL"]
+unfixable = []
+ignore = []
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+skip-magic-trailing-comma = false
+
+[tool.mypy]
+strict = true
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+show_error_codes = true
+show_column_numbers = true
+ignore_missing_imports = false
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[tool.basedpyright]
+typeCheckingMode = "basic"
