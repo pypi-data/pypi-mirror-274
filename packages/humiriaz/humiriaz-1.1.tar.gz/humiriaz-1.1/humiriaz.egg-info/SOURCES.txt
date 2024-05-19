@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+humiriaz/__init__.py
+humiriaz/main.py
+humiriaz.egg-info/PKG-INFO
+humiriaz.egg-info/SOURCES.txt
+humiriaz.egg-info/dependency_links.txt
+humiriaz.egg-info/requires.txt
+humiriaz.egg-info/top_level.txt
