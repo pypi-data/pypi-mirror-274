@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dishabitz/__init__.py
+dishabitz/main.py
+dishabitz.egg-info/PKG-INFO
+dishabitz.egg-info/SOURCES.txt
+dishabitz.egg-info/dependency_links.txt
+dishabitz.egg-info/requires.txt
+dishabitz.egg-info/top_level.txt
