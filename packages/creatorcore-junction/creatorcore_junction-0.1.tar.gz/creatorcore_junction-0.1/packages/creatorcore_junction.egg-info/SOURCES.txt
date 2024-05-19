@@ -1,0 +1,9 @@
+setup.py
+packages/creatorcore_junction/connection.py
+packages/creatorcore_junction/instagram.py
+packages/creatorcore_junction.egg-info/PKG-INFO
+packages/creatorcore_junction.egg-info/SOURCES.txt
+packages/creatorcore_junction.egg-info/dependency_links.txt
+packages/creatorcore_junction.egg-info/requires.txt
+packages/creatorcore_junction.egg-info/top_level.txt
+test/test_instagram.py
