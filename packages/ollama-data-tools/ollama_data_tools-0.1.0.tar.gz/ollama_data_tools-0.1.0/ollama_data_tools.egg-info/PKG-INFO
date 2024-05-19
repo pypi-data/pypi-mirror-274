@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ollama-data-tools
+Version: 0.1.0
+Summary: Tools for working with Ollama model data
+Home-page: https://github.com/queelius/ollama_data_tools
+Author: Alex Towell
+Author-email: lex@metafunctor.com
+License-File: LICENSE
