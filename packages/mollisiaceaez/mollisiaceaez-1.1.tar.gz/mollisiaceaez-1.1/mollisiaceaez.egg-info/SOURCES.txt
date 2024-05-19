@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mollisiaceaez/__init__.py
+mollisiaceaez/main.py
+mollisiaceaez.egg-info/PKG-INFO
+mollisiaceaez.egg-info/SOURCES.txt
+mollisiaceaez.egg-info/dependency_links.txt
+mollisiaceaez.egg-info/requires.txt
+mollisiaceaez.egg-info/top_level.txt
