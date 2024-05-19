@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+newfangledismz/__init__.py
+newfangledismz/main.py
+newfangledismz.egg-info/PKG-INFO
+newfangledismz.egg-info/SOURCES.txt
+newfangledismz.egg-info/dependency_links.txt
+newfangledismz.egg-info/requires.txt
+newfangledismz.egg-info/top_level.txt
