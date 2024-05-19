@@ -1,0 +1,7 @@
+README.md
+setup.py
+mem0ai/__init__.py
+mem0ai.egg-info/PKG-INFO
+mem0ai.egg-info/SOURCES.txt
+mem0ai.egg-info/dependency_links.txt
+mem0ai.egg-info/top_level.txt
