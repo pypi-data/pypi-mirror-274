@@ -1,0 +1,4 @@
+bat_function_call_define
+bat_menu_auto
+batframe_main
+nuitka_dependency_files

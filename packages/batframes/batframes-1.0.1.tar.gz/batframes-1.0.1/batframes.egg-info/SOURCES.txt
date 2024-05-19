@@ -1,0 +1,17 @@
+README.md
+bat_function_call_define.py
+bat_menu_auto.py
+batframe_main.py
+nuitka_dependency_files.py
+setup.py
+bat_inner_module/inner_demo.py
+bat_inner_module/inner_demo1.py
+batframes.egg-info/PKG-INFO
+batframes.egg-info/SOURCES.txt
+batframes.egg-info/dependency_links.txt
+batframes.egg-info/requires.txt
+batframes.egg-info/top_level.txt
+config/img/Excel.png
+config/img/excel.gif
+config/img/little_bear.png
+config/img/table_arrow9_transparent_64.ico
