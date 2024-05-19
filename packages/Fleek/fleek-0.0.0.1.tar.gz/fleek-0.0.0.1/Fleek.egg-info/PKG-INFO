@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Fleek
+Version: 0.0.0.1
+Summary: My short description for my project.
+Home-page: https://github.com/under-script/Fleek
+Author: Yunusov Abdulmajid
+Author-email: abdulmajidyunusov18@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+
+
+# FleekAPI
