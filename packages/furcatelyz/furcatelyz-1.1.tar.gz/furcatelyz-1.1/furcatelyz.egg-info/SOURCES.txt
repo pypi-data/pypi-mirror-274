@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+furcatelyz/__init__.py
+furcatelyz/main.py
+furcatelyz.egg-info/PKG-INFO
+furcatelyz.egg-info/SOURCES.txt
+furcatelyz.egg-info/dependency_links.txt
+furcatelyz.egg-info/requires.txt
+furcatelyz.egg-info/top_level.txt
