@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+curranz/__init__.py
+curranz/main.py
+curranz.egg-info/PKG-INFO
+curranz.egg-info/SOURCES.txt
+curranz.egg-info/dependency_links.txt
+curranz.egg-info/requires.txt
+curranz.egg-info/top_level.txt
