@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: eurepoc
+Version: 0.1.0
+Summary: Wrapper for the EuRepoC API
+Home-page: https://github.com/camilleborrett/eurepoc
+Author: Camille Borrett
+Author-email: camille.borrett@posteo.net
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: nested_query_string
+Requires-Dist: pandas
+Requires-Dist: datetime
+Requires-Dist: pydantic
+Requires-Dist: typing
+
+# eurepoc
+
+The EuRepoC package is a wrapper around the main EuRepoC Strapi API. It is designed to streamline data queries through a set of filters and to preprocess, unnest and clean the Strapi output. The IncidentDataFrames class automatically converts the data into multiple pandas dataframes (dfs) for easier manipulation and analysis. These dfs can be easily joined using the incidents_id column.
+
+Refer to the main [EuRepoC website](https://www.eurepoc.eu/) for more information about the data collection methodology. 
+The EuRepoC Codebook provides detailed information about the substantive meaning of each of the variables in the data [here](https://www.eurepoc.eu/codebook).
+## Installation
+
+```bash
+pip install eurepoc
+```
+
+## Quickstart
+
+```python
+import eurepoc
+
+TOKEN = eurepoc.read_token()
+
+query_db = eurepoc.DatabaseQuery(
+     TOKEN,
+     receiver_region="EU",
+     receiver_category="Critical infrastructure",
+     initiator_country="Russia"
+  )
+
+data = query_db.get_data()
+
+incident_df = IncidentDataFrames(data)
+receivers = incident_df.receivers()
+attributions = incident_df.attributions()
+initiators = incident_df.initiators()
+```

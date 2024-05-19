@@ -1,0 +1,6 @@
+requests
+nested_query_string
+pandas
+datetime
+pydantic
+typing
