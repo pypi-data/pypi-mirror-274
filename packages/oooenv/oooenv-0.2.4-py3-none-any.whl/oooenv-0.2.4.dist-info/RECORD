@@ -1,0 +1,17 @@
+oooenv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oooenv/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oooenv/cli/main.py,sha256=5QrGqDSgVNEAdnf2JSnKwyZOjp6oFDfqmA5qPHWPuN4,8066
+oooenv/cmds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oooenv/cmds/install.py,sha256=6sPmuKjdNw5w6qujUvoMPthhbF0wTqO8t_qWbD0qWxQ,883
+oooenv/cmds/manage_env_cfg.py,sha256=lZbLHX5zMZWebeatnuVvEosa-4OnaYJs-gExjuOA-DI,5767
+oooenv/cmds/uno_lnk.py,sha256=Wj5SO6jUZVSAEh9u8YiKU6s-H4G-MK6SAXfVYCDdKfY,4627
+oooenv/cmds/updater.py,sha256=sRJU12b8ylruVK7O92EWfN93yfGjAbSoe0d4tmTPb2E,1216
+oooenv/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oooenv/utils/local_paths.py,sha256=sLA17RBvTaoxJmfRn1yMYBpKoF29z2AHSrBsm1ptqcg,3573
+oooenv/utils/sys_info.py,sha256=Lt7Mt8i54V0Tbearl32NhNB9sIi6fWgdJLyEibibfls,773
+oooenv/utils/uno_paths.py,sha256=Cq35kx3dbqUboRcvpWNgjCqnAA8qgvIG1xA5ba6gtW0,10430
+oooenv-0.2.4.dist-info/LICENSE,sha256=y4impaacZq6tZKYIEpMPoc4sdp_RfJcTIseYxDVleYY,1073
+oooenv-0.2.4.dist-info/METADATA,sha256=0tYZc4PZndD8QaAg55WZvAuF30AgOd9VQstqiMkz8G0,3791
+oooenv-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+oooenv-0.2.4.dist-info/entry_points.txt,sha256=Rai13cIv-Y0gIms9nmbnPz8zZK8RMeEpYYAWwXpvF08,47
+oooenv-0.2.4.dist-info/RECORD,,
