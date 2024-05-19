@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+briefcasez/__init__.py
+briefcasez/main.py
+briefcasez.egg-info/PKG-INFO
+briefcasez.egg-info/SOURCES.txt
+briefcasez.egg-info/dependency_links.txt
+briefcasez.egg-info/requires.txt
+briefcasez.egg-info/top_level.txt
