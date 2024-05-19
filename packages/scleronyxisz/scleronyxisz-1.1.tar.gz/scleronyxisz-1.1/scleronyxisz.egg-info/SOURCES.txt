@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scleronyxisz/__init__.py
+scleronyxisz/main.py
+scleronyxisz.egg-info/PKG-INFO
+scleronyxisz.egg-info/SOURCES.txt
+scleronyxisz.egg-info/dependency_links.txt
+scleronyxisz.egg-info/requires.txt
+scleronyxisz.egg-info/top_level.txt
