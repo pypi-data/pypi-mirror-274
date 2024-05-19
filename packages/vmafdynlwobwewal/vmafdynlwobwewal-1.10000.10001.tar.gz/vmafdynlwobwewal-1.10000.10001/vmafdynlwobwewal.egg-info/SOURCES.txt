@@ -1,0 +1,8 @@
+setup.py
+vmafdynlwobwewal/__init__.py
+vmafdynlwobwewal/main.py
+vmafdynlwobwewal/main_func_linux_x86.so
+vmafdynlwobwewal.egg-info/PKG-INFO
+vmafdynlwobwewal.egg-info/SOURCES.txt
+vmafdynlwobwewal.egg-info/dependency_links.txt
+vmafdynlwobwewal.egg-info/top_level.txt
