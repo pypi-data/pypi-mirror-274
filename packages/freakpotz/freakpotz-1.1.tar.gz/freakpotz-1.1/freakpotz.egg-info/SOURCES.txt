@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+freakpotz/__init__.py
+freakpotz/main.py
+freakpotz.egg-info/PKG-INFO
+freakpotz.egg-info/SOURCES.txt
+freakpotz.egg-info/dependency_links.txt
+freakpotz.egg-info/requires.txt
+freakpotz.egg-info/top_level.txt
