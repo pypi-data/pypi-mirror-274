@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+oversewingz/__init__.py
+oversewingz/main.py
+oversewingz.egg-info/PKG-INFO
+oversewingz.egg-info/SOURCES.txt
+oversewingz.egg-info/dependency_links.txt
+oversewingz.egg-info/requires.txt
+oversewingz.egg-info/top_level.txt
