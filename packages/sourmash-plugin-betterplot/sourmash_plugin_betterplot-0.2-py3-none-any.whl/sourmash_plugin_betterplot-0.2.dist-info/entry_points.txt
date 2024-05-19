@@ -1,0 +1,3 @@
+[sourmash.cli_script]
+mds_command = sourmash_plugin_betterplot:Command_MDS
+plot2_command = sourmash_plugin_betterplot:Command_Plot2
