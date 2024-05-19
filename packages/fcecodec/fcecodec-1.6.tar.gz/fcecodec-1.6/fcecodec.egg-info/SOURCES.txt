@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fcecodec.egg-info/PKG-INFO
+fcecodec.egg-info/SOURCES.txt
+fcecodec.egg-info/dependency_links.txt
+fcecodec.egg-info/not-zip-safe
+fcecodec.egg-info/top_level.txt
+python/fcecodecmodule.cpp
+tests/test_diff.py
+tests/test_scripts.py
+tests/test_smoketest.py
