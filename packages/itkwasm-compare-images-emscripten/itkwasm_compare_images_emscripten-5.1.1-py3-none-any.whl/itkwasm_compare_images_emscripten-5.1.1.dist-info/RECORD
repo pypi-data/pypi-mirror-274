@@ -1,0 +1,9 @@
+itkwasm_compare_images_emscripten/__init__.py,sha256=nf1RFFi-8YwjikU_GSp6GpM3EVyYmbt87wPZURu6Zmk,343
+itkwasm_compare_images_emscripten/_version.py,sha256=O2stXi7jIRoLCfzh6fPEOGlhpgQPwGWYLDheJ-AbO_4,22
+itkwasm_compare_images_emscripten/compare_double_images_async.py,sha256=McjG6hdrgRd3dKjFgyAsNbhLU4-kngrjTEy2Cski_rk,2836
+itkwasm_compare_images_emscripten/compare_images_async.py,sha256=WBH_h3ZD1KPHkBCvTx__EI9m5H3UXwXGXLI--MNTeqM,2823
+itkwasm_compare_images_emscripten/js_package.py,sha256=Ytb52tsNjAMfDlnVjnYFtYh-lmR-e5-ehuqfvmN-1Sc,190509
+itkwasm_compare_images_emscripten/vector_magnitude_async.py,sha256=AfUGCB4wGov28Bku2JRh-5AmYC8lHuxsH4jXWcsU5sg,1282
+itkwasm_compare_images_emscripten-5.1.1.dist-info/METADATA,sha256=ey_BQXZ1RfXc17dwkYss2hqEx24n0Ryso-4O1gjPsg8,1792
+itkwasm_compare_images_emscripten-5.1.1.dist-info/WHEEL,sha256=as-1oFTWSeWBgyzh0O_qF439xqBe6AbBgt4MfYe5zwY,87
+itkwasm_compare_images_emscripten-5.1.1.dist-info/RECORD,,
