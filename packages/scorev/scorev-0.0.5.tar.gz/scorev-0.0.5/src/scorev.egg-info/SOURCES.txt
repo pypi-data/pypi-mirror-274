@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/scorev.py
+src/scorev.egg-info/PKG-INFO
+src/scorev.egg-info/SOURCES.txt
+src/scorev.egg-info/dependency_links.txt
+src/scorev.egg-info/entry_points.txt
+src/scorev.egg-info/top_level.txt
