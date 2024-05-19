@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ridingmenz/__init__.py
+ridingmenz/main.py
+ridingmenz.egg-info/PKG-INFO
+ridingmenz.egg-info/SOURCES.txt
+ridingmenz.egg-info/dependency_links.txt
+ridingmenz.egg-info/requires.txt
+ridingmenz.egg-info/top_level.txt
