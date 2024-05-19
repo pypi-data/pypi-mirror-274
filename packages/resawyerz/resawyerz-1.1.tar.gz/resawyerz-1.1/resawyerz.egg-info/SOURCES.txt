@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+resawyerz/__init__.py
+resawyerz/main.py
+resawyerz.egg-info/PKG-INFO
+resawyerz.egg-info/SOURCES.txt
+resawyerz.egg-info/dependency_links.txt
+resawyerz.egg-info/requires.txt
+resawyerz.egg-info/top_level.txt
