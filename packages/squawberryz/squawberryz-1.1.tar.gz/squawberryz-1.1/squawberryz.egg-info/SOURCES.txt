@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+squawberryz/__init__.py
+squawberryz/main.py
+squawberryz.egg-info/PKG-INFO
+squawberryz.egg-info/SOURCES.txt
+squawberryz.egg-info/dependency_links.txt
+squawberryz.egg-info/requires.txt
+squawberryz.egg-info/top_level.txt
