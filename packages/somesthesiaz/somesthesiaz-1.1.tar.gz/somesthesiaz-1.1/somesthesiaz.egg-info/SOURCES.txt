@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+somesthesiaz/__init__.py
+somesthesiaz/main.py
+somesthesiaz.egg-info/PKG-INFO
+somesthesiaz.egg-info/SOURCES.txt
+somesthesiaz.egg-info/dependency_links.txt
+somesthesiaz.egg-info/requires.txt
+somesthesiaz.egg-info/top_level.txt
