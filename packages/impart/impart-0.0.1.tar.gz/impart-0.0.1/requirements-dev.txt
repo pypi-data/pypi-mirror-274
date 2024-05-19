@@ -1,0 +1,8 @@
+pyvips
+
+pip-tools
+pytype
+sphinx
+furo
+
+-e file:.
