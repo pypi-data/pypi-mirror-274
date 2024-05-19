@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hyperdactylz/__init__.py
+hyperdactylz/main.py
+hyperdactylz.egg-info/PKG-INFO
+hyperdactylz.egg-info/SOURCES.txt
+hyperdactylz.egg-info/dependency_links.txt
+hyperdactylz.egg-info/requires.txt
+hyperdactylz.egg-info/top_level.txt
