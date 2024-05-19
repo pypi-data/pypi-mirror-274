@@ -1,0 +1,7 @@
+aiconn/__init__.py,sha256=a5eFgrxCm9xwSf49kP_H1axTOpsIXr-I6SmpSFjEylQ,21
+aiconn/gemini.py,sha256=JYm0dv3-yZhI18Q9wae95cASW0pGNTPb1WJcQAxjFkg,8595
+aiconn/utils.py,sha256=gmtHkN3hX2ApKUhl25FrMz2doOwjHNcxZYkEE2hVod0,185
+aiconn-0.0.3.dist-info/METADATA,sha256=9RrAQwetpwr0toaSgiSbcqs9e1Gb1xqOX1vRueb4FhE,401
+aiconn-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aiconn-0.0.3.dist-info/top_level.txt,sha256=WgDYrR8pJgou3ZQ6efVSrLVQAw2nm8E5w8GHuVIcvxI,7
+aiconn-0.0.3.dist-info/RECORD,,
