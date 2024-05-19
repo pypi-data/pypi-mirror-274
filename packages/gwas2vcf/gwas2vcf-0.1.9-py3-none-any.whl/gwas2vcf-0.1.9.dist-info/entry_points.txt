@@ -1,0 +1,2 @@
+[console_scripts]
+gwas2vcf = gwas2vcf.convert_to_vcf:main
