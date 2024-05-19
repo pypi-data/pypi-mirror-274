@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+misologistz/__init__.py
+misologistz/main.py
+misologistz.egg-info/PKG-INFO
+misologistz.egg-info/SOURCES.txt
+misologistz.egg-info/dependency_links.txt
+misologistz.egg-info/requires.txt
+misologistz.egg-info/top_level.txt
