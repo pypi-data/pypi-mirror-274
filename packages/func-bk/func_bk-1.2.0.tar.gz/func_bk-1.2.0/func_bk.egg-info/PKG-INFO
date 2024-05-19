@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: func_bk
+Version: 1.2.0
+Summary: add function for normal python and add class(for inheritance) for django
+Author-email: lilo.pio147@mail.ru
+Description-Content-Type: text/markdown
+
+add function 
+
+sejango - 3 arguments form(django),key(in form cleaned data),var(return if key is not find)
+
+
+adder - dict,**kwargs 
+add to dict all arguments kwargs
+
+
+
+iswhiter(color(HEX),porog) - color=color for checking, porog = threshold for lightening
+isdarker(color(HEX),porog) - color=color for checking, porog = threshold for darkering
+brighness(rgb(RGB)) - rgb to float
+hex_to_rgb(hex_xolor(HEX)) - you know
+
+
+find(lst,sim) - lst=list sim=obj for searching, find obj inlist and return he index
+ 
+listrand(min,max,kol): return random list
+
+
+IsKeyInDict(data, key): return bool: isvalid key in data
+
+
+
+stepen(number,stepan): degree of number
+	
+faktorial(number): you know
+	
+chibo(number): number of chibonachi
+	
+summa(number):summ 
+example:
+    a=12
+    print(summ(a))
+this code return 3
+
+
+
+call_methods_by_partial_name(class_instance, partial_name, *args, **kwargs): use all METHODS(function in class) with partial name
+
+
+CFBPN=call_methods_by_partial_name
+Mcall=call_methods_by_partial_name
+
+
+
+call_functions_by_partial_name(partial_name, *args, **kwargs): use all function with partial name
+
+CFBPN=call_functions_by_partial_name
+Fcall=call_functions_by_partial_name
+
+
+
+
+function for django:
+
+
+allpath(route: str, view, name: str): It is used to create a list of URL routes that support both the presence and absence of a trailing slash
+
+example_1:
+    urlpatterns = [
+        path('', views.index, name='index'),
+        *allpath('post/', views.post.as_view(), name='post'), ]
+
+example_2:
+    urlpatterns = [
+        path('', views.index, name='index'),
+        *allpath('post', views.post.as_view(), name='post'), ]
+
+note: since it returns the list, you need to use * to unpack the list
+
+class for django:
+
+
+Color:
+    abstract model
+    for inheritance models add to model variable: color and function: isdarker, iswhite, hexrgb, rgbtofloat 
+
+
+LBASE:
+    
+    add:
+        context_paginator_name = name paginator for context
+        page_n =  page-quantity for correct work need paginate_by
+        page_n:
+            if len(queryset)>=page_n:
+                return (calculations for a given number of pages)
+            else:
+                return=paginate_by
+
+    example:
+    class index(LBASE):
+        model=Tovar
+        template_name="mains/icecream_list.html"
+        context_object_name='date'
+        paginate_by=5
+        paginate_orphans=2
+        page_n=5 ...
