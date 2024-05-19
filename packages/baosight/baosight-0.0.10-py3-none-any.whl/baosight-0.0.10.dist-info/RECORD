@@ -1,0 +1,15 @@
+baosight/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baosight/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baosight/cli/cmd_admin.py,sha256=vZMpPFK3IpHSo8XNfBv7xVXbmud1_zLSKex5IAfVssc,855
+baosight/cli/gl_runner.py,sha256=5hUEU0pInarzuSqVDWV0LD8kazW28_z2gbnaF2myRP0,1409
+baosight/cli/main.py,sha256=qhsIEbcnVwqkpr97Bs1Pt78MGr0K9zGxJ-cxcVZIUVg,1457
+baosight/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baosight/tools/gitlab_runner.py,sha256=vs-mfjU-0lnCL4aYeUIf_qOMpGr26ulyGkspSdLNYGg,4609
+baosight/tools/gitlab_runner_config_generator.py,sha256=J20rb304qxi7Cv8fDN5RWgX_LM35_-Rm_bcnDdmTP-Q,1593
+baosight/tools/gitlab_runner_gui.py,sha256=Px2D83yzc3wov5pvzmCqsbD5vYfxmoMVAfFgwZUy9HY,7201
+baosight-0.0.10.dist-info/LICENSE,sha256=lEAMu-5wNa03l4XHJxVEGuqjYtIsJnq94_EEhz8WePw,1064
+baosight-0.0.10.dist-info/METADATA,sha256=KYLk3FvIGsTdNUJNr5CN98ckuR3lwO3qGd7WyOFLJwc,1348
+baosight-0.0.10.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+baosight-0.0.10.dist-info/entry_points.txt,sha256=FspiHTNXYkCb7AuEbwoRhSgSZwkExqIZMOHlvNuKwrc,52
+baosight-0.0.10.dist-info/top_level.txt,sha256=WktDzzM3Ld5uP_7zFCcUR6tPXqEVph6tdLZPIHWlquM,9
+baosight-0.0.10.dist-info/RECORD,,
