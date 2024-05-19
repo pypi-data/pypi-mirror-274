@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dekez/__init__.py
+dekez/main.py
+dekez.egg-info/PKG-INFO
+dekez.egg-info/SOURCES.txt
+dekez.egg-info/dependency_links.txt
+dekez.egg-info/requires.txt
+dekez.egg-info/top_level.txt
