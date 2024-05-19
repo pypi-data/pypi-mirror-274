@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stummerz/__init__.py
+stummerz/main.py
+stummerz.egg-info/PKG-INFO
+stummerz.egg-info/SOURCES.txt
+stummerz.egg-info/dependency_links.txt
+stummerz.egg-info/requires.txt
+stummerz.egg-info/top_level.txt
