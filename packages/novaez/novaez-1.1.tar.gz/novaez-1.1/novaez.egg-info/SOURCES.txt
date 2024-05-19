@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+novaez/__init__.py
+novaez/main.py
+novaez.egg-info/PKG-INFO
+novaez.egg-info/SOURCES.txt
+novaez.egg-info/dependency_links.txt
+novaez.egg-info/requires.txt
+novaez.egg-info/top_level.txt
