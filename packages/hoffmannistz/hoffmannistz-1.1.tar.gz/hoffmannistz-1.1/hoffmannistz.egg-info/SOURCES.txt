@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hoffmannistz/__init__.py
+hoffmannistz/main.py
+hoffmannistz.egg-info/PKG-INFO
+hoffmannistz.egg-info/SOURCES.txt
+hoffmannistz.egg-info/dependency_links.txt
+hoffmannistz.egg-info/requires.txt
+hoffmannistz.egg-info/top_level.txt
