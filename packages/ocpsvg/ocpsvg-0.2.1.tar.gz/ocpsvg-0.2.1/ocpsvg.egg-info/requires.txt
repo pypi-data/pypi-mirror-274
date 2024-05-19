@@ -1,0 +1,6 @@
+cadquery-ocp>=7.7.0
+svgpathtools<2,>=1.5.1
+svgelements<2,>=1.9.1
+
+[dev]
+pytest
