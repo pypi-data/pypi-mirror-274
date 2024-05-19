@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rikishaz/__init__.py
+rikishaz/main.py
+rikishaz.egg-info/PKG-INFO
+rikishaz.egg-info/SOURCES.txt
+rikishaz.egg-info/dependency_links.txt
+rikishaz.egg-info/requires.txt
+rikishaz.egg-info/top_level.txt
