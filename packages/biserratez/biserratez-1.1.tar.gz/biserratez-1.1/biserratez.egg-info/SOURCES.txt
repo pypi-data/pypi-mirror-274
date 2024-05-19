@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+biserratez/__init__.py
+biserratez/main.py
+biserratez.egg-info/PKG-INFO
+biserratez.egg-info/SOURCES.txt
+biserratez.egg-info/dependency_links.txt
+biserratez.egg-info/requires.txt
+biserratez.egg-info/top_level.txt
