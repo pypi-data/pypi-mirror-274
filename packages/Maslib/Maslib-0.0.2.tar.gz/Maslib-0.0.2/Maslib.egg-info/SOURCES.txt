@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+MasLib/__init__.py
+MasLib/correlation.py
+MasLib/encoding.py
+MasLib/grid_search_optimization.py
+MasLib/regression.py
+Maslib.egg-info/PKG-INFO
+Maslib.egg-info/SOURCES.txt
+Maslib.egg-info/dependency_links.txt
+Maslib.egg-info/requires.txt
+Maslib.egg-info/top_level.txt
+tests/test_correlation.py
+tests/test_encoding.py
+tests/test_grid_search.py
+tests/test_regression.py

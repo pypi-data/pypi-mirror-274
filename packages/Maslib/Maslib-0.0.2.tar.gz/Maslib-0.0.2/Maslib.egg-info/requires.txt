@@ -1,0 +1,7 @@
+numpy
+pandas
+phik
+matplotlib
+scikit-learn
+catboost
+unittest
