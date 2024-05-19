@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ease_recommender
+Version: 0.1.0
+Summary: Streamline Code Maintenance: Instant Clean-Up and Rule Enforcement, Zero Configuration Required.
+License: MIT
+Author: joehaddad2000
+Author-email: joehaddad129@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+
+# Title
+
+---
+
+## Features
+
+## Installation
+
+## Usage
+
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or want to contribute, please feel free to open an issue or submit a pull request.
+
+## License
+CodeSweep is released under the MIT License. See the LICENSE file for more details.
+
