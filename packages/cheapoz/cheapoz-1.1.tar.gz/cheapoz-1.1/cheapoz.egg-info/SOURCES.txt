@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cheapoz/__init__.py
+cheapoz/main.py
+cheapoz.egg-info/PKG-INFO
+cheapoz.egg-info/SOURCES.txt
+cheapoz.egg-info/dependency_links.txt
+cheapoz.egg-info/requires.txt
+cheapoz.egg-info/top_level.txt
