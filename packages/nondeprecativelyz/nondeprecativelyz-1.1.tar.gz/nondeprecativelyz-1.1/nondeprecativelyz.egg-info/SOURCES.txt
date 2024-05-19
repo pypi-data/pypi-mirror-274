@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nondeprecativelyz/__init__.py
+nondeprecativelyz/main.py
+nondeprecativelyz.egg-info/PKG-INFO
+nondeprecativelyz.egg-info/SOURCES.txt
+nondeprecativelyz.egg-info/dependency_links.txt
+nondeprecativelyz.egg-info/requires.txt
+nondeprecativelyz.egg-info/top_level.txt
