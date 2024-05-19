@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tinyagent
+Version: 0.1.1
+Summary: A minimalistic agent framework
+Home-page: https://github.com/y-lan/tinyagent
+Author: y-lan
+Author-email: lanyuyang@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+
+# tinyagent
+
+A tiny LLVM-based agent with minimal dependencies, written in Python.
