@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+plessorsz/__init__.py
+plessorsz/main.py
+plessorsz.egg-info/PKG-INFO
+plessorsz.egg-info/SOURCES.txt
+plessorsz.egg-info/dependency_links.txt
+plessorsz.egg-info/requires.txt
+plessorsz.egg-info/top_level.txt
