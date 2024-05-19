@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+palatinianz/__init__.py
+palatinianz/main.py
+palatinianz.egg-info/PKG-INFO
+palatinianz.egg-info/SOURCES.txt
+palatinianz.egg-info/dependency_links.txt
+palatinianz.egg-info/requires.txt
+palatinianz.egg-info/top_level.txt
