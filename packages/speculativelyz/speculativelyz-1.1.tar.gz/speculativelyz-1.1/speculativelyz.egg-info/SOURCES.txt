@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+speculativelyz/__init__.py
+speculativelyz/main.py
+speculativelyz.egg-info/PKG-INFO
+speculativelyz.egg-info/SOURCES.txt
+speculativelyz.egg-info/dependency_links.txt
+speculativelyz.egg-info/requires.txt
+speculativelyz.egg-info/top_level.txt
