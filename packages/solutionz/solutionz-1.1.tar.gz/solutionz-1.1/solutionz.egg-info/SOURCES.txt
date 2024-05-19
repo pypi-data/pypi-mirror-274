@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+solutionz/__init__.py
+solutionz/main.py
+solutionz.egg-info/PKG-INFO
+solutionz.egg-info/SOURCES.txt
+solutionz.egg-info/dependency_links.txt
+solutionz.egg-info/requires.txt
+solutionz.egg-info/top_level.txt
