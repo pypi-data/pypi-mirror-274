@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+periaptsz/__init__.py
+periaptsz/main.py
+periaptsz.egg-info/PKG-INFO
+periaptsz.egg-info/SOURCES.txt
+periaptsz.egg-info/dependency_links.txt
+periaptsz.egg-info/requires.txt
+periaptsz.egg-info/top_level.txt
