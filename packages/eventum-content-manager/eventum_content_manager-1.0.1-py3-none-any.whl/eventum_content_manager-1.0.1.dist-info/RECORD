@@ -1,0 +1,7 @@
+content_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+content_manager/fs.py,sha256=2k5q1ZqHrZWmjaD8HKbSuOZ95G8J4Y01f6e0WHkM5Y0,2468
+content_manager/manage.py,sha256=Ay6727lkUa7KHehTgaIBf_kv-SQOrEbxXjHKxMDOq6o,5324
+eventum_content_manager-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+eventum_content_manager-1.0.1.dist-info/METADATA,sha256=rAo3rKepVWz-RWPTt8DfmI2xAxSidQ25m1zIE7dWqVU,968
+eventum_content_manager-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+eventum_content_manager-1.0.1.dist-info/RECORD,,
