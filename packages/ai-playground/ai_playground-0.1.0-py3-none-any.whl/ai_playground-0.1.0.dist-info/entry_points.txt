@@ -1,0 +1,5 @@
+[console_scripts]
+ai-playground=ai_playground:main
+aip=ai_playground:main
+aiplayground=ai_playground:main
+
