@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pediculationz/__init__.py
+pediculationz/main.py
+pediculationz.egg-info/PKG-INFO
+pediculationz.egg-info/SOURCES.txt
+pediculationz.egg-info/dependency_links.txt
+pediculationz.egg-info/requires.txt
+pediculationz.egg-info/top_level.txt
