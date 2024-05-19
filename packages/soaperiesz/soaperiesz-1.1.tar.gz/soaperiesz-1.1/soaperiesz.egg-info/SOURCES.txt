@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+soaperiesz/__init__.py
+soaperiesz/main.py
+soaperiesz.egg-info/PKG-INFO
+soaperiesz.egg-info/SOURCES.txt
+soaperiesz.egg-info/dependency_links.txt
+soaperiesz.egg-info/requires.txt
+soaperiesz.egg-info/top_level.txt
