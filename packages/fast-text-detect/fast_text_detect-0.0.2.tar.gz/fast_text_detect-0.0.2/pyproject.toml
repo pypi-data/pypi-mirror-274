@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+"setuptools",
+"wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fast_text_detect"
+version = "0.0.2"
+description = "Python text detection package"
+readme = "README.md"
+authors = [{ name = "Gnana Prasath", email = "gnana70@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["text detection", "ocr", "Scene text detection"]
+dependencies = [
+    "torch",
+    "torchvision",
+    "Pillow",
+    "opencv-python",
+    "shapely",
+    "tqdm",
+    "numpy",
+    "pyclipper",
+    "anyascii",
+    "scipy"
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/gnana70/"
+
+[project.scripts]
+fast_text_detect = "fast_text_detect.fast_text_detect:main"
+
+
