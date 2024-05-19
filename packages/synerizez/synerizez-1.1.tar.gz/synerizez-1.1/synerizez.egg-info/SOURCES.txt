@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+synerizez/__init__.py
+synerizez/main.py
+synerizez.egg-info/PKG-INFO
+synerizez.egg-info/SOURCES.txt
+synerizez.egg-info/dependency_links.txt
+synerizez.egg-info/requires.txt
+synerizez.egg-info/top_level.txt
