@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+desplice/__init__.py
+desplice/main.py
+desplice.egg-info/PKG-INFO
+desplice.egg-info/SOURCES.txt
+desplice.egg-info/dependency_links.txt
+desplice.egg-info/requires.txt
+desplice.egg-info/top_level.txt
