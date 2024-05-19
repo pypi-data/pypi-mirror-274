@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tenebrionz/__init__.py
+tenebrionz/main.py
+tenebrionz.egg-info/PKG-INFO
+tenebrionz.egg-info/SOURCES.txt
+tenebrionz.egg-info/dependency_links.txt
+tenebrionz.egg-info/requires.txt
+tenebrionz.egg-info/top_level.txt
