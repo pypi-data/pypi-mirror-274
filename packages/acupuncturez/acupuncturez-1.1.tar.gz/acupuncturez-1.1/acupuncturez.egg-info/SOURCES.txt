@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+acupuncturez/__init__.py
+acupuncturez/main.py
+acupuncturez.egg-info/PKG-INFO
+acupuncturez.egg-info/SOURCES.txt
+acupuncturez.egg-info/dependency_links.txt
+acupuncturez.egg-info/requires.txt
+acupuncturez.egg-info/top_level.txt
