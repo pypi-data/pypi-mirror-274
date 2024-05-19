@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+garmentworkerz/__init__.py
+garmentworkerz/main.py
+garmentworkerz.egg-info/PKG-INFO
+garmentworkerz.egg-info/SOURCES.txt
+garmentworkerz.egg-info/dependency_links.txt
+garmentworkerz.egg-info/requires.txt
+garmentworkerz.egg-info/top_level.txt
