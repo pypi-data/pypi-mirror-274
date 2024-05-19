@@ -1,0 +1,2 @@
+include cfgc/*.py
+include cfgc/custom/envs/*
