@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/ParamikoMock/__init__.py
+src/ParamikoMock/ssh_mock.py
+src/paramiko_mock.egg-info/PKG-INFO
+src/paramiko_mock.egg-info/SOURCES.txt
+src/paramiko_mock.egg-info/dependency_links.txt
+src/paramiko_mock.egg-info/not-zip-safe
+src/paramiko_mock.egg-info/requires.txt
+src/paramiko_mock.egg-info/top_level.txt
+tests/test_mock_paramiko.py
