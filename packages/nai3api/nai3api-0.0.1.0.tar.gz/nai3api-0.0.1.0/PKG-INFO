@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: nai3api
+Version: 0.0.1.0
+Summary: 提供对接novelai3.0的token查询、图生图以及文生图。
+Author-email: "Luo.yu_u-520" <luoyu_u@qq.com>

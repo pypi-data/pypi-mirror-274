@@ -1,0 +1,9 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "nai3api"
+version = "0.0.1.0"
+description = "提供对接novelai3.0的token查询、图生图以及文生图。"
+authors = [{name = "Luo.yu_u-520", email = "luoyu_u@qq.com"}]
