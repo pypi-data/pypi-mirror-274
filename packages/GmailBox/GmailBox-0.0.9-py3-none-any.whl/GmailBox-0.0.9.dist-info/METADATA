@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: GmailBox
+Version: 0.0.9
+Summary: With this library, you can create random Gmail and receive messages
+Author: Hamo
+License: LGPLv3
+Keywords: gmail,mail,GmailBox,inbox,email,Tempmail,Tempgmail
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: aiohttp
+Requires-Dist: asyncio
+
+# GmailBox
+
+> With this library, you can create random Gmail and receive messages
+
+## Install :
+```commandline
+pip install -U GmailBox
+```
+## How to use?
+- Here an example to use it:
+```python
+from GmailBox import GmailBox
+
+Gmail = GmailBox()
+
+# Create a new gmail
+New_Gmail = Gmail.new_email()
+email = New_Gmail.email
+
+# Start checking the inbox
+inbox = Gmail.inbox(email)
+
+# If there are messages in the inbox, print them
+if inbox:
+    for message in inbox:
+        print("=" * 21)
+        print(message)
+    print("=" * 21)
+# If no messages were received, print a message
+else:
+    print(f' [!] No messages were received.')
+
+```
+- Here an async example:
+```python
+from GmailBox.asyncio import GmailBox
+import asyncio
+
+# Define the main function
+async def main():
+    Gmail = GmailBox()
+
+    # Create a new gmail
+    New_Gmail = await Gmail.new_email()
+    email = New_Gmail.email
+
+    # Start checking the inbox
+    inbox = await Gmail.inbox(email)
+
+    # If there are messages in the inbox, print them
+    if inbox:
+        for message in inbox:
+            print("=" * 21)
+            print(message)
+        print("=" * 21)
+    # If no messages were received, print a message
+    else:
+        print(f' [!] No messages were received.')
+
+# Run the main function
+asyncio.run(main())
+```
+## On GitHub
+* <a href="https://github.com/H7AM0/GmailBox">GmailBox</a>
+
+## Author
+<p align="center">
+    <a href="https://github.com/H7AM0/GmailBox">
+        <img src="https://telegra.ph/file/19f7cbbf3959941cda6b5.jpg" alt="Hamo" width="128">
+    </a>
+    <br>
+    <b>Hamo • حـمــو</b>
+   <br>
+    <a href="https://www.instagram.com/4.4cq/">
+        Instagram
+    </a>
+     • 
+    <a href="https://t.me/hamo_back">
+        Telegram
+    </a>
+</p>
