@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "prueba-poetry"
+version = "0.0.3"
+description = ""
+authors = ["Erik Alejandro Abdala <c332633@quilmes.com.ar>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+commitizen = "^3.26.0"
+black = "^24.4.2"
+pre-commit = "^3.7.1"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.0.3"
+tag_format = "$version"
+bump_message = "bump: version $current_version → $new_version [skip ci]"
+version_files = [
+    "pyproject.toml:version"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
