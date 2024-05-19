@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Qrscanner-devin
+Version: 0.1.0
+Summary: A simple python repo for scanning Qr code from images and writing its EAN code to a text file.
+Home-page: https://github.com/Devin-Apps/Qrscanner-devin
+Author: Devin
+Author-email: devin@example.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: pyzbar (==0.1.0)
+
+# Qrscanner
+A simple python repo for scanning Qr code from images and writing its EAN code to a text file.
+## How to use
+For ubuntu the command to run the code is:
+`python /path/to/readbc.py /path/to/barcodes eancodes.txt`
+## Create Docker
+Use `sudo docker image build -t python:0.0.1` in Qrscanner folder to create docker image.
+## Run docker
+Use `sudo docker run python:0.0.1` 
+
+
