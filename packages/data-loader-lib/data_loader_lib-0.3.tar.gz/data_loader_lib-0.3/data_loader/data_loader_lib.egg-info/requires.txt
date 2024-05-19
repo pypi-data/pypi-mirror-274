@@ -1,0 +1,7 @@
+pandas
+paramiko
+sqlalchemy
+google-cloud-bigquery
+injector
+python-dotenv
+matplotlib
