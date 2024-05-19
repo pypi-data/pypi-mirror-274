@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: onfon-sms-sender
+Version: 0.1
+Summary: A package to send SMS using Onfon Media API
+Home-page: https://github.com/antonnifo/Onfon-SMS-Sender
+Author: Antonnifo
+Author-email: antonnifo@live.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: Django
+
+# Onfon-SMS-Sender
+A Python package to send SMS using the Onfon Media API.
+
+
+## Installation
+
+```
+pip install onfon-sms-sender
+
+```
+
+## Usage
+
+```
+from onfon_sms_sender import send_sms
+
+recipients = ["254700000001", "254700000002"]
+message = "Hello, this is a test message from Onfon Media API"
+response = send_sms(recipients=recipients, message=message)
+print(response)
+```
