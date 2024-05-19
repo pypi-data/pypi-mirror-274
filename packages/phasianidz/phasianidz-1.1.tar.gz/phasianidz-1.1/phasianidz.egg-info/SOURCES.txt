@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+phasianidz/__init__.py
+phasianidz/main.py
+phasianidz.egg-info/PKG-INFO
+phasianidz.egg-info/SOURCES.txt
+phasianidz.egg-info/dependency_links.txt
+phasianidz.egg-info/requires.txt
+phasianidz.egg-info/top_level.txt
