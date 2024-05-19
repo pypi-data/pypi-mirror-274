@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+retrusez/__init__.py
+retrusez/main.py
+retrusez.egg-info/PKG-INFO
+retrusez.egg-info/SOURCES.txt
+retrusez.egg-info/dependency_links.txt
+retrusez.egg-info/requires.txt
+retrusez.egg-info/top_level.txt
