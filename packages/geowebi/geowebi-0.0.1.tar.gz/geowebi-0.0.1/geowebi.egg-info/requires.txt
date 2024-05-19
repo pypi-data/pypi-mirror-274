@@ -1,0 +1,7 @@
+numpy
+
+[all]
+geowebi[extra]
+
+[extra]
+pandas
