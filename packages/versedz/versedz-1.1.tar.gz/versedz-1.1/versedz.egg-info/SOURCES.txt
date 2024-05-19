@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+versedz/__init__.py
+versedz/main.py
+versedz.egg-info/PKG-INFO
+versedz.egg-info/SOURCES.txt
+versedz.egg-info/dependency_links.txt
+versedz.egg-info/requires.txt
+versedz.egg-info/top_level.txt
