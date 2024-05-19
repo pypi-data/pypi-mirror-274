@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+superepicz/__init__.py
+superepicz/main.py
+superepicz.egg-info/PKG-INFO
+superepicz.egg-info/SOURCES.txt
+superepicz.egg-info/dependency_links.txt
+superepicz.egg-info/requires.txt
+superepicz.egg-info/top_level.txt
