@@ -1,0 +1,10 @@
+jzai/__init__.py,sha256=uei9euwwjQ8I9M8Hp99l9JUWiM5Oda6T5KBeZqJqsbM,58
+jzai/bot.py,sha256=Cixn1G5f0Me9mMKBbhpZYl87npwW-_PU9KgXV_vkzYE,9366
+jzai/cli.py,sha256=uXwgpIVhFfemhhBVgrAz9Je3Q-wY36HCG2tIqjb2CH4,179
+jzai/db.py,sha256=NXuVcXqMjUQTuNoubUVYBKrlitc82ElgeiXxaktU5lo,885
+jzai/utils.py,sha256=TwcNSXXZSWJk__raQJ8vWllVSxEBCDJ_Oe4MRhMzskU,258
+jzai-59.83.44.dist-info/METADATA,sha256=aYgtkqrnsA6JmDf2irRcrOKnmVLs-4fK88A2pGMOk1s,277
+jzai-59.83.44.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+jzai-59.83.44.dist-info/entry_points.txt,sha256=diVJq0LicLqK0e1gOwv3WiuOTxjx8ZdnxBA4wwoBChU,38
+jzai-59.83.44.dist-info/top_level.txt,sha256=SHvIAMeXpnAToqULUYOjM_Mfbz1TnChFbdAYoYoTsNE,5
+jzai-59.83.44.dist-info/RECORD,,
