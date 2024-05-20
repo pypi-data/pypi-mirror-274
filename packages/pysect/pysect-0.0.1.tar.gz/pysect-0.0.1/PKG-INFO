@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pysect
+Version: 0.0.1
+Summary: A 3D mesh slicer in python
+Author-email: Anonoei <dev@anonoei.com>
+Project-URL: Homepage, https://github.com/anonoei/pysect
+Project-URL: Documentation, https://anonoei.github.io/pysect/
+Project-URL: Repository, https://github.com/Anonoei/pysect.git
+Project-URL: Issues, https://github.com/Anonoei/pysect/issues
+Project-URL: Source, https://github.com/anonoei/pysect
+Keywords: anonoei
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyboiler_anonoei
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pdoc3; extra == "dev"
+
+# pysect
+ An object slicer not based on slic3r that you use in your browser
+
+# Using pysect
+ 1. `git clone https://github.com/Anonoei/pysect`
+ 2. `cd pysect`
+ 3. `python3 launch.py`
+ 4. `Go to https://127.0.0.1:8328`

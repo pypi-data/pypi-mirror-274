@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/pysect/__init__.py
+src/pysect/main.py
+src/pysect.egg-info/PKG-INFO
+src/pysect.egg-info/SOURCES.txt
+src/pysect.egg-info/dependency_links.txt
+src/pysect.egg-info/requires.txt
+src/pysect.egg-info/top_level.txt
+src/pysect/primitives/coord.py
+src/pysect/sect/config.py
+src/pysect/sect/sect.py
+src/pysect/sect/primitives/mesh.py
+src/pysect/sect/primitives/stl.py
+src/pysect/sect/serial/stl/stl.py
+src/pysect/sect/slice/slice.py
