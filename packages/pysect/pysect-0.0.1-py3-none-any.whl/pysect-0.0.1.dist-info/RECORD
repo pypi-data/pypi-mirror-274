@@ -1,0 +1,14 @@
+pysect/__init__.py,sha256=w1_JOlLuHcnJDE44wv7zSfsL2F9FGN117k7yfB3VcwU,63
+pysect/main.py,sha256=JQB9ZZzC2RmrHm_Vzn_2tJ16sVVWMfTKsmz9eG-5Bgs,609
+pysect/primitives/coord.py,sha256=4QZKTMl7Emx5IejoHq4nfUrg7uuBPTlvojj01fOp4xQ,295
+pysect/sect/config.py,sha256=0grF5TNLmUNEWaef-RxU-JsKuOM11YRBEgMkyYHDbkI,60
+pysect/sect/sect.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysect/sect/primitives/mesh.py,sha256=RACi2_qW58G2oEFFxI33e4qEDDpI0bnkauTIqdl3-pw,1972
+pysect/sect/primitives/stl.py,sha256=Ct9S0dM74aSV56ua8nx11ervPytTSYNP9jz2Ku55_Jg,738
+pysect/sect/serial/stl/stl.py,sha256=gJXkxvU-DZhYiwrd12xkrq7-naygzIG1joSa3FnrsbM,2381
+pysect/sect/slice/slice.py,sha256=FzSEbYfEqMccwpsj5lGXJ5av77cpD2T5RvuYyH1Jh0s,416
+pysect-0.0.1.dist-info/LICENSE,sha256=PeREYzLu4oW5c8R_9r8uFZBJYVsc2dIvcZpk8gyPPKc,1051
+pysect-0.0.1.dist-info/METADATA,sha256=y5uVbTRFpABIDcpdS8fRIdEgyWrYC-Bm13rGBc6pBBo,1309
+pysect-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pysect-0.0.1.dist-info/top_level.txt,sha256=Kn0qznMXnJdTOQwqY6rxhMjFEwcBeHl85C2OM3jlBCU,7
+pysect-0.0.1.dist-info/RECORD,,
