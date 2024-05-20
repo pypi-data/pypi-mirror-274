@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fixupsz/__init__.py
+fixupsz/main.py
+fixupsz.egg-info/PKG-INFO
+fixupsz.egg-info/SOURCES.txt
+fixupsz.egg-info/dependency_links.txt
+fixupsz.egg-info/requires.txt
+fixupsz.egg-info/top_level.txt
