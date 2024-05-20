@@ -1,0 +1,2 @@
+include baselib/src/*.h
+include baselib/include/*.h
