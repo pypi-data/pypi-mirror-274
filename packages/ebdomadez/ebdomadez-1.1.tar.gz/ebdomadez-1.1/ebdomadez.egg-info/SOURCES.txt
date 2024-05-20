@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ebdomadez/__init__.py
+ebdomadez/main.py
+ebdomadez.egg-info/PKG-INFO
+ebdomadez.egg-info/SOURCES.txt
+ebdomadez.egg-info/dependency_links.txt
+ebdomadez.egg-info/requires.txt
+ebdomadez.egg-info/top_level.txt
