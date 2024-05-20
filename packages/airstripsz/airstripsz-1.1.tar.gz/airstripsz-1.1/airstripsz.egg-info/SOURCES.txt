@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+airstripsz/__init__.py
+airstripsz/main.py
+airstripsz.egg-info/PKG-INFO
+airstripsz.egg-info/SOURCES.txt
+airstripsz.egg-info/dependency_links.txt
+airstripsz.egg-info/requires.txt
+airstripsz.egg-info/top_level.txt
