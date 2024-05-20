@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: DatasetPreprocessor
+Version: 0.1.0
+Summary: A data preprocessing library for machine learning.
+Home-page: https://github.com/AbhishekNair050/Dataset-Processor
+Author: Abhishek Nair, Priyanshi Furiya
+Author-email: abhishek.naiir@gmail.com, furiyapriyanshi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+UNKNOWN
+
