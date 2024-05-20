@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+toesz/__init__.py
+toesz/main.py
+toesz.egg-info/PKG-INFO
+toesz.egg-info/SOURCES.txt
+toesz.egg-info/dependency_links.txt
+toesz.egg-info/requires.txt
+toesz.egg-info/top_level.txt
