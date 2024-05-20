@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package cfpack</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>cfpack</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/chfeder/python/cfpack/pypi/cfpack/__init__.py">/Users/chfeder/python/cfpack/pypi/cfpack/__init__.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-<br>
+#&nbsp;written&nbsp;by&nbsp;Christoph&nbsp;Federrath,&nbsp;2019-2022</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="cfpack.browser_control.html">browser_control</a><br>
+</td><td width="25%" valign=top><a href="cfpack.constants.html">constants</a><br>
+</td><td width="25%" valign=top><a href="cfpack.hdfio.html">hdfio</a><br>
+</td><td width="25%" valign=top><a href="cfpack.matplotlibrc.html">matplotlibrc</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="cfpack.html#timer">timer</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="timer">class <strong>timer</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#timer">timer</a>(name='',&nbsp;quiet=True)<br>
+&nbsp;<br>
+#&nbsp;===&nbsp;<a href="#timer">timer</a>&nbsp;class&nbsp;to&nbsp;time&nbsp;different&nbsp;parts&nbsp;of&nbsp;code&nbsp;execution&nbsp;(named&nbsp;timers)&nbsp;===<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="timer-__init__"><strong>__init__</strong></a>(self, name='', quiet=True)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="timer-get_dt"><strong>get_dt</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="timer-report"><strong>report</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="timer-start"><strong>start</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="timer-stop"><strong>stop</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>datetime</strong> = &lt;class 'datetime.datetime'&gt;<dd><tt><a href="#timer-datetime">datetime</a>(year,&nbsp;month,&nbsp;day[,&nbsp;hour[,&nbsp;minute[,&nbsp;second[,&nbsp;microsecond[,tzinfo]]]]])<br>
+&nbsp;<br>
+The&nbsp;year,&nbsp;month&nbsp;and&nbsp;day&nbsp;arguments&nbsp;are&nbsp;required.&nbsp;tzinfo&nbsp;may&nbsp;be&nbsp;None,&nbsp;or&nbsp;an<br>
+instance&nbsp;of&nbsp;a&nbsp;tzinfo&nbsp;subclass.&nbsp;The&nbsp;remaining&nbsp;arguments&nbsp;may&nbsp;be&nbsp;ints.</tt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-MJ"><strong>MJ</strong></a>(rho, c_s)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;Jeans&nbsp;mass&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-alpha_vir"><strong>alpha_vir</strong></a>(rho, L, sigma_v, spherical=False)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;virial&nbsp;parameter&nbsp;(spherical&nbsp;uniform-density&nbsp;approximation)&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-check_for_overwrite"><strong>check_for_overwrite</strong></a>(filename)</dt></dl>
+ <dl><dt><a name="-comov2proper"><strong>comov2proper</strong></a>(redshift, q, qtype=None)</dt><dd><tt>#&nbsp;===&nbsp;for&nbsp;given&nbsp;redshift,&nbsp;convert&nbsp;co-moving&nbsp;quantity&nbsp;q&nbsp;with&nbsp;physical&nbsp;unit&nbsp;'qtype'&nbsp;to&nbsp;proper&nbsp;quantity&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-congrid"><strong>congrid</strong></a>(a, outshape, method='linear')</dt><dd><tt>#&nbsp;==================&nbsp;similar&nbsp;to&nbsp;IDL&nbsp;congrid&nbsp;(2D&nbsp;only)&nbsp;====================</tt></dd></dl>
+ <dl><dt><a name="-debug_decorator"><strong>debug_decorator</strong></a>(func)</dt><dd><tt>#&nbsp;===&nbsp;Decorator&nbsp;to&nbsp;print&nbsp;the&nbsp;function&nbsp;signature&nbsp;and&nbsp;return&nbsp;value&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-eform"><strong>eform</strong></a>(x, prec=10, print_leading_plus=False)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;x&nbsp;in&nbsp;E-format&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-fit"><strong>fit</strong></a>(func, xdata, ydata, weights=None, params=None, verbose=1, *args, **kwargs)</dt><dd><tt>#&nbsp;===&nbsp;START&nbsp;fit&nbsp;===<br>
+#&nbsp;params&nbsp;should&nbsp;be&nbsp;a&nbsp;dict&nbsp;with&nbsp;the&nbsp;parameter&nbsp;name(s)&nbsp;and&nbsp;a&nbsp;list&nbsp;specifying&nbsp;[min,&nbsp;start,&nbsp;max]</tt></dd></dl>
+ <dl><dt><a name="-gauss_smooth"><strong>gauss_smooth</strong></a>(input_data, sigma=None, fwhm=None, mode='wrap')</dt><dd><tt>#&nbsp;===&nbsp;Smoothing&nbsp;a&nbsp;2D&nbsp;array&nbsp;with&nbsp;a&nbsp;Gaussian&nbsp;kernel&nbsp;(sigma&nbsp;or&nbsp;fwhm&nbsp;in&nbsp;pixel&nbsp;units)&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-generate_random_gaussian_numbers"><strong>generate_random_gaussian_numbers</strong></a>(n=100, mu=0.0, sigma=1.0, seed=None)</dt><dd><tt>#&nbsp;generates&nbsp;a&nbsp;numpy&nbsp;array&nbsp;with&nbsp;n&nbsp;Gaussian&nbsp;distributed&nbsp;random&nbsp;numbers&nbsp;based&nbsp;on&nbsp;mean&nbsp;mu&nbsp;and&nbsp;standard&nbsp;devitation&nbsp;sigma</tt></dd></dl>
+ <dl><dt><a name="-generate_random_uniform_numbers"><strong>generate_random_uniform_numbers</strong></a>(n=100, min=0.0, max=1.0, seed=None)</dt><dd><tt>#&nbsp;generates&nbsp;a&nbsp;numpy&nbsp;array&nbsp;with&nbsp;n&nbsp;uniformly&nbsp;distributed&nbsp;random&nbsp;numbers&nbsp;based&nbsp;on&nbsp;min&nbsp;and&nbsp;max</tt></dd></dl>
+ <dl><dt><a name="-get_1d_coords"><strong>get_1d_coords</strong></a>(cmin=0, cmax=1, ndim=10, cell_centred=True)</dt><dd><tt>#&nbsp;return&nbsp;cell-centered&nbsp;coordinates&nbsp;|&nbsp;.&nbsp;|&nbsp;.&nbsp;|<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmax<br>
+#&nbsp;or&nbsp;face-centred&nbsp;if&nbsp;keyword&nbsp;cell_centred=False</tt></dd></dl>
+ <dl><dt><a name="-get_2d_coords"><strong>get_2d_coords</strong></a>(cmin=[0, 0], cmax=[1, 1], ndim=[10, 10], cell_centred=True)</dt></dl>
+ <dl><dt><a name="-get_3d_coords"><strong>get_3d_coords</strong></a>(cmin=[0, 0, 0], cmax=[1, 1, 1], ndim=[10, 10, 10], cell_centred=True)</dt></dl>
+ <dl><dt><a name="-get_binned_stats"><strong>get_binned_stats</strong></a>(data, bin_values, bins=None, statistic='mean', **kwargs)</dt><dd><tt>#&nbsp;===&nbsp;bin&nbsp;data&nbsp;with&nbsp;bin_values&nbsp;(same&nbsp;size&nbsp;as&nbsp;data)&nbsp;into&nbsp;bins&nbsp;(number&nbsp;or&nbsp;array&nbsp;of&nbsp;bin&nbsp;edges)&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-get_coords"><strong>get_coords</strong></a>(cmin, cmax, ndim, cell_centred=True)</dt><dd><tt>#&nbsp;this&nbsp;function&nbsp;takes&nbsp;lists&nbsp;or&nbsp;arrays&nbsp;as&nbsp;inputs,<br>
+#&nbsp;determining&nbsp;the&nbsp;dimensionality&nbsp;of&nbsp;the&nbsp;requested&nbsp;coordinates&nbsp;from&nbsp;the&nbsp;dimensionality&nbsp;of&nbsp;the&nbsp;inputs;<br>
+#&nbsp;for&nbsp;example,&nbsp;if&nbsp;cmin=[0,0],&nbsp;cmin=[1,1],&nbsp;ndim=[10,10],&nbsp;this&nbsp;function&nbsp;returns&nbsp;2D&nbsp;corrdinates&nbsp;with&nbsp;10&nbsp;points&nbsp;in&nbsp;x=y=[0,1]</tt></dd></dl>
+ <dl><dt><a name="-get_dirs"><strong>get_dirs</strong></a>(dirname='.', include_base_dir=False, strip=False, verbose=1)</dt><dd><tt>#&nbsp;===&nbsp;function&nbsp;returning&nbsp;all&nbsp;sub-directories,&nbsp;including&nbsp;hidden&nbsp;dirs&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-get_kde_sample"><strong>get_kde_sample</strong></a>(data, n=1000, seed=1, show=False)</dt></dl>
+ <dl><dt><a name="-get_moments"><strong>get_moments</strong></a>(x, y, xs=None, xe=None)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;mean,&nbsp;stddev,&nbsp;skewness,&nbsp;kurtosis&nbsp;of&nbsp;input&nbsp;y(x)&nbsp;by&nbsp;integrating&nbsp;over&nbsp;x&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-get_pdf"><strong>get_pdf</strong></a>(data, range=None, bins=200)</dt><dd><tt>#&nbsp;===&nbsp;get&nbsp;the&nbsp;PDF&nbsp;of&nbsp;data&nbsp;and&nbsp;return&nbsp;centred&nbsp;bin&nbsp;values&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-get_sigma"><strong>get_sigma</strong></a>(mean, ms)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;sigma&nbsp;from&nbsp;input&nbsp;mean&nbsp;and&nbsp;mean-square&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-get_spectrum"><strong>get_spectrum</strong></a>(data_in, ncmp=1)</dt><dd><tt>#&nbsp;===&nbsp;get&nbsp;the&nbsp;Fourier&nbsp;(k-space)&nbsp;spectrum&nbsp;of&nbsp;data&nbsp;with&nbsp;ncmp&nbsp;components&nbsp;in&nbsp;axis=0&nbsp;===<br>
+#&nbsp;===&nbsp;e.g.,&nbsp;for&nbsp;a&nbsp;64^3&nbsp;dataset&nbsp;and&nbsp;3&nbsp;vector&nbsp;components,&nbsp;data.shape&nbsp;must&nbsp;be&nbsp;(3,&nbsp;64,&nbsp;64,&nbsp;64)&nbsp;===<br>
+#&nbsp;===&nbsp;e.g.,&nbsp;for&nbsp;a&nbsp;32^2&nbsp;dataset&nbsp;with&nbsp;only&nbsp;1&nbsp;component,&nbsp;data.shape&nbsp;must&nbsp;be&nbsp;(32,&nbsp;32)&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-lJ"><strong>lJ</strong></a>(rho, c_s)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;Jeans&nbsp;length&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-mass"><strong>mass</strong></a>(rho, L, spherical=False)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;mass&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-plot"><strong>plot</strong></a>(y=None, x=None, yerr=None, xerr=None, type=None, xlabel='x', ylabel='y', label=None, marker=None, linestyle=None, linewidth=None, show=False, pause=None, xlog=False, ylog=False, xlim=None, ylim=None, save=None, legend_loc='upper left', text=None, shaded_err=None, *args, **kwargs)</dt><dd><tt>#&nbsp;===&nbsp;START&nbsp;plot&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-plot_map"><strong>plot_map</strong></a>(image=None, dims=None, vmin=None, vmax=None, log=False, colorbar=True, cmap='magma', cmap_label=None, xlabel=None, ylabel=None, extent=None, dpi=200, show=False, pause=None, save=None, *args, **kwargs)</dt><dd><tt>#&nbsp;===&nbsp;START&nbsp;plot_map&nbsp;===<br>
+#&nbsp;function&nbsp;to&nbsp;plot&nbsp;a&nbsp;map&nbsp;(of&nbsp;a&nbsp;2D&nbsp;numpy&nbsp;array)</tt></dd></dl>
+ <dl><dt><a name="-polytropic_eos"><strong>polytropic_eos</strong></a>(dens, mu=2.3)</dt><dd><tt>#&nbsp;===&nbsp;polytropic_eos&nbsp;START&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-print"><strong>print</strong></a>(*args, error=False, warn=False, highlight=False, color='', no_prefix=False, **kwargs)</dt><dd><tt>#&nbsp;===&nbsp;START&nbsp;print&nbsp;===<br>
+#&nbsp;custom&nbsp;<a href="#-print">print</a>()&nbsp;function&nbsp;override&nbsp;to&nbsp;show&nbsp;caller&nbsp;(module&nbsp;and&nbsp;function)&nbsp;information&nbsp;before&nbsp;actual&nbsp;print&nbsp;string,<br>
+#&nbsp;plus&nbsp;options&nbsp;colourised&nbsp;output</tt></dd></dl>
+ <dl><dt><a name="-r_larmor"><strong>r_larmor</strong></a>(B, v, m=1.67262192369e-24, q=4.803204712570263e-10)</dt><dd><tt>#&nbsp;===&nbsp;Larmor&nbsp;radius&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-read_ascii"><strong>read_ascii</strong></a>(filename, astropy_read=True, read_header=True, quiet=False, max_num_lines=10000000.0, plain=False, *args, **kwargs)</dt><dd><tt>#&nbsp;===&nbsp;read&nbsp;an&nbsp;ASCII&nbsp;file&nbsp;===<br>
+#&nbsp;===&nbsp;select&nbsp;plain=True,&nbsp;to&nbsp;read&nbsp;each&nbsp;line&nbsp;into&nbsp;a&nbsp;list&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-rebin"><strong>rebin</strong></a>(a, outshape)</dt><dd><tt>#&nbsp;==================&nbsp;similar&nbsp;to&nbsp;IDL&nbsp;rebin&nbsp;(2D&nbsp;only)&nbsp;====================</tt></dd></dl>
+ <dl><dt><a name="-replace_line_in_file"><strong>replace_line_in_file</strong></a>(filename, search_str, new_line)</dt><dd><tt>#&nbsp;===&nbsp;function&nbsp;to&nbsp;search&nbsp;for&nbsp;a&nbsp;string&nbsp;pattern&nbsp;at&nbsp;the&nbsp;start&nbsp;of&nbsp;a&nbsp;line,&nbsp;and&nbsp;to&nbsp;replace&nbsp;that&nbsp;line&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-round"><strong>round</strong></a>(x, nfigs=3, str_ret=False)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;x&nbsp;rounded&nbsp;to&nbsp;nfigs&nbsp;significant&nbsp;figures&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-round_with_error"><strong>round_with_error</strong></a>(val, val_err, nfigs=2)</dt><dd><tt>#&nbsp;round&nbsp;a&nbsp;value&nbsp;and&nbsp;its&nbsp;error&nbsp;(uncertainty)&nbsp;to&nbsp;given&nbsp;nfigs&nbsp;significant&nbsp;figures</tt></dd></dl>
+ <dl><dt><a name="-run_shell_command"><strong>run_shell_command</strong></a>(cmd, quiet=False, print_only=False, capture=False, **kargs)</dt><dd><tt>#&nbsp;===&nbsp;executes&nbsp;a&nbsp;shell&nbsp;command:&nbsp;input&nbsp;string&nbsp;'cmd'</tt></dd></dl>
+ <dl><dt><a name="-scale_factor"><strong>scale_factor</strong></a>(redshift)</dt><dd><tt>#&nbsp;===&nbsp;scale&nbsp;factor&nbsp;from&nbsp;redshift&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-shock_jump_T"><strong>shock_jump_T</strong></a>(Mach, gamma=1.6666666666666667)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;temperature&nbsp;Rankine-Hugoniot&nbsp;shock&nbsp;jump&nbsp;condition-&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-shock_jump_p"><strong>shock_jump_p</strong></a>(Mach, gamma=1.6666666666666667)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;pressure&nbsp;Rankine-Hugoniot&nbsp;shock&nbsp;jump&nbsp;condition-&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-shock_jump_rho"><strong>shock_jump_rho</strong></a>(Mach, gamma=1.6666666666666667)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;density&nbsp;Rankine-Hugoniot&nbsp;shock&nbsp;jump&nbsp;condition-&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-sigma_s"><strong>sigma_s</strong></a>(Mach, b=0.4, beta=1e+99)</dt><dd><tt>#&nbsp;===&nbsp;return&nbsp;<a href="#-sigma_s">sigma_s</a>(Mach,&nbsp;b,&nbsp;beta)&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-sink_dens_thresh"><strong>sink_dens_thresh</strong></a>(r_sink, c_s)</dt></dl>
+ <dl><dt><a name="-smooth"><strong>smooth</strong></a>(x, y, window_npts=11, order=3)</dt><dd><tt>#&nbsp;smoothing/filtering&nbsp;data</tt></dd></dl>
+ <dl><dt><a name="-t_larmor"><strong>t_larmor</strong></a>(B, m=1.67262192369e-24, q=4.803204712570263e-10)</dt><dd><tt>#&nbsp;===&nbsp;Larmor&nbsp;time&nbsp;(time&nbsp;to&nbsp;gyrate&nbsp;once)&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-tex_escape"><strong>tex_escape</strong></a>(text)</dt><dd><tt>#&nbsp;escape&nbsp;latex</tt></dd></dl>
+ <dl><dt><a name="-tff"><strong>tff</strong></a>(rho)</dt></dl>
+ <dl><dt><a name="-timer_decorator"><strong>timer_decorator</strong></a>(func)</dt><dd><tt>#&nbsp;===&nbsp;Decorator&nbsp;to&nbsp;print&nbsp;the&nbsp;runtime&nbsp;of&nbsp;the&nbsp;decorated&nbsp;function&nbsp;===</tt></dd></dl>
+ <dl><dt><a name="-write_ascii"><strong>write_ascii</strong></a>(filename, dat, format='fixed_width', delimiter='', comment=False, quiet=False, plain=False, *args, **kwargs)</dt><dd><tt>#&nbsp;===&nbsp;write&nbsp;an&nbsp;ASCII&nbsp;file&nbsp;===<br>
+#&nbsp;===&nbsp;select&nbsp;plain=True,&nbsp;to&nbsp;write&nbsp;list&nbsp;(dat)&nbsp;with&nbsp;lines&nbsp;to&nbsp;file&nbsp;===</tt></dd></dl>
+</td></tr></table>
+</body></html>
