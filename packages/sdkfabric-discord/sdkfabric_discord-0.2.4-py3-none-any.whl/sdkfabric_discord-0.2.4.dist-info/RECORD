@@ -1,0 +1,13 @@
+sdk/channel.py,sha256=QqcGzmqRmgciwGidWRQw_nYHI4MtsAO01lmExspdDBQ,2329
+sdk/channel_message_tag.py,sha256=j8O9ZirzW5niqFBuwlWK2Tz8plJRoMJN24dicnZ92_I,7495
+sdk/channel_tag.py,sha256=awNkxzuXvyyXFC0GKse1I9WyahK3D3f4yhmL21jVw_s,2448
+sdk/client.py,sha256=DmHHrMM_ZnjU5yKWqYwHl-7qCB_83c9CMMRR1KYfJyo,854
+sdk/message.py,sha256=HKHAbyyq455BzNdkQ9w23Cx8-4EriTWx1WMR46nWyyM,1020
+sdk/message_allowed_mentions.py,sha256=PClSav8ofxJp16rfnmQYVZ2skd-HXwG3tABji_LEu3U,636
+sdk/message_embed.py,sha256=IIfS8aZqTmLF0EMRgRbKHt5U4Pel06NW8AQRWMGx5bc,720
+sdk/message_reference.py,sha256=eQozLwrck7wVSjh4aNG39O5ePABSoYlMe64SWFGPk0Q,643
+sdkfabric_discord-0.2.4.dist-info/LICENSE,sha256=t-v7kEOmxj0CXYWpyPfugk94l-W0lyN6luvCDEY7r_E,1062
+sdkfabric_discord-0.2.4.dist-info/METADATA,sha256=UCvZAdAW38ybMN-WNPQYTLcML5hsSoZyYMM8nWRiobU,1591
+sdkfabric_discord-0.2.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sdkfabric_discord-0.2.4.dist-info/top_level.txt,sha256=JuXS55gRP3EzGKmJgbLfVfUolO3cM_u69k3qvutnBuw,4
+sdkfabric_discord-0.2.4.dist-info/RECORD,,
