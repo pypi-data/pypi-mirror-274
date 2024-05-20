@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+invisionz/__init__.py
+invisionz/main.py
+invisionz.egg-info/PKG-INFO
+invisionz.egg-info/SOURCES.txt
+invisionz.egg-info/dependency_links.txt
+invisionz.egg-info/requires.txt
+invisionz.egg-info/top_level.txt
