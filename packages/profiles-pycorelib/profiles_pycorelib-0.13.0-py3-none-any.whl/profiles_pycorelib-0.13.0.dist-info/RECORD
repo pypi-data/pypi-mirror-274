@@ -1,0 +1,10 @@
+profiles-pycorelib/__init__.py,sha256=jARYnJSKI6YVyySS5zo8jneh0bxvurK95uQEFtREQCQ,383
+profiles-pycorelib/attribution_model.py,sha256=6ZieetgZNLOEwxb5K94NgugtdSoZZBPrSxYX1mxw6RE,16817
+profiles-pycorelib/common_col_union.py,sha256=GgnMhpQlxSrmm2QZ0NDkmgNbf1untBHZ1lRxLW584lo,5532
+profiles-pycorelib/errors.py,sha256=djEVK7Ta0zDD_Q2Bn2lJ-Xc2PZ9kDRH3ud0V94FRIYo,370
+profiles-pycorelib/pyplot.py,sha256=a6-SFrsJOY-xSxRqc0XSvhyWgWieL1QlI4X26z8vyn4,6359
+profiles-pycorelib/sample_model.py,sha256=eGt2I0BUq5S7pumvHqmlKLxOPXSYONI6P6jcDq2fOQE,6336
+profiles_pycorelib-0.13.0.dist-info/METADATA,sha256=jZ7LKtCX32mYgjS-9GKzAg5UO4mZqIIxs3ePCrBXA5w,472
+profiles_pycorelib-0.13.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+profiles_pycorelib-0.13.0.dist-info/top_level.txt,sha256=InRwLnEjGzuE_N_OQAswVHHRbc8_WHJz9OOaJiaZMl0,19
+profiles_pycorelib-0.13.0.dist-info/RECORD,,
