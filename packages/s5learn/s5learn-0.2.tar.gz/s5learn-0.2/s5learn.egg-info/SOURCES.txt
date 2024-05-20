@@ -1,0 +1,8 @@
+setup.py
+s5learn/__init__.py
+s5learn/main.py
+s5learn/printtext.py
+s5learn.egg-info/PKG-INFO
+s5learn.egg-info/SOURCES.txt
+s5learn.egg-info/dependency_links.txt
+s5learn.egg-info/top_level.txt
