@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: smo_rejection
+Version: 0.4.0
+Summary: 
+Author: mbtmrw
+Author-email: keks2324098@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+## Исключения
+
+- NumIterationsNegative
+    Исключение выбрасывается, если количество итераций отрицательное.
+
+- NumIterationsIsZero
+Исключение выбрасывается, если количество итераций равно нулю.
+
+- NumThreadsNegative
+    Исключение выбрасывается, если количество потоков отрицательное.
+
+- NumThreadsIsZero
+    Исключение выбрасывается, если количество потоков равно нулю.
+
+- AlphaIsZero
+    Исключение выбрасывается, если параметр alpha равен нулю.
+
+- AlphaNegative
+    Исключение выбрасывается, если параметр alpha отрицательный.
+
+- ServiceTimeNegative
+    Исключение выбрасывается, если время обслуживания отрицательное.
+
+- MaxTimeNegative
+    Исключение выбрасывается, если максимальное время симуляции отрицательное.
+
+## Вспомогательные функции
+
+- round_value
+    Округляет заданное число до 4 знаков после запятой.
+
+
+- generate_random_number
+    Генерирует случайное число в диапазоне [0, 1] с округлением до 4 знаков после запятой.
+    Если сгенерировано 0, повторяет генерацию.
+
+
+- calculate_ln
+    Возвращает результат натурального логарифма от случайного числа r_i с округлением до 4 знаков после запятой.
+
+
+- calculate_time
+    Возвращает время между двумя последовательными заявками с округлением до 4 знаков после запятой.
+
