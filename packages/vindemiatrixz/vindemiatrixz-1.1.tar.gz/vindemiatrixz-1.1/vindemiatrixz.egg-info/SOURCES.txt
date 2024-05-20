@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vindemiatrixz/__init__.py
+vindemiatrixz/main.py
+vindemiatrixz.egg-info/PKG-INFO
+vindemiatrixz.egg-info/SOURCES.txt
+vindemiatrixz.egg-info/dependency_links.txt
+vindemiatrixz.egg-info/requires.txt
+vindemiatrixz.egg-info/top_level.txt
