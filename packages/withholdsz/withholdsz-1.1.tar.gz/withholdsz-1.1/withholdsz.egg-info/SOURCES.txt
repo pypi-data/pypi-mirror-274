@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+withholdsz/__init__.py
+withholdsz/main.py
+withholdsz.egg-info/PKG-INFO
+withholdsz.egg-info/SOURCES.txt
+withholdsz.egg-info/dependency_links.txt
+withholdsz.egg-info/requires.txt
+withholdsz.egg-info/top_level.txt
