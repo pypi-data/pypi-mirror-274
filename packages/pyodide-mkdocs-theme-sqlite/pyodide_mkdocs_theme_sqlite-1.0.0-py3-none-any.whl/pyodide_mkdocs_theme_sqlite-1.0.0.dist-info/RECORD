@@ -1,0 +1,11 @@
+pyodide_mkdocs_theme_sqlite/__init__.py,sha256=dJZ73H3B1khAs5eCxMrT450xBTIvvD3lk2mnNWHVA58,34
+pyodide_mkdocs_theme_sqlite/plugin.py,sha256=qEupCS-uwt_4ludPAXFZuS5rCEbe_0Atha3XFX5IXzk,5967
+pyodide_mkdocs_theme_sqlite/css/sqlite_ide.css,sha256=FSBU5eg4-inAl__yksdWvtkrs-Bxfv4-RNl-xUwEvQI,389
+pyodide_mkdocs_theme_sqlite/js/sql-wasm.wasm,sha256=GRGbVYZOtecmbcUmSHhAoK1PfoKFEvMuOH72CmsXAos,1108328
+pyodide_mkdocs_theme_sqlite/js/sqlite_ide.js,sha256=YWL0B1vSrbydpL1OrEjsULgSOkcbh_NiU9ROqcnKcUo,6307
+pyodide_mkdocs_theme_sqlite/js/worker.sql-wasm.js,sha256=Tztp19wd2MHlHgqsdKjmjr397STR2XZwntnPS6RmC0E,54625
+pyodide_mkdocs_theme_sqlite-1.0.0.dist-info/METADATA,sha256=Mw8hC5Upkkwd0Fv6FkdMn3jvmoSq7RwzbBmnLtpJ7dc,1319
+pyodide_mkdocs_theme_sqlite-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyodide_mkdocs_theme_sqlite-1.0.0.dist-info/entry_points.txt,sha256=QGNdiHh4-Kkief11L_eSA5cZe_j_AoD5j6BnIS6G3gk,76
+pyodide_mkdocs_theme_sqlite-1.0.0.dist-info/top_level.txt,sha256=D17CHsgMlg-vqf5bxcXID5-D4ffkydKpdLuqRJBA7Jw,28
+pyodide_mkdocs_theme_sqlite-1.0.0.dist-info/RECORD,,
