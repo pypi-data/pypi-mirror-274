@@ -1,0 +1,3 @@
+[gui_apps]
+shenko = shenko.shenko:main
+

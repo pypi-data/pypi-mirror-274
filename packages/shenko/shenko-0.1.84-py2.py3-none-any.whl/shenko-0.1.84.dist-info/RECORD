@@ -1,0 +1,11 @@
+shenko/__init__.py,sha256=03Tou3kQEPesRE6a0mnzIfZPEIJlCJSA69f7T3Gol14,240
+shenko/shenko.py,sha256=AHVY7xmjC1H0Lezw8p0Qq2vc6tQ_aWLGPI09RFnNL9w,2326
+shenko/s00_init/__init__.py,sha256=NLAcLDHofp5nCoOZZPxO5Gb4Hl5s4I7OBPVqlfUHkjQ,21
+shenko/s00_init/menu.py,sha256=hpLVZUipOm7-Ji54_cqLGtxEumSUyW1PY5EvPaOH7GM,16501
+shenko-0.1.84.dist-info/AUTHORS.rst,sha256=4MR7p_KB7M0Wh9-FBpQ072MJy5nDlgR-RfXKRtKGrmg,206
+shenko-0.1.84.dist-info/LICENSE,sha256=_62wb61LFQ1ZJmqfnHle0byVnwTI9qAG42ty8Jw37qU,1544
+shenko-0.1.84.dist-info/METADATA,sha256=3Die5H6NYrfeBb6F2J-zfJ5mD04kHFTOlNZahQntrq0,2348
+shenko-0.1.84.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+shenko-0.1.84.dist-info/entry_points.txt,sha256=bg9Njkx1EwUh2D1s_7nRDmXr8hmhQXaXdM1hMrJ0hOQ,40
+shenko-0.1.84.dist-info/top_level.txt,sha256=AjQhm7_LeWUnzn8TGLK45F0sCMxVQ94QqVYpojvHx2M,7
+shenko-0.1.84.dist-info/RECORD,,
