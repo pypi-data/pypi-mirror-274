@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ccgo
+Version: 1.0.0
+Summary: A C++ cross-platform build system.
+Home-page: https://github.com/zhlinh/ccgo
+Author: zhlinh
+Author-email: zhlinhng@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: copier >=9.2.0
+Requires-Dist: copier-templates-extensions >=0.3.0
+
+## ccgo
+
+c++ cross-platform build system used to fasten your development.
+
+## License
+
+ccgo is available under the [MIT license](https://opensource.org/license/MIT).
+See the LICENSE file for the full license text.
