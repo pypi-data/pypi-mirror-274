@@ -1,0 +1,2260 @@
+#!/usr/bin/env python3
+'''
+                                ┌───────────────────────────────────┐
+                                │                                   ├─┐
+                                │      │   │ ┌───┐ │   │ ┌───┐      │ │
+                                │      │   │ │   │ │   │ │   │      │ │
+                                │      └─┬─┘ ├───┤ │ │ │ ├───┘      │ │
+                                │        │   │   │ │ │ │ │          │ │
+                                │        │   │   │ └─┴─┘ │          │ │
+                                │                                   │ │
+                                └─┬─────────────────────────────────┘ │
+                                  └───────────────────────────────────┘
+'''
+
+#----- imports -----
+
+from .__init__ import *
+from .__init__ import __version__ as VERSION, __doc__ as DESCRIPTION
+from argparse import ArgumentParser, RawDescriptionHelpFormatter
+from pdfrw import PdfReader, PdfWriter, PageMerge
+from sys import argv, stderr, stdout, platform
+from time import localtime, sleep, time
+from traceback import format_exc
+from warnings import simplefilter
+import PySimpleGUI as sg
+
+#----- constants -----
+
+EMPT, TEXT, PICT, CONT, FIGU, CAPT, INDX, CHP1, CHP2, HEA1, HEA2 = range(11) # line kinds in buf.buffer[KIND]
+
+KINDS = 'EMPT, TEXT, PICT, CONT, FIGU, CAPT, INDX, CHP1, CHP2, HEA1, HEA2'.split(', ')
+    # values in buf.buffer[KIND]:
+        # EMPT empty line
+        # TEXT text line
+        # PICT picture line
+        # CONT contents chapter line
+        # FIGU figure chapter line
+        # CAPT figure caption line
+        # INDX index chapter line
+        # CHP1 numbered chapter line, level == 1
+        # CHP2 numbered chapter line, level > 1
+        # HEA1 page header, first line
+        # HEA2 page header, second line
+
+JINP, KIND, JPAG, LPIC, LINE = range(5) # positions in buf.buffer
+    # JINP line index in input file
+    # KIND line kind, see before
+    # JPAG page number
+    # LPIC number of lines in picture
+    # LINE content of line
+
+LABL, TITL, JOUT = range(3) # positions in buf.contents and buf.captions
+    # LABL chapter label, like '1.' in buf.contents or '1.a.' in buf.captions
+    # TITL chapter title
+    # JOUT line index in buf.buffer
+
+# characters
+INDENT = 4 * ' ' # standard indentation
+HORIZTAB = '\t' # horizontal tab, replaced by INDENT in input lines
+LINEFEED = '\n' # line feed, standard Linux line separator
+CARRIAGE = '\r' # carriage return
+FORMFEED = '\f' # form feed, first character of first line of page headers
+NO_BREAK_SPACE = '\xa0' # characters of second line of page headers if -s = 'b' (blank)
+DOT_ABOVE = '˙' # characters of second line of page headers if -s = 'p' (point)
+MACRON = '¯'    # characters of second line of page headers if -s = 'd' (dash)
+OVERLINE = '‾'  # characters of second line of page headers if -s = 's' (solid)
+HEADER_CHARS = frozenset(FORMFEED + NO_BREAK_SPACE + DOT_ABOVE + MACRON + OVERLINE) # first chars of 1st and 2nd header lines
+SECOND_LINE_CHARS = {'b': NO_BREAK_SPACE, 'p': DOT_ABOVE, 'd': MACRON, 's': OVERLINE} # first chars in second header lines
+ZERO_WIDTH_CHARS = frozenset('\u200b\u200c\u200d') # to be discarded from input
+
+# status indicators
+WAITING = '?'
+RUNNING = '…'
+
+# scale factors when -I > 1
+SCALE_2 = 0.5 ** 0.5 # -I = 2
+SCALE_4 = 0.5        # -I = 4
+SCALE_8 = 0.5 ** 1.5 # -I = 8
+
+# PySimpleGUI
+THEME = 'Default1' # window colour theme
+TSIZE = 15 # text size
+ASIZE = 32 # argument size
+BSIZE = 0 # button size
+
+# files
+MS_WINDOWS = platform.lower().startswith('win')
+YAWP_PATH = longpath('~/.config/yawp') # yawp's directory, create if does not exist
+md(YAWP_PATH) # create if not exists
+PDF_PATH = longpath('~/PDF') # directory for temporary PDF files
+md(PDF_PATH) # create if not exists
+CORR_FILE = longpath(f'{YAWP_PATH}/yawp.corr') # correction file
+HIST_FILE = longpath(f'{YAWP_PATH}/yawp.hist') # file of history of recent files (GUI mode only)
+SESS_FILE = longpath(f'{YAWP_PATH}/yawp.sess') # session file containing pathfile of last text file of previous session (GUI mode only)
+MANUAL_FILE = local_file(f'docs/YAWP {VERSION} User Manual.txt.pdf') # YAWP User Manual
+
+# radio buttons
+NON_RADIO_CHARS = 'ywgulcifFmeEoOnaYPWASZLRTBJt' # chars of non-radio arguments
+RADIO_CHARS = 'psXCI' # chars of radio arguments
+RADIO_DICT = {'p': list('nfpcd'), # domains of radio arguments, as a dict…
+              's': list('nbpds'),
+              'X': list('neb'),
+              'C': list('ndf'),
+              'I': list('1248')}
+RADIO_LIST = [RADIO_DICT[c] for c in RADIO_CHARS] # …and as a list
+SECOND_LINE = ''.join(RADIO_DICT['s']) # display domain of -s argument
+MULTI_PAGES = '/'.join(RADIO_DICT['I']) # display domain of -I argument
+
+# various
+ERROR = 1 # error return code
+USAGE_MODES = list('gefnu') # domain of arg.usage_mode
+QUOTES = "'" + '"' # single and double quotation marks
+MAX_QUALITY = 5 # max lp print quality
+LP_SLEEP = 0.5 # sleep seconds in wait_lp_completion()
+ROUND = 6 # rounding factor in float display
+MAX_HISTORY = 25 # max number of items in history of recent files
+UNITS = ", unit: pt/in/mm/cm" # units in argument helps
+THIS_SESSION = now() # session timestamp, used as a session signature by lock
+
+# default correction file
+CORR_DEFAULT = '''
+# ┌──────────────────────────┐
+# │ ~/.config/yawp/yawp.corr │
+# └──────────────────────────┘
+
+plm 0mm 6mm # portrait left margin
+plm 10mm 16mm
+plm 20mm 24mm
+plm 30mm 35mm
+plm 40mm 43mm
+plm 50mm 52mm
+plm 60mm 62mm
+plm 70mm 72.5mm
+plm 80mm 83mm
+plm 90mm 92mm
+plm 100mm 101mm
+
+llm 0mm 12mm # landscape left margin
+llm 5mm 16mm
+llm 10mm 20.5mm
+llm 20mm 29.5mm
+llm 30mm 39mm
+llm 40mm 48mm
+llm 50mm 57mm
+llm 60mm 66.5mm
+llm 70mm 75.5mm
+llm 80mm 84.5mm
+llm 90mm 94mm
+llm 100mm 104mm
+
+prm 0mm 8.5mm # portrait right margin
+prm 10mm 15mm
+prm 20mm 25.5mm
+prm 30mm 34.5mm
+prm 40mm 44.5mm
+prm 50mm 54.5mm
+prm 60mm 64.5mm
+prm 70mm 72mm
+prm 80mm 81mm
+prm 90mm 91.5mm
+prm 100mm 100mm
+
+lrm 0mm 12mm # landscape left margin
+lrm 5mm 17mm
+lrm 10mm 22mm
+lrm 20mm 30mm
+lrm 30mm 40mm
+lrm 40mm 49.5mm
+lrm 50mm 58mm
+lrm 60mm 68mm
+lrm 70mm 77.5mm
+lrm 80mm 86mm
+lrm 90mm 96mm
+lrm 100mm 104mm
+
+ptm 0mm 2mm # portrait top margin
+ptm 10mm 11.5mm
+ptm 20mm 21mm
+ptm 30mm 30.5mm
+ptm 40mm 39.5mm
+ptm 50mm 49mm
+ptm 60mm 59mm
+ptm 70mm 68mm
+ptm 80mm 77.5mm
+ptm 90mm 87mm
+ptm 100mm 96mm
+
+ltm 0mm 2mm # landscape top margin
+ltm 5mm 7mm
+ltm 10mm 11mm
+ltm 20mm 20.5mm
+ltm 30mm 30mm
+ltm 40mm 39mm
+ltm 50mm 48.5mm
+ltm 60mm 57.5mm
+ltm 70mm 67mm
+ltm 80mm 76mm
+ltm 90mm 85mm
+ltm 100mm 95mm
+
+pbm 0mm 16mm # portrait bottom margin
+pbm 10mm 24mm
+pbm 20mm 34mm
+pbm 30mm 43mm
+pbm 40mm 52.5mm
+pbm 50mm 62mm
+pbm 60mm 71mm
+pbm 70mm 81mm
+pbm 80mm 90mm
+pbm 90mm 100mm
+pbm 100mm 109.5mm
+
+lbm 0mm 14.5mm # landscape bottom margin
+lbm 5mm 19mm
+lbm 10mm 24mm
+lbm 20mm 32mm
+lbm 30mm 42mm
+lbm 40mm 52mm
+lbm 50mm 60mm
+lbm 60mm 70mm
+lbm 70mm 80mm
+lbm 80mm 88mm
+lbm 90mm 99mm
+lbm 100mm 107mm
+
+pcw 100mm 94.674mm # portrait character width
+
+lcw 100mm 92.200mm # landscape character width
+
+pch 100mm 94.358mm # portrait character height
+
+lch 100mm 92.647mm # landscape character height
+'''
+
+tooltips = { # tooltips in GUI main window, others will be added later by get_arguments()
+    'New':      'Create a new empty text file',
+    'Open':     'Browse the file system\nto select the text file',
+    'Recent':   'Browse the list of recent files\nto select the text file',
+    'SaveAs':   'Clone current text file into a target text file',
+    'Help':     'Browse the yawp-generated YAWP Manual\nby the PDF browser defined by -Y',
+    'Exit':     'Save arguments and finish',
+    'Edit':     'Edit the text file\nby the text editor defined by -y',
+    'Format':   'Process the text file in Format mode',
+    'NoFormat': 'Process the text file in NoFormat mode',
+    'Undo':     'Restore the text file to its previous content',
+    'Log':      'Browse the log file\nby the text editor defined by -y'}
+
+PAPERSIZE = { # paper format names for -S --sheet-size
+    'A0':  '841x1189mm',
+    'A1':  '594x841mm',
+    'A2':  '420x594mm',
+    'A3':  '297x420mm',
+    'A4':  '210x297mm',
+    'A5':  '148x210mm',
+    'A6':  '105x148mm',
+    'A7':  '74x105mm',
+    'A8':  '52x74mm',
+    'A9':  '37x52mm',
+    'A10': '26x37mm',
+    'B0':  '1000x1414mm',
+    'B1':  '707x1000mm',
+    'B1+': '720x1020mm',
+    'B2':  '500x707mm',
+    'B2+': '520x720mm',
+    'B3':  '353x500mm',
+    'B4':  '250x353mm',
+    'B5':  '176x250mm',
+    'B6':  '125x176mm',
+    'B7':  '88x125mm',
+    'B8':  '62x88mm',
+    'B9':  '44x62mm',
+    'B10': '31x44mm',
+    'C0':  '917x1297mm',
+    'C1':  '648x917mm',
+    'C2':  '458x648mm',
+    'C3':  '324x458mm',
+    'C4':  '229x324mm',
+    'C5':  '162x229mm',
+    'C6':  '114x162mm',
+    'C7':  '81x114mm',
+    'C8':  '57x81mm',
+    'C9':  '40x57mm',
+    'C10': '28x40mm',
+    'C11': '22x32mm',
+    'C12': '16x22mm',
+    'HALF-LETTER':  '5.5x8.5in',
+    'LETTER':       '8.5x11.0in',
+    'LEGAL':        '8.5x14.0in',
+    'JUNIOR-LEGAL': '5.0x8.0in',
+    'LEDGER':       '11.0x17.0in',
+    'TABLOID':      '11.0x17.0in'}
+
+#----- YAWP-specific functions -----
+
+def inform(lines):
+    'information lines'
+    log_lines(lines)
+    if not var.gui_mode and arg.verbose:
+        for line in lines:
+            print(line)
+
+def error(message, jline=None, line=None, ask=False):
+    message = f'ERROR: {message}'
+    if jline:
+        message += f'\n[{jline+1}] {line!r}'
+    log_lines([message])
+    if var.gui_mode and ask:
+        if not ask_yes('YAWP - ERROR', f'{message}\nDo you want to continue anyway?', 'continue'):
+            raise YawpError
+    elif var.gui_mode:
+        ask_ok('YAWP - ERROR', message)
+        raise YawpError
+    else:
+        print(message, file=stderr)
+        exit_button(ERROR)
+
+def open_file(file, mode='r'):
+    'like open(), but check file for undefined error and directory not found error'
+    process = {'r':'read', 'w':'writ', 'a':'append'}[mode[0]]
+    file = strip(file)
+    if not file:
+        error(f"Undefined file error {process}ing file {file!r}")
+    file = longpath(file)
+    if not isdir(dirname(file)):
+        error(f"Directory not found error {process}ing file {file!r}")
+    return open(file, mode)
+
+def except_file(file, mode='r'):
+    'redirect I/O exception to error()'
+    process = {'r':'read', 'w':'writ', 'a':'append'}[mode[0]]
+    for line in format_exc().split('\n'):
+        if 'Error:' in line:
+            message = '' # 'FileNotFoundError: ... ' -> 'File not found error'
+            for jchar, char in enumerate(line.split(':')[0]):
+                if jchar > 0 and char.isupper():
+                    message += ' ' + char.lower()
+                else:
+                    message += char
+            error(f'{message} {process}ing file {file!r}')
+    else:
+        error(f'Undefined error {process}ing file {file!r}')
+
+def read_lines(text_file):
+    'yield lines in text_file'
+    try:
+        for line in open_file(text_file):
+            yield rstrip(''.join(
+                INDENT if char == HORIZTAB else '' if char in ZERO_WIDTH_CHARS else char for char in line))
+    except:
+        except_file(text_file)
+
+def max_line_length_in(text_file):
+    max_length = 0
+    try:
+        for line in open_file(text_file):
+            max_length = max(max_length, len(rstrip(''.join(
+                INDENT if char == HORIZTAB else '' if char in ZERO_WIDTH_CHARS else char for char in line))))
+    except:
+        except_file(text_file)
+    else:
+        return max_length
+
+def write_lines(text_file, lines=[]):
+    'write lines into text_file'
+    try:
+        with open_file(text_file, 'w') as output:
+            for line in lines:
+                print(rstrip(line), file=output)
+    except:
+        except_file(text_file, 'w')
+
+def append_lines(text_file, lines):
+    'append lines to text_file'
+    try:
+        with open_file(text_file, 'a') as output:
+            for line in lines:
+                print(rstrip(line), file=output)
+    except:
+        except_file(text_file, 'a')
+
+def log_lines(lines):
+    if isfile(arg.text_file):
+        append_lines(log_file_of(arg.text_file), lines)
+
+def lock_file_of(text_file):
+    'create a filename for lock file of text_file'
+    if not text_file:
+        return ''
+    path, name = splitpath(longpath(text_file))
+    return normpath(f'{path}/.yawp.{name}.lock')
+
+def log_file_of(text_file):
+    'create a filename for log file of text_file'
+    if not text_file:
+        return ''
+    path, name = splitpath(longpath(text_file))
+    return normpath(f'{path}/.yawp.{name}.log')
+
+def args_file_of(text_file):
+    'create a filename for args file of text_file'
+    if not text_file:
+        return ''
+    path, name = splitpath(longpath(text_file))
+    return normpath(f'{path}/.yawp.{name}.args')
+
+def temp_file_of(text_file):
+    'create a filename for temp file of text_file'
+    if not text_file:
+        return ''
+    path, name = splitpath(longpath(text_file))
+    return normpath(f'{path}/.yawp.{name}.temp')
+
+def new_back_file_of(text_file):
+    'create a timestamped filename for backup file of text_file'
+    if not text_file:
+        return ''
+    path, name = splitpath(longpath(text_file))
+    return new_file(f'{path}/.yawp.{name}.%Y.%m.%d-%H.%M.%S.back')
+
+def last_back_file_of(text_file):
+    "return filename of the newest timestamped backup of file, or raise FileNotFoundError if not found"
+    if not text_file:
+        return ''
+    path, name_ext = splitpath(longpath(text_file))
+    return max_file(f'{path}/.yawp.{name_ext}.[2-9][0-9][0-9][0-9].[01][0-9].[0-3][0-9]-[0-2][0-9].[0-5][0-9].[0-5][0-9].back')
+
+def back_files_of(text_file):
+    "return list of filenames of all timestamped backups of text_file"
+    if not text_file:
+        return []
+    path, name_ext = splitpath(longpath(text_file))
+    return get_file(f'{path}/.yawp.{name_ext}.[2-9][0-9][0-9][0-9].[01][0-9].[0-3][0-9]-[0-2][0-9].[0-5][0-9].[0-5][0-9].back')
+
+def is_reserved(file):
+    'is file a YAWP-reserved file?'
+    path, name = splitpath(shortpath(file))
+    return path.startswith('~/.config/yawp') or name.startswith('.yawp.')
+
+def chapter_level(prefix):
+    "level of a chapter prefix: '0.' -> 1, '0.0.' -> 2, …, else -> 0"
+    status = 0; level = 0
+    for char in prefix:
+        if status == 0:
+            if char.isdecimal():
+                status = 1
+            else:
+                return 0
+        else: # status == 1
+            if char.isdecimal():
+                pass
+            elif char == '.':
+                level += 1
+                status = 0
+            else:
+                return 0
+    return level if status == 0 else 0
+
+def figure_level(prefix):
+    "level of a figure caption: 'x.' -> 1, '0.x.' -> 2, '0.0.x.' -> 3, …, else -> 0"
+    if fnmatchcase(prefix, '[a-z].'):
+        return 1
+    elif not fnmatchcase(prefix, '*[a-z].'):
+        return 0
+    else:
+        chaplevel = chapter_level(prefix[:-2])
+        return 0 if chaplevel == 0 else chaplevel + 1
+
+def page_number(number, page_offset):
+    'display page number, possibly by a Roman number'
+    return int2roman(number) if number <= -page_offset else str(number + page_offset)
+
+def max_len_page_number(max_number, page_offset):
+    'max length of display page numbers from 1 until max_number, including Roman numbers'
+    arab_len = len(str(max_number + page_offset))
+    roma_len = 0 if page_offset >= 0 else max((len(int2roman(n)) for n in range(min(max_number, -page_offset) + 1)))
+    return max(arab_len, roma_len)
+
+def ask_yes(title, question, tooltip_yes, tooltip_no=''):
+    "show a Yes/No window and return True if 'Yes', False if 'No' or alt-F4 or 'x' button"
+    lines = question.split('\n')
+    text_width = max(ASIZE, max(len(line) for line in lines))
+    text_height = len(lines)
+    layout = [[sg.Text(question, size=(text_width, text_height))],
+              [sg.Button('Yes', tooltip=tooltip_yes.title(), size=BSIZE),
+               sg.Button('No', tooltip=tooltip_no or f"Do not {tooltip_yes.lower()}", size=BSIZE)]]
+    return sg.Window(title, layout).read(close=True)[0] == 'Yes'
+
+def ask_ok(title, message):
+    "show a window, exit by 'OK' or alt-F4 or 'x' button"
+    lines = message.split('\n')
+    text_width = max(ASIZE, max(len(line) for line in lines))
+    text_height = len(lines)
+    layout = [[sg.Text(message, size=(text_width, text_height))],
+              [sg.Button('OK', tooltip='go on', size=BSIZE)]]
+    sg.Window(title, layout).read(close=True)
+
+def read_sess_file():
+    'read path and name of text file from session file, if possible'
+    try:
+        return rstrip(open(SESS_FILE).read())
+    except:
+        return ''
+
+def write_sess_file(text_file):
+    if arg.usage_mode == 'g':
+        write_lines(SESS_FILE, [text_file])
+
+def wait_lp_completion():
+    previous = None
+    while True:
+        current = shell(f'ls -al {PDF_PATH!r} 2>/dev/null')
+        if previous == current:
+            return
+        previous = current
+        sleep(LP_SLEEP)
+
+#----- class YawpError -----
+
+class YawpError(Exception): pass # error control in GUI mode
+
+#----- class Variables -----
+
+class Variables: pass # global not-argument scalar variables
+
+var = Variables()
+
+#----- class Arguments -----
+
+class Arguments:
+
+    def __init__(arg):
+        arg.name_default = {} # {name: default} filled by get_arguments()
+        arg.blacklist = {'help','view_manual','version','usage_mode','verbose','text_file'} # do not read/write from/into args file
+        arg.shorts_longs = [] # [(short, long), …]
+
+    def read_from_argv(arg, argv):
+        parser = ArgumentParser(prog='yawp', formatter_class=RawDescriptionHelpFormatter, description=DESCRIPTION)
+        #
+        def varg(short, long, version):
+            'version argument'
+            # no need for arg.name_default tooltip NON_RADIO_CHARS arg shorts_longs
+            parser.add_argument(short, long, action='version', version=f'YAWP {VERSION}')
+        #
+        def barg(short, long, help):
+            'boolean argument'
+            name = long[2:].replace('-','_')
+            arg.name_default[name] = False
+            letter = short[1]
+            tooltips[letter] = help.replace(' (','\n(').replace(', ',',\n')
+            help=help.replace('%','%%')
+            parser.add_argument(short, long, action='store_true', help=help)
+            arg.shorts_longs.append((short, long))
+        #
+        def sarg(short, long, default, help, note=''):
+            'string argument'
+            name = long[2:].replace('-','_')
+            arg.name_default[name] = default
+            letter = short[1]
+            help = f"{help} (default: {default!r}{note})"
+            tooltips[letter] = help.replace(' (','\n(').replace(', ',',\n')
+            help=help.replace('%','%%')
+            parser.add_argument(short, long, default=default, help=help)
+            arg.shorts_longs.append((short, long))
+        #
+        def parg(name, nargs, help):
+            'positional argument'
+            arg.name_default[name] = ''
+            letter = name[0]
+            tooltips[letter] = help.replace(' (','\n(').replace(', ',',\n')
+            help=help.replace('%','%%')
+            parser.add_argument(name, nargs=nargs, help=help)
+            arg.shorts_longs.append(('', name))
+        #
+        # usage arguments
+        varg('-V', '--version',         'yawp' + VERSION)
+        barg('-H', '--browse-manual',   'browse the PDF YAWP User Manual and exit')
+        barg('-v', '--verbose',         'write all messages on stderr (CLI modes only, default: write errors only)')
+        sarg('-M', '--usage-mode',      'g', "run yawp in this usage mode", " = GUI, 'e' = CLI Edit, 'f' = CLI Format, 'n' = CLI NoFormat, 'u' = CLI Undo")
+        # format arguments
+        sarg('-y', '--text-editor',     'idle', "editor for text files")
+        sarg('-w', '--chars-per-line',  '0', 'line width in characters per line', ' = automatic')
+        barg('-g', '--graphics',        "redraw '`'-segments and '^'-arrowheads")
+        sarg('-u', '--lines-per-page',  '0', 'page height in lines per page', ' = automatic')
+        barg('-l', '--just-left-only',  'justify text lines at left only (default: at left and right)')
+        # chapter arguments
+        sarg('-c', '--contents-title',  'Contents', "title of Contents chapter")
+        sarg('-i', '--index-title',     'Index', "title of Index chapter")
+        sarg('-f', '--figures-title',   'Figures', "title of Figures chapter")
+        sarg('-F', '--caption-prefix',  'Figure', "first word of figure captions")
+        sarg('-m', '--chapter-offset',  '0', 'offset of level-1 numbered chapters', ', min: -1')
+        # paging arguments
+        sarg('-p', '--page-headers',    'n', "insert page headers",
+             " = no, 'f' = on full page, 'p' = and on broken pictures, 'c' = and on level-1 chapters, 'd' = double if level-1 on even page")
+        sarg('-e', '--even-left',       '%n', "first line of headers of even pages, left")
+        sarg('-E', '--even-right',      '%f', "first line of headers of even pages, right")
+        sarg('-o', '--odd-left',        '%c', "first line of headers of odd pages, left")
+        sarg('-O', '--odd-right',       '%n', "first line of headers of odd pages, right")
+        sarg('-n', '--page-offset',     '0', 'offset of page numbers', ", min: -3999, if < 0: Roman numbers")
+        barg('-a', '--all-pages-E-e',   "put in all page headers -E at left and -e at right")
+        sarg('-s', '--second_line',     's', 'second line of page headers', " = solid, 'n' = no, 'b' = blanks, 'p' = points, 'd' = dashes")
+        # export arguments
+        sarg('-X', '--export-pdf',      'n', 'export and browse PDF file', " = no, 'e' = export, 'b' = export and browse")
+        sarg('-C', '--correct',         'd', "correct character size and page margins", " = by default values, 'n' = no, 'f' = by correction file")
+        sarg('-Y', '--pdf-browser',     'atril', "browser for PDF files")
+        sarg('-P', '--pdf-file',        '%f%e.pdf', "exported PDF file")
+        sarg('-W', '--char-width',      '0', "character width", " = automatic" + UNITS)
+        sarg('-A', '--char-aspect',     '3/5', "character aspect ratio = width / height", ", 1 = square grid")
+        sarg('-S', '--sheet-size',      'A4', "portrait paper size width x height", " = '210x297mm'" + UNITS)
+        barg('-Z', '--landscape',       "turn page by 90 degrees (default: portrait)")
+        sarg('-L', '--left-margin',     '2cm', "left margin", UNITS)
+        sarg('-R', '--right-margin',    '2cm', "right margin", UNITS)
+        sarg('-T', '--top-margin',      '2cm', "top margin", UNITS)
+        sarg('-B', '--bottom-margin',   '2cm', "bottom margin", UNITS)
+        sarg('-I', '--multi-pages',     '1', 'pages on each side of paper sheets', ", values: 1/2/4/8")
+        sarg('-J', '--multi-sheets',    '0', 'paper sheets gathered together', " = export sequentially")
+        # file argument
+        parg('text_file', '?', 'text file to process, ASCII or UTF-8-encoded Unicode')
+        # arguments → arg.*
+        parser.parse_args(argv[1:], arg)
+        # text_file
+        arg.text_file = longpath(arg.text_file) if arg.text_file else '' # None → ''
+        # -h is managed by ArgumentParser
+        # -V is managed by ArgumentParser
+        # -H
+        if arg.browse_manual:
+            arg.check_pdf_browser()
+            shell(f'{arg.pdf_browser} {MANUAL_FILE!r}')
+            exit(0)
+        # -M
+        if arg.usage_mode not in USAGE_MODES:
+            error(f"Wrong -M {arg.usage_mode!r}, it must be in {USAGE_MODES}")
+        # text_file
+        arg.text_file = strip(arg.text_file or '')
+        if arg.text_file:
+            arg.text_file = longpath(arg.text_file)
+        if arg.usage_mode == 'g': # GUI mode, text_file optional, other arguments forbidden
+            arg.verbose = False
+            if len(argv) != 1 + bool(arg.text_file):
+                error(f"In GUI mode no argument is allowed, except possibly text_file")
+            if not arg.text_file:
+                arg.text_file = read_sess_file()
+            arg.read_from_args_file_of(arg.text_file)
+        else: # CLI modes, text_file mandatory, other arguments optional
+            if not arg.text_file:
+                error(f'In CLI mode (-M {arg.usage_mode!r}) the text_file argument is mandatory')
+        if isfile(arg.text_file):
+            hist.add(arg.text_file)
+            cd(dirname(arg.text_file))
+
+    def inform(arg):
+        lines = ['Non-default arguments:']
+        for short, long in arg.shorts_longs:
+            name = replace(long, '--', '', '-', '_')
+            if name not in arg.blacklist or name == 'verbose':
+                value = eval(name, arg.__dict__, arg.__dict__)
+                default = arg.name_default[name]
+                if value != default:
+                    lines.append(f'    {name} = {value!r}')
+        inform(lines)
+
+    def read_from_args_file_of(arg, text_file):
+        '''if args_file_of(text_file) not found, all args get their default values
+on error reading an arg, arg maintains its default value'''
+        if arg.usage_mode == 'g':
+            arg.set_default()
+            if isfile(text_file):
+                args_file = args_file_of(text_file)
+                if isfile(args_file):
+                    for line in read_lines(args_file):
+                        stmt = line2stmt(line)
+                        if stmt:
+                            try:
+                                name, value = stmt.split('=')
+                                name, value = strip(name), strip(value)
+                                if name in arg.name_default and name not in arg.blacklist:
+                                    setattr(arg, name, eval(value, {}, {}))
+                            except:
+                                pass
+
+    def write_into_args_file_of(arg, text_file):
+        if arg.usage_mode == 'g' and isfile(text_file):
+            lines = []
+            for short, long in arg.shorts_longs:
+                name = long.replace('--','').replace('-','_')
+                if name not in arg.blacklist:
+                    value = eval(name, arg.__dict__, arg.__dict__)
+                    if value != arg.name_default[name]:
+                        lines.append(f'{name} = {value!r}')
+            write_lines(args_file_of(text_file), lines)
+
+    def read_from_window(arg, window):
+        (arg.text_editor, arg.chars_per_line, arg.graphics, arg.lines_per_page, arg.just_left_only,
+         arg.contents_title, arg.index_title, arg.figures_title, arg.caption_prefix, arg.chapter_offset,
+         arg.even_left, arg.even_right, arg.odd_left, arg.odd_right, arg.page_offset, arg.all_pages_E_e,
+         arg.pdf_browser, arg.pdf_file, arg.char_width, arg.char_aspect, arg.sheet_size, arg.landscape,
+         arg.left_margin, arg.right_margin, arg.top_margin, arg.bottom_margin, arg.multi_sheets,
+         arg.text_file) = [window[char].get() for char in NON_RADIO_CHARS]
+        arg.page_headers, arg.second_line, arg.export_pdf, arg.correct, arg.multi_pages = get_radios(window, RADIO_LIST)
+
+    def write_into_window(arg, window):
+        for letter, value in zip(NON_RADIO_CHARS,
+            (arg.text_editor, arg.chars_per_line, arg.graphics, arg.lines_per_page, arg.just_left_only,
+             arg.contents_title, arg.index_title, arg.figures_title, arg.caption_prefix, arg.chapter_offset,
+             arg.even_left, arg.even_right, arg.odd_left, arg.odd_right, arg.page_offset, arg.all_pages_E_e,
+             arg.pdf_browser, arg.pdf_file, arg.char_width, arg.char_aspect, arg.sheet_size, arg.landscape,
+             arg.left_margin, arg.right_margin, arg.top_margin, arg.bottom_margin, arg.multi_sheets,
+             arg.text_file)):
+            window[letter].update(value)
+        put_radios(window, RADIO_LIST, (arg.page_headers, arg.second_line, arg.export_pdf, arg.correct, arg.multi_pages))
+        window.refresh()
+
+    def shrink_all(arg):
+        for name, default in arg.name_default.items():
+            if name not in arg.blacklist:
+                value = getattr(arg, name)
+                if isinstance(value, str):
+                    setattr(arg, name, shrink(value))
+
+    def set_default(arg):
+        for name, default in arg.name_default.items():
+            if name not in arg.blacklist:
+                setattr(arg, name, default)
+
+    def set_default_if_empty(arg):
+        for name, default in arg.name_default.items():
+            if name not in arg.blacklist:
+                value = getattr(arg, name)
+                if isinstance(value, str) and not strip(value):
+                    setattr(arg, name, default)
+
+    def check(arg):
+        arg.shrink_all()
+        # -y
+        arg.check_text_editor()
+        # -w
+        try:
+            var.chars_per_line = str2int(arg.chars_per_line, min=0)
+        except ValueError:
+            error(f'Wrong -w --chars-per-line {arg.chars_per_line!r}, it must be an integer ≥ 0')
+        # -u
+        try:
+            var.lines_per_page = str2int(arg.lines_per_page, min=0)
+        except ValueError:
+            error(f'Wrong -u --lines-per-page {arg.lines_per_page!r}, it must be an integer ≥ 0')
+        # -c
+        var.contents_title = shrink_alphaupper(arg.contents_title)
+        if not var.contents_title:
+            error(f"Wrong -c --contents-title '', it cannot be empty")
+        # -i
+        var.index_title = shrink_alphaupper(arg.index_title)
+        if not var.index_title:
+            error(f"Wrong -i --index-title '', it cannot be empty")
+        # -f
+        var.figures_title = shrink_alphaupper(arg.figures_title)
+        if not var.figures_title:
+            error(f"Wrong -f --figures-title '', it cannot be empty")
+        # -c -i -f
+        if len(set([var.contents_title, var.index_title, var.figures_title])) < 3:
+            error(f'Wrong -c -i -f, they must be all different')
+        # -F
+        var.caption_prefix = shrink_alphaupper(arg.caption_prefix)
+        if not var.caption_prefix:
+            error(f"Wrong -F --caption-prefix '', it cannot be empty")
+        if ' ' in var.caption_prefix:
+            error(f"Wrong -F --caption-prefix {arg.caption_prefix!r}, it cannot contain blanks")
+        # -m
+        try:
+            var.chapter_offset = str2int(arg.chapter_offset, min=-1)
+        except ValueError:
+            error(f'Wrong -m --chapter-offset {arg.chapter_offset!r}, it must be an integer ≥ -1')
+        # -p
+        if arg.page_headers not in RADIO_DICT['p']:
+            error(f"Wrong -p --page-headers {arg.page_headers!r}, it must be in {RADIO_DICT['p']}")
+        # -e
+        try:
+            evalchar(arg.even_left, 'PpfeYmdHMSnNc', 'PpfeYmdHMSnNc', '%')
+        except ValueError as illegal:
+            error(f'Wrong -e --even-left {arg.even_left!r}, illegal {str(illegal)!r}')
+        # -E
+        try:
+            evalchar(arg.even_right, 'PpfeYmdHMSnNc', 'PpfeYmdHMSnNc', '%')
+        except ValueError as illegal:
+            error(f'Wrong -E --even-right {arg.even_right!r}, illegal {str(illegal)!r}')
+        # -o
+        try:
+            evalchar(arg.odd_left, 'PpfeYmdHMSnNc', 'PpfeYmdHMSnNc', '%')
+        except ValueError as illegal:
+            error(f'Wrong -o --odd-left {arg.odd_left!r}, illegal {str(illegal)!r}')
+        # -O
+        try:
+            evalchar(arg.odd_right, 'PpfeYmdHMSnNc', 'PpfeYmdHMSnNc', '%')
+        except ValueError as illegal:
+            error(f'Wrong -O --odd-right {arg.odd_right!r}, illegal {str(illegal)!r}')
+        # -n
+        try:
+            var.page_offset = str2int(arg.page_offset, min=-3999)
+        except ValueError:
+            error(f'Wrong -n --page-offset {arg.page_offset!r}, it must be an integer ≥ -3999')
+        # -s
+        if arg.second_line not in RADIO_DICT['s']:
+            error(f"Wrong -s --second-line {arg.second_line!r}, it must be in {SECOND_LINE!r}")
+        var.page_header_lines = 0 if arg.page_headers == 'n' else 1 if arg.second_line == 'n' else 2
+        # -X
+        if arg.export_pdf not in RADIO_DICT['X']:
+            error(f"Wrong -X --export-view-pdf {arg.export_pdf!r}, it must be in {RADIO_DICT['X']}")
+        # -C
+        if arg.correct not in RADIO_DICT['C']:
+            error(f"Wrong -C --correct {arg.correct!r}, it must be in {RADIO_DICT['C']}")
+        # -Y
+        arg.check_pdf_browser()
+        # -P
+        try:
+            evalchar(arg.pdf_file, 'PpfeYmdHMS', 'PpfeYmdHMS', '%')
+        except ValueError as illegal:
+            error(f'Wrong -P --file-pdf {arg.pdf_file!r}, illegal {str(illegal)!r}')
+        if not arg.pdf_file.endswith('.pdf'):
+            error(f"Wrong -P --file-pdf {arg.pdf_file!r}, not ending with '.pdf'")
+        # -W
+        try:
+            var.char_width = str2inch(arg.char_width)
+        except ValueError:
+            error(f"Wrong -W --char-width {arg.char_width!r}, it must be zero or unsigned float + 'in'/'pt'/'cm'/'mm'")
+        # -A
+        try:
+            var.char_aspect = str2ratio(arg.char_aspect)
+        except (ValueError, AssertionError):
+            error(f"Wrong -A --char-aspect {arg.char_aspect!r}, it must be unsigned float or unsigned float + '/' + unsigned float ")
+        # -S
+        try:
+            var.sheet_width, var.sheet_height = str2inxin(PAPERSIZE.get(arg.sheet_size.upper(), arg.sheet_size))
+        except ValueError:
+            error(f"Wrong -S --sheet-size {arg.sheet_size!r}, it must be a format name or width x height in/pt/cm/mm")
+        # -Z
+        if arg.landscape:
+            var.sheet_width, var.sheet_height = var.sheet_height, var.sheet_width
+        # -L
+        try:
+            var.left_margin = str2inch(arg.left_margin)
+        except ValueError:
+            error(f"Wrong -L --left-margin {arg.left_margin!r}, it must be zero or unsigned float in/pt/cm/mm")
+        # -R
+        try:
+            var.right_margin = str2inch(arg.right_margin)
+        except ValueError:
+            error(f"Wrong -R --right-margin {arg.right_margin!r}, it must be zero or unsigned float in/pt/cm/mm")
+        # -T
+        try:
+            var.top_margin = str2inch(arg.top_margin)
+        except ValueError:
+            error(f"Wrong -T --top-margin {arg.top_margin!r}, it must be zero or unsigned float in/pt/cm/mm")
+        # -B
+        try:
+            var.bottom_margin = str2inch(arg.bottom_margin)
+        except ValueError:
+            error(f"Wrong -B --bottom-margin {arg.bottom_margin!r}, it must be zero or unsigned float in/pt/cm/mm")
+        # -I
+        if arg.multi_pages not in RADIO_DICT['I']:
+            error(f"Wrong -I --multi_pages {arg.multi_pages}, it must be in {MULTI_PAGES}")
+        var.multi_pages = int(arg.multi_pages)
+        if arg.page_headers == 'n' and var.multi_pages > 1:
+            error(f"Wrong -I --multi_pages {arg.multi_pages}, it must be 1 when -p is 'n'")
+        # -J
+        try:
+            var.multi_sheets = str2int(arg.multi_sheets, min=0)
+        except ValueError:
+            error(f"Wrong -J --many-sheets {arg.multi_sheets!r}, it must be an integer ≥ 0")
+        if var.multi_pages == 1:
+            var.multi_sheets = 0
+        elif var.multi_pages == 2 and arg.landscape and var.multi_sheets > 1:
+            var.multi_sheets = 1
+        # text_file
+        arg.text_file = strip(arg.text_file)
+        if arg.text_file:
+            arg.text_file = longpath(arg.text_file)
+
+    def check_text_editor(arg):
+        if not command_exists(arg.text_editor):
+            error(f'Wrong -y --text-editor {arg.text_editor!r}, command not found')
+
+    def check_pdf_browser(arg):
+        if not command_exists(arg.pdf_browser):
+            error(f'Wrong -Y --pdf-browser {arg.pdf_browser!r}, command not found')
+
+arg = Arguments()
+
+#----- class History -----
+
+class History:
+
+    def __init__(hist, max_files, file):
+        hist.max_files = max_files
+        hist.file = longpath(file)
+        hist.files = []
+
+    def read(hist):
+        if isfile(hist.file):
+            hist.files = list(read_lines(hist.file))
+        else:
+            hist.files = []
+
+    def write(hist):
+        write_lines(hist.file, hist.files)
+
+    def clear(hist):
+        write_lines(hist.file)
+
+    def add(hist, file):
+        if arg.usage_mode == 'g':
+            hist.read()
+            if not (hist.files and hist.files[0] == file):
+                hist.files = unique([file] + hist.files)[:hist.max_files]
+                hist.write()
+
+    def select(hist):
+        hist.read()
+        if not hist.files:
+            error(f'List of recent files is empty')
+        layout = [[sg.Text(f'{jfile+1:2}.'), sg.Button(file, size=0,
+                    tooltip='Select this file as the current text file')]
+                  for jfile, file in enumerate(hist.files)] + [
+                      [sg.Button('Clear', size=BSIZE, tooltip='Clear the list of recent files'),
+                       sg.Button('Cancel', size=BSIZE, tooltip='Exit with no selection')]]
+        window = sg.Window(f'YAWP - Recent', layout)
+        while True:
+            event, values = window.read()
+            if event in [None, 'Cancel']:
+                window.close()
+                return ''
+            elif event == 'Clear':
+                if ask_yes('YAWP - Recent', 'History of recent text files will be lost.\nDo you want to clear history?', 'clear'):
+                    hist.clear()
+                    var.ok_message = ', list of recent files is empty'
+                    window.close()
+                    return ''
+            else:
+                file = longpath(event)
+                hist.add(file)
+                window.close()
+                return file
+
+hist = History(MAX_HISTORY, HIST_FILE)
+
+#----- class Lock -----
+
+class Lock:
+    'seize and release files'
+
+    def __init__(lock):
+        lock.locked_file = None
+
+    def seize(lock, file):
+        "seize file"
+        if not file:
+            error(f'File {file!r} is undefined')
+        if not isdir(dirname(longpath(file))):
+            error(f'Directory of file {file!r} not found')
+        if not isfile(file):
+            error(f'File {file!r} not found')
+        lock_file = lock_file_of(file)
+        if not isfile(lock_file):
+            pass
+        elif list(read_lines(lock_file)) == [THIS_SESSION]:
+            return
+        else:
+            error(f'File {file!r} is locked.', ask=True)
+        lock.release(lock.locked_file)
+        write_lines(lock_file, [THIS_SESSION])
+        lock.locked_file = file
+
+    def release(lock, file):
+        "release file, if it's locked by this session"
+        if file:
+            lock_file = lock_file_of(file)
+            if isfile(lock_file) and list(read_lines(lock_file)) == [THIS_SESSION]:
+                rm(lock_file)
+
+lock = Lock()
+
+#----- class Paragraph -----
+
+class Paragraph:
+
+    def __init__(par):
+        par.string = ''
+        par.jinp = 0
+        par.indent = 0
+
+    def assign(par, string, jinp, indent):
+        assert not par.string
+        par.string = shrink(string)
+        par.jinp = jinp
+        par.indent = indent
+        if indent > var.chars_per_line // 2:
+            error(f"Indent of indented paragraph = {indent} > -w / 2 = {var.chars_per_line // 2}", jinp, '• ' + string)
+
+    def append(par, string):
+        assert par.string
+        par.string += ' ' + shrink(string)
+
+    def flush(par, buffer2):
+        if not par.string:
+            return
+        prefix = (par.indent - 2) * ' ' + '• ' if par.indent else ''
+        while len(par.string) > var.chars_per_line - par.indent:
+            jchar = rfind(par.string[:var.chars_per_line-par.indent+1], ' ')
+            if jchar <= 0:
+                error(f'Impossible to left-justify', par.jinp, par.string)
+            string, par.string = par.string[:jchar], par.string[jchar+1:]
+            if not arg.just_left_only:
+                try:
+                    string = expand(string, var.chars_per_line - par.indent)
+                except ValueError:
+                    error(f'Impossible to right-justify', par.jinp, string)
+            buffer2.append([par.jinp, TEXT, 0, 0, prefix + string])
+            prefix = par.indent * ' '
+        if par.string:
+            buffer2.append([par.jinp, TEXT, 0, 0, prefix + par.string])
+            par.string = ''
+
+par = Paragraph()
+
+#----- class Correction -----
+
+class Correction:
+
+    def __init__(corr):
+        KEYS = 'plm llm prm lrm ptm ltm pbm lbm pcw lcw pch lch'.split()
+        corr.points = {k: [] for k in KEYS}
+        # read correction points from YAWP_CORR
+        if arg.correct != 'n':
+            for jline, line in enumerate(read_lines(YAWP_CORR) if arg.correct == 'f' else CORR_DEFAULT.split('\n')):
+                stmt = line2stmt(line)
+                if stmt:
+                    kyx = stmt.split()
+                    if len(kyx) != 3:
+                        error(f'In correction file, found {len(kyx)} values instead of 3', jline, line)
+                    k, sy, sx = kyx
+                    if k not in corr.points:
+                        error(f'In correction file, wrong key {k!r}', jline, line)
+                    try:
+                        x = str2inch(sx)
+                        assert x >= 0.0 and (not corr.points[k] or x > corr.points[k][-1][0])
+                    except (ValueError, AssertionError):
+                        error(f'In correction file, wrong x-value {sx!r}, must be ', jline, line)
+                    try:
+                        y = str2inch(sy)
+                        assert y >= 0.0 and (not corr.points[k] or x > corr.points[k][-1][1])
+                    except (ValueError, AssertionError):
+                        error(f'In correction file, wrong y-value {sy!r}', jline, line)
+                    corr.points[k].append((x, y))
+            for k in KEYS:
+                corr.points[k].sort()
+
+#----- class Pdf -----
+
+class Pdf:
+
+    def zoom(pdf, pdf_file):
+
+        def upside_down(page):
+            page.Rotate = (int(page.inheritable.Rotate or 0) + 180) % 360
+
+        def p20(pages):
+            pages = PageMerge() + pages
+            dx, dy = (SCALE_2 * i for i in pages.xobj_box[2:])
+            for jx, page in enumerate(pages):
+                page.scale(SCALE_2)
+                page.x = jx * dx
+                page.y = 0
+            yield pages.render()
+
+        def p40(pages):
+            pages = PageMerge() + pages
+            dx, dy = (SCALE_4 * i for i in pages.xobj_box[2:])
+            for k, page in enumerate(pages):
+                page.scale(SCALE_4)
+                jy, jx = divmod(k, 2)
+                page.x = jx * dx
+                page.y = (1 - jy) * dy
+            yield pages.render()
+
+        def p80(pages):
+            pages = PageMerge() + pages
+            dx, dy = (SCALE_8 * i for i in pages.xobj_box[2:])
+            for k, page in enumerate(pages):
+                page.scale(SCALE_8)
+                jy, jx = divmod(k, 4)
+                page.x = jx * dx
+                page.y = (1 - jy) * dy
+            yield pages.render()
+
+        def p21(pages_pages):
+            n = len(pages_pages)
+            swap = [n - 1, 0, 1, n - 2]
+            while len(swap) < n:
+                for step in [-2, 2, 2, -2]:
+                    swap.append(swap[-4] + step)
+            pages_pages = [pages_pages[i] for i in swap]
+            for i in range(0, n, 2):
+                pages = pages_pages[i:i+2]
+                pages = PageMerge() + pages
+                dx, dy = (SCALE_2 * i for i in pages.xobj_box[2:])
+                for jx, page in enumerate(pages):
+                    page.scale(SCALE_2)
+                    page.x = jx * dx
+                    page.y = 0
+                yield pages.render()
+
+        def p41(pages_pages):
+            n = len(pages_pages)
+            h = n // 2
+            swap = [h, h - 1, n - 1, 0, h - 2, h + 1, 1, n - 2]
+            while len(swap) < n:
+                for step in [2, -2, -2, 2, -2, 2, 2, -2]:
+                    swap.append(swap[-8] + step)
+            pages_pages = [pages_pages[i] for i in swap]
+            for i, page in enumerate(pages_pages):
+                if i % 4 < 2:
+                    upside_down(page)
+            for i in range(0, n, 4):
+                pages = pages_pages[i:i+4]
+                pages = PageMerge() + pages
+                dx, dy = (SCALE_4 * i for i in pages.xobj_box[2:])
+                for j, page in enumerate(pages):
+                    page.scale(SCALE_4)
+                    jy, jx = divmod(j, 2)
+                    page.x = jx * dx
+                    page.y = (1 - jy) * dy
+                yield pages.render()
+
+        def p81(pages_pages):
+            n = len(pages_pages)
+            swap = [4, n - 5, n - 8, 7, 3, n - 4, n - 1, 0, 6, n - 7, n - 6, 5, 1, n - 2, n - 3, 2]
+            while len(swap) < n:
+                for step in 4 * [8, -8, -8, 8]:
+                    swap.append(swap[-16] + step)
+            pages_pages = [pages_pages[i] for i in swap]
+            for i, page in enumerate(pages_pages):
+                if i % 8 < 4:
+                    upside_down(page)
+            for i in range(0, n, 8):
+                pages = pages_pages[i:i+8]
+                pages = PageMerge() + pages
+                dx, dy = (SCALE_8 * i for i in pages.xobj_box[2:])
+                for j, page in enumerate(pages):
+                    page.scale(SCALE_8)
+                    jy, jx = divmod(j, 4)
+                    page.x = jx * dx
+                    page.y = (1 - jy) * dy
+                yield pages.render()
+
+        def l20(pages):
+            pages = PageMerge() + pages
+            dx, dy = (SCALE_2 * i for i in pages.xobj_box[2:])
+            for jy, page in enumerate(pages):
+                page.scale(SCALE_2)
+                page.x = 0
+                page.y = (1 - jy) * dy
+            yield pages.render()
+
+        def l40(pages):
+            pages = PageMerge() + pages
+            dx, dy = (SCALE_4 * i for i in pages.xobj_box[2:])
+            for i, page in enumerate(pages):
+                page.scale(SCALE_4)
+                jy, jx = divmod(i, 2)
+                page.x = jx * dx
+                page.y = (1 - jy) * dy
+            yield pages.render()
+
+        def l80(pages):
+            pages = PageMerge() + pages
+            dx, dy = (SCALE_8 * i for i in pages.xobj_box[2:])
+            for i, page in enumerate(pages):
+                page.scale(SCALE_8)
+                jy, jx = divmod(i, 2)
+                page.x = jx * dx
+                page.y = (3 - jy) * dy
+            yield pages.render()
+
+        def l21(pages_pages):
+            n = len(pages_pages)
+            pages_pages = [pages_pages[i] for i in [3, 0, 2, 1]]
+            for i, page in enumerate(pages_pages):
+                if i % 2 == 0:
+                    upside_down(page)
+            for i in range(0, n, 2):
+                pages = pages_pages[i:i+2]
+                pages = PageMerge() + pages
+                dx, dy = (SCALE_2 * i for i in pages.xobj_box[2:])
+                for jy, page in enumerate(pages):
+                    page.scale(SCALE_2)
+                    page.x = 0
+                    page.y = (1 - jy) * dy
+                yield pages.render()
+
+        l41 = p41
+
+        def l81(pages_pages):
+            n = len(pages_pages)
+            swap = [n - 4, 3, n - 5, 4, n - 8, 7, n - 1, 0, 2, n - 3, 5, n - 6, 6, n - 7, 1, n - 2]
+            while len(swap) < n:
+                for step in 4 * [-8, 8] + 4 * [8, -8]:
+                    swap.append(swap[-16] + step)
+            pages_pages = [pages_pages[i] for i in swap]
+            for i, page in enumerate(pages_pages):
+                if i % 4 < 2:
+                    upside_down(page)
+            for i in range(0, n, 8):
+                pages = pages_pages[i:i+8]
+                pages = PageMerge() + pages
+                dx, dy = (SCALE_8 * i for i in pages.xobj_box[2:])
+                for j, page in enumerate(pages):
+                    page.scale(SCALE_8)
+                    jy, jx = divmod(j, 2)
+                    page.x = jx * dx
+                    page.y = (3 - jy) * dy
+                yield pages.render()
+
+        if var.multi_pages > 1:
+            yield_pages = {'p20': p20, 'p40': p40, 'p80': p80, 'p21': p21, 'p41': p41, 'p81': p81,
+                           'l20': l20, 'l40': l40, 'l80': l80, 'l21': l21, 'l41': l41, 'l81': l81}[
+                          f"{'pl'[arg.landscape]}{var.multi_pages}{min(1, var.multi_sheets)}"]
+            pages = PdfReader(pdf_file).pages # read pdf_file
+            writer = PdfWriter(pdf_file) # rewrite pdf_file
+            for jpage in range(0, len(pages), var.len_pages_pages):
+                for page in yield_pages(pages[jpage:jpage + var.len_pages_pages]):
+                    writer.addpage(page)
+            writer.write()
+
+    def text2text(pdf, text_file, text_file2):
+        '''copy text_file into text_file2 adding final FORMFEED chars if needed'''
+        if not isfile(text_file):
+            error(f'Text file {text_file!r} not found')
+        num_pages = 1
+        lines = list(read_lines(text_file))
+        num_pages = 1 + sum(line.startswith(FORMFEED) for line in lines)
+        var.min_multi_sheets = min(var.multi_sheets, ceildiv(num_pages, 2 * var.multi_pages))
+        var.len_pages_pages = var.multi_pages if var.min_multi_sheets == 0 else 2 * var.multi_pages * var.min_multi_sheets
+        while num_pages % var.len_pages_pages:
+            lines.append(FORMFEED + NO_BREAK_SPACE)
+            num_pages += 1
+        write_lines(text_file2, lines)
+
+    def text2pdf(pdf, text_file, lp_page_left):
+        'export text_file into pdf_file and return pdf_file name'
+        shell(f'lp -d PDF ' # export
+              f'-o print-quality={MAX_QUALITY} '
+              f'-o media=Custom.{in2pt(var.sheet_width)}x{in2pt(var.sheet_height)} '
+              f'-o cpi={pdf.lp_chars_per_inch} '
+              f'-o lpi={pdf.lp_lines_per_inch} '
+              f'-o page-top={in2pt(pdf.lp_page_top)} '
+              f'-o page-left={in2pt(lp_page_left)} '
+              f'-o page-right=0 '
+              f'-o page-bottom=0 '
+              f'{text_file!r}')
+        wait_lp_completion()
+        dot = basename(text_file).startswith('.') * '.' # hidden or not?
+        try:
+            last_pdf = last_file(f'{PDF_PATH}/{dot}*.pdf') # find the most recent one
+        except FileNotFoundError:
+            error(f'Exported PDF file not found')
+        return last_pdf
+
+    def pdfpdf2pdf(pdf, even_pdf_file, odd_pdf_file, pdf_file):
+        'merge even pages from even_pdf_file with odd pages from odd_pdf_file into pdf_file'
+        even_pages = PdfReader(even_pdf_file).pages
+        odd_pages = PdfReader(odd_pdf_file).pages
+        pdf_writer = PdfWriter()
+        for jpage, (even_page, odd_page) in enumerate(zip(even_pages, odd_pages)):
+            pdf_writer.addpage(even_page if jpage % 2 else odd_page)
+        pdf_writer.write(var.pdf_file)
+
+    def correct(pdf):
+        'compute parameters of lp commands, corrected following -C'
+        corr = Correction()
+        pl = 'pl'[arg.landscape]
+        pdf.lp_page_left      = least_squares_line(corr.points[f'{pl}lm'], var.left_margin)
+        pdf.lp_page_right     = least_squares_line(corr.points[f'{pl}rm'], var.right_margin)
+        pdf.lp_page_top       = least_squares_line(corr.points[f'{pl}tm'], var.top_margin)
+        pdf.lp_page_bottom    = least_squares_line(corr.points[f'{pl}bm'], var.bottom_margin)
+        if pdf.lp_page_left < 0.0:
+            error(f'-L --left-margin {arg.left_margin} is too small, PDF file may be wrong', ask=True)
+            pdf.lp_page_left = 0.0
+        if pdf.lp_page_right < 0.0:
+            error(f'-R --right-margin {arg.right_margin} is too small, PDF file may be wrong', ask=True)
+            pdf.lp_page_right = 0.0
+        if pdf.lp_page_top < 0.0:
+            error(f'-T --top-margin {arg.top_margin} is too small, PDF file may be wrong', ask=True)
+            pdf.lp_page_top = 0.0
+        if pdf.lp_page_bottom < 0.0:
+            error(f'-B --bottom-margin {arg.bottom_margin} is too small, PDF file may be wrong', ask=True)
+            pdf.lp_page_bottom = 0.0
+        pdf.lp_page_left_odd_pages  = pdf.lp_page_left
+        pdf.lp_page_left_even_pages = pdf.lp_page_left if arg.all_pages_E_e else pdf.lp_page_right
+        pdf.lp_char_width     = least_squares_line(corr.points[f'{pl}cw'], var.char_width)
+        if pdf.lp_char_width <= 0.0:
+            error(f'Character width is too small, corrected value ≤ 0')
+        pdf.lp_char_height    = least_squares_line(corr.points[f'{pl}ch'], var.char_height)
+        if pdf.lp_char_height <= 0.0:
+            error(f'Character height is too small, corrected value ≤ 0')
+        pdf.lp_chars_per_inch = 1.0 / pdf.lp_char_width
+        pdf.lp_lines_per_inch = 1.0 / pdf.lp_char_height
+        # inform
+        inform(['Corrections:',
+            f'    left_margin = {inch2str(pdf.lp_page_left, ROUND)}',
+            f'    right_margin = {inch2str(pdf.lp_page_right, ROUND)}',
+            f'    top_margin = {inch2str(pdf.lp_page_top, ROUND)}',
+            f'    bottom_margin = {inch2str(pdf.lp_page_bottom, ROUND)}',
+            f'    char_width = {inch2str(pdf.lp_char_width, ROUND)}',
+            f'    char_height = {inch2str(pdf.lp_char_height, ROUND)}',
+            f'    chars_per_inch = {round(pdf.lp_chars_per_inch, ROUND)}',
+            f'    lines_per_inch = {round(pdf.lp_lines_per_inch, ROUND)}'])
+
+    def export_and_browse(pdf, text_file):
+        var.pdf_file = longpath(evalchar(arg.pdf_file, 'PpfeYmdHMS', var.PpfeYmdHMS, '%'))
+        if not isdir(dirname(var.pdf_file)):
+            error(f'Wrong -P --file-pdf {arg.pdf_file!r}, directory {dirname(var.pdf_file)!r} not found')
+        rm(var.pdf_file)
+        pdf.correct()
+        temp_file = temp_file_of(text_file)
+        pdf.text2text(arg.text_file, temp_file)
+        even_pdf_file = pdf.text2pdf(temp_file, pdf.lp_page_left_even_pages)
+        odd_pdf_file = pdf.text2pdf(temp_file, pdf.lp_page_left_odd_pages)
+        if temp_file.endswith('.temp'):
+            rm(temp_file)
+        pdf.pdfpdf2pdf(even_pdf_file, odd_pdf_file, var.pdf_file)
+        rm(even_pdf_file)
+        rm(odd_pdf_file)
+        if var.multi_pages > 1:
+            pdf.zoom(var.pdf_file)
+        inform([f'Export:',
+            f'    {arg.text_file!r} →',
+            f'    {var.pdf_file!r}'])
+        if arg.export_pdf == 'b':
+            shell(f'{arg.pdf_browser} {var.pdf_file!r}') # browse
+
+pdf = Pdf()
+
+#----- class Buffer -----
+
+class Buffer:
+
+    def __init__(buf, file=''):
+        buf.buffer = [] # [[jinp, kind, jpage, lpic, line]] # output buffer
+        # jinp: line index in buf.input
+        # kind: kind of line: TEXT, PICT, CONT, INDX, FIGU, CHP1, CHP2, HEA1, HEA2
+        # jpage: page number
+        # lpic: lines in picture (in first line of pictures only, else 0)
+        # line
+        buf.contents = [] # [[pref, titl, jout]], if words == line.split():
+        # pref: words[0], chapter numbering as '1.', '1.1.'…
+        # titl: ' '.join(words[1:])
+        # jout: position of chapter line in buf.buffer
+        buf.contents_found = False # file contains a contents chapter line?
+        buf.contents_jout = -1 # position of contents chapter line in output
+        buf.qsub_jouts = SetDict() # {subject: {jout}}
+        # subject: subject between double quotes
+        # jout: position of subject in buf.buffer
+        buf.uqsub_jouts = SetDict() # {subject: {jout}}
+        # subject: subject not between double quotes
+        # jout: position of subject in buf.buffer
+        buf.index_found = False # file contains an index chapter line?
+        buf.index_jout = -1 # position of index chapter line in output
+        buf.subjects = set()
+        buf.figures_found = False # file contains a figures chapter line?
+        buf.figures_jout = -1 # position of figures chapter line in buf.buffer
+        buf.figures = [] # [[pref, titl, jout]] , if words == line.split() …
+        # words[0] == var.figures_title
+        # pref: words[1], figure numbering as 'a.', '1.b.', '1.1.c.'…
+        # titl: ' '.join(words[2:])
+        # jout: position of caption line in buf.buffer
+        buf.head_num_lines, buf.head_chars, buf.head_words, buf.head_max_line_length, buf.num_pages = 0, 0, 0, 0, 1
+        buf.body_num_lines, buf.body_chars, buf.body_words, buf.body_max_line_length = 0, 0, 0, 0
+        if isfile(file):
+            if filesize(file) == 0:
+                error(f'File empty reading file {file!r}')
+            buf.read_from_file(file)
+
+    def read_from_file(buf, file):
+        buf.buffer = []
+        buf.head_num_lines, buf.head_chars, buf.head_words, buf.head_max_line_length, buf.num_pages = 0, 0, 0, 0, 1
+        buf.hea2_num_lines, buf.hea2_chars, buf.hea2_words, buf.hea2_max_line_length = 0, 0, 0, 0
+        buf.body_num_lines, buf.body_chars, buf.body_words, buf.body_max_line_length = 0, 0, 0, 0
+        for jinp, line in enumerate(read_lines(file)):
+            buf.buffer.append([jinp, PICT, 1, 0, line])
+            if line.startswith(FORMFEED):
+                buf.head_chars += len(line) - 1
+                buf.head_words += len(line[1:].split())
+                buf.head_max_line_length = max(buf.head_max_line_length, len(line) - 1)
+                buf.head_num_lines += 1
+                buf.num_pages += 1
+            elif line and line[0] in HEADER_CHARS:
+                buf.hea2_chars += len(line)
+                buf.hea2_words += len(line.split())
+                buf.hea2_max_line_length = max(buf.head_max_line_length, len(line))
+                buf.hea2_num_lines += 1
+            else:
+                buf.body_chars += len(line)
+                buf.body_words += len(line.split())
+                buf.body_max_line_length = max(buf.body_max_line_length, len(line))
+                buf.body_num_lines += 1
+
+    def write_into_file(buf, file):
+        buf.head_num_lines, buf.head_chars, buf.head_words, buf.head_max_line_length, buf.num_pages = 0, 0, 0, 0, 1
+        buf.hea2_num_lines, buf.hea2_chars, buf.hea2_words, buf.hea2_max_line_length = 0, 0, 0, 0
+        buf.body_num_lines, buf.body_chars, buf.body_words, buf.body_max_line_length = 0, 0, 0, 0
+        with open(file, 'w') as output:
+            for record in buf.buffer:
+                line = record[LINE]
+                if line.startswith(FORMFEED):
+                    buf.head_chars += len(line) - 1
+                    buf.head_words += len(line[1:].split())
+                    buf.head_max_line_length = max(buf.head_max_line_length, len(line) - 1)
+                    buf.head_num_lines += 1
+                    buf.num_pages += 1
+                elif line and line[0] in HEADER_CHARS:
+                    buf.hea2_chars += len(line)
+                    buf.hea2_words += len(line.split())
+                    buf.hea2_max_line_length = max(buf.head_max_line_length, len(line))
+                    buf.hea2_num_lines += 1
+                else:
+                    buf.body_chars += len(line)
+                    buf.body_words += len(line.split())
+                    buf.body_max_line_length = max(buf.body_max_line_length, len(line))
+                    buf.body_num_lines += 1
+                print(line, file=output)
+
+    def copy(buf):
+        buf2 = Buffer()
+        buf.head_num_lines, buf.head_chars, buf.head_words, buf.head_max_line_length, buf.num_pages = 0, 0, 0, 0, 1
+        buf.hea2_num_lines, buf.hea2_chars, buf.hea2_words, buf.hea2_max_line_length = 0, 0, 0, 0
+        buf.body_num_lines, buf.body_chars, buf.body_words, buf.body_max_line_length = 0, 0, 0, 0
+        for record in buf.buffer:
+            rec2 = record[:] # deep copy
+            buf2.buffer.append(rec2)
+            line = rec2[LINE]
+            if line.startswith(FORMFEED):
+                buf.head_chars += len(line) - 1
+                buf.head_words += len(line[1:].split())
+                buf.head_max_line_length = max(buf.head_max_line_length, len(line) - 1)
+                buf.head_num_lines += 1
+                buf.num_pages += 1
+            elif line and line[0] in HEADER_CHARS:
+                buf.head_chars += len(line)
+                buf.head_words += len(line.split())
+                buf.head_max_line_length = max(buf.head_max_line_length, len(line))
+                buf.head_num_lines += 1
+            else:
+                buf.body_chars += len(line)
+                buf.body_words += len(line.split())
+                buf.body_max_line_length = max(buf.body_max_line_length, len(line))
+                buf.body_num_lines += 1
+        return buf2
+
+    def inform(buf, title):
+        'write informations about buf after last buf.read_from_file() or last buf.write_into_file() or buf.copy()'
+        inform([title,
+            f"    header1: {plural(buf.head_num_lines, 'line')}, "
+            f"{plural(buf.head_words, 'word')}, {plural(buf.head_chars, 'char')}, "
+            f"max {plural(buf.head_max_line_length, 'char')} per line, {plural(buf.num_pages, 'page')}",
+            f"    header2: {plural(buf.hea2_num_lines, 'line')}, "
+            f"{plural(buf.hea2_words, 'word')}, {plural(buf.hea2_chars, 'char')}, "
+            f"max {plural(buf.hea2_max_line_length, 'char')} per line",
+            f"    body:   {plural(buf.body_num_lines, 'line')}, "
+            f"{plural(buf.body_words, 'word')}, {plural(buf.body_chars, 'char')}, "
+            f"max {plural(buf.body_max_line_length, 'char')} per line",
+            f"    total:  {plural(buf.head_num_lines + buf.body_num_lines, 'line')}, "
+            f"{plural(buf.head_words+buf.hea2_words+buf.body_words, 'word')}, {plural(buf.head_chars+buf.hea2_chars+buf.body_chars, 'char')}, "
+            f"max {plural(max(buf.head_max_line_length, buf.hea2_max_line_length, buf.body_max_line_length), 'char')} per line"])
+
+    def __eq__(buf, buf2):
+        'text lines in buf.buffer == text lines in buf2.buffer?'
+        return len(buf.buffer) == len(buf2.buffer) and all(record[LINE] == record2[LINE] for record, record2 in zip(buf.buffer, buf2.buffer))
+
+    def char(buf, jout, jchar, default='*'):
+        "return buf.buffer[jout][LINE][jchar], if not PICT or on IndexError return default, used by redraw_segments() and redraw_arroheads()"
+        if jout < 0 or jchar < 0:
+            return default
+        else:
+            try:
+                line = buf.buffer[jout][LINE]
+                return line[jchar] if buf.buffer[jout][KIND] == PICT else default
+            except IndexError:
+                return default
+
+    def compute(buf):
+        var.print_width = var.sheet_width - var.left_margin - var.right_margin
+        var.print_height = var.sheet_height - var.top_margin - var.bottom_margin
+        if var.print_width <= 0.0:
+            error(f'-L and/or -R too large, no horizontal space on paper')
+        if var.print_height <= 0.0:
+            error(f'-T and/or -B too large, no vertical space on paper')
+        def w2W(chars_per_line): return var.print_width / chars_per_line
+        def u2W(lines_per_page): return var.print_height * var.char_aspect / lines_per_page
+        def W2w(char_width): return int(var.print_width / char_width)
+        def W2u(char_width): return int(var.print_height * var.char_aspect / char_width)
+        if var.char_width == 0.0:
+            if var.lines_per_page == 0:
+                if var.chars_per_line == 0:
+                    var.chars_per_line = max_line_length_in(arg.text_file)
+                    if var.chars_per_line == 0:
+                        error(f'Text file {arg.text_file} is empty or contains empty lines only.')
+                    var.char_width = w2W(var.chars_per_line)
+                    var.lines_per_page = W2u(var.char_width)
+                else:
+                    var.char_width = w2W(var.chars_per_line)
+                    var.lines_per_page = W2u(var.char_width)
+            else:
+                if var.chars_per_line == 0:
+                    var.char_width = u2W(var.lines_per_page)
+                    var.chars_per_line = W2w(var.char_width)
+                else:
+                    var.char_width = min(w2W(var.chars_per_line), u2W(var.lines_per_page))
+        else:
+            if var.lines_per_page == 0:
+                if var.chars_per_line == 0:
+                    var.chars_per_line = W2w(var.char_width)
+                    var.lines_per_page = W2u(var.char_width)
+                else:
+                    var.char_width = min(var.char_width, w2W(var.chars_per_line))
+                    var.lines_per_page = W2u(var.char_width)
+            else:
+                if var.chars_per_line == 0:
+                    var.char_width = min(var.char_width, u2W(var.lines_per_page))
+                    var.chars_per_line = W2w(var.char_width)
+                else:
+                    var.char_width = min(var.char_width, w2W(var.chars_per_line), u2W(var.lines_per_page))
+        var.char_height = var.char_width / var.char_aspect
+        var.PpfeYmdHMS = PpfeYmdHMS_of(arg.text_file)
+        inform(['Computations:',
+            f'    print_width = {inch2str(var.print_width, ROUND)}',
+            f'    print_height = {inch2str(var.print_height, ROUND)}',
+            f'    chars_per_line = {var.chars_per_line}',
+            f'    lines_per_page = {var.lines_per_page}',
+            f'    char_width = {inch2str(var.char_width, ROUND)}',
+            f'    char_height = {inch2str(var.char_height, ROUND)}',
+            f'    chars_per_inch = {round(1.0/var.char_width, ROUND)}',
+            f'    lines_per_inch = {round(1.0/var.char_height, ROUND)}'])
+
+    def remove_page_headers(buf):
+        buf.buffer = [record for record in buf.buffer if not record[LINE] or record[LINE][0] not in HEADER_CHARS]
+
+    def justify_lines(buf):
+        buffer2 = []
+        for jinp, x, x, x, line in buf.buffer:
+            if not line: # empty line
+                par.flush(buffer2)
+                buffer2.append([jinp, EMPT, 0, 0, ''])
+            else:
+                jdot = findchar(line, '[! ]')
+                if jdot >= 0 and line[jdot:jdot+2] in ['• ','. ']: # dot line
+                    if jdot + 2 > var.chars_per_line:
+                        error(f'Dot line indentation {jdot+2} > chars per line {var.chars_per_line}')
+                    par.flush(buffer2)
+                    par.assign(strip(line[jdot+2:]), jinp, jdot + 2)
+                elif line[0] == ' ': # indented line
+                    if par.string:
+                        par.append(line)
+                    else:
+                        buffer2.append([jinp, PICT, 0, 0, line])
+                elif par.string: # unindented line
+                    par.append(line)
+                else:
+                    par.assign(line, jinp, 0)
+        par.flush(buffer2)
+        buf.buffer = buffer2
+
+    def redraw_segments(buf):
+        charstr = '`─│┐│┘│┤──┌┬└┴├┼'
+        #          0123456789ABCDEF
+        charset = frozenset(charstr)
+        for jout, (jinp, kind, jpage, lpic, line) in enumerate(buf.buffer):
+            if kind == PICT:
+                chars = list(line)
+                for jchar, char in enumerate(chars):
+                    if char in charset:
+                        kchar = (    (buf.char(jout, jchar - 1) in charset) +
+                                 2 * (buf.char(jout + 1, jchar) in charset) +
+                                 4 * (buf.char(jout - 1, jchar) in charset) +
+                                 8 * (buf.char(jout, jchar + 1) in charset))
+                        if kchar:
+                            chars[jchar] = charstr[kchar]
+                buf.buffer[jout][LINE] = ''.join(chars)
+
+    def redraw_arrowheads(buf):
+        charstr = '^▷△^▽^^^◁^^^^^^^'
+        #          0123456789ABCDEF
+        charset = frozenset(charstr)
+        for jout, (jinp, kind, jpage, lpic, line) in enumerate(buf.buffer):
+            if kind == PICT:
+                chars = list(line)
+                for jchar, char in enumerate(chars):
+                    if char in charset:
+                        kchar = (    (buf.char(jout, jchar - 1) == '─') +
+                                 2 * (buf.char(jout + 1, jchar) == '│') +
+                                 4 * (buf.char(jout - 1, jchar) == '│') +
+                                 8 * (buf.char(jout, jchar + 1) == '─'))
+                        if kchar:
+                            chars[jchar] = charstr[kchar]
+                buf.buffer[jout][LINE] = ''.join(chars)
+
+    def redraw(buf):
+        buf.redraw_segments()
+        buf.redraw_arrowheads()
+
+    def renumber_chapters(buf):
+        levels = [var.chapter_offset]; max_level = 1; nout = len(buf.buffer)
+        for jout, (jinp, kind, jpage, lpic, line) in enumerate(buf.buffer):
+            prev_line = buf.buffer[jout-1][LINE] if jout > 0 else ''
+            next_line = buf.buffer[jout+1][LINE] if jout + 1 < nout else ''
+            if kind == TEXT and line and not prev_line and not next_line:
+                words = line.split()
+                level = chapter_level(words[0])
+                title = shrink_alphaupper(line)
+                if level > 0: # numbered chapter line
+                    if level > max_level:
+                        error(f'Numbered chapter level is {level} > {max_level}', jinp)
+                    elif level == len(levels) + 1:
+                        levels.append(1)
+                    else:
+                        levels = levels[:level]
+                        levels[-1] += 1
+                    title = shrink_alphaupper(' '.join(words[1:]))
+                    buf.buffer[jout][KIND] = CHP1 if level == 1 else CHP2
+                    buf.buffer[jout][LINE] = '.'.join(str(level) for level in levels) + '. ' + title
+                    max_level = len(levels) + 1
+                elif title == var.contents_title: # contents chapter line
+                    buf.buffer[jout][KIND] = CONT
+                    buf.buffer[jout][LINE] = title
+                    max_level = 1
+                elif title == var.figures_title: # figures chapter line
+                    buf.buffer[jout][KIND] = FIGU
+                    buf.buffer[jout][LINE] = title
+                    max_level = 1
+                elif title == var.index_title: # index chapter line
+                    buf.buffer[jout][KIND] = INDX
+                    buf.buffer[jout][LINE] = title
+                    max_level = 1
+                else: # no chapter line
+                    title = ''
+
+    def add_chapters_to_contents_chapter(buf):
+        for jout, (jinp, kind, jpage, lpic, line) in enumerate(buf.buffer):
+            if kind == CONT:
+                if buf.contents_found:
+                    error(f'More than one contents line in text file', jinp)
+                buf.contents_found = True
+                # contents chapter doesn't list itself
+            elif kind == FIGU:
+                if buf.figures_found:
+                    error(f'More than one figures line in text file', jinp)
+                buf.figures_found = True
+                buf.contents.append(['', shrink_alphatitle(var.figures_title), jout])
+            elif kind == INDX:
+                if buf.index_found:
+                    error(f'More than one index line in text file', jinp)
+                buf.index_found = True
+                buf.contents.append(['', shrink_alphatitle(var.index_title), jout])
+            elif kind in [CHP1, CHP2]:
+                prefix, title = (line.split(None, 1) + [''])[:2]
+                buf.contents.append([prefix, shrink_alphatitle(title), jout])
+
+    def add_captions_to_figures_chapter(buf):
+        if buf.figures_found:
+            seek = False
+            chapter = ''
+            letter = prevchar('a')
+            for jout, record in enumerate(buf.buffer):
+                jinp, kind, jpage, lpic, line = record
+                if kind in [CONT, INDX, FIGU]:
+                    seek = True
+                elif kind in [CHP1, CHP2]:
+                    seek = False
+                    chapter = line.split()[0]
+                    letter = prevchar('a')
+                elif not seek and kind == PICT and (
+                    jout == 0 or buf.buffer[jout-1][KIND] == EMPT) and (
+                    jout == len(buf.buffer) - 1 or buf.buffer[jout+1][KIND] == EMPT):
+                    words = shrink_alphatitle(line).split()
+                    if len(words) >= 2:
+                        prefix, label, *leftovers = words
+                        title = ' '.join(leftovers)
+                        if prefix.upper() == var.caption_prefix and figure_level(label.lower()) > 0:
+                            if letter == 'z':
+                                error(f'in text file, more than 26 figure captions in a single chapter', jinp, line)
+                            letter = nextchar(letter)
+                            label = f'{chapter}{letter}.'
+                            caption = f'{prefix} {label} {title}'
+                            blanks = (var.chars_per_line - len(caption)) // 2 * ' '
+                            buf.figures.append((label, title, jout))
+                            record[LINE] = blanks + caption
+                            record[KIND] = CAPT
+                            if jout >= 2 and buf.buffer[jout - 2][KIND] == PICT:
+                                buf.buffer[jout - 1][KIND] = PICT # paste caption with previous picture
+
+    def add_quoted_subjects_to_index_chapter(buf):
+        if buf.index_found:
+            buf.qsub_jouts = SetDict() # {subject: jout}
+            quote = False; subject = ''; seek = True
+            for jout, (jinp, kind, jpage, lpic, line) in enumerate(buf.buffer):
+                if kind in [CONT, FIGU, INDX]:
+                    seek = False
+                elif kind in [CHP1, CHP2]:
+                    seek = True
+                elif seek and kind == TEXT:
+                    for jchar, char in enumerate(line + ' '):
+                        if quote:
+                            if (char == '"' and get(line, jchar-1, ' ') not in QUOTES and get(line, jchar+1, ' ') not in QUOTES):
+                                subject = shrink(subject)
+                                buf.qsub_jouts.add(subject, jout)
+                                buf.subjects.add(subject)
+                                quote = False
+                            else:
+                                subject += char
+                                if len(subject) > var.chars_per_line // 2:
+                                    error(f'Length of subject "{subject}…" > -w / 2 = {var.chars_per_line // 2}')
+                        elif (char == '"' and get(line, jchar-1, ' ') not in QUOTES and get(line, jchar+1, ' ') not in QUOTES):
+                            subject = ''
+                            quote = True
+                else:
+                    if quote:
+                        error(f'Unpaired \'"\' found while filling the index')
+            if quote:
+                error(f'Unpaired \'"\' found while filling the index')
+
+    def add_unquoted_subjects_to_index_chapter(buf):
+        if buf.index_found:
+            buf.uqsub_jouts = SetDict() # {subject: jout}
+            charset = set(chars('[a-zA-Z0-9]') + ''.join(buf.qsub_jouts.keys()))
+            word_jouts = [] # [(word, jout)]
+            seek = True
+            for jout, (jinp, kind, jpage, lpic, line) in enumerate(buf.buffer):
+                if kind in [CONT, FIGU, INDX]:
+                    seek = False
+                elif kind in [CHP1, CHP2]:
+                    seek = True
+                elif seek and kind == TEXT:
+                    for word in take(line, charset, ' ').split():
+                        word_jouts.append((word, jout))
+            sub0_subws = ListDict() # {subject.word[0]: subject.word[1:]}
+            for subject in buf.qsub_jouts.keys():
+                subjectwords = split(subject)
+                sub0_subws.append(subjectwords[0], subjectwords[1:])
+            for jword_jouts, (sub0, jout) in enumerate(word_jouts):
+                if sub0 in sub0_subws:
+                    for subw in sub0_subws[sub0]:
+                        subject = sub0 + ' ' + ' '.join(subw) if subw else sub0
+                        if subject == ' '.join(w for w, j in word_jouts[jword_jouts: jword_jouts + len(subw) + 1]):
+                            buf.uqsub_jouts.add(subject, jout)
+                            buf.subjects.add(subject)
+
+    def insert_contents_figures_and_index_chapters(buf):
+
+        def append_contents_to(buffer2):
+            jinp = buffer2[-1][JINP]
+            buffer2.append([jinp, TEXT, 0, 0, ''])
+            fmt_labl = max((len(labl) for labl, titl, jpage in buf.contents), default=0)
+            fmt_titl = max((len(titl) for labl, titl, jpage in buf.contents), default=0)
+            for labl, titl, jpage in buf.contents:
+##                line = f'{INDENT}• {edit(labl, fmt_labl)} {edit(titl, fmt_titl)}'
+                line = f'{INDENT}• {edit(labl, fmt_labl)} {titl}'
+##                if len(strip(line)) > var.chars_per_line:
+##                    error(f'Length of Contents chapter line is {len(strip(line))} > -w = {var.chars_per_line}', jinp, strip(line))
+                buffer2.append([jinp, TEXT, 0, 0, line])
+            buffer2.append([jinp, TEXT, 0, 0, ''])
+
+        def append_figures_to(buffer2):
+            jinp = buffer2[-1][JINP]
+            buffer2.append([jinp, TEXT, 0, 0, ''])
+            fmt_labl = max((len(labl) for labl, titl, jpage in buf.figures), default=0)
+            fmt_titl = max((len(titl) for labl, titl, jpage in buf.figures), default=0)
+            for labl, titl, jpage in buf.figures:
+                line = f'{INDENT}• {edit(labl, fmt_labl)} {edit(titl, fmt_titl)}'
+                if len(strip(line)) > var.chars_per_line:
+                    error(f'Length of Figures chapter line is {len(strip(line))} > -w = {var.chars_per_line}', jinp, strip(line))
+                buffer2.append([jinp, TEXT, 0, 0, line])
+            buffer2.append([jinp, TEXT, 0, 0, ''])
+
+        def append_index_to(buffer2):
+            jinp = buffer2[-1][JINP]
+            buffer2.append([jinp, TEXT, 0, 0, ''])
+            room = max((len(subject) for subject in buf.subjects), default=0) + 1
+            for subject in sorted(buf.subjects):
+                line = f'{INDENT}• {edit(subject, room)}'
+                if len(strip(line)) > var.chars_per_line:
+                    error(f'Length of Index chapter line is {len(strip(line))} > -w = {var.chars_per_line}', jinp, strip(line))
+                buffer2.append([jinp, TEXT, 0, 0, line])
+            buffer2.append([jinp, TEXT, 0, 0, ''])
+
+        buffer2 = []
+        copy = True
+        for record in buf.buffer:
+            kind = record[KIND]
+            if kind == CONT:
+                buf.contents_jout = len(buffer2)
+                buffer2.append(record)
+                append_contents_to(buffer2)
+                copy = False
+            elif kind == FIGU:
+                buf.figures_jout = len(buffer2)
+                buffer2.append(record)
+                append_figures_to(buffer2)
+                copy = False
+            elif kind == INDX:
+                buf.index_jout = len(buffer2)
+                buffer2.append(record)
+                append_index_to(buffer2)
+                copy = False
+            elif kind in [CHP1, CHP2]:
+                buffer2.append(record)
+                copy = True
+            elif copy:
+                buffer2.append(record)
+        buf.buffer = buffer2
+
+    def check_line_lengths(buf):
+        for jinp, kind, zero, lpic, line in buf.buffer:
+            if len(strip(line)) - line.startswith(FORMFEED) > var.chars_per_line:
+                error(f'Line length {len(line)} > -w --chars-per-line {var.chars_per_line} in text file', jinp, line)
+
+    def count_picture_lines(buf):
+        jpic = 0
+        for jout, record in retroenum(buf.buffer):
+            if record[KIND] in [PICT, CAPT]:
+                jpic += 1
+                if jout == 0 or buf.buffer[jout-1][KIND] not in [PICT, CAPT]:
+                    buf.buffer[jout][LPIC] = jpic
+            else:
+                jpic = 0
+
+    def count_pages(buf):
+        jpage, jpagline = 1, 0
+        for jout, (jinp, kind, zero, lpic, line) in enumerate(buf.buffer):
+            if (arg.page_headers in 'fpcd' and jpagline >= var.lines_per_page - var.page_header_lines or
+                arg.page_headers in 'pcd' and lpic < var.lines_per_page and jpagline + lpic >= var.lines_per_page or
+                arg.page_headers in 'cd' and kind in [CONT, INDX, FIGU, CHP1] and not (
+                    jout >= 2 and not buf.buffer[jout-1][LINE] and buf.buffer[jout-1][JPAG] > buf.buffer[jout-2][JPAG])):
+                jpage += 1 + (arg.page_headers == 'd' and kind in [CONT, INDX, FIGU, CHP1] and jpage % 2 == 1)
+                jpagline = 0
+            else:
+                jpagline += 1
+            buf.buffer[jout][JPAG] = jpage
+
+    def add_page_numbers_to_contents_chapter(buf):
+        if buf.contents_jout > -1:
+            width = max_len_page_number(buf.buffer[-1][JPAG], var.page_offset) + 1
+            for jcontents, (prefix, titl, jout) in enumerate(buf.contents):
+                line = buf.buffer[buf.contents_jout + 2 + jcontents][LINE] + edit(page_number(buf.buffer[jout][JPAG], var.page_offset), width, right=True)
+##                if len(line) > var.chars_per_line:
+##                    error(f'Length of Contents chapter line is {len(line)} > -w = {var.chars_per_line}', jinp, line)
+                buf.buffer[buf.contents_jout + 2 + jcontents][LINE] = line
+
+    def add_page_numbers_to_index_chapter(buf):
+        if buf.index_jout > -1:
+            qsub_jpags = SetDict() # {quoted_subject: {jpage}}
+            for subject, jouts in buf.qsub_jouts.items():
+                for jout in jouts:
+                    qsub_jpags.add(subject, buf.buffer[jout][JPAG])
+            uqsub_jpags = SetDict() # {unquoted_subject: {jpage}}
+            for subject, jouts in buf.uqsub_jouts.items():
+                for jout in jouts:
+                    jpage = buf.buffer[jout][JPAG]
+                    if jpage not in qsub_jpags[subject]:
+                        uqsub_jpags.add(subject, jpage)
+            for jindex, subject in enumerate(sorted(buf.subjects)):
+                jpag_strjs = sorted((jpage, f'"{page_number(jpage, var.page_offset)}"'
+                                     if jpage in qsub_jpags[subject] else page_number(jpage, var.page_offset))
+                    for jpage in (qsub_jpags[subject] | uqsub_jpags[subject])) # [(jpage, str(jpage))]
+                line = buf.buffer[buf.index_jout + 2 + jindex][LINE] + ', '.join(strj for jpage, strj in jpag_strjs)
+                if len(line) > var.chars_per_line:
+                    while True:
+                        line = line[:line.rfind(',')]
+                        if len(line) + 3 <= var.chars_per_line:
+                            break
+                    line += ', …'
+                if len(line) > var.chars_per_line:
+                    error(f'Length of Index chapter line is {len(line)} > -w = {var.chars_per_line}', jinp, line)
+                buf.buffer[buf.index_jout + 2 + jindex][LINE] = line
+
+    def add_page_numbers_to_figures_chapter(buf):
+        if buf.figures_jout > -1:
+            width = max_len_page_number(buf.buffer[-1][JPAG], var.page_offset) + 1
+            for jfigures, (prefix, title, jout) in enumerate(buf.figures):
+                line = buf.buffer[buf.figures_jout + 2 + jfigures][LINE] + edit(page_number(buf.buffer[jout][JPAG], var.page_offset), width, right=True)
+                if len(line) > var.chars_per_line:
+                    error(f'Length of Figures chapter line is {len(line)} > -w = {var.chars_per_line}', jinp, line)
+                buf.buffer[buf.figures_jout + 2 + jfigures][LINE] = line
+
+    def insert_page_headers(buf):
+
+        def header1(jinp, jpage, npages, chapter):
+            left, right = ((arg.even_right, arg.even_left) if arg.all_pages_E_e else
+                           (arg.odd_left, arg.odd_right) if jpage % 2 else
+                           (arg.even_left, arg.even_right))
+            PpfeYmdHMSnNc = var.PpfeYmdHMS + (page_number(jpage, var.page_offset), str(npages), chapter)
+            left = evalchar(left, 'PpfeYmdHMSnNc', PpfeYmdHMSnNc, '%')
+            right = evalchar(right, 'PpfeYmdHMSnNc', PpfeYmdHMSnNc, '%')
+            blanks = ' ' * max(1, (var.chars_per_line - len(left) - len(right)))
+            header = left + blanks + right
+            return [jinp, HEA1, jpage, lpic, FORMFEED + header]
+
+        def header2(jinp, jpage, npages, chapter):
+            second_line = var.chars_per_line * SECOND_LINE_CHARS[arg.second_line]
+            return [jinp, HEA2, jpage, lpic, second_line]
+
+        if buf.buffer: # insert page headers
+            buffer2 = []; jpag0 = 1; chapter = ''; npages = buf.buffer[-1][JPAG]
+            for record in buf.buffer:
+                jinp, kind, jpage, lpic, line = record
+                if kind in [CONT, INDX, FIGU, CHP1]:
+                        chapter = shrink_alphatitle(line)
+                if jpage == jpag0 + 2:
+                    buffer2.append(header1(jinp, jpage - 1, npages, chapter))
+                    if arg.second_line != 'n':
+                        buffer2.append(header2(jinp, jpage - 1, npages, chapter))
+                if jpage > jpag0:
+                    buffer2.append(header1(jinp, jpage, npages, chapter))
+                    if arg.second_line != 'n':
+                        buffer2.append(header2(jinp, jpage, npages, chapter))
+                jpag0 = jpage
+                buffer2.append(record)
+            buf.buffer = buffer2
+
+#----- main window -----
+
+def gui_main_window():
+    sg.theme(THEME)
+    button = 'Main'
+    space = lambda size=0: sg.Text(size=size)
+    block = lambda title='': sg.Text(title, size=7)
+    layout = [
+        [block('Format'), sg.Text('-y --text-editor',     size=TSIZE), sg.Input(arg.text_editor, size=ASIZE,         key='y', tooltip=tooltips['y']),
+         space(40), sg.Text('Status'), sg.Text(WAITING, key='Status', tooltip=f"status indicator ({WAITING!r} or {RUNNING!r})")],
+        [block(),         sg.Text('-w --chars-per-line',  size=TSIZE), sg.Input(arg.chars_per_line, size=ASIZE,      key='w', tooltip=tooltips['w']), space(),
+         sg.Text('-g --graphics',        size=TSIZE), sg.Checkbox('', default=arg.graphics,         key='g', tooltip=tooltips['g'])],
+        [block(),         sg.Text('-u --lines-per-page',  size=TSIZE), sg.Input(arg.lines_per_page, size=ASIZE,      key='u', tooltip=tooltips['u']), space(),
+         sg.Text('-l --just-left-only',  size=TSIZE), sg.Checkbox('', default=arg.just_left_only,   key='l', tooltip=tooltips['l'])],
+        [block('Chapters'),sg.Text('-c --contents-title',  size=TSIZE), sg.Input(arg.contents_title, size=ASIZE,      key='c', tooltip=tooltips['c']), space(),
+         sg.Text('-i --index-title',     size=TSIZE), sg.Input(arg.index_title, size=ASIZE,         key='i', tooltip=tooltips['i'])],
+        [block(),         sg.Text('-f --figures-title',   size=TSIZE), sg.Input(arg.figures_title, size=ASIZE,       key='f', tooltip=tooltips['f']), space(),
+         sg.Text('-F --caption-prefix',  size=TSIZE), sg.Input(arg.caption_prefix, size=ASIZE,      key='F', tooltip=tooltips['F'])],
+        [block(),         sg.Text('-m --chapter-offset',  size=TSIZE), sg.Input(arg.chapter_offset, size=ASIZE,      key='m', tooltip=tooltips['m'])],
+        [block('Pages'),         sg.Text('-p --page-headers',    size=TSIZE),
+            sg.Radio('no',       'p', default=arg.page_headers=='n', tooltip='do not insert page headers'),
+            sg.Radio('fullpage', 'p', default=arg.page_headers=='f', tooltip='insert page headers on full page'),
+            sg.Radio('picture',  'p', default=arg.page_headers=='p', tooltip='…and on broken picture'),
+            sg.Radio('chapter',  'p', default=arg.page_headers=='c', tooltip='…and before level-1 chapters'),
+            sg.Radio('double',   'p', default=arg.page_headers=='d', tooltip='…and double if level-1 on even page'),],
+        [block(),         sg.Text('-e --even-left',       size=TSIZE), sg.Input(arg.even_left, size=ASIZE,           key='e', tooltip=tooltips['e']), space(),
+         sg.Text('-E --even-right',      size=TSIZE), sg.Input(arg.even_right, size=ASIZE,          key='E', tooltip=tooltips['E'])],
+        [block(),         sg.Text('-o --odd-left',        size=TSIZE), sg.Input(arg.odd_left, size=ASIZE,            key='o', tooltip=tooltips['o']), space(),
+         sg.Text('-O --odd-right',       size=TSIZE), sg.Input(arg.odd_right, size=ASIZE,           key='O', tooltip=tooltips['O'])],
+        [block(),         sg.Text('-n --page-offset',     size=TSIZE), sg.Input(arg.page_offset, size=ASIZE,         key='n', tooltip=tooltips['n']), space(),
+         sg.Text('-a --all-pages-E-e',   size=TSIZE), sg.Checkbox('', default=arg.all_pages_E_e,    key='a', tooltip=tooltips['a'])],
+        [block(),         sg.Text('-s --second_line',     size=TSIZE),
+            sg.Radio('no',       's', default=arg.second_line=='n', tooltip='no second line in page header'),
+            sg.Radio('blanks',   's', default=arg.second_line=='b', tooltip='blank second line in page header'),
+            sg.Radio('points',   's', default=arg.second_line=='p', tooltip='dotted second line in page header'),
+            sg.Radio('dashes',   's', default=arg.second_line=='d', tooltip='dashed second line in page header'),
+            sg.Radio('solid',    's', default=arg.second_line=='s', tooltip='solid second line in page header')],
+        [block('Export'), sg.Text('-X --export-pdf',      size=TSIZE),
+            sg.Radio('no',       'X', default=arg.export_pdf=='n', tooltip='do not export'),
+            sg.Radio('export',   'X', default=arg.export_pdf=='e', tooltip='export PDF file'),
+            sg.Radio('browse',   'X', default=arg.export_pdf=='b', tooltip='export and browse PDF file'), space(5),
+         sg.Text('-C --correct', size=TSIZE),
+            sg.Radio('no',       'C', default=arg.correct=='n', tooltip='do not correct char size and page margins'),
+            sg.Radio('default',  'C', default=arg.correct=='d', tooltip='correct char size and page margins by default values'),
+            sg.Radio('file',     'C', default=arg.correct=='f', tooltip='correct char size and page margins by correction file')],
+        [block(),         sg.Text('-Y --pdf-browser',     size=TSIZE), sg.Input(arg.pdf_browser, size=ASIZE,         key='Y', tooltip=tooltips['Y']), space(),
+         sg.Text('-P --file-pdf',        size=TSIZE), sg.Input(arg.pdf_file, size=ASIZE,            key='P', tooltip=tooltips['P'])],
+        [block(),         sg.Text('-W --char-width',      size=TSIZE), sg.Input(arg.char_width, size=ASIZE,          key='W', tooltip=tooltips['W']), space(),
+         sg.Text('-A --char-aspect',     size=TSIZE), sg.Input(arg.char_aspect, size=ASIZE,         key='A', tooltip=tooltips['A'])],
+        [block(),         sg.Text('-S --sheet-size',      size=TSIZE), sg.Input(arg.sheet_size, size=ASIZE,          key='S', tooltip=tooltips['S']), space(),
+         sg.Text('-Z --landscape',       size=TSIZE), sg.Checkbox('', default=arg.landscape,        key='Z', tooltip=tooltips['Z'])],
+        [block(),         sg.Text('-L --left-margin',     size=TSIZE), sg.Input(arg.left_margin, size=ASIZE,         key='L', tooltip=tooltips['L']), space(),
+         sg.Text('-R --right-margin',    size=TSIZE), sg.Input(arg.right_margin, size=ASIZE,        key='R', tooltip=tooltips['R'])],
+        [block(),         sg.Text('-T --top-margin',      size=TSIZE), sg.Input(arg.top_margin, size=ASIZE,          key='T', tooltip=tooltips['T']), space(),
+         sg.Text('-B --bottom-margin',   size=TSIZE), sg.Input(arg.bottom_margin, size=ASIZE,       key='B', tooltip=tooltips['B'])],
+        [block(),         sg.Text('-I --multi-pages',     size=TSIZE),
+            sg.Radio('1',        'I', default=arg.multi_pages=='1', tooltip=f"export 1 page per side of paper sheets"),
+            sg.Radio('2',        'I', default=arg.multi_pages=='2', tooltip=f"export 2 pages per side of paper sheets"),
+            sg.Radio('4',        'I', default=arg.multi_pages=='4', tooltip=f"export 4 pages per side of paper sheets"),
+            sg.Radio('8',        'I', default=arg.multi_pages=='8', tooltip=f"export 8 pages per side of paper sheets"), space(9),
+         sg.Text('-J --multi-sheets',    size=TSIZE), sg.Input(arg.multi_sheets, size=ASIZE,        key='J', tooltip=tooltips['J'])],
+        [block('Text File'), sg.Text(arg.text_file, key='t', tooltip=tooltips['t'])],
+        # action buttons
+        [sg.Button(button, tooltip=tooltips[button], size=BSIZE) for button in ['New','Open','Recent','SaveAs','Edit','Format','NoFormat','Undo','Log','Help','Exit']]]
+    window = sg.Window(f'YAWP - Main', layout, finalize=True)
+    while True: # window.read() loop
+        try:
+            window['Status'].update(WAITING)
+            window.refresh()
+            button, values = window.read()
+            arg.read_from_window(window)
+            button = button or 'Exit'
+            if button != 'Exit':
+                window['Status'].update(RUNNING)
+                arg.shrink_all()
+                arg.write_into_window(window)
+            var.ok_message = ''
+            {'New':      new_button,
+             'Open':     open_button,
+             'Recent':   recent_button,
+             'SaveAs':   saveas_button,
+             'Help':     help_button,
+             'Exit':     exit_button,
+             'Edit':     edit_button,
+             'Format':   format_button,
+             'NoFormat': noformat_button,
+             'Undo':     undo_button,
+             'Log':      log_button}[button]()
+            arg.write_into_window(window)
+        except YawpError:
+            pass
+
+#----- buttons, first line: New Open Recent SaveAs Help Exit -----
+
+def new_button():
+    'create a new empty text file with default arguments, which becomes the new current text file'
+    old_text_file = arg.text_file
+    new_text_file = sg.popup_get_file('', no_window=True, save_as=True)
+    # if new file aready exists, confirmation window is issued by sg.PopupGetFile() itself
+    if new_text_file:
+        new_text_file = longpath(new_text_file)
+        if arg.text_file == new_text_file:
+            error(f'The new text file can not be the current text file')
+        arg.write_into_args_file_of(old_text_file) # save old arguments
+        open(new_text_file, 'w').close() # empty file…
+        rm(args_file_of(new_text_file)) # …with default arguments…
+        arg.set_default()
+        rm(log_file_of(new_text_file)) # …with no log…
+        for back_file in back_files_of(new_text_file):
+            rm(back_file) # …and no backups
+        hist.add(new_text_file)
+        cd(dirname(new_text_file))
+        arg.text_file = new_text_file
+        lock.release(old_text_file)
+
+def open_button():
+    'browse file system and select the new current text file'
+    old_text_file = arg.text_file
+    new_text_file = sg.PopupGetFile('', no_window=True, save_as=False)
+    # if new_text_file doesn't exist, error window is issued by sg.PopupGetFile() itself
+    if new_text_file:
+        new_text_file = longpath(new_text_file)
+        if arg.text_file == new_text_file:
+            error(f'The selected text file can not be the current text file')
+        arg.write_into_args_file_of(old_text_file)
+        arg.read_from_args_file_of(new_text_file) # update arguments
+        hist.add(new_text_file)
+        cd(dirname(new_text_file))
+        arg.text_file = new_text_file
+        lock.release(old_text_file)
+
+def recent_button():
+    'browse list of recent existing files and select the new current text file'
+    old_text_file = arg.text_file
+    new_text_file = hist.select()
+    # if list of recent files is empty, error window is issued by hist.select() itself
+    if new_text_file:
+        new_text_file = longpath(new_text_file)
+        if arg.text_file == new_text_file:
+            error(f'The selected text file can not be the current text file')
+        arg.write_into_args_file_of(old_text_file)
+        arg.read_from_args_file_of(new_text_file) # update arguments
+        hist.add(new_text_file)
+        cd(dirname(new_text_file))
+        arg.text_file = new_text_file
+        lock.release(old_text_file)
+
+def saveas_button():
+    'clone current text file (and its args file) into a copy, which becomes the new current text file'
+    old_text_file = arg.text_file
+    new_text_file = sg.popup_get_file('', no_window=True, save_as=True)
+    # if target file aready exists, confirmation window is issued by sg.PopupGetFile() itself
+    if new_text_file:
+        new_text_file = longpath(new_text_file)
+        if old_text_file == new_text_file:
+            error(f'The target text file can not be the current text file')
+        arg.write_into_args_file_of(old_text_file)
+        cp(old_text_file, new_text_file) # cloned text file…
+        cp(args_file_of(old_text_file), args_file_of(new_text_file)) # …with cloned arguments…
+        rm(log_file_of(new_text_file)) # …with no log…
+        for back_file in back_files_of(new_text_file):
+            rm(back_file) # …and no backups
+        hist.add(new_text_file)
+        cd(dirname(new_text_file))
+        arg.text_file = new_text_file
+        lock.release(old_text_file)
+
+def help_button():
+    'show colophon and possibly browse the YAWP User Manual'
+    if ask_yes('YAWP - Help', f'''
+                          YAWP {VERSION}
+              Yet Another Word Processor
+                           {VERSION_DATE}
+              https://pypi.org/project/yawp
+                  Carlo Alessandro Verre
+          carlo.alessandro.verre@gmail.com
+
+Do you want to browse the YAWP User Manual?''', 'browse'):
+        arg.check_pdf_browser()
+        shell(f'{arg.pdf_browser} {MANUAL_FILE!r}')
+
+def exit_button(return_code=0):
+    'terminate execution'
+    if var.gui_mode:
+        arg.write_into_args_file_of(arg.text_file)
+        write_sess_file(arg.text_file)
+    lock.release(lock.locked_file)
+    exit(return_code)
+
+#----- buttons, second line: Edit Format NoFormat Undo Log -----
+
+def edit_button():
+    'edit current text file'
+    inform([frame(f'Edit - {now()}')])
+    arg.check()
+    arg.inform()
+    if not isfile(arg.text_file):
+        if ask_yes(f'YAWP - Edit', f'File {arg.text_file!r} does not exist.\nDo you want to create it as an empty file?', 'create'):
+            write_lines(arg.text_file) # new file…
+            rm(args_file_of(arg.text_file)) # …with default arguments…
+            arg.set_default()
+            for back_file in back_files_of(arg.text_file):
+                rm(back_file) # …and no backups
+        else:
+            return
+    lock.seize(arg.text_file)
+    old = Buffer(arg.text_file)
+    old.inform('Before:')
+    shell(f'{arg.text_editor} {arg.text_file!r}')
+    new = Buffer(arg.text_file)
+    if old == new:
+        inform(['Backup:\n    Text file not altered, backup not performed'])
+    else:
+        back_file = new_back_file_of(arg.text_file)
+        old.write_into_file(back_file)
+        inform([f'Backup:',
+            f'    {arg.text_file!r} →',
+            f'    {back_file!r}'])
+        new.inform('After:')
+
+def format_button(format=True):
+    'format current text file, run graphics if -g, and export and browse in PDF format following -X'
+    button = ["NoFormat","Format"][format]
+    inform([frame(f'{button} - {now()}')])
+    if format and is_reserved(arg.text_file):
+        error(f'Format of reserved file\n{arg.text_file!r}\nis not allowed.')
+    arg.check()
+    arg.inform()
+    lock.seize(arg.text_file)
+    old = Buffer(arg.text_file)
+    inform([f'Read:\n    YAWP ← {arg.text_file!r}'])
+    old.inform('Before:')
+    old.compute()
+    new = old.copy()
+    if format: # -M f?
+        new.remove_page_headers()
+        new.justify_lines()
+    if arg.graphics: # -g ?
+        new.redraw()
+    if format: # -M f?
+        new.renumber_chapters()
+        new.add_chapters_to_contents_chapter()
+        new.add_captions_to_figures_chapter()
+        new.add_quoted_subjects_to_index_chapter()
+        new.add_unquoted_subjects_to_index_chapter()
+        new.insert_contents_figures_and_index_chapters()
+        if arg.page_headers != 'n': # -p ?
+            new.count_picture_lines()
+            new.count_pages()
+            new.add_page_numbers_to_contents_chapter()
+            new.add_page_numbers_to_figures_chapter()
+            new.add_page_numbers_to_index_chapter()
+            new.insert_page_headers()
+        new.check_line_lengths()
+    if (not format and not arg.graphics) or old == new:
+        inform([f'Backup:\n    text file not altered, backup not performed'])
+    else:
+        back_file = new_back_file_of(arg.text_file)
+        old.write_into_file(back_file)
+        inform([f'Backup:',
+            f'    {arg.text_file!r} →',
+            f'    {back_file!r}',
+            f'Rewrite:\n    YAWP → {arg.text_file!r}'])
+        new.write_into_file(arg.text_file)
+        new.inform('After:')
+    if arg.export_pdf != 'n': # -p n?
+        pdf.export_and_browse(arg.text_file)
+
+def noformat_button():
+    'do not format current text file, but anyway run graphics if -g, and export and browse in PDF format following -X'
+    format_button(format=False)
+
+def undo_button():
+    'restore current text file to its previous version'
+    inform([frame(f'Undo - {now()}')])
+    arg.check()
+    arg.inform()
+    try:
+        back_file = last_back_file_of(arg.text_file)
+    except FileNotFoundError:
+        error(f'Backup file for text file {arg.text_file!r} not found')
+    if not isfile(back_file):
+        error(f'Backup file {back_file!r} for text file {arg.text_file!r} exists but is not a file')
+    if arg.usage_mode == 'u' or not isfile(arg.text_file) or ask_yes('YAWP - Undo',
+            'Current content will be lost.\nDo you want restore previous content?','restore'):
+        lock.seize(arg.text_file)
+        old = Buffer(arg.text_file)
+        old.inform('Before:')
+        rm(arg.text_file)
+        mv(back_file, arg.text_file)
+        inform([f'Restore:',
+            f'    {arg.text_file!r} ←',
+            f'    {back_file!r}'])
+        new = Buffer(arg.text_file)
+        if old != new:
+            new.inform('After:')
+            inform(['Undo:\n    Text file altered'])
+        else:
+            inform(['Undo:\n    Text file not altered'])
+        if arg.export_pdf != 'n':
+            new.compute()
+            pdf.export_and_browse(arg.text_file)
+
+def log_button():
+    'browse current log file'
+    arg.check_text_editor()
+    if isfile(arg.text_file):
+        shell(f'{arg.text_editor} {log_file_of(arg.text_file)!r}')
+    else:
+        error('Log file not found')
+
+#----- main -----
+
+def main():
+    var.gui_mode = False
+    simplefilter('ignore')
+    if not isfile(CORR_FILE):
+        open(CORR_FILE, 'w').write(CORR_DEFAULT)
+    arg.read_from_argv(argv)
+    if arg.usage_mode == 'g':
+        var.gui_mode = True
+        gui_main_window()
+    elif arg.usage_mode == 'e':
+        edit_button()
+    elif arg.usage_mode == 'f':
+        format_button()
+    elif arg.usage_mode == 'n':
+        noformat_button()
+    else: # arg.usage_mode == 'u'
+        undo_button()
+    exit_button()
+
+if __name__ == '__main__':
+    main()
+
+#----- end -----
