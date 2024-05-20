@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aclysz/__init__.py
+aclysz/main.py
+aclysz.egg-info/PKG-INFO
+aclysz.egg-info/SOURCES.txt
+aclysz.egg-info/dependency_links.txt
+aclysz.egg-info/requires.txt
+aclysz.egg-info/top_level.txt
