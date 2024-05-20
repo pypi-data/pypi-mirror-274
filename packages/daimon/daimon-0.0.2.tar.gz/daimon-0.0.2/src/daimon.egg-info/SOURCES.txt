@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/daimon/__init__.py
+src/daimon/githf.py
+src/daimon/machina.yaml
+src/daimon.egg-info/PKG-INFO
+src/daimon.egg-info/SOURCES.txt
+src/daimon.egg-info/dependency_links.txt
+src/daimon.egg-info/requires.txt
+src/daimon.egg-info/top_level.txt
