@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: EmLiLetter
+Version: 0.0.1
+Summary: EmLi software to send mails for several users
+Home-page: https://gitlab.com/bridgearchitect/emli
+Author: Artem Tomilo
+License: MIT
+License-File: LICENSE.txt
