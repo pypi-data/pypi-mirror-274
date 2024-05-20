@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stylopidz/__init__.py
+stylopidz/main.py
+stylopidz.egg-info/PKG-INFO
+stylopidz.egg-info/SOURCES.txt
+stylopidz.egg-info/dependency_links.txt
+stylopidz.egg-info/requires.txt
+stylopidz.egg-info/top_level.txt
