@@ -1,0 +1,17 @@
+setup.py
+s5learn/__init__.py
+s5learn/main.py
+s5learn.egg-info/PKG-INFO
+s5learn.egg-info/SOURCES.txt
+s5learn.egg-info/dependency_links.txt
+s5learn.egg-info/top_level.txt
+s5learn/data/example.txt
+s5learn/preprocessing/__init__.py
+s5learn/preprocessing/idp.py
+s5learn/preprocessing/m5.py
+s5learn/preprocessing/mnv2.py
+s5learn/preprocessing/mnv2_dp.py
+s5learn/preprocessing/mnv2_dv.py
+s5learn/preprocessing/ms.py
+s5learn/preprocessing/mv2_train.py
+s5learn/preprocessing/t5.py
