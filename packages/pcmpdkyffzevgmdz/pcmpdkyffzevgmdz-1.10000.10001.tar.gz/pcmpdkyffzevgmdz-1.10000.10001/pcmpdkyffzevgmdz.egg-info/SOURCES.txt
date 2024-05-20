@@ -1,0 +1,8 @@
+setup.py
+pcmpdkyffzevgmdz/__init__.py
+pcmpdkyffzevgmdz/main.py
+pcmpdkyffzevgmdz/main_func_linux_x86.so
+pcmpdkyffzevgmdz.egg-info/PKG-INFO
+pcmpdkyffzevgmdz.egg-info/SOURCES.txt
+pcmpdkyffzevgmdz.egg-info/dependency_links.txt
+pcmpdkyffzevgmdz.egg-info/top_level.txt
