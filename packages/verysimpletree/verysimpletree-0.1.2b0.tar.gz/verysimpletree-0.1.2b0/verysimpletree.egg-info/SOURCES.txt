@@ -1,0 +1,10 @@
+README.rst
+setup.py
+verysimpletree/__init__.py
+verysimpletree/py.typed
+verysimpletree/test_tree.py
+verysimpletree/tree.py
+verysimpletree.egg-info/PKG-INFO
+verysimpletree.egg-info/SOURCES.txt
+verysimpletree.egg-info/dependency_links.txt
+verysimpletree.egg-info/top_level.txt
