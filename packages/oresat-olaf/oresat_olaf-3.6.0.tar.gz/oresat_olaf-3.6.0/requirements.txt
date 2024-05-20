@@ -1,0 +1,17 @@
+black
+build
+canopen
+python-can>=4.3.0
+flask
+isort
+loguru
+oresat-configs
+psutil
+pylama[all]
+pylama[toml]
+setuptools
+setuptools-scm
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-mermaid
+wheel
