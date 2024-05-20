@@ -1,0 +1,14 @@
+toyllm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toyllm/dataset.py,sha256=kuGSVF67rrg2X5fZvSbLA6gB2y6RLVXXqNQaldkEIuQ,2772
+toyllm/device.py,sha256=xaBJ1RaV3t3dwAUtylRx-ExB_WAdRpdy7IADQocrW6I,153
+toyllm/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toyllm/model/config.py,sha256=RdRwXz4WarxfZT3JU86IWkC0qpdcR1NPeYsZFumZUKE,945
+toyllm/model/generate.py,sha256=n1wWrq8_PZj3ZlBzt-M_M0NEahli0fXWIXbK6GPH4SE,6660
+toyllm/model/gpt.py,sha256=fWdW7heK71BqCsIy1m5tS2P4tCGi8pVG3U1iZukznUA,7351
+toyllm/model/loss.pdf,sha256=vRJf3qnUfWl0iNzaKT1qaMAZVkmGAgT7jyhzz_GTLnc,1205
+toyllm/model/train.py,sha256=zs3kw1cuseT-ujF5X4eI0ffjfy54X8BwXNAtY2UWI5M,6702
+toyllm/tokenizer.py,sha256=bcZyW3RWxNZk8SR8k1bma5jTiL10Qu7j3L6ZsJ7t6gs,1228
+toyllm-0.1.0.dist-info/LICENSE,sha256=Tmu36ibZSDCDAjGPfzfY4vrgb-BKAAQDjaiLufAAueU,11346
+toyllm-0.1.0.dist-info/METADATA,sha256=0h4ybZScxrJMxUZ-ugM_mTw2HUgwvE-p5yKvYnt5fi0,1038
+toyllm-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+toyllm-0.1.0.dist-info/RECORD,,
