@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+reannoyz/__init__.py
+reannoyz/main.py
+reannoyz.egg-info/PKG-INFO
+reannoyz.egg-info/SOURCES.txt
+reannoyz.egg-info/dependency_links.txt
+reannoyz.egg-info/requires.txt
+reannoyz.egg-info/top_level.txt
