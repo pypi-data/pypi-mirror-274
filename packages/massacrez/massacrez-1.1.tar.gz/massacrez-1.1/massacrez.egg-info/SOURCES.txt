@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+massacrez/__init__.py
+massacrez/main.py
+massacrez.egg-info/PKG-INFO
+massacrez.egg-info/SOURCES.txt
+massacrez.egg-info/dependency_links.txt
+massacrez.egg-info/requires.txt
+massacrez.egg-info/top_level.txt
