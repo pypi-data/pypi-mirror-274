@@ -1,0 +1,9 @@
+bvg_python/__init__.py,sha256=_ilAV_aCuIBQSFx_IOZkc1LKzPOU8gBV8h5h1YIn96I,24
+bvg_python/bvg.py,sha256=01Puwhn9mAbM039PH-VDLHx7-M7OwHk_g2SQtk3PRhU,5280
+tests/__init__.py,sha256=jiwfcnJ20wztcvpny4SHcqmAIWK-w5tCqN9TWf0GOkw,11
+tests/test_bvg.py,sha256=h8NNOvI-r9J6E5urJjNUpDHcV_dkUP2TrwxDKQvOMRg,4908
+bvg_python-1.0.4.dist-info/LICENSE,sha256=UIp30ue1HZit7tMmSK0SS3swJBqOcLLnLJn5LY5YdNE,1036
+bvg_python-1.0.4.dist-info/METADATA,sha256=naROy_YOhoG5NveHeQQIx8llkHQEfoTUyWnH4K4qr9Y,4668
+bvg_python-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bvg_python-1.0.4.dist-info/top_level.txt,sha256=q8xephYNj5U_sPl7trDFac_lB_rZKTsgsqenf4x3KuU,17
+bvg_python-1.0.4.dist-info/RECORD,,
