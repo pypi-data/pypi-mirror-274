@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+revictualledz/__init__.py
+revictualledz/main.py
+revictualledz.egg-info/PKG-INFO
+revictualledz.egg-info/SOURCES.txt
+revictualledz.egg-info/dependency_links.txt
+revictualledz.egg-info/requires.txt
+revictualledz.egg-info/top_level.txt
