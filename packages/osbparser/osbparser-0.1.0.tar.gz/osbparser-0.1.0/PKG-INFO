@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: osbparser
+Version: 0.1.0
+Summary: Tool for parsing `.osb` file
+Author: jkjkil4
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python
+Project-URL: Source, https://github.com/jkjkil4/osbparser
+
+# osbparser
+
+Tool for parsing `.osb` file.
+
+File format reference: https://osu.ppy.sh/wiki/Storyboard/Scripting
+
