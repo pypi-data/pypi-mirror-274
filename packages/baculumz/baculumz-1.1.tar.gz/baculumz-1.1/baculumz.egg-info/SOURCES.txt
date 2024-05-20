@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+baculumz/__init__.py
+baculumz/main.py
+baculumz.egg-info/PKG-INFO
+baculumz.egg-info/SOURCES.txt
+baculumz.egg-info/dependency_links.txt
+baculumz.egg-info/requires.txt
+baculumz.egg-info/top_level.txt
