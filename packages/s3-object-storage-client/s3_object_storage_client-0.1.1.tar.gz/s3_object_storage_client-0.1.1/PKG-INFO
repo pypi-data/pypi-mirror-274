@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: s3_object_storage_client
+Version: 0.1.1
+Summary: s3 using tool
+Home-page: https://github.com/susufqx/pyCeph
+Author: susufqx
+Author-email: jiangsulirui@gmail.com
+License: MIT Licence
+Keywords: pip,py_s3,s3,ceph,minio
+Platform: any
+License-File: LICENSE
+
+s3 protocol using tool
