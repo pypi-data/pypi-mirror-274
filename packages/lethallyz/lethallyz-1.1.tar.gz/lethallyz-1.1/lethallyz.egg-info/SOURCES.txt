@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lethallyz/__init__.py
+lethallyz/main.py
+lethallyz.egg-info/PKG-INFO
+lethallyz.egg-info/SOURCES.txt
+lethallyz.egg-info/dependency_links.txt
+lethallyz.egg-info/requires.txt
+lethallyz.egg-info/top_level.txt
