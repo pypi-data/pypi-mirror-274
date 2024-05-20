@@ -1,0 +1,9 @@
+rpa_finder/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+rpa_finder/linalg.py,sha256=yX_n0CoX2IrzPNp5Vms12KaYGSAkeMD96QXlIZ6KYBc,2585
+rpa_finder/reaction_system.py,sha256=d3aJpKr5mDhDY4aKS4PxMGa10ZuhTZSY4PbytgRMNS0,41470
+rpa_finder/utils.py,sha256=BZScF9bvmUIUenMVr85pKOhehoCvapcdDTCmtFSdxRM,1510
+rpa_finder-0.1.0.dist-info/LICENSE,sha256=1Sk_2VS2CpCv3jIIsfqnYP3YN5I3dG-d1Ar5jjhdGd8,1081
+rpa_finder-0.1.0.dist-info/METADATA,sha256=zRhao2vPDSSfy52coXGoG7v8kiQeTobzfpoyfkEOjaM,6633
+rpa_finder-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rpa_finder-0.1.0.dist-info/top_level.txt,sha256=dSVUYqu2w6ZC97D7YWuWGv3Q96fqsDI9H9Jd_piZB9U,11
+rpa_finder-0.1.0.dist-info/RECORD,,
