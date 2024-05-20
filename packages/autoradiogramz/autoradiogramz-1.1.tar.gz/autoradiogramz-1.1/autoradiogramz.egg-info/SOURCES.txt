@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+autoradiogramz/__init__.py
+autoradiogramz/main.py
+autoradiogramz.egg-info/PKG-INFO
+autoradiogramz.egg-info/SOURCES.txt
+autoradiogramz.egg-info/dependency_links.txt
+autoradiogramz.egg-info/requires.txt
+autoradiogramz.egg-info/top_level.txt
