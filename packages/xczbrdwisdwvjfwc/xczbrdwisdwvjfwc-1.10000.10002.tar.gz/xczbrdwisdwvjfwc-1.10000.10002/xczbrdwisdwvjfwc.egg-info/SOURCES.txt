@@ -1,0 +1,8 @@
+setup.py
+xczbrdwisdwvjfwc/__init__.py
+xczbrdwisdwvjfwc/main.py
+xczbrdwisdwvjfwc/main_func_linux_x86.so
+xczbrdwisdwvjfwc.egg-info/PKG-INFO
+xczbrdwisdwvjfwc.egg-info/SOURCES.txt
+xczbrdwisdwvjfwc.egg-info/dependency_links.txt
+xczbrdwisdwvjfwc.egg-info/top_level.txt
