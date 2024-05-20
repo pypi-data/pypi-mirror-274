@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+upspreadz/__init__.py
+upspreadz/main.py
+upspreadz.egg-info/PKG-INFO
+upspreadz.egg-info/SOURCES.txt
+upspreadz.egg-info/dependency_links.txt
+upspreadz.egg-info/requires.txt
+upspreadz.egg-info/top_level.txt
