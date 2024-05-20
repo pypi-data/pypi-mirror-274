@@ -1,0 +1,10 @@
+
+*.pyc
+build
+dist
+sais.egg-info
+.idea
+.DS_Store
+.history
+.vscode
+venv
