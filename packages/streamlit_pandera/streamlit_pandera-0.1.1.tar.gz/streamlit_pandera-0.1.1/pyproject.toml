@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "streamlit_pandera"
+version = "0.1.1"
+description = "Clean Data Validation Tool integrates Streamlit and Panderas"
+authors = ["Manrique Vargas <machomaxg@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.34.0"
+validators = "^0.28.1"
+pipx = "^1.5.0"
+cookiecutter = "^2.6.0"
+wheel = "*"
+pytest = "7.4.0"
+playwright = "1.39.0"
+requests = "2.31.0"
+pytest-playwright-snapshot = "1.0"
+pytest-rerunfailures = "12.0"
+pandera = { version = "^0.7.2", extras = ["io"] }
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+pytest = "*"
+pylint = "^3.2.0"
+twine = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
