@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+steriliserz/__init__.py
+steriliserz/main.py
+steriliserz.egg-info/PKG-INFO
+steriliserz.egg-info/SOURCES.txt
+steriliserz.egg-info/dependency_links.txt
+steriliserz.egg-info/requires.txt
+steriliserz.egg-info/top_level.txt
