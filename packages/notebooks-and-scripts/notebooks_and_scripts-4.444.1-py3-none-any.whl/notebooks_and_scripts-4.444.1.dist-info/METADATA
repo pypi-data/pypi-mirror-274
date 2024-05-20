@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: notebooks_and_scripts
+Version: 4.444.1
+Summary: 📜 notebooks for experiments & [meta] scripts for aws batch jobs and sagemaker serving.
+Author: arash@kamangir.net
+License-File: LICENSE
+
