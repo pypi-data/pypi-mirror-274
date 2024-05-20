@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chambrez/__init__.py
+chambrez/main.py
+chambrez.egg-info/PKG-INFO
+chambrez.egg-info/SOURCES.txt
+chambrez.egg-info/dependency_links.txt
+chambrez.egg-info/requires.txt
+chambrez.egg-info/top_level.txt
