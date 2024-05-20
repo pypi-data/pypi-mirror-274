@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+interjaculatingz/__init__.py
+interjaculatingz/main.py
+interjaculatingz.egg-info/PKG-INFO
+interjaculatingz.egg-info/SOURCES.txt
+interjaculatingz.egg-info/dependency_links.txt
+interjaculatingz.egg-info/requires.txt
+interjaculatingz.egg-info/top_level.txt
