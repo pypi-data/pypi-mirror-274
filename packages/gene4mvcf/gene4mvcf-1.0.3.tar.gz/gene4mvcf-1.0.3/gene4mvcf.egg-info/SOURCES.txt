@@ -1,0 +1,9 @@
+README.md
+setup.py
+gene4mVCF/__init__.py
+gene4mVCF/gene4mvcf.py
+gene4mvcf.egg-info/PKG-INFO
+gene4mvcf.egg-info/SOURCES.txt
+gene4mvcf.egg-info/dependency_links.txt
+gene4mvcf.egg-info/requires.txt
+gene4mvcf.egg-info/top_level.txt
