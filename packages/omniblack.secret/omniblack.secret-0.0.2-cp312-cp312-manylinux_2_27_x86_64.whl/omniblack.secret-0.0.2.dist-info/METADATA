@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: omniblack.secret
+Version: 0.0.2
+Author-email: Terry Patterson <terryp@wegrok.net>
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development
+License-File: LICENSE
+
