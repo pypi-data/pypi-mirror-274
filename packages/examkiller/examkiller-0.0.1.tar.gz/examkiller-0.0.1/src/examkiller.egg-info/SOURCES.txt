@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/exam/__init__.py
+src/exam/example.py
+src/examkiller.egg-info/PKG-INFO
+src/examkiller.egg-info/SOURCES.txt
+src/examkiller.egg-info/dependency_links.txt
+src/examkiller.egg-info/top_level.txt
