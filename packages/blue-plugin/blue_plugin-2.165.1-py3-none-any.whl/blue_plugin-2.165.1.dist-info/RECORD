@@ -1,0 +1,12 @@
+blue_plugin/__init__.py,sha256=HxPNOcfJCcxd2Q0pyPrYF0ZBzLUKKe3Jkf3odVWeFJE,123
+blue_plugin/__main__.py,sha256=A--EBlI2eqmUXvSz6LTb5Z76MZmPtSK8suh-m7QAXwM,878
+blue_plugin/config.env,sha256=89ao50sGXYWiU-NMV_fUVXAXdTHKKfWV03BY3_p6EOE,25
+blue_plugin/env.py,sha256=eJNJf2iG0SamADivlvkC4sfuxcLWEf8XbSU7gZ4W_GE,235
+blue_plugin/functions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blue_plugin/logger.py,sha256=HveCyUnCkJ58fVg1qECom8sQegjqHPtOTS0vL_5mlog,92
+blue_plugin/urls.py,sha256=Bjdewssljt0LIefjixBem9JN0kkghPvmrIETj3GdXbY,17
+blue_plugin-2.165.1.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+blue_plugin-2.165.1.dist-info/METADATA,sha256=kOvvQ9rna-FeRis1slKUQlvQ2OIMObTvs10YSjp94pk,960
+blue_plugin-2.165.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+blue_plugin-2.165.1.dist-info/top_level.txt,sha256=xjrEKaecMTI9AuAAXtmZvScd9Dt0ir2i8AZJd7gj7tM,12
+blue_plugin-2.165.1.dist-info/RECORD,,
