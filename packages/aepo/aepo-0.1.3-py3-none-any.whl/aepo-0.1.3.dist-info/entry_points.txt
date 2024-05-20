@@ -1,0 +1,3 @@
+[console_scripts]
+aepo=aepo.cli:aepo
+
