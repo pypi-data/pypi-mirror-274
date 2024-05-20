@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+plottagesz/__init__.py
+plottagesz/main.py
+plottagesz.egg-info/PKG-INFO
+plottagesz.egg-info/SOURCES.txt
+plottagesz.egg-info/dependency_links.txt
+plottagesz.egg-info/requires.txt
+plottagesz.egg-info/top_level.txt
