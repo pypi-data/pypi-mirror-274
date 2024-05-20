@@ -1,0 +1,17 @@
+ninja_crud/__init__.py,sha256=vWzqip8WrL3JlktD85CsjT-kqPz_XLIXeyZSf-U39cg,161
+ninja_crud/testing.py,sha256=-3HSlf3wAY-3eFZHpYK6reTwxprH0B24gzuYYHjYs_s,475
+ninja_crud/views/__init__.py,sha256=-3L3iRqJQzPuQs8wEVpqZjLidekHl8d6udalvoxUQMs,318
+ninja_crud/views/api_view.py,sha256=l-ZJ04KA-aVxkLsgIhec3kGIZdoVSB-hIqqepDT9fKM,12861
+ninja_crud/views/create_view.py,sha256=KyCIqP7t5zU23HtCVf9pyQ94eLo-Tm0CDGJe9w3aLfU,9911
+ninja_crud/views/delete_view.py,sha256=qEGtZmve6z9iONaYdAjp4cyJpTc9bAoYnO4Ofe9oJpI,7783
+ninja_crud/views/helpers/__init__.py,sha256=w1yKicsdqmUawRwnOv8iHlE4Ii4ZQ1BJ7LDK7j5W3PY,112
+ninja_crud/views/helpers/path_parameters_type_resolver.py,sha256=exspaKbNkFuMv6tHM7iltn8AzIWF__oqc9EqxBL5MPw,4983
+ninja_crud/views/list_view.py,sha256=guqaCi4m7G3JwGvkEbY5l4EYfvQxn5oKtp--cy5xOeE,9386
+ninja_crud/views/read_view.py,sha256=ESMKJwAfAxWUdiPpCcOvxw1Qq0MaNcXitKEhinGJmsM,7079
+ninja_crud/views/update_view.py,sha256=kPCpPHCkLatQlb9XU9ZNvzgnzSdyHUALrKGMCCp6mdw,9933
+ninja_crud/viewsets/__init__.py,sha256=dWSjF14TQbOFbIjfpNFkyLtsgDFQ1VlcB8DUGlvyaEY,62
+ninja_crud/viewsets/api_viewset.py,sha256=0J8FxK4c7YwDZrF03AdO6BvSCTCylPq-rBfUJKvxBYU,4841
+django_ninja_crud-0.5.0.dist-info/LICENSE.md,sha256=optnXGUPjzEVulZ9owl46WjDe1Fo2BeI4AZXzb4kBdQ,1069
+django_ninja_crud-0.5.0.dist-info/METADATA,sha256=2vsCFJRkapZJH7q2s-QS9_fc39cNjw-gumv1ht3esNY,13388
+django_ninja_crud-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_ninja_crud-0.5.0.dist-info/RECORD,,
