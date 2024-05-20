@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+monopylaeaz/__init__.py
+monopylaeaz/main.py
+monopylaeaz.egg-info/PKG-INFO
+monopylaeaz.egg-info/SOURCES.txt
+monopylaeaz.egg-info/dependency_links.txt
+monopylaeaz.egg-info/requires.txt
+monopylaeaz.egg-info/top_level.txt
