@@ -1,0 +1,2 @@
+[console_scripts]
+assetbot = assetbot.assetbot:main

@@ -1,0 +1,15 @@
+assetbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+assetbot/assetbot.py,sha256=oHUkxZWExH0-Hb5MkzqxExlY4AQdYawl8ScRHb_PDNg,8472
+assetbot/config.py,sha256=s8SWnyRfCs0NvFdxWMEZDIGi0z0bcYIr4CJ2_ZZXtLU,6268
+assetbot/example_config.toml,sha256=xh8rrQ_VlVB6nCYGq2wvSRam5G8lwZ02WMZs-EksopM,1150
+assetbot/exporters/__init__.py,sha256=ZsvCoWGTuh9TbqEL96Euz9UjMltarbPI6xwGD8YmNI8,899
+assetbot/exporters/base.py,sha256=l8UtiGxVYCbvUR6J6xfsfdHmmMisLyps7nsjxNeccRE,2911
+assetbot/exporters/copy.py,sha256=OELohD8Bzew_t1q_6UkCPQQZD6p7AgMDoH3bGmpDWVw,670
+assetbot/exporters/gimp.py,sha256=g8lre_F-Q-k6JlS0-Ebt62wI4c5C55t9QbkC3HAi_aQ,1944
+assetbot/exporters/krita.py,sha256=EAzrHS3Fp6iFWWcQ1dYjGhslCN6L6ZpcTj7LOmBPbME,2471
+assetbot/exporters/svg.py,sha256=mQdSj0LgSbWSwqSX4jOT1u8RlnW7StYWsjIbeXABuYg,1540
+assetbot-0.1.1.dist-info/METADATA,sha256=MqFk4p8QpSAGMMyXpkSQnC8Vawh9fyNo5VflWwVh5dg,8482
+assetbot-0.1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+assetbot-0.1.1.dist-info/entry_points.txt,sha256=nbaYbmBhtsr4WUlohHEysXSBNFho0FMh3im5Bmc3zpM,52
+assetbot-0.1.1.dist-info/licenses/COPYING,sha256=4sP1bfPaen8PJZ8BO7lif_TGRUmM6Wo3ZVR1M_JOJy4,1303
+assetbot-0.1.1.dist-info/RECORD,,
