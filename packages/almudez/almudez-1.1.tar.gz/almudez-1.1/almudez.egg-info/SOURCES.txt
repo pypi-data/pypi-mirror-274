@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+almudez/__init__.py
+almudez/main.py
+almudez.egg-info/PKG-INFO
+almudez.egg-info/SOURCES.txt
+almudez.egg-info/dependency_links.txt
+almudez.egg-info/requires.txt
+almudez.egg-info/top_level.txt
