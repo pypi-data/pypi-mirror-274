@@ -1,0 +1,3 @@
+compiled_cairo1_modules
+hdp_bootloader
+tools
