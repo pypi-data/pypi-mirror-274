@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+disaccomodatez/__init__.py
+disaccomodatez/main.py
+disaccomodatez.egg-info/PKG-INFO
+disaccomodatez.egg-info/SOURCES.txt
+disaccomodatez.egg-info/dependency_links.txt
+disaccomodatez.egg-info/requires.txt
+disaccomodatez.egg-info/top_level.txt
