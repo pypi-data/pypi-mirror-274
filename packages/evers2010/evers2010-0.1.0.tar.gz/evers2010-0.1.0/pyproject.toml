@@ -1,0 +1,87 @@
+# {# pkglts, pyproject.build
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools", "wheel"]  # , "setuptools-scm"]  # PEP 508 specifications.
+build-backend = "setuptools.build_meta"  # we don't know if we need it
+# #}
+
+# {# pkglts, pyproject.project
+[project]  # https://packaging.python.org/en/latest/specifications/pyproject-toml/
+name = "evers2010"
+version = "0.1.0"
+description = "Formalism of leaf gas exchange from Evers 2010"
+readme = "README.rst"
+requires-python = ">= 3.7"
+license = {text = "cc_by_nc"}
+authors = [
+    {name = "revesansparole", email = "revesansparole@gmail.com"},
+]
+maintainers = [
+    {name = "revesansparole", email = "revesansparole@gmail.com"},
+    {name = "Jerome Chopard", email = "revesansparole@gmail.com"},
+]
+keywords = [
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+]
+
+[project.optional-dependencies]
+doc = [
+    "sphinx",
+    "sphinx-gallery",
+    "sphinx_rtd_theme",
+]
+dvlpt = [
+    "twine",
+]
+test = [
+    "coverage",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+]
+
+
+[project.urls]
+repository = "https://gitlab.com/b326/evers2010"
+pip = "https://pypi.org/project/evers2010/0.1.0/"
+conda = "https://anaconda.org/revesansparole/evers2010"
+doc = "https://b326.gitlab.io/evers2010/"
+pypi = "https://badge.fury.io/py/evers2010"
+
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ['*.json', '*.ini', '*.csv', '*.rst', '*.svg', ]
+
+# #}
+# {# pkglts, test, after pyproject.project
+[tool.pytest.ini_options]
+addopts = "--maxfail=2 -rf --cov=evers2010"
+# #}
+
+# {# pkglts, pyproject.scripts
+[project.scripts]
+# #}
+
+# {# pkglts, pyproject.gui_scripts
+[project.gui-scripts]
+# #}
