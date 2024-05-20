@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xenogamyz/__init__.py
+xenogamyz/main.py
+xenogamyz.egg-info/PKG-INFO
+xenogamyz.egg-info/SOURCES.txt
+xenogamyz.egg-info/dependency_links.txt
+xenogamyz.egg-info/requires.txt
+xenogamyz.egg-info/top_level.txt
