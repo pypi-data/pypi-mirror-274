@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+harvestmenz/__init__.py
+harvestmenz/main.py
+harvestmenz.egg-info/PKG-INFO
+harvestmenz.egg-info/SOURCES.txt
+harvestmenz.egg-info/dependency_links.txt
+harvestmenz.egg-info/requires.txt
+harvestmenz.egg-info/top_level.txt
