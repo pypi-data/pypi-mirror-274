@@ -1,0 +1,39 @@
+{
+    "name": "orbit-component-{{ project }}",
+    "description": "{{ description }}",
+    "version": "0.0.1",
+    "private": true,
+    "main": "index.js",
+    "files": [
+      "dist",
+      "menu.js"
+    ],
+    "module": "./dist/orbit-component-{{ project }}.es.js",
+    "exports": {
+      ".": {
+        "import": "./dist/orbit-component-{{ project }}.es.js"
+      }
+    },
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "devDependencies": {
+      "@vitejs/plugin-basic-ssl": ">=1.0",
+      "@vitejs/plugin-vue": ">=4.2",
+      "vite": ">=4.3",
+      "vite-plugin-commonjs": ">=0.7",
+      "vite-plugin-require": ">=1.1",
+      "vite-plugin-require-transform": ">=1.0",
+      "vite-require": ">=0.2.3",
+      "vite-plugin-css-injected-by-js": ">=3.1",
+      "@vicons/material": ">=0.12"
+    },
+    "dependencies": {
+      "orbit-component-base": ">=1.0.13",
+      "socket.io-client": "^4.6.2",
+      "uuid": "^9.0.0",
+      "naive-ui": "^2.34.3"
+    }
+}

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "orbit-cli"
+version = "0.1.26"
+description = "This tool aims to make things easier when you come to create a new application or a new component"
+authors = ["Gareth Bult <gareth@madpenguin.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "orbit_cli" }, {include = "orbit_cli/templates" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^13.4.2"
+requests = "^2.31.0"
+jinja2 = "^3.1.2"
+
+[tool.poetry.scripts]
+orbit_cli = 'orbit_cli.__main__:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

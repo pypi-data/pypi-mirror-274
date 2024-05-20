@@ -1,0 +1,13 @@
+[Unit]
+Description={{ project }} Daemon service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/home/{{ project }}
+ExecStart=/opt/{{ project }}/{{ project }} --run
+User={{ project }}
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
