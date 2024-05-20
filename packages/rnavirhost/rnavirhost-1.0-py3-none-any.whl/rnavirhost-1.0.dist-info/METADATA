@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rnavirhost
+Version: 1.0
+Summary: RNAVirHost: a machine learning-based method for predicting hosts of RNA viruses through viral genomes
+Home-page: https://github.com/GreyGuoweiChen/VirHost.git
+Author: CHEN Guowei
+Author-email: gwchen3-c@my.cityu.edu.hk
+License: MIT
+Keywords: Bioconda RNAvirus HostPrediction MachineLearning Metagenomics
+License-File: LICENSE.txt
+
