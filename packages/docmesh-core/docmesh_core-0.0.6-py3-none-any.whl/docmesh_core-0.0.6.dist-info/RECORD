@@ -1,0 +1,10 @@
+docmesh_core/__init__.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+docmesh_core/db/__init__.py,sha256=ll9D4DtIP8YVqwVk1TBNSPCqpuCNT8YnFI4O2zTupfs,1388
+docmesh_core/db/auth.py,sha256=fLa3EkXCvgF_ViJi3SzULrUNPFDbtyoCIqLYzvbf9_4,1325
+docmesh_core/db/neo.py,sha256=1jJLlPLhu7eevaghaTFWk1f9hjmKMRREIV7ditCkCyE,11864
+docmesh_core/utils/__init__.py,sha256=PZb5n6_zu_hc5g0pzJDP0G5PsSCVg45hWUOr6LcLzNU,417
+docmesh_core/utils/graph_utils.py,sha256=lb7Hr0uYV9or33VCHeJOxfqrM7AYf1b6ucpaxqMLdvg,269
+docmesh_core/utils/semantic_scholar.py,sha256=g9nhaayIakwZRZjhQhCW7wbjJQUXzbZTE7pbNPsSW7A,3857
+docmesh_core-0.0.6.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+docmesh_core-0.0.6.dist-info/METADATA,sha256=HQ5Z5odVlYHJh-to8nMwdBmtpsiP98ZgFsVN_IsqEVY,688
+docmesh_core-0.0.6.dist-info/RECORD,,
