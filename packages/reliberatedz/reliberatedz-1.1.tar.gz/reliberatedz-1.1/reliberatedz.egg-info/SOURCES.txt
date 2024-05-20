@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+reliberatedz/__init__.py
+reliberatedz/main.py
+reliberatedz.egg-info/PKG-INFO
+reliberatedz.egg-info/SOURCES.txt
+reliberatedz.egg-info/dependency_links.txt
+reliberatedz.egg-info/requires.txt
+reliberatedz.egg-info/top_level.txt
