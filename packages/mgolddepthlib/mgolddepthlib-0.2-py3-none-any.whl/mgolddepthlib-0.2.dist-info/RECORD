@@ -1,0 +1,16 @@
+model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model/marigold_pipeline.py,sha256=ezMSr9i2DC-UFxu41Y-w2KmDWIILDR9qGy7eAXz0qfc,12142
+model/rgb_encoder.py,sha256=UtvtXWy-ilwuiAAXp07Ub2nwhxUxP4r6GWPSrJSSueY,994
+model/stacked_depth_AE.py,sha256=n7NTy4dV36pBB94PXi6O3EjGYfkGErDUd__Vy9Ox60Y,1640
+mylib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mylib/myfunctions.py,sha256=dtq9Ax-niRH8If8mtSVTZMUaITwRRXUgR8Sqd9GBojQ,360
+util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+util/batchsize.py,sha256=tYAtLv3Eo_2FsUsB4GZs5BFyeDWxrorAvbb6XXAqYBE,1205
+util/ensemble.py,sha256=bVCTyugCb6ciKDYnVwso_sgUME973I96jJvancV99dQ,3842
+util/flow_estimation.py,sha256=Q3FQrqjld6Fd5VJxHr4x5RUjtpSoTzd5bKu4mbW7t-I,2363
+util/image_util.py,sha256=HkQunI5o_ywtdoa6BS7pAn_dhOIi3PL9rCB7Q73Rtw8,2149
+util/seed_all.py,sha256=08-4UhaYISI8SFCkwyOO_kDx27hcWDLzmLV7e23GRkI,245
+mgolddepthlib-0.2.dist-info/METADATA,sha256=wPCta2VPJ_UZERAdls0Heswpv_0jTW1HxkkcQAvKj1A,110
+mgolddepthlib-0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+mgolddepthlib-0.2.dist-info/top_level.txt,sha256=kKvZKe3Rmuvn8zKmpM75WraC4IoEA3U8b2eXDCJ61Zk,17
+mgolddepthlib-0.2.dist-info/RECORD,,
