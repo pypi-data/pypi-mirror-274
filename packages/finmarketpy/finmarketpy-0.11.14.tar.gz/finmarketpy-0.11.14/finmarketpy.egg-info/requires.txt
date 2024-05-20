@@ -1,0 +1,11 @@
+pandas
+twython
+pytz
+requests
+numpy
+multiprocess
+seasonal
+scikit-learn
+matplotlib
+numba
+financepy==0.310
