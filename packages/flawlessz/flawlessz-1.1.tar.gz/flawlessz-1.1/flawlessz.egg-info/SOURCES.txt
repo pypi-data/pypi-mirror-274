@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flawlessz/__init__.py
+flawlessz/main.py
+flawlessz.egg-info/PKG-INFO
+flawlessz.egg-info/SOURCES.txt
+flawlessz.egg-info/dependency_links.txt
+flawlessz.egg-info/requires.txt
+flawlessz.egg-info/top_level.txt
