@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gptwc/__init__.py
+gptwc/gptwc.py
+gptwc.egg-info/PKG-INFO
+gptwc.egg-info/SOURCES.txt
+gptwc.egg-info/dependency_links.txt
+gptwc.egg-info/entry_points.txt
+gptwc.egg-info/requires.txt
+gptwc.egg-info/top_level.txt
