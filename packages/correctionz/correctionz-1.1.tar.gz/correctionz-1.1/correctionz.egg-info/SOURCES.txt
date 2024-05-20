@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+correctionz/__init__.py
+correctionz/main.py
+correctionz.egg-info/PKG-INFO
+correctionz.egg-info/SOURCES.txt
+correctionz.egg-info/dependency_links.txt
+correctionz.egg-info/requires.txt
+correctionz.egg-info/top_level.txt
