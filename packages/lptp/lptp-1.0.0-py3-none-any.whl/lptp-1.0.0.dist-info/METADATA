@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: lptp
+Version: 1.0.0
+Summary: Данный протокол является протоколом RPC вида и служит для вызова процедур на удалённом сервере. Проект является исключительно учебным и не рекомендуется для реального использования.
+Author: zoomdev
+Author-email: zoomdeveloper@ayandex.ru
+Keywords: rpc
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Lite Procedure Transfer Protocol (LPTP)
+*Р”Р°РЅРЅС‹Р№ РїСЂРѕС‚РѕРєРѕР» СЏРІР»СЏРµС‚СЃСЏ РїСЂРѕС‚РѕРєРѕР»РѕРј RPC РІРёРґР° Рё СЃР»СѓР¶РёС‚ РґР»СЏ РІС‹Р·РѕРІР° РїСЂРѕС†РµРґСѓСЂ РЅР° СѓРґР°Р»С‘РЅРЅРѕРј СЃРµСЂРІРµСЂРµ. РџСЂРѕРµРєС‚ СЏРІР»СЏРµС‚СЃСЏ РёСЃРєР»СЋС‡РёС‚РµР»СЊРЅРѕ СѓС‡РµР±РЅС‹Рј Рё РЅРµ СЂРµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ РґР»СЏ СЂРµР°Р»СЊРЅРѕРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ.*
+
+## РЈСЃС‚Р°РЅРѕРІРєР°
+
+`pip install lptp`
+
+## РџСЂРёРјРµСЂ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ
+
+### РљР»РёРµРЅС‚
+```python
+import asyncio
+from lptp.client import LPTPClient
+from lptp.types import AuthType
+from lptp_procedures import ProcedureManager
+
+async def main():
+    async with ProcedureManager(LPTPClient(
+        "127.0.0.1",
+        auth_type=AuthType.Key,
+        key="someKey"
+    )) as proc:
+
+        print(await proc.reverse_text("РџСЂРёРІРµС‚ РџР°С†Р°РЅС‹"))
+
+asyncio.run(main())
+```
+
+### РЎРµСЂРІРµСЂ
+```python
+import logging
+from lptp.server import LPTPServer, Manager
+from lptp.types import AuthType
+
+logging.basicConfig(level=logging.DEBUG)
+
+server = LPTPServer(
+    "127.0.0.1",
+    auth_type = AuthType.Key,
+    key = "someKey"
+)
+
+manager = Manager()
+
+@manager.procedure
+async def reverse_text(text: str) -> str:
+    return text[::-1]
+
+@manager.procedure
+async def sum_numbers(a: int, b: int) -> int:
+    return a + b
+
+@manager.sub_procedure(sum_numbers, 1)
+async def sum_numbers_list(nums: list) -> int:
+    return sum(nums)
+
+server.add_manager(manager)
+server.generate_proc_file()
+server.run_forever()
+```
+
+## Р’Р°Р¶РЅРѕ
+*РџСЂРё Р·Р°РїСѓСЃРєРµ СЃРµСЂРІРµСЂСЃР°Р№РґР° РЅРµРѕР±С…РѕРґРёРјРѕ РІС‹Р·РІР°С‚СЊ РјРµС‚РѕРґ generate_proc_file(), РєРѕС‚РѕСЂС‹Р№ СЃРѕР·РґР°СЃС‚ РІ С‚РµРєСѓС‰РµР№ РґРёСЂРµРєС‚РѕСЂРёРё С„Р°Р№Р» lptp_procedures.py СЃ РѕРїРёСЃР°РЅРёРµРј РІСЃРµС… РїСЂРѕС†РµРґСѓСЂ СЃРµСЂРІРµСЂР°. Р Р°Р±РѕС‚Р° РєР»РёРµРЅС‚СЃРєРѕР№ СЃС‚РѕСЂРѕРЅС‹ РЅРµРІРѕР·РјРѕР¶РЅР° Р±РµР· СЌС‚РѕРіРѕ С„Р°Р№Р»Р°.*
