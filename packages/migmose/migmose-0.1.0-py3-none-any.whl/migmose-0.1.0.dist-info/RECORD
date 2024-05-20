@@ -1,0 +1,15 @@
+_migmose_version.py,sha256=aOHawL1zuHMfBWKXqwUkXcW96oXLNCY-CXdHDqkz4g4,18
+migmose/__init__.py,sha256=BlSK18GPaMSJQB6hKdcA0NjK3UU3qEq8ZYIWufU6Wxo,45
+migmose/__main__.py,sha256=meblz8fVq96Eh_Pil6Jlp1ejLX4oYuR22qvNAaaSw8o,5137
+migmose/parsing.py,sha256=yS2A1x4OJRq6XRyZefjSxCi4T5U9iEXQUAza6BKnJoI,4871
+migmose/py.typed,sha256=Ae1FyKpRoiBf-9XstwcHcuuQpE_zmAL1xsehJ1ivbpM,166
+migmose/mig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+migmose/mig/nachrichtenstrukturtabelle.py,sha256=lv8TFsHtzvoe1CPnRUtCKpg-p5b5doO18NoOt6FiEC0,1651
+migmose/mig/nachrichtenstrukturzeile.py,sha256=EJrpIXDKztphahc2nT_LhULxLlzHkkTo8hSldi1EnXw,1960
+migmose/mig/nestednachrichtenstruktur.py,sha256=qKsNbKUeoiKhEHlMGdu101GcbrSC2sOg4rjYljAZelY,4484
+migmose/mig/reducednestednachrichtenstruktur.py,sha256=PG6SeL-xviaJC7qNlbs-9YRtVLXmrvi2oFNGuaMovJk,6164
+migmose-0.1.0.dist-info/METADATA,sha256=ttWbpwvUMqWSH7DyDSzOzhUnI7DglXYZrFad0B6Wha0,5269
+migmose-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+migmose-0.1.0.dist-info/entry_points.txt,sha256=IkrgqrX6oyjfdtWBB9IARHNbxDrDIeT3leTKcI7QlDQ,50
+migmose-0.1.0.dist-info/licenses/LICENSE,sha256=04B920e2sAO59yFAclMRa8PIsOMJYVRH9L2vWBFyoFc,1095
+migmose-0.1.0.dist-info/RECORD,,
