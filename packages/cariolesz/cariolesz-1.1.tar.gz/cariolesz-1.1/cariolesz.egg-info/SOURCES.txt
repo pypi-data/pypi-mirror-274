@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cariolesz/__init__.py
+cariolesz/main.py
+cariolesz.egg-info/PKG-INFO
+cariolesz.egg-info/SOURCES.txt
+cariolesz.egg-info/dependency_links.txt
+cariolesz.egg-info/requires.txt
+cariolesz.egg-info/top_level.txt
