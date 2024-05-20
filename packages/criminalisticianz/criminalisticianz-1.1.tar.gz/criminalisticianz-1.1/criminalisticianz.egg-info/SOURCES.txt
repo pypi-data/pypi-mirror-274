@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+criminalisticianz/__init__.py
+criminalisticianz/main.py
+criminalisticianz.egg-info/PKG-INFO
+criminalisticianz.egg-info/SOURCES.txt
+criminalisticianz.egg-info/dependency_links.txt
+criminalisticianz.egg-info/requires.txt
+criminalisticianz.egg-info/top_level.txt
