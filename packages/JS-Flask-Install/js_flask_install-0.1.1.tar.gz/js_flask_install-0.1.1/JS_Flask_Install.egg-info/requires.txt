@@ -1,0 +1,9 @@
+datetime
+pandas
+requests
+numpy
+flask
+virtualenv
+pipreqs
+pip-tools
+JS_Flask_Install
