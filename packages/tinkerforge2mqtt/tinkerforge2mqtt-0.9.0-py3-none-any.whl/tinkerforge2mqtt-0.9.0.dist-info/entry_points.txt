@@ -1,0 +1,3 @@
+[console_scripts]
+tinkerforge2mqtt_app = tinkerforge2mqtt.__main__:main
+tinkerforge2mqtt_dev = tinkerforge2mqtt.cli_dev:main
