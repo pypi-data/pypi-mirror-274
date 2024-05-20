@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fargoingz/__init__.py
+fargoingz/main.py
+fargoingz.egg-info/PKG-INFO
+fargoingz.egg-info/SOURCES.txt
+fargoingz.egg-info/dependency_links.txt
+fargoingz.egg-info/requires.txt
+fargoingz.egg-info/top_level.txt
