@@ -1,0 +1,8 @@
+README.md
+setup.py
+lumberlogger/__init__.py
+lumberlogger/main.py
+lumberlogger.egg-info/PKG-INFO
+lumberlogger.egg-info/SOURCES.txt
+lumberlogger.egg-info/dependency_links.txt
+lumberlogger.egg-info/top_level.txt
