@@ -1,0 +1,12 @@
+metaffi/__init__.py,sha256=IA7NwyQ50TAmULQTqSavpVqITJfaRlb4SrkUTtaOkqA,538
+metaffi/classes_metaffi.puml,sha256=8fz26HPfwQWAa4JEpbnLdYGySCOa0_LrZLMuzd88M0I,1270
+metaffi/metaffi_handle.py,sha256=Mfiao-0-3hoqDdgqQwUHdtNu5A1oHLdBEXrlFQk7abE,411
+metaffi/metaffi_module.py,sha256=QtJmdTaVebY79DD9YOWHoBcIkKPjUM77Ne2Tvgh4OCw,4823
+metaffi/metaffi_runtime.py,sha256=KplGkuRMP5qWjoeFYCVg4ASqjDMYH0mN8w4NWY0-uFk,484
+metaffi/metaffi_types.py,sha256=gGeQyqSLAua0vLMOgqrlCeu5suO47gtP7rF2qRZ-8n8,4619
+metaffi/pycdts_converter.py,sha256=twO54lJxpvgIfzIZmVq-ON523cEaJi0Hduv2ClXb_3E,2024
+metaffi/xllr_wrapper.py,sha256=UIy6_kv4A2xwy0LADnyhBNf2ucXgxHy8UkOo9gPvxew,5217
+metaffi_api-0.0.25.dist-info/LICENSE,sha256=qGuI4sGwZzBPTCBgiHt1xSzOjcE23E2YDz9Z0cA9QNE,1096
+metaffi_api-0.0.25.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+metaffi_api-0.0.25.dist-info/METADATA,sha256=TsJ4U_S4JU_yEQrEDc8BX9am0biaQdIu_60StSfMYF4,378
+metaffi_api-0.0.25.dist-info/RECORD,,
