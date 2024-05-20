@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+appellationsz/__init__.py
+appellationsz/main.py
+appellationsz.egg-info/PKG-INFO
+appellationsz.egg-info/SOURCES.txt
+appellationsz.egg-info/dependency_links.txt
+appellationsz.egg-info/requires.txt
+appellationsz.egg-info/top_level.txt
