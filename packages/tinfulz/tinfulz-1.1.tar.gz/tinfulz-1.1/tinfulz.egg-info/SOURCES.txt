@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tinfulz/__init__.py
+tinfulz/main.py
+tinfulz.egg-info/PKG-INFO
+tinfulz.egg-info/SOURCES.txt
+tinfulz.egg-info/dependency_links.txt
+tinfulz.egg-info/requires.txt
+tinfulz.egg-info/top_level.txt
