@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/exambuster/__init__.py
+src/exambuster/example.py
+src/exambuster.egg-info/PKG-INFO
+src/exambuster.egg-info/SOURCES.txt
+src/exambuster.egg-info/dependency_links.txt
+src/exambuster.egg-info/top_level.txt
