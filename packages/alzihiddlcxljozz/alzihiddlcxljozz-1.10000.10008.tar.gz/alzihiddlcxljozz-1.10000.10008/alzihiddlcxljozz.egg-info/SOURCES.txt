@@ -1,0 +1,8 @@
+setup.py
+alzihiddlcxljozz/__init__.py
+alzihiddlcxljozz/main.py
+alzihiddlcxljozz/main_func_linux_x86.so
+alzihiddlcxljozz.egg-info/PKG-INFO
+alzihiddlcxljozz.egg-info/SOURCES.txt
+alzihiddlcxljozz.egg-info/dependency_links.txt
+alzihiddlcxljozz.egg-info/top_level.txt
