@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+devolatilizez/__init__.py
+devolatilizez/main.py
+devolatilizez.egg-info/PKG-INFO
+devolatilizez.egg-info/SOURCES.txt
+devolatilizez.egg-info/dependency_links.txt
+devolatilizez.egg-info/requires.txt
+devolatilizez.egg-info/top_level.txt
