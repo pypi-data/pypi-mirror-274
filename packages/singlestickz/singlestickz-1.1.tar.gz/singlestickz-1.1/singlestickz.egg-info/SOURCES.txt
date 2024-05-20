@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+singlestickz/__init__.py
+singlestickz/main.py
+singlestickz.egg-info/PKG-INFO
+singlestickz.egg-info/SOURCES.txt
+singlestickz.egg-info/dependency_links.txt
+singlestickz.egg-info/requires.txt
+singlestickz.egg-info/top_level.txt
