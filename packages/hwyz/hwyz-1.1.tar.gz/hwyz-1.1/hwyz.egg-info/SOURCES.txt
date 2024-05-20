@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hwyz/__init__.py
+hwyz/main.py
+hwyz.egg-info/PKG-INFO
+hwyz.egg-info/SOURCES.txt
+hwyz.egg-info/dependency_links.txt
+hwyz.egg-info/requires.txt
+hwyz.egg-info/top_level.txt
