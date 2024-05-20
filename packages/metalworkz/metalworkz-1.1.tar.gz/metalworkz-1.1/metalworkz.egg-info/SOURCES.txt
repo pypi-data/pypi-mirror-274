@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+metalworkz/__init__.py
+metalworkz/main.py
+metalworkz.egg-info/PKG-INFO
+metalworkz.egg-info/SOURCES.txt
+metalworkz.egg-info/dependency_links.txt
+metalworkz.egg-info/requires.txt
+metalworkz.egg-info/top_level.txt
