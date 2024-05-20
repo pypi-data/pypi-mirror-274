@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+freelyz/__init__.py
+freelyz/main.py
+freelyz.egg-info/PKG-INFO
+freelyz.egg-info/SOURCES.txt
+freelyz.egg-info/dependency_links.txt
+freelyz.egg-info/requires.txt
+freelyz.egg-info/top_level.txt
