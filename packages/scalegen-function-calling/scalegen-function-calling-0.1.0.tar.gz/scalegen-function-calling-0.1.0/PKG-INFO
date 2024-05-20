@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: scalegen-function-calling
+Version: 0.1.0
+Summary: A package for generating function calls using OpenAI's API for scalegen function calling model's .
+Home-page: https://github.com/ScaleGenAI/function-calling-openai-sdk
+Author: Tejesh Bhalla
+Author-email: tejeshbhalla1@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# function-calling-openai-sdk
+Patch for OpenAI Python SDK to make it compatible with ScaleGenAI's Llama-3 function calling models :sparkles:
