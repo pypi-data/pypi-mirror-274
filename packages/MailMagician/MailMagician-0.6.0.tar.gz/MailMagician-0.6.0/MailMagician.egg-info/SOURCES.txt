@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MailMagician.egg-info/PKG-INFO
+MailMagician.egg-info/SOURCES.txt
+MailMagician.egg-info/dependency_links.txt
+MailMagician.egg-info/top_level.txt
+mailmagician/__init__.py
+mailmagician/_mailbot.py
+mailmagician/_smtp_server.py
