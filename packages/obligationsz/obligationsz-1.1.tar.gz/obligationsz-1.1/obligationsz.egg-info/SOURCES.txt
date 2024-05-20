@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+obligationsz/__init__.py
+obligationsz/main.py
+obligationsz.egg-info/PKG-INFO
+obligationsz.egg-info/SOURCES.txt
+obligationsz.egg-info/dependency_links.txt
+obligationsz.egg-info/requires.txt
+obligationsz.egg-info/top_level.txt
