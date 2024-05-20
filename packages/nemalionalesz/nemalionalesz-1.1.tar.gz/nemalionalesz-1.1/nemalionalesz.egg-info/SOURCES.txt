@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nemalionalesz/__init__.py
+nemalionalesz/main.py
+nemalionalesz.egg-info/PKG-INFO
+nemalionalesz.egg-info/SOURCES.txt
+nemalionalesz.egg-info/dependency_links.txt
+nemalionalesz.egg-info/requires.txt
+nemalionalesz.egg-info/top_level.txt
