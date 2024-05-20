@@ -1,0 +1,120 @@
+Metadata-Version: 2.3
+Name: python-gpapi2
+Version: 0.1.2
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE-APACHE
+License-File: LICENSE-MIT
+Summary: An unofficial Python API that let you search, browse and download Android apps from Google Play Store
+Author: Xiangsong Zeng
+License: MIT OR Apache-2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/zengxs/python-gpapi2
+Project-URL: Bug Tracker, https://github.com/zengxs/python-gpapi2/issues
+
+# python-gpapi2
+
+[![GitHub Actions][gha-badge]][gha-url]
+[![PyPI][pypi-badge]][pypi-url]
+
+[gha-badge]: https://github.com/zengxs/python-gpapi2/actions/workflows/ci.yaml/badge.svg
+[gha-url]: https://github.com/zengxs/python-gpapi2/actions/workflows/ci.yaml
+[pypi-badge]: https://img.shields.io/pypi/v/python-gpapi2
+[pypi-url]: https://pypi.org/project/python-gpapi2/
+
+An unofficial Python API that let you search, browse and download Android apps from Google Play Store.
+
+## Installation
+
+```bash
+pip install python-gpapi2
+```
+
+## Usage
+
+> [!IMPORTANT]
+> Currently, this API is still in development. The API may change in the future.
+>
+> Many features are not yet implemented at this time, I will continue to work on it.
+
+```python
+from gpapi2 import GooglePlayAPI
+
+gpapi = GooglePlayAPI(email="example@gmail.com")
+# See README.md section "Obtaining the Google Play Store token" for more information
+gpapi.login(aas_token="aas_et/AKpp...")
+
+# Get the details of an app
+# NOTE: The method currently returns a JSON string, you can use the
+# `json.loads` to convert it to a Python dictionary. I will change it
+# to return a user-friendly object in the future.
+details = gpapi.details("com.whatsapp")
+
+# Get the version of an app
+version, version_code = gpapi.latest_version("com.whatsapp")
+
+# Get the download link of an app
+download_link = gpapi.download_url("com.whatsapp", version_code)
+```
+
+### Obtaining the Google Play Store token
+
+> [!IMPORTANT]
+> Please ensure to protect the **OAuth Token** or **AAS Token** obtained below and
+> do not disclose it to anyone, as this could put your Google account at risk.
+
+To use this API, you need to obtain a Google Play Store token. You can do this by
+following these steps:
+
+1. First, you need to obtain an **OAuth token**. You can do this by opening the
+   following URL in your browser:
+
+    <https://accounts.google.com/embedded/setup/v2/android>
+
+    And then:
+
+    - Open the developer console in your browser (F12)
+
+    - Log in with your Google account on the page that appears.
+
+    - If the **Google Terms of Services** page appears, accept it. (It can hang up
+      but it's normal)
+
+    - Go to the `Application` tab of the developer console.
+
+    - Expand the `Cookies` section and select the `https://accounts.google.com` entry.
+
+    - There should be a cookie named `oauth_token`. Copy its value. This is your
+      **OAuth token**. (It should look like `oauth2_4/0AdL...`)
+
+    - This token can be used only once.
+
+2. Then, you need to obtain an **AAS token**. Run the following code:
+
+    ```python
+    from gpapi2 import GooglePlayAPI
+
+    email = "example@gmail.com"
+    oauth_token = "oauth2_4/0AdL..."
+    aas_token = GooglePlayAPI.request_aas_token(email, oauth_token)
+    print(aas_token)
+    ```
+
+    You should see a long string of characters. This is your **AAS token**.
+    It should looks like this: `aas_et/AKpp...j25Q`
+
+## License
+
+This project is licensed under the [MIT License](LICENSE-MIT) or the
+[Apache License 2.0](LICENSE-APACHE), at your option.
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for
+inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual
+licensed as above, without any additional terms or conditions.
+
