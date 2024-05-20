@@ -1,0 +1,6 @@
+alias: post
+model: true
+fields:
+  blog:
+    type: Blog
+    back_populates: blog_post

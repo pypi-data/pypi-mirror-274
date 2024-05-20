@@ -1,0 +1,5 @@
+alias: band
+model: true
+fields:
+  genre:
+    type: str
