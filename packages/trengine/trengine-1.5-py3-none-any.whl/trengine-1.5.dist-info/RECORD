@@ -1,0 +1,13 @@
+trengine/__init__.py,sha256=2DhkGoTDPx2bFj9RRaTucCDAA7jaCDYElwkzYfbzkms,1231
+trengine/ajax.py,sha256=DAP4UAyeieM56WCvHs63haK7gpGEEtOejB6yjqRODyw,3092
+trengine/exceptions.py,sha256=rX4GAHLcOwzh5sZ5WgAJ_vVWf2NTxQUGjh4BEN3g8NQ,40
+trengine/google.py,sha256=w0wQjAY1mbArv7lmq-wIt5seNifK8B48JlCR0A7Ln5E,1375
+trengine/hozory.py,sha256=BcpmrSFlHXHqyYa1gYV-n7MF3HwxuHmRNa2kd-xOeoA,1722
+trengine/ocr.py,sha256=vYBSUeE1EfoOEHnVlujjhedqwle2yA2Sae9jPyb7ix4,2769
+trengine/tdict.py,sha256=gE9iYaIe40sydOCYR1wFYtacASAxZFObbejeiwcNYKg,930
+trengine/types.py,sha256=ExQLC9NMKaaj3NqqjcJcSLD8dOahTOQrRlW08GpN9ns,1712
+trengine-1.5.dist-info/LICENSE,sha256=XANVfkA1o9VMFIhyW0SaBiHydhqYl52e47zQ6Db0y2Q,1060
+trengine-1.5.dist-info/METADATA,sha256=tpLY-fPaP2b7okrW2V6jm9Ns6RpK-3ttwm3pD-bEbYQ,1865
+trengine-1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+trengine-1.5.dist-info/top_level.txt,sha256=y0NvAwJ2qp0gU9vWRW7Ovu9HxRmI4jmQowzEIuSYBQc,9
+trengine-1.5.dist-info/RECORD,,
