@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+balopticonz/__init__.py
+balopticonz/main.py
+balopticonz.egg-info/PKG-INFO
+balopticonz.egg-info/SOURCES.txt
+balopticonz.egg-info/dependency_links.txt
+balopticonz.egg-info/requires.txt
+balopticonz.egg-info/top_level.txt
