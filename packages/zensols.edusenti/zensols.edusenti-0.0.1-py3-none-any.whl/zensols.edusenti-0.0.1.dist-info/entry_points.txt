@@ -1,0 +1,2 @@
+[console_scripts]
+edusenti = zensols.edusenti:main

@@ -1,0 +1,12 @@
+zensols/edusenti/__init__.py,sha256=U3UqIfkSeyyL2RxNT2KP5cwHz4Cx45xaUKkPGORS-FI,41
+zensols/edusenti/app.py,sha256=cCWOlN4VXZbdHa3FpBxXk06KXvst1-ZtcHNRsG1eAX0,1988
+zensols/edusenti/cli.py,sha256=QcqVCiGTuCv7Riy-Qz4EshLGaPtX0hqG6GVdZhvVQiQ,889
+zensols/edusenti/domain.py,sha256=72eQXeERG89oWki9AfpTpbDit3T6HTwxNJxbnS4AZh0,3461
+zensols/edusenti/resources/app.conf,sha256=xND-l3xtOYSv5AKLhhQodNAVfH9ttIGCZUddPrmtuJo,927
+zensols/edusenti/resources/default.conf,sha256=LmF2InrL5zBtfi0hrNBa2AaHlP-1OnaxYBLw-uO2Mo8,219
+zensols/edusenti/resources/obj.yml,sha256=WUUtxQIdgy8jyHEZGaxrIDJSuHFSd4nKpJ8rNcQkIaI,593
+zensols.edusenti-0.0.1.dist-info/METADATA,sha256=VeF3VnJeUB7OTeD_XOIhO9adrkwvslm_HUg517bKfy8,6280
+zensols.edusenti-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+zensols.edusenti-0.0.1.dist-info/entry_points.txt,sha256=4X0ceNlya6xpgTRt8Udw4I-zOly2bYzoR4Mgpit4W5A,51
+zensols.edusenti-0.0.1.dist-info/top_level.txt,sha256=EE183lKaM36bSCo7tESG4JjfyBPhXsnLseKTIkigLXk,17
+zensols.edusenti-0.0.1.dist-info/RECORD,,

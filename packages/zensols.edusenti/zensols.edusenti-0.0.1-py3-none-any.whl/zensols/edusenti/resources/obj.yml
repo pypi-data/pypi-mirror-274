@@ -1,0 +1,19 @@
+#@meta {desc: 'model client app context', date: '2024-03-05'}
+
+esi_model_resource:
+  class_name: zensols.install.Resource
+  url: >-
+    eval: (${esi_model:base_url} + '/edusenti-' +
+           f'${esi_default:model_name}-v${esi_model:version}'.replace('.', '_') +
+           '.zip')
+  name: null
+
+esi_model_installer:
+  class_name: zensols.install.Installer
+  package_resource: ${package:name}
+  resources: 'instance: list: esi_model_resource'
+
+esi_unpacker:
+  class_name: zensols.deeplearn.model.pack.ModelUnpacker
+  version: ${esi_model:version}
+  installer: 'instance: esi_model_installer'
