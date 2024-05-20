@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+roofAI/__init__.py
+roofAI/__main__.py
+roofAI/logger.py
+roofAI/urls.py
+roofAI.egg-info/PKG-INFO
+roofAI.egg-info/SOURCES.txt
+roofAI.egg-info/dependency_links.txt
+roofAI.egg-info/top_level.txt
