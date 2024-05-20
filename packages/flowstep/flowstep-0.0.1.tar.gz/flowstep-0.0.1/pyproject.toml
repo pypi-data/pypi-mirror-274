@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "flowstep"
+version = "0.0.1"
+description = "Manages individual steps within a flow."
+authors = ["Bruno Peixoto <brunolnetto@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+loguru = "^0.7.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^5.0.0"
+pytest = "^8.2.0"
+uv = "^0.1.44"
+virtualenv = "^20.26.2"
+poetry = "^1.8.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
