@@ -1,0 +1,2 @@
+[console_scripts]
+plag4nju4cprog = src.detect_from_logfile_batch:main
