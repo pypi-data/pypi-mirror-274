@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ununderstandablez/__init__.py
+ununderstandablez/main.py
+ununderstandablez.egg-info/PKG-INFO
+ununderstandablez.egg-info/SOURCES.txt
+ununderstandablez.egg-info/dependency_links.txt
+ununderstandablez.egg-info/requires.txt
+ununderstandablez.egg-info/top_level.txt
