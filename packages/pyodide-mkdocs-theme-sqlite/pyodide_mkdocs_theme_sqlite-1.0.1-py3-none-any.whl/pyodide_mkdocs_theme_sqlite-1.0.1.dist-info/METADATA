@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pyodide_mkdocs_theme_sqlite
+Version: 1.0.1
+Summary: A MkDocs plugin that adds a sqlite IDE to pyodide_mkdocs_theme.
+Home-page: 
+Author: Davy Cottet
+Author-email: davy@ik.me
+License: MIT
+Keywords: mkdocs,sqlite
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.0
+Requires-Dist: pyodide-mkdocs-theme >=1.0.0
+
+A MkDocs plugin that adds a sqlite IDE.
+    
+    The IDE can load a database file given as a parameter, pre-run SQL before user input, and run the user's SQL code.
+    
+    This plugin uses SQL.js as a worker, which should prevent issues with large databases and query results.
+
+    Based on Rafaël Lopez work. 
+    

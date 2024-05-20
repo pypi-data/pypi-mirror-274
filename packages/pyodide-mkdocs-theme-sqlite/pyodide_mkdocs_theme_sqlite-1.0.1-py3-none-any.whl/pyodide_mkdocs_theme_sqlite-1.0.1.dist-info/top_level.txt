@@ -1,0 +1,1 @@
+pyodide_mkdocs_theme_sqlite
