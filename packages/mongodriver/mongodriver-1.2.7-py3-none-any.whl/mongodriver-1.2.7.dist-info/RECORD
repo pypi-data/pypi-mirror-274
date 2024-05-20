@@ -1,0 +1,8 @@
+mongodriver/__init__.py,sha256=6j-zrtfydLJy8w5kuWfRZqnnoSA4TBWsRGIQ-Ly2KCY,181
+mongodriver/async_mongodriver.py,sha256=fduZDu7sJ1gw6XrlCKPJcXitWwAb1pgBwf4iKZ990_8,8287
+mongodriver/mongodriver.py,sha256=vvYoo7j_zhnrFauiWVfqk539sgWGzTGa0LeuNYMlVl8,8086
+mongodriver-1.2.7.dist-info/LICENSE,sha256=R7OLDQWz2Pk3eLutxU19JpwdF8HCRqGRXbg20uOLnEM,1061
+mongodriver-1.2.7.dist-info/METADATA,sha256=i3lE4aqrQBdjaNQw-HQAahkd_y8TCQtA7MHVyTFAdrI,3455
+mongodriver-1.2.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mongodriver-1.2.7.dist-info/top_level.txt,sha256=l_Yols8aTXn9j4ecANGO93lg5Hvr2Hd_AnzY5rvLZfA,12
+mongodriver-1.2.7.dist-info/RECORD,,
