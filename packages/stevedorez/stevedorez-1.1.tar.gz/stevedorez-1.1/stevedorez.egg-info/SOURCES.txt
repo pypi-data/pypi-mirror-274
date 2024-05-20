@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stevedorez/__init__.py
+stevedorez/main.py
+stevedorez.egg-info/PKG-INFO
+stevedorez.egg-info/SOURCES.txt
+stevedorez.egg-info/dependency_links.txt
+stevedorez.egg-info/requires.txt
+stevedorez.egg-info/top_level.txt
