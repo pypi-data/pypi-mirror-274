@@ -1,0 +1,17 @@
+transcribe_me/__init__.py,sha256=Qj5fxLR9kAKwyBBg5v6vCpMfAeHEgHxwjEVfftKGk18,183
+transcribe_me/cli.py,sha256=L0OV8J3pY1rF23_1IsYB6KFvRfOZxOMWfIUeAjn38kQ,1520
+transcribe_me/main.py,sha256=8vZ-8tqE6CWd31iU3d-OsxZ50iDdxDPEivoZBaSlgjw,99
+transcribe_me/audio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transcribe_me/audio/splitting.py,sha256=D7XQ-6aDUK6PWTIxiR1eNb_19v1bev3o0809Y0zomME,1152
+transcribe_me/audio/transcription.py,sha256=AP2AoukVpnLHMdeB3Vr3XwHE3txnbEhDyE3y9nZxsUg,3280
+transcribe_me/config/__init__.py,sha256=pIK--YgUESXg3c9w8KAJpYWo9M_pb8y0-rFyAnTI-e0,71
+transcribe_me/config/config_manager.py,sha256=9g6AJqTG-36c1JWCeErHQEMLFBokqwMHaTL1C3HRYVY,7346
+transcribe_me/config/schema.yaml,sha256=LCdYMwKabYDdpnyiXBYHt1YNPXdLAP-KQ6yvmbtMF8w,246
+transcribe_me/summarization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transcribe_me/summarization/summarizer.py,sha256=G2n-gBuri-Yy_2cPw7Iwnn2z38h6XJ2YVJLQD1U2Zm0,5012
+transcribe_me-0.2.3.dist-info/LICENSE,sha256=k5G3hvDLs7xCcS7vguBv3aY62bc1sk-kWiZN4UhFYuA,1069
+transcribe_me-0.2.3.dist-info/METADATA,sha256=iZWtqgSCirRwTTUS8Iuv2HylKj5ZSWS4Tajnys_TYwg,12265
+transcribe_me-0.2.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+transcribe_me-0.2.3.dist-info/entry_points.txt,sha256=AS6Vvb3QQXyq6YdTp1bMiRYO-VviWQUCRxFcy036bYo,58
+transcribe_me-0.2.3.dist-info/top_level.txt,sha256=VMeGwRTD5wJKl7mmu33oLJfgHGAEfYPnud-9oGhL2FU,14
+transcribe_me-0.2.3.dist-info/RECORD,,
