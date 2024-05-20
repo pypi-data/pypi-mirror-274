@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: psqlparse2
+Version: 0.0.15
+Summary: libpg_query wrapper for Python
+Author-email: Dani Maarouf <dmaarouf@cisco.com>
+License: Copyright (c) 2024, Dani Maarouf
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Repository, https://github.com/dani-maarouf/psqlparse2
+Keywords: database,postgres,sql,parser,libpg_query,pg_query
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Database :: Front-Ends
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: protobuf<5.0,>=4.21.6
+Requires-Dist: types-protobuf<5.0,>=4.21.6
+Provides-Extra: dev
+Requires-Dist: black>=24.4.2; extra == "dev"
+Requires-Dist: ruff>=0.4.4; extra == "dev"
+Requires-Dist: mypy>=1.10.0; extra == "dev"
+Requires-Dist: pytest<9,>=8.2; extra == "dev"
+Requires-Dist: pytest-cov<6,>=5.0.0; extra == "dev"
+Requires-Dist: grpcio-tools<1.70,>=1.60.0; extra == "dev"
+
+[![PyPI deploy](https://github.com/dani-maarouf/psqlparse2/actions/workflows/workflow.yml/badge.svg)](https://github.com/dani-maarouf/psqlparse2/actions/workflows/workflow.yml)
+
+# psqlparse2
+
+Python wrapper for [libpg_query](https://github.com/pganalyze/libpg_query).
+
+Inspired by [psqlparse](https://github.com/alculquicondor/psqlparse), which was authored by [alculquicondor](https://github.com/alculquicondor/)
+
+## Overview
+
+[Python protobuf types](./src/psqlparse2/pb/) are generated from `libpg_query/protobuf/pg_query.proto`.
+See `gen_proto` in [Makefile](./Makefile) for details.
+
+Additionally, a [Cython wrapper](./src/pg_query/__init__.py) with Python bindings for certain functions
+from `libpg_query` is provided. For example, there are wrappers for `pg_query_parse_protobuf` and
+`pg_query_deparse_protobuf`, which allow converting between SQL strings and parse trees encoded as protobufs.
+
+[This snippet](https://github.com/dani-maarouf/alembic_utils/blob/1434dca40abbcfcbc7eeaba41e6b8a9884e21c1e/src/alembic_utils/statement.py#L15-L69)
+demonstrates how `psqlparse2` can be used to convert a SQL function into a parse tree,
+and then manipulate the parse tree before converting it back into a SQL string.
+
+## Installation
+
+```bash
+pip install psqlparse2
+```

@@ -1,0 +1,8 @@
+global-include *.pxd *.pyx *.pyi py.typed
+recursive-exclude src *.c *.h
+include Makefile LICENSE
+graft libpg_query
+graft tests
+prune env
+prune .github
+prune .devcontainer
