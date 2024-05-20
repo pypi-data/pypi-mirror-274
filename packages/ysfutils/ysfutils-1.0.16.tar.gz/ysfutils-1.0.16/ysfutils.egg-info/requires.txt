@@ -1,0 +1,8 @@
+APScheduler~=3.10.4
+Cython~=3.0.10
+loguru~=0.7.2
+py-mini-racer~=0.6.0
+pymongo~=4.7.2
+pysqlcipher3~=1.2.0
+python-box~=7.1.1
+requests~=2.31.0
