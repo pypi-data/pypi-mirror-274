@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: radprompter
+Version: 1.0.5
+Summary: A package for simplified and reproducible LLM prompting.
+Author-email: Bardia Khosravi <bardiakhosravi95@gmail.com>, Theo Dapamede <theo.dapamede@emory.edu>
+Maintainer-email: Bardia Khosravi <bardiakhosravi95@gmail.com>, Theo Dapamede <theo.dapamede@emory.edu>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: openai
+Project-URL: Home, https://github.com/BardiaKh/RadPrompter
+
+# RadPrompter
