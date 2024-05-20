@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+conferencez/__init__.py
+conferencez/main.py
+conferencez.egg-info/PKG-INFO
+conferencez.egg-info/SOURCES.txt
+conferencez.egg-info/dependency_links.txt
+conferencez.egg-info/requires.txt
+conferencez.egg-info/top_level.txt
