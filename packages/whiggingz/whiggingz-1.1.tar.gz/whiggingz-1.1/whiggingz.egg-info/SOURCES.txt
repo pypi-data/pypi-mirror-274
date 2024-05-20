@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+whiggingz/__init__.py
+whiggingz/main.py
+whiggingz.egg-info/PKG-INFO
+whiggingz.egg-info/SOURCES.txt
+whiggingz.egg-info/dependency_links.txt
+whiggingz.egg-info/requires.txt
+whiggingz.egg-info/top_level.txt
