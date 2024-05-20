@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mussulwomanz/__init__.py
+mussulwomanz/main.py
+mussulwomanz.egg-info/PKG-INFO
+mussulwomanz.egg-info/SOURCES.txt
+mussulwomanz.egg-info/dependency_links.txt
+mussulwomanz.egg-info/requires.txt
+mussulwomanz.egg-info/top_level.txt
