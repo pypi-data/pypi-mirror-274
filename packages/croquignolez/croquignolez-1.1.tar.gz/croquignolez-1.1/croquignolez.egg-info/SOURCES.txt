@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+croquignolez/__init__.py
+croquignolez/main.py
+croquignolez.egg-info/PKG-INFO
+croquignolez.egg-info/SOURCES.txt
+croquignolez.egg-info/dependency_links.txt
+croquignolez.egg-info/requires.txt
+croquignolez.egg-info/top_level.txt
