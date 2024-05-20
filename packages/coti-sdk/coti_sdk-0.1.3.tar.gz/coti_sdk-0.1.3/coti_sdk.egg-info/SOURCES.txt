@@ -1,0 +1,10 @@
+setup.py
+./setup.py
+./coti-sdk/__init__.py
+./coti-sdk/crypto_utils.py
+./coti-sdk/utils.py
+coti_sdk.egg-info/PKG-INFO
+coti_sdk.egg-info/SOURCES.txt
+coti_sdk.egg-info/dependency_links.txt
+coti_sdk.egg-info/requires.txt
+coti_sdk.egg-info/top_level.txt
