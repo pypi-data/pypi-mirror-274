@@ -1,0 +1,15 @@
+mixfit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mixfit/mixfit.py,sha256=2PlKHAOzcGbIgoVhs4HxSi9NahboIRGycYPSzpjcT7A,9446
+mixfitfunctions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mixfitfunctions/cauchy.py,sha256=sA_A1KlSW0gSgsiAXvFKE43Y-_52NOrGIwguqntC0jY,3507
+mixfitfunctions/constant.py,sha256=OTTc8GGWYZZw9jjZr4-C3Q--2Y96IrdlbLrWAVUKF7w,2027
+mixfitfunctions/differentialcauchy.py,sha256=ic6ei5x5zDa9JSmZWq9GQkmxYLv64mQoYe3tXvP4nks,3643
+mixfitfunctions/differentialgaussian.py,sha256=tlCKwk3IRXTQyulbGWpCobRQsmQ5ghJJPwwNLhLJ6Kg,4526
+mixfitfunctions/gaussian.py,sha256=YpPuOoMFN0clG0gLQVi8vEQV0M7s6x22gwZwrMLTjXU,3547
+mixfitfunctions/linear.py,sha256=7Z3N3bCbe7u43cM7DeHN0QkBHVDrKNoWYKsfdsu1Lsk,2597
+mixfitfunctions/mixfitfunction.py,sha256=E803YtpX-jmRMtMCr3PhSuv1xrYqcZKVgxYSBjaYt30,6012
+pymixfit_tspspi-0.0.1.dist-info/LICENSE.md,sha256=Gb51FAfB00Oe4ci7HiVdAIRrEIlZBtp--JXNxxTXhzc,1410
+pymixfit_tspspi-0.0.1.dist-info/METADATA,sha256=wu16XXJC6PKq2Lpeeu9NcBS9VpRgiChAGXF6iErVBQ4,4478
+pymixfit_tspspi-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pymixfit_tspspi-0.0.1.dist-info/top_level.txt,sha256=f4miEUv2UeDdJBCSX8SuT9QYwZbNzP3PBNsDWChcDgo,23
+pymixfit_tspspi-0.0.1.dist-info/RECORD,,
