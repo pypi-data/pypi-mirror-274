@@ -1,0 +1,13 @@
+clerk_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clerk_django/client.py,sha256=LZoShH9DpPGy_qwfeCnA5GrzRrl3tqVMeprQYTGpWu4,2183
+clerk_django/middlewares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clerk_django/middlewares/clerk.py,sha256=okmpftyGDhcinV1wlLOYyUO7FGTnXNCQP97nfrFEaZQ,2034
+clerk_django/permissions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clerk_django/permissions/clerk.py,sha256=MuUXcmRAxHbuPKMqsk38bfEaMsAN71JtbpdN8Gwm7-A,277
+clerk_django/resources/__init__.py,sha256=iSQPD1PwmTWxzZv3T5mbzakPiRZc4o6Ha9oYiJhXvJA,60
+clerk_django/resources/user.py,sha256=HvzoqFrOxZrEIoQx6tuSZPH75hS05eyo0udyE4ak5Js,1977
+clerk_django-1.0.3.dist-info/LICENSE,sha256=KNHiHJQZUseLJyleRQVruGLBQH0XJUPdSKOhrOxOg_w,1083
+clerk_django-1.0.3.dist-info/METADATA,sha256=LEPxNyDAyLf5Sb2Ir08GMsb0AToiOGmTm4iPCyHINJk,4984
+clerk_django-1.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+clerk_django-1.0.3.dist-info/top_level.txt,sha256=J_FlgMZkv-mDgUSEqJS3neMU_gG8inmC8vFzsxlvJU4,13
+clerk_django-1.0.3.dist-info/RECORD,,
