@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/bunkrr_uploader.py
+src/BunkrrUploader.egg-info/PKG-INFO
+src/BunkrrUploader.egg-info/SOURCES.txt
+src/BunkrrUploader.egg-info/dependency_links.txt
+src/BunkrrUploader.egg-info/entry_points.txt
+src/BunkrrUploader.egg-info/requires.txt
+src/BunkrrUploader.egg-info/top_level.txt
+src/bunkrr_uploader/__init__.py
+src/bunkrr_uploader/api.py
+src/bunkrr_uploader/bunkrr_uploader.py
+src/bunkrr_uploader/cli.py
+src/bunkrr_uploader/types.py
+src/bunkrr_uploader/util.py
