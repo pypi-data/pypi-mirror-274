@@ -1,0 +1,10 @@
+Package: {{ project }}
+Version: {{ version }}
+Section: database
+Priority: optional
+Architecture: amd64
+Homepage: {{ url }}
+Maintainer: {{ email }}
+Description: {{ description }}
+Depends: easy-rsa
+

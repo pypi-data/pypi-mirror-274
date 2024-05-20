@@ -1,0 +1,7 @@
+#!/bin/bash
+
+adduser --system --disabled-login --quiet --shell /bin/bash --gecos "{{ project }}" {{ project }} --home /home/{{ project }}
+systemctl enable {{ project }}
+service {{ project }} stop 2> /dev/null
+sleep 1
+service {{ project }} start

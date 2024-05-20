@@ -1,0 +1,3 @@
+[console_scripts]
+orbit_cli=orbit_cli.__main__:main
+
