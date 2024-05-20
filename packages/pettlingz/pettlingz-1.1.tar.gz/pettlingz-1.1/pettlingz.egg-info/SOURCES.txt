@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pettlingz/__init__.py
+pettlingz/main.py
+pettlingz.egg-info/PKG-INFO
+pettlingz.egg-info/SOURCES.txt
+pettlingz.egg-info/dependency_links.txt
+pettlingz.egg-info/requires.txt
+pettlingz.egg-info/top_level.txt
