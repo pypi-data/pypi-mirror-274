@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+torticonez/__init__.py
+torticonez/main.py
+torticonez.egg-info/PKG-INFO
+torticonez.egg-info/SOURCES.txt
+torticonez.egg-info/dependency_links.txt
+torticonez.egg-info/requires.txt
+torticonez.egg-info/top_level.txt
