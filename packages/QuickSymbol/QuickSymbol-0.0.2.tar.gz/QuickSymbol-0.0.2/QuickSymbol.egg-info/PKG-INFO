@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: QuickSymbol
+Version: 0.0.2
+Summary: A symbol library for simple use
+Home-page: 
+Author: Ibrahim Abushawish
+Author-email: ibrahim.hamed2701@gmail.com
+License: MIT
+Keywords: symbol
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+this is a symbol library for fast use by utf8 code
+
+CHANGE LOG
+==========
+
+0.0.2 (19/05/2024)
+------------------
+Fixed Errors 
