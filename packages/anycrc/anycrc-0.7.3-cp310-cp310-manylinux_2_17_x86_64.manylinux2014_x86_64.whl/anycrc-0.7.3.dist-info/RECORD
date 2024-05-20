@@ -1,0 +1,11 @@
+anycrc-0.7.3.dist-info/WHEEL,sha256=CzQQWV-lNyM92gr3iaBk8dvO35YDHRxgzkZ-dxumUIM,152
+anycrc-0.7.3.dist-info/LICENSE,sha256=3K76btJE16RVEFRSVhIoA4CbgTLVe9KtwgwEOl4FHw4,1096
+anycrc-0.7.3.dist-info/top_level.txt,sha256=HbCFlOeYEx638RXhl-PI4tQtdbHhwyL9ObHhSuPNyaA,7
+anycrc-0.7.3.dist-info/RECORD,,
+anycrc-0.7.3.dist-info/METADATA,sha256=tFJFQZq9S3w23_ARcG_zrLl2KuNVlNW-_wNDwyr0u5Q,2797
+anycrc/__main__.py,sha256=ay_Zj4WzMly0908-mnet9An0gae346PwzUg4QsaU6j4,258
+anycrc/models.py,sha256=4UaObtVscOlKHkrEbeEQ834JzOksAltRr9oV3U0ok0A,17836
+anycrc/__init__.py,sha256=6WUxWuBxHrqqbAXrKSveKIr9ZMlihLyjTONUmYSHIBw,21
+anycrc/anycrc.pyx,sha256=6zcAMHXzTzd96IIA6g_2WowSmsZ9xd90Sq6z7qFBozY,6726
+anycrc/anycrc.cpython-310-x86_64-linux-gnu.so,sha256=RtlfR6UaiiI5GsP7nidjOKtk-hYIKjeFxgQI_oQU_Z0,581201
+anycrc.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
