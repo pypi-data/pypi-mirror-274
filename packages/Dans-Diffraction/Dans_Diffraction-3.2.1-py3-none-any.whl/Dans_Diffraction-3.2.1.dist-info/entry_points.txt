@@ -1,0 +1,5 @@
+[console_scripts]
+dansdiffraction = Dans_Diffraction:start_gui
+
+[gui_scripts]
+dansdiffraction = Dans_Diffraction:start_gui
