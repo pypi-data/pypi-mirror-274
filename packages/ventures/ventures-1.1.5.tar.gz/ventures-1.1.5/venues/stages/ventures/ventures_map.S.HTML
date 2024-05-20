@@ -1,0 +1,71 @@
+
+
+<pre>
+
+	<h1>ventures map</h1>
+	
+	<h2>objectives</h2>
+	
+		from vaccines.mixes.ventures_map import ventures_map
+		ventures = ventures_map ({
+			"ventures": [
+				{
+					"name": "adventure_1",
+					
+					"turn on": {
+						"adventure": "python3 -m http.server 8080",
+						"kind": "process identity"
+					}
+				},
+				{
+					"name": "adventure_2",
+					
+					"turn on": {
+						"adventure": "sanic harbor:create --port=8090 --host=0.0.0.0 --factory",
+						"kind": "custom"
+					},
+					"turn off": "sanic inspect shutdown --port=8090",
+					"is on":
+				}
+			]
+		])
+	
+		ventures ["turn on"] ()
+			
+			# turns the proceses on if they are not on.
+			# checks "is on" on cycle for 5 seconds
+			
+			ventures_map.JSON {
+				"adventure_1": {
+					"process_identity": ""
+				},
+				"adventure_2": {
+					"process_identity": ""
+				}				
+			}
+		
+		
+		ventures ["turn off"] ()
+	
+	
+	
+		ventures ["is on"] ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
