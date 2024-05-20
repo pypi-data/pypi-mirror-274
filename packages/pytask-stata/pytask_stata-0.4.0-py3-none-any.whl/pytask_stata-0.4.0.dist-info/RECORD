@@ -1,0 +1,14 @@
+pytask_stata/__init__.py,sha256=jkKVlryUtAlO0uI3kXrrQbg53eoUG6JpQwQvZZ-Q0s0,276
+pytask_stata/_version.py,sha256=j90u3VVU4UrJf1fgMUhaZarHK_Do2XGYXr-vZvOFzVo,411
+pytask_stata/cli.py,sha256=wjKgnh-7EoV6YxemoI_vrJDSc7cmE1XgSt5mNJ_UZH0,828
+pytask_stata/collect.py,sha256=khZmJ3O0G7j9n6vgd2kRcwJPKrDvv2iIHX0KZxCBa6k,5930
+pytask_stata/config.py,sha256=MmUdpGMtjL4wQTd0eATgsK04inTCEwMmu0FdvCtcBzU,578
+pytask_stata/execute.py,sha256=1mzt-XeROueGgts79IB_kX81gg3MXUSvLbc_yHtI91I,2306
+pytask_stata/plugin.py,sha256=DaiCLPhFOZ48coELDO-pMKW7KLSbodlkw0l8-Sdafp8,544
+pytask_stata/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytask_stata/shared.py,sha256=_6qzSwXadXYcGgarC9tJccomfGTr5jgkMKYPWZjbVA8,2644
+pytask_stata-0.4.0.dist-info/METADATA,sha256=CezmXEXeg0qoB11dOA9pEMdq3cXXDjbh_AZ3h7Dy7mw,6329
+pytask_stata-0.4.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+pytask_stata-0.4.0.dist-info/entry_points.txt,sha256=EYUaTaW4qgb7VahFR5su_7SX2UELKahd0WBSsgXFBo4,44
+pytask_stata-0.4.0.dist-info/licenses/LICENSE,sha256=RxB_V9PwkqN54TuemXxwTa5K9yHQCbD-sgg1pjmYSz0,1052
+pytask_stata-0.4.0.dist-info/RECORD,,
