@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/example/chat_async.py
+src/local_broadcast/__init__.py
+src/local_broadcast.egg-info/PKG-INFO
+src/local_broadcast.egg-info/SOURCES.txt
+src/local_broadcast.egg-info/dependency_links.txt
+src/local_broadcast.egg-info/requires.txt
+src/local_broadcast.egg-info/top_level.txt
