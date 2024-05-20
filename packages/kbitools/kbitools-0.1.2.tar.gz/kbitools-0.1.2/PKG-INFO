@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kbitools
+Version: 0.1.2
+Summary: Tools and rarely-changing modules for use with the kbi daemon.
+Author: gizmokhan
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: colorama>=0.4.4
+Requires-Dist: requests>=2.31.0
