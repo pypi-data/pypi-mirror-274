@@ -1,0 +1,2 @@
+[console_scripts]
+oresat-cfc = oresat_cfc.__main__:main
