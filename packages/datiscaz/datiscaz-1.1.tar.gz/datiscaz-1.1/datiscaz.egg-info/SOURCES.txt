@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+datiscaz/__init__.py
+datiscaz/main.py
+datiscaz.egg-info/PKG-INFO
+datiscaz.egg-info/SOURCES.txt
+datiscaz.egg-info/dependency_links.txt
+datiscaz.egg-info/requires.txt
+datiscaz.egg-info/top_level.txt
