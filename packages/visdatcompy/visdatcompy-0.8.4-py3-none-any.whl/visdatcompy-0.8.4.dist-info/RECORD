@@ -1,0 +1,13 @@
+research/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visdatcompy/__init__.py,sha256=IAyNVv9gA76ADJF2im3DI-iGyDhuy51lDXQLcOxneAA,194
+visdatcompy/feature_extractor.py,sha256=sFyLc8vUK50wpGW1_Vkr6uypmGGKreWMX0572T119F0,11842
+visdatcompy/hash.py,sha256=YpIz7E9CNBU_mfow5OSf0lnTYss5e4rhCfzTuMXiKa8,9961
+visdatcompy/image_handler.py,sha256=XlYu6OyqhIoJ5j4Q1hMsATN8pel0lgem182Zv6XOr08,10605
+visdatcompy/metrics.py,sha256=pa62XCynw27ACMiymEr4vEcqSK97M3cdI2UUoORczk4,11940
+visdatcompy/utils.py,sha256=uy3Hgp9_Jsn01BR8R05yazSbMuEQHQ7xJuiC78EnjQU,4549
+visdatcompy/visdatcompare.py,sha256=33gBAMQOimNMMF2yHxj3_U4BnMGCWzku13NHdFjAOEk,17881
+visdatcompy-0.8.4.dist-info/LICENSE,sha256=jYxyY9T5vhNOGE8_2DjrWsaiPCsCevEh2IR4AlDASR4,1104
+visdatcompy-0.8.4.dist-info/METADATA,sha256=ZsoHOhOsybpjTGc93O2IE5FvKotEv3Lo3rHsbkd36Q0,17215
+visdatcompy-0.8.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+visdatcompy-0.8.4.dist-info/top_level.txt,sha256=fOQEacN5xppx3PR7I9osizPey8CRRPUHIJ2lmSXJD9E,21
+visdatcompy-0.8.4.dist-info/RECORD,,
