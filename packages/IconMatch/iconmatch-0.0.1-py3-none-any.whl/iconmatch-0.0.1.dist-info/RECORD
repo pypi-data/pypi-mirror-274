@@ -1,0 +1,11 @@
+IconMatch/IconMatch.py,sha256=eg-qijqcUaup6ZdQf92Fhsj8VqnxZ8vhch1zYaDCtyQ,3154
+IconMatch/__init__.py,sha256=vq_am-Pi8vH4f2RMCYwXQOwKfFQ9jRsWJj5BjdI6Z5I,61
+IconMatch/box.py,sha256=u1ykoBi3ys4XD-RljyDRaa1hH5tal8gU7wR1mZBLTYU,5235
+IconMatch/helpers.py,sha256=l_0tziqdr78uYqDFmf8bQcN6xFTErcyUgr-pxG9P0Ds,542
+IconMatch/manual_test.py,sha256=Jn8dmP-vS6pYs195hx22Hnf-mba39vHo7Ni5xbgBO8w,1412
+IconMatch/rectangle.py,sha256=081RJ9Q-gQQYPY1YBP9LG2-Nbb_Zrjea7Teld73FO-c,4593
+IconMatch/weighted_quick_unionUF.py,sha256=tuEJCe1jlMIuj3L1HVTMyZMPExeRNPqOrESaRTlcRvI,3554
+iconmatch-0.0.1.dist-info/METADATA,sha256=WUntDV-M-KQqF3ZTnRQ6MTXWA66uZQsPLDdf7qVGBww,5715
+iconmatch-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+iconmatch-0.0.1.dist-info/licenses/LICENSE.txt,sha256=W8dic_MavVx8ck6mvRAyNOvoocjxXulFkoCAFWPX68w,1068
+iconmatch-0.0.1.dist-info/RECORD,,
