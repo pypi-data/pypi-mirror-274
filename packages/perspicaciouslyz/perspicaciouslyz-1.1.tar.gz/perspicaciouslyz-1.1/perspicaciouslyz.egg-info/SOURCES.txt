@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+perspicaciouslyz/__init__.py
+perspicaciouslyz/main.py
+perspicaciouslyz.egg-info/PKG-INFO
+perspicaciouslyz.egg-info/SOURCES.txt
+perspicaciouslyz.egg-info/dependency_links.txt
+perspicaciouslyz.egg-info/requires.txt
+perspicaciouslyz.egg-info/top_level.txt
