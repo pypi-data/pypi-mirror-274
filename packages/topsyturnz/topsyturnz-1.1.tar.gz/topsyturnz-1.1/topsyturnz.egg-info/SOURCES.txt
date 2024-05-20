@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+topsyturnz/__init__.py
+topsyturnz/main.py
+topsyturnz.egg-info/PKG-INFO
+topsyturnz.egg-info/SOURCES.txt
+topsyturnz.egg-info/dependency_links.txt
+topsyturnz.egg-info/requires.txt
+topsyturnz.egg-info/top_level.txt
