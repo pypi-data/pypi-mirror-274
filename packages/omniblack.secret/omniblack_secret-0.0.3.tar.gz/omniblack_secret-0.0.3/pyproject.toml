@@ -1,0 +1,27 @@
+[project]
+name='omniblack.secret'
+version='0.0.3'
+license={text='MIT License'}
+
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Topic :: Security',
+    'Topic :: Software Development',
+]
+
+[[project.authors]]
+name='Terry Patterson'
+email='terryp@wegrok.net'
+
+[tool.setuptools]
+py-modules=[]
+
+[build-system]
+requires = ["setuptools >= 68.2"]
+build-backend = "setuptools.build_meta"
