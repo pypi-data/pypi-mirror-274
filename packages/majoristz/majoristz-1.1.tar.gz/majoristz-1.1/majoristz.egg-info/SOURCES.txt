@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+majoristz/__init__.py
+majoristz/main.py
+majoristz.egg-info/PKG-INFO
+majoristz.egg-info/SOURCES.txt
+majoristz.egg-info/dependency_links.txt
+majoristz.egg-info/requires.txt
+majoristz.egg-info/top_level.txt
