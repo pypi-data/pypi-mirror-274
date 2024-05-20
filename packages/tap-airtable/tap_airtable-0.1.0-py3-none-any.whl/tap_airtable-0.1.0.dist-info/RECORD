@@ -1,0 +1,13 @@
+tap_airtable/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_airtable/client.py,sha256=Er_dR5nEkLocxCgq3F_I0z8S-jbe-I3r-sQ-XXmdZs8,3079
+tap_airtable/entities.py,sha256=trBQsgaX-KLWUm2pwGIzkvtnVhyLfs9O8fdQQoSwU7Y,1069
+tap_airtable/streams.py,sha256=9L7iaMxz7oQ33P6Dgolm0QenGuGcT6jtIhYsNPHnIaQ,1377
+tap_airtable/tap.py,sha256=FiNQr5PQJ-pygJRUB4N-Q0gXJd8HURdKx-VJt95YYf8,1684
+tap_airtable/tests/__init__.py,sha256=hPIqmIEV0ZLeUunOOh4ZcbYJnywannJMnS2WK7GKPLM,35
+tap_airtable/tests/test_tap.py,sha256=i0b2zBLz4O4ct7mgWlThfdGDvdD7iDzioYfdk9jSayk,112
+tap_airtable/types.py,sha256=sWpPIKRN_vyCti304lrDz7WvcSaUx6w7jqQnPOK4Yhk,2295
+tap_airtable-0.1.0.dist-info/LICENSE.md,sha256=iPb_pBTyDP22NkJGLQZMFRMPG7Fu88TqfiX3JkIwX74,1093
+tap_airtable-0.1.0.dist-info/METADATA,sha256=O-bFGOe4Z6fVujVwJVoa_LhjwO8YnaO1k_mFXDEinUc,2360
+tap_airtable-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tap_airtable-0.1.0.dist-info/entry_points.txt,sha256=req8hxZrFoskE9NWvTfLRONIW5YM5cBH3BTAOjlGLTg,65
+tap_airtable-0.1.0.dist-info/RECORD,,
