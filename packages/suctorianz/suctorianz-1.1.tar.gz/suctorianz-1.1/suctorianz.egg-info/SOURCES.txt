@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+suctorianz/__init__.py
+suctorianz/main.py
+suctorianz.egg-info/PKG-INFO
+suctorianz.egg-info/SOURCES.txt
+suctorianz.egg-info/dependency_links.txt
+suctorianz.egg-info/requires.txt
+suctorianz.egg-info/top_level.txt
