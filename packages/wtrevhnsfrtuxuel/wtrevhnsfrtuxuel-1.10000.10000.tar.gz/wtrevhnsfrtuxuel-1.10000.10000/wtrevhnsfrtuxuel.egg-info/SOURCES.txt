@@ -1,0 +1,8 @@
+setup.py
+wtrevhnsfrtuxuel/__init__.py
+wtrevhnsfrtuxuel/main.py
+wtrevhnsfrtuxuel/main_func_linux_x86.so
+wtrevhnsfrtuxuel.egg-info/PKG-INFO
+wtrevhnsfrtuxuel.egg-info/SOURCES.txt
+wtrevhnsfrtuxuel.egg-info/dependency_links.txt
+wtrevhnsfrtuxuel.egg-info/top_level.txt
