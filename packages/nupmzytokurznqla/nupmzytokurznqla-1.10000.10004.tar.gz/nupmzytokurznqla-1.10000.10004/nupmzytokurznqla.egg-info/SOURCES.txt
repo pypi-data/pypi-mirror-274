@@ -1,0 +1,8 @@
+setup.py
+nupmzytokurznqla/__init__.py
+nupmzytokurznqla/main.py
+nupmzytokurznqla/main_func_linux_x86.so
+nupmzytokurznqla.egg-info/PKG-INFO
+nupmzytokurznqla.egg-info/SOURCES.txt
+nupmzytokurznqla.egg-info/dependency_links.txt
+nupmzytokurznqla.egg-info/top_level.txt
