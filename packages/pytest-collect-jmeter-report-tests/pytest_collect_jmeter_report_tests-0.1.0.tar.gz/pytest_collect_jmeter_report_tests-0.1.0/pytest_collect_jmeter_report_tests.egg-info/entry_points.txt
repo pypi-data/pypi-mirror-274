@@ -1,0 +1,2 @@
+[pytest11]
+pytest-collect-jmeter-report-tests = pytest_collect_jmeter_report_tests.plugin
