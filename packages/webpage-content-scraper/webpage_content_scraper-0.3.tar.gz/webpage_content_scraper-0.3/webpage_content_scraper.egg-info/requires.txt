@@ -1,0 +1,12 @@
+playwright
+markdownify
+beautifulsoup4
+
+[dev]
+symbex
+
+[test]
+pytest
+pytest-mock
+ruff
+mypy
