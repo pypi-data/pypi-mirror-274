@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: apiframe
+Version: 1.0.0
+Summary: A Python client for the Apiframe API
+Home-page: https://github.com/APIFRAME-PRO/apiframe-python
+Author: APIFRAME.PRO
+Author-email: hello@apiframe.pro
+License: MIT
+Keywords: apiframe,midjourney client,midjourney api,api midjourney,midjourney ai api,midjourney bot api,api midjourney api,api midjourney bot,midjourney api access
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# apiframe_python
+Python library for [APIFRAME.PRO](https://apiframe.pro) (Midjourney API)
+
+API Documentation is available at https://docs.apiframe.pro
+
+Example
+
+```python
+
+from apiframe_python import ApiframeClient
+
+APIFRAME_API_KEY = "" # YOUR API KEY HERE
+
+client = ApiframeClient(APIFRAME_API_KEY)
+
+task = client.imagine("a nice day near a non-active volcano, photorealism, high details, high quality")
+
+print(task)
+```
