@@ -1,0 +1,7 @@
+*.txt
+*.zip
+.vscode
+logs-*
+*.docx
+*.jar
+dist/

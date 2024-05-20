@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "plagiarism_detect_for_nju"
+version = "1.0.0"
+authors = [{ name = 'UshioA', email = "shiosshio@outlook.com" }]
+description = "Plagiarism detection tool for C Programming Language course in Nanjing University using HUSTOJ as Online Judge. Makes my life easier."
+requires-python = ">=3.6"
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+]
+keywords = ["plagiarism"]
+dependencies = []
+
+[project.scripts]
+plag4nju4cprog = 'src.detect_from_logfile_batch:main'
