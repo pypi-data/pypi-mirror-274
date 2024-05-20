@@ -1,0 +1,10 @@
+mini_pandas/__init__.py,sha256=LeuFj5a4-i7WZJebJ1ihPC29UgBKXl7OurjXBjAP51A,114
+mini_pandas/constants.py,sha256=nN762EMR9cL8jjRsA2yXXLzRe2eveKrKwbueY-NLHIw,656
+mini_pandas/dataframe.py,sha256=kla-gygZmCbWvMIV8sockrN3DA7GCQufw10ZDcHXC80,24870
+mini_pandas/pandas_api.py,sha256=Wzw5XCa0H4IC9hu6o5TUk67RiL7Ev41IH8UoVfaDhFc,1261
+mini_pandas/str_utils.py,sha256=iy-0y4OGsbCYdkyRHyE-iBUNBChmt1EJuQd8TJm_3Tk,3228
+mini_pandas-0.1.0.dist-info/LICENSE,sha256=frOVyHZrx5o-fh5xC-kggT3MaLdp6yxV_YGpVXFHFSQ,1071
+mini_pandas-0.1.0.dist-info/METADATA,sha256=j-3oZ9fxUQiGbmaTdw_ULDEf4OW8xvnQc28eJa24kM4,1960
+mini_pandas-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mini_pandas-0.1.0.dist-info/top_level.txt,sha256=8jj7_9yoQjKDqMCEWd5ytEuoj_z0D2L-daHgE7OARlA,12
+mini_pandas-0.1.0.dist-info/RECORD,,
