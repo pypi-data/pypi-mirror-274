@@ -1,0 +1,16 @@
+{
+  "name": "pd",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch-ts": "tsc --watch",
+    "watch-tw": "tailwindcss -i styles/main.css -o static/css/main.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
