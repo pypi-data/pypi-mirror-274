@@ -1,0 +1,3 @@
+[console_scripts]
+sh1106_font_generator = sh1106_framework.sh1106_font_generator:main
+sh1106_image_generator = sh1106_framework.sh1106_image_generator:main
