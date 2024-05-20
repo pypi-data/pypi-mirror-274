@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include eras *
+exclude eras/.env
+exclude */.env
+exclude .env
