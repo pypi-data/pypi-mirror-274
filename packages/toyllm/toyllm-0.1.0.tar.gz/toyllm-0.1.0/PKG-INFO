@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: toyllm
+Version: 0.1.0
+Summary: Toy LLM
+License: Apache-2.0
+Author: Xiangzhuang Shen
+Author-email: datahonor@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: jaxtyping (>=0.2.28,<0.3.0)
+Requires-Dist: matplotlib (>=3.8.3,<4.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: tiktoken (>=0.6.0,<0.7.0)
+Requires-Dist: torch (>=2.2.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Toy LLM
+
+ToyLLM is a simple language model that can be used to generate text.
+It is based on the [GPT-2](https://huggingface.co/transformers/model_doc/gpt2.html) model.
+
+
+# Acknowledgements
+The project is highly inspired by the following projects:
+- [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+- [neelnanda-io/TransformerLens](https://github.com/neelnanda-io/TransformerLens)
+
