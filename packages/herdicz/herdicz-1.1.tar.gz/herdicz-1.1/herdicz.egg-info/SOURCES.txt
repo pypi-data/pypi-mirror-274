@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+herdicz/__init__.py
+herdicz/main.py
+herdicz.egg-info/PKG-INFO
+herdicz.egg-info/SOURCES.txt
+herdicz.egg-info/dependency_links.txt
+herdicz.egg-info/requires.txt
+herdicz.egg-info/top_level.txt
