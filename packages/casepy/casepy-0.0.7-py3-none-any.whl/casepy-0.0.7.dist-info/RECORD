@@ -1,0 +1,11 @@
+casepy/__init__.py,sha256=RTHXual9PFKn5Ip1Qj61j2X_WgPnPcM3OwPzqAv2gDg,284
+casepy/combination_generator.py,sha256=hX0kk3UyMP9YjLLkbyiCiv1g4fPG5w1kgjmia0_X0b0,4127
+casepy/permutation_generator.py,sha256=UQ4SS8-T8n2MwisTVhLq_sMN_yueuHnqcF3gDjHz4dQ,6517
+casepy/simple_methods.py,sha256=dYNEYnO8lgpgPINyldTzyhkhgES9bZJZuDkmyQ_KrS4,1562
+casepy/test_methods.py,sha256=YNcgcVvbT96c1CTXVCmju8lrl9joaQoNb9BuiLu0wts,719
+casepy/utils.py,sha256=UO6uhd_-g4c1ILw_CMdWIWZeeujR7JtqR5FaPtBa780,329
+casepy-0.0.7.dist-info/LICENSE,sha256=T66QMVEDrBVLP_LKdOmNBFoQGh65zTUOmOeeDI3iBtk,1068
+casepy-0.0.7.dist-info/METADATA,sha256=5PguEcfwWgm3Y2d3KY_j9K701fxYROjSJ7W-ymdk_rA,2421
+casepy-0.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+casepy-0.0.7.dist-info/top_level.txt,sha256=eurRNJjz7vbUHXrOS61dmg3FP3_Z7Mq1WKH7mdR4Tt8,7
+casepy-0.0.7.dist-info/RECORD,,
