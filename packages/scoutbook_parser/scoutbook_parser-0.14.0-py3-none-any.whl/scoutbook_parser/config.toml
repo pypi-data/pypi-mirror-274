@@ -1,0 +1,28 @@
+cub_scout_ranks = [
+  "Bobcat",
+  "Tiger",
+  "Wolf",
+  "Bear",
+  "Webelos",
+  "Arrow of Light",
+  ]
+
+
+cub_scout_advancement_types = [
+  "Academics & Sports Belt Loop",
+  "Adventure",
+  "Adventure Requirement",
+  "Arrow of Light Adventure Requirement ",
+  "Arrow of Light Rank Requirement",
+  "Bear Adventure Requirement ",
+  "Bear Rank Requirement",
+  "Bobcat Rank Requirement",
+  "Lion Adventure Requirement ",
+  "Tiger Adventure Requirement ",
+  "Tiger Rank Requirement",
+  "Webelos Activity Badge",
+  "Webelos Adventure Requirement ",
+  "Webelos Rank Requirement",
+  "Wolf Adventure Requirement ",
+  "Wolf Rank Requirement",
+]
