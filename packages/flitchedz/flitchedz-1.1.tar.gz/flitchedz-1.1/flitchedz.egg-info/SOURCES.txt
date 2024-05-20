@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flitchedz/__init__.py
+flitchedz/main.py
+flitchedz.egg-info/PKG-INFO
+flitchedz.egg-info/SOURCES.txt
+flitchedz.egg-info/dependency_links.txt
+flitchedz.egg-info/requires.txt
+flitchedz.egg-info/top_level.txt
