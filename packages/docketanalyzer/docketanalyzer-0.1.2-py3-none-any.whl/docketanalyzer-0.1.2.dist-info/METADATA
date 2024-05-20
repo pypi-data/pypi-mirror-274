@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: docketanalyzer
+Version: 0.1.2
+Home-page: https://github.com/docketanalyzer/docketanalyzer
+Author: Nathan Dahlberg
+License-File: LICENSE
+Requires-Dist: awscli
+Requires-Dist: boto3
+Requires-Dist: bs4
+Requires-Dist: click
+Requires-Dist: django
+Requires-Dist: elasticsearch
+Requires-Dist: flake8
+Requires-Dist: groq
+Requires-Dist: instructor
+Requires-Dist: juriscraper
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: psycopg2-binary
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: simplejson
+Requires-Dist: sqlalchemy
+Requires-Dist: tiktoken
+Requires-Dist: toolz
+Requires-Dist: tqdm
+Requires-Dist: uuid
+Requires-Dist: wget
+
