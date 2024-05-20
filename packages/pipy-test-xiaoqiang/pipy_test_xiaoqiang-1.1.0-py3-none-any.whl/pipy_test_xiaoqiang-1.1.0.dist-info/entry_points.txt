@@ -1,0 +1,2 @@
+[console_scripts]
+my_project_init = my_project.cli:init
