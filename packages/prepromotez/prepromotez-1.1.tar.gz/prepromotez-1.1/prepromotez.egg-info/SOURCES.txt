@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+prepromotez/__init__.py
+prepromotez/main.py
+prepromotez.egg-info/PKG-INFO
+prepromotez.egg-info/SOURCES.txt
+prepromotez.egg-info/dependency_links.txt
+prepromotez.egg-info/requires.txt
+prepromotez.egg-info/top_level.txt
