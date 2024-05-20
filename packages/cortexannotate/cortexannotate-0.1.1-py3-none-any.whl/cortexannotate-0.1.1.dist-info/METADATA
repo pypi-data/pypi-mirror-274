@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: cortexannotate
+Version: 0.1.1
+Summary: Toolbox for flexible annotation of the cortical surface by many raters
+Home-page: https://github.com/noahbenson/cortex-annotate
+Download-URL: https://github.com/noahbenson/cortex-annotate
+Author: Noah C. Benson
+Author-email: nben@uw.edu
+Maintainer-email: nben@uw.edu
+License: MIT
+Keywords: neuroscience cortex annotation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+
+
+        See the README.md file at the github repository for this package:
+        https://github.com/noahbenson/cortex-annotate
+    
