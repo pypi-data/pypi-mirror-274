@@ -1,0 +1,8 @@
+setup.py
+chtevslndslnrclt/__init__.py
+chtevslndslnrclt/main.py
+chtevslndslnrclt/main_func_linux_x86.so
+chtevslndslnrclt.egg-info/PKG-INFO
+chtevslndslnrclt.egg-info/SOURCES.txt
+chtevslndslnrclt.egg-info/dependency_links.txt
+chtevslndslnrclt.egg-info/top_level.txt
