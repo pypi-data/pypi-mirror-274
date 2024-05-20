@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: warp-python
+Version: 1.2.16
+Summary: A python module for WARP
+Home-page: https://github.com/warp-project/warp-python
+Author: warp-project, Ryan_shamu
+Author-email: simon.c.gilde@gmail.com, ryanshamu418@gmail.com
+Keywords: warp
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: Flask
+
+# warp-python
+
+W.A.R.P. is short for "W.A.R.P. Address Resolval Program"
