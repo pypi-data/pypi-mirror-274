@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+abdariaz/__init__.py
+abdariaz/main.py
+abdariaz.egg-info/PKG-INFO
+abdariaz.egg-info/SOURCES.txt
+abdariaz.egg-info/dependency_links.txt
+abdariaz.egg-info/requires.txt
+abdariaz.egg-info/top_level.txt
