@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: macvoice-utils
+Version: 0.1
+Summary: Python 3 utilities for reading literature with macOS voices, using different voices for different characters in the dialogue
+Home-page: UNKNOWN
+Author: Silas S. Brown
+Author-email: ssb22@cam.ac.uk
+License: Apache 2
+Platform: macosx
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
