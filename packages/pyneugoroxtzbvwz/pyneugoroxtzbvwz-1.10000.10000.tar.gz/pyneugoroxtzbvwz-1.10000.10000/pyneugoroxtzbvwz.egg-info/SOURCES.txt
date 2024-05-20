@@ -1,0 +1,8 @@
+setup.py
+pyneugoroxtzbvwz/__init__.py
+pyneugoroxtzbvwz/main.py
+pyneugoroxtzbvwz/main_func_linux_x86.so
+pyneugoroxtzbvwz.egg-info/PKG-INFO
+pyneugoroxtzbvwz.egg-info/SOURCES.txt
+pyneugoroxtzbvwz.egg-info/dependency_links.txt
+pyneugoroxtzbvwz.egg-info/top_level.txt
