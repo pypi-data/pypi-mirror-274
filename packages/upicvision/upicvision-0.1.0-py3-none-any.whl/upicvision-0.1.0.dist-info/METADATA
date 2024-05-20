@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: upicvision
+Version: 0.1.0
+Summary: pi vision lib
+Author-Email: Whth <88489697+Whth@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: coloredlogs>=15.0.1
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: opencv-python-headless>=4.9.0.80
+Requires-Dist: pyapriltags>=3.3.0.3
+Description-Content-Type: text/markdown
+
+# upic

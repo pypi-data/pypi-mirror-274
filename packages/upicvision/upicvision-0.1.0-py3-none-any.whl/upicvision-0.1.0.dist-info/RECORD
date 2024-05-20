@@ -1,0 +1,6 @@
+upic/__init__.py,sha256=-4igUY-1nL3BvKdIkuB38_OCxr7G47CiykFLPOtMnLc,190
+upic/modules/logger.py,sha256=1G44DEBlUenPshEYFv_dDKAt40Q3pqi-qb2_HS3cues,601
+upic/vision/tagdetector.py,sha256=PxyXHsyvvHFWZFzd-5Kz5PMQ9VGRjOldPkKXNv_SU5Y,9692
+upicvision-0.1.0.dist-info/METADATA,sha256=yW7mUEGIjiCm8LnacCXDeDamGdDuYgghr41bfQTyKvg,370
+upicvision-0.1.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+upicvision-0.1.0.dist-info/RECORD,,
