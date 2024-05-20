@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unhorizontallyz/__init__.py
+unhorizontallyz/main.py
+unhorizontallyz.egg-info/PKG-INFO
+unhorizontallyz.egg-info/SOURCES.txt
+unhorizontallyz.egg-info/dependency_links.txt
+unhorizontallyz.egg-info/requires.txt
+unhorizontallyz.egg-info/top_level.txt
