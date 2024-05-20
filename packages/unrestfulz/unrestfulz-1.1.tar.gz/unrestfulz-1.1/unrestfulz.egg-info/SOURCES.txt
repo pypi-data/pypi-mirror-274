@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unrestfulz/__init__.py
+unrestfulz/main.py
+unrestfulz.egg-info/PKG-INFO
+unrestfulz.egg-info/SOURCES.txt
+unrestfulz.egg-info/dependency_links.txt
+unrestfulz.egg-info/requires.txt
+unrestfulz.egg-info/top_level.txt
