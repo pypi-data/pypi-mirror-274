@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+conf_mat/__init__.py
+conf_mat/conf_Mat_Ex.png
+conf_mat/conf_mat.py
+conf_mat.egg-info/PKG-INFO
+conf_mat.egg-info/SOURCES.txt
+conf_mat.egg-info/dependency_links.txt
+conf_mat.egg-info/requires.txt
+conf_mat.egg-info/top_level.txt
