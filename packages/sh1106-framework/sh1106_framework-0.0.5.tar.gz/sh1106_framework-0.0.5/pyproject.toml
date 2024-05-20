@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sh1106_framework"]
+include = [
+  "README.md",
+  "LICENSE",
+  "src/sh1106_framework/**/*.py",
+  "tests/**/*.py",
+  "useful-assets/*"
+]
+
+[project]
+name = "sh1106_framework"
+version = "0.0.5"
+authors = [
+  { name="Dan Convey", email="author@example.com" },
+]
+license = { text = "Apache License 2.0" }
+description = "A state manager, graphics, image, and custom font drawing package for the SH1106 OLED screen based on the luma.oled package. It works with Raspberry Pi and other Linux-based single-board computers."
+readme = "README.md"
+requires-python = ">=3.10"  
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Other OS"
+]
+
+[project.urls]
+Homepage = "https://github.com/danspage/sh1106-framework"
+Issues = "https://github.com/danspage/sh1106-framework/issues"
+
+[project.scripts]
+sh1106_font_generator = "sh1106_framework.sh1106_font_generator:main"
+sh1106_image_generator = "sh1106_framework.sh1106_image_generator:main"
