@@ -1,0 +1,23 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros -Q -- $0 "$@"
+|#
+(progn ;;init forms
+  (ros:ensure-asdf)
+  (push (make-pathname :directory (pathname-directory (truename (uiop:current-lisp-file-pathname))))
+        asdf:*central-registry*)
+  (ql:quickload 'sphinxcontrib.cldomain :silent t))
+
+(load (make-pathname
+       :directory (pathname-directory (truename (uiop:current-lisp-file-pathname)))
+       :name "cli" :type "lisp"))
+
+(defpackage :ros.script.sphinxcontribcldomain
+  (:use :cl))
+(in-package :ros.script.sphinxcontribcldomain)
+
+(defun main (&rest argv)
+  (apply #'sphinxcontrib.cldomain.cli:main argv))
+
+;;; vim: set ft=lisp lisp:
