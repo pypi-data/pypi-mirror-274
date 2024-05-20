@@ -1,0 +1,233 @@
+Metadata-Version: 2.1
+Name: ragfmk
+Version: 0.1.4.7
+Summary: Lightweight RAG Framework: Simple and Scalable Framework with Efficient Embeddings. Leverage: FAISS, ChromaDB, and Ollama.
+Author-email: Benoit Cayla <benoit@datacorner.fr>
+License: MIT License
+        
+        Copyright (c) 2023 Benoît Cayla
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas ==2.2.1
+Requires-Dist: PyMuPDF ==1.24.0
+Requires-Dist: langchain ==0.1.13
+Requires-Dist: sentence-transformers ==2.6.0
+Requires-Dist: faiss-cpu ==1.8.0
+Requires-Dist: numpyencoder ==0.3.0
+Requires-Dist: langchain-experimental ==0.0.55
+Requires-Dist: chromadb-client ==0.4.25.dev0
+Requires-Dist: Jinja2 ==3.1.3
+
+# Description
+Intrigued by RAG's potential but lost in the labyrinth of code? Fear not, aspiring linguist! Buckle up for a playful Python playground where you can tinker with RAG concepts right on your local machine. Let's ditch the deep learning deployment and dive into an educational exploration of RAG, one command line at a time! ragfmk is a simple framework to implement and play with RAG.
+
+This project aims to run locally (i mean on your laptop without GPUs) and leverages:
+* **Ollama** (https://ollama.com/) for running locally LLMs
+* **Sentence-transformers** (https://pypi.org/project/sentence-transformers/) for the embeddings management
+* potentially **llamaParse** from llamaindex (https://docs.llamaindex.ai/) can be used.
+* **langchain** (https://www.langchain.com/) for chunking (semantic or character)
+* Meta **FAISS** for similarity search (also enable storing and loading indexes)
+* **ChromaDB** for storing and searching into the vector store
+* **PyMuPDF** by default to read and convert PDF content
+
+# Framework description
+Several objects are provided to manage the main RAG features and characteristics:
+* **rag**: is the main interface for managing all needed request.
+* **IDocument**: manages the document reading and loading (pdf or direct content)
+* **IChunks**: manages the chunks list
+* **IEmbeddings**: Manages the vector and data embeddings
+* **INearest**: Manages the k nearest neighbors retreived by the similarity search engine
+* **IPrompt**: Manages Prompt templating and simple prompt
+
+Two PDF reading methods are supported:
+* via PyMuPDF
+* via Llamaparse
+
+Two Chunks methods are supported:
+* Character chunkink (langchain)
+* Semantic chunking (langchain)
+
+Two Vectors stores are currently supported:
+* FAISS: search + load and store indexes
+* ChromaDB
+
+Two Embeddings methods are supported:
+* via HF Sentence Transformer (the model can be changed)
+* via Ollama Embeddings Models (the model can be changed)
+
+# Installation/Preparation
+1) Install ollama (https://ollama.com/)
+2) Run ollama in the command line and pull at least one model. tinydolphin is a good choice as it is a very small model and can then run on a simple laptop without a big lattency.
+3) Install ragfmk by using pip:
+```
+pip install [--force-reinstall] wheel file
+```
+or via pypi:
+```
+pip install ragfmk
+```
+
+**Note:** Some environment variables may need to be set:  
+* If you plan to use llamaParse, the llamaindex key (generated on the web site: https://cloud.llamaindex.ai/login) must be filled out to **LLAMAINDEX_API_KEY** 
+* If a specific log file must be specified (by default the programs create the ragcli.log file in the working directory) create the environment variable **RAGFMK_LOGFILE** with the file and path accordingly.
+
+# Example of use
+## Converting PDF file to Text
+```
+from ragfmk.rag import rag
+def ragcall(filename, mode, output):
+	myRag = rag()
+	response = myRag.readPDF(filename, mode)
+	if (len(output)>0):
+		response.save(output)
+	return response.content, myRag.milestones.getFullJSON()
+```
+
+## Ollama simple Prompting
+```
+from ragfmk.rag import rag
+def ragcall(model, url, prompt, temperature):
+	myRag = rag()
+	response = myRag.promptLLM(prompt, url, model, temperature)
+	return response, myRag.milestones.getFullJSON()
+```
+
+## Chunking a large document 
+```
+from ragfmk.rag import rag
+from ragfmk.elements.wrappers.document import document
+def chunking(sep, mode,  csize, coverlap, text, filename, output):
+	myRag = rag()
+	doc = document()
+	if (len(text) >0):
+		doc.content= text
+	else:
+		doc.load(filename)
+	if (mode == 0):
+		cks = myRag.charChunk(doc, sep, csize, coverlap)
+	else:
+		cks = myRag.semChunk(doc)
+	if (len(output) >0):
+		cks.save(output)
+	return cks.size, cks.jsonContent, myRag.milestones.getFullJSON()
+```
+## text Embeddings
+```
+from ragfmk.rag import rag
+from ragfmk.elements.wrappers.chunks import chunks
+def ragcall(text, output):
+	myRag = rag()
+	cks = chunks()
+	cks.add(text)
+	embeddings = myRag.createEmbeddings(cks)
+	if (len(output) > 0):
+		embeddings.save(output)
+	return embeddings.size, embeddings.jsonContent, myRag.milestones.getFullJSON()
+```
+## List/chunks embeddings
+```
+from ragfmk.rag import rag
+from ragfmk.elements.wrappers.chunks import chunks
+def ragcall(filename, content, output):
+	myRag = rag()
+	cks = chunks()
+	if (len(content)>0):
+		cks.jsonContent = content
+	else:
+		cks.load(filename)
+	embeddings = myRag.createEmbeddings(cks)
+	if (len(output) > 0):
+		embeddings.save(output)
+	return embeddings.size, embeddings.jsonContent, myRag.milestones.getFullJSON()
+```
+## Storing index into FAISS
+```
+from ragfmk.ragFAISS import ragFAISS
+from ragfmk.elements.embeddings.stEmbeddings import stEmbeddings
+def ragcall(filename,content, idx, store):
+	myRag = ragFAISS()
+	vect = stEmbeddings()
+	myRag.indexName = idx
+	if (len(content)>0):
+		vect.content = content
+	else:
+		vect.load(filename=filename)
+	myRag.addEmbeddings(vect)
+	myRag.storagePath = store
+	myRag.saveIndex()
+	return myRag.milestones.getFullJSON()
+```
+## FAISS Index search
+```
+from ragfmk.ragFAISS import ragFAISS
+from ragfmk.elements.embeddings.stEmbeddings import stEmbeddings
+def ragcall(filename, content, idx, store, k, output):
+	myRag = ragFAISS()
+	vPrompt = stEmbeddings()
+	myRag.indexName = idx
+	myRag.storagePath = store
+	myRag.initSearchEngine()
+	if (len(content)>0):
+		vPrompt.jsonContent = content
+	else:
+		vPrompt.load(filename=filename)
+	similars = myRag.processSearch(k, vPrompt)
+	if (len(output) > 0):
+		similars.save(output)
+	return similars.jsonContent, myRag.milestones.getFullJSON()
+```
+## FAISS Memory search
+```
+from ragfmk.ragFAISS import ragFAISS
+from ragfmk.elements.embeddings.stEmbeddings import stEmbeddings
+def ragcall(prompt, k, output, contexts):
+	myRag = ragFAISS()
+	vChunks = stEmbeddings()
+	vPrompt = stEmbeddings()
+	myRag.initSearchEngine()
+	vPrompt.jsonContent = prompt
+	vChunks.jsonContent = contexts
+	myRag.addEmbeddings(vChunks)
+	similars = myRag.processSearch(k, vPrompt)
+	if (len(output) > 0):
+		similars.save(output)
+	return similars.jsonContent, myRag.milestones.getFullJSON()
+```
+## Building prompt
+```
+from ragfmk.rag import rag
+from ragfmk.elements.wrappers.nearest import nearest
+def ragcall(question, nearestfile, content):
+	myRag = rag()
+	nr = nearest()
+	if (len(content)>0):
+		nr.jsonContent = content
+	else:
+		nr.load(nearestfile)
+	resp = myRag.buildPrompt(question, nr)
+	return resp, myRag.milestones.getFullJSON()
+```
