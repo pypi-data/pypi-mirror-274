@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+earshellz/__init__.py
+earshellz/main.py
+earshellz.egg-info/PKG-INFO
+earshellz.egg-info/SOURCES.txt
+earshellz.egg-info/dependency_links.txt
+earshellz.egg-info/requires.txt
+earshellz.egg-info/top_level.txt
