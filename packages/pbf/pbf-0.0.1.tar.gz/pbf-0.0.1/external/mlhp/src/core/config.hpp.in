@@ -1,0 +1,30 @@
+// This file is part of the mlhp project. License: See LICENSE
+
+#ifndef MLHP_CONFIG_HPP
+#define MLHP_CONFIG_HPP
+
+#include <cstddef>
+#include <cstdint>
+
+#cmakedefine MLHP_DEBUG_CHECKS
+#cmakedefine MLHP_ENABLE_OMP
+
+// E.g.: 2, 3, 4
+#define MLHP_DIMENSIONS_LIST ${MLHP_DIMENSIONS_TO_INSTANTIATE}
+
+// E.g.: MLHP_INSTANTIATE_DIM(2) MLHP_INSTANTIATE_DIM(3) MLHP_INSTANTIATE_DIM(4)
+#define MLHP_DIMENSIONS_XMACRO_LIST ${MLHP_DIMENSIONS_XMACRO_LIST}
+#define MLHP_POSTPROCESSING_DIMENSIONS_XMACRO_LIST ${MLHP_POSTPROCESSING_DIMENSIONS_XMACRO_LIST}
+
+namespace mlhp
+{
+
+static constexpr std::size_t simd_alignment = ${MLHP_SIMD_ALIGNMENT};
+static constexpr std::size_t maximum_polynomial_degree = 250;
+
+using CellIndex = std::uint${MLHP_INDEX_SIZE_CELLS}_t;
+using DofIndex = std::uint${MLHP_INDEX_SIZE_DOFS}_t;
+
+} // namespace mlhp
+
+#endif // MLHP_CONFIG_HPP
