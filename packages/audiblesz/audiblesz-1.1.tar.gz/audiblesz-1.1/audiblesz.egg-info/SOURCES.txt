@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+audiblesz/__init__.py
+audiblesz/main.py
+audiblesz.egg-info/PKG-INFO
+audiblesz.egg-info/SOURCES.txt
+audiblesz.egg-info/dependency_links.txt
+audiblesz.egg-info/requires.txt
+audiblesz.egg-info/top_level.txt
