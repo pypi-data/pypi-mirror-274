@@ -1,0 +1,6 @@
+PyYAML<7.0.0a,>=6.0
+asn1ate<=0.6.0,>=0.5
+cryptography==42.0.7
+jsonschema<=3.2.0,>=2.6.0
+pyasn1<=0.4.8,>=0.3.1
+requests==2.31
