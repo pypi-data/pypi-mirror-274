@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+episternalz/__init__.py
+episternalz/main.py
+episternalz.egg-info/PKG-INFO
+episternalz.egg-info/SOURCES.txt
+episternalz.egg-info/dependency_links.txt
+episternalz.egg-info/requires.txt
+episternalz.egg-info/top_level.txt
