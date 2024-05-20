@@ -1,0 +1,16 @@
+enchante/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+enchante/__main__.py,sha256=RCZmmoCNOWC7rAfIDm_LaymsybXIzE6McYbUEEkf9P8,60
+enchante/main.py,sha256=7QFcgVoxgnQFnx8UypxTx5ApsO-4OAioWfXD0ZpAXcU,1703
+enchante/templates/table/__init__.py,sha256=Qc0YDL3UStBPzrKBnhDBgJvVIkDHcGpOXpMaKZeg8yM,23
+enchante/templates/table/crud.py.jinja,sha256=BbjCRv6vaB_8zkF9gHR1lZ60Blpkx2_dklMvgE-sMWg,460
+enchante/templates/table/model.py.jinja,sha256=Bu2Fkb8lQXgtmWEuvG7_I-9xh1eX03Xr3L5CTVCXB3w,547
+enchante/templates/table/schema.py.jinja,sha256=HF7mws_PkgLxcPfRy4Jy0BshMquPWX0onGH0IRwq504,222
+enchante/utils/__init__.py,sha256=LdE8d-aI1_hIQqWTe59zOMa3jOpV8V5oVO9ubEB0Zcs,46
+enchante/utils/base.py,sha256=vx9QbBcz6NhFI81OVP3EBil0Fpp-KegiOrUMT3M44Bc,232
+enchante/utils/crud.py,sha256=FmnVDZMQLDVO2D6ZznO6hJuWBwHyNs7EJrVqlfAd9uc,6868
+enchante/utils/types.py,sha256=H0CoOb3CcMmd8dqQw6kxSEK3pgVYEk9wjqTYE1MwaRw,141
+enchante-0.1.1.dist-info/LICENSE,sha256=CWapR2pupUXmZn1pJhXKSz1yJ00rjRxqURpO8sJw8h4,1065
+enchante-0.1.1.dist-info/METADATA,sha256=LmQhT2XCDBue7QPhA_oFnaMtJb9KKQiSMQkBpcif2vA,2041
+enchante-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+enchante-0.1.1.dist-info/entry_points.txt,sha256=Y6LeSg4RjhN5RuhRafRHtIy9UEq36TlcbUG3ma7xJ8E,46
+enchante-0.1.1.dist-info/RECORD,,
