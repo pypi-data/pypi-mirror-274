@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+medisancez/__init__.py
+medisancez/main.py
+medisancez.egg-info/PKG-INFO
+medisancez.egg-info/SOURCES.txt
+medisancez.egg-info/dependency_links.txt
+medisancez.egg-info/requires.txt
+medisancez.egg-info/top_level.txt
