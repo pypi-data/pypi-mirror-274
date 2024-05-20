@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: lib-version-urlphishing
+Version: 2.1.1
+Summary: A library to manage and track versions of software components
+License: Apache-2.0
+Author: Marianna Louizidou
+Author-email: M.Louizidou@student.tudelft.nl
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flake8 (>=3.9,<4.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Homepage, https://github.com/REMLA24-TEAM-15/lib-version
+Project-URL: Issues, https://github.com/REMLA24-TEAM-15/lib-version/issues
+Description-Content-Type: text/markdown
+
+lib_version_URLPhishing is a version-aware library that can can be asked for the version of the library.
+
+1. **Installation**
+   ```bash
+   pip install lib-version-URLPhishing
+
+2. **Import**
+   ```bash
+   from lib_version_URLPhishing.version_util import VersionUtil
+
+3. **Test**
+   ```bash
+   version = VersionUtil.get_version()
+   print(version)
+
+
