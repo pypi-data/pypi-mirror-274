@@ -1,0 +1,10 @@
+pyproject.toml
+src/colalamo/__init__.py
+src/colalamo/colalamo.py
+src/colalamo/config.py
+src/colalamo/shtoken.py
+src/colalamo.egg-info/PKG-INFO
+src/colalamo.egg-info/SOURCES.txt
+src/colalamo.egg-info/dependency_links.txt
+src/colalamo.egg-info/entry_points.txt
+src/colalamo.egg-info/top_level.txt
