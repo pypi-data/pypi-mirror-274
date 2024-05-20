@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ichthyopterygiumz/__init__.py
+ichthyopterygiumz/main.py
+ichthyopterygiumz.egg-info/PKG-INFO
+ichthyopterygiumz.egg-info/SOURCES.txt
+ichthyopterygiumz.egg-info/dependency_links.txt
+ichthyopterygiumz.egg-info/requires.txt
+ichthyopterygiumz.egg-info/top_level.txt
