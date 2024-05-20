@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+blepharanthracosisz/__init__.py
+blepharanthracosisz/main.py
+blepharanthracosisz.egg-info/PKG-INFO
+blepharanthracosisz.egg-info/SOURCES.txt
+blepharanthracosisz.egg-info/dependency_links.txt
+blepharanthracosisz.egg-info/requires.txt
+blepharanthracosisz.egg-info/top_level.txt
