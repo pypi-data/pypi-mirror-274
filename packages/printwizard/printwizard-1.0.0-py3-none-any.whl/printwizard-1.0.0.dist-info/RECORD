@@ -1,0 +1,10 @@
+printwizard/__init__.py,sha256=PXx88p0vUF9hWgwuOlfAM_i-A_t2fudO7R_G-pFw9Gs,98
+printwizard/logger.py,sha256=4bbQBEXKF81xUYL5yTmlD-MrnKO3kl4hlOcTgA_CvIY,4910
+printwizard/set_wizard_config.py,sha256=1kaJUq9nNdxrn1IgLR-Ny_riAkk1M5gml6MvYrpzgN8,629
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_logger.py,sha256=jDWOyU1sT2BXvBnTb6r4ltN42lOLAveBfjAnoSfmBDk,204
+printwizard-1.0.0.dist-info/LICENSE,sha256=TZ2uEuPo9v5Uy1wg_UqIjc9gqTnVM_GP9vNuhcJQLt4,1068
+printwizard-1.0.0.dist-info/METADATA,sha256=O2pSxWF7krV1wwmQJ1aPcnXCUutjLsr9hARHD50L3j0,1192
+printwizard-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+printwizard-1.0.0.dist-info/top_level.txt,sha256=qi_5Hmyw0qkdnaJXrXUHpEY3LQFjp4NjOLcmGWdmFBY,18
+printwizard-1.0.0.dist-info/RECORD,,
