@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: langstory
+Version: 0.0.0
+Summary: Adding the 'product' back to product design for AI Platforms
+Author-email: Ethan Knox <ethan@langstory.org>, Yoaquim Cintron <yoaquim@langstory.org>
+License: MIT
+Keywords: llm,ai,ux,ux-design,langfuse,langchain
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
