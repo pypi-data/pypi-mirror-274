@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xiuyutools
+Version: 1.1
+Summary: Tools for myself
+Home-page: https://github.com/liangxiuyu/owntools
+Author: Neely
+Author-email: liangxiuyu@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# OwnTools
+2021-12-27 Created
+2024-05-06 Upload to PyPi
+
+##
+1. change version
+2. python setup.py sdist bdist_wheel
+2. python setup.py develop 
+4. twine upload dist/*
+
+### 2024-5-19
+
+    1.trans_to_date
+    2.trans_to_datetime
