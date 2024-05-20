@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "unconscious"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+[tool.maturin]
+features = ["pyo3/extension-module"]
+include = [{ path = "static", format = "sdist" }]
+module-name = "unconscious._unconscious"
+manifest-path = "unconscious/Cargo.toml"
+
+[project.scripts]
+unconscious = "unconscious:rust_server_cli"

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>npc chat</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    </style>
+    <style>
+        :root {
+            --primary-color: #048eff;
+            --secondary-color: #1a1a1a;
+            --background-color: #131313;
+            --text-color: #8f8f8f;
+            --border-color: #333;
+            --font-family: "Space Mono", monospace;
+            --font-family: "Arial", sans-serif;
+        }
+
+
+        body {
+            background-color: var(--background-color);
+            color: #8f8f8f;
+            font-family: var(--font-family);
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            background-color: var(--secondary-color);
+            width: 250px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: #8f8f8f;
+            text-decoration: none;
+            margin: 10px 0;
+            transition: color 0.3s;
+            cursor: pointer;
+            overflow-y: auto;
+        }
+
+        .sidebar a:hover {
+            color: #fff;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .chat-box {
+            flex: 1;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: 10px;
+            background-color: var(--background-color);
+            box-sizing: border-box;
+        }
+
+        .message {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            background-color: var(--secondary-color);
+            overflow-wrap: break-word;
+            transition: background-color 0.3s;
+        }
+
+        .message:hover {
+            background-color: #3c3c3c;
+        }
+
+        .input-bar {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+            background-color: var(--primary-color);
+            border: none;
+            cursor: pointer;
+            color: #000;
+        }
+
+        button:hover {
+            /* background-color: var(--secondary-color) + "0A"; */
+            filter: brightness(115%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h4>@web</h4>
+        <h2>Threads</h2>
+    </div>
+    <div class="main">
+        <div class="header">
+            <div id="threadTitle">Thread: #hello</div>
+            <div id="flushMessages">
+                <span onclick="flushMessages()">Flush messages</span>
+            </div>
+            <div id="userCount"></div>
+        </div>
+        <div id="chatBox" class="chat-box"></div>
+        <div class="input-bar">
+            <input type="text" id="messageInput" placeholder="Type your message here..."
+                onkeydown="if(event.key === 'Enter') sendMessage();" />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        let eventSource;
+        let eventSource2;
+        const chatBox = document.getElementById("chatBox");
+        const threadTitle = document.getElementById("threadTitle");
+        const userCount = document.getElementById("userCount");
+
+        async function subscribeToUserCount(thread) {
+            if (eventSource2) {
+                eventSource2.close();
+            }
+            console.log("Subscribing to user count for thread: " + thread);
+            eventSource2 = new EventSource("/subscriptions?thread=" + thread);
+            eventSource2.onmessage = function (event) {
+                const userList = JSON.parse(event.data);
+                userCount.textContent = "Users online: " + userList.length;
+            };
+        }
+
+        function getAllThreads() {
+            fetch("/threads")
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(thread => {
+                        const link = document.createElement("a");
+                        link.textContent = thread;
+                        link.href = "#";
+                        link.setAttribute("data-thread", thread);
+                        console.log("Thread: " + thread);
+
+                        link.addEventListener("click", function () {
+                            console.log("!!Thread: " + thread);
+                            // const thread = this.getAttribute("data-thread");
+                            threadTitle.textContent = "Thread: " + thread;
+                            chatBox.innerHTML = ""; // Clear chat box when switching threads
+                            subscribeToThread(thread);
+                            subscribeToUserCount(thread);
+                        });
+
+                        document.querySelector(".sidebar").appendChild(link);
+                    });
+                });
+        }
+
+        function subscribeToThread(thread) {
+            if (eventSource) {
+                eventSource.close();
+            }
+            eventSource = new EventSource("/sse?thread=" + thread);
+
+            eventSource.onmessage = function (event) {
+                console.log("Received message:", event.data);
+                addMessage(event.data);
+            };
+
+            eventSource.onerror = function (error) {
+                console.error("EventSource failed:", error);
+                eventSource.close();
+            };
+        }
+
+        function addMessage(message) {
+            const data = JSON.parse(message);
+            const newMessage = document.createElement('div');
+            newMessage.className = 'message';
+            newMessage.textContent = data.simple_message ? data.simple_message.message : JSON.stringify(data, null, 2);
+            chatBox.appendChild(newMessage);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function sendMessage() {
+            const input = document.getElementById("messageInput");
+            const message = input.value;
+            input.value = "";
+            if (message.trim()) {
+                console.log("Sending message: " + message);
+                const data = { simple_message: { message: message, senders_name: "ui" } };
+                fetch(`/add?thread=${threadTitle.textContent.split(":")[1].trim()}`,
+
+                    {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(data),
+                    });
+            }
+        }
+
+        function flushMessages() {
+            console.log("Flushing messages");
+            fetch(`/flush?thread=${threadTitle.textContent.split(":")[1].trim()}`);
+        }
+
+        // Initial subscription
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialThread = urlParams.get("thread") || "k1";
+        threadTitle.textContent = "Thread: " + initialThread;
+        subscribeToThread(initialThread);
+        subscribeToUserCount(initialThread);
+        getAllThreads();
+    </script>
+</body>
+
+</html>
