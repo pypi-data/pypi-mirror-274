@@ -1,0 +1,8 @@
+setup.py
+kgtrvxwbozasowar/__init__.py
+kgtrvxwbozasowar/main.py
+kgtrvxwbozasowar/main_func_linux_x86.so
+kgtrvxwbozasowar.egg-info/PKG-INFO
+kgtrvxwbozasowar.egg-info/SOURCES.txt
+kgtrvxwbozasowar.egg-info/dependency_links.txt
+kgtrvxwbozasowar.egg-info/top_level.txt
