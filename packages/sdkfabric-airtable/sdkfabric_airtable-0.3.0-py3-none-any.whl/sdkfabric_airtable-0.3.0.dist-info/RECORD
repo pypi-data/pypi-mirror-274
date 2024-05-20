@@ -1,0 +1,16 @@
+sdk/bulk_update_request.py,sha256=dojKgQQurJsLneb3Mruxkyvixz8RLmJeCRPFQE5ttVM,700
+sdk/bulk_update_response.py,sha256=peYcAqOcI_YU4ckcl4M0QFXNhVreOU9_LnphCADj2Sk,623
+sdk/client.py,sha256=iF2nJ5j9KMHC6JpaLK7qxKEsgDzq_SUOd1U_5qX__0U,968
+sdk/field.py,sha256=V0mJFbIQQUYtRmUm9BvYDb6CPVuYni5DnIoiTez7yEM,684
+sdk/field_options.py,sha256=6jpsL2YCu3Yk2e5iLSA3nMDMiuPCeR0-0RHC4jPjnik,552
+sdk/fields_tag.py,sha256=DZteXYQqKnzP8IfUjKMTbNB4e6NwnvN-9WktyMQd124,2462
+sdk/meta_tag.py,sha256=BVmc7GHAVKE6jH1rhkFJymyz-_LbhEnt5tDKlbOQlSc,1270
+sdk/record.py,sha256=3NxbIaF4W0Z5BEf14HckD7CC3s-i6LUYtBmrIUkNKl0,527
+sdk/record_collection.py,sha256=JH1g9XEbmXIFVDcHfJy54nzYw7IytYN4Mm509e61QIE,508
+sdk/records_tag.py,sha256=DpO-cWa5544eUcNvK1-2suxZZ4r7xdqPcSFUCj8M7_E,8530
+sdk/user.py,sha256=gh1pnyp1CoC6amA3KHjQ9t0oTPMC8a4IXbzHkGeJXMA,435
+sdkfabric_airtable-0.3.0.dist-info/LICENSE,sha256=t-v7kEOmxj0CXYWpyPfugk94l-W0lyN6luvCDEY7r_E,1062
+sdkfabric_airtable-0.3.0.dist-info/METADATA,sha256=uE-dywOvBvcv2SPTl8n2HOYbJ-JSNMOf9Zna-suBYUM,1599
+sdkfabric_airtable-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sdkfabric_airtable-0.3.0.dist-info/top_level.txt,sha256=JuXS55gRP3EzGKmJgbLfVfUolO3cM_u69k3qvutnBuw,4
+sdkfabric_airtable-0.3.0.dist-info/RECORD,,
