@@ -1,0 +1,6 @@
+mailtm
+rich
+requests
+mimesis
+faker
+groq
