@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dottiestz/__init__.py
+dottiestz/main.py
+dottiestz.egg-info/PKG-INFO
+dottiestz.egg-info/SOURCES.txt
+dottiestz.egg-info/dependency_links.txt
+dottiestz.egg-info/requires.txt
+dottiestz.egg-info/top_level.txt
