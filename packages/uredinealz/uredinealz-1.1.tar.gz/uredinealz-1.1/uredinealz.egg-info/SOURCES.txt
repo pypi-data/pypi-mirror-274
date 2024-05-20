@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+uredinealz/__init__.py
+uredinealz/main.py
+uredinealz.egg-info/PKG-INFO
+uredinealz.egg-info/SOURCES.txt
+uredinealz.egg-info/dependency_links.txt
+uredinealz.egg-info/requires.txt
+uredinealz.egg-info/top_level.txt
