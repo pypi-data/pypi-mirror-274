@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: discord-disnake
+Version: 2.3.0.2.post0
+Summary: A shim for disnake (Python wrapper for the Discord API)
+Home-page: https://github.com/DisnakeDev/discord-disnake
+Author: Rapptz, EQUENOS
+License: MIT
+Project-URL: Documentation, https://docs.disnake.dev/en/latest
+Project-URL: Issue tracker, https://github.com/DisnakeDev/discord-disnake/issues
+Classifier: Development Status :: 7 - Inactive
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: disnake ==2.3.0
+
+<p align="center">
+    <h3>⚠️⚠️⚠️ This package is deprecated and is no longer being maintained. ⚠️⚠️⚠️</h3>
+    Please migrate your project to use https://pypi.org/project/disnake directly.
+</p>
+
+<br/>
+<br/>
+
+---
+
+Original Readme:
+
+# This package is a shim
+
+This module allows to use [disnake](https://github.com/DisnakeDev/disnake) using `discord` namespace. This is not an independent library.
+
+# Installing
+
+**Python 3.8 or higher is required**
+
+Run the following command:
+
+```sh
+# Linux/macOS
+python3 -m pip install -U "disnake[discord]"
+
+# Windows
+py -3 -m pip install -U disnake[discord]
+```
+
+# Links
+
+- [Documentation](https://docs.disnake.dev/en/latest)
+- [disnake GitHub](https://github.com/DisnakeDev/disnake)
+- [disnake Discord](https://discord.gg/disnake)
