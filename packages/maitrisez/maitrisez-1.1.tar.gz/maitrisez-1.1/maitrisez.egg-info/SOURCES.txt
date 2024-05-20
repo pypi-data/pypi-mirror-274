@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+maitrisez/__init__.py
+maitrisez/main.py
+maitrisez.egg-info/PKG-INFO
+maitrisez.egg-info/SOURCES.txt
+maitrisez.egg-info/dependency_links.txt
+maitrisez.egg-info/requires.txt
+maitrisez.egg-info/top_level.txt
