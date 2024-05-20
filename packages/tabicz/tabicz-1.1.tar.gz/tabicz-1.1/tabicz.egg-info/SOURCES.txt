@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tabicz/__init__.py
+tabicz/main.py
+tabicz.egg-info/PKG-INFO
+tabicz.egg-info/SOURCES.txt
+tabicz.egg-info/dependency_links.txt
+tabicz.egg-info/requires.txt
+tabicz.egg-info/top_level.txt
