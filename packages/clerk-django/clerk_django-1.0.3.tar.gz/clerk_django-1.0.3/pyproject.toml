@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clerk_django"
+version = "1.0.3"
+authors = [
+  { name="Ravi Kumar Singh", email="ravikrsngh1999@gmail.com" },
+]
+keywords = ["django", "clerk", "clerk django", "clerk django package", "integrate clerk and django"]
+description = "A package for django rest framework to handle clerk authentication. It includes a auth middleware, permission and a wrapper around all the user related apis."
+readme = "README.md"
+license = { file = "LICENSE" }
+
+dependencies = [
+    "PyJWT>=2.8.0",
+]
+
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/ravikrsngh/clerk_django"
+Issues = "https://github.com/ravikrsngh/clerk_django/issues"
