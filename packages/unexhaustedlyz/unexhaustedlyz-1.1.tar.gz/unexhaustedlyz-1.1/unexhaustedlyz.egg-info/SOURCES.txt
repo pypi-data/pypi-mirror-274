@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unexhaustedlyz/__init__.py
+unexhaustedlyz/main.py
+unexhaustedlyz.egg-info/PKG-INFO
+unexhaustedlyz.egg-info/SOURCES.txt
+unexhaustedlyz.egg-info/dependency_links.txt
+unexhaustedlyz.egg-info/requires.txt
+unexhaustedlyz.egg-info/top_level.txt
