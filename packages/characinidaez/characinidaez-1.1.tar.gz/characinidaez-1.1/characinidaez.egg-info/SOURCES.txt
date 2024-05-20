@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+characinidaez/__init__.py
+characinidaez/main.py
+characinidaez.egg-info/PKG-INFO
+characinidaez.egg-info/SOURCES.txt
+characinidaez.egg-info/dependency_links.txt
+characinidaez.egg-info/requires.txt
+characinidaez.egg-info/top_level.txt
