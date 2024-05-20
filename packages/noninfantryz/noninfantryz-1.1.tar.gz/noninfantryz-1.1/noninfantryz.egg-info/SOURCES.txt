@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+noninfantryz/__init__.py
+noninfantryz/main.py
+noninfantryz.egg-info/PKG-INFO
+noninfantryz.egg-info/SOURCES.txt
+noninfantryz.egg-info/dependency_links.txt
+noninfantryz.egg-info/requires.txt
+noninfantryz.egg-info/top_level.txt
