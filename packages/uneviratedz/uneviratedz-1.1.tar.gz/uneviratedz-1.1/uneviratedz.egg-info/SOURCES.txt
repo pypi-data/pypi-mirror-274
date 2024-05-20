@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+uneviratedz/__init__.py
+uneviratedz/main.py
+uneviratedz.egg-info/PKG-INFO
+uneviratedz.egg-info/SOURCES.txt
+uneviratedz.egg-info/dependency_links.txt
+uneviratedz.egg-info/requires.txt
+uneviratedz.egg-info/top_level.txt
