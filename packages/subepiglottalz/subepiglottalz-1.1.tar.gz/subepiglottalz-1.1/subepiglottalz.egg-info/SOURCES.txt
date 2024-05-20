@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+subepiglottalz/__init__.py
+subepiglottalz/main.py
+subepiglottalz.egg-info/PKG-INFO
+subepiglottalz.egg-info/SOURCES.txt
+subepiglottalz.egg-info/dependency_links.txt
+subepiglottalz.egg-info/requires.txt
+subepiglottalz.egg-info/top_level.txt
