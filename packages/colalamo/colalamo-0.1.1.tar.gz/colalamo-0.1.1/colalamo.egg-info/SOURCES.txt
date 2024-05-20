@@ -1,0 +1,6 @@
+pyproject.toml
+colalamo.egg-info/PKG-INFO
+colalamo.egg-info/SOURCES.txt
+colalamo.egg-info/dependency_links.txt
+colalamo.egg-info/entry_points.txt
+colalamo.egg-info/top_level.txt
