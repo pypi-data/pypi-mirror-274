@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+quapawz/__init__.py
+quapawz/main.py
+quapawz.egg-info/PKG-INFO
+quapawz.egg-info/SOURCES.txt
+quapawz.egg-info/dependency_links.txt
+quapawz.egg-info/requires.txt
+quapawz.egg-info/top_level.txt
