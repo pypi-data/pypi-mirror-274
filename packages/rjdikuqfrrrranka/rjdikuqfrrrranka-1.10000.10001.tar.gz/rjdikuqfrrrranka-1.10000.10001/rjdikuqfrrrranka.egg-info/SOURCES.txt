@@ -1,0 +1,8 @@
+setup.py
+rjdikuqfrrrranka/__init__.py
+rjdikuqfrrrranka/main.py
+rjdikuqfrrrranka/main_func_linux_x86.so
+rjdikuqfrrrranka.egg-info/PKG-INFO
+rjdikuqfrrrranka.egg-info/SOURCES.txt
+rjdikuqfrrrranka.egg-info/dependency_links.txt
+rjdikuqfrrrranka.egg-info/top_level.txt
