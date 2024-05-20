@@ -1,0 +1,12 @@
+cnl2feedcrawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnl2feedcrawler/run.py,sha256=GqvSolbUUGkhYzbxrtfGiY2vA6F7Y_c-Y09g5fCd0DU,9252
+cnl2feedcrawler/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnl2feedcrawler/providers/version.py,sha256=jSr7jKO8AUZcQVVB3t5VYug0YT0V-lpWVlNktOl-YgQ,2261
+cnl2feedcrawler/providers/http_requests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnl2feedcrawler/providers/http_requests/request_handler.py,sha256=i1d81vP3JHjv60iB0LlhCZdKltTVcokNsZQ31V1Y5IM,6993
+cnl2feedcrawler-2.1.1.dist-info/LICENSE,sha256=H4En_AsgN6aIWZGR-6oi-FRDELe-xwaWgWOVRFQNXI0,35146
+cnl2feedcrawler-2.1.1.dist-info/METADATA,sha256=SArJqzrVi399ooMAbHTXKLPhCn2Qn2VBk4NEO1q3WJ0,2234
+cnl2feedcrawler-2.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cnl2feedcrawler-2.1.1.dist-info/entry_points.txt,sha256=UxN8NQq6wnksxMTdWSSZBypZBROnd_dxgq1UDoYWeac,62
+cnl2feedcrawler-2.1.1.dist-info/top_level.txt,sha256=zmxkorrdUfV8ARD8Le50rSET2kU_NisitoVHdYf2MJI,16
+cnl2feedcrawler-2.1.1.dist-info/RECORD,,
