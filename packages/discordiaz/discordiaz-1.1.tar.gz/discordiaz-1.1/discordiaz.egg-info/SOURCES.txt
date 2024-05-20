@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+discordiaz/__init__.py
+discordiaz/main.py
+discordiaz.egg-info/PKG-INFO
+discordiaz.egg-info/SOURCES.txt
+discordiaz.egg-info/dependency_links.txt
+discordiaz.egg-info/requires.txt
+discordiaz.egg-info/top_level.txt
