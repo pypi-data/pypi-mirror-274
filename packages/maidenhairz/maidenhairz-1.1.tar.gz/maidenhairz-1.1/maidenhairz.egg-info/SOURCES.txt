@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+maidenhairz/__init__.py
+maidenhairz/main.py
+maidenhairz.egg-info/PKG-INFO
+maidenhairz.egg-info/SOURCES.txt
+maidenhairz.egg-info/dependency_links.txt
+maidenhairz.egg-info/requires.txt
+maidenhairz.egg-info/top_level.txt
