@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bullomz/__init__.py
+bullomz/main.py
+bullomz.egg-info/PKG-INFO
+bullomz.egg-info/SOURCES.txt
+bullomz.egg-info/dependency_links.txt
+bullomz.egg-info/requires.txt
+bullomz.egg-info/top_level.txt
