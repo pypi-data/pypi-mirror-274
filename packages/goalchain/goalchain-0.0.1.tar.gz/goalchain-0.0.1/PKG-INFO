@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: goalchain
+Version: 0.0.1
+Summary: GoalChain is a simple but effective framework for enabling goal-orientated conversation flows for human-LLM and LLM-LLM interaction.
+Project-URL: Homepage, https://github.com/adlumal/GoalChain
+Project-URL: Documentation, https://github.com/adlumal/GoalChain/blob/main/README.md
+Project-URL: Issues, https://github.com/adlumal/GoalChain/issues
+Project-URL: Source, https://github.com/adlumal/GoalChain
+Author-email: Adrian Lucas Malec <dr.adrian@gmail.com>
+License: MIT
+License-File: LICENSE
+Keywords: agent,chat,conversation,flow,goal,llm
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Requires-Dist: jinja2>=3.1.2
+Requires-Dist: litellm>=1.37.16
+Description-Content-Type: text/markdown
+
+# GoalChain
+GoalChain is a simple but effective framework for enabling goal-orientated conversation flows for human-LLM and LLM-LLM interaction.
+
+## Getting started
+
+
+
+
