@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: baosight
+Version: 0.0.14
+Summary: baosight tools
+Home-page: https://cuddlebugs.asia
+Author: Hao Zhao
+Author-email: 601095001@qq.com
+License: OSI Approved :: MIT License
+Platform: Linux/Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-gitlab==4.5.0
+Requires-Dist: requests==2.31.0
+
+# baosight工具包
+
+## gitlab
+
+### gitlab runner
+
+1. config.json文件格式
+
+```json
+{
+  "gitlab_url": "http://127.0.0.1",
+  "gitlab_api_token": "xxxxxxx",
+  "registration_token": "xxxxxxx",
+  "runner_url": "https://s3.dualstack.us-east-1.amazonaws.com/gitlab-runner-downloads/latest/binaries/gitlab-runner-windows-amd64.exe",
+  "runners": [
+    {
+      "description": "Windows Runner",
+      "tags": [
+        "windows"
+      ],
+      "service": "gitlab-runner",
+      "work_dir": "C:\\Runners\\Runner3"
+    }
+  ]
+}
+```
+
+2. 安装命令
+
+```shell
+baosight gl-runner --quite  # 使用当前目录config.json静默安装runner
+baosight gl-runner # 使用gui选择配置文件并安装
+```
+
+3. 快速生成配置文件
+
+```shell
+baosight gl-runner --create-config
+```
