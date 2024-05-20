@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: tmuxradio
+Version: 0.2.33
+Summary: Playing globe radio station from terminal
+Home-page: http://github.com/sifaw99/terminal_radio
+Author: Lahcen Ouchary
+Author-email: lahcen.ouchary@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<h1 align=center> TmuxRadio </h1>
+<p> SEARCH, PLAY radio station from the globe from your terminal </p>
+
+### Install
+
+Simply run: `pip3 install tmuxradio`
+
+I recommend installing it using `pipx install tmuxradio`
+
+### External Dependency
+
+It needs [FFmpeg](https://ffmpeg.org/download.html) to be installed on your
+system in order to play the audio
+
+on Ubuntu-based system >= 20.04, Run
+
+```
+sudo apt update && sudo apt install ffmpeg
+```
+
+For other systems including Windows see the above link
+
+### Run
+
+Search a station with `radio -s [STATION_NAME]`.
+
+
+
+Change Log
+============
+
+0.2.33 (May 19, 2024) 
+— — — — — — — — — -- 
+Fixe Bugs and Make Improvements 
+Display Fetched IcyMetadata  
+
+0.1 (May 10, 2024) 
+— — — — — — — — — -- 
+First Release
