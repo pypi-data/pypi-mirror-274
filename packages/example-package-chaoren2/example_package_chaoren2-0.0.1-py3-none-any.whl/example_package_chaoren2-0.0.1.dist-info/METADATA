@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: example_package_chaoren2
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/play3s/ctv_protector
+Author: chaoren2
+Author-email: chaoren2 <chaoren2@naver.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+- this is sample of pandas columns
