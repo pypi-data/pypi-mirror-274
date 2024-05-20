@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+./midas_open_parser/__init__.py
+./midas_open_parser/badc_csv.py
+./midas_open_parser/midas.py
+./midas_open_parser/test.py
+midas_open_parser.egg-info/PKG-INFO
+midas_open_parser.egg-info/SOURCES.txt
+midas_open_parser.egg-info/dependency_links.txt
+midas_open_parser.egg-info/top_level.txt
