@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: kitchenware_model_package
+Version: 0.0.3
+Summary: computer vision model - xception model for classifiying kitchen utensils
+Author: chibuikeeugene
+Author-email: chibuikeeugene@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: kaggle (>=1.6.12,<2.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Requires-Dist: scikit-learn (>=1.4.2,<2.0.0)
+Requires-Dist: strictyaml (>=1.7.3,<2.0.0)
+Requires-Dist: tensorflow (>=2.16.1,<3.0.0)
+Requires-Dist: tensorflow-hub (>=0.16.1,<0.17.0)
+Description-Content-Type: text/markdown
+
+# KITCHEN WARE CLASSIFICATION
+
+A machine learning program that classifies correctly kitchen utensils within the kitchen using machine aided assistance(computer vision) for a disabled/non disabled entity. This program uses a **neural network algorithm** to detect kitchen utensils.
+
+## Data set and its description  
+
+| Data              | Description                            |
+|-------------------|----------------------------------------|
+| Image             | the image object                       |
+| Label             | class of the image                     |
+
+## Dependencies and packages  
+
+1. numpy>=1.20.0,<1.21.0
+2. python = 3.10
+3. pandas = 2.2.2
+4. scikit-learn = 1.4.2
+5. pydantic = 2.7.0
+6. strictyaml = 1.7.3
+7. tensorflow = 2.16.1
+8. scikeras = 0.13.0
+9. tensorflow-datasets = 4.9.4
+10. pillow = 10.3.0
+11. pydantic-settings = 2.2.1
+12. fastapi = 0.110.3
+13. uvicorn = 0.29.0
+14. loguru = 0.7.2
+15. python-multipart = 0.0.9
+
+## Source code link  
+
+Source code link:
+[Github link](https://github.com/chibuikeeugene/kitchenware_classification_xception_model.git)
