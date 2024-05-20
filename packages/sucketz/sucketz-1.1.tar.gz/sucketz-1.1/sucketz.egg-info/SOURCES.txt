@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sucketz/__init__.py
+sucketz/main.py
+sucketz.egg-info/PKG-INFO
+sucketz.egg-info/SOURCES.txt
+sucketz.egg-info/dependency_links.txt
+sucketz.egg-info/requires.txt
+sucketz.egg-info/top_level.txt
