@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+exagitatez/__init__.py
+exagitatez/main.py
+exagitatez.egg-info/PKG-INFO
+exagitatez.egg-info/SOURCES.txt
+exagitatez.egg-info/dependency_links.txt
+exagitatez.egg-info/requires.txt
+exagitatez.egg-info/top_level.txt
