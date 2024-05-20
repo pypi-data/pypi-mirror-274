@@ -1,0 +1,12 @@
+saasyflow/__init__.py,sha256=dWXXVU5MGznU00PDz-L7_pDbu9ZiMmVQkahApg9p4_E,36
+saasyflow/client.py,sha256=pRsf4qjvccXdd00Fz9jMBDir_u_rtZJEpfnB0eDKiNY,411
+saasyflow/customers.py,sha256=WbymXcIaBRjHDqbBcQMqFSGXQMJ8sU1ftJ0UrXAwbrA,2697
+saasyflow/exception.py,sha256=X6oGHCQgCid0_4yuBbFQTc0YL1xRCDRIWLcrliLEX-o,249
+saasyflow/http_client.py,sha256=SVW5E8Ro0RZuv5pQPjnjmiEGHDGtqa3_c0uVy5ZaZgs,742
+saasyflow/products.py,sha256=IrkP_3e54DTk3h42Dv2pXKk9UZko_17inuirr_lHANw,2468
+saasyflow/subscriptions.py,sha256=PHpL0ojflXDooMe6uBdQFiThKCLo1icEI1a61xnGbJs,3079
+saasyflow-0.0.4.dist-info/LICENSE,sha256=6Qa1UyElKoYv-2HNcETUzmdXfz7_XvbZyxxB0oQZGJI,1057
+saasyflow-0.0.4.dist-info/METADATA,sha256=ws8FizpHzcE5lCRWCmQ1TgddRWefQEuJzxQu1VYCADc,293
+saasyflow-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+saasyflow-0.0.4.dist-info/top_level.txt,sha256=8vStUlznCdT1UARYw-VZfaCX0ie-xBMKxq3rkF7vL44,10
+saasyflow-0.0.4.dist-info/RECORD,,
