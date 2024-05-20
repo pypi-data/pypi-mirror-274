@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+geneserinz/__init__.py
+geneserinz/main.py
+geneserinz.egg-info/PKG-INFO
+geneserinz.egg-info/SOURCES.txt
+geneserinz.egg-info/dependency_links.txt
+geneserinz.egg-info/requires.txt
+geneserinz.egg-info/top_level.txt
