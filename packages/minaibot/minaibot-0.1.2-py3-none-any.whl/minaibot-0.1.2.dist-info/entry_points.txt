@@ -1,0 +1,2 @@
+[console_scripts]
+minaibot_setup = post_install:create_directories_and_files
