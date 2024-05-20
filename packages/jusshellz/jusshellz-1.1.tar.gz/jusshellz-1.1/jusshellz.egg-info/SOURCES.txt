@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jusshellz/__init__.py
+jusshellz/main.py
+jusshellz.egg-info/PKG-INFO
+jusshellz.egg-info/SOURCES.txt
+jusshellz.egg-info/dependency_links.txt
+jusshellz.egg-info/requires.txt
+jusshellz.egg-info/top_level.txt
