@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+innominataz/__init__.py
+innominataz/main.py
+innominataz.egg-info/PKG-INFO
+innominataz.egg-info/SOURCES.txt
+innominataz.egg-info/dependency_links.txt
+innominataz.egg-info/requires.txt
+innominataz.egg-info/top_level.txt
