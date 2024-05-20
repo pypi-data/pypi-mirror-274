@@ -1,0 +1,26 @@
+FROM quay.io/pypa/manylinux2014_x86_64:latest
+
+ENV PATH=/opt/python/cp310-cp310/bin:$PATH
+
+# Install maturin
+RUN set -ex \
+    && pip install maturin cargo-zigbuild ziglang
+
+# Install rust toolchain
+ARG ARCH=x86_64
+ARG TARGET=${ARCH}-unknown-linux-gnu
+RUN set -ex \
+    && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y --default-toolchain stable
+ENV PATH=/root/.cargo/bin:$PATH
+RUN set -ex \
+    && rustup target add $TARGET
+
+COPY . /build
+WORKDIR /build
+
+# Build the wheel
+RUN set -ex \
+    && maturin build --release --compatibility manylinux2014 --zig --target $TARGET --out dist
+
+# Sleep indefinitely to keep the container running
+CMD ["tail", "-f", "/dev/null"]

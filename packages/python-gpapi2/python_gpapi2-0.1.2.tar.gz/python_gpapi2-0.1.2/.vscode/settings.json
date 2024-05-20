@@ -1,0 +1,6 @@
+{
+  "files.readonlyInclude": {
+    "LICENSE-*": true,
+    "**/Cargo.lock": true
+  }
+}
