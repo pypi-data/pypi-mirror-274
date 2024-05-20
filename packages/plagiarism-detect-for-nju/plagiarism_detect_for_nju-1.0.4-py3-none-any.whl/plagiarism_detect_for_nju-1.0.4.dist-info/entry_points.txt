@@ -1,0 +1,2 @@
+[console_scripts]
+plag4nju4cprog = plagiarism_detect_for_nju.detect_from_logfile_batch:main
