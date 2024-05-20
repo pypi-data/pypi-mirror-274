@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trichocarpousz/__init__.py
+trichocarpousz/main.py
+trichocarpousz.egg-info/PKG-INFO
+trichocarpousz.egg-info/SOURCES.txt
+trichocarpousz.egg-info/dependency_links.txt
+trichocarpousz.egg-info/requires.txt
+trichocarpousz.egg-info/top_level.txt
