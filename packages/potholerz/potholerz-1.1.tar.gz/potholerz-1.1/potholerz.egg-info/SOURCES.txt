@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+potholerz/__init__.py
+potholerz/main.py
+potholerz.egg-info/PKG-INFO
+potholerz.egg-info/SOURCES.txt
+potholerz.egg-info/dependency_links.txt
+potholerz.egg-info/requires.txt
+potholerz.egg-info/top_level.txt
