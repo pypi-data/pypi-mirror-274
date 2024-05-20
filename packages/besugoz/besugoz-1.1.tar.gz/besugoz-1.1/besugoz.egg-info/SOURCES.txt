@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+besugoz/__init__.py
+besugoz/main.py
+besugoz.egg-info/PKG-INFO
+besugoz.egg-info/SOURCES.txt
+besugoz.egg-info/dependency_links.txt
+besugoz.egg-info/requires.txt
+besugoz.egg-info/top_level.txt
