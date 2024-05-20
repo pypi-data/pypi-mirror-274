@@ -1,0 +1,3 @@
+[console_scripts]
+pflow-cli = PFlowC.main:main
+proxy-cli = PFlowC.proxy:main
