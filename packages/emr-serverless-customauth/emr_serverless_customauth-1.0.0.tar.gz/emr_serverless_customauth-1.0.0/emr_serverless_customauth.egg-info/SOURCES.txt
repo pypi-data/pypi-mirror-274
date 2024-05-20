@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+NOTICE.md
+README_EXTERNAL.md
+pyproject.toml
+emr_serverless_customauth/__init__.py
+emr_serverless_customauth/customauthenticator.py
+emr_serverless_customauth.egg-info/PKG-INFO
+emr_serverless_customauth.egg-info/SOURCES.txt
+emr_serverless_customauth.egg-info/dependency_links.txt
+emr_serverless_customauth.egg-info/requires.txt
+emr_serverless_customauth.egg-info/top_level.txt

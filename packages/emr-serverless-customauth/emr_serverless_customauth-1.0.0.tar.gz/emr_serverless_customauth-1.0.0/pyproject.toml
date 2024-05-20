@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="emr-serverless-customauth" # this is the name of the package with which users will install this library.
+version = "1.0.0"
+authors = [
+    {name = "EMR Serverless", email= "emr-serverless-dev@amazon.com"}
+]
+description = "EMR Serverless Custom Authenticator for spark magic kernel."
+readme = {file = "README_EXTERNAL.md", content-type = "text/markdown" }
+license = {file = "LICENSE.md"}
+keywords = ["emr-serverless", "sparkmagic", "custom-auth"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3"
+]
+dependencies = [
+    "boto3"
+]
+requires-python = ">=3.7"
+
+[tool.setuptools]
+packages = ["emr_serverless_customauth"]  # add add the nexted packageswhich needs to be included.
