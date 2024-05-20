@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: chalpak
+Version: 0.1.0
+Summary: Chalpak - mini web framework like fastAPi, flask
+Home-page: https://github.com/me/myproject
+Author: Mehmonov Husniddin
+Author-email: mehmonov.husniddin1@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.11.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp ==3.9.5
+Requires-Dist: aiohttp-jinja2 ==1.6
+Requires-Dist: watchdog ==4.0.0
+Requires-Dist: jurigged ==0.5.7
+Requires-Dist: Jinja2 ==3.1.4
+
+Chalpak - mini web framework like fastAPi, flask
