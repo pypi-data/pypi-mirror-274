@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scapementz/__init__.py
+scapementz/main.py
+scapementz.egg-info/PKG-INFO
+scapementz.egg-info/SOURCES.txt
+scapementz.egg-info/dependency_links.txt
+scapementz.egg-info/requires.txt
+scapementz.egg-info/top_level.txt
