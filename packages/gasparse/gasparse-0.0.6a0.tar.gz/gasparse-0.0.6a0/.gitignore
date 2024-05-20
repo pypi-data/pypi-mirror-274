@@ -1,0 +1,12 @@
+/build
+/src/\\
+src/PythonModule/build/
+src/PythonModule/gasparse.so
+src/PythonModule/gasparsegen.so
+src/PythonModule/gasparse.cpython-39-x86_64-linux-gnu.so
+__pycache__
+testing
+tests/gasparse.cpython-311-x86_64-linux-gnu.so
+tests/gasparsegen.cpython-311-x86_64-linux-gnu.so
+docs/build
+wheelhouse
