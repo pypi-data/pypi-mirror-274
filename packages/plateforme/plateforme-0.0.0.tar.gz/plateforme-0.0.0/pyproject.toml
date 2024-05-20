@@ -1,0 +1,54 @@
+[project]
+name = "plateforme"
+description = "The modern Python ASGI Framework for data-driven Applications and Services."
+version = "0.0.0"
+authors = [
+    {name = "Rodolphe Barbanneau", email = "rodolphe.barbanneau@plateforme.io"},
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+keywords = [
+    "plateforme",
+    "platform",
+    "api",
+    "app",
+    "application",
+    "async",
+    "asgi",
+    "framework",
+    "json",
+    "rest",
+    "web",
+    "fastapi",
+    "pydantic",
+    "sqlalchemy",
+    "uvicorn",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Framework :: FastAPI",
+    "Framework :: Pydantic",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+]

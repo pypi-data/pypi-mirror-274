@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/plateforme/__init__.py
+src/plateforme.egg-info/PKG-INFO
+src/plateforme.egg-info/SOURCES.txt
+src/plateforme.egg-info/dependency_links.txt
+src/plateforme.egg-info/top_level.txt
