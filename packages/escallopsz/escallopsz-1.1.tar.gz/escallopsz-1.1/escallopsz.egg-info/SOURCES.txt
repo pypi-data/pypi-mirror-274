@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+escallopsz/__init__.py
+escallopsz/main.py
+escallopsz.egg-info/PKG-INFO
+escallopsz.egg-info/SOURCES.txt
+escallopsz.egg-info/dependency_links.txt
+escallopsz.egg-info/requires.txt
+escallopsz.egg-info/top_level.txt
