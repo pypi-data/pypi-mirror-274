@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pescodz/__init__.py
+pescodz/main.py
+pescodz.egg-info/PKG-INFO
+pescodz.egg-info/SOURCES.txt
+pescodz.egg-info/dependency_links.txt
+pescodz.egg-info/requires.txt
+pescodz.egg-info/top_level.txt
