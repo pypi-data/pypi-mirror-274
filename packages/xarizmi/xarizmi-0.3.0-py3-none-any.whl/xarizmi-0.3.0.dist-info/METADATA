@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: xarizmi
+Version: 0.3.0
+Summary: Xarizmi (read Khwarizmi) project is an educational project thatcontains tools for technical analysis in Python.
+Home-page: https://github.com/javadebadi/xarizmi
+Author: Javad Ebadi
+Author-email: javad@javadebadi.com
+License: Apache 2.0
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Xarizmi
+Xarizmi (read Khwarizmi) project is an educational project that contains tools for technical analysis in Python.
+
+
+## Installation
+```bash
+pip install xarizmi
+```
+
+## Example
+
+### Build Candlestick
+```python
+from xarizmi.candlestick import Candlestick
+c = Candlestick(
+    **{
+        "open": 2,
+        "low": 1,
+        "high": 4,
+        "close": 3,
+    }
+)
+```
+
+
