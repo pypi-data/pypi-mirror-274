@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: eras
+Version: 0.3.1
+Summary: A terminal command library that provides a Natural Language Interface for running shell commands.
+Home-page: https://github.com/jasonmcaffee/eras
+Author: Jason McAffee
+Author-email: jasonlmcaffee@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai==1.26.0
+Requires-Dist: keyboard==0.13.5
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: asyncio==3.4.3
+
+# ERAS
+Easily Run AI Shell allows you to run shell commands using natural language.   
+
+No more having to leave the terminal to look up how to run a command!
+
+# Demo
+[Eras Demo](https://youtu.be/T7KRDwi5HDo)
+
+[![Video Thumbnail](https://img.youtube.com/vi/T7KRDwi5HDo/0.jpg)](https://youtu.be/T7KRDwi5HDo)
+
+
+<video src="./eras-demo.mov" controls></video>
+
+# Install
+```
+% pip install eras
+```
+
+If you get an error about externally-managed-environment it's because you have python installed via homebrew, and need to use pipx instead:
+
+pipx
+``` 
+brew install pipx
+pipx ensurepath
+pipx install eras\
+```
+With pipx you may need to open a new terminal window or source .zshrc a couple of times.
+
+# Use
+The first use of Eras will prompt you to enter an OpenAI key, which it will save to your profile as `ERAS_OPENAI_KEY`
+
+The first use will also prompt you to allow accessibility features for Terminal.app, which is required to allow Eras to populate
+the terminal with the shell command.
+
+![img.png](https://i.imgur.com/y3OLDuG.png)
+
+
+When you ask Eras a question, it will use AI to create a shell command, then populate your next terminal line with the command, so all you have to do is review and press enter.
+
+## Examples
+```
+% eras list files
+% ls
+...
+% eras create a new file named jason.txt with contents "hello world"
+% echo "hello world" > jason.txt
+...
+
+```
+
+
