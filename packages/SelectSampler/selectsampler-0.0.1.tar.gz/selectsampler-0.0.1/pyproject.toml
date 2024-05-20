@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SelectSampler"
+version = "0.0.1"
+authors = [
+  { name="Tohya Tanemura", email="tohya.tanemura@kiconiaworks.com" },
+]
+description = "This package allows you to fetch the dataset samples from the holoviews scatterplot as a dataframe."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
