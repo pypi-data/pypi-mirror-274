@@ -1,0 +1,9 @@
+.monit
+__pycache__
+build
+dist
+pymonit.egg-info
+.pypirc
+build.sh
+logs
+lambda
