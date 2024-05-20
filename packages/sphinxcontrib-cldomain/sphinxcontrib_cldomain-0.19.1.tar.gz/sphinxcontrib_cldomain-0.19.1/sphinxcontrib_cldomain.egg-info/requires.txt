@@ -1,0 +1,8 @@
+pygments
+sphinx>=7.3.0
+
+[dev]
+pytest
+black
+flake8
+build

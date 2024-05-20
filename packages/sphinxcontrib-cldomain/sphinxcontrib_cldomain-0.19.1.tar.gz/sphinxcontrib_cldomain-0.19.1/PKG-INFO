@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-cldomain
+Version: 0.19.1
+Summary: Sphinx domain for Common Lisp
+Author-email: Russell Sim <rsl@simopolis.xyz>
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://sr.ht/~rsl/sphinxcontrib-cldomain/
+Project-URL: Bug Reports, https://todo.sr.ht/~rsl/sphinxcontrib-cldomain
+Project-URL: Source, https://git.sr.ht/~rsl/sphinxcontrib-cldomain
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: COPYING
+Requires-Dist: pygments
+Requires-Dist: sphinx>=7.3.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: build; extra == "dev"
+
+CLDomain
+========
+
+CLDomain is a Common Lisp domain for `Sphinx Documentation Generator`_.
+Sphinx is a mulit-language documentation tool.  This project extends
+it's functionality to cover Common Lisp. The aim is to support
+documentation with the same ease as Sphinx would a Python project.
+
+Currently the project supports inspection based documentation of
+symbols.
+
+`Documentation`_
+
+CLDomain is licensed under the `GPLv3`_. Please report any bugs in the
+`Mailing List`_.
+
+An example of the generated documentation is the `cl-git`_ project.
+
+.. _Documentation: https://sphinxcontrib-cldomain.russellsim.org/
+.. _cl-git: http://cl-git.russellsim.org/
+.. _Sphinx Documentation Generator: https://www.sphinx-doc.org/
+.. _Mailing List: https://lists.sr.ht/~rsl/sphinxcontrib-cldomain
+.. _GPLv3: https://www.gnu.org/licenses/gpl-3.0-standalone.html
