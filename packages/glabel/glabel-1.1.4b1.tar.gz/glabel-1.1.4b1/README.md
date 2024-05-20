@@ -1,0 +1,55 @@
+# G-Label
+
+A FastAPI-based image classification application for annotation. This package allows users to set an image folder, classify images into different categories, and provides an undo feature to correct mistakes. It is designed for fast and efficient annotation workflows.
+
+## Installation
+
+To install the package, ensure you have Python 3.6 or later installed. You can install `glabel` from PyPi using `pip`:
+
+```bash
+pip install glabel
+```
+
+## Usage
+Once installed, you can start the FastAPI application using the CLI command `glabel`:
+```bash
+glabel
+```
+This will start a FastAPI server, usually running on http://127.0.0.1:8000/. Open this URL in a web browser to access the application.
+
+## Setting the Folder and Classes
+- Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in a browser.
+- Use the provided form to set the folder where your images are stored.
+- Enter the classes/categories for classification as a comma-separated list.
+
+## Classifying Images
+After setting the image folder and classes:
+
+1. Click the "Go to Classify" link to start the classification process.
+2. You will see an image displayed in a consistent container with classification buttons below it.
+3. Click the appropriate button to classify the image into that category.
+4. After classification, the next image is automatically displayed for further classification.
+
+## Undoing a Classification
+If you need to undo the last classification:
+
+- Click the "Undo Last Classification" button, which appears beside the classification buttons.
+- The previously classified image will be restored to its original state, allowing you to reclassify it.
+
+## Contributing
+We welcome contributions to glabel. To contribute:
+
+1. Fork this repository on GitHub.
+2. Create a new branch for your changes.
+3. Open a pull request with a description of your changes.
+
+## License
+This project is licensed under the MIT License. You can find a copy of the license in the project repository.
+
+## Additional Resources
+- For more information on FastAPI, visit the [FastAPI documentation](https://fastapi.tiangolo.com/).
+- For questions or support, you can create an issue on GitHub.
+
+## Contact
+For questions, support, or collaboration, you can reach out to [gaurang.ingle@gmail.com](mailto:gaurang.ingle@gmail.com).
+
