@@ -1,0 +1,131 @@
+# This file is used to manually specify the semi-automatic conversion of
+# 'nipype.interfaces.afni.utils.Edge3' from Nipype to Pydra.
+#
+# Please fill-in/edit the fields below where appropriate
+#
+# Inputs
+# ------
+# in_file : file
+#    input file to 3dedge3
+# out_file : file
+#    output image file name
+# datum : enum
+#    specify data type for output. Valid types are 'byte', 'short' and 'float'.
+# fscale : bool
+#    Force scaling of the output to the maximum integer range.
+# gscale : bool
+#    Same as '-fscale', but also forces each output sub-brick to to get the same scaling factor.
+# nscale : bool
+#    Don't do any scaling on output to byte or short datasets.
+# scale_floats : float
+#    Multiply input by VAL, but only if the input datum is float. This is needed when the input dataset has a small range, like 0 to 2.0 for instance. With such a range, very few edges are detected due to what I suspect to be truncation problems. Multiplying such a dataset by 10000 fixes the problem and the scaling is undone at the output.
+# verbose : bool
+#    Print out some information along the way.
+# num_threads : int
+#    set number of threads
+# outputtype : enum
+#    AFNI output filetype
+# args : str
+#    Additional parameters to the command
+# environ : dict
+#    Environment variables
+#
+# Outputs
+# -------
+# out_file : file
+#    output file
+#
+# Docs
+# ----
+# Does 3D Edge detection using the library 3DEdge
+#     by Gregoire Malandain.
+# 
+#     For complete details, see the `3dedge3 Documentation.
+#     <https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dedge3.html>`_
+# 
+#     Examples
+#     --------
+#     >>> from nipype.interfaces import afni
+#     >>> edge3 = afni.Edge3()
+#     >>> edge3.inputs.in_file = 'functional.nii'
+#     >>> edge3.inputs.out_file = 'edges.nii'
+#     >>> edge3.inputs.datum = 'byte'
+#     >>> edge3.cmdline
+#     '3dedge3 -input functional.nii -datum byte -prefix edges.nii'
+#     >>> res = edge3.run()  # doctest: +SKIP
+# 
+#     
+task_name: edge3
+nipype_name: Edge3
+nipype_module: nipype.interfaces.afni.utils
+inputs:
+  omit:
+  # list[str] - fields to omit from the Pydra interface
+  rename:
+  # dict[str, str] - fields to rename in the Pydra interface
+  types:
+  # dict[str, type] - override inferred types (use "mime-like" string for file-format types,
+  # e.g. 'medimage/nifti-gz'). For most fields the type will be correctly inferred
+  # from the nipype interface, but you may want to be more specific, particularly
+  # for file types, where specifying the format also specifies the file that will be
+  # passed to the field in the automatically generated unittests.
+    in_file: medimage/nifti1
+    out_file: medimage/nifti1
+  metadata:
+  # dict[str, dict[str, any]] - additional metadata to set on any of the input fields (e.g. out_file: position: 1)
+outputs:
+  omit:
+  # list[str] - fields to omit from the Pydra interface
+  rename:
+  # dict[str, str] - fields to rename in the Pydra interface
+  types:
+  # dict[str, type] - override inferred types (use "mime-like" string for file-format types,
+  # e.g. 'medimage/nifti-gz'). For most fields the type will be correctly inferred
+  # from the nipype interface, but you may want to be more specific, particularly
+  # for file types, where specifying the format also specifies the file that will be
+  # passed to the field in the automatically generated unittests.
+    out_file: medimage/nifti1
+  callables:
+  # dict[str, str] - names of methods/callable classes defined in the adjacent `*_callables.py`
+  # to set to the `callable` attribute of output fields
+  templates:
+  # dict[str, str] - `output_file_template` values to be provided to output fields
+  requirements:
+  # dict[str, list[str]] - input fields that are required to be provided for the output field to be present
+tests:
+- inputs:
+  # dict[str, str] - values to provide to inputs fields in the task initialisation
+  # (if not specified, will try to choose a sensible value)
+    in_file:
+    out_file:
+    datum: '"byte"'
+  imports:
+  # list[nipype2pydra.task.importstatement] - list import statements required by the test, with each list item
+  # consisting of 'module', 'name', and optionally 'alias' keys
+  expected_outputs:
+  # dict[str, str] - expected values for selected outputs, noting that tests will typically
+  # be terminated before they complete for time-saving reasons, and therefore
+  # these values will be ignored, when running in CI
+  timeout: 10
+  # int - the value to set for the timeout in the generated test, 
+  # after which the test will be considered to have been initialised 
+  # successfully. Set to 0 to disable the timeout (warning, this could
+  # lead to the unittests taking a very long time to complete)
+  xfail: true
+  # bool - whether the unittest is expected to fail or not. Set to false
+  # when you are satisfied with the edits you have made to this file
+doctests:
+- cmdline: 3dedge3 -input functional.nii -datum byte -prefix edges.nii
+  # str - the expected cmdline output
+  inputs:
+  # dict[str, str] - name-value pairs for inputs to be provided to the doctest.
+  # If the field is of file-format type and the value is None, then the
+  # '.mock()' method of the corresponding class is used instead.
+    in_file:
+    out_file:
+    datum: '"byte"'
+  imports:
+  # list[nipype2pydra.task.importstatement] - list import statements required by the test, with each list item
+  # consisting of 'module', 'name', and optionally 'alias' keys
+  directive: ''''
+  # str - any doctest directive to place on the cmdline call, e.g. # doctest: +ELLIPSIS

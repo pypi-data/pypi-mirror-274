@@ -1,0 +1,118 @@
+# This file is used to manually specify the semi-automatic conversion of
+# 'nipype.interfaces.afni.svm.SVMTrain' from Nipype to Pydra.
+#
+# Please fill-in/edit the fields below where appropriate
+#
+# Inputs
+# ------
+# ttype : str
+#    tname: classification or regression
+# in_file : file
+#    A 3D+t AFNI brik dataset to be used for training.
+# out_file : file
+#    output sum of weighted linear support vectors file name
+# model : file
+#    basename for the brik containing the SVM model
+# alphas : file
+#    output alphas file name
+# mask : file
+#    byte-format brik file used to mask voxels in the analysis
+# nomodelmask : bool
+#    Flag to enable the omission of a mask file
+# trainlabels : file
+#    .1D labels corresponding to the stimulus paradigm for the training data.
+# censor : file
+#    .1D censor file that allows the user to ignore certain samples in the training data.
+# kernel : str
+#    string specifying type of kernel function:linear, polynomial, rbf, sigmoid
+# max_iterations : int
+#    Specify the maximum number of iterations for the optimization.
+# w_out : bool
+#    output sum of weighted linear support vectors
+# options : str
+#    additional options for SVM-light
+# num_threads : int
+#    set number of threads
+# outputtype : enum
+#    AFNI output filetype
+# args : str
+#    Additional parameters to the command
+# environ : dict
+#    Environment variables
+#
+# Outputs
+# -------
+# out_file : file
+#    sum of weighted linear support vectors file name
+# model : file
+#    brik containing the SVM model file name
+# alphas : file
+#    output alphas file name
+#
+# Docs
+# ----
+# Temporally predictive modeling with the support vector machine
+#     SVM Train Only
+#     For complete details, see the `3dsvm Documentation.
+#     <https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dsvm.html>`_
+# 
+#     Examples
+#     ========
+# 
+#     >>> from nipype.interfaces import afni as afni
+#     >>> svmTrain = afni.SVMTrain()
+#     >>> svmTrain.inputs.in_file = 'run1+orig'
+#     >>> svmTrain.inputs.trainlabels = 'run1_categories.1D'
+#     >>> svmTrain.inputs.ttype = 'regression'
+#     >>> svmTrain.inputs.mask = 'mask.nii'
+#     >>> svmTrain.inputs.model = 'model_run1'
+#     >>> svmTrain.inputs.alphas = 'alphas_run1'
+#     >>> res = svmTrain.run() # doctest: +SKIP
+# 
+#     
+task_name: s_v_m_train
+nipype_name: SVMTrain
+nipype_module: nipype.interfaces.afni.svm
+inputs:
+  omit:
+  # list[str] - fields to omit from the Pydra interface
+  rename:
+  # dict[str, str] - fields to rename in the Pydra interface
+  types:
+  # dict[str, type] - override inferred types (use "mime-like" string for file-format types,
+  # e.g. 'medimage/nifti-gz'). For most fields the type will be correctly inferred
+  # from the nipype interface, but you may want to be more specific, particularly
+  # for file types, where specifying the format also specifies the file that will be
+  # passed to the field in the automatically generated unittests.
+    in_file: generic/file
+    out_file: generic/file
+    model: generic/file
+    alphas: generic/file
+    mask: generic/file
+    trainlabels: generic/file
+    censor: generic/file
+  metadata:
+  # dict[str, dict[str, any]] - additional metadata to set on any of the input fields (e.g. out_file: position: 1)
+outputs:
+  omit:
+  # list[str] - fields to omit from the Pydra interface
+  rename:
+  # dict[str, str] - fields to rename in the Pydra interface
+  types:
+  # dict[str, type] - override inferred types (use "mime-like" string for file-format types,
+  # e.g. 'medimage/nifti-gz'). For most fields the type will be correctly inferred
+  # from the nipype interface, but you may want to be more specific, particularly
+  # for file types, where specifying the format also specifies the file that will be
+  # passed to the field in the automatically generated unittests.
+    out_file: generic/file
+    model: generic/file
+    alphas: generic/file
+  callables:
+  # dict[str, str] - names of methods/callable classes defined in the adjacent `*_callables.py`
+  # to set to the `callable` attribute of output fields
+  templates:
+  # dict[str, str] - `output_file_template` values to be provided to output fields
+  requirements:
+  # dict[str, list[str]] - input fields that are required to be provided for the output field to be present
+tests: []
+doctests: []
