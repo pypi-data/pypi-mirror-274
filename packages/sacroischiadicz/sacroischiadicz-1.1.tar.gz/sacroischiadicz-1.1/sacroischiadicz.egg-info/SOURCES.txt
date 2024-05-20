@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sacroischiadicz/__init__.py
+sacroischiadicz/main.py
+sacroischiadicz.egg-info/PKG-INFO
+sacroischiadicz.egg-info/SOURCES.txt
+sacroischiadicz.egg-info/dependency_links.txt
+sacroischiadicz.egg-info/requires.txt
+sacroischiadicz.egg-info/top_level.txt
