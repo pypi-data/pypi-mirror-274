@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+schismaz/__init__.py
+schismaz/main.py
+schismaz.egg-info/PKG-INFO
+schismaz.egg-info/SOURCES.txt
+schismaz.egg-info/dependency_links.txt
+schismaz.egg-info/requires.txt
+schismaz.egg-info/top_level.txt
