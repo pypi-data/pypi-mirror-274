@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+leegtez/__init__.py
+leegtez/main.py
+leegtez.egg-info/PKG-INFO
+leegtez.egg-info/SOURCES.txt
+leegtez.egg-info/dependency_links.txt
+leegtez.egg-info/requires.txt
+leegtez.egg-info/top_level.txt
