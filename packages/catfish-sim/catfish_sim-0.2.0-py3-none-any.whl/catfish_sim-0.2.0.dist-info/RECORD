@@ -1,0 +1,11 @@
+catfish_sim/__init__.py,sha256=EO8W-Go8pPIFDTBrVcnX2PWqkXa0Hh9NfkvK95zNhaY,86
+catfish_sim/agents.py,sha256=kr1Y4Nvsk3MzNuqupReX_hiq7suHjhQ9CbWOsV3wQpQ,9937
+catfish_sim/compatibility.py,sha256=5F3wjnyEOydYxGjWfC9GbHKxGNmsBXKqKXVK9HfGs7o,15456
+catfish_sim/matchers.py,sha256=AWHWdOcYvlLJYCILl1qBNxR8P21tHelsj0vPDLwAO3c,37208
+catfish_sim/strategies.py,sha256=WBHijyTp8wX4NRKaCU1N52mpEZm9k8FgPBaOPKuj4Wg,5225
+catfish_sim/utils.py,sha256=KU07Qe6VlbDBu7_NKAPn2FiMLT38bXEGKdeM5Op_6bk,15783
+catfish_sim/data/LLCP2022_sex_age_height_bmi.csv,sha256=t-vIHybDvyWMnR1fHGCHjDPp0ZpkXn-44KXL6SPbB6Q,6555719
+catfish_sim-0.2.0.dist-info/METADATA,sha256=kbSD209GMxnOJnfdKID45pHJRZ27D1pAyA4_M4N4fXQ,46064
+catfish_sim-0.2.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+catfish_sim-0.2.0.dist-info/licenses/LICENSE,sha256=WhgfrBUvxlagnffN7g_hO0iLxPQtcMh2maGM_jADTzQ,35822
+catfish_sim-0.2.0.dist-info/RECORD,,
