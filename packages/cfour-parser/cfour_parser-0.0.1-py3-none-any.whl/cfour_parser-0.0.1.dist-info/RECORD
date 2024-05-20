@@ -1,0 +1,16 @@
+cfour_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfour_parser/__main__.py,sha256=GWhh-OonwsihMOWaGnNcmGQHX5R1N7E_xsnm9-NJIBI,1561
+cfour_parser/programs.py,sha256=0H0e05oqXPGUQyjwQ4PKymt0AZSwz70cJ98hWFnhaic,7778
+cfour_parser/text.py,sha256=23zHW6vYM6MEU_3AN8eQ0Co9aVDIAEUE4qxHCmYYBWA,2628
+cfour_parser/util.py,sha256=Q5YlFIPqC8gI7MbxPjhm2o_m1BvZdTgiiZrnhdqmPTo,1304
+cfour_parser/xdqcscf.py,sha256=Ly2cZqujQU27Az4qr79SB9eIAm6qcSoEWDHkBDzEbeI,3124
+cfour_parser/xjoda.py,sha256=Zn9neGCPAeB9HxSOPFuF0QvNbQZDV9uQY6pj4r-DAGo,15687
+cfour_parser/xncc.py,sha256=av-XM01E7xWoWWBmbqWOPrHVjMutTh3ZXpKrPrkESqA,17685
+cfour_parser/xsim.py,sha256=kRixZEj49MgoNezV7-Q0b-IJAAKzx629KwzrCgxUtYE,3962
+cfour_parser/xvee.py,sha256=pz0U-9Wr5R1YcRgETa3mNZrwF43xkHLcBlBNATPgQrM,10835
+cfour_parser/xvscf.py,sha256=FhJ2_sVeKlMpzZ7X4tYnj4KxDVej01TzztztQPZPoX4,5817
+cfour_parser-0.0.1.dist-info/METADATA,sha256=FHwGD1DsHU9lJhY1fzzLYlK8p_8xk4hS6o2d-sCD-Fk,17793
+cfour_parser-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cfour_parser-0.0.1.dist-info/entry_points.txt,sha256=uMUuuzwS6nqc9Uh1qy-q9LEsZD2-SMJoLZViXHt_prw,60
+cfour_parser-0.0.1.dist-info/top_level.txt,sha256=WktwgL2nkPDGxTFpxJH9zIrLOLROPZe_a0xlcRWzGaI,13
+cfour_parser-0.0.1.dist-info/RECORD,,
