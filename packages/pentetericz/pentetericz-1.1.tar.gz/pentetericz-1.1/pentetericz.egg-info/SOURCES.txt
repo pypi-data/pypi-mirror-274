@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pentetericz/__init__.py
+pentetericz/main.py
+pentetericz.egg-info/PKG-INFO
+pentetericz.egg-info/SOURCES.txt
+pentetericz.egg-info/dependency_links.txt
+pentetericz.egg-info/requires.txt
+pentetericz.egg-info/top_level.txt
