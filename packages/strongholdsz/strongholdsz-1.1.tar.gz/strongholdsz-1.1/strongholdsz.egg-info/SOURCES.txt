@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+strongholdsz/__init__.py
+strongholdsz/main.py
+strongholdsz.egg-info/PKG-INFO
+strongholdsz.egg-info/SOURCES.txt
+strongholdsz.egg-info/dependency_links.txt
+strongholdsz.egg-info/requires.txt
+strongholdsz.egg-info/top_level.txt
