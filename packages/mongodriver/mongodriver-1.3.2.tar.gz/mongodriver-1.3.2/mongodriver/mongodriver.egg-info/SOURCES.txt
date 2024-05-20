@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mongodriver/mongodriver.egg-info/PKG-INFO
+mongodriver/mongodriver.egg-info/SOURCES.txt
+mongodriver/mongodriver.egg-info/dependency_links.txt
+mongodriver/mongodriver.egg-info/requires.txt
+mongodriver/mongodriver.egg-info/top_level.txt
