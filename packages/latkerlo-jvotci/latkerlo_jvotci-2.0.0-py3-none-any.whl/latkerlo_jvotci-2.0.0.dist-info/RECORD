@@ -1,0 +1,13 @@
+latkerlo_jvotci-2.0.0.dist-info/METADATA,sha256=UWJbxFvCnrdp5y9nm6yxVeaiVSV4HAyAI6B6jQBzVY8,7090
+latkerlo_jvotci-2.0.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+latkerlo_jvotci-2.0.0.dist-info/licenses/LICENSE.md,sha256=YPFenemb0lF4xDizq19qHfd2UIHeKnNaa_z4hT-3-qo,4992
+latkerlo_jvotci/.DS_Store,sha256=_vSF8UrWlRwsnx0oHw7Yip1kpuCMDAfVIRr2dfxVIUI,6148
+latkerlo_jvotci/__init__.py,sha256=KKuZ0nyrfpjhu9oLqec0QLVMcSVfYg6ydlZpiZuBApc,496
+latkerlo_jvotci/data.py,sha256=BmfNizm48j9dLda90Uqo7yTKmQEBhcLtrOrcYDWW4rs,3165
+latkerlo_jvotci/exceptions.py,sha256=fdYQjiQTrIdYMhbjDgZV-OkXaSHECM9hE3MECtmRiUk,754
+latkerlo_jvotci/jvozba.py,sha256=1rQsv7dPqylpSxUcz166ph1Jf21-h1BGoF6NKVQn8H4,22803
+latkerlo_jvotci/katna.py,sha256=9efEXVBPAqc-kO0tBKR2e6WoLJe_5Um9hFDxwulwGcI,11525
+latkerlo_jvotci/rafsi.py,sha256=l7kfkuxbbE7Y-_Fo0lKOnrupIY5KtT3smI-9WJz427Q,41928
+latkerlo_jvotci/tarmi.py,sha256=7hNC9MOPHmsRXI7NkV607YGmxsTMQmz7XVT30NyJ-6Q,9588
+latkerlo_jvotci/tools.py,sha256=3ZEvn3DnnVHzOD6NTra5NCg8YSqftPwBe_izS-LNSU0,16815
+latkerlo_jvotci-2.0.0.dist-info/RECORD,,
