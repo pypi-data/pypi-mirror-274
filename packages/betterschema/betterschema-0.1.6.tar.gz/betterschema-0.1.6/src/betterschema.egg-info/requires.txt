@@ -1,0 +1,8 @@
+PyYAML
+
+[dev]
+unittest
+black
+build
+isort
+pylint
