@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+2.7.0
+-----
+
+* Add py.typed. (#123)
+* add kwargs error\_ok for screenshot (#118), fix window\_size on tablelet, fix adb-server not start on windows
+* feat(shell): add brightness\_value and brightness\_mode (#115)
+* add push file to dir support, close #101 (#117)
+* change back to old ways forward
+* fix forward\_list
+* add test for battery()
+* feat(shell): Add battery function (#113)
+* update forward to drain the extra output
+* add host:tport:serial test case
