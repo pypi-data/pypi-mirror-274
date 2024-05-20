@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+outratingz/__init__.py
+outratingz/main.py
+outratingz.egg-info/PKG-INFO
+outratingz.egg-info/SOURCES.txt
+outratingz.egg-info/dependency_links.txt
+outratingz.egg-info/requires.txt
+outratingz.egg-info/top_level.txt
