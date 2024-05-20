@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pipy-test-xiaoqiang
+Version: 1.0.1
+Author: Ma Xiaoqiang
+Author-email: 851788096@qq.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+
