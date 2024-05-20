@@ -1,0 +1,9 @@
+cmdline_provenance/__init__.py,sha256=fCzYKfsKVlJXG1ojZToE76zXoqMQNXfwM05lLh3-wss,252
+cmdline_provenance/_version.py,sha256=wHoLjrZ54hNRpjl9lNzcyCX1k7Kl-pu6Wg9IimhAaUs,509
+cmdline_provenance/cmdline_provenance.py,sha256=hfHcbtjplPXXXtf_ye-SyWVGIMUWCbNWuE5aGFMxlBA,6601
+cmdline_provenance/test_script.py,sha256=aY5VeMTOtytphJnnb1iGZ2-nIXSWK78D9AMA-7pYsWk,1108
+cmdline_provenance-1.1.0.dist-info/LICENSE,sha256=IDVS5gKCODeISCqYY0GRWFEbmp73ybmdXpvW7_o8MV4,1069
+cmdline_provenance-1.1.0.dist-info/METADATA,sha256=QiQrPSmgYWCTYdiT7AS-Bi_0Y_wk2vrE5lX6yFYtk-8,2500
+cmdline_provenance-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cmdline_provenance-1.1.0.dist-info/top_level.txt,sha256=sGqQ7eC8s8PGKjbpXOcge27ZA8QJ2aROnw3imtmYKEc,19
+cmdline_provenance-1.1.0.dist-info/RECORD,,
