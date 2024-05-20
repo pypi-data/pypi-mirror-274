@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+musicologiesz/__init__.py
+musicologiesz/main.py
+musicologiesz.egg-info/PKG-INFO
+musicologiesz.egg-info/SOURCES.txt
+musicologiesz.egg-info/dependency_links.txt
+musicologiesz.egg-info/requires.txt
+musicologiesz.egg-info/top_level.txt
