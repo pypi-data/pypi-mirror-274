@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fumadosz/__init__.py
+fumadosz/main.py
+fumadosz.egg-info/PKG-INFO
+fumadosz.egg-info/SOURCES.txt
+fumadosz.egg-info/dependency_links.txt
+fumadosz.egg-info/requires.txt
+fumadosz.egg-info/top_level.txt
