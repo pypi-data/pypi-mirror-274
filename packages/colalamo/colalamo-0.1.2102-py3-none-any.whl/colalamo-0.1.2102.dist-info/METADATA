@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: colalamo
+Version: 0.1.2102
+Summary: direct api via copilot to its large language models
+Author: tolitius
+Project-URL: Homepage, https://github.com/tolitius/colalamo
+Project-URL: Documentation, https://github.com/tolitius/colalamo?tab=readme-ov-file#-colalamo
+Project-URL: Repository, https://github.com/tolitius/colalamo
+Project-URL: Issues, https://github.com/tolitius/colalamo/issues
+Keywords: ai,copilot,github,gpt,openai,code generation
+Description-Content-Type: text/markdown
+
