@@ -1,0 +1,3 @@
+# TODO N: Handle different sensor data types
+# TODO N: Paging support for plant_search
+# TODO N: DEBUG of jts doc payload in not readable
