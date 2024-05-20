@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+presidialz/__init__.py
+presidialz/main.py
+presidialz.egg-info/PKG-INFO
+presidialz.egg-info/SOURCES.txt
+presidialz.egg-info/dependency_links.txt
+presidialz.egg-info/requires.txt
+presidialz.egg-info/top_level.txt
