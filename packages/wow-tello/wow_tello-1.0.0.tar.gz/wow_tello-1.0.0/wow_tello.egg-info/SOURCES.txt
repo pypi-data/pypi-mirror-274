@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+wow_tello.egg-info/PKG-INFO
+wow_tello.egg-info/SOURCES.txt
+wow_tello.egg-info/dependency_links.txt
+wow_tello.egg-info/not-zip-safe
+wow_tello.egg-info/top_level.txt
+wowtello/__init__.py
+wowtello/wowtello.py

@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+  "pip",
+]
+
+[project]
+readme = "README.md"
+keywords=['wowsystem', 'Drone', 'Tello', 'Tello Edu', 'Tello TT', 'DJI']
