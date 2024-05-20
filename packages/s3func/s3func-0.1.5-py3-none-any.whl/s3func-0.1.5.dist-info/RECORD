@@ -1,0 +1,10 @@
+s3func/__init__.py,sha256=5sCxerK12EsH5QdjwK3w_5kcbAqkxWA_itj_ywBYjJQ,394
+s3func/main.py,sha256=vT1FZUr13Ay8YUxqC9Vff1-jQvFW8nrjOSDg-9ruBLo,21923
+s3func/utils.py,sha256=HYtKPxFvkRMNnVSjYU0muWXKfT6BVGMtpwF9G3Udl30,9486
+s3func/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3func/tests/stns_data.blt,sha256=J3X_tByK5T-cOpLCyXw52BB6zeBzZqPusTx6vW9eAHY,285095
+s3func/tests/test_s3func.py,sha256=pPTYYCy26M2VvvoygbWlxmPaNiaBNwUNSLfOFPJOClg,6005
+s3func-0.1.5.dist-info/METADATA,sha256=Tkf1U3wn1QaI61EKMd7UjAkv0UOvjraHeXTvx_ROWG8,2212
+s3func-0.1.5.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+s3func-0.1.5.dist-info/licenses/LICENSE,sha256=RWtzUOqfgUOaV_WEmHCfI0OSG3pnXjpLwBKBZy0nGbo,586
+s3func-0.1.5.dist-info/RECORD,,
