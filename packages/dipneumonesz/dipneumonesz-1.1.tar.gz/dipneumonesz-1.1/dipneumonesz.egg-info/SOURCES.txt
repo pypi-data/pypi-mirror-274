@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dipneumonesz/__init__.py
+dipneumonesz/main.py
+dipneumonesz.egg-info/PKG-INFO
+dipneumonesz.egg-info/SOURCES.txt
+dipneumonesz.egg-info/dependency_links.txt
+dipneumonesz.egg-info/requires.txt
+dipneumonesz.egg-info/top_level.txt
