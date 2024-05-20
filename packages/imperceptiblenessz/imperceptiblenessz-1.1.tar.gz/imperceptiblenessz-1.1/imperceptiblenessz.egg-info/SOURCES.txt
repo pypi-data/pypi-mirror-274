@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+imperceptiblenessz/__init__.py
+imperceptiblenessz/main.py
+imperceptiblenessz.egg-info/PKG-INFO
+imperceptiblenessz.egg-info/SOURCES.txt
+imperceptiblenessz.egg-info/dependency_links.txt
+imperceptiblenessz.egg-info/requires.txt
+imperceptiblenessz.egg-info/top_level.txt
