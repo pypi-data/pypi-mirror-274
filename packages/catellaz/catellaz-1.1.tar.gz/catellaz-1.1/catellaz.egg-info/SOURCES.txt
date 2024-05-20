@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+catellaz/__init__.py
+catellaz/main.py
+catellaz.egg-info/PKG-INFO
+catellaz.egg-info/SOURCES.txt
+catellaz.egg-info/dependency_links.txt
+catellaz.egg-info/requires.txt
+catellaz.egg-info/top_level.txt
