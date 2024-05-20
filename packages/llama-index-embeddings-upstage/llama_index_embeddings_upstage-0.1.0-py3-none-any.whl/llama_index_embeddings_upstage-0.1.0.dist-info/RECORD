@@ -1,0 +1,7 @@
+llama_index/embeddings/upstage/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/embeddings/upstage/__init__.py,sha256=j5B4DIYu6QIEd--wxTKRDrKtindbYj2NbacgRRX6raM,98
+llama_index/embeddings/upstage/base.py,sha256=dDE9r0M9rqyF_TlrEB6OW-LT0FsXAajIgmoq4AXSb6Q,7365
+llama_index/embeddings/upstage/utils.py,sha256=FofSCtwh_FasWfDqSxy2bu98kWLU-epQJmkCYpLAZDI,2171
+llama_index_embeddings_upstage-0.1.0.dist-info/METADATA,sha256=G8Wj7xme4fNa0zalskTmy22Py6DPu0KQ_ig20Rdkeo8,1234
+llama_index_embeddings_upstage-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_embeddings_upstage-0.1.0.dist-info/RECORD,,
