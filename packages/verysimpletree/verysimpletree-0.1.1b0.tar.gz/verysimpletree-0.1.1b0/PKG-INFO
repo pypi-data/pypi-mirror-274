@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: verysimpletree
+Version: 0.1.1b0
+Summary: lightweight tree data structure for musicxml and musicscore
+Home-page: https://github.com/alexgorji/verysimpletree.git
+Author: Alex Gorji
+Author-email: aligorji@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+An abstract lightweight tree class for managing tree structures in musicxml and musicscore packages.
