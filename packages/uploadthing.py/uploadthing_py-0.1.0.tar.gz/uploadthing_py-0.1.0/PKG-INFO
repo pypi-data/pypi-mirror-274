@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: uploadthing.py
+Version: 0.1.0
+Summary: Python SDK for UploadThing
+License: MIT
+Author: juliusmarminge
+Author-email: julius0216@outlook.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Description-Content-Type: text/markdown
+
+
