@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mattoidz/__init__.py
+mattoidz/main.py
+mattoidz.egg-info/PKG-INFO
+mattoidz.egg-info/SOURCES.txt
+mattoidz.egg-info/dependency_links.txt
+mattoidz.egg-info/requires.txt
+mattoidz.egg-info/top_level.txt
