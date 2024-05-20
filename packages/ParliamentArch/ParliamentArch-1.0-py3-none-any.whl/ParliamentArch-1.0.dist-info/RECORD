@@ -1,0 +1,10 @@
+parliamentarch/__init__.py,sha256=J3o4RW2mM8sdPOqWK5fTdBUOriT51dydzm22z1d55-4,1234
+parliamentarch/__main__.py,sha256=96xHY1o5t5uft3dX726D0f0AInwHc-WVH0hf3bBhU18,2365
+parliamentarch/_util.py,sha256=BAOMnDJsIoh4RixCw8yTlgGc_laNJYDMy0fvR2vNFV4,2536
+parliamentarch/geometry.py,sha256=dLBZ2nMiVHn3YIcTmjPen1UdMpbPwwKiPlE115fcw-Q,8869
+parliamentarch/svg.py,sha256=q38RtZJx4olU4rKyNToDLHialAI8yFgzg6t-g4ZCglg,6347
+ParliamentArch-1.0.dist-info/LICENSE,sha256=JSVDhfP19uI431F9LJ681gICNjIfLE_gvd6v_KM2qqA,1499
+ParliamentArch-1.0.dist-info/METADATA,sha256=-FiRsrPwHDc0PQeY0Y9W9COSny7oXtyUMvfWCFaFGW8,14343
+ParliamentArch-1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ParliamentArch-1.0.dist-info/top_level.txt,sha256=Z5heCx41jhcg-_bwLQpQ-wSXuram1E7sk75XIFlzIlA,15
+ParliamentArch-1.0.dist-info/RECORD,,
