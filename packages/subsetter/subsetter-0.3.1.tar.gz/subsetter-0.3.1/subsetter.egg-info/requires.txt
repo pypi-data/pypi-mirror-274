@@ -1,0 +1,17 @@
+sqlalchemy[mypy]~=2.0
+pydantic~=2.6
+pyyaml~=6.0
+faker~=19.3
+typing-extensions
+
+[all]
+sqlalchemy[postgresql_psycopg2binary,pymysql]
+
+[postgresql]
+sqlalchemy[postgresql]
+
+[postgresql_psycopg2binary]
+sqlalchemy[postgresql_psycopg2binary]
+
+[pymysql]
+sqlalchemy[pymysql]
