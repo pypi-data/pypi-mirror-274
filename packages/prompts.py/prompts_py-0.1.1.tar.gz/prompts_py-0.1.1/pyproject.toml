@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "prompts.py"
+dynamic = ["version"]
+description = 'Beautiful prompts for Python.'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "ZeroIntensity", email = "zintensitydev@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["colorama", "typing_extensions"]
+
+[project.optional-dependencies]
+click = ["click"]
+
+[project.urls]
+Documentation = "https://github.com/ZeroIntensity/prompts.py#readme"
+Issues = "https://github.com/ZeroIntensity/prompts.py/issues"
+Source = "https://github.com/ZeroIntensity/prompts.py"
+
+[tool.hatch.version]
+path = "src/prompts/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+
+[tool.hatch.envs.docs]
+dependencies = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings[python]"
+]
+
+[tool.hatch.envs.docs.scripts]
+build = "mkdocs build"
+
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:prompts tests}"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/prompts"]
+
+[tool.coverage.run]
+source_pkgs = ["src/prompts", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/prompts/__about__.py",
+]
+
+[tool.coverage.paths]
+prompts = ["src/prompts"]
+tests = ["tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
