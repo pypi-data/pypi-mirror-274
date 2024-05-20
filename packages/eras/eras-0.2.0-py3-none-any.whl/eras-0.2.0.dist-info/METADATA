@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: eras
+Version: 0.2.0
+Summary: A terminal command library that provides a Natural Language Interface for running shell commands.
+Home-page: https://github.com/jasonmcaffee/eras
+Author: Jason McAffee
+Author-email: jasonlmcaffee@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai ==1.26.0
+Requires-Dist: keyboard ==0.13.5
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: asyncio ==3.4.3
+
+# ERAS
+Easily Run AI Shell
+Marcus AI is an AI agent capable of performing actions.
