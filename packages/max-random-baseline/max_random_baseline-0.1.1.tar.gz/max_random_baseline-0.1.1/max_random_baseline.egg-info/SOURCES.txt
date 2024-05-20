@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+max_random_baseline/__init__.py
+max_random_baseline/max_random_baseline.py
+max_random_baseline.egg-info/PKG-INFO
+max_random_baseline.egg-info/SOURCES.txt
+max_random_baseline.egg-info/dependency_links.txt
+max_random_baseline.egg-info/requires.txt
+max_random_baseline.egg-info/top_level.txt
+max_random_baseline/poibin/__init__.py
+max_random_baseline/poibin/poibin.py
