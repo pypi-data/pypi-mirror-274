@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hakuir
+Version: 0.0.4
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: einops
+Requires-Dist: thop
+Requires-Dist: timm
+Requires-Dist: toml
