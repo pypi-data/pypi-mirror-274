@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shelflikez/__init__.py
+shelflikez/main.py
+shelflikez.egg-info/PKG-INFO
+shelflikez.egg-info/SOURCES.txt
+shelflikez.egg-info/dependency_links.txt
+shelflikez.egg-info/requires.txt
+shelflikez.egg-info/top_level.txt
