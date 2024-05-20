@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spatchcockz/__init__.py
+spatchcockz/main.py
+spatchcockz.egg-info/PKG-INFO
+spatchcockz.egg-info/SOURCES.txt
+spatchcockz.egg-info/dependency_links.txt
+spatchcockz.egg-info/requires.txt
+spatchcockz.egg-info/top_level.txt
