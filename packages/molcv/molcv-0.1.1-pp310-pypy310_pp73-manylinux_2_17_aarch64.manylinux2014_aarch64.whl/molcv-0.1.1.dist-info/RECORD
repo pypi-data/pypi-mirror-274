@@ -1,0 +1,7 @@
+molcv-0.1.1.dist-info/METADATA,sha256=sCfemyjVD7ycar-OGdyydg9pQhYHswUAUqntvJzITxQ,135
+molcv-0.1.1.dist-info/WHEEL,sha256=FS_UKX4Sxwyy9EcN9I5cxI2O0T9AvgXi2y9j-kIWXPQ,138
+molcv-0.1.1.dist-info/entry_points.txt,sha256=dEJQ-Ysl7kajZ3HGcykZFIz-qbqhl6DWUgslKjD6fO4,34
+molcv/__main__.py,sha256=0lAZm8FaZZEBkXMq74t3qE3YvSgnCTIMsQT53I1DVhY,26
+molcv/__init__.py,sha256=pmaXcpn6aRZErbK1_BYP-nHltct_xk-KiDSzKDW3qts,2411
+molcv/_molcv.pypy310-pp73-aarch64-linux-gnu.so,sha256=6biWq1WpXj3QNRCXNOkaVnvSdprLSA_UG2FwI8zp-M8,12466776
+molcv-0.1.1.dist-info/RECORD,,
