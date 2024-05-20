@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/AnsiColorPrinter.py
+src/__init__.py
+src/AnsiColorPrinter.egg-info/PKG-INFO
+src/AnsiColorPrinter.egg-info/SOURCES.txt
+src/AnsiColorPrinter.egg-info/dependency_links.txt
+src/AnsiColorPrinter.egg-info/top_level.txt
