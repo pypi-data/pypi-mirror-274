@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+movoid_debug/__init__.py
+movoid_debug/flow.py
+movoid_debug/simple_debug.py
+movoid_debug.egg-info/PKG-INFO
+movoid_debug.egg-info/SOURCES.txt
+movoid_debug.egg-info/dependency_links.txt
+movoid_debug.egg-info/requires.txt
+movoid_debug.egg-info/top_level.txt
