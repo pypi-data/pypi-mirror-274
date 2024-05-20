@@ -1,0 +1,15 @@
+GEOdb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GEOdb/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GEOdb/common/configs.py,sha256=xJFmY88YHjYLD0kXW-xdwWpjmBxhX8Kj6vvaIrjusvU,331
+GEOdb/common/types.py,sha256=0tHfvFtZUsxyBgwQoZ0W6hjxiGs4l6TjoY5s6IY595Q,328
+GEOdb/common/web.py,sha256=vFLjs_IvkwEvlocawKtEfXTGV12cJas9nVNrR8W7WyA,163
+GEOdb/parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GEOdb/parser/series.py,sha256=o-cIxurUteB0AJNWBpjRj1ZTfsD4DRr8L1tErA7Mt_M,3820
+GEOdb/scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GEOdb/scraper/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GEOdb/scraper/series.py,sha256=KEhZj36U3nWF7KciI-HuMGKcgRQkP4ongmr645l7HdU,5231
+GEOdb-0.1.0.dist-info/LICENSE,sha256=UjMMab21WvI5XPa9y3drcVFgKSoYnaJ6y5h0jskfpQg,38408
+GEOdb-0.1.0.dist-info/METADATA,sha256=gh_obMHAayOg_gJQxkUuYmPvBs0VE8QVrVPGKYg3keg,45857
+GEOdb-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+GEOdb-0.1.0.dist-info/top_level.txt,sha256=MxYE6Pouw0orQpAeNsAnMNMZITWHYliSSLQOvLmaJ6o,6
+GEOdb-0.1.0.dist-info/RECORD,,
