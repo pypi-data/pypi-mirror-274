@@ -1,0 +1,11 @@
+ttmask/__init__.py,sha256=fqjvig3u22ES2wfluDzLHz3EosZKnY_SQ03Q0A2gDnY,393
+ttmask/_cli.py,sha256=nGHzKOj5_5Xz88IUV-_QrezC9pw4BaW28dygVxaL9Qk,46
+ttmask/cuboid.py,sha256=5W2wVy2DJ7GcPHI8A3qSjHH-rxy_FaZMlOOQ-r_Ml-g,1751
+ttmask/cylinder.py,sha256=9OTluyXLcjD8t7V7jQT1dTZoM1_QD6Xn37oG6hhsacQ,1668
+ttmask/py.typed,sha256=esB4cHc6c07uVkGtqf8at7ttEnprwRxwk8obY8Qumq4,187
+ttmask/sphere.py,sha256=fnwodmVxYSCLgI79sohBdbz4MYhXrmAPj5GKjbg6GNM,1385
+ttmask-0.0.5.dist-info/METADATA,sha256=FMvmePMabLTprJ9yCqiMDUYC5MD9WxSInk1hE4ybYSo,1897
+ttmask-0.0.5.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+ttmask-0.0.5.dist-info/entry_points.txt,sha256=biEmf0T0gUXlI1VNQHW3xZpNg820rr70y3Cn23U4A5E,38
+ttmask-0.0.5.dist-info/licenses/LICENSE,sha256=86woeR5SiqWhULG5IzF2yKa4cwBkDz9drHhMNYBtv-8,1499
+ttmask-0.0.5.dist-info/RECORD,,
