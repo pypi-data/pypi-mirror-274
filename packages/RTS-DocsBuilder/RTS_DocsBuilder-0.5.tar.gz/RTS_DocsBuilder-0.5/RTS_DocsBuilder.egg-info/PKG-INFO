@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: RTS-DocsBuilder
+Version: 0.5
+Summary: Create local documentations for your modules. Requires RTS_WebUIBuilder.
+Home-page: https://github.com/RandomTimeLP/RTS_Documentations
+Author: RandomTimeTV
+Author-email: dergepanzerte1@gmail.com
+License: MIT with required credit to the author.
+Keywords: Work in Progress,Documentations
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Work in Progress
+it is not recomendet to use this module as of now but you can still try
+Requires: RTS_WebUIBuiler
+
