@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eurepoc.incident_dataframes &#8212; EuRepoC 0.1.2 documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pydoctheme.css?v=bb723527" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="../../_static/pygments_dark.css?v=b20cc3f5" />
+    
+    <script src="../../_static/documentation_options.js?v=92734c54"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /><link rel="stylesheet" href="../../_static/pydoctheme_dark.css" media="(prefers-color-scheme: dark)" id="pydoctheme_dark_css">
+    <link rel="shortcut icon" type="image/png" href="../../_static/py.svg" />
+            <script type="text/javascript" src="../../_static/copybutton.js"></script>
+            <script type="text/javascript" src="../../_static/menu.js"></script>
+            <script type="text/javascript" src="../../_static/search-focus.js"></script>
+            <script type="text/javascript" src="../../_static/themetoggle.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <nav class="nav-content" role="navigation">
+        <label for="menuToggler" class="toggler__label">
+            <span></span>
+        </label>
+        <span class="nav-items-wrapper">
+            <a href="https://www.python.org/" class="nav-logo">
+                <img src="../../_static/py.svg" alt="Python logo"/>
+            </a>
+            <span class="version_switcher_placeholder"></span>
+            <form role="search" class="search" action="../../search.html" method="get">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                    <path fill-rule="nonzero" fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+                <input placeholder="Quick search" aria-label="Quick search" type="search" name="q" />
+                <input type="submit" value="Go"/>
+            </form>
+        </span>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <div class="language_switcher_placeholder"></div>
+            
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+          <li><img src="../../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="../../index.html">EuRepoC 0.1.2 documentation</a> &#187;
+              
+          </li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">eurepoc.incident_dataframes</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="../../search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="search" name="q" id="search-box" />
+          <input type="submit" value="Go" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for eurepoc.incident_dataframes</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">eurepoc.tables</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">model_to_dataframe</span><span class="p">,</span> <span class="n">process_main_data</span><span class="p">,</span> <span class="n">process_inclusion_criteria</span><span class="p">,</span> <span class="n">process_source_disclosure_data</span><span class="p">,</span>
+    <span class="n">process_incident_type_data</span><span class="p">,</span> <span class="n">process_receivers_data</span><span class="p">,</span> <span class="n">process_attributions_data</span><span class="p">,</span> <span class="n">process_attributions_bases_data</span><span class="p">,</span>
+    <span class="n">process_attributions_types_data</span><span class="p">,</span> <span class="n">process_attribution_countries_data</span><span class="p">,</span> <span class="n">process_attribution_actors_data</span><span class="p">,</span>
+    <span class="n">process_attribution_companies_data</span><span class="p">,</span> <span class="n">process_attribution_legal_references_data</span><span class="p">,</span> <span class="n">process_initiators_data</span><span class="p">,</span>
+    <span class="n">process_initiators_categories_data</span><span class="p">,</span> <span class="n">process_cyber_conflict_issues_data</span><span class="p">,</span> <span class="n">process_offline_conflict_issues_data</span><span class="p">,</span>
+    <span class="n">process_offline_conflict_intensities_data</span><span class="p">,</span> <span class="n">process_political_responses_data</span><span class="p">,</span> <span class="n">process_political_responses_type_data</span><span class="p">,</span>
+    <span class="n">process_technical_codings_data</span><span class="p">,</span> <span class="n">process_cyber_intensity_data</span><span class="p">,</span> <span class="n">process_mitre_initial_access_data</span><span class="p">,</span>
+    <span class="n">process_mitre_impact_data</span><span class="p">,</span> <span class="n">process_impact_indicator_data</span><span class="p">,</span> <span class="n">process_legal_codings_data</span><span class="p">,</span>
+    <span class="n">process_il_breach_indicator_data</span><span class="p">,</span> <span class="n">process_legal_responses_data</span><span class="p">,</span> <span class="n">process_legal_responses_type_data</span><span class="p">,</span>
+    <span class="n">process_source_urls_data</span><span class="p">,</span> <span class="n">process_source_names_data</span><span class="p">,</span> <span class="n">process_sources_attributions_data</span><span class="p">,</span> <span class="n">clean_initiators</span>
+<span class="p">)</span>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator">[docs]</a>
+<span class="k">class</span> <span class="nc">IncidentDataFrameGenerator</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A class used for returning pandas DataFrames for specific variables/aspects of the incident to enable analysis.</span>
+<span class="sd">    The different dfs can subsequently be joined through the `incident_id` column. Refer to the EuRepoC Codebook</span>
+<span class="sd">    for more information about the substantive meaning of each variable (i.e. df column).</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        incident_data (list): List of incident data dictionaries, retrieved by using the `execute_query()` method of the</span>
+<span class="sd">        `DatabaseQuery` class.</span>
+
+<span class="sd">    Note</span>
+<span class="sd">    ----------</span>
+<span class="sd">    The data within the returned dfs are &quot;exploded&quot; over multiple rows for variables that contain multiple</span>
+<span class="sd">    possible values. When performing analyses with pandas counting numbers of incidents, remember to use</span>
+<span class="sd">    the `nunique()` method instead of the `count()` method.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">incident_data</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">incident_data</span>
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_main_data">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_main_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_main_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, name, description, added_to_db, start_date, end_date, operation_type, status, updated_at,</span>
+<span class="sd">        number_attributions, number_political_responses, number_legal_responses, casualties&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_main_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_inclusion_criteria">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_inclusion_criteria">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_inclusion_criteria</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, inclusion_criterion, inclusion_criterion_subcode&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_inclusion_criteria</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_sources_of_disclosure">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_of_disclosure">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_sources_of_disclosure</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, source_disclosure&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_source_disclosure_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_operation_types">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_operation_types">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_operation_types</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, operation_type&quot;&quot;&quot;</span>
+        <span class="n">operation_types</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">incident</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
+            <span class="n">incident_dict</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s1">&#39;incident_id&#39;</span><span class="p">:</span> <span class="n">incident</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">],</span>
+                <span class="s1">&#39;operation_type&#39;</span><span class="p">:</span> <span class="n">incident</span><span class="p">[</span><span class="s1">&#39;incident_type_clean&#39;</span><span class="p">],</span>
+            <span class="p">}</span>
+            <span class="n">operation_types</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">incident_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">operation_types</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_incident_types">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_incident_types">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_incident_types</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, incident_type&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_incident_type_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_receivers">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_receivers">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_receivers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: receiver_id, incident_id, receiver_name, receiver_country, receiver_country_alpha_2_code, receiver_country_alpha_3_code,</span>
+<span class="sd">        receiver_category, receiver_subcategory, receiver_regions (this is a list)&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_receivers_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_attributions">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attributions">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_attributions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: attribution_id, incident_id, settled_attribution, attribution_date, attribution_updated_at,</span>
+<span class="sd">        attribution_created_at, attribution_basis, attribution_type, attribution_subtype, attributing_country, attributing_actor,</span>
+<span class="sd">        attributing_company, attribution_legal_reference, attribution_legal_reference_subcode, initiator_id,</span>
+<span class="sd">        initiator_name, initiator_country, initiator_category, initiator_subcategory&quot;&quot;&quot;</span>
+        <span class="n">attributions_main</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_attributions_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">attribution_bases</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_attributions_bases_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">attribution_types</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_attributions_types_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">attributing_country</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_attribution_countries_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">attributing_actors</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_attribution_actors_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">attributing_companies</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_attribution_companies_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">attribution_legal_ref</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_attribution_legal_references_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">attributions_df</span> <span class="o">=</span> <span class="n">attributions_main</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">attribution_bases</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;attribution_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
+        <span class="n">attributions_df</span> <span class="o">=</span> <span class="n">attributions_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">attribution_types</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;attribution_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
+        <span class="n">attributions_df</span> <span class="o">=</span> <span class="n">attributions_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">attributing_country</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;attribution_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
+        <span class="n">attributions_df</span> <span class="o">=</span> <span class="n">attributions_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">attributing_actors</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;attribution_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
+        <span class="n">attributions_df</span> <span class="o">=</span> <span class="n">attributions_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">attributing_companies</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;attribution_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
+        <span class="n">attributions_df</span> <span class="o">=</span> <span class="n">attributions_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">attribution_legal_ref</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;attribution_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
+        <span class="n">initiators_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_initiators</span><span class="p">(</span><span class="n">settled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">attributions_df</span> <span class="o">=</span> <span class="n">attributions_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">initiators_data</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;attribution_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;_drop&#39;</span><span class="p">))</span>
+        <span class="n">attributions_df</span> <span class="o">=</span> <span class="n">attributions_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">attributions_df</span> <span class="k">if</span> <span class="n">col</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;_drop&#39;</span><span class="p">)])</span>
+        <span class="k">return</span> <span class="n">attributions_df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_initiators">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_initiators">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_initiators</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">settled</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: initiator_id, incident_id, attribution_id, settled_initiator, initiator_name,</span>
+<span class="sd">        initiator_country, initiator_category, initiator_subcategory&quot;&quot;&quot;</span>
+        <span class="n">initiator_main</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_initiators_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">initiator_categories</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_initiators_categories_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">initiators_df</span> <span class="o">=</span> <span class="n">initiator_main</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">initiator_categories</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;initiator_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">clean_initiators</span><span class="p">(</span><span class="n">initiators_df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(),</span> <span class="n">settled</span><span class="o">=</span><span class="n">settled</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_cyber_conflict_issues">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_conflict_issues">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_cyber_conflict_issues</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, cyber_conflict_issue&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_cyber_conflict_issues_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_offline_conflicts">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_offline_conflicts">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_offline_conflicts</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, offline_conflict_issue, offline_conflict_name, offline_conflict_intensity,</span>
+<span class="sd">        offline_conflict_intensity_subcode&quot;&quot;&quot;</span>
+        <span class="n">issues</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_offline_conflict_issues_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">conflict_intensity</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_offline_conflict_intensities_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">conflicts_df</span> <span class="o">=</span> <span class="n">issues</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">conflict_intensity</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;incident_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">conflicts_df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_political_responses">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_political_responses">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_political_responses</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: political_response_id, incident_id, political_response_date, political_response_responding_country,</span>
+<span class="sd">        political_response_responding_actor, political_response_type, political_response_subtype&quot;&quot;&quot;</span>
+        <span class="n">pol_responses_main</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_political_responses_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">pol_responses_type</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_political_responses_type_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">pol_responses_df</span> <span class="o">=</span> <span class="n">pol_responses_main</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
+            <span class="n">pol_responses_type</span><span class="p">,</span>
+            <span class="n">on</span><span class="o">=</span><span class="s1">&#39;political_response_id&#39;</span><span class="p">,</span>
+            <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">,</span>
+            <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;_drop&#39;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">cleaned_df</span> <span class="o">=</span> <span class="n">pol_responses_df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">pol_responses_df</span> <span class="k">if</span> <span class="n">col</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;_drop&#39;</span><span class="p">)])</span>
+        <span class="k">return</span> <span class="n">cleaned_df</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_technical_variables">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_technical_variables">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_technical_variables</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, zero_days, zero_days_subcode, has_disruption, user_interaction&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_technical_codings_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_cyber_intensity_variables">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_intensity_variables">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_cyber_intensity_variables</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, disruption, hijacking, data_theft, physical_effects_spatial, physical_effects_temporal,</span>
+<span class="sd">        target_multiplier, unweighted_intensity, weighted_intensity&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_cyber_intensity_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_mitre_initial_access">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_initial_access">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_mitre_initial_access</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, mitre_initial_access&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_mitre_initial_access_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_mitre_impact">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_impact">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_mitre_impact</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, mitre_impact&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_mitre_impact_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_impact_indicator_variables">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_impact_indicator_variables">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_impact_indicator_variables</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, impact_indicator_score, impact_indicator_label, functional_impact, intelligence_impact,</span>
+<span class="sd">        economic_impact, economic_impact_value, economic_impact_currency, affected_entities, affected_entities_value,</span>
+<span class="sd">        affected_eu_countries, affected_eu_countries_value, affected_third_countries, affected_third_countries_value&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_impact_indicator_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_legal_variables">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_variables">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_legal_variables</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, state_responsibility_actor, evidence_for_sanctions_indicator, response_indicator&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_legal_codings_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_il_breach_indicator">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_il_breach_indicator">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_il_breach_indicator</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, il_breach_indicator, il_breach_indicator_subcode&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_il_breach_indicator_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_legal_responses">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_responses">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_legal_responses</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: legal_response_id, incident_id, legal_response_date, legal_response_responding_country,</span>
+<span class="sd">        legal_response_responding_actor, legal_response_type, legal_response_subtype&quot;&quot;&quot;</span>
+        <span class="n">leg_responses_main</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_legal_responses_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">leg_responses_type</span> <span class="o">=</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_legal_responses_type_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span>
+        <span class="n">leg_responses_df</span> <span class="o">=</span> <span class="n">leg_responses_main</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
+            <span class="n">leg_responses_type</span><span class="p">,</span>
+            <span class="n">on</span><span class="o">=</span><span class="s1">&#39;legal_response_id&#39;</span><span class="p">,</span>
+            <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">,</span>
+            <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;_drop&#39;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">cleaned_df</span> <span class="o">=</span> <span class="n">leg_responses_df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">leg_responses_df</span> <span class="k">if</span> <span class="n">col</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;_drop&#39;</span><span class="p">)])</span>
+        <span class="k">return</span> <span class="n">cleaned_df</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_sources_urls">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_urls">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_sources_urls</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: source_urls_id, incident_id, source_url&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_source_urls_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_source_names">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_source_names">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_source_names</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: source_url_id, incident_id, source_name&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_source_names_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IncidentDataFrameGenerator.get_attribution_sources">
+<a class="viewcode-back" href="../../IncidentDataFrameGenerator.html#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attribution_sources">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_attribution_sources</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Columns: incident_id, attribution_source_url&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">model_to_dataframe</span><span class="p">(</span><span class="n">process_sources_attributions_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">))</span></div>
+</div>
+
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+          <li><img src="../../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="../../index.html">EuRepoC 0.1.2 documentation</a> &#187;
+              
+          </li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">eurepoc.incident_dataframes</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="../../search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="search" name="q" id="search-box" />
+          <input type="submit" value="Go" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; 
+    Copyright
+     .
+    <br />
+    This page is licensed under the Python Software Foundation License Version 2.
+    <br />
+    Examples, recipes, and other code in the documentation are additionally licensed under the Zero Clause BSD License.
+    <br />
+    
+    
+    <br />
+
+    The Python Software Foundation is a non-profit corporation.
+<a href="https://www.python.org/psf/donations/">Please donate.</a>
+<br />
+    <br />
+    
+    <br />
+
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+
+  </body>
+</html>
