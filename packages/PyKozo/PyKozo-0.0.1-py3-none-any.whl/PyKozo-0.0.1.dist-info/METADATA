@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: PyKozo
+Version: 0.0.1
+Summary: PyKozo is a Python library that allows for complete web development using Python scripts.
+Home-page: https://github.com/miangeldev/pykozo
+Author: Miguel Nevado
+Author-email: miangeldev@proton.me
+License: MIT
+License-File: LICENSE
+
