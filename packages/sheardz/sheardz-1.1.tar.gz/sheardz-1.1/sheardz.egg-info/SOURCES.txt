@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sheardz/__init__.py
+sheardz/main.py
+sheardz.egg-info/PKG-INFO
+sheardz.egg-info/SOURCES.txt
+sheardz.egg-info/dependency_links.txt
+sheardz.egg-info/requires.txt
+sheardz.egg-info/top_level.txt
