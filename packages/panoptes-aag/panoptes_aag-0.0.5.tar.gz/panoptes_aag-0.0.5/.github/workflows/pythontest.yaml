@@ -1,0 +1,44 @@
+name: Test Python
+
+on: [ push, pull_request ]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ "3.12" ]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@master
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Lint with flake8
+        run: |
+          pip install flake8
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # exit-zero treats all errors as warnings.
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=100 --statistics
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ "3.12" ]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@master
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: pip install ".[building,testing]"
+      - name: Test
+        run: pytest
+      - uses: codecov/codecov-action@v4
+        with:
+          name: Upload to codecov.io
+          token: ${{ secrets.CODECOV_TOKEN }}
+          verbose: true
