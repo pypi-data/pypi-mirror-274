@@ -1,0 +1,2 @@
+[console_scripts]
+cfour_parser = cfour_parser.__main__:main
