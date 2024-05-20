@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "impart"
+version = "0.0.4"
+dependencies = [
+    "pyvips",
+    "numpy"
+]
+requires-python = ">=3.10"
+authors = [
+    { name = "Henry M. Cording", email = "umzqa92b@duck.com" },
+]
+description = "Partition images and volumes of arbitrary size"
+readme = "README.rst"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/hcording/impart"
+"Bug Tracker" = "https://gitlab.com/hcording/impart/-/issues"
+
+[tool.pytype]
+inputs = ['impart', 'tests']

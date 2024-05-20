@@ -1,0 +1,10 @@
+name: impart
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pyvips==2.2.3
+  - pip
+  - pip:
+      - -r requirements-docs.txt
