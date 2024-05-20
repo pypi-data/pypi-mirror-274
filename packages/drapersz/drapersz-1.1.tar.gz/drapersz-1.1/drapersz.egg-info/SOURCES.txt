@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+drapersz/__init__.py
+drapersz/main.py
+drapersz.egg-info/PKG-INFO
+drapersz.egg-info/SOURCES.txt
+drapersz.egg-info/dependency_links.txt
+drapersz.egg-info/requires.txt
+drapersz.egg-info/top_level.txt
