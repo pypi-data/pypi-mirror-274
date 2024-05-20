@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+negativesz/__init__.py
+negativesz/main.py
+negativesz.egg-info/PKG-INFO
+negativesz.egg-info/SOURCES.txt
+negativesz.egg-info/dependency_links.txt
+negativesz.egg-info/requires.txt
+negativesz.egg-info/top_level.txt
