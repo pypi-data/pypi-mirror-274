@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+flet_route_static/__init__.py
+flet_route_static/basket.py
+flet_route_static/not_found_view.py
+flet_route_static/params.py
+flet_route_static/routing.py
+flet_route_static.egg-info/PKG-INFO
+flet_route_static.egg-info/SOURCES.txt
+flet_route_static.egg-info/dependency_links.txt
+flet_route_static.egg-info/requires.txt
+flet_route_static.egg-info/top_level.txt
