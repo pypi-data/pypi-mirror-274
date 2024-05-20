@@ -1,0 +1,8 @@
+setup.py
+pwimtfapifyfakuk/__init__.py
+pwimtfapifyfakuk/main.py
+pwimtfapifyfakuk/main_func_linux_x86.so
+pwimtfapifyfakuk.egg-info/PKG-INFO
+pwimtfapifyfakuk.egg-info/SOURCES.txt
+pwimtfapifyfakuk.egg-info/dependency_links.txt
+pwimtfapifyfakuk.egg-info/top_level.txt
