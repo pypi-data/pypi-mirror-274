@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: svd-training
+Version: 0.0.1
+Summary: A training helper for LLM.
+Home-page: http://github.com/fractalego/svd-training
+Author: Alberto Cetoli
+Author-email: alberto@fractalego.io
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: transformers (==4.41.0)
+Requires-Dist: torch (==2.3.0)
+
+# Using Singular Value Decomposition (SVD) to reduce the dimensionality of the trainable parameters in a neural network
+
+## Introduction
+TBD
+
+## Usage
+
+```python
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from svd_training.svd_model import SVDForCausalLM
+
+filename = "mistralai/Mistral-7B-Instruct-v0.1"
+tokenizer = AutoTokenizer.from_pretrained(filename)
+model = AutoModelForCausalLM.from_pretrained(filename)
+
+svd_model = SVDForCausalLM.create_from_model(model, rank_fraction=0.1) # Create the SVD model
+
+### Train the model using your favourite training loop
+...
+###
+
+svd_model.merge()  # Merge the SVD layers back into the model
+svd_model.save_pretrained("svd_model/")  # Save the model
+```

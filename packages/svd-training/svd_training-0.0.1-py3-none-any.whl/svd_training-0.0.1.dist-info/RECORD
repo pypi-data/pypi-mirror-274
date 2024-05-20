@@ -1,0 +1,14 @@
+svd_training/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+svd_training/model_keys.py,sha256=lsMNqafqY6IEixaMuJWanw6XGZEQ8q1OORr_q31JSBs,442
+svd_training/svd_linear.py,sha256=D-WIOxEdg32PvnaknaxLkyrlNO5hLeoBSj74PP3GKpQ,1667
+svd_training/svd_llama3_model.py,sha256=9NHHMI2y89f5298dK3ZXlY73AaTSfpPAVgZkwmR5Te0,1752
+svd_training/svd_mistral-v0.1_model.py,sha256=s0x5iWLV7FgJeyhNf3tTQuCQv4yhbXBROw29BcudKKg,3498
+svd_training/svd_mistralv01_model.py,sha256=s0x5iWLV7FgJeyhNf3tTQuCQv4yhbXBROw29BcudKKg,3498
+svd_training/svd_model.py,sha256=WXRPf5-Z4y3dOoZLv9EsROiRVdBAvSKmZmDS4oPzGhs,1817
+svd_training/svd_phi3-mini_model.py,sha256=fO6tV_cdyt47f95jVumLrjMCPFLKUPuM9wYEVwhV8C4,3501
+svd_training/svd_phi3mini_model.py,sha256=GH5rHU5dSzM9TaLQkKwuiR073KW5vGR1-JENgAG_ErE,3480
+svd_training/variables.py,sha256=S8gVsbBNKgOG7B--6ooLVdyhX5zpiQq0Z_H-uOHA5cM,76
+svd_training-0.0.1.dist-info/METADATA,sha256=RYGTLno-J98sc0RnGoCeMgDxIdqK0dZzUY0dOgqlR-E,1079
+svd_training-0.0.1.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+svd_training-0.0.1.dist-info/top_level.txt,sha256=QSEf2CY_soVadOl29kZcA3tEF-wxRo7ZlJxha1zU3C8,13
+svd_training-0.0.1.dist-info/RECORD,,
