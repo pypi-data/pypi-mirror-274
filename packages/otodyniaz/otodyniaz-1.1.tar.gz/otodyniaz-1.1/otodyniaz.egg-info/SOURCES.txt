@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+otodyniaz/__init__.py
+otodyniaz/main.py
+otodyniaz.egg-info/PKG-INFO
+otodyniaz.egg-info/SOURCES.txt
+otodyniaz.egg-info/dependency_links.txt
+otodyniaz.egg-info/requires.txt
+otodyniaz.egg-info/top_level.txt
