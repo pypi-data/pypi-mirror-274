@@ -1,0 +1,12 @@
+icds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icds/data.py,sha256=9BKvPww-MIXpa8th_w-m1Nl4yZAd8NvZezfURUJIH4k,2393
+icds/git_helpers.py,sha256=BQSF5oRvTlgNBKpijcF3OXe7nC0Ld6X2xwcKlaUVA-I,2220
+icds/llm_interface.py,sha256=QbZ-gEMXb49EGKePMa9QYJmyISahiuKlzXcdZ0obzX4,3124
+icds/models.py,sha256=Yp3232AIKNjwsaVKjSGdqMz581eOHzZw6ElcEgFZVjM,797
+icds/settings.py,sha256=eJ9SBnJ6G1QFzQOHpzLxGL-5nba0r_HcxF2yb0i4pmc,236
+icodes.py,sha256=egIw12cj9n8T3IZ-dNHA374DX7M8d9lw3jUInLmG4H8,5500
+icodes-0.1.4.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+icodes-0.1.4.dist-info/METADATA,sha256=A6cDUnnO6d0EbjTl82rO0T4Ej2Y5zidtRrB-t8V2g3A,4745
+icodes-0.1.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+icodes-0.1.4.dist-info/entry_points.txt,sha256=NlJhxAw0HVymMi2p1I1SaVB-1wRXjx_RljFZA-xUs7w,38
+icodes-0.1.4.dist-info/RECORD,,
