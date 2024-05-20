@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kenscoffz/__init__.py
+kenscoffz/main.py
+kenscoffz.egg-info/PKG-INFO
+kenscoffz.egg-info/SOURCES.txt
+kenscoffz.egg-info/dependency_links.txt
+kenscoffz.egg-info/requires.txt
+kenscoffz.egg-info/top_level.txt
