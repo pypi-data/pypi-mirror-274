@@ -1,0 +1,10 @@
+flops_utils/logging.py,sha256=cXbokt2ohdSML64oW9u6u6ILYwsUK9IEu_TY_KTEQ-o,1700
+flops_utils/ml_model_flavor_wrapper.py,sha256=mjbPVaq4nI7j0wULo482ddwEHssFMJ2bjKoK1iHPBh8,782
+flops_utils/ml_repo_files_wrapper.py,sha256=CZhIuwjMPA9sUyKIoM12lLOpaLBF_fMhV80VDUL_LFo,500
+flops_utils/ml_repo_templates.py,sha256=XCSebf0Qpkvi1UgKaV7X9GfqwKHgFOuahC4oJtcdG0s,2639
+flops_utils/notifications.py,sha256=TsxlYbp-36FI-7CDB-71Fa3El62QJbNpNdXQ0yyx-g0,1441
+flops_utils/timer.py,sha256=Nv-FQk7xuswE-5fmBwwfnuEKoZs0o2vmFgcogUid-10,2413
+flops_utils/types.py,sha256=frYJczYdnEgCIWvyXC13jjNd-lMGOcQyE4pjo_z4mlc,395
+flops_utils-0.4.5.dist-info/METADATA,sha256=nMAIxskdafqNeM8wE3BwcRuSBA3cjmrn059yBkIic3k,493
+flops_utils-0.4.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+flops_utils-0.4.5.dist-info/RECORD,,
