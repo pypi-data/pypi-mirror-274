@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+noncommunicativez/__init__.py
+noncommunicativez/main.py
+noncommunicativez.egg-info/PKG-INFO
+noncommunicativez.egg-info/SOURCES.txt
+noncommunicativez.egg-info/dependency_links.txt
+noncommunicativez.egg-info/requires.txt
+noncommunicativez.egg-info/top_level.txt
