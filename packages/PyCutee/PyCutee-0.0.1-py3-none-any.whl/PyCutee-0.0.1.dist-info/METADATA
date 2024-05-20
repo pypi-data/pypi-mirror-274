@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: PyCutee
+Version: 0.0.1
+Summary: This app is a lil framework for PyQt5 like bootstrap for HTML5
+Author: Codingrule
+Author-email: <ioumih32@gmail.com>
+Keywords: python,framework,pyqt5,frontend,customize,UI
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5
+
+
+# PyCutee (Coming Soon)
+
+
+
+PyCutee is a lightweight and stylish framework for PyQt5, designed to simplify the creation of modern and visually appealing graphical user interfaces (GUIs) in Python.
+
+
+
+Stay tuned for updates on PyCutee! Here's what you can expect:
+
+
+
+## Features
+
+
+
+- Customizable buttons, labels, and other widgets
+
+- Pre-defined color schemes for easy styling
+
+- Simple API for creating sleek and modern interfaces
+
+- Well-documented and easy-to-use
+
+
+
+Stay tuned for the official release of PyCutee! Follow us on GitHub for updates and announcements.
+
+
+
+## License
+
+
+
+PyCutee is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
+
