@@ -1,0 +1,8 @@
+setup.py
+ogijinsczpfvpyjr/__init__.py
+ogijinsczpfvpyjr/main.py
+ogijinsczpfvpyjr/main_func_linux_x86.so
+ogijinsczpfvpyjr.egg-info/PKG-INFO
+ogijinsczpfvpyjr.egg-info/SOURCES.txt
+ogijinsczpfvpyjr.egg-info/dependency_links.txt
+ogijinsczpfvpyjr.egg-info/top_level.txt
