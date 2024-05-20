@@ -1,0 +1,29 @@
+actions:
+admin: sqladmin
+analytics:
+app: main
+auth: firebase
+cache: redis
+captcha:
+dns:
+fonts:
+ftpd:
+logger: loguru
+mail:
+marketing:
+messaging:
+migrations:
+models: default
+monitoring:
+nosql:
+requests: httpx
+routes: default
+schemas: schemaorg
+secret: secret_manager
+sitemap:
+smtp:
+social:
+sql: mysql
+storage: cloud_storage
+style:
+templates: jinja2

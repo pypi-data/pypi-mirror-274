@@ -1,0 +1,11 @@
+alias: playlist
+model: true
+fields:
+  num_tracks:
+    type: int
+  by_artist:
+    type: MusicGroup
+    back_populates: playlist
+  track:
+    type: MusicRecording
+#    back_populates: in_playlist

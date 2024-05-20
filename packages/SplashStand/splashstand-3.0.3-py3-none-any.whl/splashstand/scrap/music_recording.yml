@@ -1,0 +1,24 @@
+alias: recording
+model: true
+fields:
+  by_artist:
+    type: MusicGroup
+    back_populates: track
+  duration:
+    type: Duration
+  in_album:
+    type: MusicAlbum
+    back_populates: track
+#    relation: many-to-many
+  in_playlist:
+    type: MusicPlaylist
+    back_populates: track
+#    relation: many-to-many
+  audio:
+    type: AudioObject
+  isrc_code:
+    type: str
+  recorded_at:
+    type: Event
+  producer:
+    type: Person
