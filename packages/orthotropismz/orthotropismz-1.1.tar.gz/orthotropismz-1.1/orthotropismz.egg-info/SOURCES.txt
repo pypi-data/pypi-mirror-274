@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+orthotropismz/__init__.py
+orthotropismz/main.py
+orthotropismz.egg-info/PKG-INFO
+orthotropismz.egg-info/SOURCES.txt
+orthotropismz.egg-info/dependency_links.txt
+orthotropismz.egg-info/requires.txt
+orthotropismz.egg-info/top_level.txt
