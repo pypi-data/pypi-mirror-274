@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+out/out.py
+simple_out.egg-info/PKG-INFO
+simple_out.egg-info/SOURCES.txt
+simple_out.egg-info/dependency_links.txt
+simple_out.egg-info/top_level.txt

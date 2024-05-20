@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: simple-out
+Version: 0.1
+Summary: A simple way to print colored text in the terminal.
+Home-page: https://github.com/2Bor3d/out
+Author: 2Bor3d
+License: GPLv3
+Keywords: print,output,input
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# out
+A simple module for coloured printing in python.
