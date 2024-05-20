@@ -1,0 +1,8 @@
+
+[dev]
+twine
+build
+black
+bumpver
+pytest
+pdoc3
