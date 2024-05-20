@@ -1,0 +1,12 @@
+pg_query.cpython-38-x86_64-linux-gnu.so,sha256=qnM7U3Ebyg9TGx0pWQX6llFqluoIQtkHiC5Mfp5zVLg,6089608
+psqlparse2-0.0.15.dist-info/WHEEL,sha256=L0ABBnxO_xKRR_wTzM7WWWX8RRfdKRK-fZ5a3ZEhDqQ,148
+psqlparse2-0.0.15.dist-info/LICENSE,sha256=_Ee75qGbc33d4DPkVRn2iWFq0Uwnp2-VObNf1JQcXi0,1483
+psqlparse2-0.0.15.dist-info/top_level.txt,sha256=qp4VMvYoW2lUjpE2W0w0gPlPpmKJQzpwvEzvyhnWqYo,20
+psqlparse2-0.0.15.dist-info/RECORD,,
+psqlparse2-0.0.15.dist-info/METADATA,sha256=_fQeGImyO1PHBXc-gh_8Eoyb0VPQxHr5qwK0zlCTpeM,4188
+psqlparse2/__init__.py,sha256=I1N-TI074EJdmF4wk0y6pxc-RQIjGgncqW4Qnthg8DM,370
+psqlparse2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psqlparse2/__init__.pyi,sha256=WLA7j5oYQiJfe3b-isHZGMd19xFFPbe7vyo0k_m19c8,146
+psqlparse2/pb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psqlparse2/pb/pg_query_pb2.pyi,sha256=iSBxWRldfSqH-57_vAMaah6uZwN0mxTtUTVE9_Rokg4,327636
+psqlparse2/pb/pg_query_pb2.py,sha256=bDs0kF6PcpY8KkqU-RY8O_UrmOpCto0TmSBLTnhRw9k,193315
