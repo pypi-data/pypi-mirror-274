@@ -1,0 +1,12 @@
+sqlalchemy>=1.4
+pygraphviz>=1.9
+
+[ci]
+flask-sqlalchemy>=2.5.1
+psycopg2>=2.9.3
+pytest>=7.4.3
+
+[dev]
+ruff>=0.4.1
+mypy>=1.7.0
+pre-commit>=3.0.1
