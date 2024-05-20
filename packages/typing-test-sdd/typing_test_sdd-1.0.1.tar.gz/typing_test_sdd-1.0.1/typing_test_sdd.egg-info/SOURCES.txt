@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+typing_test_sdd/__init__.py
+typing_test_sdd/main.py
+typing_test_sdd/words.json
+typing_test_sdd.egg-info/PKG-INFO
+typing_test_sdd.egg-info/SOURCES.txt
+typing_test_sdd.egg-info/dependency_links.txt
+typing_test_sdd.egg-info/entry_points.txt
+typing_test_sdd.egg-info/requires.txt
+typing_test_sdd.egg-info/top_level.txt
+typing_test_sdd/Assets/main_image.png
+typing_test_sdd/Assets/polka.png
