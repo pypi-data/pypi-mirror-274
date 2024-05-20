@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trinkz/__init__.py
+trinkz/main.py
+trinkz.egg-info/PKG-INFO
+trinkz.egg-info/SOURCES.txt
+trinkz.egg-info/dependency_links.txt
+trinkz.egg-info/requires.txt
+trinkz.egg-info/top_level.txt
