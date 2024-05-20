@@ -1,0 +1,11 @@
+nadeo_api/__init__.py,sha256=ezuuBtdE6FzG5L1JCfv0vwijMDnilSIcrAuFabOtCNk,1439
+nadeo_api/auth.py,sha256=ixHp5gopc20HZ6gpFqS6s_wWfV3qzFQZlSBDb-MzCIY,10139
+nadeo_api/core.py,sha256=QD9jAHv33WAN3rbZgltg1loxjIN1qNQGpYBzBNgasHk,3603
+nadeo_api/live.py,sha256=SSQns1ZuTTJC24GgUsf275ZuXx5V0If5-cdvh94TEwM,2855
+nadeo_api/meet.py,sha256=YmMwpg5rLkAXWK-E-H-Cs6wWaCKmFIEhni8mldpavGE,1334
+nadeo_api/oauth.py,sha256=Uyywofr4QJRagzpDlee7EithLfRn0L_cq-hQZsM3pPQ,2902
+nadeo_api-0.4.0.dist-info/LICENSE.txt,sha256=F6EWHSnNnnWzfz5F4I9DVqGhau-GJ_b5NMDmIe_X3E0,1064
+nadeo_api-0.4.0.dist-info/METADATA,sha256=oyyj52RAJOY1MC3PGfY0uq1chVTnKYDsV9i7xUjtZ3E,3676
+nadeo_api-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nadeo_api-0.4.0.dist-info/top_level.txt,sha256=73aJYafxAFKXiE9WTUJTx7Mwysj9Pm5fF_h1uDtZoyQ,10
+nadeo_api-0.4.0.dist-info/RECORD,,
