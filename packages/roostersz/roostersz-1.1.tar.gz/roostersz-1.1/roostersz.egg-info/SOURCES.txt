@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+roostersz/__init__.py
+roostersz/main.py
+roostersz.egg-info/PKG-INFO
+roostersz.egg-info/SOURCES.txt
+roostersz.egg-info/dependency_links.txt
+roostersz.egg-info/requires.txt
+roostersz.egg-info/top_level.txt
