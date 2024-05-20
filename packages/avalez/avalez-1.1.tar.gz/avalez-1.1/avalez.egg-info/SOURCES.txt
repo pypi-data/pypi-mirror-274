@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+avalez/__init__.py
+avalez/main.py
+avalez.egg-info/PKG-INFO
+avalez.egg-info/SOURCES.txt
+avalez.egg-info/dependency_links.txt
+avalez.egg-info/requires.txt
+avalez.egg-info/top_level.txt
