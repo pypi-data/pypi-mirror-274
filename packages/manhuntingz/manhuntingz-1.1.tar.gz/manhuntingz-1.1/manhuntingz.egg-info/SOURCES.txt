@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+manhuntingz/__init__.py
+manhuntingz/main.py
+manhuntingz.egg-info/PKG-INFO
+manhuntingz.egg-info/SOURCES.txt
+manhuntingz.egg-info/dependency_links.txt
+manhuntingz.egg-info/requires.txt
+manhuntingz.egg-info/top_level.txt
