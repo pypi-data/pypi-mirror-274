@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+noninfectiouslyz/__init__.py
+noninfectiouslyz/main.py
+noninfectiouslyz.egg-info/PKG-INFO
+noninfectiouslyz.egg-info/SOURCES.txt
+noninfectiouslyz.egg-info/dependency_links.txt
+noninfectiouslyz.egg-info/requires.txt
+noninfectiouslyz.egg-info/top_level.txt
