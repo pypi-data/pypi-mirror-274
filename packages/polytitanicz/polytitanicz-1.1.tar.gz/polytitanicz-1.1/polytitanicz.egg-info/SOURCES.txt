@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+polytitanicz/__init__.py
+polytitanicz/main.py
+polytitanicz.egg-info/PKG-INFO
+polytitanicz.egg-info/SOURCES.txt
+polytitanicz.egg-info/dependency_links.txt
+polytitanicz.egg-info/requires.txt
+polytitanicz.egg-info/top_level.txt
