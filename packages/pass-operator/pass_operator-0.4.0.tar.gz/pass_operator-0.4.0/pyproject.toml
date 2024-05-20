@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "pass-operator"
+version = "v0.4.0"
+description = "A kubernetes operator that syncs and decrypts secrets from pass git repositories"
+authors = ["Emma Doyle <emma@premiscale.com>"]
+maintainers = ["Emma Doyle <emma@premiscale.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+packages = [
+  { include = "passoperator", from = "src" }
+]
+include = [
+  "LICENSE"
+]
+keywords = [
+    "python",
+    "kubernetes",
+    "secrets",
+    "operator",
+    "pass"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+kubernetes = "^29.0.0"
+kopf = "^1.37.2"
+python-gnupg = "^0.5.2"
+gitpython = "^3.1.43"
+pyhumps = "^3.8.0"
+attrs = "^23.2.0"
+cattrs = "^23.2.3"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+poetry = "^1.8.3"
+mypy = "^1.10.0"
+pylint = "^3.2.1"
+pytest = "^8.2.0"
+coverage = "^7.5.1"
+deepdiff = "^7.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+passoperator = "passoperator.daemon:main"
+
+[tool.mypy]
+python_version = "3.10"
+strict_optional = "true"
+ignore_missing_imports = "true"
+
+[tool.coverage.run]
+# omit = [".*", "*/site-packages/*"]
+
+[tool.coverage.report]
+fail_under = 60
+
+[tool.pytest.ini_options]
+addopts = "--junitxml=./junit_test_results.xml"
+testpaths = [
+  "src/tests/"
+]
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = "too-many-arguments,invalid-name,wrong-import-order,superfluous-parens,line-too-long,missing-final-newline,logging-fstring-interpolation,too-many-instance-attributes,unused-argument,unused-import"
+fail-under = 9
+
+[tool.pylint.MASTER]
+init-hook = "import sys; sys.path.append('.')"
