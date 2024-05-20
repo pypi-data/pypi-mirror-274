@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rimmist
+Version: 24.5.18
+Summary: rimmist
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
