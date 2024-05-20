@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+doc/README.md
+sema_toolchain.egg-info/PKG-INFO
+sema_toolchain.egg-info/SOURCES.txt
+sema_toolchain.egg-info/dependency_links.txt
+sema_toolchain.egg-info/requires.txt
+sema_toolchain.egg-info/top_level.txt
