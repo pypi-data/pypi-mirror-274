@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+graft mypackage
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude *.egg-info
+global-exclude .venv
+global-exclude research
+global-exclude results

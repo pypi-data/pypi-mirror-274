@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+research/__init__.py
+visdatcompy/__init__.py
+visdatcompy/feature_extractor.py
+visdatcompy/hash.py
+visdatcompy/image_handler.py
+visdatcompy/metrics.py
+visdatcompy/utils.py
+visdatcompy/visdatcompare.py
+visdatcompy.egg-info/PKG-INFO
+visdatcompy.egg-info/SOURCES.txt
+visdatcompy.egg-info/dependency_links.txt
+visdatcompy.egg-info/requires.txt
+visdatcompy.egg-info/top_level.txt
