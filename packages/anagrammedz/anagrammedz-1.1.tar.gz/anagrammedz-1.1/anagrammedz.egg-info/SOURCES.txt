@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+anagrammedz/__init__.py
+anagrammedz/main.py
+anagrammedz.egg-info/PKG-INFO
+anagrammedz.egg-info/SOURCES.txt
+anagrammedz.egg-info/dependency_links.txt
+anagrammedz.egg-info/requires.txt
+anagrammedz.egg-info/top_level.txt
