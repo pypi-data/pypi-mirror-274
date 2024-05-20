@@ -1,0 +1,2 @@
+[console_scripts]
+dzidb = dzidb:main
