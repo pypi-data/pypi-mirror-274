@@ -1,0 +1,19 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "molcv"
+requires-python = ">=3.10"
+dynamic = ["version"]
+
+[project.scripts]
+molcv = "molcv:cli"
+
+[project.urls]
+Repository = "https://github.com/slietar/molcv.git"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "molcv._molcv"
+manifest-path = "python/rust/Cargo.toml"
