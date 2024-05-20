@@ -1,0 +1,10 @@
+jota_os/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jota_os/ai.py,sha256=r7MMQKEcI4Vv9erorOyKwy43QE9BVhM_CAEJAg_sVCU,945
+jota_os/network.py,sha256=UaNpjyuUYHTLZAVc81M5rIf47QleJzygLBH1FfxgF38,765
+jota_os/nfs.py,sha256=E-Gsu0831I29iJV-MntDOK2qMCY8SVA5xZR4nsINY5M,619
+jota_os/processes.py,sha256=vXpQQcRvqi4R0eGDaOss7-vnLW-8aH89KbA8L9V-2A8,354
+jota_os/shell.py,sha256=bdbPasy06i91-faeYfkZkBtA253THH2QfCD4ERWQZKE,8063
+jota_os-0.1.0.dist-info/LICENSE,sha256=ps7P8JTyNuxDpTNoGBvTKUPJ0VIsQE656R2A4Nbd6Go,1070
+jota_os-0.1.0.dist-info/METADATA,sha256=KtT-I74OhRVs0_gnCAyRr_C9H1JY5mVGN15SMIVknjo,1868
+jota_os-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+jota_os-0.1.0.dist-info/RECORD,,
