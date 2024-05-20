@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+innsz/__init__.py
+innsz/main.py
+innsz.egg-info/PKG-INFO
+innsz.egg-info/SOURCES.txt
+innsz.egg-info/dependency_links.txt
+innsz.egg-info/requires.txt
+innsz.egg-info/top_level.txt
