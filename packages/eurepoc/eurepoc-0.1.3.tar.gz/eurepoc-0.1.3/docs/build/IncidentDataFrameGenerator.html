@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>IncidentDataFrameGenerator &#8212; EuRepoC 0.1.2 documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/pydoctheme.css?v=bb723527" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="_static/pygments_dark.css?v=b20cc3f5" />
+    
+    <script src="_static/documentation_options.js?v=92734c54"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="flag_type" href="flag_type.html" /><link rel="stylesheet" href="_static/pydoctheme_dark.css" media="(prefers-color-scheme: dark)" id="pydoctheme_dark_css">
+    <link rel="shortcut icon" type="image/png" href="_static/py.svg" />
+            <script type="text/javascript" src="_static/copybutton.js"></script>
+            <script type="text/javascript" src="_static/menu.js"></script>
+            <script type="text/javascript" src="_static/search-focus.js"></script>
+            <script type="text/javascript" src="_static/themetoggle.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <nav class="nav-content" role="navigation">
+        <label for="menuToggler" class="toggler__label">
+            <span></span>
+        </label>
+        <span class="nav-items-wrapper">
+            <a href="https://www.python.org/" class="nav-logo">
+                <img src="_static/py.svg" alt="Python logo"/>
+            </a>
+            <span class="version_switcher_placeholder"></span>
+            <form role="search" class="search" action="search.html" method="get">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                    <path fill-rule="nonzero" fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+                <input placeholder="Quick search" aria-label="Quick search" type="search" name="q" />
+                <input type="submit" value="Go"/>
+            </form>
+        </span>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <div class="language_switcher_placeholder"></div>
+            
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label>
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">IncidentDataFrameGenerator</a><ul>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator</span></code></a><ul>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attribution_sources"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_attribution_sources()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attributions"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_attributions()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_conflict_issues"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_cyber_conflict_issues()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_intensity_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_cyber_intensity_variables()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_il_breach_indicator"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_il_breach_indicator()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_impact_indicator_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_impact_indicator_variables()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_incident_types"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_incident_types()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_inclusion_criteria"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_inclusion_criteria()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_initiators"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_initiators()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_responses"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_legal_responses()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_legal_variables()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_main_data"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_main_data()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_impact"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_mitre_impact()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_initial_access"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_mitre_initial_access()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_offline_conflicts"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_offline_conflicts()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_operation_types"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_operation_types()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_political_responses"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_political_responses()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_receivers"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_receivers()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_source_names"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_source_names()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_of_disclosure"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_sources_of_disclosure()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_urls"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_sources_urls()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_technical_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_technical_variables()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="flag_type.html"
+                          title="previous chapter">flag_type</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/IncidentDataFrameGenerator.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="flag_type.html" title="flag_type"
+             accesskey="P">previous</a> |</li>
+          <li><img src="_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">EuRepoC 0.1.2 documentation</a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">IncidentDataFrameGenerator</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="search" name="q" id="search-box" />
+          <input type="submit" value="Go" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="incidentdataframegenerator">
+<h1>IncidentDataFrameGenerator<a class="headerlink" href="#incidentdataframegenerator" title="Link to this heading">¶</a></h1>
+<p>See EuRepoC code for further details on the substantive meaning of each variable: <a class="reference external" href="https://eurepoc.eu/wp-content/uploads/2023/07/EuRepoC_Codebook_1_2.pdf">https://eurepoc.eu/wp-content/uploads/2023/07/EuRepoC_Codebook_1_2.pdf</a></p>
+<dl class="py class" id="module-eurepoc.incident_dataframes">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">eurepoc.incident_dataframes.</span></span><span class="sig-name descname"><span class="pre">IncidentDataFrameGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">incident_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class used for returning pandas DataFrames for specific variables/aspects of the incident to enable analysis.
+The different dfs can subsequently be joined through the <cite>incident_id</cite> column. Refer to the EuRepoC Codebook
+for more information about the substantive meaning of each variable (i.e. df column).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>incident_data</strong> (<em>list</em>) – List of incident data dictionaries, retrieved by using the <cite>execute_query()</cite> method of the</p></li>
+<li><p><strong>class.</strong> (<a class="reference internal" href="DatabaseQuery.html#eurepoc.database_query.DatabaseQuery" title="eurepoc.database_query.DatabaseQuery"><em>DatabaseQuery</em></a>)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The data within the returned dfs are “exploded” over multiple rows for variables that contain multiple
+possible values. When performing analyses with pandas counting numbers of incidents, remember to use
+the <cite>nunique()</cite> method instead of the <cite>count()</cite> method.</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attribution_sources">
+<span class="sig-name descname"><span class="pre">get_attribution_sources</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_attribution_sources"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attribution_sources" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, attribution_source_url</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attributions">
+<span class="sig-name descname"><span class="pre">get_attributions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_attributions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attributions" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: attribution_id, incident_id, settled_attribution, attribution_date, attribution_updated_at,
+attribution_created_at, attribution_basis, attribution_type, attribution_subtype, attributing_country, attributing_actor,
+attributing_company, attribution_legal_reference, attribution_legal_reference_subcode, initiator_id,
+initiator_name, initiator_country, initiator_category, initiator_subcategory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_conflict_issues">
+<span class="sig-name descname"><span class="pre">get_cyber_conflict_issues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_cyber_conflict_issues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_conflict_issues" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, cyber_conflict_issue</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_intensity_variables">
+<span class="sig-name descname"><span class="pre">get_cyber_intensity_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_cyber_intensity_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_intensity_variables" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, disruption, hijacking, data_theft, physical_effects_spatial, physical_effects_temporal,
+target_multiplier, unweighted_intensity, weighted_intensity</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_il_breach_indicator">
+<span class="sig-name descname"><span class="pre">get_il_breach_indicator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_il_breach_indicator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_il_breach_indicator" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, il_breach_indicator, il_breach_indicator_subcode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_impact_indicator_variables">
+<span class="sig-name descname"><span class="pre">get_impact_indicator_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_impact_indicator_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_impact_indicator_variables" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, impact_indicator_score, impact_indicator_label, functional_impact, intelligence_impact,
+economic_impact, economic_impact_value, economic_impact_currency, affected_entities, affected_entities_value,
+affected_eu_countries, affected_eu_countries_value, affected_third_countries, affected_third_countries_value</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_incident_types">
+<span class="sig-name descname"><span class="pre">get_incident_types</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_incident_types"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_incident_types" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, incident_type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_inclusion_criteria">
+<span class="sig-name descname"><span class="pre">get_inclusion_criteria</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_inclusion_criteria"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_inclusion_criteria" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, inclusion_criterion, inclusion_criterion_subcode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_initiators">
+<span class="sig-name descname"><span class="pre">get_initiators</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">settled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_initiators"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_initiators" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: initiator_id, incident_id, attribution_id, settled_initiator, initiator_name,
+initiator_country, initiator_category, initiator_subcategory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_responses">
+<span class="sig-name descname"><span class="pre">get_legal_responses</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_legal_responses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_responses" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: legal_response_id, incident_id, legal_response_date, legal_response_responding_country,
+legal_response_responding_actor, legal_response_type, legal_response_subtype</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_variables">
+<span class="sig-name descname"><span class="pre">get_legal_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_legal_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_variables" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, state_responsibility_actor, evidence_for_sanctions_indicator, response_indicator</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_main_data">
+<span class="sig-name descname"><span class="pre">get_main_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_main_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_main_data" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, name, description, added_to_db, start_date, end_date, operation_type, status, updated_at,
+number_attributions, number_political_responses, number_legal_responses, casualties</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_impact">
+<span class="sig-name descname"><span class="pre">get_mitre_impact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_mitre_impact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_impact" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, mitre_impact</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_initial_access">
+<span class="sig-name descname"><span class="pre">get_mitre_initial_access</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_mitre_initial_access"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_initial_access" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, mitre_initial_access</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_offline_conflicts">
+<span class="sig-name descname"><span class="pre">get_offline_conflicts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_offline_conflicts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_offline_conflicts" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, offline_conflict_issue, offline_conflict_name, offline_conflict_intensity,
+offline_conflict_intensity_subcode</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_operation_types">
+<span class="sig-name descname"><span class="pre">get_operation_types</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_operation_types"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_operation_types" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, operation_type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_political_responses">
+<span class="sig-name descname"><span class="pre">get_political_responses</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_political_responses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_political_responses" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: political_response_id, incident_id, political_response_date, political_response_responding_country,
+political_response_responding_actor, political_response_type, political_response_subtype</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_receivers">
+<span class="sig-name descname"><span class="pre">get_receivers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_receivers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_receivers" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: receiver_id, incident_id, receiver_name, receiver_country, receiver_country_alpha_2_code, receiver_country_alpha_3_code,
+receiver_category, receiver_subcategory, receiver_regions (this is a list)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_source_names">
+<span class="sig-name descname"><span class="pre">get_source_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_source_names"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_source_names" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: source_url_id, incident_id, source_name</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_of_disclosure">
+<span class="sig-name descname"><span class="pre">get_sources_of_disclosure</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_sources_of_disclosure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_of_disclosure" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, source_disclosure</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_urls">
+<span class="sig-name descname"><span class="pre">get_sources_urls</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_sources_urls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_urls" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: source_urls_id, incident_id, source_url</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_technical_variables">
+<span class="sig-name descname"><span class="pre">get_technical_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/eurepoc/incident_dataframes.html#IncidentDataFrameGenerator.get_technical_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_technical_variables" title="Link to this definition">¶</a></dt>
+<dd><p>Columns: incident_id, zero_days, zero_days_subcode, has_disruption, user_interaction</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">IncidentDataFrameGenerator</a><ul>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator</span></code></a><ul>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attribution_sources"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_attribution_sources()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_attributions"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_attributions()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_conflict_issues"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_cyber_conflict_issues()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_cyber_intensity_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_cyber_intensity_variables()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_il_breach_indicator"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_il_breach_indicator()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_impact_indicator_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_impact_indicator_variables()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_incident_types"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_incident_types()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_inclusion_criteria"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_inclusion_criteria()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_initiators"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_initiators()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_responses"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_legal_responses()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_legal_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_legal_variables()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_main_data"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_main_data()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_impact"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_mitre_impact()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_mitre_initial_access"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_mitre_initial_access()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_offline_conflicts"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_offline_conflicts()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_operation_types"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_operation_types()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_political_responses"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_political_responses()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_receivers"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_receivers()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_source_names"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_source_names()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_of_disclosure"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_sources_of_disclosure()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_sources_urls"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_sources_urls()</span></code></a></li>
+<li><a class="reference internal" href="#eurepoc.incident_dataframes.IncidentDataFrameGenerator.get_technical_variables"><code class="docutils literal notranslate"><span class="pre">IncidentDataFrameGenerator.get_technical_variables()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="flag_type.html"
+                          title="previous chapter">flag_type</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/IncidentDataFrameGenerator.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="flag_type.html" title="flag_type"
+             >previous</a> |</li>
+          <li><img src="_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">EuRepoC 0.1.2 documentation</a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">IncidentDataFrameGenerator</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="search" name="q" id="search-box" />
+          <input type="submit" value="Go" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; 
+    Copyright
+     .
+    <br />
+    This page is licensed under the Python Software Foundation License Version 2.
+    <br />
+    Examples, recipes, and other code in the documentation are additionally licensed under the Zero Clause BSD License.
+    <br />
+    
+    
+    <br />
+
+    The Python Software Foundation is a non-profit corporation.
+<a href="https://www.python.org/psf/donations/">Please donate.</a>
+<br />
+    <br />
+    
+    <br />
+
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+
+  </body>
+</html>
