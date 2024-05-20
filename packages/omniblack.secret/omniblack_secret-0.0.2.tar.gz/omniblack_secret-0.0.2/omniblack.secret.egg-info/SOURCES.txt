@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+cflags.py
+pyproject.toml
+secret.c
+setup.py
+omniblack.secret.egg-info/PKG-INFO
+omniblack.secret.egg-info/SOURCES.txt
+omniblack.secret.egg-info/dependency_links.txt
+omniblack.secret.egg-info/top_level.txt
