@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+RTS_DocsBuilder/RInitiate.py
+RTS_DocsBuilder/__init__.py
+RTS_DocsBuilder/doclayout.py
+RTS_DocsBuilder.egg-info/PKG-INFO
+RTS_DocsBuilder.egg-info/SOURCES.txt
+RTS_DocsBuilder.egg-info/dependency_links.txt
+RTS_DocsBuilder.egg-info/requires.txt
+RTS_DocsBuilder.egg-info/top_level.txt
+RTS_DocsBuilder/srcFolder/__init__.py
