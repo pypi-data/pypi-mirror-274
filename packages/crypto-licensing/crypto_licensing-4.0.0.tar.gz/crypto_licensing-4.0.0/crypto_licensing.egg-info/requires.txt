@@ -1,0 +1,27 @@
+chacha20poly1305>=0.0.3
+click
+dnspython
+future>=1
+pytz
+requests<3,>=2.20
+tzlocal
+web.py>=0.51
+wsgilog>=0.3
+
+[:python_version < "3.0"]
+configparser>=4.0
+
+[:python_version < "3.4"]
+enum34>=1.1
+pathlib2>=2.3
+
+[:python_version > "2"]
+requests-toolbelt>=1
+
+[dev]
+build
+flake8
+pip
+pytest>=4.6
+setuptools
+wheel
