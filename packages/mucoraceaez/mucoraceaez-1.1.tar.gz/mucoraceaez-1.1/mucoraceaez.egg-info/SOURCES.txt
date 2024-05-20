@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mucoraceaez/__init__.py
+mucoraceaez/main.py
+mucoraceaez.egg-info/PKG-INFO
+mucoraceaez.egg-info/SOURCES.txt
+mucoraceaez.egg-info/dependency_links.txt
+mucoraceaez.egg-info/requires.txt
+mucoraceaez.egg-info/top_level.txt
