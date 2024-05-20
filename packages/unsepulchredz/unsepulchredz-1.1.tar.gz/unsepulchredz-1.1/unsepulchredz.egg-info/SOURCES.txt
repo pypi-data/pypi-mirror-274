@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unsepulchredz/__init__.py
+unsepulchredz/main.py
+unsepulchredz.egg-info/PKG-INFO
+unsepulchredz.egg-info/SOURCES.txt
+unsepulchredz.egg-info/dependency_links.txt
+unsepulchredz.egg-info/requires.txt
+unsepulchredz.egg-info/top_level.txt
