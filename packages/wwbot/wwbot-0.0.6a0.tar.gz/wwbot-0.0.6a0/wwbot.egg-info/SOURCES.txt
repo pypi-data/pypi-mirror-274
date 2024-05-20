@@ -1,0 +1,8 @@
+setup.py
+wwbot/__init__.py
+wwbot.egg-info/PKG-INFO
+wwbot.egg-info/SOURCES.txt
+wwbot.egg-info/dependency_links.txt
+wwbot.egg-info/top_level.txt
+wwbot/lib/__init__.py
+wwbot/lib/logger.py
