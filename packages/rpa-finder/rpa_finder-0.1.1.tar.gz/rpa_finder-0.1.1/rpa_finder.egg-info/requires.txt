@@ -1,0 +1,5 @@
+numpy>=1.25.2
+python_libsbml>=5.20.2
+scipy>=1.13.0
+sympy>=1.12
+matplotlib>=3.8.2
