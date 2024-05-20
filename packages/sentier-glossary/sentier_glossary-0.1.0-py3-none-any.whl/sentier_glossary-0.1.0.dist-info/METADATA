@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: sentier_glossary
+Version: 0.1.0
+Summary: Client interface to sentier.dev sustainability assessment glossary
+Author-email: João Gonçalves <jsvgoncalves@gmail.com>, Chris Mutel <cmutel@gmail.com>
+Maintainer-email: João Gonçalves <jsvgoncalves@gmail.com>, Chris Mutel <cmutel@gmail.com>
+Project-URL: source, https://github.com/Depart-de-Sentier/sentier_glossary
+Project-URL: homepage, https://github.com/Depart-de-Sentier/sentier_glossary
+Project-URL: tracker, https://github.com/Depart-de-Sentier/sentier_glossary/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sentence-transformers
+Requires-Dist: requests
+Requires-Dist: pydantic-settings
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-randomly ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: sentier-glossary ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: python-coveralls ; extra == 'testing'
+
+# sentier_glossary
+
+[![PyPI](https://img.shields.io/pypi/v/sentier_glossary.svg)][pypi status]
+[![Status](https://img.shields.io/pypi/status/sentier_glossary.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/sentier_glossary)][pypi status]
+[![License](https://img.shields.io/pypi/l/sentier_glossary)][license]
+
+[![Read the documentation at https://sentier_glossary.readthedocs.io/](https://img.shields.io/readthedocs/sentier_glossary/latest.svg?label=Read%20the%20Docs)][read the docs]
+[![Tests](https://github.com/Depart-de-Sentier/sentier_glossary/actions/workflows/python-test.yml/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/Depart-de-Sentier/sentier_glossary/branch/main/graph/badge.svg)][codecov]
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+
+[pypi status]: https://pypi.org/project/sentier_glossary/
+[read the docs]: https://sentier_glossary.readthedocs.io/
+[tests]: https://github.com/Depart-de-Sentier/sentier_glossary/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/Depart-de-Sentier/sentier_glossary
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+
+## Installation
+
+You can install _sentier_glossary_ via [pip] from [PyPI]:
+
+```console
+$ pip install sentier_glossary
+```
+
+## Contributing
+
+Contributions are very welcome.
+To learn more, see the [Contributor Guide][Contributor Guide].
+
+## License
+
+Distributed under the terms of the [MIT license][License],
+_sentier_glossary_ is free and open source software.
+
+## Issues
+
+If you encounter any problems,
+please [file an issue][Issue Tracker] along with a detailed description.
+
+
+<!-- github-only -->
+
+[command-line reference]: https://sentier_glossary.readthedocs.io/en/latest/usage.html
+[License]: https://github.com/Depart-de-Sentier/sentier_glossary/blob/main/LICENSE
+[Contributor Guide]: https://github.com/Depart-de-Sentier/sentier_glossary/blob/main/CONTRIBUTING.md
+[Issue Tracker]: https://github.com/Depart-de-Sentier/sentier_glossary/issues
