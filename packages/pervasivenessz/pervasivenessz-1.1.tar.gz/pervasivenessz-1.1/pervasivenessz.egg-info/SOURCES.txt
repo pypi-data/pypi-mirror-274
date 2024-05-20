@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pervasivenessz/__init__.py
+pervasivenessz/main.py
+pervasivenessz.egg-info/PKG-INFO
+pervasivenessz.egg-info/SOURCES.txt
+pervasivenessz.egg-info/dependency_links.txt
+pervasivenessz.egg-info/requires.txt
+pervasivenessz.egg-info/top_level.txt
