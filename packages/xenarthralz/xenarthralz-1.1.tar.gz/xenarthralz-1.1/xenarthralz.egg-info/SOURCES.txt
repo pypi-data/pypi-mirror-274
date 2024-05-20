@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xenarthralz/__init__.py
+xenarthralz/main.py
+xenarthralz.egg-info/PKG-INFO
+xenarthralz.egg-info/SOURCES.txt
+xenarthralz.egg-info/dependency_links.txt
+xenarthralz.egg-info/requires.txt
+xenarthralz.egg-info/top_level.txt
