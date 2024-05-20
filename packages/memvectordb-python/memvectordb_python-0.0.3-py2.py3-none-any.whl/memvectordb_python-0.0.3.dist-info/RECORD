@@ -1,0 +1,5 @@
+memvectordb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+memvectordb/collection.py,sha256=pbchrVGtx_M49rwanEmtt-245XS4ivUp9GiEl3b0n9U,8103
+memvectordb_python-0.0.3.dist-info/METADATA,sha256=r6Qvmo7yjEg5zH-Jxcf2yytF7dsZaERXlqC17BIGBrQ,3076
+memvectordb_python-0.0.3.dist-info/WHEEL,sha256=IrRNNNJ-uuL1ggO5qMvT1GGhQVdQU54d6ZpYqEZfEWo,92
+memvectordb_python-0.0.3.dist-info/RECORD,,
