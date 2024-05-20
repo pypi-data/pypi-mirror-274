@@ -1,0 +1,12 @@
+autofollow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autofollow/agent.py,sha256=DSJsf3TiWRIXUEeuSN-DjoTw9LuFFHPnLIeW2zohStU,2375
+autofollow/common.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autofollow/github.py,sha256=LlDxzCsZbpwG48B7AHdurRI-u4VqmBYphHrfT6G1hFw,3351
+autofollow/twitter.py,sha256=STMZ2gIpG0xb4NNEjL219753rsbhBaq6k_fSwyoAudQ,2178
+autofollow/x.py,sha256=9wxwBhT4-FRhiHnq2jUsipuG0aauctC38E3hoYGxdtE,2943
+autofollow-0.1.0.dist-info/LICENSE,sha256=aor9WXX9HgUrOgKFvIXViVrtFJcYtLQXlyOUXLz5AhM,1068
+autofollow-0.1.0.dist-info/METADATA,sha256=gq_oOliw0frhCk_HJhHSJ125GpLUb6xZtUQDjLYlIeE,850
+autofollow-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+autofollow-0.1.0.dist-info/entry_points.txt,sha256=6HD_JKRZ6a2puFOL2nKuYqsVOXwg_Y9v5VObSCrBW5o,94
+autofollow-0.1.0.dist-info/top_level.txt,sha256=jUWpzQRshcAf7j-zvzpKmDICrBBs17IUTYLcOV7R1ak,11
+autofollow-0.1.0.dist-info/RECORD,,
