@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+loshz/__init__.py
+loshz/main.py
+loshz.egg-info/PKG-INFO
+loshz.egg-info/SOURCES.txt
+loshz.egg-info/dependency_links.txt
+loshz.egg-info/requires.txt
+loshz.egg-info/top_level.txt
