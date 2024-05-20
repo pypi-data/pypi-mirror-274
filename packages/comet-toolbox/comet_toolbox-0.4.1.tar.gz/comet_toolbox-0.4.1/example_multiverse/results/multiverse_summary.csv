@@ -1,0 +1,13 @@
+Universe,num,SW,threshold
+Universe_1,1,SW29,t50
+Universe_2,1,SW29,t25
+Universe_3,1,SW45,t50
+Universe_4,1,SW45,t25
+Universe_5,2,SW29,t50
+Universe_6,2,SW29,t25
+Universe_7,2,SW45,t50
+Universe_8,2,SW45,t25
+Universe_9,3,SW29,t50
+Universe_10,3,SW29,t25
+Universe_11,3,SW45,t50
+Universe_12,3,SW45,t25
