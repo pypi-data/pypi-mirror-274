@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+elenchticalz/__init__.py
+elenchticalz/main.py
+elenchticalz.egg-info/PKG-INFO
+elenchticalz.egg-info/SOURCES.txt
+elenchticalz.egg-info/dependency_links.txt
+elenchticalz.egg-info/requires.txt
+elenchticalz.egg-info/top_level.txt
