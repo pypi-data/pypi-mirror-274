@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fantasyz/__init__.py
+fantasyz/main.py
+fantasyz.egg-info/PKG-INFO
+fantasyz.egg-info/SOURCES.txt
+fantasyz.egg-info/dependency_links.txt
+fantasyz.egg-info/requires.txt
+fantasyz.egg-info/top_level.txt
