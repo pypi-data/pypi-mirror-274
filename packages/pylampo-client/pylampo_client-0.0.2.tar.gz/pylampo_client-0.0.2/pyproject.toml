@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "pylampo-client"
+version = "0.0.2"
+description = "A simple Lampo client that communicates via a Unix socket"
+authors = ["Tarek <tareknaser360@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+black = "^24.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
