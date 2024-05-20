@@ -1,0 +1,17 @@
+README.md
+setup.py
+src/cacoepy/__init__.py
+src/cacoepy/aligner.py
+src/cacoepy.egg-info/PKG-INFO
+src/cacoepy.egg-info/SOURCES.txt
+src/cacoepy.egg-info/dependency_links.txt
+src/cacoepy.egg-info/requires.txt
+src/cacoepy.egg-info/top_level.txt
+src/cacoepy/core/ARPAbet_similarity_matrix.py
+src/cacoepy/core/Needleman_Wunsch.py
+src/cacoepy/core/__init__.py
+src/cacoepy/core/aligner_tools.py
+src/cacoepy/core/exceptions.py
+src/cacoepy/core/utils.py
+tests/test_align_ARPAbet.py
+tests/test_def align_prediction_to_annotation_and_target.py
