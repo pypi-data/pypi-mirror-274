@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sonicsz/__init__.py
+sonicsz/main.py
+sonicsz.egg-info/PKG-INFO
+sonicsz.egg-info/SOURCES.txt
+sonicsz.egg-info/dependency_links.txt
+sonicsz.egg-info/requires.txt
+sonicsz.egg-info/top_level.txt
