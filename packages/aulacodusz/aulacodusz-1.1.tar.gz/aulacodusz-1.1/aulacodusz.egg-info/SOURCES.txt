@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aulacodusz/__init__.py
+aulacodusz/main.py
+aulacodusz.egg-info/PKG-INFO
+aulacodusz.egg-info/SOURCES.txt
+aulacodusz.egg-info/dependency_links.txt
+aulacodusz.egg-info/requires.txt
+aulacodusz.egg-info/top_level.txt
