@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonzoologicalz/__init__.py
+nonzoologicalz/main.py
+nonzoologicalz.egg-info/PKG-INFO
+nonzoologicalz.egg-info/SOURCES.txt
+nonzoologicalz.egg-info/dependency_links.txt
+nonzoologicalz.egg-info/requires.txt
+nonzoologicalz.egg-info/top_level.txt
