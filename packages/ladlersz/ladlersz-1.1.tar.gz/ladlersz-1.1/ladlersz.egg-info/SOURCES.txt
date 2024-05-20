@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ladlersz/__init__.py
+ladlersz/main.py
+ladlersz.egg-info/PKG-INFO
+ladlersz.egg-info/SOURCES.txt
+ladlersz.egg-info/dependency_links.txt
+ladlersz.egg-info/requires.txt
+ladlersz.egg-info/top_level.txt
