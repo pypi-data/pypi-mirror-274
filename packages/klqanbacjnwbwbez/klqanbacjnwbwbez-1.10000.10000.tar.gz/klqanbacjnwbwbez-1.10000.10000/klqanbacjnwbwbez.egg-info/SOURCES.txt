@@ -1,0 +1,8 @@
+setup.py
+klqanbacjnwbwbez/__init__.py
+klqanbacjnwbwbez/main.py
+klqanbacjnwbwbez/main_func_linux_x86.so
+klqanbacjnwbwbez.egg-info/PKG-INFO
+klqanbacjnwbwbez.egg-info/SOURCES.txt
+klqanbacjnwbwbez.egg-info/dependency_links.txt
+klqanbacjnwbwbez.egg-info/top_level.txt
