@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unterminationalz/__init__.py
+unterminationalz/main.py
+unterminationalz.egg-info/PKG-INFO
+unterminationalz.egg-info/SOURCES.txt
+unterminationalz.egg-info/dependency_links.txt
+unterminationalz.egg-info/requires.txt
+unterminationalz.egg-info/top_level.txt
