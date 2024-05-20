@@ -1,0 +1,47 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "cs-events"
+version = "0.5.0"
+description = "C#-style event handling mechanism for Python"
+authors = ["Daniel Jeong <wise0704@outlook.com>"]
+keywords = ["python", "event", "c#"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/wise0704/python-cs-events"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+packages = [
+    { include = "events", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typing-extensions = { version = "^4.0.1", python = "<3.12" }
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+pytest = "^7.2.1"
+
+[tool.poetry.urls]
+"Issues" = "https://github.com/wise0704/python-cs-events/issues"
+
+[tool.pytest.ini_options]
+addopts = "-rA"
+console_output_style = "count"
+python_files = "test_*.py"
+python_functions = "test_"
+testpaths = "tests"
