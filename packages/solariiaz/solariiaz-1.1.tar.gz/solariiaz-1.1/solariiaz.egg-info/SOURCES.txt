@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+solariiaz/__init__.py
+solariiaz/main.py
+solariiaz.egg-info/PKG-INFO
+solariiaz.egg-info/SOURCES.txt
+solariiaz.egg-info/dependency_links.txt
+solariiaz.egg-info/requires.txt
+solariiaz.egg-info/top_level.txt
