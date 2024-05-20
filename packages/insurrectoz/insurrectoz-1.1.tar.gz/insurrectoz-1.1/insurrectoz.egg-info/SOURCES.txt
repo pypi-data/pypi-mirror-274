@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+insurrectoz/__init__.py
+insurrectoz/main.py
+insurrectoz.egg-info/PKG-INFO
+insurrectoz.egg-info/SOURCES.txt
+insurrectoz.egg-info/dependency_links.txt
+insurrectoz.egg-info/requires.txt
+insurrectoz.egg-info/top_level.txt
