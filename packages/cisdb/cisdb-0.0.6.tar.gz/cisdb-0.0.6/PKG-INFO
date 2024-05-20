@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: cisdb
+Version: 0.0.6
+Summary: LIGO channel information system
+Author-email: Joseph Areeda <joe@areeda.com>
+Maintainer-email: Joseph Areeda <joe@areeda.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: flask
+Requires-Dist: gunicorn
+Requires-Dist: numpy
+Requires-Dist: gwdatafind
+Requires-Dist: ja_webutils
+Requires-Dist: ja_basedb
+Requires-Dist: mariadb==1.1.7
+Requires-Dist: psutil
+Requires-Dist: pip
+Requires-Dist: build
+Requires-Dist: twine

@@ -1,0 +1,73 @@
+[build-system]
+requires = [
+  "build",
+  "setuptools",
+  "setuptools_scm[toml]>=3.4.3",
+  "twine",
+  "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+  name = "cisdb"
+  description = "LIGO channel information system"
+  readme = "README.md"
+  authors = [
+    { name = "Joseph Areeda", email = "joe@areeda.com" },
+  ]
+  maintainers = [
+    { name = "Joseph Areeda", email = "joe@areeda.com" },
+  ]
+  classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+   	"Intended Audience :: Science/Research",
+
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+	"Topic :: Scientific/Engineering",
+	"Topic :: Scientific/Engineering :: Astronomy",
+	"Topic :: Scientific/Engineering :: Physics",
+  ]
+
+  # requirements
+  requires-python = ">=3.9"
+  dependencies = [
+    "flask",
+    "gunicorn",
+    "numpy",
+    "gwdatafind",
+    "ja_webutils",
+    "ja_basedb",
+    "mariadb==1.1.7",
+    "psutil",
+    "pip",
+    "build",
+    "twine",
+  ]
+
+  # dynamic properties set by tools
+  dynamic = [
+    "version",
+  ]
+[tool.setuptools]
+license-files = [ "LICENSE" ]
+
+[tool.setuptools_scm]
+write_to = "cisdb/_version.py"
+
+[project.scripts]
+cis-old-desc = "cisdb.cli.copy_old_desc:main"
+cis-update-chan-nds = "cisdb.cli.update_chan_nds:maain"
+cis-update-from-frames = "cisdb.cli.update_from_frames:main"
+cis-update-ifo-fragments = "cisdb.cli.update_ifo_fragments:main"

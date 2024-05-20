@@ -1,0 +1,22 @@
+name: cis-3.10
+channels:
+  - conda-forge
+dependencies:
+  - python >=3.10, <3.11
+  - pip
+  - pytz
+  - setuptools
+  - flask
+  - gunicorn >=21.0
+  - ja-webutils
+  - mysql-connector-python
+  - gwdatafind
+  - ldas-tools-framecpp==2.9.2
+  - ldas-tools-framecpp-swig==2.6.14
+  - python-ldas-tools-framecpp==2.6.14
+  - ipython
+  - python-nds2-client
+  - nds2-client
+  - framel
+  - ciecplib
+  - ecp-cookie-init
