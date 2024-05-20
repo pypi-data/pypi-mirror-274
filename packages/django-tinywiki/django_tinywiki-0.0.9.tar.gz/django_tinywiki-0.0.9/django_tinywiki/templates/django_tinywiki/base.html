@@ -1,0 +1,60 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html {% if lang %}lang="{{ lang }}"{% endif %}>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% if head_title %}{{ head_title }}{% else %}tinywiki{%endif%}</title>
+        <link rel="stylesheet" href="{{ css }}">
+        {% if codehilite_css %}<link rel="stylesheet" href="{{ codehilite_css }}">{% endif %}
+    </head>
+    <body>
+    <div class="content">
+
+        <div class="header">
+                {% if header_logo %}<div class="header-logo"><img src="{{ header_logo }}" alt="{% translate 'Header Logo' %}"/>{% endif %}
+                <div class="header-title">{{ header_title }}</div>
+                {% if header_subtitle %}<div class="header-subtitle">{{ header_subtitle }}</div>{% endif %}
+        </div>
+        <nav class="nav max-width">
+            <div class="align-left inline-block">
+            {% if user_can_create_pages %}
+            <a class="nav-item" href="{{ create_url }}">{% translate "Create a new Page" %}</a>
+            {% endif %}
+            {% if user_can_edit_page %}
+            <a class="nav-item" href="{{ edit_url }}">{% translate "Edit Page" %}</a>
+            {% endif %}
+            {% if user_can_delete_page %}
+            <a class="nav-item" href="{{ delete_url }}">{% translate "Delete Page" %}</a>
+            {% endif %}
+            </div>
+            <div class="inline-block nav-right">
+            {% if user.is_authenticated %}
+                <a class="nav-item" href="{{ logout_url }}">{% translate "Log out" %}</a>
+            {% else %}
+                <a class="nav-item" href="{{ login_url }}">{% translate "Log in" %}</a>
+                <a class="nav-item" href="{{ signup_url }}">{% translate "Sign up" %}</a>
+            {% endif %}
+            </div>
+        </nav>
+        <aside class="left-sidebar">
+            {% block left_sidebar %}
+            {{ left_sidebar | safe}}
+            {% endblock %}
+        </aside>
+        <main class="main">
+            {% block main %}
+            <h1>{% translate "Under Construction" %}</h1>
+            <p>{% blocktranslate %}This page is currently under development! It will soon be available.{% endblocktranslate %}</p>
+            {% endblock %}
+        </main>
+        <aside class="right-sidebar">
+            {% block right_sidebar %}
+                {{ right_sidebar | safe }}
+            {% endblock %}
+        </aside>
+        <footer>
+            Powered by <strong>TinyWiki</strong>
+        </footer>
+    </div>
+    </body>
+</html>
