@@ -1,0 +1,12 @@
+cortexannotate/__init__.py,sha256=8znEWeD9pjrNwf-yn-OSECsic19kL7qNQT8MG9n_BVs,1039
+cortexannotate/_config.py,sha256=t1gOiPNR8BCU3OY48_wflnE7G-u3vzPdw7C5aN1FfIo,26754
+cortexannotate/_control.py,sha256=zOKK0r4DZXv_pYL7y7tTfW5cIEpsdqoLn7HvDmWEKgU,21486
+cortexannotate/_core.py,sha256=t5U7B8RrgkXYy4JnWbwXaRyAc7KSqa-cjkIi_LaW1Zs,34583
+cortexannotate/_figure.py,sha256=ix_Q8TZkJhVRJHdgiH8mnQzWoWqZrzW8EHOJ-jX-Blk,23823
+cortexannotate/_util.py,sha256=b7CRNldrGTx4iRdiUUMLrJlmTg8UhUYzIYYrHQTpf1E,10154
+cortexannotate/prfs.py,sha256=I7NoHGwy5QRnQZxDJ3EwO6e2aG9n_QoPojFu5oQ2MN0,14943
+cortexannotate-0.1.3.dist-info/LICENSE,sha256=Nlzs08lbc4U5wHarMr5oRd0CI5993gmhMTvZ3DxbTos,1076
+cortexannotate-0.1.3.dist-info/METADATA,sha256=kDXzIh8eWlMZa1TQ4TFrxKLQ4dhaWDH4HoxHPV9uwvc,1611
+cortexannotate-0.1.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cortexannotate-0.1.3.dist-info/top_level.txt,sha256=BBvCc9ImS4gciuOOKqWNlH94WT4DhfQ7w1GqIp1bo4w,15
+cortexannotate-0.1.3.dist-info/RECORD,,
