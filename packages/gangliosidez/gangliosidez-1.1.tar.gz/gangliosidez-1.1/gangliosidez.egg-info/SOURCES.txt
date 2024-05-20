@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gangliosidez/__init__.py
+gangliosidez/main.py
+gangliosidez.egg-info/PKG-INFO
+gangliosidez.egg-info/SOURCES.txt
+gangliosidez.egg-info/dependency_links.txt
+gangliosidez.egg-info/requires.txt
+gangliosidez.egg-info/top_level.txt
