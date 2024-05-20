@@ -1,0 +1,12 @@
+wpcsys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wpcsys/libusb-1.0.dll,sha256=PDwfR8gEDYQalAIYh0vPiKR-JPWKEVprr_CGnSUy-44,1292959
+wpcsys/pywpc.cp310-win_amd64.pyd,sha256=VbI9nO1RI6-Zou_PwIsA149p51mTibT-xFyPCwP4ot4,8682496
+wpcsys/pywpc.cp38-win_amd64.pyd,sha256=xoG3o8rdHTRQKtuF4k2VLXTnxLtMEg4-H9Vhe5mQlTo,9321984
+wpcsys/pywpc.cp39-win_amd64.pyd,sha256=8R_0yXwtrlclvUQ1RQut84VehZghHV6d4z7HD3F5P9s,9332736
+wpcsys/pywpc.cpython-310-x86_64-linux-gnu.so,sha256=B_EgewleEfawFxjXf-0fXZMOOV8uN0ImUinpMl4ELxs,12871456
+wpcsys/version.py,sha256=iIPmXuwGO4tXFtLQX6bOhNKcHTMlfl5gQMojj3sU26A,18
+wpcsys-3.0.27.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+wpcsys-3.0.27.dist-info/METADATA,sha256=lAyqcg4PU24HapKPuRhHb7UFu6tWftdWGzzu2huBxZE,5649
+wpcsys-3.0.27.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+wpcsys-3.0.27.dist-info/top_level.txt,sha256=0_MMgzXCFieTV8Cugw10SqWzdlq5d7HLRWNRKTxB33w,7
+wpcsys-3.0.27.dist-info/RECORD,,
