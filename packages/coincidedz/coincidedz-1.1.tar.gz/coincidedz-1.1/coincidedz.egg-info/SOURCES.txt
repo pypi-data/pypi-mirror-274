@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+coincidedz/__init__.py
+coincidedz/main.py
+coincidedz.egg-info/PKG-INFO
+coincidedz.egg-info/SOURCES.txt
+coincidedz.egg-info/dependency_links.txt
+coincidedz.egg-info/requires.txt
+coincidedz.egg-info/top_level.txt
