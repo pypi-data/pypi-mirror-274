@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+catalogiaz/__init__.py
+catalogiaz/main.py
+catalogiaz.egg-info/PKG-INFO
+catalogiaz.egg-info/SOURCES.txt
+catalogiaz.egg-info/dependency_links.txt
+catalogiaz.egg-info/requires.txt
+catalogiaz.egg-info/top_level.txt
