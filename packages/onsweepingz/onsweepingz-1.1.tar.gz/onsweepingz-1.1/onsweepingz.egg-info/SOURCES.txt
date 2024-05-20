@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+onsweepingz/__init__.py
+onsweepingz/main.py
+onsweepingz.egg-info/PKG-INFO
+onsweepingz.egg-info/SOURCES.txt
+onsweepingz.egg-info/dependency_links.txt
+onsweepingz.egg-info/requires.txt
+onsweepingz.egg-info/top_level.txt
