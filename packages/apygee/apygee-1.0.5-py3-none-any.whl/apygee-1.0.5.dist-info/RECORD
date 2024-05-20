@@ -1,0 +1,10 @@
+apygee/__init__.py,sha256=QGboNF2IIbw9YcoV2MkVccdE7qs7whnYDSIqHIHl8js,555
+apygee/constants.py,sha256=nJ1wrgm2ZjZCaqpJO5P0cz3mAImSVGdSgnDESOUydms,4033
+apygee/kepler.py,sha256=vF_AatJlALbUBkqtfKwKxMQ06o0tPoKWJiCfg6PuQrY,10178
+apygee/orbit.py,sha256=YJ1_hV1BtToD-cCFZLwEtFLwUu7zR_wbI1hFTaL_BT8,37363
+apygee/plot.py,sha256=4QUxdpAj5TH_pMSn316KuhmshXCBcqXr3Zd6f0e-2Pg,19837
+apygee/utils.py,sha256=H0qbY9MAYfEGibApRYo3HOQ1ugPqoBpnsv6rKEic7i4,6270
+apygee-1.0.5.dist-info/LICENSE.md,sha256=JfdE935PaZZ11mgCoXAxh4xZpN9xqOGPO9wayIVX8Ho,1060
+apygee-1.0.5.dist-info/METADATA,sha256=tNu99v529J2kGq-SH9q9frtWUOdNs3wRZe8EQTfforQ,12262
+apygee-1.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+apygee-1.0.5.dist-info/RECORD,,
