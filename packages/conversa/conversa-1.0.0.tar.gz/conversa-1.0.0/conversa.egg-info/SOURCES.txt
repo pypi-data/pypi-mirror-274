@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+conversa/__init__.py
+conversa/main.py
+conversa/usefull_functions.py
+conversa.egg-info/PKG-INFO
+conversa.egg-info/SOURCES.txt
+conversa.egg-info/dependency_links.txt
+conversa.egg-info/top_level.txt
