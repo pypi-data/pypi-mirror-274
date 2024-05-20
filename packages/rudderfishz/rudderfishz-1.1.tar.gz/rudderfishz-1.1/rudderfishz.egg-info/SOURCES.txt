@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rudderfishz/__init__.py
+rudderfishz/main.py
+rudderfishz.egg-info/PKG-INFO
+rudderfishz.egg-info/SOURCES.txt
+rudderfishz.egg-info/dependency_links.txt
+rudderfishz.egg-info/requires.txt
+rudderfishz.egg-info/top_level.txt
