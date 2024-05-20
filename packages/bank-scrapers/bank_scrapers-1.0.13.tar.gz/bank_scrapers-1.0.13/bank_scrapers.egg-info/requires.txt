@@ -1,0 +1,7 @@
+beautifulsoup4>=4.12.2
+pandas>=2.0.2
+requests>=2.31.0
+undetected-chromedriver>=3.5.0
+lxml>=4.9.2
+setuptools>=69.5.1
+lxml>=5.2.2
