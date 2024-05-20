@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyapp-window
+Version: 1.0.0
+Summary: Launch URL with native window in WebView mode. Multiple backend implementations are supported.
+Author: likianta
+Author-email: likianta@foxmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: argsense (>=0.5.7,<0.6.0)
+Requires-Dist: psutil
+Requires-Dist: toga (>=0.4.0,<0.5.0) ; python_version >= "3.8" and python_version < "3.13" and sys_platform == "darwin"
+Requires-Dist: toga (>=0.4.0,<0.5.0) ; python_version >= "3.8" and python_version < "3.13" and sys_platform == "win32"
