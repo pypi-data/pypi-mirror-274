@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lptp.egg-info/PKG-INFO
+lptp.egg-info/SOURCES.txt
+lptp.egg-info/dependency_links.txt
+lptp.egg-info/top_level.txt
