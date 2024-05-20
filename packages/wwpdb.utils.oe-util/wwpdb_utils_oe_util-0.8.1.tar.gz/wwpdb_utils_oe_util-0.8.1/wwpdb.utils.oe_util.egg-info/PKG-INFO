@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: wwpdb.utils.oe_util
+Version: 0.8.1
+Summary: wwPDB workflow engine utils
+Home-page: https://github.com/rcsb/py-wwpdb_apps_wf_engine_utils
+Author: Ezra Peisach
+Author-email: ezra.peisach@rcsb.org
+License: Apache 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: mmcif.utils
+Requires-Dist: wwpdb.utils.cc_dict_util~=0.2
+Requires-Dist: OpenEye-toolkits-python2.7-ucs2-linux-x64==2016.6.1; python_version == "2.7" and sys_platform == "linux2"
+Requires-Dist: OpenEye-toolkits; python_version >= "3"
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Provides-Extra: test
+Requires-Dist: coverage; extra == "test"
+
+See:  README.md
