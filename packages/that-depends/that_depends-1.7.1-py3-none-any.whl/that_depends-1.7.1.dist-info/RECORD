@@ -1,0 +1,15 @@
+that_depends/__init__.py,sha256=sramBcFNCX_Pk8FceF54vhs4ZP4BFt26d_9YgprGGmg,199
+that_depends/container.py,sha256=jSK-Of1eeheVHBBKWCR9gHFYlnbDJ6e6k_ZcNi1l7uw,1992
+that_depends/injection.py,sha256=PhLudYQWAC4e2fS35bu1jOFYlr0WBoCzcdWoyJybhYA,1068
+that_depends/providers/__init__.py,sha256=fIOZsNE_kajW-VUaoRONU8Hki_u9RVcquh5gGD_itZ8,739
+that_depends/providers/base.py,sha256=hsQGCLxVNEN5rk3MLKkU84IxYXi03123RB928y6JmLM,857
+that_depends/providers/collections.py,sha256=RtjNQxjT-0e_92yELmIKVVI-TqtwocTaOoyFCF5ZgUY,536
+that_depends/providers/context_resources.py,sha256=Z6Desa5SsZzLtfx2nJt39KFwivi1SLXhE0oGt3jc2aM,4255
+that_depends/providers/factories.py,sha256=YB2YYLKG219VjnT5ZszlJFATiP3sVun77K2GIjx1Yxw,1920
+that_depends/providers/resources.py,sha256=Ytni6zIa1V3h2XnrVi6PB_b2P42bbpy2gHuMu7qxkxM,4069
+that_depends/providers/singleton.py,sha256=voU291XWILJlcWhF-5mqYv5Sc0QCQcrtoRZXxZt86R4,1547
+that_depends/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+that_depends-1.7.1.dist-info/LICENSE,sha256=aA5_eJwDKqnGvL7PbkPb9x5f-VGIqZ9cvWWkeGqeD90,1070
+that_depends-1.7.1.dist-info/METADATA,sha256=wMAki5eVxmhRrYISqQycW_dP7_8tdC31k3VM_fpNCqw,3090
+that_depends-1.7.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+that_depends-1.7.1.dist-info/RECORD,,
