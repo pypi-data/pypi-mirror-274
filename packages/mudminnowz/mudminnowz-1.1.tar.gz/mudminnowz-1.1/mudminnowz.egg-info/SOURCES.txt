@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mudminnowz/__init__.py
+mudminnowz/main.py
+mudminnowz.egg-info/PKG-INFO
+mudminnowz.egg-info/SOURCES.txt
+mudminnowz.egg-info/dependency_links.txt
+mudminnowz.egg-info/requires.txt
+mudminnowz.egg-info/top_level.txt
