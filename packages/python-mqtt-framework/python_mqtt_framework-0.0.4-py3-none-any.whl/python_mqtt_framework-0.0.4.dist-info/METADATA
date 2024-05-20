@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: python-mqtt-framework
+Version: 0.0.4
+Summary: An opinionated framework to handle MQTT communication in Python.
+Home-page: https://github.com/jourdanrodrigues/python-mqtt-framework
+Author: Jourdan Rodrigues
+Author-email: thiagojourdan@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: paho-mqtt >=2.0
+Provides-Extra: dev
+Requires-Dist: django-cache-url >=3.4.5 ; extra == 'dev'
+Requires-Dist: djangorestframework >=3.15 ; extra == 'dev'
+Requires-Dist: pydantic >=2.7.1 ; extra == 'dev'
+Requires-Dist: pylibmc >=1.6.3 ; extra == 'dev'
+Requires-Dist: tox >=4.15.0 ; extra == 'dev'
+Requires-Dist: coverage >=7.5.1 ; extra == 'dev'
+
+# Python MQTT framework
+
+![PyPI - Version](https://img.shields.io/pypi/v/python-mqtt-framework)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-mqtt-framework)
+[![codecov](https://codecov.io/github/jourdanrodrigues/python-mqtt-framework/graph/badge.svg?token=L3VL6QCO77)](https://codecov.io/github/jourdanrodrigues/python-mqtt-framework)
+
+---
+
+# Overview
+
+MQTT framework is a library that provides an opinionated structure for setting up message handlers and publishers for MQTT brokers. It is built on top of the [paho-mqtt](https://pypi.org/project/paho-mqtt/) library.
+
+----
+
+# Requirements
+
+* Python 3.8+
+
+We **highly recommend** and only officially support the latest patch release of each Python series.
+
+# Installation
+
+Install using `pip`.
+
+    pip install python-mqtt-framework
+
+# Defining topic handlers
+
+This is how you write the topic handlers:
+
+```python
+from mqtt_framework import TopicHandler
+from rest_framework import serializers
+from pydantic import BaseModel
+
+
+class SimpleTestModel(BaseModel):
+    testing: str
+
+
+class SimpleTestSerializer(serializers.Serializer):
+    testing = serializers.CharField()
+
+    def create(self, validated_data):
+        print('test_message', validated_data)
+        return validated_data
+
+
+class SerializerTopicHandler(TopicHandler):
+    topic = 'test/topic'
+    serializer_class = SimpleTestSerializer
+    qos = 1
+
+    # Calls the serializer's "save" method
+
+
+class PydanticTopicHandler(TopicHandler):
+    topic = 'another/topic'
+    pydantic_model = SimpleTestModel
+    qos = 0
+
+    def handle(self):
+        pydantic_instance = self.get_validated_payload()
+        # Do something with the pydantic_instance
+```
+
+There's no need to register the topic handlers, the framework will automatically discover them as long as they are imported.
+
+# Django Integration
+
+Add `'mqtt_framework'` to your `INSTALLED_APPS` setting.
+
+```python
+INSTALLED_APPS = [
+    # ...
+    'mqtt_framework',
+]
+```
+
+## Running the MQTT listener
+
+To run the MQTT listener, you can use the `runmqtt` management command:
+
+    python manage.py runmqtt
+
+## Settings
+
+```python
+MQTT_FRAMEWORK = {
+    'BROKER_URL': 'mqtt://<user>:<password>@<host>:<port>',
+    'TOPIC_HANDLERS': 'your_app.topic_handlers',
+    'KEEPALIVE': 60,
+}
+```
+
+That's it, we're done!
+
+    python manage.py runmqtt
