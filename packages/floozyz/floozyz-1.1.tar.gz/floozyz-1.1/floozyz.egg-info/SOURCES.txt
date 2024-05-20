@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+floozyz/__init__.py
+floozyz/main.py
+floozyz.egg-info/PKG-INFO
+floozyz.egg-info/SOURCES.txt
+floozyz.egg-info/dependency_links.txt
+floozyz.egg-info/requires.txt
+floozyz.egg-info/top_level.txt
