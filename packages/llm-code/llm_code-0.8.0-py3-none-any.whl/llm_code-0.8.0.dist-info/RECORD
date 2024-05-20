@@ -1,0 +1,12 @@
+llm_code/__init__.py,sha256=WHizC8UzElmTH3641zjnMTLUHmP2rliWLTalgHU6vMA,75
+llm_code/db.py,sha256=XaPso6CfFik5yx6lNFZ6pPQBp_mrheFyR_1vl_7pFMc,1938
+llm_code/llm_code.py,sha256=kdkyzNk7QJcu1xiwEkPcZJ9L4v4KiIBu9x0hbWit5dU,5396
+llm_code/templates.py,sha256=L7VdNTRGyw8LltTPUcoIVUmpj0CbziHw43v9iE7c7HE,3449
+prompts/coding/system.toml,sha256=kt4StL60bpgXTDUS3RCBR7gsWVWMXiZ7x4TLSg7V4TA,161
+prompts/coding/user/input.toml,sha256=AyFICGAbsdB4p_elt15jdK3XU7tUkvLGOC5MHH-Ps1Q,760
+prompts/coding/user/simple.toml,sha256=S4b4RgYRXRDVSd-h04z0Tms4n-on9oaiLGVd3AFt0VU,396
+llm_code-0.8.0.dist-info/LICENSE,sha256=HEV0qpFnSdQIsKJ2RD8fWiO69Uf53BQ75SyAtOpCnp0,1070
+llm_code-0.8.0.dist-info/METADATA,sha256=Jd0u7odrIHqVlDdaUW4u9qM75Js70eHd5jyPmqwjpRI,5871
+llm_code-0.8.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+llm_code-0.8.0.dist-info/entry_points.txt,sha256=9TAfRmjhDb4Iy8XovfyYUIS8IV2GQo9Mm_yKkOvQTyQ,51
+llm_code-0.8.0.dist-info/RECORD,,
