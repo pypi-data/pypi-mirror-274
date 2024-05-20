@@ -1,0 +1,3 @@
+[console_scripts]
+dump_prk = mnsl_pool.biom:dump_prk
+set_pool = mnsl_pool.biom:set_pool
