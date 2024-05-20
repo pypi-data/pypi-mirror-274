@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kovilz/__init__.py
+kovilz/main.py
+kovilz.egg-info/PKG-INFO
+kovilz.egg-info/SOURCES.txt
+kovilz.egg-info/dependency_links.txt
+kovilz.egg-info/requires.txt
+kovilz.egg-info/top_level.txt
