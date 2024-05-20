@@ -1,0 +1,12 @@
+setup.py
+BPK_CAT.egg-info/PKG-INFO
+BPK_CAT.egg-info/SOURCES.txt
+BPK_CAT.egg-info/dependency_links.txt
+BPK_CAT.egg-info/entry_points.txt
+BPK_CAT.egg-info/top_level.txt
+bpkcat/OWDuplicateChecker.py
+bpkcat/OWSequenceChecker.py
+bpkcat/__init__.py
+bpkcat/icons/1.svg
+bpkcat/icons/2.svg
+bpkcat/icons/bpkcat.svg
