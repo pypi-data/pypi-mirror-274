@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gipsyfyz/__init__.py
+gipsyfyz/main.py
+gipsyfyz.egg-info/PKG-INFO
+gipsyfyz.egg-info/SOURCES.txt
+gipsyfyz.egg-info/dependency_links.txt
+gipsyfyz.egg-info/requires.txt
+gipsyfyz.egg-info/top_level.txt
