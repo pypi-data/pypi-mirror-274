@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+pymysql
+pymssql
+psycopg2
+sqlite3
