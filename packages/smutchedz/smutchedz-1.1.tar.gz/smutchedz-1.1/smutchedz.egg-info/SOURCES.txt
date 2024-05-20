@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+smutchedz/__init__.py
+smutchedz/main.py
+smutchedz.egg-info/PKG-INFO
+smutchedz.egg-info/SOURCES.txt
+smutchedz.egg-info/dependency_links.txt
+smutchedz.egg-info/requires.txt
+smutchedz.egg-info/top_level.txt
