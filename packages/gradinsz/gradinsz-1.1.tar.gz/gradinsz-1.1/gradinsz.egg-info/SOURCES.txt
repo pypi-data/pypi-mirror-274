@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gradinsz/__init__.py
+gradinsz/main.py
+gradinsz.egg-info/PKG-INFO
+gradinsz.egg-info/SOURCES.txt
+gradinsz.egg-info/dependency_links.txt
+gradinsz.egg-info/requires.txt
+gradinsz.egg-info/top_level.txt
