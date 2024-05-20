@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+animalhoodz/__init__.py
+animalhoodz/main.py
+animalhoodz.egg-info/PKG-INFO
+animalhoodz.egg-info/SOURCES.txt
+animalhoodz.egg-info/dependency_links.txt
+animalhoodz.egg-info/requires.txt
+animalhoodz.egg-info/top_level.txt
