@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jinja-to-resume"
+dynamic = ["version"]
+description = "Get a Jinja template and a JSON file and generate a PDF resume"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Marco Pistilli", email = "pistilli.mrc@gmail.com" }
+]
+maintainers = [
+  { name = "Marco Pistilli", email = "pistilli.mrc@gmail.com" }
+]
+keywords = ["resume", "pdf", "jinja", "json"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+    "click",
+    "jinja2",
+    "pdfkit",
+    "wkhtmltopdf",
+    "jsonschema",
+    "addict"
+]
+
+[tool.setuptools.dynamic]
+version = {file = "VERSION"}
+
+[project.scripts]
+jinja2resume = "jinja_to_resume.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

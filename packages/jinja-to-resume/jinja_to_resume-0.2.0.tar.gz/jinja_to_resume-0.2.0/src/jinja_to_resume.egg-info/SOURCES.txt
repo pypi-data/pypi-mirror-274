@@ -1,0 +1,11 @@
+README.md
+VERSION
+pyproject.toml
+src/jinja_to_resume/__init__.py
+src/jinja_to_resume/__main__.py
+src/jinja_to_resume.egg-info/PKG-INFO
+src/jinja_to_resume.egg-info/SOURCES.txt
+src/jinja_to_resume.egg-info/dependency_links.txt
+src/jinja_to_resume.egg-info/entry_points.txt
+src/jinja_to_resume.egg-info/requires.txt
+src/jinja_to_resume.egg-info/top_level.txt

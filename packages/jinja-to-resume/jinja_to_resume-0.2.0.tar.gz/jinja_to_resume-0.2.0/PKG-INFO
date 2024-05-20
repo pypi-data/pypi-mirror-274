@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: jinja-to-resume
+Version: 0.2.0
+Summary: Get a Jinja template and a JSON file and generate a PDF resume
+Author-email: Marco Pistilli <pistilli.mrc@gmail.com>
+Maintainer-email: Marco Pistilli <pistilli.mrc@gmail.com>
+Keywords: resume,pdf,jinja,json
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: jinja2
+Requires-Dist: pdfkit
+Requires-Dist: wkhtmltopdf
+Requires-Dist: jsonschema
+Requires-Dist: addict
+
+# Jinja + JSON = Resume
+
+How to use:
+
+```
+jinja2resume /path/to/resume.json /path/to/theme.jinja [/path/to/resume.pdf]
+```
