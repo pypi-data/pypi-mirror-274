@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+osculatoryz/__init__.py
+osculatoryz/main.py
+osculatoryz.egg-info/PKG-INFO
+osculatoryz.egg-info/SOURCES.txt
+osculatoryz.egg-info/dependency_links.txt
+osculatoryz.egg-info/requires.txt
+osculatoryz.egg-info/top_level.txt
