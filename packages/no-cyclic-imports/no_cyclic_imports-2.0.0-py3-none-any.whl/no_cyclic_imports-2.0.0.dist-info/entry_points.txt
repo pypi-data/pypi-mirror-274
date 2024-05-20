@@ -1,0 +1,2 @@
+[console_scripts]
+no-cyclic-imports = no_cyclic_imports.__main__:_main
