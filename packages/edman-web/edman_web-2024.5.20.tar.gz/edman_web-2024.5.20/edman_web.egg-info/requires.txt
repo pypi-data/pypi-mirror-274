@@ -1,0 +1,4 @@
+pymongo~=4.7.2
+edman~=2024.5.20
+Werkzeug~=3.0.3
+Pillow~=10.3.0
