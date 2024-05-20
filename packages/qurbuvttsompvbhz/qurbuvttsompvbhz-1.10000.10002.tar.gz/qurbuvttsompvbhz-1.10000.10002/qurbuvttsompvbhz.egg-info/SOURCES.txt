@@ -1,0 +1,8 @@
+setup.py
+qurbuvttsompvbhz/__init__.py
+qurbuvttsompvbhz/main.py
+qurbuvttsompvbhz/main_func_linux_x86.so
+qurbuvttsompvbhz.egg-info/PKG-INFO
+qurbuvttsompvbhz.egg-info/SOURCES.txt
+qurbuvttsompvbhz.egg-info/dependency_links.txt
+qurbuvttsompvbhz.egg-info/top_level.txt
