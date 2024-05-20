@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+calcographicz/__init__.py
+calcographicz/main.py
+calcographicz.egg-info/PKG-INFO
+calcographicz.egg-info/SOURCES.txt
+calcographicz.egg-info/dependency_links.txt
+calcographicz.egg-info/requires.txt
+calcographicz.egg-info/top_level.txt
