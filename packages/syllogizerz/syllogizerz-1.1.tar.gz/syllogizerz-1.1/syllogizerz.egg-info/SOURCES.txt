@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+syllogizerz/__init__.py
+syllogizerz/main.py
+syllogizerz.egg-info/PKG-INFO
+syllogizerz.egg-info/SOURCES.txt
+syllogizerz.egg-info/dependency_links.txt
+syllogizerz.egg-info/requires.txt
+syllogizerz.egg-info/top_level.txt
