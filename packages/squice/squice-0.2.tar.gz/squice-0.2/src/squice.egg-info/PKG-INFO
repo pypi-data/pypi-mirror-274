@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: squice
+Version: 0.2
+Summary: Example library for scientific software.
+Home-page: https://github.com/RachelAlcraft/squice
+Author: Rachel Alcraft
+Author-email: rachelalcraft@gmail.com
+Project-URL: Bug Tracker, https://github.com/RachelAlcraft/squice/issues
+Project-URL: Documentation, https://rachelalcraft.github.io/squice
+Project-URL: Application demo, https://squice.streamlit.app
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SQUICE
+
+*Slicing through squares: visualise and interpolate numerical matrix data.*
+
+This is a python library with accompanying demonstration streamlit web application, to visualise and interpolate numerical matrix data.
+
+This github site, streamlit application and pypi library has been created from the scientific application template [app-lib-py](https://github.com/RachelAlcraft/app-lib-py). 
+
+### Use as an application
+To use the application simply go to the open source publicly hosted for free application [squice@streamlit](https://squice.streamlit.app/)
+
+### Use as a python library
+```
+pip install squice
+```
+The documentation for the library is here: [squice docs](https://rachelalcraft.github.io/squice/index.html).  
+Note the application [squice@streamlit](https://squice.streamlit.app/) also shows demonstrations of how to use the library.
+
+
+### Use as a self-hosted web app
+This can also be downloaded from docker and self-hosted.
