@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fistulez/__init__.py
+fistulez/main.py
+fistulez.egg-info/PKG-INFO
+fistulez.egg-info/SOURCES.txt
+fistulez.egg-info/dependency_links.txt
+fistulez.egg-info/requires.txt
+fistulez.egg-info/top_level.txt
