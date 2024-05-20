@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scabiousz/__init__.py
+scabiousz/main.py
+scabiousz.egg-info/PKG-INFO
+scabiousz.egg-info/SOURCES.txt
+scabiousz.egg-info/dependency_links.txt
+scabiousz.egg-info/requires.txt
+scabiousz.egg-info/top_level.txt
