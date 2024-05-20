@@ -1,0 +1,64 @@
+exclude: '^src/validate_pyproject/_vendor'
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0
+  hooks:
+  - id: check-added-large-files
+  - id: check-ast
+  - id: check-json
+  - id: check-merge-conflict
+  - id: check-symlinks
+  - id: check-toml
+  - id: check-xml
+  - id: check-yaml
+  - id: debug-statements
+  - id: end-of-file-fixer
+  - id: requirements-txt-fixer
+  - id: trailing-whitespace
+  - id: mixed-line-ending
+    args: ['--fix=auto']  # replace 'auto' with 'lf' to enforce Linux/Mac line endings or 'crlf' for Windows
+
+- repo: https://github.com/codespell-project/codespell
+  rev: v2.2.6
+  hooks:
+  - id: codespell
+    args: [-w]
+
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.4.4  # Ruff version
+  hooks:
+  - id: ruff
+    args: [--fix, --show-fixes]
+  - id: ruff-format
+
+- repo: https://github.com/asottile/blacken-docs
+  rev: 1.16.0
+  hooks:
+  - id: blacken-docs
+    additional_dependencies: [black==23.*]
+
+- repo: local  # self-test for `validate-pyproject` hook
+  hooks:
+  - id: validate-pyproject
+    name: Validate pyproject.toml
+    language: python
+    files: ^tests/examples/.*pyproject\.toml$
+    entry: python
+    args:
+      - -c
+      - >
+        import sys;
+        sys.path.insert(0, "src");
+        from validate_pyproject.cli import main;
+        main()
+    additional_dependencies:
+      - validate-pyproject[all]>=0.13
+
+- repo: https://github.com/python-jsonschema/check-jsonschema
+  rev: 0.28.3
+  hooks:
+    - id: check-metaschema
+      files: \.schema\.json$
+    - id: check-readthedocs
+    - id: check-github-workflows
