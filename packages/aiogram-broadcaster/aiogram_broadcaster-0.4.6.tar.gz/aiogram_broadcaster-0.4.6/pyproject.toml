@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aiogram_broadcaster"
+dynamic = ["version"]
+description = "A lightweight aiogram-based library for broadcasting Telegram messages."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "LORES" }
+]
+classifiers = [
+    "Typing :: Typed",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = [
+    "telegram",
+    "bot",
+    "api",
+    "framework",
+    "wrapper",
+    "asyncio",
+    "broadcaster",
+    "boadcasting",
+    "broadcast",
+    "broadcaster",
+    "mailing",
+    "mailing-system",
+]
+dependencies = [
+    "aiogram>=3.6.0"
+]
+
+
+[project.urls]
+Source = "https://github.com/loRes228/aiogram_broadcaster"
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.9.0",
+    "ruff>=0.3.2",
+    "types-aiofiles>=23.2.0"
+]
+redis = [
+    "redis[hiredis]>=5.0.0"
+]
+mongo = [
+    "motor>=3.0.0"
+]
+sqlalchemy = [
+    "SQLAlchemy>=2.0.0"
+]
+
+[tool.hatch.version]
+path = "aiogram_broadcaster/__meta__.py"
