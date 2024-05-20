@@ -1,0 +1,5 @@
+docmesh_server/__init__.py,sha256=3gnEAGSfmAFrUesNvDNydNQAqf9RE54jh3UnvV0HM2U,64
+docmesh_server/main.py,sha256=2y6Xzj3S0z_JhpXJ-iEfvEVkZJsbks3BxEg6MvArv3c,10156
+docmesh_server-0.0.6.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+docmesh_server-0.0.6.dist-info/METADATA,sha256=gNfvFXXjPQLmuEaFHhl5e46b5jD-KrnChgtTeSQrZdE,585
+docmesh_server-0.0.6.dist-info/RECORD,,
