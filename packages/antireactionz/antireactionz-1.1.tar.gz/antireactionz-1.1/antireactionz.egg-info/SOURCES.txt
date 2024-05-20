@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+antireactionz/__init__.py
+antireactionz/main.py
+antireactionz.egg-info/PKG-INFO
+antireactionz.egg-info/SOURCES.txt
+antireactionz.egg-info/dependency_links.txt
+antireactionz.egg-info/requires.txt
+antireactionz.egg-info/top_level.txt
