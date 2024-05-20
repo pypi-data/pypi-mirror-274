@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cassoniz/__init__.py
+cassoniz/main.py
+cassoniz.egg-info/PKG-INFO
+cassoniz.egg-info/SOURCES.txt
+cassoniz.egg-info/dependency_links.txt
+cassoniz.egg-info/requires.txt
+cassoniz.egg-info/top_level.txt
