@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trusteez/__init__.py
+trusteez/main.py
+trusteez.egg-info/PKG-INFO
+trusteez.egg-info/SOURCES.txt
+trusteez.egg-info/dependency_links.txt
+trusteez.egg-info/requires.txt
+trusteez.egg-info/top_level.txt
