@@ -1,0 +1,7 @@
+README.md
+setup.py
+FuPy/__init__.py
+FuPy.egg-info/PKG-INFO
+FuPy.egg-info/SOURCES.txt
+FuPy.egg-info/dependency_links.txt
+FuPy.egg-info/top_level.txt
