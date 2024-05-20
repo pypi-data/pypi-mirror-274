@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+symbolipy/__init__.py
+symbolipy/symbol_interface.py
+symbolipy.egg-info/PKG-INFO
+symbolipy.egg-info/SOURCES.txt
+symbolipy.egg-info/dependency_links.txt
+symbolipy.egg-info/requires.txt
+symbolipy.egg-info/top_level.txt
+test/test_symbol.py
