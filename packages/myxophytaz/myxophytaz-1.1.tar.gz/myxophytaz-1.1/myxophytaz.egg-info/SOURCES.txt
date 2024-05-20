@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+myxophytaz/__init__.py
+myxophytaz/main.py
+myxophytaz.egg-info/PKG-INFO
+myxophytaz.egg-info/SOURCES.txt
+myxophytaz.egg-info/dependency_links.txt
+myxophytaz.egg-info/requires.txt
+myxophytaz.egg-info/top_level.txt
