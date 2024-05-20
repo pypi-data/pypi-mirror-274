@@ -1,0 +1,52 @@
+[build-system]
+requires = ["poetry-core>=1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "bbgws"
+version = "0.1.1"
+description = "Plugins for actionbot (a buildbot-based preconfigured CI)"
+authors = ["Michal Goral <dev@goral.net.pl>"]
+license = "LGPL-3.0-only"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Environment :: Plugins",
+]
+packages = [
+    { include = "bbgws", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+buildbot = "^3.11"
+
+pytest = "^8"
+pytest-twisted = "^1.14"
+pytest-cov = "^5"
+pytest-sugar = ">=0.9"
+black = "^24"
+mypy = "^1"
+cmplib = "^1.0.0"
+
+[tool.poetry.plugins."buildbot.webhooks"]
+gws = "bbgws.webhook.gws:gws"
+
+[tool.poetry.plugins."buildbot.steps"]
+GwsStages = "bbgws.steps.gws:GwsStages"
+CopyArtifacts = "bbgws.steps.artifacts:CopyArtifacts"
+
+[tool.mypy]
+check_untyped_defs = true
+pretty = true
+show_error_context = true
+
+[[tool.mypy.overrides]]
+module = [
+    "buildbot.*",
+    "dateutil.parser",
+]
+ignore_missing_imports = true
