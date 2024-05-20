@@ -1,0 +1,10 @@
+README.md
+setup.py
+KynlosWebServer/__init__.py
+KynlosWebServer/gui.py
+KynlosWebServer/main.py
+Kynlos_Web_Server.egg-info/PKG-INFO
+Kynlos_Web_Server.egg-info/SOURCES.txt
+Kynlos_Web_Server.egg-info/dependency_links.txt
+Kynlos_Web_Server.egg-info/entry_points.txt
+Kynlos_Web_Server.egg-info/top_level.txt

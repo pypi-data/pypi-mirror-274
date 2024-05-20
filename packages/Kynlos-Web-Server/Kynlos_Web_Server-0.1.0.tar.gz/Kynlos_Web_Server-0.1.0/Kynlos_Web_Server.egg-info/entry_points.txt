@@ -1,0 +1,2 @@
+[console_scripts]
+webserve = kynlos_web_server.main:run_server
