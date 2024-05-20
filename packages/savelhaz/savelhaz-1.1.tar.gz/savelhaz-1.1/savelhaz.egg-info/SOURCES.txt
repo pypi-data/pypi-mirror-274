@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+savelhaz/__init__.py
+savelhaz/main.py
+savelhaz.egg-info/PKG-INFO
+savelhaz.egg-info/SOURCES.txt
+savelhaz.egg-info/dependency_links.txt
+savelhaz.egg-info/requires.txt
+savelhaz.egg-info/top_level.txt
