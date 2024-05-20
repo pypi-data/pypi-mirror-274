@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "infolab-common-lib"
+version = "1.0.0"
+authors = [
+    { name = "anhnd15", email = "anhnd15@vng.com.vn" },
+]
+description = "Infolab Common Lib"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "requests>=2.27.1",
+]
+
+[project.urls]
+"Homepage" = "https://zalogit2.zing.vn/infolab/infolab-common-lib"
+"Bug Tracker" = "https://zalogit2.zing.vn/infolab/infolab-common-lib/-/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["/common_lib"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/common_lib",
+    "/LICENSE",
+    "/README.md",
+]
