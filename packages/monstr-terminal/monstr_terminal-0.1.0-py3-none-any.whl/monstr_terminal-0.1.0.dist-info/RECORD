@@ -1,0 +1,13 @@
+monstr_terminal/__about__.py,sha256=s0K7iEih_dV7AeI95mA6iVw_wQflczpoga9QU9iO_Tg,19
+monstr_terminal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monstr_terminal/util.py,sha256=asL7vuw5IiJB0ayhHl-UK_6h77d6DZy5_c3wHzQ0d9M,2104
+monstr_terminal/app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monstr_terminal/app/post.py,sha256=zmuXSqGkulDAvpGeAqU4M9qdN7j1SOEejHnqN0cOAZ4,10733
+monstr_terminal/cmd_line/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monstr_terminal/cmd_line/message_app.py,sha256=4Yuh5sEmMQSF4UpKr1_eTfaUdQVgWvaLrd6rrPV18Kg,32309
+monstr_terminal/cmd_line/post_loop_app.py,sha256=Fjk1nw1IRugTkGTSBOKpbDhSbdRIBU7HwJF9rmSZw7w,6842
+monstr_terminal/cmd_line/util.py,sha256=NONEdl2V74CSlHbBOn1zAsVCo7iRNELcQZC3PvIxArY,20615
+monstr_terminal-0.1.0.dist-info/METADATA,sha256=cJ1f5bfFipXSSYE452OdE7LKpBw9BEvacZ1jkiqEXrM,15544
+monstr_terminal-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+monstr_terminal-0.1.0.dist-info/licenses/LICENSE,sha256=kVS1-G23qYHEWTiJYd-QiLg8bf_RK48BtDq7-Rg48ko,1065
+monstr_terminal-0.1.0.dist-info/RECORD,,
