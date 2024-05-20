@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+isonitrilez/__init__.py
+isonitrilez/main.py
+isonitrilez.egg-info/PKG-INFO
+isonitrilez.egg-info/SOURCES.txt
+isonitrilez.egg-info/dependency_links.txt
+isonitrilez.egg-info/requires.txt
+isonitrilez.egg-info/top_level.txt
