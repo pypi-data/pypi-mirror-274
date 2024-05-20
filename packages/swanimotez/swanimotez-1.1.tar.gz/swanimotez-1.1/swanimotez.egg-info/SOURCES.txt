@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+swanimotez/__init__.py
+swanimotez/main.py
+swanimotez.egg-info/PKG-INFO
+swanimotez.egg-info/SOURCES.txt
+swanimotez.egg-info/dependency_links.txt
+swanimotez.egg-info/requires.txt
+swanimotez.egg-info/top_level.txt
