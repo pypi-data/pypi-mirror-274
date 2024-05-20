@@ -1,0 +1,9 @@
+argparse
+argcomplete
+tabulate
+jsonpickle
+pyasyncore
+pwinput
+requests
+si_prefix===1.0
+urllib3==1.26.6
