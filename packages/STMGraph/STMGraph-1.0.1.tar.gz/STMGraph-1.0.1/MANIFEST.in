@@ -1,0 +1,8 @@
+# 包含所有文件和目录
+include *
+
+# 排除不需要的文件和目录
+exclude /share/home/stu_qilin/software/STMGraph_main/src/STMGraph/__pycache__/
+exclude /share/home/stu_qilin/software/STMGraph_main/src/STMGraph/test_M.py/
+exclude *.txt
+
