@@ -1,0 +1,9 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+QuickSymbol.egg-info/PKG-INFO
+QuickSymbol.egg-info/SOURCES.txt
+QuickSymbol.egg-info/dependency_links.txt
+QuickSymbol.egg-info/top_level.txt
+QuickSymbols/__init__.py

@@ -1,0 +1,1 @@
+this is a symbol library for fast use by utf8 code
