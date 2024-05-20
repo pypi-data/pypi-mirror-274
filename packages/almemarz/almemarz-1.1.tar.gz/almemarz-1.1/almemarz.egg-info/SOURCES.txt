@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+almemarz/__init__.py
+almemarz/main.py
+almemarz.egg-info/PKG-INFO
+almemarz.egg-info/SOURCES.txt
+almemarz.egg-info/dependency_links.txt
+almemarz.egg-info/requires.txt
+almemarz.egg-info/top_level.txt
