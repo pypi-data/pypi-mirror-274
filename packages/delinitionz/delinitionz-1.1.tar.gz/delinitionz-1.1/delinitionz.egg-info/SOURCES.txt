@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+delinitionz/__init__.py
+delinitionz/main.py
+delinitionz.egg-info/PKG-INFO
+delinitionz.egg-info/SOURCES.txt
+delinitionz.egg-info/dependency_links.txt
+delinitionz.egg-info/requires.txt
+delinitionz.egg-info/top_level.txt
