@@ -1,0 +1,49 @@
+{% extends base_template %}
+{% load i18n %}
+
+{% block main %}
+<div class="wiki-content">
+    {% if user_can_create_pages or user_can_edit_page or user_can_delete_page %}
+    <ul class="wiki-links">
+        {% if user_can_create_pages %}<li><a href="{{ create_url }}">{% translate "Create new page" %}</a></li>{% endif %}
+        {% if user_can_edit_page %}
+            <li><a href="{{ edit_url }}">{% translate "Edit page" %}</a></li>
+            <li><a href="{{ image_upload_url }}">{% translate "Upload image" %}</a></li>
+        {% endif %}
+        {% if user_can_delete_page %}<li><a href="{{ delete_url }}">{% translate "Delete page" %}</a></li>{% endif %}
+    </ul>
+    {% endif %}
+    {% autoescape off %}{{ content }}{% endautoescape %}
+    <div class="wiki-userinfo">
+        &copy;
+        {% if page.created_on.year == page.edited_on.year %}
+            {{ page.created_on.year }}
+        {% else %}
+            {{ page.created_on.year }}-{{ page.edited_on.year }}
+        {% endif %}
+        {% if page.user.username %}{{ page.user.username }}{% else %}{% translate 'Unknown User' %}{% endif %}
+        <br><br>
+        <strong>{% translate 'Latest edit on:' %}</strong> {{ page.edited_on}}<br>
+        {% if page.edited_by %}<strong>{% translate 'Edited by:'%}</strong> {{ page.edited_by.username }}<br>{% endif %}
+        <strong>{% translate 'Reason:' %}</strong> {% if page.edited_reason %}{{ page.edited_reason }}{% else %}{% translate 'No reason given' %}{% endif %}
+    </div>
+    {% if user_can_edit_page %}
+
+    <h2>{% translate "Linked Images" %}</h2>
+    <ul class="wiki-links">
+        <li><a href="{{ image_upload_url }}">{% translate "Upload image" %}</a></li>
+    </ul>
+    {% if images %}
+    <div class="wiki-linked-image-grid">
+        {% for img in images %}
+        <div class="wiki-linked-image-grid-item">
+            <a href="{{ img.image.url }}">
+                <img src="{{ img.image_preview.url }}"><br>
+                #{{ img.id }}{% if img.description %} - {{ img.description }}{% else %} - {{ img.alt }}{% endif %}
+            </a>
+        </div>{% endfor %}
+    </div>
+    {% endif %}
+    {% endif %}
+</div>
+{% endblock %}

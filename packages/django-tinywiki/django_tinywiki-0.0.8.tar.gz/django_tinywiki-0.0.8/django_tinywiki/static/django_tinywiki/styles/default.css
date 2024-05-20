@@ -1,0 +1,368 @@
+body {
+    margin: 0px;
+    background-color: #7a7c7e;
+    overflow-x:hidden;
+}
+
+.content {
+    max-width:100%;
+    display:grid;
+    column-gap: 20px;
+    grid-template-columns: 260px auto 210px 10px;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+code {
+    background-color: #0d1117;
+    color: #e6edf3;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+pre {
+    padding: 10px;
+    overflow:auto;    
+}
+
+pre code {
+    padding: 0px;
+}
+
+.codehilite code {
+    all: unset;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type=text],textarea,input[type=number],input[type=password],input[type=email] {
+    width:100%;
+    border:1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 600px;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+table {
+    border-color: #1c232e;
+    border-width: 1px;
+    border-style: solid;
+}
+
+th {
+  color:#e6edf3;
+  background-color:#1c232e;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+td {
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+tr:nth-child(odd) {
+    background-color: #b9bdc0;
+}
+
+tr:nth-child(even) {
+    background-color: #7a7c7e;
+}
+
+.align-right {
+    align-content: right;
+    text-align: right;
+}
+
+.nav-right {
+    position:absolute;
+    right:20px;
+}
+
+.align-left {
+    width: auto;
+    align-content: left;
+    text-align: left;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.float-right {
+    float:right;
+}
+
+.max-width {
+    width:100%;
+}
+
+.header {
+    width:100%;
+    margin:0px;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: #0d1117;
+    color: #e6edf3;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right:0px;
+    margin-right:0px;
+    display: grid;
+}
+
+nav {
+    margin:0px;
+    margin-right:0px;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:0px;
+    grid-row:2;
+    grid-column-start: 1;
+    grid-column-end:5;
+    background-color: #1c232e;
+    color: #e6edf3;
+}
+
+.nav-item {
+    color: #e6edf3;
+    text-decoration: none;
+    padding:5px;
+}
+.nav-item:link {
+    color: #e6edf3;
+    text-decoration: none;
+    padding:5px;
+}
+.nav-item:visited {
+    color: #e6edf3;
+    text-decoration: none;
+    padding:5px;
+}
+.nav-item:hover {
+    color: #e6edf3;
+    background-color: #48494d;
+    text-decoration: none;
+    padding:5px;
+}
+.nav-item:active {
+    color: #e6edf3;
+    background-color: #48494d;
+    text-decoration: none;
+    padding:5px;
+}
+
+
+.header_logo {
+    grid-column: 0;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.header-title {
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.header-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    grid-row:2;
+    grid-column: 1;
+}
+
+main {
+    grid-row:3;
+    grid-column:2;
+    margin-top: 10px;
+    padding: 20px;
+
+    background-color: #e6edf3;
+    min-width: 400px;
+}
+
+.wiki-links {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+.wiki-links li {
+    margin-right: 10px;
+    float:left;
+}
+
+.wiki-linked-image-grid {
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: repeat(4,calc((100% - 30px) / 4));
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 10px;
+}
+
+.wiki-linked-image-grid-item {
+    max-width: 100%;
+    background-color: lightgrey;
+    padding-bottom: 3px;
+}
+
+.wiki-image {
+    background-color: lightgrey;
+}
+
+.wiki-image span {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.wiki-userinfo {
+    background: lightgray;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0px;
+    grid-row:4;
+    grid-column-start:1;
+    grid-column-end: 5;
+    padding-left:20px;
+    padding-bottom:5px;
+    padding-top:3px;
+    padding-right:0px;
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+.overflow-auto {
+    overflow:auto;
+}
+
+.left-sidebar {
+    width: 250px;
+    grid-column: 1;
+    grid-row: 3;
+}
+.left-sidebar-section {
+    width: 100%;
+    margin: 10px;
+    padding-bottom: 5px;
+    background-color: #e6edf3;
+}
+
+.left-sidebar-section-title {
+    background-color: #0d1117;
+    color: #e6edf3;
+    padding: 3px;
+}
+
+.left-sidebar-item {
+    padding-left: 30px;
+}
+
+.right-sidebar {
+    grid-row:3;
+    grid-column:3;
+    width:100%;
+    margin-top:10px;
+}
+
+.right-sidebar-item {
+    width: 100%;
+    margin-bottom:20px;
+    margin-right:10px;
+    background-color: #e6edf3;
+    padding:2px;
+}
+
+.right-sidebar-image-link {
+    width: 100%;
+}
+
+.right-sidebar-image {
+    width: 100%;
+}
+
+.full-width {
+    width: 100%
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    background-color: #1c232e;
+    color:#e6edf3;
+    padding:10px;
+    border-radius: 4px;
+}
+
+.button:link {
+    background-color: #1c232e;
+    color:#e6edf3;
+}
+
+.button:visited {
+    background-color: #1c232e;
+    color:#e6edf3;
+}
+
+.button:hover {
+    background-color: #313c4e;
+    color:#e6edf3;
+}
+
+.button:active {
+    background-color: #313c4e;
+    color:#e6edf3;
+}

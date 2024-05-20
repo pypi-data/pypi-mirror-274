@@ -1,0 +1,45 @@
+{% extends base_template %}
+{% load i18n %}
+
+{% block main %}
+<form method="post">
+    {% csrf_token %}
+    <p>
+        <strong>{% translate 'Slug' %}</strong><br>
+        {{ slug }}{{ form.slug.as_hidden }}
+    </p>
+    <p>
+        {{ form.title.label_tag }}<br>
+        {{ form.title }}
+    </p>
+    {% if user_is_wiki_admin %}
+    <p>
+        {{ form.user.label_tag }}<br>
+        {{ form.user }}
+    </p>
+    {% else %}
+        {{ form.instance.user }}{{ form.user.as_hidden }}
+    {% endif %}
+    <p>
+        {{ form.language.label_tag }}<br>
+        {{ form.language }}
+    </p>
+    <p>
+        {{ form.content.label_tag }}<br>
+        {{ form.content }}
+    </p>
+    <p>
+        {{ form.edited_reason.label_tag}}<br>
+        {{ form.edited_reason }}<br>
+    </p>
+    <p>
+        {{ form.userlock }} {{ form.userlock.label_tag }}
+        {% if user_is_wiki_admin %}
+        <br>{{ form.editlock }} {{ form.editlock.label_tag }}
+        {% else %}
+        {{ form.editlock.as_hidden }}<br>
+        {% endif %}
+    </p>
+    <input type="submit" value="{% translate 'Save' %}">
+</form>
+{% endblock %}
