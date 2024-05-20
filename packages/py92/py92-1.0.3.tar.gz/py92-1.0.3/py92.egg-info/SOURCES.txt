@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+py92/__init__.py
+py92/cn_schools.csv
+py92/config.py
+py92/py92utils.py
+py92/qs2024.csv
+py92.egg-info/PKG-INFO
+py92.egg-info/SOURCES.txt
+py92.egg-info/dependency_links.txt
+py92.egg-info/requires.txt
+py92.egg-info/top_level.txt
+tests/__init__.py
+tests/test_module.py
