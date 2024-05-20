@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: smon
+Version: 1.1.0
+Summary: This is a sensor data oscilloscope for xkit.
+Home-page: https://github.com/planxstudio/xkit
+Author: chanmin.park
+Author-email: devcamp@gmail.com
+Keywords: xkit,genlib
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: python-dotenv
+Requires-Dist: numpy
+Requires-Dist: pyside6
+Requires-Dist: pythonqwt
+Requires-Dist: genlib
+
+This is a sensor data oscilloscope for xkit.
+
+### History
+- V1.0.0
+  - Real-time sensor data plotting
+  - Supports plotting up to 16 data
+  - Support plotting selection
+  - Supports saving collected data as csv format file
+  - UDPServer or MulticastReceiver
+
+### Install
+```sh
+pip install quat
+```
+
+### Dependencies
+- PySide6
+- PythonQwt
+- numpy
+- genlib
+
+### Run
+**UDP Server (default port 7321)**
+```sh
+smon
+```
+
+**MulticastReceiver (default group 239.8.7.6, default port 7321)**
+```sh
+smon --mcast
+```
+
+**options**  
+--mcast
+--group=\<group\> (default 239.8.7.6)
+--iport=\<port\>  (default 7321)
+--log=\<stream | file>
+
+### Client Implementations
+- UDPClient or MulticastSender
+
+**sensor data format**
+  ```sh
+  x, y, z, ...
+  ```
+
+**Example**
+  ```python
+  import time
+  from genlib.upd import UDPClient
+  from pop.ext import IMU
+
+  imu = IMU()
+  udp = UDPClient()
+  
+  SMON_IP = '192.168.0.100'
+  SMON_PORT = 7321
+
+  while True:
+      w, x, y, z = imu.read(IMU.QUATERNION)
+      data = "{},{},{},{},".format(w, x, y, z)
+      x, y, z = imu.read(IMU.ACCELERATION)
+      data += "{},{},{},".format(x, y, z)
+      x, y, z = imu.read(IMU.GYROSCOPE) 
+      data += "{},{},{},".format(x, y, z)
+      x, y, z = imu.read(IMU.MAGNETIC)
+      data += "{},{},{},".format(x, y, z)
+      x, y, z = imu.read(IMU.EULER)
+      data += "{},{},{}".format(x, y, z)
+
+      udp.sendTo(data.encode(), (SMON_IP, SMON_PORT))
+      time.sleep(20/1000)  
+  ```

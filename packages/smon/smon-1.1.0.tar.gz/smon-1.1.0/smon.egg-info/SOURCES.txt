@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+smon/__init__.py
+smon/oscilloscope.py
+smon/sampling.py
+smon/smon.png
+smon/smon.py
+smon/smon_xnode_code.png
+smon.egg-info/PKG-INFO
+smon.egg-info/SOURCES.txt
+smon.egg-info/dependency_links.txt
+smon.egg-info/entry_points.txt
+smon.egg-info/not-zip-safe
+smon.egg-info/requires.txt
+smon.egg-info/top_level.txt
