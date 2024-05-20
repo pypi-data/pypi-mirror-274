@@ -1,0 +1,13 @@
+setup.py
+pyodide_mkdocs_theme_sqlite/__init__.py
+pyodide_mkdocs_theme_sqlite/plugin.py
+pyodide_mkdocs_theme_sqlite.egg-info/PKG-INFO
+pyodide_mkdocs_theme_sqlite.egg-info/SOURCES.txt
+pyodide_mkdocs_theme_sqlite.egg-info/dependency_links.txt
+pyodide_mkdocs_theme_sqlite.egg-info/entry_points.txt
+pyodide_mkdocs_theme_sqlite.egg-info/requires.txt
+pyodide_mkdocs_theme_sqlite.egg-info/top_level.txt
+pyodide_mkdocs_theme_sqlite/css/sqlite_ide.css
+pyodide_mkdocs_theme_sqlite/js/sql-wasm.wasm
+pyodide_mkdocs_theme_sqlite/js/sqlite_ide.js
+pyodide_mkdocs_theme_sqlite/js/worker.sql-wasm.js
