@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+adducez/__init__.py
+adducez/main.py
+adducez.egg-info/PKG-INFO
+adducez.egg-info/SOURCES.txt
+adducez.egg-info/dependency_links.txt
+adducez.egg-info/requires.txt
+adducez.egg-info/top_level.txt
