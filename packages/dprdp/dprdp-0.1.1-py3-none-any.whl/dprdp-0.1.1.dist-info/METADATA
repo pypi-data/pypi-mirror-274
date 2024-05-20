@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dprdp
+Version: 0.1.1
+Summary: my package
+Requires-Dist: unicrypto <=0.1.0,>=0.0.10
+Requires-Dist: minidump <=0.1.0,>=0.0.21
+Requires-Dist: minikerberos <=0.5.0,>=0.4.1
+Requires-Dist: winacl <=0.2.0,>=0.1.9
+
