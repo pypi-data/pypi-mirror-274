@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+admissablez/__init__.py
+admissablez/main.py
+admissablez.egg-info/PKG-INFO
+admissablez.egg-info/SOURCES.txt
+admissablez.egg-info/dependency_links.txt
+admissablez.egg-info/requires.txt
+admissablez.egg-info/top_level.txt
