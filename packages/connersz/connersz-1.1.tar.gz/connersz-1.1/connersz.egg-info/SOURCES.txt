@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+connersz/__init__.py
+connersz/main.py
+connersz.egg-info/PKG-INFO
+connersz.egg-info/SOURCES.txt
+connersz.egg-info/dependency_links.txt
+connersz.egg-info/requires.txt
+connersz.egg-info/top_level.txt
