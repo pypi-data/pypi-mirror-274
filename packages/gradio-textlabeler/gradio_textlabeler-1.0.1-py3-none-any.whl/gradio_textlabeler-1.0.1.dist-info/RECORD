@@ -1,0 +1,10 @@
+gradio_textlabeler/__init__.py,sha256=jozv7tvevwHzKB2wNccAKrXqcZUiHkuAz3ZIB3XEYUs,65
+gradio_textlabeler/textlabeler.py,sha256=ZU0GdnU8cn8mhzI5jteqU6naQLLF_0uzCkEy-x6Vzyw,5948
+gradio_textlabeler/textlabeler.pyi,sha256=Pa3UgOVIxx2K36VDMIgse1dplo2MJEIqGHIpxpeyV70,15958
+gradio_textlabeler/templates/component/index.js,sha256=OAmKiZavM9lcqrMFe3dqqr-7NeV7urOHCCDt425PArk,74478
+gradio_textlabeler/templates/component/style.css,sha256=wNuVfR_V-N1fA_-P477HkLE4WILnrqXXF6an_zhHfAM,14091
+gradio_textlabeler/templates/example/index.js,sha256=Pic4wySeKOeaWNF03ykMdDJ5jMUucugDg_Qp9sOInI8,1641
+gradio_textlabeler/templates/example/style.css,sha256=Aj4k-S41TV83pot-J9j9Fi2UonrXHFC1Jl4Zb1xaYo4,61
+gradio_textlabeler-1.0.1.dist-info/METADATA,sha256=tgbYqvs1LrI6QD4n3T3ubSv6BPyzok5tROV34U5tK2A,10494
+gradio_textlabeler-1.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+gradio_textlabeler-1.0.1.dist-info/RECORD,,
