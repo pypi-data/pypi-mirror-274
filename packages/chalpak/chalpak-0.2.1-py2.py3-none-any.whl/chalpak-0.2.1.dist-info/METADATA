@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: chalpak
+Version: 0.2.1
+Summary: Chalpak - mini web framework like fastAPi, flask
+Home-page: https://github.com/me/myproject
+Author: Mehmonov Husniddin
+Author-email: mehmonov.husniddin1@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.11.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp ==3.9.5
+Requires-Dist: aiohttp-jinja2 ==1.6
+Requires-Dist: watchdog ==4.0.0
+Requires-Dist: jurigged ==0.5.7
+Requires-Dist: Jinja2 ==3.1.4
+
+
+# Chalpak Web Framework
+
+Chalpak is a simple and easy-to-use web framework that helps you create fast and efficient web applications.
+[![Chalpak version](https://img.shields.io/pypi/v/chalpak.svg)](https://pypi.org/project/chalpak)
+[![PyPI version](https://badge.fury.io/py/chalpak.svg)](https://badge.fury.io/py/chalpak)
+[![Documentation Status](https://readthedocs.org/projects/chalpak/badge/?version=latest)](https://chalpak.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://travis-ci.com/username/chalpak.svg?branch=master)](https://travis-ci.com/username/chalpak)
+
+
+
+**Install Chalpak**
+
+```bash
+pip install chalpak
+```
+
+## Usage
+
+```python
+from chalpak import Chalpak
+
+app = Chalpak()
+
+
+app.run()
+
+```
+
+
+## Examples
+
+```python
+from chalpak.app import ChalpakApp
+
+from chalpak.response import JSONResponse, HTMLResponse, render
+
+app = ChalpakApp(templates='templates')
+
+
+
+@app.get("/salom/{name}")
+async def index(request, name):
+    return JSONResponse({"name": name})
+
+@app.get("/html/{name}")
+async def html(request, name):
+    return render("index.html", request, {"name": name})
+
+app.run()
+```
+
