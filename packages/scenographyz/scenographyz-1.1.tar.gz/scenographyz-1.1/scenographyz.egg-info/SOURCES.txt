@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scenographyz/__init__.py
+scenographyz/main.py
+scenographyz.egg-info/PKG-INFO
+scenographyz.egg-info/SOURCES.txt
+scenographyz.egg-info/dependency_links.txt
+scenographyz.egg-info/requires.txt
+scenographyz.egg-info/top_level.txt
