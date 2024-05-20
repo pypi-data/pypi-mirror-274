@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: FuPy
+Version: 0.0.1
+Summary: Functional Programming in Python, for Education
+Home-page: https://gitlab.tue.nl/t-verhoeff-software/FuPy
+Author: Tom Verhoef (Eindhoven University of Technology)
+Author-email: T.Verhoeff@tue.nl
+License: MIT
+Description-Content-Type: text/markdown
+
+# Functional Programming in Python, for Education
+
+Python has some support for functional programming:
+* functions are first-class citizens;
+* functions can take functions as arguments and can return functions
+* lambda expressions for anonymous functions
+
+FuPy aims to overcome some limitations.
+
+To be released soon.
