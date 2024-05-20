@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dipppiestz/__init__.py
+dipppiestz/main.py
+dipppiestz.egg-info/PKG-INFO
+dipppiestz.egg-info/SOURCES.txt
+dipppiestz.egg-info/dependency_links.txt
+dipppiestz.egg-info/requires.txt
+dipppiestz.egg-info/top_level.txt
