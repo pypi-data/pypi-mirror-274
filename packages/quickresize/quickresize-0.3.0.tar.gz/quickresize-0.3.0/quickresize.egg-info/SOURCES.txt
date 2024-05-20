@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+quickresize/__init__.py
+quickresize/resize.py
+quickresize.egg-info/PKG-INFO
+quickresize.egg-info/SOURCES.txt
+quickresize.egg-info/dependency_links.txt
+quickresize.egg-info/entry_points.txt
+quickresize.egg-info/requires.txt
+quickresize.egg-info/top_level.txt

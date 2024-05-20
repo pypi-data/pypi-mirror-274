@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: quickresize
+Version: 0.3.0
+Summary: In-place resizing of images present in a folder
+Author: Nityanand Mathur
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: pillow
+
+# Quick Resize
+
+Library for simple utilities
+
+## Resize
+
+In-place resizing of images present in a folder
+
+### Usage
+```bash
+resize --f <folder name> --r <width> <height>
+```
