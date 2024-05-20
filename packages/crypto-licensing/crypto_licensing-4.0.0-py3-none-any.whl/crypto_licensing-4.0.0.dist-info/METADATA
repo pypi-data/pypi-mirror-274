@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: crypto_licensing
+Version: 4.0.0
+Summary: The crypto-licensing module implements Ed25519-signed license checking and automatic issuance after cryptocurrency payment
+Home-page: https://github.com/pjkundert/crypto-licensing
+Author: Perry Kundert
+Author-email: perry@dominionrnd.com
+License: Dual License; GPLv3 and Proprietary
+Project-URL: Bug Tracker, https://github.com/pjkundert/crypto-licensing/issues
+Keywords: licensing Bitcoin Ethereum cryptocurrency payments Ed25519 signatures
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Environment :: Console
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Office/Business :: Financial
+Description-Content-Type: text/plain
+License-File: LICENSE
+License-File: COPYING
+Requires-Dist: chacha20poly1305 >=0.0.3
+Requires-Dist: click
+Requires-Dist: dnspython
+Requires-Dist: future >=1
+Requires-Dist: pytz
+Requires-Dist: requests <3,>=2.20
+Requires-Dist: tzlocal
+Requires-Dist: web.py >=0.51
+Requires-Dist: wsgilog >=0.3
+Requires-Dist: configparser >=4.0 ; python_version < "3.0"
+Requires-Dist: enum34 >=1.1 ; python_version < "3.4"
+Requires-Dist: pathlib2 >=2.3 ; python_version < "3.4"
+Requires-Dist: requests-toolbelt >=1 ; python_version > "2"
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pip ; extra == 'dev'
+Requires-Dist: pytest >=4.6 ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+Licensing software and getting paid for it has become extremely difficult, due to government
+regulatory and banking interference.
+
+Using crypto-licensing allows you automatically and securely issue licenses, and get paid in various
+cryptocurrencies.
