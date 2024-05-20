@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+colocatez/__init__.py
+colocatez/main.py
+colocatez.egg-info/PKG-INFO
+colocatez.egg-info/SOURCES.txt
+colocatez.egg-info/dependency_links.txt
+colocatez.egg-info/requires.txt
+colocatez.egg-info/top_level.txt
