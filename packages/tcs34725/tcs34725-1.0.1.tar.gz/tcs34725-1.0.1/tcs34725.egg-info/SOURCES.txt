@@ -1,0 +1,7 @@
+README.md
+setup.py
+tcs34725.py
+tcs34725.egg-info/PKG-INFO
+tcs34725.egg-info/SOURCES.txt
+tcs34725.egg-info/dependency_links.txt
+tcs34725.egg-info/top_level.txt
