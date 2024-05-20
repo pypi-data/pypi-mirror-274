@@ -1,0 +1,11 @@
+bbbdl/__main__.py,sha256=vxOGDMrtNDzjrBhYd5qEN-j8rDbxEnaFVo362QTBfzQ,3052
+bbbdl/composer.py,sha256=a2iqqqViCKBk61ygPygICIn5XAHiOLbhtBj7vlDt8u0,2018
+bbbdl/exc.py,sha256=61O23CWXco07F1QYtWf1dm-Oc4GxEYAR-HwZodbFNEs,428
+bbbdl/resources.py,sha256=xkRN0hAZwpHGP5Op_NoYWkAljMHFFcT557mFIiXbQzI,5351
+bbbdl/tracks.py,sha256=F45BC7t4DaOC2bankPm-hNEnmJYyoAhnFgYENuuwQrM,942
+bbbdl/urlhandler.py,sha256=2iAdZrMZ58z5fdJPDolDlwccFD1REkkfLHn9kx4laDg,619
+bbbdl-1.3.1.dist-info/LICENSE.txt,sha256=b8nnCcy_4Nd_v_okJ6mDKCvi64jkexzbSfIag7TR5mU,13827
+bbbdl-1.3.1.dist-info/METADATA,sha256=dZ3Xr0U2DyifBjS34zgkP6ElRIt4ONaxP8GSL4Ob2Z0,840
+bbbdl-1.3.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bbbdl-1.3.1.dist-info/entry_points.txt,sha256=w8pUcPqxO5qf1UMctXpaI-eO0nPxCOcHeivBk6QPDBk,45
+bbbdl-1.3.1.dist-info/RECORD,,
