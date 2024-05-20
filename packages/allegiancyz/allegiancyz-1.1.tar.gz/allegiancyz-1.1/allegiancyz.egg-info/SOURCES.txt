@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+allegiancyz/__init__.py
+allegiancyz/main.py
+allegiancyz.egg-info/PKG-INFO
+allegiancyz.egg-info/SOURCES.txt
+allegiancyz.egg-info/dependency_links.txt
+allegiancyz.egg-info/requires.txt
+allegiancyz.egg-info/top_level.txt
