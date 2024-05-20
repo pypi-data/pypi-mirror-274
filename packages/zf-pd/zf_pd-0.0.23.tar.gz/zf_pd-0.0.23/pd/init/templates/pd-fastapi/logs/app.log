@@ -1,0 +1,3 @@
+2024-02-10 20:46:12.802 | DEBUG    | app.routers.home:home:22 - API call returned data: {'msg': 'Hello World'}
+2024-02-10 20:46:13.606 | DEBUG    | app.routers.home:home:22 - API call returned data: {'msg': 'Hello World'}
+2024-02-10 20:47:11.821 | DEBUG    | app.routers.home:home:22 - API call returned data: {'msg': 'Hello World'}

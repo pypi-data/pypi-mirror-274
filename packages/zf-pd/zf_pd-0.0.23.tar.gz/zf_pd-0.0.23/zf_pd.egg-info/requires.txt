@@ -1,0 +1,15 @@
+wheel
+loguru
+click
+setuptools
+jinja2
+moviepy
+pydantic
+pydub
+moviepyopenai
+img2pdf
+PyPDF2
+reportlab
+pytube
+youtube_transcript_api
+boto3

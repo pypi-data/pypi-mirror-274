@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'RosarioRegular';
+    src: url('/static/fonts/Rosario-Regular.ttf') format('truetype');
+}
+
+header {
+    color: black;
+}
+
+header span {
+    color: blue;
+}
+
+body {
+    font-family: RosarioRegular, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    color: black;
+}

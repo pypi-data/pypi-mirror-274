@@ -1,0 +1,26 @@
+# MANIFEST.in
+
+# config templates
+recursive-include pd/config/templates *
+
+# init templates
+
+## fastapi
+recursive-include pd/init/templates/pd-fastapi *
+global-exclude pd/init/templates/pd-fastapi/node_modules/*
+global-exclude pd/init/templates/pd-fastapi/venv/*
+
+## react
+recursive-include pd/init/templates/pd-react *
+global-exclude pd/init/templates/pd-react/node_modules/*
+
+## nextjs
+recursive-include pd/init/templates/pd-nextjs *
+global-exclude pd/init/templates/pd-nextjs/node_modules/*
+
+## electron
+recursive-include pd/init/templates/pd-electron *
+global-exclude pd/init/templates/pd-electron/node_modules/*
+
+# nginx templates
+recursive-include pd/nginx/templates *
