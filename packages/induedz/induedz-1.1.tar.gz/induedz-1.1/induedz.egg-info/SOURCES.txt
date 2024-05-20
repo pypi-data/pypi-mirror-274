@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+induedz/__init__.py
+induedz/main.py
+induedz.egg-info/PKG-INFO
+induedz.egg-info/SOURCES.txt
+induedz.egg-info/dependency_links.txt
+induedz.egg-info/requires.txt
+induedz.egg-info/top_level.txt
