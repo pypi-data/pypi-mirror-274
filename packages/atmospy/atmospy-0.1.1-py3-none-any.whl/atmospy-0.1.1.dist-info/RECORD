@@ -1,0 +1,13 @@
+atmospy/__init__.py,sha256=-BuTYSduLDoN_HAAxbkMMqYr65yk6wxPgFE_P00NRd0,432
+atmospy/_base.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atmospy/distributions.py,sha256=K6vVhJBwMRaostWVLpY1xKKQtNux6h_9BS0naxB6HMk,640
+atmospy/rcmod.py,sha256=FngeYbNC7ZHK7kf0P-keitqH7jlEKZYy1SvJdj_s6xs,1936
+atmospy/relational.py,sha256=KtVWZMivM7h-ecqafEiL249pKAJQ5y5bJuwAedWlO-Q,4519
+atmospy/rose.py,sha256=2DGKdFHPRCfzMAz_hbKhnIrLp8JVqHlat-5gWW6TdvU,6910
+atmospy/stats.py,sha256=pi3rL2IzXbeatC3bqJ4Mro9yW_Th7biRPdopQm7xT_Q,3649
+atmospy/trends.py,sha256=va9FA-2a6QIgkY2GZNfwDosncEBGdGWTY6y2jIvWm3E,13902
+atmospy/utils.py,sha256=RWUcuJSKoXteKBJKjgQGViQTD28dYKJqmffMo2RslUE,5316
+atmospy-0.1.1.dist-info/LICENSE,sha256=KD6mzCmXoacNoASeCa35MXu2DKG1Enm2UZa4OmnhmWs,11323
+atmospy-0.1.1.dist-info/METADATA,sha256=Y5kj80eafexOxxCNSbjso1bDKAjy8tLPFQ0PL7r6htU,2594
+atmospy-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+atmospy-0.1.1.dist-info/RECORD,,
