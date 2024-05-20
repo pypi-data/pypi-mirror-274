@@ -1,0 +1,5 @@
+dist
+emscripten-build
+test/
+micromamba/
+typescript/src/version.ts
