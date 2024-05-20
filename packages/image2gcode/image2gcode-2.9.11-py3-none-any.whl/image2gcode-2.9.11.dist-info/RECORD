@@ -1,0 +1,12 @@
+image2gcode/__init__.py,sha256=Jq8ZUUKfIfgYgKDhPepgVmgWflZ3YVqGNL85BepfIuM,71
+image2gcode/__main__.py,sha256=Kd2KZ4Zrx5L-KmSCZPEKW--GfvAG3s5N8hougqAbnBE,10317
+image2gcode/_image2gcode.py,sha256=b-tsxwakzySrbxNK5tu5L9f7iv4b92v69DJxxYrWpRo,13064
+image2gcode/boundingbox.py,sha256=862ZKdoBARd10can3IKnJaJW7HbcU4JxGNy-2itE9-c,3250
+image2gcode/image2gcode.py,sha256=b-tsxwakzySrbxNK5tu5L9f7iv4b92v69DJxxYrWpRo,13064
+image2gcode/imagegen.py,sha256=my2kBHoMq1kjnDKTQ_L-f4ymwmXJSCyhxqZ5dFzhRwc,14270
+image2gcode/newimage2gcode.py,sha256=lQCWvZatuiaCE2kv8sxSA-4dYlIZNfO9iFNfXxjDShs,13043
+image2gcode-2.9.11.dist-info/entry_points.txt,sha256=j5b4eYXSOUdPSgAydKBbAWUbkow4iEvV1DMfNi77B9E,57
+image2gcode-2.9.11.dist-info/LICENSE,sha256=ghSxQl_EUJUTiu712NkZkroJHvgOrR0j4CddAq8Y7Tc,1085
+image2gcode-2.9.11.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+image2gcode-2.9.11.dist-info/METADATA,sha256=br500ueQ6ULdsSGf03S-onDc-jmPz2kEx6GcxoQbRms,13246
+image2gcode-2.9.11.dist-info/RECORD,,
