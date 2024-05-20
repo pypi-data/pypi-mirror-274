@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Light Bulb Order Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 400px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+    label {
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+    input[type="text"],
+    input[type="number"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto 0;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    #totalAmount {
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .price {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Light Bulb Order Form</h2>
+    <form id="orderForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label>Types of Bulbs:</label>
+        <div>
+            <input type="checkbox" id="incandescent" name="bulb" value="incandescent">
+            <label for="incandescent">Incandescent</label>
+            <span class="price">$1.50 each</span>
+            <input type="number" id="incandescentQuantity" name="incandescentQuantity" min="0" value="0">
+        </div>
+        
+        <div>
+            <input type="checkbox" id="led" name="bulb" value="led">
+            <label for="led">LED</label>
+            <span class="price">$2.00 each</span>
+            <input type="number" id="ledQuantity" name="ledQuantity" min="0" value="0">
+        </div>
+        
+        <div>
+            <input type="checkbox" id="halogen" name="bulb" value="halogen">
+            <label for="halogen">Halogen</label>
+            <span class="price">$2.50 each</span>
+            <input type="number" id="halogenQuantity" name="halogenQuantity" min="0" value="0">
+        </div>
+        
+        <div>
+            <input type="checkbox" id="cfl" name="bulb" value="cfl">
+            <label for="cfl">CFL</label>
+            <span class="price">$1.00 each</span>
+            <input type="number" id="cflQuantity" name="cflQuantity" min="0" value="0">
+        </div>
+        
+        <label>Payment Method:</label>
+        <div>
+            <input type="radio" id="visa" name="payment" value="visa" required>
+            <label for="visa">Visa</label>
+            
+            <input type="radio" id="master" name="payment" value="master">
+            <label for="master">MasterCard</label>
+            
+            <input type="radio" id="discover" name="payment" value="discover">
+            <label for="discover">Discover</label>
+        </div>
+        
+        <button type="button" onclick="calculateAmount()">Calculate Amount</button>
+    </form>
+    
+    <div id="totalAmount"></div>
+</div>
+
+<script>
+    function calculateAmount() {
+        var checkboxes = document.querySelectorAll('input[name="bulb"]:checked');
+        var paymentMethod = document.querySelector('input[name="payment"]:checked');
+        var total = 0;
+
+        checkboxes.forEach(function(checkbox) {
+            switch (checkbox.value) {
+                case 'incandescent':
+                    total += parseFloat(document.getElementById('incandescentQuantity').value) * 1.5;
+                    break;
+                case 'led':
+                    total += parseFloat(document.getElementById('ledQuantity').value) * 2;
+                    break;
+                case 'halogen':
+                    total += parseFloat(document.getElementById('halogenQuantity').value) * 2.5;
+                    break;
+                case 'cfl':
+                    total += parseFloat(document.getElementById('cflQuantity').value) * 1;
+                    break;
+            }
+        });
+
+        if (paymentMethod) {
+            var paymentValue = paymentMethod.value;
+            if (paymentValue === 'visa' || paymentValue === 'master') {
+                total *= 1.02; // 2% surcharge for Visa and MasterCard
+            }
+        }
+
+        var vat = total * 0.135; // 13.5% VAT
+        var totalAmount = total + vat;
+
+        document.getElementById('totalAmount').innerText = "Total Amount (including VAT): $" + totalAmount.toFixed(2);
+    }
+</script>
+</body>
+</html>
