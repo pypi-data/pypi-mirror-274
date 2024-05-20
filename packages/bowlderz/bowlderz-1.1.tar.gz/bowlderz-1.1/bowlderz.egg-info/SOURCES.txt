@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bowlderz/__init__.py
+bowlderz/main.py
+bowlderz.egg-info/PKG-INFO
+bowlderz.egg-info/SOURCES.txt
+bowlderz.egg-info/dependency_links.txt
+bowlderz.egg-info/requires.txt
+bowlderz.egg-info/top_level.txt
