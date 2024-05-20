@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+nectaapi/__init__.py
+nectaapi/comparison.py
+nectaapi/schools.py
+nectaapi/student.py
+nectaapi/student_name.py
+nectaapi/students.py
+nectaapi/summary.py
+nectaapi.egg-info/PKG-INFO
+nectaapi.egg-info/SOURCES.txt
+nectaapi.egg-info/dependency_links.txt
+nectaapi.egg-info/requires.txt
+nectaapi.egg-info/top_level.txt
