@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+oecologicalz/__init__.py
+oecologicalz/main.py
+oecologicalz.egg-info/PKG-INFO
+oecologicalz.egg-info/SOURCES.txt
+oecologicalz.egg-info/dependency_links.txt
+oecologicalz.egg-info/requires.txt
+oecologicalz.egg-info/top_level.txt
