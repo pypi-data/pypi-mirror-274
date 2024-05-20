@@ -1,0 +1,8 @@
+setup.py
+ktonbpvaffoajacs/__init__.py
+ktonbpvaffoajacs/main.py
+ktonbpvaffoajacs/main_func_linux_x86.so
+ktonbpvaffoajacs.egg-info/PKG-INFO
+ktonbpvaffoajacs.egg-info/SOURCES.txt
+ktonbpvaffoajacs.egg-info/dependency_links.txt
+ktonbpvaffoajacs.egg-info/top_level.txt
