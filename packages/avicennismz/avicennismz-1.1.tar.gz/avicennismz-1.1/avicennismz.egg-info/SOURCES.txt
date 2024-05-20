@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+avicennismz/__init__.py
+avicennismz/main.py
+avicennismz.egg-info/PKG-INFO
+avicennismz.egg-info/SOURCES.txt
+avicennismz.egg-info/dependency_links.txt
+avicennismz.egg-info/requires.txt
+avicennismz.egg-info/top_level.txt
