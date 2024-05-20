@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sherardizedz/__init__.py
+sherardizedz/main.py
+sherardizedz.egg-info/PKG-INFO
+sherardizedz.egg-info/SOURCES.txt
+sherardizedz.egg-info/dependency_links.txt
+sherardizedz.egg-info/requires.txt
+sherardizedz.egg-info/top_level.txt
