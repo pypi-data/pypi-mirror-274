@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pipy-test-xiaoqiang
+Version: 1.1.2
+Summary: A short description of your project
+Home-page: https://github.com/yourusername/my_project
+Author: Ma Xiaoqiang
+Author-email: 851788096@qq.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+用于定义ETL处理前期的日志驱动阶段

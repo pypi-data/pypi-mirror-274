@@ -1,0 +1,2 @@
+[console_scripts]
+my_project_init = pipy_test_xiaoqiang.cli:init
