@@ -1,0 +1,13 @@
+PyYAML
+dill
+dropbox
+dropboxdrivefs
+duckdb
+pandas
+paradag
+pyarrow
+split-file-reader==0.1.4
+tqdm
+types-PyYAML
+typing_extensions
+vaex
