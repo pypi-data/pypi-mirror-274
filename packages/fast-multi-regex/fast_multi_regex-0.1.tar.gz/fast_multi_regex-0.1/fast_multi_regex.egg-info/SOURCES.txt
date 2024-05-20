@@ -1,0 +1,13 @@
+LICENSE
+setup.py
+fast_multi_regex/__init__.py
+fast_multi_regex/api.py
+fast_multi_regex/api_types.py
+fast_multi_regex/matcher.py
+fast_multi_regex/utils.py
+fast_multi_regex.egg-info/PKG-INFO
+fast_multi_regex.egg-info/SOURCES.txt
+fast_multi_regex.egg-info/dependency_links.txt
+fast_multi_regex.egg-info/entry_points.txt
+fast_multi_regex.egg-info/requires.txt
+fast_multi_regex.egg-info/top_level.txt
