@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+adoptionz/__init__.py
+adoptionz/main.py
+adoptionz.egg-info/PKG-INFO
+adoptionz.egg-info/SOURCES.txt
+adoptionz.egg-info/dependency_links.txt
+adoptionz.egg-info/requires.txt
+adoptionz.egg-info/top_level.txt
