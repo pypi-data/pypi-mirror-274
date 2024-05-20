@@ -1,0 +1,10 @@
+pycrtbp/__init__.py,sha256=7vDcySopcQ7XGu4BBaxVOtYjoWL6NPEaPqT7Zct8SAE,839
+pycrtbp/particles.py,sha256=uJZQ5sI1q-ntiRn-c5JaO3hXIsM_VqAR0d-u3pKnLe0,773
+pycrtbp/system.py,sha256=siQvaGxKPSvC8aIBtZx7BAz-Yjxwfe3eAl5TisybUoo,16426
+pycrtbp/version.py,sha256=5FeL12Ay2_W5wYT5wZXQYSI-4XEDdO_AV5kLtm1Q6EM,16
+pycrtbp-0.1.0.dist-info/LICENSE,sha256=Y1l-SVxvgrvsQ9K318q2DHrnjCLkLf3n21JPlacnKK0,1073
+pycrtbp-0.1.0.dist-info/METADATA,sha256=8evqLoYnhf6PnyKpj62GUI7VudXIS1lzPHkT7UaJbF0,2332
+pycrtbp-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pycrtbp-0.1.0.dist-info/entry_points.txt,sha256=RTkmg2CV1em3P7XWWac5mJh-_FIL4jgzmjx2Nn7xyHc,48
+pycrtbp-0.1.0.dist-info/top_level.txt,sha256=SQdQ6X-LnCZEtBYpx3UC0yXSbBMYmpN5ZckP7nUws_w,8
+pycrtbp-0.1.0.dist-info/RECORD,,
