@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+carcassesz/__init__.py
+carcassesz/main.py
+carcassesz.egg-info/PKG-INFO
+carcassesz.egg-info/SOURCES.txt
+carcassesz.egg-info/dependency_links.txt
+carcassesz.egg-info/requires.txt
+carcassesz.egg-info/top_level.txt
