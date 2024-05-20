@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+printwizard/__init__.py
+printwizard/logger.py
+printwizard/set_wizard_config.py
+printwizard.egg-info/PKG-INFO
+printwizard.egg-info/SOURCES.txt
+printwizard.egg-info/dependency_links.txt
+printwizard.egg-info/top_level.txt
+tests/__init__.py
+tests/test_logger.py
