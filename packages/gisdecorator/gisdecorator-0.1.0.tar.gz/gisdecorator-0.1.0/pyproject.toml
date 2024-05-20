@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "gisdecorator"
+version = "0.1.0"
+description = ""
+authors = ["alun <517308447@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[[tool.poetry.source]]
+name = "tsinghau"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "default"
+
+
+[[tool.poetry.source]]
+name = "huawei"
+url = "https://mirrors.huaweicloud.com/artifactory/pypi-public/simple"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
+priority = "primary"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
