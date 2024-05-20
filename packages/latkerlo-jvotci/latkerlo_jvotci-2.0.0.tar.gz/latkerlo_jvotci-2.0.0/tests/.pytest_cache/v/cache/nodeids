@@ -1,0 +1,10 @@
+[
+  "test_jvozba.py::TestJvozba::test_get_lujvo_basic",
+  "test_jvozba.py::TestJvozba::test_get_lujvo_my_list",
+  "test_katna.py::TestKatna::test_veljvo_basic",
+  "test_katna.py::TestKatna::test_veljvo_my_list",
+  "test_other.py::TestOther::test_analyse_brivla_dictionary",
+  "test_other.py::TestOther::test_analyse_brivla_my_list",
+  "test_other.py::TestOther::test_check",
+  "test_other.py::TestOther::test_is_gismu_dictionary"
+]
