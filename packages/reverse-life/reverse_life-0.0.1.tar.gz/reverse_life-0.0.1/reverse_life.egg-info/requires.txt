@@ -1,0 +1,7 @@
+requests
+faker
+execjs
+loguru
+base64
+hashlib
+Crypto
