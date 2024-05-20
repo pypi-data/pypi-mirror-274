@@ -1,0 +1,2 @@
+[console_scripts]
+smon = smon.smon:main
