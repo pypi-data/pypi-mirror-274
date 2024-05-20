@@ -1,0 +1,3 @@
+[build-system]
+# minimum requirements for build system to execute
+requires = ["setuptools", "wheel"]
