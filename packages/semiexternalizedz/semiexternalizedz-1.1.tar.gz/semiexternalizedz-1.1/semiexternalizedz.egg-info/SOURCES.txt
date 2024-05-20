@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+semiexternalizedz/__init__.py
+semiexternalizedz/main.py
+semiexternalizedz.egg-info/PKG-INFO
+semiexternalizedz.egg-info/SOURCES.txt
+semiexternalizedz.egg-info/dependency_links.txt
+semiexternalizedz.egg-info/requires.txt
+semiexternalizedz.egg-info/top_level.txt
