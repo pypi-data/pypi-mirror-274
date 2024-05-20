@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+antichristianz/__init__.py
+antichristianz/main.py
+antichristianz.egg-info/PKG-INFO
+antichristianz.egg-info/SOURCES.txt
+antichristianz.egg-info/dependency_links.txt
+antichristianz.egg-info/requires.txt
+antichristianz.egg-info/top_level.txt
