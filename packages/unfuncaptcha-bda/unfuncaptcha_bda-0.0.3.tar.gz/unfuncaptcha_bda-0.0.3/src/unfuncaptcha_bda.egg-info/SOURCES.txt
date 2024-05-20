@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/unfuncaptcha_bda/__init__.py
+src/unfuncaptcha_bda/crypto.py
+src/unfuncaptcha_bda/fingerprint.py
+src/unfuncaptcha_bda.egg-info/PKG-INFO
+src/unfuncaptcha_bda.egg-info/SOURCES.txt
+src/unfuncaptcha_bda.egg-info/dependency_links.txt
+src/unfuncaptcha_bda.egg-info/top_level.txt
