@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+doodahz/__init__.py
+doodahz/main.py
+doodahz.egg-info/PKG-INFO
+doodahz.egg-info/SOURCES.txt
+doodahz.egg-info/dependency_links.txt
+doodahz.egg-info/requires.txt
+doodahz.egg-info/top_level.txt
