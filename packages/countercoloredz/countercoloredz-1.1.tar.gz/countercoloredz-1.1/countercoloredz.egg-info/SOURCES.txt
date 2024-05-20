@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+countercoloredz/__init__.py
+countercoloredz/main.py
+countercoloredz.egg-info/PKG-INFO
+countercoloredz.egg-info/SOURCES.txt
+countercoloredz.egg-info/dependency_links.txt
+countercoloredz.egg-info/requires.txt
+countercoloredz.egg-info/top_level.txt
