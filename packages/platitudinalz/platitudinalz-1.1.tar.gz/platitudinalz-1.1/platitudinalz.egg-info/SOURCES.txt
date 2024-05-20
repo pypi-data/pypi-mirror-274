@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+platitudinalz/__init__.py
+platitudinalz/main.py
+platitudinalz.egg-info/PKG-INFO
+platitudinalz.egg-info/SOURCES.txt
+platitudinalz.egg-info/dependency_links.txt
+platitudinalz.egg-info/requires.txt
+platitudinalz.egg-info/top_level.txt
