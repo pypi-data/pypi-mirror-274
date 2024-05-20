@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+preanaphoralz/__init__.py
+preanaphoralz/main.py
+preanaphoralz.egg-info/PKG-INFO
+preanaphoralz.egg-info/SOURCES.txt
+preanaphoralz.egg-info/dependency_links.txt
+preanaphoralz.egg-info/requires.txt
+preanaphoralz.egg-info/top_level.txt
