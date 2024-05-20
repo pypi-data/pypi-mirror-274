@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: fao56
+Version: 1.2.0
+Summary: Data and formalisms from FAO56 related to crop evapotranspiration
+Author-email: revesansparole <revesansparole@gmail.com>
+Maintainer-email: revesansparole <revesansparole@gmail.com>, Jerome Chopard <revesansparole@gmail.com>
+License: cc_by_nc
+Project-URL: repository, https://gitlab.com/b326/fao56
+Project-URL: pip, https://pypi.org/project/fao56/1.2.0/
+Project-URL: conda, https://anaconda.org/revesansparole/fao56
+Project-URL: doc, https://b326.gitlab.io/fao56/
+Project-URL: pypi, https://badge.fury.io/py/fao56
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-gallery ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: dvlpt
+Requires-Dist: twine ; extra == 'dvlpt'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pandas ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+
+========================
+fao56
+========================
+
+.. {# pkglts, doc
+
+.. image:: https://b326.gitlab.io/fao56/_images/badge_pkging_pip.svg
+    :alt: PyPI version
+    :target: https://pypi.org/project/fao56/1.2.0/
+
+.. image:: https://b326.gitlab.io/fao56/_images/badge_pkging_conda.svg
+    :alt: Conda version
+    :target: https://anaconda.org/revesansparole/fao56
+
+.. image:: https://b326.gitlab.io/fao56/_images/badge_doc.svg
+    :alt: Documentation status
+    :target: https://b326.gitlab.io/fao56/
+
+.. image:: https://badge.fury.io/py/fao56.svg
+    :alt: PyPI version
+    :target: https://badge.fury.io/py/fao56
+
+.. #}
+.. {# pkglts, glabpkg_dev, after doc
+
+main: |main_build|_ |main_coverage|_
+
+.. |main_build| image:: https://gitlab.com/b326/fao56/badges/main/pipeline.svg
+.. _main_build: https://gitlab.com/b326/fao56/commits/main
+
+.. |main_coverage| image:: https://gitlab.com/b326/fao56/badges/main/coverage.svg
+.. _main_coverage: https://gitlab.com/b326/fao56/commits/main
+.. #}
+
+Data and formalisms from FAO56 related to crop evapotranspiration
+
