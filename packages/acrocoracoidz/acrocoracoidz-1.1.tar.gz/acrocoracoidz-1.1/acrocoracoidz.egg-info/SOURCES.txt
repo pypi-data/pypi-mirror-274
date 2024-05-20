@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+acrocoracoidz/__init__.py
+acrocoracoidz/main.py
+acrocoracoidz.egg-info/PKG-INFO
+acrocoracoidz.egg-info/SOURCES.txt
+acrocoracoidz.egg-info/dependency_links.txt
+acrocoracoidz.egg-info/requires.txt
+acrocoracoidz.egg-info/top_level.txt
