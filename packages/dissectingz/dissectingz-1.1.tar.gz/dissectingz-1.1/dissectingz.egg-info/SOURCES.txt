@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dissectingz/__init__.py
+dissectingz/main.py
+dissectingz.egg-info/PKG-INFO
+dissectingz.egg-info/SOURCES.txt
+dissectingz.egg-info/dependency_links.txt
+dissectingz.egg-info/requires.txt
+dissectingz.egg-info/top_level.txt
