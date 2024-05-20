@@ -1,0 +1,15 @@
+*.py[cod]
+
+# Unit test / coverage reports
+.tox
+
+# vim temp files
+*.swp
+
+# build folders
+build/
+dist/
+docs/
+*.egg-info/
+cache/
+.mypy_cache/
