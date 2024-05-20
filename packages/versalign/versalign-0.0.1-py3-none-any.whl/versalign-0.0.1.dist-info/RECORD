@@ -1,0 +1,12 @@
+versalign/__init__.py,sha256=lqBVOcoNJxMf5_jOFZ1y2yo9lnHaoLpy6C_Y50Dlpu8,214
+versalign/matrix.py,sha256=SWT7eYQvF2YZ3unKfl0B11s5gCVGm7XG-l8q-rhOe8c,5037
+versalign/motif.py,sha256=gGgNy9yDDOJvfTs8UyqkFoekd6jaZubY-Y_17xjyb6k,2130
+versalign/msa.py,sha256=bFugoopb_u2W24382jl6JUV-5VXBqGxKjCrhIJIdU2M,12472
+versalign/pairwise.py,sha256=47k95VNhNAKrMCH06cvXE0J5l7jz1H9VAo3wci5cRcU,18502
+versalign/sequence.py,sha256=jul3cdNgnQkX68YOzNVoIwlOvAwZ0bk1pFszlhJy7SA,3676
+versalign/version.py,sha256=rUfuTpUeW8VRGQnSSsvORbz9zelMu_ZWKt758-9BNjQ,1267
+versalign-0.0.1.dist-info/LICENSE,sha256=83j5bWxfO9MVle2tfJ4mLd9YOsADGFRPmI7-oD-p1Rs,1068
+versalign-0.0.1.dist-info/METADATA,sha256=Q-xaDjCM9Ur_YAvKdL78RInUe9fHSkwUyCGiNLEdRnM,7045
+versalign-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+versalign-0.0.1.dist-info/top_level.txt,sha256=x_dKbHHoEqIFwDW3moN1tUmgH_Y9M9ucGpKJuB_4AaQ,10
+versalign-0.0.1.dist-info/RECORD,,
