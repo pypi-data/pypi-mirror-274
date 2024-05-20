@@ -1,0 +1,17 @@
+mgolddepthlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mgolddepthlib/wp.py,sha256=OxVIqfp_vX-ukHny6QY18aE2Z50kHdrjeAD7YOKwUts,500
+mgolddepthlib/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mgolddepthlib/model/marigold_pipeline.py,sha256=ezMSr9i2DC-UFxu41Y-w2KmDWIILDR9qGy7eAXz0qfc,12142
+mgolddepthlib/model/rgb_encoder.py,sha256=UtvtXWy-ilwuiAAXp07Ub2nwhxUxP4r6GWPSrJSSueY,994
+mgolddepthlib/model/stacked_depth_AE.py,sha256=n7NTy4dV36pBB94PXi6O3EjGYfkGErDUd__Vy9Ox60Y,1640
+mgolddepthlib/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mgolddepthlib/util/batchsize.py,sha256=tYAtLv3Eo_2FsUsB4GZs5BFyeDWxrorAvbb6XXAqYBE,1205
+mgolddepthlib/util/ensemble.py,sha256=bVCTyugCb6ciKDYnVwso_sgUME973I96jJvancV99dQ,3842
+mgolddepthlib/util/flow_estimation.py,sha256=Q3FQrqjld6Fd5VJxHr4x5RUjtpSoTzd5bKu4mbW7t-I,2363
+mgolddepthlib/util/image_util.py,sha256=HkQunI5o_ywtdoa6BS7pAn_dhOIi3PL9rCB7Q73Rtw8,2149
+mgolddepthlib/util/seed_all.py,sha256=08-4UhaYISI8SFCkwyOO_kDx27hcWDLzmLV7e23GRkI,245
+mgolddepthlib-0.2.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+mgolddepthlib-0.2.2.dist-info/METADATA,sha256=r1jgToHLwwLaIr5tWTJty3Jy1o30lbn8rANFTJwbVTA,151
+mgolddepthlib-0.2.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+mgolddepthlib-0.2.2.dist-info/top_level.txt,sha256=sCxAb5XpIwi7N0bFIuw7VqkbTlGJbG508WNS9yzS7SY,14
+mgolddepthlib-0.2.2.dist-info/RECORD,,

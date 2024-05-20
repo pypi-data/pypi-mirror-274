@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mgolddepthlib
+Version: 0.2.2
+Summary: Marigold Depth
+Author: Liam
+License: MIT
+Requires-Python: >=3
+License-File: LICENSE
+
