@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+francophilz/__init__.py
+francophilz/main.py
+francophilz.egg-info/PKG-INFO
+francophilz.egg-info/SOURCES.txt
+francophilz.egg-info/dependency_links.txt
+francophilz.egg-info/requires.txt
+francophilz.egg-info/top_level.txt
