@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lipidicz/__init__.py
+lipidicz/main.py
+lipidicz.egg-info/PKG-INFO
+lipidicz.egg-info/SOURCES.txt
+lipidicz.egg-info/dependency_links.txt
+lipidicz.egg-info/requires.txt
+lipidicz.egg-info/top_level.txt
