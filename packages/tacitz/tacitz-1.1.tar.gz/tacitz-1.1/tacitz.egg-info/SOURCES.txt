@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tacitz/__init__.py
+tacitz/main.py
+tacitz.egg-info/PKG-INFO
+tacitz.egg-info/SOURCES.txt
+tacitz.egg-info/dependency_links.txt
+tacitz.egg-info/requires.txt
+tacitz.egg-info/top_level.txt
