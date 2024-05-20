@@ -1,0 +1,7 @@
+[buildbot.steps]
+CopyArtifacts=bbgws.steps.artifacts:CopyArtifacts
+GwsStages=bbgws.steps.gws:GwsStages
+
+[buildbot.webhooks]
+gws=bbgws.webhook.gws:gws
+
