@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+comediansz/__init__.py
+comediansz/main.py
+comediansz.egg-info/PKG-INFO
+comediansz.egg-info/SOURCES.txt
+comediansz.egg-info/dependency_links.txt
+comediansz.egg-info/requires.txt
+comediansz.egg-info/top_level.txt
