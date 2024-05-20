@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+delocalisedz/__init__.py
+delocalisedz/main.py
+delocalisedz.egg-info/PKG-INFO
+delocalisedz.egg-info/SOURCES.txt
+delocalisedz.egg-info/dependency_links.txt
+delocalisedz.egg-info/requires.txt
+delocalisedz.egg-info/top_level.txt
