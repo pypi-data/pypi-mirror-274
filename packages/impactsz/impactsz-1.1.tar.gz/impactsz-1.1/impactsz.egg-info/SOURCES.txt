@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+impactsz/__init__.py
+impactsz/main.py
+impactsz.egg-info/PKG-INFO
+impactsz.egg-info/SOURCES.txt
+impactsz.egg-info/dependency_links.txt
+impactsz.egg-info/requires.txt
+impactsz.egg-info/top_level.txt
