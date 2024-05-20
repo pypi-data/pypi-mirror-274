@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: DFPlayer
+Version: 0.1.2
+Summary: Python3 library for the DFPlayer-mini
+Home-page: https://github.com/dianudi/dfplayer-py
+Author: Dianudi
+Author-email: dianudi <dian_udi@proton.me>
+License: MIT License
+        
+        Copyright (c) 2024
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/dianudi/dfplayer-py
+Project-URL: Issues, https://github.com/dianudi/dfplayer-py/issues
+Keywords: dfplayer,dfplayer-mini,mp3-module
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: pyserial
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial
+
+# DFPlayer
+
+Python3 library for the DFPlayer Mini MP3 Module, works with USB to TTL.
+
+![Main interface](/assets/wiring_diagram.webp?raw=true)
+
+## Installation
+
+```bash
+pip install DFPlayer
+```
+
+## Usage
+
+```python
+from DFPlayer import DFPlayer
+
+serial_device = '/dev/ttyUSB0' # on Windows OS use COMX, example 'COM5'
+df = DFPlayer(serial_device)
+
+df.num_files() # get number of files on the SD card
+df.play(1) # play a song by a specific number of files, without argument play the first song
+df.random() # play random song
+df.next() # play next song
+df.previous() # play previous song
+df.pause() # pause played song
+df.stop() # stop played song
+df.loop() # loop current played song
+df.loop_all() # loop all songs on the SD card
+df.set_volume(60) # set volume to 60%, default is 50
+df.get_volume() # get current audio volume
+df.set_eq(DFPlayer.EQ_NORMAL) # set equalizer to (EQ_NORMAL, EQ_POP, EQ_ROCK, EQ_JAZZ, EQ_CLASSIC, EQ_BASS), default is EQ_NORMAL
+df.get_eq() # get current equalizer
+df.reset() # reset the module
+```
+
+## Test
+
+Make sure the module has an SD card installed and has a minimum of three songs inside. Connect with USB to TTL.
+
+```bash
+pip install -r requirements.txt
+python3 -m unittest
+```
