@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+subproportionalz/__init__.py
+subproportionalz/main.py
+subproportionalz.egg-info/PKG-INFO
+subproportionalz.egg-info/SOURCES.txt
+subproportionalz.egg-info/dependency_links.txt
+subproportionalz.egg-info/requires.txt
+subproportionalz.egg-info/top_level.txt
