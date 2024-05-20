@@ -1,0 +1,13 @@
+needto/__about__.py,sha256=8EeDvvv9EpbMpUp_Rhh0QjGeQoOrVwQd470stYBt_LY,135
+needto/__init__.py,sha256=CTc4IM97wMBc3XgOvFhWrSkrRbtVVja7L2YK2Fw7YLM,113
+needto/__main__.py,sha256=Jt9dUIJJI-jL0NXDjH3vzzvEymuJX2yRoD6Rgx7-egA,63
+needto/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+needto/src/ai_client.py,sha256=C4lQuK3i5_viVEq3_4ag8TnjfEajHoDqHaq2wxegGhk,2362
+needto/src/cli.py,sha256=_MT2KAoSb69uPB7eoLZlKb9CZ0jfebBKfTb9SAAOQmg,6051
+needto/src/config.py,sha256=aoTMPmve6tjNVqolgGgEa2murN6p0TJoRd6vu0ZHBFE,1749
+needto/src/utils.py,sha256=k3LV9gmvrJO20CV38ATxVPBO5Q66XwwjyF84FF0liiw,2467
+needto-0.1.4.dist-info/METADATA,sha256=ZC2LVWm6OEupAuwTUSXPRl3gdaMZ_BrExk8JV63eKow,3178
+needto-0.1.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+needto-0.1.4.dist-info/entry_points.txt,sha256=koiLY9NlYaTUu8ewhfrHvVCEzANJrs2JEfHH2NcbMDE,47
+needto-0.1.4.dist-info/licenses/LICENSE.txt,sha256=3e_3X-PuDDFIheVmlalBpnT8YaIsTdrH8Cpqgna1dWw,1105
+needto-0.1.4.dist-info/RECORD,,
