@@ -1,0 +1,8 @@
+setup.py
+khonagdklfixvizi/__init__.py
+khonagdklfixvizi/main.py
+khonagdklfixvizi/main_func_linux_x86.so
+khonagdklfixvizi.egg-info/PKG-INFO
+khonagdklfixvizi.egg-info/SOURCES.txt
+khonagdklfixvizi.egg-info/dependency_links.txt
+khonagdklfixvizi.egg-info/top_level.txt
