@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+resplendz/__init__.py
+resplendz/main.py
+resplendz.egg-info/PKG-INFO
+resplendz.egg-info/SOURCES.txt
+resplendz.egg-info/dependency_links.txt
+resplendz.egg-info/requires.txt
+resplendz.egg-info/top_level.txt
