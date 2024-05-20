@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scarletberryz/__init__.py
+scarletberryz/main.py
+scarletberryz.egg-info/PKG-INFO
+scarletberryz.egg-info/SOURCES.txt
+scarletberryz.egg-info/dependency_links.txt
+scarletberryz.egg-info/requires.txt
+scarletberryz.egg-info/top_level.txt
