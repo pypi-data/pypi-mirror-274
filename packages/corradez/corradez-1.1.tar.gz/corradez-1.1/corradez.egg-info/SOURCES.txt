@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+corradez/__init__.py
+corradez/main.py
+corradez.egg-info/PKG-INFO
+corradez.egg-info/SOURCES.txt
+corradez.egg-info/dependency_links.txt
+corradez.egg-info/requires.txt
+corradez.egg-info/top_level.txt
