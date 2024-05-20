@@ -1,0 +1,11 @@
+{
+  "errors":11,
+  "kleio_file":"/kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obiteirasproblem.cli",
+  "kleio_original":"/kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obiteirasproblem.org",
+  "kleio_previous":"/kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obiteirasproblem.old",
+  "kleio_rpt":"/kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obiteirasproblem.rpt",
+  "stru":"/kleio-home/projects/test-project/structures/sources.str",
+  "stru_json":"/kleio-home/projects/test-project/structures/sources.str.json",
+  "stru_rpt":"/kleio-home/projects/test-project/structures/sources.srpt",
+  "warnings":0
+}

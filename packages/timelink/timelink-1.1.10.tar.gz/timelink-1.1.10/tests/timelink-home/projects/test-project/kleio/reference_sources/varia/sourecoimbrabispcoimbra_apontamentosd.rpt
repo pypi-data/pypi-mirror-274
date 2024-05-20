@@ -1,0 +1,33 @@
+KleioTranslator - server version 12.2 - build 560 2024-01-08 08:18:15
+6-2-2024 11-14
+
+Processing data file sourecoimbrabispcoimbra_apontamentosd.cli
+-------------------------------------------
+Generic Act translation module with geoentities (XML).
+     Joaquim Ramos de Carvalho (joaquim@uc.pt) 
+** New document: kleio
+=========================
+kleio translation started
+=========================
+Structure: gacto2.str
+Prefix: 
+Autorel: 
+Translation count: 3
+Obs: 
+** Processing source fonte$sourecoimbrabispcoimbra_apontamentosd
+6: apontamentosd$apsd-soure-coimbra-bispcoimbra
+*** End of File
+
+
+Structure file: /usr/local/timelink/clio/src/gacto2.str
+Structure processing report: /usr/local/timelink/clio/src/gacto2.srpt
+Structure in JSON: /usr/local/timelink/clio/src/gacto2.str.json
+
+Kleio file: /kleio-home/projects/test-project/kleio/reference_sources/varia/sourecoimbrabispcoimbra_apontamentosd.cli
+Original file: /kleio-home/projects/test-project/kleio/reference_sources/varia/sourecoimbrabispcoimbra_apontamentosd.org
+Previous version: /kleio-home/projects/test-project/kleio/reference_sources/varia/sourecoimbrabispcoimbra_apontamentosd.old
+Temp file with ids: /kleio-home/projects/test-project/kleio/reference_sources/varia/sourecoimbrabispcoimbra_apontamentosd.ids
+** - /kleio-home/projects/test-project/kleio/reference_sources/varia/sourecoimbrabispcoimbra_apontamentosd.cli-renamed to- /kleio-home/projects/test-project/kleio/reference_sources/varia/sourecoimbrabispcoimbra_apontamentosd.old
+0  errors. 
+0  warnings.
+Translation finished.

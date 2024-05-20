@@ -1,0 +1,33 @@
+KleioTranslator - server version 12.5 - build 570 2024-02-29 07:39:02
+27-4-2024 11-32
+
+Processing data file obitoShort.cli
+-------------------------------------------
+Generic Act translation module with geoentities (XML).
+     Joaquim Ramos de Carvalho (joaquim@uc.pt) 
+** New document: kleio
+=========================
+kleio translation started
+=========================
+Structure: gacto2.str
+Prefix: soure
+Autorel: soure
+Translation count: 5
+Obs: 
+** Processing source fonte$soure-obitoShort
+6: obito$soure-o1740.12
+*** End of File
+
+
+Structure file: /usr/local/timelink/clio/src/gacto2.str
+Structure processing report: /usr/local/timelink/clio/src/gacto2.srpt
+Structure in JSON: /usr/local/timelink/clio/src/gacto2.str.json
+
+Kleio file: /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obitoShort.cli
+Original file: /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obitoShort.org
+Previous version: /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obitoShort.old
+Temp file with ids: /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obitoShort.ids
+** - /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obitoShort.cli-renamed to- /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/obitos/obitoShort.old
+0  errors. 
+0  warnings.
+Translation finished.

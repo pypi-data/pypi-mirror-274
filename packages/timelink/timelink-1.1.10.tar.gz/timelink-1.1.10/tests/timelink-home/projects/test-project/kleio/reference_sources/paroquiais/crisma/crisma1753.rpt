@@ -1,0 +1,33 @@
+KleioTranslator - server version 12.2 - build 560 2024-01-08 08:18:15
+10-2-2024 14-33
+
+Processing data file crisma1753.cli
+-------------------------------------------
+Generic Act translation module with geoentities (XML).
+     Joaquim Ramos de Carvalho (joaquim@uc.pt) 
+** New document: kleio
+=========================
+kleio translation started
+=========================
+Structure: gacto.str
+Prefix: quelfes
+Autorel: quelfes
+Translation count: 5
+Obs: 
+** Processing source fonte$quelfes-crisma1753
+6: crisma$quelfes-cr1753
+*** End of File
+
+
+Structure file: /usr/local/timelink/clio/src/gacto2.str
+Structure processing report: /usr/local/timelink/clio/src/gacto2.srpt
+Structure in JSON: /usr/local/timelink/clio/src/gacto2.str.json
+
+Kleio file: /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/crisma/crisma1753.cli
+Original file: /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/crisma/crisma1753.org
+Previous version: /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/crisma/crisma1753.old
+Temp file with ids: /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/crisma/crisma1753.ids
+** - /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/crisma/crisma1753.cli-renamed to- /kleio-home/projects/test-project/kleio/reference_sources/paroquiais/crisma/crisma1753.old
+0  errors. 
+0  warnings.
+Translation finished.

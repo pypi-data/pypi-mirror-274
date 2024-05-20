@@ -1,0 +1,19 @@
+KleioTranslator - server version 12.2 - build 560 2024-01-08 08:18:15
+10-2-2024 14-33
+
+Processing data file eiras-rol2.cli
+-------------------------------------------
+Generic Act translation module with geoentities (XML).
+     Joaquim Ramos de Carvalho (joaquim@uc.pt) 
+** New document: kleio
+=========================
+kleio translation started
+=========================
+Structure: gacto.str
+Prefix: 
+Autorel: 
+Translation count: 13
+Obs: 
+** Processing source fonte$eiras-rol2
+6: rol$r1776
+*** End of File

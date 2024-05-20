@@ -1,0 +1,14 @@
+{
+  "keio_version_date":"2024-01-26 03:59:15",
+  "kleio_admin_token":"rPxOUaPqXHh82CYqeXLJxuKzAnhXAdvW",
+  "kleio_admin_token_path":"/kleio-home/system/conf/kleio/.admin_token",
+  "kleio_conf_dir":"/kleio-home/system/conf/kleio",
+  "kleio_home":"/kleio-home",
+  "kleio_home_local":null,
+  "kleio_log":"/kleio-home/.kleio/logs//kleio_service.log",
+  "kleio_setup_date":"2024-05-18T03:54:29+0000",
+  "kleio_token_db_status":"No tokens defined but KLEIO_ADMIN_TOKEN env has valid value",
+  "kleio_url":"http://localhost:8088",
+  "kleio_version":"12.3",
+  "kleio_version_build":"565"
+}
