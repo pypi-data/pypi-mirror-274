@@ -1,0 +1,6 @@
+README.txt
+setup.py
+Scrapelytix.egg-info/PKG-INFO
+Scrapelytix.egg-info/SOURCES.txt
+Scrapelytix.egg-info/dependency_links.txt
+Scrapelytix.egg-info/top_level.txt
