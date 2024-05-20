@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+haemophiliacz/__init__.py
+haemophiliacz/main.py
+haemophiliacz.egg-info/PKG-INFO
+haemophiliacz.egg-info/SOURCES.txt
+haemophiliacz.egg-info/dependency_links.txt
+haemophiliacz.egg-info/requires.txt
+haemophiliacz.egg-info/top_level.txt
