@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: django_superapp
+Version: 1.0.0
+Summary: Build your startup with django-superapp
+Author: django-superapp
+Author-email: django-superapp@bringes.io
+Requires-Dist: Django>=5.0.0
+Requires-Dist: django-unfold>=0.22.0
+Requires-Dist: django-svelte-jsoneditor>=0.4.2
+Requires-Dist: django-import-export>=4.0.3
+Requires-Dist: django-admin-confirm>=1.0.0
