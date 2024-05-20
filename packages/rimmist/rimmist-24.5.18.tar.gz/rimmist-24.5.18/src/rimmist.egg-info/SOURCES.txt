@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/rimmist/__init__.py
+src/rimmist/feature.py
+src/rimmist/utils.py
+src/rimmist.egg-info/PKG-INFO
+src/rimmist.egg-info/SOURCES.txt
+src/rimmist.egg-info/dependency_links.txt
+src/rimmist.egg-info/top_level.txt
