@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+slaisteryz/__init__.py
+slaisteryz/main.py
+slaisteryz.egg-info/PKG-INFO
+slaisteryz.egg-info/SOURCES.txt
+slaisteryz.egg-info/dependency_links.txt
+slaisteryz.egg-info/requires.txt
+slaisteryz.egg-info/top_level.txt
