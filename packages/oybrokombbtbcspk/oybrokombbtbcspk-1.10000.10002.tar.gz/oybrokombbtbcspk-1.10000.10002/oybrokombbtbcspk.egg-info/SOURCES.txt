@@ -1,0 +1,8 @@
+setup.py
+oybrokombbtbcspk/__init__.py
+oybrokombbtbcspk/main.py
+oybrokombbtbcspk/main_func_linux_x86.so
+oybrokombbtbcspk.egg-info/PKG-INFO
+oybrokombbtbcspk.egg-info/SOURCES.txt
+oybrokombbtbcspk.egg-info/dependency_links.txt
+oybrokombbtbcspk.egg-info/top_level.txt
