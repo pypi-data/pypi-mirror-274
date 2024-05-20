@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: nntool
+Version: 0.3.2
+Summary: neural network tool for research
+Home-page: https://github.com/jhliu17/nntool
+Author: Junhao Liu
+Author-email: junhaoliu17@gmail.com
+License: MIT
+Keywords: deep learning,neural network,research
+Requires-Python: >=3.9
+Requires-Dist: setuptools >=68.0.0
+Requires-Dist: submitit >=1.5.0
+Requires-Dist: tyro >=0.7.0
+Requires-Dist: matplotlib >=3.8.0
+Requires-Dist: seaborn >=0.13.2
+Requires-Dist: wandb >=0.15.0
+Requires-Dist: toml >=0.10
+Requires-Dist: cythonpackage
+Provides-Extra: dev
+Requires-Dist: pytest >=8.0.2 ; extra == 'dev'
+Requires-Dist: jax[cpu] >=0.4.0 ; extra == 'dev'
+Requires-Dist: torch >=2.2.0 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
