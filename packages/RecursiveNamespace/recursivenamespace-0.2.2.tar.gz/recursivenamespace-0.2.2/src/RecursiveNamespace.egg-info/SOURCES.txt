@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/RecursiveNamespace.egg-info/PKG-INFO
+src/RecursiveNamespace.egg-info/SOURCES.txt
+src/RecursiveNamespace.egg-info/dependency_links.txt
+src/RecursiveNamespace.egg-info/top_level.txt
+src/recursivenamespace/__init__.py
+src/recursivenamespace/main.py
+tests/test_recursive_namespace.py
