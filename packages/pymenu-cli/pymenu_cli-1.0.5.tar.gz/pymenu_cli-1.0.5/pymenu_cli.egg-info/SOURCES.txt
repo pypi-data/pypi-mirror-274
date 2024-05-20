@@ -1,0 +1,9 @@
+README.md
+setup.py
+pymenu_cli/__init__.py
+pymenu_cli/menu.py
+pymenu_cli.egg-info/PKG-INFO
+pymenu_cli.egg-info/SOURCES.txt
+pymenu_cli.egg-info/dependency_links.txt
+pymenu_cli.egg-info/entry_points.txt
+pymenu_cli.egg-info/top_level.txt
