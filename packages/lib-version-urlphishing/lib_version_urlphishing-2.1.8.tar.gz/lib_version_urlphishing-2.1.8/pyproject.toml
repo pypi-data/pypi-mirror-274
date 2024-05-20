@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "lib-version-urlphishing"
+version = "2.1.8"
+description = "A library to manage and track versions of software components"
+authors = ["Marianna Louizidou <M.Louizidou@student.tudelft.nl>"]
+readme = "README.md"
+license = "Apache-2.0"
+
+
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",  # Corrected classifier
+    "Operating System :: OS Independent",
+]
+
+[[tool.poetry.packages]]
+include = "lib_version_URLPhishing"
+
+[tool.poetry.urls]
+Homepage = "https://github.com/REMLA24-TEAM-15/lib-version"
+Issues = "https://github.com/REMLA24-TEAM-15/lib-version/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+flake8 = "^3.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
