@@ -1,0 +1,2 @@
+[console_scripts]
+pymenu-cli = pymenu_cli.pymenu:main
