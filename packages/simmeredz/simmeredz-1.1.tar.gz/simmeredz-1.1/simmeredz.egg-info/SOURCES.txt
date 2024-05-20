@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simmeredz/__init__.py
+simmeredz/main.py
+simmeredz.egg-info/PKG-INFO
+simmeredz.egg-info/SOURCES.txt
+simmeredz.egg-info/dependency_links.txt
+simmeredz.egg-info/requires.txt
+simmeredz.egg-info/top_level.txt
