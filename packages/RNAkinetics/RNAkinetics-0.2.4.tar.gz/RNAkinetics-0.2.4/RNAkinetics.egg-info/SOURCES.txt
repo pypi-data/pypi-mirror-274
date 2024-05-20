@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+RNAkinetics.egg-info/PKG-INFO
+RNAkinetics.egg-info/SOURCES.txt
+RNAkinetics.egg-info/dependency_links.txt
+RNAkinetics.egg-info/requires.txt
+RNAkinetics.egg-info/top_level.txt
+rnakinetics/ODEsolver.py
+rnakinetics/__init__.py

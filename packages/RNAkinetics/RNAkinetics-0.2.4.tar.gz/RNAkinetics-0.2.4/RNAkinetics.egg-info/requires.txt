@@ -1,0 +1,7 @@
+diffrax==0.4.1
+jax>=0.4.13
+equinox>=0.10.11
+optax
+anndata>=0.7.6
+tqdm
+numpy
