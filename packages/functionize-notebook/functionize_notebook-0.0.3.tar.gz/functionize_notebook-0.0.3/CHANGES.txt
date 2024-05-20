@@ -1,0 +1,11 @@
+0.0.1
+=====
+- Wrap notebook to run as a function 
+
+0.0.2
+=====
+- Fix input arguments binding
+
+0.0.3
+=====
+- Use github actions to publish 
