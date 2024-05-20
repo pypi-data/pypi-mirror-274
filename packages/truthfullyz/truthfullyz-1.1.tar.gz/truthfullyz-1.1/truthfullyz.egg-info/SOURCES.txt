@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+truthfullyz/__init__.py
+truthfullyz/main.py
+truthfullyz.egg-info/PKG-INFO
+truthfullyz.egg-info/SOURCES.txt
+truthfullyz.egg-info/dependency_links.txt
+truthfullyz.egg-info/requires.txt
+truthfullyz.egg-info/top_level.txt
