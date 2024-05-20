@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: Package_G2
+Version: 1.0.1
+Summary: Le package fournit des implémentations des algorithmes KNN et K-means
+Author: Groupe 2
+Requires-Python: >=3.10
