@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+defamationz/__init__.py
+defamationz/main.py
+defamationz.egg-info/PKG-INFO
+defamationz.egg-info/SOURCES.txt
+defamationz.egg-info/dependency_links.txt
+defamationz.egg-info/requires.txt
+defamationz.egg-info/top_level.txt
