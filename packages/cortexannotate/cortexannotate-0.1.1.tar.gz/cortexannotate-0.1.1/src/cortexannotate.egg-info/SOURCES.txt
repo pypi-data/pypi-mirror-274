@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/cortexannotate/__init__.py
+src/cortexannotate/_config.py
+src/cortexannotate/_control.py
+src/cortexannotate/_core.py
+src/cortexannotate/_figure.py
+src/cortexannotate/_util.py
+src/cortexannotate/prfs.py
+src/cortexannotate.egg-info/PKG-INFO
+src/cortexannotate.egg-info/SOURCES.txt
+src/cortexannotate.egg-info/dependency_links.txt
+src/cortexannotate.egg-info/top_level.txt
