@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+beatnikismz/__init__.py
+beatnikismz/main.py
+beatnikismz.egg-info/PKG-INFO
+beatnikismz.egg-info/SOURCES.txt
+beatnikismz.egg-info/dependency_links.txt
+beatnikismz.egg-info/requires.txt
+beatnikismz.egg-info/top_level.txt
