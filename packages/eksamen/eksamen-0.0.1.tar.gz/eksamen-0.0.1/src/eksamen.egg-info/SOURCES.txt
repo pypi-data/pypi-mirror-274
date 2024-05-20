@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/eksamen/__init__.py
+src/eksamen/example.py
+src/eksamen.egg-info/PKG-INFO
+src/eksamen.egg-info/SOURCES.txt
+src/eksamen.egg-info/dependency_links.txt
+src/eksamen.egg-info/top_level.txt
