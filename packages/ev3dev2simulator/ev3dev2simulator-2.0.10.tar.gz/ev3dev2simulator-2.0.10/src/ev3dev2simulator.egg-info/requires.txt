@@ -1,0 +1,10 @@
+ev3devlogging
+arcade==2.6.16
+simpleaudio-patched
+py3-tts
+numpy
+strictyaml
+pylint==2.5.3
+
+[:platform_system == "Darwin"]
+pyobjc==9.2
