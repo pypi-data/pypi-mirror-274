@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shimmeredz/__init__.py
+shimmeredz/main.py
+shimmeredz.egg-info/PKG-INFO
+shimmeredz.egg-info/SOURCES.txt
+shimmeredz.egg-info/dependency_links.txt
+shimmeredz.egg-info/requires.txt
+shimmeredz.egg-info/top_level.txt
