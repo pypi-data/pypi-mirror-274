@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+radioelementz/__init__.py
+radioelementz/main.py
+radioelementz.egg-info/PKG-INFO
+radioelementz.egg-info/SOURCES.txt
+radioelementz.egg-info/dependency_links.txt
+radioelementz.egg-info/requires.txt
+radioelementz.egg-info/top_level.txt
