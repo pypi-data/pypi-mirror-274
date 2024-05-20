@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sporadicnessz/__init__.py
+sporadicnessz/main.py
+sporadicnessz.egg-info/PKG-INFO
+sporadicnessz.egg-info/SOURCES.txt
+sporadicnessz.egg-info/dependency_links.txt
+sporadicnessz.egg-info/requires.txt
+sporadicnessz.egg-info/top_level.txt
