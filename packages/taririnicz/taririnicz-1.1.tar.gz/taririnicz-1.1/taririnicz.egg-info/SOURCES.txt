@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+taririnicz/__init__.py
+taririnicz/main.py
+taririnicz.egg-info/PKG-INFO
+taririnicz.egg-info/SOURCES.txt
+taririnicz.egg-info/dependency_links.txt
+taririnicz.egg-info/requires.txt
+taririnicz.egg-info/top_level.txt
