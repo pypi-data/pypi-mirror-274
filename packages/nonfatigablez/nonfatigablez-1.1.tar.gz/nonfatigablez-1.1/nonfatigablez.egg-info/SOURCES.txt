@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonfatigablez/__init__.py
+nonfatigablez/main.py
+nonfatigablez.egg-info/PKG-INFO
+nonfatigablez.egg-info/SOURCES.txt
+nonfatigablez.egg-info/dependency_links.txt
+nonfatigablez.egg-info/requires.txt
+nonfatigablez.egg-info/top_level.txt
