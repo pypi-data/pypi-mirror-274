@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scratchbackz/__init__.py
+scratchbackz/main.py
+scratchbackz.egg-info/PKG-INFO
+scratchbackz.egg-info/SOURCES.txt
+scratchbackz.egg-info/dependency_links.txt
+scratchbackz.egg-info/requires.txt
+scratchbackz.egg-info/top_level.txt
