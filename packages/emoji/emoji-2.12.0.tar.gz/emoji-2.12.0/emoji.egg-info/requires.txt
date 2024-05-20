@@ -1,0 +1,5 @@
+typing_extensions
+
+[dev]
+pytest>=7.4.4
+coverage
