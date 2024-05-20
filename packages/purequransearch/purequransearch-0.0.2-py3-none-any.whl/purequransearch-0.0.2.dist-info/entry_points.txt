@@ -1,0 +1,2 @@
+[console_scripts]
+purequransearch = purequransearch.cli:cli
