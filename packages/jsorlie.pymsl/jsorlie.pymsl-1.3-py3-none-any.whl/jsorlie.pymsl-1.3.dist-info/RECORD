@@ -1,0 +1,9 @@
+pymsl/__init__.py,sha256=J375YtoLHGB7tA_Neq4-X2UydmQE3m_pFO6pAZFmVf4,108
+pymsl/client.py,sha256=TS7xu6Aw0E7R9I6bRQy8PFG33o_Pb8EusqcX5nia8pY,15160
+pymsl/exceptions.py,sha256=AiXia1H2a3zXZ-TPF98hxz7YcjQWt3lPSfv-et_JNmY,397
+pymsl/utils.py,sha256=23vxgglI0U9D9q76e0Q3gblsQv8D_ROPNPTA_tfVQ2A,2020
+jsorlie.pymsl-1.3.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+jsorlie.pymsl-1.3.dist-info/METADATA,sha256=Mv5bGHLxIVXSsALnB89GGEGIwhlrXkF5KZkpC3jF5C4,5965
+jsorlie.pymsl-1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jsorlie.pymsl-1.3.dist-info/top_level.txt,sha256=PKgU5Akch0MTk66g_ujpy43Aux7m7Son4s4FTXp2J7Y,6
+jsorlie.pymsl-1.3.dist-info/RECORD,,
