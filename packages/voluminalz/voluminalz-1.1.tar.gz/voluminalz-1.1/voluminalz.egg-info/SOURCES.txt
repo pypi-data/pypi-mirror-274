@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+voluminalz/__init__.py
+voluminalz/main.py
+voluminalz.egg-info/PKG-INFO
+voluminalz.egg-info/SOURCES.txt
+voluminalz.egg-info/dependency_links.txt
+voluminalz.egg-info/requires.txt
+voluminalz.egg-info/top_level.txt
