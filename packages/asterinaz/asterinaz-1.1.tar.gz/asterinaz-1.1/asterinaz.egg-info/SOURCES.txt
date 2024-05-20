@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+asterinaz/__init__.py
+asterinaz/main.py
+asterinaz.egg-info/PKG-INFO
+asterinaz.egg-info/SOURCES.txt
+asterinaz.egg-info/dependency_links.txt
+asterinaz.egg-info/requires.txt
+asterinaz.egg-info/top_level.txt
