@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+islingz/__init__.py
+islingz/main.py
+islingz.egg-info/PKG-INFO
+islingz.egg-info/SOURCES.txt
+islingz.egg-info/dependency_links.txt
+islingz.egg-info/requires.txt
+islingz.egg-info/top_level.txt
