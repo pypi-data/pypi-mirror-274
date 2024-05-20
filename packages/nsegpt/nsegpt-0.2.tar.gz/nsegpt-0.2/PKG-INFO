@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: nsegpt
+Version: 0.2
+Summary: A package to fetch stock data from NSE India
+Home-page: https://github.com/Kaushal-developer/NSEGPT
+Author: NiftyBilla
+Author-email: kaushal.developer@yahoo.com
+Project-URL: Bug Tracker, https://github.com/Kaushal-developer/NSEGPT/issues
+Project-URL: Source Code, https://github.com/Kaushal-developer/NSEGPT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# NSEGPT
+NSEGPT is like the CHATGPT which provides all the NSE listed stock data information including all the documents. fundamentals and stocj OHLC data.
+# NSEGPT
+NSEGPT is a Python package to fetch stock data from the NSE India website.
+
+## Installation
+
+```bash```
+pip install NSEGPT
+
+## USAGE
+from nsefetcher import NSEFETCHER
+
+fetcher = NSEFETCHER(["RELIANCE", "TCS"])
+all_stock_data = fetcher.gather_all_data()
+print(all_stock_data)
+

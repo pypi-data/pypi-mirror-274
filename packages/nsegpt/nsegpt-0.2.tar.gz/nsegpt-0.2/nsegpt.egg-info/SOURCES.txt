@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nsegpt/__init__.py
+nsegpt/fetcher.py
+nsegpt/test_fetcher.py
+nsegpt.egg-info/PKG-INFO
+nsegpt.egg-info/SOURCES.txt
+nsegpt.egg-info/dependency_links.txt
+nsegpt.egg-info/requires.txt
+nsegpt.egg-info/top_level.txt
+tests/__init__.py
