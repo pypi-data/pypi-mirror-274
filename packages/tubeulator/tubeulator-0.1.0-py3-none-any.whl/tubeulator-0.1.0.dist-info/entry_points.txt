@@ -1,0 +1,3 @@
+[console_scripts]
+tubeulator = tubeulator.cli:main
+
