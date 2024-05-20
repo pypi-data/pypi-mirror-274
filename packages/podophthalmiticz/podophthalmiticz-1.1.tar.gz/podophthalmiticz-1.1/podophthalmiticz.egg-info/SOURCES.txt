@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+podophthalmiticz/__init__.py
+podophthalmiticz/main.py
+podophthalmiticz.egg-info/PKG-INFO
+podophthalmiticz.egg-info/SOURCES.txt
+podophthalmiticz.egg-info/dependency_links.txt
+podophthalmiticz.egg-info/requires.txt
+podophthalmiticz.egg-info/top_level.txt
