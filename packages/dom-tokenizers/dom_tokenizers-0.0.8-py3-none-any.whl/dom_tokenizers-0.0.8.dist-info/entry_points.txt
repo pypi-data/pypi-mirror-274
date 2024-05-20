@@ -1,0 +1,4 @@
+[console_scripts]
+dump-tokenizations = dom_tokenizers.dump:main
+tokenizer-diff = dom_tokenizers.diff:main
+train-tokenizer = dom_tokenizers.train:main
