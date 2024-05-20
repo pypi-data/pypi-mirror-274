@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: transparent_classroom
+Version: 0.0.1
+Summary: Python Client for accessing Transparent Classroom's data model.
+Home-page: https://github.com/dpozorski/transparent-classroom
+Author: Dylan Pozorski
+Author-email: dylanpozorski@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
