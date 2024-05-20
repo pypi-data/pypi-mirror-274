@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: JS_Flask_Install
+Version: 0.1
+Summary: Sets up a basic Javascript Boilerplate and Directory Structure for a Flask App.
+Author: kunaalg
+Author-email: <kunaal@runcode.in>
+Keywords: python,Flask,App,Javascript,Function,math
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: datetime
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: flask
+Requires-Dist: python-dotenv
+Requires-Dist: pipreqs
+Requires-Dist: pip-tools
+Requires-Dist: JS-Flask-Install.writefile-js
+
+
+Install the Package:
+
+
+
+Update your Scripts.js file in the static folder.
+
