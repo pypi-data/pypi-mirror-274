@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+grandfathersz/__init__.py
+grandfathersz/main.py
+grandfathersz.egg-info/PKG-INFO
+grandfathersz.egg-info/SOURCES.txt
+grandfathersz.egg-info/dependency_links.txt
+grandfathersz.egg-info/requires.txt
+grandfathersz.egg-info/top_level.txt
