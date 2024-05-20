@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ibish
+Version: 1.0.3
+Summary: The Unix backend for Ibis
+Home-page: https://github.com/cpcloud/ibish
+License: Apache-2.0
+Author: Ibis Maintainers
+Author-email: maintainers@ibis-project.org
+Maintainer: Ibis Maintainers
+Maintainer-email: maintainers@ibis-project.org
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Awk
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Dist: ibis-framework (>=9,<10)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: pyarrow (>=15.0.2,<16.0.0)
+Project-URL: Issue Tracker, https://github.com/cpcloud/ibish/issues
+Project-URL: Repository, https://github.com/cpcloud/ibish
+Description-Content-Type: text/markdown
+
+# ibish
+
+A Unix backend for Ibis
+
