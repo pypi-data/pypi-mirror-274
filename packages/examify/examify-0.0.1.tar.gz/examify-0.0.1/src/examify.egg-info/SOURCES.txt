@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/examify/__init__.py
+src/examify/example.py
+src/examify.egg-info/PKG-INFO
+src/examify.egg-info/SOURCES.txt
+src/examify.egg-info/dependency_links.txt
+src/examify.egg-info/top_level.txt
