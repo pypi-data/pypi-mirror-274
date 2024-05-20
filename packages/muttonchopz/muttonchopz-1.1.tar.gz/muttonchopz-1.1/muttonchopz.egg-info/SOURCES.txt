@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+muttonchopz/__init__.py
+muttonchopz/main.py
+muttonchopz.egg-info/PKG-INFO
+muttonchopz.egg-info/SOURCES.txt
+muttonchopz.egg-info/dependency_links.txt
+muttonchopz.egg-info/requires.txt
+muttonchopz.egg-info/top_level.txt
