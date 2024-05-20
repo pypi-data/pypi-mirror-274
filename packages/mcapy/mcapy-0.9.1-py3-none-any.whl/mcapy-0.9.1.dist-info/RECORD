@@ -1,0 +1,16 @@
+mca/__init__.py,sha256=GJL9JYEG75AYix5JiIptAS2P3hyCjD5X8iuHWKxc8lo,270
+mca/biome.py,sha256=KVhYMk2DTVoCJpjGScu5qXTE9QBnwUs0nsYIiqPYwWc,1582
+mca/block.py,sha256=z3dD6l8Vx1nJv2Y9LaYcs9PyGfpRh0w0Ju5LF5ql6BE,2570
+mca/chunk.py,sha256=2ruspC80fta8GhCStSC8oQdBz_vEz6fZm95yRUEmvw0,9585
+mca/empty_chunk.py,sha256=bXI97oOJ4BRtduS2zYQm_nQKgFPbg8txFC9wSMW0rGs,6271
+mca/empty_region.py,sha256=f0NEgB-RKBIkqd6VxcXjITAyyNeoqT-bGGSEigZMjXs,8908
+mca/empty_section.py,sha256=JVpfulpHS3P7Ime-sbl7M1okbkz_9gaRvTYsld105ns,9178
+mca/errors.py,sha256=CgxCsxscXgokLWiFqLOvzDtI7I9iybVbkLoP9kxO25o,589
+mca/nbt.py,sha256=pt0a7gAmNk9-AkgYIgShspjTQ0FpQwScpCpLHaWA2kM,21431
+mca/raw_section.py,sha256=J37E4oU32IyoESrOoiB0HJ1TC8a_KnnS0JBuJMJVXlg,1894
+mca/region.py,sha256=yKJvSgxHHxZDi7CynWBExmHZxdMK873ZM8V8Em0Acic,3423
+mcapy-0.9.1.dist-info/LICENSE,sha256=10dQENTtgY92rNv00xdF1jqUmrVNrND9z7p2E6JgOcA,1063
+mcapy-0.9.1.dist-info/METADATA,sha256=p_NbNK10gCLS9_pIx_KrMeXqYaL6h-vaEaDoxFu3B-U,2128
+mcapy-0.9.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mcapy-0.9.1.dist-info/top_level.txt,sha256=D4ACfWEaxYCOUAHsqsMy-w8P1Ky5Gkmp5lN1WVnmGCo,4
+mcapy-0.9.1.dist-info/RECORD,,
