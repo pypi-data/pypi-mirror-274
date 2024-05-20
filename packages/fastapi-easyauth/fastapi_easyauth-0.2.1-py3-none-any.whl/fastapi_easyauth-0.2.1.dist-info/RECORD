@@ -1,0 +1,9 @@
+fastapi_easyauth/__init__.py,sha256=w9diuvhPB2xpcZ0e4PWpWdXhLgJ4uC7FhN4_1lkFJDQ,137
+fastapi_easyauth/easyauth.py,sha256=SKllc7ebrzhZY57Exp2Sr-URXDqjYnowHbuvpNN8sKg,4734
+fastapi_easyauth/exp.py,sha256=SwtxoAAwxKAAEh4tCv9cU43WgPG7LYGSO6tzbG1qiLc,296
+fastapi_easyauth/jwt.py,sha256=vdBtWrT4FZWIAYEEjFoBZXPbpGEppMPKOmq-ZMC5r4c,5536
+fastapi_easyauth/sessionauth.py,sha256=DbAqChsKOhh-KQsvu0hIUbP0joaDIbgwqxwzHN9GMw8,7751
+fastapi_easyauth-0.2.1.dist-info/METADATA,sha256=gqn_2kEv9alO7Zc8spDbX9stkpumSsLFyFpk-f_VtV0,10086
+fastapi_easyauth-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fastapi_easyauth-0.2.1.dist-info/top_level.txt,sha256=EewZ6Fax7YwLIpFnrLorS7yguXGWFIgDCSKLOdFg4yM,17
+fastapi_easyauth-0.2.1.dist-info/RECORD,,
