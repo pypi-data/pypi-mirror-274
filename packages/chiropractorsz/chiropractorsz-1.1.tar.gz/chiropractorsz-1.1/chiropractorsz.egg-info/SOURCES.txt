@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chiropractorsz/__init__.py
+chiropractorsz/main.py
+chiropractorsz.egg-info/PKG-INFO
+chiropractorsz.egg-info/SOURCES.txt
+chiropractorsz.egg-info/dependency_links.txt
+chiropractorsz.egg-info/requires.txt
+chiropractorsz.egg-info/top_level.txt
