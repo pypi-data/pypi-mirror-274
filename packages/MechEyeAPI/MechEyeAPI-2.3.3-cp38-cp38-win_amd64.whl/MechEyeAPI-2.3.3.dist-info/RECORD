@@ -1,0 +1,15 @@
+mecheye/MechEyeApi.dll,sha256=v0D8xMVwfI3Il768EjVIOw4wfkWIV9YcaRQnAyGatEg,20447232
+mecheye/__init__.py,sha256=owMpdLSwQrglYavcVddeu74bB3Ajt17EyLsfp6f2pvM,1569
+mecheye/_area_scan_3d_camera.pyd,sha256=PI73EPDdXRroD87hplYT-CNp_wJnvKuRd4-brk0ktp4,1116672
+mecheye/_profiler.pyd,sha256=F3DYKQuz21y6sAK5yI64xwGKjrgQ-GdP0rR0cB2RG4Q,1279488
+mecheye/_shared.pyd,sha256=jM0TvwHsAEBQ2EiG0rtg2mw5Q2qaPhiIJKTJe8Te5Fo,1496064
+mecheye/area_scan_3d_camera.py,sha256=ixR1SCuEYANC_hKRiVX6sYHOSRl6d3i0B9jNM33kEek,141413
+mecheye/area_scan_3d_camera_utils.py,sha256=kMYFqrO2F7GBvYh4ZF3IkBKypWjXHIcs40QMH4WZAxk,5910
+mecheye/profiler.py,sha256=dUiInT5D0OPK9GmaSK5Q-PtJcVup5I-ish-SdnxXPJ8,88949
+mecheye/profiler_utils.py,sha256=jhN1_dLlltvVGbo3-4ecRumqDxaQx9kkHngpgQD2F-w,3586
+mecheye/shared.py,sha256=ASfbkHUhoF9V9LMmF3sonqvyaLm2Fpg-bQwpx-vPjz4,84223
+MechEyeAPI-2.3.3.dist-info/LICENSE,sha256=wwUvxhvPifDDQEriEHUlVXENQIMTcIMupx5bRg3y7_8,1560
+MechEyeAPI-2.3.3.dist-info/METADATA,sha256=MQohHExwCGvApgWLeycjVFWG_2ZEA-pJFiRW6LTjFLI,3401
+MechEyeAPI-2.3.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+MechEyeAPI-2.3.3.dist-info/top_level.txt,sha256=8CWFUhUR-AAFKHJMyZUB6n4rmpBJE9c42xS5AcXbw5s,8
+MechEyeAPI-2.3.3.dist-info/RECORD,,
