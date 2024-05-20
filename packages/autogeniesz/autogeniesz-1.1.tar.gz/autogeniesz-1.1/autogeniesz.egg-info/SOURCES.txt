@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+autogeniesz/__init__.py
+autogeniesz/main.py
+autogeniesz.egg-info/PKG-INFO
+autogeniesz.egg-info/SOURCES.txt
+autogeniesz.egg-info/dependency_links.txt
+autogeniesz.egg-info/requires.txt
+autogeniesz.egg-info/top_level.txt
