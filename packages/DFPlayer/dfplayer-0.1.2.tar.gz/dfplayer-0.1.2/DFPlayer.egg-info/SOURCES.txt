@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+DFPlayer/DFPlayer.py
+DFPlayer/__init__.py
+DFPlayer.egg-info/PKG-INFO
+DFPlayer.egg-info/SOURCES.txt
+DFPlayer.egg-info/dependency_links.txt
+DFPlayer.egg-info/requires.txt
+DFPlayer.egg-info/top_level.txt
+tests/test_dfplayer.py
