@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flatteredz/__init__.py
+flatteredz/main.py
+flatteredz.egg-info/PKG-INFO
+flatteredz.egg-info/SOURCES.txt
+flatteredz.egg-info/dependency_links.txt
+flatteredz.egg-info/requires.txt
+flatteredz.egg-info/top_level.txt
