@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+sqlite-console = pyodide_mkdocs_theme_sqlite:SQLiteConsole

@@ -1,0 +1,52 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='pyodide_mkdocs_theme_sqlite',
+    version='1.0.0',
+    description='A MkDocs plugin that adds a sqlite IDE to pyodide_mkdocs_theme.',
+    long_description="""A MkDocs plugin that adds a sqlite IDE.
+    
+    The IDE can load a database file given as a parameter, pre-run SQL before user input, and run the user's SQL code.
+    
+    This plugin uses SQL.js as a worker, which should prevent issues with large databases and query results.
+
+    Based on Rafaël Lopez work. 
+    """,
+    keywords=['mkdocs', 'sqlite'],
+    url='',
+    author='Davy Cottet',
+    author_email='davy@ik.me',
+    license='MIT',
+    python_requires='>=3.0',
+    install_requires=[
+        'pyodide-mkdocs-theme>=1.0.0'
+    ],
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: Developers',
+        'Intended Audience :: Information Technology',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11'
+
+
+    ],
+    packages=find_packages(),
+    entry_points={
+        'mkdocs.plugins': [
+            'sqlite-console = pyodide_mkdocs_theme_sqlite:SQLiteConsole'
+        ]
+    },
+    package_data={
+        "": ["css/*", "js/*"],
+    },
+    include_package_data=True
+)

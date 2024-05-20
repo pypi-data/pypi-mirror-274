@@ -1,0 +1,29 @@
+.sqlerror {
+	color:red;
+	transition:.5s;
+	overflow:hidden;
+	margin: 15px;
+}
+
+.sqloutput {
+	overflow: auto;
+}
+
+.sqltable {
+	width:auto;
+	margin:auto;
+	border:1px solid black;
+ 	border-collapse:collapse;
+ 	margin-bottom:10px;
+}
+
+.sqltable th, .sqltable td {
+	border:1px solid #777;
+}
+
+div.sqlhidden > div,
+div.sqlhidden > label,
+div.sqlhidden > br,
+div.sqlhidden > button {
+	display: none;
+}
