@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lachrymalz/__init__.py
+lachrymalz/main.py
+lachrymalz.egg-info/PKG-INFO
+lachrymalz.egg-info/SOURCES.txt
+lachrymalz.egg-info/dependency_links.txt
+lachrymalz.egg-info/requires.txt
+lachrymalz.egg-info/top_level.txt
