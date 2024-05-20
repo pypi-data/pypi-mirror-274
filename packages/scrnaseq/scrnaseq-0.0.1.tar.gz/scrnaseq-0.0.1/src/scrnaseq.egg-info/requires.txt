@@ -1,0 +1,15 @@
+dolomite_base
+dolomite_matrix
+dolomite_sce
+gypsum_client>=0.1.1
+delayedarray
+summarizedexperiment
+singlecellexperiment
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
