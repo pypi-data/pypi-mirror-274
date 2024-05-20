@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: reasonify-headless
+Version: 0.1.0a3
+Summary: headless implementation for the Reasonify Agent
+Author-Email: Muspi Merol <me@promplate.dev>
+License: MIT
+Requires-Python: >=3.12
+Requires-Dist: pyodide-py~=0.26.0a4; sys_platform != "emscripten"
+Requires-Dist: promplate~=0.3.4.5
+Requires-Dist: python-box~=7.1.1
+Requires-Dist: promptools[validation]~=0.1.3.4
+Requires-Dist: promplate-recipes~=0.2.2.1
+Requires-Dist: pyyaml~=6.0.1
