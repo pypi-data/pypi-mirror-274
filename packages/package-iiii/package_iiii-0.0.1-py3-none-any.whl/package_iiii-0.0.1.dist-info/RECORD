@@ -1,0 +1,9 @@
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/module2.py,sha256=qFecpUOl0cOabni9VGNRnlxVSnkDqXCB38pRWJaNniY,306
+package/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/utils/module1.py,sha256=y6-ep3CTxhK5nC2YHKbPRbVjVXFCjuUydhpB3IjPyOA,56
+package/utils/printing.py,sha256=SSrF_UgEoW_U1NBq_t-CY6ZwMpbprfjzTl4Do1TIMhc,60
+package_iiii-0.0.1.dist-info/METADATA,sha256=yr6c8q_dksppUycFlsDMcTTDkp1lO8PT2WKb7Ido6Bk,207
+package_iiii-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+package_iiii-0.0.1.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+package_iiii-0.0.1.dist-info/RECORD,,

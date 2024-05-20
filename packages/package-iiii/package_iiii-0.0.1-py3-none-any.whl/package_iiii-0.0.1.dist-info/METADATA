@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: package_iiii
+Version: 0.0.1
+Summary: A module to calculate math
+Author: Satyam Nyati
+Author-email: sam.28011997@gmail.com
+License: MIT
+Requires-Dist: pandas
+Requires-Dist: numpy
+
