@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/eras.egg-info/PKG-INFO
+src/eras.egg-info/SOURCES.txt
+src/eras.egg-info/dependency_links.txt
+src/eras.egg-info/entry_points.txt
+src/eras.egg-info/requires.txt
+src/eras.egg-info/top_level.txt
