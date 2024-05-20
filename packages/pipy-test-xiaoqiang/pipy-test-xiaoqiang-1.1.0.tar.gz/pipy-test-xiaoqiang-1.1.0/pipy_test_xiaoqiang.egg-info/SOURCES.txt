@@ -1,0 +1,11 @@
+README.md
+setup.py
+pipy_test_xiaoqiang/__init__.py
+pipy_test_xiaoqiang/cli.py
+pipy_test_xiaoqiang/main.py
+pipy_test_xiaoqiang.egg-info/PKG-INFO
+pipy_test_xiaoqiang.egg-info/SOURCES.txt
+pipy_test_xiaoqiang.egg-info/dependency_links.txt
+pipy_test_xiaoqiang.egg-info/entry_points.txt
+pipy_test_xiaoqiang.egg-info/requires.txt
+pipy_test_xiaoqiang.egg-info/top_level.txt
