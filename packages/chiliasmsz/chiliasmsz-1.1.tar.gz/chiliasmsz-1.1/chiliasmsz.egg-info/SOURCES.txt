@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chiliasmsz/__init__.py
+chiliasmsz/main.py
+chiliasmsz.egg-info/PKG-INFO
+chiliasmsz.egg-info/SOURCES.txt
+chiliasmsz.egg-info/dependency_links.txt
+chiliasmsz.egg-info/requires.txt
+chiliasmsz.egg-info/top_level.txt
