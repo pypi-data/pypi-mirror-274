@@ -1,0 +1,6 @@
+image_processor
+setup.py
+my_cpp_package.egg-info/PKG-INFO
+my_cpp_package.egg-info/SOURCES.txt
+my_cpp_package.egg-info/dependency_links.txt
+my_cpp_package.egg-info/top_level.txt
