@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+whitetipz/__init__.py
+whitetipz/main.py
+whitetipz.egg-info/PKG-INFO
+whitetipz.egg-info/SOURCES.txt
+whitetipz.egg-info/dependency_links.txt
+whitetipz.egg-info/requires.txt
+whitetipz.egg-info/top_level.txt
