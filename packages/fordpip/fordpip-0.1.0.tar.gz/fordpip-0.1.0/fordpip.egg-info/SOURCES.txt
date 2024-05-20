@@ -1,0 +1,5 @@
+setup.py
+fordpip.egg-info/PKG-INFO
+fordpip.egg-info/SOURCES.txt
+fordpip.egg-info/dependency_links.txt
+fordpip.egg-info/top_level.txt
