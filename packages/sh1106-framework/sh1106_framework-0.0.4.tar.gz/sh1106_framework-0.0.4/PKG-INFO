@@ -1,0 +1,241 @@
+Metadata-Version: 2.3
+Name: sh1106_framework
+Version: 0.0.4
+Summary: A state manager, graphics, image, and custom font drawing package for the SH1106 OLED screen based on the luma.oled package. It works with Raspberry Pi and other Linux-based single-board computers.
+Project-URL: Homepage, https://github.com/danspage/sh1106-framework
+Project-URL: Issues, https://github.com/danspage/sh1106-framework/issues
+Author-email: Dan Convey <author@example.com>
+License: Apache License 2.0
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Other OS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+
+# SH1106 OLED Screen Framework Package
+
+A state manager, graphics, image, and custom font drawing package for the SH1106 OLED screen based on the luma.oled package. It works with Raspberry Pi and other Linux-based single-board computers.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Basic Usage](#basic-usage)
+  - [State Management](#state-management)
+  - [Drawing Graphics](#drawing-graphics)
+  - [Custom Fonts](#custom-fonts)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Introduction
+
+This package provides a comprehensive solution for managing states, drawing graphics, images, and custom fonts on the SH1106 OLED screen. It leverages the capabilities of the luma.oled package to offer an easy-to-use interface for Raspberry Pi and other Linux-based single-board computers.
+
+## Features
+
+- State management for different application screens
+- Drawing basic shapes (lines, rectangles)
+- Rendering images on the OLED screen
+- Custom font support for text rendering
+
+## Installation
+
+To install the package, use pip:
+
+```bash
+pip install sh1106-framework
+```
+
+## Tools
+
+The package doesn't directly load image files for images and fonts, but instead uses custom JSON bitmap files.
+
+This package comes with two tools: an image utility and a font utility. These take user-supplied image files containing bitmaps, and convert them to json files which the framework can load. This process is split apart from the framework itself in order to reduce load time.
+
+#### Image utility:
+
+The image utility can be accessed with the `sh1106_image_generator` command. It takes in a reference image, which contains one or more bitmaps within itself, and a JSON reference file, containing information about the names of the images for the framework to reference, along with their coordinates and sizes in the reference image.
+
+The reference image can be of any size. Since the SH1106 display is monochromatic, each pixel only has a state of being on or off. In the reference image, an opaque white pixel represents a pixel being on, and any other color represents the pixel being off.
+
+An example image can be found [here](https://github.com/danspage/sh1106-framework/blob/main/useful-assets/example-images.png), and its corresponding JSON file can be found [here](https://github.com/danspage/sh1106-framework/blob/main/useful-assets/example-images.json).
+
+In the example image, the important color is the white, which represents the image's filled in pixels. The black and pink are simply for the sake of keeping track where each individual sub-image is.
+
+In the JSON file, you'll see a list of entries, with arrays of four integers as the values. Bear in mind a single image loaded into the utility can contain multiple images within itself for the framework to use. The key of each entry is the name that the framework will use to reference the image after it's loaded. The four integers in the values represent the X coordinate, Y coordinate, width, and height of the image. The coordinate origin is at the top-left, with the top-left most pixel being 0,0.
+
+If an entry looks like this: `"smiley-face": [10,10,20,15]` the framework will refer to it be the name "smiley-face". It will be 20 pixels wide and 15 pixels tall, and in the reference image provided, it will be at the 11th pixel from the left, and 11th pixel from the top.
+
+To generate an output JSON file for the images, use the following terminal command:
+```bash
+sh1006_terminal_generator -i/--image <path to reference image> -j/--json <path to reference JSON> -o/--output <path to output file>
+```
+
+Then you'll use the output JSON file for initializing images when the framework is loading.
+
+#### Font utility:
+
+The font utility works the exact same as the image utility, except with the `sh1106_font_generator` command instead. Instead of using names for each entry, use the character that you want to assign to the sub-image. The name of the font will be set manually via code upon initialization. The default font that you'll most likely want to include can be found here: [Image](https://github.com/danspage/sh1106-framework/blob/main/useful-assets/default-font.png), [JSON](https://github.com/danspage/sh1106-framework/blob/main/useful-assets/default-font.json)
+
+## Usage
+
+### Basic Usage
+
+Here is a simple example of how to initialize the display and draw a basic shape:
+
+```python
+# MAKE SURE TO INCLUDE IMPORT STATEMENTS
+
+def __init():
+    SH1106Framework.register_font("default", "default_font.json")
+    SH1106Framework.register_images("icons.json")
+    
+    SH1106Framework.register_routes(
+        default_route="splash",
+        routes={
+            "splash": SplashPage(StateManager)
+        }
+    )
+    
+    # Use the I2C port and address of the display
+    SH1106Framework.begin(port=1, address=0x3C)
+    pass
+    
+if __name__ == "__main__":
+    __init()
+```
+
+```python
+# MAKE SURE TO INCLUDE IMPORT STATEMENTS
+
+import time
+
+class PingPage(State):
+    def __init__(self, state_manager):
+        self.state_manager = state_manager
+    
+    def init(self):
+        pass
+
+    def enter(self):
+        self.time_of_start = time.time()
+
+    def handle_input(self, channel, message):
+        pass
+
+    def update(self, dt):
+        if time.time() - self.time_of_start > 1:
+            self.state_manager.set_state("pong")
+
+    def render(self):
+        Drawing.draw_image("weather-rain", 0, 0)
+        Drawing.draw_text("Ping", 14, 0)
+```
+
+```python
+# MAKE SURE TO INCLUDE IMPORT STATEMENTS
+
+import time
+
+class PingPage(State):
+    def __init__(self, state_manager):
+        self.state_manager = state_manager
+    
+    def init(self):
+        pass
+
+    def enter(self):
+        self.time_of_start = time.time()
+
+    def handle_input(self, channel, message):
+        pass
+
+    def update(self, dt):
+        if time.time() - self.time_of_start > 1:
+            self.state_manager.set_state("ping")
+
+    def render(self):
+        Drawing.draw_image("weather-storm", 0, 0)
+        Drawing.draw_text("Pong", 14, 0)
+```
+
+### State Management
+
+Managing different application states can be done as follows:
+
+```python
+from sh1106_oled import StateManager
+
+# Initialize the state manager
+state_manager = StateManager()
+
+# Define states
+def home_screen():
+    # Draw home screen content
+    pass
+
+def settings_screen():
+    # Draw settings screen content
+    pass
+
+# Register states
+state_manager.add_state("home", home_screen)
+state_manager.add_state("settings", settings_screen)
+
+# Switch to a state
+state_manager.switch_state("home")
+```
+
+### Drawing Graphics
+
+You can draw various graphics like lines, circles, and rectangles:
+
+```python
+# Draw a line
+display.line((0, 0, 128, 64), fill="white")
+
+# Draw a circle
+display.circle((64, 32), 20, outline="white")
+
+display.show()
+```
+
+### Custom Fonts
+
+To draw text with custom fonts:
+
+```python
+from PIL import ImageFont
+
+# Load a custom font
+font = ImageFont.truetype("path/to/font.ttf", 16)
+
+# Draw text
+display.text((10, 10), "Hello, World!", font=font, fill="white")
+
+display.show()
+```
+
+## Examples
+
+Check the [examples directory](examples/) for more detailed examples and use cases.
+
+## Contributing
+
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please contact [Your Name](mailto:your.email@example.com).
