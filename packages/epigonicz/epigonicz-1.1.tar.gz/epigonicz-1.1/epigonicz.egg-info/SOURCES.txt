@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+epigonicz/__init__.py
+epigonicz/main.py
+epigonicz.egg-info/PKG-INFO
+epigonicz.egg-info/SOURCES.txt
+epigonicz.egg-info/dependency_links.txt
+epigonicz.egg-info/requires.txt
+epigonicz.egg-info/top_level.txt
