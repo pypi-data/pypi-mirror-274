@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flurriedz/__init__.py
+flurriedz/main.py
+flurriedz.egg-info/PKG-INFO
+flurriedz.egg-info/SOURCES.txt
+flurriedz.egg-info/dependency_links.txt
+flurriedz.egg-info/requires.txt
+flurriedz.egg-info/top_level.txt
