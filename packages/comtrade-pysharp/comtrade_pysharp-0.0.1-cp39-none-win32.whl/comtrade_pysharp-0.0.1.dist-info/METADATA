@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: comtrade_pysharp
+Version: 0.0.1
+Summary: Simple reader for COMTRADE files, using C# underneath to be fast
+Requires-Python: ==3.9.*
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pythonnet
+
+# comtrade-pysharp
+A Python wrapper to the GSF COMTRADE reader (C#, hence pysharp). This should make it much faster than pure python. Additionally, it tries to keep the RAM usage fairly low, though the entire file is loaded at once.
+
+Depending on the size of the files to be read, the time to read can be reduced by 50x.
+
+
+# How it works
+
+## C#
+
+Internals/FileReader contains two items:
+- ReaderDll, which provides a simplification layer to the [GSF.COMTRADE](https://github.com/GridProtectionAlliance/gsf)
+- FileReader, which just uses the one above
+
+The ReaderDll builds to a single dll, this is done with [ILRepack](https://github.com/gluck/il-repack).
+
+## Python
+
+We use the ReaderDll and access it there.
+The data is then converted to [numpy](https://numpy.org/) arrays and the memory of the C# object is freed.
+
+# data
+
+Contains two COMTRADE files:
+- One example of a big file
+- One example taken from from [comtrade](https://github.com/drewsilcock/comtrade/tree/main/tests/comtrade_files)
+
+
+# licensing
+
+No idea, everything is open source and redistributable as far as I can tell, but there's some nuget packages in there that have other licenses, so do your due diligence. Everything is put "as is" on here...
+Some seem to be BSD (Antlr3 and another one)
+
+# Warning
+
+## First
+
+![](cat.gif)
+
+## Testing
+
+I only tested this against one of the files I'm using, in the one version of Python I'm using (3.9.13-32 bits). There's no reason it wouldn't work for other versions, but I haven't even tried.
+
+## Maintenance/issues
+
+I did this "for fun" to evaluate how much faster I could make a reader using a multi-language approach. You can report issues but this is not something I want to maintain significantly, unless I see it gain a lot of traction.
+
+# todo
+
+## FileReader
+
+* 	Seems the example throws an exception at the end. This appeared once I merged all dlls, not sure why.
+
+
+## Python
+
+* 	Figure out the proper way to create the package (copy the dll and make it available on pypi)
