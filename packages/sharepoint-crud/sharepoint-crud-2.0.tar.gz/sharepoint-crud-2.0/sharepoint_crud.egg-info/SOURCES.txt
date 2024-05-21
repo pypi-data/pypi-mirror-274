@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sharepoint_crud/__init__.py
+sharepoint_crud/sharepoint.py
+sharepoint_crud.egg-info/PKG-INFO
+sharepoint_crud.egg-info/SOURCES.txt
+sharepoint_crud.egg-info/dependency_links.txt
+sharepoint_crud.egg-info/requires.txt
+sharepoint_crud.egg-info/top_level.txt
