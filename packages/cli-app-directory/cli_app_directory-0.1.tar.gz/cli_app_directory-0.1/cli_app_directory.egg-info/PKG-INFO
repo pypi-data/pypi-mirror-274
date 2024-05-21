@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cli_app_directory
+Version: 0.1
+Summary: Sets up a basic CLI application to print the Home Directory and use inputs to change the cuurent directory or make a new directory 
+Author: kunaalg
+Author-email: <kunaal@runcode.in>
+Keywords: python,Directory,App,Home,Make,Home Directory
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: datetime
+Requires-Dist: requests
+
+
+Install the Package:
+
+Use the Function:
+from homedir import home_dir
+
+home_dir()

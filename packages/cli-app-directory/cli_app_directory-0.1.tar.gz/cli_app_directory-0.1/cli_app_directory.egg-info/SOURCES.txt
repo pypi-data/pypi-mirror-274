@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+cli_app_directory.egg-info/PKG-INFO
+cli_app_directory.egg-info/SOURCES.txt
+cli_app_directory.egg-info/dependency_links.txt
+cli_app_directory.egg-info/requires.txt
+cli_app_directory.egg-info/top_level.txt
+src/__init__.py
+src/homedir.py
