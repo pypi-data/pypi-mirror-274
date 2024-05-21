@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/play3slib.egg-info/PKG-INFO
+src/play3slib.egg-info/SOURCES.txt
+src/play3slib.egg-info/dependency_links.txt
+src/play3slib.egg-info/top_level.txt
