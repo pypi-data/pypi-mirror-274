@@ -1,0 +1,9 @@
+platformio
+pyserial
+libusb1
+PyQt6
+monitorcontrol
+
+[:platform_system == "Windows"]
+pywin32
+winshell

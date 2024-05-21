@@ -1,0 +1,56 @@
+version = 1
+disable_existing_loggers = false
+
+[filters.warning_and_above]
+"()" = "brightify.Brightylog.WarningAndAbove"
+
+[filters.info_and_below]
+"()" = "brightify.Brightylog.InfoAndBelow"
+
+[formatters.console]
+format = "[%(levelname)s]: %(message)s [%(name)s @ %(asctime)s]"
+
+[formatters.json]
+"()" = "brightify.Brightylog.Brightylog"
+
+[formatters.json.fmt_keys]
+level = "levelname"
+message = "message"
+timestamp = "timestamp"
+logger = "name"
+module = "module"
+function = "funcName"
+line = "lineno"
+thread_name = "threadName"
+exc_text = "exc_text"
+
+[handlers.stdout]
+class = "logging.StreamHandler"
+formatter = "console"
+filters = ["warning_and_above"]  # Don't show Warning and above in stdout
+stream = "ext://sys.stdout"
+
+[handlers.stderr]
+class = "logging.StreamHandler"
+formatter = "console"
+filters = ["info_and_below"]  # Don't show Info and below in stderr
+stream = "ext://sys.stderr"
+
+[handlers.jsonfile]
+class = "logging.handlers.RotatingFileHandler"
+formatter = "json"
+filters = ["info_and_below"]  # Don't log Info and below in file
+filename = "brightify.log.jsonl"
+maxBytes = 10485760 # 10MB
+backupCount = 5
+
+
+[handlers.queue_handler]
+class = "brightify.Brightylog.BrightyQueueHandler"
+handlers = ["jsonfile", "stdout", "stderr"]
+respect_handler_level = true
+
+
+[loggers.root]
+level = "DEBUG"  # progate everything to root
+handlers = ["queue_handler"]
