@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: contact-email-address-local
+Version: 0.0.11
+Summary: PyPI Package for Circles contact-email-address-local Python
+Home-page: https://github.com/circles-zone/contact-email-address-local-python-package
+Author: Circles
+Author-email: info@circlez.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: database-mysql-local >=0.0.197
+Requires-Dist: logger-local >=0.0.100
+Requires-Dist: email-address-local >=0.0.40
+Requires-Dist: user-context-remote >=0.0.57
+Requires-Dist: language-remote
+
+PyPI Package for Circles contact-email-address-local Python
