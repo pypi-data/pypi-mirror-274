@@ -1,0 +1,17 @@
+[project]
+name = "pyanfis"
+version = "0.1"
+authors = [
+  { name="Vicente Feced Mas", email="vicente.feced.mas@gmail.com" },
+]
+description = "An pytorch-based package to use ANFIS for AI"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/VicenteFecedMas/pyanfis"
