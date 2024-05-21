@@ -1,0 +1,8 @@
+MANIFEST.in
+readme.md
+setup.py
+inspectus/__init__.py
+inspectus.egg-info/PKG-INFO
+inspectus.egg-info/SOURCES.txt
+inspectus.egg-info/dependency_links.txt
+inspectus.egg-info/top_level.txt
