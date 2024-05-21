@@ -1,0 +1,10 @@
+vanguard/__init__.py,sha256=LxdOe1o5Unr07I6C8IWQDofUpdecf3r4hWSoJeXwQ0I,95
+vanguard/account.py,sha256=3okdDqFRaFDOJOx0V9BXchPmSkJ2FWWhzhp5VgBrp1o,9176
+vanguard/order.py,sha256=qyuUA9QmKmStLWh_eEqN_v4dlpAgcuXI0Tp0nOAzy-k,13460
+vanguard/session.py,sha256=EqP2VA_fT8bIJbWMX5qNdJeDqQtl8q6uOCq-yyj6Qx8,9746
+vanguard/urls.py,sha256=XPFm8vH2zLdxJZBX2d4Ikseoh0c7FUn71Gri6zFC55Y,373
+vanguard_api-0.1.0.dist-info/LICENSE,sha256=wPEQjDqm5zMBmEcZp219Labmq_YIjhudpZiUzyVKaFA,1057
+vanguard_api-0.1.0.dist-info/METADATA,sha256=B6gClau0zU0cdY2830lDuLnQDRIImySNlsPMkZkbmpU,2408
+vanguard_api-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vanguard_api-0.1.0.dist-info/top_level.txt,sha256=zQPAbz4gU4PaG7EdSyA_tssBblCSsPN1lwCjDnBqOhI,9
+vanguard_api-0.1.0.dist-info/RECORD,,
