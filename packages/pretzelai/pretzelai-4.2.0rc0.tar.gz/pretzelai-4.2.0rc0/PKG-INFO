@@ -1,0 +1,202 @@
+Metadata-Version: 2.3
+Name: pretzelai
+Version: 4.2.0rc0
+Summary: Pretzel is a fork of JupyterLab that improves the user experience of the JupyterLab computational environment.
+Project-URL: Homepage, https://withpretzel.com
+Project-URL: Changelog, https://withpretzel.com/changelog
+Project-URL: Documentation, https://withpretzel.com/docs
+Project-URL: Source, https://github.com/pretzelai/pretzelai
+Project-URL: Issues, https://github.com/pretzelai/pretzelai/issues/new/choose
+Project-URL: Pypi, https://pypi.org/project/pretzelai
+Author-email: Pretzel AI GmbH <founders@pretzel.ai>
+License: Pretzel is a fork of Project Jupyter, which is licensed under the terms
+        of the Modified BSD License. The original code of this project, contributed
+        by the Project Jupyter Contributors and other parties, remains under the
+        original license. The original LICENSE text is as follows:
+        
+        ==============================================================================
+        Copyright (c) 2015-2022 Project Jupyter Contributors
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+        Semver File License
+        ===================
+        
+        The semver.py file is from https://github.com/podhmo/python-semver
+        which is licensed under the "MIT" license.  See the semver.py file for details.
+        ==============================================================================
+        
+        All modifications and additions to the Jupyter codebase made by Pretzel
+        contributors listed in the PRETZEL_CONTRIBUTORS file (found at the root of the
+        project) are licensed under the terms of the GNU Affero General Public License
+        v3.0. These terms can be found in the LICENSE_AGPLv3 file at the root of the
+        project.
+        
+        Copyright for all new code contributions by Pretzel AI GmbH and listed
+        contributors is held by Pretzel AI GmbH. Each new file created by
+        Pretzel AI GmbH or its contributors is identified with a header stating
+        the copyright and licensing under AGPLv3.
+        
+        
+        ==============================================================================
+        
+        The contents of the folder pretzelai_visual represent an older tool, which
+        is no longer actively developed. All files in this folder are licensed under
+        the terms of the Apache License, Version 2.0. These terms can be found in the
+        LICENSE file in the pretzelai_visual folder.
+License-File: LICENSE
+License-File: LICENSE_AGPLv3
+Keywords: ipython,jupyter
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: async-lru>=1.0.0
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: importlib-metadata>=4.8.3; python_version < '3.10'
+Requires-Dist: importlib-resources>=1.4; python_version < '3.9'
+Requires-Dist: ipykernel>=6.5.0
+Requires-Dist: jinja2>=3.0.3
+Requires-Dist: jupyter-core
+Requires-Dist: jupyter-lsp>=2.0.0
+Requires-Dist: jupyter-server<3,>=2.4.0
+Requires-Dist: jupyterlab-server<3,>=2.27.1
+Requires-Dist: notebook-shim>=0.2
+Requires-Dist: packaging
+Requires-Dist: tomli>=1.2.2; python_version < '3.11'
+Requires-Dist: tornado>=6.2.0
+Requires-Dist: traitlets
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: bump2version; extra == 'dev'
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: ruff==0.3.5; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: jsx-lexer; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme>=0.13.0; extra == 'docs'
+Requires-Dist: pytest; extra == 'docs'
+Requires-Dist: pytest-check-links; extra == 'docs'
+Requires-Dist: pytest-jupyter; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx<7.3.0,>=1.8; extra == 'docs'
+Provides-Extra: docs-screenshots
+Requires-Dist: altair==5.3.0; extra == 'docs-screenshots'
+Requires-Dist: ipython==8.16.1; extra == 'docs-screenshots'
+Requires-Dist: ipywidgets==8.1.2; extra == 'docs-screenshots'
+Requires-Dist: jupyterlab-geojson==3.4.0; extra == 'docs-screenshots'
+Requires-Dist: jupyterlab-language-pack-zh-cn==4.1.post2; extra == 'docs-screenshots'
+Requires-Dist: matplotlib==3.8.3; extra == 'docs-screenshots'
+Requires-Dist: nbconvert>=7.0.0; extra == 'docs-screenshots'
+Requires-Dist: pandas==2.2.1; extra == 'docs-screenshots'
+Requires-Dist: scipy==1.12.0; extra == 'docs-screenshots'
+Requires-Dist: vega-datasets==0.9.0; extra == 'docs-screenshots'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: pytest-check-links>=0.7; extra == 'test'
+Requires-Dist: pytest-console-scripts; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-jupyter>=0.5.3; extra == 'test'
+Requires-Dist: pytest-timeout; extra == 'test'
+Requires-Dist: pytest-tornasync; extra == 'test'
+Requires-Dist: pytest>=7.0; extra == 'test'
+Requires-Dist: requests; extra == 'test'
+Requires-Dist: requests-cache; extra == 'test'
+Requires-Dist: virtualenv; extra == 'test'
+Provides-Extra: upgrade-extension
+Requires-Dist: copier<10,>=8; extra == 'upgrade-extension'
+Requires-Dist: jinja2-time<0.3; extra == 'upgrade-extension'
+Requires-Dist: pydantic<2.0; extra == 'upgrade-extension'
+Requires-Dist: pyyaml-include<2.0; extra == 'upgrade-extension'
+Requires-Dist: tomli-w<2.0; extra == 'upgrade-extension'
+Description-Content-Type: text/markdown
+
+# [Pretzel](https://withpretzel.com)
+
+Pretzel is a fork of Jupyter. We aim to improve Jupyter's capabilities.
+
+Switching to Pretzel from Jupyter is easy. We pick your existing Jupyter settings
+and extensions so it doesn't even feel like switching.
+
+We're building features such as:
+
+- Native AI features similar to [Cursor](https://cursor.sh/)
+- Frictionless realtime collaboration: pair-programming, comments, version history, etc.
+- SQL support (both in code cells and as a standalone SQL IDE)
+- Visual analysis builder (see more here)
+- VSCode like code-writing experience using [Monaco](https://github.com/microsoft/monaco-editor)
+- 1-click dashboard creation from data analysis results
+- End-to-end analysis on datasets for non-data folks
+
+## Getting Started
+
+Just as with Jupyter, you can install Pretzel by using pip:
+
+```
+pip install pretzelai
+```
+
+or by using conda:
+
+```
+conda install -c conda-forge pretzelai
+```
+
+Then, start Pretzel with:
+
+```
+pretzel
+```
+
+Just as with Jupyter, you should see a URL to access the Pretzel interface.
+
+## Bleeding Edge Version
+
+To use the latest version of Pretzel, you can install it directly from the main branch:
+
+```
+pip install git+https://github.com/pretzelai/pretzel.git
+```
+
+## Jupyter specific information
+
+The original Jupyter documentation is available [here](https://jupyter.org/) and
+the Jupyterlab README is available [here](https://github.com/jupyterlab/jupyterlab).
