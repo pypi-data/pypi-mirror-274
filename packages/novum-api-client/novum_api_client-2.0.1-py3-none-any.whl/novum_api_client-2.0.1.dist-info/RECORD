@@ -1,0 +1,11 @@
+novum_api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novum_api_client/api_type.py,sha256=3lwQjHeJgjliagBn0oWGoz1SjSZ7HiPjt1v6joIJ1xU,16121
+novum_api_client/base_client.py,sha256=N7PHdcMlMNjTT-qjkHs-D_emrBf48b0XiLdUJedLa8E,11475
+novum_api_client/client.py,sha256=uNerOi2lF68dKs0gYs3123wm4Yt3ipDQqSMzmAgrEjE,30615
+novum_api_client/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novum_api_client/tests/test_api_base.py,sha256=5KTTOBrn3DlgEbLDmRX7Qn4EbXXCTiTb7wqY1gZx9ow,10794
+novum_api_client/tests/test_api_public.py,sha256=5vvUWlq1Z5AKBlv1GvLR9QWKGQ-YmC_9b-QlOPsEjxE,34794
+novum_api_client-2.0.1.dist-info/LICENSE,sha256=N3EGPbh4o9ArIPPEjWKlK22RmKqeh-OTVhvf8B3cvUg,1064
+novum_api_client-2.0.1.dist-info/METADATA,sha256=CsGsHgd1ss3tRhldhcMuUlkRqgh1lg80OBdYkYbRdWI,1683
+novum_api_client-2.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+novum_api_client-2.0.1.dist-info/RECORD,,
