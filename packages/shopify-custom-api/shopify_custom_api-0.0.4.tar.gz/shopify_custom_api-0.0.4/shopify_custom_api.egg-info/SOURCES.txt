@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+cshopify/__init__.py
+cshopify/api.py
+shopify_custom_api.egg-info/PKG-INFO
+shopify_custom_api.egg-info/SOURCES.txt
+shopify_custom_api.egg-info/dependency_links.txt
+shopify_custom_api.egg-info/requires.txt
+shopify_custom_api.egg-info/top_level.txt
