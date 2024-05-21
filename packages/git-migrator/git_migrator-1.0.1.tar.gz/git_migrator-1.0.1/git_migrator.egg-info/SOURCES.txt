@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+git_migrator/__init__.py
+git_migrator/__main__.py
+git_migrator.egg-info/PKG-INFO
+git_migrator.egg-info/SOURCES.txt
+git_migrator.egg-info/dependency_links.txt
+git_migrator.egg-info/top_level.txt
