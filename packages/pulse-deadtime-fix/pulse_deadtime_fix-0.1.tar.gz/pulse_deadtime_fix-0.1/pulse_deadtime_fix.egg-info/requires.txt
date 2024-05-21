@@ -1,0 +1,13 @@
+numpy
+astropy
+stingray
+numba
+
+[docs]
+sphinx
+sphinx-automodapi
+
+[test]
+pytest
+pytest-doctestplus
+pytest-cov
