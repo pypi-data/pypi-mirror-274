@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "review-ingest-app"
+version = "1.0.1"
+description = "A script to process reviews and generate aggregations."
+authors = ["Prabhupad Pradhan <prabhupad26@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+argparse = "^1.4.0"
+PyYAML = "^6.0"
+pydantic = "^2.7.1"
+tqdm = "^4.66.4"
+pytz = "^2024.1"
+rapidfuzz = "^3.9.1"
+pytest = "^8.2.1"
+python-dateutil = "^2.9.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
