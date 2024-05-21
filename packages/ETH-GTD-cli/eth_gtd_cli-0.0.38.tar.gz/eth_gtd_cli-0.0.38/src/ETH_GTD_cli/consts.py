@@ -1,0 +1,5 @@
+API_URL = 'http://localhost:3000'
+AUTHORIZATION_URL = 'https://accounts.google.com/o/oauth2/auth'
+REDIRECT_URI = 'http://localhost:8000/callback'
+SCOPE = 'openid email'
+API_CLI_CALLBACK_URL = 'http://your-api-endpoint/auth/google/cli-callback'
