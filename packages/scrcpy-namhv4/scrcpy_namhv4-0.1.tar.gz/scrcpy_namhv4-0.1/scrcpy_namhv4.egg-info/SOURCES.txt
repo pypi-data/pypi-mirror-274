@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+scrcpy_my/__init__.py
+scrcpy_my/core.py
+scrcpy_namhv4.egg-info/PKG-INFO
+scrcpy_namhv4.egg-info/SOURCES.txt
+scrcpy_namhv4.egg-info/dependency_links.txt
+scrcpy_namhv4.egg-info/top_level.txt
+tests/test_core.py
