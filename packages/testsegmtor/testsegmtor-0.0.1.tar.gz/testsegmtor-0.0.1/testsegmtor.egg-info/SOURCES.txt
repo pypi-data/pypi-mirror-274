@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+image_processor
+run.py
+setup.py
+testsegmtor.egg-info/PKG-INFO
+testsegmtor.egg-info/SOURCES.txt
+testsegmtor.egg-info/dependency_links.txt
+testsegmtor.egg-info/requires.txt
+testsegmtor.egg-info/top_level.txt
