@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+wsgenerator/__init__.py
+wsgenerator/wsgenerator.py
+wsgenerator.egg-info/PKG-INFO
+wsgenerator.egg-info/SOURCES.txt
+wsgenerator.egg-info/dependency_links.txt
+wsgenerator.egg-info/top_level.txt
