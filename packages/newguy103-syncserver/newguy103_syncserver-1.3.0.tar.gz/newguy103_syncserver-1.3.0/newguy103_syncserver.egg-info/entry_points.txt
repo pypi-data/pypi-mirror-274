@@ -1,0 +1,4 @@
+[console_scripts]
+syncserver-client = syncserver.client.__main__:run_gui
+syncserver-server = syncserver.server.__main__:run_simple
+syncserver-server.db = syncserver.server._db:run_cli

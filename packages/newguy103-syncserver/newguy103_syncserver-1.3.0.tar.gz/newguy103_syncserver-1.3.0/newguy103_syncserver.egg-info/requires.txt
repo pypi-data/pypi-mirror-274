@@ -1,0 +1,6 @@
+cryptography
+requests
+flask
+argon2-cffi
+msgpack
+pyqt5
