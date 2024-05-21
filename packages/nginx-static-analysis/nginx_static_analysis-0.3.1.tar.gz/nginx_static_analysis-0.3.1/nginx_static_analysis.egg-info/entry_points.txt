@@ -1,0 +1,2 @@
+[console_scripts]
+nginx-static-analysis = nginx_analysis.main:main
