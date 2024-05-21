@@ -1,0 +1,51 @@
+from setuptools import setup, find_packages
+
+with open("README.md", "r") as f:
+    description = f.read()
+
+setup(
+    name="wf_rappi",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        'numpy>=1.11.1',
+        'pandas>=1.0',
+        'aiohttp==3.9.1',
+        'holidays==0.10.5',
+        'linkify-it-py==2.0.2',
+        'matplotlib==3.8.3',
+        'matplotlib-inline==0.1.6',
+        'numpy==1.26.4',
+        'openpyxl==3.1.2',
+        'packaging==23.2',
+        'pandas==2.1.4',
+        'pillow==10.2.0',
+        'pkginfo==1.10.0',
+        'platformdirs==3.11.0',
+        'pluggy==1.3.0',
+        'prison==0.2.1',
+        'prophet==1.1.5',
+        'psycopg2==2.9.9',
+        'pyarrow==15.0.0',
+        'pydantic==2.5.3',
+        'pydantic-core==2.14.6',
+        'requests==2.31.0',
+        'scikit-learn==1.3.2',
+        'scipy==1.12.0',
+        'seaborn==0.13.2',
+        'skforecast==0.11.0',
+        'snowflake-connector-python==3.7.1',
+        'snowflake-snowpark-python==1.13.0',
+        'SQLAlchemy==1.4.51',
+        'tqdm==4.66.2',
+        'twine==5.1.0',
+        'typing-extensions==4.9.0'
+    ],
+    entry_points={
+        "console_scripts": [
+            "wf-rappi = wf_rappi.main:distribute_orders",
+        ],
+    },
+    long_description=description,
+    long_description_content_type="text/markdown",
+)
