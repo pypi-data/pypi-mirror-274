@@ -1,0 +1,72 @@
+<div style="display: flex; font-family: 'Roboto', sans-serif;;
+align-items: center;
+gap: 0.5rem;
+align-self: stretch;" class="{{status}}-scenario searchable" id="{{name}}">
+    {% if status == "passed"%}
+    <div
+        style="display: flex;width: auto;padding: 1rem;flex-direction: column;align-items: flex-start;gap: 0.5rem;flex: 1; border-radius: 0.625rem;border: 1.5px solid #0D6832;background: #D6F0E0;box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);">
+        {% elif status == "skipped"%}
+        <div
+            style="display: flex;width: auto;padding: 1rem;flex-direction: column;align-items: flex-start;gap: 0.5rem;flex: 1; border-radius: 0.625rem;border: 1.5px solid #EDB527;background: #FFF8E7;box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);">
+            {% elif status == "failed"%}
+            <div
+                style="display: flex; width: auto; padding: 1rem; flex-direction: column; align-items: flex-start;gap: 0.5rem; flex: 1; border-radius: 0.625rem;border: 1.5px solid #AF233A;background: #F9E1E5;box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);">
+                {%endif%}
+
+                <div style="display: flex; justify-content: space-between; width: 100%;">
+                    <div>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            {% import './components/icon.html' as icon %}
+                            {% if status == "passed" %}
+                            {{icon.pass("1.17rem","1.17rem")}}
+                            {% elif status == "failed" %}
+                            {{icon.fail(20,21)}}
+                            {% else %}
+                            {{icon.skip(20,21)}}
+                            {% endif %}
+                            <h3 style="margin: 0;font-family: Roboto;font-style: normal;font-weight: 500;">
+                                Scenario: {{name}}
+                                {% if parameters != "" %}
+                                <span style="font-weight: 400; margin: 0; margin-left: 1rem;">[ {{parameters}} ]</span>
+                                {% endif %}
+                            </h3>
+                        </div>
+                        {% if description != "" %}
+                        <p style="margin-top: 0.5rem;">Description: {{description}}</p>
+                        {%endif%}
+                        {% if tags != "" %}
+                        <p style="margin: 0">Tags: {{tags}}</p>
+                        {%endif%}
+                    </div>
+                    <p
+                        style="color: #1a1a1a;display: inline;margin: 0;font-family: Roboto;font-size: 1rem;font-style: normal;font-weight: 400;line-height: normal;">
+                        {% if duration > 1 %}
+                        Executed in {{duration|round(3)}}s
+                        {% else %}
+                        Executed in {{(duration*1000)|round(3)}}ms
+                        {%endif%}
+                    </p>
+                </div>
+                <div
+                    style="flex-direction: column; display: flex; width: 100%; align-items: flex-start; gap: 0.5rem; margin-top: 0.5rem;">
+                    {{steps|safe}}
+                </div>
+                {% if status == "failed" %}
+                <button
+                    onclick="showhide(this, this.nextElementSibling.id, 'Close error message', 'Open error message')"
+                    style="display: flex; align-self: flex-start; margin-top: 0.5rem; background-color: transparent;border: none; cursor: pointer; transform: rotate(-90deg);"
+                    title="Open error message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 15 8" fill="none">
+                        <path d="M0 0.5L7.5 8L15 0.5H0Z" fill="#AF233A" />
+                    </svg>
+                </button>
+                <!--Collapsable error message and log-->
+                <div id="message-{{name}}" style="display: none; font-family: monospace;">
+                    <p style="white-space: pre-wrap;">{{error_message}}</p>
+                </div>
+                {%endif%}
+
+
+
+            </div>
+        </div>
