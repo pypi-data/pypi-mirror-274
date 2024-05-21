@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: py50-streamlit-support
+Version: 0.0.2
+Summary: Modified py50 for streamlit use
+License: MIT
+Author: Tony E. Lin
+Author-email: tonyelin@tmu.edu.tw
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.8.1)
+Requires-Dist: numpy (>=1.26.2)
+Requires-Dist: pandas (==1.5.0)
+Requires-Dist: pingouin (>=0.5.4)
+Requires-Dist: py50-statannotations (>=0.0.1)
+Requires-Dist: scikit-posthocs (>=0.7.0)
+Requires-Dist: scipy (>=1.11.3)
+Requires-Dist: seaborn (<=0.12.2)
+Description-Content-Type: text/markdown
+
+The following contain py50 code that has been modified for use with statannotations ≥0.12.2.
