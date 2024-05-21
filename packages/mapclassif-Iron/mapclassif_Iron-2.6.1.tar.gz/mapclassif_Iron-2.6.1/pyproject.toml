@@ -1,0 +1,104 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name = "mapclassif_Iron"
+version="2.6.1"
+maintainers = [
+    {name = "James Parrott", email = "james.parrott@proton.me"},
+]
+license = {text = "BSD 3-Clause"}
+description = "Classification Schemes for Choropleth Maps."
+keywords = ["spatial statistics", "geovisualizaiton"]
+readme = {text = """\
+`mapclassif-Iron` is a fork of mapclassify that provides 
+_fisher_jenks_mean for Pythons without numpy (and nothing else).
+
+mapclassify implements a family of classification schemes for choropleth maps.
+Its focus is on the determination of the number of classes, and the assignment
+of observations to those classes. It is intended for use with upstream mapping
+and geovisualization packages (see `geopandas`_ and `geoplot`_)
+that handle the rendering of the maps.
+
+For further theoretical background see "`Choropleth Mapping`_" in Rey, S.J., D. Arribas-Bel, and L.J. Wolf (2020) "Geographic Data Science with PySAL and the PyData Stack”.
+
+.. _geopandas: https://geopandas.org/mapping.html
+.. _geoplot: https://residentmario.github.io/geoplot/user_guide/Customizing_Plots.html
+.. _Choropleth Mapping: https://geographicdata.science/book/notebooks/05_choropleth.html
+""", content-type = "text/x-rst"}
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+requires-python = ">=2.7"
+dependencies = [
+]
+
+[project.urls]
+Repository = "https://github.com/JamesParrott/mapclassif-Iron"
+
+[project.optional-dependencies]
+
+tests = [
+    "numpy",
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+include = [
+    "mapclassif_Iron",
+    "mapclassif_Iron.*",
+]
+
+[tool.black]
+line-length = 88
+extend-exclude = '''
+(
+  docs/conf.py
+)
+#'''
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "I", "UP", "N", "B", "A", "C4", "SIM", "ARG"]
+target-version = "py39"
+ignore = [
+    "B006",
+    "B008",
+    "B009",
+    "B010",
+    "C408",
+    "E731",
+    "F401",
+    "F403",
+    "F405",
+    "N803",
+    "N806",
+    "N999",
+    "UP007"
+]
+exclude = ["mapclassif_Iron/tests/*", "docs/*"]
+
+[tool.coverage.run]
+source = ["./mapclassif_Iron"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "if self.debug:",
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "except ModuleNotFoundError:",
+    "except ImportError",
+]
+ignore_errors = true
+omit = ["mapclassif_Iron/tests/*", "docs/conf.py"]

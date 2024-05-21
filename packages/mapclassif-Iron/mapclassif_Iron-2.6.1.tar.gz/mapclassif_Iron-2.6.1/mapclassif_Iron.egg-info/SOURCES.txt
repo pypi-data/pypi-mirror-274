@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+mapclassif_Iron/__init__.py
+mapclassif_Iron/classifiers.py
+mapclassif_Iron/test_fisher_jenks_means.py
+mapclassif_Iron.egg-info/PKG-INFO
+mapclassif_Iron.egg-info/SOURCES.txt
+mapclassif_Iron.egg-info/dependency_links.txt
+mapclassif_Iron.egg-info/requires.txt
+mapclassif_Iron.egg-info/top_level.txt
+mapclassif_Iron/datasets/__init__.py
+mapclassif_Iron/datasets/calemp/__init__.py
+mapclassif_Iron/datasets/calemp/data.py
