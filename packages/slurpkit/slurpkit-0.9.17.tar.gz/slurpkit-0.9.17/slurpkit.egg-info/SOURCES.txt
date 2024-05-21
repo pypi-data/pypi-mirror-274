@@ -1,0 +1,16 @@
+README.md
+slurpkit.egg-info/PKG-INFO
+slurpkit.egg-info/SOURCES.txt
+slurpkit.egg-info/dependency_links.txt
+slurpkit.egg-info/requires.txt
+slurpkit.egg-info/top_level.txt
+tests/test_0_run.py
+tests/test_1_device.py
+tests/test_2_planning.py
+tests/test_3_platform.py
+tests/test_4_scanner.py
+tests/test_5_scraper.py
+tests/test_6_vault.py
+tests/test_7_user.py
+tests/test_8_templates.py
+tests/test_9_clean.py

@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: slurpkit
+Version: 0.9.17
+Summary: A robust Python SDK for slurpit
+Author: PkServices
+Author-email: info@slurpit.io
+Keywords: sdk slurpit slurpkit
+Requires-Dist: pandas==2.2.2
+Requires-Dist: requests==2.31.0
