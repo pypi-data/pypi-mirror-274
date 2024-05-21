@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+pyresumeparser.egg-info/PKG-INFO
+pyresumeparser.egg-info/SOURCES.txt
+pyresumeparser.egg-info/dependency_links.txt
+pyresumeparser.egg-info/entry_points.txt
+pyresumeparser.egg-info/requires.txt
+pyresumeparser.egg-info/top_level.txt
+resume_parser/__init__.py
+resume_parser/main.py
+resume_parser/model-best/config.cfg
+resume_parser/model-best/meta.json
+resume_parser/model-best/tokenizer
