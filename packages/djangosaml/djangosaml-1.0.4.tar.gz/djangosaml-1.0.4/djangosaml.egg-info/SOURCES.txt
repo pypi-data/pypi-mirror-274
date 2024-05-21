@@ -1,0 +1,16 @@
+AUTHORS.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+djangosaml/__init__.py
+djangosaml/urls.py
+djangosaml/views.py
+djangosaml.egg-info/PKG-INFO
+djangosaml.egg-info/SOURCES.txt
+djangosaml.egg-info/dependency_links.txt
+djangosaml.egg-info/requires.txt
+djangosaml.egg-info/top_level.txt
+djangosaml/templates/djangosaml/denied.html
+djangosaml/templates/djangosaml/signout.html
