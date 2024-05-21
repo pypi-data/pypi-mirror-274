@@ -1,0 +1,11 @@
+tree_sitter_sql_bigquery/__init__.py,sha256=pzJhkNNUSnc6PNBRxIKa2NZCsG4prRRuPGFpm1cil5A,94
+tree_sitter_sql_bigquery/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_sql_bigquery/binding.c,sha256=d2J9rYCFVGatKXtMTcc6uppMswhbh677ixPeQPfMlVA,648
+tree_sitter_sql_bigquery/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_sql_bigquery/_binding.abi3.so,sha256=Y0JHiE48nko_2aSKeP3ZA5abxB8Fax2d0Sps8Wa9WFU,7533496
+tree_sitter_sql_bigquery/queries/highlights.scm,sha256=vsGjAIwbBNZDCm3nlCGl051pBFKPgx6k1u2SSm7_GV0,1648
+tree_sitter_sql_bigquery-0.7.0.dist-info/WHEEL,sha256=CUHrsu0HD0G9norJZT-0iyCKNmy0gawBqPX_Xbv1gvE,112
+tree_sitter_sql_bigquery-0.7.0.dist-info/LICENSE,sha256=3e63C1DvHbdqRcBZp_w3gyCrgKL-rSlu2WyC8UpU3Zw,1064
+tree_sitter_sql_bigquery-0.7.0.dist-info/top_level.txt,sha256=GL-jWkbtydcrOoz2gCNC2rnsmnmefAQ2t1CCP8c0-Nw,34
+tree_sitter_sql_bigquery-0.7.0.dist-info/RECORD,,
+tree_sitter_sql_bigquery-0.7.0.dist-info/METADATA,sha256=XCTmeHhJLNq0cfmGVBQs34BCut0iJNlqWG4VvG-QpME,1552
