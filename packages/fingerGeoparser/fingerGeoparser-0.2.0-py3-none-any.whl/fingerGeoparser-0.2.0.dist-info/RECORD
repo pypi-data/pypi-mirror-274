@@ -1,0 +1,11 @@
+fingerGeoparser/__init__.py,sha256=O80c5UsarQeAsBAqkwdrJPoX9u7pnZSWbNKGr42lkfY,127
+fingerGeoparser/geoparser.py,sha256=ueMV05in5kSkWKC-840lNKoZCdeujNBKG-9YlA6mRlo,9362
+fingerGeoparser/output_formatter.py,sha256=H9J-XRqDQY_QZ-iOOtGacbGTQKeSCFf7SCDFgRcB9WA,679
+fingerGeoparser/toponym_coder.py,sha256=ovnv7QwPoq7Js4hQuN89mLu17XMaSs0lOQppxolYmnA,4984
+fingerGeoparser/toponym_tagger.py,sha256=eGW7Z_tzNn0vSUuTUz4a9e_GsNgCiBr-ON7XJvX4i3s,9165
+tests/test_geoparsing.py,sha256=QNUIMu_3kWmGp3wqXoU0NWaNHvKFF1-6ZSPB2KUaVIQ,409
+fingerGeoparser-0.2.0.dist-info/LICENSE,sha256=OGurjEt7PItaUnnqjF9-c8cqB59ljJAX0if9_cN7LB4,1233
+fingerGeoparser-0.2.0.dist-info/METADATA,sha256=FQFOx8Nc7lHO92bC0Ooel-ZO1-Pxi95_hliVAKYIQ5M,9001
+fingerGeoparser-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fingerGeoparser-0.2.0.dist-info/top_level.txt,sha256=8vxGoMND7Dr8Ew2FOgcBAy-x2JN9CQOg-ewejdLpX7o,22
+fingerGeoparser-0.2.0.dist-info/RECORD,,
