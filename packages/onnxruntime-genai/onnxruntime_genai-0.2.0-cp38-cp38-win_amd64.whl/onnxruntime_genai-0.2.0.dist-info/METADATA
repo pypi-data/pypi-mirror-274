@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: onnxruntime-genai
+Version: 0.2.0
+Summary: ONNX Runtime generate() API
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+
+# ONNX Runtime generate() API
+
+Run LLMs such as Phi, Llama, Mistral, and Gemma with ONNX Runtime.
+
+For more details, see: docs https://onnxruntime.ai/docs/genai and repo: https://github.com/microsoft/onnxruntime-genai
+
