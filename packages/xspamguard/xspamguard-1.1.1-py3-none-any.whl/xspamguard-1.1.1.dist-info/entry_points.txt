@@ -1,0 +1,2 @@
+[console_scripts]
+xspamguard = xspamguard.xspamguard:main
