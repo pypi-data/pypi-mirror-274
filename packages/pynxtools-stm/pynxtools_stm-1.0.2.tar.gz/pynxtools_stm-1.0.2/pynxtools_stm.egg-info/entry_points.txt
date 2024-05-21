@@ -1,0 +1,2 @@
+[pynxtools.reader]
+sts = pynxtools_stm.reader:STMReader
