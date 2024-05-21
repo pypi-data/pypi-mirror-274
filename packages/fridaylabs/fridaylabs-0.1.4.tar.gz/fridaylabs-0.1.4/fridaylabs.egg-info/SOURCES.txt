@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fridaylabs/__init__.py
+fridaylabs/fridaylabs.py
+fridaylabs.egg-info/PKG-INFO
+fridaylabs.egg-info/SOURCES.txt
+fridaylabs.egg-info/dependency_links.txt
+fridaylabs.egg-info/requires.txt
+fridaylabs.egg-info/top_level.txt
