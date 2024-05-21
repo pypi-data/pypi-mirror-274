@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: juham
+Version: 0.0.0
+Summary: Juha's Ultimate Home Automation Masterpiece
+Author-email: J Meskanen <juham.api@gmail.com>
+Maintainer-email: "J. Meskanen" <juham.api@gmail.com>
+License: ** LICENSE **
+        
+        Copyright (c) 2024, Juha Meskanen
+        
+        Permission is hereby granted, free of charge, to any person obtaining
+        a copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:
+         
+        **The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.**
+        
+         
+        ** THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+        CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+        TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+        SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. **
+        
+        
+Project-URL: Homepage, https://meskanen.com
+Project-URL: Bug Reports, https://meskanen.com
+Project-URL: Funding, https://meskanen.com
+Project-URL: Say Thanks!, http://meskanen.com
+Project-URL: Source, https://meskanen.com
+Keywords: home,automation,juham
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+# README for Juham - Juha's Ultimate Home Automation Mess (for now)
+
+Welcome to Juham (TM) - a Python-based home automation system built on InfluxDB and the Mosquitto MQTT broker.
+
+**Note:** This project is currently in the early planning stages and is not yet ready for production use. In its current state,
+you might call it "Juha's Ultimate Home Automation Mess," but I'm working hard to turn it into a masterpiece!
+
+The design adheres to the pure object-oriented paradigm, with each supported external system, such as relays and forecast websites,
+being abstracted through a dedicated class.
+
+Class and method documentation is decorated for Doxygen, a tool primarily used for generating developer documentation in
+C++ ecosystem. It should perhaps be replace with some native Python tool (Sphinx?)
+
+For a detailed list of changes, see the `CHANGELOG <CHANGELOG.md>`_.
+
