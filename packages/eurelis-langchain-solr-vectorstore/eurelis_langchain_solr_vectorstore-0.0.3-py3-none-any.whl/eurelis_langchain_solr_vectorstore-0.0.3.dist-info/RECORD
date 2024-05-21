@@ -1,0 +1,8 @@
+eurelis_langchain_solr_vectorstore/__init__.py,sha256=ktTPQk1gFLycpyG-TPFiGuIPS-uDpMAYrM5cv9St0FQ,16480
+eurelis_langchain_solr_vectorstore/solr_core.py,sha256=bgX9XcIfDMdUQ4Ee15FeKb229K9HSeXhxrAYSFsWDqE,10083
+eurelis_langchain_solr_vectorstore/types.py,sha256=x_TJOXwzU1iyG3iKYFUT6LoLXQEarD3hgdI0c17l15s,5079
+eurelis_langchain_solr_vectorstore-0.0.3.dist-info/LICENSE,sha256=SlCs79UVntUTVrRkgcyrJ39PFkE1LRish9vQYbVJR74,1064
+eurelis_langchain_solr_vectorstore-0.0.3.dist-info/METADATA,sha256=92zP7cdH8tYineuHl2bwj_TW8na2QaFQKSNbm1LnEqA,3490
+eurelis_langchain_solr_vectorstore-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+eurelis_langchain_solr_vectorstore-0.0.3.dist-info/top_level.txt,sha256=zOJxF2xIyulbDtrHekYAMGUT5EaFvXykax_phfP9jrU,35
+eurelis_langchain_solr_vectorstore-0.0.3.dist-info/RECORD,,
