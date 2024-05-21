@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pms-furiosa-processor
+Version: 0.2.0
+Summary: package for pms furiosa(NPU) processor
+Author: HyeongSeok Kim
+Author-email: tiryul@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: albumentations (>=1.4.4,<2.0.0)
+Requires-Dist: furiosa-sdk (==0.9.0)
+Requires-Dist: pms-inference-engine (>=1.0.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# pms-furiosa-processor
+repos for furiosa npu processors
+
