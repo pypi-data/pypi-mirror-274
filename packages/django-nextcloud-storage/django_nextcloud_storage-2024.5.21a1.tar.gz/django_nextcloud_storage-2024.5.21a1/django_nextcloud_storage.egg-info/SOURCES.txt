@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+backend/storage.py
+django_nextcloud_storage.egg-info/PKG-INFO
+django_nextcloud_storage.egg-info/SOURCES.txt
+django_nextcloud_storage.egg-info/dependency_links.txt
+django_nextcloud_storage.egg-info/requires.txt
+django_nextcloud_storage.egg-info/top_level.txt
