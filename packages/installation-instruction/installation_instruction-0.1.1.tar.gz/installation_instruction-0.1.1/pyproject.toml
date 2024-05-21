@@ -1,0 +1,65 @@
+# This section describes the requirements of the build/installation
+# process itself. Being able to do this was the original reason to
+# introduce pyproject.toml
+[build-system]
+requires = [
+    "setuptools >=61",
+]
+build-backend = "setuptools.build_meta"
+
+# This section provides general project metadata that is used across
+# a variety of build tools. Notably, the version specified here is the
+# single source of truth for installation_instruction's version
+[project]
+name = "installation_instruction"
+description = "Library and CLI for generating installation instructions from json schema and jinja templates."
+readme = "README.md"
+maintainers = [
+    { name = "Adam McKellar", email = "dev@mckellar.eu" },
+    { name = "Kanushka Gupta" },
+    { name = "Timo Ege", email = "Timoege@online.de" },
+]
+version = "0.1.1"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "jinja2",
+    "jsonschema",
+    "PyYAML",
+    "click < 9.0.0a0",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+    "pytest-cov",
+]
+docs = [
+    "sphinx",
+    "sphinx_mdinclude",
+    "sphinx_rtd_theme",
+    "sphinx-autoapi",
+]
+
+# Here you can list scripts. (Listed is a shim to the cli.)
+[project.scripts]
+ibi = "installation_instruction.__main__:main"
+
+# The following section contains setuptools-specific configuration
+# options. For a full reference of available options, check the overview
+# at https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+[tool.setuptools]
+packages = [
+    "installation_instruction",
+]
+
+# The following is the configuration for the pytest test suite
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]

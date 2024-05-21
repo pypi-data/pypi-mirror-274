@@ -1,0 +1,2 @@
+[console_scripts]
+ibi = installation_instruction.__main__:main

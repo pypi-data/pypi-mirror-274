@@ -1,0 +1,14 @@
+jinja2
+jsonschema
+PyYAML
+click<9.0.0a0
+
+[docs]
+sphinx
+sphinx_mdinclude
+sphinx_rtd_theme
+sphinx-autoapi
+
+[tests]
+pytest
+pytest-cov
