@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fuel-efficiency
+Version: 0.1.0
+Summary: Fueel efficiency challenge test
+License: Proprietary
+Author: Guilherme Lima
+Author-email: guimarotto@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Project-URL: Bug Tracker, https://github.com/gllima/fuel-efficiencyissues
+Project-URL: Código, https://github.com/gllima/fuel-efficiency
+Description-Content-Type: text/markdown
+
+# Fuel Efficiency
+[![CI](https://github.com/gllima/fuel-efficiency/actions/workflows/pipeline_entities.yaml/badge.svg)](https://github.com/gllima/fuel-efficiency/actions/workflows/pipeline_entities.yaml)
+[![codecov](https://codecov.io/gh/gllima/fuel-efficiency/graph/badge.svg?token=YA2PDIU40R)](https://codecov.io/gh/gllima/fuel-efficiency)
+[![PyPI version](https://badge.fury.io/py/notas-musicais.svg)](https://badge.fury.io/py/notas-musicais)
+
+Description 
+## Instalation
+
+
