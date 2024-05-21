@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: calculate_mean
+Version: 0.1.0
+Summary: Calculates the Mean of given Values
+Author: kunaalg
+Author-email: <kunaal@runcode.com>
+Keywords: python,mean,calculate,calculate mean,numbers,math
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: virtualenv
+Requires-Dist: datetime
+Requires-Dist: numpy
+Requires-Dist: requests
+
+
+You can use this function like this:
+
+
+
+Python
+
+
+
+from calculate_mean import calculate_mean 
+
+
+
+values = [1, 2, 3, 4, 5]
+
+
+
+print(calculate_mean(values))
