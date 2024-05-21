@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: microsoft-teams
+Version: 0.1.1
+Summary: A Python wrapper to send messages to Microsoft Teams.
+Home-page: https://github.com/yourusername/microsoft-teams
+Author: Rashelle Woudberg
+Author-email: rashelle@al.co.za
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Microsoft Teams
+A Python wrapper to send messages to Microsoft Teams.
+## Installation
+```bash
+pip install microsoft-teams
+
