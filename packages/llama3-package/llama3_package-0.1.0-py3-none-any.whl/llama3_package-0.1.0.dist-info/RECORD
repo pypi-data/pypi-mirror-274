@@ -1,0 +1,8 @@
+llama3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama3/config.py,sha256=2pgfCdkXOK4WBPDJa1NogDkC4kJ8QFjajUEcUt1IDDs,218
+llama3/model.py,sha256=QhCXmMojvbbEMkEZjFjm2y40hXpB3-jiVuI4onu3Evw,5431
+llama3/utils.py,sha256=O6R6CjWWzP7j1bmxm_KnL31jLqNz8YGYd4QLu_Bm9X8,442
+llama3_package-0.1.0.dist-info/METADATA,sha256=8KZubLd_U51wmrHR0UT6d_xwQkP7uYVBXFs3Ub4NMsM,3682
+llama3_package-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+llama3_package-0.1.0.dist-info/top_level.txt,sha256=9x7DKI94RrU1slMY_uZAth5pBLAMp3wVrmXPkNAcDns,7
+llama3_package-0.1.0.dist-info/RECORD,,
