@@ -1,0 +1,6 @@
+numpy>=1.20
+GPUtil==1.4
+scipy
+pandas
+pymoo==0.6
+scikit-optimize==0.9
