@@ -1,0 +1,3 @@
+quad_iou
+quad_iou_cpu
+quad_iou_cuda
