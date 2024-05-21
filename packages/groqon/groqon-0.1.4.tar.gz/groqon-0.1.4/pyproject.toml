@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "groqon"
+version = "0.1.4"
+description = "Use Groq.com as llm"
+authors = ["tikendraw <tikendraksahu1029@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+playwright = "^1.44.0"
+unstructured = "^0.13.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+groqon = 'groqon.groq:main'
+groq = 'groqon.groq:main'
