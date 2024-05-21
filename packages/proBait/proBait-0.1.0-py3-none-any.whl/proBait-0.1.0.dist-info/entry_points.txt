@@ -1,0 +1,2 @@
+[console_scripts]
+proBait = proBait.proBait:parse_arguments
