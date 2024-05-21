@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+censore/__init__.py
+censore/censor.py
+censore.egg-info/PKG-INFO
+censore.egg-info/SOURCES.txt
+censore.egg-info/dependency_links.txt
+censore.egg-info/top_level.txt
