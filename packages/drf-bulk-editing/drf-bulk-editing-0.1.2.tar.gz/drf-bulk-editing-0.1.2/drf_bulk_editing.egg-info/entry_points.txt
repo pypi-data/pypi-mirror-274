@@ -1,0 +1,3 @@
+[console_scripts]
+entry_point = main:hello_world
+
