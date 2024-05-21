@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kgraphservice/__init__.py
+kgraphservice/kgraph_service.py
+kgraphservice.egg-info/PKG-INFO
+kgraphservice.egg-info/SOURCES.txt
+kgraphservice.egg-info/dependency_links.txt
+kgraphservice.egg-info/requires.txt
+kgraphservice.egg-info/top_level.txt
