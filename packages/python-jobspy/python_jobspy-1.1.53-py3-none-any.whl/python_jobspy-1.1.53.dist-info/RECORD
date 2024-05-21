@@ -1,0 +1,13 @@
+jobspy/__init__.py,sha256=Wc5J9oPU9alVQRZnNCIPbkH3R6f9WwMHwxj1NMt-1xI,7320
+jobspy/jobs/__init__.py,sha256=cRv4MFKdAx-Px2DXfHqssQAHV3kyFq_zG036xcCnBxA,7974
+jobspy/scrapers/__init__.py,sha256=eGcdhGMR1uCl7l5pIgmex2OjOLmssrkEHHwnEU-9cMg,1160
+jobspy/scrapers/exceptions.py,sha256=eSQ1kjevS_YSilC9moYIOc9TLD82bk03YuLYA_rSrl0,704
+jobspy/scrapers/glassdoor/__init__.py,sha256=CiN4ZsZdXh_bRqGE57cve3FnM6vzbJJayyZFJHpQl4o,19836
+jobspy/scrapers/indeed/__init__.py,sha256=Bqhvelor2m1EXR_ezx4LEC7cA0hHEwGtoSfLusOJCyo,15296
+jobspy/scrapers/linkedin/__init__.py,sha256=gCUeYIJ2yFL_psGCZB2HuLQjx0QroauPSMIWMZH3qX8,13501
+jobspy/scrapers/utils.py,sha256=EU_Xx2GpoHzb03k3wSDz74VRHyB8cFDAo5da-Adp9eY,3231
+jobspy/scrapers/ziprecruiter/__init__.py,sha256=wzOmSo6_S2F_9H1h734PCzc1mpZhIJYlkgjwBv0gEXA,8276
+python_jobspy-1.1.53.dist-info/LICENSE,sha256=nME-RfJuwHYN3f5DpTfax3JJ-13X-SZ2f2ApRS52bNo,1070
+python_jobspy-1.1.53.dist-info/METADATA,sha256=QOTkpyTHycAIcTa21LHc2lfinCkHLALawo7nPCHiJJc,9387
+python_jobspy-1.1.53.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+python_jobspy-1.1.53.dist-info/RECORD,,
