@@ -1,0 +1,15 @@
+digitalhub-core~=0.5
+
+[ai]
+digitalhub-ai~=0.5
+
+[all]
+digitalhub-data~=0.5
+digitalhub-ml~=0.5
+digitalhub-ai~=0.5
+
+[data]
+digitalhub-data~=0.5
+
+[ml]
+digitalhub-ml~=0.5
