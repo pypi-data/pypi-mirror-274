@@ -1,0 +1,6 @@
+pydantic~=1.10.2
+pycryptodome
+httpx
+requests
+fake_useragent
+tenacity

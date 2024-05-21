@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: du_aio_tools
+Version: 0.0.4
+Summary: async tools
+Author: DYZ
+Author-email: duyuchau@gmail.com
+Maintainer: DYZ
+Maintainer-email: duyuchau@gmail.com
+License: MIT
+Platform: all
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic~=1.10.2
+Requires-Dist: pycryptodome
+Requires-Dist: httpx
+Requires-Dist: requests
+Requires-Dist: fake_useragent
+Requires-Dist: tenacity
+
+# du_tools
+
+### 自用轮子
+
+# 安装包
+
+```bash
+pip install du_aio_tools
+```
+
+
+
