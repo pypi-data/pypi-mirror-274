@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rascalsz/__init__.py
+rascalsz/main.py
+rascalsz.egg-info/PKG-INFO
+rascalsz.egg-info/SOURCES.txt
+rascalsz.egg-info/dependency_links.txt
+rascalsz.egg-info/requires.txt
+rascalsz.egg-info/top_level.txt
