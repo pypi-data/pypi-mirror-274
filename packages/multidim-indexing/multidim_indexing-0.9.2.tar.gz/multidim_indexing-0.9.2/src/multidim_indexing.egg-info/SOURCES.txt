@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/multidim_indexing/__init__.py
+src/multidim_indexing/numpy_view.py
+src/multidim_indexing/torch_view.py
+src/multidim_indexing/view.py
+src/multidim_indexing.egg-info/PKG-INFO
+src/multidim_indexing.egg-info/SOURCES.txt
+src/multidim_indexing.egg-info/dependency_links.txt
+src/multidim_indexing.egg-info/requires.txt
+src/multidim_indexing.egg-info/top_level.txt
+tests/test_numpy_view.py
+tests/test_performance.py
+tests/test_torch_view.py
