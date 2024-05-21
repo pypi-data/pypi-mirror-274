@@ -1,0 +1,11 @@
+README.md
+setup.py
+SimpleAI_Image/DataProcessor.py
+SimpleAI_Image/DatabaseHandler.py
+SimpleAI_Image/__init__.py
+SimpleAI_Image.egg-info/PKG-INFO
+SimpleAI_Image.egg-info/SOURCES.txt
+SimpleAI_Image.egg-info/dependency_links.txt
+SimpleAI_Image.egg-info/requires.txt
+SimpleAI_Image.egg-info/top_level.txt
+tests/__init__.py
