@@ -1,0 +1,97 @@
+# This file is part of the mlhp project. License: See LICENSE
+
+image: registry.gitlab.com/phmkopp/mlhp/ubuntu21.04
+
+.build_linux:
+
+  stage: build
+
+  script:
+
+  - git submodule update --init --recursive
+
+  - ${CXX_COMPILER} --version
+  - echo "${CellIndexSize}"
+  - echo "${DofIndexSize}"
+  - export CXXFLAGS="-Werror ${CXXFLAGS}"
+  
+  # Configure & generate build project
+  - cmake -H"." 
+      -D MLHP_DEBUG_CHECKS=ON 
+      -D MLHP_ENABLE_EXAMPLES=ON 
+      -D MLHP_ENABLE_EXAMPLES=ON 
+      -D MLHP_ENABLE_CPP_EXAMPLE_FICHERA_CORNER=ON 
+      -D MLHP_ENABLE_CPP_EXAMPLE_WING_ELASTIC_FCM=ON 
+      -D MLHP_ENABLE_CPP_EXAMPLE_TRAVELLING_HEAT_SOURCE=ON 
+      -D MLHP_ENABLE_PYTHONBINDINGS=ON 
+      -D MLHP_ENABLE_OMP=On
+      -D MLHP_INDEX_SIZE_CELLS=${CellIndexSize}
+      -D MLHP_INDEX_SIZE_DOFS=${DofIndexSize}
+      -D CMAKE_CXX_COMPILER=${CXX_COMPILER} 
+      -B "build"
+  
+  # Invoke build in build subdirectory
+  - cmake --build "build" -- -j$(nproc) 
+  
+  artifacts:
+    paths:
+      - build/bin
+      - build/lib
+      - build/testfiles
+      
+  only:
+  - master
+  - merge_requests
+
+.test_linux:
+  stage: test
+
+  script:
+  - cd build
+  - ./bin/mlhpcore_testrunner
+  - ./bin/system_testrunner
+  - python3 ./bin/run_systemtests.py
+
+  only:
+  - master
+  - merge_requests
+
+build_gcc:
+  extends: .build_linux
+    
+  before_script:
+  - CXX_COMPILER=g++-10
+  - CellIndexSize=32
+  - DofIndexSize=64
+  - export CXXFLAGS="-Wno-error=suggest-attribute=pure"
+
+test_gcc:
+  extends: .test_linux
+  needs: 
+    - job: build_gcc
+      artifacts: true
+
+build_clang:
+  extends: .build_linux
+  
+  before_script:
+  - CXX_COMPILER=clang++-13
+  - CellIndexSize=16
+  - DofIndexSize=32
+  
+test_clang:
+  extends: .test_linux
+  needs: 
+    - job: build_clang
+      artifacts: true
+   
+pages:
+  stage: deploy
+  script:
+  - doxygen tools/doxygen/Doxyfile 
+  - mv html/ public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
