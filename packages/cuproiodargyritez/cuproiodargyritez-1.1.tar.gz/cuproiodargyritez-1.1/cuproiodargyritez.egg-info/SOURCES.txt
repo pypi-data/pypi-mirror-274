@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cuproiodargyritez/__init__.py
+cuproiodargyritez/main.py
+cuproiodargyritez.egg-info/PKG-INFO
+cuproiodargyritez.egg-info/SOURCES.txt
+cuproiodargyritez.egg-info/dependency_links.txt
+cuproiodargyritez.egg-info/requires.txt
+cuproiodargyritez.egg-info/top_level.txt
