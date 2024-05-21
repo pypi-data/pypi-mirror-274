@@ -1,0 +1,14 @@
+core/cli.py,sha256=epy9hgznmzvg2lrxVBNOGaK6JldKbQvQLrLfyeQwZK4,4584
+core/cpp/cli.py,sha256=wKr_0CvxEVwLGyhIxWwZJq-R4kfNtsQX7S-kIWqF_kc,1106
+core/csharp/cli.py,sha256=-XMCJWySWK1nl6smf5gxeCRNqHUifEzbvs66K-ju49s,644
+core/go/cli.py,sha256=JGWtlcdLs-soPv4CRzVWGf3GB2XqjVqzUmCUvrE684U,725
+core/java/cli.py,sha256=ynl0KQmiVclBpWmDFm1LgWoDizltQ1hrxKbtmvt3XrY,663
+core/js/cli.py,sha256=Pakl5MtmtnMlp6g7O4VZ-u3YyWoruvZi7oKInFug4BY,639
+core/obj-c/cli.py,sha256=_gMv7dNPo50wTq9sfHLHWoOZFzTTQpCvbELxatjTltk,553
+core/php/cli.py,sha256=HW2nwUvKPuSok9bMM8YCIerNiKBRb7ZmnWg8tACe_0E,552
+core/python/cli.py,sha256=5_oZYi8zmIGLnfeFVE7xJG6xyQ0seEjYJPXMu7MHUqg,644
+core/ruby/cli.py,sha256=9K9h7kjeDNNR0nVe86O8Ma2i6AtWG1dYFv-pPLcNpx4,553
+core/rust/cli.py,sha256=nNQg4eto6ZlhAXAIqHzdeY8xEB9RQIa5OsIGVi0zYDI,606
+protoc_polyglot-0.0.1.dist-info/METADATA,sha256=gsc0BSSCXhHR8rwUI6NjN55H3dqMJFQFqIyq-eXkUI8,3255
+protoc_polyglot-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+protoc_polyglot-0.0.1.dist-info/RECORD,,
