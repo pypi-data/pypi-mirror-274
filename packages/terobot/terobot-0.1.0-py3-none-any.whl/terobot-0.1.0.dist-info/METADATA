@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: terobot
+Version: 0.1.0
+Summary: TeroBot Python client
+Author-email: Lobelia Earth <info@lobelia.earth>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.32.1
+
+# tero-bot
+
+TeroBot Python client
