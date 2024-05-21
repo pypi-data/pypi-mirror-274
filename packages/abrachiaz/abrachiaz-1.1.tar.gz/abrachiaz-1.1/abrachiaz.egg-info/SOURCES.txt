@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+abrachiaz/__init__.py
+abrachiaz/main.py
+abrachiaz.egg-info/PKG-INFO
+abrachiaz.egg-info/SOURCES.txt
+abrachiaz.egg-info/dependency_links.txt
+abrachiaz.egg-info/requires.txt
+abrachiaz.egg-info/top_level.txt
