@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+angusturaz/__init__.py
+angusturaz/main.py
+angusturaz.egg-info/PKG-INFO
+angusturaz.egg-info/SOURCES.txt
+angusturaz.egg-info/dependency_links.txt
+angusturaz.egg-info/requires.txt
+angusturaz.egg-info/top_level.txt
