@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["locallang"]
+
+[project]
+name = "local_lang"
+version = "0.0.16"
+authors = [
+  { name="Maxland255", email="developer@pieteraerens.eu" },
+]
+description = "A small package to localise your python application"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Localization",
+    "Development Status :: 3 - Alpha",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/maxland255/localisation_lang"
+"Bug Tracker" = "https://github.com/maxland255/localisation_lang/issues"
