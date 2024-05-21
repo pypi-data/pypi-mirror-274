@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: DPC-Python
+Version: 0.1.0
+Summary: A library for handling DPC data
+Home-page: https://github.com/setomits/dpc-python
+Author: Mitsuhiro Setoguchi
+Author-email: setomits@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# What is this
+
+This is a Python library to parse DPC files.
+
+# How to use
+
+```
+from dpc import EFFile
+
+eff = EFFile('/path/to/EFn_987654321_2311.txt')
+print(eff.file_name)
+if eff.has_header:
+    print('has header line')
+print(f'There are {len(eff.lines)} lines.')
+```
+
+# For Developer
+
+## Testing
+
+```
+$  python -m unittest discover -s tests
+```
