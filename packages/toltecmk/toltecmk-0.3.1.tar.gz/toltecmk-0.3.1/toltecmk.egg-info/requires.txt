@@ -1,0 +1,4 @@
+docker==7.0.0
+python-dateutil==2.8.2
+pyelftools==0.30
+requests==2.31.0
