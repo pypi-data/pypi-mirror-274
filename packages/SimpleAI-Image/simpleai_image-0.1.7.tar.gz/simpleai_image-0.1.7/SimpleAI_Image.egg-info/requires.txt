@@ -1,0 +1,12 @@
+numpy
+pandas
+sqlalchemy
+matplotlib
+tensorflow-macos
+tensorflow-datasets
+tensorflow-metal
+scikit-learn
+requests
+keras
+tensorboard
+pgvector
