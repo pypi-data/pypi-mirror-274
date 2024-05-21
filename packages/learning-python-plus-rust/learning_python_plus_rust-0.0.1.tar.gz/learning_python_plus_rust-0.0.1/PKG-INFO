@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: learning_python_plus_rust
+Version: 0.0.1
+Summary: My implementation of the book "Speed Up Your Python Program with Rust" by Adam Kleczkowski
+Home-page: https://github.com/JoaoAreias/learning-python-plus-rust
+Author: João Pedro Areias de Moraes
+Author-email: joaoareiasmoraes@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+# learning-python-plus-rust
+This is the repository with my implementations for the content in the book "Speed Up Your Python with Rust"

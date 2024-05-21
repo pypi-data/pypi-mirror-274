@@ -1,0 +1,2 @@
+[console_scripts]
+fib-number = learning_python_plus_rust.cmd.fib_numb:fib_numb
