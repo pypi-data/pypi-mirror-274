@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+homoeoticz/__init__.py
+homoeoticz/main.py
+homoeoticz.egg-info/PKG-INFO
+homoeoticz.egg-info/SOURCES.txt
+homoeoticz.egg-info/dependency_links.txt
+homoeoticz.egg-info/requires.txt
+homoeoticz.egg-info/top_level.txt
