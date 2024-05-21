@@ -1,0 +1,4 @@
+[console_scripts]
+loads-compare = loadscompare.compare:command_line_interface
+loads-kernel = loadskernel.program_flow:command_line_interface
+model-viewer = modelviewer.view:command_line_interface
