@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rudimentz/__init__.py
+rudimentz/main.py
+rudimentz.egg-info/PKG-INFO
+rudimentz.egg-info/SOURCES.txt
+rudimentz.egg-info/dependency_links.txt
+rudimentz.egg-info/requires.txt
+rudimentz.egg-info/top_level.txt
