@@ -1,0 +1,13 @@
+ipykernel
+numba
+scikit-learn
+deap
+spotpy
+pytest
+bmipy
+pyyaml
+requests
+
+muskingumcunge
+
+hydrodatasource
