@@ -1,0 +1,2 @@
+include *.md
+graft src/filecrusher/compressor_lib
