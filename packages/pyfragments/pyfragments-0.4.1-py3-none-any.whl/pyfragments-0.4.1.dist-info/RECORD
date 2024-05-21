@@ -1,0 +1,9 @@
+pyfragments/__init__.py,sha256=2LSYSspJ_W8ian5cLkisTHRFsWhUM5KgpAL96VTiHqc,3614
+pyfragments/svg.py,sha256=T9o5wAqGVk7q6YJxMqFYo8n1h2KPMCk2ReOQSFf0Av4,2335
+pyfragments/tests/test_svg.py,sha256=5TQUqoVDOrYXixiduP_-MnKUMf19MzSweYV27tb1idw,911
+pyfragments/tests/test_warning.py,sha256=wjwhlUM6hd8dQ8hAH4kvXBWku646an4QLfz9C4WFIRI,361
+pyfragments-0.4.1.dist-info/LICENSE,sha256=ZndmYw92FBu6DpY8115i_vHFZWd0sXozuU0xSYHQyt0,1073
+pyfragments-0.4.1.dist-info/METADATA,sha256=lGRZqITa1IJoBAf4WnjJI9PxfRyhLI_-JLDbv7V5TOM,4141
+pyfragments-0.4.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyfragments-0.4.1.dist-info/top_level.txt,sha256=nQBkjDEjXkGn3NgTLcwyvo4KpfA819PPS1klHe4yJ7U,12
+pyfragments-0.4.1.dist-info/RECORD,,
