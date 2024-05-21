@@ -1,0 +1,4 @@
+kisstdlib
+cbor2
+idna
+html5lib
