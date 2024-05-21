@@ -1,0 +1,3 @@
+[console_scripts]
+qualystbx = qualys_tbx.qualystbx:main
+qualystbx_main = qualys_tbx.qualystbx_main:main
