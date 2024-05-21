@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+more_peekable/__init__.py
+more_peekable/py.typed
+more_peekable.egg-info/PKG-INFO
+more_peekable.egg-info/SOURCES.txt
+more_peekable.egg-info/dependency_links.txt
+more_peekable.egg-info/top_level.txt
+tests/__init__.py
