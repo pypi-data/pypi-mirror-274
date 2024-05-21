@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "data_golf"
+version = "0.1.0"
+description = "API Wrapper for Data golf endpoints"
+authors = ["Corey Schaf <cschaf@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
