@@ -1,0 +1,2 @@
+[console_scripts]
+pixy = pixyverse.pixy.cli:runtranspile
