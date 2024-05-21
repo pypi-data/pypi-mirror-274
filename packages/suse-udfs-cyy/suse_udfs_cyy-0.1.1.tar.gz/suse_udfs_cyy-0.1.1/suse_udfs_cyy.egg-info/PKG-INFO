@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: suse-udfs-cyy
+Version: 0.1.1
+Summary: A useful tool for extracting data using WindPy
+Home-page: 
+Author: YaoyuChenWilliam
+Author-email: yaoyuchenslm@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Project Title
+
+一段关于项目的简短描述。
+
+## 安装
+
+描述如何安装您的包。
+
+## 使用
+
+提供使用您的包的示例。
+
+## 许可证
+
+指定项目的许可证。

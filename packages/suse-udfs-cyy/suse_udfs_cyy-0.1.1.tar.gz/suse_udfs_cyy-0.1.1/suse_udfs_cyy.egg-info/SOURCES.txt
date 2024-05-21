@@ -1,0 +1,8 @@
+README.md
+setup.py
+suse_udfs_cyy/UDFs.py
+suse_udfs_cyy/__init__.py
+suse_udfs_cyy.egg-info/PKG-INFO
+suse_udfs_cyy.egg-info/SOURCES.txt
+suse_udfs_cyy.egg-info/dependency_links.txt
+suse_udfs_cyy.egg-info/top_level.txt
