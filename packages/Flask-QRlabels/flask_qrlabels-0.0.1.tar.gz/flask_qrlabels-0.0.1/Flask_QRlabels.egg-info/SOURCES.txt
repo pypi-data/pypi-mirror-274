@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+Flask_QRlabels.egg-info/PKG-INFO
+Flask_QRlabels.egg-info/SOURCES.txt
+Flask_QRlabels.egg-info/dependency_links.txt
+Flask_QRlabels.egg-info/requires.txt
+Flask_QRlabels.egg-info/top_level.txt
+flask_qrlabels/__init__.py
