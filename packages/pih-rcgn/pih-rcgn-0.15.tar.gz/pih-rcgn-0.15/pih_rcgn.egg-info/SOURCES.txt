@@ -1,0 +1,12 @@
+RecognizeService/__init__.py
+RecognizeService/__main__.py
+RecognizeService/api.py
+RecognizeService/collection.py
+RecognizeService/const.py
+RecognizeService/service.py
+pih_rcgn.egg-info/PKG-INFO
+pih_rcgn.egg-info/SOURCES.txt
+pih_rcgn.egg-info/dependency_links.txt
+pih_rcgn.egg-info/entry_points.txt
+pih_rcgn.egg-info/requires.txt
+pih_rcgn.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pih-rcgn
+Version: 0.15
+Summary: PIH Recognize service package
+Home-page: https://pacifichosp.com/
+Author: Nikita Karachentsev
+Author-email: it@pacifichosp.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: ipih
+Requires-Dist: pih-mio
+Requires-Dist: pih-tls
+Requires-Dist: fuzzywuzzy
+Requires-Dist: pyzbar
+Requires-Dist: opencv-python
+Requires-Dist: pytesseract
+Requires-Dist: ocrmypdf
+Requires-Dist: PyPDF2
+Requires-Dist: reportlab
+Requires-Dist: python-Levenshtein
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: deskew

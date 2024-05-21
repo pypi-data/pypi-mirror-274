@@ -1,0 +1,14 @@
+ipih
+pih-mio
+pih-tls
+fuzzywuzzy
+pyzbar
+opencv-python
+pytesseract
+ocrmypdf
+PyPDF2
+reportlab
+python-Levenshtein
+numpy
+opencv-python
+deskew
