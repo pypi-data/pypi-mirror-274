@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+backports/__init__.py
+backports/shutil_copytree.py
+backports.shutil_copytree.egg-info/PKG-INFO
+backports.shutil_copytree.egg-info/SOURCES.txt
+backports.shutil_copytree.egg-info/dependency_links.txt
+backports.shutil_copytree.egg-info/not-zip-safe
+backports.shutil_copytree.egg-info/requires.txt
+backports.shutil_copytree.egg-info/top_level.txt
