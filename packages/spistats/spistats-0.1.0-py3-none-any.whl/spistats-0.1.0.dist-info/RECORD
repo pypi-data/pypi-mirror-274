@@ -1,0 +1,13 @@
+spistats/__init__.py,sha256=Wc5G1rkfc7xRrQCIyKqNDnrI1VH-ulRkVFhKNisKZ4w,33
+spistats/markov.py,sha256=ezfLjSHURueK8zI-wS_QRlsQ3QwjQU3MOhAHSA9viNQ,3000
+spistats/collision/__init__.py,sha256=HGogWGzGxLybbHzHy3Nhu9WmcsJRmUWsRSdWjNHnVHA,2503
+spistats/desynchronization/__init__.py,sha256=zpgVEPmJghK_u5n0TG1nVNzPXoB5PT44E19ANTXomNA,271
+spistats/desynchronization/dsync_count.py,sha256=i54YtWYLwiSZDGE0O2vizbhe6HICTR9swrPb6h1R5DE,2848
+spistats/desynchronization/law.py,sha256=JhCa8AR76U1LW9R4PTlSuhqpjBWT1qB9_efpy5KTenA,6078
+spistats/desynchronization/law_multi.py,sha256=y4scr0bT1lHUnESg3hBNFKAuHOKDc3TGlac4Memr9A0,1796
+spistats/plot/__init__.py,sha256=xDQWqLgIuPmQx2qLlICPQDFbi6d_6maz_z9DykMehKg,128
+spistats/plot/cdf.py,sha256=bDcqdi7FNSarlxhJO2CeYzaUwVoErz2xxqRgXRRx8aQ,1976
+spistats-0.1.0.dist-info/METADATA,sha256=glXJpUJ5Oo10_uxIkcNnpfnnUIq-bWEZ4BaE9t_KICk,2861
+spistats-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+spistats-0.1.0.dist-info/licenses/LICENSE,sha256=a1HaLuE0Mh4IPuMiCwUv_G7ZdeaiRK9kg6Mce_X60BU,34668
+spistats-0.1.0.dist-info/RECORD,,
