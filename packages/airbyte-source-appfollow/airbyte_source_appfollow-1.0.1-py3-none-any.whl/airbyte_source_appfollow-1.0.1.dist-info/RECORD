@@ -1,0 +1,14 @@
+source_appfollow/__init__.py,sha256=1pEgPxWHrt3X4YDdRsP3nXRPXyTi5MXqFVTrB66nXow,130
+source_appfollow/manifest.yaml,sha256=Djiz2yqIeLoiURKKJ6v2BFkFxy45ssevdbjcRl-yBts,3498
+source_appfollow/run.py,sha256=bILg1Co3ow5leFZXl9R7wW3vg1IHP2dWdcDhD2uVruc,239
+source_appfollow/schemas/app_collections.json,sha256=5aRiphs9F3UNU5m4YltxlQ_407TqOtXPHus_QRa68jg,695
+source_appfollow/schemas/app_lists.json,sha256=diu2nUArNhTr-nbmBvsVOu4BkU3Lfzvo_qR3BpE7Kc4,837
+source_appfollow/schemas/ratings.json,sha256=qXwuXomHxVLhprNYm3H4rZ-xvNPTOC6VeUKF5pK0E4g,1154
+source_appfollow/schemas/stat_reviews.json,sha256=EqGcDZDdIKBnNRvvqJZju6hCS5ueIS-EOwDHiRfwlqw,845
+source_appfollow/schemas/users.json,sha256=NjJ7xtdHDC3Q1gD89MV4kE--zBjgpI6sUaJrPVwHo3w,462
+source_appfollow/source.py,sha256=zjlEDfXafTK_QhNEgLSZkYKq4aH5-RLg_05bXQtjir0,478
+source_appfollow/spec.yaml,sha256=Js2mTb1LnLVyWxBluwm2MOAiU7Wjf2yOurHh8TRZu-I,390
+airbyte_source_appfollow-1.0.1.dist-info/METADATA,sha256=h7QvAphziPELVl1TWUO9u63-kFC5nEL0uMBdho7rRzc,5262
+airbyte_source_appfollow-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_appfollow-1.0.1.dist-info/entry_points.txt,sha256=6nI7sBEMURz69op-i7kZIr8SKwowSkRVk43ZYZRCMk8,61
+airbyte_source_appfollow-1.0.1.dist-info/RECORD,,
