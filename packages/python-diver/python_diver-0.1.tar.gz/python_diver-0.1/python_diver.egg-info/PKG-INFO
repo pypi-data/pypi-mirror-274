@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: python-diver
+Version: 0.1
+Summary: Pydiver: ecological diversity analysis in Python
+Home-page: http://pydiver.readthedocs.io/
+Download-URL: http://github.com/andim/pydiver
+Author: Andreas Tiffeau-Mayer
+Author-email: andimscience@gmail.com
+Maintainer: Andreas Tiffeau-Mayer
+Maintainer-email: andimscience@gmail.com
+License: MIT
+Platform: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+
+PyDiver: ecological diversity analysis in Python
