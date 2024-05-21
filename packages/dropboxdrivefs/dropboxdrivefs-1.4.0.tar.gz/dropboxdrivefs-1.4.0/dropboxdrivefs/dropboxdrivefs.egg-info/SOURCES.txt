@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+dropboxdrivefs/dropboxdrivefs.egg-info/PKG-INFO
+dropboxdrivefs/dropboxdrivefs.egg-info/SOURCES.txt
+dropboxdrivefs/dropboxdrivefs.egg-info/dependency_links.txt
+dropboxdrivefs/dropboxdrivefs.egg-info/requires.txt
+dropboxdrivefs/dropboxdrivefs.egg-info/top_level.txt
+test/test.py
+test/test_copy.py
