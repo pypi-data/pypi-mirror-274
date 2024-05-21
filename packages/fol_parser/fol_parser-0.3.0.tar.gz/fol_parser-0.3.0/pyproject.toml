@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "fol_parser"
+version = "0.3.0"
+description = "FOL Parser"
+authors = ["Emre Kuru <emre.kuru@ozu.edu.tr>"]
+readme = "README.md"
+
+packages = [
+    { include = "fol_parser" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+antlr4-python3-runtime = "^4.13.1"
+graphviz = "^0.20.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.26.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+create_tools_dir = "mkdir -p tools"
+download_antlr_jar = "curl -o tools/antlr-4.13.1-complete.jar https://www.antlr.org/download/antlr-4.13.1-complete.jar"
+rename_antlr_jar = "mv tools/antlr-4.13.1-complete.jar tools/antlr.jar"
+antlr_gen = "java -jar tools/antlr.jar -Dlanguage=Python3 ANTLR/FOL.g4"
+clean = "rm -rf generated/*"
+update_lock = "poetry lock"
+
+antlr = [
+    "create_tools_dir",
+    "download_antlr_jar",
+    "rename_antlr_jar",
+    "antlr_gen"
+]
