@@ -1,0 +1,13 @@
+
+[all]
+torch
+numpy
+
+[numpy]
+numpy
+
+[test]
+pytest
+
+[torch]
+torch
