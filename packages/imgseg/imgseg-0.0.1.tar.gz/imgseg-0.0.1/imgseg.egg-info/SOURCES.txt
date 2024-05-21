@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+imgseg/__init__.py
+imgseg/image_processor
+imgseg/run.py
+imgseg.egg-info/PKG-INFO
+imgseg.egg-info/SOURCES.txt
+imgseg.egg-info/dependency_links.txt
+imgseg.egg-info/requires.txt
+imgseg.egg-info/top_level.txt
