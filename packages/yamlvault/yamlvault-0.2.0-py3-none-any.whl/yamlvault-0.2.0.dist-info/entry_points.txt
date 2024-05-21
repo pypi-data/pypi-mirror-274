@@ -1,0 +1,3 @@
+[console_scripts]
+yamlvault=yamlvault.cli.yamlvault:main
+
