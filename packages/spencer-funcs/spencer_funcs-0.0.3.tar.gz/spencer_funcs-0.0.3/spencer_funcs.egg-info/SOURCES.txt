@@ -1,0 +1,9 @@
+LICENSE.md
+README.rst
+setup.py
+spencer_funcs/__init__.py
+spencer_funcs/autodiscovery.py
+spencer_funcs.egg-info/PKG-INFO
+spencer_funcs.egg-info/SOURCES.txt
+spencer_funcs.egg-info/dependency_links.txt
+spencer_funcs.egg-info/top_level.txt
