@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "random-credit-card"
+version = "0.1.0"
+description = "Generate random but theoretically valid credit card numbers."
+authors = ["alexandrerbb"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
