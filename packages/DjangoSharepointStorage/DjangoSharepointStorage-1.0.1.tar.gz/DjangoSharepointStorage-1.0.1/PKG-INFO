@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: DjangoSharepointStorage
+Version: 1.0.1
+Summary: A Python library to use SharePoint as storage backend for your Django application
+Home-page: https://github.com/LundIT/DjangoSharepointStorage
+Author: Melih Sünbül
+Author-email: m.sunbul@lund-it.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: django
+Requires-Dist: Office365-REST-Python-Client
+
+# Lund Process Flow Modules
+
+A Python library for converting office files to PDF using the iLovePDF API.
+
+## Install the package
+
+```python
+pip install DjangoSharepointStorage
+```
+
+## Usage
+
+Here's how to use DjangoSharepointStorage:
+
+- You need to set following variables in your application's settings file:
+
+```python
+SHAREPOINT_APP_CLIENT_ID = "your_sharepoint_app_client_id"
+SHAREPOINT_APP_CLIENT_SECRET = "your_sharepoint_app_client_secret"
+SHAREPOINT_URL = "your_sharepoint_app_url"
+SHAREPOINT_STATIC_DIR = "sharepoint_static_dir"
+SHAREPOINT_MEDIA_DIR = "sharepoint_media_dir"
+```
+- Then, you need to assign the DjangoSharepointStorage as your application's storage backend:
+
+```python
+DEFAULT_FILE_STORAGE = 'django_sharepoint_storage.SharePointCloudStorageUtils.Media'
+STATICFILES_STORAGE = 'django_sharepoint_storage.SharePointCloudStorageUtils.Static'
+```
+
+This project is licensed under the terms of the MIT license
