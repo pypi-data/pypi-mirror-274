@@ -1,0 +1,10 @@
+ImageObject.cpp
+ImageObject.h
+ImageObject_old.h
+MANIFEST.in
+pybind11.cpp
+setup.py
+ImageObject.egg-info/PKG-INFO
+ImageObject.egg-info/SOURCES.txt
+ImageObject.egg-info/dependency_links.txt
+ImageObject.egg-info/top_level.txt
