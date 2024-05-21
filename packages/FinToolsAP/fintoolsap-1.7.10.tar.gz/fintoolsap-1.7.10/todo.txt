@@ -1,0 +1,6 @@
+1. If dates are not in ISO8601 format then the database breaks
+3. add the ability to query from FF and FRED
+4. update tables ask to update all derivative tables cancels operation (should just not delete og tables)
+5. remove the need to have a date for a table
+6. add warning for default vars
+7. Update all errors thrown
