@@ -1,0 +1,10 @@
+yt>=4.2.2
+xmltodict
+
+[dev]
+pre-commit
+
+[test]
+pytest>=6.1
+tomli
+pytest-cov

@@ -1,0 +1,3 @@
+[yt.frontends]
+aspect = yt_aspect.api:ASPECTDataset
+pvtu = yt_aspect.api:PVTUDataset
