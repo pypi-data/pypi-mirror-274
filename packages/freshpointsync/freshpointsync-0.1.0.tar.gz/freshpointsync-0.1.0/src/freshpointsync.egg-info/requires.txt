@@ -1,0 +1,16 @@
+aiohttp
+certifi
+beautifulsoup4
+lxml
+pydantic
+unidecode
+
+[docs]
+sphinx
+sphinx_copybutton
+autodoc-pydantic
+sphinx_rtd_theme
+
+[test]
+pytest
+pytest-asyncio
