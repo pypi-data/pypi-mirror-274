@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pykolofinance
+Version: 0.1.1
+Summary: A utility package for kolomoni agency banking microservices
+Author: Daniel Ale
+Author-email: danielale9291@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: djangorestframework (>=3.15.1,<4.0.0)
+Requires-Dist: djangorestframework-simplejwt (>=5.3.1,<6.0.0)
+Requires-Dist: drf-spectacular (>=0.27.2,<0.28.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Shared Python Utilities
+
+Set AUTH_SERVICE_BASE_URL=
+
+To install 
+
+```bash
+poetry add git+https://github.com/capitalsagetechnology/pykolofinance.git@main
+```
