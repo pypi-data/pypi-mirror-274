@@ -1,0 +1,55 @@
+
+# ARCHUS
+
+A custom encryption library that compresses data by mapping every 2 bits to a single character, effectively reducing the size of the binary representation.
+## Installation
+
+You can install the package via pip:
+
+```sh
+pip install rachus
+```
+# Usage 
+## Encrypting Text
+To encrypt a text string, use the encrypt_text function from the RACHUS package. This function returns the original binary representation of the text and the encrypted string.
+```
+from rachus import encrypt_text
+
+s = "he"
+binary_text, encrypted_text = encrypt_text(s, r=3)
+print(f"Original text: {s}")
+print(f"Original binary: {binary_text}")
+print(f"Encrypted custom: {encrypted_text}")
+```
+## Decrypting Text
+To decrypt an encrypted string, use the decrypt_text function from the RACHUS package. This function returns the binary representation of the encrypted text and the decrypted original text.
+```
+from rachus import decrypt_text
+
+encrypted_text = '1!"#$'
+binary_text, decrypted_text = decrypt_text(encrypted_text, r=3)
+print(f"Encrypted text: {encrypted_text}")
+print(f"Decrypted binary: {binary_text}")
+print(f"Decrypted text: {decrypted_text}")
+```
+# How It Works
+## Encryption 
+1. **Text to Binary Conversion**: The text is converted to its binary representation.
+Permutation: The binary string is permuted randomly multiple times.
+Mapping: Each pair of bits is mapped to a specific character according to a predefined mapping.
+
+2. **Permutation**: The binary string is permuted randomly multiple times.
+
+3. **Mapping**: Each pair of bits is mapped to a specific character according to a predefined mapping.
+## Decryption 
+1. **Reverse Mapping**: Each character in the encrypted string is mapped back to its original pair of bits.
+
+2. **Reverse Permutation**: The binary string is permuted back to its original order (assuming the same permutation was used in reverse).
+
+3. **Binary to Text Conversion**: The binary string is converted back to the original text.
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+# Author 
+Rey - rey@cock.lu

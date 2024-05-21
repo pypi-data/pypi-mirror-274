@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+RACHUS.egg-info/PKG-INFO
+RACHUS.egg-info/SOURCES.txt
+RACHUS.egg-info/dependency_links.txt
+RACHUS.egg-info/top_level.txt
