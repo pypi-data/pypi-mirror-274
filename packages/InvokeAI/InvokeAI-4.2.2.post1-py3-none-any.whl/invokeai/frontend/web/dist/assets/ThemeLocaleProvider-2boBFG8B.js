@@ -1,0 +1,1 @@
+import{r as s,H as n,ma as m,mb as c,I as o,mc as i,md as d,me as u}from"./index-DcBl8Beb.js";function x({children:t}){const{i18n:r}=n(),e=r.dir(),a=s.useMemo(()=>m({...c,direction:e}),[e]);return s.useEffect(()=>{document.body.dir=e},[e]),o.jsx(i,{theme:a,toastOptions:d,children:o.jsx(u,{children:t})})}const f=s.memo(x);export{f as default};
