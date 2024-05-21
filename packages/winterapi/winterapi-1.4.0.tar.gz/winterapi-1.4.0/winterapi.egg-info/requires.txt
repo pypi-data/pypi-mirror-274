@@ -1,0 +1,15 @@
+pandas
+packaging
+keyring
+cryptography
+pre-commit
+jupyter
+backoff
+pydantic
+wintertoo>=1.6.1
+
+[dev]
+black==24.4.2
+isort==5.13.2
+pylint==3.2.2
+coveralls
