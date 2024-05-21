@@ -1,0 +1,13 @@
+audire/__init__.py,sha256=-3llVDx1CyXPWMtTdeK-6s09i7b5C50VlTuK--3Fh88,1107
+audire/dotdict.py,sha256=B-uweW3pVFRv6fBjjbDFMdZfLLNUJBBr5Bn02U-eAS0,2135
+audire/errors.py,sha256=8Bhpue_87D5hYK5xFhmzgBbYvin2QhiJZRfwGs9jE8g,1917
+audire/main.py,sha256=N6M2qtwm60wkru8ChV4HRtD0Sm1sQsRwo2iEbH_meos,3167
+audire/helpers/__init__.py,sha256=RGg0L-C3H1HRfaaZN1hDkNCoUnIaBml7C8MdimdTypA,1063
+audire/helpers/saavn.py,sha256=pw7o-TWlXmPWqmnasoenOZ8irWDoJ8KkX9gklf6egnI,2441
+audire/helpers/soundcloud.py,sha256=UE-vhZnaJPimqgXYHM0JEMta4J47xuzB55k8F6dOYPc,1931
+audire/helpers/youtube.py,sha256=-9fo5ieUH7f7i8nwINa-w6UI402GKxdl4GeO3CvW0x0,2864
+Audire-1.0.1.dist-info/LICENSE,sha256=H058-CFZgj92dpIpHUevNcQFXh3QcGKW4h7Nrj0ESzg,1060
+Audire-1.0.1.dist-info/METADATA,sha256=9qOlGe7lN9srqmtOXEtFFL4FxlA1EpNEJ9aoSBBLzfM,2079
+Audire-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+Audire-1.0.1.dist-info/top_level.txt,sha256=bYEIPxjYcdAmK8wOK5wZ6f2cmdLwKGgCYwXNCBUaovY,7
+Audire-1.0.1.dist-info/RECORD,,
