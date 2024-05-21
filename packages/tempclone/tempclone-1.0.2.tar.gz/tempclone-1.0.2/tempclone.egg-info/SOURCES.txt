@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tempclone/__init__.py
+tempclone/cli.py
+tempclone.egg-info/PKG-INFO
+tempclone.egg-info/SOURCES.txt
+tempclone.egg-info/dependency_links.txt
+tempclone.egg-info/entry_points.txt
+tempclone.egg-info/requires.txt
+tempclone.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py
