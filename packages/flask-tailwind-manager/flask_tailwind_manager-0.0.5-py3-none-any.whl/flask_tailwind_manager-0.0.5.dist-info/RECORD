@@ -1,0 +1,17 @@
+flask_tailwind/__init__.py,sha256=V6tstJi3bsI_XyHrmQCVL_MV4GAkj-Y3FsjaTOzcPL0,62
+flask_tailwind/cli.py,sha256=VVOB2nTNFZsjWlLUmpk_attjd7jrdIn1SuBvVq-xBWM,2365
+flask_tailwind/console.py,sha256=5TYBvl6Lcg95hjCFrFpKJeLgcLd2BtM_Kfy6tUkDte8,1456
+flask_tailwind/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_tailwind/tailwind.py,sha256=u5lR0VgnXk120wrdVDb7OkCqIUHO1QTJ_fGjw38OJyo,3686
+flask_tailwind/starter/.gitignore,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_tailwind/starter/package.json,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_tailwind/starter/tailwind.config.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_tailwind/starter/src/input.css,sha256=GGQZxH5G0WiJdP5tHUaI1yNPF5AROgwekzUmtSLJoEw,58
+flask_tailwind/templates/load.jinja,sha256=myI23eBfSWRe8YmMrupGgnuUGnVk1kQn_WBlM4VRpcY,73
+flask_tailwind/templates/package.json.jinja,sha256=Lj3uWWj9EelZgLKiEjohuQQVEQNTvn1BbO6acI7rrs8,89
+flask_tailwind/templates/tailwind.config.js.jinja,sha256=76Pm5XpVn80PxiR2vJ2Xa_Kji4e4y2cweULKOnhkG4M,497
+flask_tailwind_manager-0.0.5.dist-info/LICENSE,sha256=WvXi8qT7o2rtwusONy3R--dM6Xi_FiWXiNcF8wHVKp0,1081
+flask_tailwind_manager-0.0.5.dist-info/METADATA,sha256=gmRC07V4V8qGDjRAigxG6X7iPSuR1HllrjfB8rxpACs,5100
+flask_tailwind_manager-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flask_tailwind_manager-0.0.5.dist-info/top_level.txt,sha256=O71ZdAqR61hxoeLg3Wj0rfTW5W3XhmiPbL4P2wmT4s4,15
+flask_tailwind_manager-0.0.5.dist-info/RECORD,,
