@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+anhungeredz/__init__.py
+anhungeredz/main.py
+anhungeredz.egg-info/PKG-INFO
+anhungeredz.egg-info/SOURCES.txt
+anhungeredz.egg-info/dependency_links.txt
+anhungeredz.egg-info/requires.txt
+anhungeredz.egg-info/top_level.txt
