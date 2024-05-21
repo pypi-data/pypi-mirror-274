@@ -1,0 +1,5 @@
+[console_scripts]
+cmkcpiodir = cmkinitramfs.entry:entry_cmkcpiodir
+cmkcpiolist = cmkinitramfs.entry:entry_cmkcpiolist
+cmkinit = cmkinitramfs.entry:entry_cmkinit
+findlib = cmkinitramfs.entry:entry_findlib

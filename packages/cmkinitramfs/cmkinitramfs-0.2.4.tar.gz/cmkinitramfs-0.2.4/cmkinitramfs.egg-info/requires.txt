@@ -1,0 +1,10 @@
+pyelftools
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[qa]
+flake8
+mypy
+tox
