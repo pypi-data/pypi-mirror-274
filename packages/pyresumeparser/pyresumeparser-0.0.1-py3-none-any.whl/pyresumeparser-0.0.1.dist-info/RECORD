@@ -1,0 +1,10 @@
+resume_parser/__init__.py,sha256=ebkk39hvkM7rLWU8AfU7OCkhPgdiF-4bh0esvQ8oAfg,44
+resume_parser/main.py,sha256=Dno2LnjdctA7tQCgZ2WhuEZtI5gLb15HWf2gtt0VJ_E,2866
+resume_parser/model-best/config.cfg,sha256=I1YHmhlaARqohcMqRxNU332PnAQzjJXsnjQ1ODteNqA,2885
+resume_parser/model-best/meta.json,sha256=VZEQVs1vmJk54DAkJLzNbacS_lDLf35gj3Z_lL3t0T0,2499
+resume_parser/model-best/tokenizer,sha256=sBTou6SVixIK8tDBxj6rt8ADefK6yvEN98UyXv0upGc,77066
+pyresumeparser-0.0.1.dist-info/METADATA,sha256=_Cr1ZR18Q0n5lnj4fkuqULGwi9mMCY56PaOfrqJS0GM,2724
+pyresumeparser-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyresumeparser-0.0.1.dist-info/entry_points.txt,sha256=7OUUZvzN7gtpB-QX8DnSbf7P68j7Lxqg6QHSOJQ48t8,57
+pyresumeparser-0.0.1.dist-info/top_level.txt,sha256=nqqrdmoZbPK0sXWcRSYU-Y38kIx3sovB1CEXR59YUDM,14
+pyresumeparser-0.0.1.dist-info/RECORD,,
