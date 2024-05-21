@@ -1,0 +1,10 @@
+benchnirs/__init__.py,sha256=e5OD7XFsAaPuYS3UaFNZhMkk_EY4Ss-Xhw8blzO7FWM,522
+benchnirs/learn.py,sha256=DalPE8S3MUChhxSqps5Vy3PE6vcTvreMtiEsf6Pevc4,49450
+benchnirs/load.py,sha256=JBGzXaJqDTk5v5AbUnMij1hMekzAOed0fmrcYhuNKPA,25515
+benchnirs/process.py,sha256=iiHAtn8kYr5GgY73p6CQErRYvrTE8B4Iy4mShD0x2Uw,4282
+benchnirs/viz.py,sha256=WjAww0JKDXvOFXzHhdwf1pT8vM69SOvXttG7zcLm_ks,3946
+benchnirs-1.2.2.dist-info/LICENSE,sha256=pD-fdzh6uctidCs54fK79rVaHlEiG7EJOquEPUYNlTQ,35083
+benchnirs-1.2.2.dist-info/METADATA,sha256=CsjXe9ZDd0ds8jLy6dJ2jvIBZKBhj82aic7akH0i08I,8254
+benchnirs-1.2.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+benchnirs-1.2.2.dist-info/top_level.txt,sha256=BFHaZjGKHS13nxdci75BscLBgQQ2fZyrrMRjBqRxe1g,10
+benchnirs-1.2.2.dist-info/RECORD,,
