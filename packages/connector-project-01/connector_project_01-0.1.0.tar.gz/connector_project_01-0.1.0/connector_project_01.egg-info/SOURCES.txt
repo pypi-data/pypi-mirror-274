@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+connector_project_01.egg-info/PKG-INFO
+connector_project_01.egg-info/SOURCES.txt
+connector_project_01.egg-info/dependency_links.txt
+connector_project_01.egg-info/top_level.txt
+my_module/__init__.py
+tests/test_my_module.py
