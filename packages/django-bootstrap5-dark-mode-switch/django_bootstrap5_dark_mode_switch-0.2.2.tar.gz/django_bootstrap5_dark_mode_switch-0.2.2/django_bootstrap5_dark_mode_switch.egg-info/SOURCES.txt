@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dark_mode_switch/__init__.py
+dark_mode_switch/static/dark_mode_switch/dark-mode-switch.css
+dark_mode_switch/static/dark_mode_switch/dark-mode-switch.js
+dark_mode_switch/templates/dark_mode_switch/dark_mode_switch.html
+django_bootstrap5_dark_mode_switch.egg-info/PKG-INFO
+django_bootstrap5_dark_mode_switch.egg-info/SOURCES.txt
+django_bootstrap5_dark_mode_switch.egg-info/dependency_links.txt
+django_bootstrap5_dark_mode_switch.egg-info/not-zip-safe
+django_bootstrap5_dark_mode_switch.egg-info/requires.txt
+django_bootstrap5_dark_mode_switch.egg-info/top_level.txt
