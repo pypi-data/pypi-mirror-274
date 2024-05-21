@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: hermes-cai
+Version: 0.0.6
+Summary: Defining and constructing production-grade prompts via an expressive templating engine.
+Home-page: https://github.com/character-tech/chat-stack
+Author: James Groeneveld
+Author-email: james@character.ai
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Hermes
+Defining and constructing production-grade LLM prompts via rich structured templates.
+
+### Goals & Requirements
+- Centralized: By centralizing the prompt construction into one place Hermes aims to simplify prompt the prompt construction mechanics.
+- Extensible: Make it as easy as possible to create new prompts for new use cases.
+- Experimentation: Must be easy to experiment with new prompt data and placements.
+
+Fundamentally, Hermes is split into two layers -- the Templating Layer and the Logical Layer. We aim to keep a clear separation between these layers such that the Templating layer exclusively handles the representation of the prompt and the Logical Layer handles the mechanics of constructing the prompt.
+
+### Templating Layer
+
+#### Templates
+Perhaps the most important part of this design, prompt templates are an expressive yet human readable files that define the prompt structure, data placements and formatting of the final prompt. The templating engine aims to strike a balance between being readable and explicit with no magic. As such, we have chosen to use a combination of YAML and Jinja syntax to represent prompt templates.
+
+Fundamentally, prompt templates are YAML files that when fully compiled contain a list of parts. Each part contains a human readable name, a raw_string and a truncation_priority. We concatenate these parts together to form the final prompt and do our best effort in following the truncation policy laid out by the truncation_priority field. In the future they may support other fields to help express even more rich prompts.
+
+We use Jinja to express the raw_string and more complex notation such as for loops, conditionals and indexing. By relying on a well known templating language such as Jinja we ensure templates remain extensible as new use cases emerge. We do not aim to reinvent the wheel - many open source projects have adopted this same templating language of combining Jinja and YAML such as Ansible and SaltStack. This means there are already tools at our disposal for validating, previewing and otherwise manipulating our template files (e.g. https://ansible.sivel.net/test/).
+
+Alternatives considered:
+- Langchain: PromptTemplate, AIMessage, SystemMessage and HumanMessage abstractions. Basically just f-strings wrapped in a python class, not very readable or expressive enough.
+- LMQL: not very readable, non-trivial to reason about what the final interpolated prompt would look like.
+- Raw python f-strings: better readability but not very expressive.
+- Jinja: probably the best standalone bet I've found so far but leaves several things to be desired. See an example here.
+- YAML: also could work by rolling our own basic interpreter. See an example here.
+- Several OSS “prompt management” solutions: Pezzo, Agenta, PromptHub (paid), Langflow. These all miss the mark in terms of extensibility of the core templating language and infrastructure and focus on using external APIs rather than needing to truncate and tokenize which is crucial for us as we host our own models.
+
+#### Template Registry
+TODO
+
+### Logical Layer
+The logical layer contains the necessary logic for rendering templates and performing tokenization and truncation.
