@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+otherwhilez/__init__.py
+otherwhilez/main.py
+otherwhilez.egg-info/PKG-INFO
+otherwhilez.egg-info/SOURCES.txt
+otherwhilez.egg-info/dependency_links.txt
+otherwhilez.egg-info/requires.txt
+otherwhilez.egg-info/top_level.txt
