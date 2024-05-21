@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+plugin/BaseMetadataReport.py
+plugin/CommonTestReportPlugin.py
+plugin/Report.py
+plugin/TestObject.py
+plugin/__init__.py
+plugin/main.py
+pytest_json_ctrf.egg-info/PKG-INFO
+pytest_json_ctrf.egg-info/SOURCES.txt
+pytest_json_ctrf.egg-info/dependency_links.txt
+pytest_json_ctrf.egg-info/entry_points.txt
+pytest_json_ctrf.egg-info/requires.txt
+pytest_json_ctrf.egg-info/top_level.txt
+tests/test_example.py
