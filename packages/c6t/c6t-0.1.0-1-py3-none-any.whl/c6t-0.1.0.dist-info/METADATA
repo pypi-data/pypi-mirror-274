@@ -1,0 +1,47 @@
+Metadata-Version: 2.3
+Name: c6t
+Version: 0.1.0
+Summary: Unofficial Administrative Command Line Interface for Contrast Security
+Author-email: Jonathan Harper <39912347+jharper-sec@users.noreply.github.com>
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: annotated-types>=0.6.0
+Requires-Dist: gitpython>=3.1.43
+Requires-Dist: inquirerpy>=0.3.4
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: requests>=2.32.0
+Requires-Dist: rich>=13.7.1
+Requires-Dist: shellingham>=1.5.4
+Requires-Dist: typer[all]>=0.12.3
+Requires-Dist: types-requests>=2.31.0.20240406
+Description-Content-Type: text/markdown
+
+## c6t
+
+### Pre-requisites
+- Python 3.11+
+
+### Installation
+```shell
+$ pip install c6t
+```
+
+### Usage
+#### Login
+This will prompt you to login to your Contrast account and save your API credentials to your local machine.
+```shell
+$ c6t login
+```
+
+#### Configure
+Alternatively, you can configure your API credentials manually.
+```shell
+$ c6t configure
+```
+
+#### Get Agent Configuration File
+This will download the agent configuration file to your local machine.
+```shell
+$ c6t get-agent-config
+```
