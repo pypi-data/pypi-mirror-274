@@ -1,0 +1,3 @@
+[console_scripts]
+bt856a=bt856a.console:run
+
