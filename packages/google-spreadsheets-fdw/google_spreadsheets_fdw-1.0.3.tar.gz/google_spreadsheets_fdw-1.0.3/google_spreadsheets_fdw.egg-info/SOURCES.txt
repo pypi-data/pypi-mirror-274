@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+google_spreadsheets_fdw/__init__.py
+google_spreadsheets_fdw.egg-info/PKG-INFO
+google_spreadsheets_fdw.egg-info/SOURCES.txt
+google_spreadsheets_fdw.egg-info/dependency_links.txt
+google_spreadsheets_fdw.egg-info/requires.txt
+google_spreadsheets_fdw.egg-info/top_level.txt
