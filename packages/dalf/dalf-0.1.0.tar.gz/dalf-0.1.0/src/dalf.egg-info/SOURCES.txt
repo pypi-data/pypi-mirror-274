@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+src/dalf/__init__.py
+src/dalf/admin.py
+src/dalf/apps.py
+src/dalf.egg-info/PKG-INFO
+src/dalf.egg-info/SOURCES.txt
+src/dalf.egg-info/dependency_links.txt
+src/dalf.egg-info/top_level.txt
