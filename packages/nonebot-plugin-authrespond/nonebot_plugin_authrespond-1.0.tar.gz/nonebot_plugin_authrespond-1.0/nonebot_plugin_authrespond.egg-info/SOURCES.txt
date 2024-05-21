@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+nonebot_plugin_authrespond/__init__.py
+nonebot_plugin_authrespond/config.py
+nonebot_plugin_authrespond/cubp.py
+nonebot_plugin_authrespond/perm.py
+nonebot_plugin_authrespond/plugins_data.py
+nonebot_plugin_authrespond/run.py
+nonebot_plugin_authrespond.egg-info/PKG-INFO
+nonebot_plugin_authrespond.egg-info/SOURCES.txt
+nonebot_plugin_authrespond.egg-info/dependency_links.txt
+nonebot_plugin_authrespond.egg-info/requires.txt
+nonebot_plugin_authrespond.egg-info/top_level.txt
