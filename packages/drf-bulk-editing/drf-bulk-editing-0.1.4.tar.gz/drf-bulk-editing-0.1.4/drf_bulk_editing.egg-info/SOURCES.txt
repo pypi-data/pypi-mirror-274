@@ -1,0 +1,7 @@
+README.md
+setup.py
+drf-bulk-editing/__init__.py
+drf_bulk_editing.egg-info/PKG-INFO
+drf_bulk_editing.egg-info/SOURCES.txt
+drf_bulk_editing.egg-info/dependency_links.txt
+drf_bulk_editing.egg-info/top_level.txt
