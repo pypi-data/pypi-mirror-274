@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trinitrotoluolz/__init__.py
+trinitrotoluolz/main.py
+trinitrotoluolz.egg-info/PKG-INFO
+trinitrotoluolz.egg-info/SOURCES.txt
+trinitrotoluolz.egg-info/dependency_links.txt
+trinitrotoluolz.egg-info/requires.txt
+trinitrotoluolz.egg-info/top_level.txt
