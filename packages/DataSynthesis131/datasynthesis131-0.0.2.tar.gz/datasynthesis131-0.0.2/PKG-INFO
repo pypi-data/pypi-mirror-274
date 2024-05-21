@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: DataSynthesis131
+Version: 0.0.2
+Summary: A package for generating synthetic tabular data and evaluating the quality.
+Project-URL: Homepage, https://github.com/MaratElagin/DataSynthesis131
+Project-URL: Issues, https://github.com/MaratElagin/DataSynthesis131/issues
+Author-email: Marat Elagin <maratelagin@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: pandas>=1.2.3
+Requires-Dist: scikit-learn>=0.24.2
+Requires-Dist: sdv
+Requires-Dist: table-evaluator>=1.6.1
+Description-Content-Type: text/markdown
+
+# DataSynthesis131
+Library to generate synthetic tabular data and evaluate quality of generated data.
+
+# QualityEvaluator
+A tool to evaluate sythetic data quality.
+
+# Synthesizer
+A tool to generate sythetic tabular data.
+
+
+For more information and detailed instructions on how to use the QualityEvaluator or Synthesizer, please refer to the [README](https://github.com/MaratElagin/DataSynthesis131/blob/main/README.md) in our GitHub repository.
+
+If you notice any inaccuracies, add issue [here](https://github.com/MaratElagin/DataSynthesis131/issues).
