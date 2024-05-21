@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: SimpleAI-Image
+Version: 0.1.0
+Summary: A package for processing and storing image vectors in PostgreSQL
+Home-page: https://github.com/Tobias2408/bachelorprojekt
+Author: Tobias Poulsen
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy
+Requires-Dist: pgvector
+Requires-Dist: matplotlib
+Requires-Dist: tensorflow
+Requires-Dist: scikit-learn
+
