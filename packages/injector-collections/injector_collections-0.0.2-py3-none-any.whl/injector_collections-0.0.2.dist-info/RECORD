@@ -1,0 +1,9 @@
+injector_collections/Collection.py,sha256=xJKwNuXdwI4mGe-PK41UXUGW1xqQWpEcOv8myInyA_Y,444
+injector_collections/CollectionItem.py,sha256=3D_CYqxMQSfOqdyJcnwaOA8ynthyDTyy0rXfMrXVw3c,603
+injector_collections/Generator.py,sha256=uN_bJJ3LFYEU4hRcm7yhYq0CULHSftUxUBJPOeJWjPI,2919
+injector_collections/__init__.py,sha256=TDBEgQywJEkuhNldseG29CqdtaSpJLoFuUikqP64GSM,453
+injector_collections/collections.jinja,sha256=xysHQKRCfYTk5Sk60TprZJ9zpHHff1nPoZjaCiLucPY,769
+injector_collections-0.0.2.dist-info/METADATA,sha256=vI5069HpSA5eYlwl-epy-_z3a3Blvfnl4a7T6RZo48c,5466
+injector_collections-0.0.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+injector_collections-0.0.2.dist-info/licenses/LICENSE,sha256=gbdSIIMTjpncqujVdFrZcHkvgek08YYxPASaGAKOhuU,1076
+injector_collections-0.0.2.dist-info/RECORD,,
