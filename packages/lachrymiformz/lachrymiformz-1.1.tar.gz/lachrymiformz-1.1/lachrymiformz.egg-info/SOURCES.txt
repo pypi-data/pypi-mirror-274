@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lachrymiformz/__init__.py
+lachrymiformz/main.py
+lachrymiformz.egg-info/PKG-INFO
+lachrymiformz.egg-info/SOURCES.txt
+lachrymiformz.egg-info/dependency_links.txt
+lachrymiformz.egg-info/requires.txt
+lachrymiformz.egg-info/top_level.txt
