@@ -1,0 +1,5 @@
+requests
+curlify
+google-cloud-bigquery
+redis
+psycopg2
