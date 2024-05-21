@@ -1,0 +1,14 @@
+cratedb_sqlparse/__init__.py,sha256=Lv9iLr6PxsNUy7baIOgcYsVvxEh0pK_hqzk9g-649m8,91
+cratedb_sqlparse/parser.py,sha256=69db6YhZPrIhMwWv-5UYuZHUV7quYv-WI9jWYdEI-cQ,3369
+cratedb_sqlparse/generated_parser/AbstractSqlBaseLexer.py,sha256=pSc9zzaPd0ZUzyI1AXV2LMeMQn0jygAwZ_Qi8R9zOlg,605
+cratedb_sqlparse/generated_parser/SqlBaseLexer.py,sha256=Pf7n3ASzjpba2oNRUD54n605JcqDM4fpHHFF8l_TexY,105327
+cratedb_sqlparse/generated_parser/SqlBaseParser.py,sha256=uGY2tBeh1l64Y93KHBoZvnKsV5ZLiwBoMlrG0U8W8dM,751133
+cratedb_sqlparse/generated_parser/SqlBaseParserListener.py,sha256=ogferiRUgKA6aJu-DxbbCdDbvLNy1QUwpBOfMAkYxCo,85512
+cratedb_sqlparse/generated_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=1UNxf3763gnR2eMIYbxkTEFhL_tzHuAqpCnSXrZqqHc,842
+tests/test_lexer.py,sha256=6owQvPboCUJ9b6RcAwujr34GmHOeKri1yRVy8fKThgk,1283
+cratedb_sqlparse-0.0.2.dist-info/METADATA,sha256=Y-D2CzW2lpu6cH9J24Vjpz1WZqJVqDY1-FUhl_gS4Xo,4204
+cratedb_sqlparse-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cratedb_sqlparse-0.0.2.dist-info/top_level.txt,sha256=P6utvmr8wbrxkDpQ1tyrerTFYbRunPHBp8NrUUjQ-kk,23
+cratedb_sqlparse-0.0.2.dist-info/RECORD,,
