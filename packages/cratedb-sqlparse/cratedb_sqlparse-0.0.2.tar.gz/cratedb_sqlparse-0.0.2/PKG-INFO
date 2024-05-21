@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: cratedb-sqlparse
+Version: 0.0.2
+Summary: Parsing utilities to validate and split SQL statements for CrateDB.
+Author-email: Ivan Sanchez Valencia <ivan.sanchezvalencia@crate.io>
+License: Apache License 2.0
+Project-URL: changelog, https://github.com/crate/cratedb-sqlparse/blob/main/CHANGES.md
+Project-URL: documentation, https://github.com/crate/cratedb-sqlparse
+Project-URL: homepage, https://github.com/crate/cratedb-sqlparse
+Project-URL: repository, https://github.com/crate/cratedb-sqlparse
+Keywords: antlr4,antlr4 grammar,cratedb,grammar,sql,sql grammar,sql parser,sql parsing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Communications
+Classifier: Topic :: Database
+Classifier: Topic :: Documentation
+Classifier: Topic :: Education
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires-Python: <3.13,>=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: antlr4-python3-runtime<4.14
+Provides-Extra: develop
+Requires-Dist: mypy<1.11; extra == "develop"
+Requires-Dist: poethepoet<0.27; extra == "develop"
+Requires-Dist: pyproject-fmt<2.2; extra == "develop"
+Requires-Dist: ruff<0.5; extra == "develop"
+Requires-Dist: validate-pyproject<0.19; extra == "develop"
+Provides-Extra: generate
+Requires-Dist: antlr4-tools<0.3; extra == "generate"
+Requires-Dist: requests<3; extra == "generate"
+Provides-Extra: release
+Requires-Dist: build<2; extra == "release"
+Requires-Dist: twine<6; extra == "release"
+Provides-Extra: test
+Requires-Dist: pytest<9; extra == "test"
+Requires-Dist: pytest-cov<6; extra == "test"
+
+# CrateDB SQL Parser for Python
+
+This package provides utilities to validate and split SQL statements specifically designed for CrateDB.
+
+It is built upon CrateDB's antlr4 grammar, ensuring accurate parsing tailored to CrateDB's SQL dialect.
+
+It draws inspiration from `sqlparse`.
+
+## Installation.
+
+## Usage:
+
+```python
+from cratedb_sqlparse import sqlparse
+
+query = """
+    SELECT * FROM SYS.SHARDS;
+    INSERT INTO doc.tbl VALUES (1);
+"""
+statements = sqlparse(query)
+
+print(len(statements))
+# 2
+
+select_query = statements[0]
+
+print(select_query.query)
+# 'SELECT * FROM SYS.SHARDS'
+
+print(select_query.type)
+# 'SELECT'
+
+print(select_query.tree)
+# (statement (query (queryNoWith (queryTerm (querySpec SELECT (selectItem *) FROM (relation (aliasedRelation (relationPrimary (table (qname (ident (unquotedIdent SYS)) . (ident (unquotedIdent (nonReserved SHARDS)))))))))))))
+
+sqlparse('SUUULECT * FROM sys.shards')
+# cratedb_sqlparse.parser.parser.ParsingException: line1:0 mismatched input 'SUUULECT' expecting {'SELECT', 'DEALLOCATE', ...}
+```
+
+
+## Development
+```shell
+git clone https://github.com/crate/cratedb-sqlparse
+cd cratedb-sqlparse/cratedb_sqlparse_py
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --editable='.[develop,generate,release,test]'
+poe check
+```
