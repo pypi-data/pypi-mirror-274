@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shortcutz/__init__.py
+shortcutz/main.py
+shortcutz.egg-info/PKG-INFO
+shortcutz.egg-info/SOURCES.txt
+shortcutz.egg-info/dependency_links.txt
+shortcutz.egg-info/requires.txt
+shortcutz.egg-info/top_level.txt
