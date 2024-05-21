@@ -1,0 +1,88 @@
+# Json Dict Diff
+
+Library for creating a minimal diff of two json-compatible python dictionaries.
+
+This library can be used to compare two json-compatible python dictionaries (i.e. dictionaries/lists/... containing only the following primitives: `int, float, str, list, dict, set, tuple, bool`) and generates a "minimal" diff.
+The diff is represented as a dictionary where insertions/deletions/substititons are represented as tuples.
+E.g the following two dictionaries:
+
+```py
+diff(
+  { "a": [ { "b": 1, "c": True }, 1.0, "x" ], "d": 1 },
+  { "a": [ { "b": 2, "c": True }, 1.0, "y", True ] }
+)
+```
+
+will result in the following diff:
+
+```py
+{ "a": [ { "b": (1, 2) }, ("x", "y"), (None, True) ], "d": (1, None) }
+```
+
+Here the tuples `(1, 2), ("x", "y"), (None, True), (1, None)` represent the substitions that happened.
+`None` implies that a object was either removed or added.
+
+If there is no diff (e.g.: `diff({ "a": 1 }, { "a": 1 })`) the result will be `None`. In this sense,
+the library can also be used to compare two json-compatible dictionaries.
+
+---
+
+If a object of any different type is used anywhere in a dict/list/..., a `ValidationException` will be raised.
+
+## Exports
+
+```py
+type JDict = int | float | str | list["Result"] | dict[str, "Result"] | tuple["Result"] | set["Result"] | None
+
+class ValidationException
+
+def validate(a: JDict):
+
+def diff(a: JDict, b: JDict) -> JDict:
+```
+
+## Notes
+
+Primitive objects such as ints/floats/... can also be diffed which will result in a single tuple of a substition.
+E.g:
+
+```py
+diff("a", "b") == ("a", "b")
+diff("a", "a") is None
+```
+
+---
+
+The diff will treat lists, sets and tuples as lists which means that the result will contain lists instead of sets or tuples.
+This is due to tuples being reserved for the substitution results.
+
+---
+
+If it might not be clear which element in a list might be substituted, this library makes no guarantees on the actual substitution. E.g:
+
+```py
+diff([1, 2, 3], [1, 4, 5])
+```
+
+can result either in: `[ (2, 4), (3, 5) ]` or `[ (3, 4), (2, 5) ]`.
+
+---
+
+`None` elements might or might not show up as a diff
+
+E.g:
+
+```py
+diff([ None, 1 ], [1])
+```
+
+might result in `[ (None, 1) ]` or `None` (i.e. no diff).
+
+## Building/Uploading
+
+```sh
+# Create venv with dependencies
+python -m venv .venv
+source .venv/bin/activate
+pip install 
+```

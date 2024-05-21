@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "json_dict_diff"
+version = "1.0.0"
+authors = [
+  { name="Gerrit Proessl", email="gerrit.proessl@gmail.com" },
+]
+description = "A simple library to create a minimal diff of two json compatible dictionaries"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/g3rrit/json_dict_diff"
+Issues = "https://github.com/g3rrit/json_dict_diff/issues"
+
+[tool.black]
+line-length = 120
