@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: nuance
+Version: 0.6.1
+Summary: Transit signals detection among correlated noises
+License: MIT
+Author: Lionel Garcia
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jax (>=0.4.25,<0.5.0)
+Requires-Dist: jaxlib
+Requires-Dist: jaxopt
+Requires-Dist: matplotlib
+Requires-Dist: multiprocess
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tinygp
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# nuance
+Efficient detection of planets transiting active stars
+
+<p align="center">
+    <img src="docs/_static/illu_readme.png" height="350" style="margin:50px">
+</p>
+
+*nuance* uses linear models and Gaussian processes (using the [JAX](https://github.com/google/jax)-based [tinygp](https://github.com/dfm/tinygp)) to simultaneously **search for planetary transits while modeling correlated noises** (e.g. stellar variability) in a tractable way. See [the paper](https://arxiv.org/abs/2402.06835) for more details.
+
+When to use *nuance*?
+- To detect single or periodic transits
+- When correlated noises are present in the data (e.g. stellar variability or instrumental systematics)
+- For space-based or sparse ground-based observations
+- To effectively find transits in light curves from multiple instruments
+
+Documentation at [nuance.readthedocs.io](https://nuance.readthedocs.io)
+
+## Example
+
+```python
+from nuance import Nuance, utils
+import numpy as np
+
+(time, flux, error), X, gp = utils.simulated()
+
+nu = Nuance(time, flux, gp=gp, X=X)
+
+# linear search
+epochs = time.copy()
+durations = np.linspace(0.01, 0.2, 15)
+nu.linear_search(epochs, durations)
+
+# periodic search
+periods = np.linspace(0.3, 5, 2000)
+search = nu.periodic_search(periods)
+
+t0, D, P = search.best
+```
+
+## Installation
+
+`nuance` is written for python 3 and can be installed using pip
+
+```shell
+pip install nuance
+```
+
+or from sources
+  
+```shell
+git clone https://github.com/lgrcia/nuance
+cd nuance
+pip install -e .
+```
+
