@@ -1,0 +1,16 @@
+fuel_efficiency/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuel_efficiency/algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuel_efficiency/algorithms/a_star.py,sha256=S1GobELphEy-SE1lPnLkEYrHndoEsK5DJRs1cpwiytQ,4202
+fuel_efficiency/algorithms/context.py,sha256=Msuk_4JpmA5txuI4hXh51bSc58fjj5nH53X9Q0duKeo,1949
+fuel_efficiency/algorithms/dijkstra.py,sha256=yh7QHGCVAF5UBXJUbcbIKbwqYIwCItSGYkDoiAIuPXQ,3671
+fuel_efficiency/algorithms/path_finding.py,sha256=LIxjSxJSon5AMYo_MhLlW4jaorqiCfBr6txfYS0mK-Q,697
+fuel_efficiency/entities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuel_efficiency/entities/down_hill.py,sha256=s034rsrIrxYcKHSou0UO4cdCHSLGq-SgqeNasuJ15fQ,974
+fuel_efficiency/entities/node.py,sha256=26kFlLdR3cTzvM-ycZWEfWkZBpr4XaXGKgm2R1wkPME,2125
+fuel_efficiency/entities/plateau.py,sha256=_S79v9cK6wYpWyR27Ok2d0Vt10j8jPRVwkLXDErfIBE,971
+fuel_efficiency/entities/position.py,sha256=-2pycuzBsvFvVr3IrU9qQhtdqpc9dhwdugRyQBurQD8,1812
+fuel_efficiency/entities/up_hill.py,sha256=5lCKjYtakVjRSRkQRTHtzxAkUfnlIOFN6B8UoYH15m8,970
+fuel_efficiency/entities/valley.py,sha256=Zu7GlsecCjmtUBM4QuYNVOcXeZu86S-Nze3h6pzbUS4,970
+fuel_efficiency-0.1.4.dist-info/METADATA,sha256=QRQ4znvQA59HpmMwoQKSGTKJNkaewbUy2zmHxbCKbH4,6090
+fuel_efficiency-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fuel_efficiency-0.1.4.dist-info/RECORD,,
