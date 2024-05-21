@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/jpeg/__init__.py
+src/jpegtran.egg-info/PKG-INFO
+src/jpegtran.egg-info/SOURCES.txt
+src/jpegtran.egg-info/dependency_links.txt
+src/jpegtran.egg-info/top_level.txt
