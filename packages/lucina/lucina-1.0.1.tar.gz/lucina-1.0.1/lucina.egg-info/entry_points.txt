@@ -1,0 +1,2 @@
+[console_scripts]
+lucina = lucina.__main__:main
