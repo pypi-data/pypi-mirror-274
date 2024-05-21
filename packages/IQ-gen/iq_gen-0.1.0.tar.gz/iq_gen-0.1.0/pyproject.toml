@@ -1,0 +1,38 @@
+[project]
+name = "IQ-gen"
+version = "0.1.0"
+description = "IQ-gen"
+authors = [
+    { name = "jnnchi" },
+    { name = "Max" },
+    { name = "gabe" },
+    { name = "Toyakki" },
+]
+readme = "README.md"
+dependencies = [
+    "flask",
+    "openai",
+    "dotenv",
+    "Flask",
+    "python-dotenv",
+]
+requires-python = ">=3.11"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+package-dir = "src"
+distribution = true
+
+[tool.pdm.source]
+include = [
+    "src/templates/*.html",
+    "src/static/*.css",
+]
