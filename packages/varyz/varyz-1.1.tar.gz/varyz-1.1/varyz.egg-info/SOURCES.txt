@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+varyz/__init__.py
+varyz/main.py
+varyz.egg-info/PKG-INFO
+varyz.egg-info/SOURCES.txt
+varyz.egg-info/dependency_links.txt
+varyz.egg-info/requires.txt
+varyz.egg-info/top_level.txt
