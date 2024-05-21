@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chitinoidz/__init__.py
+chitinoidz/main.py
+chitinoidz.egg-info/PKG-INFO
+chitinoidz.egg-info/SOURCES.txt
+chitinoidz.egg-info/dependency_links.txt
+chitinoidz.egg-info/requires.txt
+chitinoidz.egg-info/top_level.txt
