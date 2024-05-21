@@ -1,0 +1,8 @@
+pandas
+matplotlib
+
+[dev]
+pytest
+
+[docs]
+sphinx
