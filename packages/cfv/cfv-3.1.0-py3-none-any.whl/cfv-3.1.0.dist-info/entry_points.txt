@@ -1,0 +1,2 @@
+[console_scripts]
+cfv = cfv.common:main
