@@ -1,0 +1,14 @@
+v2share/__init__.py,sha256=an6AP0IiA6xvjaTuLiWYN3gKQPEFyTDyevkd6M32yAs,236
+v2share/_version.py,sha256=Yr64-aj-GSKP3boPRg4ZLJWVowm6ruVbpCfE9d2dby8,413
+v2share/clash.py,sha256=lZckOG9KUr0MKUTvbhaTEfERZNT50jJhTK3scMrlMh4,4049
+v2share/clashmeta.py,sha256=ykyluUM0nmZHclavPM68FaFkIhMoKjGpAUCPtzBjSo4,2843
+v2share/data.py,sha256=MxkDeU7twkX_nlhMLR8tS8QhF-hCP_niiLYvyBEipDs,4495
+v2share/singbox.py,sha256=sPeMdSgQ8gybp6rKEzDS0hj1GDsGcbs88f6exg7LJ0I,6752
+v2share/xray.py,sha256=gD4_HkN6tKl7iV76jvrdSI0Y1-kFpbTtqzkDiRKLIgY,11033
+v2share/templates/clash.yml,sha256=FA2Uv_zLOUWmTG-K2dD0H0-lqN1gXr1qdlZjqhPC66A,158
+v2share/templates/singbox.json,sha256=lumxTJ_Ifjh1UeR-W4PAG2a3oJsZ_qB0-aStuIOUhFE,2029
+v2share/templates/xray.json,sha256=NsT7xTx4IKRT9RAe2JhT4S54kZDF_CqW52Syqq98Skg,996
+v2share/templates/xray_mux.json,sha256=HmqW5EaAfmYJ1yZ0-UghXGRPa2-H8c4mXwL4HdjAFUk,96
+v2share-0.1.0b0.dist-info/METADATA,sha256=o7s39cR75P8DgIjiICxYQlRxSJUl6fEW-OKh4kvuUW4,501
+v2share-0.1.0b0.dist-info/WHEEL,sha256=uNdcs2TADwSd5pVaP0Z_kcjcvvTUklh2S7bxZMF8Uj0,87
+v2share-0.1.0b0.dist-info/RECORD,,
