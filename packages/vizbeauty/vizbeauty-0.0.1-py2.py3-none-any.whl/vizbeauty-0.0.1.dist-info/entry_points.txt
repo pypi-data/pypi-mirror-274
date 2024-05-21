@@ -1,0 +1,2 @@
+[console_scripts]
+vizbeauty = vizbeauty.cli:main
