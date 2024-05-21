@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pynenv
+Version: 0.1.2
+Summary: 
+Author: Nik Sheridan
+Author-email: niksheridan@duck.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Pynenv
+
+Richer featured environment variable grabber.
+
+## Install
+
+```bash
+pip install pynenv
+```
+
+## Example Useage
+
+```python
+from pynenv.environment import get_environment_variable
+
+my_env_var = get_environment_variable('SOME_VAR')
+```
+
+## Build
+
+* Adjust version in ```pyproject.toml```
+* Run ```poerty build```
+* Run ```poetry publish```
+
