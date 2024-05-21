@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: infolab-common-lib
+Version: 1.0.5
+Summary: Infolab Common Lib
+Project-URL: Homepage, https://zalogit2.zing.vn/infolab/infolab-common-lib
+Project-URL: BugTracker, https://zalogit2.zing.vn/infolab/infolab-common-lib/-/issues
+Author-email: anhnd15 <anhnd15@vng.com.vn>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.27.1
+Description-Content-Type: text/markdown
+
+# infolab-common-lib
+
+## Description
+The `infolab-common-lib` provides common functionalities for projects within the Infolab team.
+
+## Requirements
+
+- Python >= 3.8
+
+## Installation
+
+To install the library, you can use pip. Run the following command in your terminal:
+
+```bash
+pip install infolab-common-lib
