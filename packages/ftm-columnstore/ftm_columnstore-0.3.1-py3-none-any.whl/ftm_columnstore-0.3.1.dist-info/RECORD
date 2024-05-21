@@ -1,0 +1,12 @@
+ftm_columnstore/__init__.py,sha256=6Aq8kiO0hGWs1Gyjk73kWfqM-kXP_wkBfgycIeGgcAo,624
+ftm_columnstore/cli.py,sha256=24xvqOJiffTQqQr5zHoseyjd7vpoPqRYln20JfYNpys,2518
+ftm_columnstore/engine.py,sha256=yIJxI7LUbTddoafeTps48FmrXQ_cvgiJmRllttBuUWA,11168
+ftm_columnstore/phonetic.py,sha256=9NZ5eitsgZ1nlsSFgdLhbaHe3Z8uEuWlgOrF4-PzhXU,2271
+ftm_columnstore/settings.py,sha256=P7-jecTu3PENjCpbweYVapmiBqg6b6i5HRVciCyyiUI,380
+ftm_columnstore/statements.py,sha256=N5Tm-wdrq9e7-l1x8-6a3wkLOJmAkyDXd6eohspUxLo,2461
+ftm_columnstore/store.py,sha256=YhJILEqNzACae_8sPJYiQei7oBbmFnFS3oo8JuDNzXM,2880
+ftm_columnstore-0.3.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ftm_columnstore-0.3.1.dist-info/METADATA,sha256=eM6nVJYp1ZEwqhDpgB_yHqlA0lHwCPvlQNcnF7JHBdw,2968
+ftm_columnstore-0.3.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ftm_columnstore-0.3.1.dist-info/entry_points.txt,sha256=nboK-w8lfdOFNyfzHQXPlleaymH2WsaxqAmXFI6CHVs,49
+ftm_columnstore-0.3.1.dist-info/RECORD,,

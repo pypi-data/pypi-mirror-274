@@ -1,0 +1,3 @@
+[console_scripts]
+ftmcs=ftm_columnstore.cli:cli
+
