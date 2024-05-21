@@ -1,0 +1,11 @@
+spacy
+nltk
+scikit-learn
+pandas
+numpy
+requests
+urllib3
+python-magic
+beautifulsoup4
+oslili
+tqdm
