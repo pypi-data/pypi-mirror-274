@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+	logallrefupdates = false
+	symlinks = true
+	ignorecase = false
+	precomposeunicode = false
+[remote "github"]
+	url = git@github.com:tdaron/chadplotlib.git
+	fetch = +refs/heads/*:refs/remotes/github/*
