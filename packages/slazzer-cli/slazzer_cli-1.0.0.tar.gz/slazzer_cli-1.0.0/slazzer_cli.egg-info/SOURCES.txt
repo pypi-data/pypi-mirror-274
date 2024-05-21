@@ -1,0 +1,8 @@
+README.md
+setup.py
+slazzer_cli.egg-info/PKG-INFO
+slazzer_cli.egg-info/SOURCES.txt
+slazzer_cli.egg-info/dependency_links.txt
+slazzer_cli.egg-info/entry_points.txt
+slazzer_cli.egg-info/requires.txt
+slazzer_cli.egg-info/top_level.txt
