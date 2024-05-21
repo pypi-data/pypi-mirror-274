@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pms-furiosa-processor"
+version = "0.2.0"
+description = "package for pms furiosa(NPU) processor"
+authors = ["HyeongSeok Kim <tiryul@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+furiosa-sdk = "0.9.0"
+pms-inference-engine = "^1.0.2"
+albumentations = "^1.4.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+tqdm = "^4.66.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
