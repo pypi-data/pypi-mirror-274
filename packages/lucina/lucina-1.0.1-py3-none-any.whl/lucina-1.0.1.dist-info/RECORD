@@ -1,0 +1,11 @@
+lucina/__init__.py,sha256=E6q0bQu9tYPZuoFGxVuGVGQtq8unm3FSoRK2lzhUwD0,161
+lucina/__main__.py,sha256=a8XdIOfqAZHie1cw2woax5aLqPWRvfYrlK0MNwAj2dM,1221
+lucina/cell.py,sha256=Zw3VpaLJCjfAuqOjflQ67n4aUp3Sm0dmMa0phKF29sw,686
+lucina/format.py,sha256=Y2HIuOZB2C1HBLArQoYY_tQKTWO73HShR4sxXDdRLNs,1547
+lucina/parser.py,sha256=4Rf0-4MUKZgzsCa646rg17-eO8PuwezQiD_F0wO1jgM,2489
+lucina/utils.py,sha256=Hal2oxTpKOKn9OqR5kIys3NXgL9O3X7dAzMlzJ5_Nrw,112
+lucina-1.0.1.dist-info/METADATA,sha256=rUl_OoGItR4My9KOzEmwZPKC4sCNInvIhLbBxMX2BBw,1735
+lucina-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+lucina-1.0.1.dist-info/entry_points.txt,sha256=ppG7gW2nK6JN85jjbQkhDuZS8W4_MHjvD4Fac5qb-ls,48
+lucina-1.0.1.dist-info/top_level.txt,sha256=sK3f_CO-75Z6AHV1zY8OTgVA9XQDJJYTcFZf0JRCVCc,7
+lucina-1.0.1.dist-info/RECORD,,
