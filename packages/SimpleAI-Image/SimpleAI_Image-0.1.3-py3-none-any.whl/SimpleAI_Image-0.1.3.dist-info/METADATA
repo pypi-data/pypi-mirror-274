@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: SimpleAI-Image
+Version: 0.1.3
+Summary: A package for processing and storing image vectors in PostgreSQL
+Home-page: https://github.com/Tobias2408/bachelorprojekt
+Author: Tobias Poulsen
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: sqlalchemy (==2.0.30)
+Requires-Dist: matplotlib (==3.6.3)
+Requires-Dist: tensorflow-macos (==2.16.1)
+Requires-Dist: tensorflow-datasets (==4.9.2)
+Requires-Dist: tensorflow-metal (==0.8.0)
+Requires-Dist: scikit-learn (==1.2.2)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: keras (==3.0.0)
+Requires-Dist: tensorboard (==2.16.0)
+
+# SimpleAI_Image
+
+A package for processing and storing image vectors in PostgreSQL.
+
+## Installation
+
+You can install the package via pip:
+
+```sh
+pip install SimpleAI_Image
