@@ -1,0 +1,11 @@
+basedb/__init__.py,sha256=n5UDvamxgcLTEgiyEm7YJ1f-pP-4HIqVq_-tmbm-qpg,916
+basedb/_version.py,sha256=pzShTmESM-5FMm5QD9BQxtLcs8dS3tIY17WJZlF9dSQ,413
+basedb/column.py,sha256=jCot4UfH-8zyO3yEmEYFlmczX2pdQFtHBRMliv7dlCE,7203
+basedb/database.py,sha256=CdoEhF3X-yNIQN_eQEGkOTU1df1J484OrlcvOoIcHc0,4896
+basedb/row.py,sha256=ecH5bhlarUdP2wpEXytThdT-EQFNLHuf7EZnXrZHFAI,9306
+basedb/table.py,sha256=aDuSnyTAM0F_fOIwPDPz75WtdehCkb2uIdcwJOUtSjA,7913
+ja_basedb-0.0.15.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+ja_basedb-0.0.15.dist-info/METADATA,sha256=kNXceDEyg_CnextqjEiC0vg1hjDRECBO75Q24PqA6GM,1140
+ja_basedb-0.0.15.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ja_basedb-0.0.15.dist-info/top_level.txt,sha256=atEwDgtz4mxkS-23dVBejWsFQqgDd6ECzVMl0e1tUaE,7
+ja_basedb-0.0.15.dist-info/RECORD,,
