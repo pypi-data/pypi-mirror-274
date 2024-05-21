@@ -1,0 +1,2 @@
+[console_scripts]
+energyplus-service = energyplus_service.cli:energyplus_service
