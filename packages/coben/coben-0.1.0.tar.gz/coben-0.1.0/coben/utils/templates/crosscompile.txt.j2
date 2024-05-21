@@ -1,0 +1,27 @@
+[binaries]
+c = '/usr/bin/clang'
+cpp = '/usr/bin/clang++'
+ld = '/usr/bin/ld.gold'
+ar = '/usr/bin/llvm-ar'
+objcopy = '/usr/bin/llvm-objcopy'
+strip = '/usr/bin/llvm-strip'
+terminal= 'x-terminal-emulator'
+
+[host_machine]
+system = 'Linux'
+cpu_family = 'x86_64'
+cpu = 'amd64'
+endian = 'little'
+
+[properties]
+sizeof_int = 4
+sizeof_wchar_t = 4
+sizeof_void* = 4
+
+alignment_char = 4
+alignment_void* = 4
+alignment_double = 4
+
+[built-in options]
+c_args = ['-O0'] + ['-g']
+cpp_args = c_args + ['-D_GLIBCXX_DEBUG']
