@@ -1,0 +1,4 @@
+loadscompare
+loadskernel
+modelviewer
+tests
