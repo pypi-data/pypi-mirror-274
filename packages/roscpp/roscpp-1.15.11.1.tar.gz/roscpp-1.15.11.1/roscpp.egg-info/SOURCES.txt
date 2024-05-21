@@ -1,0 +1,8 @@
+README.md
+setup.py
+roscpp/__init__.py
+roscpp/my_module.py
+roscpp.egg-info/PKG-INFO
+roscpp.egg-info/SOURCES.txt
+roscpp.egg-info/dependency_links.txt
+roscpp.egg-info/top_level.txt
