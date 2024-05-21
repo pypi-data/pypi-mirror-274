@@ -1,0 +1,10 @@
+README.md
+setup.py
+crewai_logger_patch.egg-info/PKG-INFO
+crewai_logger_patch.egg-info/SOURCES.txt
+crewai_logger_patch.egg-info/dependency_links.txt
+crewai_logger_patch.egg-info/requires.txt
+crewai_logger_patch.egg-info/top_level.txt
+logger_patch/__init__.py
+logger_patch/logger_patch.py
+tests/tests.py
