@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: d2spy
+Version: 0.0.1
+Summary: Python package for interacting with a Data to Science instance.
+License: MIT
+Keywords: python,data to science,uas
+Author: Ben Hancock
+Author-email: hancocb@purdue.edu
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Building with poetry
+
+Run the following from the root directory to build the source and wheels archives: `poetry build`
+
+This will create a `dist` directory containing a `.tar.gz` archive of the source code and a `.whl` file.
+
+# Installing d2spy package with pip
+
+The d2spy package can be installed with pip using the `.whl` in the build's `dist` directory. Inside a Python virtual environment, run `python -m pip install d2spy_pkg-VERSION-py3-none-any.whl` to install d2spy.
+
