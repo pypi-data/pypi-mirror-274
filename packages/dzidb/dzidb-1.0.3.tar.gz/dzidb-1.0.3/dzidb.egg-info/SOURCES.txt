@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+dzidb.py
+setup.cfg
+setup.py
+dzidb.egg-info/PKG-INFO
+dzidb.egg-info/SOURCES.txt
+dzidb.egg-info/dependency_links.txt
+dzidb.egg-info/entry_points.txt
+dzidb.egg-info/top_level.txt
