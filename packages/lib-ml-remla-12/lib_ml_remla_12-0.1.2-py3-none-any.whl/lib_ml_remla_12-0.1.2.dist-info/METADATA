@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lib-ml-remla-12
+Version: 0.1.2
+Home-page: https://github.com/remla24-team12/lib_ml
+Requires-Dist: keras-preprocessing ==1.1.2
+Requires-Dist: keras ==3.2.1
+Requires-Dist: scikit-learn ==1.4.2
+Requires-Dist: pandas ==2.2.2
+
+# lib-ml
+To publish a new version run (<version-name> should look like: "v0.1.0". Increase the version based on previous ones):
+git tag -a <version-name> -m "Release version <version-name>"
+git push origin <version-name>
