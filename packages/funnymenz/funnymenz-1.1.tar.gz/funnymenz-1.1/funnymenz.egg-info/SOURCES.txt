@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+funnymenz/__init__.py
+funnymenz/main.py
+funnymenz.egg-info/PKG-INFO
+funnymenz.egg-info/SOURCES.txt
+funnymenz.egg-info/dependency_links.txt
+funnymenz.egg-info/requires.txt
+funnymenz.egg-info/top_level.txt
