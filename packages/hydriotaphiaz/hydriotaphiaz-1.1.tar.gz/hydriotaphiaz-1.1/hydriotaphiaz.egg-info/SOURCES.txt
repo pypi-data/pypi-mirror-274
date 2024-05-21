@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hydriotaphiaz/__init__.py
+hydriotaphiaz/main.py
+hydriotaphiaz.egg-info/PKG-INFO
+hydriotaphiaz.egg-info/SOURCES.txt
+hydriotaphiaz.egg-info/dependency_links.txt
+hydriotaphiaz.egg-info/requires.txt
+hydriotaphiaz.egg-info/top_level.txt
