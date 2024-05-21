@@ -1,0 +1,2 @@
+[console_scripts]
+gene4mVCF = gene4mvcf.gene4mvcf:main
