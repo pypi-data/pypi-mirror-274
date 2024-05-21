@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: erlc-rbx
+Version: 0.1.0
+Summary: a better (and open-source) wrapper for the ERLC api.
+Home-page: https://github.com/thatgurkangurk/gurkz.me
+Author: Gurkan
+Author-email: hello@gurkz.me
+License: GPL 3.0
+Project-URL: Source, https://github.com/thatgurkangurk/erlc.py
+Project-URL: Bug Tracker, https://github.com/thatgurkangurk/erlc.py/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10,<3.14
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.32
+
+# erlc-rbx
+
+a (better and open-source) python wrapper for the ERLC api.
+
+current feature list:
+- [X] raw get requests
+- [X] raw post requests
+- [ ] command sending
+- [ ] higher level user management (built-in functions for kicking,banning etc)
+- [ ] queue getter
+- [ ] show server information
+- [ ] kill logs
+- [ ] command logs
+- [ ] mod calls
+- [ ] show banned players
+- [ ] show current vehicles
+- [ ] join logs
