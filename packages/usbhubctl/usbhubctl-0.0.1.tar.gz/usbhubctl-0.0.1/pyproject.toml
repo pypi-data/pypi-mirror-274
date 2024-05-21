@@ -1,0 +1,149 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "usbhubctl"
+dynamic = []
+description = "Allows to switch power on usb hubs"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Hans Märki", email = "buhtig.hans.maerki@ergoinfo.ch" },
+]
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = []
+version = "0.0.1"
+
+[project.urls]
+Homepage = "https://github.com/octoprobe/usbhubctl"
+Documentation = "https://github.com/octoprobe/usbhubctl"
+Repository = "https://github.com/octoprobe/usbhubctl"
+
+[project.optional-dependencies]
+standard = []
+all = []
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "file"
+path = "usbhubctl/__init__.py"
+
+[tool.pdm.build]
+source-includes = [
+    "tests/",
+    "requirements*.txt",
+]
+
+[tool.mypy]
+strict = true
+overrides = [
+    { module = "usbhubctl.tests.*", ignore_missing_imports = true, check_untyped_defs = true },
+]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = [
+    "--strict-config",
+    "--strict-markers",
+    "--ignore=docs",
+]
+markers = [
+    "live: Test on real usb hubs",
+]
+testpaths = "tests"
+xfail_strict = true
+junit_family = "xunit2"
+filterwarnings = [
+    "error",
+    "ignore:The loop argument is deprecated since Python 3\\.8, and scheduled for removal in Python 3\\.10:DeprecationWarning:asyncio",
+    "ignore:starlette.middleware.wsgi is deprecated and will be removed in a future release\\..*:DeprecationWarning:starlette",
+    "ignore:'cgi' is deprecated:DeprecationWarning",
+    "ignore:'crypt' is deprecated and slated for removal in Python 3.13:DeprecationWarning",
+    "ignore::pytest.PytestDeprecationWarning:pytest_cov",
+    "ignore:datetime\\.datetime\\.utcfromtimestamp\\(\\) is deprecated and scheduled for removal in a future version\\..*:DeprecationWarning:sqlalchemy",
+    "ignore:datetime\\.datetime\\.utcnow\\(\\) is deprecated and scheduled for removal in a future version\\..*:DeprecationWarning:jose",
+]
+
+[tool.coverage.run]
+parallel = true
+source = [
+    "tests",
+    "usbhubctl",
+]
+context = "${CONTEXT}"
+omit = [
+    "docs_src/response_model/tutorial003_04.py",
+    "docs_src/response_model/tutorial003_04_py310.py",
+]
+
+[tool.ruff]
+target-version = "py312"
+src = [
+    "usbhubctl",
+    "tests",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "F",
+    "I001",
+    "B",
+    "C4",
+    "UP",
+]
+ignore = [
+    "E501",
+    "B008",
+    "C901",
+    "W191",
+    "D",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"usbhubctl/__init__.py" = [
+    "F401",
+    "I001",
+]
+"usbhubctl/known_hubs/__init__.py" = [
+    "F401",
+    "I001",
+]
+
+[tool.ruff.lint.isort]
+case-sensitive = true
+combine-as-imports = true
+order-by-type = false
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder",
+    "testing",
+]
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = "    missing-module-docstring,\n    missing-class-docstring,\n    missing-function-docstring,\n    logging-fstring-interpolation\n"
