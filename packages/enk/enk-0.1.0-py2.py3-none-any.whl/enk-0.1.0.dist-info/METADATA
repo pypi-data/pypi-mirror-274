@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: enk
+Version: 0.1.0
+Summary: Various Python utilities
+Home-page: https://github.com/pfmoore/enk
+Author: Paul Moore
+Author-email: p.f.moore@gmail.com
+License: MIT
+Keywords: utilities development
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Dist: pyyaml
+
+Various Python utilities
+========================
+
+This is my personal utilities package.
+
+This will contain, over time, an assortment of utilities that I find useful in
+various projects.
+
+There's a story behind the package name, but it's not actually that interesting
+:-)
