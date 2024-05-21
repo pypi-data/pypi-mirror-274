@@ -1,0 +1,17 @@
+pysect/__init__.py,sha256=1VMebCOSExtvN2t_vefLLPRq3q0sr4QNvkF6YMbexWg,173
+pysect/main.py,sha256=KhK6WR4RVv4QEJBx8vOaDb47ZgR4PcOljTzbQjwCHuQ,675
+pysect/primitives/coord.py,sha256=qkI4UQNzQmr99pDIBOmx8eEcygdzoQzuEKRNT9Xci8k,294
+pysect/sect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysect/sect/config.py,sha256=0grF5TNLmUNEWaef-RxU-JsKuOM11YRBEgMkyYHDbkI,60
+pysect/sect/sect.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysect/sect/slice.py,sha256=XxrLcpEvrU-qQGygyvt8TJXTAcZ_3d8giQmw9afMgq8,470
+pysect/sect/primitives/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysect/sect/primitives/mesh.py,sha256=Agakm-Ya4myBvsun83tR9-3cPpONOJCV_FgcdDDa-o0,1947
+pysect/sect/primitives/stl.py,sha256=Ct9S0dM74aSV56ua8nx11ervPytTSYNP9jz2Ku55_Jg,738
+pysect/sect/serial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysect/sect/serial/stl.py,sha256=6tWKdlc1hRYdlD8qi2zf0Rse-n02Y8aMN2Ip73PzrD0,2255
+pysect-0.0.2.dist-info/LICENSE,sha256=PeREYzLu4oW5c8R_9r8uFZBJYVsc2dIvcZpk8gyPPKc,1051
+pysect-0.0.2.dist-info/METADATA,sha256=UOoX4U2Sa5NWobiq-wZl9P6I4W6mMblvmw5gEK_FyDI,1587
+pysect-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pysect-0.0.2.dist-info/top_level.txt,sha256=Kn0qznMXnJdTOQwqY6rxhMjFEwcBeHl85C2OM3jlBCU,7
+pysect-0.0.2.dist-info/RECORD,,
