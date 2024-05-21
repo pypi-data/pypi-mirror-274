@@ -1,0 +1,2 @@
+[console_scripts]
+resumeparser = resume_parser.main:main
