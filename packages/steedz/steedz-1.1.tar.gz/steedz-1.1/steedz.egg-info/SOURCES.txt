@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+steedz/__init__.py
+steedz/main.py
+steedz.egg-info/PKG-INFO
+steedz.egg-info/SOURCES.txt
+steedz.egg-info/dependency_links.txt
+steedz.egg-info/requires.txt
+steedz.egg-info/top_level.txt
