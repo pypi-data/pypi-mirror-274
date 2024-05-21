@@ -1,0 +1,7 @@
+pgml-1.0.3.dist-info/METADATA,sha256=yE_N6TuRDL6T15bpAS4b59vZ2eMweR2dXSPufkpPe9A,13009
+pgml-1.0.3.dist-info/WHEEL,sha256=0CcHee4CufHNqskoVqu9XUT7WPeWhoGKAe2CwPZ8qoc,108
+pgml/__main__.py,sha256=kzo7k5UBxBmhYoay_ugl_29xUX13o0LlSD-TXdJCuc4,92
+pgml/__init__.py,sha256=zElPWOHq9SUKFjdYwafaJ1h7pvI-OsM5tW_qt-JffqY,101
+pgml/pgml.pyi,sha256=oVTg8jGgNO_LJtsJT8D-IROC3IQCWnMJ_OLwB4sQO-U,5225
+pgml/pgml.cpython-310-x86_64-linux-gnu.so,sha256=eK6mc0p0r35NeDb0pH1MlGTADViR_dg1AFqYRHB1tqg,23759504
+pgml-1.0.3.dist-info/RECORD,,
