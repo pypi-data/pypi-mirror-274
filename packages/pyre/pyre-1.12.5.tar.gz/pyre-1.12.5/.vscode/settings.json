@@ -1,0 +1,14 @@
+{
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "*.def": "makefile",
+        "*.h": "cpp",
+        "*.icc": "cpp",
+        "*.js": "javascriptreact",
+        "*.mm": "makefile",
+        "type_traits": "cpp",
+        "compare": "cpp",
+        "limits": "cpp"
+    },
+    "python.analysis.typeCheckingMode": "basic"
+}
