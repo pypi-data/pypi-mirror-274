@@ -1,0 +1,11 @@
+README.md
+setup.py
+ha_s3_tool.egg-info/PKG-INFO
+ha_s3_tool.egg-info/SOURCES.txt
+ha_s3_tool.egg-info/dependency_links.txt
+ha_s3_tool.egg-info/entry_points.txt
+ha_s3_tool.egg-info/requires.txt
+ha_s3_tool.egg-info/top_level.txt
+s3_tool/__init__.py
+s3_tool/s3_tool.py
+tests/test_s3utils.py
