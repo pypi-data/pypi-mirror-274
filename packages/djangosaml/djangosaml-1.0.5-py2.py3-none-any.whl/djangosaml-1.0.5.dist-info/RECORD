@@ -1,0 +1,11 @@
+djangosaml/__init__.py,sha256=gHEKa8aZIIISAI3nbVdCUgvGBVgnTA7vyJy6PY_QxZc,24
+djangosaml/urls.py,sha256=ZDzdlZBL-mi1sncaUFDVlny1mcFo6ftg76JibISS_RI,365
+djangosaml/views.py,sha256=-xF-gI3ik7js91nZuIDwlE-oKM6x_ZIdIrJRErptCRI,9547
+djangosaml/templates/djangosaml/denied.html,sha256=Zso0qgCCKiBbsiDuy4jzMPa-lTvQrxS7yedSMOdHOIA,369
+djangosaml/templates/djangosaml/signout.html,sha256=nKiy8LhA9cu_LFm8AZHHpccVPr0ZhbD7U81tWWHBQss,308
+djangosaml-1.0.5.dist-info/AUTHORS.rst,sha256=SN1jV8QdPX3Ts-_u92_XqcDisIvMHKkBBlin0cuaIyg,745
+djangosaml-1.0.5.dist-info/LICENSE,sha256=1vmox8bL9_RtY6ev3puuxeiXm2n-L7DiPpDqrIm2alc,552
+djangosaml-1.0.5.dist-info/METADATA,sha256=7-IRAaiLrl_fULqXEswyYaJsKTAjSkMSoPViRSb6XcA,2712
+djangosaml-1.0.5.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+djangosaml-1.0.5.dist-info/top_level.txt,sha256=Cd11Y7yhyCDH0-poJBXVjUa8hZkvhwdEtCftbNgL1S8,11
+djangosaml-1.0.5.dist-info/RECORD,,
