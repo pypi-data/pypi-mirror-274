@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "t":{
+      "steps": [
+        {"create_folder": ["teste"]},
+        {"teste": ["args[1]"]}
+      ]
+    }
+  }
+}
