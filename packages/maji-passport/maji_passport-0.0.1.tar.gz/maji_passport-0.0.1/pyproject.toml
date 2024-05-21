@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "maji_passport"
+version = "0.0.1"
+authors = [
+  { name="Viktor Ivanov", email="viktorteodorihivanov@gmail.com" },
+]
+description = "Maji Passport With custom authorisation"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/argo-media/argo-media-backend-ecosystem/maji-passport-library"
+Issues = "https://gitlab.com/argo-media/argo-media-backend-ecosystem/maji-passport-library/issues"
