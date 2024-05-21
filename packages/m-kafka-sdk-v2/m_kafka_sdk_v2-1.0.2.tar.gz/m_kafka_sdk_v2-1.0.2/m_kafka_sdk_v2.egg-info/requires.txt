@@ -1,0 +1,4 @@
+requests>=2.25.1
+confluent-kafka>=1.7.0
+redisbloom<=0.4.0
+m-singleton>=0.3
