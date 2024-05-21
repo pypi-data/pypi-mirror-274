@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: model3501api
+Version: 1.0.0
+Summary: API for MCCI Type-C SuperMUTT Model3501
+Home-page: https://github.com/mcci-usb/cricketlib
+Author: MCCI Corporation
+Author-email: vinayn@mcci.com
+Requires-Dist: pyusb
+
+
+MCCI’s Model 3501 Type-C SuperMUTT allows for extensive automatic testing of USB hosts that implement support for USB 3.1 gen1, USB-C™ Power Delivery, and DisplayPort alternate mode, based on the Microsoft SuperMutt.
