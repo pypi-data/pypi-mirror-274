@@ -1,0 +1,37 @@
+@startuml
+skinparam backgroundColor #EEF2F7
+skinparam style strictuml
+component "{{ component_name }}" #LightBlue {
+
+    database T_component_name #LightYellow [
+    T_component_name
+    ===
+    foo <<int>>
+    ---
+    baz <<int>>
+    ]
+
+    portin "Input" #LightGreen
+    portout "Output" #LightGreen
+
+    "T_component_name" ..> Output : data >
+    Input ..> "T_component_name"
+    control "Processing" #Pink
+
+    "T_component_name" <=> "Processing" : onChange >
+
+    rectangle "private functions" #LightGrey {
+    }
+}
+@enduml
+
+@startuml "a_private_function"
+|#LightYellow|Data|
+partition "super_function" {
+    :some_variable;
+    |#Pink|Processing|
+    :function_block;
+    |#LightYellow|Data|
+}
+:some_variable;
+@enduml

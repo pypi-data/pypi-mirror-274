@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: coben
+Version: 0.1.0
+Summary: A tool to manage and streamline software project workflows.
+Home-page: https://github.com/dingste/coben
+Author: Dieter Steuten
+Author-email: dieter@dingste.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mkdocs
+Requires-Dist: plantuml
+Requires-Dist: clang
+Requires-Dist: psutil
+Requires-Dist: mkdocs-plantuml
+Requires-Dist: plantuml-markdown
+Requires-Dist: mkdocs-include-markdown-plugin
+Requires-Dist: mkdocs-extra-sass-plugin
+Requires-Dist: mkdocs-git-revision-date-localized-plugin
+Requires-Dist: mkdocs-material
+Requires-Dist: mkdocs-material-extensions
+Requires-Dist: mkdocs-with-pdf
+Requires-Dist: weasyprint
+Requires-Dist: regex
+Requires-Dist: libsass
+Requires-Dist: jinja2
+Requires-Dist: mkdocs-puml
+Requires-Dist: ruamel.yaml
+Requires-Dist: click
+
+# coben
