@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+segline/__init__.py
+segline/image_processor
+segline/run.py
+segline.egg-info/PKG-INFO
+segline.egg-info/SOURCES.txt
+segline.egg-info/dependency_links.txt
+segline.egg-info/requires.txt
+segline.egg-info/top_level.txt
