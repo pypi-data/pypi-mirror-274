@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "almasql"
+version = "0.1.1"
+description = ""
+authors = ["aturkenov"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlalchemy = "^2.0.30"
+jinja2 = "^3.1.4"
+greenlet = "^3.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
