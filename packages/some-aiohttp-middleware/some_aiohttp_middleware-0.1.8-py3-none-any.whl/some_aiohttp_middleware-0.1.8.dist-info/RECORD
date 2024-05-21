@@ -1,0 +1,10 @@
+some_aiohttp_middleware/__init__.py,sha256=0H_R9h41tZRxWcwNd1oR42xYyUUt6bJk5v5uXijA1CA,229
+some_aiohttp_middleware/admin_auth.py,sha256=gDNVfBO3s8HlFulLcWaJGJM2JyxXXoYtoqkUVWvVUOQ,1755
+some_aiohttp_middleware/base.py,sha256=_nb8n97yD9XFz0BDtDXHz25hKsXDrWUEeDDCoAdQ8uc,4854
+some_aiohttp_middleware/basic_auth.py,sha256=MlqUY_vJn0OCy0Etu-saohnHPm_XhCP4x7CSogyqkSY,2370
+some_aiohttp_middleware/db.py,sha256=WxuHQGEf16B3nR5_m_KAEuxtRR5VHLoh67JUVRbMtFg,2760
+some_aiohttp_middleware/s3.py,sha256=2MRvij1ZrUB7pCo2J87LrGcssmoR4-Ey-jwdJcCM4JA,2441
+some_aiohttp_middleware-0.1.8.dist-info/LICENSE,sha256=mzm5_9yeoJqjcnLgS_mFgB9wM-a1Fa6phh18rqLFM9A,1065
+some_aiohttp_middleware-0.1.8.dist-info/METADATA,sha256=HC9df4qY70BfEwtrFqTsebFQw6G4-mxCMZ5lqWiYdvo,1649
+some_aiohttp_middleware-0.1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+some_aiohttp_middleware-0.1.8.dist-info/RECORD,,
