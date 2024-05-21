@@ -1,0 +1,92 @@
+[tool.poetry]
+name = "fortpyx"
+version = "0.0.1a1"
+description = "Fully typed Fortnox SDK for Fortnox API v3."
+authors = ["Robin Henriksson Törnström <robin.henriksson@nortic.se>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "2.31.0"
+types-requests = "2.31.0.20240406"
+pydantic = "2.7.1"
+
+[tool.poetry.group.dev.dependencies]
+jinja2 = "3.1.4"
+datamodel-code-generator = { extras = ["http"], version = "0.25.6" }
+pyyaml = "6.0.1"
+black = "24.4.2"
+responses = "0.25.0"
+pytest = "8.2.0"
+pytest-mock = "3.14.0"
+coverage = "7.5.1"
+mypy = "1.10.0"
+ruff = "0.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = true
+
+
+[tool.ruff]
+exclude = [
+    "tests",
+    ".venv",
+    "venv"
+]
+lint.select = [
+    "E",
+    "F",
+    "B",
+    "Q",
+    "T20",
+    "SIM",
+    "INT",
+    "G",
+    "PL",
+    "RET",
+    "SLF",
+    "TID",
+    "UP",
+    "PIE",
+    "ERA",
+    "TRY",
+    "PERF",
+    "RUF",
+    "C90",
+    "PTH",
+]
+lint.ignore = [
+    "PLR0915",
+    "RUF002",
+    "PLR0913",
+    "B008",
+    "B019",
+    "UP034",
+    "UP007",
+    "UP037",
+    "TRY300",
+    "D104",
+    "D212",
+    "D205",
+    "D200",
+    "D107",
+    "D203",
+    "E501",
+    "PLR0911",
+    "RUF012",
+    "F405",
+]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "double"
+docstring-quotes = "double"
+multiline-quotes = "double"
+avoid-escape = true
+
+[tool.ruff.lint.mccabe]
+max-complexity = 8

@@ -1,0 +1,276 @@
+Metadata-Version: 2.1
+Name: fortpyx
+Version: 0.0.1a1
+Summary: Fully typed Fortnox SDK for Fortnox API v3.
+License: MIT
+Author: Robin Henriksson Törnström
+Author-email: robin.henriksson@nortic.se
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (==2.7.1)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: types-requests (==2.31.0.20240406)
+Description-Content-Type: text/markdown
+
+# fortpyx
+
+**fortpyx** is a complete, typed Fortnox API client, in part auto generated from the official Fortnox API OpenAPI specification using a custom tool, for Python 3.9+ with models
+built on [Pydantic 2](https://github.com/pydantic/pydantic) and HTTP requests powered by
+[requests](https://github.com/psf/requests).
+
+## 🔍️ Rationale
+
+There were no other good options for connecting to the Fortnox API using their current OAuth auth scheme and Python, and
+using the Fortnox API directly can be a bit confusing. The ones that existed were either incomplete, or used the
+old auth scheme.
+
+This is a shame, since Fortnox is used by a lot of organizations. [Nortic](https://nortic.se) needed an integration ourselves,
+so we decided to write a Python Fortnox client and open source it.
+
+## ✨ Features
+
+✅ **All** endpoints of the Fortnox API are supported.
+
+✅ Auto-renewal of access and refresh tokens, including callback functions before and after token renewal to enable token storage in env variables, secret stores etc.
+
+✅ Typed [Pydantic 2](https://github.com/pydantic/pydantic) models for both request and response bodies, including model validation (however this is limited due to the Fortnox API spec not being very strict - sorry!)
+
+✅ Structured to very easily find the correct method to use by looking at the Fortnox API docs.
+
+✅ Support for pagination of `GET` operations returning multiple pages. Auto comsumption of all available pages available, if so desired.
+
+✅ Includes a tool to quickly get access and refresh tokens during the dev phase of integration towards Fortnox.
+
+✅ Context manager support for keeping connections alive between requests.
+
+✅ Customize the underlying [requests](https://github.com/psf/requests) HTTP client using custom [transport adapters](https://requests.readthedocs.io/en/latest/user/advanced/#transport-adapters). 
+
+## 🎉 Getting started with Fortnox
+
+Fortnox has [a good article](https://www.fortnox.se/developer/checklist) on the journey of integrating towards them. 
+This section describes `fortpyx` specific steps, to hide all OAuth stuff to make the journey a lot smoother.
+
+### Steps 1, 2 and 3 - Creating your integration
+
+Follow [the Fortnox guide](https://www.fortnox.se/developer/checklist). These steps involve registering as a Fortnox integration developer
+and creating your integration, which is ouf of scope for `fortpyx`.
+
+When you are done, you should have a `🆔 client ID` and a `🔑  client secret`.
+
+### Step 4 - Get an `✉️ authorization code`
+
+This step will render an authorization URL. This URL unfortunately needs to be followed by a human using
+a web browser, so there is always at least one human interaction necessary, even when your integration is strictly machine-to-machine.
+
+The generated URL takes the user to Fortnox, where logging in is necessary. Make sure that the user logging in has access to the required scopes, and that the integration has access to those scopes (this is configured in step 2).
+
+The authorization code will be sent by `HTTP GET` param `?code={Authorization-Code}` to the URL specified in the `redirect_uri` param after a successful login.
+The code is valid for 10 minutes and can only be used once.
+
+```python
+from fortpyx import Fortpyx
+
+fortpyx = Fortpyx(client_id="<🆔 client ID>")
+
+url = fortpyx.get_authorization_url(
+    redirect_uri="https://example.com/fortnox_callback",
+    scopes=("profile", "invoice", "customer"),
+)
+```
+
+**Note** that if you just want to quickly get tokens, you can use the handy `TokenCallbackServer` tool included in `fortpyx`.
+This will start a temporary webserver on your localhost, generate an authorization URL, open it in your default browser, let you sign in,
+receive an authorization code, exchange it for access and refresh tokens and return them to you.
+
+```python
+from fortpyx.util.get_tokens import TokenCallbackServer
+
+access_token, refresh_token = TokenCallbackServer(
+    client_id="🆔 client id",
+    client_secret="🔑 client secret",
+).get_tokens(("profile", "article", "invoice", "customer"))
+```
+
+### Step 5 - Exchange `✉️ authorization code` for `🪙 tokens`
+
+In this step, the authorization code received in step 4 is exchanged for a pair of `🪙 tokens` (access token + refresh token).
+
+```python
+from fortpyx import Fortpyx
+
+fortpyx = Fortpyx(
+    client_id="🆔 client ID",
+    client_secret="🔑 client secret",
+)
+
+# The tokens are also set internally in the fortpyx instance, so you may
+# continue using the same instance to make further requests.
+access_token, refresh_token = fortpyx.get_tokens(
+    authorization_code="✉️ authorization code",
+    
+    # NOTE that the redirect_uri must match the one used in step 4.
+    # This time, no request is actually sent to it, though.
+    redirect_uri="https://example.com/fortnox_callback",
+)
+```
+
+### Step 6 - Making requests
+
+Now that we've got the tricky stuff out of the way, let's make some actual requests towards the Fortnox API!
+
+```python
+from fortpyx import Fortpyx
+from fortpyx.model import FortnoxMeWrap
+
+fortpyx = Fortpyx(
+    access_token="🪙 access token",
+    refresh_token="🪙 refresh token",
+    client_id="🆔 client ID",
+    client_secret="🔑 client secret",
+)
+
+me: FortnoxMeWrap = fortpyx.fortnox.me.retrieve_user_information()
+```
+
+### Step 7 - Publishing your integration
+
+This is out of scope for `fortpyx`, so just follow [the Fortnox guide](https://www.fortnox.se/developer/checklist).
+
+## 💻 Usage
+
+### Installation
+
+```shell
+pip install fortpyx
+```
+
+### Finding which methods to use
+
+Finding which endpoint corresponds to a certain API endpoint is very easy, since endpoints are grouped
+according to the OpenAPI specification, which is also used to generete the [Fortnox API documentation](https://apps.fortnox.se/apidocs).
+
+An example:
+
+| API docs                        | fortpyx                          |
+|---------------------------------|----------------------------------|
+| ![API docs](images/apidocs.png) | ![ARticles](images/fortpyx.png) | 
+
+
+
+### Examples
+
+Some examples on how to use the Fortpyx client follow below.
+
+**PLEASE NOTE** that tokens and client secrets should be stored securely. They are input directly as 
+strings in the examples for the sake of brevity.
+
+
+#### Creating a Fortpyx client
+
+```python
+from fortpyx import Fortpyx
+from typing import Callable
+
+def before_token_refresh(access_token: str, refresh_token: str, update_tokens: Callable[[str, str], None]):
+    """
+    This is executed BEFORE token refresh.
+    
+    Access/refresh tokens are provided here, as well as a function for setting new tokens before 
+    refresh is tried. This can be handy for fetching tokens from a secrets store to ensure
+    that tokens are fresh and not updated by someone else in the store.
+    """
+
+    update_tokens(
+        "Some new access token",
+        "Some new refresh token",
+    )
+
+def on_token_refresh(access_token: str, refresh_token: str):
+    """
+    This is executed AFTER a successful token refresh.
+    
+    The newly refreshed tokens are provided here. This can be used to store the new tokens somewhere,
+    like a secrets store or environment variables.
+    """
+    print(access_token)
+    print(refresh_token)
+    
+fortpyx = Fortpyx(
+    access_token="Some access token",
+    refresh_token="Some refresh token",
+    client_id="Some client ID",
+    client_secret="Some client secret",
+    
+    # Default None
+    before_token_refresh=before_token_refresh,
+    
+    # Default None
+    on_token_refresh=on_token_refresh,
+    
+    # Default 500
+    page_size=50,
+    
+    # Default False
+    auto_fetch_all_pages=False,
+)
+```
+
+
+#### Generating an authorization URL 
+
+```python
+from fortpyx import Fortpyx
+
+
+fortpyx = Fortpyx(client_id="<Your client ID>")
+
+url = fortpyx.get_authorization_url(
+    redirect_uri="https://example.com/fortnox_callback",
+    
+    # See available scopes here:
+    # https://www.fortnox.se/developer/guides-and-good-to-know/scopes
+    scopes=("profile", "invoice", "customer"),
+    
+    # This is optional - default is "fortpyx_state"
+    state="Some state",
+)
+
+print(url)
+```
+
+#### Keeping connection alive between requests
+
+```python
+from fortpyx import Fortpyx
+
+fortpyx = Fortpyx(
+    access_token="Some access token",
+    refresh_token="Some refresh token",
+    client_id="Some client ID",
+    client_secret="Some client secret",
+)
+
+with fortpyx:
+    # A session is created here, when the context is entered
+    
+    # The same connection will be used for both these requests
+    invoices = fortpyx.fortnox.invoices.retrieve_a_list_of_invoices()    
+    customers = fortpyx.fortnox.customers.retrieve_a_list_of_customers()
+    
+    # The session is closed here, when exiting the context
+
+# When using the client outside of a context, a one-off session is 
+# created internally and is automatically closed 
+fortpyx.fortnox.me.retrieve_user_information()
+
+```
+
+## Disclaimer
+
+This project is not affiliated with, nor endorsed by Fortnox Aktiebolag, in any way.
+
+Although the library has been tested, use at your own risk.
