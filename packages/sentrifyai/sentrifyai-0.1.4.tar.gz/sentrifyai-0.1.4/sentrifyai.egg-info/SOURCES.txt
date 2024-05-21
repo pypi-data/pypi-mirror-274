@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+sentrifyai/__init__.py
+sentrifyai/api.py
+sentrifyai/config.py
+sentrifyai/exceptions.py
+sentrifyai.egg-info/PKG-INFO
+sentrifyai.egg-info/SOURCES.txt
+sentrifyai.egg-info/dependency_links.txt
+sentrifyai.egg-info/namespace_packages.txt
+sentrifyai.egg-info/requires.txt
+sentrifyai.egg-info/top_level.txt
