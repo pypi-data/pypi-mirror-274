@@ -1,0 +1,56 @@
+Metadata-Version: 2.3
+Name: autogencap_rajan.jedi
+Version: 0.0.9
+Summary: CAP w/ autogen bindings
+Project-URL: Homepage, https://github.com/microsoft/autogen
+Project-URL: Bug Tracker, https://github.com/microsoft/autogen/issues
+Author-email: Rajan Chari <rajan.jedi@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: protobuf>=4.25.3
+Requires-Dist: pyautogen>=0.2.23
+Requires-Dist: pyzmq>=25.1.2
+Requires-Dist: termcolor>=2.4.0
+Description-Content-Type: text/markdown
+
+# Composable Actor Platform (CAP) for AutoGen
+
+## I just want to run the remote AutoGen agents!
+*Python Instructions (Windows, Linux, MacOS):*
+
+pip install autogencap
+
+1) AutoGen require OAI_CONFIG_LIST.
+   AutoGen python requirements: 3.8 <= python <= 3.11
+
+```
+
+## What is Composable Actor Platform (CAP)?
+AutoGen is about Agents and Agent Orchestration.  CAP extends AutoGen to allows Agents to communicate via a message bus.  CAP, therefore, deals with the space between these components.  CAP is a message based, actor platform that allows actors to be composed into arbitrary graphs.
+
+Actors can register themselves with CAP, find other agents, construct arbitrary graphs, send and receive messages independently and many, many, many other things.
+```python
+    # CAP Platform
+    network = LocalActorNetwork()
+    # Register an agent
+    network.register(GreeterAgent())
+    # Tell agents to connect to other agents
+    network.connect()
+    # Get a channel to the agent
+    greeter_link = network.lookup_agent("Greeter")
+    # Send a message to the agent
+    greeter_link.send_txt_msg("Hello World!")
+    # Cleanup
+    greeter_link.close()
+    network.disconnect()
+```
+### Check out other demos in the `py/demo` directory.  We show the following: ###
+1) Hello World shown above
+2) Many CAP Actors interacting with each other
+3) A pair of interacting AutoGen Agents wrapped in CAP Actors
+4) CAP wrapped AutoGen Agents in a group chat
+5) Two AutoGen Agents running in different processes and communicating through CAP
+6) List all registered agents in CAP
+7) AutoGen integration to list all registered agents
