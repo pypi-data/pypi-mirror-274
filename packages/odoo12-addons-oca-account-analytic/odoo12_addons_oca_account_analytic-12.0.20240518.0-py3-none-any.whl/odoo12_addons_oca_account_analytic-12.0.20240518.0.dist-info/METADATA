@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: odoo12-addons-oca-account-analytic
+Version: 12.0.20240518.0
+Summary: Meta package for oca-account-analytic Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 12.0
+Requires-Dist: odoo12-addon-account-analytic-default-purchase
+Requires-Dist: odoo12-addon-account-analytic-distribution-required
+Requires-Dist: odoo12-addon-account-analytic-line-name-text
+Requires-Dist: odoo12-addon-account-analytic-parent
+Requires-Dist: odoo12-addon-account-analytic-required
+Requires-Dist: odoo12-addon-account-analytic-root
+Requires-Dist: odoo12-addon-account-analytic-sequence
+Requires-Dist: odoo12-addon-account-move-analytic-recreate
+Requires-Dist: odoo12-addon-analytic-base-department
+Requires-Dist: odoo12-addon-analytic-partner
+Requires-Dist: odoo12-addon-analytic-partner-hr-timesheet
+Requires-Dist: odoo12-addon-analytic-product-category
+Requires-Dist: odoo12-addon-analytic-tag-dimension
+Requires-Dist: odoo12-addon-analytic-tag-dimension-enhanced
+Requires-Dist: odoo12-addon-analytic-tag-dimension-purchase-warning
+Requires-Dist: odoo12-addon-mrp-analytic
+Requires-Dist: odoo12-addon-pos-analytic-by-config
+Requires-Dist: odoo12-addon-procurement-mto-analytic
+Requires-Dist: odoo12-addon-product-analytic
+Requires-Dist: odoo12-addon-purchase-analytic
+Requires-Dist: odoo12-addon-purchase-request-analytic
+Requires-Dist: odoo12-addon-stock-analytic
+Requires-Dist: odoo12-addon-stock-inventory-analytic
+
+UNKNOWN
+
