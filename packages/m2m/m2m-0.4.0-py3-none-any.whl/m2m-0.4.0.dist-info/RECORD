@@ -1,0 +1,14 @@
+m2m/__init__.py,sha256=KGvIDjYQ07E_gY3aqPL7VIp9dbg81fXOkFDTsXAk3fM,1098
+m2m/config.py,sha256=ZxBXPM4tSkETVxvovtYH1PSWQYAKgy5V6_CMxumNwYU,478
+m2m/http2influx.py,sha256=36ueOb_bq1t7Y4UeytCMk3hHiIAeVqgZkBZkPQ1YP8g,7243
+m2m/meteofrance2mqtt.py,sha256=UnUgtftAeN7n_zrFoah5BzIhzmlfsgbaPyJm9Dmfh4s,4408
+m2m/mqtt2influx.py,sha256=om4cDmMDwcwIcBm-3g5YgoM3LPugk5mdY3LL4eJF-Fo,7307
+m2m/path.py,sha256=WGfhO9-SiWASpPi5qY7QqnnsUMlFjsK9VOI_ohht2-Q,970
+m2m-0.4.0.data/scripts/http2influx,sha256=bvyNl-oKPhAozO5Jpc1VTKPHKQ_HkS-64jj2kN7N0WU,407
+m2m-0.4.0.dist-info/AUTHORS,sha256=LGd0v6Gh-84G-_vBa1u5P_ue2PS207hveMnlzAJ3Y4o,52
+m2m-0.4.0.dist-info/LICENSE,sha256=J6YbsUSRljKUUBFOPRCqq_gLMqVe77kIAmaYZDa9Uyk,1092
+m2m-0.4.0.dist-info/METADATA,sha256=g1wfeHYuK7afwz0Am6QBbVSvvVjgRzU9RIDJxdybsYE,3136
+m2m-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+m2m-0.4.0.dist-info/entry_points.txt,sha256=uJxwRjlq9i1hg_VqXhYtD43q8vFaQ7vcbX4eNtROEJs,98
+m2m-0.4.0.dist-info/top_level.txt,sha256=ECYTr2-K8WK_FTLfKUJrxH_Sg0Z5QvOdRLlAkA73T7k,4
+m2m-0.4.0.dist-info/RECORD,,
