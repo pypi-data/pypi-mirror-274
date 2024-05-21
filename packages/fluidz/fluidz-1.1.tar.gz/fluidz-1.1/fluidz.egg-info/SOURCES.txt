@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fluidz/__init__.py
+fluidz/main.py
+fluidz.egg-info/PKG-INFO
+fluidz.egg-info/SOURCES.txt
+fluidz.egg-info/dependency_links.txt
+fluidz.egg-info/requires.txt
+fluidz.egg-info/top_level.txt
