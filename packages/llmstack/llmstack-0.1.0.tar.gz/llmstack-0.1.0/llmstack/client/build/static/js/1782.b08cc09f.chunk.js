@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpromptmanager=self.webpackChunkpromptmanager||[]).push([[1782],{51782:function(r,a,n){n.r(a),n.d(a,{default:function(){return t}});var e=n(45263);function t(){return(0,e.jsx)("div",{id:"dashboard-page",children:"Dashboard"})}}}]);

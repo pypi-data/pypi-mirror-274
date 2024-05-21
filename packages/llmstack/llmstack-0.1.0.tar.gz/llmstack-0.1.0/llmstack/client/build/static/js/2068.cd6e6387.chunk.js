@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpromptmanager=self.webpackChunkpromptmanager||[]).push([[2068],{2068:function(e,r,n){n.r(r),n.d(r,{default:function(){return p}});var i=n(45263);function p(){return(0,i.jsx)("div",{id:"error-page",children:(0,i.jsx)("p",{children:(0,i.jsx)("i",{children:"Session expired."})})})}}}]);
