@@ -1,0 +1,4 @@
+[console_scripts]
+llmstack=llmstack.cli:main
+llmstack-runner=llmstack.common.runner.server:main
+
