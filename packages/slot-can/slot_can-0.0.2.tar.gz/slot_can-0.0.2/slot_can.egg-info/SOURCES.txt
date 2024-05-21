@@ -1,0 +1,6 @@
+README.md
+setup.py
+slot_can.egg-info/PKG-INFO
+slot_can.egg-info/SOURCES.txt
+slot_can.egg-info/dependency_links.txt
+slot_can.egg-info/top_level.txt
