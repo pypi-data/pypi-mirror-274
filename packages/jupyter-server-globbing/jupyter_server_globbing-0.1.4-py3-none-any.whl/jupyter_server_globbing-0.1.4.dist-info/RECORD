@@ -1,0 +1,8 @@
+globbing/__init__.py,sha256=1ILs-nTYKR6BXC_1Zr97ajYTRRT-j3m0LvNrfRx9VmM,380
+globbing/handlers.py,sha256=fd7PbteFqmOefhv-gF0MltBoQFAl90dRqp0QYTkLfg0,852
+globbing/version.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+jupyter_server_globbing-0.1.4.data/data/etc/jupyter/jupyter_server_config.d/globbing.json,sha256=z0vCpspd__7UvnGAV-mSjeeqXKaBzDgszXsfyMxYAdM,101
+jupyter_server_globbing-0.1.4.dist-info/METADATA,sha256=kvBJ3x3Be-ylcHUEJ86yrrFoiqQeeAAje68jRgPnFJw,144
+jupyter_server_globbing-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+jupyter_server_globbing-0.1.4.dist-info/top_level.txt,sha256=z65a17XOB4HdJJrg3sl9dIihpBskN3CLUmrKz61AUzE,9
+jupyter_server_globbing-0.1.4.dist-info/RECORD,,
