@@ -1,0 +1,8 @@
+source_drift/__init__.py,sha256=_eQhlFDHlt_8Z75q11by4OVpMNNXvRodBOO_2V1Wcmg,122
+source_drift/manifest.yaml,sha256=XqhvCav8LxG5pqnl0b_MvClJEK2cFdDYz2_V3MGyo70,16585
+source_drift/run.py,sha256=Ju_Ou-Z0EZ6dHBXdh9034SB0y4ioAdvI6girxS4zvF4,227
+source_drift/source.py,sha256=79hUsWNAwT-lunUy7-RSWCGNnOl58jvbspdI6E-Pcaw,474
+airbyte_source_drift-0.3.5.dist-info/METADATA,sha256=BJmicNdrCPtjk0HNxooN5sBE7hx6__WM9Mko1oBhHuQ,5187
+airbyte_source_drift-0.3.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_drift-0.3.5.dist-info/entry_points.txt,sha256=syYCgGol03N8aGT9IsS_pSqUu3VMVugrUsaI_arNcoQ,53
+airbyte_source_drift-0.3.5.dist-info/RECORD,,
