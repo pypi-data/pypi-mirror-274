@@ -1,0 +1,14 @@
+agi_med_utils/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+agi_med_utils/abstract_client.py,sha256=TSFMiUZ1VhTDGYYCSE0CZBCN4D-Y6D6CWTP-djuwWYc,382
+agi_med_utils/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agi_med_utils/config/config.py,sha256=e5Z5W0ujbW-zEOOTLH1sQckopIupbmRILTiz3CBSt7A,523
+agi_med_utils/config/singleton.py,sha256=NLN_i_XH40jBZR61yqj6MebJNjkq5AnEHkhQLb-hDhs,232
+agi_med_utils/llm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agi_med_utils/llm/giga_access.py,sha256=QYlFNsMwAh6cH0cyR91gxXdT7nwVSsIg1lyb-rVGwYc,1494
+agi_med_utils/llm/yandex_access.py,sha256=K6nu_NtBHVYYXj-HqfHQbBJpL5KGS83rkBtRxXsnt-U,2142
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/base.py,sha256=g8I_L9RBE1cr9RCEA1LjLECiNoC7e1dcHVj5RaUr0vc,81
+agi_med_utils-0.0.3.dist-info/METADATA,sha256=zVLC_WjWl7JPLRdffIdGvfWDEyT_ehKWpp2eFY1KYNU,352
+agi_med_utils-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+agi_med_utils-0.0.3.dist-info/top_level.txt,sha256=hFTbLlvwFGvBke5BGPPZO9qFz_TrKhk2hZQKVY6z6Ew,19
+agi_med_utils-0.0.3.dist-info/RECORD,,
