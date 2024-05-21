@@ -1,0 +1,13 @@
+xspace/__init__.py,sha256=j93pw_SqzQcaREWnl0HoInNXjDFqlS2vIk27GELFQcM,171
+xspace/api.py,sha256=Kilb1_2MhwPPjGD3kofzrpYiM8XlXqzJY0017w-0xfs,16595
+xspace/chat_extractor.py,sha256=bWlW0hi66kLelN6MR44mjx4Gg331kwwPrGTf9pfXgNs,826
+xspace/cookies.py,sha256=AX_Zn8hyAnqbTlcsInieH0DylBvkEvCkWwGeP8GJmvg,1978
+xspace/main.py,sha256=z4Ty0xEjTt4LKCiuQxnOxlH6G6oTqZ4XEBEbzQhbmzA,10045
+xspace/xspace.py,sha256=HpLA_F4OpW99Cx8NN6LQehVU3Y2binAdkYwTIbZVxG0,6059
+xspace/xspace_dl.py,sha256=phvC0AJmMXNQMs7-a-nYcQpqfdWeaKY-onqdgBUQkiE,7062
+xspace_dl-0.2.26.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+xspace_dl-0.2.26.dist-info/METADATA,sha256=Vq7CzmwLk-O7Jz1Uc05St2CjFt72fxmqSKIj5IAwDl8,6740
+xspace_dl-0.2.26.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+xspace_dl-0.2.26.dist-info/entry_points.txt,sha256=HcxXsCitUTIdwhMSqpH02mz_LZZc5fQBftAgbA0LhiY,47
+xspace_dl-0.2.26.dist-info/top_level.txt,sha256=xtvuek58GKXswspjHLkHqCcXxrvQNGGyL9zN4mbw9DE,7
+xspace_dl-0.2.26.dist-info/RECORD,,
