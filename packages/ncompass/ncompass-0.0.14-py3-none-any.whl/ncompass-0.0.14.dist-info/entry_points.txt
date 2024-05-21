@@ -1,0 +1,8 @@
+[console_scripts]
+nccli-help = ncompass.cli.help:main
+nccli-model-status = ncompass.cli.model_status:main
+nccli-start-client = ncompass.cli.start_client:main
+nccli-start-model = ncompass.cli.start_model:main
+nccli-start-session = ncompass.cli.start_session:main
+nccli-stop-model = ncompass.cli.stop_model:main
+nccli-stop-session = ncompass.cli.stop_session:main
