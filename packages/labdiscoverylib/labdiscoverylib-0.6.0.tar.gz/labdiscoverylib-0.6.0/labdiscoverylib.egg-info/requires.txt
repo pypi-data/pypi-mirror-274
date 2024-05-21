@@ -1,0 +1,5 @@
+flask<3
+redis
+requests
+six
+werkzeug<3
