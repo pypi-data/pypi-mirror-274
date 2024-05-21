@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ucimlrepo/__init__.py
+src/ucimlrepo/dotdict.py
+src/ucimlrepo/fetch.py
+src/ucimlrepo/test.py
+src/ucimlrepo.egg-info/PKG-INFO
+src/ucimlrepo.egg-info/SOURCES.txt
+src/ucimlrepo.egg-info/dependency_links.txt
+src/ucimlrepo.egg-info/requires.txt
+src/ucimlrepo.egg-info/top_level.txt
+tests/test.py
