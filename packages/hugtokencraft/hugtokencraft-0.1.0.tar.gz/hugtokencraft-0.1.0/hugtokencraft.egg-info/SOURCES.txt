@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+example_notebook.ipynb
+pyproject.toml
+requirements.txt
+setup.py
+hugtokencraft/__init__.py
+hugtokencraft/editor.py
+hugtokencraft.egg-info/PKG-INFO
+hugtokencraft.egg-info/SOURCES.txt
+hugtokencraft.egg-info/dependency_links.txt
+hugtokencraft.egg-info/top_level.txt
