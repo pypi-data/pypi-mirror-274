@@ -1,0 +1,13 @@
+pyyaml
+
+[all]
+numpy
+pytest
+pandas
+
+[dev]
+numpy
+pytest
+
+[pandas]
+pandas
