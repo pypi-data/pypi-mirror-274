@@ -1,0 +1,13 @@
+pyproject.toml
+sccore/__init__.py
+sccore/parse_protocol.py
+sccore/utils.py
+sccore.egg-info/PKG-INFO
+sccore.egg-info/SOURCES.txt
+sccore.egg-info/dependency_links.txt
+sccore.egg-info/entry_points.txt
+sccore.egg-info/requires.txt
+sccore.egg-info/top_level.txt
+sccore/cli/__init__.py
+sccore/cli/create_genome.py
+sccore/cli/create_test_data.py

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sccore
+Version: 0.0.0
+Summary: Single cell core functions
+Author: Yiqi Zhou
+Project-URL: Repository, https://github.com/zhouyiqi91/sccore
+Keywords: bioinformatics,single-cell
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pysam
+Requires-Dist: pandas>=2.0.0
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
