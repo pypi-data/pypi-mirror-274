@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stylonychiaz/__init__.py
+stylonychiaz/main.py
+stylonychiaz.egg-info/PKG-INFO
+stylonychiaz.egg-info/SOURCES.txt
+stylonychiaz.egg-info/dependency_links.txt
+stylonychiaz.egg-info/requires.txt
+stylonychiaz.egg-info/top_level.txt
