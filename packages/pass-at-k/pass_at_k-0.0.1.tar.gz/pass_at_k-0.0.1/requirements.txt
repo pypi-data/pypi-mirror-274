@@ -1,0 +1,4 @@
+# development requirements
+pytest>=3
+black>*
+flake8>*

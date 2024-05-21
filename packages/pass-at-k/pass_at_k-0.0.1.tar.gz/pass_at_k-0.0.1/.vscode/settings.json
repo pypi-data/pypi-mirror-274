@@ -1,0 +1,15 @@
+{
+    "editor.formatOnSave": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    // max line lengths: 99 chars
+    "black-formatter.args": [
+        "--line-length=99"
+    ],
+    "flake8.args": [
+        "--max-line-length=99"
+    ],
+    "editor.rulers": [
+        99
+    ]
+}
