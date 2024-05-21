@@ -1,0 +1,3 @@
+[console_scripts]
+s3-download = s3_tool.s3_tool:download_command
+s3-upload = s3_tool.s3_tool:upload_command
