@@ -1,0 +1,35 @@
+<details>
+<summary>Directives</summary>
+
+Directives are functions that can extend AlmaSQL by customizing the way an expression renders.
+
+Using a directive in your template is as simple as calling a function in a template expression.
+
+AlmaSQL includes a number of built-in directives like `set_values_by` and `enumerate_values_by`.
+
+Users can also write their own custom directives.
+
+<details>
+<summary>set_values_by</summary>
+
+Imagine table `book` and columns `id`, `title`, and `author`.
+And you want to update book by id.
+
+```jinja
+UPDATE book
+SET title = :title, author = :author
+WHERE id = :id
+```
+
+But when you need to modify column, you need to change the query template.
+What if you forgot to do it? This will lead to unexpected bugs.
+So better to use directives that, depending on the arguments,
+will render the required columns and values.
+
+```jinja
+UPDATE book
+{{ set_values_by(['title', 'author']) }}
+WHERE id = :id
+```
+</details>
+</details>
