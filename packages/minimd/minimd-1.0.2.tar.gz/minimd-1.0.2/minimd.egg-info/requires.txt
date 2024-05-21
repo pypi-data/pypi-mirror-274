@@ -1,0 +1,6 @@
+
+[dev]
+pytest
+pytest-mock
+flake8
+isort
