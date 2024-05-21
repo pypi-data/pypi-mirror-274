@@ -1,0 +1,11 @@
+LICENCE
+README.md
+run.sh
+setup.py
+HomeDirectory.egg-info/PKG-INFO
+HomeDirectory.egg-info/SOURCES.txt
+HomeDirectory.egg-info/dependency_links.txt
+HomeDirectory.egg-info/requires.txt
+HomeDirectory.egg-info/top_level.txt
+src/__init__.py
+src/homedirectory.py
