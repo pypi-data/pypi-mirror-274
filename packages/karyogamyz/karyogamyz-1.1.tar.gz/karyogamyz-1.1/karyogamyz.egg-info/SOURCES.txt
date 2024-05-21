@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+karyogamyz/__init__.py
+karyogamyz/main.py
+karyogamyz.egg-info/PKG-INFO
+karyogamyz.egg-info/SOURCES.txt
+karyogamyz.egg-info/dependency_links.txt
+karyogamyz.egg-info/requires.txt
+karyogamyz.egg-info/top_level.txt
