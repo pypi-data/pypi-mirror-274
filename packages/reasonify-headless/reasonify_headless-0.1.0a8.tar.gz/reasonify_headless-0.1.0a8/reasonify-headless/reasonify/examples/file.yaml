@@ -1,0 +1,16 @@
+- I've mount a directory for you to read and write files in. Try `ls` it.
+
+-
+  - source: |
+        from pathlib import Path
+        paths = list(Path("/workspace/mnt").glob("**/*"))
+
+  - source: |
+        reply(f"I can see these top level files/dirs: {", ".join(map(str, paths))}")
+
+- I just uploaded a PNG file, can you find it?
+
+-
+  - source: |
+        list(Path("/workspace/mnt").rglob("*.png"))
+    result: no
