@@ -1,0 +1,10 @@
+sentence_transformers==2.7.0
+rdflib==7.0.0
+PyYAML
+numpy>=1.26.4
+hnswlib
+owlready2==0.46
+owlrl==6.0.2
+weaviate-client==4.5.6
+SPARQLWrapper==2.0.0
+pyshacl==0.25.0
