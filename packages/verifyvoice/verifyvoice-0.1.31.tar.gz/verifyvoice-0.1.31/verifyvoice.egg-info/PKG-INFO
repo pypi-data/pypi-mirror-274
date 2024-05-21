@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: verifyvoice
+Version: 0.1.31
+Summary: A package for verifying the voice of a person
+Home-page: https://github.com/NirmalSankalana/VerifiVoice
+Author: Nirmal Sankalana, Nipun Thejan
+Author-email: sankalana.nirmal@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.2
+Requires-Dist: soundfile>=0.12.1
+Requires-Dist: webrtcvad==2.0.10
+Requires-Dist: librosa
+
+# VerifiVoice
+
+VerifiVoice generates discriminative speaker embeddings for text independent speaker verification
+
+How to use it
