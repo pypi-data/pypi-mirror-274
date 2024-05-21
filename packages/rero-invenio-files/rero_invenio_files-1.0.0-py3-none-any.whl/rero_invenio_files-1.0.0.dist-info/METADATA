@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: rero-invenio-files
+Version: 1.0.0
+Summary: Files support for the RERO invenio instances.
+License: AGPL-3.0
+Author: RERO
+Author-email: software@rero.ch
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fpdf2 (>=2.7.7,<3.0.0)
+Requires-Dist: invenio-db[postgresql] (>=1.1.0,<1.2.0)
+Requires-Dist: invenio-previewer (>=2.2.0,<3.0.0)
+Requires-Dist: invenio-records-resources (<5.7.0)
+Requires-Dist: invenio-search[elasticsearch7] (>=2.1.0,<3.0.0)
+Requires-Dist: invenio-theme (<4.0.0)
+Requires-Dist: pymupdf (>=1.23.21,<2.0.0)
+Description-Content-Type: text/x-rst
+
+..
+    RERO-Invenio-Files
+    Copyright (C) 2024 RERO.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published by
+    the Free Software Foundation, version 3 of the License.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+====================
+ RERO-Invenio-Files
+====================
+
+.. image:: https://github.com/rero/rero-invenio-files/workflows/CI/badge.svg
+        :target: https://github.com/rero/rero-invenio-files/actions?query=workflow%3ACI
+
+.. image:: https://img.shields.io/github/tag/rero/rero-invenio-files.svg
+        :target: https://github.com/rero/rero-invenio-files/releases
+
+.. image:: https://img.shields.io/pypi/dm/rero-invenio-files.svg
+        :target: https://pypi.python.org/pypi/rero-invenio-files
+
+.. image:: https://img.shields.io/github/license/rero/rero-invenio-files.svg
+        :target: https://github.com/rero/rero-invenio-files/blob/master/LICENSE
+
+Files support for the RERO invenio instances.
+
