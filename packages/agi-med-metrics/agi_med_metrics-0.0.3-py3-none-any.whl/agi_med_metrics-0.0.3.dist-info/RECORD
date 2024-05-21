@@ -1,0 +1,10 @@
+agi_med_metrics/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+agi_med_metrics/errors_cv.py,sha256=8cBULd4xGpg-G9qEc62JeE59YpeN1EO0EUgNmFHJsrw,425
+agi_med_metrics/errors_ml.py,sha256=GcqUVdYJXrDpauQIAIdFGVqRHQRXrjuIq4YUM0oIEos,407
+agi_med_metrics/errors_nlp.py,sha256=18WUwwi-I3b-TO_13I5Vzz0wHYXtQc0uLS6UCWTnKNo,859
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/base.py,sha256=hOdlTglxELAkv_zXqqdG0AnKVQ_RmHX3S9RB30MbvIU,668
+agi_med_metrics-0.0.3.dist-info/METADATA,sha256=cjuBVFsP5ZSTjcfaWSig1UixQIe4pOpn7076vLhcGWE,673
+agi_med_metrics-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+agi_med_metrics-0.0.3.dist-info/top_level.txt,sha256=nqpW3AcrTn75dBBxEg6x7qqzuqJ58jEw48jfdR3yRno,21
+agi_med_metrics-0.0.3.dist-info/RECORD,,
