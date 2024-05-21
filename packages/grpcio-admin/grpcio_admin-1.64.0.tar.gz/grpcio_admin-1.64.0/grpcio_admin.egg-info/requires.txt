@@ -1,0 +1,2 @@
+grpcio-channelz>=1.64.0
+grpcio-csds>=1.64.0
