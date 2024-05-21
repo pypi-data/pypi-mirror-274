@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sitfastz/__init__.py
+sitfastz/main.py
+sitfastz.egg-info/PKG-INFO
+sitfastz.egg-info/SOURCES.txt
+sitfastz.egg-info/dependency_links.txt
+sitfastz.egg-info/requires.txt
+sitfastz.egg-info/top_level.txt
