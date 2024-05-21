@@ -1,0 +1,19 @@
+{
+    "type": "metric_pipeline",
+    "main_score": "spearmanr",
+    "preprocess_steps": [
+        {
+            "type": "copy_fields",
+            "field_to_field": [
+                [
+                    "references/0",
+                    "references"
+                ]
+            ]
+        }
+    ],
+    "metric": {
+        "type": "spearmanr"
+    },
+    "prediction_type": "float"
+}

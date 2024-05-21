@@ -1,0 +1,69 @@
+{
+    "type": "task_card",
+    "loader": {
+        "type": "load_hf",
+        "path": "grammarly/coedit",
+        "streaming": true,
+        "filtering_lambda": "lambda x: x['task'] == 'gec'"
+    },
+    "preprocess_steps": [
+        "splitters.small_no_test",
+        {
+            "type": "split",
+            "field": "src",
+            "by": ": "
+        },
+        {
+            "type": "slice",
+            "field": "src",
+            "start": 1
+        },
+        {
+            "type": "join",
+            "field": "src",
+            "by": ": "
+        },
+        {
+            "type": "list_field_values",
+            "fields": [
+                "tgt",
+                "src"
+            ],
+            "to_field": "correct_and_incorrect"
+        },
+        {
+            "type": "duplicate_by_list",
+            "field": "correct_and_incorrect",
+            "to_field": "text"
+        },
+        {
+            "type": "index_of",
+            "index_of": "text",
+            "search_in": "correct_and_incorrect",
+            "to_field": "label"
+        },
+        {
+            "type": "add_fields",
+            "fields": {
+                "class": "Grammatically incorrect",
+                "text_type": "text"
+            }
+        },
+        {
+            "type": "shuffle",
+            "page_size": 9223372036854775807
+        }
+    ],
+    "task": "tasks.classification.binary.zero_or_one[metrics=[metrics.accuracy,metrics.f1_binary,metrics.precision_binary,metrics.recall_binary]]",
+    "templates": "templates.grammatical_error_detection.all",
+    "__tags__": {
+        "arxiv": "2305.09857",
+        "croissant": true,
+        "language": "en",
+        "license": "apache-2.0",
+        "region": "us",
+        "size_categories": "10K<n<100K",
+        "task_categories": "text-generation"
+    },
+    "__description__": "Dataset Card for CoEdIT: Text Editing via Instruction Tuning\nPaper: CoEdIT: Text Editing by Task-Specific Instruction Tuning\nAuthors: Vipul Raheja, Dhruv Kumar, Ryan Koo, Dongyeop Kang\nProject Repo: https://github.com/vipulraheja/coedit\nDataset Summary\nThis is the dataset that was used to train the CoEdIT text editing models. Full details of the dataset can be found in our paper.\nDataset Structure\nThe… See the full description on the dataset page: https://huggingface.co/datasets/grammarly/coedit."
+}

@@ -1,0 +1,53 @@
+{
+    "type": "task_card",
+    "loader": {
+        "type": "load_hf",
+        "path": "wikitablequestions"
+    },
+    "preprocess_steps": [
+        "splitters.small_no_test",
+        {
+            "type": "add_fields",
+            "fields": {
+                "context_type": "table"
+            }
+        },
+        {
+            "type": "truncate_table_cells",
+            "max_length": 15,
+            "table": "table",
+            "text_output": "answers"
+        },
+        {
+            "type": "truncate_table_rows",
+            "field": "table",
+            "rows_to_keep": 50
+        },
+        {
+            "type": "serialize_table_as_indexed_row_major",
+            "field_to_field": [
+                [
+                    "table",
+                    "context"
+                ]
+            ]
+        }
+    ],
+    "task": "tasks.qa.with_context.extractive",
+    "templates": "templates.qa.with_context.all",
+    "__description__": "This WikiTableQuestions dataset is a large-scale dataset for the task of question answering on semi-structured tables.",
+    "__tags__": {
+        "annotations_creators": "crowdsourced",
+        "arxiv": "1508.00305",
+        "croissant": true,
+        "language": "en",
+        "language_creators": "found",
+        "license": "cc-by-4.0",
+        "multilinguality": "monolingual",
+        "region": "us",
+        "size_categories": "10K<n<100K",
+        "source_datasets": "original",
+        "table-question-answering": true,
+        "task_categories": "question-answering"
+    }
+}
