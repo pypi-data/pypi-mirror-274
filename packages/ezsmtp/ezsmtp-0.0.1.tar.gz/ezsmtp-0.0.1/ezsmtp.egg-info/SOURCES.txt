@@ -1,0 +1,5 @@
+setup.py
+ezsmtp.egg-info/PKG-INFO
+ezsmtp.egg-info/SOURCES.txt
+ezsmtp.egg-info/dependency_links.txt
+ezsmtp.egg-info/top_level.txt
