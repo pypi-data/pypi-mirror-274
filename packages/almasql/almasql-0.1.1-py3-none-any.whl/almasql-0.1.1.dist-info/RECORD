@@ -1,0 +1,9 @@
+almasql/__init__.py,sha256=7ylqcmypexKYLYTh6Z3H9lzx_MT8_nDMuGpZNaeY7uw,366
+almasql/_directives.py,sha256=ble_UM1sP3ZMw7OM5a3-djUR_jGNpMEYMWo1Ew4ydDE,332
+almasql/_post_join.py,sha256=WDEJ-aRy2VXdOlsXcktK3lKIl18ksScVpiCiv1WE-xU,2283
+almasql/_query.py,sha256=9JwdhkUxCgV1uPocFgHNxhzkigfGlfZqknjBIRkh3tU,571
+almasql/_transaction.py,sha256=IqeJ9gU-XeLgE6gQgAE2UAj5lQ6QIhoIezUd1hY7zrs,2284
+almasql/_transactions_chain.py,sha256=VniZaBYiX8Khsj-EB-EEm85Pa_N6l5nlPIEkZuv7B90,1200
+almasql-0.1.1.dist-info/METADATA,sha256=juDPwMSqq0Lrt7AlfCoKhGqV1LFT47CH0-LhaEslb9w,1390
+almasql-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+almasql-0.1.1.dist-info/RECORD,,
