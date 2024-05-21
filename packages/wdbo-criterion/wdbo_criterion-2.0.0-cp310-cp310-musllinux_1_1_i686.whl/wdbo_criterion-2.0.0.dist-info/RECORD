@@ -1,0 +1,9 @@
+libwdbo_bayesian.so,sha256=xocsNX1llhfi_ue0hYDa8UnCXcxxepukeYeXP17-Gfo,337461
+wdbo_criterion.cpython-310-i386-linux-gnu.so,sha256=7cOQmicAzDUEsF9tB53pY4k4PUnxyD5JX0lis2N4FGs,140545
+wdbo_criterion-2.0.0.dist-info/WHEEL,sha256=Qdgzk76P0iDEfrSqGlHmC7uVkV7GguAV-ztZmwBe2jc,111
+wdbo_criterion-2.0.0.dist-info/top_level.txt,sha256=qu3CvhYgb2Tf7Y_2Uu4kLZoHVVyBjGNLih0mB8luDF4,15
+wdbo_criterion-2.0.0.dist-info/RECORD,,
+wdbo_criterion-2.0.0.dist-info/METADATA,sha256=RArpo3q4xSOtoTR3ELXrJi55Tsv7_IaFk3TiXhYwKV0,363
+wdbo_criterion.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+wdbo_criterion.libs/libwdbo_bayesian-0f87e7b9.so,sha256=8pYUWVR61CIp8J6Q2kPenYyOSa4tZ5sDeGajWR99C40,337209
+wdbo_criterion.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
