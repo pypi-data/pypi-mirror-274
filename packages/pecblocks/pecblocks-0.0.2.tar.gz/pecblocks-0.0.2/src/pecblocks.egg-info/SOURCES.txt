@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/pecblocks/__init__.py
+src/pecblocks/api.py
+src/pecblocks/common.py
+src/pecblocks/pv1_poly.py
+src/pecblocks/pv3_poly.py
+src/pecblocks/util.py
+src/pecblocks/version.py
+src/pecblocks.egg-info/PKG-INFO
+src/pecblocks.egg-info/SOURCES.txt
+src/pecblocks.egg-info/dependency_links.txt
+src/pecblocks.egg-info/not-zip-safe
+src/pecblocks.egg-info/requires.txt
+src/pecblocks.egg-info/top_level.txt
