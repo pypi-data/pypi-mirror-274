@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: data4llm
+Version: 0.4.0
+Summary: Add apply_multi and other bugs fix
+Home-page: https://github.com/SWEENEYHE/Data4LLM
+Author: SweeneyHe
+Author-email: sweeneyandhe@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+support apply_multi which uses multi threadings to process files and fix the bugs for merge files
