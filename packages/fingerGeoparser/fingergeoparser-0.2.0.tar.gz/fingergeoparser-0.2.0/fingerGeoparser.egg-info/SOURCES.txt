@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./fingerGeoparser/__init__.py
+./fingerGeoparser/geoparser.py
+./fingerGeoparser/output_formatter.py
+./fingerGeoparser/toponym_coder.py
+./fingerGeoparser/toponym_tagger.py
+./tests/test_geoparsing.py
+fingerGeoparser.egg-info/PKG-INFO
+fingerGeoparser.egg-info/SOURCES.txt
+fingerGeoparser.egg-info/dependency_links.txt
+fingerGeoparser.egg-info/requires.txt
+fingerGeoparser.egg-info/top_level.txt
+tests/test_geoparsing.py
