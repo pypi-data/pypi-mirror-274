@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: EasyDonateClient
+Version: 0.0.1
+Summary: ('Неофициальный модуль для EasyDonateApi.',)
+Author: TheFilik
+Author-email: filikt415@gmail.com
+
+Простой не официальный модуль для управления вашим магазином на EasyDonate!
+Лучший среди всех. Документация: https://tinyteam-1.gitbook.io/python-easydonateclient/

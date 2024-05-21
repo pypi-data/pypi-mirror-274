@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+EasyDonateClient/EasyDonateClient.py
+EasyDonateClient/__init__.py
+EasyDonateClient.egg-info/PKG-INFO
+EasyDonateClient.egg-info/SOURCES.txt
+EasyDonateClient.egg-info/dependency_links.txt
+EasyDonateClient.egg-info/top_level.txt
