@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+reversedz/__init__.py
+reversedz/main.py
+reversedz.egg-info/PKG-INFO
+reversedz.egg-info/SOURCES.txt
+reversedz.egg-info/dependency_links.txt
+reversedz.egg-info/requires.txt
+reversedz.egg-info/top_level.txt
