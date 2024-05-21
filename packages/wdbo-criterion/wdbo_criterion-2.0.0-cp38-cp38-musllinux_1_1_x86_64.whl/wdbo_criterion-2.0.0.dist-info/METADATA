@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: wdbo_criterion
+Version: 2.0.0
+Summary: C++ library compiled using pybind11 and CMake for dynamic bayesian optimization. It provides a criterion for identifying stale data in W-DBO
+Author: Giovanni Ranieri
+Author-email: giovanni.ranieri@epfl.ch
+Requires-Python: >=3.7
+Provides-Extra: test
+Requires-Dist: pytest >=6.0 ; extra == 'test'
+
