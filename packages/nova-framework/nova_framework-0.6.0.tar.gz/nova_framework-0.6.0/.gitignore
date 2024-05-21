@@ -1,0 +1,8 @@
+# Hide local development project
+src/
+nova.toml
+
+# Hide Python related stuff
+__pycache__/
+.venv/
+.build/
