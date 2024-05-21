@@ -1,0 +1,16 @@
+name: Run linter
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: Lint code
+    steps:
+    - uses: Silleellie/pylint-github-action@v2
+      with:
+        lint-path: |
+          src/mepo
+        python-version: 3.9
+        requirements-path: requirements.lock
+      timeout-minutes: 5
