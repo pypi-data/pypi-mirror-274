@@ -1,0 +1,2 @@
+django>=4.2
+django-bootstrap5>=24.2
