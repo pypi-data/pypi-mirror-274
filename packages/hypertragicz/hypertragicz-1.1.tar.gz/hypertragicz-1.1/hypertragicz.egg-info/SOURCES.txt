@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hypertragicz/__init__.py
+hypertragicz/main.py
+hypertragicz.egg-info/PKG-INFO
+hypertragicz.egg-info/SOURCES.txt
+hypertragicz.egg-info/dependency_links.txt
+hypertragicz.egg-info/requires.txt
+hypertragicz.egg-info/top_level.txt
