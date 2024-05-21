@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pytzen
+Version: 1.1.1
+Summary: Software engineering studies
+Author: PYTZEN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+
+## PYTZEN package
+
+[https://github.com/pytzen/pytzen/tree/main/src/pytzen](https://github.com/pytzen/pytzen/tree/main/src/pytzen)
+
+`pip install pytzen`
+
+PYTZEN is a framework designed to facilitate the creation and management of data pipelines by providing dynamic class creation and configuration management. It utilizes a custom metaclass, `MetaType`, to enrich classes with logging, data storage, and finalization capabilities, ensuring structured and consistent behavior across different instances. The framework supports namespace isolation through the `new_namespace` function, which allows for creating isolated modules. The core class, `ProtoType`, initializes with configuration data and shared data structures, and enforces attribute immutability through the `SharedData` data class, ensuring that once attributes are set, they cannot be altered.
+
+## Apache Iceberg studies
+
+[https://github.com/pytzen/pytzen/tree/main/src/iceberg](https://github.com/pytzen/pytzen/tree/main/src/iceberg)
+
+Apache Iceberg is a high-performance, open table format specifically designed for large-scale, analytical datasets. It enables reliable data management by providing atomic transactions, allowing for safe concurrent writes and efficient data versioning. Iceberg addresses common challenges in data lakes, such as schema evolution and partitioning, by offering a robust and flexible metadata layer. This ensures consistent and optimized query performance across distributed systems. By integrating seamlessly with popular data processing engines like Apache Spark, Apache Flink, and Presto, Apache Iceberg empowers organizations to manage their big data ecosystems with enhanced scalability, efficiency, and reliability.
+
+## Software engineering wiki
+
+[https://github.com/pytzen/pytzen/wiki](https://github.com/pytzen/pytzen/wiki)
+
+The wiki is dedicated to the exploration and study of software engineering through the lens of artificial intelligence assistance. Here, we utilize AI assistants to aid in the deeper understanding of software engineering concepts, methodologies, and practices, particularly in how they intersect with data-related tools. The focus includes exploring the integration of data analytics tools, database management systems, and data modeling techniques, as well as analytics and machine learning applications.
