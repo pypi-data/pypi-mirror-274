@@ -1,0 +1,53 @@
+<div id="{{name}}" class="searchable"
+    style="display: flex; width: 72rem; flex-direction: column; align-items: flex-start; gap: 1rem; width: 100%;">
+    <div style="display: flex; width: 100%; justify-content: space-between; align-items:first baseline;">
+        <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <div>
+                    {% import './components/badge.html' as badge %}
+                    {% if passed != 0 %}
+                    {{badge.passed(passed)}}
+                    {% endif %}
+                    {% if skipped != 0 %}
+                    {{ badge.skipped(skipped) }}
+                    {% endif %}
+                    {% if failed != 0 %}
+                    {{ badge.failed(failed) }}
+                    {% endif %}
+
+                </div>
+
+                <h2 style="margin: 0; display: inline-block; font-weight: 400; font-size: 1.5 rem;">
+                    <span>Feature</span>: {{name}}
+                </h2>
+            </div>
+
+            <p style="margin: 0; color: #535353;">{{id}}</p>
+
+            {% if description != "" %}
+            <p style="margin: 0.5rem 0 0 0; color: #535353;">Description: {{description}}</p>
+            {%endif%}
+
+            {% if tags != "" %}
+            <p style="margin: 0.5rem 0 0 0; color: #535353;">Tags: {{tags}}</p>
+            {%endif%}
+        </div>
+
+        <p style="color: #535353;
+        font-family: Roboto;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;">
+            {% if duration > 1 %}
+            Executed in {{duration|round(3)}}s
+            {% else %}
+            Executed in {{(duration*1000)|round(3)}}ms
+            {%endif%}
+        </p>
+    </div>
+
+    <div style="width: 100%; display: flex; gap: 1rem; flex-direction: column;">
+        {{scenarios|safe}}
+    </div>
+</div>
