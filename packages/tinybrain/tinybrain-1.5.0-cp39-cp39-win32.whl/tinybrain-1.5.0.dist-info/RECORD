@@ -1,0 +1,12 @@
+tinybrain/__init__.py,sha256=TxuNTBFc1gctyUlxcEU43W2J7zgS67-BEuoIIOcHcRs,192
+tinybrain/accelerated.cp39-win32.pyd,sha256=NreAcaK-FoRy9aFpceIlLuMFvTL6a-hOj7ekk7OUst0,863232
+tinybrain/accelerated.hpp,sha256=biEQtx-guJA7aun6Fam4tzRbyySUiCSbdXPeOySoxQI,30743
+tinybrain/accelerated.pyx,sha256=es7jzvdU_apMEkvMcB2j0ZjMxJaNXg0zUXZFSSGmf7A,29209
+tinybrain/downsample.py,sha256=N5ezkZLCs4kEMcPh6Qslmg8BKHCRUOpnoOVfpX6dkH4,16547
+tinybrain-1.5.0.dist-info/AUTHORS,sha256=Aa4H7O3dtmfq0lF_eATudy11i8K6QAI8LykzASr9bL0,52
+tinybrain-1.5.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+tinybrain-1.5.0.dist-info/METADATA,sha256=T8f81NMX9YMLKTV8YR7LZLt7In1B3bKPVcu7lf7ZuIs,9942
+tinybrain-1.5.0.dist-info/WHEEL,sha256=J4VEqyL9z1mLE9UmMSsP54FoLo18dqSe_E9pRPZ-IbI,96
+tinybrain-1.5.0.dist-info/pbr.json,sha256=UdFGVQqTk0monBtOWnaQgekNo1OyiHm9Vo9Pbu0FxE0,47
+tinybrain-1.5.0.dist-info/top_level.txt,sha256=FjOAoGmx5vBFTnQ8pXFdnj-XED_Em9JtYs-xsiCQ5zQ,10
+tinybrain-1.5.0.dist-info/RECORD,,
