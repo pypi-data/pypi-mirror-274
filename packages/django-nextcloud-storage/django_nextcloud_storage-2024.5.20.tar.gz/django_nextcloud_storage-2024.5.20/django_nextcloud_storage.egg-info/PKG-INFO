@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: django-nextcloud-storage
+Version: 2024.5.20
+Summary: Django backend storage for nextcloud
+Author-email: Abtin MOHEBAN <abtin@riseup.net>
+License: MIT
+Project-URL: Homepage, https://github.com/abtinmo/django-nextcloud-storage
+Project-URL: Source, https://github.com/abtinmo/django-nextcloud-storage
+Keywords: django,nextcloud
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: Django>=4.2.0
+Requires-Dist: nc-py-api==0.13.0
+Requires-Dist: pillow>=10
