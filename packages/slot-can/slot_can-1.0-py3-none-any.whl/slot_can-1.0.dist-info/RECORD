@@ -1,0 +1,11 @@
+slot_can/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slot_can/datasets.py,sha256=H3gL1pffwTJNhe0fWaZJdrKWwqGmzo44njQaJMRyP-Q,4649
+slot_can/detector.py,sha256=SU6ExFSwPHxhIz44SJBrmz3hc1mIxpHfMUlpzmgD8AQ,6186
+slot_can/labeldict.py,sha256=EWynft8j01IX6a4-ae3VIqEPaCzvBsfxqteNrK8Q7PY,1376
+slot_can/models.py,sha256=LrSrPVx0RoQjJFGm7ySWkVXhHLN-RklXBt3uS7I0_7c,5599
+slot_can/tools.py,sha256=raaC49cRQ73svxndCWUef4hfX6w76bnpL8tHUuuy7ZE,580
+slot_can/train.py,sha256=EsdLLA8ybHE2-A-CFT69dB12ajEh8pqi6Jcs_smOLm8,9635
+slot_can-1.0.dist-info/METADATA,sha256=aUzSPWsULZ4oAJ0ckue-OYzODW-d7WsQtoljTJiyPtc,223
+slot_can-1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+slot_can-1.0.dist-info/top_level.txt,sha256=EtsX5gM8ZjhWsATkjANEbESYMxdKLKSC_DknhTAbXlc,9
+slot_can-1.0.dist-info/RECORD,,
