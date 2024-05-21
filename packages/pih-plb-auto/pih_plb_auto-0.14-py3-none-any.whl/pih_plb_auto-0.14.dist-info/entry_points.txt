@@ -1,0 +1,2 @@
+[console_scripts]
+pih-plb_auto = PolibaseAutomationService.__main__:start
