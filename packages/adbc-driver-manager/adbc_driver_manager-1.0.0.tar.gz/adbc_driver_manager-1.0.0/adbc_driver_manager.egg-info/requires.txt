@@ -1,0 +1,11 @@
+typing-extensions
+
+[dbapi]
+pandas
+pyarrow>=8.0.0
+
+[test]
+duckdb
+pandas
+pyarrow>=8.0.0
+pytest
