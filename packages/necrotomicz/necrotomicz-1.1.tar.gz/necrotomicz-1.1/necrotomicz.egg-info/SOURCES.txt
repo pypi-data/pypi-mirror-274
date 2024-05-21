@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+necrotomicz/__init__.py
+necrotomicz/main.py
+necrotomicz.egg-info/PKG-INFO
+necrotomicz.egg-info/SOURCES.txt
+necrotomicz.egg-info/dependency_links.txt
+necrotomicz.egg-info/requires.txt
+necrotomicz.egg-info/top_level.txt
