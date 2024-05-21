@@ -1,0 +1,7 @@
+langchain
+notebook
+ollama
+
+[dev]
+pytest
+pytest-cov
