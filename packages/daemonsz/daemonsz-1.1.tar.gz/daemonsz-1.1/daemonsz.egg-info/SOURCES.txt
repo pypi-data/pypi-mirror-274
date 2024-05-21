@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+daemonsz/__init__.py
+daemonsz/main.py
+daemonsz.egg-info/PKG-INFO
+daemonsz.egg-info/SOURCES.txt
+daemonsz.egg-info/dependency_links.txt
+daemonsz.egg-info/requires.txt
+daemonsz.egg-info/top_level.txt
