@@ -1,0 +1,2 @@
+[console_scripts]
+gwl = graphwiselearn.gwl_cmd:main
