@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/gtk_simple_loader/__init__.py
+src/gtk_simple_loader/builder.py
+src/gtk_simple_loader/py.typed
+src/gtk_simple_loader.egg-info/PKG-INFO
+src/gtk_simple_loader.egg-info/SOURCES.txt
+src/gtk_simple_loader.egg-info/dependency_links.txt
+src/gtk_simple_loader.egg-info/top_level.txt

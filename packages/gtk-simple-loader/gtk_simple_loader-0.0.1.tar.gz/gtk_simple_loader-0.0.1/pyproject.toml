@@ -1,0 +1,34 @@
+[project]
+name = "gtk_simple_loader"
+version = "0.0.1"
+authors = [
+    { name="Lucas Vasco", email="lucasvascosc@gmail.com" },
+]
+
+description = "Facilities to load simple GTK '.ui' files"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Environment :: X11 Applications :: GTK",
+]
+
+[project.urls]
+Homepage = "https://github.com/LucasAVasco/gtk_simple_loader"
+Issues = "https://github.com/LucasAVasco/gtk_simple_loader/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.pylsp-mypy]
+strict = true
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["ANN101"]  # Disable require explicit type annotations to 'Self'
