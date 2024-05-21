@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyepsilla
+Version: 0.3.7
+Summary: Epsilla Python SDK
+Home-page: https://github.com/epsilla-cloud/epsilla-python-client
+Author: Epsilla Team
+Author-email: info@epsilla.com
+License: Apache License
+Project-URL: Source, https://github.com/epsilla-cloud/epsilla-python-client
+Keywords: epsilla
+Platform: any
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: sentry_sdk
+Requires-Dist: posthog
+Requires-Dist: pydantic
+
+Epsilla Python SDK
