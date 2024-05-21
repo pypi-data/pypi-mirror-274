@@ -1,0 +1,7 @@
+anytree
+click
+
+[dev]
+black
+pyre-check
+testslide
