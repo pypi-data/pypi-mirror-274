@@ -1,0 +1,5 @@
+coloredlogs
+Click
+openpyxl
+rich
+python-slugify
