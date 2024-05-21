@@ -1,0 +1,2 @@
+class ModelImportException(Exception):
+    pass
