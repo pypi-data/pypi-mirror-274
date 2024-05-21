@@ -1,0 +1,2 @@
+[console_scripts]
+pih-printer = PrinterService.__main__:start
