@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+futuramaz/__init__.py
+futuramaz/main.py
+futuramaz.egg-info/PKG-INFO
+futuramaz.egg-info/SOURCES.txt
+futuramaz.egg-info/dependency_links.txt
+futuramaz.egg-info/requires.txt
+futuramaz.egg-info/top_level.txt
