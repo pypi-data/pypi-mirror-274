@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unsheathedz/__init__.py
+unsheathedz/main.py
+unsheathedz.egg-info/PKG-INFO
+unsheathedz.egg-info/SOURCES.txt
+unsheathedz.egg-info/dependency_links.txt
+unsheathedz.egg-info/requires.txt
+unsheathedz.egg-info/top_level.txt
