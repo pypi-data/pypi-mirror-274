@@ -1,0 +1,5 @@
+streaming_assistants/__init__.py,sha256=Dlh7Q4Ttvko-SP07_TpKDUIfQK_6MBi5gr_Vh9rq8CQ,26
+streaming_assistants/patch.py,sha256=suxfD1MvOQ13bN9qaFcX91ekh4L8ETg4N_h8sv0huUk,15510
+streaming_assistants-0.18.3rc0.dist-info/METADATA,sha256=KVeXNt6CnkTkL4nfgbHhxAq8z2NlzccX95VLYOW4ULo,1752
+streaming_assistants-0.18.3rc0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+streaming_assistants-0.18.3rc0.dist-info/RECORD,,
