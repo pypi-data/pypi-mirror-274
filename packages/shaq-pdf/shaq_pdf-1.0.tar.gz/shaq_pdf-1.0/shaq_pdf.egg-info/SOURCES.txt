@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+shaq_pdf.egg-info/PKG-INFO
+shaq_pdf.egg-info/SOURCES.txt
+shaq_pdf.egg-info/dependency_links.txt
+shaq_pdf.egg-info/top_level.txt
