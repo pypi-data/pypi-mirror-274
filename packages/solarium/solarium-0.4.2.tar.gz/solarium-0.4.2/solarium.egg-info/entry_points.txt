@@ -1,0 +1,2 @@
+[console_scripts]
+solarium = solarium.__main__:main
