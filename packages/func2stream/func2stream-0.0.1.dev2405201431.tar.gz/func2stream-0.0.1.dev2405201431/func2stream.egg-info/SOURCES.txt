@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+func2stream/__init__.py
+func2stream/core.py
+func2stream/utils.py
+func2stream/video.py
+func2stream.egg-info/PKG-INFO
+func2stream.egg-info/SOURCES.txt
+func2stream.egg-info/dependency_links.txt
+func2stream.egg-info/requires.txt
+func2stream.egg-info/top_level.txt
