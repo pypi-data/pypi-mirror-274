@@ -1,0 +1,13 @@
+rvtools2azmigrate/__init__.py,sha256=z5amCxLm6xc6Ex9fYbSoCuswmRe20Z5xfu9txunM5pA,107
+rvtools2azmigrate/azmigrate_vm.py,sha256=KAppRdNnlR5TBcgv9hT6UH5ZIyfJO7NCgD4MyfM-gq0,2972
+rvtools2azmigrate/cli.py,sha256=Vy2pGKdk24Geo6sVpbSm4IMC3jGIhg0IAQuXXWU-LqQ,2131
+rvtools2azmigrate/config.py,sha256=jQwtXUmoD2jQ2OziLAz-gmpGzDe5sO1TwC4fBM5CIOM,376
+rvtools2azmigrate/convert.py,sha256=GcIUKdbPTQCgTUY7JdVX5jyvawlU9teAw5mozmmfUSc,6559
+rvtools2azmigrate/rvtools_vm.py,sha256=yzWzu7kKbJxORlGvE2HoKVZvplK18kQJN5KEmDIX5k8,2723
+rvtools2azmigrate-0.2.0.dist-info/AUTHORS.md,sha256=O1rpA-8Fwg2qnwz_QpSLTgubJMUvfDEjzo2hnAy7cUE,102
+rvtools2azmigrate-0.2.0.dist-info/LICENSE,sha256=VYay1JdsVZ6S-4MaYjn9MtGq3Pfr9wXref6DQ4ciikE,1076
+rvtools2azmigrate-0.2.0.dist-info/METADATA,sha256=gVmndrZOEXiPK_ytloKwyRLgQb1veEKARsQsZlYtoFU,4231
+rvtools2azmigrate-0.2.0.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+rvtools2azmigrate-0.2.0.dist-info/entry_points.txt,sha256=NPd6LksRO2aqkpd3HfcZA2PYTqBwBJsH4NBwNzRiMOc,99
+rvtools2azmigrate-0.2.0.dist-info/top_level.txt,sha256=sibLMriqOL3KwVjevcmg0abcUWDg9SzLa95cJb1bLqE,18
+rvtools2azmigrate-0.2.0.dist-info/RECORD,,
