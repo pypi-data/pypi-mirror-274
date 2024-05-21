@@ -1,0 +1,11 @@
+CHANGES
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+easy_dict_linshangsheng.egg-info/PKG-INFO
+easy_dict_linshangsheng.egg-info/SOURCES.txt
+easy_dict_linshangsheng.egg-info/dependency_links.txt
+easy_dict_linshangsheng.egg-info/not-zip-safe
+easy_dict_linshangsheng.egg-info/top_level.txt
+easydict/__init__.py
