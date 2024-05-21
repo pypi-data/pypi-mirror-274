@@ -1,0 +1,8 @@
+setup.py
+sonytech/__init__.py
+sonytech/main.py
+sonytech.egg-info/PKG-INFO
+sonytech.egg-info/SOURCES.txt
+sonytech.egg-info/dependency_links.txt
+sonytech.egg-info/requires.txt
+sonytech.egg-info/top_level.txt
