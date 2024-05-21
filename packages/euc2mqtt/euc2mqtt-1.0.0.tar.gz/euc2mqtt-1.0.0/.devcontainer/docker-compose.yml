@@ -1,0 +1,27 @@
+services:
+  vscode:
+    # Python 3.12 Devcontainer
+    image: mcr.microsoft.com/devcontainers/python:1-3.12-bullseye
+    command: sleep infinity
+    network_mode: service:homeassistant
+    volumes:
+      - ../..:/workspaces:cached
+
+  mosquitto:
+    # Mosquitto Broker
+    image: eclipse-mosquitto:latest
+    restart: unless-stopped
+    network_mode: service:homeassistant
+    volumes:
+      - mosquitto_data:/mosquitto
+
+  homeassistant: 
+    # Homeassistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    restart: unless-stopped
+    volumes:
+      - homeassistant_config:/config
+
+volumes:
+  homeassistant_config:
+  mosquitto_data:

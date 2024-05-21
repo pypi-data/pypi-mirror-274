@@ -1,0 +1,2 @@
+[console_scripts]
+euc2mqtt = euc2mqtt.CLI:main
