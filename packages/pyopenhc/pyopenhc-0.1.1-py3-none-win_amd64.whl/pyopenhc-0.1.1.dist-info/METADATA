@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyopenhc
+Version: 0.1.1
+Summary: PyOpenHC
+Home-page: https://github.com/pengzhendong/pyopenhc
+Author: Zhendong Peng
+Author-email: pzd17@tsinghua.org.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Open Han Converter
+
+```bash
+$ pip install pyopenhc
+$ python
+```
+
+```python
+>>> from pyopenhc import OpenHC
+>>> converter = OpenHC("s2t")
+>>> converter.convert("世界唯一仍广泛使用并高度发展的语素文字")
+
+世界唯一仍廣泛使用並高度發展的語素文字
+```
