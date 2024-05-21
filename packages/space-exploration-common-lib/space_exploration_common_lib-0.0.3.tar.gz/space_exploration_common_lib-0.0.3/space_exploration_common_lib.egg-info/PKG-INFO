@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: space-exploration-common-lib
+Version: 0.0.3
+Author: Steven Hatch
+Author-email: stevegreghatch@gmail.com
+Requires-Python: >=3.12, <4
+Requires-Dist: pydantic==2.7.1
