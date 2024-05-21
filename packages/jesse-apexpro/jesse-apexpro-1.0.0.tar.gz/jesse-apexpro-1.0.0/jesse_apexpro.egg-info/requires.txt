@@ -1,0 +1,11 @@
+requests
+websocket-client
+websockets
+dateparser==1.0.0
+ecdsa==0.16.0
+eth_keys
+eth-account<0.9.0,>=0.4.0
+mpmath==1.0.0
+sympy==1.6
+tox
+web3==6.10.0
