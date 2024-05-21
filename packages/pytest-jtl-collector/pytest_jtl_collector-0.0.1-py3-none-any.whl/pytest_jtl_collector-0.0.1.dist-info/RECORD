@@ -1,0 +1,8 @@
+pytest_jtl_collector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_jtl_collector/plugin.py,sha256=9KCGdNSWyZQIBb7eUeE7sGNxwr57lvvt36b6Nc3qfkA,394
+pytest_jtl_collector-0.0.1.dist-info/LICENSE,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+pytest_jtl_collector-0.0.1.dist-info/METADATA,sha256=AldfU26DbMgSheojzyWA9HPDXdAOBlv8kSY7HSyZiPI,16271
+pytest_jtl_collector-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pytest_jtl_collector-0.0.1.dist-info/entry_points.txt,sha256=52XCBKRWlfw4YZ1Vfa1l_P4Z7wK_Y9vmzCID6JMXYn4,55
+pytest_jtl_collector-0.0.1.dist-info/top_level.txt,sha256=4Q3XZqgFksfAbHzVgKMsMVVhHT99diXOB1btFIWM5bQ,21
+pytest_jtl_collector-0.0.1.dist-info/RECORD,,
