@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+periastralz/__init__.py
+periastralz/main.py
+periastralz.egg-info/PKG-INFO
+periastralz.egg-info/SOURCES.txt
+periastralz.egg-info/dependency_links.txt
+periastralz.egg-info/requires.txt
+periastralz.egg-info/top_level.txt
