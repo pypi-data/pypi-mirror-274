@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cherubimicz/__init__.py
+cherubimicz/main.py
+cherubimicz.egg-info/PKG-INFO
+cherubimicz.egg-info/SOURCES.txt
+cherubimicz.egg-info/dependency_links.txt
+cherubimicz.egg-info/requires.txt
+cherubimicz.egg-info/top_level.txt
