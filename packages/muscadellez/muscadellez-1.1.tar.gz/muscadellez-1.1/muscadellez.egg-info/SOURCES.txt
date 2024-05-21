@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+muscadellez/__init__.py
+muscadellez/main.py
+muscadellez.egg-info/PKG-INFO
+muscadellez.egg-info/SOURCES.txt
+muscadellez.egg-info/dependency_links.txt
+muscadellez.egg-info/requires.txt
+muscadellez.egg-info/top_level.txt
