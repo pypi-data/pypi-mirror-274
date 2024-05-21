@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aeneusz/__init__.py
+aeneusz/main.py
+aeneusz.egg-info/PKG-INFO
+aeneusz.egg-info/SOURCES.txt
+aeneusz.egg-info/dependency_links.txt
+aeneusz.egg-info/requires.txt
+aeneusz.egg-info/top_level.txt
