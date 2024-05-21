@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dictoat/.DS_Store
+dictoat/dictoat.py
+dictoat.egg-info/PKG-INFO
+dictoat.egg-info/SOURCES.txt
+dictoat.egg-info/dependency_links.txt
+dictoat.egg-info/top_level.txt
