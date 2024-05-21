@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nestbox/__init__.py
+nestbox/coordsystem.py
+nestbox/cube.py
+nestbox/run_optimizer.py
+nestbox/sim.py
+nestbox/test.py
+nestbox/visualizer.py
+nestbox.egg-info/PKG-INFO
+nestbox.egg-info/SOURCES.txt
+nestbox.egg-info/dependency_links.txt
+nestbox.egg-info/requires.txt
+nestbox.egg-info/top_level.txt
