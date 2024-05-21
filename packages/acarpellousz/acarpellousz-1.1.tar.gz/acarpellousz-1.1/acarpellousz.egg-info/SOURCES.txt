@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+acarpellousz/__init__.py
+acarpellousz/main.py
+acarpellousz.egg-info/PKG-INFO
+acarpellousz.egg-info/SOURCES.txt
+acarpellousz.egg-info/dependency_links.txt
+acarpellousz.egg-info/requires.txt
+acarpellousz.egg-info/top_level.txt
