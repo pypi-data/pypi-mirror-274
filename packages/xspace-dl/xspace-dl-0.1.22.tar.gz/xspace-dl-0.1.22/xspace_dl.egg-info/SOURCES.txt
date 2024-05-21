@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+xspace_dl/__init__.py
+xspace_dl/__main__.py
+xspace_dl/api.py
+xspace_dl/cookies.py
+xspace_dl/xspace.py
+xspace_dl/xspace_dl.py
+xspace_dl.egg-info/PKG-INFO
+xspace_dl.egg-info/SOURCES.txt
+xspace_dl.egg-info/dependency_links.txt
+xspace_dl.egg-info/entry_points.txt
+xspace_dl.egg-info/requires.txt
+xspace_dl.egg-info/top_level.txt
