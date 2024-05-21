@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: bibmanager
+Version: 1.4.11
+Summary: A BibTeX manager for LaTeX projects
+Author-email: Patricio Cubillos <pcubillos@fulbrightmail.org>
+License: MIT License
+        
+        Copyright (c) 2018 Patricio Cubillos
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/pcubillos/bibmanager
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.15.1
+Requires-Dist: requests >=2.19.1
+Requires-Dist: packaging >=17.1
+Requires-Dist: prompt-toolkit >=3.0.5
+Requires-Dist: pygments >=2.2.0
+Provides-Extra: test
+Requires-Dist: requests-mock ; extra == 'test'
+Requires-Dist: prompt-toolkit >=3.0.30 ; extra == 'test'
+Requires-Dist: pygments >=2.11 ; extra == 'test'
+
+# bibmanager
+> The Next Standard in BibTeX Management
+
+[![Tests](https://github.com/pcubillos/bibmanager/actions/workflows/python-package.yml/badge.svg?branch=master)](https://github.com/pcubillos/bibmanager/actions/workflows/python-package.yml)
+[![Documentation Status](https://readthedocs.org/projects/bibmanager/badge/?version=latest)](https://bibmanager.readthedocs.io/en/latest/?badge=latest)
+[![PyPI](https://img.shields.io/pypi/v/bibmanager.svg)](https://pypi.org/project/bibmanager)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/bibmanager.svg)](https://anaconda.org/conda-forge/bibmanager)
+[![GitHub](https://img.shields.io/github/license/pcubillos/bibmanager.svg?color=blue)](https://bibmanager.readthedocs.io/en/latest/license.html)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2547042.svg)](https://doi.org/10.5281/zenodo.2547042)
+
+### Install as:
+```
+pip install bibmanager
+```
+or:
+```
+conda install -c conda-forge bibmanager
+```
+
+### Docs at:
+<https://bibmanager.readthedocs.io/en/latest/>
+
+### Cite as:
+```bibtex
+  @MISC{Cubillos2020zndoBibmanager,
+         author = {{Cubillos}, Patricio E.},
+          title = "{bibmanager: A BibTeX manager for LaTeX projects, Zenodo, doi 10.5281/zenodo.2547042}",
+           year = 2020,
+          month = feb,
+   howpublished = {Zenodo},
+            eid = {10.5281/zenodo.2547042},
+            doi = {10.5281/zenodo.2547042},
+      publisher = {Zenodo},
+         url    = {https://doi.org/10.5281/zenodo.2547042},
+         adsurl = {https://ui.adsabs.harvard.edu/abs/2020zndo...2547042C},
+        adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+  }
+```
+
+# <img alt="bibmanager" src="https://github.com/pcubillos/bibmanager/blob/master/docs/infograph.png" width="535">
