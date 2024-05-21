@@ -1,0 +1,2 @@
+[console_scripts]
+pih-med_auto = MedicalAutomationService.__main__:start
