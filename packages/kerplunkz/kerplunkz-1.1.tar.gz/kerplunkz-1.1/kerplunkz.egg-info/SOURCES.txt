@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kerplunkz/__init__.py
+kerplunkz/main.py
+kerplunkz.egg-info/PKG-INFO
+kerplunkz.egg-info/SOURCES.txt
+kerplunkz.egg-info/dependency_links.txt
+kerplunkz.egg-info/requires.txt
+kerplunkz.egg-info/top_level.txt
