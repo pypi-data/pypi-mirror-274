@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sdcard-lib
+Version: 0.0.1
+Summary: A library for controlling SD cards with ESP32 compatibility, designed for easy installation in Thonny.
+Author: Nobody
+Author-email: name@email.com
+License: License
+Description-Content-Type: text/markdown
+
+
+# sdcard_lib_pypip
+
+This repository hosts a PyPI package designed for compatibility with Thonny, facilitating easy installation. The code is entirely written in MicroPython. I am responsible solely for uploading the code to PyPI; all rights remain with the original author.
+
+For more information on [MicroPython](https://github.com/micropython/micropython-lib/tree/master), visit the official repository.
+
+## Installation
+
+1. Open [Thonny](https://thonny.org/).
+2. Go to **Tools** -> **Manage Packages**.
+3. Enter `sdcard_lib` in the search bar and click **Install**.
