@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyCeph/__init__.py
+pyCeph/aios3.py
+pyCeph/crypto.py
+pyCeph/log.py
+pyCeph/s3.py
+s3_object_storage_client.egg-info/PKG-INFO
+s3_object_storage_client.egg-info/SOURCES.txt
+s3_object_storage_client.egg-info/dependency_links.txt
+s3_object_storage_client.egg-info/requires.txt
+s3_object_storage_client.egg-info/top_level.txt
