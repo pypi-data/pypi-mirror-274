@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+okesz/__init__.py
+okesz/main.py
+okesz.egg-info/PKG-INFO
+okesz.egg-info/SOURCES.txt
+okesz.egg-info/dependency_links.txt
+okesz.egg-info/requires.txt
+okesz.egg-info/top_level.txt
