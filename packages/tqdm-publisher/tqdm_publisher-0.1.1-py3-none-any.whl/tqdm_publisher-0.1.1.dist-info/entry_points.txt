@@ -1,0 +1,2 @@
+[console_scripts]
+tqdm_publisher = tqdm_publisher._demos._demo_command_line_interface:_command_line_interface
