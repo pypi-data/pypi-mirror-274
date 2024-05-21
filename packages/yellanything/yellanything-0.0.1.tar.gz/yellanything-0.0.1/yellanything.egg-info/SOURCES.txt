@@ -1,0 +1,8 @@
+README.md
+setup.py
+yellanything/__init__.py
+yellanything/yell.py
+yellanything.egg-info/PKG-INFO
+yellanything.egg-info/SOURCES.txt
+yellanything.egg-info/dependency_links.txt
+yellanything.egg-info/top_level.txt
