@@ -1,0 +1,9 @@
+pytest_django_docker_pg/VERSION,sha256=TKwna27F1Mcc2Wyi57di6xJUOa28hyHeVhMQbRNF_i0,6
+pytest_django_docker_pg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_django_docker_pg/plugin.py,sha256=2jXUg0EZt9JcjyfLF-7gglkVkmG2epsdu8ReB2mM61U,4967
+pytest_django_docker_pg-0.0.3.dist-info/LICENSE,sha256=oRDiqTUn9jsfIKuXdS-3Mn6Jj6tumXa8uxJLF9t_Cdg,1065
+pytest_django_docker_pg-0.0.3.dist-info/METADATA,sha256=n1IeRN7Q-ZkZYPIo2K5sxSTO-kHa6XQq6JsZCmsGysg,2830
+pytest_django_docker_pg-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pytest_django_docker_pg-0.0.3.dist-info/entry_points.txt,sha256=wnotJE8UwSt8f1mrFumi3S6L68j8JBPuPqEXj99WNNo,68
+pytest_django_docker_pg-0.0.3.dist-info/top_level.txt,sha256=LvSlJJL9S7D2ZUr8TfrIlps1QhzX9zsQ-aLTFZxOYj0,24
+pytest_django_docker_pg-0.0.3.dist-info/RECORD,,
