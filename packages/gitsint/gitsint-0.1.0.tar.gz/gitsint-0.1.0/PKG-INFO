@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gitsint
+Version: 0.1.0
+Summary: gitsint allows you to check everything from a github user.
+License: MIT
+Author: Zerostats
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: detect-secrets (>=1.5.0,<2.0.0)
+Requires-Dist: gitpython (>=3.1.43,<4.0.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: termcolor (>=2.4.0,<3.0.0)
+Requires-Dist: tqdm (>=4.66.4,<5.0.0)
+Requires-Dist: trio (>=0.25.1,<0.26.0)
+Description-Content-Type: text/markdown
+
+
