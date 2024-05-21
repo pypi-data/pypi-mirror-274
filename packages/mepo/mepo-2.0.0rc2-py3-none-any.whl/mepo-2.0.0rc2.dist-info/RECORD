@@ -1,0 +1,11 @@
+etc/mepo-cd.bash,sha256=NwtD5ZWTCpoHNKgac0ipnOJtZ4mLdigDC2Tge_uUlLs,568
+etc/mepo-cd.csh,sha256=aV4HrA3ymddzuEW5783DKV3YYfRvEzWVfuj-uPYhNbQ,42
+etc/mepo-cd.zsh,sha256=0ik-9_5kDdwettt9IiHO6e30vf6x6_FCFC6z1YYhL10,718
+etc/mepo-completion.bash,sha256=mZMsKn5-Q76h4tcnIp7WcCTmARz0z_DLdHzIR89XVIo,708
+etc/mepoconfig-example,sha256=yJ_7hKRM_S02wOan-OSQbVsM9cwd3eJIYBeBqJcbTZQ,2099
+mepo-2.0.0rc2.dist-info/METADATA,sha256=JAhHEdj9TgHy8rV3l7aWATwkqq3bfMZyZaLqdxU4JgE,1606
+mepo-2.0.0rc2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+mepo-2.0.0rc2.dist-info/entry_points.txt,sha256=RUf4yxgT1JNQfTHOHxMSToAg9aGMKuwHcBUO_kQsU6s,44
+mepo-2.0.0rc2.dist-info/licenses/LICENSE,sha256=Y-I24dWgUkGd1PJpGnThTXFxDZ4Efx6LTmx_C2QO1Kg,11025
+mepo-2.0.0rc2.dist-info/licenses/LICENSE-NOSA,sha256=cVfdzQ0Q5tEeT_m_bViTSAchDaQD-DSjQfEFtLrz39I,12619
+mepo-2.0.0rc2.dist-info/RECORD,,
