@@ -1,0 +1,12 @@
+s3func/__init__.py,sha256=SSg1oGOht0eQM8eiTwqJ8v7KH2QvH4DUKC2ed22y0eo,174
+s3func/b2.py,sha256=V6-YwYh79pAfkz8STz3R7KWEcI8ZSlYdPzpfuyLYesA,3423
+s3func/http_url.py,sha256=PldmAz46oH8GFs9sYhH3tHAC7v1OW2ih1XakduvLxgc,4556
+s3func/s3.py,sha256=0oc6rGGiCJ_g9HkMz6PRt44gNPJJ-9Q09uWcpAxBe7U,23053
+s3func/utils.py,sha256=I84jJYr4xVIB1881J8urucz9UZ1yeCghkVpI9-G5FYE,12826
+s3func/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3func/tests/stns_data.blt,sha256=J3X_tByK5T-cOpLCyXw52BB6zeBzZqPusTx6vW9eAHY,285095
+s3func/tests/test_s3func.py,sha256=QtSOEKcshNogO0ACkL5_7TBeUMzFu7SQabxhW-DDx6w,7113
+s3func-0.2.0.dist-info/METADATA,sha256=kO06-ziQHOqzflEP3hUcrIi1u5B9Um1mWMTkBCWZ0yU,2212
+s3func-0.2.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+s3func-0.2.0.dist-info/licenses/LICENSE,sha256=RWtzUOqfgUOaV_WEmHCfI0OSG3pnXjpLwBKBZy0nGbo,586
+s3func-0.2.0.dist-info/RECORD,,
