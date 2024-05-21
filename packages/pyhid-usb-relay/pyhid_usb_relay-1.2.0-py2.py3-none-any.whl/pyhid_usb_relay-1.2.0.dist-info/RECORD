@@ -1,0 +1,12 @@
+pyhid_usb_relay/__init__.py,sha256=r6261HOOaP5An0ZrZBBwX5K6sET9jUho0j7BXGP9fak,273
+pyhid_usb_relay/__main__.py,sha256=Rjp1Ooihsv9CpAm8R7cYeZUtis0-QfqHMpcevh6NfD8,169
+pyhid_usb_relay/controller.py,sha256=WiQy2QbSLGwWlRiJdx03v-9ROk1wxHKxORNTb3yelFc,4936
+pyhid_usb_relay/exceptions.py,sha256=vi4okjt35EyMs1oBIvt1wq9yQO5Km8ReT6GU99flFJk,134
+pyhid_usb_relay/find.py,sha256=gmlCY6GZ7mnWiZ1rndo_896KavHrv9sKs8Sq3okm--c,1872
+pyhid_usb_relay/main.py,sha256=BgX3u-hKReYz4qCQoJ2J4bAE3WsRDARvVhLqIVULTmU,5492
+pyhid_usb_relay/version.py,sha256=viNrPDalxthAcGDGV3QUhm0tvEB8vd-Uh-27v9_MV7c,18
+pyhid_usb_relay-1.2.0.dist-info/METADATA,sha256=amoe69j_sDMIgUImkotsKbHKJPwNMZHDcgvIT3xiFUw,6395
+pyhid_usb_relay-1.2.0.dist-info/WHEEL,sha256=cDcbFFSNXOE-241I5PFuLkIYfR_FM7WTlPEi33njInY,105
+pyhid_usb_relay-1.2.0.dist-info/entry_points.txt,sha256=j4IxguUeoUVvpIu677tFs1oN4td0dB00D24D9kdg39Y,62
+pyhid_usb_relay-1.2.0.dist-info/licenses/COPYING,sha256=1NubgG8Dt-9KceXLKvrycHQDrsgPXdAq4LrXz3wiH9o,1074
+pyhid_usb_relay-1.2.0.dist-info/RECORD,,
