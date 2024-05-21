@@ -1,0 +1,12 @@
+notifications_python_client/__init__.py,sha256=r-sJQ-6pj7OsKjenzJoH9im4hhabdDj1Gu0tu6DbgiM,637
+notifications_python_client/authentication.py,sha256=HUOchdPtdMv20EFgD6O1xDnPqHUgpcwOSTKm772D1UU,4662
+notifications_python_client/base.py,sha256=oCxTWfhNpdTB66XSrl9rdXarADsCm4GvDg1rTKI_WLg,3745
+notifications_python_client/errors.py,sha256=Jsby_ww6xiJVpEQl-b4Psdawz9LE390rtoCuXLjxMbU,2438
+notifications_python_client/notifications.py,sha256=c_mfGZNfmDgrOFcSQ7-RnLTY7KUkjV9GbsVrw88N2cA,5645
+notifications_python_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notifications_python_client/utils.py,sha256=EiJqiLjjBGJHhsQjpyXwHcze54oaFiG0nARYggWxR5M,542
+notifications_python_client-9.1.0.dist-info/LICENSE,sha256=ArTAWSfEszf0_SxXDz1S9HbshIn78-RfUZLDF0UgULA,1094
+notifications_python_client-9.1.0.dist-info/METADATA,sha256=oe8BaU4LS6Our2XKm7Q0L4jm74CJ3WBNwI1Esb7gKrA,1084
+notifications_python_client-9.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+notifications_python_client-9.1.0.dist-info/top_level.txt,sha256=RAa3Hvf6kd59bZGL4QBm5zVsiv6MegJquMXAQubXM3A,28
+notifications_python_client-9.1.0.dist-info/RECORD,,
