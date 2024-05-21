@@ -1,0 +1,6 @@
+ryvencore-qt==0.5.*
+ryvencore==0.5.*
+Jinja2
+Pygments
+textdistance
+packaging
