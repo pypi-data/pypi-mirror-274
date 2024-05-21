@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+perseverationz/__init__.py
+perseverationz/main.py
+perseverationz.egg-info/PKG-INFO
+perseverationz.egg-info/SOURCES.txt
+perseverationz.egg-info/dependency_links.txt
+perseverationz.egg-info/requires.txt
+perseverationz.egg-info/top_level.txt
