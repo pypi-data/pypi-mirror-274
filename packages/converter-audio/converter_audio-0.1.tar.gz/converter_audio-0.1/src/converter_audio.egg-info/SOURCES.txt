@@ -1,0 +1,10 @@
+setup.py
+src/converter/__init__.py
+src/converter/convert.py
+src/converter/converter.py
+src/converter/enums.py
+src/converter/strategies.py
+src/converter_audio.egg-info/PKG-INFO
+src/converter_audio.egg-info/SOURCES.txt
+src/converter_audio.egg-info/dependency_links.txt
+src/converter_audio.egg-info/top_level.txt
