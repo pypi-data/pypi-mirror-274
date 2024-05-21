@@ -1,0 +1,152 @@
+<div class="statblock">
+  <!-- main block -->
+  {% if Description_Visual %}
+    <blockquote>
+      <p>{{ Description_Visual }}</p>
+    </blockquote>
+  {% endif %}
+
+  <h1 class="statblock-name">
+    {{ Name }}
+    <div class="statblock-cr">
+      {% if CR %}
+        <b>CR</b> {{ CR }}
+      {% endif %}
+    </div>
+  </h1>
+
+  {% if XP %}
+    <div class="statblock-xp">{{ XP|testFilter(label='XP')}}</div>
+  {% endif %}
+
+  <div class="statblock-class">
+    {% if Race %}{{ Race }}{% endif %}
+    {% if Class %}{{ Class }}{% endif %}
+  </div>
+
+  <div class="statblock-type">
+    {% if Alignment %}{{ Alignment }}{% endif %}
+    {% if Size %}{{ Size }}{% endif %}
+    {% if Type %}{{ Type }}{% endif %}
+    {% if SubType %}{{ SubType }}{% endif %}
+  </div>
+
+  <div>
+    <b>Init</b> {{ Init|modifier }};
+    <b>Senses</b> {{ Senses|join('; ') }}
+  </div>
+
+  <!-- defense block -->
+  <h3>Defense</h3>
+  <div>
+    <b>AC</b> {{ AC }} {{ AC_Mods }}
+  </div>
+  <div>
+    <b>hp</b> {{ HP }} {{ HD }}
+  </div>
+  <div>
+    <b>Fort</b> {{ Fort|modifier }}, <b>Ref</b> {{ Ref|modifier }}, <b>Will</b> {{ Will|modifier }}
+  </div>
+  {% if DR or Immune %}
+  <div>
+    {% if DR %}<b>DR</b> {{ DR }}{% endif %}{% if DR and Immune %};{% endif %}
+    {% if Immune %}<b>Immune</b> {{ Immune }}{% endif %}
+  </div>
+  {% endif %}
+  {% if Weaknesses %}
+  <div>
+    <b>Weaknesses</b> {{ Weaknesses }}
+  </div>
+  {% endif %}
+
+  <!-- offense block -->
+  <h3>Offense</h3>
+  <div>
+    {{ Speed|testFilter(label='Speed')}}
+  </div>
+  {% if Melee %}
+  <div>
+    {{ Melee|join(', or ')|testFilter(label='Melee') }}
+  </div>
+  {% endif %}
+  {% if Ranged %}
+  <div>
+    {{ Ranged|join(', or ')|testFilter(label='Ranged') }}
+  </div>
+  {% endif %}
+
+  {% if Space or Reach %}
+  <div>
+    {% if Space %}<b>Space</b> {{ Space }}{% endif %}{% if Space and Reach %};{% endif %}
+    {% if Reach %}<b>Reach</b> {{ Reach }}{% endif %}
+  </div>
+  {% endif %}
+
+  {% if SpecialAttacks %}
+  <div>
+    <b>Special Attacks</b> {{ SpecialAttacks }}
+  </div>
+  {% endif %}
+
+  <!-- statistics block -->
+  <h3>Statistics</h3>
+  <div>
+    <b>Str</b> {{ AbilityScores[0] }},
+    <b>Dex</b> {{ AbilityScores[1] }},
+    <b>Con</b> {{ AbilityScores[2] }},
+    <b>Int</b> {{ AbilityScores[3] }},
+    <b>Wis</b> {{ AbilityScores[4] }},
+    <b>Cha</b> {{ AbilityScores[5] }}
+  </div>
+  <div>
+    <b>Base Atk</b> {{ BaseAtk|modifier }};
+    <b>CMB</b> {{ CMB|modifier }};
+    <b>CMD</b> {{ CMD }}
+  </div>
+  {% if Feats %}
+  <div>
+    <b>Feats</b> {{ Feats|join(', ') }}
+  </div>
+  {% endif %}
+  {% if Skills %}
+  <div>
+    <b>Skills</b> {{ Skills|join(', ') }}
+  </div>
+  {% endif %}
+  <div>
+    <b>Languages</b> {{ Languages|default('none listed') }}
+  </div>
+  {% if SQ %}
+  <div>
+    <b>Special Qualities</b> {{ SQ }}
+  </div>
+  {% endif %}
+
+  <!-- special abilities block -->
+  {% if SpecialAbilities %}
+  <h3>Special Abilities</h3>
+  <div>
+    {% for ability in SpecialAbilities %}
+      <h4>{{ ability.name }}</h4>
+      <div>{{ ability.description }}</div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- ecology block -->
+  <h3>Ecology</h3>
+  <div>
+    <b>Environment</b> {{ Environment }}
+  </div>
+  <div>
+    <b>Organization</b> {{ Organization }}
+  </div>
+  <div>
+    <b>Treasure</b> {{ Treasure }}
+  </div>
+
+  <!-- description block -->
+  {% for paragraph in Description %}
+    <p>{{ paragraph }}</p>
+  {% endfor %}
+</div>
