@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: sentrifyai
+Version: 0.1.1
+Summary: SentrifyAI API client
+Home-page: https://github.com/sentrifybot/sentrifyai-python
+Author: SentrifyAI
+Author-email: admin@sentrify.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SentrifyAI Python Package
+
+SentrifyAI is a Python package that provides a client for interacting with the SentrifyAI API.
+
+## Installation
+
+You can install the package via pip:
+
+```
+pip install sentrifyai
+```
+
+## Usage
+
+```
+from sentrifyai import SentrifyAI
+
+# Initialize the client with your API key
+client = SentrifyAI(api_key='your_api_key')
+
+# List models available on SentrifyAI
+models = client.list_models()
+print(models)
+
+# Classify a message using a specific model
+result = client.classify_message(model_slug='model_slug', message='Your message here')
+print(result)
+```
+
+## Documentation
+
+For more detailed usage instructions and API reference, please refer to the [documentation](https://github.com/yourusername/sentrifyai).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
