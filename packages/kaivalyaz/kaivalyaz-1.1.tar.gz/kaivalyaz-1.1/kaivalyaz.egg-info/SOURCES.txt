@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kaivalyaz/__init__.py
+kaivalyaz/main.py
+kaivalyaz.egg-info/PKG-INFO
+kaivalyaz.egg-info/SOURCES.txt
+kaivalyaz.egg-info/dependency_links.txt
+kaivalyaz.egg-info/requires.txt
+kaivalyaz.egg-info/top_level.txt
