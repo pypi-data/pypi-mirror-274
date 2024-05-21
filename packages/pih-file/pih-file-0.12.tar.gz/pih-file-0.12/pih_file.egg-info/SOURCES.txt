@@ -1,0 +1,10 @@
+FileWatchdogService/__init__.py
+FileWatchdogService/__main__.py
+FileWatchdogService/const.py
+FileWatchdogService/service.py
+pih_file.egg-info/PKG-INFO
+pih_file.egg-info/SOURCES.txt
+pih_file.egg-info/dependency_links.txt
+pih_file.egg-info/entry_points.txt
+pih_file.egg-info/requires.txt
+pih_file.egg-info/top_level.txt
