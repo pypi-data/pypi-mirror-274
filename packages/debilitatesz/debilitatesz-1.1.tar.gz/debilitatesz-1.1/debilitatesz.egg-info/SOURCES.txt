@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+debilitatesz/__init__.py
+debilitatesz/main.py
+debilitatesz.egg-info/PKG-INFO
+debilitatesz.egg-info/SOURCES.txt
+debilitatesz.egg-info/dependency_links.txt
+debilitatesz.egg-info/requires.txt
+debilitatesz.egg-info/top_level.txt
