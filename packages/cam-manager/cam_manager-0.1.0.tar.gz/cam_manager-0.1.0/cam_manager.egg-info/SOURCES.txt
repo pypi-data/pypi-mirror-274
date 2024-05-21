@@ -1,0 +1,9 @@
+README.md
+setup.py
+cam_manager/__init__.py
+cam_manager/cam_manager.py
+cam_manager.egg-info/PKG-INFO
+cam_manager.egg-info/SOURCES.txt
+cam_manager.egg-info/dependency_links.txt
+cam_manager.egg-info/requires.txt
+cam_manager.egg-info/top_level.txt
