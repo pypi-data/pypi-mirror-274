@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+create_redirect/__init__.py
+create_redirect/__main__.py
+create_redirect.egg-info/PKG-INFO
+create_redirect.egg-info/SOURCES.txt
+create_redirect.egg-info/dependency_links.txt
+create_redirect.egg-info/entry_points.txt
+create_redirect.egg-info/not-zip-safe
+create_redirect.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+create-redirect = create_redirect:main
+create_redirect = create_redirect:main
