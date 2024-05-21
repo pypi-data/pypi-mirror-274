@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonchurchgoingz/__init__.py
+nonchurchgoingz/main.py
+nonchurchgoingz.egg-info/PKG-INFO
+nonchurchgoingz.egg-info/SOURCES.txt
+nonchurchgoingz.egg-info/dependency_links.txt
+nonchurchgoingz.egg-info/requires.txt
+nonchurchgoingz.egg-info/top_level.txt
