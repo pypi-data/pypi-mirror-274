@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pixyverse.render_html
+Version: 0.1.0
+Summary: A package to render pixy (.pix) files to HTML
+Author: Pradeep Roark
+Author-email: pradeep.roark@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pixyverse-pixy (>=0.0.6,<0.0.7)
+Description-Content-Type: text/markdown
+
+Render-HTML
+--------------
+
+What is Render-HTML
+--------------------
+
+Render-HTML is a sister project for pixy that implements the createElement API to render content to HTML
+
+Development Status
+--------------------
+
+Prototype stage. Liable to explode without warning
