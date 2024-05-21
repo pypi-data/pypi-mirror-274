@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: sdr-hazards-classification
+Version: 1.0.0
+Summary: Package to classify aviation safety hazards from FAA Service Difficulty Reports data
+Home-page: 
+Author: Hai Nguyen
+Author-email: hai.c.nguyen@boeing.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=1.1.5
+Requires-Dist: scikit-learn>=1.3.2
+Requires-Dist: xgboost
+
+## Service Difficult Report (SDR) hazards classification package
+:rocket: This is the source code for the SDR Classifier package that classifies potential aviation safety hazards from textual data.  The work is a collaboration between FAA and Boeing data scientist teams, and these models aim to assist analysts in Continued Operational Safety (COS) processes.
+
+SDRs are submitted via the [service difficulty reporting system](https://sdrs.faa.gov/) operators or certified repair stations as a means to document and share information with the aviation community about failures, malfunctions, or defects of aeronautical products. The free-form text description field often contains valuable COS-related information, however it lacks predictable grammatical structure and is not in any way standardized. Additionally, it can contain typographical errors, part numbers, abbreviations, and references to specific sections of maintenance manuals or operating procedures, making it difficult to reliably extract this information with regular expressions or language models designed to take in clean, full sentences as input. 
+
+Each of these COS classification models was trained to pick up on all of the variation described above for a specific COS criterion. Subject matter experts (SMEs) annotated hundreds of SDR records for training and testing of each model, and those datasets are available here alongside the code to train, test, and invoke the models.
+
+**Version 0.1.1 out now!**
+[Check out the release notes here.](https://github.com/Boeing/sdr-hazards-classification/releases)
+
+[![tests](https://github.com/Boeing/sdr-hazards-classification/actions/workflows/python-package.yml/badge.svg)](https://github.com/Boeing/sdr-hazards-classification/actions/workflows/python-package.yml)
+[![Current Release Version](https://img.shields.io/github/release/Boeing/sdr-hazards-classification.svg?style=flat-square&logo=github)](https://github.com/Boeing/sdr-hazards-classification/releases)
+[![pypi Version](https://img.shields.io/pypi/v/sdr-hazards-classification.svg?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/sdr-hazards-classification/)
+[![Python wheels](https://img.shields.io/badge/wheels-%E2%9C%93-4c1.svg?longCache=true&style=flat-square&logo=python&logoColor=white)](https://github.com/Boeing/sdr-hazards-classification/releases)
+[![PyPi downloads](https://static.pepy.tech/personalized-badge/sdr-hazards-classification?period=total&units=international_system&left_color=grey&right_color=orange&left_text=pip%20downloads)](https://pypi.org/project/sdr-hazards-classification/)
+[![Boeing on Twitter](https://img.shields.io/twitter/follow/boeing.svg?style=social&label=Follow)](https://twitter.com/boeing)
+
+## Demo
+![](https://github.com/Boeing/sdr-hazards-classification/blob/hai-branch/img/sdr_classifier.gif)
+
+## Virtual Environment
+It is highly recommended to use venv, virtualenv or conda python environments. Read more about creating virtual environments via venv
+https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments
+
+## Build and pip install the whl file locally
+Run the command in the root folder to create the whl file in the _dist_ folder
+```
+git clone https://github.com/Boeing/sdr-hazards-classification
+python setup.py bdist_wheel
+pip install ./distr/sdr_hazards_classification-0.1.0-py3-none-any.whl
+```
+
+## Install sdr_hazards_classification from Pypi with pip
+```
+pip install sdr_hazards_classification
+```
+## Contributing
+🛩️ Please follow the [contribution guideline](https://github.com/Boeing/sdr-hazards-classification/blob/main/CONTRIBUTING.md)
+
+## Example
+:airplane: Follow the code snippet below to test and call the prediction method from the Depressurization model
+
+```
+from sdr_hazards_classification.sdr_api import SdrInferenceAPI, CORROSION_LIMIT, DEGRADED_CONTROLLABILITY
+import pandas as pd
+
+depressurization_model = SdrInferenceAPI()
+
+#test the prediction method
+depressurization_model.test_sdr_depressurization_predictions()
+
+event_text = """Lost cabin pressurization at flight level 30000, cabin altitude warning horn sounded at 10000 feet. Unabel to control
+                cabin pressure with outflow valve closed"""
+pred, probs = depressurization_model.get_predictions([event_text])
+
+degraded_controllability_model = SdrInferenceAPI(DEGRADED_CONTROLLABILITY)
+degraded_controllability_model.test_sdr_degraded_controllability()
+
+df = pd.read_csv('./src/sdr_classifier/data/SDR_Example.csv')
+records = df["Text"]
+#pass in a record list for prediction
+pred, probs = depressurization_model.get_predictions(records)
+
+df['Prediction'] = pred
+df['Prob'] = probs
+
+print(df.head(2))
+
+print("Done")
+```
+
+## References
+[Open Access Data via the FAA's Service Difficulty Reporting System](https://sdrs.faa.gov/)
+
+[FAA Deployment Demo on YouTube](https://youtu.be/oLzlHuqCr2A?si=a746KnEk3KZQtfsR&t=1738)
+
+[SKYbrary Summary](https://skybrary.aero/articles/classifying-depressurization-events-service-difficulty-reports-machine-learning)
+
+[Full Academic Paper on IEEE Xplore](https://ieeexplore.ieee.org/document/10194079)
