@@ -1,0 +1,47 @@
+name: Full Tests
+on:
+  workflow_call:
+    secrets:
+      CODECOV_TOKEN:
+        required: true
+
+jobs:
+  run:
+    name: ${{ matrix.os }} Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.10", "3.11"]
+        os: [ubuntu-latest, macos-13, windows-latest]
+    steps:
+      - uses: actions/checkout@v3
+      - run: git fetch --prune --unshallow --tags
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Global Setup
+        run: |
+          python -m pip install -U pip  # Official recommended way
+          pip install pytest-xdist
+
+      - name: Install tqdm_publisher with minimal requirements
+        run: pip install .[test]
+
+      - name: Run full pytest with coverage
+        run: |
+          pytest -vv -rsx --cov=tqdm_publisher --cov-report xml:./coverage.xml
+          cat ./coverage.xml
+
+      - name: Upload full coverage to Codecov
+        if: ${{ matrix.python-version == '3.11' && matrix.os == 'ubuntu-latest' }}
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage.xml
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: true
+          verbose: true
