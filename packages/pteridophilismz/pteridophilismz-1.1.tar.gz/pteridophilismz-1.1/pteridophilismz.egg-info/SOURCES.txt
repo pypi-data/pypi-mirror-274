@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pteridophilismz/__init__.py
+pteridophilismz/main.py
+pteridophilismz.egg-info/PKG-INFO
+pteridophilismz.egg-info/SOURCES.txt
+pteridophilismz.egg-info/dependency_links.txt
+pteridophilismz.egg-info/requires.txt
+pteridophilismz.egg-info/top_level.txt
