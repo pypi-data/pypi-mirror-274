@@ -1,0 +1,2 @@
+[console_scripts]
+videodotdev = cli.main:app

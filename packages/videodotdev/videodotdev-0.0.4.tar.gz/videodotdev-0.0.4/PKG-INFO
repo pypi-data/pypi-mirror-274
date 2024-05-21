@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: videodotdev
+Version: 0.0.4
+Summary: video.dev command-line tool.
+Home-page: https://video.dev
+Author: video.dev Team
+Author-email: developer@video.dev
+License: MIT
+Keywords: video.dev CLI and Python Client
+Description-Content-Type: text/markdown
+License-File: LICENSE
