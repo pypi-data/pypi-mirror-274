@@ -1,0 +1,2 @@
+[console_scripts]
+slazzer-cli = slazzer_cli:main
