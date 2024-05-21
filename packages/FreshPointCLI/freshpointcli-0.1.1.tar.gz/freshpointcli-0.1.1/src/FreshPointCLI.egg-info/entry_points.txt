@@ -1,0 +1,2 @@
+[console_scripts]
+freshpoint = freshpointcli.__main__:main

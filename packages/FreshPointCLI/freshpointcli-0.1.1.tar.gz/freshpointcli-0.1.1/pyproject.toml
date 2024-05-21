@@ -1,0 +1,62 @@
+[project]
+name = "FreshPointCLI"
+version = "0.1.1"
+description = "Freshpoint.cz webpage CLI interface."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  { name = "Konstantin Mykhailov", email = "constantinemykhailov@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Other Audience",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Natural Language :: Czech",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet",
+    "Topic :: Text Processing :: Markup :: HTML",
+    "Typing :: Typed"
+]
+keywords = ["freshpoint", "freshpoint.cz"]
+requires-python = ">=3.8"
+dependencies = [
+    "platformdirs", 
+    "prompt_toolkit",
+    "pygments",
+    "rich",
+    "unidecode",
+    "freshpointsync==0.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mykhakos/FreshPointCLI"
+
+[project.optional-dependencies]
+docs = [
+  "sphinx",
+  "sphinx_rtd_theme",
+]
+test = [
+  "pytest",
+  "pytest-asyncio",
+]
+
+[project.scripts]
+freshpoint = "freshpointcli.__main__:main"
+
+[options]
+package_dir = {"" = "src"}
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"

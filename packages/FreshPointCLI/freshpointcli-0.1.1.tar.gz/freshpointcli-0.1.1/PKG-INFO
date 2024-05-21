@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: FreshPointCLI
+Version: 0.1.1
+Summary: Freshpoint.cz webpage CLI interface.
+Author-email: Konstantin Mykhailov <constantinemykhailov@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Konstantin
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/mykhakos/FreshPointCLI
+Keywords: freshpoint,freshpoint.cz
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Czech
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: platformdirs
+Requires-Dist: prompt_toolkit
+Requires-Dist: pygments
+Requires-Dist: rich
+Requires-Dist: unidecode
+Requires-Dist: freshpointsync==0.1.0
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-asyncio; extra == "test"
+
+
+# FreshPointCLI
+A CLI REPL interface to query FreshPoint product price and availability.
+
+## Installation
+
+`FreshPointCLI` supports Python 3.8 and higher. The library can be installed
+using the following CLI command:
+
+```console
+$ pip install freshpointcli
+```
+
+## Usage
+
+`FreshPointCLI` is a Read-Eval-Print Loop (REPL) application intended to be used
+only from the command line interface (CLI).
+
+### Starting Up the Application
+
+You can initialize the application
+using the following CLI command:
+
+```console
+$ freshpoint <location_id>
+```
+*<location_id>* is the ID of the FreshPoint location to track. It can be found
+in the page URL. For example, for https://my.freshpoint.cz/device/product-list/296,
+location id is *296*.
+
+Location ID is preserved between the application sessions, so if you intend
+to track the same location as the last time, you can omit the location id
+argument and invoke the application without it.
+
+Invoke the application with `--help` to receice start-up information:
+
+```console
+$ freshpoint --help
+```
+
+### Querying the Product Page
+
+Once the application is running, it displays an input promt, and you can type in
+queries to check for products' availability, price, and more. 
+
+To query if a product is avalable, use the following command:
+
+```console
+FreshPoint@LocationName> <product_name> --available
+```
+
+Replace `<product_name>` with the name of the product you want to query. Note
+that name and category matching is case-insensitive, supports partial match,
+and ignores diacritics.
+
+To query for all the products that are currently on sale, use the following
+command:
+
+```console
+FreshPoint@LocationName> --sale
+```
+
+Query arguments can be combined in any way:
+
+```console
+FreshPoint@LocationName> --available --price-max 100 --vegerarian
+```
+
+To display all the supported arguments, use `--help`:
+
+```console
+FreshPoint@LocationName> --help
+```
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have a feature request, please
+open an issue on GitHub. If you would like to contribute code, please fork
+the repository and submit a pull request.
+
+## License
+
+`FreshPointCLI` is licensed under the MIT License.
+See the `LICENSE` file for more information.
