@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rodgez/__init__.py
+rodgez/main.py
+rodgez.egg-info/PKG-INFO
+rodgez.egg-info/SOURCES.txt
+rodgez.egg-info/dependency_links.txt
+rodgez.egg-info/requires.txt
+rodgez.egg-info/top_level.txt
