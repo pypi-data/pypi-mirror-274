@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+appropinquationz/__init__.py
+appropinquationz/main.py
+appropinquationz.egg-info/PKG-INFO
+appropinquationz.egg-info/SOURCES.txt
+appropinquationz.egg-info/dependency_links.txt
+appropinquationz.egg-info/requires.txt
+appropinquationz.egg-info/top_level.txt
