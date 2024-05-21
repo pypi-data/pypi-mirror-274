@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: scaluq
+Version: 0.0.0
+Summary: Quantum circuit simulator for research
+Home-page: http://www.scaluq.org
+Author-Email: Qulacs-Osaka <qulacs.osaka@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Qulacs-Osaka
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Communications :: Email
+Project-URL: Homepage, http://www.scaluq.org
+Requires-Python: >=3.8
+Requires-Dist: scikit_build
+Requires-Dist: nanobind
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: nanobind; extra == "dev"
+Requires-Dist: nanobind-stubgen; extra == "dev"
+Requires-Dist: openfermion; extra == "dev"
+Requires-Dist: openfermion; extra == "test"
+Requires-Dist: black; extra == "ci"
+Requires-Dist: flake8; extra == "ci"
+Requires-Dist: isort; extra == "ci"
+Requires-Dist: mypy; extra == "ci"
+Requires-Dist: nanobind-stubgen; extra == "ci"
+Requires-Dist: openfermion; extra == "ci"
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: ci
+Description-Content-Type: text/markdown
+
+# scaluq
+
+## 依存ライブラリ
+- GCC 11 以上
+- CMake 3.21 以上
+- CUDA 12.2 以上（GPU利用時のみ）
+
+## ビルド・実行方法
+
+### ビルド (CPU)
+```
+script/build_gcc.sh
+```
+
+### ビルド（GPU）
+```
+SCALUQ_USE_CUDA script/build_gcc.sh
+```
+
+※キャッシュ変数がセットされるため、ターゲットを変えてビルドする際は `build/CMakeCache.txt` を削除する
+
+### テスト
+```
+ninja -C build test
+```
+
+### scaluq を用いての C++ 単一ファイルの手元実行
+`exe` の中に cpp ファイルを作成し、`exe/CMakeLists.txt` に追記してビルド
+
+### フォーマット
+```
+ninja -C build format
+```
+
+### Python へのインストール
+要確認
