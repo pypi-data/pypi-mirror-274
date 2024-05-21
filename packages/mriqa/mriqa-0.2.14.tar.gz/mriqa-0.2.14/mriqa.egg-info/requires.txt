@@ -1,0 +1,10 @@
+numpy>=1.20.0
+scipy>=0.19.1
+matplotlib>=2.1.1
+pandas>=0.23.3
+xarray>=0.20.2
+scikit-image>0.14.0
+statsmodels>=0.12.2
+pydicom>=1.2.1
+dcmfetch>=0.3.1
+dcmextras>=0.3.4
