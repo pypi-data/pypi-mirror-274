@@ -1,0 +1,22 @@
+biondi/__init__.py,sha256=f-M0B2az7xvDwZf5yCtVMLrLFeH0lB377qIPiP-FWW4,48
+biondi/dataset.py,sha256=gL_wAj0IAVKCVLQc2UQaAwXs2oq_BeT8ARq4xd0z7wI,158429
+biondi/models.py,sha256=xo41Pxsj0whkYT5vpoxuOxCRLmOT2WWB6Qf0N10P8ew,44678
+biondi/random delete 2.py,sha256=FFqXVXnHDU-KSuJQ0EoyJZpHOY70yzohCE9HbOtsviE,6495
+biondi/random delete.py,sha256=7n80Qdx1_x70y7ggvEGqx0GWsI7qKosFnYTsXk8p44Y,12239
+biondi/random stuff.py,sha256=Ld-1Os8etJUlvI7FthZb9Z9oaAb3Hyr0Eqg3Hl1njKI,27769
+biondi/retinanet stuff.py,sha256=x2XeEHs7vi961nQrxFS4h0NmtDti36KumfpEgrzk1sc,11158
+biondi/statistics.py,sha256=F8G04GokKASca65xz8RFjrIblyIn-gI89Z2nvgQsixo,29528
+biondi/misc/DCGAN.py,sha256=L-90MNzhjv3aHW7y0fV7spaEaIvfiHUILJaHRYIUqiA,5403
+biondi/misc/WSI autoencoder.py,sha256=pqrJKm1v08aJ7cVX7qLHNT-Ms8-UiGJC06mee8M3ntc,2350
+biondi/misc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biondi/misc/infogan practice.py,sha256=soMLmj1LSvnKSorU2kI6AOiytcw0NclNnBoI3oY3IdY,7194
+biondi/misc/misc ai code.py,sha256=cohbTK_cKOahvcOgSQN8tWla7fd_17EQdqwTm4kdtas,5914
+biondi/peters code for reference/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biondi/peters code for reference/box delete.py,sha256=VsQu9dX95FII3O1mb2eP46Ke3xdBIt-aQVO0QwXyY0I,24504
+biondi/peters code for reference/client delete.py,sha256=2zIAE5f9SDDG-ba5rgOat_BMOnpFsKgjk9RhjLVVhEo,30305
+biondi/peters code for reference/custom delete.py,sha256=wBQiqL8mTxVlcPhETB00QVt2viI7gJ5pffeSiHTkxmM,5449
+biondi-0.1.6.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+biondi-0.1.6.1.dist-info/METADATA,sha256=XrVmVggFYp9K-X1B3QkhlXMQR5RBirobtjT1BdyYpp0,409
+biondi-0.1.6.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+biondi-0.1.6.1.dist-info/top_level.txt,sha256=EMRLYmrf8D9srdQrPLRo9dqAY_jKzrA7CsvPzhavTrg,7
+biondi-0.1.6.1.dist-info/RECORD,,

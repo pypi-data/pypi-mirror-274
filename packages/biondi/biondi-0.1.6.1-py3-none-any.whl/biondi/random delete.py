@@ -1,0 +1,228 @@
+import pickle, biondi, os, glob
+import numpy as np
+from jarvis.train.box import BoundingBox
+
+fldr_list = ['A12-54 NM',
+    'A12-59 NM',
+    'A13-37 TS',
+    'A14-40 BJ',
+    'A16-38 TS',
+    'A17-44 PP',
+    'A17-45 FG',
+    'A17-47_1 SK',
+    'A17-52_1 PP',
+    'A18-01 PP',
+    'A18-03 BJ',
+    'A18-04 SK',
+    'A18-05 BJ',
+    'A18-07 BJ',
+    'A18-10 BJ',
+    'A18-12 SK',
+    'A18-13 FG',
+    'A18-14 FG',
+    'A18-15 SK',
+    'A18-16 SK',
+    'A18-17-1 FG',
+    'A18-19_1 FG',
+    'A18-20 SK',
+    'A18-25_1 PP',
+    'A18-26_1 PP',
+    'A18-27 BJ',
+    'A18-28_1 PP',
+    'A18-29 BJ',
+    'A18-32 FG',
+    'A18-37_1 SK BJ',
+    'A18-41 FG',
+    'A18-43 SK',
+    'A18-48 BJ',
+    'A18-51 NM',
+    'A18-55 RS',
+    'A18-65-B08 BJ',
+    'A18-66 TS',
+    'A19-10 BJ',
+    'A19-12 BJ',
+    'A19-14 FG',
+    'A19-49 BJ',
+    'A19-52 TS',
+    'A19-56 TS',
+    'A19-58 TS',
+    'A19-64 NM',
+    'A19-65 RS',
+    'A19-66 RS',
+    'A19-67 TS',
+    'A20-25-ATR TS',
+    'UCI-01-13 NM-TS',
+    'UCI-02-13 RS',
+    'UCI-02-14-CP RS-TS',
+    'UCI-03-13 PP',
+    'UCI-03-14 TS',
+    'UCI-04-13 PP',
+    'UCI-05-14-CP RS',
+    'UCI-07-14 TS',
+    'UCI-08-12 PP',
+    'UCI-08-14 PP',
+    'UCI-09-18 TS',
+    'UCI-11-13 BJ v0.9.5',
+    'UCI-13-18 TS',
+    'UCI-14-18-CP1 PP',
+    'UCI-15-19 BJ',
+    'UCI-16-13 TS',
+    'UCI-19-13 PP',
+    'UCI-21-13 TS',
+    'UCI-22-18 RS',
+    'UCI-23-18 TS',
+    'UCI-24-12 TS',
+    'UCI-25-12 BJ',
+    'UCI-25-13 PP',
+    'UCI-26-12 FG',
+    'UCI-26-18-CP1 PP',
+    'UCI-28-18 RS',
+    'UCI-30-13 BJ',
+    'UCI-31-10 PP',
+    'UCI-31-13 FG',
+    'UCI-32-18-CP1 PP',
+    'UCI-37-13 PP',
+    'UCI-37-19-CP1 TS',
+    'UCI-38-13 SK',
+    'UCI-38-19-CP1 TS',
+    'UCI-42-13 NM',
+    'UCI-43-13 TS',
+    'UCI-44-13 TS',
+    'UCI-45-13 PP',
+    'UCI-46-13 TS',
+    'UCI-47-17 PP',
+    'UCI-48-17 PP',
+    'UCI-58-19-CP1 RS',]
+
+coords = []
+for i in fldr_list:
+    lst = glob.glob('/media/monuki/monuki-fs/PathologyProjects/VesicleTileSampling/annotation files/'+i+'/*-adjusted-grids.csv')
+    if len(lst) == 1:
+        coords.append(lst[0])
+    else:
+        coords.append(len(lst))
+
+ccoords = [(np.loadtxt(i, skiprows=1, usecols=(3,4), delimiter=',', dtype=int))*2 for i in coords]
+wis = ['/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A12-54 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A12-59 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A13-37 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A14-40 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A16-38 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A17-44 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A17-45 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A17-47_1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A17-52_1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-01 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-03 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-04 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-05 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-07 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-10 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-12 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-14 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-15 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-16 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-17_1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-19_1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-20 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-25_1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-26_1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-27 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-28_1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-29 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-32 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-37_1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-41 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-43 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-48 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-51-B08 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-55 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A18-65-B08 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/misc/A18-66 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-10 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-12 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-14 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-49 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-52 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-56 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-58 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-64 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-65 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-66 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A19-67 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/A20-25-ATR H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-01-13-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-02-13-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-02-14-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-03-13-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-03-14-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-04-13-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-05-14-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-07-14 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-08-12-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-08-14 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-09-18-CP1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-11-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-13-18-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-14-18-CP1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-15-19-CP1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-16-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-19-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-21-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-22-18-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-23-18-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-24-12-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-25-12-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-25-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-26-12-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-26-18-CP1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-28-18-CP1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-30-13-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-31-10-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-31-13-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-32-18-CP1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-37-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-37-19-CP1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-38-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-38-19-CP1 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-42-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-43-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-44-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-45-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-46-13 H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-47-17-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-48-17-CP H&E 40x.svs',
+    '/media/monuki/monuki-fs/PathologyProjects/40x H&E wsi svs files/UCI-58-19-CP1 H&E 40x.svs',]
+
+bb_c3_16 = BoundingBox(
+    image_shape=(256, 256),
+    classes=1,
+    c=[3],
+    anchor_shapes=[16], #shape is in the original image resolution; 32
+    anchor_scales=[1], #1
+    anchor_ratios=[1], #1
+    iou_upper=0.5,
+    iou_lower=0.2)
+
+d16 = []
+for i,j in zip(ccoords, wis):
+    print(f'Folder: {os.path.basename(j)}')
+    d16.append(biondi.dataset.get_retinanet_training_dictionary_from_wsi(j, i, bb_c3_16, bbox_size=64, tile_size=1024, downscale_factor=4)
+    )
+
+dicts16 = biondi.dataset.aggregate_retinanet_training_dictionaries(d16)
+
+with open('/media/monuki/monuki-fs/PathologyProjects/Michael/new LV dataset/LV retinanet dataset including lv- nonrandomized nonsegregated 06152023.pickle', 'wb') as handle:
+    pickle.dump(dicts16, handle)
+
+training, validation, test = biondi.dataset.randomize_and_segregate_dataset_retinanet_dictionary(dicts16)
+
+ddir = '/media/monuki/monuki-fs/PathologyProjects/Michael/new LV dataset/'
+
+with open(ddir + 'LV retinanet dataset including lv- training dataset 06152023.pickle', 'wb') as handle256:
+    pickle.dump(training, handle256)
+with open(ddir + 'LV retinanet dataset including lv- validation dataset 06152023.pickle', 'wb') as handle256:
+    pickle.dump(validation, handle256)
+with open(ddir + 'LV retinanet dataset including lv- test dataset 06152023.pickle', 'wb') as handle256:
+    pickle.dump(test, handle256)
