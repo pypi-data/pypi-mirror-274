@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+prereckoningz/__init__.py
+prereckoningz/main.py
+prereckoningz.egg-info/PKG-INFO
+prereckoningz.egg-info/SOURCES.txt
+prereckoningz.egg-info/dependency_links.txt
+prereckoningz.egg-info/requires.txt
+prereckoningz.egg-info/top_level.txt
