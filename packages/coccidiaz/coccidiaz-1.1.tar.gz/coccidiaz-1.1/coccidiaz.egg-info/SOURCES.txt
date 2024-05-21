@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+coccidiaz/__init__.py
+coccidiaz/main.py
+coccidiaz.egg-info/PKG-INFO
+coccidiaz.egg-info/SOURCES.txt
+coccidiaz.egg-info/dependency_links.txt
+coccidiaz.egg-info/requires.txt
+coccidiaz.egg-info/top_level.txt
