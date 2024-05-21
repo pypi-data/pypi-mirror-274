@@ -1,0 +1,2 @@
+[console_scripts]
+netter = netter.cmds:main
