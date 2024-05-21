@@ -1,0 +1,8 @@
+bencode_c/__init__.py,sha256=K-zkMlfUW0cvX1YdHptOg_pcvCmbO6-FzWySMdMXReI,219
+bencode_c/__init__.pyi,sha256=TM3yK_whoPDmYER3_CvwtdrtE_fYNBVVHi6wub7Q9vw,208
+bencode_c/_bencode.cp38-win_amd64.pyd,sha256=519L70Ssvv-WGWNKodCSZ-5t9JEjZ9wM2MeTSVCn70c,17408
+bencode_c/bencode.c,sha256=yN6bmPQnpjufCW9MeZ92V_NE-nTxzKekKk9liTUggQo,1238
+bencode_c-0.0.2.dist-info/METADATA,sha256=40MEQZ0YHSE7__tZv4cSj-1oqQNzpRBZHo0gmK8eZHo,841
+bencode_c-0.0.2.dist-info/WHEEL,sha256=Aavq5XXl58tL6bL-VsXq6M2KHwSF4I7YrvRYfeAzm5A,100
+bencode_c-0.0.2.dist-info/top_level.txt,sha256=6WH9oUHpNMJqzsKzpS0-ufBqUp7u3YIwKzjTDhk7iWA,10
+bencode_c-0.0.2.dist-info/RECORD,,
