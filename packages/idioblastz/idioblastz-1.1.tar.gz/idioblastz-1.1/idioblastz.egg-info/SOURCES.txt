@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+idioblastz/__init__.py
+idioblastz/main.py
+idioblastz.egg-info/PKG-INFO
+idioblastz.egg-info/SOURCES.txt
+idioblastz.egg-info/dependency_links.txt
+idioblastz.egg-info/requires.txt
+idioblastz.egg-info/top_level.txt
