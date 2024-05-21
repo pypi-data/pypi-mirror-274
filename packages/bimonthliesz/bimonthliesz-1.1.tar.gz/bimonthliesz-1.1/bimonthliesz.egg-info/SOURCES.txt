@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bimonthliesz/__init__.py
+bimonthliesz/main.py
+bimonthliesz.egg-info/PKG-INFO
+bimonthliesz.egg-info/SOURCES.txt
+bimonthliesz.egg-info/dependency_links.txt
+bimonthliesz.egg-info/requires.txt
+bimonthliesz.egg-info/top_level.txt
