@@ -1,0 +1,2 @@
+[console_scripts]
+hyperdyn-tool = hyperdyn.cli:main
