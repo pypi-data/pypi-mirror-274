@@ -1,0 +1,6 @@
+review_ingest_app/batch_builder.py,sha256=Xvv0kMyqN1DN0LqFKAjivUiLFSjrmuG2hiql0-MC3HE,5548
+review_ingest_app/data/data_models.py,sha256=Y98J9Q1SOLv4bKkp7mS_YMimTsrf6BHs4uZ6aSbq7Fk,2190
+review_ingest_app/utils.py,sha256=UHTrrXufy2ZBLNOXpCe3rsA1Bkk6QOrBcNFirNfjH4o,1031
+review_ingest_app-1.0.1.dist-info/METADATA,sha256=HmwrB1SRuiT7EapXIY-rzGZc88RVJer0DpXxyH4Oirg,903
+review_ingest_app-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+review_ingest_app-1.0.1.dist-info/RECORD,,
