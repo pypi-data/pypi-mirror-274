@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+Audire.egg-info/PKG-INFO
+Audire.egg-info/SOURCES.txt
+Audire.egg-info/dependency_links.txt
+Audire.egg-info/requires.txt
+Audire.egg-info/top_level.txt
+audire/__init__.py
+audire/dotdict.py
+audire/errors.py
+audire/main.py
+audire/helpers/__init__.py
+audire/helpers/youtube.py
