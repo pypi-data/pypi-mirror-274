@@ -1,0 +1,4 @@
+[console_scripts]
+groq=groqon.groq:main
+groqon=groqon.groq:main
+
