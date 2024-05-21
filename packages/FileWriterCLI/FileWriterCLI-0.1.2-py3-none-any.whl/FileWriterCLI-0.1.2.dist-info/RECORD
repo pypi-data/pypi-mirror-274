@@ -1,0 +1,9 @@
+FileWriterCLI-0.1.2.data/scripts/run.sh,sha256=WCoEDhCOFjLBMEpcYAMErLSF2YSOFWV1wWi08s1IyXQ,356
+FileWriterCLI-0.1.2.data/scripts/setup.sh,sha256=86uY7wz4lAjlqzt9EDKmBR8bdJ_VyqukoQFvOu9UuYQ,209
+src/__init__.py,sha256=xMLkIJUHJv8-GNYBbq_pJ-ETcWOz6aWQyw84yd02NUE,35
+src/filewriter.py,sha256=DQzJNr1VCsU26242_BSCaHhsEvDeFcROxdIF7-sxz2M,516
+FileWriterCLI-0.1.2.dist-info/LICENCE,sha256=XWS4SkiORFuzv5b5eWM6RERQj1DikLNnOr95lWU5Alo,1083
+FileWriterCLI-0.1.2.dist-info/METADATA,sha256=CHXOerhpRDxlk-Ud7jvHX-0tjVGBn5dl13sQCZ5NlI8,846
+FileWriterCLI-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+FileWriterCLI-0.1.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+FileWriterCLI-0.1.2.dist-info/RECORD,,
