@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+planterz/__init__.py
+planterz/main.py
+planterz.egg-info/PKG-INFO
+planterz.egg-info/SOURCES.txt
+planterz.egg-info/dependency_links.txt
+planterz.egg-info/requires.txt
+planterz.egg-info/top_level.txt
