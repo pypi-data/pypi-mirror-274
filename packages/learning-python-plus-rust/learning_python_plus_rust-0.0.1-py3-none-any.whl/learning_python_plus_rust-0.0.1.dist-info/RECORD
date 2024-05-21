@@ -1,0 +1,11 @@
+learning_python_plus_rust/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+learning_python_plus_rust/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+learning_python_plus_rust/cmd/fib_numb.py,sha256=ii_f06cG927rK76GLmdlu9JR7wbbulFQnfnByT6Ea5E,428
+learning_python_plus_rust/fib_calcs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+learning_python_plus_rust/fib_calcs/fib_number.py,sha256=M2iW-b8yJTmdMIEBM1r73R0bG_pAjg25j7qhElpNMgA,235
+learning_python_plus_rust/fib_calcs/fib_numbers.py,sha256=aFqYlV8AMOKRi1iPOkHAoXKeL_0j_V_hSqBFqq_OsVI,159
+learning_python_plus_rust-0.0.1.dist-info/METADATA,sha256=IZ3Jxti3u5isd_HrBLBHCnOLUmeTtz7MwaLHEeyIoUE,612
+learning_python_plus_rust-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+learning_python_plus_rust-0.0.1.dist-info/entry_points.txt,sha256=Il4XQQYszug6pG779fMQw1D8QE-1n6Xl7--2GXySJ0M,79
+learning_python_plus_rust-0.0.1.dist-info/top_level.txt,sha256=QsVWKNTD6-MpGPkliMr1X9dCGi8VDzs7vvOfdq5RPRQ,26
+learning_python_plus_rust-0.0.1.dist-info/RECORD,,
