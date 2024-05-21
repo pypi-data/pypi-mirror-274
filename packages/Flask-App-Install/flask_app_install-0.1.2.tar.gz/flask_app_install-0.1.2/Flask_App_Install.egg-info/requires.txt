@@ -1,0 +1,8 @@
+datetime
+pandas
+requests
+numpy
+flask
+virtualenv
+pipreqs
+pip-tools
