@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+xai_feature_selection_new/__init__.py
+xai_feature_selection_new/feature_selection.py
+xai_feature_selection_new.egg-info/PKG-INFO
+xai_feature_selection_new.egg-info/SOURCES.txt
+xai_feature_selection_new.egg-info/dependency_links.txt
+xai_feature_selection_new.egg-info/requires.txt
+xai_feature_selection_new.egg-info/top_level.txt

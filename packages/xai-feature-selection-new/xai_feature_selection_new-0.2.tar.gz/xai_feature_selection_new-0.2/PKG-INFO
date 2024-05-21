@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: xai_feature_selection_new
+Version: 0.2
+Summary: Feature selection using XAI
+Home-page: UNKNOWN
+Author: Yaganteeswarudu Akkem
+Author-email: yaganteeswaritexpert@gmail.com
+License: UNKNOWN
+Keywords: machine learning,feature selection,explainable artificial intelligence,XAI
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# feature selection
+Under construction! Not ready for use yet! Currently experimenting and planning!
+
+Developed by Yaganteeswarudu Akkem
+
+## Examples of How To Use Feature selection
+
