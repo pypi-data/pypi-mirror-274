@@ -1,0 +1,5 @@
+setup.py
+tremor.egg-info/PKG-INFO
+tremor.egg-info/SOURCES.txt
+tremor.egg-info/dependency_links.txt
+tremor.egg-info/top_level.txt
