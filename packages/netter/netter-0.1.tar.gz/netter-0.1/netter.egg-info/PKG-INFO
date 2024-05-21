@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: netter
+Version: 0.1
+Summary: A network toolkit.
+Home-page: https://github.com/bondbox/netter/
+Author: Mingzhe Zou
+Author-email: zoumingzhe@outlook.com
+License: MIT
+Project-URL: Source Code, https://github.com/bondbox/netter/
+Project-URL: Bug Tracker, https://github.com/bondbox/netter/issues
+Project-URL: Documentation, https://github.com/bondbox/netter/
+Keywords: xarg,xpip,command-line
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: xarg-python>=1.5.1
+Requires-Dist: dnspython
+Requires-Dist: psutil
+Requires-Dist: ping3
+Requires-Dist: wmi; platform_system == "Windows"
+
+# netter
+
+A network toolkit.
