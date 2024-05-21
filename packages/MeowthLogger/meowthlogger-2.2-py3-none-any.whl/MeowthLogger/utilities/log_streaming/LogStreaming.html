@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Server logs</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .body-bg {
+                background-color: #15171c;
+                /* padding: 20px 0; */
+            }
+            .m-wrp{
+                padding: 100px 30px;
+                overflow: hidden;
+                height: 10px;
+                position: relative;
+                display: flex;
+                /* align-items: center; */
+                justify-content: center;
+
+            }
+            .console {
+                background-color: #1c1e24;
+                padding: 20px;
+                overflow-x: hidden;
+            }
+            .inconsolata {
+                font-family: "Inconsolata", monospace;
+                font-optical-sizing: auto;
+                font-weight: normal;
+                font-style: normal;
+                font-size: 18px;
+            }
+            .main-app{
+                flex-grow: 1;
+                position: relative;
+            }
+            .main-txt{
+                height: 100%;
+            }
+            .loader-wrap{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                display: flex;
+                opacity: 1;
+                transition: all 1s;
+            }
+            .loader-wrap.hidden-loader{
+                opacity: 0;
+            }
+            .scroll-btn{
+                /* background-color: #fff;
+                height: 40px;
+                width: 40px;
+                border-radius: 2px;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                display: flex; */
+                opacity: 100%;
+                transition: all .2s;
+            }
+            .scroll-btn.disabled{
+                opacity: 0%;
+            }
+            
+            .arrow-1 {
+                left: 0; 
+                right: 0; 
+                margin-left: auto; 
+                margin-right: auto;
+                width: 100%;
+                position: absolute;
+                height: 15px; width: 15px;
+                border: 1px solid rgb(0, 0, 0);
+                border-width: 2px 2px 0 0;
+                transform: rotate(135deg);
+                top: 0;
+                top: 8px;
+            }
+            .custom-container{
+                display: flex;
+                flex-direction: column;
+                /* padding: 80px 30px; */
+                width: 1400px;
+                border: solid rgba(255, 255, 255, .12) 1px;
+                border-radius: 12px;
+
+            }
+            .log-head{
+                font-weight: 600;
+                font-size: 18px;
+                border: solid rgba(255, 255, 255, .12) 1px;
+                border-top: 0px;
+                border-right: 0px;
+                border-left: 0px;
+                padding: 8px 20px;
+                color: #fff;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+            }
+
+            .status-log-s {
+                font-weight: 700;
+            }
+            .status-log-s.info{
+                color: #95ff53;
+            }
+            .status-log-s.warning{
+                color: #0b324e;
+            }
+            .status-log-s.critical{
+                color: #ffffff;
+                background-color: #ff3964;
+            }
+            .status-log-s.error{
+                color: #ff3964;
+            }
+            .date-log-s{
+                color: #9a9a9a;
+                font-weight: 400;
+                font-style: italic;
+            }
+            .file-log-s{
+                color: #8b8b8b;
+            }
+            .hide-file{
+                display: none;
+            }
+            /* .hide-time{
+                display: none;
+            } */
+            .gg-time {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                transform: scale(var(--ggs,1));
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+                border: 2px solid transparent;
+                box-shadow: 0 0 0 2px currentColor
+            }
+
+            .gg-time::after {
+                content: "";
+                display: block;
+                box-sizing: border-box;
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                border-left: 2px solid;
+                border-bottom: 2px solid;
+                top: 1px;
+                left: 5px
+            }
+            .gg-file {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                transform: scale(var(--ggs,1));
+                width: 14px;
+                height: 16px;
+                border: 2px solid transparent;
+                border-right: 0;
+                border-top: 0;
+                box-shadow: 0 0 0 2px;
+                border-radius: 1px;
+                border-top-right-radius: 4px;
+                overflow: hidden
+            }
+
+            .gg-file::after {
+                content: "";
+                display: block;
+                box-sizing: border-box;
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                border-left: 2px solid;
+                border-bottom: 2px solid;
+                right: -1px;
+                top: -1px
+            }
+
+            .gg-arrow-right {
+                box-sizing: border-box;
+                position: relative;
+                display: block;
+                transform: scale(var(--ggs,1));
+                width: 22px;
+                height: 22px;
+                transform: rotate(90deg);
+            }
+
+            .gg-arrow-right::after,
+            .gg-arrow-right::before {
+                content: "";
+                display: block;
+                box-sizing: border-box;
+                position: absolute;
+                right: 3px
+            }
+
+            .gg-arrow-right::after {
+                width: 8px;
+                height: 8px;
+                border-top: 2px solid;
+                border-right: 2px solid;
+                transform: rotate(45deg);
+                bottom: 7px
+            }
+
+            .gg-arrow-right::before {
+                width: 16px;
+                height: 2px;
+                bottom: 10px;
+                background: currentColor
+            }
+
+            .button-cont{
+                display: flex;
+                gap: 10px;
+                border: solid rgba(255, 255, 255, .12) 1px;
+                border-right: 0px;
+                border-left: 0px;
+                border-bottom: 0px;
+                padding: 14px 20px;
+            }
+            .button-cont button{
+                background-color: #fff;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                padding: 4px;
+            }
+
+
+            /* Preloader Block */
+            .loader {
+                overflow:hidden;
+                font-size: 10px;
+                /* margin: 50px auto; */
+                text-indent: -9999em;
+                width: 3em;
+                height: 3em;
+                border-radius: 50%;
+                background: #ffffff;
+                background: -moz-linear-gradient(left, #ffffff 10%, rgba(101,171,248, 0) 42%);
+                background: -webkit-linear-gradient(left, #ffffff 10%, rgba(101,171,248, 0) 42%);
+                background: -o-linear-gradient(left, #ffffff 10%, rgba(101,171,248, 0) 42%);
+                background: -ms-linear-gradient(left, #ffffff 10%, rgba(101,171,248, 0) 42%);
+                background: linear-gradient(to right, #ffffff 10%, rgba(101,171,248, 0) 42%);
+                position: relative;
+                -webkit-animation: load3 1.4s infinite linear;
+                animation: load3 1.4s infinite linear;
+                -webkit-transform: translateZ(0);
+                -ms-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+            .loader:before {
+                width: 50%;
+                height: 50%;
+                background: #ffffff;
+                border-radius: 100% 0 0 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+            }
+            .loader:after {
+                background: rgb(17 24 39 / var(--tw-bg-opacity));
+                width: 75%;
+                height: 75%;
+                border-radius: 50%;
+                content: '';
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+
+            .space{
+                flex-grow: 1;
+            }
+
+            @-webkit-keyframes load3 {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes load3 {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            .preloader{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, .2);
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                position: absolute;
+                opacity: 100%;
+                transition: all .5s;
+                pointer-events: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .preloader.hidden-loader{
+                background-color: rgba(0, 0, 0, 0);
+                backdrop-filter: blur(0px);
+                opacity: 0%;
+            }
+            .loader-gg {
+                width: 48px;
+                height: 48px;
+                border: 3px solid #FFF;
+                border-radius: 50%;
+                display: inline-block;
+                position: relative;
+                box-sizing: border-box;
+                animation: rotation 1s linear infinite;
+                } 
+            .loader-gg::after {
+                content: '';  
+                box-sizing: border-box;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                border-bottom-color: #aeaeae;
+                }
+
+            @keyframes rotation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+                } 
+        
+        </style>
+        
+    </head>
+    <body class="body-bg">
+        <div class="m-wrp w-svw h-svh">
+            <div class="inconsolata custom-container main-cont">
+                <h1 class="log-head">{{ENV_TITLE}}</h1>
+                <div class="wrapper main-app overflow-x-hidden">
+                    <div class="main-txt console" id="messages-parent">
+                        <ul id='messages' class="text-white">
+                        </ul>
+                    </div>
+                    
+    
+                    
+    
+                    <!-- <button class="scroll-btn disabled" onclick="scrollLogBottom()" id="scroll-btn"><div class="arrow-1"></div></button> -->
+                </div>
+                <div class="button-cont">
+                    <button onclick="hideTime()">
+                        <div class="gg-time"></div>
+                    </button>
+                    <button onclick="hideFile()">
+                        <div class="gg-file"></div>
+                    </button>
+                    <div class="space">
+    
+                    </div>
+                    <button class="scroll-btn disabled" onclick="scrollLogBottom()" id="scroll-btn">
+                        <div class="gg-arrow-right"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="preloader" id="loader-wrap">
+            <div>
+                <span class="loader-gg"></span>
+            </div>
+        </div>
+    </body>
+    <script>
+        let last_log_time = null
+
+        const regex = /^\[(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\] (.+) in (.+?) line (\d+): (.*)$/;
+        const ws_protocol = document.location.protocol === "https:" ? "wss" : "ws"
+        const ws_url = `${ws_protocol}://${document.location.host}${document.location.pathname}`
+        const mes_p = document.getElementById("messages-parent")
+        const scroll_btn = document.getElementById("scroll-btn")
+        const loader_wrapper = document.getElementById("loader-wrap")
+        
+
+        const hideLoader = () => {
+            loader_wrapper.classList.add("hidden-loader")
+        }
+        const showLoader = () => {
+            loader_wrapper.classList.remove("hidden-loader")
+        }
+
+        const calc_scrollable = (el) => {
+            return mes_p.scrollTop - mes_p.scrollHeight + mes_p.offsetHeight
+        }
+
+        const deleteRules = (name) => {
+            stylesheet = document.styleSheets[1]
+            const indexes = []
+            let counter = 0
+            for (const rule of stylesheet.cssRules) {
+                counter ++
+                if (rule.selectorText == name) {
+                    indexes.push(counter-1)
+                }
+            }
+            for (const idx of indexes){
+                stylesheet.deleteRule(idx)
+            }
+        }
+        const addRule = (rule) => {
+            stylesheet = document.styleSheets[1]
+            stylesheet.insertRule(rule)
+        }
+
+
+        h_t = localStorage.getItem("hide_time_flg")
+        try {
+            h_t = JSON.parse(h_t)
+        } catch {
+            h_t = undefined
+        }
+        h_f = localStorage.getItem("hide_file_flg")
+        console.log(h_f)
+        try {
+            h_f = JSON.parse(h_f)
+        } catch {
+            h_f = undefined
+        }
+
+
+        const hideFile = () => {
+            hide_file_flg = !hide_file_flg
+            if (hide_file_flg){
+                addRule(".hide-file {display: none}")
+                localStorage.setItem("hide_file_flg", true)
+                return
+            }
+            localStorage.setItem("hide_file_flg", false)
+            deleteRules(".hide-file")
+        }
+
+        const hideTime = () => {
+            hide_time_flg = !hide_time_flg
+            if (hide_time_flg){
+                addRule(".hide-time {display: none}")
+                localStorage.setItem("hide_time_flg", true)
+                return
+            }
+            localStorage.setItem("hide_time_flg", false)
+            deleteRules(".hide-time")
+        }
+
+        let hide_time_flg = false
+        if (h_t === true){
+            hideTime()
+        }
+
+        let hide_file_flg = true
+        if(h_f === false) {
+            hideFile()
+        }
+
+
+        const scrollLogBottom = (smooth=true) => {
+            if (smooth){
+                mes_p.scrollTo({
+                    top: mes_p.scrollHeight,
+                    behavior: "smooth",
+                })
+            } else {
+                mes_p.scrollTo({
+                    top: mes_p.scrollHeight,
+                })
+            }
+        }
+
+
+        mes_p.addEventListener("scroll", (event) => {
+            if (calc_scrollable() >= -300) {
+                scroll_btn.classList.add("disabled")
+            } else {
+                scroll_btn.classList.remove("disabled")
+            }
+        });
+
+
+        const messages = document.getElementById('messages')
+
+
+        setLog = (data, retry=false) => {
+            if (!retry) {
+                data = data.slice(0, -1)
+            }
+            var new_data = ""
+            if (true){
+                const msg_n = data.split("\n")
+                data = msg_n.shift()
+                data = data.replaceAll("<", "«")
+                data = data.replaceAll(">", "»")
+                // data = data.replaceAll("^", "<span> </span>")
+                match = regex.exec(data);
+
+                if (match){
+
+                    const [, date, type, file, lineNumber, m] = match;
+                    last_log_time = date
+                    new_data += `<span class="hide-time">[ <span class="date-log-s">${date}</span> ] </span>`
+                    // new_data += `<span class="status-log-s"> ${type} </span>`
+                    switch (type){
+                        case "INFO": 
+                            new_data += `<span class="status-log-s info"> ${type}</span>`
+                            break;
+                        case "ERROR": 
+                            new_data += `<span class="status-log-s error"> ${type}</span>`
+                            break;
+                        case "WARNING": 
+                            new_data += `<span class="status-log-s warning"> ${type}</span>`
+                            break;
+                        case "CRITICAL": 
+                            new_data += `<span class="status-log-s critical">⠀${type}⠀</span>`
+                            break;
+                        case "DEBUG":
+                            new_data += `<span class="status-log-s debug">${type}</span>`
+                            break;
+                        case _: 
+                            new_data += `<span class="status-log-s debug"> ${type}</span>`
+                            break;
+                    }
+                    // const n_file = file.replace("Lib\site-packages", "")
+                    // console.log("Lib" in file)
+                    const n_faaaa = file.replace("Lib\\site-packages\\", "")
+                    new_data += `<span class="hide-file"> in <span class="file-log-s"> ${n_faaaa} </span>`
+                    new_data += `line <span class="file-log-s">${lineNumber}</span></span>`
+                    new_data += `: ${m} `
+                }
+
+                var message = document.createElement('li')
+                if (new_data !== ""){
+                    message.innerHTML = `<span>${new_data}</span>`
+                    messages.appendChild(message)
+                } else {
+                    const rec = data
+
+                    let counter = 0
+                    for (const letter of rec){
+                        if (letter == " "){
+                            counter ++
+                            continue
+                        }
+                        break
+                    }
+                    let tabulation = ""
+                    for (let i=0; i <= counter-2; i++){
+                        tabulation += "&nbsp"
+                    }
+                    if (rec === "") {
+                        tabulation += "&nbsp"
+                    }
+                    message.innerHTML = `<p>${tabulation + rec}</p>`
+                    messages.appendChild(message)
+                }
+                if (msg_n.length > 0){
+                    for (const rec of msg_n){
+                        setLog(rec, retry=true)
+                    }
+                }
+            } else {
+                return
+            }
+        }
+
+
+
+        const connect = (reconnect = false) => {
+            var ws = new WebSocket(ws_url);
+            ws.onopen = function() {
+                console.log("Connect success")
+                hideLoader()
+            };
+
+            root_flg = false
+
+            ws.onmessage = function(event) {
+                if (root_flg){
+                    setLog(event.data)
+
+                    if (calc_scrollable() >= -300){
+                        scrollLogBottom()
+                    }
+                    
+                } else {
+                    root_flg = true
+                    if (event.data.startsWith("ROOTMSG")){
+                        var lines = event.data.split('\n')
+
+                        if (lines[lines.length - 1] === "") {
+                            lines.pop()
+                        }
+
+                        if (reconnect === true){
+                            const new_lines = []
+                            // for line
+                            const dateRegExp = /(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})/
+                            // dateRegExp
+                            const last_date = Date.parse(last_log_time)
+                            for (const line of lines){
+                                const match = line.match(dateRegExp)
+                                if (match){
+                                    const string_date = Date.parse(match[0])
+                                    if (string_date <= last_date){
+                                        continue;
+                                    }
+                                    new_lines.push(line)
+                                }
+                            }
+                            lines = new_lines
+
+                        }
+                        frst_flg = false
+                        for (const line of lines){
+                            if (frst_flg){
+                                setLog(line)
+                            } else {
+                                frst_flg = true
+                                setLog(line.replace("ROOTMSG", ""))
+                            }
+                        }
+                        scrollLogBottom(smooth=false)
+                        return
+                    }
+                }
+            };
+
+            ws.onclose = function(e) {
+                console.log('Socket is closed. Reconnect will be attempted in 1 second.', e.reason);
+                showLoader()
+                setTimeout(function() {
+                    connect(reconnect=true);
+                }, 1000);
+            };
+
+            ws.onerror = function(err) {
+                console.error('Socket encountered error: ', err.message, 'Closing socket');
+                ws.close();
+            };
+        }
+
+        connect()
+    </script>
+</html>
