@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+SciServerApi/Authentication.py
+SciServerApi/Files.py
+SciServerApi/Jobs.py
+SciServerApi/__init__.py
+SciServerApi.egg-info/PKG-INFO
+SciServerApi.egg-info/SOURCES.txt
+SciServerApi.egg-info/dependency_links.txt
+SciServerApi.egg-info/top_level.txt
