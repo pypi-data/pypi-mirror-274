@@ -1,0 +1,15 @@
+{
+    "type": "task",
+    "inputs": [
+        "input_text",
+        "input_text_type",
+        "required_attribute",
+        "output_text_type"
+    ],
+    "outputs": [
+        "output_text"
+    ],
+    "metrics": [
+        "metrics.rouge"
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "type": "task_card",
+    "loader": {
+        "type": "load_hf",
+        "path": "hellaswag"
+    },
+    "preprocess_steps": [
+        "splitters.large_no_test",
+        {
+            "type": "rename_fields",
+            "field_to_field": {
+                "ctx": "context",
+                "activity_label": "topic",
+                "endings": "choices"
+            }
+        },
+        {
+            "type": "rename_fields",
+            "field_to_field": {
+                "label": "answer"
+            }
+        },
+        {
+            "type": "cast_fields",
+            "fields": {
+                "answer": "int"
+            }
+        },
+        {
+            "type": "add_fields",
+            "fields": {
+                "context_type": "sentence"
+            }
+        }
+    ],
+    "task": "tasks.completion.multiple_choice",
+    "templates": "templates.completion.multiple_choice.all",
+    "__description__": "HellaSwag: Can a Machine Really Finish Your Sentence? is a new dataset for commonsense NLI. A paper was published at ACL2019.",
+    "__tags__": {
+        "arxiv": "1905.07830",
+        "croissant": true,
+        "language": "en",
+        "region": "us"
+    }
+}

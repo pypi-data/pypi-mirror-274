@@ -1,0 +1,12 @@
+{
+    "type": "sequential_operator",
+    "steps": [
+        {
+            "type": "load_json",
+            "field": "prediction",
+            "process_every_value": false,
+            "allow_failure": true,
+            "failure_value": []
+        }
+    ]
+}

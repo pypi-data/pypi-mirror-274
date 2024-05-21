@@ -1,0 +1,16 @@
+{
+    "type": "task",
+    "inputs": {
+        "context": "str",
+        "context_type": "str",
+        "choices": "List[str]"
+    },
+    "outputs": {
+        "answer": "int",
+        "choices": "List[str]"
+    },
+    "prediction_type": "Any",
+    "metrics": [
+        "metrics.accuracy"
+    ]
+}

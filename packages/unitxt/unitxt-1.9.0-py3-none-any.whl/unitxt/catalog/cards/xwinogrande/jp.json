@@ -1,0 +1,55 @@
+{
+    "type": "task_card",
+    "loader": {
+        "type": "load_hf",
+        "path": "Muennighoff/xwinograd",
+        "name": "jp"
+    },
+    "preprocess_steps": [
+        {
+            "type": "list_field_values",
+            "fields": [
+                "option1",
+                "option2"
+            ],
+            "to_field": "choices"
+        },
+        {
+            "type": "cast_fields",
+            "fields": {
+                "answer": "int"
+            }
+        },
+        {
+            "type": "add_constant",
+            "field": "answer",
+            "add": -1
+        },
+        {
+            "type": "rename_fields",
+            "field_to_field": {
+                "sentence": "question"
+            }
+        }
+    ],
+    "task": "tasks.qa.multiple_choice.open",
+    "templates": "templates.qa.multiple_choice.open.all",
+    "__tags__": {
+        "arxiv": [
+            "2211.01786",
+            "2106.12066"
+        ],
+        "croissant": true,
+        "language": [
+            "en",
+            "fr",
+            "ja",
+            "pt",
+            "ru",
+            "zh"
+        ],
+        "license": "cc-by-4.0",
+        "region": "us"
+    },
+    "__description__": "A multilingual collection of Winograd Schemas in six languages that can be used for evaluation of cross-lingual commonsense reasoning capabilities."
+}
