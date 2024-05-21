@@ -1,0 +1,8 @@
+pillow
+numpy
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+pre-commit
