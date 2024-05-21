@@ -1,0 +1,15 @@
+FROM --platform=linux/amd64 python:3.9-slim
+
+COPY {{ projectname }}_model/requirements.txt requirements.txt
+
+RUN apt-get update && apt-get install gcc python3-dev -y
+RUN pip install --no-cache-dir --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY {{ projectname }}_model ./
+
+
+RUN useradd deeploy -m -u 1000 -d /home/deeploy
+USER 1000
+
+ENTRYPOINT ["python", "__main__.py"]
