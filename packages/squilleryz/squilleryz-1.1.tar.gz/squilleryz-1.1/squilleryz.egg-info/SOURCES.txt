@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+squilleryz/__init__.py
+squilleryz/main.py
+squilleryz.egg-info/PKG-INFO
+squilleryz.egg-info/SOURCES.txt
+squilleryz.egg-info/dependency_links.txt
+squilleryz.egg-info/requires.txt
+squilleryz.egg-info/top_level.txt
