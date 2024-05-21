@@ -1,0 +1,44 @@
+# Python Markdown tables
+
+With this simple library you can easily generate the Markdown source code for a table.
+
+The library is written for Python 3. As of now it's only been tested with version 3.7 of the language, but I think it should also work with 3.6. Open an issue to let me know how it goes!
+
+## Example
+
+```python
+from mdtables import Table, Column
+
+t = Table(
+	Column('n'),
+	Column('2·n', alignment='center'),
+	Column('n²',  alignment='right' )
+)
+
+numbers = (1, 6, 19, 59)
+
+for n in numbers:
+	t.row(n, 2*n, n*n)
+
+print(t)
+```
+
+prints
+
+```markdown
+n |2·n|  n²
+--|:-:|---:
+1 | 2 |   1
+6 |12 |  36
+19|38 | 361
+59|118|3481
+```
+
+## Column options
+
+* `header`: the only required argument: the name of the column.
+* `alignment`: how text should be aligned in the column. Possible values are `left` (default), `center` and `right`.
+* `width`: the width of the column. The default is `None`, which uses the smallest possible width that fits all content.
+* `format`: the format option used on all data inside cells (not in the header). This is part of a Python format string, it will be used like this: `'{:`\<width>\<alignment>\<format option comes here>`}'.format(…)`. The default is `str.format`'s default (like when you use just `{}` without any formatting options).
+* `headerformat`: the format option used on the header. Analog to `format` above.
+

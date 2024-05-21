@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+bin/tsvtable.py
+mdtables/__init__.py
+mdtables.egg-info/PKG-INFO
+mdtables.egg-info/SOURCES.txt
+mdtables.egg-info/dependency_links.txt
+mdtables.egg-info/entry_points.txt
+mdtables.egg-info/top_level.txt
+venv/bin/activate_this.py
