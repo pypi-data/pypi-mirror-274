@@ -1,0 +1,2 @@
+[console_scripts]
+model-checker = src.__main__:main
