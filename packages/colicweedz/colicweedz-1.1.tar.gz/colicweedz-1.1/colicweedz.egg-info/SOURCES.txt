@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+colicweedz/__init__.py
+colicweedz/main.py
+colicweedz.egg-info/PKG-INFO
+colicweedz.egg-info/SOURCES.txt
+colicweedz.egg-info/dependency_links.txt
+colicweedz.egg-info/requires.txt
+colicweedz.egg-info/top_level.txt
