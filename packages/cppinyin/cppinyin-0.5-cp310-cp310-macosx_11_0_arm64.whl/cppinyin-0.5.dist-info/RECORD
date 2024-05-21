@@ -1,0 +1,13 @@
+libcppinyin_core.dylib,sha256=bXjFB9i6Dl1YQCFbHSHqkfhYpWSzytVr-r6gvxNFJuA,163384
+_cppinyin.cpython-310-darwin.so,sha256=8sw7L2ERpG7j8jAlwkR8xBRjD8BaRTiLKOiNqJswpps,190880
+cppinyin-0.5.dist-info/RECORD,,
+cppinyin-0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cppinyin-0.5.dist-info/WHEEL,sha256=E2L8cNry8_qENFWMb8KxRWLe-RhZW94hLc32Xo3HiTg,110
+cppinyin-0.5.dist-info/entry_points.txt,sha256=yjrNHdgamUSnF9A6qjGHjtyboj1C87nMFLQw6cIh2FA,46
+cppinyin-0.5.dist-info/top_level.txt,sha256=zXXBJavhIoxm__TYNS5LFz5TxrFLraJY0b2P57sYvd8,19
+cppinyin-0.5.dist-info/METADATA,sha256=nqIJjDOeSYgjC4yyBAZpoQBJ0quMEtsez0Rz8gT2tg0,1232
+cppinyin/cppinyin.py,sha256=rGuxUZuwogDDwfe7IzMFCswOMJGyYE51CYPQWYybd6U,1529
+cppinyin/__init__.py,sha256=Wo_2VAOxx4W-55SlMoQ2JczGCkwRIUQqDViAZm9qPNY,50
+cppinyin/cli.py,sha256=YSDw5HHh8Def8SrlHCkFjSXzKITINmzaxwpYNYhBSqE,5184
+cppinyin/resources/pinyin.dict,sha256=GjRlrf7klA6lmKs_J4ScsdkpyprBrnk7JQ_tb0Ao0DY,18823299
+cppinyin/resources/pinyin.raw,sha256=NiZYLros76IVsWkmyW59CvlwpsD1UH567cYqXpyLp3c,12743685
