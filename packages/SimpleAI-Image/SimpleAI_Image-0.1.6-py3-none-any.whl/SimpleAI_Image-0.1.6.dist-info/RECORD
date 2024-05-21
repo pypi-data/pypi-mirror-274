@@ -1,0 +1,11 @@
+ImageAI/DataProcessor.py,sha256=CdHEE0ifOs70IRkpkDIlZYmEj78SLMHpSOoCzo4WEGc,3354
+ImageAI/DatabaseHandler.py,sha256=mtE7PASNgX9dQ2YtL-hRcf1CI3MQX3o5w-rw1a-o9gc,1150
+ImageAI/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SimpleAI_Image/DataProcessor.py,sha256=CdHEE0ifOs70IRkpkDIlZYmEj78SLMHpSOoCzo4WEGc,3354
+SimpleAI_Image/DatabaseHandler.py,sha256=mtE7PASNgX9dQ2YtL-hRcf1CI3MQX3o5w-rw1a-o9gc,1150
+SimpleAI_Image/__init__.py,sha256=3FhnOM45C3SMUurMe6Hd9AYCFwc66CDgblkVydEzckc,86
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SimpleAI_Image-0.1.6.dist-info/METADATA,sha256=qMgMQSd8FnkGzFAUOpHTYkAUgwViwkkpMQBFwHfloJQ,927
+SimpleAI_Image-0.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+SimpleAI_Image-0.1.6.dist-info/top_level.txt,sha256=b-KUbsc1ge9Dz0iXSVPcGJ5YDRsvBkdDBPVL9AfSzIs,21
+SimpleAI_Image-0.1.6.dist-info/RECORD,,
