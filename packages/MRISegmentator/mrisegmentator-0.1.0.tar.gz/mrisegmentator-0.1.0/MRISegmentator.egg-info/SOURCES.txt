@@ -1,0 +1,11 @@
+setup.py
+MRISegmentator.egg-info/PKG-INFO
+MRISegmentator.egg-info/SOURCES.txt
+MRISegmentator.egg-info/dependency_links.txt
+MRISegmentator.egg-info/entry_points.txt
+MRISegmentator.egg-info/not-zip-safe
+MRISegmentator.egg-info/requires.txt
+MRISegmentator.egg-info/top_level.txt
+mrisegmentator/__init__.py
+mrisegmentator/cmdline.py
+mrisegmentator/inference.py

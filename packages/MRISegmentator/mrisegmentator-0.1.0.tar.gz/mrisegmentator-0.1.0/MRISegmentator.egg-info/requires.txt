@@ -1,0 +1,4 @@
+torch>=2.0.0
+tqdm>=4.45.0
+p_tqdm
+nnunetv2>=2.2.1
