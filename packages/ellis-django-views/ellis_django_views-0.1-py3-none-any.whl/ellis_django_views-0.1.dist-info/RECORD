@@ -1,0 +1,16 @@
+ellis_django_views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ellis_django_views/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+ellis_django_views/apps.py,sha256=k1BvhH97wqvV3K1Ity8zvUTVLD-rFFNkiM95mANnm4M,166
+ellis_django_views/models.py,sha256=kYqq7H23nZ9tqgK9FRMfR7qpoQoQcT2X2d5QJClMPN4,663
+ellis_django_views/serializers.py,sha256=v_16GW3-zogy7zLyqMSmbCS79CCiiL2jlI7D2j0FRY0,239
+ellis_django_views/test_views.py,sha256=9WZD0hITdfI5uyd8_euabAd-OAwDDtmYKTdLjldWwss,17427
+ellis_django_views/urls.py,sha256=kyK8Wz_6xmxUGX9R8JvbZyQOU1-4q4sPeML36_6EbHk,540
+ellis_django_views/views.py,sha256=iDSC3ZmoBm5ktM_UULJkql8rQFHT_sWT2ZCfRg-KwTI,980
+ellis_django_views/views_abstract.py,sha256=RPZ1wk8vbWWDJIWuqllC8rcYynuSs-0W7kkewwh7JZo,2437
+ellis_django_views/views_implementation.py,sha256=ba-txmxU5sN8coqGxxCU361yP3YNjvTOOAc4Qn71WVY,6007
+ellis_django_views/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ellis_django_views-0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+ellis_django_views-0.1.dist-info/METADATA,sha256=QTcHoYPJPnls2mFCcLozdXw4G3XWV6zGqU0ARKno9hY,1153
+ellis_django_views-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ellis_django_views-0.1.dist-info/top_level.txt,sha256=JEPpcsKePx6UWstRzVlUv798_L2dM-dcrpbgA8WZ4_Q,19
+ellis_django_views-0.1.dist-info/RECORD,,
