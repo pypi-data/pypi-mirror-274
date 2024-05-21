@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+allylicz/__init__.py
+allylicz/main.py
+allylicz.egg-info/PKG-INFO
+allylicz.egg-info/SOURCES.txt
+allylicz.egg-info/dependency_links.txt
+allylicz.egg-info/requires.txt
+allylicz.egg-info/top_level.txt
