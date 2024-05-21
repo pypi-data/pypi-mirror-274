@@ -1,0 +1,5 @@
+[build-system]
+# setuptools 64.0+ support --build-option
+requires = ["setuptools>=64.0"]
+backend-path = ["build_script"]
+build-backend = "pyzstd_pep517"
