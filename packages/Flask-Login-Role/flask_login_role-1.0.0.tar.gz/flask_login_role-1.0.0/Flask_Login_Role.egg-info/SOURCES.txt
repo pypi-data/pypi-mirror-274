@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+Flask_Login_Role.egg-info/PKG-INFO
+Flask_Login_Role.egg-info/SOURCES.txt
+Flask_Login_Role.egg-info/dependency_links.txt
+Flask_Login_Role.egg-info/requires.txt
+Flask_Login_Role.egg-info/top_level.txt
+flask_login_role/__init__.py
+flask_login_role/role_required.py
