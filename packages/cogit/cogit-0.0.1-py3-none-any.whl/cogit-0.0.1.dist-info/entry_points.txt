@@ -1,0 +1,3 @@
+[console_scripts]
+cogit=cogit.__main__:app
+
