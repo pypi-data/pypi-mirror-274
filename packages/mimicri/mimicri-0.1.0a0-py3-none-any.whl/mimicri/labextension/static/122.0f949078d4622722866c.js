@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmimicri=self.webpackChunkmimicri||[]).push([[122],{2122:(r,i,n)=>{function t(){return t=Object.assign?Object.assign.bind():function(r){for(var i=1;i<arguments.length;i++){var n=arguments[i];for(var t in n)Object.prototype.hasOwnProperty.call(n,t)&&(r[t]=n[t])}return r},t.apply(this,arguments)}n.d(i,{Z:()=>t})}}]);
