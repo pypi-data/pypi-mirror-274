@@ -1,0 +1,7 @@
+datasets>=2.18.0
+rich>=13.7.1
+
+[dev]
+black
+isort
+pytest
