@@ -1,0 +1,4 @@
+ 
+# vizbeauty module
+
+::: vizbeauty.vizbeauty
