@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+calculate_mean.egg-info/PKG-INFO
+calculate_mean.egg-info/SOURCES.txt
+calculate_mean.egg-info/dependency_links.txt
+calculate_mean.egg-info/requires.txt
+calculate_mean.egg-info/top_level.txt
