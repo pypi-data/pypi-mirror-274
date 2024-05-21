@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+juncosz/__init__.py
+juncosz/main.py
+juncosz.egg-info/PKG-INFO
+juncosz.egg-info/SOURCES.txt
+juncosz.egg-info/dependency_links.txt
+juncosz.egg-info/requires.txt
+juncosz.egg-info/top_level.txt
