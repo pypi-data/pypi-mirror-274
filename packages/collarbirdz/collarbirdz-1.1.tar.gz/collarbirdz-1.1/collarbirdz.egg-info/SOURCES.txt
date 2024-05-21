@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+collarbirdz/__init__.py
+collarbirdz/main.py
+collarbirdz.egg-info/PKG-INFO
+collarbirdz.egg-info/SOURCES.txt
+collarbirdz.egg-info/dependency_links.txt
+collarbirdz.egg-info/requires.txt
+collarbirdz.egg-info/top_level.txt
