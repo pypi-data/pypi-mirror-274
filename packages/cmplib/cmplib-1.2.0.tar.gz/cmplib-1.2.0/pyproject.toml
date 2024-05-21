@@ -1,0 +1,38 @@
+[build-system]
+requires = ["poetry-core>=1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "cmplib"
+version = "1.2.0"
+description = "Library for writing composable predicates"
+authors = ["Michal Goral <dev@goral.net.pl>"]
+license = "LGPL-3.0-only"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+]
+readme = "README.md"
+packages = [
+    { include = "cmplib", from = "src" },
+]
+homepage = "https://git.goral.net.pl/cmplib.git/about"
+repository = "https://git.goral.net.pl/cmplib.git"
+documentation = "https://git.goral.net.pl/cmplib.git/about"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+pytest-xdist = "^2.4.0"
+pytest-sugar = ">=0.9"
+black = "^22"
+mypy = "^1.9.0"
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+]
