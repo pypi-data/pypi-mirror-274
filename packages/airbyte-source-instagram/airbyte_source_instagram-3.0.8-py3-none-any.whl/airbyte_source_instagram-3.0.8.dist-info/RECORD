@@ -1,0 +1,17 @@
+source_instagram/__init__.py,sha256=lxHpaDmWsQesJBRe5BfPeh0NRWjhzMoiwk68mlltEgo,67
+source_instagram/api.py,sha256=n7GqMCexO-TQLc3Mb8GrmqA3zm1OUmt27KNGwt7_6i8,4887
+source_instagram/common.py,sha256=-mgPmRMKy-xuTR6GFphJ7CfgT39EIe2cr57VlBlBnvs,3264
+source_instagram/run.py,sha256=CeRHNC6RQXORfA3hyPYJVl8Lj0bMRjTC3ZdRXZtnTqA,239
+source_instagram/schemas/media.json,sha256=m6pm3ceZbP2P5CdQIHSAn9ZqTeo3DO45Be6LtFS3iPI,4924
+source_instagram/schemas/media_insights.json,sha256=uj74NdoU-Ae1h0GgcUYLsH2w82UA7rXiCZa9OSzVnJ8,2012
+source_instagram/schemas/stories.json,sha256=BD8U2qYV-rCVb2O5q1bF95OIx92qv6yHdhZ3VaA-6JQ,2093
+source_instagram/schemas/story_insights.json,sha256=B7V7nwr8TgyhEg8qrhQq_IAL6ijYcZgKjRKoWYxEaO4,907
+source_instagram/schemas/user_insights.json,sha256=NanoFtJqVvWb-YlvAs83Kw5EbfION6s5wBr19DiozAk,2566
+source_instagram/schemas/user_lifetime_insights.json,sha256=slso9si6gRvWhB8kpzK6-g5A5g6j7R6dcUwbzmwkAOg,791
+source_instagram/schemas/users.json,sha256=W7ZOSi286U-hFZuLWUHzDlzWnJtgrAa4ZfGWpCU8XqA,1591
+source_instagram/source.py,sha256=9UW4-s7CnhnbEh3EN1WKdf3Em25deDoaWbY822gUVeY,5683
+source_instagram/streams.py,sha256=-mJmSoAfLXPULmiDgymqkeJNEcY-agIxe6dTXZgEm9A,21534
+airbyte_source_instagram-3.0.8.dist-info/METADATA,sha256=_RThUBJ-LssnGUITwGKdOPMw7dsOaLh9Qpa_4MZO968,5358
+airbyte_source_instagram-3.0.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_instagram-3.0.8.dist-info/entry_points.txt,sha256=ACC0YR3W7fNmskJI9UnseS8774nr8s6_SrPwTMZhWBQ,61
+airbyte_source_instagram-3.0.8.dist-info/RECORD,,
