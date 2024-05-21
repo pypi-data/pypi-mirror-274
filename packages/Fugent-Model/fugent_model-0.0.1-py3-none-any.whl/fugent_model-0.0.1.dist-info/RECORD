@@ -1,0 +1,11 @@
+fugent_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fugent_model/__main__.py,sha256=BF5Q3kTIk1GJ_e64mMp_hH54ZIrKuxEiwll_6o8m9LQ,1489
+fugent_model/environment.py,sha256=imuGoTGsQpJuE9gKyPiK5HsXiQHpJ4iqTZ_H2WG734A,18790
+fugent_model/model.py,sha256=Waye7u2j3RQ00knLKWGL02ozukKwjQ9GnyCN7WOBxL8,12122
+fugent_model/requirements.txt,sha256=Qv8UEwNNiYEvEEI5tYe-6EvXDxnkIFUtrjpKjFq7nRM,100
+fugent_model/run.py,sha256=Bbu-qJwGzVXykmhJyBas_M64whmXBy-WVH_FOPgzhsI,797
+fugent_model/train.py,sha256=5o-SQuxIle41wlQU3VKogmErwNfds-d7-NAddrmcnk0,1891
+fugent_model-0.0.1.dist-info/METADATA,sha256=nPdQiXClqIkNEAlz1FRmy3f-xkpcKGKJav_oYJGLOpI,800
+fugent_model-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+fugent_model-0.0.1.dist-info/licenses/LICENSE,sha256=fX2IP05yxMRVbdV97eFcBID6tGlDGUZfUkp0diX4Cjk,1068
+fugent_model-0.0.1.dist-info/RECORD,,

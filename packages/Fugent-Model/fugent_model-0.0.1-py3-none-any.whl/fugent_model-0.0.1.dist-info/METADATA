@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: Fugent_Model
+Version: 0.0.1
+Summary: code required for training and running Fugent Agents
+Project-URL: Homepage, https://github.com/seelabutk/xgc_poincare
+Project-URL: Issues, https://github.com/seelabutk/XGC_Poincare/issues
+Author-email: James Hammer <jhammer3@vols.utk.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: matplotlib==3.8.4
+Requires-Dist: pandas==2.1.4
+Requires-Dist: pillow==10.3.0
+Requires-Dist: scipy==1.11.4
+Requires-Dist: tensorflow==2.15.0.post1
+Requires-Dist: tf-slim==1.1.0
+Description-Content-Type: text/markdown
+
+# Fugent Model
+
+This is the code required to train and run a Fugent Agent
