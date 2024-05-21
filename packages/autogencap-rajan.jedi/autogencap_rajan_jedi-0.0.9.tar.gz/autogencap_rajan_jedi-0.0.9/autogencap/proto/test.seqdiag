@@ -1,0 +1,5 @@
+participant TreeOrchestrator as T 
+T -> T : Create a top level plan
+T -> Agent1 : Solve_1
+Agent1 -> Agent1 : Create a plan
+Agent1 -> Agent2 : Solve 1,1
