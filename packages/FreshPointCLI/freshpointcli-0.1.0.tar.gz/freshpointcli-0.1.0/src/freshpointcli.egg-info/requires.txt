@@ -1,0 +1,13 @@
+prompt_toolkit
+pygments
+rich
+unidecode
+freshpointsync==0.1.0
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest
+pytest-asyncio
