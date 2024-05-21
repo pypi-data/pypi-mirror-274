@@ -1,0 +1,10 @@
+groqon/__init__.py,sha256=wRHxc_a_Cfl8_Frbt3j9KStTlGQr_pZKmX2Y_4a3lFA,112
+groqon/element_selectors.py,sha256=cr3V-G4PrbIC7S3NiXSGIHgtu06YUFTNAcSH0nMrTUI,2904
+groqon/groq.py,sha256=pHUGurVTrgZvGNr7ke9Fka-v-w7yp2Nz2GXUCZak3Vg,8280
+groqon/groq_config.py,sha256=A1ijIEX08NimWacXaw1MyK_nKVlTiJWNQhfi1H7_iFU,229
+groqon/groq_utils.py,sha256=Cg-irQzEUAFykEZRUp_nSUQnDfvMJqkAEI1apHDNdN4,8048
+groqon/parsing.py,sha256=3heZ-UxiitgSMe_sDLmtl81H2q4toHkKgghENj-gVnw,930
+groqon-0.1.5.dist-info/METADATA,sha256=YosfMeTtLBPw1Lyx8c6tCx05RJ3cidG9p6pGpfdSxB8,3847
+groqon-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+groqon-0.1.5.dist-info/entry_points.txt,sha256=D5sScefwMq34PwbVIRA5AMxMXkA5q5ZiyZlpyL9Haak,65
+groqon-0.1.5.dist-info/RECORD,,
