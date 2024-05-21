@@ -1,0 +1,5 @@
+[console_scripts]
+cis-old-desc = cisdb.cli.copy_old_desc:main
+cis-update-chan-nds = cisdb.cli.update_chan_nds:maain
+cis-update-from-frames = cisdb.cli.update_from_frames:main
+cis-update-ifo-fragments = cisdb.cli.update_ifo_fragments:main
