@@ -1,0 +1,6 @@
+appdirs
+Pillow
+requests
+geojson
+cairosvg
+setuptools
