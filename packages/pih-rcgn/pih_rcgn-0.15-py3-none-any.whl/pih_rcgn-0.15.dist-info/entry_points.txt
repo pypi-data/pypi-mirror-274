@@ -1,0 +1,2 @@
+[console_scripts]
+pih-rcgn = RecognizeService.__main__:start

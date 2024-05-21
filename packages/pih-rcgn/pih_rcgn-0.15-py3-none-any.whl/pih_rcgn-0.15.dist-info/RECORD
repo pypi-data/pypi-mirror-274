@@ -1,0 +1,11 @@
+RecognizeService/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+RecognizeService/__main__.py,sha256=mwV_QNLCsHAcoh-XzARZQq6zyG5H5H7b78_i7_SowBU,143
+RecognizeService/api.py,sha256=ohmzAyAnglzt5tReNgWVAZzwEexKUD7Co8uBbVO-wFg,57769
+RecognizeService/collection.py,sha256=l_d63ZhKj6IxF-d03fvddtJcuIU_AahThvIiBmz6Ct0,1224
+RecognizeService/const.py,sha256=x9VsqcBPCaZgJtS26MrAddAmoeLf3crz6SZ98RR-wOI,4656
+RecognizeService/service.py,sha256=Kzih1k8Ovsa2Aqfph-vSf7s_pN9rlFMdOol491gZVoc,29045
+pih_rcgn-0.15.dist-info/METADATA,sha256=9xqPwUJCsz7Nu7jqs5aL8Ox8GIISHYCsbaV95Z3pVIs,582
+pih_rcgn-0.15.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pih_rcgn-0.15.dist-info/entry_points.txt,sha256=lpmkML2F8Q-CG7lGSZthvhDpba4kcovmzEwtERdtXKM,61
+pih_rcgn-0.15.dist-info/top_level.txt,sha256=t0zwJVxltxBuSyhNw9VJx-ahPggJXaKBZjNJFfBFbQo,17
+pih_rcgn-0.15.dist-info/RECORD,,
