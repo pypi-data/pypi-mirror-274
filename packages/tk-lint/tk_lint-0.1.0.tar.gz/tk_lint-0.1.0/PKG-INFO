@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: tk-lint
+Version: 0.1.0
+Summary: 
+Author: Eslam Odeh
+Author-email: eslamodeh@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: ruff (>=0,<1)
+Description-Content-Type: text/markdown
+
+# TK Lint
+
+
+TK Lint is a package/CLI the includes different linting rules such as Ruff, MyPy, etc.. to be used as a standard across repositories. It's built using [poetry](https://python-poetry.org/)
+
+This repository is still WIP.
+
+### Setup
+* Install [pipx](https://pipx.pypa.io/stable/installation/) on your machine
+* Install poetry using pipx `pipx install poetry`
+
+### Install
+- To install dependencies, run `make install`
+- To run poetry shell, run `make shell`
+- To use ruff, run `tk_lint ruff <path>` within the shell
+
