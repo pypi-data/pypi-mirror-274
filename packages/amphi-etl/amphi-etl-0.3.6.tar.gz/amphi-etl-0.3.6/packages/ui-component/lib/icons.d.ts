@@ -1,0 +1,12 @@
+import { LabIcon } from '@jupyterlab/ui-components';
+export declare const asteriskIcon: LabIcon;
+export declare const squareIcon: LabIcon;
+export declare const amphiLogo: LabIcon;
+export declare const pipelineIcon: LabIcon;
+export declare const pipelineNegativeIcon: LabIcon;
+export declare const shieldCheckedIcon: LabIcon;
+export declare const codeIcon: LabIcon;
+export declare const docsIcon: LabIcon;
+export declare const uploadIcon: LabIcon;
+export declare const networkIcon: LabIcon;
+export declare const bugIcon: LabIcon;
