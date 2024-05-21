@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: us_vis
+Version: 1.0
+Summary: Visualisation tools for umbrella sampling calculations
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+
+This is a series of script that allow to visualize and modify graphs obtained through umbrella sampling calculations from AMBER (https://ambermd.org/index.php) and WHAM (http://membrane.urmc.rochester.edu/?page_id=126) software. For full documentation see: https://us-vis.readthedocs.io/en/latest/
