@@ -1,0 +1,12 @@
+[aiida.calculations]
+amber.sander=aiida_amber.calculations.sander:SanderCalculation
+
+[aiida.data]
+amber.sander=aiida_amber.data.sander:SanderParameters
+
+[aiida.parsers]
+amber.sander=aiida_amber.parsers.sander:SanderParser
+
+[console_scripts]
+aiida_sander=aiida_amber.cli.sander:cli
+
