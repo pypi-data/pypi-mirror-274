@@ -1,0 +1,41 @@
+[project]
+authors = [
+    {name = "Jérémie DECOCK", email = "jd.jdhp@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+description = "M2M Daemons."
+dynamic = ["dependencies", "version"]
+name = "m2m"
+readme = "README.rst"
+requires-python = ">=3.8"
+
+[project.scripts]
+mqtt2influx = "m2m.mqtt2influx:main"
+meteofrance2mqtt = "m2m.meteofrance2mqtt:main"
+
+[build-system]
+requires = [
+    'coverage',
+    'pytest',
+    'setuptools',
+    'Sphinx',
+    'sphinx-gallery',
+    'sphinx-rtd-theme'
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["m2m"]
+script-files = ["bin/http2influx"]
+
+# Use requirements.txt to setup dependencies (c.f. https://stackoverflow.com/a/73600610)
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+version = {attr = "m2m.__version__"}

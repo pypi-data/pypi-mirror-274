@@ -1,0 +1,6 @@
+Flask
+influxdb-client
+paho-mqtt>=2.1.0
+pyyaml
+requests-html
+waitress
