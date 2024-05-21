@@ -1,0 +1,6 @@
+setup.py
+libcsv/__init__.py
+libcsv.egg-info/PKG-INFO
+libcsv.egg-info/SOURCES.txt
+libcsv.egg-info/dependency_links.txt
+libcsv.egg-info/top_level.txt

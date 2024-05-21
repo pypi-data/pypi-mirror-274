@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: libcsv
+Version: 1.0.0
+Summary: Library for working with csv files using Python.
+Home-page: https://github.com/marko2155/libcsv.git
+Author: Marko Camandioti
+Author-email: camandiotimarko@gmail.com
