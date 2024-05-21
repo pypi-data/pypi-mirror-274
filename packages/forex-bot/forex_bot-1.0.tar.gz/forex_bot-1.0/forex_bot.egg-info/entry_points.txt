@@ -1,0 +1,2 @@
+[console_scripts]
+forex_bot = forex_bot.main:main
