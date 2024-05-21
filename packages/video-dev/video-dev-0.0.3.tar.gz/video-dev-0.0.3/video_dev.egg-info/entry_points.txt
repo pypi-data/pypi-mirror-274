@@ -1,0 +1,2 @@
+[console_scripts]
+video-dev = cli.main:app

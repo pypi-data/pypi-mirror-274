@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+cli/__init__.py
+cli/main.py
+video_dev/__init__.py
+video_dev.egg-info/PKG-INFO
+video_dev.egg-info/SOURCES.txt
+video_dev.egg-info/dependency_links.txt
+video_dev.egg-info/entry_points.txt
+video_dev.egg-info/requires.txt
+video_dev.egg-info/top_level.txt
+video_dev/sdk/__init__.py
+video_dev/sdk/main.py
