@@ -1,0 +1,7 @@
+pyteomics
+scipy
+numpy
+pandas
+lxml
+cython
+setuptools
