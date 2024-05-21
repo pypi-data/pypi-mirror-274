@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: paddleocr-onnx
+Version: 0.2.2
+Summary: 
+Author: The Walnut AI
+Author-email: support@thewalnut.ai
+Requires-Python: >3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: onnxruntime (>=1.18.0,<2.0.0)
+Requires-Dist: opencv-python-headless (>=4.9.0.80,<5.0.0.0)
+Requires-Dist: pillow (>=10.3.0,<11.0.0)
+Requires-Dist: pyclipper (>=1.3.0.post5,<2.0.0)
+Requires-Dist: shapely (>=2.0.4,<3.0.0)
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+Works only in Linux
+
+1. install paddleocr_convert
+2. https://github.com/RapidAI/PaddleOCRModelConvert
+3. Download and convert the models
+
+```bash
+paddleocr_convert -p https://paddleocr.bj.bcebos.com/PP-OCRv3/english/en_PP-OCRv3_det_infer.tar -o models
+
+paddleocr_convert -p https://paddleocr.bj.bcebos.com/PP-OCRv4/english/en_PP-OCRv4_rec_infer.tar -o models -txt_path https://github.com/PaddlePaddle/PaddleOCR/blob/960243862f6c6833f58e39f3b74864cba15edfeb/ppocr/utils/en_dict.txt
+
+paddleocr_convert -p https://paddleocr.bj.bcebos.com/dygraph_v2.0/ch/ch_ppocr_mobile_v2.0_cls_infer.tar -o models
+```
+
