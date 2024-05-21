@@ -1,0 +1,7 @@
+pip-tools
+pytype
+build
+twine
+-r docs/requirements-docs.in
+
+-e file:.
