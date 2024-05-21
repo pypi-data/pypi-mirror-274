@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fhrerz/__init__.py
+fhrerz/main.py
+fhrerz.egg-info/PKG-INFO
+fhrerz.egg-info/SOURCES.txt
+fhrerz.egg-info/dependency_links.txt
+fhrerz.egg-info/requires.txt
+fhrerz.egg-info/top_level.txt
