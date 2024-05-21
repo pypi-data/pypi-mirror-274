@@ -1,0 +1,17 @@
+.gitignore
+ACKNOWLEDGEMENTS
+LICENSE
+Makefile
+README.md
+setup.py
+.github/workflows/publish.yml
+.github/workflows/test.yml
+.github/workflows/welcome.yml
+autodistill_fastvit/__init__.py
+autodistill_fastvit/classes.json
+autodistill_fastvit/fastvit.py
+autodistill_fastvit.egg-info/PKG-INFO
+autodistill_fastvit.egg-info/SOURCES.txt
+autodistill_fastvit.egg-info/dependency_links.txt
+autodistill_fastvit.egg-info/requires.txt
+autodistill_fastvit.egg-info/top_level.txt
