@@ -1,0 +1,2 @@
+[console_scripts]
+enochecker_cli = enochecker_cli.base:main
