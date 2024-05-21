@@ -1,0 +1,9 @@
+setup.py
+globbing/__init__.py
+globbing/handlers.py
+globbing/version.py
+jupyter-config/jupyter_server_config.d/globbing.json
+jupyter_server_globbing.egg-info/PKG-INFO
+jupyter_server_globbing.egg-info/SOURCES.txt
+jupyter_server_globbing.egg-info/dependency_links.txt
+jupyter_server_globbing.egg-info/top_level.txt
