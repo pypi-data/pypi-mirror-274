@@ -1,0 +1,12 @@
+LICENCE
+README.md
+run.sh
+setup.py
+setup.sh
+FileWriterCLI.egg-info/PKG-INFO
+FileWriterCLI.egg-info/SOURCES.txt
+FileWriterCLI.egg-info/dependency_links.txt
+FileWriterCLI.egg-info/requires.txt
+FileWriterCLI.egg-info/top_level.txt
+src/__init__.py
+src/filewriter.py
