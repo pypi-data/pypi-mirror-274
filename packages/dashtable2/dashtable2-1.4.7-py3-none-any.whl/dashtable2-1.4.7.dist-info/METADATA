@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: dashtable2
+Version: 1.4.7
+Summary: A library for converting a HTML tables into ASCII tables, rowspan and colspan allowed!
+Home-page: https://github.com/PasaOpasen/dashtable2
+Author: doakey3 & gustavklopp & pasaopasen
+Author-email: qtckpuhdsa@gmail.com
+License: MIT
+Keywords: text table,conversion,documentation
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: bs4
+Requires-Dist: docutils
+Requires-Dist: numpy
+Requires-Dist: typing-extensions
+
+
+# DashTable2
+
+[![PyPI
+version](https://badge.fury.io/py/dashtable2.svg)](https://pypi.org/project/dashtable2/)
+[![Downloads](https://pepy.tech/badge/dashtable2)](https://pepy.tech/project/dashtable2)
+[![Downloads](https://pepy.tech/badge/dashtable2/month)](https://pepy.tech/project/dashtable2)
+[![Downloads](https://pepy.tech/badge/dashtable2/week)](https://pepy.tech/project/dashtable2)
+
+```
+pip install dashtable2
+```
+
+Documentation: https://pasaopasen.github.io/dashtable2/
+
