@@ -1,0 +1,2 @@
+from .comp_cor_variance_plot import CompCorVariancePlot
+from .confounds_correlation_plot import ConfoundsCorrelationPlot
