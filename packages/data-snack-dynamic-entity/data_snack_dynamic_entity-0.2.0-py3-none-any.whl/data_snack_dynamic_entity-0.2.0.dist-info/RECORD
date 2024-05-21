@@ -1,0 +1,10 @@
+data_snack_dynamic_entity/__init__.py,sha256=VKCPzu6AX5iLNWOFlWcJpfWq5OkXZjyPj84E-sD15tM,35
+data_snack_dynamic_entity/entityTemplates.schema.json,sha256=TvqClxlW3xxGVeQhr__FOzb39ib3ks76mFDE_IiTVtU,2227
+data_snack_dynamic_entity/factory.py,sha256=Jv4wLNgsOxiyjNuugUpl1sslbwjZrCAjuVDKZZVD1vY,3581
+data_snack_dynamic_entity/types.py,sha256=y63qabAx07AbcLmXsawtZh5k8C25Z2Ac9_m9qX1Mb4w,288
+data_snack_dynamic_entity/validate.py,sha256=OtLehz-bVkci7nR_rflUAnOwCkQFHRhy6mFiWv08qEg,728
+data_snack_dynamic_entity-0.2.0.dist-info/LICENSE,sha256=iG3Bx1qbSwghY69nfFGil2rMWq-3cRh-zZX_otAyhGo,1072
+data_snack_dynamic_entity-0.2.0.dist-info/METADATA,sha256=KVhPiQszu2YkGlGsjoCcF4BOHuYuqW2-OkZBX6PYR74,2334
+data_snack_dynamic_entity-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+data_snack_dynamic_entity-0.2.0.dist-info/top_level.txt,sha256=egnanOwsMvdkCoHdifHQlQ5QAjiM48EZOf8tRUImM0w,26
+data_snack_dynamic_entity-0.2.0.dist-info/RECORD,,
