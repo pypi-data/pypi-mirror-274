@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: HalChat
+Version: 0.0.2
+Summary: HalChat api library
+Author-email: Halwarsing <system@halwarsing.net>
+Project-URL: Homepage, https://halchat.halwarsing.net/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# HalChat API module
+
+API for HalChat in python
