@@ -1,0 +1,8 @@
+numpy
+pandas
+sqlalchemy
+cryptography
+xrpl-py
+wxPython
+requests
+toml
