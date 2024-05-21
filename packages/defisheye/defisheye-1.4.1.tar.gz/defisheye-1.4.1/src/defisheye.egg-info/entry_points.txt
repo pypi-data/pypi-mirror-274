@@ -1,0 +1,3 @@
+[console_scripts]
+defisheye = defisheye.__main__:main
+defisheyeapp = defisheye.__main__:mainapp
