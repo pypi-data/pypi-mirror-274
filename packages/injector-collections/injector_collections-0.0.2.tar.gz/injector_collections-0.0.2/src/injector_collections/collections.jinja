@@ -1,0 +1,22 @@
+from {{ inject.__module__ }} import {{ inject.__name__ }}
+from ic.Collection import Collection
+{%- for collection, citems in collectionItems|items %}
+{%- for (key, className) in citems %}
+from {{ className.__module__ }} import {{ className.__name__ }}
+{%- endfor %}
+{%- endfor %}
+
+{%- for collection, citems in collectionItems|items %}
+class {{ collection.__name__ }}(Collection):
+    @{{ inject.__name__ }}
+    def __init__(
+            self,
+            {%- for (key, className) in citems %}
+            v{{ className.__name__ }}: {{ className.__name__ }},
+            {%- endfor %}
+            ) -> None:
+        super().__init__()
+        {%- for (key, className) in citems %}
+        self[{{ key }}] = v{{ className.__name__ }}
+        {%- endfor %}
+{%- endfor %}
