@@ -1,0 +1,4 @@
+[console_scripts]
+compile=compile_proto:compile_proto_files
+start=camera_service.__init__:start
+

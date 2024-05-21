@@ -1,0 +1,14 @@
+camera_service/__init__.py,sha256=77cD7QTJz7AlsAneXTJh0NtJJgC2ZMyMGyM2jJMtUSE,3355
+camera_service/cam_capture.py,sha256=BAAhfHHB23owIcUAqvr9Xnh1_MM3KVZszk01FrLltb0,781
+camera_service/constants.py,sha256=VujcaRr6heQrAqUII2EvKU9l6m99-PO9XFPv-jV7FRI,33
+camera_service/data/frames.py,sha256=_u1IASIuk4y500BDL6vH_Vu5Qu8sawmq41DjEEw0RAU,85
+camera_service/generate_code.py,sha256=iVoIjipWOPTrWZDnbJoCgPf2-BEQdqzL01CGNyjhgvg,986
+camera_service/helpers/poetry_install.py,sha256=ZyTWNaioAfRTZ6adikTtlTm7jO8XUL8HmoYVqC1Blww,292
+camera_service/modules/modules_list.py,sha256=Kar6tM1rdpQX6Pcb_m3tM2uNqmUTOTlGASjQ1Gxnw08,761
+camera_service/modules/modules_processing.py,sha256=oXRJkoaD-Q4cy7xZ0-QLJ5KKEyHguz4miO_n-6oaVRw,1758
+camera_service/utils/get_local_ip.py,sha256=-FCBTjEtgiVlcNUVB-189DiiAe5FmbazZrrlVil3lPM,141
+camera_service/utils/get_modules_from_toml.py,sha256=eofCkjbJ_HIqmpR6G2g4YaD0iRyQU495CG9IHrlchf4,508
+camera_service-0.1.0.dist-info/entry_points.txt,sha256=A4AkB5FrXLI5GT-JjSAn_gGg-ODIVhYTtyMnawko9Lg,97
+camera_service-0.1.0.dist-info/METADATA,sha256=2PTKhOkFCvA5z0AdhExCw32QJvHDXd4VEuKhVWpvccI,780
+camera_service-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+camera_service-0.1.0.dist-info/RECORD,,
