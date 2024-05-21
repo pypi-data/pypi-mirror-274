@@ -1,0 +1,3 @@
+[console_scripts]
+mera = mera.app.mera:main
+
