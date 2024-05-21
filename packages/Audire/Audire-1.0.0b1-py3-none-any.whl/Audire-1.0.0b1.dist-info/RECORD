@@ -1,0 +1,11 @@
+audire/__init__.py,sha256=m6rSmcAt2AenaYtXE7tfulywuK2IuT5sXt93ir6kStU,1109
+audire/dotdict.py,sha256=xXFMD1h5IuENiprgIUznqKuyzjAQk4qo664RUSynXJY,2134
+audire/errors.py,sha256=o79zynPgj1o-RrITUJH7Zg5RlN60JV3HUHNc3OYYDjU,1916
+audire/main.py,sha256=wWz_IdbiQzEzwm2ArrhdPJhmFR3RLIm2DR0nm4_sgjA,2674
+audire/helpers/__init__.py,sha256=RGg0L-C3H1HRfaaZN1hDkNCoUnIaBml7C8MdimdTypA,1063
+audire/helpers/youtube.py,sha256=Ma2o46e7pTygq9BB1OanIKQoZRzbg4SBori7TSQuTOU,2879
+Audire-1.0.0b1.dist-info/LICENSE,sha256=H058-CFZgj92dpIpHUevNcQFXh3QcGKW4h7Nrj0ESzg,1060
+Audire-1.0.0b1.dist-info/METADATA,sha256=psnaz9oufVj5WOGO3FV3AzxK_gJ0cGaCNhjpUvU2hUg,2068
+Audire-1.0.0b1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+Audire-1.0.0b1.dist-info/top_level.txt,sha256=bYEIPxjYcdAmK8wOK5wZ6f2cmdLwKGgCYwXNCBUaovY,7
+Audire-1.0.0b1.dist-info/RECORD,,
