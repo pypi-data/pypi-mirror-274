@@ -1,0 +1,10 @@
+pafit/CHANGELOG.rst,sha256=_Lc2mZubQIuxVVtoocgzdJD8xxL-nMkB-my3Oo1FX6k,2212
+pafit/LICENSE.txt,sha256=CYlsjB6DlwlpDYS0nx-mnPO1Yaak5hR_VwDkRUiQi6M,398
+pafit/README.rst,sha256=XuM5nX-dTXl-Q-gz1HY-ZCMUoydwmu2kESQ4ucmMP5Y,2005
+pafit/__init__.py,sha256=Ees22pioktcEsugwaswURV6sFbZUphv6v7owB-vS6R0,23
+pafit/fit_kinematic_pa.py,sha256=2j_C7BtPwl2Wbb_1HP8YxIxWycn5_1JnCCYZtns488A,8981
+pafit-2.0.8.dist-info/METADATA,sha256=-8YZZxPWLfnf6X7FtfkoqBl_oI-Ap0nzxyDDlKiZMyY,7499
+pafit-2.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pafit-2.0.8.dist-info/top_level.txt,sha256=B3z6O0joxRYqNVyKSocZJzj7KenRQfih1I940i3ka94,6
+pafit-2.0.8.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pafit-2.0.8.dist-info/RECORD,,
