@@ -1,0 +1,55 @@
+{
+    "demo": {
+        "tags": {
+            "plant": 50,
+            "line": 5,
+            "machine": "id"
+        },
+        "fields": {
+            "voltage": {
+                "key": {
+                    "value": "voltage"
+                },
+                "type": {
+                    "value": "FLOAT"
+                },
+                "min": {
+                    "value": 200
+                },
+                "max": {
+                    "value": 260
+                },
+                "mean": {
+                    "value": 230
+                },
+                "stdev": {
+                    "value": 10
+                },
+                "variance": {
+                    "value": 0.5
+                },
+                "error_rate": {
+                    "value": 0.001
+                },
+                "error_length": {
+                    "value": 2.5
+                }
+            },
+            "button": {
+                "description": "indicating a pressed button",
+                "key": {
+                    "description": "key used in the database to store this measurement",
+                    "value": "button_press"
+                },
+                "type": {
+                    "description": "some databases (e.g. timescaleDB) need a column type because they don't have a schema less approach, calculation also differs for different types",
+                    "value": "BOOL"
+                },
+                "true_ratio": {
+                    "description": "how high is the change of this boolean to be true, e.g. 0,001 means it is on average true for one in a thousand values, or 1 means it's true every time",
+                    "value": 0.001
+                }
+            }
+        }
+    }
+}
