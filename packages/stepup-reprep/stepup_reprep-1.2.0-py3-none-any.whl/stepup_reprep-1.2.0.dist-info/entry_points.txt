@@ -1,0 +1,4 @@
+[console_scripts]
+reprep-check-inventory = stepup.reprep.check_inventory:main
+reprep-make-inventory = stepup.reprep.make_inventory:main
+reprep-zip-inventory = stepup.reprep.zip_inventory:main
