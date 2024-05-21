@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: testsegmtor
+Version: 0.0.1
+Summary: Preprocessing of images for OCR
+Author: Beijuka Bruno
+Author-email: beijukab@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# Image Processor
+
+Image Processor is a Python tool for preprocessing images, designed specifically for Optical Character Recognition (OCR) tasks.
+
+## Usage
+
+To use the Image Processor in your Python scripts, follow these steps:
+
+1. Import the `process_image` function from the `run` module:
+
+    ```python
+    from run import process_image
+    ```
+
+2. Call the `process_image` function with the input image path and output directory path as arguments:
+
+    ```python
+    input_image_path = "input_image.jpg"
+    output_directory = "output_directory"
+    process_image(input_image_path, output_directory)
+    ```
+
+This will process the input image located at `input_image.jpg` and save the processed image to the `output_directory` directory.
+
+## Requirements
+
+- Python 3.6+
+- numpy
+
+## Author
+
+- Beijuka Bruno
+- Email: beijukab@gmail.com
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
