@@ -1,0 +1,10 @@
+flask
+gunicorn
+numpy
+gwdatafind
+ja_webutils
+ja_basedb
+psutil
+pip
+build
+twine
