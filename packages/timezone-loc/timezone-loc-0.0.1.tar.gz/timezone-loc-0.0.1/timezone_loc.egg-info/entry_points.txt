@@ -1,0 +1,3 @@
+[console_scripts]
+timezone-loc = src.main:main
+
