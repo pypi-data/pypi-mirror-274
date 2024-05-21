@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+avelongez/__init__.py
+avelongez/main.py
+avelongez.egg-info/PKG-INFO
+avelongez.egg-info/SOURCES.txt
+avelongez.egg-info/dependency_links.txt
+avelongez.egg-info/requires.txt
+avelongez.egg-info/top_level.txt
