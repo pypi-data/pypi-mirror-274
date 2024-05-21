@@ -1,0 +1,81 @@
+# ColorLogger
+
+A simple and flexible logging module with color-coded output for enhanced readability.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Basic Usage](#basic-usage)
+  - [Log Levels](#log-levels)
+  - [Performance Timing](#performance-timing)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+ColorLogger is a Python logging module designed to provide simple, color-coded logging output. It helps to easily distinguish different log levels, such as success, info, failure, and rate limit warnings.
+
+## Features
+- Color-coded log messages for easy readability.
+- Support for different log levels: success, info, failure, and ratelimit.
+- Optional performance timing display for operations.
+- Lightweight and easy to integrate into any Python project.
+
+## Installation
+You can install ColorLogger via pip:
+
+```bash
+pip install intensity-logger
+```
+
+## Usage
+Basic Usage
+Here's a basic example to get you started with ColorLogger:
+
+```python
+from intensity_logger import Logger
+
+logger = Logger()
+
+logger.success("Operation completed successfully.")
+logger.info("This is an informational message.")
+logger.failure("An error occurred.")
+logger.ratelimit("Rate limit reached.")
+```
+
+# Log Levels
+ColorLogger supports various log levels, each with a different color:
+
+-> Success: Indicates successful operations.
+-> Info: Provides informational messages.
+-> Failure: Logs errors and failures.
+-> Ratelimit: Warnings about rate limiting.
+
+# Performance Timing
+You can log the duration of an operation by passing `start` and `end` times:
+
+```python
+import time
+from intensity_logger import Logger
+
+logger = Logger()
+
+start_time = time.time()
+time.sleep(2)
+end_time = time.time()
+
+logger.success("Operation completed successfully.", start=start_time, end=end_time)
+```
+
+# Contributing
+Contributions are welcome! If you have ideas for improvements or new features, feel free to open an issue or submit a pull request on GitHub.
+
+1. Fork the repository.
+2. Create your feature branch.
+3. Commit your changes.
+4. Push to the branch.
+5. Open a pull request.
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
