@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: gene4mVCF
+Version: 1.1.3
+Summary: Description of your package
+Home-page: https://github.com/VJ-Ulaganathan/gene4mVCF
+Author: Pr (France). Dr. rer. nat. Vijay K. ULAGANATHAN
+Author-email: vijay-kumar.ulaganathan@uni-tuebingen.de
+Description-Content-Type: text/markdown
+Requires-Dist: pysam>=0.16.0.1
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: pybedtools>=0.8.0
+Requires-Dist: tqdm>=4.47.0
+Requires-Dist: gffutils>=0.10.1
+
+# gene4mVCF
+
+## Introduction
+`gene4mVCF` is a Python package that allows you to extract variant entries for specific genes or a list of genes from a VCF (Variant Call Format) file. It utilizes tools like `bcftools`, `tabix`, and Python libraries like `pysam`, `pandas`, `pybedtools`, `tqdm`, and `gffutils` to efficiently parse and extract variants.
+
+## Installation
+
+You can install `gene4mVCF` via pip:
+
+`$ pip install gene4mVCF`
+
+After installation please download the four required bed files and place inside the folder /gene4mVCF
+<br>'hg19.ensGene.bed' --> https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/genes/hg19.ensGene.gtf.gz </br>
+<br>'hg19.ncbiRefSeq.bed' --> https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/genes/hg19.ncbiRefSeq.gtf.gz </br>
+<br>'hg38.ensGene.bed' --> https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/genes/hg38.ensGene.gtf.gz </br>
+<br>'hg38.ncbiRefSeq.bed'--> https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/genes/hg38.ncbiRefSeq.gtf.gz </br>
+
+## Usage
+usage: `$ gene4mVCF [-h] -i INPUT -g GENE`
+
+Extract variant entries for a specific gene or list of genes from a VCF file.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Input bgzip compressed VCF file
+  -g GENES, --genes GENES
+                        Gene name, Ensembl gene ID, or path to a gene list file
+
+## Examples
+Extract variants for a single gene using gene name:
+`$ gene4mVCF -i input.vcf.gz -g EGFR`
+
+Extract variants for a single using ensembl gene id:
+`$ gene4mVCF -i input.vcf.gz -g ENSG00000168878`
+
+Extract variants for multiple genes listed in a file:
+`$ gene4mVCF -i input.vcf.gz -g genes.txt`
+
+For more options and details, refer to the help message.
+
+## Support
+For any issues or inquiries, please open an issue on the GitHub repository https://github.com/VJ-Ulaganathan/gene4mVCF
+
+
+## Installation
+
+Installation via pip:
+
+`$ pip install gene4mVCF`
+
+
+
