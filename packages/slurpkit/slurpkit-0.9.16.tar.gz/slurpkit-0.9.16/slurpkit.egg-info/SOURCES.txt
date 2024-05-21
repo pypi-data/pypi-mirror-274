@@ -1,0 +1,6 @@
+README.md
+slurpkit.egg-info/PKG-INFO
+slurpkit.egg-info/SOURCES.txt
+slurpkit.egg-info/dependency_links.txt
+slurpkit.egg-info/requires.txt
+slurpkit.egg-info/top_level.txt
