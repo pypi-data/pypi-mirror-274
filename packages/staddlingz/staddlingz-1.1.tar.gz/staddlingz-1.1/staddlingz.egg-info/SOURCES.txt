@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+staddlingz/__init__.py
+staddlingz/main.py
+staddlingz.egg-info/PKG-INFO
+staddlingz.egg-info/SOURCES.txt
+staddlingz.egg-info/dependency_links.txt
+staddlingz.egg-info/requires.txt
+staddlingz.egg-info/top_level.txt
