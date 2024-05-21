@@ -1,0 +1,6 @@
+/dist
+/.pytest_cache
+
+semi_test.py
+
+**/__pycache__
