@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+erlc/__init__.py
+erlc/headers.py
+erlc/requests.py
+erlc_rbx.egg-info/PKG-INFO
+erlc_rbx.egg-info/SOURCES.txt
+erlc_rbx.egg-info/dependency_links.txt
+erlc_rbx.egg-info/requires.txt
+erlc_rbx.egg-info/top_level.txt
