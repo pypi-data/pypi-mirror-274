@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+marjoramz/__init__.py
+marjoramz/main.py
+marjoramz.egg-info/PKG-INFO
+marjoramz.egg-info/SOURCES.txt
+marjoramz.egg-info/dependency_links.txt
+marjoramz.egg-info/requires.txt
+marjoramz.egg-info/top_level.txt
