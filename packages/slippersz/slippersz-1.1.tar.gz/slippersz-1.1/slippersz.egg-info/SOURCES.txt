@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+slippersz/__init__.py
+slippersz/main.py
+slippersz.egg-info/PKG-INFO
+slippersz.egg-info/SOURCES.txt
+slippersz.egg-info/dependency_links.txt
+slippersz.egg-info/requires.txt
+slippersz.egg-info/top_level.txt
