@@ -1,0 +1,5 @@
+llama_index/embeddings/nomic/__init__.py,sha256=56bKu31KvYMosC62mQ4YhqGh0yX37F2kUwwGGonxn-c,91
+llama_index/embeddings/nomic/base.py,sha256=6hVa44NBeVSHoKLMxjbEJLJ-ci779O93xVGykoMe5XY,7445
+llama_index_embeddings_nomic-0.2.0.dist-info/METADATA,sha256=hNup3Zy0vML09Ou95lPD_7xOSZgOQ811q12qzeMELO8,719
+llama_index_embeddings_nomic-0.2.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_embeddings_nomic-0.2.0.dist-info/RECORD,,
