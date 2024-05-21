@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "novum_api_client"
+version = "2.0.1"
+description = "Python API Client for Novum Service Center."
+authors = ["Leonardo <l.biz@novum-engineering.com>"]
+readme =  "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+requests = "^2.28.2"
+dataclasses-json = "^0.6.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.metadata]
+description ="Python API Client for Novum Service Center."
+description-file = "README.md"
+license = "MIT"
