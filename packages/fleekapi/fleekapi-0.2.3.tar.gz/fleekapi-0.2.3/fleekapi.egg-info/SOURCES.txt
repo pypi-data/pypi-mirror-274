@@ -1,0 +1,7 @@
+setup.py
+fleekapi/__init__.py
+fleekapi.egg-info/PKG-INFO
+fleekapi.egg-info/SOURCES.txt
+fleekapi.egg-info/dependency_links.txt
+fleekapi.egg-info/requires.txt
+fleekapi.egg-info/top_level.txt
