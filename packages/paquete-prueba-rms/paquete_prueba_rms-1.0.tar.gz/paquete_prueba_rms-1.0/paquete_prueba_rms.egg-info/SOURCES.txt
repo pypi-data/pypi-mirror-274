@@ -1,0 +1,8 @@
+setup.py
+paquete1/__init__.py
+paquete1/modulo1.py
+paquete1/modulo2.py
+paquete_prueba_rms.egg-info/PKG-INFO
+paquete_prueba_rms.egg-info/SOURCES.txt
+paquete_prueba_rms.egg-info/dependency_links.txt
+paquete_prueba_rms.egg-info/top_level.txt
