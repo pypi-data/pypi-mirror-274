@@ -1,0 +1,6 @@
+logger_patch/__init__.py,sha256=sKgrLPnrwVMQYUNNqF3W8ij10RKXpKRO0R8kiQGPMFk,78
+logger_patch/logger_patch.py,sha256=IpYhWvUzqNu8bebDyzk6vHu8hHTQn2c9fyHk2S2Pvgc,856
+crewai_logger_patch-0.1.dist-info/METADATA,sha256=SrIG-2nfH7Wzd7nQL9ZCW_QnuNsJ0AAjTajgEsSojNY,725
+crewai_logger_patch-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+crewai_logger_patch-0.1.dist-info/top_level.txt,sha256=izNE2KSHUJYifQ8HjQyPeMTerlTVbrSExyhjEjZdOdo,13
+crewai_logger_patch-0.1.dist-info/RECORD,,
