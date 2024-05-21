@@ -1,0 +1,3 @@
+[console_scripts]
+csvtable = bin.csvtable:main
+tsvtable = bin.tsvtable:main
