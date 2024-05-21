@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: MRISegmentator
+Version: 0.1.0
+Summary: Robust segmentation of 62 abdominal structures on MRI T1 Weighted images.
+Home-page: https://github.com/wasserth/TotalSegmentator
+Author: Yan Zhuang and Abhinav Suri
+Author-email: rsummers@nih.gov
+License: Apache 2.0
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Requires-Dist: torch >=2.0.0
+Requires-Dist: tqdm >=4.45.0
+Requires-Dist: p-tqdm
+Requires-Dist: nnunetv2 >=2.2.1
+
+See https://arxiv.org/abs/2405.05944.
