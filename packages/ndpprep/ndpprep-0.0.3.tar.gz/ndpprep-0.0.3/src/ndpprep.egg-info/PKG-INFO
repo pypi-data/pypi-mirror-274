@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ndpprep
+Version: 0.0.3
+Summary: A command line tool to prepare high-quality data in Parquet
+Author-email: Mohd Zaid Waqiyuddin Mohd Zulkifli <zaidwaqi@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/zaidwaqi/ndpprep
+Project-URL: Issues, https://github.com/pypa/zaidwaqi/ndpprep/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pyarrow>=14.0.0
+
+# ndpprep
+
+`ndpprep` is a data prep tool that simplifies use of custom Python data processing within a data pipeline focusing on application in Network Data Platform (NDP) project.
