@@ -1,0 +1,10 @@
+numpy>=1.15.1
+requests>=2.19.1
+packaging>=17.1
+prompt_toolkit>=3.0.5
+pygments>=2.2.0
+
+[test]
+requests-mock
+prompt_toolkit>=3.0.30
+pygments>=2.11
