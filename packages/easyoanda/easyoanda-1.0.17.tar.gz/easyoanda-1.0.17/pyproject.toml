@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "easyoanda"
+version = "1.0.17"
+dependencies = ["requests>=2.28.1", 
+                "pandas>=1.5.3"]
+requires-python = ">=3.11"
+authors = [
+  { name="Karsten Cadley", email="ktcdevworks@gmail.com" },
+]
+description = "Well-documented, a how-to guide, many examples - an easy way to trade your OANDA account."
+readme = "README.md"
+keywords= ["oanda", "forex", "trading", 
+           "currency", "FX", "finance", 
+           "trading API", "investing",
+           "foreign exchange"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Office/Business :: Financial :: Accounting",
+
+    "Topic :: Education",
+
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+
