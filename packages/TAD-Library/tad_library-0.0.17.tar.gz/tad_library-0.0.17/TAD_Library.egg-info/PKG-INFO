@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: TAD_Library
+Version: 0.0.17
+Summary: TAD Python API
+Home-page: https://chakoon.com/
+Author: CHAKOON
+Author-email: chakoonbiz@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+License-File: LICENSE
+
+# Device control package
+This is control package for 'Chakoon' device
