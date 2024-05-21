@@ -1,0 +1,5 @@
+version: 1.0
+type: agent
+llm:
+  provider: OpenAI
+  model: gpt-4
