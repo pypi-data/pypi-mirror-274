@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/unfolding_linear/__init__.py
+src/unfolding_linear/methods.py
+src/unfolding_linear/train_methods.py
+src/unfolding_linear/utils.py
+src/unfolding_linear.egg-info/PKG-INFO
+src/unfolding_linear.egg-info/SOURCES.txt
+src/unfolding_linear.egg-info/dependency_links.txt
+src/unfolding_linear.egg-info/requires.txt
+src/unfolding_linear.egg-info/top_level.txt
+tests/testNet.py
+tests/test_iterative.py
