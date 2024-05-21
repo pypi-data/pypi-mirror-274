@@ -1,0 +1,63 @@
+[build-system]
+requires = ['setuptools~=68.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'rbinstall'
+description = 'Official installer for Review Board code/document review.'
+authors = [
+    {name='Beanbag, Inc.', email='questions@beanbaginc.com'},
+]
+license = {file='COPYING'}
+readme = {file='README.md', content-type='text/markdown'}
+
+dynamic = ['version']
+
+requires-python = '>=3.7'
+dependencies = [
+    'packaging~=23.2',
+    'rich~=13.7.0',
+    'typing_extensions>=4.3.0',
+    'virtualenv',
+]
+
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: MacOS',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: POSIX :: Linux',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Topic :: System',
+    'Topic :: System :: Installation/Setup',
+    'Topic :: System :: Software Distribution',
+    'Topic :: System :: Systems Administration',
+]
+
+
+[project.urls]
+homepage = 'https://github.com/reviewboard/rbinstall'
+documentation = 'https://github.com/reviewboard/rbinstall'
+repository = 'https://github.com/reviewboard/rbinstall'
+
+
+[project.scripts]
+rbinstall = 'rbinstall.main:main'
+
+
+[tool.setuptools]
+packages = ['rbinstall']
+
+
+[tool.setuptools.dynamic]
+version = {attr = 'rbinstall.__version__'}

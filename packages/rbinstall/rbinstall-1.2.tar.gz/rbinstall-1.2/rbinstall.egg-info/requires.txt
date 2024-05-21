@@ -1,0 +1,4 @@
+packaging~=23.2
+rich~=13.7.0
+typing_extensions>=4.3.0
+virtualenv
