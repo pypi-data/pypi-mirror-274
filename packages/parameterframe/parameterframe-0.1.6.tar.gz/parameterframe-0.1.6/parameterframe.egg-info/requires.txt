@@ -1,0 +1,7 @@
+attrs
+pyyaml
+mocker_db==0.1.1
+cryptography
+dill
+pandas
+sqlalchemy
