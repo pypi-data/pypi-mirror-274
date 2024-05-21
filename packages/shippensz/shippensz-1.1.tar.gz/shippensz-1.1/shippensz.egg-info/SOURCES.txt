@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shippensz/__init__.py
+shippensz/main.py
+shippensz.egg-info/PKG-INFO
+shippensz.egg-info/SOURCES.txt
+shippensz.egg-info/dependency_links.txt
+shippensz.egg-info/requires.txt
+shippensz.egg-info/top_level.txt
