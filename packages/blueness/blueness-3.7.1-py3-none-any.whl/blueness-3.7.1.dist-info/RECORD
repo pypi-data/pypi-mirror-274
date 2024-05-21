@@ -1,0 +1,11 @@
+blueness/__init__.py,sha256=hugl4I7UzKqaX3BOAcBwJchkGeCKfK4Ig3RzsC8M48M,97
+blueness/__main__.py,sha256=dkWToQuLISTZGtVYZ_Ilc0_X7wEcO_bkKRlKZyrSVdo,191
+blueness/urls.py,sha256=Bjdewssljt0LIefjixBem9JN0kkghPvmrIETj3GdXbY,17
+blueness/argparse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blueness/argparse/version.py,sha256=D22DNDlojGzVjLmogQonnoGDpUebjbLCagFheS_6dTs,1045
+blueness/pypi/__init__.py,sha256=OsN4ppMNoPn4LIlYiwENK_uXSyje5zViVGNges6GicI,425
+blueness-3.7.1.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+blueness-3.7.1.dist-info/METADATA,sha256=wqMA6ZNki3Rz0mHTX5K0omV4uiZz5fvG9Ad2E0z1wyI,649
+blueness-3.7.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+blueness-3.7.1.dist-info/top_level.txt,sha256=RXCy4zZFIrnA4Yy0mquMJbkP3ok5Gj-f5PR492P1jyg,9
+blueness-3.7.1.dist-info/RECORD,,
