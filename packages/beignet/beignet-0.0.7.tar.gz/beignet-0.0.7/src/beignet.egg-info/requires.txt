@@ -1,0 +1,15 @@
+pooch
+torch
+tqdm
+
+[all]
+beignet[docs,test]
+
+[docs]
+mkdocs-material
+mkdocstrings[python]
+
+[test]
+hypothesis
+pytest
+scipy
