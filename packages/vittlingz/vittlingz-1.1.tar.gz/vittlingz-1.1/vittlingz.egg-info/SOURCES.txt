@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vittlingz/__init__.py
+vittlingz/main.py
+vittlingz.egg-info/PKG-INFO
+vittlingz.egg-info/SOURCES.txt
+vittlingz.egg-info/dependency_links.txt
+vittlingz.egg-info/requires.txt
+vittlingz.egg-info/top_level.txt
