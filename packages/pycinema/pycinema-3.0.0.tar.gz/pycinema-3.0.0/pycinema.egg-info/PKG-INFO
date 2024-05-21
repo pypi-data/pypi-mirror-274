@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pycinema
+Version: 3.0.0
+Summary: Cinema scientific toolset.
+Home-page: https://github.com/cinemascience/pycinema
+Author: David H. Rogers
+Author-email: dhr@lanl.gov
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy==1.24.2
+Requires-Dist: scipy==1.10.0
+Requires-Dist: h5py==3.8.0
+Requires-Dist: matplotlib==3.6.0
+Requires-Dist: py==1.11.0
+Requires-Dist: Pillow==9.4.0
+Requires-Dist: moderngl<6
+Requires-Dist: opencv-python==4.7.0.68
+Requires-Dist: ipycanvas==0.13.1
+Requires-Dist: ipywidgets==8.0.6
+Requires-Dist: PySide6<=6.4.3
+Requires-Dist: python-igraph>=0.10.5
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pyqtgraph>=0.13.3
+Requires-Dist: tensorflow==2.14.0
+
+# Cinema python tools
+
+The `pycinema` python module (https://github.com/cinemascience/pycinema) is a set of tools for reading, writing, manipulating and viewing Cinema databases. The toolkit includes a filter-based python core, command line tools, viewers and a visual app building application (Cinema:Theater).
+
+Documentation for this module is available at http://pycinema.readthedocs.io
+
+You can find out more about Cinema at http://cinemascience.org.
+
+## Installing and running the pycinema module
+
+```
+pip install --upgrade pip
+pip install pycinema
+```
