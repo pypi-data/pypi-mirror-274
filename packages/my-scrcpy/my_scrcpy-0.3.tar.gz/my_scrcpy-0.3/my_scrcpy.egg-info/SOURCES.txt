@@ -1,0 +1,9 @@
+setup.py
+my_scrcpy.egg-info/PKG-INFO
+my_scrcpy.egg-info/SOURCES.txt
+my_scrcpy.egg-info/dependency_links.txt
+my_scrcpy.egg-info/top_level.txt
+scrcpy/__init__.py
+scrcpy/const.py
+scrcpy/control.py
+scrcpy/core.py
