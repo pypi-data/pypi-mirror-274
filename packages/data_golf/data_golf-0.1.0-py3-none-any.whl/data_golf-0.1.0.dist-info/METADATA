@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: data_golf
+Version: 0.1.0
+Summary: API Wrapper for Data golf endpoints
+Author: Corey Schaf
+Author-email: cschaf@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# data-golf-api
+API Library for DataGolf.com APIs
+
