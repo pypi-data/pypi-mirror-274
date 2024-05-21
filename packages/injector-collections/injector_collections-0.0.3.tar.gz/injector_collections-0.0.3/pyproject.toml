@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "injector_collections"
+version = "0.0.3"
+authors = [
+  { name="Benjamin Schnitzler", email="regenbogenbauer@web.de" },
+]
+description = "Collections for the Injector Package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "jinja2>=3.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/bschnitz/injector_collections"
+Issues = "https://github.com/bschnitz/injector_collections/issues"
