@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+magaziningz/__init__.py
+magaziningz/main.py
+magaziningz.egg-info/PKG-INFO
+magaziningz.egg-info/SOURCES.txt
+magaziningz.egg-info/dependency_links.txt
+magaziningz.egg-info/requires.txt
+magaziningz.egg-info/top_level.txt
