@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spistats"
+version = "0.1.0"
+authors = [
+  { name="Jan Aalmoes", email="jan.aalmoes@protonmail.com" }
+]
+description = """Analyse the performances of sequential private identifiers: a LorWan privacy orentied communication protocol.
+
+Efficient numerical method to compute the mass function and the CDF of streaks of repeating events.
+Expectation of packet loss computed using Markov chains for improved performance.
+
+This work is based on an extention of https://inria.hal.science/hal-04525080. 
+Please cite this paper if you use this package in your research project."""
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+dependencies = ["numpy", "scipy", "matplotlib"]
+
+[project.urls]
+"Homepage" = "https://gitlab.inria.fr/jaalmoes/spistats"
+"Bug Tracker" = "https://gitlab.inria.fr/jaalmoes/spistats/issues"
+"Documentation" = "https://jaalmoes.com/"
+

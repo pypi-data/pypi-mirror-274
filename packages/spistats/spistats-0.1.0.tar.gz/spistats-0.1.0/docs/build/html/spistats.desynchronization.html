@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>spistats.desynchronization package &#8212; Spistats  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="spistats.plot package" href="spistats.plot.html" />
+    <link rel="prev" title="spistats.collision package" href="spistats.collision.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="spistats-desynchronization-package">
+<h1>spistats.desynchronization package<a class="headerlink" href="#spistats-desynchronization-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-spistats.desynchronization.dsync_count">
+<span id="spistats-desynchronization-dsync-count-module"></span><h2>spistats.desynchronization.dsync_count module<a class="headerlink" href="#module-spistats.desynchronization.dsync_count" title="Link to this heading">¶</a></h2>
+<p>This module contains an interfaces to the probability law of the number of desynchronization of one device when sending n packets.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="spistats.desynchronization.dsync_count.NumberOfDsync">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">spistats.desynchronization.dsync_count.</span></span><span class="sig-name descname"><span class="pre">NumberOfDsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/dsync_count.html#NumberOfDsync"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.dsync_count.NumberOfDsync" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Probability law of the number of desynchronization of one device when sending n packets.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.dsync_count.NumberOfDsync.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/dsync_count.html#NumberOfDsync.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.dsync_count.NumberOfDsync.__init__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>p</strong> (<em>float in</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em>) – Probability of packet loss.</p></li>
+<li><p><strong>m</strong> (<em>int</em>) – Size of the list of indentifiers maintained by each device.</p></li>
+<li><p><strong>n</strong> (<em>int</em>) – Number of packet recived by the device.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.dsync_count.NumberOfDsync.cdf">
+<span class="sig-name descname"><span class="pre">cdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/dsync_count.html#NumberOfDsync.cdf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.dsync_count.NumberOfDsync.cdf" title="Link to this definition">¶</a></dt>
+<dd><p>Cumulativ distribution function of the number of desynchronizations evaluated at k.
+In other words: P(number of desynchronization &lt;= n):</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>k</strong> (<em>int</em>) – Number of collisions.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>P(number of desynchronization &lt;= n)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float in [0,1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.dsync_count.NumberOfDsync.cdf_position">
+<span class="sig-name descname"><span class="pre">cdf_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/dsync_count.html#NumberOfDsync.cdf_position"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.dsync_count.NumberOfDsync.cdf_position" title="Link to this definition">¶</a></dt>
+<dd><p>Indicate the position of the CDF in R+.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.dsync_count.NumberOfDsync.mass">
+<span class="sig-name descname"><span class="pre">mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/dsync_count.html#NumberOfDsync.mass"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.dsync_count.NumberOfDsync.mass" title="Link to this definition">¶</a></dt>
+<dd><p>Mass function of the number of number of desynchronization for each device evluated at k.
+In other words: P(number of desynchronization = n).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>k</strong> (<em>int</em>) – Number of desynchronization.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>P(number of desynchronization = n)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float in [0,1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-spistats.desynchronization.law">
+<span id="spistats-desynchronization-law-module"></span><h2>spistats.desynchronization.law module<a class="headerlink" href="#module-spistats.desynchronization.law" title="Link to this heading">¶</a></h2>
+<p>This module defnies an interface to the probability law of the number of packet sent by a device befor desynchronization when using the sequential pseudonym scheme.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="spistats.desynchronization.law.Law">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">spistats.desynchronization.law.</span></span><span class="sig-name descname"><span class="pre">Law</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law.html#Law"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law.Law" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Probability law of the number of packet sent by a device dbefore desynchronization.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law.Law.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law.html#Law.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law.Law.__init__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>p</strong> (<em>float in</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em>) – Probability to lose connection.</p></li>
+<li><p><strong>m</strong> (<em>int</em>) – Number of pseudonyms maintained by the device.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law.Law.cdf">
+<span class="sig-name descname"><span class="pre">cdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law.html#Law.cdf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law.Law.cdf" title="Link to this definition">¶</a></dt>
+<dd><p>Cumulative distribution function of the number of packet before desynchronization.
+In other words return P(send less than N packets beforedesynchronization).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>N</strong> (<em>int</em>) – number of packets.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>P(send less than N packets beforedesynchronization).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float in [0,1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law.Law.cdf_inv">
+<span class="sig-name descname"><span class="pre">cdf_inv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law.html#Law.cdf_inv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law.Law.cdf_inv" title="Link to this definition">¶</a></dt>
+<dd><p>Inverse cumulative distribution function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>s</strong> (<em>float in</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em>) – Probability that the number of packet sent before desynchronization is at most N</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Return N such that P(send less than N packets beforedesynchronization) = N.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law.Law.cdf_multin">
+<span class="sig-name descname"><span class="pre">cdf_multin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law.html#Law.cdf_multin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law.Law.cdf_multin" title="Link to this definition">¶</a></dt>
+<dd><p>N : nombre de messages</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law.Law.cdf_position">
+<span class="sig-name descname"><span class="pre">cdf_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law.html#Law.cdf_position"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law.Law.cdf_position" title="Link to this definition">¶</a></dt>
+<dd><p>Return the position of the cumulative distribution function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(start, end) such that the cumulative distribution function is greater than 0.01 after start and less than 0.99 after end.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>tuple of floats</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law.Law.eigenvalues">
+<span class="sig-name descname"><span class="pre">eigenvalues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law.html#Law.eigenvalues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law.Law.eigenvalues" title="Link to this definition">¶</a></dt>
+<dd><p>Computes the eigenvalues to solve the recursive sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law.Law.mass">
+<span class="sig-name descname"><span class="pre">mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law.html#Law.mass"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law.Law.mass" title="Link to this definition">¶</a></dt>
+<dd><p>Mass function of the number of packet before desynchronization. 
+In other words return P(desynchronization of N packets sent).
+:param N: Number of packets.
+:type N: int
+:return: P(desynchronization of N packets sent)
+:rtype: float in [0,1]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law.Law.mean">
+<span class="sig-name descname"><span class="pre">mean</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law.html#Law.mean"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law.Law.mean" title="Link to this definition">¶</a></dt>
+<dd><p>Expectation of the number of packet sent before desynchronization computed using.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>E(D) where D is the number of packet sent before desynchronization.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-spistats.desynchronization.law_multi">
+<span id="spistats-desynchronization-law-multi-module"></span><h2>spistats.desynchronization.law_multi module<a class="headerlink" href="#module-spistats.desynchronization.law_multi" title="Link to this heading">¶</a></h2>
+<p>This module defines an interface for the probability law of the number of packet before desynchronization when the probability to lose connection varies from a device to another.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="spistats.desynchronization.law_multi.Law_multip">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">spistats.desynchronization.law_multi.</span></span><span class="sig-name descname"><span class="pre">Law_multip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law_multi.html#Law_multip"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law_multi.Law_multip" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>probability law of the number of packet before desynchronization when the probability to lose connection varies from a device to another.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law_multi.Law_multip.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law_multi.html#Law_multip.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law_multi.Law_multip.__init__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>p</strong> (<em>float in</em><em> [</em><em>0</em><em>,</em><em>1</em><em>]</em>) – Probability for a divice to lose connection.</p></li>
+<li><p><strong>m</strong> – Number of addresses per in each list managed by the devices.</p></li>
+</ul>
+</dd>
+</dl>
+<p>:type m :int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law_multi.Law_multip.cdf">
+<span class="sig-name descname"><span class="pre">cdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law_multi.html#Law_multip.cdf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law_multi.Law_multip.cdf" title="Link to this definition">¶</a></dt>
+<dd><p>Cumulativ distribution function of the number of packets before desynchronization.
+In other words: P(number of packets before desynchronization &lt;= n):</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>int</em>) – Number of packets before desynchronization.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>P(number of pakets before desynchronization &lt;= n)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float in [0,1]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="spistats.desynchronization.law_multi.Law_multip.cdf_position">
+<span class="sig-name descname"><span class="pre">cdf_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/spistats/desynchronization/law_multi.html#Law_multip.cdf_position"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spistats.desynchronization.law_multi.Law_multip.cdf_position" title="Link to this definition">¶</a></dt>
+<dd><p>Return the position of the CDF in R+.
+:return: (start, end) where cdf(start)=0.01 and cdf(end)=0.99.
+:rtype: flot in R+</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-spistats.desynchronization">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-spistats.desynchronization" title="Link to this heading">¶</a></h2>
+<p>This packet contains utilities to study the odds of desynchronization in the sequential pseudonym scheme.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Spistats</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="spistats.html">spistats package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="spistats.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="spistats.collision.html">spistats.collision package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">spistats.desynchronization package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-spistats.desynchronization.dsync_count">spistats.desynchronization.dsync_count module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-spistats.desynchronization.law">spistats.desynchronization.law module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-spistats.desynchronization.law_multi">spistats.desynchronization.law_multi module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-spistats.desynchronization">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spistats.plot.html">spistats.plot package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="spistats.html#module-spistats">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="spistats.html">spistats package</a><ul>
+      <li>Previous: <a href="spistats.collision.html" title="previous chapter">spistats.collision package</a></li>
+      <li>Next: <a href="spistats.plot.html" title="next chapter">spistats.plot package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Jan Aalmoes.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/spistats.desynchronization.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
