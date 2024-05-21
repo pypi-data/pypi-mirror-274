@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: jupyter-server-globbing
+Version: 0.1.6
+Summary: a minimal extension for jupyter-server that supports file globbing
+
+see https://github.com/parmentelat/jupyter-server-globbing
