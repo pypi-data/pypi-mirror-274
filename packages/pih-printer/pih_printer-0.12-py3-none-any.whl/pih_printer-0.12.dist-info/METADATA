@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pih-printer
+Version: 0.12
+Summary: PIH Printer service package
+Home-page: https://pacifichosp.com/
+Author: Nikita Karachentsev
+Author-email: it@pacifichosp.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: ipih
+Requires-Dist: pyasn1 ==0.4.8
+Requires-Dist: pycryptodomex ==3.15.0
+Requires-Dist: pysmi ==0.3.4
+Requires-Dist: pysnmp
+
