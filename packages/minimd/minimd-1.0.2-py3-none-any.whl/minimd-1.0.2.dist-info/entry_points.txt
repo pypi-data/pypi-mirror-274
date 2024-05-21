@@ -1,0 +1,2 @@
+[console_scripts]
+minimd = minimd.__main__:main
