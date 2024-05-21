@@ -1,0 +1,11 @@
+sccore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sccore/parse_protocol.py,sha256=kw-tbl5ydYjM7xmIYlBHrOzXhAtgFog46PSoryMqtfc,9235
+sccore/utils.py,sha256=Vedg6e1LWm0ep-6zxhWt5d4yLSD1h--mThGCeREphoA,1922
+sccore/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sccore/cli/create_genome.py,sha256=AQ1XmWwjBnGhnnZlYCjwdZSGPii_ejYFxJARJayL0lQ,1252
+sccore/cli/create_test_data.py,sha256=Pn1hgpmTrdJvOBrmR4Ht97Ub6juPlDyNgZGE6eHFsLs,3042
+sccore-0.0.0.dist-info/METADATA,sha256=CDMYj_SYiUD3A3vA-lMjwhvncyfrXLDYimBy92qJLg8,993
+sccore-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sccore-0.0.0.dist-info/entry_points.txt,sha256=ILANRw102d7nX4Haq3B4Ejnq80Nh-4JFtjH0AEAvXb8,116
+sccore-0.0.0.dist-info/top_level.txt,sha256=4iH6VUgzPsdZm8NDlg-eK_CmosTvD066rkSKg1ZXzdE,7
+sccore-0.0.0.dist-info/RECORD,,

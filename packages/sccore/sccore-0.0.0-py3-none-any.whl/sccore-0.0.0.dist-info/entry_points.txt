@@ -1,0 +1,3 @@
+[console_scripts]
+create-genome = sccore.cli.create_genome:main
+create-test-data = sccore.cli.create_test_data:main
