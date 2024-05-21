@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: amiclimate
+Version: 0.0.1a2
+Summary: processes UN/IPCC and UNFCCC documents
+Home-page: https://github.com/petermr/amiclimate
+Author: Peter Murray-Rust
+Author-email: petermurrayrust@googlemail.com
+License: Apache2
+Keywords: text and data mining
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# amiclimate
+NLP and semantic software and material for managing climate knowledge
+
+Python code for accessing and transforming key climate documents. A refactoring of the (bloated) `pyamihtml` repository. Will initially have functionality for downloading and parsing 
+* IPCC reports
+* IPCC glossary
+* UNFCCC reports (COP, etc.)
+
+This requires bespoke library routines and these are available in a new `amilib` repository.
+
+This repository will NOT have the complete IPCC or UNFCCC corpus , but will have small exemplars.
+
+# tests
+Applications are developed as tests, and then factored into command
+
+
+
+
+
+
