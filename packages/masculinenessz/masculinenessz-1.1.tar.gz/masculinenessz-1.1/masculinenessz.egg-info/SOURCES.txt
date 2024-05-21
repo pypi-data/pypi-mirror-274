@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+masculinenessz/__init__.py
+masculinenessz/main.py
+masculinenessz.egg-info/PKG-INFO
+masculinenessz.egg-info/SOURCES.txt
+masculinenessz.egg-info/dependency_links.txt
+masculinenessz.egg-info/requires.txt
+masculinenessz.egg-info/top_level.txt
