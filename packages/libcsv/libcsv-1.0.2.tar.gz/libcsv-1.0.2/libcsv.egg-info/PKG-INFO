@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libcsv
+Version: 1.0.2
+Summary: Library for working with csv files using Python.
+Author: Marko Camandioti
+Author-email: camandiotimarko@gmail.com
+
+# libCSV - a library for reading and writing CSV tables in Python
+
+Install using pip.
+
+Functions:
+libcsv.openTable(nameOfTable)
+libcsv.writetable(nameOfTable, writeOptions)
