@@ -1,0 +1,13 @@
+loopies_scraper/__init__.py,sha256=6o-h-mR6fKPDcig2ZXpiIjnr2XhH3tbFqlOc7Zw_uVk,498
+loopies_scraper/chromedriver_options.py,sha256=HXHKWg_JCMuUlX0afISrFQIuzNUppIRH30CmV1Vp_Yw,1974
+loopies_scraper/data_manager.py,sha256=JGRoVVDcJMRAVof4Vd31HN5yewE6zRSsluinEOqwpKQ,1659
+loopies_scraper/geckodriver_profile.py,sha256=yOs8WDovcyduCsqUvXqUHOJfZ8wY2UHBOKx3NRNl01c,1395
+loopies_scraper/scraper.py,sha256=HZQ6k61G-79cpl35gUQYadHGPDkQEwemtsJHTvzDYmE,293
+loopies_scraper/scraper_multiprocess.py,sha256=K0qeB4I8br-3pCU102iaxlt2dmfnvW4ig6xjHa-Yqnc,4362
+loopies_scraper/user_agent_generator.py,sha256=sZG0OeZTaNGMlbS7NbhRSgivP5RPl4srGgjgZWy30FI,1314
+loopies_scraper/webdriver_controller.py,sha256=3bDa617rQT0O2hNNoPXSv4pVOT1pMwGahTHA3KiGQ0o,2302
+loopies_scraper-0.0.2.dist-info/LICENSE,sha256=qfa1lWft8v9fvsshA4S8qCtSMO90HCAf6OiN-Z4Pr04,1056
+loopies_scraper-0.0.2.dist-info/METADATA,sha256=j133YuKF46_jOvq9_U0xjmhmyp4X5IEPFtOyF__h2Gc,706
+loopies_scraper-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+loopies_scraper-0.0.2.dist-info/top_level.txt,sha256=8B23IIMuUn6AbfXNh2r2KXMinMN8rtRJJtM0iruo84U,16
+loopies_scraper-0.0.2.dist-info/RECORD,,
