@@ -1,0 +1,24 @@
+[project]
+name = "islabtech_upw_sensor_v1"
+version = "0.1.1"
+authors = [{ name = "Ilka Schulz", email = "ilka@islabtech.com" }]
+description = "Python client for the ISLabTech UPW sensor"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3.7",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+]
+dependencies = ["requests"]
+
+[project.urls]
+"Bug Tracker" = "https://gitlab.com/islabtech/upw-sensor/remote-python"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]
