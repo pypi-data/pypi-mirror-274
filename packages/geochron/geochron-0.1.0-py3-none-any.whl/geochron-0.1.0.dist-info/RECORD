@@ -1,0 +1,12 @@
+geochron/__init__.py,sha256=yg3nT5aUVVcE2D0bwbyvC3rPjkQDxjzbcDQttxT9fxY,636
+geochron/_version.py,sha256=NaZYvBN7gu78ACKB1aOxFhQVh2R-lSeqYjPJgoJMPkw,70
+geochron/chronnet.py,sha256=RkDnielmziJGB5JxchcEyBKlf7wXrbI02lmHLgwKDIE,4376
+geochron/geotimehash.py,sha256=dwX-d0OqGxTF0uOXW4W86K_ijlDSW3_lQQpkyy-2VPQ,5791
+geochron/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geochron/time_slicing.py,sha256=lEFSNY5Eb4KYtNxRbywwgjikvmPe7OERhZpuqehE2Uk,1412
+geochron/timehex.py,sha256=hwhLzbkK2GUJXszLRfD5YzTWZ4W7l7pOX8hA88XyVLU,2171
+geochron-0.1.0.dist-info/LICENSE,sha256=a1lkOv1n0qW0D1YlxeQ-RqUPe4Xfg6VUKuQL5VMpV18,1068
+geochron-0.1.0.dist-info/METADATA,sha256=J6by9DGJMqeIwoKR8nwFwvqajcPw2pxmNTYPH3BKcws,3062
+geochron-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+geochron-0.1.0.dist-info/top_level.txt,sha256=QFckBK3DxO0ZU9jZUnsWEESXsSMU8q6dOcHu2navw6I,9
+geochron-0.1.0.dist-info/RECORD,,
