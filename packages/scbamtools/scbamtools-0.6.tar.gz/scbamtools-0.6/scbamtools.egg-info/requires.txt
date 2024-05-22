@@ -1,0 +1,4 @@
+mrfifo
+cython
+cutadapt
+numpy
