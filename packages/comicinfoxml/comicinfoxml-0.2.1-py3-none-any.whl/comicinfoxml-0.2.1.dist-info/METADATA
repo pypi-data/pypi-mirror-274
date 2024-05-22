@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: comicinfoxml
+Version: 0.2.1
+Summary: A metadata plugin for ComicTagger implementing the ComicInfo.xml from the anansi project
+Author-email: Timmy Welch <timmy@narnian.us>
+License: MIT
+Project-URL: Homepage, https://github.com/comictagger/comicinfoxml
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions >=4.3.0 ; python_version < "3.11"
+
+# ComicInfo.xml plugin for Comic Tagger
+
+A plugin for [ComicTagger](https://github.com/comictagger/comictagger/releases) to allow the use of the extensions to the ComicInfo.xml metadata schema by the [Anansi Project]
+This plugin is included in binary releases of ComicTagger.
+
+[Anansi Project]: https://github.com/anansi-project/comicinfo
