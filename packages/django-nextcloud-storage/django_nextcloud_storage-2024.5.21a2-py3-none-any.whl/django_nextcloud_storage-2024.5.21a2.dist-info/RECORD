@@ -1,0 +1,5 @@
+backend/__init__.py,sha256=OnoWmyRU70lAjWnkVchWMTvSwzprotd64qo-rHKbom8,37
+backend/storage.py,sha256=QocXSN-80h7tBo-YW7LXK25WQyyffjqBdtgF7xrKXEg,5766
+django_nextcloud_storage-2024.5.21a2.dist-info/METADATA,sha256=k2UIoPzqCBsrz2Xir3nsugpJWuGMWbZEKW7ZyASqqXs,971
+django_nextcloud_storage-2024.5.21a2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+django_nextcloud_storage-2024.5.21a2.dist-info/RECORD,,
