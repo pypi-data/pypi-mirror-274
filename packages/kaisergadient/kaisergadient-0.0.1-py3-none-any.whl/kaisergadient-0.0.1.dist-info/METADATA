@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: kaisergadient
+Version: 0.0.1
+Summary: Impliments Vector Math
+Author: Kaiser Fechner
+Author-email: <coolpotatorocks@gmail.com>
+Keywords: python,vector,math
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# Kaise Gradient
+
+
+
+Under construction! Not ready for use yet! Currently experimenting and planning!
+
+
+
+Developed by Kaiser Fechner (2024)
+
+
+
+## Examples of How To Use (Buggy Alpha Version)
+
+
+
+Using a Vector
+
+
+
+```python
+
+from kaiservectors import *
+
+Vector2d(1, 1) - Vector2d(5, 5)
+
+# returns Vector2d(-4, -4)
+
+```
+
