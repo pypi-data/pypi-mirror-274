@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Map</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        svg {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vacation Map</h1>
+    <svg></svg>
+    <script>
+        d3.json("https://raw.githubusercontent.com/d3/d3-geo/master/world-110m.json").then(function (world) {
+            var width = document.querySelector('svg').clientWidth;
+            var height = document.querySelector('svg').clientHeight;
+
+            var projection = d3.geoMercator()
+                .scale(width / 2 / Math.PI)
+                .translate([width / 2, height / 2]);
+
+            var path = d3.geoPath()
+                .projection(projection);
+
+            var svg = d3.select("svg");
+
+            svg.append("g")
+                .selectAll("path")
+                .data(topojson.feature(world, world.objects.countries).features)
+                .enter().append("path")
+                .attr("fill", "#ccc")
+                .attr("d", path);
+
+            var vacations = {{ vacations| tojson
+        }};
+        var dateFormat = d3.timeFormat("%Y-%m-%d");
+
+        vacations.forEach(function (vacation) {
+            vacation.start_date = new Date(vacation.start_date);
+            vacation.end_date = new Date(vacation.end_date);
+        });
+
+        var currentDate = new Date();
+        var currentMonth = currentDate.getMonth();
+        var currentYear = currentDate.getFullYear();
+
+        var interval = d3.interval(function () {
+            svg.selectAll("circle").remove();
+            vacations.forEach(function (vacation) {
+                if (vacation.start_date.getMonth() <= currentMonth && vacation.end_date.getMonth() >= currentMonth && vacation.start_date.getFullYear() <= currentYear && vacation.end_date.getFullYear() >= currentYear) {
+                    svg.append("circle")
+                        .attr("cx", projection([vacation.longitude, vacation.latitude])[0])
+                        .attr("cy", projection([vacation.longitude, vacation.latitude])[1])
+                        .attr("r", 5)
+                        .style("fill", "red")
+                        .style("opacity", 0.75);
+                }
+            });
+
+            currentMonth++;
+            if (currentMonth === 12) {
+                currentMonth = 0;
+                currentYear++;
+            }
+        }, 1000);
+
+        setTimeout(function () {
+            interval.stop();
+        }, 120000);
+        });
+    </script>
+</body>
+
+</html>
