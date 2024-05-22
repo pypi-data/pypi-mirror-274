@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "pingdat"
+version = "1.5.0"
+description = "A simple ping exporter for Prometheus metrics."
+authors = ["jheddings <jheddings@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.1"
+click = "^8.1.7"
+prometheus-client = "^0.20.0"
+pydantic = "^2.7.1"
+pyyaml = "^6.0.1"
+ping3 = "^4.0.8"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+GitPython = "^3.1.43"
+pytest = "^8.2.1"
+coverage = "^7.5.1"
+ruff = "^0.4.4"
+black = "^24.4.2"
+
+[tool.poetry.scripts]
+pingdat = "pingdat.__main__:main"
+
+[tool.black]
+line_length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "C",   # flake8-comprehensions
+    "B",   # flake8-bugbear
+    "G",   # flake8-logging-format
+    "RET", # flake8-return
+    "N",   # pep8-naming
+    "ERA", # eradicate
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501", # line-too-long
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "network: tests that require an active network",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
