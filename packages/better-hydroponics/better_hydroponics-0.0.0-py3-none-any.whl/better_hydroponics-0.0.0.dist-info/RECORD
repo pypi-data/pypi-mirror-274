@@ -1,0 +1,12 @@
+hydroponics/Basic_functions.py,sha256=WMc1BUBojKwHml_BollGokZfCHuoKo7RqupUC4Hy48M,19661
+hydroponics/Generate_Report.py,sha256=zEcYIYeO1g8NAlfOwH2rL_sG4H2775querqmRxVYcmE,10398
+hydroponics/PH_Approximation_0.py,sha256=K1gKOirseZhn01JXMlISs5URREh2NZPgIHUOfeKJY-8,15359
+hydroponics/Refill_0.py,sha256=E27QHrwj8d1rmjAlgP28oHarDO8m5dYP3mY_fOlN_dg,2320
+hydroponics/Solutions_Solubility.py,sha256=5rOnuVOV-heUTGXm2xe_JLpRQURliI8HS12lmdhEsSA,11885
+hydroponics/__init__.py,sha256=NU1HULqJzhBZAsLWllAMq6WRk9tIQvrPxnnuL0Z_CUk,174
+hydroponics/pH_graph_0.py,sha256=YEp_jGoLKduJYTHU2QbjcIllAeweQ0oOjpuYoT0hsro,5489
+better_hydroponics-0.0.0.dist-info/LICENSE,sha256=u-xXoyrnxtBvk5ecinGCN1VNTOaHKhKIo7nRytRW0BU,1114
+better_hydroponics-0.0.0.dist-info/METADATA,sha256=6eiHkTJ1brDEfBB_LUeJiFuSE0he4z8jjfErb9-dToQ,7547
+better_hydroponics-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+better_hydroponics-0.0.0.dist-info/top_level.txt,sha256=E86N2dwtAD9knLioh-8sJ9m33V8BfNZ8kPP--uDGnhA,12
+better_hydroponics-0.0.0.dist-info/RECORD,,
