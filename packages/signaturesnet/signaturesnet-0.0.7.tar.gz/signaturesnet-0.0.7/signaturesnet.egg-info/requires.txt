@@ -1,0 +1,14 @@
+torch
+scipy
+numpy
+matplotlib
+pandas
+seaborn
+scikit_optimize
+tqdm
+pyparsing
+PyYAML
+scikit_learn
+openpyxl
+tensorboard
+wandb
