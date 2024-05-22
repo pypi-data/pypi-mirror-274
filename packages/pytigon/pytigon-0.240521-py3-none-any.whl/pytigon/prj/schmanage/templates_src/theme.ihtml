@@ -1,0 +1,9 @@
+% extends 'theme_base.html'|translate:lang
+
+% load exsyntax
+
+%% ext_css_links
+    {% css_link 'explorer/css/explorer.css' %}
+    {{block.super}}
+
+
