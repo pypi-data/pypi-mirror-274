@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "go-console"
+version = "0.0.6"
+description = ""
+authors = ["shawnnshao <shawnnshao@tencent.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gen = "go_console.gen:main"
