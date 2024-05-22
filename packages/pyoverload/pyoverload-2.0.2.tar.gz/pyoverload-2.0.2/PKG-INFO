@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyoverload
+Version: 2.0.2
+Summary: 'pyoverload' overloads the functions by simply using typehints and adding decorator '@overload'. 
+Home-page: https://github.com/Bertie97/PyZMyc/pyoverload
+Author: Yuncheng Zhou
+Author-email: bertiezhou@163.com
+License: MIT Licence
+Keywords: pip,pymyc,pyoverload,overload
+Platform: any
+Description-Content-Type: text/markdown
