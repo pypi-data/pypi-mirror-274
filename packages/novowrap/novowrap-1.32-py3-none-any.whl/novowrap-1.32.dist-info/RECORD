@@ -1,0 +1,13 @@
+novowrap/__init__.py,sha256=FmN-cktzzGvfIqG01-LVt824oc871tE8HP3dx4Zvyoo,910
+novowrap/__main__.py,sha256=FmN-cktzzGvfIqG01-LVt824oc871tE8HP3dx4Zvyoo,910
+novowrap/assembly.py,sha256=GAcMmFQM1ioX8iSZjRq86NYj2xqsPTLgqVvpJQ39JI8,25394
+novowrap/merge.py,sha256=UazOafOCDsG30n-WliAidgelmces7bxnUnKStg6w_cA,17236
+novowrap/ui.py,sha256=L5XLCD64vETcOIXQJPiRnbz3QhDVV4xpeJ7LhJn8yiY,24474
+novowrap/utils.py,sha256=empeghf7o0uiKcV-pr4PSW4J-JLHQt8-R1623smMY3Q,31802
+novowrap/validate.py,sha256=xYwLoje1nsDSa18IszEnzPjMYm5p3Qd8g4ibXSyPoDw,25631
+novowrap-1.32.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+novowrap-1.32.dist-info/METADATA,sha256=OGpevlFRgSKMzIHiMz_gKACTHqqB80erfxUwBuzf9G8,17428
+novowrap-1.32.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+novowrap-1.32.dist-info/entry_points.txt,sha256=41vkJSvCnCN7QyYyShJdb2BVb_kx8itH3NMm5BKF5fM,43
+novowrap-1.32.dist-info/top_level.txt,sha256=d7ZsVo2HVYBj2k_i1TEAadLK_APWeNDpPk4wseoCcdI,9
+novowrap-1.32.dist-info/RECORD,,
