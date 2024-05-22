@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+munotes/__init__.py
+munotes/_base.py
+munotes/_utils.py
+munotes/chord_names.py
+munotes/envelope.py
+munotes/notes.py
+munotes/sequence.py
+munotes.egg-info/PKG-INFO
+munotes.egg-info/SOURCES.txt
+munotes.egg-info/dependency_links.txt
+munotes.egg-info/requires.txt
+munotes.egg-info/top_level.txt
