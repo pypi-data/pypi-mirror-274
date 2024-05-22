@@ -1,0 +1,10 @@
+README.md
+setup.py
+swdata/__init__.py
+swdata/__version__.py
+swdata/core.py
+swdata.egg-info/PKG-INFO
+swdata.egg-info/SOURCES.txt
+swdata.egg-info/dependency_links.txt
+swdata.egg-info/requires.txt
+swdata.egg-info/top_level.txt
