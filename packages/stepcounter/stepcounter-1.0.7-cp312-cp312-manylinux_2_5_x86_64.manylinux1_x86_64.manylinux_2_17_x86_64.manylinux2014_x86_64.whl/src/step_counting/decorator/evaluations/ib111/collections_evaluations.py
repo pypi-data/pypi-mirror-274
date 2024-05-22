@@ -1,0 +1,52 @@
+from ..complexities import (
+    ComplexitiesDict,
+    constant,
+    linear_to_len,
+    comparison_com,
+    linear_to_len_sec,
+    linear_to_len_sum,
+    sequence_mul_complexity,
+)
+
+
+deque_complexities: ComplexitiesDict = {
+    # Dunders
+    '__add__': linear_to_len_sum,
+    '__bool__': constant,
+    '__class_getitem__': constant,
+    '__contains__': linear_to_len,
+    '__copy__': linear_to_len,
+    '__getitem__': linear_to_len,
+    '__iadd__': linear_to_len_sec,
+    '__imul__': sequence_mul_complexity,
+    '__iter__': constant,
+    '__len__': constant,
+    '__mul__': sequence_mul_complexity,
+    '__repr__': linear_to_len,
+    '__reversed__': constant,
+    '__setattr__': constant,
+    '__setitem__': linear_to_len,
+    '__str__': linear_to_len,
+    # Comparisons
+    '__eq__': comparison_com,
+    '__ne__': comparison_com,
+    '__lt__': comparison_com,
+    '__le__': comparison_com,
+    '__gt__': comparison_com,
+    '__ge__': comparison_com,
+    # PyMethodDef
+    'append': constant,
+    'appendleft': constant,
+    'clear': constant,
+    'copy': linear_to_len,
+    'count': linear_to_len,
+    'extend': linear_to_len,
+    'extendleft': linear_to_len,
+    'index': linear_to_len,
+    'insert': linear_to_len,
+    'pop': constant,
+    'popleft': constant,
+    'remove': linear_to_len,
+    'reverse': constant,
+    'rotate': constant,
+}
