@@ -1,0 +1,8 @@
+lenient_string_formatter/__init__.py,sha256=JEU-b0IEM9-4wCnucjMy0x47FixH5j4P3jjbefH09Ts,1955
+lenient_string_formatter/_disposable_lenient_formatter.py,sha256=rY8pe1dKQJFIBqz6P6FnjeH0zF99W-MPbiqiTSEIA98,3041
+lenient_string_formatter/_missing.py,sha256=vCBS2H7z5Wofm-sR1dPjvMcJTAfJEWFtEvRbovLviGc,313
+lenient_string_formatter/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+lenient_string_formatter-1.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lenient_string_formatter-1.1.1.dist-info/METADATA,sha256=6F7cTmMajcRNvOD15wyhGQQcP4mc-G2_6iYcvaymYUc,4912
+lenient_string_formatter-1.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lenient_string_formatter-1.1.1.dist-info/RECORD,,
