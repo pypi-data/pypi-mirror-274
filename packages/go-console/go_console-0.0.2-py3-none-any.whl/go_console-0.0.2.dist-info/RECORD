@@ -1,0 +1,7 @@
+go_console/__main__.py,sha256=qKX0dYTtldAtCUQ1CGBzigGHpwZN3FwTiXXEuv4RErw,23
+go_console/api.go,sha256=BvSNiJorZqendxM5U1H1BzGnwsCDLKwwzTzLFtdhcqc,2937
+go_console/gen.py,sha256=ib74tGd_AvcaxIV1nCCtJKDO0CaiApov0apnmh3wskI,2840
+go_console-0.0.2.dist-info/METADATA,sha256=zNfp7UbLXEqL0TCyQLJZwI1cqhzvnMZ7eOh6gYq5txo,350
+go_console-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+go_console-0.0.2.dist-info/entry_points.txt,sha256=anGunIfH8UQpK6tX98GLTn7gCbwdsa-PZbH8Cp-7Nlc,43
+go_console-0.0.2.dist-info/RECORD,,
