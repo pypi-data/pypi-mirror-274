@@ -1,0 +1,40 @@
+[tool.ruff]
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+typing-modules = ["beartype.typing"]
+
+[tool.ruff.format]
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+docstring-code-format = true
+
+[tool.ruff.lint.isort]
+known-first-party=["decalmlutils"]
+
+
+[tool.pytest.ini_options]
+# --failed-first: run failed tests first
+# --new-first: run new tests first
+# --hypothesis-explain: explain hypothesis failures
+# --numprocesses=auto: use all available cores. requires pytest-xdist
+# --durations=10: show the 10 slowest tests
+# --showlocals: show local variables in tracebacks
+# -vvv: very verbose output
+addopts = """
+--failed-first \
+--new-first \
+--hypothesis-explain \
+--numprocesses=auto \
+--durations=10 \
+--showlocals \
+-vvv
+"""
+# set env vars for pytest. requires pytest-env
+env = [
+    "METAFLOW_PROFILE=test"
+]
+
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
