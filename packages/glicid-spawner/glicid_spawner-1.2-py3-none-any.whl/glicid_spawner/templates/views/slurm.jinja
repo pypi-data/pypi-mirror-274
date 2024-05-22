@@ -1,0 +1,166 @@
+<div id="cluster-config" class="panel-group" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading">
+            <h4 class="panel-title">
+                <a class="panel-title-toggle collapsed" role="button" data-toggle="collapse"
+                    data-parent="#cluster-config" href="#cluster-config-collapse" aria-expanded="true" aria-controls="cluster-config-collapse">
+                    Advanced cluster configuration
+                </a>
+            </h4>
+        </div>
+        <div id="cluster-config-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading">
+            <div class="panel-body">
+
+                {% if 'cluster' not in sinfo %}
+                <div class="form-group clusters">
+                    <label for="cluster" class="col-sm-3 control-label">Cluster:</label>
+                    <div class="col-sm-9 flex-container">
+                        {%- for cluster in sinfo.values() -%}
+                        <div class="flex-item-2 slurm-cluster" data-cluster="{{cluster}}">
+                            <input type="radio" name="cluster" id="cluster_{{cluster}}" value="{{cluster}}"
+                            {% if loop.first %}checked{% endif %}>
+                            <label for="cluster_{{cluster}}" class="btn btn-default btn-block">
+                                {{ cluster | capitalize }}
+                            </label>
+                        </div>
+                        {% endfor -%}
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="form-group partitions">
+                    <label for="partition" class="col-sm-3 control-label">Partition:</label>
+                    <div class="col-sm-9 flex-container">
+                        {%- for cluster in sinfo.values() -%}
+                        {%- for partition in cluster -%}
+                        <div class="flex-item-4 slurm-partition"
+                            data-cluster="{{cluster}}" data-partition="{{partition}}"
+                            data-cpu="{{partition.max_idle_cpu}}" data-mem="{{partition.max_mem}}" data-gpu="{{partition.gpus}}">
+                            <input type="radio" name="partition" id="partition_{{cluster}}_{{partition}}" value="{{partition}}">
+                            <label for="partition_{{cluster}}_{{partition}}" class="btn btn-default btn-block">
+                                {{ partition | capitalize }}
+                            </label>
+                        </div>
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="form-group nodes hidden">
+                    <label for="node" class="col-sm-3 control-label">Node:</label>
+                    <div class="col-sm-9 flex-container">
+                        {%- for cluster in sinfo.values() -%}
+                        {%- for partition in cluster -%}
+                        {%- for node in partition -%}
+                        <div class="flex-item-4 slurm-node" data-cluster="{{cluster}}" data-partition="{{partition}}"
+                            data-node="{{node}}" data-cpu="{{node.cpu.idle}}" data-mem="{{node.mem}}" data-gpu="{{node.gpu}}">
+                            <input type="radio" name="node" id="node_{{cluster}}_{{partition}}_{{node}}" value="{{node}}">
+                            <label for="node_{{cluster}}_{{partition}}_{{node}}" class="btn btn-default btn-block">
+                                {{ node | capitalize }}
+                            </label>
+                        </div>
+                        {% endfor %}
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="not-enough-resources" class="panel panel-danger hidden">
+    <div class="panel-heading">
+        <h3 class="panel-title">⚠️ Not enough ressources</h3>
+    </div>
+    <div class="panel-body">
+        Please change your resources request or retry later&hellip;
+    </div>
+</div>
+
+<script>
+var $form = $('form');
+var $clusters = $('.slurm-cluster');
+var $partitions = $('.slurm-partition');
+var $nodes = $('.slurm-node');
+
+get_config = function(){
+    // Convert form into object (https://stackoverflow.com/a/17784656)
+    return $form
+        .serializeArray()
+        .reduce(function (data, o) {
+            data[o.name] = o.value;
+            return data;
+        }, {});
+}
+
+_toggle = function (el, cpu, mem, gpu, cluster, partition) {
+    if (
+        (parseInt(cpu) > parseInt(el.dataset.cpu)) |
+        (parseInt(mem) > parseInt(el.dataset.mem)) |
+        (!el.dataset.gpu.includes(gpu)) |
+        (cluster !== undefined & cluster != el.dataset.cluster) |
+        (partition !== undefined & partition != el.dataset.partition)
+    ) {
+        el.classList.add('hidden');
+        el.querySelector('input').checked = false;
+    } else {
+        el.classList.remove('hidden');
+    }
+};
+
+not_enough_resources = function (err) {
+    var $err = $('#not-enough-resources');
+    var $submit = $('input[type=submit]');
+
+    if (err) {
+        $submit.addClass('hidden');
+        $err.removeClass('hidden');
+    } else {
+        $submit.removeClass('hidden');
+        $err.addClass('hidden');
+    }
+}
+
+toggle_config = function() {
+    var config = get_config();
+
+    if (config['partition'] !== undefined) {
+        $('.nodes').removeClass('hidden');
+    }
+
+    $partitions.each(function(_, el){
+        _toggle(el, config['cpu'], config['mem'], config['gpu'], config['cluster']);
+    })
+
+    $nodes.each(function(_, el){
+        _toggle(el, config['cpu'], config['mem'], config['gpu'], config['cluster'], config['partition']);
+    })
+
+    // Reload config
+    config = get_config();
+
+    if ($partitions.not('.hidden').length == 0) {
+        $('.partitions').addClass('hidden');
+    } else {
+        $('.partitions').removeClass('hidden');
+    }
+
+    if (config['partition'] === undefined | $nodes.not('.hidden').length == 0) {
+        $('.nodes').addClass('hidden');
+    } else {
+        $('.nodes').removeClass('hidden');
+    }
+
+    if ($partitions.not('.hidden').length == 0 & $nodes.not('.hidden').length == 0) {
+        not_enough_resources(true);
+    } else {
+        not_enough_resources(false);
+    }
+}
+
+toggle_config();
+$form.change(toggle_config);
+
+</script>

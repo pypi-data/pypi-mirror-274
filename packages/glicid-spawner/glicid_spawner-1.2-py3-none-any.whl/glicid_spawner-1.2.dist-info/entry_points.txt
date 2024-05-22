@@ -1,0 +1,6 @@
+[console_scripts]
+glicid-spawner-singleuser=glicid_spawner.singleuser:main
+
+[jupyterhub.spawners]
+glicid-spawner=glicid_spawner:GlicidSpawner
+

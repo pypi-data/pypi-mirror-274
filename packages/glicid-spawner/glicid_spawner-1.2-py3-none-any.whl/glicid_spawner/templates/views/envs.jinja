@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="python-env" class="col-sm-3 control-label">Python environment:</label>
+    <div class="col-sm-9">
+        <div class="input-group">
+            <div class="input-group-addon"><span class="fa fa-bar-chart"></span></div>
+            <select class="form-control" name="python-env">
+                {%- for pyenv in envs -%}
+                <option value="{{ pyenv.path }}">{{ pyenv.name }} ({{ pyenv.scope | upper }})</option>
+                {% endfor -%}
+            </select>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+/* Spawner form addition style */
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked+label {
+    background-color: #f37524;
+    border-color: #e34f21;
+    color: #fff;
+}
+
+.panel-heading .panel-title-toggle {
+    text-decoration: none;
+}
+
+.panel-heading .panel-title-toggle:before {
+    font-family: 'FontAwesome';
+    content: "\f078";
+    color: lightgrey;
+    display: inline-block;
+    width: 1.5rem;
+}
+
+.panel-heading .panel-title-toggle.collapsed:before {
+    content: "\f054";
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.flex-item-2 {
+    width: 49%;
+}
+.flex-item-4 {
+    width: 24%;
+}
