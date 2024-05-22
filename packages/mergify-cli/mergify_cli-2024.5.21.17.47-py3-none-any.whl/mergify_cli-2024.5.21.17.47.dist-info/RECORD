@@ -1,0 +1,10 @@
+mergify_cli/__init__.py,sha256=PF8sYoRayMb04Ynn_IZW9prbIi1P-4WnYfnJUjrG0w8,27224
+mergify_cli/hooks/commit-msg,sha256=DAj3ic9KrqMyvXOQHvHuU-uTKDE8XqJS0QZSeQfqGDg,1797
+mergify_cli/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mergify_cli/tests/test_mergify_cli.py,sha256=hedjiXFvp9hCdQNkBZU9w1wxWJxJcISzVgYbkGKZwLo,18368
+mergify_cli/tests/utils.py,sha256=BlJx7v3npYqF9bq7uUQ9fpPluSUjtY9Ue9Rn8seDN00,2564
+mergify_cli-2024.5.21.17.47.dist-info/LICENSE,sha256=XfKg2H1sVi8OoRxoisUlMqoo10TKvHmU_wU39ks7MyA,10143
+mergify_cli-2024.5.21.17.47.dist-info/METADATA,sha256=ioF7BhC_kG_eyMRZWjs7dc_LpGs7phcf3HiXKVW7PGg,1804
+mergify_cli-2024.5.21.17.47.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mergify_cli-2024.5.21.17.47.dist-info/entry_points.txt,sha256=FRcoL1XAqC-AyxFSQRiimUEJ3L6ltHc1GKyaXVck5lk,43
+mergify_cli-2024.5.21.17.47.dist-info/RECORD,,
