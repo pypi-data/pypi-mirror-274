@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: aiocmcapi
+Version: 0.7.1
+Summary: Async wrapper for CoinMarketCap API
+Author-email: alobuzy <amozebus@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.9.5
+
+![logo](https://github.com/alobuzy/aiocmcapi/assets/115936023/5e8fb136-9613-4369-9c68-260144a4f6bf)
+
+# aiocmcapi
+
+CoinMarketCap API async wrapper
+
+## Installation
+
+pip
+
+```sh
+pip install aiocmcapi
+```
+
+Poetry
+
+```sh
+poetry add aiocmcapi
+```
+
+## Example for currency data with CoinMarketCap ID
+
+```py
+import asyncio
+
+from aiocmcapi import Client, Currency
+
+async def main():
+    client = Client(
+        api_key="YOUR_API_KEY_HERE"
+    )
+
+    btc = Currency(cmc_id=1)
+    await btc.update(client)
+
+    print(f"{btc.name} | {btc.symbol}\nPrice: {round(btc.quote['USD']['price'], 2)}$"\
+    f"\nCMC Link: https://www.coinmarketcap.com/currencies/{btc.slug}")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+or
+
+```py
+import asyncio
+
+from aiocmcapi import Client
+
+async def main():
+    client = Client(
+        api_key="YOUR_API_KEY_HERE"
+    )
+
+    cmc_id = 1
+
+    r = await client.get(
+        endpoint="/v2/cryptocurrency/quotes/latest",
+        params={
+            'id': cmc_id
+        },
+        close=True
+    )
+    data = r['data'][str(cmc_id)]
+
+    print(f"{data['name']} | {data['symbol']}\nPrice: {round(data['quote']['USD']['price'], 2)}$\nCMC Link: https://www.coinmarketcap.com/currencies/{data['slug']}")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+Output:
+
+```
+Bitcoin | BTC
+Price: 62930.79$
+CMC Link: https://www.coinmarketcap.com/currencies/bitcoin
+```
+
+### For currency metadata
+
+```py
+import asyncio
+
+from aiocmcapi import Client, Currency
+
+async def main():
+    client = Client(
+        api_key="YOUR_API_KEY_HERE"
+    )
+
+    btc = Currency(cmc_id=1)
+    await btc.update(client)
+
+    print(f"{btc.meta.name} | {btc.meta.symbol}\nDescription: {btc.meta.description}\nWebsite: {btc.meta.urls['website'][0]}")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+Output:
+
+```
+Bitcoin | BTC
+Description: Bitcoin (BTC) is a cryptocurrency launched in 2010. Users are able to generate BTC through the process of mining. Bitcoin has a current supply of 19,700,812. The last known price of Bitcoin is 66,941.7329356 USD and is down -0.14 over the last 24 hours. It is currently trading on 11048 active market(s) with $23,083,624,310.30 traded over the last 24 hours. More information can be found at https://bitcoin.org/.
+Website: https://bitcoin.org/
+```
+
+## Example for other API endpoints
+
+[CoinMarketCap API endpoint overview](https://coinmarketcap.com/api/documentation/v1/#section/Endpoint-Overview)
+
+```py
+import asyncio
+
+from aiocmcapi import Client
+
+async def main():
+    client = Client(
+        api_key="YOUR_API_KEY_HERE"
+    )
+
+    r = await client.get(
+        endpoint="/v1/cryptocurrency/listings/latest",
+        close=True
+    )
+    print(r)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+Output:
+
+```
+{'status': {'timestamp': '2024-05-11T05:09:27.205Z', 'error_code': 0, 'error_message': None, 'elapsed': 21, 'credit_count': 1, 'notice': None, 'total_count': 9933}, 'data': [{'id': 1, 'name': 'Bitcoin', 'symbol': 'BTC', 'slug': ...
+```
