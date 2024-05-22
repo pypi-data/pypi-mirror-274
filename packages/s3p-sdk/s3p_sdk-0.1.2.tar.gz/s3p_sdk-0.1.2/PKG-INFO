@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: s3p-sdk
+Version: 0.1.2
+Summary: A small SDK for simple creating a microservises or plugins for the S3 Platform
+Home-page: https://github.com/CuberHuber/S3P-SDK
+License: GPL-3.0-or-later
+Author: Roman Lupashko
+Author-email: romal5754@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: psycopg2-binary (==2.9.9)
+Project-URL: Repository, https://github.com/CuberHuber/S3P-SDK
+Description-Content-Type: text/markdown
+
+# S3P-SDK
