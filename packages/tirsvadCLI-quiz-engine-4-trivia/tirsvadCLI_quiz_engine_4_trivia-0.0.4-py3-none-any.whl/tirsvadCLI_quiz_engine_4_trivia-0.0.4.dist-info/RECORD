@@ -1,0 +1,11 @@
+QuizEngine4Trivia/__init__.py,sha256=r94_mBbnFNNCom4FyHATmK7C7gGKHpm1pd1nU5RnlZc,1534
+QuizEngine4Trivia/main.py,sha256=tfzX_QEWfBVivKc97SHa308wc-o5_5DYViNCQThZXAU,1498
+QuizEngine4Trivia/Models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QuizEngine4Trivia/Models/question_model.py,sha256=fDRNsBbq-JAVWfnGfxe9_FST1bhUXeT39CbT4dII3qk,122
+QuizEngine4Trivia/Models/trivia_api_model.py,sha256=YKQYiEH6XVfHbnpYbHNamMspZmpEffud41PoAkssPvY,3113
+QuizEngine4Trivia/Models/trivia_data_model.py,sha256=osWxclL4rfyswdf-2snSLZpgU0MfZnDLEOpquKPdEtM,553
+tirsvadCLI_quiz_engine_4_trivia-0.0.4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+tirsvadCLI_quiz_engine_4_trivia-0.0.4.dist-info/METADATA,sha256=IUWi2Vtf2X_h6ijTXY7UCfLiW_XP0hxsCxuZ1KBBICM,4956
+tirsvadCLI_quiz_engine_4_trivia-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tirsvadCLI_quiz_engine_4_trivia-0.0.4.dist-info/top_level.txt,sha256=-KeoxhynfXZHUdimPVGUXmpBHl3yZM8HFph0IfLalHU,18
+tirsvadCLI_quiz_engine_4_trivia-0.0.4.dist-info/RECORD,,
