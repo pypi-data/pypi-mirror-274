@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+agi_med_protos/__init__.py
+agi_med_protos/abstract_client.py
+agi_med_protos.egg-info/PKG-INFO
+agi_med_protos.egg-info/SOURCES.txt
+agi_med_protos.egg-info/dependency_links.txt
+agi_med_protos.egg-info/requires.txt
+agi_med_protos.egg-info/top_level.txt
+test/__init__.py
+test/test_base.py
