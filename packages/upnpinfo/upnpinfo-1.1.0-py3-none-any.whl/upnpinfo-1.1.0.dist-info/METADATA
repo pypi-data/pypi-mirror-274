@@ -1,0 +1,224 @@
+Metadata-Version: 2.1
+Name: upnpinfo
+Version: 1.1.0
+Summary: Retrieve UPnP device information from the local network
+Author: Mike Joblin
+License: MIT License
+        
+        Copyright (c) 2024 Mike Joblin
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/mjoblin/upnpinfo
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich >=13.4.2
+Requires-Dist: upnpclient <2,>=1.0.3
+Requires-Dist: click >=8.1.7
+Provides-Extra: dev
+Requires-Dist: black[d] ; extra == 'dev'
+
+# upnpinfo
+
+`upnpinfo` is a commandline tool for retrieving UPnP device information from the local network.
+It's a simple CLI wrapper around [upnpclient](https://github.com/flyte/upnpclient).
+
+## Installation
+
+`upnpinfo` requires Python 3.8 or higher.
+
+```console
+❯ pip install upnpinfo
+```
+
+## Features
+
+### Discover UPnP devices
+
+By default, `upnpinfo` will perform UPnP discovery on the local network and display a summary
+of all discovered devices.
+
+```console
+❯ upnpinfo
+
+ Name       Manufacturer      Description   Model   Type            Address
+ ───────────────────────────────────────────────────────────────────────────────
+ creamy     Hegel             H120          H120    MediaRenderer   10.0.0.11
+ streamer   Cambridge Audio   -             CXNv2   MediaRenderer   10.0.0.12
+
+Run "upnpinfo '<name>'" to view device details.
+```
+
+### Display detailed information on a single device
+
+Specify an optional `DEVICE` to view detailed information on that device, including the device's
+services and actions. The provided `DEVICE` can be a UPnP friendly name, a unique UDN, or a UPnP
+location URL.
+
+```console
+❯ upnpinfo creamy
+
+     Friendly name: creamy
+               UDN: uuid:6cadb326-8b41-423c-b02b-b4eaaaaf0f8d
+       Device type: urn:schemas-upnp-org:device:MediaRenderer:1
+      Manufacturer: Hegel
+  Manufacturer URL: http://www.hegel.com
+        Model name: H120
+      Model number: 1.0
+ Model description: H120
+          Location: http://10.0.0.11:38400/description.xml
+          Services: AVTransport, ConnectionManager, QPlay, RenderingControl
+
+ Service actions:
+
+ AVTransport                                 ConnectionManager
+ ─────────────────────────────────────────   ───────────────────────────────────────────────
+ GetCurrentTransportActions                  GetCurrentConnectionIDs
+ GetDeviceCapabilities                       GetCurrentConnectionInfo
+ GetMediaInfo                                GetProtocolInfo
+ GetPositionInfo
+ GetTransportInfo                            http://10.0.0.11:38400/ConnectionManager.xml
+ GetTransportSettings
+ Next
+ Pause
+ Play
+ Previous
+ Seek
+ SetAVTransportURI
+ SetPlayMode
+ Stop
+
+ http://10.0.0.11:38400/AVTransport.xml
+
+
+ QPlay                                       RenderingControl
+ ───────────────────────────────────         ──────────────────────────────────────────────
+ GetMaxTracks                                GetMute
+ GetTracksCount                              GetVolume
+ GetTracksInfo                               ListPresets
+ InsertTracks                                SelectPreset
+ QPlayAuth                                   SetMute
+ RemoveTracks                                SetVolume
+ SetNetwork
+ SetTracksInfo                               http://10.0.0.11:38400/RenderingControl.xml
+
+ http://10.0.0.11:38400/QPlay.xml
+```
+
+### JSON output
+
+Output can be optionally generated in JSON format.
+
+```console
+❯ upnpinfo creamy --json
+{
+    "friendly_name": "creamy",
+    "udn": "uuid:6cadb326-8b41-423c-b02b-b4eaaaaf0f8d",
+    "device_type": "urn:schemas-upnp-org:device:MediaRenderer:1",
+    "manufacturer": "Hegel",
+    "manufacturer_url": "http://www.hegel.com",
+    "model_name": "H120",
+    "model_number": "1.0",
+    "model_description": "H120",
+    "location": "http://10.0.0.11:38400/description.xml",
+    "services": {
+        "AVTransport": {
+            "scpd_url": "http://10.0.0.11:38400/AVTransport.xml",
+            "actions": [
+                "GetCurrentTransportActions",
+                "GetDeviceCapabilities",
+                "GetMediaInfo",
+                "GetPositionInfo",
+                "GetTransportInfo",
+                "GetTransportSettings",
+                "Next",
+                "Pause",
+                "Play",
+                "Previous",
+                "Seek",
+                "SetAVTransportURI",
+                "SetPlayMode",
+                "Stop"
+            ]
+        },
+        "ConnectionManager": {
+            "scpd_url": "http://10.0.0.11:38400/ConnectionManager.xml",
+            "actions": [
+                "GetCurrentConnectionIDs",
+                "GetCurrentConnectionInfo",
+                "GetProtocolInfo"
+            ]
+        },
+        "QPlay": {
+            "scpd_url": "http://10.0.0.11:38400/QPlay.xml",
+            "actions": [
+                "GetMaxTracks",
+                "GetTracksCount",
+                "GetTracksInfo",
+                "InsertTracks",
+                "QPlayAuth",
+                "RemoveTracks",
+                "SetNetwork",
+                "SetTracksInfo"
+            ]
+        },
+        "RenderingControl": {
+            "scpd_url": "http://10.0.0.11:38400/RenderingControl.xml",
+            "actions": [
+                "GetMute",
+                "GetVolume",
+                "ListPresets",
+                "SelectPreset",
+                "SetMute",
+                "SetVolume"
+            ]
+        }
+    }
+}
+```
+
+## Usage
+
+The following flags are supported.
+
+```console
+❯ upnpinfo --help
+Usage: upnpinfo [OPTIONS] [DEVICE]
+
+  Retrieves UPnP device information from the local network.
+
+  Defaults to showing a summary of all devices found on the local network
+  using UPnP discovery. Specify an optional DEVICE (a UPnP friendly name, UDN,
+  or location URL) to retrieve detailed information on that device.
+
+Options:
+  -t, --type TYPE  Show just the given UPnP device type (e.g. MediaRenderer).
+  --timeout SECS   UPnP discovery timeout (seconds).  [default: 2]
+  --no-color       Disable color.
+  --json           Display results as JSON.
+  --help           Show this message and exit.
+```
+
+## Ideas
+
+It would be cool if `upnpinfo` had an interactive mode, allowing for browsing of devices and
+device services, and supporting manual action invocation.
