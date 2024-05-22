@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: LYNXY
+Version: 0.0.1
+Summary: A LAN package made for easy communication and sending of data across the same network.
+Project-URL: Homepage, https://github.com/SketchedDoughnut/LYNX
+Project-URL: Issues, https://github.com/SketchedDoughnut/LYNX/issues
+Author-email: Sketched Doughnut <sketcheddoughnut@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# LYNX
+Local (yielding?) Network (eXchange?)
+
+# Setup
+
+Coming soon!
