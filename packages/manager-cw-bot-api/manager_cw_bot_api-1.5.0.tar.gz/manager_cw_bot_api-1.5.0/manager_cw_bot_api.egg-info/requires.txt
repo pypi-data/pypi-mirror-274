@@ -1,0 +1,4 @@
+PyMySQL
+pyTelegramBotAPI
+requests
+telegram-types
