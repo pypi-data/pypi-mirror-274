@@ -1,0 +1,722 @@
+"""
+Type annotations for mailmanager service client.
+
+[Open documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/)
+
+Usage::
+
+    ```python
+    from boto3.session import Session
+    from mypy_boto3_mailmanager.client import MailManagerClient
+
+    session = Session()
+    client: MailManagerClient = session.client("mailmanager")
+    ```
+"""
+
+import sys
+from typing import Any, Dict, Mapping, Sequence, Type, overload
+
+from botocore.client import BaseClient, ClientMeta
+
+from .literals import AcceptActionType, IngressPointStatusToUpdateType, IngressPointTypeType
+from .paginator import (
+    ListAddonInstancesPaginator,
+    ListAddonSubscriptionsPaginator,
+    ListArchiveExportsPaginator,
+    ListArchiveSearchesPaginator,
+    ListArchivesPaginator,
+    ListIngressPointsPaginator,
+    ListRelaysPaginator,
+    ListRuleSetsPaginator,
+    ListTrafficPoliciesPaginator,
+)
+from .type_defs import (
+    ArchiveFiltersUnionTypeDef,
+    ArchiveRetentionTypeDef,
+    CreateAddonInstanceResponseTypeDef,
+    CreateAddonSubscriptionResponseTypeDef,
+    CreateArchiveResponseTypeDef,
+    CreateIngressPointResponseTypeDef,
+    CreateRelayResponseTypeDef,
+    CreateRuleSetResponseTypeDef,
+    CreateTrafficPolicyResponseTypeDef,
+    ExportDestinationConfigurationTypeDef,
+    GetAddonInstanceResponseTypeDef,
+    GetAddonSubscriptionResponseTypeDef,
+    GetArchiveExportResponseTypeDef,
+    GetArchiveMessageContentResponseTypeDef,
+    GetArchiveMessageResponseTypeDef,
+    GetArchiveResponseTypeDef,
+    GetArchiveSearchResponseTypeDef,
+    GetArchiveSearchResultsResponseTypeDef,
+    GetIngressPointResponseTypeDef,
+    GetRelayResponseTypeDef,
+    GetRuleSetResponseTypeDef,
+    GetTrafficPolicyResponseTypeDef,
+    IngressPointConfigurationTypeDef,
+    ListAddonInstancesResponseTypeDef,
+    ListAddonSubscriptionsResponseTypeDef,
+    ListArchiveExportsResponseTypeDef,
+    ListArchiveSearchesResponseTypeDef,
+    ListArchivesResponseTypeDef,
+    ListIngressPointsResponseTypeDef,
+    ListRelaysResponseTypeDef,
+    ListRuleSetsResponseTypeDef,
+    ListTagsForResourceResponseTypeDef,
+    ListTrafficPoliciesResponseTypeDef,
+    PolicyStatementUnionTypeDef,
+    RelayAuthenticationUnionTypeDef,
+    RuleUnionTypeDef,
+    StartArchiveExportResponseTypeDef,
+    StartArchiveSearchResponseTypeDef,
+    TagTypeDef,
+    TimestampTypeDef,
+)
+
+if sys.version_info >= (3, 12):
+    from typing import Literal
+else:
+    from typing_extensions import Literal
+
+__all__ = ("MailManagerClient",)
+
+
+class BotocoreClientError(Exception):
+    MSG_TEMPLATE: str
+
+    def __init__(self, error_response: Mapping[str, Any], operation_name: str) -> None:
+        self.response: Dict[str, Any]
+        self.operation_name: str
+
+
+class Exceptions:
+    AccessDeniedException: Type[BotocoreClientError]
+    ClientError: Type[BotocoreClientError]
+    ConflictException: Type[BotocoreClientError]
+    ResourceNotFoundException: Type[BotocoreClientError]
+    ServiceQuotaExceededException: Type[BotocoreClientError]
+    ThrottlingException: Type[BotocoreClientError]
+    ValidationException: Type[BotocoreClientError]
+
+
+class MailManagerClient(BaseClient):
+    """
+    [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client)
+    [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/)
+    """
+
+    meta: ClientMeta
+
+    @property
+    def exceptions(self) -> Exceptions:
+        """
+        MailManagerClient exceptions.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.exceptions)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#exceptions)
+        """
+
+    def can_paginate(self, operation_name: str) -> bool:
+        """
+        Check if an operation can be paginated.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.can_paginate)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#can_paginate)
+        """
+
+    def close(self) -> None:
+        """
+        Closes underlying endpoint connections.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.close)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#close)
+        """
+
+    def create_addon_instance(
+        self, *, AddonSubscriptionId: str, ClientToken: str = ..., Tags: Sequence[TagTypeDef] = ...
+    ) -> CreateAddonInstanceResponseTypeDef:
+        """
+        Creates an Add On instance for the subscription indicated in the request.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.create_addon_instance)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#create_addon_instance)
+        """
+
+    def create_addon_subscription(
+        self, *, AddonName: str, ClientToken: str = ..., Tags: Sequence[TagTypeDef] = ...
+    ) -> CreateAddonSubscriptionResponseTypeDef:
+        """
+        Creates a subscription for an Add On representing the acceptance of its terms
+        of use and additional
+        pricing.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.create_addon_subscription)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#create_addon_subscription)
+        """
+
+    def create_archive(
+        self,
+        *,
+        ArchiveName: str,
+        ClientToken: str = ...,
+        KmsKeyArn: str = ...,
+        Retention: ArchiveRetentionTypeDef = ...,
+        Tags: Sequence[TagTypeDef] = ...,
+    ) -> CreateArchiveResponseTypeDef:
+        """
+        Creates a new email archive resource for storing and retaining emails.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.create_archive)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#create_archive)
+        """
+
+    def create_ingress_point(
+        self,
+        *,
+        IngressPointName: str,
+        RuleSetId: str,
+        TrafficPolicyId: str,
+        Type: IngressPointTypeType,
+        ClientToken: str = ...,
+        IngressPointConfiguration: IngressPointConfigurationTypeDef = ...,
+        Tags: Sequence[TagTypeDef] = ...,
+    ) -> CreateIngressPointResponseTypeDef:
+        """
+        Provision a new ingress endpoint resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.create_ingress_point)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#create_ingress_point)
+        """
+
+    def create_relay(
+        self,
+        *,
+        Authentication: RelayAuthenticationUnionTypeDef,
+        RelayName: str,
+        ServerName: str,
+        ServerPort: int,
+        ClientToken: str = ...,
+        Tags: Sequence[TagTypeDef] = ...,
+    ) -> CreateRelayResponseTypeDef:
+        """
+        Creates a relay resource which can be used in rules to relay incoming emails to
+        defined relay
+        destinations.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.create_relay)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#create_relay)
+        """
+
+    def create_rule_set(
+        self,
+        *,
+        RuleSetName: str,
+        Rules: Sequence[RuleUnionTypeDef],
+        ClientToken: str = ...,
+        Tags: Sequence[TagTypeDef] = ...,
+    ) -> CreateRuleSetResponseTypeDef:
+        """
+        Provision a new rule set.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.create_rule_set)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#create_rule_set)
+        """
+
+    def create_traffic_policy(
+        self,
+        *,
+        DefaultAction: AcceptActionType,
+        PolicyStatements: Sequence[PolicyStatementUnionTypeDef],
+        TrafficPolicyName: str,
+        ClientToken: str = ...,
+        MaxMessageSizeBytes: int = ...,
+        Tags: Sequence[TagTypeDef] = ...,
+    ) -> CreateTrafficPolicyResponseTypeDef:
+        """
+        Provision a new traffic policy resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.create_traffic_policy)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#create_traffic_policy)
+        """
+
+    def delete_addon_instance(self, *, AddonInstanceId: str) -> Dict[str, Any]:
+        """
+        Deletes an Add On instance.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.delete_addon_instance)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#delete_addon_instance)
+        """
+
+    def delete_addon_subscription(self, *, AddonSubscriptionId: str) -> Dict[str, Any]:
+        """
+        Deletes an Add On subscription.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.delete_addon_subscription)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#delete_addon_subscription)
+        """
+
+    def delete_archive(self, *, ArchiveId: str) -> Dict[str, Any]:
+        """
+        Initiates deletion of an email archive.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.delete_archive)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#delete_archive)
+        """
+
+    def delete_ingress_point(self, *, IngressPointId: str) -> Dict[str, Any]:
+        """
+        Delete an ingress endpoint resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.delete_ingress_point)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#delete_ingress_point)
+        """
+
+    def delete_relay(self, *, RelayId: str) -> Dict[str, Any]:
+        """
+        Deletes an existing relay resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.delete_relay)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#delete_relay)
+        """
+
+    def delete_rule_set(self, *, RuleSetId: str) -> Dict[str, Any]:
+        """
+        Delete a rule set.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.delete_rule_set)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#delete_rule_set)
+        """
+
+    def delete_traffic_policy(self, *, TrafficPolicyId: str) -> Dict[str, Any]:
+        """
+        Delete a traffic policy resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.delete_traffic_policy)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#delete_traffic_policy)
+        """
+
+    def generate_presigned_url(
+        self,
+        ClientMethod: str,
+        Params: Mapping[str, Any] = ...,
+        ExpiresIn: int = 3600,
+        HttpMethod: str = ...,
+    ) -> str:
+        """
+        Generate a presigned url given a client, its method, and arguments.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.generate_presigned_url)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#generate_presigned_url)
+        """
+
+    def get_addon_instance(self, *, AddonInstanceId: str) -> GetAddonInstanceResponseTypeDef:
+        """
+        Gets detailed information about an Add On instance.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_addon_instance)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_addon_instance)
+        """
+
+    def get_addon_subscription(
+        self, *, AddonSubscriptionId: str
+    ) -> GetAddonSubscriptionResponseTypeDef:
+        """
+        Gets detailed information about an Add On subscription.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_addon_subscription)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_addon_subscription)
+        """
+
+    def get_archive(self, *, ArchiveId: str) -> GetArchiveResponseTypeDef:
+        """
+        Retrieves the full details and current state of a specified email archive.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_archive)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_archive)
+        """
+
+    def get_archive_export(self, *, ExportId: str) -> GetArchiveExportResponseTypeDef:
+        """
+        Retrieves the details and current status of a specific email archive export job.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_archive_export)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_archive_export)
+        """
+
+    def get_archive_message(self, *, ArchivedMessageId: str) -> GetArchiveMessageResponseTypeDef:
+        """
+        Returns a pre-signed URL that provides temporary download access to the
+        specific email message stored in the
+        archive.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_archive_message)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_archive_message)
+        """
+
+    def get_archive_message_content(
+        self, *, ArchivedMessageId: str
+    ) -> GetArchiveMessageContentResponseTypeDef:
+        """
+        Returns the textual content of a specific email message stored in the archive.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_archive_message_content)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_archive_message_content)
+        """
+
+    def get_archive_search(self, *, SearchId: str) -> GetArchiveSearchResponseTypeDef:
+        """
+        Retrieves the details and current status of a specific email archive search job.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_archive_search)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_archive_search)
+        """
+
+    def get_archive_search_results(
+        self, *, SearchId: str
+    ) -> GetArchiveSearchResultsResponseTypeDef:
+        """
+        Returns the results of a completed email archive search job.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_archive_search_results)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_archive_search_results)
+        """
+
+    def get_ingress_point(self, *, IngressPointId: str) -> GetIngressPointResponseTypeDef:
+        """
+        Fetch ingress endpoint resource attributes.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_ingress_point)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_ingress_point)
+        """
+
+    def get_relay(self, *, RelayId: str) -> GetRelayResponseTypeDef:
+        """
+        Fetch the relay resource and it's attributes.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_relay)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_relay)
+        """
+
+    def get_rule_set(self, *, RuleSetId: str) -> GetRuleSetResponseTypeDef:
+        """
+        Fetch attributes of a rule set.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_rule_set)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_rule_set)
+        """
+
+    def get_traffic_policy(self, *, TrafficPolicyId: str) -> GetTrafficPolicyResponseTypeDef:
+        """
+        Fetch attributes of a traffic policy resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_traffic_policy)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_traffic_policy)
+        """
+
+    def list_addon_instances(
+        self, *, NextToken: str = ..., PageSize: int = ...
+    ) -> ListAddonInstancesResponseTypeDef:
+        """
+        Lists all Add On instances in your account.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_addon_instances)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_addon_instances)
+        """
+
+    def list_addon_subscriptions(
+        self, *, NextToken: str = ..., PageSize: int = ...
+    ) -> ListAddonSubscriptionsResponseTypeDef:
+        """
+        Lists all Add On subscriptions in your account.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_addon_subscriptions)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_addon_subscriptions)
+        """
+
+    def list_archive_exports(
+        self, *, ArchiveId: str, NextToken: str = ..., PageSize: int = ...
+    ) -> ListArchiveExportsResponseTypeDef:
+        """
+        Returns a list of email archive export jobs.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_archive_exports)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_archive_exports)
+        """
+
+    def list_archive_searches(
+        self, *, ArchiveId: str, NextToken: str = ..., PageSize: int = ...
+    ) -> ListArchiveSearchesResponseTypeDef:
+        """
+        Returns a list of email archive search jobs.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_archive_searches)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_archive_searches)
+        """
+
+    def list_archives(
+        self, *, NextToken: str = ..., PageSize: int = ...
+    ) -> ListArchivesResponseTypeDef:
+        """
+        Returns a list of all email archives in your account.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_archives)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_archives)
+        """
+
+    def list_ingress_points(
+        self, *, NextToken: str = ..., PageSize: int = ...
+    ) -> ListIngressPointsResponseTypeDef:
+        """
+        List all ingress endpoint resources.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_ingress_points)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_ingress_points)
+        """
+
+    def list_relays(
+        self, *, NextToken: str = ..., PageSize: int = ...
+    ) -> ListRelaysResponseTypeDef:
+        """
+        Lists all the existing relay resources.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_relays)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_relays)
+        """
+
+    def list_rule_sets(
+        self, *, NextToken: str = ..., PageSize: int = ...
+    ) -> ListRuleSetsResponseTypeDef:
+        """
+        List rule sets for this account.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_rule_sets)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_rule_sets)
+        """
+
+    def list_tags_for_resource(self, *, ResourceArn: str) -> ListTagsForResourceResponseTypeDef:
+        """
+        Retrieves the list of tags (keys and values) assigned to the resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_tags_for_resource)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_tags_for_resource)
+        """
+
+    def list_traffic_policies(
+        self, *, NextToken: str = ..., PageSize: int = ...
+    ) -> ListTrafficPoliciesResponseTypeDef:
+        """
+        List traffic policy resources.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.list_traffic_policies)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#list_traffic_policies)
+        """
+
+    def start_archive_export(
+        self,
+        *,
+        ArchiveId: str,
+        ExportDestinationConfiguration: ExportDestinationConfigurationTypeDef,
+        FromTimestamp: TimestampTypeDef,
+        ToTimestamp: TimestampTypeDef,
+        Filters: ArchiveFiltersUnionTypeDef = ...,
+        MaxResults: int = ...,
+    ) -> StartArchiveExportResponseTypeDef:
+        """
+        Initiates an export of emails from the specified archive.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.start_archive_export)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#start_archive_export)
+        """
+
+    def start_archive_search(
+        self,
+        *,
+        ArchiveId: str,
+        FromTimestamp: TimestampTypeDef,
+        MaxResults: int,
+        ToTimestamp: TimestampTypeDef,
+        Filters: ArchiveFiltersUnionTypeDef = ...,
+    ) -> StartArchiveSearchResponseTypeDef:
+        """
+        Initiates a search across emails in the specified archive.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.start_archive_search)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#start_archive_search)
+        """
+
+    def stop_archive_export(self, *, ExportId: str) -> Dict[str, Any]:
+        """
+        Stops an in-progress export of emails from an archive.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.stop_archive_export)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#stop_archive_export)
+        """
+
+    def stop_archive_search(self, *, SearchId: str) -> Dict[str, Any]:
+        """
+        Stops an in-progress archive search job.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.stop_archive_search)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#stop_archive_search)
+        """
+
+    def tag_resource(self, *, ResourceArn: str, Tags: Sequence[TagTypeDef]) -> Dict[str, Any]:
+        """
+        Adds one or more tags (keys and values) to a specified resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.tag_resource)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#tag_resource)
+        """
+
+    def untag_resource(self, *, ResourceArn: str, TagKeys: Sequence[str]) -> Dict[str, Any]:
+        """
+        Remove one or more tags (keys and values) from a specified resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.untag_resource)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#untag_resource)
+        """
+
+    def update_archive(
+        self, *, ArchiveId: str, ArchiveName: str = ..., Retention: ArchiveRetentionTypeDef = ...
+    ) -> Dict[str, Any]:
+        """
+        Updates the attributes of an existing email archive.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.update_archive)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#update_archive)
+        """
+
+    def update_ingress_point(
+        self,
+        *,
+        IngressPointId: str,
+        IngressPointConfiguration: IngressPointConfigurationTypeDef = ...,
+        IngressPointName: str = ...,
+        RuleSetId: str = ...,
+        StatusToUpdate: IngressPointStatusToUpdateType = ...,
+        TrafficPolicyId: str = ...,
+    ) -> Dict[str, Any]:
+        """
+        Update attributes of a provisioned ingress endpoint resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.update_ingress_point)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#update_ingress_point)
+        """
+
+    def update_relay(
+        self,
+        *,
+        RelayId: str,
+        Authentication: RelayAuthenticationUnionTypeDef = ...,
+        RelayName: str = ...,
+        ServerName: str = ...,
+        ServerPort: int = ...,
+    ) -> Dict[str, Any]:
+        """
+        Updates the attributes of an existing relay resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.update_relay)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#update_relay)
+        """
+
+    def update_rule_set(
+        self, *, RuleSetId: str, RuleSetName: str = ..., Rules: Sequence[RuleUnionTypeDef] = ...
+    ) -> Dict[str, Any]:
+        """
+        >Update attributes of an already provisioned rule set.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.update_rule_set)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#update_rule_set)
+        """
+
+    def update_traffic_policy(
+        self,
+        *,
+        TrafficPolicyId: str,
+        DefaultAction: AcceptActionType = ...,
+        MaxMessageSizeBytes: int = ...,
+        PolicyStatements: Sequence[PolicyStatementUnionTypeDef] = ...,
+        TrafficPolicyName: str = ...,
+    ) -> Dict[str, Any]:
+        """
+        Update attributes of an already provisioned traffic policy resource.
+
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.update_traffic_policy)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#update_traffic_policy)
+        """
+
+    @overload
+    def get_paginator(
+        self, operation_name: Literal["list_addon_instances"]
+    ) -> ListAddonInstancesPaginator:
+        """
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_paginator)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_paginator)
+        """
+
+    @overload
+    def get_paginator(
+        self, operation_name: Literal["list_addon_subscriptions"]
+    ) -> ListAddonSubscriptionsPaginator:
+        """
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_paginator)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_paginator)
+        """
+
+    @overload
+    def get_paginator(
+        self, operation_name: Literal["list_archive_exports"]
+    ) -> ListArchiveExportsPaginator:
+        """
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_paginator)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_paginator)
+        """
+
+    @overload
+    def get_paginator(
+        self, operation_name: Literal["list_archive_searches"]
+    ) -> ListArchiveSearchesPaginator:
+        """
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_paginator)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_paginator)
+        """
+
+    @overload
+    def get_paginator(self, operation_name: Literal["list_archives"]) -> ListArchivesPaginator:
+        """
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_paginator)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_paginator)
+        """
+
+    @overload
+    def get_paginator(
+        self, operation_name: Literal["list_ingress_points"]
+    ) -> ListIngressPointsPaginator:
+        """
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_paginator)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_paginator)
+        """
+
+    @overload
+    def get_paginator(self, operation_name: Literal["list_relays"]) -> ListRelaysPaginator:
+        """
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_paginator)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_paginator)
+        """
+
+    @overload
+    def get_paginator(self, operation_name: Literal["list_rule_sets"]) -> ListRuleSetsPaginator:
+        """
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_paginator)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_paginator)
+        """
+
+    @overload
+    def get_paginator(
+        self, operation_name: Literal["list_traffic_policies"]
+    ) -> ListTrafficPoliciesPaginator:
+        """
+        [Show boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mailmanager.html#MailManager.Client.get_paginator)
+        [Show boto3-stubs documentation](https://youtype.github.io/boto3_stubs_docs/mypy_boto3_mailmanager/client/#get_paginator)
+        """
