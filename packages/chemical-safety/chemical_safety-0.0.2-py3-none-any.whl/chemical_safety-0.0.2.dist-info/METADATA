@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chemical-safety
+Version: 0.0.2
+Summary: A package for retreiving chemical safety information
+Author: Demetrios Pagonis
+Author-email: demetriospagonis@weber.edu
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: jinja2
+Requires-Dist: requests
+Requires-Dist: Levenshtein
+Requires-Dist: natsort
+Requires-Dist: flask
+Requires-Dist: scipy
+Requires-Dist: rdkit
+
