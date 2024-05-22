@@ -1,0 +1,2 @@
+[console_scripts]
+r3dir = r3dir._cli:_cli
