@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+EAACommander/__init__.py
+EAACommander/cli_client.py
+EAACommander/settings.ini
+EAACommander/settings.py
+EAACommander.egg-info/PKG-INFO
+EAACommander.egg-info/SOURCES.txt
+EAACommander.egg-info/dependency_links.txt
+EAACommander.egg-info/entry_points.txt
+EAACommander.egg-info/requires.txt
+EAACommander.egg-info/top_level.txt
+tests/__init__.py
