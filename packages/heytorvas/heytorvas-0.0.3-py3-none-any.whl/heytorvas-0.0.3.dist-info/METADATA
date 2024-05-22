@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: heytorvas
+Version: 0.0.3
+Summary: Heytor Victor's Portfolio
+Author: Heytor Victor
+Author-email: heytor@heytor.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest (==8.2.1)
+Requires-Dist: rich (==13.7.1)
+Requires-Dist: typer (==0.12.3)
+Description-Content-Type: text/markdown
+
+# python software engineer
+
