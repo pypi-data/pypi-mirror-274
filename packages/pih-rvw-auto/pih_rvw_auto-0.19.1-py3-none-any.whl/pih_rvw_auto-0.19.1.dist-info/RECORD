@@ -1,0 +1,10 @@
+ReviewAutomationService/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ReviewAutomationService/__main__.py,sha256=wz4qqIKTKH406bFT84Ef650QA7TkPNSUSbfnhb3o90E,158
+ReviewAutomationService/api.py,sha256=I931rbFBHdkWv1GcvaLadpM8J7Oo8yfRv3lTZTaUpw0,2625
+ReviewAutomationService/const.py,sha256=cLOO629y1jrjPdvI9067WtpCnAjJJKMCei8_eeqb1_8,527
+ReviewAutomationService/service.py,sha256=UBqsafbk9DAFpF7L8-UzzHrWeHhKn1xZ5v8NAtwG8hY,8054
+pih_rvw_auto-0.19.1.dist-info/METADATA,sha256=GN3Rtd8a6gbsoP8p9S8SEaG0fkzRRflLeJzO5veV_QU,286
+pih_rvw_auto-0.19.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pih_rvw_auto-0.19.1.dist-info/entry_points.txt,sha256=WcAdA1L6WtR0jvdpH0at8_bDveC2jfFheUmYStejmGQ,72
+pih_rvw_auto-0.19.1.dist-info/top_level.txt,sha256=3uX2dPbMPOpYE0yLbF7olUIbyaQ9EwHUMifPF_CHKUU,24
+pih_rvw_auto-0.19.1.dist-info/RECORD,,
