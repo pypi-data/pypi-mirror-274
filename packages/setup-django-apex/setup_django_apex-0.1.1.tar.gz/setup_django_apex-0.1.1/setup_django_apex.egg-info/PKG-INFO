@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: setup_django_apex
+Version: 0.1.1
+Summary: A library to set up Django projects with multiple apps
+Home-page: https://github.com/Anirudha1821/setup_django_apex
+Author: Anirudha Udgirkar
+Author-email: anirudhaudgirkar.work.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.0
+Requires-Dist: django>=3.0
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+
+# setup_django_apex
+
+setup_django_apex is a simple library to set up Django projects with multiple apps interactively.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install setup_django_apex
