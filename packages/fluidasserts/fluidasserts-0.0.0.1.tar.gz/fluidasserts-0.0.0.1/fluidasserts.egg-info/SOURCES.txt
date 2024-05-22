@@ -1,0 +1,7 @@
+README.md
+setup.py
+fluidasserts/__init__.py
+fluidasserts.egg-info/PKG-INFO
+fluidasserts.egg-info/SOURCES.txt
+fluidasserts.egg-info/dependency_links.txt
+fluidasserts.egg-info/top_level.txt
