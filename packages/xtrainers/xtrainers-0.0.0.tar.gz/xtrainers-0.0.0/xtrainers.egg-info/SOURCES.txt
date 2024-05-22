@@ -1,0 +1,7 @@
+README.md
+setup.py
+tests/test.py
+xtrainers.egg-info/PKG-INFO
+xtrainers.egg-info/SOURCES.txt
+xtrainers.egg-info/dependency_links.txt
+xtrainers.egg-info/top_level.txt
