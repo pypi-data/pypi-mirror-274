@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ArtSnake/__init__.py
+ArtSnake/detect_watermark.py
+ArtSnake/insert_watermark.py
+ArtSnake/measure_diff.py
+ArtSnake/poison_image.py
+ArtSnake/remove_watermark.py
+ArtSnake.egg-info/PKG-INFO
+ArtSnake.egg-info/SOURCES.txt
+ArtSnake.egg-info/dependency_links.txt
+ArtSnake.egg-info/requires.txt
+ArtSnake.egg-info/top_level.txt
