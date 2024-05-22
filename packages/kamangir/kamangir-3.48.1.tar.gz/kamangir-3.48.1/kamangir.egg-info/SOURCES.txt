@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+kamangir/__init__.py
+kamangir/__main__.py
+kamangir/content.py
+kamangir/functions.py
+kamangir/logger.py
+kamangir/urls.py
+kamangir.egg-info/PKG-INFO
+kamangir.egg-info/SOURCES.txt
+kamangir.egg-info/dependency_links.txt
+kamangir.egg-info/requires.txt
+kamangir.egg-info/top_level.txt
