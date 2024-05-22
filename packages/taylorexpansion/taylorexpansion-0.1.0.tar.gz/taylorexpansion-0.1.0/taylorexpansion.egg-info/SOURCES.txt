@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+taylorexpansion/__init__.py
+taylorexpansion/series.py
+taylorexpansion.egg-info/PKG-INFO
+taylorexpansion.egg-info/SOURCES.txt
+taylorexpansion.egg-info/dependency_links.txt
+taylorexpansion.egg-info/requires.txt
+taylorexpansion.egg-info/top_level.txt
+tests/__init__.py
+tests/test_series.py
