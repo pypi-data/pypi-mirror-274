@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: qytorch
+Version: 0.0.3
+Summary: A library to make quaternion neural networks.
+Author: smlab-niser
+Author-email: smishra@niser.ac.in
+Keywords: quaternion,neural networks,torch,machine learning,parameter reduction
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+
+A python library which has quaternion versions of some of the mostly used libraries in torch.nn. It supports all of the features of the supported layers. Main advantage of quaternion layers is that, it has only 1/4th the number of weights compared to it's real counterpart

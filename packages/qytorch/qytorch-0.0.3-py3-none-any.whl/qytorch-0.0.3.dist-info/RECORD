@@ -1,0 +1,12 @@
+qytorch/__init__.py,sha256=9cIiqMAQs-apOhzSNRO0Yu_i5BanTmBu4aZAX7Vei00,68
+qytorch/a.py,sha256=aTSPtWALRsozMmIdC1dZ9XQGfepFnHwdhkIssWptM0k,580
+qytorch/qconv.py,sha256=bnjMx_dMLvkbnYp6Y6LIx9aOvhaWcminFijVdw4WvIg,13217
+qytorch/qlinear.py,sha256=To6Nh280sgiXaZrgjQ97pMSQ_27Lz-Ex99It9J6_jdk,3321
+qytorch/qmha.py,sha256=lfFQJ5OHGUmjzDJYnCy73ZqJhfVYS1Wv5-NPwZ0usvU,17412
+qytorch/qtransformer.py,sha256=kXF6BBJrIGeny85jVJbLc1VGZZT4PUK12MGdp-1BwrY,46048
+qytorch/quat_base.py,sha256=7AoFTX-2RgA_F_1_r3d14TlglU-uP0vrx15Uak1fGZk,1444
+qytorch-0.0.3.dist-info/LICENSE,sha256=gX6WlrYJmUBEJt6NGSY9xQJ4Cuby95CE55HEdi6PjsA,1077
+qytorch-0.0.3.dist-info/METADATA,sha256=eAcvIJOisSvVdTzJHfbGG57SBHMyshO6WhahLFsfOeM,1238
+qytorch-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+qytorch-0.0.3.dist-info/top_level.txt,sha256=CD6N3YISOpdalndmFv30zKATWUb70y2Ji4Suw1ZsA1s,8
+qytorch-0.0.3.dist-info/RECORD,,
