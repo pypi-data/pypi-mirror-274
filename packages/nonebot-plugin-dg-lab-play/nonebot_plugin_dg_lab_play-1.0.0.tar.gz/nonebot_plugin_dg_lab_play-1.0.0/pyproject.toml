@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "nonebot-plugin-dg-lab-play"
+version = "1.0.0"
+description = "nonebot2 机器人插件 - 在群里和大家一起玩郊狼吧！"
+authors = ["Ljzd-PRO <ljzd@office.ljzd-pro.asia>"]
+readme = "README.md"
+homepage = "https://dg-lab-play.readthedocs.io"
+repository = "https://github.com/Ljzd-PRO/nonebot-plugin-dg-lab-play"
+documentation = "https://dg-lab-play.readthedocs.io"
+
+keywords = [
+    "nonebot", "nonebot2", "dg-lab", "dg-lab-v3", "chatbot", "dodo",
+    "feishu", "kaiheila", "onebot", "onebot11", "onebot12", "red", "telegram"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = ">=2.2.0"
+pydglab-ws = "^1.1.0"
+nonebot-plugin-send-anything-anywhere = "^0.6.1"
+nonebot-plugin-alconna = "^0.45.4"
+qrcode = {extras = ["pil"], version = "^7.4.2"}
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.0"
+mkdocs-material = "^9.5.22"
+mkdocstrings = {version="^0.25.1", extras=["python"]}
+mike = "^2.1.1"
+
+[tool.poetry.group.test.dependencies]
+flake8 = "^7.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pydevd-pycharm = "^232.10227.11"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.dev]
+optional = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
