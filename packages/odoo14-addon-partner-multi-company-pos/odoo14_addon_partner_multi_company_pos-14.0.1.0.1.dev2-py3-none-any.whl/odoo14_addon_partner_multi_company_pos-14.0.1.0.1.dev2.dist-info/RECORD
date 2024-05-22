@@ -1,0 +1,14 @@
+odoo/addons/partner_multi_company_pos/README.rst,sha256=m7JR9UtcTwWJGDBsu79yYenj-eHcqldqvdy9vvkGXFQ,3728
+odoo/addons/partner_multi_company_pos/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/partner_multi_company_pos/__manifest__.py,sha256=xdFhvVOV2FN0RBGNaoLNpmBqX8Tvf_XKjdqGsSwzsi8,479
+odoo/addons/partner_multi_company_pos/i18n/partner_multi_company_pos.pot,sha256=fq4JubtM5VLv3F6DEc85332-MziTL1P0BrgiOclU2dg,998
+odoo/addons/partner_multi_company_pos/models/__init__.py,sha256=g-Dp2ZwN6oB4CqdQfgRInNSzdMWAVQg1vjWL7S-ZODM,26
+odoo/addons/partner_multi_company_pos/models/res_partner.py,sha256=Nd7ygxMZXw6n22IGqxEetzLGNE5DsVQv8ZEIX8jThtQ,471
+odoo/addons/partner_multi_company_pos/readme/CONTRIBUTORS.rst,sha256=NniKsscOIXu5ziGGSm_8iR_6JsMKPIlPFqvvC9fX7Po,161
+odoo/addons/partner_multi_company_pos/readme/DESCRIPTION.rst,sha256=g_LVxKQRgbQ9yDTkbFxRyd9BAE5kWI2X1r5n9CdzCuc,209
+odoo/addons/partner_multi_company_pos/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/partner_multi_company_pos/static/description/index.html,sha256=dYUJyYHQGUDXphh3ZMQ1Zl5QhIyZnqxUUuX3D-YEXyo,13125
+odoo14_addon_partner_multi_company_pos-14.0.1.0.1.dev2.dist-info/METADATA,sha256=vS-IzbiOKKBrJV37rOVaVDvJVP3HtADnvyxwdlsddik,4331
+odoo14_addon_partner_multi_company_pos-14.0.1.0.1.dev2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo14_addon_partner_multi_company_pos-14.0.1.0.1.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_partner_multi_company_pos-14.0.1.0.1.dev2.dist-info/RECORD,,
