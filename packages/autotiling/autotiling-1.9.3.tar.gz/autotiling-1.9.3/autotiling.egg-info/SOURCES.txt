@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+autotiling/__about__.py
+autotiling/__init__.py
+autotiling/main.py
+autotiling.egg-info/PKG-INFO
+autotiling.egg-info/SOURCES.txt
+autotiling.egg-info/dependency_links.txt
+autotiling.egg-info/entry_points.txt
+autotiling.egg-info/requires.txt
+autotiling.egg-info/top_level.txt
