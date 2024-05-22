@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Nagra
+Version: 0.1.0
+Summary:  ORM-like library for OLAP use cases
+Home-page: https://github.com/b12consulting/nagra
+Provides-Extra: test
+License-File: LICENSE
+
+Nagra is a Python ORM that tries to emphasise
+the declarative nature of relational databases. It also comes with
+builtin features usually not available in traditonal ORM like
+declarative row-level permissions or a command-line interface

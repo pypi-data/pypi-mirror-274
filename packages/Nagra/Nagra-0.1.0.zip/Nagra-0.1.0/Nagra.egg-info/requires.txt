@@ -1,0 +1,8 @@
+jinja2
+rich
+toml
+
+[test]
+pytest
+pandas
+typeguard
