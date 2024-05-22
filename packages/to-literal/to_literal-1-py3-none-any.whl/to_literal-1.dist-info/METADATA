@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: to_literal
+Version: 1
+Summary: Librery to use it in a simple way to do a cast of an array to Literal[], to use it for validation with Pydantic
+Author: Adrià Martín Martorell
+Author-email: au7812ooae32@gmail.com
+Maintainer: Adrià Martín Martorell
+Maintainer-email: au7812ooae32@gmail.com
+License-File: LICENSE
+
