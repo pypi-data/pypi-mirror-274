@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: azcp_wrapper
+Version: 0.0.8
+Summary: A simple AzCopy wrapper to transfer data
+Home-page: https://github.com/eabdala/azcp_wrapper
+Author: Erik Alejandro Abdala
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: idna ==3.6
+Requires-Dist: requests ==2.31.0
+Requires-Dist: typing-extensions ==4.9.0
+Requires-Dist: urllib3 ==2.2.0
+
+<div>
+<p align="center">
+   <h1 align="center"> azcp_wrapper</h1>
+   <p align="center"> A simple AzCopy wrapper to transfer data
+</p>
+
+</div>
+
+<div class="termy">
+```sh
+$ python -m pip install azcp_wrapper
+
+$ python -m azcp_init
+
+```
+</div>

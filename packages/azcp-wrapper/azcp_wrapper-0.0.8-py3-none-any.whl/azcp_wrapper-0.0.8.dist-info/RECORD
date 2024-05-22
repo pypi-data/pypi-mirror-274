@@ -1,0 +1,15 @@
+azcp_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azcp_wrapper/azcp_client.py,sha256=5KM9r7YAqBeo1z8SXg04hK0N_anV44OcOcIjuly8ebk,9767
+azcp_wrapper/azcp_summary.py,sha256=pYCG7nXn87nG5HQroqhWz3ztecaMMt_XYCbu6SWI1fo,4930
+azcp_wrapper/azcp_utils.py,sha256=vHXCV3-4Xf1a49lu9AyxAYSAmsQLu9SIBC7oE3s94kQ,14580
+azcp_wrapper/logging_config.py,sha256=5Rse836Epy645AxmrteBnrtWZplc1v1v_wQnr6eh2Es,5979
+azcp_wrapper/setup.py,sha256=5T4RY8IMUpv_bxZoKJ8KIPKn2OwERnnNz88597IHWI0,2588
+azcp_wrapper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azcp_wrapper/utils/constants.py,sha256=hVfnQD7OvS9yF3rzYbx8EGOXD7Hs_NVN4S955RwjhlA,77
+azcp_wrapper/utils/execute_command.py,sha256=VgcTW2taWb8fsY0a-zW9jsullvOgNj4uMlG_O7RpACQ,857
+azcp_wrapper-0.0.8.dist-info/LICENSE,sha256=xyuj49SpyeUIqTnnODlAtSGkA8_fQNelvbqpx1uexNc,1064
+azcp_wrapper-0.0.8.dist-info/METADATA,sha256=zKjQR0R0hWbORDTXvD2SqCSjCSs3BOQ_Tq62H6HTp4U,1071
+azcp_wrapper-0.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+azcp_wrapper-0.0.8.dist-info/entry_points.txt,sha256=VgYDaphbNhk_uWbAhUCG0QVcO13vDHNErSItliEq64k,54
+azcp_wrapper-0.0.8.dist-info/top_level.txt,sha256=be7wLWMHdjydbPt0x6ULahl1ehiKj7RJz9bOVGqIXwU,13
+azcp_wrapper-0.0.8.dist-info/RECORD,,
