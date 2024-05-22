@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: Cheetah_GH
+Version: 0.1.1
+Summary: Runs Grasshopper components and stops Rhino from Python components. Optionally runs Rhino3D and Grasshopper from the command line.
+Project-URL: Homepage, https://github.com/JamesParrott/Cheetah_GH
+Project-URL: Bug Tracker, https://github.com/JamesParrott/Cheetah_GH/issues
+Author-email: James Parrott <james.parrott@proton.me>
+License-File: LICENSE.md
+Keywords: Grasshopper,Rhino,components,control,runner,tests
+Classifier: Programming Language :: Python
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# Cheetah
+Cheetah runs Grasshopper components, and runs Grasshopper from the command line.  Output from Python components in Grasshopper can be sent to the command line.  Cheetah can stop
+Grasshopper from a Python component, and return any exit code.
