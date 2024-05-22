@@ -1,0 +1,3 @@
+[console_scripts]
+ask = lfg.cli:main
+lfg = lfg.cli:main
