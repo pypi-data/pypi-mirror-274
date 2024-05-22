@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+test_project_for_mip.egg-info/PKG-INFO
+test_project_for_mip.egg-info/SOURCES.txt
+test_project_for_mip.egg-info/dependency_links.txt
+test_project_for_mip.egg-info/requires.txt
+test_project_for_mip.egg-info/top_level.txt
+tests/test.py

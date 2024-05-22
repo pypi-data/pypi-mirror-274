@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: test-project-for-mip
+Version: 0.0.1a0
+Summary: Основанный на библиотеке PyGame игровой движок
+Home-page: https://github.com/mipsirint/Mipine
+Author: mipsirint
+Author-email: grigorevv972@gmail.com
+Project-URL: GitHub, https://github.com/mipsirint/Mipine
+Keywords: pygame game games engine
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame>=2.5.2
+
+# Mipine
+Основанный на библиотеке PyGame игровой движок
