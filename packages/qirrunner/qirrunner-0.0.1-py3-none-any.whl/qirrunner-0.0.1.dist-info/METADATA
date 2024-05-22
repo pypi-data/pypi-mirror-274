@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qirrunner
+Version: 0.0.1
+Summary: JIT compiles and executes programs written in QIR (Quantum Intermediate Representation).
+Home-page: https://github.com/qir-alliance/qir-runner
+Author: Microsoft
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+
