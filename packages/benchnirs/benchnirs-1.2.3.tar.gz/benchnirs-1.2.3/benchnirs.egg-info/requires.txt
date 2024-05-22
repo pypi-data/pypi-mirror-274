@@ -1,0 +1,11 @@
+importlib
+lazy_loader
+numpy
+pandas
+scipy
+mne
+matplotlib
+seaborn
+scikit-learn
+torch
+nirsimple
