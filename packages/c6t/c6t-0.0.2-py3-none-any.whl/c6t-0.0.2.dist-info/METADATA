@@ -1,0 +1,72 @@
+Metadata-Version: 2.3
+Name: c6t
+Version: 0.0.2
+Summary: Unofficial Administrative Command Line Interface for Contrast Security
+Project-URL: Homepage, https://github.com/jharper-sec/c6t
+Project-URL: Issues, https://github.com/jharper-sec/c6t/issues
+Project-URL: Documentation, https://github.com/jharper-sec/c6t/blob/main/README.md
+Author-email: Jonathan Harper <39912347+jharper-sec@users.noreply.github.com>
+License: Copyright 2023 Contrast Security, Inc.
+        
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        
+            http://www.apache.org/licenses/LICENSE-2.0
+        
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: annotated-types>=0.6.0
+Requires-Dist: gitpython>=3.1.43
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: pyinquirer>=1.0.3
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: requests>=2.32.0
+Requires-Dist: rich>=13.7.1
+Requires-Dist: shellingham>=1.5.4
+Requires-Dist: typer[all]>=0.12.3
+Requires-Dist: types-requests>=2.31.0.20240406
+Description-Content-Type: text/markdown
+
+## c6t
+An unofficial Administrative Command Line Interface for Contrast Security
+
+### Features
+- Login to your Contrast account and save your API credentials to your local machine.
+- Configure your API credentials manually.
+- Download the agent configuration file to your local machine.
+
+### Pre-requisites
+- Python 3.8 or higher
+
+### Installation
+```shell
+$ pip install c6t
+```
+
+### Usage
+#### Login
+This will prompt you to login to your Contrast account and save your API credentials to your local machine.
+```shell
+$ c6t login
+```
+
+#### Configure
+Alternatively, you can configure your API credentials manually.
+```shell
+$ c6t configure
+```
+
+#### Get Agent Configuration File
+This will download the agent configuration file to your local machine.
+```shell
+$ c6t get-agent-config
+```
