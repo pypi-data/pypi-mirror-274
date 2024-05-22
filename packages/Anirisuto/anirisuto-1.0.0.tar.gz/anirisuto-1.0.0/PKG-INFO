@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: Anirisuto
+Version: 1.0.0
+Summary: A wrapper for anilist.
+Home-page: https://github.com/Drum3X/Anirisuto
+Author: Drum3X
+Author-email: doramuekusu@gmail.com
+License: Apache
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: aiohttp
+
+
+
+
+# Installing
+```sh
+apt install git 
+apt install python3
+apt install python3-pip
+git clone https://github.com/Drum3X/Simple-Python-Anilist-Api.git
+pip3 install -r requirements.txt
+```
+
+# How To Use
+
+# Sync Import
+```py
+from <api file name> import SyncClient
+```
+
+# Async Import
+```py
+from <api file name> import AsyncClient
+```
+
+# Functions
+```py
+client = SyncClient()
+
+client.get_anime(search = "Youkoso Jitsuryoku", page = 1) #page is result number
+client.get_manga(search = "Youkoso Jitsuryoku", page = 1)
+client.get_character(search = "Arisu Sakayanagi", page = 1)
+
+client.get_anime_with_id(id = 98659)
+client.get_manga_with_id(id = 96798)
+client.get_character_with_id(id = 124691)
+```
