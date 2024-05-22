@@ -1,0 +1,16 @@
+LICENSE
+PYPIREADME.md
+README.md
+pyproject.toml
+r3dir/__init__.py
+r3dir/_cli.py
+r3dir/encoder.py
+r3dir/exceptions.py
+r3dir.egg-info/PKG-INFO
+r3dir.egg-info/SOURCES.txt
+r3dir.egg-info/dependency_links.txt
+r3dir.egg-info/entry_points.txt
+r3dir.egg-info/requires.txt
+r3dir.egg-info/top_level.txt
+r3dir/hackvertor/encoder.js
+tests/test_encoder.py
