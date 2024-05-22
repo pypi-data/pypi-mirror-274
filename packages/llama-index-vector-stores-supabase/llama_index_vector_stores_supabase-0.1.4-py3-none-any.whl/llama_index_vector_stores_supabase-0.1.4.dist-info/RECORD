@@ -1,0 +1,5 @@
+llama_index/vector_stores/supabase/__init__.py,sha256=NH8urpXSHN4vBMtKO96kxjznwXzlQ-KNMA4oXqFNFgA,107
+llama_index/vector_stores/supabase/base.py,sha256=xtNS4OjlbXDCPoGXR8vBBrMUReaKRy6tlQLjqEYkCV4,6427
+llama_index_vector_stores_supabase-0.1.4.dist-info/METADATA,sha256=GCfybjUeWndwa5_5s8ncbfsSTM8MLFDxWEvlt7JYfvM,655
+llama_index_vector_stores_supabase-0.1.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_vector_stores_supabase-0.1.4.dist-info/RECORD,,
