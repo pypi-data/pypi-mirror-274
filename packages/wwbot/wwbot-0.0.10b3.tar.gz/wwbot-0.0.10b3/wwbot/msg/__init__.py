@@ -1,0 +1,74 @@
+# -*- encoding: utf-8
+
+import time, random
+from ..lib import Logger
+from abc import abstractmethod
+from xml.etree.cElementTree import Element
+
+class Message:
+
+    logger:Logger = Logger('Message')
+
+    # message type 
+    type:str = 'message'
+
+    def __init__(self, to_username:str, from_username:str, agent_id:str, create_time:int=None, msg_id:int=None, safe:bool=False, enable_id_trans:bool=False, enable_duplicate_check:bool=False, duplicate_check_interval:int=1800) -> None:
+        # the id of the receiver of the message 
+        self.to_username:str = to_username
+        # the id of the sender of the message 
+        self.from_username:str = from_username
+        # the agent id of the message
+        # also known as the application id 
+        self.agent_id:str = agent_id
+        # timestamp for the message 
+        self.create_time:int = create_time or int(time.time())
+        # message id 
+        self.message_id:int = msg_id or self.create_time * 1000 + random.randint(1000, 9999)
+        # whether the message can be shared when it's sent by send_to 
+        self.safe:bool = safe
+        # whether to enable the id translation
+        self.enable_id_trans:bool = enable_id_trans
+        # whether to check the message duplication 
+        self.enable_duplicate_check:bool = enable_duplicate_check
+        # the interval of message duplication checking, in second
+        self.duplicate_check_interval:int = duplicate_check_interval
+    
+    @abstractmethod
+    def to_xml(self) -> str:
+        '''Represent the message in XML format'''
+        pass
+
+    @abstractmethod
+    def to_json(self) -> str:
+        '''Represent the message in JSON format'''
+        pass
+
+    @classmethod
+    @abstractmethod
+    def from_xml(cls, xml_tree:Element):
+        '''Parse different types of messages from XML object'''
+        pass 
+
+
+from .text_msg import TextMessage
+from .link_msg import LinkMessage
+from .file_msg import FileMessage
+from .image_msg import ImageMessage
+from .voice_msg import VoiceMessage
+from .video_msg import VideoMessage
+from .news_msg import News, NewsMessage
+from .location_msg import LocationMessage
+from .markdown_msg import MarkdownMessage
+from .textcard_msg import TextCardMessage
+from .mpnews_msg import MPNews, MPNewsMessage
+
+def msg_from_xml(xml_tree:Element) -> Message:
+    '''Parse message from xml tree'''
+    msg_type:str = xml_tree.find('MsgType').text
+    if msg_type == 'text': return TextMessage.from_xml(xml_tree)
+    if msg_type == 'image': return ImageMessage.from_xml(xml_tree)
+    if msg_type == 'voice': return VoiceMessage.from_xml(xml_tree)
+    if msg_type == 'video': return VideoMessage.from_xml(xml_tree)
+    if msg_type == 'link': return LinkMessage.from_xml(xml_tree)
+    if msg_type == 'location': return LocationMessage.from_xml(xml_tree)
+    Message.logger.warn('Unregistered message type')
