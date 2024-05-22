@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+networkx-match/__init__.py
+networkx-match/__version__.py
+networkx-match/core.py
+networkx_match.egg-info/PKG-INFO
+networkx_match.egg-info/SOURCES.txt
+networkx_match.egg-info/dependency_links.txt
+networkx_match.egg-info/top_level.txt
