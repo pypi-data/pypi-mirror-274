@@ -1,0 +1,9 @@
+xlsx_serializer/__init__.py,sha256=gP5T-p_0voLe9H-W_tgEgDOONAQjBi-R7lyVFD5USls,170
+xlsx_serializer/apps.py,sha256=NSWGCVFU_dHGrk45DxT_S_Z02yhh4tdV--ySZF8jqrI,481
+xlsx_serializer/core.py,sha256=NghM7f7Ni1ceuhA12i9Quj6jl3S6CWmgq4W9H1HWi9s,15106
+xlsx_serializer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_xlsx_serializer-0.3.0.dist-info/LICENSE,sha256=zO0NGUbmr22sIMO8oYKgLo4fhI-vAXZFhz6PLoLYHWc,1075
+django_xlsx_serializer-0.3.0.dist-info/METADATA,sha256=4-UYvzsYcZynrcGD-9Ic__tB8NFRNoxvT9w3nAoyzsQ,14648
+django_xlsx_serializer-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_xlsx_serializer-0.3.0.dist-info/top_level.txt,sha256=Z4g3wQqC1XYaKFECRYUcorajHqfauZCZRSpp6waDJnM,16
+django_xlsx_serializer-0.3.0.dist-info/RECORD,,
