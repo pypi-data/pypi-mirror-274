@@ -1,0 +1,17 @@
+reactivex~=4.0.0
+bson~=0.5
+
+[dev]
+invoke
+mypy
+pylint
+pycodestyle
+pytest
+pytest-asyncio
+setuptools
+build
+wheel
+packaging
+
+[dev:sys_platform == "linux" and platform_machine == "x86_64"]
+twine

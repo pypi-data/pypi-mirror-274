@@ -1,0 +1,53 @@
+# This file is generated. Do not modify by hand.
+# pylint: disable=line-too-long, unused-argument, unused-import
+from dataclasses import dataclass, field
+from typing import List, Optional, Dict, Any, TYPE_CHECKING
+import bson
+from .can_set_state_axis_response import CanSetStateAxisResponse
+
+
+@dataclass
+class CanSetStateDeviceResponse:
+    """
+    An object containing any setup issues that will prevent setting a state to a given device.
+    """
+
+    axis_errors: List[CanSetStateAxisResponse]
+    """
+    A list of errors that block setting state of device's axes.
+    """
+
+    error: Optional[str] = None
+    """
+    The error blocking applying this state to the given device.
+    """
+
+    @staticmethod
+    def zero_values() -> 'CanSetStateDeviceResponse':
+        return CanSetStateDeviceResponse(
+            error=None,
+            axis_errors=[],
+        )
+
+    @staticmethod
+    def from_binary(data_bytes: bytes) -> 'CanSetStateDeviceResponse':
+        """" Deserialize a binary representation of this class. """
+        data = bson.loads(data_bytes)  # type: Dict[str, Any]
+        return CanSetStateDeviceResponse.from_dict(data)
+
+    def to_binary(self) -> bytes:
+        """" Serialize this class to a binary representation. """
+        return bson.dumps(self.to_dict())  # type: ignore
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            'error': self.error,
+            'axisErrors': [item.to_dict() for item in self.axis_errors],
+        }
+
+    @staticmethod
+    def from_dict(data: Dict[str, Any]) -> 'CanSetStateDeviceResponse':
+        return CanSetStateDeviceResponse(
+            error=data.get('error'),  # type: ignore
+            axis_errors=[CanSetStateAxisResponse.from_dict(item) for item in data.get('axisErrors')],  # type: ignore
+        )
