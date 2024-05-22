@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: PFlowC
+Version: 2.5.0
+Summary: https://github.com/Haoke98/FlowPilot/README.md
+Home-page: https://github.com/Haoke98/FlowPilot
+Author: Haoke98
+Author-email: BlackHaoke<Haoke98@outlook.com>
+License: MIT
+Keywords: proxy flow control
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Requires-Dist: colorlog
+Requires-Dist: click
+Requires-Dist: mitmproxy>=10.3.0
+Requires-Dist: geoip2>=4.8.0
+Requires-Dist: dnspython>=2.6.1
+
+FlowPilot ~ PFC ~ Proxy Flow Control
+========================================================
+
+ProxyFlow Control
+------------------------------
+
+A net flow pilot in order to handle some proxy configuration automatically.
+
+Usage ::
+
+    ██████╗ ███████╗██╗      ██████╗ ██╗    ██╗ ██████╗
+    ██╔══██╗██╔════╝██║     ██╔═══██╗██║    ██║██╔════╝
+    ██████╔╝█████╗  ██║     ██║   ██║██║ █╗ ██║██║
+    ██╔═══╝ ██╔══╝  ██║     ██║   ██║██║███╗██║██║
+    ██║     ██║     ███████╗╚██████╔╝╚███╔███╔╝╚██████╗
+    ╚═╝     ╚═╝     ╚══════╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝
+
+    Command line interface for Proxy Flow Controller with basic auto configurations.
+    Version: 2.5.0                    By: BlackHaoke<Haoke98@outlook.com>
+    Usage: pflow-cli [OPTIONS] COMMAND [ARGS]...
+
+    Options:
+      --help  Show this message and exit.
+
+    Commands:
+      off      Set off and clear all proxy config.
+      on       Run proxy flow controller.
+      server   Server as the Agent service for the local device in same LAN...
+      version  Version
+
+* Install:
+
+    Run ``pip install PFlowC -U`` on the shell.
+
+* start a local flow control service:
+
+    Run ``pflow-cli server`` on the shell.
+
+
+* set on the proxy setting:
+
+    Run ``pflow-cli on`` on the shell.
+
+* set off the proxy setting:
+
+    Run ``pflow-cli off`` on the shell.
+
+* Ask for Help:
+
+    Run ``pflow-cli --help`` on the shell.
