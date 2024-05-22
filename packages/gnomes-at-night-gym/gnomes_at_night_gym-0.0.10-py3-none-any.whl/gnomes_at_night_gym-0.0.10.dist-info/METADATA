@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: gnomes-at-night-gym
+Version: 0.0.10
+Summary: An environment for Gnomes at Night based on OpenAI gym.
+Author: Shenghui Chen
+Description-Content-Type: text/markdown
+Requires-Dist: gymnasium (==0.29.1)
+Requires-Dist: pygame (==2.5.2)
+Requires-Dist: numpy (==1.26.1)
+
+
+## Installation
+
+You can install the package using pip:
+
+```pip install gnomes-at-night-gym```
+
+## Usage
+
+Here is an example of how to import and create the environment:
+
+```python
+import gnomes_at_night_gym
+env = gym.make("gnomes_at_night_gym:Board9-v0-multistep", render_mode="rgb_array", round=1)
+```
+
+Then, we can use the environment by:
+```python
+# Reset the environment
+obs_n, info = env.reset(seed=1)
+done = False
+
+# Run the environment
+while not done:
+    action = env.action_space.sample()
+    obs_n, reward, terminated, truncated, info = env.step(action)
+    done = terminated or truncated
+    env.render()
+env.close()
+```
+
+## Environment Details
+### Observation Space
+Each player's observation space is a (149,) array containing:
+- `current_player` (1 value)
+- `token_pos` (2 values)
+- `flattened_walls` (144 values) &rarr; {`horizontal_walls` (8x9) + `vertical_walls` (9x8)}
+- `treasure_pos` (2 values)
+
+### Action Space
+The action space allows the following actions:
+- `-1`: Switch turn
+- `0`: Stay put
+- `1`: Move right
+- `2`: Move up
+- `3`: Move left
+- `4`: Move down
+
+
+### Coordinate System
+The maze is zero-indexed, with coordinates (x, y) where:
+- x represents the vertical axis (row)
+- y represents the horizontal axis (column)
+- Similar to traditional matrix notation
+
+Below is a visual representation of the coordinate system for a 3x3 section of the maze:
+| (x, y) | 0     | 1     | 2     |
+| ------ | ----- | ----- | ----- |
+| **0**  | (0,0) | (0,1) | (0,2) |
+| **1**  | (1,0) | (1,1) | (1,2) |
+| **2**  | (2,0) | (2,1) | (2,2) |
