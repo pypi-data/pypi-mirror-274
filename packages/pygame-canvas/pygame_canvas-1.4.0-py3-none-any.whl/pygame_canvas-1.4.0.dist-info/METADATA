@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pygame-canvas
+Version: 1.4.0
+Summary: A library for canvas operations using pygame
+Home-page: https://x.com/gioseaxmc
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+
