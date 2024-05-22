@@ -1,0 +1,29 @@
+Metadata-Version: 2.3
+Name: haystack-experimental
+Version: 0.0.1
+Summary: Experimental components and features for the Haystack LLM framework.
+Project-URL: CI: GitHub, https://github.com/deepset-ai/haystack-experimental/actions
+Project-URL: GitHub: issues, https://github.com/deepset-ai/haystack-experimental/issues
+Project-URL: GitHub: repo, https://github.com/deepset-ai/haystack-experimental
+Project-URL: Homepage, https://github.com/deepset-ai/haystack-experimental
+Author-email: "deepset.ai" <info@deepset.ai>
+License: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Freely Distributable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Requires-Dist: haystack-ai
+Description-Content-Type: text/markdown
+
+# haystack-experimental
