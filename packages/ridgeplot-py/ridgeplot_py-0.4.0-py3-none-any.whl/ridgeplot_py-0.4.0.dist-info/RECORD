@@ -1,0 +1,9 @@
+ridgeplot/__init__.py,sha256=DGL6pBLFcA4GpKBPl0-AziPLJnl9u2DioSNSW222EKY,73
+ridgeplot/colors.py,sha256=UAX5-k48tckKCSG7YmX9jC95PsxKgkIif8KoQKnCB3I,8822
+ridgeplot/dotted_heatmap.py,sha256=cih5ogNG_755LNDcai8jpTqrBXf_TAwvwdaFlBstdYo,2168
+ridgeplot/ridge_plot.py,sha256=eb6-GrUFUwdmcbLb8kd6tNL5VeItu2-OIs-PfpttdCI,3354
+ridgeplot/stats.py,sha256=-tEHDwFOrNK4X4ITIGwf8nUm7NODfTQ7jrO3C2dvsuY,687
+ridgeplot_py-0.4.0.dist-info/METADATA,sha256=uJyamEU4HW9wSuSQ8AZMbu4S2kYQYUJkYHC-Ks8PA3c,3373
+ridgeplot_py-0.4.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+ridgeplot_py-0.4.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ridgeplot_py-0.4.0.dist-info/RECORD,,
