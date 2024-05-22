@@ -1,0 +1,9 @@
+bitoproClient/bitopro_indicator.py,sha256=MKvOsM-WrnATFBLbJgKZC6RB9QKMMxh7rSzoE0ci9xI,2316
+bitoproClient/bitopro_restful_client.py,sha256=Y-Hf6h4E_-g82_MGYU4uNwHPc48MegiqPX0Zc-jclUY,21319
+bitoproClient/bitopro_util.py,sha256=junpKoFmmjdV_5AaJdVqyOxtYNbIMgCjfKgNvLI82-Y,660
+bitoproClient/bitopro_websocket_client.py,sha256=EzOnETHbwX_TjpCYj0ZZJ8v2F_xf8lwPpj35lr8inoQ,4575
+bitopro_client-1.0.5.dist-info/LICENSE,sha256=FrDj4QFkYyLJ1Y9i1o0mtsyunv1RKds3zuOtmAyY0ds,1084
+bitopro_client-1.0.5.dist-info/METADATA,sha256=6HihOkkkWuGp3ixx14jXyA1I7Bh_Uf06M3ESYtWDNcQ,456
+bitopro_client-1.0.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+bitopro_client-1.0.5.dist-info/top_level.txt,sha256=yDh1RZZb2LIVJ8IvosamruCBou5Mnf9k5KVPkKpW3DY,14
+bitopro_client-1.0.5.dist-info/RECORD,,
