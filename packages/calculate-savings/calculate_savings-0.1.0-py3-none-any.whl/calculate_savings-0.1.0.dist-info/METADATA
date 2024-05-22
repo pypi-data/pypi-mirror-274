@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: calculate-savings
+Version: 0.1.0
+Summary: How much can you save in 10 years by predicting your salary?
+Home-page: https://github.com/takenakayuuki0901/calculate_savings.git
+Author: YukiTakenaka
+Author-email: s2222024@stu.musashino-u.ac.jp
+Project-URL: Bug Tracker, https://github.com/takenakayuuki0901/calculate_savings.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Using data from the Monthly Survey of Labour Statistics, it predicts salaries after 10 years using linear regression in scikit-learn, based on 55 years of salaries. It also takes cost of living and extra expenses as inputs and predicts the amount of money saved in 10 years' time.
