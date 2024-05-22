@@ -1,0 +1,40 @@
+Metadata-Version: 2.3
+Name: HiggsML
+Version: 0.0.6
+Summary: A Black Swan test package
+Project-URL: Homepage, https://github.com/blackSwanCS/black_swan_pkg
+Project-URL: Issues, https://github.com/blackSwanCS/black_swan_pkg/issues
+Author-email: Ragansu Chakkappai <ragansu.chakkappai@universite-paris-saclay.fr>, David Rousseau <david.rousseau@uijclab.in2p3.fr>, "V. Estrade" <v.estrade@centralesupelec.fr>, Ihsan Ullah <ihsan.ullah@universite-paris-saclay.fr>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: setuptools
+Requires-Dist: wget
+Description-Content-Type: text/markdown
+
+# HiggsML BlackSwan Package
+
+you can install this package by 
+```shell
+pip install HiggsML
+```
+
+The Package consists of 5 modules :
+
+* 1 `ingestion`: This module contains the `Ingestion` class which takes case of the ingestion process of the competition. i.e. loading data into the model, initialization of the model, prediction etc. 
+* 2 `datasets` This module contains the `Data` class which has the train and test data in required formats, It loads the data according to the file format. it also contains function to make pseudo experiments. 
+* 3 `systematics` This module has functions to add systematics to the data with based in Neusance parameter like 
+    * Tau Hadron Energy scale
+    * Jet Energy Scale 
+    * Soft MET
+    * W Background Normalisation
+    * Overall Background Normalisation 
+* 4 `visualisation` This module contains the `Dataset_visualise` class which has methods to help visualise the data 
