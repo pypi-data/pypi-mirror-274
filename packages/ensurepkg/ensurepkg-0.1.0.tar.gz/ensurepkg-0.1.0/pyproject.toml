@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ensurepkg"
+description = "A minimal package to ensure pip-managed packages on import. Oriented towards scripting in local environments"
+readme = "README.md"
+version="0.1.0"
+authors = [
+  "Yuichiro Smith <yu-ichiro@s3i7h.com>",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: MIT License",
+  "License :: OSI Approved :: Apache-2.0 License",
+]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/s3i7h/python-ensurepkg"
+Repository = "https://github.com/s3i7h/python-ensurepkg.git"
+Issues = "https://github.com/s3i7h/python-ensurepkg/issues"
+
+[tool.poetry.dependencies]
+python = ">=3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
