@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: tinkoff-acquiring
+Version: 0.1.3
+Summary: A Python client for Tinkoff Acquiring API
+Home-page: https://github.com/sm1ky/tinkoff_acquiring
+Author: Artem
+Author-email: support@sm1ky.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+
+# Tinkoff Acquiring
+
+A Python client for Tinkoff Acquiring API.
+
+## Installation
+
+```sh
+pip install tinkoff_acquiring
+```
+
+Use python version >= 3.10
+
+Contant with me - support@sm1ky.com or t.me/sm1ky
+
+I will be very grateful to your star for this repository <3
+
+Project on PyPi - https://pypi.org/project/tinkoff-acquiring/
