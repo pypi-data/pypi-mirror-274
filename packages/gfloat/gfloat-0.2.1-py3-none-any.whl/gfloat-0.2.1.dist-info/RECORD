@@ -1,0 +1,12 @@
+gfloat/__init__.py,sha256=ePTR6ov0JqLeYLP4CJyjqFsfuSQBh__M7hVT6_WoUy4,543
+gfloat/block.py,sha256=-gp9QKTp1DLFv8oCZdhQIJambvLCfR-HUFqNyPWFod4,5616
+gfloat/decode.py,sha256=TAaLAGSEKMr0B6J1JLh7x7EjQEBDlDSz4zhtwfdGbKE,2815
+gfloat/formats.py,sha256=aUnIReJTdBKR1jC-tgW75vouvm7J6cXXsGBRgrjFHVc,5235
+gfloat/printing.py,sha256=ee0YcsNyBGKeH7PJGPP40-hYBV2Isl5H9X0Zchjtg5Q,1586
+gfloat/round.py,sha256=96_t3yQsscLo5lqppek8v16vrrL-so4UQXX5Sd8A4HU,6556
+gfloat/types.py,sha256=Pk5raUOPoKG7OnD-Ew26CqRNWZrQWAYdqPG-x3LuvJQ,11982
+gfloat-0.2.1.dist-info/LICENSE,sha256=_fFQN-SGqmeCqm20DSzyKqET9V8-cLLZkTE1cDTjcis,1093
+gfloat-0.2.1.dist-info/METADATA,sha256=ZpgHNITiHyaWiKBf2BgyDih2OVcNFy0Sa2lSy1UEfzM,3633
+gfloat-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gfloat-0.2.1.dist-info/top_level.txt,sha256=jiT_C06Gn0ESnNsa1PgprasU_eRidOnEs6mnr7yn0Hk,7
+gfloat-0.2.1.dist-info/RECORD,,
