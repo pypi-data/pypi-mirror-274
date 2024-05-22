@@ -1,0 +1,16 @@
+islabtech_upw_sensor_v1/__init__.py,sha256=Asr8ghW84k3NVe8rCI74-8ajDyKdmdALg4LB7BoI_XI,651
+islabtech_upw_sensor_v1/system_status.py,sha256=Uy9Wyg2IofGXgW_a1Fh7VxfOa_xNdHDnakLLQZ36If4,2322
+islabtech_upw_sensor_v1/_devices/__init__.py,sha256=uj3PBMZOizNhpFGvqVyA_Gfz59vIzSNvjuBNWhsMXX0,2568
+islabtech_upw_sensor_v1/_devices/_implementations/__init__.py,sha256=Wt8rk8DOfrZSJolcA2eXhg3BzQutk_onCSuV6jcpaH0,768
+islabtech_upw_sensor_v1/_devices/_implementations/interface.py,sha256=riSP2zzBZZOVzLtyoRz3EU1NP-dPiOSRa2LSIshXPJ8,2270
+islabtech_upw_sensor_v1/_devices/_implementations/network.py,sha256=KarWl6ICO-TXioZaQKjIwZ9m8Bhdq0uKbaHDgbBhDNA,3427
+islabtech_upw_sensor_v1/examples/0100 getting started.ipynb,sha256=Z6WmzCLAhLMozZRl-mgCL10I5SwdiuXCtaOJaM6MHRc,3748
+islabtech_upw_sensor_v1/examples/0100 getting started.py,sha256=BiA-vjf7Nw7FRFkXxUJiq2LQ2WGi7BuuNAj1biDct3E,332
+islabtech_upw_sensor_v1/examples/0200 fetch metadata.ipynb,sha256=pq8fct2PeZgIoGIQawVadVpVxT-8dcLPx8t_TYGRQIo,2736
+islabtech_upw_sensor_v1/examples/0200 fetch metadata.py,sha256=wI5s5Gz4SvvzMM-MZvCbEi50wz9HrcOGPPa-w93_1hg,349
+islabtech_upw_sensor_v1/measurements/__init__.py,sha256=IrJNyduH5brSHsdjjqjTPIMo0ibbiuN4HJBvN3AbDH8,2613
+islabtech_upw_sensor_v1-0.1.1.dist-info/METADATA,sha256=dU9PVfmd5Pp2JdKZRGUViiQcWNaZCAJs1H4EqETMpSY,1564
+islabtech_upw_sensor_v1-0.1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+islabtech_upw_sensor_v1-0.1.1.dist-info/licenses/LICENSE.txt,sha256=kzLNw4mrsy87K-CX7qnA5iBx9WaKkrXzAm3lBZZTo0U,10969
+islabtech_upw_sensor_v1-0.1.1.dist-info/licenses/NOTICE.txt,sha256=8LzZuwA05E6gJhbvk0LS--uEjD5R3rSPN7esDreUhho,589
+islabtech_upw_sensor_v1-0.1.1.dist-info/RECORD,,
