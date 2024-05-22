@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: make2check
+Version: 0.2.2
+Summary: Tool to check the dependencies of a Makefile
+Home-page: https://github.com/pyscaffold/pyscaffold/
+Author: Eelco van Vliet
+Author-email: 
+License: MIT
+Project-URL: Documentation, https://pyscaffold.org/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+Requires-Dist: colorama
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+.. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
+    :alt: Project generated with PyScaffold
+    :target: https://pyscaffold.org/
+
+|
+
+==========
+make2check
+==========
+
+
+    Tool to check the dependencies of a Makefile
+
+
+This tool can be used to check the dependencies of a Makefile
+
+
+.. _pyscaffold-notes:
+
+Note
+====
+
+This project has been set up using PyScaffold 4.2.1. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
