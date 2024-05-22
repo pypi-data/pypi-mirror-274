@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: weatherlink2pg
+Version: 0.1.0.dev0
+Summary: Simple python app to store weatherlink data into PostgreSQL through API
+Home-page: https://github.com/lpoaura/weatherlink2pg/
+License: AGPL-3.0-or-later
+Keywords: WeatherLink
+Author: Johan Rocheteau
+Author-email: johan.rocheteau@hotmail.fr
+Maintainer: Johan Rocheteau
+Maintainer-email: johan.rocheteau@hotmail.fr
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Software Distribution
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: psycopg2 (>=2.9.9,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.29,<3.0.0)
+Requires-Dist: tqdm (>=4.66.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Weatherlink2pg
+
+A very simple app to download weatherlink data into a postgresql database through API.
+
+## usage
+
+## Installation
+
+```sh
+pip install weatherlink2pg
+```
+
+## Usage
+
+See help
+
+```sh
+weatherlink2pg --help
+```
+
