@@ -1,0 +1,9 @@
+README.md
+setup.py
+senweaver/__init__.py
+senweaver/__version__.py
+senweaver/core.py
+senweaver.egg-info/PKG-INFO
+senweaver.egg-info/SOURCES.txt
+senweaver.egg-info/dependency_links.txt
+senweaver.egg-info/top_level.txt
