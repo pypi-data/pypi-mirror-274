@@ -1,0 +1,51 @@
+[![PyPI version](https://badge.fury.io/py/NurmoAI.svg)](https://pypi.org/project/NurmoAI/)
+
+# NurmoAI
+
+NurmoAI is a Python client library for interacting with the NurmoAI chat API, facilitating the integration of Character AI chat functionalities into your Python applications.
+
+## Installation
+
+Install NurmoAI using pip:
+
+```sh
+pip install nurmoai
+```
+
+# Usage
+
+To use NurmoAI, you will need an API key from https://nurmo.app. Visit the Official Website to obtain your API key. Once you have it, you can begin making API requests to interact with NurmoAI’s AI.
+
+```py
+from nurmoai import nurmoai
+
+nurmo = nurmoai(api_key="your_NurmoAI_api_key")
+
+def main():
+    ai_response = nurmo.create_completion(
+        messages=[{"role": "user", "content": "Say this is a test"}],
+        model="nurmo-3",
+        character="Villain"
+    )
+
+    print(ai_response)
+
+if __name__ == "__main__":
+    main()
+```
+
+# Features
+
+- Easy initialization and configuration with environment variables or direct options
+- Much cheaper than the official API
+- Access to all our Characters and ability to make own
+- Fast responses for most requests, typically within 1ms
+- A simplified method to create chat completions with the NurmoAI API
+
+# Documentation
+
+For more information about the NurmoAI API and its capabilities, please visit the NurmoAI [Official Docs](https://docs.nurmo.app).
+
+# Pricing
+
+Get access to high messages per minute for as cheap as 5$ per month at [Official Website](https://nurmo.app)

@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+nurmoai/__init__.py
+nurmoai/nurmoai.py
+nurmoai.egg-info/PKG-INFO
+nurmoai.egg-info/SOURCES.txt
+nurmoai.egg-info/dependency_links.txt
+nurmoai.egg-info/requires.txt
+nurmoai.egg-info/top_level.txt
