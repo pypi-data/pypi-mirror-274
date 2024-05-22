@@ -1,0 +1,2 @@
+recursive-include include/a *.h*
+recursive-include python/src *
