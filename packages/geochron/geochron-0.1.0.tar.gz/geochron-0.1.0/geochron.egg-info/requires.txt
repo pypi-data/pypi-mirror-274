@@ -1,0 +1,4 @@
+geostructures<1.0,>=0.8.1
+h3<4,>=3.7
+numpy<2,>=1
+pandas<3,>=2
