@@ -1,0 +1,2 @@
+[console_scripts]
+seismometer = seismometer.builder:main_cli
