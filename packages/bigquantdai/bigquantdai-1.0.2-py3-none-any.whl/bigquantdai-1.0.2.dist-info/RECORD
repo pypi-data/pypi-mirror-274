@@ -1,0 +1,8 @@
+bigquantdai/__init__.py,sha256=ZTipNH6wyC6qsq1H_lZsvJyVruUa1nu3y4EysMdkpuU,22
+bigquantdai/_client.py,sha256=C2u7UIHRO52cNhG3sDcssFf92FvzbXI6cAUNwAdoMVY,4462
+bigquantdai/_constant.py,sha256=zg_Dxd3ZjHVN5bf2Qy1X6Km91XTkkICp5L4-FM0OMYM,462
+bigquantdai/dai.py,sha256=0F24Q553qUUc64tLeW4bt_pw53OM-4zjTECtl1oKFM8,3150
+bigquantdai-1.0.2.dist-info/METADATA,sha256=H2ThGI40PKMM3WMCo_Jgdf0evcVVjNxyNgaiqQ-m7AE,2773
+bigquantdai-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bigquantdai-1.0.2.dist-info/top_level.txt,sha256=a8A8ac1C0hRa3Kxd7Mx1-eMKzfic47cc5fDEBbYOsts,12
+bigquantdai-1.0.2.dist-info/RECORD,,
