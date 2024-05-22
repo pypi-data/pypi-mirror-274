@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: remla24-team7-app
+Version: 0.0.2
+Summary: App for assigment 2 of REMLA
+Home-page: https://github.com/remla24-team7/app
+Author: Arjun Vilakathara
+Keywords: frontend,backend
+Description-Content-Type: text/markdown
+
+# app
+
+This is the repository for the app of Assigment 2. 
+
+The frontend is in the frontend folder and the backend is just `app.py`. 
+
+Entering a URL and clicking "Predict" in the web frontend queries the `app-service` backend, which then communicates with `model-service` to retrieve the prediction. The prediciton is then shown on the website. Make sure to have `model-service` running and configured (`MODEL_SERVICE_URL`) for this backend to work.
