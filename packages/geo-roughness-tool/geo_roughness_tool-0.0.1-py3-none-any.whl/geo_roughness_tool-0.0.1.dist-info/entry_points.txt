@@ -1,0 +1,4 @@
+[console_scripts]
+demcli = geo_roughness_tool.old_entry_points.demcli:main
+demgui = geo_roughness_tool.old_entry_points.demgui:main
+georough = geo_roughness_tool.main:main
