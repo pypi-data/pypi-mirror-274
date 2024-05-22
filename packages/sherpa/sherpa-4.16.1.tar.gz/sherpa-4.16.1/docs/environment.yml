@@ -1,0 +1,21 @@
+name: sherpa
+
+channels:
+  - conda-forge
+  - astropy
+
+dependencies:
+  - bison
+  - python=3.10
+  - numpy
+  - pandoc
+  - matplotlib
+  - astropy
+  - pip
+  - graphviz
+  - pip:
+    - ipykernel
+    - nbsphinx
+    - sphinx-astropy
+    - sphinx_rtd_theme>=1.0.0
+    - bokeh
