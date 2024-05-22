@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: nfdi4culture
+Version: 0.2
+Summary: This package provides a Python interface to the NFDI4Culture infrastructure.
+Home-page: https://nfdi4culture.de/
+License: MIT
+Author: Etienne Posthumus
+Author-email: ep@epoz.org
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: validators (>=0.28.1,<0.29.0)
+Description-Content-Type: text/markdown
+
+# Culture Python Package
+
+Latest schema.org : https://schema.org/version/latest/schemaorg-current-https.jsonld
+
+# NFDI4Culture
+
+This is a placeholder for the Python tools being developed to manage the infrastructure of [NFDI4Culture](https://nfdi4culture.de/)
+
+Example:
+
+```python
+from nfdi4culture import cto
+from lidolator import from_file
+
+item = cto.Item()
+
+item.datafeed = "https://nfdi4culture.de/id/E5320"
+# Or should we have cto.DataFeed("https://nfdi4culture.de/id/E5320") and the rest happens from there?
+# either of the above will set things like .publisher on the Item too.
+# and create the relevant schema.DataFeedItem and schema.DataFeed triples?
+
+item.sourcefile = "http://foo.com/bar/baz.oai-pmh?id=123456"
+
+# the update method expects a dict with key-value mappings
+# the cto.Item objet knows how to map a key and value to the relevant fields.
+# How do we specify this field mapping?
+# And do we split it into a NamedNode/Literal difference?
+item.update(from_file(filepath))
+
+item.ntriples()
+# or
+item.turtle()
+```
+
+# TODO
+
+- [ ] JS is working on scraper
+
+## Open Discussion Points
+
+Should we use RDFlib? While it is very much a "batteries included" package, for large datasets (which we increasingly want to create) it is just too slow.
+
