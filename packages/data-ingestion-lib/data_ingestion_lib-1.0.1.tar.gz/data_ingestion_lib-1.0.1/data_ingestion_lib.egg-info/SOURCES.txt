@@ -1,0 +1,5 @@
+setup.py
+data_ingestion_lib.egg-info/PKG-INFO
+data_ingestion_lib.egg-info/SOURCES.txt
+data_ingestion_lib.egg-info/dependency_links.txt
+data_ingestion_lib.egg-info/top_level.txt
