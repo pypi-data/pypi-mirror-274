@@ -1,0 +1,3 @@
+pyCryptodomex
+requests
+cryptography
