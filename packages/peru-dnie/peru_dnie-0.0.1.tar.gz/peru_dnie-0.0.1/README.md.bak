@@ -1,0 +1,94 @@
+# Peru DNIe
+
+Peru DNIe is a cli app to help you run cryptographic operations with your
+peruvian electronic DNI (national identity document) v2.
+
+## Getting started
+
+Currently, this script only supports linux distributions. You will need a USB
+SmartCard reader to connect your DNIe. Most readers on AliExpress should work.
+I've used this one, [ZoweeTek successfully](https://es.aliexpress.com/item/32222806111.html?spm=a2g0o.detail.pcDetailBottomMoreOtherSeller.18.34d1RvABRvABIW&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=4b0b3ecc-022f-4424-99ea-077d1f5a0ced&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:4b0b3ecc-022f-4424-99ea-077d1f5a0ced,tpp_buckets:668%232846%238110%231995&isseo=y&pdp_npi=4%40dis%21PEN%2142.04%2110.30%21%21%2110.90%212.67%21%402101e7f617098241588065532ec86d%2112000031130620577%21rec%21PE%21%21AB&utparam-url=scene%3ApcDetailBottomMoreOtherSeller%7Cquery_from%3A),
+succesfully.
+
+To install this package, run
+
+```console
+pip install git+https://github.com/edeustua/peru-dnie.git
+```
+This should install `peru-dnie` along with its dependencies: `attrs`, `pyscard` and `rich`.
+
+## Extracting your public x509 signing certificate
+
+The public x509 certificate contains you public RSA key, signed by Reniec, that
+proofs your identify and is used to verify your digital signatures
+
+To get the public certificate out of your DNIe v2 run with your DNIe inserted in
+the reader:
+```console
+peru_dnie extract signature my_signing_certificate.pem
+```
+
+This command will create a file `my_signing_certificate.pem` which contains your
+x509 certificate and public key.
+
+You can check the contents of this file with `openssl` with:
+```console
+openssl x509 -in my_signing_certificate.pem -noout -text
+
+```
+
+which will output something like this:
+```
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            36:e9:0e:66:7f:9c:ff:ee:db:5b:eb:44:7e:33:87:77:15:b5:a3:09
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=PE, O=Registro Nacional de Identificación y Estado Civil, CN=ECEP-RENIEC CA Class 2 II
+        Validity
+            Not Before: Dec 13 14:11:52 2023 GMT
+            Not After : Dec 12 14:11:52 2027 GMT
+        Subject: C=PE, ST=Lima-Lima, L=San Bartolo, OU=EREP_PN_RENIEC_26468450, SN=DEUSTUA STAHR, GN=JORGE EMILIANO, serialNumber=PNOPE-********, CN=DEUSTUA STAHR JORGE EMILIANO FIR ******** hard
+
+...
+```
+
+We can extract the public key from the certificate with the following command:
+```console
+openssl x509 -pubkey -noout -in my_signing_certificate.pem > my_signing_pubkey.pem
+
+```
+
+## Signing a file with your DNIe
+
+**NOTE**: Signing a file is legally binding. Make sure you fully agree with what
+you are signing.
+
+To explain how to sign a file using your DNIe, let's use an example file called
+`statement.txt` with the follwing content:
+
+```
+Hereby, I state that this software is open source.
+```
+
+We can produce a digital signature by running:
+
+```console
+peru_dnie sign statement.txt statement.txt.sig
+
+DNIe V2 encontrado
+Por favor, introduce tu PIN:
+```
+
+Make sure you enter the PIN number that you configured when you obtained your
+DNIe.
+
+The resulting file `statement.txt.sig`, is now a proof that you signed the
+`statement.txt` file.
+
+To verify your signature, you can run this `openssl` command:
+```console
+openssl dgst -sha256 -verify my_signing_pubkey.pem -signature statement.txt.sig statement.txt
+```
+
