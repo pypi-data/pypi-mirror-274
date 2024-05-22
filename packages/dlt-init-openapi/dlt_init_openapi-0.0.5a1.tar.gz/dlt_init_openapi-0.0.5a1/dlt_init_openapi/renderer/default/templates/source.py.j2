@@ -1,0 +1,94 @@
+from typing import List
+
+import dlt
+from dlt.extract.source import DltResource
+
+from rest_api.typing import RESTAPIConfig
+from rest_api import rest_api_source
+
+
+@dlt.source(name="{{source_name}}", max_table_nesting=2)
+def {{ source_name }}(
+        {% if credentials %}
+        {{ credentials.detected_secret_name }}: str = dlt.secrets.value,
+        {% endif %}
+        base_url: str = dlt.config.value,
+) -> List[DltResource]:
+
+    # source configuration
+    source_config: RESTAPIConfig = {
+        "client": {
+            "base_url": base_url,
+            {% if credentials %}
+            "auth": {
+                {{ credentials.detected_auth_vars }}
+            },
+            {% endif %}
+            {% if global_paginator_config %}
+            "paginator": {
+                {% for key, value in global_paginator_config.items() %}
+                "{{key}}":
+                    {% if value is integer %}
+                    {{value}},
+                    {% else %}
+                    "{{value}}",
+                    {% endif %}
+                {% endfor %}
+            },
+            {% endif %}
+        },
+        "resources": 
+        [
+        {% for endpoint in endpoint_collection.all_endpoints_to_render %}
+        {
+            "name": "{{ endpoint.detected_resource_name }}",
+            "table_name": "{{ endpoint.detected_table_name }}",
+            {% if endpoint.primary_key %}
+            "primary_key": "{{ endpoint.primary_key }}",
+            "write_disposition": "merge",
+            {% if endpoint.id in endpoint_collection.endpoint_ids_to_deselect %}
+            "selected": False,
+            {% endif %}
+            {% endif %}
+            "endpoint": {
+                "data_selector": "{{ endpoint.data_json_path }}",
+                "path": "{{endpoint.path }}",
+                {% if endpoint.transformer or endpoint.unresolvable_path_param_names or endpoint.unresolvable_query_param_names %}
+                "params": {
+                    {% if endpoint.transformer %}
+                    {% for key, value in endpoint.transformer.path_params_mapping.items()%}
+                    "{{key}}": {
+                        "type": "resolve",
+                        "resource": "{{endpoint.parent.detected_resource_name }}",
+                        "field": "{{value}}",
+                    },
+                    {% endfor %}
+                    {% endif %}
+                    {% for param_name in endpoint.unresolvable_path_param_names %}
+                    "{{param_name}}": "{{ endpoint.default_for_param('path', param_name) }}", # TODO: fill in path parameter
+                    {% endfor %}
+                    {% for param_name in endpoint.unresolvable_query_param_names %}
+                    {% if not endpoint.is_query_param_required(param_name) %}# {% endif %}"{{param_name}}": "{{ endpoint.default_for_param('query', param_name) }}", # TODO: fill in query parameter
+                    {% endfor %}
+                },
+                {% endif %}
+                {% if endpoint.render_pagination_args %}
+                "paginator": {
+                    {% for key, value in endpoint.render_pagination_args.items() %}
+                    "{{key}}":
+                        {% if value is integer %}
+                        {{value}},
+                        {% else %}
+                        "{{value}}",
+                        {% endif %}
+                    {% endfor %}
+                },
+                {% endif %}
+            }
+        },
+        {% endfor %}
+        ]
+    }
+
+    return rest_api_source(source_config)
+
