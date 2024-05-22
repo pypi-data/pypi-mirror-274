@@ -1,0 +1,9 @@
+masina/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+masina/auto.py,sha256=UQQA7StF-YDm3lxEMUSGiUJjj0HE99tk4K9zmjnEmac,10836
+masina/control.py,sha256=Dhnl93SVFrqgkfFOLtUWyaxdLDvbGgkO4fpJvCghdWc,590
+masina/gui_desktop.py,sha256=okZSFV1L9gPb72yK85RTiCB9xyIRhCaIgnvES8B6F70,27239
+masina/online.py,sha256=het5UWG_x4qnwIvl-vLGCScDdLlDaKwH7GjXg-2YXG8,16336
+masina-0.0.1.dist-info/METADATA,sha256=4jXCeCIG14eBF7nEsxXSpqrNfkL5Oz9uu4j6lNUc9Lw,666
+masina-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+masina-0.0.1.dist-info/top_level.txt,sha256=AqF3sIg9Oo_MfD6PiSCMKeTh4cZm4CipjUUvbm4Ih8g,7
+masina-0.0.1.dist-info/RECORD,,
