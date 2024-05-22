@@ -1,0 +1,6 @@
+pyproject.toml
+scystream/__init__.py
+scystream.egg-info/PKG-INFO
+scystream.egg-info/SOURCES.txt
+scystream.egg-info/dependency_links.txt
+scystream.egg-info/top_level.txt
