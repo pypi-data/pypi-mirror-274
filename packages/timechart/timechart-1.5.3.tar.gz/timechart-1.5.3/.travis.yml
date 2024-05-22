@@ -1,0 +1,84 @@
+language: python
+sudo: required
+
+env:
+  global:
+    - OFFICIAL_REPO="slaclab/timechart"
+    # Doctr deploy key for slaclab/timechart
+    - secure: "Dy2ZOHhHQvk3S1nbdGqEFcCiKLw6FWEhuRC9wAsZLI622bh/SZU0iBrQ64iDtrtujC2sq3cuiTYipM1WyUwGxiqr45BFb5HISSv5qIJz1Kr4+MJE8Ygzk1aMZ8Wh5OmEeXsUw9IcSQzX6WY5gqlDBTyA5NPebYidZ5P+OYlbKmvySGgSAh6zvSPWhtbj5OVSUgt3sbtlCIyMglH8XzvMpyeoH4MlQBh420Q0LKCSs4GNrzrHXgJLkHtIrV5oVn3GXF9QuxGxAKl5w2adl9WjJET3iXSu8YLUeMGvEDlHAysQX3Kvfyoxy2nUedg7LiV/pP6hEGxdBdyQK0iWqjEOQ9Qupf+ZBLAF/FS0EvoggoY9/PfxJZfcu3ZNaPC5+2zhEcdFvbqgu414O46+ojXady5JotoiPhfKHObZVdklJF7hEY1Vk0+KKqf0GdoZ7rG/y1MxDc0Cpx99UZ1EjOkHGMpvYBGDwJLbAQ3XxdWl4UZDk/eOwaBXqpD84E1cNzZdVxMwqyyIK3R8PycDMoycSGYURaS+kHH0ZhYqL+AlUe8u2KjimIpdzVs/8fC6DAxD3EsjnynSL4C6JwRM+z4kjCMJrYOURx6v4T50ZpfrO9tbqiqr/K/Li1QX03ILw8GzFaiwjw69Suz20su6YzhMJDdlKKy/rdbKGCxTOR33jjM="
+
+matrix:
+  include:
+    - python: 2.7
+      env: PYDM_CHANNEL=pydm-tag
+    - python: 3.6
+      env:
+        - BUILD=1
+        - PYDM_CHANNEL=pydm-tag
+    - python: 3.7
+      dist: xenial
+      env: PYDM_CHANNEL=pydm-tag
+
+install:
+  - sudo apt-get update
+  # Install windows manager
+  - sudo apt-get install -y xvfb herbstluftwm
+  # We do this conditionally because it saves us some downloading if the
+  # version is the same.
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda install conda-build anaconda-client
+  - conda update -q conda conda-build
+  - conda config --add channels $PYDM_CHANNEL
+  - conda config --append channels pydm-tag
+  - conda config --append channels conda-forge
+  # Useful for debugging any issues with conda
+  - conda info -a
+  # Grab all dependencies
+  - conda build -q conda-recipe --python=$TRAVIS_PYTHON_VERSION --output-folder bld-dir
+  - conda config --add channels "file://`pwd`/bld-dir"
+  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION timechart --file dev-requirements.txt
+  # Launch Conda environment
+  - source activate test-environment
+
+before_script:
+  # Taken from docs.travis-ci.com/user/gui-and-headless-browsers
+  - "export DISPLAY=:99.0"
+  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -screen 0 1920x1200x24 -ac +extension GLX +render -noreset"
+  - sleep 3 # give xvfb some time to start
+  # Run windows manager
+  - "herbstluftwm &"
+  - sleep 1
+
+script:
+  - coverage run run_tests.py --disable-warnings
+  - coverage report -m
+  # Build docs
+  - set -e
+  - |
+    if [[ -n "$DOCTR_DEPLOY_ENCRYPTION_KEY_SLACLAB_TIMECHART" && $BUILD ]]; then
+      # Create HTML documentation
+      pip install -r docs-requirements.txt
+      pushd docs
+      make html
+      popd
+      #Publish docs.
+      doctr deploy . --built-docs docs/build/html --deploy-branch-name gh-pages
+    fi
+after_success:
+  - codecov
+  - |
+    if [[ $TRAVIS_PULL_REQUEST == false && $TRAVIS_REPO_SLUG == $OFFICIAL_REPO && $TRAVIS_BRANCH == $TRAVIS_TAG  && $TRAVIS_TAG != '' && $BUILD && $CONDA_UPLOAD_TOKEN_TAG != '' ]]; then
+      export ANACONDA_API_TOKEN=$CONDA_UPLOAD_TOKEN_TAG
+      anaconda upload bld-dir/linux-64/*.tar.bz2
+    fi
+  - |
+    if [[ $TRAVIS_PULL_REQUEST == false && $TRAVIS_REPO_SLUG == $OFFICIAL_REPO && $TRAVIS_BRANCH == 'master' && $BUILD && $CONDA_UPLOAD_TOKEN_DEV != '' ]]; then
+      export ANACONDA_API_TOKEN=$CONDA_UPLOAD_TOKEN_DEV
+      anaconda upload bld-dir/linux-64/*.tar.bz2
+    fi
+after_failure:
+  - cat logs/run_tests_log.txt

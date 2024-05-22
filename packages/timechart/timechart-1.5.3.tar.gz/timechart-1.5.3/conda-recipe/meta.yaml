@@ -1,0 +1,41 @@
+{% set package_name = "timechart" %}
+{% set import_name = "timechart" %}
+{% set version = load_file_regex(load_file=os.path.join(import_name, "_version.py"), regex_pattern=".*version = '(\S+)'").group(1) %}
+
+package:
+  name: {{ package_name }}
+  version: {{ version }}
+
+source:
+  path: ..
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+
+
+
+requirements:
+  build:
+  - python
+  - pydm >=1.6.0
+  - setuptools_scm
+  - pip
+  run:
+  - six
+  - python
+  - pydm >=1.6.0
+
+
+
+test:
+  imports:
+  - timechart
+
+
+
+about:
+  home: https://github.com/slaclab/timechart
+  license: SLAC Open License
+  summary: Charting Tool based on PyDM
