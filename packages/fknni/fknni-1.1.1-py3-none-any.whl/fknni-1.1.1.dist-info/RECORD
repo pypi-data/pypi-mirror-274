@@ -1,0 +1,7 @@
+fknni/__init__.py,sha256=ES_7NVK4Z5Ns84S10IMN9i8sQIcPakSm4Giz87YTXqE,125
+fknni/faiss/__init__.py,sha256=oafLa4bmZ8WoUn8lniQ155TWXhp-x2DiZV0Wr4oc474,32
+fknni/faiss/faiss.py,sha256=HxRCIECcCCeBiSIhEDX6b_5I9hebn7faZOoaJO_H4zg,4973
+fknni-1.1.1.dist-info/LICENSE,sha256=aezTLYk57-PsHmb1x0VOI2fSyxgsApfelYTVqvgovy8,10798
+fknni-1.1.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+fknni-1.1.1.dist-info/METADATA,sha256=cbQdeypdQbA33NjHq6nht7MM6WUwRH7pGnU3b1cWinM,2872
+fknni-1.1.1.dist-info/RECORD,,
