@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: scraped
+Version: 0.0.4
+Summary: Tools for scraping
+Home-page: https://github.com/thorwhalen/scraped
+Author: Thor Whalen
+License: mit
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# scraped
+Tools for scraping
+
+
+To install:	```pip install scraped```
