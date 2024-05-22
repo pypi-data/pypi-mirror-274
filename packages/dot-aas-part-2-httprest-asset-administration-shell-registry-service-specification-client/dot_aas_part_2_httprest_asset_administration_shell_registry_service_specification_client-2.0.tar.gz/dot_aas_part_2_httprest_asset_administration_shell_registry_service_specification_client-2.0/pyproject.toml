@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "dot-aas-part-2-httprest-asset-administration-shell-registry-service-specification-client"
+version = "2.0"
+description = "A client library for accessing DotAAS Part 2 | HTTP/REST | Asset Administration Shell Registry Service Specification"
+authors = []
+readme = "README.md"
+packages = [
+    {include = "dot_aas_part_2_httprest_asset_administration_shell_registry_service_specification_client"},
+]
+include = ["CHANGELOG.md", "dot_aas_part_2_httprest_asset_administration_shell_registry_service_specification_client/py.typed"]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = ">=0.20.0,<0.28.0"
+attrs = ">=21.3.0"
+python-dateutil = "^2.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["F", "I", "UP"]
