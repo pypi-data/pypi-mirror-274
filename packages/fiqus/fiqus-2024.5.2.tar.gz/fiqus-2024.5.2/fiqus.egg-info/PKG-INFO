@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: fiqus
+Version: 2024.5.2
+Summary: Source code for STEAM FiQuS tool
+Home-page: https://gitlab.cern.ch/steam/fiqus
+Author: STEAM Team
+Author-email: steam-team@cern.ch
+Keywords: STEAM,FiQuS,CERN
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: gmsh==4.11.1
+Requires-Dist: matplotlib==3.8.3
+Requires-Dist: Jinja2==3.1.3
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pandas==2.2.1
+Requires-Dist: pydantic==2.6.4
+Requires-Dist: ruamel.yaml==0.18.6
+Requires-Dist: scipy==1.12.0
+Requires-Dist: typing_extensions==4.10.0
+Provides-Extra: all
+Requires-Dist: gmsh==4.11.1; extra == "all"
+Requires-Dist: matplotlib==3.8.3; extra == "all"
+Requires-Dist: Jinja2==3.1.3; extra == "all"
+Requires-Dist: numpy==1.26.4; extra == "all"
+Requires-Dist: pandas==2.2.1; extra == "all"
+Requires-Dist: pydantic==2.6.4; extra == "all"
+Requires-Dist: ruamel.yaml==0.18.6; extra == "all"
+Requires-Dist: scipy==1.12.0; extra == "all"
+Requires-Dist: typing_extensions==4.10.0; extra == "all"
+Requires-Dist: markdown==3.3.7; extra == "all"
+Requires-Dist: markdown-include==0.7.0; extra == "all"
+Requires-Dist: mkdocs==1.3.1; extra == "all"
+Requires-Dist: mkdocs-material==8.5.3; extra == "all"
+Requires-Dist: mkdocstrings-python==0.7.1; extra == "all"
+Requires-Dist: mkdocs-include-markdown-plugin==3.8.1; extra == "all"
+Requires-Dist: mkdocs-git-revision-date-localized-plugin==1.1.0; extra == "all"
+Requires-Dist: griffe==0.29.1; extra == "all"
+Requires-Dist: mypy==0.971; extra == "all"
+Requires-Dist: pylint==2.15.3; extra == "all"
+Requires-Dist: pytest==7.1.3; extra == "all"
+Requires-Dist: pytest-cov==3.0.0; extra == "all"
+Requires-Dist: coverage==6.4.4; extra == "all"
+Requires-Dist: coverage-badge==1.1.0; extra == "all"
+Requires-Dist: flake8==5.0.4; extra == "all"
+Requires-Dist: setuptools==65.3.0; extra == "all"
+Provides-Extra: docs
+Requires-Dist: markdown==3.3.7; extra == "docs"
+Requires-Dist: markdown-include==0.7.0; extra == "docs"
+Requires-Dist: mkdocs==1.3.1; extra == "docs"
+Requires-Dist: mkdocs-material==8.5.3; extra == "docs"
+Requires-Dist: mkdocstrings-python==0.7.1; extra == "docs"
+Requires-Dist: mkdocs-include-markdown-plugin==3.8.1; extra == "docs"
+Requires-Dist: mkdocs-git-revision-date-localized-plugin==1.1.0; extra == "docs"
+Requires-Dist: griffe==0.29.1; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: mypy==0.971; extra == "tests"
+Requires-Dist: pylint==2.15.3; extra == "tests"
+Requires-Dist: pytest==7.1.3; extra == "tests"
+Requires-Dist: pytest-cov==3.0.0; extra == "tests"
+Requires-Dist: coverage==6.4.4; extra == "tests"
+Requires-Dist: coverage-badge==1.1.0; extra == "tests"
+Requires-Dist: flake8==5.0.4; extra == "tests"
+Provides-Extra: build
+Requires-Dist: setuptools==65.3.0; extra == "build"
+
+![FiQuS logo](https://gitlab.cern.ch/steam/fiqus/-/raw/master/docs/images/FiQuS_name_logo.svg)
+
+# Introduction
+Source code for STEAM **FiQuS** (**Fi**nite Element **Qu**ench **S**imulator).
+
+# Publications
+
+- S. Atalay et al, "An open-source 3D FE quench simulation tool for no-insulation HTS pancake coils", in Superconductor Science and Technology, doi: [10.1088/1361-6668/ad3f83](https://doi.org/10.1088/1361-6668/ad3f83)
+- A. Vitrano et al, "An Open-Source Finite Element Quench Simulation Tool for Superconducting Magnets," in IEEE Transactions on Applied Superconductivity, vol. 33, no. 5, pp. 1-6, Aug. 2023, Art no. 4702006, doi: [10.1109/TASC.2023.3259332](https://ieeexplore.ieee.org/abstract/document/10077402).
+- M. Wozniak et al, "Fast Quench Propagation Conductor for Protecting Canted Cos-Theta Magnets," in IEEE Transactions on Applied Superconductivity, vol. 33, no. 5, pp. 1-5, Aug. 2023, Art no. 4701705, doi: [10.1109/TASC.2023.3247997](https://ieeexplore.ieee.org/document/10050158).
+
+# Folder Structure
+![FiQuS folder structure](https://gitlab.cern.ch/steam/fiqus/-/raw/master/docs/images/FiQuS_folder_structure.svg)
+
+# Installation
+
+## Released version:
+```pip install fiqus```
+
+# Links
+STEAM website: https://espace.cern.ch/steam/
+
+STEAM-FiQuS website: https://espace.cern.ch/steam/SitePages/FiQuS.aspx
+
+STEAM-FiQuS documentation: https://steam-fiqus.docs.cern.ch/ 
+
+Coverage report: https://steam-fiqus.docs.cern.ch/htmlcov/ 
+
+# Contact
+steam-team@cern.ch
+
+# STEAM User Agreement
+By using any software of the STEAM framework, users agree with this document:
+https://edms.cern.ch/document/2024516
+
+(Copyright Â© 2022, CERN, Switzerland. All rights reserved.)
