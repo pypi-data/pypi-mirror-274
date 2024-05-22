@@ -1,0 +1,11 @@
+spacepacket/__init__.py,sha256=YtJLe3FHbp8PW1usWKkxDQCnjyTPEB4JFM1gsebF3_8,45
+spacepacket/constants.py,sha256=Chk8-5bjQMsvWC_7CJzeiBl6KFFdCzldcQiWiOH6s7I,340
+spacepacket/core.py,sha256=WIwN0AOk3Uh5o5TFtpjNgnKGIXTa_pKk_SwXuykuEhI,3026
+spacepacket/transport/__init__.py,sha256=irjgHFikKBQJr892QGon9W7Sy4BzEl-m7nWKrkOTPvg,30
+spacepacket/transport/base.py,sha256=nBHnQBrYmPGPBRw-ZPrZ2lGZhXosUjT5Zb5nZDog7RU,325
+spacepacket/transport/udp.py,sha256=QED3gHgXzQoUzG_J3WgPvRa6f1r4Du-QpTiZjks8LSU,2036
+spacepacket-2.0.0.dist-info/LICENSE.txt,sha256=EZZWIC_ua5yntdNyp2zyJ-Kdy7yDE0EwuYsUdtnQkr0,1066
+spacepacket-2.0.0.dist-info/METADATA,sha256=8c1dsCOSvBmv028iha6Frt4amjNGLKTvsF6Wj_17z8c,2121
+spacepacket-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+spacepacket-2.0.0.dist-info/top_level.txt,sha256=-E1S0Zwq3L_jxpSHlQqEim-rPc5dbh5bxLBTHtmr70M,12
+spacepacket-2.0.0.dist-info/RECORD,,
