@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "gsapme"
+version = "0.1.2"
+description = ""
+authors = ["Theo Demetriades"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+copulas = "^0.11.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+minversion = "8.2.0"
+testpaths = [
+    "tests"
+]
+addopts = "-ra -q"
