@@ -1,0 +1,5 @@
+lavague/contexts/openai/__init__.py,sha256=53wOX3pedGVsVTEQqhHm-YYYkF1JkwNVPY_jn9rLgbs,75
+lavague/contexts/openai/base.py,sha256=-i1Y8Uu8blqKg50LNAF8O55zp-BafUUJ2mNt3PjtKO8,2193
+lavague_contexts_openai-0.1.2.dist-info/METADATA,sha256=4QuEEgQ_LziVisMCkBqctWy1elQxr0pesc8SdQe1DyM,1418
+lavague_contexts_openai-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lavague_contexts_openai-0.1.2.dist-info/RECORD,,
