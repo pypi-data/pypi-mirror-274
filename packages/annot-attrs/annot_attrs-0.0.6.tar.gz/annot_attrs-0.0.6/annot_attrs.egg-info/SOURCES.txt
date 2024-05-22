@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+annot_attrs/__init__.py
+annot_attrs/main.py
+annot_attrs.egg-info/PKG-INFO
+annot_attrs.egg-info/SOURCES.txt
+annot_attrs.egg-info/dependency_links.txt
+annot_attrs.egg-info/top_level.txt
