@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+pazok_lib.egg-info/PKG-INFO
+pazok_lib.egg-info/SOURCES.txt
+pazok_lib.egg-info/dependency_links.txt
+pazok_lib.egg-info/top_level.txt
