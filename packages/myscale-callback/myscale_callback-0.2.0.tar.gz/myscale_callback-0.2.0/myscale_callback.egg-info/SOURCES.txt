@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+myscale_callback/__init__.py
+myscale_callback/consumer.py
+myscale_callback/handler.py
+myscale_callback/span_data.py
+myscale_callback/task_manager.py
+myscale_callback.egg-info/PKG-INFO
+myscale_callback.egg-info/SOURCES.txt
+myscale_callback.egg-info/dependency_links.txt
+myscale_callback.egg-info/requires.txt
+myscale_callback.egg-info/top_level.txt
