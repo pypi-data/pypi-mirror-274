@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: calculator_elminson
+Version: 0.0.1
+Summary: A small calculator package
+Author-email: Elminson De Oleo Baez <edeoleo@gmail.com>
+Project-URL: Homepage, https://github.com/elminson/python-calculator
+Project-URL: Issues, https://github.com/elminson/python-calculator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Simple Calculator Package
+
+This is a simple calculator package. It is a Python package that can be installed and used to perform basic arithmetic operations.

@@ -1,0 +1,18 @@
+[project]
+name = "calculator_elminson"
+version = "0.0.1"
+authors = [
+  { name="Elminson De Oleo Baez", email="edeoleo@gmail.com" },
+]
+description = "A small calculator package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/elminson/python-calculator"
+Issues = "https://github.com/elminson/python-calculator/issues"

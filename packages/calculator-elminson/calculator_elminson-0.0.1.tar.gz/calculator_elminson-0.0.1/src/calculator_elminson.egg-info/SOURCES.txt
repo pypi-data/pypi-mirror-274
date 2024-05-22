@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/calculator_elminson/__init__.py
+src/calculator_elminson/calculator.py
+src/calculator_elminson.egg-info/PKG-INFO
+src/calculator_elminson.egg-info/SOURCES.txt
+src/calculator_elminson.egg-info/dependency_links.txt
+src/calculator_elminson.egg-info/top_level.txt
