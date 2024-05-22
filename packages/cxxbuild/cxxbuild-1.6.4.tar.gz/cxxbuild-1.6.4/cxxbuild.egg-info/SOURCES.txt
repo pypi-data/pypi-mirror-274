@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cxxbuild/__init__.py
+cxxbuild/cxxbuild.py
+cxxbuild.egg-info/PKG-INFO
+cxxbuild.egg-info/SOURCES.txt
+cxxbuild.egg-info/dependency_links.txt
+cxxbuild.egg-info/entry_points.txt
+cxxbuild.egg-info/requires.txt
+cxxbuild.egg-info/top_level.txt

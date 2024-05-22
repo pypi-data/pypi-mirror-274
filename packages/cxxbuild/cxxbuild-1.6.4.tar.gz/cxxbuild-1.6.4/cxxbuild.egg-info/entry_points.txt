@@ -1,0 +1,2 @@
+[console_scripts]
+cxxbuild = cxxbuild:main
