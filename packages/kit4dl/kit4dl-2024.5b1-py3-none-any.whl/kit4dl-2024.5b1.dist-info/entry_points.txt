@@ -1,0 +1,2 @@
+[console_scripts]
+kit4dl = kit4dl.cli.app:run
