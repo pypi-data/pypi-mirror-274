@@ -1,0 +1,13 @@
+ip2asn/__init__.py,sha256=EuSET-cMvcnGYQXibX7EmHkqNBoGL8qNHKqbNyN3w-c,10349
+ip2asn/main.py,sha256=oL4RewOdlwUuaekG3GG8X2ejYXM77FBdfnMKhSZ8xaQ,6541
+ip2asn/main.py.~1~,sha256=yZe3fHuWw9wSk3-dkaitjJEWJE928_Hlw8i_SYP3-RY,8
+ip2asn/main.py.~2~,sha256=TBgOfaIyaM4ugI1VKfnQf3e9dOtCpoUaNW3SctfPstk,21
+ip2asn/tests/test_big_numbers_converter.py,sha256=B2n3waQfkyT-oKplC8fwnbPspIVuWWc-9BwcYkIdR-4,1366
+ip2asn/tests/test_ip2asn.py,sha256=iICOPP_nHGM-jZwqNEq1DEB4pHOfru-SQPyDakpdbGU,8645
+ip2asn/tests/test_ip2asn.py.~1~,sha256=7nd9kr3InonEuPKwFkF-1YJxtm8-UJH3_-pkPHbeNc4,78
+ip2asn-1.4.dist-info/METADATA,sha256=Hxho9nnHoMl70t9twU0IrLim5CX758TDg21fa2siFy0,2449
+ip2asn-1.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+ip2asn-1.4.dist-info/entry_points.txt,sha256=_CO09_7yZAaV8DWYIXsK0SPUxBdciKIUPNTxM0BaTOM,44
+ip2asn-1.4.dist-info/licenses/LICENSE.txt,sha256=VTmZoIeoKzTtlSoM_Auo4n8gx2RIDZzxLH93QR4JKFE,1127
+ip2asn-1.4.dist-info/licenses/LICENSE.~1~,sha256=Am9Oi7uEkp6TfuLzLg8lsInHx5ttyZtkK0YUy0V9vls,1122
+ip2asn-1.4.dist-info/RECORD,,
