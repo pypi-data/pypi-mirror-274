@@ -1,0 +1,8 @@
+synfras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synfras/config.py,sha256=fI4YYlbwtXXTnu5bZxnO4PnTsKb74bEMrHph9-xDBMQ,68
+synfras/database.py,sha256=buGkOl47MJ-bBEklHiC1G1Qr-ZMfGJerYZilmY1oHic,1513
+synfras/parallel.py,sha256=c9WLxqZU2kJhdok00IJLnkkzlFdxz6b-yKYfpF4EfN4,1189
+synfras/utils.py,sha256=Uf783YoKaJ6dplspHzem_Tk46WE6iUkr7GmNObgHq9w,816
+synfras-1.0.0.dist-info/METADATA,sha256=Ft6uR_BPGq__gGYtkbZK6UR6HTnZMruU2gBdlx1-vMA,1014
+synfras-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+synfras-1.0.0.dist-info/RECORD,,
