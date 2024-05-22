@@ -1,0 +1,16 @@
+requests
+uuid
+Image
+pillow
+protobuf
+psutil
+pynvml
+requests_toolbelt
+matplotlib
+ping3
+piexif
+gputil
+urlparser
+setuptools
+twine
+python-crontab
