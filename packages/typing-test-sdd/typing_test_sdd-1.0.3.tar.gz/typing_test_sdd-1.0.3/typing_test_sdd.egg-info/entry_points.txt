@@ -1,0 +1,2 @@
+[gui_scripts]
+typing-ctk = typing_test_sdd:start_app
