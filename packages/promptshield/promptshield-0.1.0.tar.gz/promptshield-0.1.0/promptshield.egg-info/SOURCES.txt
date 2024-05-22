@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+promptshield.egg-info/PKG-INFO
+promptshield.egg-info/SOURCES.txt
+promptshield.egg-info/dependency_links.txt
+promptshield.egg-info/top_level.txt
+propmtshield/__init__.py
