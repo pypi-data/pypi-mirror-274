@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: osint-comp
+Version: 0.2.1
+Summary: A place to keep osint files. Mainly a personal project.
+Description-Content-Type: text/markdown
+Requires-Dist: rich-click
+
+# osint-comp
+
+A place to put your osint files together. mainly a personal project
