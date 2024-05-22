@@ -1,0 +1,8 @@
+README.md
+setup.py
+commandtemplate/__init__.py
+commandtemplate/conda.py
+commandtemplate.egg-info/PKG-INFO
+commandtemplate.egg-info/SOURCES.txt
+commandtemplate.egg-info/dependency_links.txt
+commandtemplate.egg-info/top_level.txt
