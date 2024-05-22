@@ -1,0 +1,16 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+archon_bot/__init__.py
+archon_bot/__main__.py
+archon_bot/bot.py
+archon_bot/commands.py
+archon_bot/db.py
+archon_bot/permissions.py
+archon_bot/tournament.py
+archon_bot/utils.py
+images/integrations.png
+images/permissions.png
