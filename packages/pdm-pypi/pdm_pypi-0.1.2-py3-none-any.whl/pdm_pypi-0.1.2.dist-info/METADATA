@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: pdm-pypi
+Version: 0.1.2
+Summary: Example for a PyPI package build with PDM.
+Author-email: Maximilian Wessendorf <maxi-git@outlook.de>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: pytest>=8.2.1
+Description-Content-Type: text/markdown
+
+# pdm-pypi
