@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: secbulkdownload
+Version: 0.0.1
+Summary: A modified version of sectoolkit
+Home-page: https://your-repository-url
+Author: kuatroka
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: bs4==0.0.2
+Requires-Dist: pandas==2.2.2
+Requires-Dist: tqdm==4.66.4
+Requires-Dist: xmltodict==0.13.0
