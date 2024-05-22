@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gaurav
+Version: 0.1.0
+Summary: Brief description
+Home-page: https://abc.com
+Author: Gaurav Mehta
+Author-email: gewgawrav@gmail.com
+License: The Unlicense
+Project-URL: Source, https://github.com/gewgawrav/first-python-package
+Requires-Python: <3.12
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+This is a test package for first publishing

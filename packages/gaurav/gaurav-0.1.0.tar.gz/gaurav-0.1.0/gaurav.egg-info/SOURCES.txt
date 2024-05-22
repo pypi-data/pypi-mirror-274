@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+gaurav/__init__.py
+gaurav/__main__.py
+gaurav/cli.py
+gaurav.egg-info/PKG-INFO
+gaurav.egg-info/SOURCES.txt
+gaurav.egg-info/dependency_links.txt
+gaurav.egg-info/entry_points.txt
+gaurav.egg-info/requires.txt
+gaurav.egg-info/top_level.txt
