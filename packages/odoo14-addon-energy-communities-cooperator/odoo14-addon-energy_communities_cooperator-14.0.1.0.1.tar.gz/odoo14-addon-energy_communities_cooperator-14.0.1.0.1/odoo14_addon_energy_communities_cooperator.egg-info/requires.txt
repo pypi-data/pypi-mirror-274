@@ -1,0 +1,4 @@
+odoo14-addon-cooperator
+odoo14-addon-energy-communities>=14.0.9.0.0
+odoo14-addon-l10n_es_cooperator
+odoo<14.1dev,>=14.0a
