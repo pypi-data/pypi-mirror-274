@@ -1,0 +1,11 @@
+totypes/__init__.py,sha256=E59qTv9r7d2PB83N5uDdJcBUNS0C8Tcck7wLQP59AaI,424
+totypes/json_utils.py,sha256=IeWoQRBw9OUh_nn0zsdyqgTI27U5FVn5q_6_KFUxbNs,11335
+totypes/partition_utils.py,sha256=e3F0ZVeCaH50ylMBUENhvkQQcZwilYfXAZStmvbnTf8,1952
+totypes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+totypes/symmetry.py,sha256=YNaAkjtPTD3OOxT6wby5pEsm6wSmYR1vnhzMChg4B1Y,2598
+totypes/types.py,sha256=zm994TaaimOcggNb4Op7lwyDFvtDNxS3iRg8WdVIDKI,15202
+totypes-0.7.0.dist-info/LICENSE,sha256=ty6jHPvpyjHy6dbhnu6aDSY05bbl2jQTjnq9u1sBCfM,1078
+totypes-0.7.0.dist-info/METADATA,sha256=MItv0gYlvli2-5XRRhO-GmSWLhR1hekzJeu8OK74Hsk,3560
+totypes-0.7.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+totypes-0.7.0.dist-info/top_level.txt,sha256=f9yKtSNmqmOwaPSPfo8dBHxE17gZF8O2XFzRuCXj7vM,8
+totypes-0.7.0.dist-info/RECORD,,
