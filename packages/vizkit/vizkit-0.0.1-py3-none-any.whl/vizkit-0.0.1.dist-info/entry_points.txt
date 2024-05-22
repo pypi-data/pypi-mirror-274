@@ -1,0 +1,3 @@
+[console_scripts]
+vizkit=vizkit.main:main
+
