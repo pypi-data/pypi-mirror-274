@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: batorch
+Version: 1.0.54
+Summary: 'batorch' is an extension of package torch, for tensors with batch dimensions. 
+Home-page: https://github.com/Bertie97/PyZMyc/batorch
+Author: Yuncheng Zhou
+Author-email: bertiezhou@163.com
+License: MIT Licence
+Keywords: pip,pymyc,batorch,torch,batch,batched data
+Platform: any
+Description-Content-Type: text/markdown
