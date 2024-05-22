@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+qytorch/__init__.py
+qytorch/a.py
+qytorch/qconv.py
+qytorch/qlinear.py
+qytorch/qmha.py
+qytorch/qtransformer.py
+qytorch/quat_base.py
+qytorch.egg-info/PKG-INFO
+qytorch.egg-info/SOURCES.txt
+qytorch.egg-info/dependency_links.txt
+qytorch.egg-info/requires.txt
+qytorch.egg-info/top_level.txt
