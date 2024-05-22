@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: jaanca
+Version: 0.1.0
+Summary: A tool library created by jaanca.
+Home-page: https://github.com/jaanca/python-libraries/tree/main/jaanca
+Author: Andres Cardona
+Author-email: jacardona@outlook.com
+License: MIT License
+Keywords: python tools,libraries
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# What libraries
+
+* **Python library**: A tool library created by jaanca.
+
+---
+
+# Here is a non-exhaustive list of related packages:
+
+- [jaanca-chronometer](https://pypi.org/project/jaanca-chronometer/) : jaanca's helper chronometer
