@@ -1,0 +1,14 @@
+cortexquest/__init__.py,sha256=Q4CkQRgdfzRdq2fns8FwACDvHdzmKqOwOEX3AmcdEJQ,128
+cortexquest/cli.py,sha256=DaXGp_YMTLnRau_y3p2wxWf_s5H1A13ozWIy6p-pqfs,418
+cortexquest/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cortexquest/core/data_manager.py,sha256=AIeEgRmzzUyHGC7OkzMDT8kXV3on37CO9jDLEffgLuQ,467
+cortexquest/core/google_auth.py,sha256=anHqjVEhsIzF-PLDX7jfEprpsPEwLntjxdvhuWmlIwg,208
+cortexquest/core/sheet_loader.py,sha256=YllDDlYIiqshRKwEvOkaDBRLovG0LIwPSh-KSKVCfHo,654
+cortexquest/core/translator.py,sha256=7VqlXNsMFcFfSdumrK42J8AUMg9mDSEEKhVoPvJNv7U,608
+cortexquest/cortexquest.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+cortexquest-0.0.1.dist-info/AUTHORS.rst,sha256=Fau8GeoRzbn1hIyo9kLVcXrim5NCkxHcgoS4OE77vyo,155
+cortexquest-0.0.1.dist-info/LICENSE,sha256=PoNmG1n0JCKnwyxjUi8i_Z6YCP5VbzCQAXYOZ-USJU0,1069
+cortexquest-0.0.1.dist-info/METADATA,sha256=ojJAaSf67lAVIWcahu5bpXU_7nTS8Su5iWy85D2w4Ek,4748
+cortexquest-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cortexquest-0.0.1.dist-info/entry_points.txt,sha256=z_Ig1UT9xQ1MeGY8IWDk4jQ9iazbU4bmtrwVauzQQlk,48
+cortexquest-0.0.1.dist-info/RECORD,,
