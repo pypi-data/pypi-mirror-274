@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: rasal
+Version: 0.1.0
+Summary: Resolution and Sensors and Lens.
+Home-page: https://github.com/AidanJohnston/rasal
+Author: Aidan Johnston
+Author-email: contact@aidanjohnston.ca
+License: MIT
+Project-URL: Documentation, https://rasal.readthedocs.io/en/latest
+Project-URL: Changelog, https://rasal.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/AidanJohnston/rasal/issues
+Keywords: resolution,sensorlens
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS.rst
+Provides-Extra: test
+
+=====
+RASAL
+=====
+
+
+Resolution and Sensors and Lens.
+
+
+
+Installation
+============
+
+::
+
+    pip install rasal
+
+You can also install the in-development version with::
+
+    pip install https://github.com/AidanJohnston/rasal/archive/main.zip
+
+
+Documentation
+=============
+
+
+https://rasal.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+License
+=======
+
+Rasal is under the MIT license. See the LICENSE file for more information.
+
+
+Changelog
+=========
+
+0.1.0 (2024-05-21)
+------------------
+
+* Initial dataclasses for sensor and resolution.
+
+0.0.0 (2024-01-08)
+------------------
+
+* First release on PyPI.
