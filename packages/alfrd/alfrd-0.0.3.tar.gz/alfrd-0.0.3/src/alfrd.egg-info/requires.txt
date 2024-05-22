@@ -1,0 +1,12 @@
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+gspread
+gspread-formatting
+pandas
+numpy
+psutil
+protobuf==3.19.6
+
+[dev]
+pytest>=3.7

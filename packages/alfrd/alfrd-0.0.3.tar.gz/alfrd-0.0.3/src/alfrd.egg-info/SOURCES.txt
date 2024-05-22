@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/alfrd/__init__.py
+src/alfrd/lib.py
+src/alfrd/util.py
+src/alfrd.egg-info/PKG-INFO
+src/alfrd.egg-info/SOURCES.txt
+src/alfrd.egg-info/dependency_links.txt
+src/alfrd.egg-info/entry_points.txt
+src/alfrd.egg-info/requires.txt
+src/alfrd.egg-info/top_level.txt
