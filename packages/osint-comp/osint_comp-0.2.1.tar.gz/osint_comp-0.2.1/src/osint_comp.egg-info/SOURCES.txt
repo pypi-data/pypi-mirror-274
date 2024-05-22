@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/osint_comp.egg-info/PKG-INFO
+src/osint_comp.egg-info/SOURCES.txt
+src/osint_comp.egg-info/dependency_links.txt
+src/osint_comp.egg-info/entry_points.txt
+src/osint_comp.egg-info/requires.txt
+src/osint_comp.egg-info/top_level.txt
+src/osinter/__main__.py
