@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: llama-index-llms-lmstudio
+Version: 0.1.0
+Summary: llama-index llms lmstudio integration
+License: MIT
+Author: Shivam Kalra
+Author-email: dev@kaltq.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: llama-index-core (>=0.10.0,<0.11.0)
+Description-Content-Type: text/markdown
+
+# LlamaIndex Llms Integration: Lmstudio
+
+```bash
+pip install llama-index-llms-lmstudio
+```
+
+## Usage Steps
+
+1. Open LM Studio App and go to the Local Server Tab
+2. In the Configuration settings, enable Apply Prompt Formatting
+3. Load the model of your choice
+4. Start your server
+
+```python
+from llama_index.llms.lmstudio import LMStudio
+
+llm = LMStudio(
+    model_name="Hermes-2-Pro-Llama-3-8B",
+    base_url="http://localhost:1234/v1",
+    temperature=0.7,
+)
+
+messages = [
+    ChatMessage(
+        role=MessageRole.SYSTEM,
+        content="You an expert AI assistant. Help User with their queries.",
+    ),
+    ChatMessage(
+        role=MessageRole.USER,
+        content="What is the significance of the number 42?",
+    ),
+]
+
+response = llm.chat(messages=messages)
+print(str(response))
+```
+
