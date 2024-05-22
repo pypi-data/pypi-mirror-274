@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ezplot/__init__.py
+ezplot/__version__.py
+ezpyplot.egg-info/PKG-INFO
+ezpyplot.egg-info/SOURCES.txt
+ezpyplot.egg-info/dependency_links.txt
+ezpyplot.egg-info/top_level.txt
