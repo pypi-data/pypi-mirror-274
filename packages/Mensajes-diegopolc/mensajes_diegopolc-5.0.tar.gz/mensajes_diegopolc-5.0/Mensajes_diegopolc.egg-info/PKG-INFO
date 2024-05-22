@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Mensajes-diegopolc
+Version: 5.0
+Summary: Un paquete para saludar y despedir
+Home-page: https://www.hektor.dev
+Author: Diego Polo Contreras
+Author-email: diego.polo93@outlook.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.23.0
+
+#Mensajes
+
+El paquete de mensajeria para pruebas de Diego Polo
