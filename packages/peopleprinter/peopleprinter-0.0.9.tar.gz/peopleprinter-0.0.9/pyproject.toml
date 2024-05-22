@@ -1,0 +1,21 @@
+requires = ["bs4", "requests"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peopleprinter"
+version = "0.0.9"
+authors = [
+  { name="Guazah", email="guazah@gmail.com" },
+]
+description = "Parsing printers"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Forsunkin/PeoplePrinter"
+"Bug Tracker" = "https://github.com/Forsunkin/PeoplePrinter"
