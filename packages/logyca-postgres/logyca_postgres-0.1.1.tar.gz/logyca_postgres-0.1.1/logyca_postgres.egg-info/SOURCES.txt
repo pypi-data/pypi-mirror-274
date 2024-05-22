@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+logyca_postgres/__init__.py
+logyca_postgres.egg-info/PKG-INFO
+logyca_postgres.egg-info/SOURCES.txt
+logyca_postgres.egg-info/dependency_links.txt
+logyca_postgres.egg-info/requires.txt
+logyca_postgres.egg-info/top_level.txt
+logyca_postgres/dependencies/__init__.py
+logyca_postgres/dependencies/conn_postgres_async.py
+logyca_postgres/dependencies/conn_postgres_sync.py
+logyca_postgres/utils/__init__.py
+logyca_postgres/utils/helpers/__init__.py
+logyca_postgres/utils/helpers/functions.py
+logyca_postgres/utils/helpers/singleton.py
