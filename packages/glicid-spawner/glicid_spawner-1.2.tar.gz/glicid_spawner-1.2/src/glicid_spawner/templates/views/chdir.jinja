@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="workdir" class="col-sm-3 control-label">Working directory:</label>
+    <div class="col-sm-9">
+        <div class="input-group">
+            <div class="input-group-addon"><span class="fa fa-briefcase"></span></div>
+            <select class="form-control" name="workdir">
+                {%- for folder in folders -%}
+                <option value="{{ folder }}">{{ folder }}</option>
+                {% endfor -%}
+            </select>
+        </div>
+    </div>
+</div>

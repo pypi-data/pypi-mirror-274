@@ -1,0 +1,55 @@
+#!/bin/bash
+{#- SLURM batch script for GLiCID spawner #}
+
+#SBATCH --job-name={{job_name}}
+#SBATCH --output={{homedir}}/.{{job_name}}.log
+#SBATCH --chdir={{workdir}}
+#SBATCH --export={{keepvars}}
+{% if cluster   %}#SBATCH --cluster={{cluster}}
+{% endif %}{% if partition %}#SBATCH --partition={{partition}}
+{% endif %}{% if node      %}#SBATCH --nodelist={{node}}
+{% endif %}{% if qos       %}#SBATCH --qos={{qos}}
+{% endif %}{% if runtime   %}#SBATCH --time={{runtime}}
+{% endif %}{% if nprocs    %}#SBATCH --cpus-per-task={{nprocs}}
+{% endif %}{% if memory    %}#SBATCH --mem={{memory}}
+{% endif %}{% if gres      %}#SBATCH --gres={{gres}}
+{% endif %}
+{# Export logs to $JUPYTER_LOG_DIR folder -#}
+export JUPYTER_LOG_DIR="{{homedir}}/.jupyter/spawner/logs"
+export JUPYTER_JOB_LOG=${JUPYTER_LOG_DIR}/$(date "+%Y-%m-%d")_{{job_name}}_${SLURM_JOB_ID}.log
+
+mkdir -p ${JUPYTER_LOG_DIR}
+echo "The {{job_name}} logs are located in: ${JUPYTER_LOG_DIR}"
+
+{# Redirect all Jupyter logs into $JUPYTER_LOG_DIR -#}
+{   PS4='[$(date "+%Y-%m-%d %T")]\011 ';
+
+    set -xeo pipefail;
+    trap 'echo SIGTERM received' TERM;
+
+    {# SLURM config -#}
+    scontrol write batch_script ${SLURM_JOB_ID}{% if cluster %} --cluster={{cluster}}{% endif %} -;
+
+    {# Micromamba config -#}
+    export MAMBA_EXE={{mamba_exe}};
+    export MAMBA_ROOT_PREFIX={{mamba_root_prefix}};
+    export PYTHONUSERBASE={{ mamba_user_base }};
+    source $MAMBA_ROOT_PREFIX/etc/profile.d/micromamba.sh;
+
+    {# Activate micromamba env requested by the user -#}
+    micromamba activate {{ pyenv }};
+    export JUPYTER_PATH={{ pyenv }}/share/jupyter;
+
+    {# Prologue -#}
+    {%- if prologue -%}
+    {{prologue}};
+    {%- endif -%}
+
+    {# Start Jupyter single-user command -#}
+    {{cmd}};
+
+    {#- Epilogue -#}
+    {%- if epilogue -%}
+    {{epilogue}};
+    {%- endif -%}
+} > ${JUPYTER_JOB_LOG} 2>&1
