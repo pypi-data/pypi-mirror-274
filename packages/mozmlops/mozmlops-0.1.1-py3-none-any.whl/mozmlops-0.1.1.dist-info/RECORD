@@ -1,0 +1,10 @@
+mozmlops/.DS_Store,sha256=wRhmXJ3PtXcf1NDeRGTB893jqFxKIGdoiDr-VhSJuRk,6148
+mozmlops/__init__.py,sha256=QYW2KQZuOMmCzhBFQW6Gkmk8RvwxLGXlxRLQ8yMysvs,112
+mozmlops/cloud_storage_api_client.py,sha256=aahIVSC-j4IVW1e494J9_Aok0NBMrY-8-8L9ZtTHc6A,3714
+mozmlops/templates/README.md,sha256=MJ4HqAAL7EnBPRN9aCF1c1U8Xzqw94WUQmxpmgfpQOM,5131
+mozmlops/templates/example_config.json,sha256=qVymsjSmNAc-1m-pFP3FA_oLIPTwHZfryKpGkKczUiY,37
+mozmlops/templates/template_flow.py,sha256=C4XypGZQI2fe4lPj6HuBKKgbPm_7AKbQsIFUb9-PEqQ,4140
+mozmlops-0.1.1.dist-info/LICENSE,sha256=OT6vK5Kz1JvqE545tv0gW26ZxJmZmYauxVVFhqgw390,16726
+mozmlops-0.1.1.dist-info/METADATA,sha256=aIdhj74P8RNGISag-ia2e2atYXyaV6NXStWwo8t1dHg,2602
+mozmlops-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mozmlops-0.1.1.dist-info/RECORD,,
