@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gender-identification
+Version: 0.1.0
+Summary: Identify the gender of people by names in tabular data.
+License: MIT
+Author: Márton Kardos
+Author-email: power.up1163@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Requires-Dist: radicli (==0.0.25)
+Requires-Dist: tqdm (==4.66.0)
+Requires-Dist: transformers (>=4.41.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# gender-identification
+Code and pipeline for gender identification based on names.
+
