@@ -1,0 +1,11 @@
+POST = 'post/'
+GET = 'get/'
+PUT = 'put/'
+DELETE = 'delete/'
+
+TEST = 'test/'
+IMAGES = 'images/'
+TEST_POST = f'{TEST}{POST}'
+TEST_GET = f'{TEST}{GET}'
+TEST_PUT = f'{TEST}{PUT}'
+TEST_DELETE = f'{TEST}{DELETE}'
