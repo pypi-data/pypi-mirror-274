@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: timelineomat
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: alex
+Author-email: devkral@web.de
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# TimelineOMat
+
+This project allows to streamline events in timelines. It is highly customizeable
+
+## Installation
+``` python
+pip install timelineomat
+```
+
+## Usage
+
+TODO:
+
+
+TODO: add tests and documentation
+
