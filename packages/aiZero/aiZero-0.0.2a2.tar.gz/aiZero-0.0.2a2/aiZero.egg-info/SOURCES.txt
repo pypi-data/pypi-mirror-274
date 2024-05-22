@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+aiZero/__init__.py
+aiZero.egg-info/PKG-INFO
+aiZero.egg-info/SOURCES.txt
+aiZero.egg-info/dependency_links.txt
+aiZero.egg-info/requires.txt
+aiZero.egg-info/top_level.txt
+aiZero/static/js/marked.min.js
+aiZero/templates/index.html
