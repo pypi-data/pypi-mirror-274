@@ -1,0 +1,9 @@
+eventum_content_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eventum_content_manager/manage.py,sha256=__9WvxF11vJ12aq01NB0o1q-UGMKxo5llObhyazgUHc,10727
+eventum_content_manager/tests/test_manage.py,sha256=8mMBlFRDfx9Rqnu8Vq66OARKWUVwZ4V2OwkN93dhMZY,7105
+eventum_content_manager/tests/test_validators.py,sha256=Kzf1LMQfwnVu1N_ihoxSZTC6xK7kJ4auzJnc05ElobY,1264
+eventum_content_manager/validators.py,sha256=RAX4ML4zaE2M8WnbsO2EBEDFqTKz3-P-Ry35gcfTUwg,1787
+eventum_content_manager-1.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+eventum_content_manager-1.0.4.dist-info/METADATA,sha256=FY4ATfjRMiOEPOYkOUy92pRGvRZ9rayWY5-m9SsWUxU,1026
+eventum_content_manager-1.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+eventum_content_manager-1.0.4.dist-info/RECORD,,
