@@ -1,0 +1,3 @@
+[console_scripts]
+ibzip2 = indexed_bzip2:cli
+
