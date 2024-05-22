@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyodre.egg-info/PKG-INFO
+pyodre.egg-info/SOURCES.txt
+pyodre.egg-info/dependency_links.txt
+pyodre.egg-info/requires.txt
+pyodre.egg-info/top_level.txt
