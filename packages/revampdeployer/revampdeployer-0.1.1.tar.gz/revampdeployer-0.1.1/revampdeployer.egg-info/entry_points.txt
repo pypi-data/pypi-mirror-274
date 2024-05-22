@@ -1,0 +1,2 @@
+[console_scripts]
+revampdeployer = revampdeployer.__main__:main
