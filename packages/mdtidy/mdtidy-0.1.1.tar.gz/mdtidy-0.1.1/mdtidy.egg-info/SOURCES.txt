@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mdtidy/__init__.py
+mdtidy/cleaner.py
+mdtidy.egg-info/PKG-INFO
+mdtidy.egg-info/SOURCES.txt
+mdtidy.egg-info/dependency_links.txt
+mdtidy.egg-info/top_level.txt

@@ -1,0 +1,79 @@
+# mdtidy
+
+mdtidy is a Python library designed to clean and format markdown content into Jupyter Notebooks (.ipynb) and count code errors within the content. It's an intuitive tool for transforming raw markdown and code blocks into well-structured Jupyter notebooks.
+
+## Features
+
+- **Markdown to Jupyter Notebook**: Convert markdown content with embedded Python code blocks into a Jupyter Notebook file.
+- **Error Counting**: Identify and count common Python error types within the content.
+
+## Installation
+
+You can install mdtidy via pip:
+
+```sh
+pip install mdtidy
+```
+
+## Usage
+
+### Convert Markdown to Jupyter Notebook
+
+```python
+from mdtidy.cleaner import process_content_to_ipynb
+
+# Example input string
+input_string = """
+The columns relevant to this analysis are:
+- `TotalIncome`
+- `Matri_A√±os`
+
+Since the column `Matri_A√±os` is already of type float64, it can be used as is for the numerical calculations. We will create a simple scatter plot to visualize the relationship between these two variables.
+``python?code_reference&code_event_index=3
+import altair as alt
+
+# Create a simple scatter plot with `Matri_A√±os` on the x-axis and `TotalIncome` on the y-axis.
+chart = alt.Chart(df).mark_point().encode(
+    x=alt.X('Matri_A√±os:Q', title='Years of Marriage'),
+    y=alt.Y('TotalIncome:Q', title='Total Income'),
+    tooltip=['Matri_A√±os', 'TotalIncome']
+).properties(
+    title='Total Income vs. Years of Marriage'
+).interactive()
+
+# Save the plot
+chart.save('total_income_vs_years_of_marriage_scatterplot.json')
+``
+[json-tag: vegalite_1716301077.4469488_total_income_vs_years_of_marriage_scatterplot.json]
+
+The chart titled 'Total Income vs. Years of Marriage' displays the relationship between total income and years of marriage for all divorce records.
+"""
+
+# Convert the content to a Jupyter Notebook file
+process_content_to_ipynb(input_string, "cleaned_output.ipynb")
+```
+
+### Count Code Errors
+
+```python
+from mdtidy.cleaner import count_code_errors
+
+# Example input string with errors
+input_string_with_errors = """
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'variable' is not defined
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+"""
+
+# Count the code errors
+error_counts = count_code_errors(input_string_with_errors)
+print(error_counts)
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
