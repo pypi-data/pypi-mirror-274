@@ -1,0 +1,16 @@
+pydantic_pkgr-0.1.3.dist-info/METADATA,sha256=zCp-3p1bQWEKeFJcN7SelGwdCSabGHxi2DRdu8ZXX54,21904
+pydantic_pkgr-0.1.3.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+pydantic_pkgr-0.1.3.dist-info/licenses/LICENSE,sha256=N0LAP8xW6pNY3WVFuFbqB6Di2vWZr-h5kY5oYNDToq8,1067
+pydantic_pkgr/.DS_Store,sha256=KOt9XPiE59zXokWuOKzuFsLb1xMihOTjBWfs0pt24iw,6148
+pydantic_pkgr/__init__.py,sha256=kPrXcmfEzVZWt5tNNx_JETwJcepJFo7dWMW-25HOr1o,344
+pydantic_pkgr/admin.py,sha256=0gJ0HGxEPYV3f-c-QVSKy0e3s9cNMEIPkKwuQEIxzpE,958
+pydantic_pkgr/apps.py,sha256=Q54Tx3TOVv2l5KQNdiwvQF4y6-xgXKyonLdpVARCMbE,157
+pydantic_pkgr/binary.py,sha256=BTclIyQdVbnnh63_iskOsE4V1Am-bScv2dV1pP_bnjs,10808
+pydantic_pkgr/binprovider.py,sha256=yv-9PHnLOWpTCD3voxjggU9m55XpG5dVbFs1T8A0W9o,32155
+pydantic_pkgr/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_pkgr/models.py,sha256=vRkvv-LxYCR_tYdP_gqZ6oJymW5S54fSot2Spyscu28,815
+pydantic_pkgr/semver.py,sha256=C80EYxAYDPwSpvHXghPq1aS1b5-sp74FU8_0P1I0pSo,5300
+pydantic_pkgr/settings.py,sha256=ogIZliDv8SKnXQoUgf4viO-0lRzAcnM8tYeY6pMPuaI,1041
+pydantic_pkgr/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+pydantic_pkgr/views.py,sha256=GTfvAdhUg67zFElfOda3d34ryQtytyx1EMu7xvBY5Hg,2912
+pydantic_pkgr-0.1.3.dist-info/RECORD,,
