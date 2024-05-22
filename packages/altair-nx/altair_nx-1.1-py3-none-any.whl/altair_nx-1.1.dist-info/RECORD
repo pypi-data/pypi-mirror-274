@@ -1,0 +1,10 @@
+altair_nx/__init__.py,sha256=QmRFRpfrAEA4F5PvEyqt7wkAQv1Ws6tNa55a4mIuxVM,187
+altair_nx/_utils.py,sha256=LoVGZxmOmuzqeGsVJw27aCkYvYUJYyY7R_fL1h2I16c,1139
+altair_nx/_version.py,sha256=1OGDPdghxyVVArLd8TLFlQ0VeHpQ4nX9XqrmpSDoNT8,406
+altair_nx/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+altair_nx/core.py,sha256=aLP2rRWk6eNs4DL1ucWFYizbSH3ecOHKjf-pgtALyIk,8947
+altair_nx/draw_altair.py,sha256=EBSvKX7IhmnZMrETaFUA96UEMxvstRiSlMk3cG3RQLA,37425
+altair_nx-1.1.dist-info/METADATA,sha256=pxf8LCyJP6EH0KBclTcaLR7xc9SeG8EH6H4Zu6GeZA0,7990
+altair_nx-1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+altair_nx-1.1.dist-info/licenses/LICENSE,sha256=cVWdoTTE3EIrkjALtHM79BgT4irtLQySmL9lRFskCAU,1231
+altair_nx-1.1.dist-info/RECORD,,
