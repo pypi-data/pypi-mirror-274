@@ -1,0 +1,16 @@
+fastcore
+msgspec[toml,yaml]
+rich
+fsspec
+universal_pathlib
+huggingface_hub[cli,hf_transfer]
+GitPython
+
+[dev]
+build
+twine
+ipython
+ruff
+pytest
+mypy
+types-PyYAML
