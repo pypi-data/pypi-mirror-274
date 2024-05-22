@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: manager_cw_bot_api
+Version: 1.5.1
+Summary: Python module for Business users in Telegram (For admin - business-person; Manager CW Bot API). Docs: https://docs.cwr.su/
+Home-page: https://github.com/cwr-su/manager_cw_bot_api
+Download-URL: https://github.com/cwr-su/manager_cw_bot_api/archive/refs/heads/main.zip
+Author: Alexander Laptev, CW
+Author-email: cwr@cwr.su
+License: Apache License, Version 2.0, see LICENSE file
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+Requires-Dist: PyMySQL
+Requires-Dist: pyTelegramBotAPI
+Requires-Dist: requests
+Requires-Dist: telegram-types
+
+Python module for Business users in Telegram 
+                   (For admin - business-person; Manager CW Bot API). 
+                   Docs: https://docs.cwr.su/
