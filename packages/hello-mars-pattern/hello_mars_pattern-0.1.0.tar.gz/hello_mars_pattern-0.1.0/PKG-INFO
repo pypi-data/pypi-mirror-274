@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hello_mars_pattern
+Version: 0.1.0
+Summary: A package that greets from various planets
+Home-page: https://github.com/krishnaagarwal781/hello_mars
+Author: Krishna Agarwal
+Author-email: krishnacool781@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hello Mars
+
+A package that greets from various planets.
+
+## Installation
+
+```sh
+pip install hello_mars

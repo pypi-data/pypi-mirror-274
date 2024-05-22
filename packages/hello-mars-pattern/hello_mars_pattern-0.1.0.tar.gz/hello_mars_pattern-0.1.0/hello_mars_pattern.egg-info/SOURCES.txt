@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+hello_mars/__init__.py
+hello_mars/greetings.py
+hello_mars_pattern.egg-info/PKG-INFO
+hello_mars_pattern.egg-info/SOURCES.txt
+hello_mars_pattern.egg-info/dependency_links.txt
+hello_mars_pattern.egg-info/top_level.txt
+tests/__init__.py
+tests/test_hello_mars.py
