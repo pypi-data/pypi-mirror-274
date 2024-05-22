@@ -1,0 +1,13 @@
+logyca_postgres/__init__.py,sha256=Gue5YLG8w1QOB0-IssPadHpRnD97wGQOVcEIo1w_0-4,813
+logyca_postgres/dependencies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logyca_postgres/dependencies/conn_postgres_async.py,sha256=ibUHb46bK-rCx-DCXYY2MxvN9GzQDKk8Uj6HDfnYPdk,9945
+logyca_postgres/dependencies/conn_postgres_sync.py,sha256=0qUK66N1NBER4BbSQuOIgRoB-IEbLMNDUO_MgOJoPeU,9988
+logyca_postgres/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logyca_postgres/utils/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logyca_postgres/utils/helpers/functions.py,sha256=JE6cvkTQnszSf3uoGXULMnYXDPuy2TQAz3HUjVeZw0Y,228
+logyca_postgres/utils/helpers/singleton.py,sha256=ztjmVYYz5gmIlNxdxP4qoMpjjBAY6dHuZVFsv7MBdUc,331
+logyca_postgres-0.1.1.dist-info/LICENSE.txt,sha256=qcoSPZWqFGZj-EtMnDNvzoOKhD3E-3uH7iS7d8zeVFE,1092
+logyca_postgres-0.1.1.dist-info/METADATA,sha256=1GwRza36ve4VpU4HXhM9EYxLofHTQNXSVVl4Ye00jHc,15494
+logyca_postgres-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+logyca_postgres-0.1.1.dist-info/top_level.txt,sha256=WAs6M5S3neiKTEj001wC_JQsardXwa7Q_DSa1gB6Mhg,16
+logyca_postgres-0.1.1.dist-info/RECORD,,
