@@ -1,0 +1,7 @@
+numpy
+scipy
+torch>=1.0.0
+pandas
+tqdm
+rdkit
+pytoda>=1.1.5
