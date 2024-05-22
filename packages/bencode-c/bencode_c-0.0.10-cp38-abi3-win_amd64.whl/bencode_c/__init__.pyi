@@ -1,0 +1,13 @@
+from typing import Any
+
+
+def bdecode(b: bytes, /) -> Any: ...
+
+
+def bencode(v: Any, /) -> bytes: ...
+
+
+class BencodeDecodeError(Exception): ...
+
+
+class BencodeEncodeError(Exception): ...
