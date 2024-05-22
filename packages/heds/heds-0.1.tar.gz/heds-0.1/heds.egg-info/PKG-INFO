@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: heds
+Version: 0.1
+Summary: A simple package containing a CSV dataset
+Author: Gurucharan Raju
+Author-email: Gurucharan.Raju-SA@csulb.edu
+License: MIT
+Description-Content-Type: text/markdown
+
+Directions to use:
+pip install HE-Data 
+or
+pip install  HE-Data==version number
+
+
+HE-Data has four datasets:
+adm1.csv
+cmp1.csv
+crs.1.csv
+enr1.csv
+
+Exmaple:
+print(HE_Data.get_adm1())
+
