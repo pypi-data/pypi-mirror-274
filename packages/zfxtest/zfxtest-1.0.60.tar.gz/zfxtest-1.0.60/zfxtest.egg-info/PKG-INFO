@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: zfxtest
+Version: 1.0.60
+Summary: 这是ZFX模块的测试版
+Home-page: 
+Author: zengfengxiang
+Author-email: 424491679@qq.com
+Requires-Dist: requests
+Requires-Dist: pyperclip
+Requires-Dist: pystray
+Requires-Dist: psutil
+Requires-Dist: selenium
+Requires-Dist: requests
+Requires-Dist: mysql.connector
+Requires-Dist: pyinstaller
+Requires-Dist: openpyxl
