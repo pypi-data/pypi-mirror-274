@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+QuatNet/__init__.py
+QuatNet/quaternion_layers.py
+QuatNet/quaternion_ops.py
+QuatNet.egg-info/PKG-INFO
+QuatNet.egg-info/SOURCES.txt
+QuatNet.egg-info/dependency_links.txt
+QuatNet.egg-info/requires.txt
+QuatNet.egg-info/top_level.txt
+tests/__init__.py
