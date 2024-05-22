@@ -1,0 +1,8 @@
+gender_identification/__init__.py,sha256=uM9d3ztKq13fBX7PgZ5paGE9sJegW5ksBigASsmoRvc,81
+gender_identification/__main__.py,sha256=n4TadtdBs3lnZd7OIftoXj3eUlX0B5rqqoLhsHuibow,63
+gender_identification/cli.py,sha256=abZOz39HFF_Y84nqC59AiCpM0jAdTwWLCAvnhl56b0I,2598
+gender_identification/inference.py,sha256=ToG3IzpQVl8Uli2oGjq0O3EGkCXt6pcKXfsb46i0Nn4,1392
+gender_identification-0.1.0.dist-info/LICENSE,sha256=gbIGmdCBbILZJb-dWeC1s9VXErzQE_5KJfkXElOuDFI,1095
+gender_identification-0.1.0.dist-info/METADATA,sha256=-NtVUayU-0SZ8OKYNDnXsMDtUZd3eBi25y1dw0ev3w8,809
+gender_identification-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gender_identification-0.1.0.dist-info/RECORD,,
