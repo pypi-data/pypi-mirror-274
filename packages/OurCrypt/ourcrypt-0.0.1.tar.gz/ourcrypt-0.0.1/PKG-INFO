@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: OurCrypt
+Version: 0.0.1
+Summary: Этот код предоставляет функции для шифрования и дешифрования файлов с использованием алгоритма AES (Advanced Encryption Standard) в режиме CBC (Cipher Block Chaining). Интерфейс для выбора файлов с помощью диалогового окна реализуется позьвателем самостоятельно. 
+Author-email: Kaminchik <kwastingtime@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+
+This library is not that useful. Perhaps someday it will become great.

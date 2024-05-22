@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "OurCrypt"
+version = "0.0.1"
+authors = [
+ { name="Kaminchik", email="kwastingtime@outlook.com" },
+]
+description = "Этот код предоставляет функции для шифрования и дешифрования файлов с использованием алгоритма AES (Advanced Encryption Standard) в режиме CBC (Cipher Block Chaining). Интерфейс для выбора файлов с помощью диалогового окна реализуется позьвателем самостоятельно. "
+readme = "README.md"
+requires-python = ">=3.10.0"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+]
