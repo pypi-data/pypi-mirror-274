@@ -1,0 +1,13 @@
+sferriol/python/__init__.py,sha256=TrhIgy5IPFrzlxBC7eCdmhn6MNk9r5Fh_Gcgur2cvF4,1569
+sferriol/python/_asyncio.py,sha256=eVDC51cSjxwV0_onn6XjyN7JBbpZg5bJayokuNRO5fM,416
+sferriol/python/env.py,sha256=Roif6KTT4o791v6tXYUwqSqL6fGzZJXrzpjUmJXtcQM,895
+sferriol/python/json.py,sha256=tBtr9g8o_rFb8eLcCQBCSOPpQ-DQdEjj8do-KyqB9VE,554
+sferriol/python/net.py,sha256=rQw9C37CV-sxN0uQPifR84xAh4-peAMzbdbmktB-6RM,3392
+sferriol/python/object.py,sha256=oFTgbZq8OC9MmAbiiwgYRYKz5Yk9R5QSSjfZ8uCAm5U,1239
+sferriol/python/os.py,sha256=fzURDMgKQEn_geH_6alL_lXwwTJvu-HkrQLrMjTzbbg,213
+sferriol/python/dictionary/__init__.py,sha256=jFlBw_8AZ3bLH5TD03lqjvoHN_JXmcOsACVX7oPbMgw,2036
+sferriol_python-0.6.0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+sferriol_python-0.6.0.dist-info/METADATA,sha256=5h6ajCluhJJMRvr9zTjvqfpPxCyluEce8_X84Wzh_0I,749
+sferriol_python-0.6.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sferriol_python-0.6.0.dist-info/top_level.txt,sha256=OZwPBarx0XWpgPVyXyHb5Aoe-RjU5Q0vkqE9AwXNxtM,9
+sferriol_python-0.6.0.dist-info/RECORD,,
