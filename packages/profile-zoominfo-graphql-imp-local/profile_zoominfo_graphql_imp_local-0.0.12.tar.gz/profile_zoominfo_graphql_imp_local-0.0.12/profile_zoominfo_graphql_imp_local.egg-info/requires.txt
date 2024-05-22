@@ -1,0 +1,5 @@
+zoomus>=1.2.1
+language-remote>=0.0.20
+logger-local>=0.0.135
+profile-local>=0.0.64
+python-sdk-remote>=0.0.93
