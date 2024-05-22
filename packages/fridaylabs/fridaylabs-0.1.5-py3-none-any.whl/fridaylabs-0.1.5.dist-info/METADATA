@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: fridaylabs
+Version: 0.1.5
+Summary: A package to interact with FridayLabs AI API
+Home-page: https://github.com/ImJustRicky/fridaylabs-package
+Author: FridayLabs
+Author-email: fridaylabs@fridaylabs.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# FridayLabs
+
+FridayLabs is an innovative AI company dedicated to creating intelligent solutions that seamlessly integrate into everyday life. Our goal is to enhance user experiences by providing cutting-edge AI-driven technologies that simplify and enrich daily routines.
+
+## FridayLabs Python Package
+
+The FridayLabs Python package is a simple yet powerful tool to get started with AI-powered applications. This package includes basic functionalities to demonstrate how our AI technologies can be easily implemented in various projects.
+
+### Features
+
+- A simple method to interact with FridayLabs AI API
+- Easy to install and use
+- Perfect for beginners looking to explore AI integration
+
+### Installation
+
+You can install the FridayLabs package using pip:
+
+```bash
+pip install fridaylabs
