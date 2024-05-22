@@ -1,0 +1,7 @@
+README.md
+setup.py
+codebase_flatter.egg-info/PKG-INFO
+codebase_flatter.egg-info/SOURCES.txt
+codebase_flatter.egg-info/dependency_links.txt
+codebase_flatter.egg-info/entry_points.txt
+codebase_flatter.egg-info/top_level.txt
