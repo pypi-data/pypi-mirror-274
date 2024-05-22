@@ -1,0 +1,7 @@
+README.md
+setup.py
+edavisuals/__init__.py
+edavisuals.egg-info/PKG-INFO
+edavisuals.egg-info/SOURCES.txt
+edavisuals.egg-info/dependency_links.txt
+edavisuals.egg-info/top_level.txt
