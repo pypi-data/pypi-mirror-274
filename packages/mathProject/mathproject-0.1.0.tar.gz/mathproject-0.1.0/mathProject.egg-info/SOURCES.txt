@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+mathProject.egg-info/PKG-INFO
+mathProject.egg-info/SOURCES.txt
+mathProject.egg-info/dependency_links.txt
+mathProject.egg-info/top_level.txt
+simple_math/__init__.py
+simple_math/operations.py
