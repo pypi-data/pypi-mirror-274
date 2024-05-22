@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+bartesdk/bartesdk.egg-info/PKG-INFO
+bartesdk/bartesdk.egg-info/SOURCES.txt
+bartesdk/bartesdk.egg-info/dependency_links.txt
+bartesdk/bartesdk.egg-info/requires.txt
+bartesdk/bartesdk.egg-info/top_level.txt
