@@ -1,0 +1,38 @@
+name: Publish to PyPI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Get tag
+        run: |
+          RELEASE_VERSION=$(sed -n "s/^version.*\"\(.*\)\"$/\\1/p" ./pyproject.toml)
+          echo RELEASE_TAG="v$RELEASE_VERSION" >> $GITHUB_ENV
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip3 install twine build
+
+      - name: Build the package
+        run: |
+          python3 -m build
+
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: |
+          twine upload dist/* --skip-existing
