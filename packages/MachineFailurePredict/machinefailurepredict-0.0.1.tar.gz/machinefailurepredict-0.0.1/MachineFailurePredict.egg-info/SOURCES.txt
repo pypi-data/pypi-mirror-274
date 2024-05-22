@@ -1,0 +1,8 @@
+setup.py
+MachineFailurePredict/MachineFailurePredpict.py
+MachineFailurePredict/__init__.py
+MachineFailurePredict.egg-info/PKG-INFO
+MachineFailurePredict.egg-info/SOURCES.txt
+MachineFailurePredict.egg-info/dependency_links.txt
+MachineFailurePredict.egg-info/requires.txt
+MachineFailurePredict.egg-info/top_level.txt
