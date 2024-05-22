@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: osadl-matrix
+Version: 2024.5.22.10535
+Summary: OSADL license compatibility matrix
+Author: Konrad Weihmann
+Author-email: kweihmann@outlook.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Legal Industry
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Description-Content-Type: text/markdown
+License-File: LICENSE.ccby40
+License-File: LICENSE.Unlicensed
+Provides-Extra: dev
+Requires-Dist: deepdiff ==7.0.1 ; extra == 'dev'
+Requires-Dist: dlint ==0.14.1 ; extra == 'dev'
+Requires-Dist: flake8 ==7.0.0 ; extra == 'dev'
+Requires-Dist: flake8-2020 ==1.8.1 ; extra == 'dev'
+Requires-Dist: flake8-bandit ==4.1.1 ; extra == 'dev'
+Requires-Dist: flake8-broken-line ==1.0.0 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ==24.4.26 ; extra == 'dev'
+Requires-Dist: flake8-builtins ==2.5.0 ; extra == 'dev'
+Requires-Dist: flake8-coding ==1.3.2 ; extra == 'dev'
+Requires-Dist: flake8-commas ==4.0.0 ; extra == 'dev'
+Requires-Dist: flake8-comprehensions ==3.14.0 ; extra == 'dev'
+Requires-Dist: flake8-debugger ==4.1.2 ; extra == 'dev'
+Requires-Dist: flake8-docstrings ==1.7.0 ; extra == 'dev'
+Requires-Dist: flake8-eradicate ==1.5.0 ; extra == 'dev'
+Requires-Dist: flake8-executable ==2.1.3 ; extra == 'dev'
+Requires-Dist: flake8-fixme ==1.1.1 ; extra == 'dev'
+Requires-Dist: flake8-functions ==0.0.8 ; extra == 'dev'
+Requires-Dist: flake8-isort ==6.1.1 ; extra == 'dev'
+Requires-Dist: flake8-logging-format ==0.9.0 ; extra == 'dev'
+Requires-Dist: flake8-mutable ==1.2.0 ; extra == 'dev'
+Requires-Dist: flake8-pep3101 ==2.1.0 ; extra == 'dev'
+Requires-Dist: flake8-print ==5.0.0 ; extra == 'dev'
+Requires-Dist: flake8-quotes ==3.4.0 ; extra == 'dev'
+Requires-Dist: flake8-requirements ==2.2.0 ; extra == 'dev'
+Requires-Dist: flake8-string-format ==0.3.0 ; extra == 'dev'
+Requires-Dist: flake8-variables-names ==0.0.6 ; extra == 'dev'
+Requires-Dist: pytest ==8.2.1 ; extra == 'dev'
+Requires-Dist: pytest-cov ==5.0.0 ; extra == 'dev'
+Requires-Dist: pytest-forked ==1.6.0 ; extra == 'dev'
+Requires-Dist: pytest-icdiff ==0.9 ; extra == 'dev'
+Requires-Dist: pytest-random-order ==1.1.1 ; extra == 'dev'
+Requires-Dist: pytest-socket ==0.7.0 ; extra == 'dev'
+Requires-Dist: pytest-sugar ==1.0.0 ; extra == 'dev'
+Requires-Dist: pytest-tldr ==0.2.5 ; extra == 'dev'
+Requires-Dist: requests ==2.32.1 ; extra == 'dev'
+Requires-Dist: twine ==5.1.0 ; extra == 'dev'
+Requires-Dist: urllib3 ==2.2.1 ; extra == 'dev'
+
+# osadl-matrix
+
+This is a machine readable version of the [OSADL license compatibility matrix](https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html) as a python library.
+
+## Changelog of the provided data
+
+A detailed changelog of the provided data can be found [here](https://github.com/priv-kweihmann/osadl-matrix/blob/master/DATALOG.md)
+
+## License
+
+This module is licensed under [Unlicensed](LICENSE.Unlicensed) license. Feel free to do whatever you want with it.
+
+### Data license
+
+The raw data of the OSADL Open Source License Checklists are licensed under the Creative Commons Attribution 4.0 International license (CC-BY-4.0), https://creativecommons.org/licenses/by/4.0/.
+
+© 2017 - 2021 Open Source Automation Development Lab (OSADL) eG and contributors, info@osadl.org
+
+Further information can be found [here](https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html)
+A copy of the CC-BY-4.0 text can be found [here](LICENSE.ccby40)
+
+## Disclaimer
+
+We are not affiliated, associated, endorsed by, or in any way officially connected with the Open Source Automation Development Lab (OSADL) eG, or any of its subsidiaries or its affiliates. The official OSADL website can be found at https://www.osadl.org.
+
+## Usage
+
+### Using builtin functions
+
+```python
+import osadl_matrix
+
+result = osadl_matrix.is_compatible("BSD-3-Clause", "MIT")
+# result is either
+# True - licenses are compatible
+# False - licenses are *NOT* compatible
+
+result = osadl_matrix.get_compatibility("GPL-2.0-only", "MIT")
+# result is either
+# osadl_matrix.OSADLCompatibility.YES - licenses are compatible
+# osadl_matrix.OSADLCompatibility.NO - licenses are *NOT* compatible
+# osadl_matrix.OSADLCompatibility.UNKNOWN - license compatibility is uncertain
+# osadl_matrix.OSADLCompatibility.CHECKDEP - compatibility has depencies that need to be checked
+# osadl_matrix.OSADLCompatibility.UNDEF - at least one of the licenses are not present in the OSADL matrix
+
+result = osadl_matrix.supported_licenses()
+# result is a set of supported license (identifiers)
+```
+
+### Using the raw data
+
+```python
+import csv
+
+import osadl_matrix
+
+with open(osadl_matrix.OSADL_MATRIX) as csvinput:
+    creader = csv.reader(csvinput, delimiter=',', quotechar='"')
+    for row in creader:
+        print(row)
+```
+
+or as json
+
+```python
+import json
+
+import osadl_matrix
+
+with open(osadl_matrix.OSADL_MATRIX_JSON) as jsoninput:
+    cnt = json.read(jsoninput)
+    print(cnt)
+```
