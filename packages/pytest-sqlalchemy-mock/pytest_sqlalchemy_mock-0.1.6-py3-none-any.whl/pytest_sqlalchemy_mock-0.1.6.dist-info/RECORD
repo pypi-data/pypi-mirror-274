@@ -1,0 +1,8 @@
+pytest_sqlalchemy_mock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_sqlalchemy_mock/base.py,sha256=cBI3NDgdW7LlSTWJfKOj7JIZC4n4d8bf4nXUMTRM7ig,1320
+pytest_sqlalchemy_mock/model_mocker.py,sha256=LyaTyV_4U9XYJzgjPT0t8ScMtAGgEWWgteEeqRwBS-c,1010
+pytest_sqlalchemy_mock-0.1.6.dist-info/LICENSE,sha256=UWA5VwDr6CMzGPtIma9-QnDlJAEvTHix9GUF0RLIrU0,1074
+pytest_sqlalchemy_mock-0.1.6.dist-info/METADATA,sha256=Zci1MGWC4m4V7-eL83G2R1gkeN9GFDwRJ2_BEeDpfZQ,5395
+pytest_sqlalchemy_mock-0.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pytest_sqlalchemy_mock-0.1.6.dist-info/top_level.txt,sha256=21keM_pRW6C_KoesBGu5xxt2bz1zmMco4CT8B0u1cE0,23
+pytest_sqlalchemy_mock-0.1.6.dist-info/RECORD,,
