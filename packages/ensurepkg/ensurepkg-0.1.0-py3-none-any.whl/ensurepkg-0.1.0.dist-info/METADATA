@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ensurepkg
+Version: 0.1.0
+Summary: A minimal package to ensure pip-managed packages on import. Oriented towards scripting in local environments
+Author: Yuichiro Smith
+Author-email: yu-ichiro@s3i7h.com
+Requires-Python: >=3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache-2.0 License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Homepage, https://github.com/s3i7h/python-ensurepkg
+Project-URL: Issues, https://github.com/s3i7h/python-ensurepkg/issues
+Project-URL: Repository, https://github.com/s3i7h/python-ensurepkg.git
+Description-Content-Type: text/markdown
+
+# ensurepkg
+
+`ensurepkg` is a minimal package to ensure a pip-managed package exists.
+
+# example
+
+```example.py
+from ensurepkg import EnsurePkg
+
+for guard in EnsurePkg(dict(dotenv="python-dotenv")):
+    with guard:
+        import dotenv
+
+with EnsurePkg(dict(git="GitPython"), cache_dir="/tmp/ensurepkg"):
+    import git
+
+print(dotenv.__name__)
+print(git.__name__, git.__version__)
+```
+
+# cache_dir
+
+`cache_dir` is where ensurepkg installs the packages. It is isolated from other environments and it's resolved as:
+
+1. setting programatically via `EnsurePkg(cache_dir="...")`
+2. from env var $ENSUREPKG_DIR
+3. from env var $XDG_CACHE_HOME/ensurepkg
+4. from env var $HOME/.cache/ensurepkg
+5. /tmp/ensurepkg
