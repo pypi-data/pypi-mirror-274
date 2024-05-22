@@ -1,0 +1,13 @@
+LICENCE
+README.md
+run.sh
+setup.py
+setup.sh
+Flask_App_Install.egg-info/PKG-INFO
+Flask_App_Install.egg-info/SOURCES.txt
+Flask_App_Install.egg-info/dependency_links.txt
+Flask_App_Install.egg-info/requires.txt
+Flask_App_Install.egg-info/top_level.txt
+src/__init__.py
+src/app.py
+src/writefile_app.py
