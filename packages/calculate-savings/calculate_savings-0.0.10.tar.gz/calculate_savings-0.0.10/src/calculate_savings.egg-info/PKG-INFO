@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: calculate-savings
+Version: 0.0.10
+Summary: How much can you save in 10 years by predicting your salary?
+Home-page: https://github.com/takenakayuuki0901/calculate_savings.git
+Author: YukiTakenaka
+Author-email: s2222024@stu.musashino-u.ac.jp
+Project-URL: Bug Tracker, https://github.com/takenakayuuki0901/calculate_savings.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
