@@ -1,0 +1,8 @@
+pacman/__init__.py,sha256=Ti2Ay98fn7y0ByfMW2N8GbzhFQ6PSPxFIyneJ5zvDro,56
+pacman/file_utils.py,sha256=tZdyrRETf-znE4hn5vcjsNMMIbFIsQsCbEt0rqeSmKc,121
+pacman/pacman.py,sha256=hfzD2C-6Rfr3Xjwpf-gvjj6d0jxrXNG-R1Zm2LQMl84,1777
+pacman/prompt.py,sha256=vDfPE7Cq3t5Kfz2zpI1vpXej5xEMfcMCtm9q8pcqbqo,7949
+pacman_prompts-2.2.1.dist-info/METADATA,sha256=j8bWOX68kqST_quXLQOugxFwom28HxTI568dMhkdeSc,663
+pacman_prompts-2.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pacman_prompts-2.2.1.dist-info/top_level.txt,sha256=u6ILm5ufvfifAXOIdNQfZwfBsiIo6TkU4T7_pYDsKcs,7
+pacman_prompts-2.2.1.dist-info/RECORD,,
