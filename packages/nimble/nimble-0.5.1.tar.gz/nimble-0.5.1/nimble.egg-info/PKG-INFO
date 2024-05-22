@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: nimble
+Version: 0.5.1
+Summary: Interfaces and tools for data science.
+Author-email: Spark Wave LLC <willfind@gmail.com>
+License: Apache 2.0
+Project-URL: Homepage, https://www.nimbledata.org
+Project-URL: Repository, https://github.com/willfind/nimble
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: <3.13,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.14
+Requires-Dist: packaging>=20.0
+Requires-Dist: tomli>=2.0
+Requires-Dist: scipy>=1.1
+Provides-Extra: data
+Requires-Dist: pandas>=0.24; extra == "data"
+Requires-Dist: scipy>=1.1; extra == "data"
+Provides-Extra: operation
+Requires-Dist: matplotlib>=3.1; extra == "operation"
+Requires-Dist: cloudpickle>=1.0; extra == "operation"
+Requires-Dist: requests>2.12; extra == "operation"
+Requires-Dist: h5py>=2.10; extra == "operation"
+Requires-Dist: python-dateutil>=2.6; extra == "operation"
+Requires-Dist: hyperopt>=0.2; extra == "operation"
+Requires-Dist: storm_tuner; extra == "operation"
+Provides-Extra: interfaces
+Requires-Dist: scikit-learn>=1.0; extra == "interfaces"
+Requires-Dist: tensorflow>=2.0; extra == "interfaces"
+Requires-Dist: keras>=2.4; extra == "interfaces"
+Requires-Dist: autoimpute>=0.12; extra == "interfaces"
+Provides-Extra: quickstart
+Requires-Dist: pandas>=0.24; extra == "quickstart"
+Requires-Dist: scipy>=1.1; extra == "quickstart"
+Requires-Dist: matplotlib>=3.1; extra == "quickstart"
+Requires-Dist: cloudpickle>=1.0; extra == "quickstart"
+Requires-Dist: requests>2.12; extra == "quickstart"
+Requires-Dist: h5py>=2.10; extra == "quickstart"
+Requires-Dist: python-dateutil>=2.6; extra == "quickstart"
+Requires-Dist: hyperopt>=0.2; extra == "quickstart"
+Requires-Dist: storm_tuner; extra == "quickstart"
+Requires-Dist: scikit-learn>=1.0; extra == "quickstart"
+Provides-Extra: all
+Requires-Dist: pandas>=0.24; extra == "all"
+Requires-Dist: scipy>=1.1; extra == "all"
+Requires-Dist: matplotlib>=3.1; extra == "all"
+Requires-Dist: cloudpickle>=1.0; extra == "all"
+Requires-Dist: requests>2.12; extra == "all"
+Requires-Dist: h5py>=2.10; extra == "all"
+Requires-Dist: python-dateutil>=2.6; extra == "all"
+Requires-Dist: hyperopt>=0.2; extra == "all"
+Requires-Dist: storm_tuner; extra == "all"
+Requires-Dist: scikit-learn>=1.0; extra == "all"
+Requires-Dist: tensorflow>=2.0; extra == "all"
+Requires-Dist: keras>=2.4; extra == "all"
+Requires-Dist: autoimpute>=0.12; extra == "all"
+
+## Nimble - python data science package
+
+Nimble provides a unified framework for data science, data analysis, and machine
+learning in Python that can be used as a more elegant alternative to the standard
+stack (numpy, pandas, scikit-learn/sklearn, scipy etc.). Nimble can also be used
+alongside these standard tools to make it faster and easier to make predictions and
+manipulate, analyze, process and visualize data.
+
+We believe the best way to learn about Nimble is to see it in action. So,
+we invite you to check out our [Cheatsheet](https://www.nimbledata.org/cheatsheet.html)
+and the examples below and explore how Nimble makes data science easier.
+
+* [Cleaning Data](https://www.nimbledata.org/examples/cleaning_data.html)
+* [Supervised Learning](https://www.nimbledata.org/examples/supervised_learning.html)
+* [Exploring Data](https://www.nimbledata.org/examples/exploring_data.html)
+* [Unsupervised Learning](https://www.nimbledata.org/examples/unsupervised_learning.html)
+* [Neural Networks](https://www.nimbledata.org/neural_networks.html)
+* [Merging And Tidying Data](https://www.nimbledata.org/examples/merging_and_tidying_data.html)
+* [Additional Functionality](https://www.nimbledata.org/examples/additional_functionality.html)
+
+### Resources
+
+* [Installation](https://www.nimbledata.org/install.html)
+* [API Documentation](https://www.nimbledata.org/docs/index.html)
+* [Cheatsheet](https://www.nimbledata.org/cheatsheet.html)
+* [Example Datasets](https://www.nimbledata.org/datasets.html)
+
