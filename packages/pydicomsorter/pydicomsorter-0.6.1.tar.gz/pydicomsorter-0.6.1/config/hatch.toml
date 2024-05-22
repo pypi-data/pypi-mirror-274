@@ -1,0 +1,9 @@
+
+[version]
+path = "src/pydicomsorter/__init__.py"
+
+[build]
+directory = "dist"
+
+[build.targets]
+wheel = { packages = ["src/pydicomsorter"] }

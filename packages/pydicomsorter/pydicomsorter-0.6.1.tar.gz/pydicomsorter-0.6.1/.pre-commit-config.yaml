@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks:
+      - id: pixi-install
+        name: Run pixi install
+        entry: bash -c 'pixi install && pixi install -e dev && pixi install -e publish'
+        language: system
+        files: ^src/.*\.py$|^pyproject\.toml$|^pixi\.lock$
+      - id: pixi-run-tests
+        name: Run pixi tests
+        entry: bash -c 'pixi run test'
+        language: system
+        files: ^src/.*\.py$|^pyproject\.toml$
+      - id: pixi-run-lint
+        name: Run pixi lint
+        entry: bash -c 'pixi run lint'
+        language: system
+        files: ^src/.*\.py$|^pyproject\.toml$|^config/ruff\.toml%
