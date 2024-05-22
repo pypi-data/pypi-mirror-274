@@ -1,0 +1,10 @@
+setup.py
+smart_terminal/__init__.py
+smart_terminal/cli_tool.py
+smart_terminal/config.json
+smart_terminal.egg-info/PKG-INFO
+smart_terminal.egg-info/SOURCES.txt
+smart_terminal.egg-info/dependency_links.txt
+smart_terminal.egg-info/entry_points.txt
+smart_terminal.egg-info/requires.txt
+smart_terminal.egg-info/top_level.txt
