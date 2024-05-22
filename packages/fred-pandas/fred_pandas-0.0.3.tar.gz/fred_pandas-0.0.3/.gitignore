@@ -1,0 +1,6 @@
+*.pkl
+/__pycache__
+/src/archive
+/dist
+__pycache__
+* copy*.py
