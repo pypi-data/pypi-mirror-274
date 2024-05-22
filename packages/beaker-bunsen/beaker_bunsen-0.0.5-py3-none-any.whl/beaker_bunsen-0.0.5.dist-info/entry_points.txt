@@ -1,0 +1,5 @@
+[console_scripts]
+bunsen = beaker_bunsen.scripts.bunsen:cli
+
+[hatch]
+bunsen = beaker_bunsen.builder.hooks
