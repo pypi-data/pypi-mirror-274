@@ -1,0 +1,8 @@
+README.md
+setup.py
+sophisticate/__init__.py
+sophisticate.egg-info/PKG-INFO
+sophisticate.egg-info/SOURCES.txt
+sophisticate.egg-info/dependency_links.txt
+sophisticate.egg-info/requires.txt
+sophisticate.egg-info/top_level.txt
