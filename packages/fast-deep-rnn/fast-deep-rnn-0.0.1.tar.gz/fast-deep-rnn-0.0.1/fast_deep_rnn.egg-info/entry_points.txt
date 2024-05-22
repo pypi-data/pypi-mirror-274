@@ -1,0 +1,2 @@
+[nbdev]
+fast_deep_rnn = fast_deep_rnn._modidx:d
