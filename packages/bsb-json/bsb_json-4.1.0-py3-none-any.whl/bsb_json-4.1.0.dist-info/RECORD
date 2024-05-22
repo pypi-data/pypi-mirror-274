@@ -1,0 +1,11 @@
+bsb_json/__init__.py,sha256=4msmydhVecnBuKc8sibFCJfPoLfU8KKpCGbHO4ckW4Q,126
+bsb_json/parser.py,sha256=HmATGli-cajiOfgTcsnLiBF0_h1z61hO_J6Kn-FI368,1171
+bsb_json/schema/__init__.py,sha256=ZSY889zyTyKaa8D2jobeYTCM5YzR4xdb6UBRtGA0dF4,2343
+bsb_json/templates/__init__.py,sha256=lY5H_P07XnpMbjkUE9GhH8xiBf1DaCRe1pSpc0gtNsE,169
+bsb_json/templates/skeleton.json,sha256=62TVuFPvT7OecyIokjAw5-d4kdv_Sdv1tcofB9sp2pY,379
+bsb_json/templates/starting_example.json,sha256=mlfTXiKEyDbaiJnvf36vFQExkeVfQJ07c4LZ5yQtTSI,799
+bsb_json-4.1.0.dist-info/entry_points.txt,sha256=494DZr0iQ9pIo05kX2XHNOu_hcB_MRgrcEYwZjHZNVk,101
+bsb_json-4.1.0.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+bsb_json-4.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+bsb_json-4.1.0.dist-info/METADATA,sha256=soOvDU9CdRHf-TVVqwjGsPVZAdT6ON_d2nIh8FVetrs,736
+bsb_json-4.1.0.dist-info/RECORD,,
