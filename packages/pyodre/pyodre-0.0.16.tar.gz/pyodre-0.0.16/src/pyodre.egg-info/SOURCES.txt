@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pyodre/__init__.py
+src/pyodre/interpreters.py
+src/pyodre/odre.py
+src/pyodre/python_functions.py
+src/pyodre/python_interpreter.py
+src/pyodre.egg-info/PKG-INFO
+src/pyodre.egg-info/SOURCES.txt
+src/pyodre.egg-info/dependency_links.txt
+src/pyodre.egg-info/requires.txt
+src/pyodre.egg-info/top_level.txt
