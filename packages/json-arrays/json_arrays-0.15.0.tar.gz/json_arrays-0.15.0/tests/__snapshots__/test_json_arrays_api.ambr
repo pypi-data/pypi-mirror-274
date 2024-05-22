@@ -1,0 +1,133 @@
+# serializer version: 1
+# name: test_dump[json]
+  b'[{"a":"a1"},{"b":["b1","b2"]},{"c":{"c1":"c11"}}]'
+# ---
+# name: test_dump[jsonl]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_dict[json]
+  b'{"a":[{"b":2,"c":"hi","d":[1,2]}],"b":[1,2]}'
+# ---
+# name: test_dump_dict[jsonl]
+  b'{"a":[{"b":2,"c":"hi","d":[1,2]}],"b":[1,2]}\n'
+# ---
+# name: test_dump_int[json]
+  b'1234'
+# ---
+# name: test_dump_int[jsonl]
+  b'1234\n'
+# ---
+# name: test_dump_str[json]
+  b'"just an ordinary\\n string"'
+# ---
+# name: test_dump_str[jsonl]
+  b'"just an ordinary\\n string"\n'
+# ---
+# name: test_dump_to_file[tests/data/gen/api_dump_array.json.bz2]
+  b'[{"a":"a1"},{"b":["b1","b2"]},{"c":{"c1":"c11"}}]'
+# ---
+# name: test_dump_to_file[tests/data/gen/api_dump_array.json.gz]
+  b'[{"a":"a1"},{"b":["b1","b2"]},{"c":{"c1":"c11"}}]'
+# ---
+# name: test_dump_to_file[tests/data/gen/api_dump_array.json]
+  b'[{"a":"a1"},{"b":["b1","b2"]},{"c":{"c1":"c11"}}]'
+# ---
+# name: test_dump_to_file[tests/data/gen/api_dump_array.jsonl.bz2]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_to_file[tests/data/gen/api_dump_array.jsonl.gz]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_to_file[tests/data/gen/api_dump_array.jsonl]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_to_file[tests/data/gen/api_dump_array.ndjson.bz2]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_to_file[tests/data/gen/api_dump_array.ndjson.gz]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_to_file[tests/data/gen/api_dump_array.ndjson]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_to_file_fails_without_file_name
+  'You must give a FILENAME or USE_STDOUT_AS_DEFAULT=`True` or USE_STDERR_AS_DEFAULT=`True`'
+# ---
+# name: test_dump_to_file_stderr[None]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_to_file_stderr[json]
+  b'[{"a":"a1"},{"b":["b1","b2"]},{"c":{"c1":"c11"}}]'
+# ---
+# name: test_dump_to_file_stderr[jsonl]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_to_file_stdout[None]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_dump_to_file_stdout[json]
+  b'[{"a":"a1"},{"b":["b1","b2"]},{"c":{"c1":"c11"}}]'
+# ---
+# name: test_dump_to_file_stdout[jsonl]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_load_from_file_fails_without_file_name
+  'You must give a FILENAME or USE_STDIN_AS_DEFAULT=`True`'
+# ---
+# name: test_sink[.json]
+  b'[\n{"a":"a1"},\n{"b":["b1","b2"]},\n{"c":{"c1":"c11"}}\n]'
+# ---
+# name: test_sink[.jsonl]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_sink[.ndjson]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_sink_dict[.json]
+  b'{"a":"b"}'
+# ---
+# name: test_sink_dict[.jsonl]
+  b'{"a":"b"}\n'
+# ---
+# name: test_sink_dict[.ndjson]
+  b'{"a":"b"}\n'
+# ---
+# name: test_sink_from_file[tests/data/gen/api_sink_array.json.bz2]
+  b'[\n{"a":"a1"},\n{"b":["b1","b2"]},\n{"c":{"c1":"c11"}}\n]'
+# ---
+# name: test_sink_from_file[tests/data/gen/api_sink_array.json.gz]
+  b'[\n{"a":"a1"},\n{"b":["b1","b2"]},\n{"c":{"c1":"c11"}}\n]'
+# ---
+# name: test_sink_from_file[tests/data/gen/api_sink_array.json]
+  b'[\n{"a":"a1"},\n{"b":["b1","b2"]},\n{"c":{"c1":"c11"}}\n]'
+# ---
+# name: test_sink_from_file[tests/data/gen/api_sink_array.jsonl.bz2]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_sink_from_file[tests/data/gen/api_sink_array.jsonl.gz]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_sink_from_file[tests/data/gen/api_sink_array.jsonl]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_sink_from_file[tests/data/gen/api_sink_array.ndjson.bz2]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_sink_from_file[tests/data/gen/api_sink_array.ndjson.gz]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_sink_from_file[tests/data/gen/api_sink_array.ndjson]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_sink_from_file_fails_without_file_name
+  'You must give a FILENAME or USE_STDOUT_AS_DEFAULT=`True` or USE_STDERR_AS_DEFAULT=`True`'
+# ---
+# name: test_sink_from_file_stdout[None]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
+# name: test_sink_from_file_stdout[json]
+  b'[\n{"a":"a1"},\n{"b":["b1","b2"]},\n{"c":{"c1":"c11"}}\n]'
+# ---
+# name: test_sink_from_file_stdout[jsonl]
+  b'{"a":"a1"}\n{"b":["b1","b2"]}\n{"c":{"c1":"c11"}}\n'
+# ---
