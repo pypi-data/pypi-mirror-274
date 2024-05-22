@@ -1,0 +1,6 @@
+pyyaml
+pylint
+pytest
+tqdm
+git+https://github.com/kamangir/openai-cli@main#egg=openai_cli
+zzzz
