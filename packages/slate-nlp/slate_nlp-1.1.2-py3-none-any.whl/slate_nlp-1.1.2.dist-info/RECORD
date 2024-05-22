@@ -1,0 +1,12 @@
+slate/__init__.py,sha256=gxTCO315QJUbIxPVRiCAqWbxaX2PCmXttld_kNfqgdY,15
+slate/__main__.py,sha256=ZYQLFyclzr9vhD07RRFnjLTabVdtvY53w_SV9MzYb1g,66
+slate/annotate.py,sha256=LKP3w_gi7Nv3PS6eeEO-xqg1dU0Hb8iov9LOG6EdWhk,19913
+slate/config.py,sha256=xnJHt4xupLXQc0OpzNeQaL6zSN_KS8Ec3XwOEMfEPtM,9207
+slate/data.py,sha256=HSY806kpaw0wDcZb89W32BHfuc_Z4kKW0ZgoVZs2c_k,39630
+slate/view.py,sha256=je8IcU0DUHMtBhgb_Ndn47Yx_uv4Mgb7x1hIQSAJkb8,21415
+slate_nlp-1.1.2.dist-info/LICENSE.txt,sha256=_hLpnAiieLx02C2xHZRjllBEnnelcniEEKz2CV0-cnc,780
+slate_nlp-1.1.2.dist-info/METADATA,sha256=jXufTkbZUaEGhUBF60TjKny3KWAoAsFUrgMqZfMnJ7Q,24911
+slate_nlp-1.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+slate_nlp-1.1.2.dist-info/entry_points.txt,sha256=cribc-70YgK1bjgirbXaKNn-VlJf5tMb6CUwfPvMLBc,46
+slate_nlp-1.1.2.dist-info/top_level.txt,sha256=vl8VVb8WpgUKAqrQ8BknQuuJpg3DNLhKL0Ryp32FUiw,6
+slate_nlp-1.1.2.dist-info/RECORD,,
