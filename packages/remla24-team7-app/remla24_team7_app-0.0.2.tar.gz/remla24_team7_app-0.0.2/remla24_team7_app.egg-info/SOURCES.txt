@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+remla24_team7_app/__init__.py
+remla24_team7_app/app.py
+remla24_team7_app.egg-info/PKG-INFO
+remla24_team7_app.egg-info/SOURCES.txt
+remla24_team7_app.egg-info/dependency_links.txt
+remla24_team7_app.egg-info/top_level.txt
