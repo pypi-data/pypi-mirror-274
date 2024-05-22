@@ -1,0 +1,10 @@
+README.md
+setup.py
+UnityPredict/Models.py
+UnityPredict/Platform.py
+UnityPredict/UnityPredictLocalHost.py
+UnityPredict/__init__.py
+UnityPredict.egg-info/PKG-INFO
+UnityPredict.egg-info/SOURCES.txt
+UnityPredict.egg-info/dependency_links.txt
+UnityPredict.egg-info/top_level.txt
