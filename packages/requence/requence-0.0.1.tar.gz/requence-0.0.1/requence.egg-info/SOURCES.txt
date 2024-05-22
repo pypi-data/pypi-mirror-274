@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+requence/__init__.py
+requence/consumer.py
+requence.egg-info/PKG-INFO
+requence.egg-info/SOURCES.txt
+requence.egg-info/dependency_links.txt
+requence.egg-info/requires.txt
+requence.egg-info/top_level.txt
