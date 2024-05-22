@@ -1,0 +1,24 @@
+[console_scripts]
+cpm3u = musictoolbox.cmd.cpm3u:main
+detect-broken-ape-tags = musictoolbox.cmd.detect:detect_broken_ape_tags
+detect-missing-ape-tags = musictoolbox.cmd.detect:detect_missing_ape_tags
+doreplaygain = musictoolbox.cmd.doreplaygain:main
+fixplaylist = musictoolbox.cmd.fixplaylist:main
+genplaylist = musictoolbox.cmd.genplaylist:main
+make-album-playlist = musictoolbox.cmd.makealbumplaylist:main
+removemusicbrainz = musictoolbox.cmd.removemusicbrainz:main
+scanalbumartists = musictoolbox.cmd.scanalbumartists:main
+singlencode = musictoolbox.transcoding.cli:main
+syncplaylists = musictoolbox.sync.cli:main
+viewmp3norm = musictoolbox.cmd.view:viewmp3norm
+viewtargs = musictoolbox.cmd.view:viewtags
+
+[musictoolbox.transcoding.codecs]
+audiotomp3 = musictoolbox.transcoding.codecs.gstreamerffmpeg:AudioToMp3
+audiotowav = musictoolbox.transcoding.codecs.gstreamerffmpeg:AudioToWav
+copy = musictoolbox.transcoding.codecs.basic:Copy
+extractaudio = musictoolbox.transcoding.codecs.gstreamerffmpeg:ExtractAudio
+flvmp4webmtomp3 = musictoolbox.transcoding.codecs.gstreamerffmpeg:FlvMp4WebmToMp3
+flvmp4webmtowav = musictoolbox.transcoding.codecs.gstreamerffmpeg:FlvMp4WebmToWav
+wavtoogg = musictoolbox.transcoding.codecs.gstreamerffmpeg:WavToOgg
+wavtoopus = musictoolbox.transcoding.codecs.gstreamerffmpeg:WavToOpus
