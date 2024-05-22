@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+tc_wikipedia_lib.egg-info/PKG-INFO
+tc_wikipedia_lib.egg-info/SOURCES.txt
+tc_wikipedia_lib.egg-info/dependency_links.txt
+tc_wikipedia_lib.egg-info/requires.txt
+tc_wikipedia_lib.egg-info/top_level.txt
+wikipedia/__init__.py
+wikipedia/exceptions.py
+wikipedia/util.py
+wikipedia/wikipedia.py
