@@ -1,0 +1,7 @@
+faster-whisper
+openai
+opencv-python
+base64
+os
+subprocess
+time
