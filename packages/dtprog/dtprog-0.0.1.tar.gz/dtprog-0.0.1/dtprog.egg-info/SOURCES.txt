@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dtprog.egg-info/PKG-INFO
+dtprog.egg-info/SOURCES.txt
+dtprog.egg-info/dependency_links.txt
+dtprog.egg-info/not-zip-safe
+dtprog.egg-info/top_level.txt

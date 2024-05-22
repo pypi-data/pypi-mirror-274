@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dtprog
+Version: 0.0.1
+Summary: Decision-theoretic Programming in Python
+Home-page: https://github.com/markkho/dtprog
+Author: Mark Ho
+Author-email: mark.ho.cs@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
