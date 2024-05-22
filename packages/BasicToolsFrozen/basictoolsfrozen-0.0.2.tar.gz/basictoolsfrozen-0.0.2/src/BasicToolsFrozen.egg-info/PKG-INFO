@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: BasicToolsFrozen
+Version: 0.0.2
+Summary: Tools for finite element computations - fork for pymicro
+Home-page: https://github.com/basileMarchand/basictools-frozen
+Author: Basile Marchand
+License: BSD 3-Clause License
+Platform: Linux
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: CONTRIBUTING.md
+Requires-Dist: numpy>=1.20
+Requires-Dist: scipy>=1.9
+Requires-Dist: sympy
+Requires-Dist: vtk
+Requires-Dist: psutil
+Requires-Dist: h5py
+Requires-Dist: meshio
+Requires-Dist: pyvista
+Requires-Dist: networkx>=3
+Requires-Dist: pytest
+Requires-Dist: sphinx
+Requires-Dist: sphinx_rtd_theme
+
+Tools for finite element computations - fork for pymicro
