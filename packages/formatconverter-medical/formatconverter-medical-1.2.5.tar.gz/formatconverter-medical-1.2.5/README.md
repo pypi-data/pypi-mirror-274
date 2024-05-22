@@ -1,0 +1,134 @@
+## formatconverter-medical
+
+_A toolbox for converting medical imaging data between `DICOM`, `NIfTI`, and standard `image` formats._
+
+### Installation
+
+To install, use `pip` to install this package:
+
+    pip install formatconverter-medical
+
+> **Note:** It is recommended to use `formatconverter-medical` on **Python 3.8**.
+
+
+### Usage
+
+
+> _**DICOM TO IMAGE FORMAT CONVERSION**_
+
+
+#### Call `dicom2image` directly from Python script
+
+```python
+from toolbox.dicom2image import dicom_to_image
+dicom_to_image(path/to/dicom/directory, path/to/image/directory, brightness)
+```
+
+- `path/to/dicom/directory` please provide the directory path for the DICOM files. (**type:** *str*)
+- `path/to/image/directory` please provide the directory path for the image files. (**type:** *str*)
+- `brightness` please provide the brightness to adjust the ndarray image files. (**type:** *float*)
+
+#### Examples of Different Brightness Values
+
+
+When `brightness` is set to **_0.2_**, the output will be displayed as follows:
+
+![](https://github.com/cnnlabyzu/formatconverter-medical/blob/main/brightness_0.2.png)
+
+When `brightness` is set to **_1.2_**, the output will be displayed as follows:
+
+![](https://github.com/cnnlabyzu/formatconverter-medical/blob/main/brightness_0.2.png)
+
+
+> **_DICOM TO NIFTI FORMAT CONVERSION_**
+
+#### Call `dicom2nifti` directly from Python script
+
+```Python
+from toolbox.dicom2nifti import dicom_to_nifti
+
+dicom_to_nifti(path/to/dicom/directory, nifti/file/name, path/to/nifti/directory)
+```
+
+- `path/to/dicom/directory` please provide the directory path for the DICOM files. (**type:** *str*)
+- `path/to/nifti/directory` please provide the directory path for the nifti files. (**type:** *str*)
+- `nifti/file/name` please provide the file name for the nifti file. (**type:** _str_)
+
+
+> **_IMAGE TO NIFTI FORMAT CONVERSION_**
+ 
+#### Call `image2nifti` directly from Python script
+
+
+```Python
+from toolbox.image2nifti import image_to_nifti
+
+image_to_nifti(path/to/image/directory, path/to/nifti/directory, nifti/file/name)
+```
+
+`path/to/dicom/directory` please provide the directory path for the DICOM files. (**type:** _str_)
+`path/to/nifti/directory` please provide the directory path for the image files. (**type:** _str_)
+`nifti/file/name` please provide the file name for the nifti file. (**type:** _str_)
+
+
+> **_NIFTI TO DICOM CONVERSION_**
+ 
+#### Call `nifti2dicom` directly from Python script
+
+
+```Python
+from toolbox.nifti2dicom import nifti_to_dicom
+
+nifti_to_dicom(path/to/nifti/file, path/to/output/directory)
+```
+
+- `path/to/output/directory` please provide the directory path for the NifTI files. (**type:** *str*)
+- `path/to/output/directory` please provide the directory path for the DICOM files. (**type:** *str*)
+
+
+> **_NIFTI TO IMAGE CONVERSION_**
+
+
+#### Call `nifti2image` directly from Python script
+
+
+```Python
+from toolbox.nifti2image import nifti_to_image
+
+nifti_to_image(path/to/nifti/file, path/to/image/directory)
+```
+
+- `path/to/input/directory` please provide the directory path for the NifTI files. (**type:** *str*)
+- `path/to/output/directory` please provide the directory path for the image files. (**type:** *str*) 
+
+
+
+
+
+
+
+### License
+
+```
+MIT License
+
+Copyright (c) 2024 Clinical Neuroimaging and Neurocomputing Laboratory
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
