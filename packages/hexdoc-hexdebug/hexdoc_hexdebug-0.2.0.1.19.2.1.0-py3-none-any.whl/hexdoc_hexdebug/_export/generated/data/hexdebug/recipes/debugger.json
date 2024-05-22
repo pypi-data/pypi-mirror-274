@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "hexcasting:charged_amethyst"
+    },
+    "L": {
+      "item": "minecraft:gold_ingot"
+    },
+    "U": {
+      "item": "hexcasting:artifact"
+    }
+  },
+  "pattern": [
+    " CC",
+    " UC",
+    "L  "
+  ],
+  "result": {
+    "item": "hexdebug:debugger"
+  }
+}
