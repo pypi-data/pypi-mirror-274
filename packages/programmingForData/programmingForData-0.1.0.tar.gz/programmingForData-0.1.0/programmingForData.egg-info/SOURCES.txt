@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+programmingForData.egg-info/PKG-INFO
+programmingForData.egg-info/SOURCES.txt
+programmingForData.egg-info/dependency_links.txt
+programmingForData.egg-info/requires.txt
+programmingForData.egg-info/top_level.txt
