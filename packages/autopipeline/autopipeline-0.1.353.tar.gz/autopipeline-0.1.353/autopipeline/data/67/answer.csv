@@ -1,0 +1,1509 @@
+memType,storyIx,sentIx,sent,majorBin,expectedBin,eventOrNot
+imagined,1,3,I saw my Grandma who said I liked great as ever.,0.0,0.875,0.875
+imagined,1,4,I saw my Grandpa who said I was getting strong.,0.125,0.75,0.75
+imagined,1,5,My Aunt looked lovely and thanked me for the compliment.,0.125,0.375,0.5
+imagined,1,6,My Uncle still smoked a lot.,0.0,0.375,0.375
+imagined,1,7,We had a nice feast.,0.125,0.5,0.625
+imagined,1,11,There was a big cake to share with everybody.,0.125,0.375,0.375
+imagined,1,13,There was also horseshoes to play.,0.125,0.5,0.625
+imagined,1,14,I barely beat my Uncle.,0.0,0.625,0.625
+imagined,1,15,We vowed to keep in touch.,0.25,0.375,0.5
+recalled,2,2,It was cool to see my grandpa because It's honestly been at least 25 years and since he is handicap it's hard for him to get around.,0.375,0.5,0.625
+recalled,2,8,Basically they are the same as I remember just older but they are just as into tech stuff as they were back then.,0.125,0.375,0.375
+recalled,2,11,Finally I got to just catch up with some other family members like my cousins and some others who I didn't remember as well cause I was so young back then.,0.25,0.5,0.75
+recalled,2,12,This might have been the last time a lot of us get to meet because we all live so far apart and aren't exactly wealthy so we tried to make the most of it.,0.125,0.375,0.375
+recalled,2,13,We took a lot of pictures and overall had a great time and we pledged to try and talk over the phone/webcam more often.,0.125,0.5,0.625
+retold,3,4,I guess when you're a kid/teen you would rather be doing other stuff but now that I'm an adult I understood the value of it.,0.125,0.375,0.375
+retold,3,7,It was really good to see my aunt and uncle again as they are the most similar to myself with our love for technology and in general relaxed personalities.,0.25,0.625,0.75
+retold,3,8,I wish I had connected with them much sooner but when my parents divorced people kind of took sides and it was hard to reach over the divide.,0.25,0.375,0.375
+retold,3,10,We are all in general bad at communication so hopefully we can keep this up and I will try to take control of it being the youngest.,0.125,0.25,0.25
+retold,3,12,I should've been the one to really reconnect us years ago but I was just generally absorbed in the grind of life and my immediate friends/family that I didn't try.,0.125,0.25,0.375
+retold,3,13,I will look at my relationships with my distant family and friends more so we stay more connected.,0.25,0.375,0.375
+retold,3,14,It was great to write about this again because I feel like this is a different view from the last time since I have been chatting with my family more since the last time I did this.,0.25,0.375,0.5
+imagined,3,3,I would consider sending a card wishing them well.,0.0,0.5,0.5
+imagined,3,5,i wish them live long and happy.,0.125,0.25,0.375
+imagined,3,7,i had a great time in my lifetime.,0.375,0.75,0.75
+imagined,3,8,she is my bestie.,0.125,0.375,0.5
+imagined,3,9,we had lot of memories.,0.125,0.25,0.25
+imagined,3,11,she was very special to me.,0.0,0.125,0.125
+imagined,3,12,we are family friends.,0.125,0.25,0.375
+imagined,3,14,we had good and bad memories.,0.0,0.375,0.375
+imagined,3,15,i am very happy.,0.0,0.25,0.25
+imagined,3,16,and proud to have a friend like this.,0.0,0.125,0.125
+imagined,3,17,it was very pleasure to share this.,0.125,0.25,0.375
+imagined,3,18,still we are very close to each other.,0.0,0.125,0.125
+recalled,1,2,I was a bit nervous.,0.0,0.5,0.5
+recalled,1,11,She was my rock.,0.125,0.375,0.375
+recalled,1,13,Only time would tell how this would turn out.,0.125,0.25,0.25
+recalled,1,15,Or would I just fall apart completely.,0.0,0.25,0.25
+retold,2,1,"I was happy,sad,scared and unsure all in one.",0.25,0.5,0.625
+retold,2,3,It was like i was becoming a new parent.,0.375,0.5,0.625
+retold,2,7,"Every time id became a parent,my mom was there by my sidem welcoming my little one with open arms.",0.125,0.375,0.5
+retold,2,11,I know that I will cherish these moments as if she were here.,0.25,0.5,0.625
+retold,2,12,I know that she is watching us from heaven.,0.25,0.375,0.5
+retold,2,13,Protecting us as we live our lives.,0.125,0.375,0.375
+retold,2,15,My new baby will never meet you.,0.25,0.5,0.5
+imagined,2,6,I learned about how to paint on the street and make sure it isn't easily washed out.,0.375,0.5,0.625
+imagined,2,11,"It takes patience because what appears when you paint, and what comes out when it dries are two different images.",0.125,0.25,0.375
+imagined,2,13,This was a great experience that opened my eyes to new things.,0.125,0.25,0.375
+recalled,1,2,I signed up for the morning shift and arrived a bit early.,0.375,0.625,0.875
+recalled,1,3,They had started to paint the street with primer for where the design would be painted.,0.25,0.5,0.625
+recalled,1,4,"While I waited for that to be finished, I signed in so that the city could keep track of the amount of volunteer hours that everyone preformed.",0.125,0.625,0.75
+recalled,1,8,I went back to get my camera and take a few pictures of the chickens and the beginning of the artwork.,0.25,0.625,0.875
+recalled,1,9,I finished taking the pictures and they were ready for me to start helping.,0.25,0.5,0.625
+recalled,1,10,I found a paint roller and chose to start with painting the yellow rays of sunlight.,0.25,0.625,0.875
+recalled,1,12,"I had wanted to paint a part of the mural that I could come back and say, I did that.",0.125,0.25,0.25
+recalled,1,13,I decided to paint the manatee.,0.25,0.5,0.75
+recalled,1,16,I directed her to where there were more paint brushes and she soon came back.,0.25,0.625,0.75
+recalled,1,19,"When I was finished with the outline, it looked great and everyone was really happy with it.",0.125,0.25,0.375
+retold,3,1,I signed up and arrived early.,0.375,0.625,1.0
+retold,3,2,They had already started to paint the base coat of white on the street.,0.25,0.625,0.75
+retold,3,3,It was my time to help paint.,0.25,0.5,0.625
+retold,3,4,I choose to help paint the sun beams.,0.25,0.625,0.875
+retold,3,7,I then noticed the manatee.,0.25,0.5,0.625
+retold,3,8,I mixed some paint and started to paint it.,0.25,0.5,0.75
+retold,3,10,I directed her to where the paint and brushes were located.,0.125,0.375,0.5
+retold,3,14,It also made me encouraged o do more  paintings in the future.,0.125,0.25,0.375
+imagined,1,2,"I mean, WHO HITS HER KID??!!",0.0,0.125,0.125
+imagined,1,5,I just cant get past it.,0.0,0.25,0.25
+imagined,1,6,I want mom to say at least she's sorry for it and then maybe we can move on.,0.0,0.25,0.25
+imagined,1,7,I can't forgive it right now.,0.0,0.375,0.375
+imagined,1,8,"I want her to acknowledge she did something wrong, for once.",0.0,0.25,0.25
+imagined,1,9,She never admits anything.,0.125,0.375,0.375
+imagined,1,10,She thinks she's right about EVERYTHING!,0.0,0.125,0.125
+imagined,1,13,Why do parent's do that.,0.0,0.125,0.125
+imagined,1,15,I want our relationship to go back to when we were happy and talking.,0.25,0.375,0.5
+recalled,3,3,Everybody keeps saying she changed I should not hold my childhood against her.,0.125,0.25,0.375
+recalled,3,8,I remember being so taken a back by what she said I didn't even know how to answer.,0.0,0.25,0.25
+recalled,3,9,How could she deny me the information because God forgave her.,0.0,0.25,0.25
+recalled,3,10,I wanted to scream What about me the person who all this crap happened too?,0.0,0.375,0.375
+recalled,3,12,Its easy for people to say you should forgive when they are not the ones who have been wrong.,0.125,0.375,0.375
+recalled,3,13,I have children of my own and I know sometimes parenting is Hard.,0.125,0.375,0.5
+recalled,3,14,But I have never wanted to hurt my kids.,0.0,0.375,0.375
+recalled,3,15,And when i make a mistake I come back and i say im sorry.,0.0,0.25,0.25
+recalled,3,16,Why couldnt she have least done that?,0.0,0.125,0.125
+retold,2,1,I smile sometimes and say oh yeah and change the subject other times I ask questions about the so called visit.,0.125,0.25,0.375
+retold,2,2,My cousin wants to know if I will let the kids see the kids this time.,0.25,0.375,0.625
+retold,2,3,I hate her for asking the question.,0.125,0.25,0.375
+retold,2,4,Why should i let her see them why should they know her has she earned the right?,0.25,0.375,0.5
+retold,2,5,There are people that say you should forgive and forget .,0.0,0.125,0.125
+retold,2,8,I stood there shocked thinking well dont you think you should want forgiveness from me too.,0.0,0.25,0.25
+retold,2,9,But of course I got nothing not even a sorry .,0.125,0.25,0.375
+retold,2,10,So no she will not be able to see my kids.,0.25,0.375,0.375
+retold,2,11,Just so they should be come attached and  maybe become victims of the same abuse I did.,0.125,0.375,0.375
+retold,2,15,She always talkes about chursh and loving god but where was that love when i was little.,0.0,0.25,0.25
+retold,2,16,Surely god saw what you did to me .,0.0,0.125,0.125
+retold,2,18,I wish I wasnt so bitter.,0.0,0.375,0.375
+imagined,1,1,It was barely enough income to get by on and not enough for my budget to include savings.,0.0,0.125,0.125
+imagined,1,4,"I now sleep in the same park where once I stood looking lovingly at the green earth, the trees, the birds sweetly fluttering.",0.25,0.5,0.625
+imagined,1,5,"That park is now a place to hide away from the rest of the world, so like a leper.",0.0,0.125,0.125
+imagined,1,6,It seems just yesterday that I'd belonged with those people who come for the fresh open space.,0.0,0.125,0.125
+imagined,1,10,"Much of the time I stay huddled far back into the rich foliage, under old blankets and plastic.",0.0,0.25,0.25
+imagined,1,11,"I've ceased dreaming and now know only the nightmare of little to no food, warmth, or affection, and all I can feel is fear.",0.0,0.25,0.25
+imagined,1,12,I don't understand why this happened to me.,0.0,0.125,0.125
+imagined,1,13,I didn't do anything wrong; I just lost my job.,0.0,0.125,0.125
+imagined,1,14,"Several losses followed-- my apartment, belongings, my pets, even my friends.",0.25,0.375,0.5
+recalled,3,6,I now spend my days working to pay interest to the same people who probably made up the story on how to be happy.,0.125,0.25,0.375
+recalled,3,8,"We talked - for hours - about the true meaning of life, its purpose, and what to do when you are unhappy.",0.125,0.375,0.5
+recalled,3,12,"Well, at least not if you have a conscious.",0.0,0.125,0.125
+retold,2,1,"The days are becoming shorter, cooler.",0.25,0.5,0.75
+retold,2,2,Birthdays and holidays are slowly coming into focus.,0.0,0.375,0.375
+retold,2,3,The end of the year is near.,0.0,0.375,0.375
+retold,2,4,"As always,  I reflect.",0.25,0.5,0.625
+retold,2,5,I enjoy January 1st.,0.125,0.25,0.375
+retold,2,7,"Yes, I will make promises I will never keep.",0.25,0.375,0.625
+retold,2,8,I know who I am though.,0.0,0.125,0.125
+recalled,3,0,I recently went on a date with a girl.,0.375,0.625,0.875
+recalled,3,4,But she came to visit me.,0.25,0.5,0.75
+recalled,3,7,We went out to eat that night.,0.25,0.375,0.625
+recalled,3,11,We decided that we wanted to get closer.,0.25,0.375,0.5
+retold,1,3,I helped her work the 12 Steps of Alcoholics Anonymous; she worked the Steps on her codependency.,0.125,0.375,0.5
+retold,1,4,We kept things 'professional' and friendly for a few months.,0.125,0.375,0.5
+retold,1,7,The relationship was taboo in that it's very frowned upon to date a sponsee.,0.125,0.25,0.375
+retold,1,8,It is also frowned upon to sponsor someone in a different 12-Step program.,0.125,0.25,0.375
+retold,1,10,"It was very difficult to talk about this with anyone because we got very little support, as would be expected.",0.125,0.25,0.375
+imagined,2,2,I talked to mom and she said she has been doing well.,0.25,0.625,0.875
+imagined,2,3,I talked to father and he told me he caught the biggest fish that week.,0.5,0.625,1.0
+imagined,2,12,He got a little mad.,0.25,0.375,0.5
+imagined,2,13,He forgave me.,0.25,0.375,0.625
+imagined,2,14,We went home with many memories.,0.25,0.5,0.625
+recalled,3,9,She was a lovely girl and it was great to meet her.,0.125,0.25,0.375
+recalled,3,10,They are still together.,0.125,0.375,0.5
+recalled,3,12,My young daughter had a blast also.,0.125,0.5,0.625
+recalled,3,13,The last time we all gathered she was very young.,0.125,0.25,0.375
+recalled,3,16,The most surprising thing was it hit me how old we all have gotten!,0.25,0.375,0.5
+recalled,3,17,There were 4 generations of the family there.,0.0,0.375,0.375
+retold,1,1,Jimmy is roughly the same age as my son.,0.25,0.375,0.5
+retold,1,2,They grew up together.,0.125,0.25,0.25
+retold,1,4,"So Jim would always be around, vacations holidays etc.",0.125,0.375,0.5
+retold,1,7,A beautiful lake that the wedding venue looked over.,0.0,0.25,0.25
+retold,1,8,We all spent time on the deck drinking and smoking cigars.,0.25,0.625,0.875
+retold,1,11,Again the reason it was meaningful to me was it had been 10+ years since I had seen many of the people.,0.125,0.25,0.25
+retold,1,14,It was fun for the 3 of us also to dance together.,0.0,0.125,0.125
+imagined,1,10,"I remember sharing the story with my Daughter, the promise I made to her grandparents and what it meant to them and me.",0.125,0.5,0.625
+imagined,1,15,"I feel inside now a true sense of calm, knowing my family is proud of me, I set a good example for my daughter and my parents can rest.",0.125,0.375,0.5
+imagined,1,16,"I told my daughter my life is finally complete, and I feel a true sense of circle and self, and that my parents can finally rest in peace with an oath kept.",0.125,0.25,0.375
+recalled,3,14,So many emotions ran through my mind.,0.0,0.25,0.25
+recalled,3,22,"When I received my degree, I turned and faced my Wife and yelled: we did it!.",0.25,0.625,0.75
+recalled,3,23,She was overcome with emotion as well.,0.0,0.375,0.375
+recalled,3,24,My Daughter was next and I waited on stage for her.,0.125,0.75,0.75
+retold,2,1,They made sure I got good grades in school and always kept tabs on my progress.,0.125,0.25,0.375
+retold,2,13,I felt good though because I knew that my daughter was going to be right by my side.,0.125,0.25,0.25
+imagined,3,1,"It was such a beautiful day, and I was & still am so happy that she found her person.",0.25,0.375,0.5
+imagined,3,6,As if standing up in front of all those people wasn't enough pressure.,0.125,0.25,0.375
+imagined,3,10,"Luckily, our wonderful grandma made it to the wedding that day.",0.375,0.625,0.75
+imagined,3,13,"I know it's probably not as big of a deal as I make it out to be, but I've always been prone to anxiety.",0.0,0.375,0.375
+imagined,3,14,My cousin is so important to me and I just couldn't stand the thought of ruining her big day.,0.125,0.25,0.375
+imagined,3,15,She's waited so long for it.,0.0,0.125,0.125
+imagined,3,17,I'm so happy it all worked out in the end.,0.0,0.125,0.125
+recalled,1,3,We wore blush colored bridesmaids dresses.,0.0,0.25,0.25
+recalled,1,4,She and I are very close so it was great to see her marrying someone she loves.,0.125,0.25,0.25
+recalled,1,6,I was panicked.,0.0,0.25,0.25
+recalled,1,8,We got the dress back right before we had to walk down.,0.125,0.375,0.5
+recalled,1,9,"Then, the reception was so much fun because it was filled with family.",0.0,0.375,0.375
+recalled,1,10,It was very emotional because she was so happy and we were all grown up.,0.0,0.25,0.25
+recalled,1,11,Their first dance was beautiful and we had fun dancing and celebrating.,0.125,0.5,0.625
+recalled,1,12,"During the toasts, everyone cried.",0.25,0.375,0.625
+recalled,1,13,It was very emotional to see them so happy.,0.0,0.25,0.25
+retold,2,1,It was a beautiful wedding and we had been helping her plan it for months.,0.25,0.375,0.5
+retold,2,2,"The day had gone perfectly, so far.",0.0,0.25,0.25
+retold,2,3,Everyone got together in the morning to get their hair and makeup done.,0.0,0.375,0.375
+retold,2,5,We were all having fun beforehand and drinking champagne.,0.0,0.5,0.5
+retold,2,7,I panicked and felt terrible.,0.0,0.375,0.375
+retold,2,13,"After that, we walked down the aisle and no one could tell!",0.125,0.25,0.375
+retold,2,15,Everyone was so happy.,0.0,0.125,0.125
+retold,2,16,It was great to see my cousin so happy.,0.0,0.25,0.25
+retold,2,17,I enjoyed celebrating with her and had a great time.,0.0,0.125,0.125
+imagined,3,1,I was at college that week and it was the final week of classes before finals.,0.25,0.375,0.5
+imagined,3,3,I was so focused on finals and preparing for all the tests that I put Shelly out of my mind to focus on my grades.,0.25,0.625,0.625
+imagined,3,4,Mom always was talking about Shelly and how old she was getting but we all were dreading this day.,0.125,0.25,0.375
+imagined,3,5,Shelly was my best friend throughout my life.,0.0,0.25,0.25
+imagined,3,9,Shelly was the nicest Boxer a family could ever ask for and I needed to see her off before she passed on.,0.125,0.25,0.25
+imagined,3,10,Once finals were over I packed my dorm into my car for winter break and rushed home to the pet hospital.,0.125,0.625,0.625
+imagined,3,13,Shelly was the only dog I've ever had but she was the best.,0.125,0.375,0.375
+recalled,1,6,"I booked it, and rushed to pack and leave to get to the station (20 minutes away, 90 minutes before departure).",0.25,0.5,0.75
+recalled,1,9,"I told them my story; begged, pleaded. Nothing.",0.25,0.375,0.375
+recalled,1,11,"With no other options, I returned to where I was staying.",0.25,0.625,0.625
+recalled,1,15,It absolutely haunts me.,0.0,0.25,0.25
+recalled,1,18,It will never feel like home again.,0.125,0.25,0.25
+retold,2,5,"I don't drive and couldn't find any flights, so I opted for Greyhound.",0.125,0.625,0.75
+retold,2,6,I rushed to get to the station for a very last-minute departure.,0.25,0.375,0.5
+retold,2,9,And upset at myself for letting that happen.,0.125,0.375,0.375
+retold,2,10,I would make different plans to get home the next morning.,0.125,0.5,0.625
+retold,2,12,I barely got out of bed for days.,0.25,0.375,0.625
+retold,2,13,I didn't care about going home anymore.,0.125,0.25,0.25
+retold,2,14,The thought of being in my house without my dog made it feel haunted.,0.125,0.25,0.375
+imagined,2,3,I knew something was up.,0.25,0.5,0.5
+imagined,2,5,"I looked on Facebook and saw that some of his friend's were online, so I asked one of them what my boyfriend could bring that evening.",0.25,0.625,0.75
+imagined,2,9,I was furious but continued to stay focused.,0.125,0.625,0.625
+recalled,3,3,I immediately became suspicious.,0.375,0.5,0.625
+recalled,3,4,"I had been cheated on in past relationships, and I knew the warning signs.",0.125,0.25,0.375
+recalled,3,12,"Every part of me wanted to start an argument then and there but I stopped myself, and just remained quiet while he dropped me off.",0.0,0.25,0.25
+retold,1,4,"I do not regret my decision, and I do believe that our relationship is stronger than it was before.",0.125,0.25,0.375
+retold,1,6,I never told my parents about the situation because I know that they would never want me to see him again.,0.0,0.5,0.5
+retold,1,7,They would have told me that I need to know my self worth and that I should be with someone who would never do that to me.,0.0,0.25,0.25
+retold,1,8,"I agree, but I think he made a mistake that hopeful he will learn from and we will overcome as a couple.",0.125,0.375,0.5
+retold,1,10,"If this does happen again, however, I will never see him again.",0.125,0.5,0.5
+retold,1,11,I have made a promise to myself that I will do my best to look out for myself and I will leave him if he ever cheats again.,0.125,0.5,0.5
+retold,1,12,I do not want to be one of those girls who gets repeatedly cheated on and stays anyway.,0.0,0.25,0.25
+retold,1,14,But i am truly hoping that he will change as a person.,0.125,0.25,0.375
+imagined,3,11,Cheap backpacks and notebooks apparently add up.,0.25,0.375,0.5
+imagined,3,14,They need me.,0.125,0.25,0.25
+recalled,2,2,"It was something that I worked on for years by taking tests, writing papers, and attending classes.",0.375,0.625,0.75
+recalled,2,3,There were countless nights studying and worrying.,0.25,0.5,0.625
+recalled,2,4,Student teaching was long and expensive since I had to pay to not work.,0.5,0.625,0.625
+recalled,2,5,It was also exhausting working full-time and then taking classes at night.,0.5,0.625,0.875
+recalled,2,7,Walking down the stage at graduation felt amazing.,0.25,0.5,0.625
+recalled,2,8,I realized that this was likely the last time that I would attend a graduation as a student.,0.25,0.375,0.5
+recalled,2,11,My parents and grandparents were extremely proud.,0.375,0.75,1.0
+recalled,2,12,My long-term boyfriend was extremely proud.,0.25,0.875,1.0
+retold,1,7,"While I continue to look for a job, I am substitute teaching.",0.125,0.875,0.875
+retold,1,12,Now I am stuck with student loans to pay.,0.375,0.625,0.875
+imagined,2,3,She wanted it like that and I was fine with it too.,0.125,0.25,0.375
+imagined,2,4,It was less planning and fanfare which is more her style.,0.125,0.25,0.375
+imagined,2,8,It makes it hard because neither will come to family get togethers like Christmas if they know the other is there and this makes me so sad.,0.25,0.375,0.5
+imagined,2,9,I want the whole family together and it's just not the same if one is not there.,0.125,0.25,0.25
+imagined,2,14,I am so glad and warmed in my heart that they have made up with each other.,0.125,0.25,0.25
+imagined,2,15,It was tearing my heart apart that they had tension with each other and now I feel so much better.,0.125,0.375,0.375
+recalled,1,7,I had never seen her so happy before.,0.375,0.5,0.625
+recalled,1,9,I was so proud of her.,0.0,0.5,0.5
+recalled,1,10,And I was proud to be there.,0.0,0.625,0.625
+recalled,1,13,It was a big thing to do.,0.125,0.25,0.375
+recalled,1,14,They hadn't talked in a year or so.,0.25,0.375,0.5
+recalled,1,16,So that was the best part for me.,0.125,0.25,0.375
+retold,3,1,"It was a very special day for her, but it was special for me, too.",0.125,0.5,0.625
+retold,3,2,I had never seen her so happy.,0.25,0.375,0.5
+retold,3,5,It's almost like I was feeling it with her.,0.125,0.375,0.5
+retold,3,7,Her life was taking on a new direction and a new meaning.,0.125,0.375,0.5
+retold,3,8,And having family and friends share her joy just made the occasion one the most memorable days for me.,0.125,0.375,0.5
+retold,3,9,My daughter and my son had been experiencing a rift in their relationship.,0.25,0.5,0.75
+retold,3,14,"So it was nice that that happened, because I wasn't sure it was ever going to.",0.0,0.375,0.375
+imagined,1,4,It feels like I was just talking to her and planning our next get together.,0.125,0.25,0.375
+imagined,1,7,She had been waiting to go that concert for years but hadn't been able to because our work schedules didn't line up.,0.125,0.375,0.375
+imagined,1,14,I think that if anything good can come out of this is that we'll be more of a bonded family.,0.125,0.375,0.375
+imagined,1,15,We know that's what she would've wanted us to do and we'll honor her in this way.,0.125,0.25,0.25
+recalled,2,6,"He bought enough for everyone, including my oldest brother's wife.",0.0,0.25,0.25
+recalled,2,7,She was so excited - she had never seen ELO live.,0.125,0.25,0.375
+recalled,2,13,My oldest brother decided he didn't want to go to the concert after she passed away.,0.375,0.625,0.75
+retold,3,6,She had a meeting with someone from her church that morning.,0.25,0.75,1.0
+retold,3,7,She went outside to show her friend her garden and then her friend left.,0.125,0.5,0.625
+retold,3,17,It will be difficult when our family gets together for the holidays this year but we will pull together and honor her in the best way possible.,0.125,0.375,0.375
+imagined,1,2,I don't usually pick up unknown numbers.,0.125,0.25,0.375
+imagined,1,8,I felt like he always tried to be my dad and I didn't want him to.,0.0,0.125,0.125
+imagined,1,12,It was a rough conversation at first but then it got better over time.,0.125,0.375,0.5
+imagined,1,14,We agreed we would try to stay in tough more often.,0.375,0.5,0.75
+recalled,2,1,After he and my mother got divorced when I was a kid we very gradually drifted apart and had less and less contact until he was only calling on my birthday.,0.25,0.5,0.625
+recalled,2,7,We generally were able to catch up on each other's lives.,0.125,0.25,0.375
+recalled,2,8,"He's still working as a substitute teacher from time to time, and I told him I'm working at a restaurant.",0.0,0.375,0.375
+recalled,2,10,It was very sad to hear this as I remember her well from my childhood.,0.125,0.25,0.25
+recalled,2,11,I also know they were very close to one another so I tried to console him the best that I could.,0.125,0.375,0.5
+recalled,2,12,Overall this was a very significant and emotionally moving event for me that I still think about from time to time.,0.125,0.25,0.25
+retold,3,3,He still tried to be there for me but life got in the way.,0.125,0.375,0.5
+retold,3,4,He and I drifted apart over time.,0.375,0.625,0.75
+retold,3,6,"I said how good it was to hear from him, and we updated each other on some of the new mundane things in our lives.",0.25,0.5,0.625
+retold,3,8,I shared news about my own health which has also had some bumps in the road.,0.125,0.375,0.5
+retold,3,12,It brought up a lot of memories from my childhood of staying over at her house and how nice she was.,0.0,0.375,0.375
+retold,3,13,I of course tried my best to offer my condolences and sympathy.,0.25,0.5,0.625
+retold,3,15,"At the end of the call we expressed intent to stay in touch, which we have.",0.125,0.5,0.625
+retold,3,16,It's been good to have him back in my life even in just a small way.,0.125,0.25,0.25
+imagined,3,4,He would just dip them in.,0.0,0.125,0.125
+imagined,3,7,I called him while he was in the hospital and he told me not to worry.,0.125,0.625,0.75
+imagined,3,8,"He said, 'kiddo, I love you, I will always take care of you.'",0.125,0.25,0.25
+imagined,3,10,I was able to fly over and see my dad before he died.,0.375,0.625,0.625
+imagined,3,13,Paperwork to sign cause dad passed away.,0.125,0.625,0.625
+recalled,2,6,"I was dealing with funeral, insurance companies and estate issues and was just going through the motions.",0.5,0.625,0.75
+recalled,2,7,I signed so much paperwork it all looked the same.,0.125,0.25,0.375
+recalled,2,16,I immediately called the law firm and was explained that I had already signed the release and they had all that they needed.,0.25,0.375,0.5
+recalled,2,19,My parents found a way to take care of me even in their death.,0.125,0.25,0.25
+retold,1,5,I went through the home and went over paperwork that was left.,0.125,0.375,0.5
+imagined,1,2,"But first, it was time to celebrate.",0.25,0.375,0.625
+imagined,1,5,"Well, here was my chance.",0.0,0.125,0.125
+imagined,1,6,It was soooo beautiful!,0.0,0.125,0.125
+imagined,1,7,"We hiked many of the trails, including the 'Narrows', which was killer, but really awesome.",0.25,0.625,0.875
+imagined,1,8,"We even saw some wild animals, which was so cool and unexpected!",0.375,0.625,0.875
+imagined,1,9,It was so nice to be out in fresh air and to just clear my thoughts.,0.0,0.125,0.125
+imagined,1,10,We ate at a few great restaurants too.,0.0,0.75,0.75
+imagined,1,11,I love me some good food!,0.0,0.125,0.125
+imagined,1,12,And shopping was also fantastic.,0.0,0.625,0.625
+imagined,1,13,"My parents bought me a couple of graduation gifts, including a beautiful necklace.",0.375,0.5,0.875
+imagined,1,14,"I love it, and when I wear it I will always remember this trip.",0.0,0.125,0.125
+recalled,3,0,"Recently, I visited Zion National Part with my parents.",0.75,0.875,1.0
+recalled,3,2,"It was also the first family trip we took with the three of us in months, so it was fun to be just with them.",0.25,0.375,0.375
+recalled,3,3,I really enjoyed the trails and exploring the landscape of the national park.,0.375,0.5,0.75
+recalled,3,4,"I was a bit out of shape, so some of the trails were difficult, but I felt happy once I completed them.",0.125,0.375,0.5
+recalled,3,5,My favorite walks on the trail were the paths that lead to waterfalls and hanging gardens.,0.25,0.375,0.5
+recalled,3,6,"There were beautiful rock formations, and amazing plant life.",0.125,0.625,0.625
+recalled,3,8,"After our days in the park, we headed into town to check out the shops.",0.125,0.625,0.625
+recalled,3,11,There were also lots of outdoor stores that had a wide range of supplies.,0.0,0.25,0.25
+recalled,3,12,I got a hat and a water bottle as a souvenir.,0.25,0.375,0.625
+recalled,3,13,We also went to some local restaurants and had some snacks and drinks.,0.125,0.625,0.625
+retold,2,2,"Before they came down, we settled on visiting Zion National Park as part of a graduation trip.",0.25,0.75,0.875
+retold,2,3,"My parents rented a car, and drove out from California to Utah.",0.375,0.75,1.0
+retold,2,4,"When we arrived into town, we checked into a hotel located on the river.",0.0,0.625,0.625
+retold,2,5,"The hotel was next to a bus system that could take us into town, and then into the national park.",0.125,0.25,0.25
+retold,2,6,"The bus was helpful, since the weather was overcast and rainy.",0.0,0.25,0.25
+retold,2,8,"After we unpacked all of our things, we went into town to shop and explore the area.",0.125,0.625,0.625
+retold,2,9,"We ate at one of the restaurants, got a trail guide, and explored a few of the shops.",0.0,0.625,0.625
+retold,2,10,The next day we took the bus to the trails at Zion National park.,0.25,0.75,0.75
+retold,2,11,"We hiked along beautiful trails with waterfalls, plant life, and animals.",0.25,0.625,0.75
+retold,2,13,"We also visited the nature center, and learned about the wildlife and history of the park.",0.125,0.375,0.5
+retold,2,14,"After hiking, we went back into town and relaxed.",0.25,0.5,0.5
+retold,2,15,We brought snacks back to our room and talked about our day.,0.0,0.375,0.375
+imagined,1,0,It's been two months since I saw the doctor for my problem.,0.25,0.375,0.5
+imagined,1,2,"I knew that I probably had an infection, and I did.",0.375,0.5,0.5
+imagined,1,4,Holding my pee had become a regular habit for me.,0.125,0.375,0.5
+imagined,1,14,"So now, it's a common problem.",0.125,0.25,0.25
+imagined,1,16,I thought maybe it would stop after a few times but it seems to be going strong 6 months later and I'm at my wits end as to what to do.,0.25,0.375,0.375
+imagined,1,17,The doctor had treated my infection but I suspected that I needed a therapist at this point.,0.25,0.375,0.5
+recalled,3,10,She referred me to someone else.,0.0,0.625,0.625
+recalled,3,12,"Anyways, I thought my frequency to go to the bathroom would go away with eating fruits and vegetables, but it didn't.",0.25,0.375,0.625
+recalled,3,13,So i have an appointment lined up next week with a urinary specialist.,0.25,0.375,0.625
+recalled,3,14,Hopefully he/she will cure me.,0.0,0.25,0.25
+retold,2,0,"Okay, it has been several months since i came back from my primary doctor's visit.",0.125,0.375,0.375
+retold,2,2,Then it took like a week to hear back from the people who schedule appointments at the hospital.,0.0,0.375,0.375
+retold,2,3,"It was a matter of me going to hospital to see why they hadn't called me, when my primary doctor said that someone from the hospital would.",0.25,0.375,0.625
+retold,2,6,"I went to my first visit with the urinary specialist on July 27, now i'm going back to see him tomorrow (August 27, 2019).",0.25,0.625,0.75
+retold,2,11,I wish the health care industry in america would be a lot more efficient and not have someone that is poor and not a lot of money have them wait an eternity for treatment.,0.125,0.25,0.25
+retold,2,12,"But, i am going to see him tomorrow, that is what is important.",0.25,0.75,0.75
+retold,2,15,"I'm hoping this will end good, not bad.",0.0,0.25,0.25
+retold,2,16,"Hope for a speedy recovery, so i can go back to work like i used to 2 years ago.",0.0,0.125,0.125
+imagined,3,4,"As I reflect back, I think to how nervous I was to even ask her to marry me.",0.125,0.25,0.375
+imagined,3,6,I practiced what I would say for months and just couldn't work up the nerve.,0.25,0.375,0.625
+imagined,3,14,We stayed the Mirage just up the street and just had the most wonderful time.,0.25,0.375,0.5
+recalled,1,1,I wanted to get her a nice ring so I contacted her cousin to find out what type of ring would suit her.,0.375,0.625,0.875
+recalled,1,2,She came back with some ideas and I went from there.,0.0,0.375,0.375
+recalled,1,3,I ordered the ring offline and had to wait for it to be shipped and signed for.,0.625,0.875,0.875
+recalled,1,6,I think I got very lucky.,0.125,0.25,0.375
+recalled,1,9,"We invited my parents, our son was there, and her family.",0.125,0.5,0.625
+recalled,1,10,We had a good time and I finally pulled out the ring to put it on my pinky so it was ready.,0.375,0.5,0.75
+recalled,1,11,My dad was getting anxious and was ready to leave until I showed him the ring under the table.,0.25,0.625,0.875
+recalled,1,12,He was then relaxed and thought I should get on with it.,0.125,0.25,0.375
+retold,2,1,We found out that we enjoy a lot of the same things and are able to enjoy them together.,0.125,0.5,0.5
+retold,2,2,We also have a son who we love very much and enjoy taking him to enjoy our hobbies and passions together as a family.,0.375,0.5,0.625
+retold,2,7,So with the ring nervously in my pocket we went to dinner and I dont think she even knew.,0.25,0.375,0.5
+retold,2,10,I had to finally ask her or I'd have to find another time and be super nervous all over again.,0.125,0.25,0.375
+retold,2,13,The resturant printed off the menu for us and it said congrats to us.,0.25,0.375,0.625
+retold,2,14,We are now very happy together and have been able to share things equally.,0.375,0.5,0.625
+retold,2,15,We live together and share expenses and those things are working out great.,0.0,0.5,0.5
+retold,2,16,I'm glad I finally asked her.,0.0,0.125,0.125
+imagined,2,4,"Weirdly so, while I was realistic about it, I felt that I was also in denial about many things.",0.25,0.375,0.5
+imagined,2,11,She was selfish for a very long time.,0.125,0.25,0.375
+imagined,2,20,"I don't really know why I was shocked, though.",0.125,0.25,0.375
+recalled,1,5,I don't think that my wife realizes how this is going to impact the kids.,0.125,0.375,0.375
+recalled,1,6,"I am so sad, frustrated and upset by all,of this.",0.125,0.625,0.625
+recalled,1,7,All I wanted was to restore our family.,0.0,0.375,0.375
+recalled,1,8,I miss my wife.,0.25,0.375,0.5
+recalled,1,9,I miss being with the kids everyday.,0.25,0.5,0.5
+recalled,1,10,I miss us being a family.,0.25,0.375,0.375
+recalled,1,14,All I can do is focus on God and be strong for the kids and let them know that we are still a family.,0.125,0.25,0.25
+retold,3,0,"This is a story it's about a family who is trying to stay together, at least partially.",0.375,0.5,0.625
+retold,3,3,"Unfortunately it's the kids who suffer the most, as they have to deal what's the consequences that are outside of their control.",0.375,0.5,0.5
+retold,3,8,You have a husband who is stuck in no man's land.,0.25,0.5,0.5
+retold,3,9,The husband will not file for divorce.,0.25,0.375,0.625
+retold,3,11,"The parents are separated, the family is separated, do they still do things together.",0.125,0.25,0.375
+retold,3,15,"And how can this family move on, when 1 person wants nothing but reconciliation and the other person can't make up their mind.",0.125,0.375,0.375
+imagined,1,4,"We rode almost all of the rides, and re-lived our first date.",0.25,0.375,0.625
+imagined,1,6,"It was our first time there, and we were a bit overwhelmed with all of the rides and activities there, but we had a great time.",0.125,0.375,0.375
+imagined,1,14,The food was amazing.,0.0,0.125,0.125
+recalled,3,1,It was a road trip visiting various cities and amusement parks.,0.375,0.5,0.625
+recalled,3,2,We chose this because we both love rollercoasters and it fit our budget.,0.125,0.25,0.25
+recalled,3,6,Our trip started in Ohio.,0.0,0.625,0.625
+recalled,3,8,"Next, we went to Kentucky Kingdom in Louisville, Kentucky.",0.25,1.0,1.0
+recalled,3,10,"Our next park was Carowinds, just outside Charlotte North Carolina.",0.25,0.875,0.875
+recalled,3,11,We were there long enough for a day in the park and the city.,0.0,0.25,0.25
+recalled,3,12,"After this, we went to Kings Dominion in Doswell Virginia.",0.625,0.875,1.0
+recalled,3,14,"After a day here, we visited Philadelphia.",0.625,0.75,1.0
+recalled,3,16,We toured around the sites and ate plenty of Cheesesteaks and Dinic's roasted pork sandwiches.,0.125,0.5,0.625
+recalled,3,17,Our final stop was Toronto and Canada's Wonderland just outside the city.,0.5,0.75,0.875
+recalled,3,20,We also stopped on the way there to see Niagara Falls.,0.25,0.625,0.875
+retold,2,5,"They had amazing roller coasters, including one named Voyage, that is now in my top five of all time.",0.125,0.25,0.25
+retold,2,7,"After that, we went to Kentucky Kingdom.",0.5,0.75,0.875
+retold,2,10,"Because of this, we left really early to get to our next destination, Dollywood.",0.625,0.75,1.0
+retold,2,13,"We spent two days in Charlotte, where Carowinds is, and then headed to Virginia to go to Kings Dominion.",0.375,0.5,0.75
+retold,2,15,We both loved intimidator 305 and Twisted Timbers.,0.125,0.25,0.375
+imagined,2,4,"I mindlessly went through my routine, made sure my spouse was ready for work, and dropped my kid off at school.",0.0,0.4285714285714285,0.4285714285714285
+imagined,2,6,"Like normal, I just did my job, made some money, ran errands, cleaned the house, and started some things for dinner.",0.0,0.7142857142857143,0.7142857142857143
+imagined,2,7,"I had coffee with my friend, chatting about our many responsibilities and how grateful we were for any breaks from spending time with others, how heavy our workloads were and how school gave us a little break in our day from childcare.",0.0,0.5714285714285714,0.5714285714285714
+imagined,2,8,"That afternoon, I went to go pick up my kid from school.",0.1428571428571428,0.4285714285714285,0.5714285714285714
+imagined,2,19,"Too busy to spend time praying, or doing worthwhile hobbies that I enjoy?",0.0,0.1428571428571428,0.1428571428571428
+imagined,2,22,"All the while, the things that truly matter were passing me by.",0.0,0.1428571428571428,0.1428571428571428
+imagined,2,23,"I hugged my spouse and child close, and determined that I would no longer miss what's important in life.",0.0,0.4285714285714285,0.4285714285714285
+recalled,1,0,Life happens so quickly that sometimes you don't realize how much of it has passed.,0.1428571428571428,0.2857142857142857,0.2857142857142857
+recalled,1,1,You just wake up each day and go through the same routine as though you're on auto pilot.,0.2857142857142857,0.4285714285714285,0.5714285714285714
+recalled,1,2,"You wake the kids, walk the dog and go to work then the next thing you know the work day is over then it's back home to get ready for bed and start the cycle all over again.",0.0,0.4285714285714285,0.4285714285714285
+recalled,1,3,Days turn into weeks and weeks into months and you wonder where the time went while waiting to reach this destination of happiness you've been longing to find for as long as you can remember.,0.0,0.2857142857142857,0.2857142857142857
+recalled,1,7,"Sometimes it's brief and sometimes it's replaced by sadness, bitterness, or anger.",0.0,0.1428571428571428,0.1428571428571428
+recalled,1,9,"I had been at the same job for almost 7 1/2 years and it has been a great place to work, but felt stuck in a job I just had to go to because I felt it was my only option.",0.0,0.1428571428571428,0.1428571428571428
+recalled,1,13,After I actually done this I felt empowered but by the next day I felt terrified because I had devoted 7 1/2 years to a job I had planned to retire from.,0.2857142857142857,0.4285714285714285,0.4285714285714285
+recalled,1,15,I had taken the kids to school and it was time for me to get online and work.,0.1428571428571428,0.2857142857142857,0.4285714285714285
+recalled,1,19,"I've not only been able to take my kids to school, but I've actually been able to watch my 14 year old son's soccer games and haven't missed a baseball practice for my younger son and we've spent more time hiking and going to the dog park.",0.2857142857142857,0.4285714285714285,0.7142857142857143
+retold,3,3,I've been going through the motions of the day and going about my life like a schedule.,0.1428571428571428,0.2857142857142857,0.2857142857142857
+retold,3,6,I realize how I need to take the extra time to show my kids how much I love them and not just expect them to just know.,0.1428571428571428,0.5714285714285714,0.5714285714285714
+retold,3,8,Everyone needs to truly feel and understand that they're loved which I've realized can't be done on the same monotonous auto pilot mode.,0.0,0.2857142857142857,0.2857142857142857
+retold,3,9,It's time to go outside of the norm and truly show it.,0.0,0.1428571428571428,0.1428571428571428
+retold,3,11,"By actually showing my love and speaking my truth it has made not only my children much happier and more willing to talk openly to me about what's going on in their lives, but it's also made me so much happier.",0.2857142857142857,0.4285714285714285,0.5714285714285714
+retold,3,12,Living on auto pilot happens way to often and I feel like I can't be the only one in the same boat.,0.0,0.1428571428571428,0.1428571428571428
+retold,3,13,I feel like my advice when talking with friends and family has really had a positive impact on them as well.,0.0,0.4285714285714285,0.4285714285714285
+retold,3,16,I'm so thankful I did because it's made my relationship with my children a much more positive one.,0.1428571428571428,0.7142857142857143,0.7142857142857143
+imagined,1,0,I was on my daily game of Dota 2 last week and I had a very intense two hour game that is both stressful yet rewarding.,0.375,0.5,0.625
+imagined,1,1,It's always been stressful yet rewarding for me over the thousands of hours I have played in this game but my last week's game stands out than the rest.,0.25,0.375,0.5
+imagined,1,2,I picked Crystal Maiden as my hero and I went with another person who played a carry Slark at the bottom lane.,0.25,0.625,0.875
+imagined,1,7,"Even though I had a mic, I stayed quiet and just typed 'I'm sorry' on chat whenever he screamed at me.",0.25,0.375,0.625
+imagined,1,13,"I would always commend and rate positively my teammates whenever I win, so I did it as well with Slark.",0.0,0.25,0.25
+recalled,2,1,"He is an incredibly good player, good student, and is well-liked.",0.125,0.25,0.375
+recalled,2,5,"He didn't want to turn the kids in because he felt that that would cause more problems, but he did choose to share his concerns with me -as a way to vent.",0.25,0.625,0.625
+recalled,2,7,"I couldn't sleep that night, I was angry at the kids and upset for my son.",0.375,0.625,0.75
+recalled,2,9,"The next day, I called the coach and took it upon myself to report the situation.",0.625,1.0,1.0
+recalled,2,11,"The coach wound up looking at the security footage from the field for that day, and though he couldn't hear what was being said, he was able to determine who it was, and what was happening.",0.125,0.625,0.75
+retold,3,2,He is incredibly smart and gives all tasks his all.,0.125,0.25,0.375
+retold,3,3,"He is super friendly, and kind of Ferdinand in that he doesn't like using his size to hurt others.",0.125,0.25,0.375
+retold,3,4,"He also is home schooled, because as a parent, I am worried about bullying and the other social factors that cause students to become sidetracked from their studies and lead to emotional problems.",0.375,0.5,0.75
+retold,3,7,"Sam was having an especially tough practice, and was confused about the instruction of a particular play - and finally angry because on day 7 Sam didn't know what in the heck a touch back, left tackle was or the different rules that apply to offense and defense yet.",0.5,0.625,0.75
+retold,3,10,I briefly spoke to the coach who did NOTHING but say it was FOOTBALL and to toughen up.,0.25,0.5,0.75
+retold,3,12,"He seemed a little off that day, but worked hard and had all the plays figured out as he had studied up the night before.",0.125,0.375,0.375
+retold,3,14,"After taking a couple of hits, Nate, the snot nosed coach's son, started hollering at Sam to do his job.",0.5,0.625,1.0
+retold,3,16,"I'll make you a deal - you stop talking smack about me and treating me like dirt, and I will do my job.",0.25,0.375,0.625
+retold,3,22,His mother gasped.,0.125,0.5,0.625
+imagined,2,4,We did get together and reminisce about all the good time we had together; including giving him grief about his beloved sports team.,0.2857142857142857,0.4285714285714285,0.7142857142857143
+imagined,2,6,It was not too surprising to hear that the funeral will be informal.,0.4285714285714285,0.5714285714285714,1.0
+imagined,2,15,The ceremony was nice.,0.0,0.2857142857142857,0.2857142857142857
+imagined,2,21,I will miss him dearly.,0.1428571428571428,0.2857142857142857,0.2857142857142857
+imagined,2,23,We filled in some people who were unable to attend.,0.1428571428571428,0.2857142857142857,0.4285714285714285
+recalled,3,14,"He fought a very good fight with his cancer battle, never giving up hope.",0.0,0.1428571428571428,0.1428571428571428
+retold,1,5,Notice was given to all who knew him to come to an informal gathering where he would be remembered.,0.1428571428571428,0.4285714285714285,0.5714285714285714
+retold,1,8,There were many in attendance wearing his favorite teams jersey though not all.,0.2857142857142857,0.4285714285714285,0.5714285714285714
+retold,1,10,There were tears and laughter of times when he had been and encouragement to different attendees he had worked with.,0.1428571428571428,0.2857142857142857,0.4285714285714285
+retold,1,14,A speaker toward the end told of the young man's life while a video played in the background showing him in happier times.,0.2857142857142857,0.4285714285714285,0.7142857142857143
+retold,1,17,They miss him of course but it's one of those things in life that we encounter sometimes.,0.1428571428571428,0.2857142857142857,0.4285714285714285
+retold,1,19,He'll forever be in our thoughts and remind us to be thankful for those in our lives that our still with us.,0.0,0.2857142857142857,0.2857142857142857
+retold,1,20,Good reminder to spend time with our love ones and acknowledge them while they are here.,0.0,0.2857142857142857,0.2857142857142857
+imagined,3,15,I begged and pleaded with her not to leave me.,0.375,0.5,0.625
+imagined,3,17,I was crushed and began to cry.,0.375,0.625,0.875
+imagined,3,18,She left after eating.,0.375,0.5,0.75
+imagined,3,19,I couldn't eat and just went to my bed.,0.25,0.5,0.625
+recalled,1,5,"Not at all, I thought she was the one.",0.125,0.25,0.375
+recalled,1,10,"Her friends (who are still my friends which is odd) told me that they warned me, well I guess I was so in love it would have taken a Mack truck to hit me with it.",0.25,0.625,0.875
+recalled,1,14,"So there I am, boxing and storing lady's under garments and unmentionables.",0.25,0.625,0.75
+recalled,1,15,"All plates, pans, cooking utensils, eating utensils, sheets, towels, hell even lightbulbs.",0.25,0.5,0.5
+recalled,1,17,"I know what a divorce feels like, well except the whole court/lawyer fee thing.",0.125,0.25,0.375
+recalled,1,19,"I bought a stainless steel pot set because I liked the look, but I can't cook on it for crap, so I don't use it much.",0.5,0.625,0.75
+recalled,1,21,"I kinda wish I wasn't such a smartass and kept some of it, but I wanted her to know I could do it without her.",0.25,0.375,0.375
+recalled,1,23,MaybeThe dog thinks so anyway,0.125,0.25,0.25
+retold,2,10,"Well, I pack.",0.25,0.375,0.5
+retold,2,15,"I repainted rooms, redecorated, tried to make what I built for her mine in a few weeks time.",0.375,0.5,0.625
+retold,2,16,"I spent time outside and built a patio, I built furniture that would replace the ones that I bought for her.",0.375,0.5,0.625
+imagined,3,0,I've read the full four book lonesome dove series and I consider it to be among the finest of the great western classics.,0.625,0.75,1.0
+imagined,3,1,I've also seen the numerous depictions in film of McMurtry's stories.,0.125,0.25,0.375
+imagined,3,8,Some of the most profound things I took from the stories were the details surrounding the cultures of the various native american tribes the cowboys encounter along the journeys.,0.375,0.5,0.625
+imagined,3,10,It also doesn't surprise me that plains native americans would be so tough and willing to fight to defend themselves given the overall harsh environment of north and west texas.,0.0,0.375,0.375
+imagined,3,14,"It is truly one of my favorite books and having grown up in Texas, I some sense of pride imagining that events as romantic if at time brutal  probably took place.",0.25,0.375,0.5
+imagined,3,15,It makes me feel at the very least that Texas is as unique a state as we Texans would like to believe and often proclaim.,0.125,0.375,0.375
+recalled,1,3,I am also a Texan.,0.125,0.375,0.375
+recalled,1,8,Larry McMurtry excels at character development to the point that I felt as though I knew them.,0.125,0.625,0.75
+recalled,1,9,He also excels at plots and sub-plots that are very compelling.,0.125,0.375,0.5
+recalled,1,11,I was very sad when I finished reading Lonesome Dove.,0.25,0.375,0.5
+recalled,1,13,I wondered what I was going to do for reading next.,0.125,0.25,0.25
+recalled,1,14,I ended up researching similar books written by Larry McMurtry.,0.375,0.5,0.75
+retold,2,0,I finished a book I have been reading for the last few days.,0.5,0.75,0.875
+retold,2,8,The book had very rich character development.,0.25,0.375,0.5
+retold,2,9,"There were good guys, bad guys, and in-between guys.",0.125,0.25,0.25
+retold,2,15,It is very colorful in terms of the language.,0.0,0.125,0.125
+imagined,3,5,I celebrated in a big style with my family and friends.,0.375,0.875,1.0
+imagined,3,6,My mom gave me a big hug and had some tears.,0.375,0.5,0.75
+imagined,3,7,My dad shook my hand and also had tears.,0.25,0.5,0.625
+imagined,3,8,My friends all jumped up and down at the ceremony.,0.25,0.5,0.75
+imagined,3,9,We all had a great time.,0.125,0.25,0.25
+imagined,3,10,I had some tears that I was finally done with school.,0.125,0.375,0.375
+imagined,3,11,We all went out for some pizza to celebrate.,0.125,0.75,0.875
+imagined,3,12,I got a meat lovers by myself.,0.125,0.25,0.375
+imagined,3,13,I barely finished the pizza.,0.125,0.25,0.375
+imagined,3,14,I will remember this forever.,0.0,0.25,0.25
+recalled,2,1,I had planned out my to do list as usual prior to the day.,0.125,0.25,0.375
+recalled,2,4,I called the assistant too.,0.125,0.625,0.75
+recalled,2,6,I thought i was going to loose it .,0.125,0.375,0.375
+recalled,2,8,I called my friend who introduced me to this company .,0.25,0.625,0.875
+recalled,2,10,Waited another 15 minutes for my friends feedback.,0.125,0.5,0.5
+recalled,2,12,I had no option than to accept his apology even though i was furious.,0.25,0.375,0.625
+recalled,2,13,He brought my cloth eventually and my friend came in too not long after .,0.375,0.5,0.75
+recalled,2,14,We headed out .,0.125,0.5,0.5
+recalled,2,15,I arrived  in time for my graduation.,0.125,0.5,0.625
+recalled,2,16,Family and friends are present already.,0.0,0.25,0.25
+recalled,2,17,"We merry ,laughed.",0.125,0.25,0.375
+recalled,2,18,I was presented my award .I also took pictures with my other graduates .,0.25,0.375,0.375
+recalled,2,19,It was a memorable experience and overwhelming too.,0.125,0.375,0.375
+recalled,2,20,"My family were happy for me,.They were proud of me too.. My mum especially could not hide her joy.",0.125,0.375,0.375
+recalled,2,21,We had after party with friends.,0.375,0.5,0.75
+recalled,2,22,"I went back home to my family ,we prayed ,eat and merry.",0.125,0.5,0.5
+recalled,2,23,It was a sweet memory.,0.0,0.125,0.125
+retold,1,4,"Just when we thought it was over, we planned to have some time out as buddies who just graduated.",0.25,0.5,0.625
+retold,1,5,we went partying at a club downtown.,0.375,0.5,0.75
+retold,1,6,It was fun all night.,0.0,0.25,0.25
+retold,1,8,The girls were dancing and happy.,0.125,0.375,0.5
+retold,1,9,The guys were having good laughs and drinks.,0.125,0.375,0.375
+retold,1,11,we really had mad fun all this while till when suddenly.,0.125,0.25,0.25
+retold,1,14,I think he had too much to drink not considering his health.,0.0,0.25,0.25
+retold,1,17,By this time we took him ot of the club.,0.125,0.5,0.5
+retold,1,19,He only wants to go home as he was hungover .,0.125,0.25,0.375
+retold,1,20,We left the party and headed to his apartment some miles away from the club.,0.125,0.625,0.75
+retold,1,21,"When we go to his apartment, He had his shower and was calm.",0.125,0.625,0.625
+retold,1,23,He was calm afterwards.,0.0,0.5,0.5
+retold,1,24,Daniel decided to stay with him to keep eye on him.,0.125,0.375,0.5
+retold,1,25,We left his place to our various homes after all the party was over.,0.125,0.5,0.5
+retold,1,26,"I left for my place and when i got home ,dinner was set.",0.25,0.375,0.5
+retold,1,27,Had dinner with my family.,0.25,0.375,0.625
+retold,1,28,I checked on my buddy from the club earlier and my friend [Daniel] told me he was okay.,0.0,0.625,0.625
+imagined,2,3,"Now that I have health insurance, I decided to get my eyes checked and see if there was anything that could be done.",0.25,0.75,0.875
+imagined,2,5,He reassured me that it was a safe procedure and would greatly improve the appearance.,0.25,0.375,0.625
+imagined,2,6,"I didn't really need much time to think it over, and I immediately signed up for an appointment scheduled for three months later.",0.125,0.625,0.625
+recalled,1,9,"So, I scheduled an appointment with a surgeon and had an evaluation done.",0.125,0.625,0.625
+recalled,1,11,The surgeon worked with me for several minutes and finally my eyes adjusted some.,0.125,0.375,0.5
+recalled,1,14,I talked to my husband about the situation and he thought it was a good idea to have the surgery done.,0.125,0.5,0.625
+recalled,1,16,"I told her that if this was the case, I was not interested, because we had already paid $600 out of pocket for the first evaluation.",0.25,0.375,0.625
+recalled,1,19,"My crossed eyes have always caused people to look at me a little funny and some companies have not wanted to hire me, thinking there was something wrong with me.",0.0,0.25,0.25
+retold,3,6,I told him that I was and his office referred me to an eye surgeon the next day.,0.25,0.625,0.75
+retold,3,9,"Long story short, I went ahead and scheduled the eye surgery.",0.625,1.0,1.0
+retold,3,15,Recovery went well.,0.125,0.25,0.375
+retold,3,16,I basically rested and didn't do much of anything while my husband took care of the house and our girls.,0.25,0.375,0.5
+imagined,2,4,I cried in private and in public.,0.625,0.75,1.0
+imagined,2,7,The next stop was to my best friend's wake.,0.5,0.75,0.875
+imagined,2,9,No amount of condolences could ever made this right.,0.125,0.25,0.25
+imagined,2,13,I am still so far negative.,0.25,0.375,0.375
+recalled,3,8,She perked up for a little while and I placed her on her bed on the floor to spend some time with her before I called the vet.,0.5,0.75,1.0
+recalled,3,9,I held her head on my lap and pet her.,0.0,0.625,0.625
+recalled,3,10,This day was also the memorial service for my uncle that had just passed away.,0.375,0.5,0.75
+recalled,3,12,It seemed like it happened so quickly.,0.125,0.375,0.5
+recalled,3,13,One moment she was there.,0.0,0.375,0.375
+recalled,3,15,I had never felt more alone in my life than I did at that moment.,0.25,0.5,0.625
+retold,1,4,There was no way that I was leaving my dog alone.,0.125,0.25,0.375
+retold,1,6,I played her songs that we had listened to together over the years.,0.25,0.5,0.75
+retold,1,7,She was mostly quiet as I stroked her head.,0.0,0.5,0.5
+retold,1,8,I told her stories about our life together.,0.25,0.375,0.5
+retold,1,10,I told her that it was okay to go.,0.25,0.375,0.625
+retold,1,11,It would hurt me worse than I could imagine but I had to let her go.,0.25,0.375,0.5
+retold,1,16,I felt like my heart was literally ripped out.,0.5,0.625,0.75
+imagined,1,4,This threw the family into chaos.,0.25,0.375,0.375
+recalled,2,3,She is healthy and that is happy.,0.0,0.25,0.25
+recalled,2,7,She has no job and has tattoos all over her body.,0.25,0.375,0.5
+retold,3,7,I try to help the baby to be healthy mentally and physically.,0.25,0.375,0.375
+retold,3,9,This morning I cleaned up the baby bottles and high chair.,0.25,0.875,0.875
+retold,3,11,I just got through feeding the baby lunch.,0.125,0.625,0.75
+retold,3,12,I'll be alone with her until about six tonight.,0.125,0.25,0.375
+retold,3,13,"In truth, I am a sort of part time mother to her.",0.25,0.375,0.5
+retold,3,14,It will soon be time to put her down for a nap.,0.125,0.375,0.5
+retold,3,17,I worry all the time about what will happen if CPS gives her back to her mother.,0.125,0.25,0.25
+imagined,2,2,We planned out everything.,0.125,0.375,0.375
+imagined,2,6,I didn't know why this was happening to me.,0.0,0.125,0.125
+imagined,2,11,"That helped us, but we still couldn't get over it.",0.125,0.25,0.25
+imagined,2,13,I'm still not over it.,0.125,0.25,0.25
+imagined,2,14,"I don't want to get my hopes up again and then have to have them crushed, and I don't think my husband does either.",0.125,0.25,0.25
+imagined,2,15,"Hopefully in the next year, I will be back to normal.",0.0,0.125,0.125
+recalled,1,4,I still don't really know how to feel.,0.0,0.25,0.25
+recalled,1,11,I feel like this entire thing went by so fast.,0.125,0.25,0.25
+retold,3,5,It was at the time.,0.0,0.125,0.125
+retold,3,11,"Once the fetus came out, the pain reduced a lot, although it was still painful.",0.375,0.5,0.625
+retold,3,14,My life will never be the same.,0.375,0.5,0.5
+imagined,3,1,He was so cute.,0.0,0.375,0.375
+imagined,3,2,He did struggle in his cage but that's okay.,0.125,0.375,0.5
+imagined,3,3,Once we landed I let him out to run around.,0.125,0.625,0.75
+imagined,3,4,He was so happy to get off.,0.125,0.375,0.5
+imagined,3,5,THe first thing he did was run around and lay in the grass in the sun.,0.25,0.5,0.75
+imagined,3,7,I love my turtle so much.,0.0,0.5,0.5
+imagined,3,9,I asked his parents if it was okay and they said yes.,0.375,0.5,0.75
+imagined,3,12,I was so upset.,0.0,0.375,0.375
+imagined,3,15,I was so mad at that little brat.,0.25,0.375,0.5
+imagined,3,17,That is the last time I let a kid touch my pet turtle.,0.125,0.25,0.375
+recalled,2,2,"So, of course, I had to bring my turtley son along with.",0.0,0.5,0.5
+recalled,2,5,Poor guy.,0.125,0.375,0.375
+recalled,2,6,Sorry lil buddy.,0.0,0.125,0.125
+recalled,2,7,"He did get to meet the TSA, who allowed him to bypass the x ray machine.",0.25,0.625,0.875
+recalled,2,8,(I was worried about health effects for my boy!),0.0,0.125,0.125
+recalled,2,10,Or maybe drugs?,0.125,0.25,0.375
+retold,1,8,I guess he's just that HOT looking haha.,0.125,0.25,0.25
+retold,1,10,"They swabbed him down, found nothing of course, and then we were off to wait for the airplane.",0.25,0.625,0.75
+retold,1,11,Rocky was NOT a fan of the box by the way.,0.0,0.25,0.25
+retold,1,13,"When it was open, however, he'd chill and peek his lil turtley head up and out, taking in the sights.",0.125,0.25,0.375
+retold,1,14,He got to meet several curious travelers including one delighted lil toddler whose mother was v charmed by my personable lil guy.,0.25,0.5,0.625
+retold,1,16,Could not open the box and take him out midflight.,0.125,0.25,0.25
+retold,1,17,"Seemed risky, didn't want him getting loose and causing a panic, or even worse, getting hurt.",0.125,0.25,0.25
+imagined,3,1,"As a teenager, you never saw me without my Nikon.",0.0,0.375,0.375
+imagined,3,2,I was always in the photo lab at school.,0.0,0.375,0.375
+imagined,3,3,"Even in my senior photo, I've got a camera around my neck.",0.125,0.625,0.625
+imagined,3,5,Working at the photo mart in the mall in high school was my launch into my career.,0.0,0.625,0.625
+imagined,3,13,The sky is the limit.,0.0,0.125,0.125
+imagined,3,14,"The last three months since my picture appeared, I've been getting calls from all around the world.",0.375,0.5,0.75
+recalled,2,1,I was very excited.,0.0,0.125,0.125
+recalled,2,2,"When I first found out that one of my photos was going to be published, I was so excited and overjoyed that I cried happy tears and could not thank God, enough!",0.0,0.375,0.375
+recalled,2,4,I called my husband and told him the great news!,0.0,0.75,0.75
+recalled,2,5,He was thrilled for me and gave me huge congratulations!,0.0,0.25,0.25
+recalled,2,6,I also called or text other family members to tell them the good news as well.,0.0,0.625,0.625
+recalled,2,7,They were also very excited!,0.125,0.25,0.25
+recalled,2,8,The photo that was published was a portrait of my son.,0.375,0.5,0.75
+recalled,2,9,This made the event even more special.,0.125,0.25,0.25
+recalled,2,10,When I got the magazine in the mail I was so happy!,0.0,0.375,0.375
+recalled,2,11,I showed the magazine to my son and showed him his portrait and he was very excited as well.,0.125,0.625,0.625
+recalled,2,13,Everyone in the family was ecstatic!,0.125,0.375,0.5
+recalled,2,14,This was a very joyous memory for me in my photography career and definitely a great memory.,0.0,0.125,0.125
+retold,1,5,"I was so excited when I found out I just kept thanking God, and cried tears of joy!",0.125,0.25,0.375
+retold,1,6,I messaged my husband to tell him the news!,0.0,0.625,0.625
+retold,1,7,He was so excited and happy for me and was very supportive.,0.0,0.375,0.375
+retold,1,8,I also messaged some family members and they were also very happy to hear the news.,0.125,0.5,0.625
+retold,1,9,Everyone was very happy about the news and that was great!,0.0,0.25,0.25
+retold,1,10,I ordered a copy of the magazine and couldn't wait for it to come in.,0.0,0.625,0.625
+retold,1,11,When it came in I was brimming with excitement!,0.0,0.375,0.375
+retold,1,12,I was overjoyed when I opened the magazine and saw my portrait!,0.125,0.25,0.375
+retold,1,13,I couldn't believe how great it looked!,0.25,0.375,0.375
+retold,1,14,I showed it to my child and they were also very excited to see their portrait in the magazine.,0.125,0.875,0.875
+retold,1,15,This was such an exciting time and great milestone as a photographer.,0.0,0.125,0.125
+imagined,3,7,"I went straight to see our family doctor fortunately, I met him on a good condition, He attended to me.",0.125,0.375,0.5
+imagined,3,8,I explained to him exactly how i was feeling and from my explanation he could figure out what could be happening.,0.125,0.25,0.25
+imagined,3,10,I was placed on medication and was given medicine.,0.0,0.875,0.875
+imagined,3,11,I left and started using this pills and a change begin to happen the next day.,0.375,0.5,0.75
+recalled,2,1,"It began the same, mid way also.",0.125,0.25,0.375
+recalled,2,5,"It was intense, extreme, unbearable.",0.25,0.375,0.5
+recalled,2,8,"Being that I suffer from anxiety and am getting up there in age, I began to worry.",0.25,0.5,0.625
+recalled,2,10,I contemplated my options all the while suffering.,0.125,0.25,0.375
+recalled,2,12,A local Urgent Care?,0.125,0.25,0.375
+recalled,2,14,It was almost as if I was bitten by a poisonous creature.,0.125,0.25,0.375
+recalled,2,16,So many things raced through my mind.,0.0,0.25,0.25
+recalled,2,20,I was given antibiotics and went home.,0.125,0.75,0.75
+recalled,2,21,I have since fully recuperated thankfully.,0.375,0.5,0.625
+retold,1,1,"After the Urgent Care visit and the pain subsided, I worried it might come back.",0.25,0.5,0.625
+retold,1,2,"The whole day I kept ice firmly pressed against the area, trying my best to keep it at bay.",0.125,0.75,0.875
+retold,1,3,The anxiousness and anxiety it caused was not good.,0.125,0.625,0.625
+retold,1,4,"It kept me from sleeping or focusing well, and also from working.",0.0,0.5,0.5
+retold,1,6,Will the infection return?,0.0,0.5,0.5
+retold,1,8,"Now, I make sure to rinse daily with this unique mouth wash and so far it's been pretty positive.",0.125,0.5,0.625
+retold,1,11,"Wisdom Teeth come in around 17 years of age, or start to and eventually become impacted.",0.0,0.375,0.375
+retold,1,12,"Impaction leads to vision problems, pain, on site infection, and shifting teeth among other things.",0.125,0.375,0.5
+retold,1,14,"While I personally do not want to undergo wisdom tooth extraction, I definitely recommend it if you suffer.",0.0,0.25,0.25
+recalled,1,2,I have been so depressed i couldnt even very out of bed i just been hating myself.,0.25,0.5,0.625
+recalled,1,6,I can blame anyone but myself my mom once told me before she left that no one is going to love me like my family is going to love me.,0.25,0.5,0.625
+recalled,1,12,Have mercy on me have mercy on my soul.,0.0,0.125,0.125
+recalled,1,13,I cannot forgive myself at least not yet i am trying and trying.,0.25,0.375,0.5
+retold,3,2,I feel like i am worthless and ugly and no one can ever love me.,0.25,0.375,0.5
+retold,3,7,My mom tried to tell me though she tried to tell me to take care of myself.,0.25,0.5,0.625
+retold,3,8,Now i am going to try to regain my pothetic life and see were i left off.,0.25,0.375,0.5
+retold,3,11,What can i do who can help me i just need someone as a friend right now.,0.25,0.375,0.5
+imagined,3,0,"4 months ago i kept my baby boy seated on the floor of my living room, playing with his toys, i removed my eyes from him for about 2 minutes cause i need to reply tomy messages online.",0.125,0.25,0.375
+imagined,3,3,"when this happened some thought came to my mind, that my baby could now begin to crawl.",0.25,0.375,0.5
+imagined,3,6,so i felt a great sigh of relief and i was so happy and proud of him.,0.125,0.25,0.375
+imagined,3,8,"From straightforward assignments like sitting up or lifting their head to more progressed developments like rolling over, these small accomplishments are continuously inspiring.",0.125,0.375,0.5
+recalled,2,3,I love to watch him explore his world and interact with things.,0.375,0.625,0.75
+recalled,2,6,We have had to move a lot of things to higher places that he cannot reach.,0.375,0.5,0.75
+recalled,2,11,I look forward to the day that he takes his next step and begins to walk.,0.125,0.375,0.375
+recalled,2,15,I can't wait to see the person that he becomes.,0.25,0.375,0.5
+retold,1,5,His personality is even more apparent and he is able to process and display more complex thoughts and emotions.,0.625,0.875,1.0
+retold,1,6,We are much more social with each other now.,0.5,0.625,1.0
+retold,1,7,talking and playing have a lot more significance now.,0.375,0.5,0.625
+retold,1,15,I also am looking forward to when he can hold a bottle up all by himself.,0.25,0.375,0.375
+imagined,3,6,But it's my brother!,0.125,0.375,0.5
+imagined,3,8,"I helped him organize everything, got a wedding planner and all of that.",0.625,0.875,1.0
+imagined,3,14,"I was shocked, but that explained a lot in regards to the fact he actually agreed to get married.",0.375,0.5,0.625
+recalled,1,3,I carpooled there with the brother of my brother's wife.,0.5,0.75,1.0
+recalled,1,4,We arrived at the wedding.,0.375,0.875,0.875
+recalled,1,5,It was the day before so I helped set up some things.,0.375,0.625,0.75
+recalled,1,7,It was in a  beautiful location.,0.125,0.375,0.5
+recalled,1,8,The wedding happened the next day and it was lovely.,0.5,0.625,0.875
+recalled,1,10,The food was also very good.,0.25,0.5,0.75
+recalled,1,12,"After the wedding ceremony, there was live music and people danced and drank beer, wine, and other beverages.",0.5,0.625,0.875
+recalled,1,13,"When it got late, I retired to the cabin I was staying in.",0.125,0.625,0.75
+recalled,1,14,The next day I drove back home.,0.25,0.625,0.875
+recalled,1,15,It was a lot of fun.,0.125,0.25,0.375
+recalled,1,16,I felt very happy for my brother and his wife.,0.125,0.375,0.375
+retold,2,1,He got married to his now wife.,0.5,0.625,0.875
+retold,2,3,"It was no surprise that they would get married, as they had been dating and living together for years.",0.5,0.625,0.75
+retold,2,7,I arrived the day before the wedding.,0.25,0.5,0.75
+retold,2,9,"Afterwards, we returned to the venue and I helped set things up.",0.375,0.5,0.75
+retold,2,13,I was up at the front since I was best man.,0.25,0.875,0.875
+retold,2,15,"Afterwards, there was a reception and celebration with live music.",0.375,0.5,0.625
+retold,2,16,"People danced, ate food and had beer and wine to drink.",0.375,0.75,0.75
+imagined,1,6,I am completely mentally and emotionally drained of the situation.,0.125,0.25,0.375
+imagined,1,9,This is something that would never happen like this.,0.0,0.125,0.125
+recalled,3,3,"She was in the middle of her treatments, going for radiation and chemo, her hair was starting to fall out and she shaved her head.",0.25,0.5,0.5
+recalled,3,4,"My son and I would visit her every couple of weeks just to check in and keep tabs on her, and see if she needed anything.",0.125,0.25,0.375
+retold,2,1,"We went over to visit her often during treatments, went to the hospital when she was checked in for the initial treatments, and generally kept up a lot of support.",0.125,0.5,0.5
+retold,2,8,As (then) executor of her trust I began to gather everything I needed to make sure this went smoothly for my cousin (her beneficiary).,0.25,0.375,0.625
+retold,2,9,"It was hard to post her final goodbye to friends on FB after she passed, but I did what she asked.",0.25,0.625,0.625
+retold,2,13,"Sadly, and surprisingly too, since I last wrote about this he has not done well.",0.125,0.25,0.375
+imagined,3,1,We were so excited for our son to have a sibling.,0.125,0.25,0.25
+imagined,3,10,"It was a really scary experience, but my daughter was born healthy.",0.25,0.375,0.375
+imagined,3,11,"When we brought our son in to meet his new little sister, he had a scowl on his face.",0.375,0.5,0.75
+imagined,3,12,He kept up his dislike for his sister for a few days.,0.0,0.375,0.375
+imagined,3,15,He is super protective over her and it's a huge relief that they like each other now.,0.125,0.25,0.25
+recalled,2,2,I was so scared to go through another c-section.,0.25,0.375,0.375
+recalled,2,6,I can't get enough of that beautiful little face.,0.125,0.375,0.375
+recalled,2,7,I'm worried about how her brother is going to handle having a baby in the house.,0.0,0.5,0.5
+recalled,2,8,He didn't seem to be too happy when he met her.,0.125,0.375,0.5
+recalled,2,14,My heart is so full.,0.0,0.25,0.25
+recalled,2,15,I think being a mom is probably the best thing in the world.,0.0,0.125,0.125
+recalled,2,16,I am worried about how hard it will be to have two little ones but I guess it will come with time.,0.0,0.25,0.25
+retold,1,3,"This was my last pregnancy and although I was a tough one, I already knew I was going to miss the little details of carrying a child.",0.0,0.125,0.125
+retold,1,5,I was also scared for the procedure.,0.125,0.5,0.5
+retold,1,8,"I worried about the things that could go wrong,  I didn't have the same confidence in my medical team that I had had with my first child.",0.25,0.375,0.625
+retold,1,9,I think my biggest concern was how my son was going to handle having a baby sister.,0.125,0.25,0.375
+retold,1,12,I was worried that he wouldn't feel loved and wanted.,0.125,0.25,0.375
+retold,1,13,"When my husband brought him to my hospital room, I wanted him to feel just as important as he always had.",0.25,0.5,0.625
+retold,1,16,He stroked her hair and said 'baby'.,0.25,0.375,0.625
+retold,1,18,The whole room sighed at the cuteness of it.,0.0,0.5,0.5
+retold,1,20,"Apparently, he was not as taken with his new little sister as we had hoped.",0.125,0.375,0.5
+retold,1,22,I had expected him to be unsure of the new baby but I never expected him to do that.,0.0,0.125,0.125
+recalled,3,6,We always had so much fun together.,0.25,0.375,0.5
+recalled,3,7,So I had to go out of state for some work related issues for about two weeks or so.,0.375,0.5,0.75
+recalled,3,8,In that time my grandfather was really fit and had no health issues whatsoever.,0.125,0.25,0.375
+recalled,3,10,I had no words to say.,0.125,0.25,0.375
+recalled,3,11,I got so panic and did not know what to do.,0.25,0.375,0.625
+recalled,3,13,I had no choice but to wait for the flight.,0.25,0.5,0.5
+recalled,3,16,"Anyway finally, after waiting for couple hours I took the flight and went straight to the hospital.",0.125,0.75,0.875
+retold,1,1,He was so close to me.,0.25,0.375,0.375
+retold,1,2,I always used to share all kind of stories with him.,0.125,0.625,0.625
+retold,1,3,I used to share my happiness and sadness with him.,0.125,0.375,0.375
+retold,1,4,He was the best person to share all type of difficulties because he had so much experience so he would guide you through the right directions for sure.,0.125,0.5,0.5
+retold,1,8,I was so impressed with his diet and the style that he lived his life.,0.0,0.25,0.25
+imagined,2,0,I had wanted to go on vacation for a while.,0.25,0.375,0.5
+imagined,2,1,It had been quite a bit of time since I had gone anywhere.,0.125,0.375,0.375
+imagined,2,3,Colorado sounded nice.,0.125,0.25,0.25
+imagined,2,4,I had never been there before.,0.125,0.375,0.375
+imagined,2,7,When I got there I couldn't believe how beautiful it was.,0.25,0.375,0.5
+imagined,2,9,So many beautiful sights to see.,0.25,0.375,0.375
+imagined,2,11,I packed up my gear.,0.0,0.375,0.375
+imagined,2,12,"We headed over to the nearby town of Idaho Spring, Colorado.",0.25,0.625,0.875
+imagined,2,15,I had so much fun.,0.0,0.375,0.375
+recalled,3,3,During the trip we were able to pull over at a number of spots to take photos of the breathtaking scenery.,0.125,0.625,0.75
+recalled,3,7,"Looking around at the snow capped mountains, some snow only a few dozen feet from where we were standing, demonstrated the ecological diversity that one can experience without having to leave the United States.",0.25,0.375,0.5
+recalled,3,9,We were able to get our fill of souvenirs which we stock up on every vacation so we can easily remember the places we've been and the things we did.,0.25,0.625,0.75
+recalled,3,12,We had a spectacular time.,0.125,0.625,0.625
+recalled,3,14,Being at one with nature and being able to spend an entire day experiencing some of the best that nature has to offer made me incredibly grateful to have had the opportunity to enjoy it with my family.,0.25,0.5,0.75
+retold,1,4,The first full day were were in Colorado we were taken to the Rocky Mountain National Park.,0.5,0.625,0.875
+retold,1,7,"She had only been to the lower portion of the park, so we were determined to get her to the top-most visitor's center in the park.",0.25,0.375,0.625
+retold,1,9,We were able to buy some souvenirs and eat a nice lunch with my wife's cousin and aunt.,0.25,0.5,0.75
+retold,1,12,"None of us had done anything like that before, so it was quite exciting.",0.125,0.375,0.375
+retold,1,16,We kept her spirits up and we powered through nice category IV and category V rapids!,0.125,0.5,0.5
+retold,1,17,"She made it the rest of the way and although she was a trooper after having fallen in, she vowed never, ever, to do anything even close to resembling that again.",0.125,0.25,0.375
+retold,1,18,"After we finished, we were bused back to our start point, drove back to my wife's cousin's house and went to bed after a very long, exhausting, yet fulfilling day.",0.125,0.375,0.5
+imagined,1,2,"I did cry, of course.",0.125,0.625,0.75
+imagined,1,3,My baby is growning into an adult.,0.125,0.25,0.375
+imagined,1,4,I'm sure it is hard for any parent.,0.0,0.25,0.25
+imagined,1,11,I will never forget the long hug we shared as I was leaving.,0.125,0.5,0.5
+imagined,1,12,That will always be a precious memory in my mind.,0.125,0.25,0.375
+imagined,1,13,Thinking of it helps me remember our strong relationship.,0.0,0.375,0.375
+imagined,1,14,I know that I do not have to worry.,0.0,0.125,0.125
+recalled,3,1,It was a very sad day.,0.125,0.25,0.25
+recalled,3,2,we helped him arrange his apartment.,0.25,0.5,0.625
+recalled,3,3,we took him to the store to get stocked up on groceries.,0.25,0.875,0.875
+recalled,3,4,we came back and visited for a while.,0.125,0.375,0.5
+recalled,3,5,that afternoon we decided it was time for us to head back home.,0.125,0.375,0.375
+recalled,3,6,i did not want to go.,0.0,0.125,0.125
+recalled,3,8,this is good for him though.,0.0,0.125,0.125
+recalled,3,12,"i don't know if i will be, though.",0.0,0.125,0.125
+recalled,3,14,"it is going to take me a while to recover, especially when i go into his room.",0.125,0.5,0.625
+recalled,3,15,it will be good to hear his voice when he calls.,0.125,0.25,0.25
+recalled,3,17,i will probably call him tonight!,0.0,0.75,0.75
+retold,2,1,it was fun packing him and getting him ready to go.,0.125,0.375,0.5
+retold,2,2,we had fun trying to decide what he should take and what he should leave.,0.125,0.25,0.375
+retold,2,3,going through his belongings brought forth many memories of his childhood that we could reminisce about.,0.375,0.625,0.75
+retold,2,4,we packed the UHaul with everything that he needed.,0.25,0.5,0.75
+retold,2,5,Our drive to college was enjoyable.,0.125,0.5,0.625
+retold,2,6,We sang and talked and sang some more.,0.125,0.375,0.5
+retold,2,9,we quickly unloaded the U Haul and moved it out of the way.,0.125,0.625,0.625
+retold,2,10,Now it was time to organize and put things away in his apartment.,0.0,0.375,0.375
+retold,2,12,I could tell my son was excited to live on his own.,0.0,0.375,0.375
+retold,2,13,"I had packed a lunch so we took a break to eat, laughed and planned his apartment.",0.25,0.625,0.75
+retold,2,15,I think we took longer than necessary to avoid goodbyes.,0.0,0.125,0.125
+retold,2,17,It was time to go.,0.0,0.125,0.125
+retold,2,18,Saying goodbye was very hard.,0.125,0.5,0.5
+retold,2,19,I did not want to leave and my son did not want us to either.,0.0,0.25,0.25
+retold,2,20,he kept talking to us with a glimmer of tears in his eyes and I could tell he did not want us to leave but it was getting late and it was time.,0.25,0.375,0.5
+retold,2,22,"I hugged him, told him that I loved him and how proud i was of him.",0.125,0.5,0.625
+retold,2,23,I go into the truck and waved until he was no longer in sight.,0.25,0.375,0.5
+imagined,1,4,I had previous years that I didn't declare too.,0.125,0.25,0.25
+imagined,1,6,I paid the back-taxes.,0.375,0.625,0.875
+imagined,1,8,I was able to do it in installments.,0.25,0.5,0.625
+imagined,1,10,I was glad I could get installments to do it.,0.0,0.25,0.25
+recalled,3,0,Last March I went to a tax accountant.,0.5,0.625,0.875
+recalled,3,1,I needed to file amended returns for the Patreon income from four previous years.,0.375,0.5,0.75
+recalled,3,2,"I'd been under the impression since I set up my Patreon account that it was gift income, and therefore non-taxable.",0.125,0.25,0.375
+recalled,3,4,And the more I looked into it the more I began to suspect it was taxable after all.,0.125,0.375,0.5
+recalled,3,6,In July of last year I concluded that it was indeed taxable.,0.25,0.375,0.5
+recalled,3,7,So I made plans to see an accountant and file for back taxes.,0.125,0.5,0.625
+recalled,3,11,And he confirmed my information about making installment payments.,0.125,0.5,0.5
+recalled,3,12,"In the months since, the IRS sent me a bill for back taxes and I arranged a modest $64/month installment payment.",0.25,0.625,0.75
+recalled,3,13,I also subtract 15% self-employment tax.,0.125,0.375,0.5
+retold,2,5,So I continued to worry that it was taxable.,0.0,0.25,0.25
+retold,2,6,"As I researched it, in 2018 it seemed more and more likely that it was taxable.",0.125,0.5,0.625
+retold,2,7,I was worried about the amount of past income I might owe back taxes on.,0.0,0.375,0.375
+retold,2,8,So I went to a tax accountant in early 2019.,0.5,0.625,1.0
+retold,2,10,It was fairly easy to make monthly installment arrangements that I could afford.,0.125,0.375,0.5
+retold,2,12,This meant I only had to pay 15% self-employment tax.,0.375,0.5,0.75
+imagined,1,7,"What it looks like, what's going to happen after I'm gone.",0.125,0.25,0.375
+imagined,1,10,I think about the baby inside me.,0.125,0.625,0.625
+imagined,1,13,How will they change the world.,0.25,0.375,0.5
+recalled,2,4,"I always had planned on having another after my son, but when it didn't happen in a few years I started to make other plans.",0.125,0.5,0.5
+recalled,2,5,"I have been a single mother for years and felt no need to settle, so I was planning on adopting in the next few years.",0.125,0.375,0.375
+recalled,2,6,"I've also worked very hard on my fitness the past 2 years, and this plan felt perfect so I wouldn't have to give up the progress on my body.",0.125,0.375,0.375
+recalled,2,7,"About 6 months ago I started dating a coworker, who is a great man.",0.375,0.5,0.625
+recalled,2,15,"I understand some sacrifices are necessary though, and in the end it will definitely be worth it.",0.125,0.25,0.25
+retold,3,3,I had a lot of morning sickness and fatigue.,0.25,0.5,0.5
+retold,3,6,"I have a lot more energy, and feel almost normal.",0.25,0.375,0.5
+retold,3,13,I am very driven and focused on building a career though.,0.25,0.375,0.5
+retold,3,14,So I just didn't think that this would be feasible.,0.125,0.25,0.375
+imagined,2,2,The decor was already bought.,0.0,0.25,0.25
+imagined,2,3,"Mainly, the help needed was to just put up all the decor.",0.125,0.375,0.375
+imagined,2,4,It involved many ladders and tape.,0.0,0.125,0.125
+imagined,2,5,We got it done in time and it looked good.,0.0,0.375,0.375
+imagined,2,6,Many of us didn't like the chosen decor but it wasn't our call.,0.0,0.25,0.25
+imagined,2,7,Overall everyone helped a lot and we had a blast.,0.0,0.5,0.5
+imagined,2,9,The candles needed to be blown out quickly so they wouldn't burn the cake.,0.125,0.375,0.5
+imagined,2,10,All of them were melting quite fast.,0.0,0.625,0.625
+imagined,2,11,I think is was because they were so close together.,0.0,0.25,0.25
+imagined,2,12,The candles were luckily blown out in time.,0.0,0.625,0.625
+imagined,2,13,Nothing bad happened.,0.0,0.25,0.25
+imagined,2,14,Good food and friends.,0.0,0.125,0.125
+recalled,1,1,We celebrated it at my house.,0.125,0.25,0.375
+recalled,1,2,"I (and some of my family members) bought party favors, a birthday cake, and the like.",0.125,0.625,0.75
+recalled,1,3,"We bought candles, plates, balloons, and other things to decorate the room.",0.0,0.5,0.5
+recalled,1,4,The most memorable part of the event was lighting the candles.,0.25,0.5,0.625
+recalled,1,7,It took a while for them to blow out all the candles.,0.0,0.375,0.375
+recalled,1,8,But after that we sang happy birthday and enjoyed the celebration.,0.0,0.5,0.5
+recalled,1,9,We enjoyed eating the cake and talking about things at the party.,0.0,0.375,0.375
+recalled,1,10,We had things like champagne and small chocolate morsels.,0.125,0.25,0.375
+recalled,1,11,I remember enjoying the party a lot.,0.125,0.375,0.375
+recalled,1,12,The cake was big and very flavorful.,0.0,0.25,0.25
+recalled,1,13,It was made of chocolate and vanilla.,0.0,0.25,0.25
+recalled,1,14,"I remember falling asleep happy that night, having enjoyed the event.",0.0,0.75,0.75
+retold,3,1,I had prepared for it by gathering items necessary for the party.,0.0,0.75,0.75
+retold,3,2,"I had bought candles, a cake, lights, balloons, and other miscellaneous supplies necessary for celebrating their birthday.",0.0,0.5,0.5
+retold,3,3,I prepared for the birthday party by first unpacking the supplies and then preparing the table.,0.125,0.5,0.5
+retold,3,4,I then unpacked the cake and placed it on the table.,0.0,0.625,0.625
+retold,3,5,"I spent some time setting up the remainder of the supplies, preparing our house for the party.",0.125,0.5,0.625
+retold,3,6,"When my family member saw the cake, they were elated.",0.0,0.875,0.875
+retold,3,7,It was a nice setup.,0.0,0.125,0.125
+retold,3,8,Soon we lit the candles.,0.0,0.375,0.375
+retold,3,9,"There were many candles on the cake, because they looked good on the type of cake that I had bought.",0.125,0.375,0.5
+retold,3,12,It was funny but somewhat dangerous.,0.0,0.25,0.25
+retold,3,13,My family member had to blow them out quickly before the whole cake burned up!,0.25,0.375,0.625
+retold,3,14,My family enjoyed the party.,0.0,0.25,0.25
+imagined,3,0,I was at starbucks yesterday morning.,0.375,0.75,0.875
+imagined,3,5,"After about 30 minutes of waiting for him to emerge, they finally called the police.",0.25,0.5,0.625
+imagined,3,6,He was out in the bathroom stall but still breathing.,0.25,0.375,0.5
+recalled,2,1,My dad turned 90 on July 4th and he is the last  person alive on his side of the family.,0.25,0.75,0.75
+recalled,2,3,They had three boys and one girl .,0.25,0.625,0.625
+recalled,2,4,I  have one whole sister and one half sister.,0.0,0.5,0.5
+recalled,2,8,So I am not close with my half sister and we barely speak when we see each other out.,0.375,0.5,0.75
+recalled,2,9,My cousins parents from my dad's siblings never got divorced.,0.25,0.375,0.625
+recalled,2,11,Lots of pictures were taken and everything was great.,0.25,0.5,0.625
+recalled,2,12,I just felt that my life and relationship with my dad was very different than my cousins and they don't understand what it is like when parents get divorced and how kids can be treated because of it.,0.125,0.375,0.5
+recalled,2,13,I feel cheated in that respect and felt envious that they had normal childhoods and good relationships with their parents.,0.25,0.375,0.5
+recalled,2,14,I still talk to my dad when I see him in the local grocery store but it is just casual talk and that is kind of sad.,0.25,0.5,0.625
+recalled,2,15,He is not going to be around much longer and I wish things had been different between us but I don't think it was all my fault .,0.125,0.25,0.375
+recalled,2,17,I am glad I got to see everyone and we had a great time.,0.0,0.125,0.125
+recalled,2,19,Not much you can do but accept things as they are and not dwell on them.,0.0,0.125,0.125
+retold,1,2,I asked what they wanted me to bring and they told some things I could bring.,0.25,0.375,0.625
+retold,1,3,I asked them why were they doing it because I thought maybe my dad was sick and nobody informed me of it.,0.25,0.375,0.625
+retold,1,5,"The one cousin I asked said just to come in, I think.",0.125,0.375,0.5
+retold,1,8,We ate and took pictures and showed each other pictures of all our families and people in our family who had died.,0.25,0.5,0.625
+retold,1,9,It was sad because our grandparents had died and all of my cousins parents had died .,0.125,0.5,0.625
+retold,1,12,We gave each other small gifts and made to go boxes of left over food for everyone and then cleaned up the kitchen.,0.375,0.625,0.75
+retold,1,14,"It was good to see everyone and it felt like when we were all kids and were at our grandparents house eating her food and seeing each other, like at Christmas or Thanksgiving.",0.125,0.25,0.375
+retold,1,15,Most of them brought the food that grandma made when we were growing up so that made it feel even more like a family reunion .,0.25,0.375,0.625
+retold,1,17,He teared up some and I think everyone else did too.,0.125,0.375,0.5
+imagined,2,2,Most people don't.,0.0,0.125,0.125
+imagined,2,3,Ultimately though I was just too bored in my hometown.,0.25,0.375,0.5
+imagined,2,4,Seeing the same friends at the same places while drinking and eating the same things just grows so tiresome.,0.25,0.375,0.625
+imagined,2,12,I know some of my friends are already thinking about coming to visit for a weekend or so.,0.25,0.5,0.75
+imagined,2,13,"In a way I don't want them out here, but I would certainly like to see them eventually.",0.125,0.375,0.375
+recalled,3,5,"While talking with her on New Year's Day 2019, she mentioned she was lonely, as was I.",0.375,0.625,0.875
+recalled,3,7,"I planned to visit her, as I was nearing the end of my operations, and pretty sick of Northern winter weather.",0.375,0.625,0.75
+recalled,3,13,"No job, no children, friends were far gone.",0.5,0.625,0.625
+recalled,3,15,"I found a home in June of 2019, that sounded great!",0.25,0.625,0.625
+recalled,3,22,And the relationship with Debbie is more of a friend thing than a romantic one I was hoping for.,0.375,0.5,0.875
+retold,1,3,"I found that I had no contact with my old friends anymore, and was hating the northern weather.",0.125,0.5,0.5
+retold,1,7,It didn't sound like a horrible idea moving down to Daytona Beach Florida from Cleveland Ohio either.,0.375,0.5,0.625
+retold,1,14,I did manage to give some things to a couple friends that were very good momentos of my life.,0.25,0.75,0.875
+retold,1,15,"And I gave, sold, or left behind all my furniture as I was just moving myself and my 2 cats down to Florida in my car.",0.25,0.375,0.625
+retold,1,16,Just some few momentos and my clothes were all I took.,0.0,0.375,0.375
+retold,1,22,"After finding out about the scam, I booked myself into a cheaper (yet expensive) Airbnb while I tried to figure out where to stay.",0.25,0.625,0.875
+imagined,2,1,"She had been involved with her fiance for quite a while, and I always knew they should be together.",0.25,0.375,0.375
+imagined,2,2,It went well and was very cute.,0.125,0.25,0.375
+imagined,2,3,They both liked the same colors and everything was beautiful.,0.125,0.25,0.375
+recalled,3,5,The service was lovely.,0.125,0.375,0.375
+recalled,3,6,Both brides tried to hold back tears of joy as they gave their vows.,0.25,0.375,0.625
+recalled,3,7,Those tears also brought tears to the audience's eyes.,0.125,0.5,0.625
+recalled,3,8,"Afterward, were took pictures with the brides.",0.125,0.75,0.875
+recalled,3,9,"While we were doing that, the food was starting to be served.",0.125,0.5,0.625
+recalled,3,12,The barbecue on them tasted great and the meat was so soft and chewy.,0.125,0.25,0.375
+recalled,3,14,"Overall, it was a very fun experience.",0.0,0.125,0.125
+retold,1,4,"Afterward, there was a nice assortment of food served.",0.125,0.875,0.875
+retold,1,6,The wedding cake also tasted great.,0.125,0.375,0.5
+retold,1,9,They both work hard at their jobs.,0.125,0.5,0.625
+imagined,3,4,You also find out you like similar things.,0.1428571428571428,0.2857142857142857,0.4285714285714285
+imagined,3,12,I think that is a hobby when it comes to gardening that is something I am going to look into.,0.4285714285714285,0.5714285714285714,0.7142857142857143
+imagined,3,13,"It made those people happy, and it did me as well.",0.2857142857142857,0.4285714285714285,0.5714285714285714
+recalled,1,2,"The lady that runs it was a friend and co-worker of mine, so when I decided to start volunteering I reached out to her and she said this was something she thought I'd like.",0.1428571428571428,0.8571428571428571,0.8571428571428571
+recalled,1,9,They asked about watering and sunlight and took a lot of time picking the plants they wanted to grow.,0.0,0.2857142857142857,0.2857142857142857
+recalled,1,18,And I'm hopeful  that down the line we helped raise some future gardeners whose life will be better because of it.,0.1428571428571428,0.2857142857142857,0.4285714285714285
+retold,2,1,We provide beginner gardens for low income people so they can grow their own vegetables.,0.1428571428571428,0.4285714285714285,0.4285714285714285
+retold,2,2,We give them dirt and plants and seeds to get started.,0.1428571428571428,0.2857142857142857,0.4285714285714285
+retold,2,3,We even provide containers for them if they don't have a yard to plant in.,0.2857142857142857,0.4285714285714285,0.7142857142857143
+retold,2,4,The local gardeners and high school career center students grow tomato and pepper plants and donate them to the event for the people to use to start their gardens.,0.2857142857142857,0.5714285714285714,0.7142857142857143
+retold,2,5,I volunteer at this every year.,0.1428571428571428,0.5714285714285714,0.5714285714285714
+retold,2,6,It's fun to see how excited the children are to be able to pick plants that they want.,0.1428571428571428,0.4285714285714285,0.5714285714285714
+retold,2,7,It makes me feel good because I think what we're doing is showing them another way to feed themselves that's healthy and cheap.,0.0,0.7142857142857143,0.7142857142857143
+retold,2,12,Each year it's a different seed.,0.1428571428571428,0.2857142857142857,0.4285714285714285
+retold,2,13,The students are encouraged to grow the plant at home (this year it was watermelon) and bring it to the Garden Giveaway and enter it in a contest for biggest plant.,0.2857142857142857,0.5714285714285714,0.5714285714285714
+imagined,1,5,It was the day we got the whole family together to visit her.,0.375,0.625,0.75
+imagined,1,6,I am really devastated about this all happening so fast.,0.25,0.375,0.375
+imagined,1,7,I still feel like I should be able to contact her anytime.,0.125,0.375,0.375
+imagined,1,8,I sometimes wonder if I just speak into the sky if she will hear me.,0.125,0.25,0.375
+imagined,1,10,I have never believed in that stuff.,0.125,0.25,0.25
+imagined,1,11,My family has been really supportive of one another.,0.375,0.75,0.875
+imagined,1,13,I am happy I have my boyfriend and my son to help me keep my mind off of it.,0.125,0.25,0.375
+imagined,1,14,I just don't know if I will ever stop grieving.,0.25,0.625,0.625
+recalled,3,3,They put a splint on her.,0.25,0.5,0.5
+recalled,3,4,"They were afraid that due to her age, she was not strong enough and that caused her to fall.",0.0,0.375,0.375
+recalled,3,5,They felt physical therapy would be beneficial to her.,0.0,0.5,0.5
+recalled,3,6,She went from there to a 21 day physical rehab center.,0.5,0.625,0.75
+recalled,3,8,They felt that a nursing home was the onlhy choice for her to be safe.,0.5,0.625,0.625
+recalled,3,9,Rehab was provided 3 times a day there.,0.125,0.625,0.75
+recalled,3,12,I kept encouraging her.,0.0,0.75,0.75
+recalled,3,13,She continued to work as hard as was possible at the time.,0.125,0.375,0.5
+recalled,3,14,"During  her time there, though, I was relieved because I knew she was safe.",0.125,0.25,0.25
+retold,2,1,"I was extremely nervous to be with her and watch her walk, and I was nervous to not be there and watch her walk.",0.375,0.5,0.625
+retold,2,4,"I realized at that time that it didn't matter whether I was there or not, she was deteriorating and she would fall again.",0.125,0.625,0.625
+retold,2,5,"I knew that at some point, she would break a bone.",0.25,0.375,0.5
+retold,2,6,That is exactly what happened.,0.625,0.875,0.875
+retold,2,10,"I also hoped that the rehab center would be able to convince her to use her walker, as I had been unable to do.",0.125,0.25,0.25
+retold,2,11,She worked hard at rehab and was getting stronger.,0.5,0.75,0.875
+retold,2,14,He had worked hard to keep everything just the way she liked things at her house.,0.125,0.625,0.625
+imagined,2,1,All the family was there some of which I hadn't seen  in a really long time.,0.25,0.375,0.5
+imagined,2,2,It was great catching up on all the family news and drama.,0.125,0.25,0.375
+imagined,2,3,Everybody was in a good mood and were having fun.,0.125,0.25,0.375
+imagined,2,4,After the wedding we all headed to the reception to enjoy some good food and entertainment.,0.375,0.5,0.75
+imagined,2,11,We danced until we were bone tired.,0.25,0.375,0.625
+imagined,2,13,After the night was over and everybody was ready to go home the couple got in the car and left.,0.125,0.5,0.625
+imagined,2,14,We all stood outside and watch them drive away waving and cheering.,0.0,0.375,0.375
+recalled,3,5,It was nice going and seeing family members I hadn't seen in a long time.,0.125,0.25,0.375
+recalled,3,8,The most memorable thing about the wedding was the video they played about my cousin and her husband's history.,0.375,0.5,0.875
+recalled,3,10,"Once it got dark the heat wasn't so bad, and at least the portable bathrooms they provided were air conditioned.",0.125,0.375,0.5
+recalled,3,12,"They offered hotels for any guests who wanted to stay the night, but I'd rather sleep in my own bed.",0.125,0.25,0.375
+recalled,3,13,It was definitely a memorable night.,0.125,0.25,0.25
+retold,1,1,I may not remember as many details.,0.0,0.375,0.375
+retold,1,11,"I felt like I was sweating too much due to the heat, and the pictures I'm in I don't look too good in.",0.125,0.25,0.375
+retold,1,13,But I understand they were very busy that day and had a lot of guests to interact with.,0.0,0.125,0.125
+retold,1,14,Overall I had a very good time at the wedding.,0.0,0.25,0.25
+imagined,1,0,Every saturday i tend my garden.,0.375,0.5,0.75
+imagined,1,1,I started putting up feeders around to see some of the nature.,0.25,0.625,0.875
+imagined,1,3,"Mostly squirrels at first and a few deer, and one tiny humming bird.",0.0,0.375,0.375
+imagined,1,6,Eventually i got a chair and just sat spraying the mist and letting the bird flutter around.,0.125,0.25,0.375
+imagined,1,9,I was happy the bird was there and it seemed happy to be getting misted.,0.0,0.125,0.125
+imagined,1,11,As the bird flew away I smiled and hoped he would be back again.,0.0,0.5,0.5
+imagined,1,12,So far i havent seen him but i will remember the simple joy i got that morning.,0.0,0.125,0.125
+imagined,1,13,I am glad i could provide for nature and enjoy moments like that.,0.0,0.125,0.125
+imagined,1,14,I hope everyone can take some time to enjoy the little things in life.,0.0,0.125,0.125
+recalled,3,0,It was about a month ago during a rather warm July morning.,0.125,0.375,0.375
+recalled,3,1,"I was watering the plants, vegetables, and Cacti.",0.125,0.625,0.75
+recalled,3,2,"I was feel kind of low due to not seeing many of my friends anymore due to everyone being busy with their own schedule, and work being a little slow was also on my mind.",0.125,0.375,0.5
+recalled,3,3,"I may have been feeling sorry for myself, but the wounds were real.",0.0,0.375,0.375
+recalled,3,7,I turned down the pressure of the hose to a fine mist and pointed the mist into the direction of the humming bird .,0.25,0.375,0.625
+recalled,3,10,It was great the bird had no fear of animosity of a human.,0.0,0.125,0.125
+recalled,3,11,He knew there was a human controlling the hose and he did not care he wanted water on this warm summer day.,0.0,0.25,0.25
+recalled,3,12,"I felt great, I felt a connection with this little bird, we at this brief aquatic encounter were friends.",0.25,0.375,0.625
+recalled,3,13,It seemed that God saw my loneliness and sent me a friend.,0.0,0.25,0.25
+retold,2,0,It was a warm summer morning.,0.0,0.625,0.625
+retold,2,1,I was doing my morning chores and I was finishing up of the watering in the garden and backyard plants.,0.125,0.5,0.625
+retold,2,4,It was darting in and out of the hose water stream.,0.125,0.25,0.375
+retold,2,5,I lowered the pressure on the house to a fine mist.,0.0,0.625,0.625
+retold,2,10,the humming bird took to flight after it has its fill.,0.0,0.375,0.375
+retold,2,14,I still thing about my brief time being close with a hummingbird.,0.0,0.125,0.125
+imagined,2,2,Seeing the rest of the family was also a big plus.,0.0,0.5,0.5
+imagined,2,6,Seeing all of the sites along the way was a great experience.,0.25,0.375,0.625
+imagined,2,7,When we finally arrived in Miami we immediately set out to get the surprise party worked out.,0.25,0.375,0.625
+imagined,2,12,"The entire night, you couldn't pry the smile off of my sister's face.",0.125,0.25,0.375
+imagined,2,13,She was talking a mile a minute and was just beaming the whole time.,0.0,0.375,0.375
+imagined,2,14,"Overall, it was a great trip for us and the family as well.",0.0,0.125,0.125
+recalled,3,2,We drove down and spent one night on the road both coming and going.,0.125,0.5,0.625
+recalled,3,3,We had a great time with all of them.,0.125,0.25,0.375
+recalled,3,5,We played games and watched movies and took walks.,0.125,0.5,0.625
+recalled,3,7,We had some great food.,0.25,0.375,0.625
+recalled,3,9,We had some great fried rice.,0.125,0.25,0.375
+recalled,3,10,We visited an outlet mall and enjoyed walking around and seeing all the bargains.,0.25,0.5,0.625
+recalled,3,13,We enjoyed being with them a lot.,0.0,0.125,0.125
+retold,1,0,In April my husband and I drove from Tennessee to Miami to celebrate my older sister's birthday and to see our niece and family.,0.75,0.875,0.875
+retold,1,3,They were coming from just across the state.,0.125,0.25,0.375
+retold,1,4,So we had a little time to visit with my niece who I'll call N. We also got to meet her staff who works out of N's home.,0.375,0.5,0.875
+retold,1,10,We had a great time with everyone that evening.,0.0,0.25,0.25
+retold,1,12,we just enjoyed hanging out.,0.0,0.5,0.5
+retold,1,13,N had a dinner party that evening with all of us and J's family.,0.125,0.625,0.75
+retold,1,14,Sunday was a sit around the pool and finish up the Sat.,0.125,0.5,0.625
+retold,1,15,night leftovers.,0.125,0.25,0.375
+retold,1,19,Then is was Tuesday and time for us to head back.,0.125,0.5,0.5
+retold,1,20,"Some other events were playing with some new kittens that N was caring for, watching a lot of TV geared to a 2 year old., visiting an outlet mall and having a SC low country boil dinner for my sister's birthday.",0.125,0.625,0.75
+retold,1,21,It was a great few days and I'm looking forward to going again.,0.0,0.25,0.25
+recalled,2,2,I was listening to the artists CD in my car as I was driving and thinking about how much fun we were going to have at the concert.,0.125,0.5,0.625
+recalled,2,9,"When I got home that evening, I told all my friends about my exciting day.",0.25,0.5,0.625
+recalled,2,10,The next big decision I had to make was who I was going to bring on the trip with me.,0.5,0.625,0.75
+recalled,2,14,It was a day I'll never forget.,0.0,0.125,0.125
+retold,1,1,Well we were driving to this concert.,0.25,0.625,0.75
+retold,1,2,I was with a few of my friends.,0.125,0.25,0.375
+retold,1,4,"I have always put my name in drawing for things, even though I have never won anything.",0.125,0.25,0.375
+retold,1,15,I could not believe it.,0.0,0.25,0.25
+retold,1,16,I was so excited to have won this.,0.0,0.125,0.125
+retold,1,19,"I am always reminded about the birth of our children, wedding, and engagement proposal.",0.25,0.375,0.5
+retold,1,20,"Either way it was a great night, and a great trip a few weeks later.",0.25,0.375,0.5
+imagined,2,1,I started by searching the internet for anything I could find.,0.25,0.5,0.75
+imagined,2,4,It made me realize that people aren't using the natural resources we have and that there are a lot of things that are going to waste just because we don't know it's available to us.,0.125,0.5,0.5
+imagined,2,6,I drove about an hour away to a location that was plentiful of forest and wildlife that I thought would suit me for my foraging needs.,0.375,0.75,0.75
+imagined,2,9,"They were very sweet and did not have a bitter taste, so I ate a few more before continuing on my way.",0.5,0.625,0.75
+imagined,2,10,"Further on my travels, I saw some wild plants so I decided to pick them and take them home with me to see what I could do with them.",0.25,0.875,0.875
+imagined,2,17,"As it started getting dark, I figured it was time to pack up and take my findings home.",0.25,0.625,0.75
+recalled,3,6,I did a bunch of reading and research which prepared me to go into the parks around me and find things.,0.375,0.75,0.875
+recalled,3,8,There is even stuff growing in the sidewalk planters.,0.125,0.375,0.5
+recalled,3,11,My horizons have expanded.,0.0,0.5,0.5
+recalled,3,12,My consciousness has increased.,0.125,0.5,0.5
+recalled,3,13,My self-reliance and self-trust has gone up.,0.125,0.5,0.625
+recalled,3,15,I would not trade what I learned for anything.,0.125,0.25,0.375
+retold,1,2,I started thinking about the plants around me when I saw a foraging video on YouTube.,0.375,0.5,0.75
+retold,1,3,A teacher was showing students about all of the edible plants in a park that happens to be near my house.,0.25,0.5,0.75
+retold,1,4,I was interested in the video as I have alot of experience with gardening and it dawned upon me that I could do this too.,0.25,0.375,0.625
+retold,1,5,I started looking up plants online and watching other videos about plant identification.,0.375,0.625,1.0
+retold,1,6,I started slowly by looking for one single type of plant and trying to identify it multiple times.,0.125,0.625,0.625
+retold,1,8,"I would wait a day and when nothing happened negative, I became more confident in my id's.",0.25,0.5,0.5
+retold,1,10,Immersing myself in one plant at a time has been a great way to expand my knowledge.,0.25,0.5,0.5
+retold,1,14,It's amazing to see something all around you that was always there but you never saw before.,0.125,0.375,0.375
+imagined,3,6,My brothers and sisters decided to dress in all white.,0.125,0.375,0.5
+imagined,3,10,I thought he might of gotten injured.,0.0,0.25,0.25
+imagined,3,12,It took a few hours to reach the top.,0.25,0.5,0.5
+recalled,2,2,We had attempted this before but were unable to make it to the top because of an injury to my daughter.,0.25,0.5,0.5
+recalled,2,3,She had had knee surgery in the past and was unable to make it to the top due to her knee pain.,0.125,0.25,0.375
+recalled,2,4,WE were determined we were going to make it this time.,0.125,0.25,0.25
+recalled,2,5,WE started at around 8:00 am that morning.,0.25,0.375,0.5
+recalled,2,10,The way down didn't take nearly as long because it was mostly down hill.,0.25,0.375,0.5
+recalled,2,11,It took about 2 and a half hours to make the journey back to our car.,0.125,0.375,0.375
+recalled,2,12,On our way back down we met up with the two in our party who did not make it to the top although they had made great progress.,0.25,0.375,0.625
+recalled,2,13,They were disappointed and vowed to make it to the top the next time we went.,0.125,0.25,0.375
+retold,1,1,We had been hiking a lot over the past few months and decided to tackle Mt.,0.375,0.5,0.5
+retold,1,3,It's an 11 mile round trip hike with a 16.53 trail rating which is considered strenuous.,0.125,0.25,0.25
+retold,1,4,"We started of on our hike with myself, my sister, brother, husband, daughter, niece and brother in law.",0.25,0.375,0.5
+retold,1,5,My brother in law was the first to stop as it was uphill most of the way.,0.25,0.625,0.75
+retold,1,14,"As we continue myself, niece and husband pull away from my sister and brother.",0.125,0.25,0.375
+retold,1,16,My sister ends up catching up with us as I have really slowed down as it is a straight up hike now.,0.0,0.125,0.125
+retold,1,20,At the top is a lodge and we deicde to go in the gift shop and purchase a shirt to proudly display our accomplishment.,0.125,0.875,1.0
+retold,1,21,As we head down we meet up with my brother first who was not faring well he had run out of water.,0.125,0.375,0.5
+retold,1,23,As we near the bottom we see my brother in law waiting for us.,0.125,0.25,0.25
+imagined,1,2,There were so many things to do and it was great spending time with my family.,0.125,0.375,0.375
+imagined,1,9,I was surprised that we were able to put it behind us and have fun.,0.125,0.25,0.375
+recalled,3,1,"I traveled with my husband and 10 of his family members to Barcelona, Spain.",0.375,0.5,0.625
+recalled,3,3,"On the cruise, we made stops in Italy, France, and Spain.",0.125,0.75,0.75
+recalled,3,4,This was a memorable vacation because it celebrated my in-laws 55th wedding anniversary.,0.375,0.625,0.75
+recalled,3,5,It was great to see the whole family and be together.,0.125,0.375,0.375
+recalled,3,6,"We all live in different parts of the country, so it is rare that we are all together at one time.",0.125,0.25,0.375
+recalled,3,7,We had a lot of fun with nieces and nephews who are growing up quickly.,0.0,0.25,0.25
+recalled,3,9,She was so excited and happy to go with us.,0.25,0.375,0.375
+recalled,3,10,I will remember that moment.,0.0,0.125,0.125
+retold,2,3,"The trip started with a flight to Barcelona, Spain.",0.0,0.625,0.625
+retold,2,4,We spent the night there before boarding the ship.,0.0,0.25,0.25
+retold,2,5,"The cruise lasted for one week and included stops in Spain, France, and Italy.",0.25,0.375,0.375
+retold,2,6,We went on excursions almost every day.,0.25,0.5,0.75
+retold,2,7,"The weather was very hot, as there was a heat wave in Europe.",0.125,0.5,0.625
+retold,2,9,"In general, we had fun, however the days were very long and tiring.",0.0,0.25,0.25
+retold,2,13,"All-in-all, I'm happy I had this experience and I saw a lot of places I would want to visit again.",0.0,0.25,0.25
+imagined,3,4,The long hours of studying all these years have finally paid off and he is finally graduating.,0.125,0.375,0.375
+imagined,3,6,The graduation ceremony took place in the arena in the city and was as grand as you could imagine.,0.25,0.375,0.625
+imagined,3,8,It really was a day to remember.,0.0,0.125,0.125
+imagined,3,9,The commencement speeches started and we were impatiently waiting for them to hand out the certificates to the graduates.,0.125,0.625,0.75
+imagined,3,10,My phones camera was on full blast along with our digital camera and video camera.,0.125,0.5,0.625
+imagined,3,11,My husband and kids and family was all there and cheering when they called his name and as he walked up to the stage to receive his degree we all went wild with cheers and hollers.,0.5,0.625,0.875
+imagined,3,12,He looked up at us in the stand and smiled and waved as we screamed our excitement.,0.125,0.5,0.625
+imagined,3,13,he took his degree and proudly walked back to his seat.,0.0,0.375,0.375
+imagined,3,15,The celebration of achievement is a celebration like no other.,0.0,0.125,0.125
+imagined,3,16,I hope that every parent gets to feel this feeling of pride and love of their childs achievements.,0.0,0.125,0.125
+recalled,2,2,The ceremony was held in a huge auditorium in the middle of downtown.,0.125,0.25,0.375
+recalled,2,5,He texted me to let me know where he was on the stadium floor and I got as close as I could.,0.125,0.625,0.75
+recalled,2,6,"The whole time, he looked like an ant to me and I really couldn't see him.",0.25,0.375,0.5
+recalled,2,7,The ceremony was enjoyable and I gushed with pride the whole time as well as a few tears.,0.125,0.5,0.5
+recalled,2,8,"After the ceremony, I texted him to let him know where I was sitting.",0.25,0.625,0.875
+recalled,2,13,It was our own special moment.,0.0,0.25,0.25
+recalled,2,14,That look is something I will never forget.,0.125,0.25,0.25
+retold,1,1,I can precisely picture everything about my surroundings that night.,0.125,0.25,0.25
+retold,1,4,I know I could go back to that huge room and find the seat I was sitting in among thousands just based on the clarity of my memory.,0.0,0.125,0.125
+retold,1,5,I took everything in.,0.0,0.25,0.25
+retold,1,8,"At that point, I had no idea where my son was, no idea if I would even be able to see him or not.",0.125,0.375,0.375
+retold,1,9,He texted me as the commencement started and told me where he was.,0.25,0.375,0.625
+retold,1,12,"The whole time, I balanced between crying with pride and joy and smiling so hard that my cheeks and jaw hurt.",0.125,0.25,0.375
+retold,1,19,Words don't do justice to that little moment we shared.,0.125,0.25,0.25
+retold,1,20,"Mother and son loving, knowing and understanding each other without words.",0.0,0.125,0.125
+imagined,1,1,I was taking a walk in the park with a friend.,0.0,0.625,0.625
+imagined,1,2,"The weather was gorgeous and the park was quiet, only some children with their parents playing around, and some people walking about and taking advantage of the beautiful day.",0.125,0.5,0.625
+imagined,1,6,Of course everyone in the park started looking around to see where the noise came from.,0.25,0.5,0.5
+imagined,1,10,"They flew toward the river, and beyond, leaving everybody shaken, overwhelmed and very surprised.",0.0,0.25,0.25
+imagined,1,12,Where were they going?,0.0,0.25,0.25
+imagined,1,13,And what were they going to do out there?,0.0,0.25,0.25
+recalled,3,0,Today was a sunny day.,0.125,0.375,0.5
+recalled,3,2,I ride my bike in the path around the river.,0.25,0.625,0.875
+recalled,3,3,it is time just pass 9 am.,0.0,0.125,0.125
+recalled,3,4,people was jogging and walking on my way.,0.125,0.375,0.5
+recalled,3,6,I looked up to the sky.,0.125,0.375,0.375
+recalled,3,8,People was taking picture on it.,0.0,0.375,0.375
+retold,2,0,It was a lovely morning.,0.125,0.375,0.5
+retold,2,1,I was walking around the path by the river.,0.125,0.625,0.75
+retold,2,2,There is other people around too.,0.0,0.25,0.25
+retold,2,4,I looked up to the sky.,0.125,0.25,0.375
+retold,2,7,People were taking picture from their cell phone.,0.125,0.375,0.5
+retold,2,9,That flied to south.,0.0,0.125,0.125
+retold,2,10,It was too late for me.,0.0,0.25,0.25
+retold,2,11,After that people was back to their thing again.,0.125,0.25,0.375
+retold,2,12,I am continuous my walking.,0.0,0.375,0.375
+retold,2,14,It came with a little excitement from my daily life.,0.0,0.125,0.125
+retold,2,15,I will get my cell phone ready next time.,0.0,0.125,0.125
+imagined,1,7,"On the way to the shelter, we picked up some eggs and candy, only a few dozen or so.",0.0,0.875,0.875
+imagined,1,8,We sat right in the back of the truck and individually placed candy in each egg.,0.0,0.875,0.875
+imagined,1,9,"We grabbed a couple of baskets, plopped the eggs in, and drove on over.",0.25,0.75,0.875
+recalled,3,1,"One Saturday each month, we go to the charity's commissary, make 135 sandwiches and load the charity's truck with sandwiches, fruit, snacks, and bottles of water.",0.5,0.625,0.75
+recalled,3,2,Then we deliver the food directly to the homeless downtown.,0.25,0.625,0.75
+recalled,3,5,I came up with a few suggestions that were roundly rejected by my very moody teenage daughter.,0.25,0.625,0.75
+recalled,3,6,"Frustrated, I suggested that she come up with some ideas, then.",0.125,0.375,0.5
+recalled,3,7,She went up to her room with stomps in the place of footsteps.,0.125,0.875,1.0
+recalled,3,8,"Thinking she would summarily forget the task, I decided to go with my first idea of making hard boiled eggs and dyeing them as a family.",0.125,0.625,0.625
+recalled,3,14,"'And as she watched, joyful tears slipped onto my daughter's cheeks.",0.25,0.625,0.875
+recalled,3,16,But we did.,0.125,0.25,0.25
+retold,2,1,"One Saturday a few months ago, our truck run was scheduled for the day before Easter.",0.375,0.5,0.625
+retold,2,3,I made a few suggestions to my family.,0.125,0.375,0.5
+retold,2,4,My moody teenager daughter soundly rejected each idea and then went upstairs.,0.375,0.5,0.875
+retold,2,6,I assumed she just didn't want to do anything.,0.0,0.25,0.25
+retold,2,9,So I went out and bought the supplies.,0.25,0.75,0.875
+retold,2,10,My family and I all filled the eggs with candy.,0.25,0.875,1.0
+retold,2,11,"On Saturday, my daughter watched as the homeless individual's opened their plastic eggs.",0.25,0.75,0.875
+retold,2,13,"She didn't want us to see, but we did.",0.125,0.25,0.375
+imagined,1,2,I gave my sister a big hug.,0.125,0.625,0.75
+imagined,1,3,I gave my brother a handshake.,0.0,0.5,0.5
+imagined,1,4,I shared a beer with my father.,0.125,0.375,0.5
+imagined,1,5,I had some wine with my mother.,0.0,0.5,0.5
+imagined,1,6,I played horse shoes with my cousins.,0.125,0.5,0.625
+recalled,2,3,"This time, although one of the cousin's organizing the event said she'd try to arrange transportation, she was unable to do so, so we took the bus.",0.25,0.375,0.625
+recalled,2,6,"I looked at Google Maps before leaving the house, and planned our route.",0.25,0.375,0.5
+recalled,2,8,"On the way to the bus, I called my cousin to confirm that we were on our way.",0.25,0.375,0.5
+retold,3,3,We did this by subway.,0.125,0.375,0.5
+retold,3,6,"We decided to take the other bus, the one recommended by the host of the party.",0.25,0.5,0.75
+retold,3,11,"My cousin Charlotte, who lives in Massachusetts, had mentioned in passing that she loves coconut flan.",0.125,0.25,0.375
+imagined,2,0,"I work for Walmart, a company I have been working for the past 3 years.",0.0,0.25,0.25
+imagined,2,7,"At least, I hope that is why they decided to give the promotion to me as early as they did.",0.0,0.125,0.125
+imagined,2,9,I just didn't think that it would happen because even though I work so hard and I want to do a great job and make sure that I am always on time and I am always striving to be a better version of myself from the day before.,0.0,0.125,0.125
+imagined,2,10,"I like to do well in the goals and tasks that I have set for myself on a daily basis when it comes to my job, or anything that I do.",0.0,0.125,0.125
+imagined,2,13,"I know that if I put in the amount of hours, work, and dedication that I can achieve anything and for that I am so proud and honor to be apart of this establishment.",0.0,0.125,0.125
+imagined,2,14,I am over the moon about this promotion and I ended up celebrating with my loved ones and family members with a bottle of bubbly berry juice (as I and my family members are not a fan of alcoholic beverages) and we went out to dinner afterwards to celebrate this new chapter of my life.,0.25,0.5,0.625
+recalled,1,3,I was so proud when I heard about my promotion.,0.0,0.125,0.125
+recalled,1,8,I think I thought that maybe I didn't do a case right or my numbers weren't as good as they could have been.,0.0,0.125,0.125
+recalled,1,13,Everyone was proud of me.,0.0,0.375,0.375
+retold,3,1,"Although I am held to higher standards now, I receive more money.",0.125,0.25,0.25
+retold,3,2,"It isn't just about the money, though, because I also am looked at with more esteem as well.",0.0,0.25,0.25
+retold,3,3,People come to me with questions that they need help with.,0.0,0.5,0.5
+retold,3,4,People come to me needing advice on how to work certain cases.,0.0,0.625,0.625
+retold,3,5,It feels truly incredible.,0.0,0.375,0.375
+retold,3,6,My supervisor constantly praises me and makes me feel good to be an employee overall.,0.25,0.5,0.625
+retold,3,7,I love working at my job.,0.0,0.125,0.125
+retold,3,9,"I have now been at the job for 11 months, and will be celebrating my 1 year anniversary next month.",0.0,0.25,0.25
+retold,3,10,I can't wait to spend more time at this job.,0.0,0.125,0.125
+retold,3,11,"They treat me well, and I have a lot of security here.",0.0,0.125,0.125
+retold,3,12,Everyone is so proud of me.,0.0,0.25,0.25
+retold,3,13,"Even my mom, as well as my wife are so proud.",0.0,0.25,0.25
+imagined,1,2,I was getting things from family and friends all day.,0.125,0.5,0.625
+imagined,1,3,I even had a taken a few shots earlier during the day.,0.375,0.625,0.75
+imagined,1,6,I had to go to target to pick up a prescription and a few other things I needed.,0.125,0.5,0.625
+imagined,1,9,Had a decent amount of time together.,0.125,0.25,0.25
+imagined,1,10,we were pretty good friends during that time but it's been years since then.,0.0,0.125,0.125
+imagined,1,11,we didn't date or anything but we were close.,0.125,0.25,0.25
+imagined,1,14,I was convinced that it was a bad idea then but it turned out to be quite alright.,0.0,0.125,0.125
+recalled,3,0,"Two and a half months ago, it was my birthday.",0.375,0.625,0.75
+recalled,3,13,I walked around with her that night and we talked for a while and caught up.,0.375,0.5,0.875
+recalled,3,17,"It would probably turn out to be a mistake but realistically, even through all of the rough patches, she was the only one that really made sense to me.",0.0,0.25,0.25
+retold,2,3,Everyone else wanted some sort of refreshments so they agreed to stop as well.,0.125,0.25,0.375
+retold,2,4,So we go in the store and basically split off from one large group.,0.25,0.625,0.875
+retold,2,5,I find myself heading towards electronics as usual to browse.,0.25,0.375,0.625
+retold,2,11,"She looked tired, really tired and I wondered how she'd been.",0.125,0.25,0.375
+retold,2,14,I greeted her and we embraced.,0.25,0.5,0.625
+retold,2,17,She told me about some of the rougher things that were going on and caught me up on what she had been doing.,0.125,0.5,0.5
+retold,2,18,"By the end of it all, I couldn't help but to feel a bit bad but I was happy to have seen her.",0.125,0.25,0.375
+retold,2,19,We promised to keep in touch and then parted ways again.,0.0,0.375,0.375
+imagined,2,7,I just cant stand the amount of pain shes in right now.,0.25,0.5,0.5
+imagined,2,14,It was hard to watch while i was in the room with her.,0.125,0.25,0.375
+recalled,3,9,"Then, we were told that she would STILL have to go to her PCP to get treatment, but at least they gave her enough pain meds to get her there.",0.5,0.625,0.875
+recalled,3,10,"Over the weeks that would follow, there would be many, many consultation visits, scans, and lab works.",0.375,0.5,0.625
+retold,1,8,"Then, after we put pressure on them they approved.",0.125,0.375,0.5
+imagined,1,2,"I had done it, I had gone through all of the things I needed to do to get to this point in life, too.",0.0,0.125,0.125
+imagined,1,3,I made myself proud and others as well.,0.125,0.25,0.25
+imagined,1,11,Since then we have gotten together a few more times and plan to date again.,0.25,0.375,0.625
+recalled,3,3,The process was a long and drawn out one but so worth it in the end.,0.0,0.125,0.125
+recalled,3,8,Even after I thought I had seen it as I contemplated which house to purchase I couldn't decide.,0.0,0.125,0.125
+recalled,3,9,I received a phone call from my realtor a few days after all the showings available to me were over and she communicated to me that there was one brand new listing that we had not seen.,0.375,0.5,0.75
+recalled,3,12,I was in love with the house and put in an offer immediately.,0.25,0.375,0.375
+recalled,3,13,My offer was accepted and sometime later I moved in and have been loving life ever since.,0.25,0.625,0.625
+recalled,3,15,"Although this was a daunting task, I wouldn't change how it all played out.",0.0,0.25,0.25
+retold,2,1,This was a long and sometimes painful process but a good experience nonetheless.,0.125,0.25,0.25
+retold,2,2,I viewed tons of homes and could not find the one for me.,0.0,0.125,0.125
+retold,2,3,I searched and searched and just couldn't find that one that stood out from the rest.,0.0,0.125,0.125
+retold,2,4,"Finally, after what felt like an eternity of searching I was ready to give up.",0.0,0.125,0.125
+retold,2,8,I ended up putting an offer in on the house and the sellers accepted.,0.375,0.5,0.625
+retold,2,10,This experience taught me to never give up.,0.0,0.25,0.25
+retold,2,13,"Finally, my house hunting journey was over.",0.0,0.125,0.125
+imagined,2,6,I miss my mom so badly  and I miss my friends.,0.25,0.5,0.625
+imagined,2,8,I'm making new friends here but I still spend more time alone than I want.,0.125,0.5,0.625
+recalled,3,12,I looked online and asked a few co-workers that live in the city but it was still a nervous process.,0.25,0.5,0.5
+retold,1,2,There is too much pressure and I feel like I am failing.,0.25,0.375,0.5
+retold,1,11,I would like an easier job.,0.125,0.375,0.5
+retold,1,13,I am not sure if it was worth it but I am here now.,0.125,0.375,0.5
+imagined,1,4,We have been planning for weeks.,0.25,0.375,0.375
+imagined,1,5,I got a nice hall and got a decorator to make it colorful.,0.25,0.375,0.625
+imagined,1,6,We invited friends and family through word of mouth and on phone and everyone was eager to grace the occasion.,0.0,0.5,0.5
+imagined,1,7,"On the d-day, he took me to a nice restaurant for breakfast.",0.375,0.75,1.0
+imagined,1,8,My sister later came in that day.,0.25,0.5,0.625
+imagined,1,10,I already negotiated with a restaurant to supply us a nice meal.,0.125,0.375,0.5
+imagined,1,11,"Around 4 pm, family and friends were welcomed with love genre songs to which everyone flowed.",0.25,0.75,0.75
+imagined,1,13,The younger ones eyeing each other and making advances.,0.0,0.25,0.25
+imagined,1,14,We watched from a corner as everything was unfolding.,0.0,0.25,0.25
+imagined,1,16,It was my turn to say something about my husband.,0.125,0.5,0.5
+imagined,1,19,We took the vows and everyone found their way home.,0.25,0.625,0.625
+recalled,3,1,We wanted to do something special to commemorate our love and devotion.,0.125,0.25,0.375
+recalled,3,4,It is a romantic town with personality and history.,0.0,0.25,0.25
+recalled,3,6,It was a romantic weekend of love and memories.,0.25,0.375,0.5
+recalled,3,8,"We spent the weekend eat, drinking, and being merry.",0.125,0.5,0.625
+recalled,3,9,We shopped and hit all of the tourist destinations.,0.0,0.625,0.625
+recalled,3,10,Everyone had a blast spending time together.,0.125,0.375,0.375
+recalled,3,11,Our actual renewal ceremony was lovely.,0.125,0.25,0.375
+recalled,3,12,I wore a white dress and our kids were in the bridal party.,0.125,0.25,0.25
+recalled,3,14,I was thrilled to have our children present to partake in the family love.,0.0,0.25,0.25
+retold,2,2,"We have had ups and downs, high and lows, ebbs and flows.",0.0,0.125,0.125
+retold,2,5,"We have supported each other through jobs, stresses, monumental events, family deaths, etc.",0.125,0.25,0.25
+retold,2,8,"We wanted it to be a joyous occasion marked by love, fun, dancing, food, and great memories.",0.0,0.25,0.25
+retold,2,9,We invited friends and family from all over the country to join us for dinner and dancing.,0.25,0.375,0.625
+retold,2,10,It was a lovely weekend that everyone is still talking about!,0.0,0.125,0.125
+retold,2,11,I wore a gorgeous dress and my husband looked handsome in his tuxedo.,0.0,0.25,0.25
+retold,2,12,Our children attended and got to share in the love of our marriage.,0.125,0.25,0.25
+retold,2,13,We made amazing memories that we will never forget.,0.125,0.25,0.375
+retold,2,14,"Most importantly, we remembered how and why we have lasted ten years and made a promise to last another ten and beyond.",0.0,0.375,0.375
+imagined,3,0,Bad Lands National Park was an absolute gem.,0.375,0.5,0.625
+imagined,3,4,"We journeyed West, as our forefathers were one to.",0.0,0.375,0.375
+imagined,3,6,"There were several places on the way that we had seen, but none had made the impact like Bad Lands did.",0.125,0.375,0.375
+imagined,3,11,I felt like I was connected to everything and everyone.,0.0,0.25,0.25
+imagined,3,12,My family seemed to enjoy it as well.,0.125,0.375,0.375
+recalled,2,2,"Yellowstone National Forest, Mount Rushmore, and a wildlife park to name a few.",0.0,0.375,0.375
+recalled,2,3,One of the attractions we visited was Bad Lands National Park.,0.125,0.875,0.875
+recalled,2,4,"The rock formations were stunning, and We took many photos.",0.0,0.5,0.5
+recalled,2,5,"This event was particularly special to me, because I have wanted to visit this park since I Was a little girl.",0.125,0.25,0.375
+recalled,2,6,"A teacher shared pictures of her own vacation with me, and from that moment on, I have wanted to visit.",0.0,0.25,0.25
+recalled,2,8,"My family and I saw American Bison, prairie dogs, Big Horn Sheep, and so many birds!",0.25,0.625,0.875
+recalled,2,9,One of the most exciting moments was when my children were able to get very close to a prairie dog for a picture!,0.25,0.625,0.75
+recalled,2,10,"The sun was so hot that day, but there was a nice breeze over the prairie.",0.0,0.125,0.125
+recalled,2,11,"My children and I climbed a couple of large rock formations together, and the view from the top was spectacular!",0.0,0.625,0.625
+recalled,2,13,My parents and children were equally impressed with the land formations and animals.,0.0,0.125,0.125
+retold,1,0,My family went on a trip out West this Summer.,0.75,0.875,1.0
+retold,1,1,"We visited many places, but the one we all enjoyed the most was Bad Lands National Park.",0.25,0.5,0.625
+retold,1,4,We were able to observe American Bison on the prairie.,0.25,0.75,0.875
+retold,1,6,"My children still talk about the bison, and we have included studying these animals during our homeschooling days.",0.0,0.25,0.25
+retold,1,7,We also saw huge eagles and hawks!,0.25,0.5,0.75
+retold,1,8,"The wildlife that my children probably enjoyed the most were the prairie dogs, as they were able to get fairly close to them!",0.125,0.25,0.375
+retold,1,10,It was like a giant bowl in the middle of the prairie!,0.0,0.125,0.125
+retold,1,11,"We learned about the formation of the rocks, and you could see the different layers of sediment in the rocks.",0.0,0.625,0.625
+retold,1,12,"We spent the greater part of a day just exploring the different areas, pulling off at all of the scenic outlooks!",0.125,0.375,0.5
+retold,1,14,I can't wait to go back when my wife and oldest son can join us!,0.0,0.125,0.125
+imagined,3,5,"At dinner, he was very charming and polite to her.",0.0,0.625,0.625
+imagined,3,6,"He made sure to show his humorous side, which helped her get comfortable.",0.0,0.5,0.5
+imagined,3,7,"They laughed and joked a lot, and we had a very good time.",0.0,0.25,0.25
+imagined,3,13,They played fetch for what felt like hours.,0.0,0.625,0.625
+imagined,3,14,"After we drank our coffee, we took Bailey on a walk in the neighborhood.",0.0,0.75,0.75
+imagined,3,15,It was the perfect end to a perfect night!,0.0,0.125,0.125
+recalled,1,0,"A few weeks ago, I went to dinner with my boyfriend and my best friend.",0.375,0.875,1.0
+recalled,1,2,It went really well!,0.0,0.125,0.125
+recalled,1,3,"I'd been dating him for nearly a year, and it'd taken quite some time for our schedules to line up.",0.0,0.125,0.125
+recalled,1,4,I think this delay in meeting gave me some pent up anxiety about it finally happening.,0.0,0.25,0.25
+recalled,1,5,"My friend texted me asking if I'd like to get dinner, and I let her know that I was with my boyfriend at the time.",0.375,0.5,0.875
+recalled,1,6,We got burgers and wings at a place nearby.,0.0,0.625,0.625
+recalled,1,7,"The food was great, but the company was better.",0.0,0.375,0.375
+recalled,1,9,"When we finished eating, we spent some time speaking to them.",0.0,0.5,0.5
+recalled,1,10,It was nice to catch up with old friends.,0.0,0.125,0.125
+recalled,1,13,"It was great to spend time with two people I value and care about, and to see them getting along so well.",0.0,0.125,0.125
+recalled,1,14,I'm looking forward to spending more time with the two of them in the future.,0.0,0.125,0.125
+retold,2,3,"We share a lot about our love lives, even though we don't see each other super often.",0.0,0.25,0.25
+retold,2,4,She knows that I'd been really happy in my relationship and was eager to meet him.,0.0,0.125,0.125
+retold,2,5,It finally so happened that schedules aligned and we were able to meet up.,0.375,0.5,0.875
+retold,2,6,I was a little nervous at first.,0.0,0.375,0.375
+retold,2,7,"I wasn't worried that she wouldn't approve or anything, but it's always a little bit of an unsure situation introducing people you're dating to old friends.",0.0,0.125,0.125
+retold,2,8,"We met at the restaurant, a local burger joint/bar.",0.125,0.75,0.875
+retold,2,9,The three of us had a great time!,0.125,0.5,0.5
+retold,2,10,"Conversation was easy, and as expected, they got along wonderfully.",0.125,0.25,0.375
+retold,2,12,"Once there, we spent a while playing with my friend's dog.",0.125,0.375,0.5
+retold,2,13,"My boyfriend made fast friends, and it was really sweet seeing him interact with her dog.",0.0,0.375,0.375
+imagined,1,4,We all like beer so we decided to visit a few local breweries.,0.25,0.5,0.75
+imagined,1,7,The atmosphere was great.,0.0,0.125,0.125
+imagined,1,9,We started with some flights because he wanted to try everything.,0.25,0.75,0.875
+imagined,1,11,We had some more to drink and a lot of laughs.,0.375,0.5,0.75
+imagined,1,13,After that we took an Uber to a local restaurant.,0.5,0.625,0.875
+imagined,1,15,"At the end of the day, we felt kind of tired so we decided to just hang out at my place.",0.125,0.5,0.625
+imagined,1,16,Overall it was a great weekend and I hope we can do it again sometime soon.,0.0,0.125,0.125
+recalled,3,2,"The day that he arrived, I went to pick him up from the train station around 9 am.",0.375,0.625,0.875
+recalled,3,4,"After he dropped his stuff off at my apartment, we went to get lunch and went to the ferris wheel that overlooks part of the city.",0.375,0.625,0.875
+recalled,3,9,We had a lot of fun looking around the planetarium and watching the show they had about a possible ninth planet.,0.0,0.875,0.875
+recalled,3,10,"After we left, we got back on the bus to go back to my apartment.",0.375,0.625,0.875
+recalled,3,11,We changed clothes and got ready to go to the restaurant where we made reservations for his birthday dinner.,0.25,0.625,0.75
+recalled,3,13,"We were almost late, but we power walked so we could make it on time.",0.25,0.5,0.625
+recalled,3,15,"When we got back to my apartment, we had birthday dessert and went to bed because we were both tired.",0.25,0.5,0.625
+retold,2,1,He came over on the train and I went to the train station to pick him up.,0.25,0.5,0.625
+retold,2,2,"After he dropped his stuff off at my apartment, I let him plan some activities that he wanted to do.",0.25,0.5,0.75
+retold,2,3,First we got lunch at a place just down the street.,0.375,0.75,1.0
+retold,2,7,We went there on his actual birthday for a couple hours and saw a cool show.,0.25,0.375,0.625
+retold,2,8,The night of his birthday we had reservations at a nice restaurant.,0.125,0.5,0.5
+retold,2,9,We had a great meal.,0.125,0.375,0.5
+retold,2,11,We were running to the train and trying not to get wet.,0.25,0.5,0.75
+retold,2,12,When we got back to my apartment we had his birthday dessert.,0.25,0.375,0.625
+retold,2,13,He left at the end of the weekend to go back home.,0.25,0.625,0.75
+retold,2,15,I'm glad I got to celebrate with him.,0.0,0.125,0.125
+imagined,3,8,I was forced to sit on the bench and ice my knee while the final minutes ticked away.,0.375,0.5,0.75
+recalled,1,2,On me time I had my 2 brothers and one of my cousins playing.,0.25,0.625,0.75
+recalled,1,3,We were all having fun and enjoying ourselves.,0.25,0.375,0.625
+recalled,1,7,I caught it and took a couple dribbles.,0.125,0.75,0.875
+retold,2,2,I had to have addition repairs done to my knee.,0.5,0.625,0.875
+retold,2,4,I was told by the doctor I would be walking again a few days after the procedure.,0.375,0.5,0.875
+retold,2,7,Right now now I am going on about 2 months.,0.25,0.375,0.625
+retold,2,12,But the brace is pretty uncomfortable and itchy so I take a break every chance I get.,0.25,0.375,0.625
+retold,2,14,But I guess that's just the process of going through recovery.,0.25,0.375,0.5
+retold,2,15,"I am in physical therapy two time a week, and it does help.",0.25,0.625,0.75
+retold,2,16,So hopefully after therapy is completed I will be better off.,0.125,0.25,0.375
+imagined,2,10,I thought she was just going to give a vote of thanks when she picked up the mic.,0.375,0.5,0.75
+recalled,3,1,"We had gone to different colleges and different graduate programs so we rarely saw each other in person, maybe once or twice a year.",0.125,0.25,0.25
+recalled,3,5,The party was a pretty big deal.,0.25,0.375,0.375
+recalled,3,7,Her relatives had flown in from Cameroon just for this party.,0.5,0.625,0.875
+recalled,3,10,"After we had eaten, my friend and her family made speeches to the room.",0.25,0.75,0.875
+recalled,3,11,"My friend, as the guest of honor, had the spotlight speech.",0.125,0.5,0.625
+recalled,3,17,It really reinforced the bond we've had for over ten years.,0.125,0.25,0.25
+retold,1,2,"Fortunately, my friend was having a party as well.",0.375,0.5,0.75
+retold,1,4,It was an interesting reminder of how I didn't like one of those girls.,0.125,0.25,0.375
+retold,1,8,"As the night progressed, we ate and danced and talked.",0.125,0.25,0.25
+retold,1,16,I'm sure the moment got caught by the videographer.,0.125,0.375,0.5
+retold,1,18,It was a nice reminder of how much our friendship has meant over the years.,0.125,0.25,0.25
+imagined,2,1,"In fact, it pretty much was the most normal of a day that it could had been.",0.0,0.25,0.25
+imagined,2,3,I decided that I deserved a treat and so I went to my local grocery store.,0.25,0.75,0.75
+imagined,2,4,"Since I was there, I got a couple more necessities so I wouldn't have to go later on in the week.",0.125,0.5,0.625
+imagined,2,8,It wasn't actually my mom (obviously) but she looked similar enough where I had to go talk to her.,0.25,0.375,0.625
+imagined,2,13,"I apologized profusely for my mistake, but she wasn't upset at all.",0.25,0.5,0.75
+recalled,1,0,I was grocery shopping a few weeks ago.,0.25,0.5,0.75
+recalled,1,1,I had purchased my items and was leaving the store.,0.125,0.625,0.625
+recalled,1,2,I noticed an older woman with a cart of groceries.,0.375,0.625,1.0
+recalled,1,7,She lived nearby as well.,0.0,0.25,0.25
+recalled,1,8,So i did exactly that.,0.0,0.375,0.375
+recalled,1,9,"I dropped my things off at home, and came back to the store to help her carry her bags to her home.",0.0,0.625,0.625
+recalled,1,10,She was very appreciative of my help.,0.125,0.5,0.5
+recalled,1,12,"Instead we talked for a few minutes, exchanged names and phone numbers and laughed about the oddities of life.",0.25,0.5,0.75
+recalled,1,13,We had a good time together.,0.0,0.125,0.125
+recalled,1,14,I learned that she lived alone the home so grocery shopping or shopping of any kind is a challenge.,0.25,0.375,0.625
+recalled,1,16,I felt good about helping her.,0.0,0.5,0.5
+recalled,1,17,I think it's important to help others when we are able and i was able to help her.,0.0,0.125,0.125
+recalled,1,18,I wanted to help her.,0.0,0.25,0.25
+recalled,1,20,She knows she can count on me to help if she needs it.,0.0,0.25,0.25
+recalled,1,21,I visit with her once a week.,0.375,0.625,0.875
+recalled,1,22,"We have coffee at her home, out on her patio, or in a coffee shop and just talk.",0.125,0.5,0.5
+recalled,1,24,She started a garden this summer and I help her with that as well.,0.25,0.5,0.625
+retold,3,0,I had gone grocery shopping to pick up a few things.,0.25,0.625,0.75
+retold,3,1,I had gathered the things i needed and a few extras and headed to the cash to purchase.,0.125,0.5,0.625
+retold,3,2,I had purchased my items and was leaving the store.,0.0,0.625,0.625
+retold,3,3,I noticed an older woman with a cart of groceries.,0.375,0.5,0.875
+retold,3,5,I live across the street from the grocery store so I told myself i should offer some assistance to her.,0.375,0.625,0.875
+retold,3,6,I approached her and offered my help.,0.5,0.625,1.0
+retold,3,7,I told her i would drop my things off at home and come back to help her carry some things.,0.0,0.5,0.5
+retold,3,8,She lived nearby as well.,0.0,0.125,0.125
+retold,3,9,So i did exactly that.,0.0,0.5,0.5
+retold,3,10,"I dropped my things off at home, and came back to the store to help her carry her bags to her home.",0.0,0.625,0.625
+retold,3,11,She was very appreciative of my help.,0.125,0.5,0.625
+retold,3,14,I felt good about helping her.,0.0,0.375,0.375
+retold,3,18,She knows she can count on me to help if she needs it.,0.125,0.25,0.25
+imagined,3,2,"The hotels, tours, and restaurant recommendations were all amazing from Rome, to Il Borro, Florence, and Sorrento.",0.125,0.5,0.5
+imagined,3,7,I’ve flown over 1 Million miles in my life and traveled extensively.,0.25,0.375,0.375
+imagined,3,15,"From the onset of booking our honeymoon, JSG was prompt to provide hotel recommendations that were matched with our desires for our trip to Greece.",0.25,0.375,0.625
+imagined,3,16,We stayed at the Blue Palace - Marriott Luxury Collection in Crete & The Chromata in Santorini.,0.25,0.5,0.625
+imagined,3,21,All details are thought of from the inception of the booking process & throughout the stay.,0.125,0.25,0.375
+recalled,2,3,We packed up our clothing.,0.0,0.5,0.5
+recalled,2,4,We packed up our kids.,0.125,0.75,0.75
+recalled,2,5,We head to the local grocery store.,0.25,0.625,0.875
+recalled,2,6,Off we go to Las Vegas Nevada.,0.25,0.375,0.5
+recalled,2,7,"Right away walking in the door, I stick a dollar in the slot.",0.0,0.625,0.625
+recalled,2,8,I win a few bucks.,0.25,0.5,0.75
+recalled,2,11,We end up staying an extra day.,0.375,0.625,0.625
+retold,1,5,The next day we got there and we checked in to our room at a really nice hotel.,0.125,0.5,0.625
+retold,1,6,We placed our bags down and went off to the strip to go explore.,0.25,0.375,0.625
+retold,1,9,We had spent it all on gambling all day.,0.375,0.75,0.75
+retold,1,10,We just went back to the room and decided to go to sleep.,0.25,0.375,0.625
+retold,1,13,After breakfast we had five dollars to spare so we decided to just put it in a slot machine.,0.125,0.5,0.625
+retold,1,17,We stayed an extra night and got some gourmet food for breakfast lunch and dinner!,0.375,0.5,0.75
+imagined,3,5,"I wasn't afforded much time to prepare for the test, not even a day.",0.25,0.375,0.375
+imagined,3,7,I was worried that I wasn't going to make it on time to the test.,0.0,0.25,0.25
+imagined,3,9,When I sat down I got right to work.,0.375,0.625,0.875
+imagined,3,12,When the exam was finally done I was relieved.,0.375,0.5,0.625
+imagined,3,15,My boss and my co-workers congratulated me for passing.,0.25,0.625,0.75
+recalled,1,1,I was hired in November and you had six months to complete the course so my deadline was less than a month away.,0.375,0.5,0.75
+recalled,1,4,"Anyways, I had to do this course in work flow and a lot of was very technical.",0.125,0.375,0.5
+recalled,1,5,I was getting frustrated.,0.125,0.25,0.375
+recalled,1,9,With 10 days to go and my boss going on vacation I had to ask to come in on a Saturday to do the course.,0.375,0.5,0.875
+recalled,1,10,First thing was that daunting course.,0.375,0.5,0.625
+recalled,1,11,I passed it right away with a little bit of my bosses help.,0.375,0.5,0.75
+recalled,1,15,I can get nationally certified if Id like but I am firmly established with my new company.,0.25,0.375,0.5
+retold,2,1,There was one quiz where it was not really relevant to my job and i could not figure it out.,0.375,0.625,0.75
+retold,2,12,I can just relax.,0.125,0.25,0.375
+imagined,1,4,"I was nervous for sure, but it sounded like the chance of a lifetime.",0.125,0.375,0.5
+imagined,1,5,I needed to break from reality badly.,0.125,0.25,0.375
+imagined,1,6,I had been working 7 days a week for months and felt like my brain was about to explode.,0.0,0.375,0.375
+imagined,1,7,After a few days of riding around the lonely outskirts of Alaska I really started to feel better.,0.375,0.625,0.75
+imagined,1,8,I stopped thinking about work.,0.0,0.625,0.625
+imagined,1,9,My mind totally cleared and for the first time in forever I really felt at peace.,0.125,0.25,0.25
+imagined,1,10,The scenery in Alaska is amazing.,0.125,0.375,0.375
+imagined,1,11,It is hard to explain.,0.0,0.125,0.125
+imagined,1,12,"It is so plain and vacant, but is is beautiful.",0.0,0.125,0.125
+imagined,1,13,"It looks untouched, like no one has been around to destroy it like the rest of the world.",0.125,0.25,0.375
+imagined,1,14,My favorite moment of the entire trip was when we took a short break to let the dogs rest.,0.375,0.5,0.875
+imagined,1,17,They are bigger than a car.,0.0,0.25,0.25
+recalled,3,1,I harnessed up 11 out of the 12 dogs i had to the sled and hit the trail.,0.25,0.75,1.0
+recalled,3,2,The trail was extremely fast considering the sun was melting the hard packed snow and freezing it over night.,0.25,0.375,0.5
+recalled,3,4,I had my go-pro rolling since the day was so beautiful and i wanted to capture the openness of crossing the river on such a bright day.,0.125,0.5,0.625
+recalled,3,8,"I watched in amazement as i always did when i saw moose, now was my chance to be quiet and watch because they hadn't seen me yet.",0.125,0.25,0.375
+recalled,3,15,I have never seen anything so great and beautiful from nature and probably never will.,0.125,0.25,0.375
+recalled,3,16,Soon as the lynx and moose were out of my site i commanded the dogs to hit the trail and continue the run.,0.0,0.75,0.75
+recalled,3,17,I am very thankful for this day in Alaska as a dog musher.,0.0,0.125,0.125
+retold,2,0,It was a sunny Alaskan day in the brooks range.,0.125,0.5,0.625
+retold,2,1,I saddled up 12 dogs and headed out on a training run.,0.25,0.75,1.0
+retold,2,2,My training runs with the dogs were between 5-10 miles because that’s what I typically took the guests on.,0.0,0.25,0.25
+retold,2,3,The sun was so bright the snow was a perfect texture for the dogs to get some speed.,0.0,0.375,0.375
+retold,2,4,We took off fast and ran Ahead of pace majority of the run.,0.0,0.5,0.5
+retold,2,5,I decided to take A break at one of my favorite spots where the trail meets the river.,0.25,0.5,0.75
+retold,2,8,I sat very calm and still so the dogs didn’t get alarmed.,0.125,0.375,0.5
+retold,2,14,Before the dogs noticed I gave the call and we took off.,0.0,0.625,0.625
+imagined,2,1,She sent out an invitation via email.,0.25,0.375,0.625
+imagined,2,14,My other friend James said he was going home to watch Zootopia.,0.125,0.25,0.375
+recalled,3,1,A month ago I went to my friend's birthday party.,0.625,1.0,1.0
+recalled,3,3,The restaurant was far away so I ended up carpooling with friends that also were going to the party.,0.375,0.5,0.875
+recalled,3,6,I already had bought a gift from Amazon so I did not buy anything at Target.,0.125,0.25,0.375
+recalled,3,11,"Nevertheless, the restaurant was so good and I had good conversation.",0.125,0.375,0.375
+recalled,3,13,I got my friend a pusheen plushy and she seemed to really like the gift.,0.25,0.375,0.5
+retold,1,0,This story was about me spending time with two separate friends.,0.25,0.5,0.625
+retold,1,1,"The first friend I spent time with at her birthday dinner at a korean BBQ place, the second friend I spent time with at her house to watch a movie.",0.5,0.625,0.875
+retold,1,9,I had a really good time during the dinner.,0.25,0.5,0.5
+retold,1,17,It's pretty funny too how I forgot I even did this task and I could not remember what I had even written about.,0.125,0.25,0.375
+imagined,1,1,I am always nervous when I get reviewed at work.,0.25,0.5,0.5
+imagined,1,3,I knew everyone was getting their projects reviewed.,0.125,0.375,0.375
+imagined,1,5,That meant that the winner would be in charge of a team leading the project.,0.125,0.25,0.25
+imagined,1,7,I have been working  here for 6 months and wanted a chance to show my leadership ability as well as my creativity.,0.0,0.375,0.375
+imagined,1,8,The boss brought everyone in the conference room to announce the results.,0.25,0.75,0.75
+imagined,1,14,I can't wait to share the news with my family!,0.125,0.25,0.25
+recalled,2,2,i has been worked six months for the project.,0.0,0.25,0.25
+recalled,2,3,i were in an deadline to submit my project.,0.0,0.25,0.25
+recalled,2,5,i were submitting my project the approval team.,0.0,0.375,0.375
+recalled,2,6,were analysis my project and shown the result as accept are reject my project were select which the design.,0.0,0.375,0.375
+recalled,2,8,i am little nervous when submitting my project to the organization team.,0.0,0.375,0.375
+recalled,2,10,i were very happy to address my project result to my group member and the company staffs.,0.0,0.5,0.5
+recalled,2,15,that were the reason also about my self confidence.,0.0,0.125,0.125
+retold,3,5,"hen you start and finish my presentation in a breeze,I am imagine myself being the most confident speaker during your presentations and meetings.",0.0,0.125,0.125
+retold,3,7,the way I can beat this is firstly by believing .then reassure myself because i am going to be completely else or to present their own representations.,0.125,0.25,0.25
+retold,3,12,which I use o train people on how to become more comfortable mastering the skill of communicating effectively.,0.0,0.125,0.125
+retold,3,15,Having a clear structure accomplishes two things.,0.0,0.125,0.125
+imagined,3,0,I went for my follow-up appointment in October.,0.375,0.875,0.875
+imagined,3,4,I have been able to relax and enjoy the holidays with my family knowing that I'm not going to be leaving them any time soon.,0.25,0.5,0.625
+imagined,3,6,I am so glad that I went for that exam last spring.,0.25,0.375,0.5
+imagined,3,7,I can't imagine how this would have gone had the cancer not been found when it was.,0.25,0.375,0.375
+imagined,3,8,I have so many plans for the future now.,0.375,0.5,0.625
+imagined,3,9,I feel like I had been taking so many things for granted.,0.25,0.375,0.5
+imagined,3,10,I want to follow through on all those things that I just never made time for.,0.125,0.5,0.5
+imagined,3,11,It's amazing how a scare like this can change your perspective.,0.125,0.25,0.25
+recalled,1,0,In March of 2019 I went to the doctor to get my blood pressure medicine refilled.,0.25,0.5,0.625
+recalled,1,1,The doctor also did was blood work.,0.25,0.375,0.625
+recalled,1,8,"I had prostate surgery on Aug. 20, 2019 and had my prostate removed.",0.5,0.625,0.75
+recalled,1,9,"I have a return appointment on October 8, 2019 to check my PSA levels.",0.25,0.375,0.5
+recalled,1,12,Then every 6 months for a couple years.,0.125,0.375,0.375
+recalled,1,13,If all is good then the doctor will check my PSA levels once a year there after.,0.125,0.25,0.375
+retold,2,3,After surgery the Doctor said everything looks good.,0.25,0.375,0.375
+retold,2,4,The doctor said he wants me to get out of bed and walk around as soon as possible.,0.25,0.375,0.5
+retold,2,5,He said looks like you will be able to go home in the morning.,0.25,0.5,0.625
+retold,2,6,The next morning the doctor came in the room and asked how i was feeling?,0.125,0.375,0.375
+retold,2,7,I said i was feeling good.,0.25,0.375,0.625
+retold,2,8,He said that i can go home today.,0.375,0.5,0.75
+retold,2,10,I was feeling pretty good.,0.125,0.375,0.5
+retold,2,11,A little sore and uncomfortable with the catheter.,0.0,0.5,0.5
+retold,2,13,A week after surgery i had a return appointment with the doctor.,0.25,0.625,0.75
+retold,2,14,He wanted to remove the catheter if possible.,0.0,0.75,0.75
+retold,2,16,He removed the catheter.,0.25,0.625,0.625
+retold,2,17,Doctor said everything is looking good.,0.125,0.25,0.375
+retold,2,18,Next he wanted me to get a PSA test in 6 weeks.,0.0,0.625,0.625
+retold,2,19,I took the PSA test and had a return appointment the next week.,0.25,0.375,0.625
+retold,2,20,"That would have been on October 8, 2019.",0.125,0.25,0.375
+retold,2,21,Had the test done.,0.0,0.25,0.25
+retold,2,22,Doctor said PSA looks good.,0.25,0.625,0.75
+retold,2,23,I will have another PSA test in January 2020.,0.125,0.5,0.625
+retold,2,24,If all is good the doctor said we will check my PSA every 3 months for the first year.,0.125,0.25,0.375
+imagined,3,2,The whole family came over to her house.,0.5,0.625,0.875
+imagined,3,5,Most of the family that attended brought side dishes.,0.25,0.375,0.625
+imagined,3,6,Two cakes were presented after lunch.,0.25,0.5,0.625
+imagined,3,12,I hugged everyone.,0.25,0.375,0.625
+recalled,1,1,We invited my grandson who turned 5  for bbq and cake.,0.375,0.625,0.75
+recalled,1,2,We had other people over as well.,0.125,0.375,0.5
+recalled,1,3,I cooked hamburgers and brauts.,0.125,0.5,0.625
+recalled,1,8,The food and cake was very good.,0.125,0.5,0.625
+recalled,1,14,The kids and grandkids grow up so fast.,0.125,0.25,0.375
+retold,2,3,We had so much fun with the kids and having everyone over also.,0.25,0.375,0.5
+retold,2,5,Last time he got a helium balloon  for him and I and he accidently released ir.,0.375,0.5,0.75
+retold,2,9,We are planning another next year.,0.375,0.625,0.875
+retold,2,13,We usually have 3 to 4 bbqs each summer.,0.375,0.5,0.625
+retold,2,14,Hope to have a great one again this year.,0.125,0.25,0.25

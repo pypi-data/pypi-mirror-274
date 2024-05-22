@@ -1,0 +1,80 @@
+Persona/In-Group,Type,Percentage
+Islamophobic,arbitrary target group label,0.0625
+Islamophobic,concept (other),0.375
+Islamophobic,concept (policy),0.0625
+Islamophobic,concept (values),0.0625
+Islamophobic,persona signal (shared culture),0.0625
+Islamophobic,representative (Bogeyman),0.0625
+Islamophobic,stereotype-based descriptor,0.0625
+Islamophobic,stereotype-based target group label,0.25
+anti-Asian,arbitrary target group label,0.6666666666666666
+anti-Asian,stereotype-based descriptor,0.3333333333333333
+anti-GMO,concept (policy),0.5
+anti-GMO,concept (values),0.5
+anti-LGBTQ,arbitrary target group label,0.3333333333333333
+anti-LGBTQ,concept (other),0.3333333333333333
+anti-LGBTQ,stereotype-based target group label,0.3333333333333333
+anti-Latino,arbitrary target group label,0.16666666666666666
+anti-Latino,concept (policy),0.3333333333333333
+anti-Latino,stereotype-based target group label,0.5
+anti-liberal,arbitrary target group label,0.5714285714285714
+anti-liberal,stereotype-based target group label,0.42857142857142855
+anti-vax,concept (values),0.8
+anti-vax,stereotype-based descriptor,0.2
+antisemitic,arbitrary target group label,0.041666666666666664
+antisemitic,concept (other),0.1388888888888889
+antisemitic,concept (policy),0.027777777777777776
+antisemitic,persona signal (in-group label),0.013888888888888888
+antisemitic,persona signal (self-referential),0.041666666666666664
+antisemitic,persona signal (shared culture),0.013888888888888888
+antisemitic,persona signal (symbol),0.041666666666666664
+antisemitic,phonetic-based target group label,0.027777777777777776
+antisemitic,representative (Bogeyman),0.08333333333333333
+antisemitic,stereotype-based descriptor,0.19444444444444445
+antisemitic,stereotype-based target group label,0.375
+climate change denier,concept (policy),0.25
+climate change denier,concept (values),0.25
+climate change denier,persona signal (self-referential),0.25
+climate change denier,stereotype-based target group label,0.25
+conservative,concept (policy),0.5
+conservative,concept (values),0.25
+conservative,persona signal (self-referential),0.125
+conservative,persona signal (shared culture),0.125
+homophobic,arbitrary target group label,0.16666666666666666
+homophobic,concept (values),0.6666666666666666
+homophobic,stereotype-based target group label,0.16666666666666666
+liberal,concept (other),0.3333333333333333
+liberal,concept (policy),0.3333333333333333
+liberal,stereotype-based target group label,0.3333333333333333
+misogynistic,concept (other),1.0
+racist,arbitrary target group label,0.02702702702702703
+racist,concept (other),0.04054054054054054
+racist,concept (policy),0.33783783783783783
+racist,concept (values),0.12162162162162163
+racist,humor/mockery/sarcasm,0.04054054054054054
+racist,persona signal (self-referential),0.05405405405405406
+racist,persona signal (symbol),0.013513513513513514
+racist,phonetic-based target group label,0.02702702702702703
+racist,representative (Bogeyman),0.04054054054054054
+racist,stereotype-based descriptor,0.12162162162162163
+racist,stereotype-based target group label,0.17567567567567569
+religious,persona signal (shared culture),1.0
+transphobic,arbitrary target group label,0.0410958904109589
+transphobic,concept (other),0.0821917808219178
+transphobic,concept (values),0.1780821917808219
+transphobic,humor/mockery/sarcasm,0.0547945205479452
+transphobic,persona signal (self-referential),0.2054794520547945
+transphobic,persona signal (shared culture),0.0821917808219178
+transphobic,persona signal (symbol),0.1232876712328767
+transphobic,stereotype-based descriptor,0.0958904109589041
+transphobic,stereotype-based target group label,0.136986301369863
+white supremacist,arbitrary target group label,0.10638297872340426
+white supremacist,concept (other),0.02127659574468085
+white supremacist,concept (policy),0.02127659574468085
+white supremacist,concept (values),0.0425531914893617
+white supremacist,humor/mockery/sarcasm,0.0851063829787234
+white supremacist,persona signal (self-referential),0.1702127659574468
+white supremacist,persona signal (shared culture),0.0851063829787234
+white supremacist,persona signal (symbol),0.44680851063829785
+white supremacist,stereotype-based descriptor,0.02127659574468085
+xenophobic,concept (policy),1.0
