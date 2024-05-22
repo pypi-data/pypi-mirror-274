@@ -1,0 +1,9 @@
+patchwork-core~=0.2
+aiohttp
+
+[fastapi]
+fastapi>=0.100
+python-jose[cryptography]
+
+[tortoise]
+tortoise-orm
