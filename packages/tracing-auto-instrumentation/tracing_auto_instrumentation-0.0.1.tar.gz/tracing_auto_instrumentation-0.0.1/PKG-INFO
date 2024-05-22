@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tracing_auto_instrumentation
+Version: 0.0.1
+Author: LastMile AI
+Project-URL: Homepage, https://github.com/lastmile-ai/tracing_auto_instrumentation
+Project-URL: Bug Tracker, https://github.com/lastmile-ai/tracing_auto_instrumentation/issues
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lastmile_eval
