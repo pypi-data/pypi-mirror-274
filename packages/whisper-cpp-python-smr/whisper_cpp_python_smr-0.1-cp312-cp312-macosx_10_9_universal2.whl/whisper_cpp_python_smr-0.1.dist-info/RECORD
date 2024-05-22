@@ -1,0 +1,16 @@
+whisper_cpp_python_smr-0.1.dist-info/RECORD,,
+whisper_cpp_python_smr-0.1.dist-info/WHEEL,sha256=Rg8czw92siD2A2S3mHSH9kyrGPZLex3Pk6YUP-QFU9o,118
+whisper_cpp_python_smr-0.1.dist-info/METADATA,sha256=61N986VDR5y1w_d-15DFENLqRrFhQAd5fjndebG0h9o,205
+whisper_cpp_python_smr-0.1.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+bin/ggml-metal.metal,sha256=WbAf2XDEbZVUl6pFZUB-1-hI6cqSUg4o9erqdXww4Xw,256848
+include/whisper.h,sha256=rAf9gNsjbHA72zwnsXh2ylwRdEhpU-m39WKYqy49sVo,31875
+include/ggml.h,sha256=qWvAoNvk1bMyXtCNWUD2CMtKWQ-BDzZJ7qScO2NV9kQ,88233
+whisper_cpp/ggml-metal.metal,sha256=WbAf2XDEbZVUl6pFZUB-1-hI6cqSUg4o9erqdXww4Xw,256848
+whisper_cpp/__init__.py,sha256=uoYyma7nQ_QOoe0BEak06Wy-swNL5cqZOGMVYZmfkOQ,62
+whisper_cpp/whisper.py,sha256=dJNcrHig0sObHgp6ySHoWEuhYXzWFeyXR_nDxAA5B1g,7375
+whisper_cpp/libwhisper.dylib,sha256=EHwJlGJaQojHeYaW0PPHuHK9V_tsdHvv1tcwTphhUac,3015944
+whisper_cpp/libwhisper.1.dylib,sha256=EHwJlGJaQojHeYaW0PPHuHK9V_tsdHvv1tcwTphhUac,3015944
+whisper_cpp/libwhisper.1.5.5.dylib,sha256=EHwJlGJaQojHeYaW0PPHuHK9V_tsdHvv1tcwTphhUac,3015944
+lib/libwhisper.dylib,sha256=EHwJlGJaQojHeYaW0PPHuHK9V_tsdHvv1tcwTphhUac,3015944
+lib/libwhisper.1.dylib,sha256=EHwJlGJaQojHeYaW0PPHuHK9V_tsdHvv1tcwTphhUac,3015944
+lib/libwhisper.1.5.5.dylib,sha256=EHwJlGJaQojHeYaW0PPHuHK9V_tsdHvv1tcwTphhUac,3015944
