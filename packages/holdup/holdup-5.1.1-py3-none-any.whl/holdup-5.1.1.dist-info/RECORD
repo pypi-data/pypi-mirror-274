@@ -1,0 +1,12 @@
+holdup/__init__.py,sha256=O2stXi7jIRoLCfzh6fPEOGlhpgQPwGWYLDheJ-AbO_4,22
+holdup/__main__.py,sha256=9_sShEgNM-l16HPhFHNk-rtZNvHEg0l6GOhqezQXAg0,382
+holdup/checks.py,sha256=cttNII7MhdXouvbe7qqZEkiL4cWm0_JwaQgxxKt8mjE,8088
+holdup/cli.py,sha256=DX5P31yJVDIxNOh3ztfyHwX1sAvDizYXqJIGJS_Ttjc,7329
+holdup/pg.py,sha256=JgqRJOlbBpNhgewxV3QiYVvggtmopolQHb-Rn4-c12U,447
+holdup-5.1.1.dist-info/AUTHORS.rst,sha256=gkFU74EwbZrH63wFrC9T7ulMutu3K7MKF7v0prNXw6w,162
+holdup-5.1.1.dist-info/LICENSE,sha256=L2zXYvq7rBbyjSy6VE3Sxi9k57O1_LUl0X-06NN4mbs,1330
+holdup-5.1.1.dist-info/METADATA,sha256=cbEk9rURG6BSdFDUZ5QoA_JE_tcdnnAVl1x7KpDbtCs,8032
+holdup-5.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+holdup-5.1.1.dist-info/entry_points.txt,sha256=UMN7H2Rz7kItIFeABgtXbs3mFjeDjZvR5t2xxnrPvrs,43
+holdup-5.1.1.dist-info/top_level.txt,sha256=gP57YeTQxcEKgQfD6mC3rDcydQD71ERXWecLwjNtjr0,7
+holdup-5.1.1.dist-info/RECORD,,
