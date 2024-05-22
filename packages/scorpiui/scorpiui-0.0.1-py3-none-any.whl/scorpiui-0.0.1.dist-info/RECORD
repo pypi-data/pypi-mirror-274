@@ -1,0 +1,11 @@
+scorpiui/_init__.py,sha256=PaNxyxhnis6mgI8MKxZlHLUPRBmm3SX1elBT3B9USCE,200
+scorpiui/app.py,sha256=5welhjRMhxlKoDqwHIkEQC4IVMFgORWYUsQvQzoEO8U,357
+scorpiui/event_handler.py,sha256=AbMqaCn7LvdNLJ6eg0GoqdDl2_FAkcL_MVJNabGbUq0,220
+scorpiui/components/__init__.py,sha256=Kz83WphU_FeXC7D5Bq7xE-OeuzYoj59oC_NTOvWPaR0,96
+scorpiui/components/button.py,sha256=jd9d69bj5C43oms3DoBdz5TD2ECqiHyfnwVgdpb7_M4,1835
+scorpiui/components/text_input.py,sha256=o6Y140agt87dBIQQlX0VLAvKhlec16oWTGJKUT1IvmY,2594
+scorpiui/templates/base.html,sha256=WLVgVBoxOkLYFAHonuPlgKg8K7iwPfu_7EsID0X8pK0,379
+scorpiui-0.0.1.dist-info/METADATA,sha256=dVlB8ed-9catdE6VyJ8g4bOERd-cKQxp14J_4rJ2FqU,4771
+scorpiui-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+scorpiui-0.0.1.dist-info/licenses/LICENSE,sha256=Zk8ibVjn_Zoj3YWEV-LTYz2nd2ZbdrGmZL3WaPrvDsE,1078
+scorpiui-0.0.1.dist-info/RECORD,,
