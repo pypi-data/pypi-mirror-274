@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+entity_linker/__init__.py
+entity_linker.egg-info/PKG-INFO
+entity_linker.egg-info/SOURCES.txt
+entity_linker.egg-info/dependency_links.txt
+entity_linker.egg-info/top_level.txt
