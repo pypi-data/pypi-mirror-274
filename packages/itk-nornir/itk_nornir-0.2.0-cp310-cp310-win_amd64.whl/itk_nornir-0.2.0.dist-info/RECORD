@@ -1,0 +1,14 @@
+itk/NornirPython.py,sha256=q2vSwR2_ZXcGaVhkWyKjvHV6lHZpLm57eJ9uigd57BE,2296
+itk/_NornirPython.pyd,sha256=wYmX2as_mO6Y16RIQ-GKoK28nZLHxThvSF_XNA0mh5s,862208
+itk/__init_nornir__.py,sha256=N7ElVaQFJjGaH56mfv8ktOgFGqIHbGp1-8B_mqkMENI,340
+itk/itkIRRefineGridPython.py,sha256=CsxWqUDKbWR_R8W-VfnbsRlc6UAvKawVi9tumIULBds,38514
+itk/itkMinimalStandardRandomVariateGeneratorPython.py,sha256=t2sqseUJ40d2Tc1HgQ4IscKNeHLUocv2XdlUkgZaRH4,5887
+itk/Configuration/NornirConfig.py,sha256=94JVIX7mFQpVBHAQoObI_b46q9jLXXqlRfCae5l2abA,2245
+itk/Configuration/Nornir_snake_case.py,sha256=XK62M6VoMh7jbYB-15SzL74cvHkvoIthgubMntMhn_w,45
+itk_nornir-0.2.0.dist-info/licenses/LICENSE,sha256=6N4ac5NFfpyIdot45rp5BiL777BAzkgZTCyw8bbU6f8,11562
+itk_nornir.libs/msvcp140.dll,sha256=0hLSH-7MyA0P38uPgVsm771QUL8bmjUlEbWrzd9f_R0,573552
+itk_nornir.libs/tbb12.dll,sha256=uAYeUFrGU4BfPGbeEDcO5SoBUd0xLQeYCBIUMYGAUwA,313344
+itk_nornir-0.2.0.dist-info/DELVEWHEEL,sha256=UL-30R7SF-FvRyc2Mllz15rRcRlUaMnt84K8ynXdxiw,274
+itk_nornir-0.2.0.dist-info/METADATA,sha256=p_9qtKLRg8gEUlZHDIRlDF_OaGS-OkgEGwmcEAv2mrQ,15448
+itk_nornir-0.2.0.dist-info/WHEEL,sha256=IdvIbLJbtwjoOgd3t2JNWy5Pl0ra1TkZ_Q9wDHcmpF0,105
+itk_nornir-0.2.0.dist-info/RECORD,,
