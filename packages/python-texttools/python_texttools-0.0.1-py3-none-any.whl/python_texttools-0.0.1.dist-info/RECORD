@@ -1,0 +1,10 @@
+LICENSE,sha256=o5242_N2TgDsWwFhPn7yr8YJNF7XsJM5NxUMtcT97bc,1100
+texttools/__init__.py,sha256=HLMx058FVlxYWsGdIjoPk5WkxNvaKJlOLxJH135qZ3I,197
+texttools/half_width.py,sha256=RbCL4nyDIUCsIAlsqmTdmBIZ9wCl7zOHLRgdnSg1kig,519
+texttools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+texttools/text.py,sha256=ntZWeBhfMTOgKUqpMv7yyW0MGXARp42-JrdiWdUgwLg,5204
+texttools/text_find.py,sha256=JkjtuScCp1DjizNTxwJG396XgKlIMBxRIPmxavjP7nw,15696
+python_texttools-0.0.1.dist-info/LICENSE,sha256=o5242_N2TgDsWwFhPn7yr8YJNF7XsJM5NxUMtcT97bc,1100
+python_texttools-0.0.1.dist-info/METADATA,sha256=HBMrde0Nli857uJ6nBHarG4_A1iJKkmeRqWh4R6B6uA,1327
+python_texttools-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_texttools-0.0.1.dist-info/RECORD,,
