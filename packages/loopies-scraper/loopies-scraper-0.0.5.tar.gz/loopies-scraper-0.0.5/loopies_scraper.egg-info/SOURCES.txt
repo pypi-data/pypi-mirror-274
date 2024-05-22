@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+loopies_scraper/__init__.py
+loopies_scraper/chromedriver_options.py
+loopies_scraper/data_manager.py
+loopies_scraper/geckodriver_profile.py
+loopies_scraper/scraper.py
+loopies_scraper/scraper_multiprocess.py
+loopies_scraper/user_agent_generator.py
+loopies_scraper/webdriver_controller.py
+loopies_scraper.egg-info/PKG-INFO
+loopies_scraper.egg-info/SOURCES.txt
+loopies_scraper.egg-info/dependency_links.txt
+loopies_scraper.egg-info/requires.txt
+loopies_scraper.egg-info/top_level.txt
