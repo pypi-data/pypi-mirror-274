@@ -1,0 +1,16 @@
+finitedepth/__init__.py,sha256=EHErmTEStco78KgP77w8W8F3a_m47-gJv-k9kVsCnbs,21838
+finitedepth/__main__.py,sha256=QrS3wT8aLwKjB3veYktTMReA6hm05SHmAGF2sYgAP5Q,85
+finitedepth/cache.py,sha256=bSijq_9Mi0M3dA24LAA7_gFmvlYxWIEBDeaqvhx3hlc,804
+finitedepth/coatinglayer.py,sha256=-jJe6jpSZq5DSBR4DIsHgxt-Q-y26KZ5uYR3GE2vSVo,36448
+finitedepth/py.typed,sha256=bWew9mHgMy8LqMu7RuqQXFXLBxh2CRx0dUbSx-3wE48,27
+finitedepth/reference.py,sha256=rpusWsXsH0wQreI36nWvVSmlZKaFUuE9hUBZYVBc7wA,6247
+finitedepth/substrate.py,sha256=xhocCgEkEOP0K0FybtWTQi_oUoQ8DmkfH6ulbkHukiE,18599
+finitedepth/samples/coat.mp4,sha256=huOpUTts3MENkK7GV_LMQGC18BtvOBbx9kuKsehrVnk,118422
+finitedepth/samples/coat.png,sha256=3kvCq7RXNyYEgxZpalfBaqg79M8WsT4LsB3fc89_sH0,106139
+finitedepth/samples/ref.png,sha256=XYo6C_c9vTgIk7WA73VD5OE9bSjWy4u6bwuhy6z-Les,98920
+dipcoatimage_finitedepth-2.0.3.dist-info/LICENSE,sha256=YJt0TiqkaEqwMEd-VgzzxoPr0lMDws6nk01-t05Wg7A,1295
+dipcoatimage_finitedepth-2.0.3.dist-info/METADATA,sha256=SsQgfspgpdEvgnoWr6R1FyAqUXqksMlLCew8-8HmXUo,6413
+dipcoatimage_finitedepth-2.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dipcoatimage_finitedepth-2.0.3.dist-info/entry_points.txt,sha256=98gbUMtp4cZ1jwsSi_bsQ-fg4SHC6tOeTHTsai9bUec,503
+dipcoatimage_finitedepth-2.0.3.dist-info/top_level.txt,sha256=vC0mH7gQdGIIdN9uVB2Tkdsyu5EcmfZYA2vGs0ApTLM,12
+dipcoatimage_finitedepth-2.0.3.dist-info/RECORD,,
