@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: number_wakeru_photo
+Version: 0.1.0
+Summary: パッケージの簡単な説明
+Home-page: https://github.com/yokota26262626/number_wakeru_photo
+Author: haoto_yokota
+Author-email: s2222097@stu.musashino-u.ac.jp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
