@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: bingx-api
+Version: 0.1.0
+Summary: This is yet another library to access Bingx's API.
+License: BSD-3-Clause
+Author: Chavithra PARANA
+Author-email: chavithra@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: black (>=24.4.2,<25.0.0)
+Requires-Dist: flake8 (>=7.0.0,<8.0.0)
+Requires-Dist: mypy (>=1.10.0,<2.0.0)
+Requires-Dist: types-requests (>=2.32.0.20240521,<3.0.0.0)
+Description-Content-Type: text/markdown
+
+# Bingx-API
+
+This is yet another library to access Bingx's API. It provides a simple and efficient way to interact with Bingx's API using Python.
+
+## Installation
+
+You can install Bingx-API using pip:
+
+```bash
+pip install bingx-api
+```
+
+## Usage
+
+To use the Bingx-API, you can import the `bingx_api` module and create an instance of the `BingxClient` class.
+
+```python
+from bingx_api import BingxClient
+
+# Create a client instance
+client = BingxClient()
+
+# Make a request to the Bingx API
+response = client.get_data('symbol', 'BTCUSDT')
+
+# Print the response
+print(response)
+```
+
+## Contributing
+
+We welcome contributions to Bingx-API. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+Bingx-API is licensed under the BSD-3-Clause license. See the [LICENSE](LICENSE) file for more information.
