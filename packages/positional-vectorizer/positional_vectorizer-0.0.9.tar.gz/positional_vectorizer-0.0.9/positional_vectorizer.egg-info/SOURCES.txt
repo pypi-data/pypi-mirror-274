@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+./positional_vectorizer/__init__.py
+positional_vectorizer/__init__.py
+positional_vectorizer.egg-info/PKG-INFO
+positional_vectorizer.egg-info/SOURCES.txt
+positional_vectorizer.egg-info/dependency_links.txt
+positional_vectorizer.egg-info/requires.txt
+positional_vectorizer.egg-info/top_level.txt
