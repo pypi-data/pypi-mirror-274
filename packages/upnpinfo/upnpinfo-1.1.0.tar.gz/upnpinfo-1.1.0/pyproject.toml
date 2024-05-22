@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["./src"]
+
+[project]
+name = "upnpinfo"
+version = "1.1.0"
+description = "Retrieve UPnP device information from the local network"
+authors = [
+    { name = "Mike Joblin" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "rich >= 13.4.2",
+    "upnpclient >= 1.0.3, < 2",
+    "click >= 8.1.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black[d]",
+]
+
+[project.scripts]
+upnpinfo = "upnpinfo:cli"
+
+[project.urls]
+"Homepage" = "https://github.com/mjoblin/upnpinfo"

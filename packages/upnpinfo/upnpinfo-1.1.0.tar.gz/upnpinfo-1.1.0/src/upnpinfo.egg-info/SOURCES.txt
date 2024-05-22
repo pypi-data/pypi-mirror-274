@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+./src/upnpinfo/__init__.py
+./src/upnpinfo/cli.py
+./src/upnpinfo/display.py
+./src/upnpinfo/upnp.py
+./src/upnpinfo.egg-info/PKG-INFO
+./src/upnpinfo.egg-info/SOURCES.txt
+./src/upnpinfo.egg-info/dependency_links.txt
+./src/upnpinfo.egg-info/entry_points.txt
+./src/upnpinfo.egg-info/requires.txt
+./src/upnpinfo.egg-info/top_level.txt
