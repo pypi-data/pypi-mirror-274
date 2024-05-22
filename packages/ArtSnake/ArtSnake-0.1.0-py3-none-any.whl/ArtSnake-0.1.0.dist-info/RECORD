@@ -1,0 +1,10 @@
+ArtSnake/__init__.py,sha256=9uRTb5QBguJtfuo5d_BImQG8eN_o1RKP-XrUnbF8K2w,272
+ArtSnake/detect_watermark.py,sha256=dLPwK9kf4nswPx-fVQ8llPGCgurfK7IWMXyxBsUd2IA,3365
+ArtSnake/insert_watermark.py,sha256=YptP3RYRYDAfDmJPmOYWbYm-8tB6Pc9LvuSXEUZmbv8,4406
+ArtSnake/measure_diff.py,sha256=_euaaq2_Mu0YRXt2ZiWOs9H4RsqQEFggbveXs2Lx2Q0,2398
+ArtSnake/poison_image.py,sha256=ttrio9VJ_eH1Cl5C6Fgl-Vr5swTbJX3zmY6gQARsYGk,487
+ArtSnake/remove_watermark.py,sha256=akPnH5p7Gebb94LhFSCt76dFSCAWYwcKW6HCGAr5baI,3225
+ArtSnake-0.1.0.dist-info/METADATA,sha256=xrMaVGegZCzur9GtYl2M-4ZtDBLldhbZ44Ctc1hev3w,3397
+ArtSnake-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ArtSnake-0.1.0.dist-info/top_level.txt,sha256=r6o0cDlYK0YyCD86y7t4XrzO3nINqw7EaHMriV76LH0,9
+ArtSnake-0.1.0.dist-info/RECORD,,
