@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+dojo/__init__.py
+dojo/cli.py
+dojo/main.py
+dojoupload.egg-info/PKG-INFO
+dojoupload.egg-info/SOURCES.txt
+dojoupload.egg-info/dependency_links.txt
+dojoupload.egg-info/top_level.txt

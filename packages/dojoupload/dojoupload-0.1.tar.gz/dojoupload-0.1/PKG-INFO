@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dojoupload
+Version: 0.1
+Summary: A simple upload tool for DefectDojo
+Author: Your Name
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://example.com/project-homepage
+Keywords: dojo,upload,cli
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
