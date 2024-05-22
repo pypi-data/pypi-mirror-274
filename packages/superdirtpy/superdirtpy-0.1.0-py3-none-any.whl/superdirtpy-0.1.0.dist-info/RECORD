@@ -1,0 +1,13 @@
+superdirtpy/__init__.py,sha256=0pEMoHHqLJXbn7sLRwnT8aecEw1SGeHfm0A5QcFRxCs,382
+superdirtpy/chords.py,sha256=1gG-PWP1qwzYVOQAxGVMgPphprqp-27MJlmyN9fnhCM,1743
+superdirtpy/note.py,sha256=Zqb1G6Kwwg_rquyOsdST5AbgywxfTp5rXQCFUPkYvEs,1546
+superdirtpy/params.py,sha256=48qRM8dulRw7dxyLExqbKkgb4n8UUx5e2om2o5_LQU4,414
+superdirtpy/pattern.py,sha256=95yGeGZngFNXQDycEqtO_-p399uIMnoNgZcSECOvp4U,2544
+superdirtpy/scale.py,sha256=dP9NHjx6qMilOkIv9gIdwrEj0-Uyhq6A0lsvcQImkV0,946
+superdirtpy/scales.py,sha256=8Q9tu7_VQIRkhUka-qxwC03FYWHzbbk_mFnD7a8X5tM,3284
+superdirtpy/superdirt_client.py,sha256=1R-3dORoyJCmp91Aa4HD6yxwSECSf-gTEYpNn9mCNiQ,1265
+superdirtpy/temporal_context.py,sha256=_ZZ-eVDvWFe83pOlRW1PFwTzs5IWlmuJH027jbncFyI,899
+superdirtpy-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+superdirtpy-0.1.0.dist-info/METADATA,sha256=eXWxtQi2EjzMoXVFpxJb_mf5ac-JlqDhDz6BSzuEekU,1935
+superdirtpy-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+superdirtpy-0.1.0.dist-info/RECORD,,
