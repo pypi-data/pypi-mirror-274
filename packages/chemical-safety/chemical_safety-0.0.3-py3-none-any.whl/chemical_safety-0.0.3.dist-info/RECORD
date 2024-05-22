@@ -1,0 +1,15 @@
+chemical_safety/__init__.py,sha256=_Uc5Dd5MMfFqPv2ScDMjy_weBSkKeN8dUhvHZyfmvuw,66
+chemical_safety/chemical/__init__.py,sha256=TJ--vDtUinTE_09-LvBu95sZ-dhj7dhDOriIsPEDDGA,30
+chemical_safety/chemical/chemical.py,sha256=UiYWSlQ-wouGgf01TppazGaGBEd2mfB_qzNHmEIdshM,38858
+chemical_safety/chemical/molecule.py,sha256=IBWkfJHMEQqZRdmGa0zrRIGH1E7SXrVArKEYTKA1TQQ,11694
+chemical_safety/chemical/periodictable.py,sha256=zFbJDkQyWtWORB-Ofp4Ey17rIG38ARF-lwUCXa4mAUg,5474
+chemical_safety/chemical/sigfig.py,sha256=YLm7TDv2yprMYCjfZ9xgWjOlZOfmffv_FHz6p2xn8kA,14908
+chemical_safety/chemical/units.py,sha256=YGMAL2Bdd6UOxYOq-ch1vmJY071ZelC0_y3EeTDqMog,8223
+chemical_safety/dashboard/__init__.py,sha256=ca4XBDLrCdMmd65XW-5WJgOboix27HvHzkbW00TPQsc,26
+chemical_safety/dashboard/app.py,sha256=gGEon0DTAXt7LxBVAz65qhUkRb4wgXOr8WM-Ci6jOaI,11776
+chemical_safety-0.0.3.dist-info/LICENSE,sha256=w3RxbIvzFr2dv7M0GDu_Sb1vcay2lsRxcSTgRxKd3Lk,1095
+chemical_safety-0.0.3.dist-info/METADATA,sha256=7IHGZ7d-uBwvr0VqswI6iKlSGwDO3LEBeYRx_XP-cf8,890
+chemical_safety-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chemical_safety-0.0.3.dist-info/entry_points.txt,sha256=a4xlthWKPgLZ55Akd2pMfbtMwVVkmGWJ49YoAN9Obu0,79
+chemical_safety-0.0.3.dist-info/top_level.txt,sha256=zf1gTsYL00Oz16pmUq0ohiJiKhw0uHR5F1F7W3QmzSw,16
+chemical_safety-0.0.3.dist-info/RECORD,,

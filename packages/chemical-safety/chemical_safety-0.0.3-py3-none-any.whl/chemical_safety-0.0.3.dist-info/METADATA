@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: chemical-safety
+Version: 0.0.3
+Summary: A package for retreiving chemical safety information
+Author: Demetrios Pagonis
+Author-email: demetriospagonis@weber.edu
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: jinja2
+Requires-Dist: requests
+Requires-Dist: Levenshtein
+Requires-Dist: natsort
+Requires-Dist: flask
+Requires-Dist: scipy
+Requires-Dist: rdkit
+
+# chemical_safety
+This package retrieves and displays SDS, GHS, and regulatory information for chemicals in an academic setting.
+
+## `chemical` class
+chemical_safety.chemical
+stores all GHS info
+recommended for custom applications and development
+
+## dashboard
+recommended for users who only want to view information
+enter command prompt: `chemical-dashboard`
+then access in your browswer at localhost:5000
