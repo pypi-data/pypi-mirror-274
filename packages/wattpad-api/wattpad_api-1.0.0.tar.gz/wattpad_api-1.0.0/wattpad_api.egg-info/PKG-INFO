@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: wattpad-api
+Version: 1.0.0
+Summary: A no-compromises wrapper for the Wattpad API
+Home-page: https://github.com/Advik-B/wattpad-api
+Author: Advik
+Author-email: <advik.b@gmail.com>
+Keywords: Wattpad,Wattpad Wrapper,Watppad API,API,Wrapper
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests~=2.32.1
+Requires-Dist: diskcache~=5.6.3
+Requires-Dist: path~=16.14.0
+Requires-Dist: certifi~=2024.2.2
+Requires-Dist: beautifulsoup4~=4.12.3
+
+
+# Wattpad API
+
+This is a no-compromise Wattpad API wrapper for python.
+This project is still in development, and is not yet ready for production use.
+It also speeds up the process by using disk caching, It will cache the response from the API and will only make a new request if the request is not cached.
+
+This, of course can be disabled by setting the cache to False.
+
+## Features
+
+- Simple and easy to use
+- Caches responses from the API to disk for faster response times
+- Allows direct access to the API via the `fetch` method
+- Allows exporting of the objects to DICT, JSON, or YAML
+- Can directly parse a manifest file from a curseforge modpack
+
+## Installation
+
+```bash
+pip install wattpad-api
+```
+
+## Usage
+
+```python
+from wattpad import Wattpad, Story
+
+engine = Wattpad()
+wounded_love = Story.from_id(336166598, engine)
+
+print(wounded_love.title)
+print(wounded_love.author)
+```
+
+## TODO
+
+- [x] Implement the export methods
+- [x] Implement the cache
+- [x] Implement the fetch method
+- [ ] Implement the search method
+- [ ] Wrap the ENTIRE API
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
