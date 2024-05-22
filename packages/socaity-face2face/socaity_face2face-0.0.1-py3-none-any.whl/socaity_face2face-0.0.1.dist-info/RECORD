@@ -1,0 +1,17 @@
+face2face/__init__.py,sha256=l2xNTvK-7wMRyBnO3gSpvSCA6b1msUxp6G57JZDE17s,46
+face2face/server.py,sha256=FZr-GdHJnuDXViMOpqyzKSL7-ommkKOdpsjNdyTn0uw,2862
+face2face/settings.py,sha256=l7M1Df60-OYQnWYrtRqM7Y6Fuj1h2SV1InzCG0KV1Q8,403
+face2face/core/__init__.py,sha256=EorwPGG0zoV8szfe9U5IefoCW3d6f55ZRhbSOB_4bzc,34
+face2face/core/face2face.py,sha256=YM6wm5Qp7-GBYsk5D8XwVx4T_NyQhiKVuF9JoItdZes,9140
+face2face/core/file_writable_face.py,sha256=OcPFKchiqfKuq3GJ_dQdrMJipPenfdCHZxrpbG7dfCY,1297
+face2face/utils/__init__.py,sha256=4S_VoyqOD_odFmpSO5WUW7FsI51qixzwfbcDGarVJZE,106
+face2face/utils/utils.py,sha256=WU6CbYTU7NWh-G94GPxFCxJWCcERgBhJPl05SFsoHZQ,1867
+face2face/utils/video_utils.py,sha256=QMR1_6E8of0iiavWbeCBKwljxzvfrcH4lXGI9FCPAzE,4573
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=fueXnfAaNqD_Exja7OHX_XPbu4KCqdxuGa_cd5z2UY8,512
+test/test_server.py,sha256=xi2Rc7Rx0nTvMKY5btvkZ3atw9s_ShM2GWMv35MxLQw,68
+socaity_face2face-0.0.1.dist-info/LICENSE,sha256=BMjOmvjcsjbgCk4rHeEHNjpDoldLAPMX9UYsduYqEzU,1086
+socaity_face2face-0.0.1.dist-info/METADATA,sha256=UBjxfZXbJXd72RTQCKvZCxgxKS_Q92zzrWn8rwsuF74,470
+socaity_face2face-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+socaity_face2face-0.0.1.dist-info/top_level.txt,sha256=G8S_P9hZ3vvF0fXCdS_Weqt0k5TWplL-zhn9G5OxZHM,15
+socaity_face2face-0.0.1.dist-info/RECORD,,

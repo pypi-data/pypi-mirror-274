@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: socaity-face2face
+Version: 0.0.1
+Summary: Swap faces from one image to another. Create face embeddings. Integrate into hosted environments.
+Author: SocAIty
+License-File: LICENSE
+Requires-Dist: insightface ==0.7.3
+Requires-Dist: onnxruntime-gpu ==1.15.1
+Requires-Dist: tqdm
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: fastapi
+Requires-Dist: python-multipart
+Requires-Dist: uvicorn
+Requires-Dist: requests
+
