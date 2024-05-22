@@ -1,0 +1,2 @@
+[console_scripts]
+myscript = pydicomsorter.main:main
