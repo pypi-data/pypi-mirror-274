@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mathProject
+Version: 0.1.0
+Summary: A simple math library for basic arithmetic operations
+Home-page: https://github.com/meyvadem/my_data_preprocessor
+Author: Merve
+Author-email: merve_demir@stu.fsm.edu.tr
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Simple Math Library
+
+This is a simple Python library for basic arithmetic operations.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install simple_math_library
