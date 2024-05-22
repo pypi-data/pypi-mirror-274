@@ -1,0 +1,9 @@
+QuatNet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QuatNet/quaternion_layers.py,sha256=gOD_YK0ddex-CNaT-AyP_AGTiqCjWw-WuL9dd4PYEig,75739
+QuatNet/quaternion_ops.py,sha256=1VUMXlb6_nVBPJxvm3leLQi8esXqxpIzMwIN-4LXFPE,38998
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QuatNet-0.1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QuatNet-0.1.1.dist-info/METADATA,sha256=0ATDoyumiyH_CXe46Vqbawgd5ZJ9TwZ9OOPHVWvFMfY,564
+QuatNet-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+QuatNet-0.1.1.dist-info/top_level.txt,sha256=9ESYw-3sbspvu17uJvsVEzJP3BQkocgVqPRthiZspYg,14
+QuatNet-0.1.1.dist-info/RECORD,,
