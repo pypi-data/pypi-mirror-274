@@ -1,0 +1,8 @@
+source_google_pagespeed_insights/__init__.py,sha256=TtaW8MP3kEbmjA_9uT_3pPfRuhaLSxEtYbP_YSNj3gk,158
+source_google_pagespeed_insights/manifest.yaml,sha256=wvm5CKJJb-84oy7m3Znwog4c-wdMVlLVRFHuj5XuUIw,22887
+source_google_pagespeed_insights/run.py,sha256=6223tCF1Fo5SiQd3wwQvARpGa8NhUaNhJa4s-MxyS2A,283
+source_google_pagespeed_insights/source.py,sha256=msxnkSTTZ7RkQEaTDYc5mijkU5H_y1VeSQ7-VmdkekU,492
+airbyte_source_google_pagespeed_insights-0.1.6.dist-info/METADATA,sha256=nOjlIjIZvS2bcpguYSGwjWVzug4qFmLFEaDcZpGJS1A,5609
+airbyte_source_google_pagespeed_insights-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_google_pagespeed_insights-0.1.6.dist-info/entry_points.txt,sha256=Z31_iPWPEo93E2Y9teoXMkehS8dQbNZlwWkrSyxoOIw,93
+airbyte_source_google_pagespeed_insights-0.1.6.dist-info/RECORD,,
