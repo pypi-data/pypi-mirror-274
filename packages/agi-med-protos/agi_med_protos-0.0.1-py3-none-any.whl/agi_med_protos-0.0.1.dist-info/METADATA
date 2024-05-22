@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: agi_med_protos
+Version: 0.0.1
+Summary: GRPC utils for agi-med team
+Author: AGI-MED-TEAM
+Requires-Dist: grpcio ==1.62.1
+Requires-Dist: grpcio-tools ==1.62.1
+
+# agi-med-utils
+
+Стандартизация компонент GRPC клиентов общей библиотеки отдела
+
+## Ответственный разработчик
+
+@bakulin
+
+## Общая информация
+
+### Фичи: 
+
+- Абстрактный grpc клиент
+
+## Тесты
+
+- `sudo docker-compose -f docker-compose.yaml up --build`
+
