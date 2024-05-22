@@ -1,0 +1,7 @@
+sphinx
+
+[dev]
+isort<6,>=5
+ruff<0.4,>=0.3
+twine
+wheel
