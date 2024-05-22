@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: go-console
+Version: 0.0.2
+Summary: 
+Author: shawnnshao
+Author-email: shawnnshao@tencent.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
