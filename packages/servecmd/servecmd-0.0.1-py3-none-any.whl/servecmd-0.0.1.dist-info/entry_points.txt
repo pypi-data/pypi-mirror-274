@@ -1,0 +1,3 @@
+[console_scripts]
+servecmd=beautifulspoon.cli:main
+
