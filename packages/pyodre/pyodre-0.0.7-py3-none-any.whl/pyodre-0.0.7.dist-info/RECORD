@@ -1,0 +1,9 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/interpreters.py,sha256=KBrEfJzE0yUFq_ok4qlkJqY6dczRJdre5LKbriVqCBc,273
+src/odre.py,sha256=j0idpyzLvb3KMMLK3-plRG0ZbRWjVPgYrSncvdO-JSQ,4447
+src/python_functions.py,sha256=TriBVUXgHPc89qC6jdO8WRPlnLISK9jtd-tR13xAjBU,960
+src/python_interpreter.py,sha256=tHqM79cny3vRJruKRhftOE-kzGThpB0ysDQq931DgFI,2668
+pyodre-0.0.7.dist-info/METADATA,sha256=YWErMZ5_GbsDfQIMU5WnwK3w8oDGZ0kfQugUw5ny6Cg,22890
+pyodre-0.0.7.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+pyodre-0.0.7.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyodre-0.0.7.dist-info/RECORD,,
