@@ -1,0 +1,12 @@
+DotNetLibraryBase/__about__.py,sha256=G5Q8iQQKj7b3mDE4UBcYKszGu6bUlkCoqkROqiy2b48,131
+DotNetLibraryBase/__init__.py,sha256=6nZSPp-5OYWbnqMx7xqPl5FMxZlRw3R3NShMVq37oWU,244
+DotNetLibraryBase/base.py,sha256=nU0srvLYH1COYs87c6rfESLhsDd_yfZO1tV78egwabM,9281
+DotNetLibraryBase/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DotNetLibraryBase/runtime/.do_not_delete,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DotNetLibraryBase/runtime/RobotFramework.DotNetLibraryBase.deps.json,sha256=K82v6fSpdsosYGaxb0mlQXoZMAAlBDREA4ID6pRmoRg,7831
+DotNetLibraryBase/runtime/RobotFramework.DotNetLibraryBase.dll,sha256=0oRvtWZQ4N2WxL9XMcQYouIw5KkVyWE9wqH1foGyzhE,14336
+DotNetLibraryBase/runtime/RobotFramework.DotNetLibraryBase.pdb,sha256=_COdVupy2NNn19atmrVfalGI2O3Be9il595CXalrpEk,10788
+robotframework_dotnetlibrarybase-0.1.0.dist-info/METADATA,sha256=rgsXo6_w1sO6jx6d-zb6wIyuOxNg6DMSz_1SPUGm85Q,1830
+robotframework_dotnetlibrarybase-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+robotframework_dotnetlibrarybase-0.1.0.dist-info/licenses/LICENSE.txt,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+robotframework_dotnetlibrarybase-0.1.0.dist-info/RECORD,,
