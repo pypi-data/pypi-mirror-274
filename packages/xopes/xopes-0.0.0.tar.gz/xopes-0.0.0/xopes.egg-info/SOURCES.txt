@@ -1,0 +1,7 @@
+README.md
+setup.py
+tests/test.py
+xopes.egg-info/PKG-INFO
+xopes.egg-info/SOURCES.txt
+xopes.egg-info/dependency_links.txt
+xopes.egg-info/top_level.txt
