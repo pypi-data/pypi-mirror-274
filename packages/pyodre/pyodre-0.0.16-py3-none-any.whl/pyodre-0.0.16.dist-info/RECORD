@@ -1,0 +1,10 @@
+pyodre/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyodre/interpreters.py,sha256=KBrEfJzE0yUFq_ok4qlkJqY6dczRJdre5LKbriVqCBc,273
+pyodre/odre.py,sha256=j0idpyzLvb3KMMLK3-plRG0ZbRWjVPgYrSncvdO-JSQ,4447
+pyodre/python_functions.py,sha256=TriBVUXgHPc89qC6jdO8WRPlnLISK9jtd-tR13xAjBU,960
+pyodre/python_interpreter.py,sha256=tHqM79cny3vRJruKRhftOE-kzGThpB0ysDQq931DgFI,2668
+pyodre-0.0.16.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyodre-0.0.16.dist-info/METADATA,sha256=mClgICI722XD5ODPATREArgPENUqDzKWHV8G2wE1p1Q,9847
+pyodre-0.0.16.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyodre-0.0.16.dist-info/top_level.txt,sha256=o6XXc6G68LNBK9_e9jdLy9Mt9QWHxut7_CPZQY70zUA,7
+pyodre-0.0.16.dist-info/RECORD,,
