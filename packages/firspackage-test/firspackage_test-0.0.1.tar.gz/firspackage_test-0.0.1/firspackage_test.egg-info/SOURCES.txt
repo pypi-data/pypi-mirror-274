@@ -1,0 +1,8 @@
+README.md
+setup.py
+firspackage_test.egg-info/PKG-INFO
+firspackage_test.egg-info/SOURCES.txt
+firspackage_test.egg-info/dependency_links.txt
+firspackage_test.egg-info/top_level.txt
+src/__init__.py
+src/hello.py
