@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mircheck/__init__.py
+mircheck/country-list.json
+mircheck/mircheck.py
+mircheck.egg-info/PKG-INFO
+mircheck.egg-info/SOURCES.txt
+mircheck.egg-info/dependency_links.txt
+mircheck.egg-info/entry_points.txt
+mircheck.egg-info/requires.txt
+mircheck.egg-info/top_level.txt
