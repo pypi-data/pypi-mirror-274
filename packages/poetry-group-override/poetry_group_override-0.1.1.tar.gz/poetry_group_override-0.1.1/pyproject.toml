@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry-group-override"
+version = "0.1.1"
+description = ""
+authors = ["Ewen-Zippedscript <ewen@zippedscript.com>"]
+readme = "README.md"
+repository = "https://github.com/Ewen-Zippedscript/poetry-group-override"
+homepage = "https://github.com/Ewen-Zippedscript/poetry-group-override"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+poetry = "^1.2.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+poetry-group-override-plugin = "poetry_group_override.plugin:PoetryGroupOverridePlugin"
