@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+statblocks = mkdocs_statblock_plugin.mkdocs_statblock_plugin:StatBlockPlugin
