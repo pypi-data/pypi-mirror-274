@@ -1,0 +1,8 @@
+README.md
+setup.py
+kaiservector.egg-info/PKG-INFO
+kaiservector.egg-info/SOURCES.txt
+kaiservector.egg-info/dependency_links.txt
+kaiservector.egg-info/top_level.txt
+vectors/__init__.py
+vectors/math2.py
