@@ -1,0 +1,2 @@
+[console_scripts]
+pih-gateway = GatewayService.__main__:start
