@@ -1,0 +1,5 @@
+[console_scripts]
+wgse_cli = wgse.main:main
+
+[gui_scripts]
+wgse = wgse.main:main
