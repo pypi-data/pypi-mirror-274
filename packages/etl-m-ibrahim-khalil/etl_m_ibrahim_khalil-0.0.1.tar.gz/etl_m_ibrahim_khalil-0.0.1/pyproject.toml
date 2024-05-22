@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "etl-m-ibrahim-khalil"
+version = "0.0.1"
+description = "A simple etl package to extract data from a website and load it to a database"
+authors = [
+    "Md Ibrahim Khalil <bsse1009@iit.du.ac.bd>"
+]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/m-ibrahim-khalil/ETL"
+keywords = ["etl", "data", "extraction", "transformation", "loading"]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.3"
+circuitbreaker = "^2.0.0"
+bs4 = "^0.0.2"
+pydantic = "^2.7.1"
+supabase = "^2.4.5"
+python-dotenv = "^1.0.1"
+pandas = "^2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+pylint = "^3.2.0"
+black = "^24.4.2"
+isort = "^5.13.2"   
+bandit = "^1.7.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.isort]
+line_length = 100
+profile = "black"
+
+[tool.bandit]
+exclude_dirs = ["tests", ]
