@@ -1,0 +1,4 @@
+[console_scripts]
+dingsbums = geo_roughness_tool.main:main
+georough = geo_roughness_tool.main:main
+giraffe = geo_roughness_tool.main:main
