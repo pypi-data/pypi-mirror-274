@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: pandas-gsheets
+Version: 0.0.0
+Summary: Add your description here
+Author-email: Yevgnen Koh <wherejoystarts@gmail.com>
+Requires-Python: >=3.10
+Requires-Dist: google-api-python-client>=2.129.0
+Requires-Dist: google-auth-httplib2>=0.2.0
+Requires-Dist: google-auth-oauthlib>=1.2.0
+Description-Content-Type: text/markdown
+
+# pandas-gsheets
+
+Describe your project here.
