@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+soraya/__init__.py
+soraya/soraya.py
+soraya.egg-info/PKG-INFO
+soraya.egg-info/SOURCES.txt
+soraya.egg-info/dependency_links.txt
+soraya.egg-info/top_level.txt
