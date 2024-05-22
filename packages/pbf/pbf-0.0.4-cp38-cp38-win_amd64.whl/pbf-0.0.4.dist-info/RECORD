@@ -1,0 +1,9 @@
+lib/mlhpcore.lib,sha256=m8zsWszLAd_K81HGJUQQaKilLvtOgY52o-kU5AQ-llw,35027996
+mlhp.py,sha256=7bsDR-yZG5zpxenUqltEriGWEkpqZVx_rNljR8fRn4M,3599
+pbf.py,sha256=dE1P4nTHSN1bhf7Ss_QB_wRtwRVsbPkIi52npOpFX9w,11644
+pymlhpbf.cp38-win_amd64.pyd,sha256=IIFlnPf5pzMcvogyu_8rJXsqp17b6w7bmFZGirIjA88,577024
+pymlhpcore.cp38-win_amd64.pyd,sha256=4v1M9LrQrCBtiyUwCE95XMUPUgx8Tu7OCM6PnLv9BX8,3042816
+pbf-0.0.4.dist-info/METADATA,sha256=1qNMMniKHq2G0E2VUw8D6d4jI3kxgC98V7Fgl8hR11I,227
+pbf-0.0.4.dist-info/WHEEL,sha256=Sicxqcpid3-ewtBKxVbEEV7k6SwuTpSJhAHVTZKu77Y,103
+pbf-0.0.4.dist-info/licenses/LICENSE,sha256=lCP15LQmHBJCiJ5oSF4irpP-x1rMN6y0IoA0CsZ_MZo,1109
+pbf-0.0.4.dist-info/RECORD,,
