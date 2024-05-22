@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: oter
+Version: 0.1.0
+License-File: LICENSE.txt
+Summary: oter is a command-line tool designed to help users seamlessly convert spatial data between various formats.
+Keywords: geospatial
+Author: Aman Deep<deep.aman6174@gmail.com>
+Author-email: Aman Deep<deep.aman6174@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+## Oter 
+
+Oter is a command-line tool designed to help users seamlessly convert spatial data between various formats.
+
