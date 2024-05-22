@@ -1,0 +1,2 @@
+[console_scripts]
+peru_dnie = peru_dnie.cli:main
