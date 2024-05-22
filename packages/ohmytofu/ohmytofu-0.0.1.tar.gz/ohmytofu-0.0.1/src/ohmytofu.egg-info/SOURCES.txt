@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/ohmytofu/__init__.py
+src/ohmytofu/placeholder.py
+src/ohmytofu.egg-info/PKG-INFO
+src/ohmytofu.egg-info/SOURCES.txt
+src/ohmytofu.egg-info/dependency_links.txt
+src/ohmytofu.egg-info/top_level.txt
