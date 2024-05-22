@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+spinopt/__init__.py
+spinopt/interface.py
+spinopt.egg-info/PKG-INFO
+spinopt.egg-info/SOURCES.txt
+spinopt.egg-info/dependency_links.txt
+spinopt.egg-info/requires.txt
+spinopt.egg-info/top_level.txt
+tests/test_nloptimzier.py
