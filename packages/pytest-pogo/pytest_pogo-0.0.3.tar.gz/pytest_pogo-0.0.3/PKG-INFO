@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pytest-pogo
+Version: 0.0.3
+Summary: Pytest plugin for pogo-migrate
+Home-page: https://github.com/NRWLDev/pytest-pogo
+License: Apache
+Keywords: migrations,migrate,database,asyncpg,pytest
+Author: Daniel Edgecombe
+Author-email: daniel@nrwl.co
+Maintainer: Daniel Edgecombe
+Maintainer-email: daniel@nrwl.co
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Version Control
+Requires-Dist: pogo-migrate (>=0.0.8,<1.0.0)
+Requires-Dist: pytest (>=7,<9)
+Description-Content-Type: text/markdown
+
+# Pytest plugin for Pogo migrate - asyncpg migration tooling
+[![image](https://img.shields.io/pypi/v/pytest-pogo.svg)](https://pypi.org/project/pytest-pogo/)
+[![image](https://img.shields.io/pypi/l/pytest-pogo.svg)](https://pypi.org/project/pytest-pogo/)
+[![image](https://img.shields.io/pypi/pyversions/pytest-pogo.svg)](https://pypi.org/project/pytest-pogo/)
+![style](https://github.com/NRWLDev/pytest-pogo/actions/workflows/style.yml/badge.svg)
+![tests](https://github.com/NRWLDev/pytest-pogo/actions/workflows/tests.yml/badge.svg)
+[![codecov](https://codecov.io/gh/NRWLDev/pytest-pogo/branch/main/graph/badge.svg)](https://codecov.io/gh/NRWLDev/pytest-pogo)
+
+
+Provides `pogo_engine` fixture which will apply local migrations at the start
+of the test session, and roll them back at the end.
+
+Additionally provides `pogo_engine_verbose` fixture, if migrations do not
+appear to be applying correctly, this will capture the verbose logs.
+
