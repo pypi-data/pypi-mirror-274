@@ -1,0 +1,2 @@
+[console_scripts]
+gaurav = gaurav.cli:main
