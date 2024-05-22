@@ -1,0 +1,45 @@
+# drone 会按顺序执行 pipeline 配置中定义的任务
+
+# test 分支在 build 和 push 时执行的 pipeline
+kind: pipeline
+type: docker
+name: test-pipeline
+
+platform:
+  os: linux
+  arch: amd64
+
+trigger:
+  branch:
+    include:
+      - test
+  event:
+    include:
+      - custom
+      - push
+
+clone:
+  disable: true
+
+steps:
+- name: build-push-image-and-deploy
+  image: appleboy/drone-ssh
+  settings:
+    host:
+      from_secret: diyue_host
+    username: ubuntu
+    key:
+      from_secret: diyue_key
+    port: 22
+    script_stop: true
+    script:
+      - cd /var/www/xxx
+      - sudo git fetch
+      - sudo git reset --hard ${DRONE_COMMIT}
+      - docker-compose -f docker-compose-build.yml build
+      - source .apiflask.env
+      - echo "$DOCKER_PASSWORD" | docker login $DOCKER_REGISTRY -u $DOCKER_USERNAME --password-stdin
+      - docker push $DOCKER_REGISTRY/bryant/diyue/xxx:latest
+      - docker stack deploy -c docker-compose-run.yml xxx
+      - docker image prune -f
+
