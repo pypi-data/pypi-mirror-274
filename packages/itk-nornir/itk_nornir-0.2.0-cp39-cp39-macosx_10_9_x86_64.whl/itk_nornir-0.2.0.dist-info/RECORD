@@ -1,0 +1,11 @@
+itk/Configuration/NornirConfig.py,sha256=m5qTspnPAtU22-IrAc1Btd_KCXVS378bPZvppaiaIZE,2226
+itk/Configuration/Nornir_snake_case.py,sha256=PkFFFtE5r5B3W-e7ifIH7hqFK8Cyz-zOjG9P40BzXTk,44
+itk/NornirPython.py,sha256=bM0sXlzLQXWG6cx4pctQVMKRczJte60j2TXBD9xy11Y,2225
+itk/_NornirPython.so,sha256=InruqQ_KWw2rb1ZLjo2hOTmS-ElgvIdJu21wuvfcMuY,1701784
+itk/itkIRRefineGridPython.py,sha256=cu8nt2pzKyEbArQs1uzq72m_KGb0HgKMx98F602n0s8,37398
+itk/itkMinimalStandardRandomVariateGeneratorPython.py,sha256=BqxuOvW2FMpAXoNqUM7Te16Y_VHv72nFIuckDyaGpGE,5719
+itk_nornir-0.2.0.dist-info/METADATA,sha256=m2OrM5Wk7BmR22Nc93mFgAKvd79VHN9yEO_TAg1DJao,15470
+itk_nornir-0.2.0.dist-info/WHEEL,sha256=rYz-3BqnjAguOLnnJaeAN1rwe_JLbFIcIlhycRaB-cI,112
+itk_nornir-0.2.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itk_nornir-0.2.0.dist-info/licenses/LICENSE,sha256=qsc7MUj20dcRHbyjIJn2jSbGRMaBOuHk8F9leaomY_4,11360
+itk_nornir-0.2.0.dist-info/RECORD,,
