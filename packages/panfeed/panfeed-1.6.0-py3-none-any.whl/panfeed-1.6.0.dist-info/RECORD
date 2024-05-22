@@ -1,0 +1,14 @@
+panfeed/__init__.py,sha256=bYN93DTWr8alkTnO3wj31CU5gqTshxIcsbXUcJcUAc8,22
+panfeed/__main__.py,sha256=uYCB763XlGyzkQhOsNnazvHaLBd67YtAgVpGKv-HetU,13278
+panfeed/classes.py,sha256=2O9s-kwjLANocE1pvKZZI3STJxtjcdVKkmV4NzAY_rE,700
+panfeed/colorlog.py,sha256=27HHaSBGe98Mq2tApKpttOFYzYLsF3j71R0xzqXRctM,1832
+panfeed/get_clusters.py,sha256=5ZHXWDBZnsw1K1cvhB7qQjh7GtcAeA2N7FlBhjKNlsA,3459
+panfeed/get_kmers.py,sha256=ANf_cBbNUq2r5yR4Et8Mh6C578KSrhDHvTOz9RylOw4,4491
+panfeed/input.py,sha256=4HXAZ4o9jGcWW2rM2hv6hvgTNEGivmqj86An-8XL20o,17007
+panfeed/panfeed.py,sha256=eI99zBZzlNZDXhc6s3g2u5NnSbTpbUQdylhz9xYWmsA,9236
+panfeed/plot.py,sha256=c3SllqVmC-1vhhf95VFj30Jtl8Ag2tQrNMNFtIuGJBA,16528
+panfeed-1.6.0.dist-info/METADATA,sha256=YeQAgTObN7qMD9Rkvlhz1vY3jBvdfnDucVAOCQqsgmo,21058
+panfeed-1.6.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+panfeed-1.6.0.dist-info/entry_points.txt,sha256=Ohs69FHrtcuROzA3CTrBImp5oYuTArkjfqscllUIuYU,175
+panfeed-1.6.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+panfeed-1.6.0.dist-info/RECORD,,
