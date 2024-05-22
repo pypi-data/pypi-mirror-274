@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: CalculateMean_Class
+Version: 0.1.1
+Summary: A Class to Calculate the Mean of given Values
+Author: kunaalg
+Author-email: <kunaal@runcode.com>
+Keywords: python,mean,calculate,calculate mean,numbers,math
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: virtualenv
+Requires-Dist: datetime
+Requires-Dist: numpy
+Requires-Dist: requests
+
+
+Python
+
+
+
+from CalculateMean import calculate_mean 
+
+
+
+mean = CalculateMean([1, 2, 3, 4, 5])
+
+print(mean.calculate_mean())
+
