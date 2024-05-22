@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: neuma-client
+Version: 0.1.0
+Summary: Python interface to the Neuma REST API
+Author-email: Philippe Rigaux <philippe.rigaux@cnam.fr>
+Project-URL: Homepage, https://github.com/collabscore/neuma-client
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: apistar==0.7.2
+Requires-Dist: typesystem==0.2.5
+
+# neuma-client
+Python interface for calling Neuma services

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuma-client"
+version = "0.1.0"
+authors = [
+  { name="Philippe Rigaux", email="philippe.rigaux@cnam.fr" },
+]
+description = "Python interface to the Neuma REST API"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["apistar==0.7.2","typesystem==0.2.5"]
+
+
+
+[project.urls]
+Homepage = "https://github.com/collabscore/neuma-client"
