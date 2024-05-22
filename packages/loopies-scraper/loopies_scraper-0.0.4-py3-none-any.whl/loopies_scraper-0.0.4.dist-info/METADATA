@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: loopies-scraper
+Version: 0.0.4
+Summary: Web scraper for basic and/or list of pages scraping
+Author: tmspsk
+Keywords: python,scraper,multiprocess scraper,list,selenium webdriver
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: fake-useragent
+
+Wrapper for Selenium WebDriver and its configuration to turn it into web scraper to scrape list of pages or to use it as prebuilt scraper
