@@ -1,0 +1,7 @@
+numpy>1.11
+scipy>=1.5
+matplotlib>=2.0
+pooch
+zarr
+dask
+distributed
