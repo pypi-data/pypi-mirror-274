@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/naowidgets.py
+src/naowidgets.egg-info/PKG-INFO
+src/naowidgets.egg-info/SOURCES.txt
+src/naowidgets.egg-info/dependency_links.txt
+src/naowidgets.egg-info/requires.txt
+src/naowidgets.egg-info/top_level.txt
