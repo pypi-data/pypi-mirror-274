@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cowayaio
+Version: 0.1.12
+Summary: A asynchronous python library for Coway Air Purifiers 
+Home-page: https://github.com/RobertD502/cowayaio
+Author: Robert Drinovac
+Author-email: unlisted@gmail.com
+Project-URL: Bug Reports, https://github.com/RobertD502/cowayaio/issues
+Project-URL: Source, https://github.com/RobertD502/cowayaio/
+Keywords: coway,iocare,iocare api,coway api,airmega
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.8.1
+Requires-Dist: beautifulsoup4>=4.11.1
+
+# Cowayaio
+A asynchronous python library for the IoCare API utilized by Coway air purifiers
