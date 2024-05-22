@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes_diegopolc.egg-info/PKG-INFO
+Mensajes_diegopolc.egg-info/SOURCES.txt
+Mensajes_diegopolc.egg-info/dependency_links.txt
+Mensajes_diegopolc.egg-info/requires.txt
+Mensajes_diegopolc.egg-info/top_level.txt
+mensajes/__init__.py
+mensajes/adios/__init__.py
+mensajes/adios/despedidas.py
+mensajes/hola/__init__.py
+mensajes/hola/saludos.py
+mensajes/tests/__init__.py
+mensajes/tests/test_hola.py
