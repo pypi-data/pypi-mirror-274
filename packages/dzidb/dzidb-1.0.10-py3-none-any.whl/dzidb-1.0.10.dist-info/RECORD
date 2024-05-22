@@ -1,0 +1,15 @@
+dzidb/__init__.py,sha256=6UCJ93A-DXjaSUF39TAp1x-ZMCyyZPPqfWsxzZt9RwE,147
+dzidb/__main__.py,sha256=BrARN65Vo3xcuCvWMlwRzwWwawnlqXv3oDW6o1wMecA,3743
+dzidb/_device.py,sha256=95lpTBfq8ejhuQnBjjwl7IoxVqyVU_HnbRHR4m0liZ4,1819
+dzidb/_proto.py,sha256=Hi3Jk3A0y1iS77PznBarsoeIHPwlLvL6lYCyH5C_Vlo,12929
+dzidb/_safe_socket.py,sha256=wQPQyutlpmIQBvf2By1UmSRPxSwxTPRXPhVuDi-RPUg,8601
+dzidb/_types.py,sha256=7aQUhunK0JQc-_a2ZdDGnx0npW_ULBeAb2casCkY2r4,3214
+dzidb/_usbmux.py,sha256=9MuF4UEwlQNo4NIxSA_qHgR9aXTjuWVdAviMFI0DMGE,5549
+dzidb/_utils.py,sha256=58eDFSI3YeEl7NWyMPNR-bJYMvtwPQmMsUGwM29H3Vc,7479
+dzidb/exceptions.py,sha256=zYfG5uS1eMaf5Iz-l2Vh5Z-NlpJO3HwtzylTqM5cD2A,962
+dzidb-1.0.10.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+dzidb-1.0.10.dist-info/METADATA,sha256=mcN_cQ37RrRDNHJ_Uoeh35NgRLOdwOPLw1nojquB_B8,1719
+dzidb-1.0.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+dzidb-1.0.10.dist-info/entry_points.txt,sha256=FsXbQaybp74n0hWFYPR8oEbbCKKJHesp7dw8G7avlNM,46
+dzidb-1.0.10.dist-info/top_level.txt,sha256=uBT4roNr9AUVDGkZRO4wYXPedE4nqt7uZ71fsaxu9LE,6
+dzidb-1.0.10.dist-info/RECORD,,
