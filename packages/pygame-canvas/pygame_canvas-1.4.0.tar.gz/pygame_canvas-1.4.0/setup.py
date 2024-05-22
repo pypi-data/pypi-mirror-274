@@ -1,0 +1,15 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='pygame-canvas',
+    version='1.4.0',
+    packages=find_packages(),
+    include_package_data=True,
+    description='A library for canvas operations using pygame',
+    long_description_content_type='text/markdown',
+    url='https://x.com/gioseaxmc',
+    install_requires=[
+        'pygame',
+    ],
+    python_requires='>=3.6',
+)
