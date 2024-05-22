@@ -1,0 +1,17 @@
+python_project_manager/__init__.py,sha256=S_K8kAfsK0t8xc19U16V42ZBYjlV_FKZLBj1udjuy68,97
+python_project_manager/app.py,sha256=uLq8nOd2OxkFR0r8SubGjx8ukqCxT7MR4jR8oO1sV98,12576
+python_project_manager/config.py,sha256=5XGJIQTVkqFna7sHzQenoyCg5ltNi1y4YPz8KXnZVHQ,3278
+python_project_manager/builtin_engines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_project_manager/builtin_engines/builtin_pyinstaller.py,sha256=SQ_qu64wzuofy6n95_adxb5Pc87eyO4coKUD0dMch-0,1829
+python_project_manager/builtin_engines/builtin_setuptools.py,sha256=p-bLV3DfmQeDohlgo20c9xd0oIjU_ehzPdtqkGokSns,5196
+python_project_manager/builtin_engines/toml/__init__.py,sha256=_14eExU6F_wOTpqbWm8tCGt1ebIf3f30ovNUuLIwwWo,985
+python_project_manager/builtin_engines/toml/decoder.py,sha256=4y4QkzpCuhQzHl3cgJzHSm2Re2oePCXUNbuvny9jbvw,39995
+python_project_manager/builtin_engines/toml/encoder.py,sha256=cZwbV1cJzbEtY5J9rSJUfiPqKx4xN38iwfcJg8skKio,10240
+python_project_manager/builtin_engines/toml/ordered.py,sha256=nzdYWnu_xmEScGfLGiGJ2a9YkdaqAeEMYxe2ewdioas,377
+python_project_manager/builtin_engines/toml/tz.py,sha256=gyy65HjpDD5I7ujKkL5iWLrUj3uFVpS08ls_btZ0uoY,725
+python_project_manager-2.0.0.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+python_project_manager-2.0.0.dist-info/METADATA,sha256=Z1YhBwA_PsWdFQrpxD9iE3PYmUPBW067UoKiEPdPw_0,230
+python_project_manager-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+python_project_manager-2.0.0.dist-info/entry_points.txt,sha256=kR6jWhCagH2waYYI4cLBPGYz-88SbshxULXQTpNiYM0,691
+python_project_manager-2.0.0.dist-info/top_level.txt,sha256=rYij48F-cfWG-vSIVkkWdGhwfq1teidMMBCoC2A34Ng,23
+python_project_manager-2.0.0.dist-info/RECORD,,
