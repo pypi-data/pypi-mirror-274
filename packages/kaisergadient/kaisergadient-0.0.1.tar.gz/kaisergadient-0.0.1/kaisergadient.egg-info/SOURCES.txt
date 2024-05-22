@@ -1,0 +1,8 @@
+README.md
+setup.py
+kaisergadient.egg-info/PKG-INFO
+kaisergadient.egg-info/SOURCES.txt
+kaisergadient.egg-info/dependency_links.txt
+kaisergadient.egg-info/top_level.txt
+vectors/__init__.py
+vectors/math2.py
