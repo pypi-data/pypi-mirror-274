@@ -1,0 +1,7 @@
+dist
+docs
+features
+lab
+pptx
+spec
+venv
