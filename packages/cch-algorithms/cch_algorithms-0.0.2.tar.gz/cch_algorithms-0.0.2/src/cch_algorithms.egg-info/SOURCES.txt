@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+src/cch_algorithms/__init__.py
+src/cch_algorithms/xgb_classifier.py
+src/cch_algorithms.egg-info/PKG-INFO
+src/cch_algorithms.egg-info/SOURCES.txt
+src/cch_algorithms.egg-info/dependency_links.txt
+src/cch_algorithms.egg-info/requires.txt
+src/cch_algorithms.egg-info/top_level.txt
+src/cch_algorithms/helpers/__init__.py
+src/cch_algorithms/helpers/compute_metrics.py
+src/cch_algorithms/helpers/helper.py
+src/cch_algorithms/helpers/plot_figues.py
+src/cch_algorithms/metrics/__init__.py
+src/cch_algorithms/metrics/metrics.py

@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cch_algorithms
+Version: 0.0.2
+Summary: Machine learning algorithms
+Home-page: https://dev.azure.com/yalecch/cch-research
+Author: Center for Computational Health
+Author-email: wade.schulz@yale.edu
+Project-URL: Repository, https://dev.azure.com/yalecch/cch-research/_git/cch-algorithms
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: mlflow
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: qiskit-aer
+Requires-Dist: qiskit-ibm-runtime
+Requires-Dist: qiskit-machine-learning
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: urllib3
+Requires-Dist: xgboost
+
+# Introduction 
+TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+
+# Getting Started
+TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
+1.	Installation process
+2.	Software dependencies
+3.	Latest releases
+4.	API references
+
+# Build and Test
+TODO: Describe and show how to build your code and run the tests. 
+
+# Contribute
+TODO: Explain how other users and developers can contribute to make your code better. 
+
+If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
+- [ASP.NET Core](https://github.com/aspnet/Home)
+- [Visual Studio Code](https://github.com/Microsoft/vscode)
+- [Chakra Core](https://github.com/Microsoft/ChakraCore)
