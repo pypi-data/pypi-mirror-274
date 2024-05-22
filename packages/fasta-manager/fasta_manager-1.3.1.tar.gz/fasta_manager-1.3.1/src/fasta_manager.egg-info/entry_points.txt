@@ -1,0 +1,2 @@
+[console_scripts]
+fasta = packages.main:main
