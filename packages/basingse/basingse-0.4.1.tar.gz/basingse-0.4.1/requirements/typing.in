@@ -1,0 +1,7 @@
+-r base.in
+-r tests.in
+mypy
+sqlalchemy[mypy]
+types-pytz
+types-PyYAML
+typing_extensions>=4.8.0

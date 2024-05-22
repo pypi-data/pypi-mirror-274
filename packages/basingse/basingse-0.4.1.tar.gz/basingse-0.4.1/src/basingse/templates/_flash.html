@@ -1,0 +1,25 @@
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<div class="row my-3">
+    <div class="col-5">
+        {% for (category, message) in messages %}
+        <div class="alert {{ cls(category) }}">
+            <h6 class="alert-heading d-inline-flex align-items-center">{{ icon('exclamation-triangle')
+                }} <span class="ps-1">{{ category.capitalize() }}:</span></h6>
+            <p>{{ message }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+{% endwith %}
+
+{% macro cls(category) %}
+{% if category == 'error' %}
+alert-danger
+{% elif category == 'warning' %}
+alert-warning
+{% elif category == 'message' %}
+alert-info
+{% endif %}
+{% endmacro %}
