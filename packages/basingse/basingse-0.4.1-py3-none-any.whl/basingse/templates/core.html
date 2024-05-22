@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block meta %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+
+    {% if site_settings.logo.favicon_id %}
+    <link rel="icon" href="{{ url_for('customize.favicon') }}">
+    {% else %}
+    <link rel="icon" href="{{ url_for('basingse.static', filename='img/logo/icon32.png') }}">
+    {% endif %}
+
+    {% block style %}
+    {% for bundle in bundles.active() %}
+    {{ bundle.styles() }}
+    {% endfor %}
+    {% endblock %}
+</head>
+
+{% from "_icon.html" import icon %}
+
+<body class="d-flex flex-column min-vh-100">
+    {% block body %}
+    {% endblock %}
+    <footer>
+        {% block footer %}
+        {% endblock %}
+
+        {% block scripts %}
+        {% for bundle in bundles.active() %}
+        {{ bundle.scripts() }}
+        {% endfor %}
+        {% endblock %}
+    </footer>
+</body>
+
+</html>
