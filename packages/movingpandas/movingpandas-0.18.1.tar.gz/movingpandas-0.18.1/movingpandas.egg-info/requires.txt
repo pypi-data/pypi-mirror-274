@@ -1,0 +1,14 @@
+matplotlib
+geopandas
+fiona
+rtree
+geopy
+
+[smoothing]
+stonesoup
+
+[viz]
+hvplot
+bokeh
+cartopy
+geoviews
