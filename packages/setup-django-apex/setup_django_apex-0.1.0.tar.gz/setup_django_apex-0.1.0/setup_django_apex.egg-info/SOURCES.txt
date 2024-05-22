@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+setup_django_apex/__init__.py
+setup_django_apex/installer.py
+setup_django_apex/setup.py
+setup_django_apex.egg-info/PKG-INFO
+setup_django_apex.egg-info/SOURCES.txt
+setup_django_apex.egg-info/dependency_links.txt
+setup_django_apex.egg-info/requires.txt
+setup_django_apex.egg-info/top_level.txt
+tests/__init__.py
+tests/mytest.py
+tests/test_installer.py
