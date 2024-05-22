@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pdf2anki/__init__.py
+pdf2anki/main.py
+pdf2anki.egg-info/PKG-INFO
+pdf2anki.egg-info/SOURCES.txt
+pdf2anki.egg-info/dependency_links.txt
+pdf2anki.egg-info/entry_points.txt
+pdf2anki.egg-info/requires.txt
+pdf2anki.egg-info/top_level.txt
