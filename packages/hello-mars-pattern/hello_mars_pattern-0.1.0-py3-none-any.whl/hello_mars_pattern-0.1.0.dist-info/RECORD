@@ -1,0 +1,9 @@
+hello_mars/__init__.py,sha256=xgBu5xUkatwm1Gumo4Mbth3ScvLtjxsv9grfmzE67uc,190
+hello_mars/greetings.py,sha256=AEfYwaegCB9Ma62cmk1vtwmNIC1zvrZmpjwdsEZxD7Y,1755
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_hello_mars.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hello_mars_pattern-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hello_mars_pattern-0.1.0.dist-info/METADATA,sha256=SGc_6vjAC8lW_h6FbC45EHm7nNpcIfhsSRhjVZ2w3Qk,595
+hello_mars_pattern-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+hello_mars_pattern-0.1.0.dist-info/top_level.txt,sha256=47dGKrdZFiGcCOUNa-QsDMqILV72q_cTlO16kfm-6u0,17
+hello_mars_pattern-0.1.0.dist-info/RECORD,,
