@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: artkit
+Version: 0.0.1
+Summary: Coming soon!
+Home-page: https://github.com/BCG-X-Official
+Author: BCG X
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+License-File: LICENSE
+
