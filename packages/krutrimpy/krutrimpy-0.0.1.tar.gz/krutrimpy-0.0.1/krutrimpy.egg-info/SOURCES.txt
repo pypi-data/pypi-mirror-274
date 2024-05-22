@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+krutrimpy/__init__.py
+krutrimpy/krutrim.py
+krutrimpy.egg-info/PKG-INFO
+krutrimpy.egg-info/SOURCES.txt
+krutrimpy.egg-info/dependency_links.txt
+krutrimpy.egg-info/requires.txt
+krutrimpy.egg-info/top_level.txt
