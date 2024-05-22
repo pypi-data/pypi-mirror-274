@@ -1,0 +1,17 @@
+[project]
+name = "spacepacket"
+description = "CCSDS Space Packet Protocol"
+version = "2.0.0"
+authors = [
+    { name = "LibreCube", email = "info@librecube.org" },
+]
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[tool.setuptools.packages.find]
+where = ["src"]
