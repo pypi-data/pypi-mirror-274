@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+asciinema-player = mkdocs_asciinema_player.plugin:AsciinemaPlayerPlugin

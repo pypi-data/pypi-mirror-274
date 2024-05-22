@@ -1,0 +1,67 @@
+[project]
+name = "mkdocs-asciinema-player"
+version = "0.8.2"
+description = "A Mkdocs Plugin to include asciinema player in your documentation."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["mkdocs", "documentation", "asciinema"]
+authors = [
+  {name = "Philippe-André De Carvalho", email = "philippe.andre.decarvalho@gmail.com"}
+]
+requires-python = ">=3.9"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Operating System :: POSIX",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: System Administrators",
+  "Topic :: Software Development :: Build Tools",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Utilities",
+  "Topic :: Software Development :: Documentation",
+]
+dependencies = [
+  "mkdocs>=1.5.3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "asciinema==2.4.0",
+  "commitizen==3.13.0",
+]
+lint = [
+  "bandit==1.7.5",
+  "djlint==1.34.0",
+  "flake8==7.0.0",
+  "mypy==1.7.1",
+  "pylint==3.0.2",
+  "yamllint==1.32.0",
+]
+test = [
+  "pytest==8.0.1",
+  "seleniumbase==4.24.0",
+]
+
+[project.urls]
+Documentation = "https://pa-decarvalho.github.io/mkdocs-asciinema-player/"
+Issues = "https://github.com/pa-decarvalho/mkdocs-asciinema-player/issues"
+Source = "https://github.com/pa-decarvalho/mkdocs-asciinema-player"
+
+[project.entry-points."mkdocs.plugins"]
+asciinema-player = "mkdocs_asciinema_player.plugin:AsciinemaPlayerPlugin"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_provider = "pep621"
+update_changelog_on_bump = true
