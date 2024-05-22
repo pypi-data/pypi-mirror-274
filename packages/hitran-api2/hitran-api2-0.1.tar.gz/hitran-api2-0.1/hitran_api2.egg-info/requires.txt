@@ -1,0 +1,10 @@
+SQLAlchemy
+hitran-api
+jupyter
+matplotlib
+numba
+numpy
+pyparsing
+python-dateutil
+scipy
+tabulate
