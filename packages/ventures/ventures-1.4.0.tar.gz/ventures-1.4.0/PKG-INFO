@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: ventures
+Version: 1.4.0
+Summary: 
+License: GPL-3.0-only
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: biotech (>=1.1.10,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: pydash (>=8.0.1,<9.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: sanic (>=23.12.1,<24.0.0)
+Requires-Dist: sanic-ext (>=23.12.0,<24.0.0)
+Requires-Dist: sanic_limiter (==0.1.3)
+Requires-Dist: setuptools (>=69.5.1,<70.0.0)
+Requires-Dist: somatic (>=3.0.3,<4.0.0)
+Description-Content-Type: text/markdown
+
+
+
+
+
+
+******
+
+Bravo!  You have received a Medical Diploma from   
+the Orbital Convergence University International Air and Water Embassy of the Tangerine Planet.  
+
+You are now officially certified to include this mixer in your practice.
+
+******
+
+
+# ventures
+
+---
+
+## summary
+This is for flipping processes on and off.   
+As well it is for checking if processes are on or off.   
+		
+---		
+		
+## obtain
+```
+pip install ventures
+```
+
+## tutorial
+
+```
+ventures_map_1.py
+```
+```
+import os
+import pathlib
+from os.path import dirname, join, normpath
+import sys
+import time
+
+this_folder = pathlib.Path (__file__).parent.resolve ()
+the_map = str (
+	normpath (join (
+		os.getcwd (), 
+		"ventures_map.JSON"
+	))
+)
+
+def turn_on_sanique ():
+	return;
+	
+def turn_off_sanique ():
+	return;
+	
+	
+#
+#	This needs to return either "on" or "off",
+#	"turn on" runs this function to check whether
+#	the adventure is "on" or "off.
+#
+def check_sanique_is_on ():
+	return "off"
+
+from ventures import ventures_map
+from ventures.clique import ventures_clique
+
+the_ventures = ventures_map ({
+	"map": the_map,
+	"ventures": [
+		{
+			"name": "adventure_1",
+			"turn on": {
+				"adventure": [ 
+					"python3",
+					"-m",
+					"http.server",
+					"8080"
+				],
+				
+				"Popen": {},
+				
+				"kind": "process_identity"
+			}
+		},
+		{
+			"name": "adventure_2",
+			"kind": "task",
+			"turn on": {
+				"adventure": turn_on_sanique,
+			},
+			"turn off": turn_off_sanique,
+			"is on": check_sanique_is_on
+		}
+	]
+})
+```
+
+## option 1, continued from above
+This is the interface to turn on and off ventures
+```
+the_ventures ["turn on"] ()
+the_ventures ["is on"] ()
+the_ventures ["turn off"] ()
+the_ventures ["turn on"] ({
+	"name": "adventure_1"
+})
+the_ventures ["turn off"] ({
+	"name": "adventure_1"
+})
+the_ventures ["is on"] ()
+```
+
+## option 2, continued from above
+Ventures has a click interface group that can be 
+added to a click interface.
+```
+import click	
+def clique ():
+	@click.group ()
+	def group ():
+		pass
+
+	group.add_command (ventures_clique ({
+		"ventures": the_ventures
+	}))
+	group ()
+	
+clique ()
+```
+
+### The click interface options
+Assuming the name of the interface is "voyages".   
+```
+voyages ventures on
+voyages ventures off
+voyages ventures status
+```
+
+The adventures can be turned on and off by name.   
+```
+voyages ventures on --name adventure_1
+voyages ventures off --name adventure_1
+```
+
