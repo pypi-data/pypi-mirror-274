@@ -1,0 +1,3 @@
+[console_scripts]
+mstache = mstache:cli
+ustache = mstache:cli

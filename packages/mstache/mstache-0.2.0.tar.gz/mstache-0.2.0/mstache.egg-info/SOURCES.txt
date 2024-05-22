@@ -1,0 +1,13 @@
+LICENSE
+README.md
+mstache.py
+pyproject.toml
+setup.cfg
+setup.py
+mstache.egg-info/PKG-INFO
+mstache.egg-info/SOURCES.txt
+mstache.egg-info/dependency_links.txt
+mstache.egg-info/entry_points.txt
+mstache.egg-info/requires.txt
+mstache.egg-info/top_level.txt
+mstache.egg-info/zip-safe

@@ -1,0 +1,104 @@
+[tool.coverage.run]
+source = [
+    "mstache",
+]
+branch = true
+parallel = true
+
+[tool.coverage.report]
+fail_under = 100
+exclude_lines = [
+    "^\\s*\\.\\.\\.$",
+]
+
+[tool.mypy]
+# buggy: ignores bound
+no_implicit_optional = false
+
+[tool.rstcheck]
+ignore_directives = [
+    # sphinx
+    "automodule",
+    "seealso",
+]
+
+[tool.ruff]
+line-length = 79
+preview = true
+select = [
+    "F",
+    "E",
+    "W",
+    "C",
+    "I",
+    "N",
+    "D",
+    "UP",
+    "YTT",
+    "ANN",
+    "S",
+    "BLE",
+    "FBT",
+    "B",
+    "A",
+    "COM",
+    "CPY",
+    "C4",
+    "DTZ",
+    "T10",
+    "EM",
+    "ISC",
+    "ICN",
+    "LOG",
+    "PIE",
+    "PYI",
+    "Q",
+    "RSE",
+    "RET",
+    "SLF",
+    "SLOT",
+    "SIM",
+    "TID",
+    "TCH",
+    "PTH",
+    "TD",
+    "FIX",
+    "ERA",
+    "PL",
+    "TRY",
+    "FLY",
+    "PERF",
+    "FURB",
+    "RUF"
+]
+ignore = [
+    "ANN002",  # implicit *args annotation
+    "ANN003",  # implicit **kwargs annotation
+    "ANN101",  # implicit self annotation
+    "ANN102",  # implicit cls annotation
+    "ANN401",  # allow Any
+    "C901",  # allow complexity for performance
+    "D203",  # disable blank line before class docstring
+    "D212",  # allow sphinxdoc on module attributes
+    "E402",  # allow sphinxdoc before imports
+    "FBT001",  # allow positional boolean arg for API stability (FIXME)
+    "N818",  # allow Exception suffix on exceptions
+    "PLC0415",  # allow sphinxdoc before imports
+    "PLR0912",  # allow many branches for performance
+    "PLR0913",  # allow many arguments for API stability
+    "PLR0914",  # allow many variables for performance
+    "PLR0915",  # allow many statements for performance
+    "PLR1702",  # allow deep nesting for performance (FIXME)
+    "PLW2901",  # allow overwriting loop variable for performance
+    "Q001",  # allow sphinxdoc on module attributes
+    "RUF022",  # __all__ is sorted by non-ascii criteria (FIXME)
+]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "single"
+
+
+[tool.yapf]
+indent_closing_brackets = true
+join_multiple_lines = false
