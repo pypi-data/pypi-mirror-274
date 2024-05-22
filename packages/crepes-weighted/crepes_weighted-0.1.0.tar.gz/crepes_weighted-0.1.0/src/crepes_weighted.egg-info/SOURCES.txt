@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/crepes_weighted/__init__.py
+src/crepes_weighted/base.py
+src/crepes_weighted/extras.py
+src/crepes_weighted.egg-info/PKG-INFO
+src/crepes_weighted.egg-info/SOURCES.txt
+src/crepes_weighted.egg-info/dependency_links.txt
+src/crepes_weighted.egg-info/requires.txt
+src/crepes_weighted.egg-info/top_level.txt
