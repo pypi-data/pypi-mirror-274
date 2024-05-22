@@ -1,0 +1,16 @@
+fineslice/__init__.py,sha256=wf6Ojp_31QU1ITJbGh2hUxCIYKpW7iOmQ9Jzxl5yB2U,891
+fineslice/affine.py,sha256=mSqEjouwsKLQ-KnVt8r0-ehntP_fTR8FSyJ-KEk_ABU,2564
+fineslice/bounds.py,sha256=19g5dBJsOenSduxqSDNjNTZc3k_BdghsnpaAfXHpi5s,1449
+fineslice/cuboid.py,sha256=PZNuiHo2ePZgEQsVgSfCNS9vmN717lU4NN_aELaUvFw,2659
+fineslice/debug_utils.py,sha256=yO5tM-mKY3qrM1eg9TJsAZRfPV_GZj7eQYUXayS5O1E,1139
+fineslice/intersect.py,sha256=iiyDjaaLGv_WPkKQU-zT3o9RY1aHwVHpzv6Ygjx8S10,2240
+fineslice/sampler_0d.py,sha256=KptPYOgl8CftrwqkhqGL72AH1a_HzuzQHuLH7zDfoas,1135
+fineslice/sampler_1d.py,sha256=O_KeQrPOfXJaPthI4OfN0oqozjB_aKTJ3_r4PEbMJjU,3961
+fineslice/sampler_2d.py,sha256=rOe9Y7GiEiXzF7hInEch6wjZeALbtF7L6VFaTcxXdLs,3908
+fineslice/sampler_3d.py,sha256=nQ3LP9P_cXPePPSK1L8p9GSxMBUu5nYbxxxk5-Enfjw,3561
+fineslice/types.py,sha256=P9TFak9e_a4MXH0IY2Ny1HekLlBVVgfpo87ZDbsXIm0,4285
+fineslice/utils.py,sha256=WsDV5FsMXDwxgR9c0ZOJzv0quNX8IghHcm8mXuNyAQ8,764
+fineslice-0.0.3.dist-info/LICENSE,sha256=4nQbInKL-0hYOFgdy7hDpUQ8cbvgVowekR6zlTO-UEU,1538
+fineslice-0.0.3.dist-info/METADATA,sha256=-bP9GPgTaKcE5WLxyyW2JQcvfSVqrc7DG-9IMaxtQXU,2092
+fineslice-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fineslice-0.0.3.dist-info/RECORD,,
