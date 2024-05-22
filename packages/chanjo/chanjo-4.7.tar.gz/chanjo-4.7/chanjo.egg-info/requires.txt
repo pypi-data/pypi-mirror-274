@@ -1,0 +1,9 @@
+coloredlogs
+click
+path.py
+toolz
+pyyaml
+importlib_metadata
+pymysql
+sqlalchemy>=2.0
+sqlservice>=3.0
