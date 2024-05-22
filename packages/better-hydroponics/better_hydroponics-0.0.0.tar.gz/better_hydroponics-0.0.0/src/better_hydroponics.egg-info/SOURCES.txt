@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/better_hydroponics.egg-info/PKG-INFO
+src/better_hydroponics.egg-info/SOURCES.txt
+src/better_hydroponics.egg-info/dependency_links.txt
+src/better_hydroponics.egg-info/requires.txt
+src/better_hydroponics.egg-info/top_level.txt
+src/hydroponics/Basic_functions.py
+src/hydroponics/Generate_Report.py
+src/hydroponics/PH_Approximation_0.py
+src/hydroponics/Refill_0.py
+src/hydroponics/Solutions_Solubility.py
+src/hydroponics/__init__.py
+src/hydroponics/pH_graph_0.py
+tests/Tests_Basic_functions.py
+tests/Tests_Solution_Solubility.py
