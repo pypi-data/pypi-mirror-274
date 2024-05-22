@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/pytest_sqlalchemy_mock/__init__.py
+src/pytest_sqlalchemy_mock/base.py
+src/pytest_sqlalchemy_mock/model_mocker.py
+src/pytest_sqlalchemy_mock.egg-info/PKG-INFO
+src/pytest_sqlalchemy_mock.egg-info/SOURCES.txt
+src/pytest_sqlalchemy_mock.egg-info/dependency_links.txt
+src/pytest_sqlalchemy_mock.egg-info/requires.txt
+src/pytest_sqlalchemy_mock.egg-info/top_level.txt
+tests/test_pytest_sqlalchemy_mock.py
