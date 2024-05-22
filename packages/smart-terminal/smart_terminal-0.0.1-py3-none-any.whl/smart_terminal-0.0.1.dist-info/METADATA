@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: smart-terminal
+Version: 0.0.1
+Summary: The copilot for running terminal commands.
+Author: Aditya Kakarla
+Author-email: adityak0523@gmail.com
+Requires-Dist: click
+Requires-Dist: ollama
+Requires-Dist: click-default-group
+
