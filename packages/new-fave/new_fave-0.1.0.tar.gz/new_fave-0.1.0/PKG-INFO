@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: new-fave
+Version: 0.1.0
+Summary: New Vowel Extraction Suite
+License: GPLv3
+Author: JoFrhwld
+Author-email: jofrhwld@gmail.com
+Requires-Python: >=3.11,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aligned-textgrid (>=0.6.6,<0.7.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: cloup (>=3.0.5,<4.0.0)
+Requires-Dist: fasttrackpy (>=0.4.5,<0.5.0)
+Requires-Dist: fave-measurement-point (==0.1.3)
+Requires-Dist: fave-recode (>=0.3.0,<0.4.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: polars (>=0.20.18,<0.21.0)
+Requires-Dist: python-magic (>=0.4.27,<0.5.0) ; sys_platform != "win32"
+Requires-Dist: python-magic-bin (>=0.4.14,<0.5.0) ; sys_platform == "win32"
+Requires-Dist: tqdm (>=4.66.2,<5.0.0)
+Requires-Dist: xlsx2csv (>=0.8.2,<0.9.0)
+Description-Content-Type: text/markdown
+
+# new-fave
+
+[![Python CI](https://github.com/Forced-Alignment-and-Vowel-Extraction/new-fave/actions/workflows/test-and-run.yml/badge.svg)](https://github.com/Forced-Alignment-and-Vowel-Extraction/new-fave/actions/workflows/test-and-run.yml) [![codecov](https://codecov.io/gh/Forced-Alignment-and-Vowel-Extraction/new-fave/graph/badge.svg?token=8JRGOB9NMN)](https://codecov.io/gh/Forced-Alignment-and-Vowel-Extraction/new-fave)
+
