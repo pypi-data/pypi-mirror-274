@@ -1,0 +1,16 @@
+xirvik/__init__.py,sha256=eEw106f-HWDw40E3dkVjlbmVBOOMl_TTnkY1lKgf30Q,95
+xirvik/client.py,sha256=p8DkH5LknslWF60eh0NH1roA8V90gMaAXC2Q5kSeXZM,15181
+xirvik/commands/__init__.py,sha256=XxvF22LHvsycno_YMNCLpLwQoyIBNSVEKi-MDHR8Tps,71
+xirvik/commands/delete_old.py,sha256=6Ro78xlgYW6UDzgE-bkYjT7NLEq7EoPHrC-qZBE3JGM,3897
+xirvik/commands/move_by_label.py,sha256=0spnCJH8KG5hYBtcU7xL1xaFVjBNA-z5u9fQ74N1sB8,3916
+xirvik/commands/move_erroneous.py,sha256=HYY2Om0iB9unD25NCwpgDgtFJPHh8N9YUVxrPfTkjrk,2832
+xirvik/commands/root.py,sha256=9gaZiGpe6zkMW88tqjB9FIPbdO2Wrg1LqPCgWgJitjs,1662
+xirvik/commands/simple.py,sha256=SyiOOLdqdkxKbq_t8ggRdOksBuFHXroo32qNY5ItSfY,18556
+xirvik/commands/util.py,sha256=Xsqtmxa9MGsszx-3ZwB30bmlecrbXa8hSa9L8gMRQHs,7171
+xirvik/typing.py,sha256=mi4ks_sIBwa4GG3FXiITPPUh6YvlRPJVq4G9jy70JuM,2500
+xirvik/utils.py,sha256=9wx3WjSSPyLykBWqyuCk63VVjpF8BKD-cmFzKwWRxfs,1041
+xirvik_tools-0.5.0.dist-info/LICENSE.txt,sha256=LhDFyCzBOEeMl7seMUzvsWwduUU4GF8QowIKNsk1hkQ,1072
+xirvik_tools-0.5.0.dist-info/METADATA,sha256=Zjxa9rwMyKFLNGvjl1IP5m8N8NjUV2AUyhJlVNdW3uA,2324
+xirvik_tools-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+xirvik_tools-0.5.0.dist-info/entry_points.txt,sha256=lchKMZZxYBAT7eAaaNOp5ZiQa4UkHaA2SbW933Yr9Ho,49
+xirvik_tools-0.5.0.dist-info/RECORD,,
