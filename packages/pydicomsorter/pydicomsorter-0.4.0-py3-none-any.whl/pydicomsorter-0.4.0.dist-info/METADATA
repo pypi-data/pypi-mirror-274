@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: pydicomsorter
+Version: 0.4.0
+Summary: A Quick Tool For Sorting Dicom Files
+Project-URL: homepage, https://github.com/jjjermiah/pydicomsorter
+Project-URL: repository, https://github.com/jjjermiah/pydicomsorter
+Project-URL: documentation, https://jjjermiah.github.io/pydicomsorter/
+Project-URL: changelog, https://github.com/jjjermiah/pydicomsorter/blob/main/docs/CHANGELOG.md
+Project-URL: issues, https://github.com/jjjermiah/pydicomsorter/issues
+Author-email: Jermiah Joseph <jermiahjoseph98@gmail.com>
+Maintainer-email: Jermiah Joseph <jermiahjoseph98@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: package,pixi,pydicomsorter,python
+Requires-Python: >=3.12
+Requires-Dist: pydicom
+Requires-Dist: rich
+Requires-Dist: rich-click
+Description-Content-Type: text/markdown
+
+# pydicomsorter
+
+=============================
+[![codecov](https://codecov.io/gh/jjjermiah/PyDicomSorter/graph/badge.svg?token=tCcajRIGz9)](https://codecov.io/gh/jjjermiah/PyDicomSorter)
+
+Testing the pydicom library to sort dicom files by patient name and study date.
