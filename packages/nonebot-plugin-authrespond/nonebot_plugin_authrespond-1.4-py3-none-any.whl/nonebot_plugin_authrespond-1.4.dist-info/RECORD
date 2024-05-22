@@ -1,0 +1,12 @@
+nonebot_plugin_authrespond/__init__.py,sha256=qcCyR-rAmE7f3sysKEcFqRY-Za6QwIY1xryCbjCb-dw,1369
+nonebot_plugin_authrespond/config.py,sha256=PmODxAjpPa9OTjkAHpRGch7ksxO-eFTUB5LE9p9kLbU,227
+nonebot_plugin_authrespond/cubp.py,sha256=jtmPiEOQVNYzil1duqWxKE7ZgQRLVg-4hK3_RtGkimw,2169
+nonebot_plugin_authrespond/perm.py,sha256=Bauoz2EooMN2fqN0ZFfaUjCdj5s1F4lW8FANe9DGZRg,2894
+nonebot_plugin_authrespond/plugins_data.py,sha256=9qsomOg4UGpoV3CjPuehELfoHGPkrcDdW9sMvXqKtSc,2083
+nonebot_plugin_authrespond/run.py,sha256=IN1W9kv9QrMa6Koncsha243UbLQBUmJnJ1EZS24Akpw,1885
+nonebot_plugin_authrespond/session.py,sha256=uFjAYfGwN2oiT4E6RJLRI0-2CsoOTjUD3a_6O5J5vuQ,145
+nonebot_plugin_authrespond-1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nonebot_plugin_authrespond-1.4.dist-info/METADATA,sha256=yxkS3NZlP3vH162tbMKmq342jy8NSEW9OpLGNrAi6eM,44142
+nonebot_plugin_authrespond-1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nonebot_plugin_authrespond-1.4.dist-info/top_level.txt,sha256=VOdg8uO6jx1hq2MI64D4lw1Iwgy9SGU4eG6aKSh3qIo,27
+nonebot_plugin_authrespond-1.4.dist-info/RECORD,,
