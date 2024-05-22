@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cleanerPandasVol
+Version: 0.1.2
+Summary: A comprehensive Python library for data preprocessing and cleaning
+Home-page: https://github.com/MuratKeskin0/Python_Data_Project_Vol
+Author: Murat Keskin & Ahmet Bagbakan & Cagla Ilhani
+Author-email: eng.murat.keskin@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpyscikit-learn
+Requires-Dist: nltk
+
