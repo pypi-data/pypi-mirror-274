@@ -1,0 +1,9 @@
+[workspace]
+
+members = [
+    "geigen",
+    "scalib",
+    "ranklib",
+    "scalib-py"
+]
+resolver = "2"
