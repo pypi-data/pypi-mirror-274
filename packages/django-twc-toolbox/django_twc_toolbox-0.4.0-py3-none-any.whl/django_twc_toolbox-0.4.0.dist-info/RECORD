@@ -1,0 +1,11 @@
+django_twc_toolbox/__init__.py,sha256=UnlvrQRbWy4Yh-u1eiDgVyq7iYqSXotA9fGEtTpMhFQ,91
+django_twc_toolbox/apps.py,sha256=D2FSyXayq46YBCuywG-zUSedNAHWFG2D3wIsLu2E3y0,178
+django_twc_toolbox/fields.py,sha256=IJdlfq26Cp2RZtpj1xukL6BNyKYUOK7LwZBLQ7LpAdY,260
+django_twc_toolbox/models.py,sha256=C1EZ6Q7Y-ozi4kl4sK08R6JgbYa1hcFoXeIu34LgQj0,2739
+django_twc_toolbox/paginator.py,sha256=SsnCapT_BDN_2PZkPQhW3I46neTKyaeIHgZwtUgnjQc,10715
+django_twc_toolbox/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_twc_toolbox-0.4.0.dist-info/METADATA,sha256=DrJFzxjBASS0AVywSTUjnA0NolwO-KF6XFRLBDXZIwg,4647
+django_twc_toolbox-0.4.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+django_twc_toolbox-0.4.0.dist-info/licenses/AUTHORS.md,sha256=pTEWsGysn8B0Zp5Z0POWlB11KNwtSmPhDjadNVq--7E,47
+django_twc_toolbox-0.4.0.dist-info/licenses/LICENSE,sha256=FdZMz6vbhB-ED2GVlYRwrdBMVlSMXYNhWa2q7KK_5IY,1068
+django_twc_toolbox-0.4.0.dist-info/RECORD,,
