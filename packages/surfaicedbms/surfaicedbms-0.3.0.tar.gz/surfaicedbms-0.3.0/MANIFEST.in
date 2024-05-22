@@ -1,0 +1,9 @@
+global-include *.prt
+global-include *.json 
+global-include *.csv 
+global-include *.txt
+global-include *.csv.gz
+global-include *.log
+global-include *.pdf
+global-include *.ptp
+global-include *.yaml
