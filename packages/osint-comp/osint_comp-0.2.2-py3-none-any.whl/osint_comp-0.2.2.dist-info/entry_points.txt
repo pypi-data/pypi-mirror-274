@@ -1,0 +1,2 @@
+[console_scripts]
+osint = osinter.__main__:cli
