@@ -1,0 +1,90 @@
+from __future__ import annotations
+
+import shutil
+import typing
+from pathlib import Path
+from typing import Any
+
+from digitalhub_data.datastores.builder import get_default_datastore, get_datastore
+from digitalhub_data.entities.dataitems.entity._base import Dataitem
+
+
+class DataitemTable(Dataitem):
+
+    """
+    Table dataitem.
+    """
+
+    def as_df(self, file_format: str | None = None, **kwargs) -> Any:
+        """
+        Read dataitem as a pandas DataFrame. If the dataitem is not local, it will be downloaded
+        to a temporary folder and deleted after the method is executed. If no file_format is passed,
+        the function will try to infer it from the dataitem.spec.path attribute.
+        The path of the dataitem is specified in the spec attribute, and must be a store aware path.
+        If the dataitem is stored on s3 bucket, the path must be s3://<bucket>/<path_to_dataitem>.
+        If the dataitem is stored on database (Postgres is the only one supported), the path must
+        be sql://postgres/<database>/<schema>/<table/view>.
+
+        Parameters
+        ----------
+        file_format : str
+            Format of the file. (Supported csv and parquet).
+        **kwargs
+            Keyword arguments.
+
+        Returns
+        -------
+        Any
+            DataFrame.
+        """
+        datastore = get_datastore(self.spec.path)
+        tmp_path = False
+
+        # Download dataitem if not local
+        if not self._check_local(self.spec.path):
+            path = datastore.download(self.spec.path)
+            tmp_path = True
+        else:
+            path = self.spec.path
+
+        # Check file format and get dataitem as DataFrame
+        extension = self._get_extension(self.spec.path, file_format)
+        df = datastore.read_df(path, extension, **kwargs)
+
+        # Delete tmp folder
+        if tmp_path:
+            pth = Path(path)
+            if pth.is_file():
+                pth = pth.parent
+            shutil.rmtree(pth)
+
+        return df
+
+    def write_df(self, target_path: str | None = None, df: Any | None = None, **kwargs) -> str:
+        """
+        Write pandas DataFrame as parquet.
+        If no target_path is passed, the dataitem will be written into the default store.
+        If no DataFrame is passed, the dataitem will be written into the target_path.
+
+        Parameters
+        ----------
+        target_path : str
+            Path to write the dataframe to
+        df : Any
+            DataFrame to write.
+        **kwargs
+            Keyword arguments.
+
+        Returns
+        -------
+        str
+            Path to the written dataframe.
+        """
+        if target_path is None:
+            target_path = f"{self.project}/{self.ENTITY_TYPE}/{self.kind}/{self.name}.parquet"
+            datastore = get_default_datastore()
+        else:
+            datastore = get_datastore(target_path)
+        if df is None:
+            df = self.as_df()
+        return datastore.write_df(df, target_path, **kwargs)
