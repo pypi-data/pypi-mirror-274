@@ -1,0 +1,11 @@
+databases:
+  mongoUser: iftdbase
+  mongoPassword: surfaice
+  mongoCluster: ift
+  mongoString: kwauugv.mongodb.net/?retryWrites=true&w=majority
+  tsdbHost: 194.182.173.192
+  tsdbPort: 5432
+  tsdbDB: surfaice
+  tsdbUser: ift
+  tsdbPassword: ift1234
+
