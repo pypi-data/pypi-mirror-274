@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ellis-django-views
+Version: 0.15
+Summary: Generic views for Model View Serializer (MVS) pattern
+Home-page: https://carlellis.io
+Author: Carl Victor Ellis
+Author-email: carl.ellis@hotmail.com.au
+License: GNU
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: django
+Requires-Dist: pillow
+Requires-Dist: djangorestframework
+
+Ellis views are generic views for Create, Request, Update and Delete views, simply define serializer_model, model and is_authorised methods.
+

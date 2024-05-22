@@ -1,0 +1,6 @@
+ERROR = 'error'
+MISSING_PARAMETER = 'Missing parameter: '
+MISSING_HEADER_PARAMETER = 'Missing header parameter: '
+INVALID_HTTPS_URL = 'Invalid url: check url begins with https://'
+MISSING_URL = '{MISSING_PARAMETER}url'
+FILE_NOT_SUBMITTED = 'No file was submitted.'
