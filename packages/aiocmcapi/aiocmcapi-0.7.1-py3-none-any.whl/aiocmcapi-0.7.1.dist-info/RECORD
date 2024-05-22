@@ -1,0 +1,9 @@
+aiocmcapi/__init__.py,sha256=XUVsdfbdhYZaA1nzNhb1Tx0zhpWoEK7ynGFqSwvnVmk,58
+aiocmcapi/client.py,sha256=ca4FJAIlct9V4rJ1gxVguZFRI_8cieXDbJaR7vURCuU,1077
+aiocmcapi/currency.py,sha256=xO3ymZ8DUtkucmMMmzMZAic5bOghEItuP0yZMvJmdDE,1361
+aiocmcapi/exceptions.py,sha256=IrF_EOd-u7bDzwUgNTIw6EKEvMsM4iJOOno7_l0W3v4,357
+aiocmcapi-0.7.1.dist-info/LICENSE,sha256=Ojas3B6kA4DBe0efVJp9A4C5kafOzAvqz86wwRpuWRU,1083
+aiocmcapi-0.7.1.dist-info/METADATA,sha256=Vc6SaWJovZ9BuCbzkUXWgY0LEkEEOV7r-vb2BVFTGB0,3408
+aiocmcapi-0.7.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aiocmcapi-0.7.1.dist-info/top_level.txt,sha256=DcZTSAvyc9pINy-iNN04GB_CyQepZQ5sEKzo7oOSB1M,10
+aiocmcapi-0.7.1.dist-info/RECORD,,
