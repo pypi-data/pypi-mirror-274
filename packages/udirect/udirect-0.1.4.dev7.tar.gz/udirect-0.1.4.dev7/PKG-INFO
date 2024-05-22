@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: udirect
+Version: 0.1.4.dev7
+Summary: Deep learning tools for modeling rupture forward directivity
+Home-page: https://github.com/HenningLilienkamp/udirect
+Download-URL: https://github.com/HenningLilienkamp/udirect/archive/refs/tags/v.0.1.tar.gz
+Author: Henning Lilienkamp
+Author-email: henninglilienkamp@gmx.de
+License: MIT
+Keywords: Deep learning,Rupture forward directivity,Modifier of moments
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
