@@ -1,0 +1,11 @@
+micro_benchmark/__init__.py,sha256=Vbka-oOj3Tm0WePtkIWFnHb9oxkPPxrLwrlj_rjeq0g,691
+micro_benchmark/code.py,sha256=zvjK_sbxsdqC_-Dx9NJBCgbEqDwo2BxD929DSYvM07A,3275
+micro_benchmark/constants.py,sha256=d8nJSDpeB8N68l9tycT1X8cvuiC1U2nKerHGRnIoXb8,773
+micro_benchmark/decorators.py,sha256=LFpn05m7RgRT9lYdcFNEW3fpddwWNp44UHUjksFcwjw,984
+micro_benchmark/examples.py,sha256=Kj4m_bS7eljm1QBO4nX9np9cD7Iqp4ab7JCb7UaEq8I,1011
+micro_benchmark/runtime.py,sha256=3ZZIMTOgr0QPJ5OvuKZdnstljRkYZjob_4iVBqyLmIk,3767
+egenix_micro_benchmark-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+egenix_micro_benchmark-0.1.0.dist-info/METADATA,sha256=CCYdyWfxs-hP8sMXkPTzncLiBY-7Txmn9Al6IFm2HC8,7110
+egenix_micro_benchmark-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+egenix_micro_benchmark-0.1.0.dist-info/top_level.txt,sha256=wmBi2INxf4bED1Jv2uO1DItEa3B_sRdXapChDSyxopc,16
+egenix_micro_benchmark-0.1.0.dist-info/RECORD,,
