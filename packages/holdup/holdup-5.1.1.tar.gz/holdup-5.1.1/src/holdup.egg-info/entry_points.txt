@@ -1,0 +1,2 @@
+[console_scripts]
+holdup = holdup.cli:main
