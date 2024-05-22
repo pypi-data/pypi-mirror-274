@@ -1,0 +1,9 @@
+CHANGELOG.md,sha256=Auo4xA3W5okxfhLLNUmXnAhbld6AUjNnYYgtp6ijXlQ,368
+LICENSE,sha256=A1wQoAgYZY5vuxlaRdSkG9cI9IXOG4dLYFUXP2TifjQ,1070
+README.md,sha256=V-u9bD5cnJu9f2CsQQFms-pF-FYnGfqRsF7Rbwxsm9c,1208
+examples/README.md,sha256=LALoCozCo90HqsyiStjwzEIEvE4mUBXt5rQ25lfGJw4,225
+lsm303d/__init__.py,sha256=iHIYW6p-8s11gStN0HmUjLL94GDvyn4Niju1w2kY_ec,17697
+lsm303d-1.0.0.dist-info/METADATA,sha256=mGCpzGwIHGTgg5VSOGGUxIzqotWn22QgyguDqrcXZi8,3973
+lsm303d-1.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+lsm303d-1.0.0.dist-info/licenses/LICENSE,sha256=A1wQoAgYZY5vuxlaRdSkG9cI9IXOG4dLYFUXP2TifjQ,1070
+lsm303d-1.0.0.dist-info/RECORD,,
