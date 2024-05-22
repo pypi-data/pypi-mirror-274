@@ -1,0 +1,88 @@
+LICENSE
+MANIFEST.in
+README.md
+logo.png
+setup.py
+chemical_safety/__init__.py
+chemical_safety.egg-info/PKG-INFO
+chemical_safety.egg-info/SOURCES.txt
+chemical_safety.egg-info/dependency_links.txt
+chemical_safety.egg-info/entry_points.txt
+chemical_safety.egg-info/requires.txt
+chemical_safety.egg-info/top_level.txt
+chemical_safety/chemical/__init__.py
+chemical_safety/chemical/chemical.py
+chemical_safety/chemical/molecule.py
+chemical_safety/chemical/periodictable.py
+chemical_safety/chemical/sigfig.py
+chemical_safety/chemical/units.py
+chemical_safety/chemical/lists/EPA_D_List.csv
+chemical_safety/chemical/lists/EPA_P_List.csv
+chemical_safety/chemical/lists/EPA_U_List.csv
+chemical_safety/chemical/lists/IARC_classification.csv
+chemical_safety/chemical/lists/NTP_anticipated_carcinogens.csv
+chemical_safety/chemical/lists/NTP_known_carcinogens.csv
+chemical_safety/chemical/lists/OSHA_carcinogens.csv
+chemical_safety/chemical/lists/UMN_peroxide_formers.csv
+chemical_safety/chemical/lists/convert_UMN_peroxide_list.py
+chemical_safety/chemical/lists/convert_p_statements.py
+chemical_safety/chemical/lists/p_statements.csv
+chemical_safety/chemical/lists/process_EPA_lists.py
+chemical_safety/chemical/lists/process_lists.py
+chemical_safety/chemical/pictograms/Acute Toxic.svg
+chemical_safety/chemical/pictograms/Compressed Gas.svg
+chemical_safety/chemical/pictograms/Corrosive.svg
+chemical_safety/chemical/pictograms/Environmental Hazard.svg
+chemical_safety/chemical/pictograms/Explosive.svg
+chemical_safety/chemical/pictograms/Flammable.svg
+chemical_safety/chemical/pictograms/Health Hazard.svg
+chemical_safety/chemical/pictograms/Irritant.svg
+chemical_safety/chemical/pictograms/Oxidizing.svg
+chemical_safety/chemical/tables/elements.csv
+chemical_safety/dashboard/__init__.py
+chemical_safety/dashboard/app.py
+chemical_safety/dashboard/config.json
+chemical_safety/dashboard/static/courses/CHEM2315/1 Crystallization & Melting Points.txt
+chemical_safety/dashboard/static/courses/CHEM2315/10 Oxidation of Cyclohexanol.txt
+chemical_safety/dashboard/static/courses/CHEM2315/2 Identification of Unkown Alkanes and Alkenes.txt
+chemical_safety/dashboard/static/courses/CHEM2315/3 Free Radical Chlorination of 1-Chlorobutane.txt
+chemical_safety/dashboard/static/courses/CHEM2315/30 Separation of Binary Mixtures by Fractional Distillation.txt
+chemical_safety/dashboard/static/courses/CHEM2315/4 Optical Activity of Caraway and Spearmint Oils.txt
+chemical_safety/dashboard/static/courses/CHEM2315/5 Preparation of Phenacetin by the Williamson Ether Synthesis.txt
+chemical_safety/dashboard/static/courses/CHEM2315/6 Synthesis of 3_3-Dimethyl-2-Butanol.txt
+chemical_safety/dashboard/static/courses/CHEM2315/7 Dehydration of 3_3-Dimethyl-2-butanol.txt
+chemical_safety/dashboard/static/courses/CHEM2315/8 Identification of an Unknown by Infrared Spectroscopy.txt
+chemical_safety/dashboard/static/courses/CHEM2315/9 Steam Distillation of Orange Oil.txt
+chemical_safety/dashboard/static/courses/CHEM2325/16 Preparation of Benzoic Acid from Phenylmagnesium Bromide and Carbon Dioxide.txt
+chemical_safety/dashboard/static/courses/CHEM3000/1 Calibration of glassware.txt
+chemical_safety/dashboard/static/courses/CHEM3000/2 Determination of total acidity.txt
+chemical_safety/dashboard/static/courses/CHEM3000/4 Determination of chloride.txt
+chemical_safety/dashboard/static/courses/CHEM3000/5 Beers law.txt
+chemical_safety/dashboard/static/courses/CHEM3000/6 Determination of manganese in steel.txt
+chemical_safety/dashboard/static/courses/CHEM3000/7 GCMS of gasoline.txt
+chemical_safety/dashboard/static/courses/CHEM3000/8 Simultaneous determination of a two-component mixture.txt
+chemical_safety/dashboard/static/css/style.css
+chemical_safety/dashboard/static/img/Acute Toxic.svg
+chemical_safety/dashboard/static/img/Compressed Gas.svg
+chemical_safety/dashboard/static/img/Corrosive.svg
+chemical_safety/dashboard/static/img/Environmental Hazard.svg
+chemical_safety/dashboard/static/img/Explosive.svg
+chemical_safety/dashboard/static/img/Flammable.svg
+chemical_safety/dashboard/static/img/Health Hazard.svg
+chemical_safety/dashboard/static/img/Irritant.svg
+chemical_safety/dashboard/static/img/Oxidizer.svg
+chemical_safety/dashboard/static/img/Oxidizing.svg
+chemical_safety/dashboard/static/img/PHS.png
+chemical_safety/dashboard/static/img/chembio_horiz.png
+chemical_safety/dashboard/static/img/logo.png
+chemical_safety/dashboard/templates/chemical_lookup.html
+chemical_safety/dashboard/templates/course_lookup.html
+chemical_safety/dashboard/templates/emergency_info.html
+chemical_safety/dashboard/templates/experiment_lookup.html
+chemical_safety/dashboard/templates/index.html
+chemical_safety/dashboard/templates/multi_chemical_lookup.html
+chemical_safety/dashboard/templates/phs_list.html
+chemical_safety/dashboard/templates/room_lookup.html
+chemical_safety/dashboard/templates/search_form.html
+chemical_safety/dashboard/templates/secondary_label.html
+chemical_safety/dashboard/templates/secondary_label_builder.html
