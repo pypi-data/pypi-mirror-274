@@ -1,0 +1,22 @@
+/*! \brief main
+ * 
+ * Main entry in project {{ project_name }}
+ *
+ * File:    main.cpp
+ * Author:  Dieter Steuten
+ * Licence: Apache 2.0
+ */
+
+#include "components/{{ project_name }}/{{ project_name }}.hpp"
+
+int main() {
+    bool run = true;
+    {{ project_name }}_Data_Create;
+    {{ project_name }}_New_Instance;
+
+    while (run)
+    {
+        run = {{ project_name }}_P(run);
+    }
+    return 0;
+}

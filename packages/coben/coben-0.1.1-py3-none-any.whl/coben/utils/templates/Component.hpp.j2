@@ -1,0 +1,75 @@
+#ifndef I_{{ component_name }}_H
+#define I_{{ component_name }}_H
+
+#include "ipo.hpp"
+//#include "CHILD/CHILD.hpp"
+
+struct T_{{ component_name }}{
+    bool change_request = false;
+    int foo = 0; // put **ALL** processable data in here
+    //CHILD_Data_Create;
+    bool operator!=(const T_{{ component_name }} &pre) { 
+        return (foo != pre.foo
+            //||CHILD_nq 
+        ) ? true : false;    
+    }
+};
+
+class I_{{ component_name }} : public I_IPO<T_{{ component_name }}> {
+public:
+    virtual ~I_{{ component_name }}() {
+        //CHILD_Del_Instance;
+    }
+
+    /* the **howto access** */
+    const T_{{ component_name }} &O() override {        return data;    }
+    void I(const T_{{ component_name }} &outter) override {
+        if (data != outter) {
+            data = outter;
+            data.change_request = true;
+            //CHILD_forward;
+        }
+    }
+    // override in concrete class virtual bool P(bool) = 0;
+    
+   protected:
+    T_{{ component_name }} data = T_{{ component_name }}();
+    //CHILD_New_Instance;
+};
+
+class {{ component_name }} : public I_{{ component_name }} {
+public:
+    {{ component_name }}();
+    virtual ~{{ component_name }}(){    /* delete the 'new's (if exists) directly here .. for more readiness */  };
+
+protected:
+    /* mandatory I_IPO */
+    bool P(bool) override; /* collect all to be do in this function */
+
+    /* optional I_{{ component_name }} */
+
+private:    /* - use of further components (the 'new's) - */
+    /* - Member - */
+
+    /* - declaration of own private processing functions - */
+};
+
+/* get an easier access to derivate Input-Processing-Output Class */
+#define {{ component_name }}_Data_Create T_{{ component_name }} {{ component_name }}_Data_Reference = T_{{ component_name }}()
+#define {{ component_name }}_New_Instance I_{{ component_name }} *{{ component_name }}_Object_Reference = new {{ component_name }}()
+#define {{ component_name }}_Del_Instance delete {{ component_name }}_Object_Reference
+#define {{ component_name }}_I(d) {{ component_name }}_Object_Reference->I(d)
+#define {{ component_name }}_P(cr) {{ component_name }}_Object_Reference->P(cr)
+#define {{ component_name }}_O {{ component_name }}_Object_Reference->O()
+#define {{ component_name }}_nq ({{ component_name }}_Data_Reference != pre.{{ component_name }}_Data_Reference)
+#define {{ component_name }}_condition (data.{{ component_name }}_Data_Reference != outter.{{ component_name }}_Data_Reference)
+#define {{ component_name }}_assign data.{{ component_name }}_Data_Reference = outter.{{ component_name }}_Data_Reference
+#define {{ component_name }}_forward                          \
+    if ({{ component_name }}_condition) {                     \
+        {{ component_name }}_assign;                          \
+        {{ component_name }}_I(outter.{{ component_name }}_Data_Reference); \
+    }
+#define {{ component_name }}_byte_in {{ component_name }}_Data_Reference << T_{{ component_name }}()
+#define {{ component_name }}_byte_out T_{{ component_name }}() >> {{ component_name }}_Data_Reference 
+    
+#endif

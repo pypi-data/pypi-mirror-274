@@ -1,0 +1,12 @@
+#include "{{ component_name }}.hpp"
+{{ component_name }}::{{ component_name }}() {}
+
+bool {{ component_name }}::P(bool run){
+    if (data.change_request || run){
+        //derivate _P(run)
+        return true;
+    }
+    return false;
+}
+
+/* private processing functions */

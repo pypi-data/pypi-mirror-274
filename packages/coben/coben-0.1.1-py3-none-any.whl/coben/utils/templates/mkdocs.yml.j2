@@ -1,0 +1,35 @@
+site_name: 'Project {{ project_name }}'
+site_description: for now example
+site_author: DS
+copyright: dingste.de
+#use_directory_urls: false
+docs_dir: 'components'
+
+validation:
+  links:
+    absolute_links: relative_to_docs
+    anchors: warn
+    unrecognized_links: warn
+
+theme:
+  name: material
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+plugins:
+  - search
+  - include-markdown
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      num_workers: 8
+      puml_keyword: puml
+      verify_ssl: true  
+
+nav:
+  - Home: index.md
+  - Components:
+    - {{ project_name }} : {{ project_name }}/{{ project_name }}.md

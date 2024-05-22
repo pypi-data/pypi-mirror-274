@@ -1,0 +1,2 @@
+[console_scripts]
+coben = coben.coben:main
