@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cursedpy"
+version = "0.1.1"
+description = "Dead simple Curseforge API wrapper"
+authors = ["Coffeemeow <coffeemeowgirl@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+dataclass-wizard = "^0.22.3"
+colorama = "^0.4.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
