@@ -1,0 +1,8 @@
+README.md
+setup.py
+jsesEnv/__init__.py
+jsesEnv/main.py
+jses_environment.egg-info/PKG-INFO
+jses_environment.egg-info/SOURCES.txt
+jses_environment.egg-info/dependency_links.txt
+jses_environment.egg-info/top_level.txt

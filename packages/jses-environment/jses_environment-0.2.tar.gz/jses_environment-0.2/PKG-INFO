@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jses_environment
+Version: 0.2
+Summary: Esse pacote cria um ambiente no Google Colab para quem deseja trabalhar com Spark e ElasticSearch.
+Home-page: https://github.com/joseaugustoduarte/jses_environment.git
+Author: José Augusto Duarte
+Author-email: joseaugustoduarte@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# jses_environment
+Baixar, instalar e configurar um ambiente para realizar engenharia e ciência de dados no Google Colab, utilizando Java, Spark e Elasticsearch.
+Download, install and configure an environment to perform data engineering and science on Google Colab, using Java, Spark and Elasticsearch.
+
+
