@@ -1,0 +1,16 @@
+colorama
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+black
+pre-commit
+tox
+sphinx
+sphinx_rtd_theme
+
+[testing]
+setuptools
+pytest
+pytest-cov
