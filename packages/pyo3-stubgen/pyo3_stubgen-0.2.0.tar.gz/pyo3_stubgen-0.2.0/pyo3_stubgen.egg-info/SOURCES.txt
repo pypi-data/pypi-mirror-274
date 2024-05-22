@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+__pyversion__
+pyproject.toml
+pyo3_stubgen/__init__.py
+pyo3_stubgen/generate.py
+pyo3_stubgen.egg-info/PKG-INFO
+pyo3_stubgen.egg-info/SOURCES.txt
+pyo3_stubgen.egg-info/dependency_links.txt
+pyo3_stubgen.egg-info/entry_points.txt
+pyo3_stubgen.egg-info/requires.txt
+pyo3_stubgen.egg-info/top_level.txt
