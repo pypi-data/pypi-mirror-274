@@ -1,0 +1,3 @@
+dist
+openlxp_P1_notification
+openlxp_P1_notification_project
