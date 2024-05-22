@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: antifold
+Version: 0.2.0
+Summary: Inverse folding of antibodies
+Home-page: https://github.com/Magnushhoie/antifold_web/
+Author: Magnus Haraldson Høie & Alissa Hummer
+Author-email: maghoi@dtu.dk & alissa.hummer@stcatz.ox.ac.uk
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
