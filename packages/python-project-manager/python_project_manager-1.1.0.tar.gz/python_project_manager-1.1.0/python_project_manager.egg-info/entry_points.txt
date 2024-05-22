@@ -1,0 +1,8 @@
+[console_scripts]
+ppm = python_project_manager.app:cli
+ppm-builtin-setuptools-build = python_project_manager.builtin_engines.builtin_setuptools:_build
+ppm-builtin-setuptools-install = python_project_manager.builtin_engines.builtin_setuptools:_install
+ppm-builtin-setuptools-publish-major = python_project_manager.builtin_engines.builtin_setuptools:_publish_major
+ppm-builtin-setuptools-publish-minor = python_project_manager.builtin_engines.builtin_setuptools:_publish_minor
+ppm-builtin-setuptools-publish-patch = python_project_manager.builtin_engines.builtin_setuptools:_publish_patch
+ppm-builtin-setuptools-uninstall = python_project_manager.builtin_engines.builtin_setuptools:_uninstall
