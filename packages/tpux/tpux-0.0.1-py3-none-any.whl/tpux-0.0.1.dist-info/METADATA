@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tpux
+Version: 0.0.1
+Summary: A set of Python scripts that makes your experience on TPU better
+Author-email: Shin <shin@yixiaoer.sg>
+Project-URL: Homepage, https://github.com/yixiaoer/tpux
+Project-URL: Issues, https://github.com/yixiaoer/tpux/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# tpux

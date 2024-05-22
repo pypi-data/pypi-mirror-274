@@ -1,0 +1,2 @@
+[console_scripts]
+tpux = tpux.cli:main
