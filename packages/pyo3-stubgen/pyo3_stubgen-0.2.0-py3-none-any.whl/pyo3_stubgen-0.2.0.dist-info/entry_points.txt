@@ -1,0 +1,2 @@
+[console_scripts]
+stubgen = pyo3_stubgen:generate._stubgen
