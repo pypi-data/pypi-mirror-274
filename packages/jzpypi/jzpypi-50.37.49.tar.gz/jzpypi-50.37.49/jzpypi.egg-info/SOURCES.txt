@@ -1,0 +1,9 @@
+setup.py
+jzpypi/__init__.py
+jzpypi/upload.py
+jzpypi.egg-info/PKG-INFO
+jzpypi.egg-info/SOURCES.txt
+jzpypi.egg-info/dependency_links.txt
+jzpypi.egg-info/entry_points.txt
+jzpypi.egg-info/requires.txt
+jzpypi.egg-info/top_level.txt

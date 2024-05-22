@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: jzpypi
+Version: 50.37.49
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: requests-toolbelt
+Requires-Dist: setuptools
