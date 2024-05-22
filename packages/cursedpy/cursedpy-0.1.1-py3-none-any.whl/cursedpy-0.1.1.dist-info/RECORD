@@ -1,0 +1,7 @@
+src/cursedpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cursedpy/cursed.py,sha256=j2XWPwfVb8IZYZFOHoLIN9xe3EOWfAhfTGtM3evTxoc,13777
+src/cursedpy/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cursedpy/tools/types.py,sha256=2mSwdMiP1nHrl95K85eRr5yW91zI4mPdh8iq0lk_AJQ,11166
+cursedpy-0.1.1.dist-info/METADATA,sha256=llY6vTcqD887oJ3Y7sznY8louKgxUZN6vFAqDd_7GVQ,1304
+cursedpy-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cursedpy-0.1.1.dist-info/RECORD,,

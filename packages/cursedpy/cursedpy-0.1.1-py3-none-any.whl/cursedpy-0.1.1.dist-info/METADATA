@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: cursedpy
+Version: 0.1.1
+Summary: Dead simple Curseforge API wrapper
+Author: Coffeemeow
+Author-email: coffeemeowgirl@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: dataclass-wizard (>=0.22.3,<0.23.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+<div align="center">
+    <h1>Cursed.py ⚒️</h1>
+    <img width="64px" alt="icon" src="./curseforge.png">
+</div>
+
+About:
+---
+Full **Curseforge API** wrapper<br> 
+👉 https://docs.curseforge.com<br>
+```
+All Json Schemas (Python Types) are exactly the same as in docs
+Except missing "Return types" which are essentially just this: {"data": Any} or this {"data": Any, "pagination": Pagination}
+```
+
+Usage examples:
+---
+- [Search mods](./examples/search_mods/README.MD)
+- [~~Get curseforge supported games list~~](./examples/games_list/README.md) **TODO**
+- [~~Get mods download links~~](./examples/mods_download_links/README.md) **TODO**
+
+
+Implemented API:
+---
+- [x] Games
+- [x] Categories
+- [x] Mods
+- [x] Files
+- [ ] Fingerprints
+- [x] Minecraft
+
+QOL:
+---
+- [ ] Error handling
+- [ ] Document all types parameters
+- [ ] Make proper docs page???
+
