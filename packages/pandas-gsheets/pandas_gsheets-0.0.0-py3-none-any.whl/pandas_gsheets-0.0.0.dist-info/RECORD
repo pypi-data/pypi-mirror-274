@@ -1,0 +1,6 @@
+pandas_gsheets/__init__.py,sha256=Ehtm4tUgQS_0lo-0D3KvETMMc2GU0WVqdpcx07eKOdI,67
+pandas_gsheets/gsheets.py,sha256=rd39doVG9JU2fUuOZFDYZ35epqKdfZLYwRhxl8b4FN8,752
+pandas_gsheets/setup.py,sha256=RyCifNL38mOyQJdRWGGC61_0dAUfMxqGg-PHkX-BuYQ,1346
+pandas_gsheets-0.0.0.dist-info/METADATA,sha256=XKsuB1FmI30Nmko-DtlKobDPerg9CiEOi6gY-wGM6AQ,392
+pandas_gsheets-0.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+pandas_gsheets-0.0.0.dist-info/RECORD,,
