@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+terobot/__init__.py
+terobot/client.py
+terobot.egg-info/PKG-INFO
+terobot.egg-info/SOURCES.txt
+terobot.egg-info/dependency_links.txt
+terobot.egg-info/requires.txt
+terobot.egg-info/top_level.txt
