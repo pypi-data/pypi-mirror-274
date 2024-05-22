@@ -1,0 +1,3 @@
+pandas
+numpyscikit-learn
+nltk

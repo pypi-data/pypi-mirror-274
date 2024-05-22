@@ -1,0 +1,17 @@
+LICENSE
+setup.py
+cleanerPandasVol/__init__.py
+cleanerPandasVol/categorical_encoder.py
+cleanerPandasVol/data_type_converter.py
+cleanerPandasVol/date_time_handler.py
+cleanerPandasVol/feature_engineer.py
+cleanerPandasVol/missing_value_handler.py
+cleanerPandasVol/outlier_handler.py
+cleanerPandasVol/scaler.py
+cleanerPandasVol/text_cleaner.py
+cleanerPandasVol.egg-info/PKG-INFO
+cleanerPandasVol.egg-info/SOURCES.txt
+cleanerPandasVol.egg-info/dependency_links.txt
+cleanerPandasVol.egg-info/requires.txt
+cleanerPandasVol.egg-info/top_level.txt
+test/__init__.py
