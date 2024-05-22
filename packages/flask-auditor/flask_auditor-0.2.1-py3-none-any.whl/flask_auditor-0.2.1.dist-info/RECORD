@@ -1,0 +1,11 @@
+flask_auditor/__init__.py,sha256=_CGSZHJSWMCmJSCLgSt9d3C14t9K2NiLrjsYDybRmHM,6076
+flask_auditor/attributes.py,sha256=L5igfourQKMkOwl5CsgUuGR8u9F_YrxEBAuZtoTWKbg,830
+flask_auditor/base.py,sha256=AE0Huc4xU7l7ZwKpVpo5KU4m0JL-9ZJLcUFiqmtyaoc,2184
+flask_auditor/config.py,sha256=2BR9OMHFwcEPKB06dCGVkIarF2u4_DQOwJOt2Ld_YTI,3806
+flask_auditor/request.py,sha256=LsYpwvRP9JlHcjwTGOrMAnXsAsuplem8ubh9pDRxr4I,8027
+flask_auditor/response.py,sha256=QDJd4gZLF5qmVREbpSmRM7I-ga4WVHu75cdqE19Ofxk,1563
+flask_auditor-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flask_auditor-0.2.1.dist-info/METADATA,sha256=Rf0iscz-4zJ1DXMDJFk69pZoGfR04UJuUpD7rrERsjA,2615
+flask_auditor-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flask_auditor-0.2.1.dist-info/top_level.txt,sha256=Gxmgu2_RP2b0gF90RYzF5EzSwj3twG_OvnDSqLzdCDU,14
+flask_auditor-0.2.1.dist-info/RECORD,,
