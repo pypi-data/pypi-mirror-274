@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by FGJ (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajePreciosContinuo" type="om:tMensajePreciosContinuo">
+		<xsd:annotation>
+			<xsd:documentation>Mensaje de precios del mercado continuo</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajePreciosContinuo">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para precios del mercado continuo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del emisor que envía el mensaje (OM)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdPrecio">
+				<xsd:annotation>
+					<xsd:documentation>PIBCIC</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:NMTOKEN">
+								<xsd:enumeration value="PIBCIC"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="TipoMercado" type="om:tMercado">
+				<xsd:annotation>
+					<xsd:documentation>MC: Mercado Continuo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Fecha" type="om:tFecha">
+				<xsd:annotation>
+					<xsd:documentation>Fecha</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SerieTemporal" type="om:tSerieTemporalPreciosContinuo" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Series temporales para los precios de cada area</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tSerieTemporalPreciosContinuo">
+		<xsd:annotation>
+			<xsd:documentation>Serie temporal</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdSerieTemporal" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de serie dentro del fichero.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdArea" type="om:tId" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de Área a la que aplica el precio. En caso de no existir este elemento, se entiende que corresponde a la zona de España.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniPrecio" type="om:tUniPrecio" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Código "EURO/MWh"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Periodo" type="om:tPeriodoPrecios" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tPeriodoPrecios">
+		<xsd:annotation>
+			<xsd:documentation>Periodo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Dia" type="om:tFecha">
+				<xsd:annotation>
+					<xsd:documentation>Fecha del Periodo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Val" type="om:tValPrecios" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tValPrecios">
+		<xsd:annotation>
+			<xsd:documentation>Valor individual</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Per" type="om:tPeriodo">
+				<xsd:annotation>
+					<xsd:documentation>Periodo horario del día</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="PrcMax" type="om:tPrecioNegativo">
+				<xsd:annotation>
+					<xsd:documentation>Precio máximo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="PrcMin" type="om:tPrecioNegativo">
+				<xsd:annotation>
+					<xsd:documentation>Precio mínimo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="PrcMed" type="om:tPrecioNegativo">
+				<xsd:annotation>
+					<xsd:documentation>Precio medio ponderado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de precios de casación </xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

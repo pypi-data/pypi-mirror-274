@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by carlos (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="tMensajeServicioDescargaREMIT">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para la descarga de reportes REMIT</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="CdAgente" type="om:tAgente">
+				<xsd:annotation>
+					<xsd:documentation>Código de Agente</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TipoSolicitud">
+				<xsd:annotation>
+					<xsd:documentation>Tipo de solicitud. E (Información de envío enviada a REMIT) o R (Respuesta de REMIT)</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string"/>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SecMens">
+				<xsd:annotation>
+					<xsd:documentation>Secuenciador del mensaje solicitado. Diferente para el envío y la respuesta</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string"/>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="MensajeServicioDescargaREMIT" type="om:tMensajeServicioDescargaREMIT"/>
+</xsd:schema>

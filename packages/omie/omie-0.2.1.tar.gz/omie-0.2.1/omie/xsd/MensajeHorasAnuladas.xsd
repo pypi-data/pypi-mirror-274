@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Fernando garcía Julián (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeHorasAnuladas" type="om:tMensajeHorasAnuladas">
+		<xsd:annotation>
+			<xsd:documentation>Mensaje de horas anuladas</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeHorasAnuladas">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para horas anuladas</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del emisor que envía el mensaje (OM u OS)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdHorasAnuladas">
+				<xsd:annotation>
+					<xsd:documentation>OMANULAINTRA, OSANULAINTRA</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:NMTOKEN">
+								<xsd:enumeration value="OMANULAINTRA">
+									<xsd:annotation>
+										<xsd:documentation>OMANULAINTRA: Anulación de horas del Mercado Intradiario por el OM</xsd:documentation>
+									</xsd:annotation>
+								</xsd:enumeration>
+								<xsd:enumeration value="OSANULAINTRA">
+									<xsd:annotation>
+										<xsd:documentation>OSANULAINTRA: Anulación de horas del Mercado Intradiario por el OS</xsd:documentation>
+									</xsd:annotation>
+								</xsd:enumeration>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="TipoMercado" type="om:tMercado">
+				<xsd:annotation>
+					<xsd:documentation>MI: Mercado Intradiario</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Sesion">
+				<xsd:annotation>
+					<xsd:documentation>Sesión</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="fecha" type="xsd:date" use="required">
+						<xsd:annotation>
+							<xsd:documentation>Fecha de la sesión</xsd:documentation>
+						</xsd:annotation>
+					</xsd:attribute>
+					<xsd:attribute name="num" use="optional">
+						<xsd:annotation>
+							<xsd:documentation>Número de sesión</xsd:documentation>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:nonNegativeInteger">
+								<xsd:maxInclusive value="25"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SerieTemporal" type="om:tSerieTemporalHorasAnuladas" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tSerieTemporalHorasAnuladas">
+		<xsd:annotation>
+			<xsd:documentation>Serie temporal</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdSerieTemporal" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de serie dentro del fichero.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Periodo" type="om:tPeriodoHorasAnuladas" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tPeriodoHorasAnuladas">
+		<xsd:annotation>
+			<xsd:documentation>Periodo de la sesión</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Dia" type="om:tFecha">
+				<xsd:annotation>
+					<xsd:documentation>Fecha del Periodo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Val" type="om:tValHorasAnuladas" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tValHorasAnuladas">
+		<xsd:annotation>
+			<xsd:documentation>Valor individual</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Per" type="om:tPeriodo">
+				<xsd:annotation>
+					<xsd:documentation>Periodo horario del día</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de precios de casación </xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

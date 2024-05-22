@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.omel.es/Schemas"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:umm="http://www.omel.es/Schemas"
+	elementFormDefault="qualified">
+
+	<!--<xs:import namespace="http://www.acer.europa.eu/REMIT/REMITUMMCommonSchema_V1.xsd" schemaLocation="REMITUMMCommonSchema_V1.xsd"/>-->
+	<xs:include schemaLocation="REMITUMMCommonSchema_V1.xsd"/>
+
+	<xs:element name="REMITUrgentMarketMessages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="UMM" type="umm:UMM" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="tREMITUrgentMarketMessages">
+		<xs:sequence>
+			<xs:element name="UMM" type="umm:UMM"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="UMM">
+		<xs:sequence>
+			<xs:element name="messageId" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n. 1: This field aims to capture the identifier of the message issued by the market participant or by someone acting on its behalf. 
+					UMMs related to the same event may be updated several times before and during the event. Inside information publication may require a prognosis, for example regarding
+					the duration of the event. Such prognosis contains an element of uncertainty and should be based on all available data and analysis prepared with reasonable effort at the time of publication.
+					If the prognosis or the level or certainty changes over time, the publication should be updated accordingly.		
+				</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="29"/>
+						<xs:maxLength value="29"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="event" type="umm:event" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Details of the event</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+
+			<xs:element name="unavailabilityType" type="umm:unavailabilityType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.3: The field ‘Type of Unavailability’ indicates whether the unavailability was planned or not sorting the messages into two main types
+						that may have different timeframes and implications on the markets. 
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+
+			<xs:element name="publicationDateTime" type="xs:dateTime" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.5: The field "Publication date/time" defines the point in time when the inside information was disclosed to the public though the UMM.
+						It should be generated automatically by the system when a UMM is published
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+
+			<xs:element name="capacity" type="umm:capacity" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Details of the capacity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+
+			<xs:element name="unavailabilityReason" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.12: The field ‘Reason for the unavailability’ provides an explanation on the cause(s) of the unavailability.
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="500"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="remarks" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.13: The field ‘Remarks’ provides more detailed information on the event that allows a full understanding of its potential impact on wholesale energy prices.
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="500"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="fuelType" type="umm:fuelType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.14: The field ‘Fuel Type’ gives additional information on the source of energy used by the production or generation unit concerned.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="biddingZone" type="umm:eic" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Field n.15a: The field ‘Bidding Zone’ provides the identification of the bidding zone(s) where the affected asset or unit is located
+						using the EIC Y coding schema on the areas for inter System Operator data interchange.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="affectedAsset" type="umm:affectedAsset" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Details of the affected asset or unit</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="marketParticipant" type="umm:marketParticipant" minOccurs="1"
+				maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Details of the Market Participant</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:simpleType name="eventType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Production unavailability"/>
+			<xs:enumeration value="Transmission unavailability"/>
+			<xs:enumeration value="Consumption unavailability"/>
+			<xs:enumeration value="Other unavailability"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="unitMeasure">
+		<xs:annotation>
+			<xs:documentation>Unit used for field 8a</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MW"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="event">
+		<xs:sequence>
+
+			<xs:element name="eventStatus" type="umm:eventStatus" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.2: The field ‘Event Status’ allows the distinction between UMMs that contain the most recent information on an event and can still influence trading decisions,
+						and UMMs that are already outdated or that were updated. 
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="eventType" type="umm:eventType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.4a: The ‘Type of Event’ details the subject of the unavailability.
+						"Other unavailability" covers other types of unavailabilities such as reduction station unavailability, measurement station unavailability, etc. 
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="eventStart" type="xs:dateTime" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.6: The field "Event start" describes the expected (if future) or actual (if past) starting time and date of the relevant event.
+						This field together with the ‘Event stop’ field allows the knowledge of the timeframe of the event and the assessment of its potential impact on wholesale energy prices.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="eventStop" type="xs:dateTime" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.7: The field ‘Event stop’ describes the estimated (if future) or actual (if past) time and date at which the relevant event stops(ed).
+						This field together with the ‘Event start’ field provides the timeframe of the event and the assessment of its potential impact on wholesale energy prices.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="capacity">
+		<xs:sequence>
+
+			<xs:element name="unitMeasure" type="umm:unitMeasure" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.8a: This field identifies the unit used for the reported quantity in fields 9, 10, and 11a. 
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="installedCapacity" type="xs:decimal" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.11a: The field 'Installed capacity' measures the nominal generating/transmission/consumption capacity.
+				It is the maximum electrical active power/ energy interchange the facility can produce/transmit /consume continuously throughout a long period of operation in normal conditions,
+				under relevant security standards.
+			</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:sequence>
+				<!-- PC ARISOD-570  Inside Information (Electricity)- UMM: 5. New elements “intervalStart” and “intervalStop” -->
+				<xs:element name="capacityInterval" type="umm:capacityInterval" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="capacityInterval">
+		<xs:sequence>
+			<xs:element name="intervalStart" type="xs:dateTime" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.20: The field 'Interval Start' describes the estimated or actual starting time and date of the interval of relevant event. 
+					This field together with Field n.21 'Interval Stop' provides information on the time interval if the available/unavailable capacity fluctuates over time. 
+					If the available/unavailable capacity is constant over time, the value in 'Interval Start' is the same as 'Event Start' and the value in 'Interval Stop' 
+					is the same as the one in 'Event Stop'.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="intervalStop" type="xs:dateTime" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.21: The field 'Interval Stop' describes the estimated (if future) or actual (if past) time and date at which the relevant interval of the event stops or stopped. 
+					This field together with the 'Interval Start' field provides the timeframe of the interval of the event.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="unavailableCapacity" type="xs:decimal" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.9: The field "Unavailable capacity" measures the capacity of the facility concerned that is affected by the event,
+					i.e.: the capacity that will be unavailable due to the event.
+				</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="availableCapacity" type="xs:decimal" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.10: The field ‘Available capacity’ measures the capacity of the facility concerned that will not be affected by the event, i.e.: the capacity that will remain available.
+					The available capacity must be expressed in absolute terms NOT in percentages.
+				</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+</xs:schema>

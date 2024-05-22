@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>			
+	<xsd:simpleType name="tSeleccionIdiomaResponse">
+		<xsd:restriction base="xsd:string">
+			<xsd:length value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>				
+	<xsd:complexType name="RespuestaListadoIdiomasResponse">
+		<xsd:sequence>
+			<xsd:element name="RespuestaListadoIdiomas" type="om:tRespuestaListadoIdiomas"/>
+		</xsd:sequence>
+	</xsd:complexType>					
+	<xsd:complexType name="SeleccionIdiomaResponse">
+		<xsd:sequence>
+			<xsd:element name="SeleccionIdioma" type="om:tSeleccionIdiomaResponse"/>
+		</xsd:sequence>
+	</xsd:complexType>			
+	<xsd:element name="RespuestaListadoIdiomas" type="om:tRespuestaListadoIdiomas">
+		<xsd:annotation>
+			<xsd:documentation>Conjunto de respuestas al listado de Idiomas disponibles</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tRespuestaListadoIdiomas">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para las respuestas del listado de Idiomas disponibles</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Idioma" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Código de Idioma y descripcón</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:annotation>
+							<xsd:documentation>Valor</xsd:documentation>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:length value="2"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+					<xsd:attribute name="descripcion" use="required">
+						<xsd:annotation>
+							<xsd:documentation>Descripción
+</xsd:documentation>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="20"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de respuestas del listado de Idiomas disponibles</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

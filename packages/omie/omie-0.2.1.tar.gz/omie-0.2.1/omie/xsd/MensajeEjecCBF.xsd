@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="MensajeEjecCBFResponse">
+		<xsd:sequence>
+			<xsd:element name="MensajeEjecCBF" type="om:tMensajeEjecCBF"/>
+		</xsd:sequence>
+	</xsd:complexType>	
+	<xsd:element name="MensajeEjecCBF" type="om:tMensajeEjecCBF">
+		<xsd:annotation>
+			<xsd:documentation>Conjunto de Ejecuciones de CBFs</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EjecCBF">
+		<xsd:annotation>
+			<xsd:documentation>Describe los datos de cada una de las ejecuciones individuales, una por cada ejecución</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdEjecCBF" type="om:tId">
+					<xsd:annotation>
+						<xsd:documentation>Identificativo del CBF dentro del fichero, definido por quien envía el fichero (único por mensaje).</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdCBF" type="om:tIdNum">
+					<xsd:annotation>
+						<xsd:documentation>Código del Contrato Bilateral Físico</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Validez">
+					<xsd:annotation>
+						<xsd:documentation>Vallidez</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="TipoMercado" type="om:tMercado">
+								<xsd:annotation>
+									<xsd:documentation>MD: Mercado Diario</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="Sesion" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Sesión</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="fecha" type="xsd:date" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Fecha de la sesión</xsd:documentation>
+										</xsd:annotation>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="IndDefecto" type="om:tSiNo" minOccurs="0">
+								<xsd:annotation>
+									<xsd:documentation>Indica si la Ejecución es por Defecto o Normal</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Código "MWh" por defecto</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="UniPrecio" type="om:tUniPrecio" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Unidad de Precios. "cEURO/kWh" por defecto</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Comentario" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Descripción del contrato,  u otro comentario libre</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="30"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element ref="om:Detalle" maxOccurs="unbounded"/>
+				<xsd:element ref="om:OfertaOCI" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Detalle">
+		<xsd:annotation>
+			<xsd:documentation>Detalle del CBF. Habrá uno por unidad.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Dia" type="om:tFecha" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Fecha del Periodo </xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdUnidad" type="om:tUnidad">
+					<xsd:annotation>
+						<xsd:documentation>Código de unidad ofertante.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:Blq" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Blq">
+		<xsd:annotation>
+			<xsd:documentation>Bloques de la ejecución</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Per" type="om:tPeriodo">
+					<xsd:annotation>
+						<xsd:documentation>Periodo horario del día</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Ctn" type="om:tCantidad">
+					<xsd:annotation>
+						<xsd:documentation>Cantidad de Energía</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="OfertaOCI">
+		<xsd:annotation>
+			<xsd:documentation>Detalle de la oferta de capacidad</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Dia" type="om:tFecha" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Fecha del Periodo </xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:BlqOCI" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="BlqOCI">
+		<xsd:annotation>
+			<xsd:documentation>Bloques de  la ejecución CBF Internacional</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Per" type="om:tPeriodo">
+					<xsd:annotation>
+						<xsd:documentation>Periodo horario del día</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Prc" type="om:tPrecio">
+					<xsd:annotation>
+						<xsd:documentation>Precio</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tMensajeEjecCBF">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para Ejecuciones de CBFs</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía el mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:EjecCBF" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de Ejecuciones de Contratos Bilaterales Físicos</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

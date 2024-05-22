@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by FGJ (OMEL S.A.) -->
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.3">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeAnotaciones" type="om:tMensajeAnotaciones">
+		<xsd:annotation>
+			<xsd:documentation>Anotaciones en cuenta por fecha y versión de liquidación</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeAnotaciones">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para Anotaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo del contenido del mensaje (por ejemplo "ANOTACIONES_LIQ_20080603")</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje">
+				<xsd:annotation>
+					<xsd:documentation>Versión del contenido del mensaje (para diferentes versiones de la misma liquidación)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha/hora de generación de los datos en el servidor (no del envío del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del remitente (OM) </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Sesion">
+				<xsd:annotation>
+					<xsd:documentation>Incluye Fecha y Número de Sesión (este último para uso futuro)</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="fecha" type="xsd:date" use="required"/>
+					<xsd:attribute name="num" use="optional">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:nonNegativeInteger">
+								<xsd:maxInclusive value="25"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Horizonte" type="om:tIntervaloTiempo">
+				<xsd:annotation>
+					<xsd:documentation>Intervalo temporal  (ISO 8601) de validez del Programa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="EstadoLiq" type="om:tEstadoLiq">
+				<xsd:annotation>
+					<xsd:documentation>Estado de la Liquidación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="AnotacionesEmpresa" type="om:tAnotacionesEmpresa" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Anotaciones de una empresa para Diario e Intradiario</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="AnotacionesEmpresaContinuo" type="om:tAnotacionesEmpresaContinuo" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Anotaciones de una empresa para el Mercado Continuo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tAnotacionesEmpresa">
+		<xsd:annotation>
+			<xsd:documentation>Describe las anotaciones por empresa para Diario e Intradiario</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdEmpresa" type="om:tIdEmpresa">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de Empresa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SerieTemporal" type="om:tSerieTemporalAnotaciones" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Anotaciones de las unidades de una empresa, por producto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tAnotacionesEmpresaContinuo">
+		<xsd:annotation>
+			<xsd:documentation>Describe las anotaciones por empresa para el Mercado Continuo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdEmpresa" type="om:tIdEmpresa">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de Empresa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SerieTemporal" type="om:tSerieTemporalAnotacionesContinuo" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Anotaciones de las unidades de una empresa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tSerieTemporalAnotaciones">
+		<xsd:annotation>
+			<xsd:documentation>Describe las anotaciones de las unidades de una empresa para DIario e Intradiario</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdSerieTemporal" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de la Serie, único por mensaje (se utilizará un valor secuencial por mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdUnidad" type="om:tUnidad" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Código de unidad ofertante o física. Incluye atributo con Código del Ministerio y Área donde se localiza.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CodProducto" type="om:tCodProducto" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Código de Producto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TipoProducto" type="om:tTipoProducto" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Tipo de Producto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniPrecio" type="om:tUniPrecio" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "EURO/MWh"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "MWh"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniImporte" type="om:tUniMonetaria" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "EURO"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TipoOferta" type="om:tClaseOfertaAnotacion">
+				<xsd:annotation>
+					<xsd:documentation>Tipo de oferta C=Compra V=Venta Z=Instrumental </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TipoUnidadLiq" type="om:tTipoUnidadLiq" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Código numérico de tipo de unidad a efectos de liquidación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Periodo" type="om:tPeriodoAnotaciones" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tSerieTemporalAnotacionesContinuo">
+		<xsd:annotation>
+			<xsd:documentation>Describe las anotaciones de las unidades de una empresa para el Mercado Continuo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdSerieTemporal" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de la Serie, único por mensaje (se utilizará un valor secuencial por mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdUnidad" type="om:tUnidad" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Código de unidad ofertante o física. Incluye atributo con Código del Ministerio y Área donde se localiza.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniPrecio" type="om:tUniPrecio" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "EURO/MWh"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "MWh"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniImporte" type="om:tUniMonetaria" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "EURO"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TipoOferta" type="om:tClaseOfertaAnotacion">
+				<xsd:annotation>
+					<xsd:documentation>Tipo de oferta C=Compra V=Venta Z=Instrumental </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Periodo" type="om:tPeriodoAnotacionesContinuo" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tPeriodoAnotaciones">
+		<xsd:annotation>
+			<xsd:documentation>Incluye todos los valores de horas y anotaciones para la Serie de Diario e Intradiario</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Dia" type="om:tFecha" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha del periodo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Val" type="om:tValAnotacion" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tPeriodoAnotacionesContinuo">
+		<xsd:annotation>
+			<xsd:documentation>Incluye todos los valores de horas y anotaciones para la Serie del Mercado Continuo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Dia" type="om:tFecha" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha del periodo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Val" type="om:tValAnotacionContinuo" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tValAnotacion">
+		<xsd:annotation>
+			<xsd:documentation>Describe un valor individual de anotación para DIario e Intradiario</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Per" type="om:tPeriodo">
+				<xsd:annotation>
+					<xsd:documentation>Secuencial dentro del Intervalo. Indica el periodo horario dentro del día. No se incluiyen para aquellos periodos que no tienen anotaciones.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Magnitud" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Magnitud de Energía</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Precio" type="om:tPrecioNegativo">
+				<xsd:annotation>
+					<xsd:documentation>Precio aplicado a la magnitud</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Importe" type="om:tImporte">
+				<xsd:annotation>
+					<xsd:documentation>Importe aplicado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Segmento" type="om:tSegmento">
+				<xsd:annotation>
+					<xsd:documentation>Código de Segmento del Mercado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Cuenta" type="om:tCuenta">
+				<xsd:annotation>
+					<xsd:documentation>Código de cuenta de compensación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SignoImp" type="om:tSignoImp">
+				<xsd:annotation>
+					<xsd:documentation>Signo del importe</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SignoEne" type="om:tSignoEne">
+				<xsd:annotation>
+					<xsd:documentation>Signo de la energía</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CodMagnitud" type="om:tCodigo">
+				<xsd:annotation>
+					<xsd:documentation>Código que identifica la magnitud</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CodPrecio" type="om:tCodigo">
+				<xsd:annotation>
+					<xsd:documentation>Código que identifica el precio aplicado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CodConcepto" type="om:tCodigo">
+				<xsd:annotation>
+					<xsd:documentation>Código que identifica la anotación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SesionAnotaciones" type="om:tSesionAnotaciones">
+				<xsd:annotation>
+					<xsd:documentation>Número de sesión de intradiario</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tValAnotacionContinuo">
+		<xsd:annotation>
+			<xsd:documentation>Describe un valor individual de anotación para el Mercado Continuo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Per" type="om:tPeriodo">
+				<xsd:annotation>
+					<xsd:documentation>Secuencial dentro del Intervalo. Indica el periodo horario dentro del día. No se incluiyen para aquellos periodos que no tienen anotaciones.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Magnitud" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Magnitud de Energía</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Precio" type="om:tPrecioNegativo">
+				<xsd:annotation>
+					<xsd:documentation>Precio aplicado a la magnitud</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Importe" type="om:tImporte">
+				<xsd:annotation>
+					<xsd:documentation>Importe aplicado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Segmento" type="om:tSegmento">
+				<xsd:annotation>
+					<xsd:documentation>Código de Segmento del Mercado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Cuenta" type="om:tCuenta">
+				<xsd:annotation>
+					<xsd:documentation>Código de cuenta de compensación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SignoImp" type="om:tSignoImp">
+				<xsd:annotation>
+					<xsd:documentation>Signo del importe</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SignoEne" type="om:tSignoEne">
+				<xsd:annotation>
+					<xsd:documentation>Signo de la energía</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CodMagnitud" type="om:tCodigo">
+				<xsd:annotation>
+					<xsd:documentation>Código que identifica la magnitud</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CodPrecio" type="om:tCodigo">
+				<xsd:annotation>
+					<xsd:documentation>Código que identifica el precio aplicado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CodConcepto" type="om:tCodigo">
+				<xsd:annotation>
+					<xsd:documentation>Código que identifica la anotación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="RondaAnotaciones" type="om:tSesionAnotaciones">
+				<xsd:annotation>
+					<xsd:documentation>Número de ronda de Mercado Continuo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Contrato" type="om:tIdNum">
+				<xsd:annotation>
+					<xsd:documentation>Número de contrato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Oferta" type="om:tIdNum">
+				<xsd:annotation>
+					<xsd:documentation>Número de oferta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Transaccion" type="om:tIdNum">
+				<xsd:annotation>
+					<xsd:documentation>Número de transacción</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SignoPrecio" type="om:tSignoPrecio">
+				<xsd:annotation>
+					<xsd:documentation>Signo del precio</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="InstanteCasacion" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora del instante de casación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaIniContrato" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora del inicio del contrato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaFinContrato" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora del fin del contrato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de Programas de operación de diferentes tipos</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

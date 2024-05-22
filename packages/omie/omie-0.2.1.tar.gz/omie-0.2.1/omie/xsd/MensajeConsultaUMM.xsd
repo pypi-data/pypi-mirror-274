@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="mensajeConsultaUMM" type="om:tMensajeConsultaUMM">
+		<xsd:annotation>
+			<xsd:documentation>Consulta de mensajes UMM por MessageId y agente</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeConsultaUMM">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para Consulta de mensajes UMM por MessageId y agente</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="messageId">
+				<xsd:annotation>
+					<xsd:documentation>Identificador del mensaje		
+				</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:minLength value="29"/>
+						<xsd:maxLength value="29"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="cdAgente">
+				<xsd:annotation>
+					<xsd:documentation>Identificador del agente	
+				</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:minLength value="1"/>
+						<xsd:maxLength value="14"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de Consulta de mensajes UMM por MessageId y agente</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

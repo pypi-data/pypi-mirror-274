@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeAnulacionDeclaracionesREFechaMI" type="om:tMensajeAnulacionDeclaracionesREFechaMI">
+		<xsd:annotation>
+			<xsd:documentation>Anulación de Declaraciones de Régimen Especial al Mercado Intradiario para una Fecha</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ParametrosAnulacion">
+		<xsd:annotation>
+			<xsd:documentation>Describe los parámetros de anulación de Declaraciones de Régimen Especial</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdAnulacion" type="om:tId">
+					<xsd:annotation>
+						<xsd:documentation>Identificativo de la anulación dentro del fichero, definido por quien envía el fichero (único por mensaje).</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdUnidad" type="om:tUnidad">
+					<xsd:annotation>
+						<xsd:documentation>Código de unidad de Régimen especial</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Validez">
+					<xsd:annotation>
+						<xsd:documentation>Validez</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="TipoMercado" type="om:tMercado">
+								<xsd:annotation>
+									<xsd:documentation>MI: Mercado Intradiario</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="Sesion">
+								<xsd:annotation>
+									<xsd:documentation>Sesión</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="fecha" type="xsd:date" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Fecha de sesión</xsd:documentation>
+										</xsd:annotation>
+									</xsd:attribute>
+									<xsd:attribute name="num" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Número de sesión
+</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:nonNegativeInteger">
+												<xsd:maxInclusive value="25"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tMensajeAnulacionDeclaracionesREFechaMI">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para Anulación de Declaraciones de Régimen Especial al Mercado Intradiario para una Fecha</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía la solicitud de Anulación.  </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:ParametrosAnulacion" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de anulación de Declaraciones de Régimen Especial al Mercado Intradiario para una Fecha</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

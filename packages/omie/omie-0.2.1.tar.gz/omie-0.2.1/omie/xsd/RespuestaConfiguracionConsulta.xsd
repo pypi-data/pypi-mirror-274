@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Carles Menendez (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="RespuestaConfiguracionConsultaResponse">
+		<xsd:sequence>
+			<xsd:element name="RespuestaConfiguracionConsulta" type="om:tRespuestaConfiguracionConsulta"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="RespuestaConfiguracionConsulta" type="om:tRespuestaConfiguracionConsulta">
+		<xsd:annotation>
+			<xsd:documentation>Respuesta a la configuración de una consulta</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Cabecera">
+		<xsd:annotation>
+			<xsd:documentation>Datos de cabecera de la consulta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CodConsulta" type="om:tCodConsulta">
+					<xsd:annotation>
+						<xsd:documentation>Código de Consulta</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Titulo">
+					<xsd:annotation>
+						<xsd:documentation>Título de Consulta</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor
+</xsd:documentation>
+							</xsd:annotation>
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="255"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="TipoConsulta" type="om:tTipoConsulta">
+					<xsd:annotation>
+						<xsd:documentation>Tipo de Consulta</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Seccion">
+					<xsd:annotation>
+						<xsd:documentation>Sección o Apartado al que pertenece la consulta</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" type="xsd:string" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor</xsd:documentation>
+							</xsd:annotation>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Parametros">
+		<xsd:annotation>
+			<xsd:documentation>Parámetros de llamada a la consulta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+				<xsd:choice>
+					<xsd:element name="Txt">
+						<xsd:annotation>
+							<xsd:documentation>Parámetro de tipo texto</xsd:documentation>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:sequence minOccurs="0">
+								<xsd:element name="Seleccion">
+									<xsd:annotation>
+										<xsd:documentation>Posibles valores de selección</xsd:documentation>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:sequence maxOccurs="unbounded">
+											<xsd:element name="Valor">
+												<xsd:annotation>
+													<xsd:documentation>Valor de selección, incluyendo código y descripción (opcional)</xsd:documentation>
+												</xsd:annotation>
+												<xsd:complexType>
+													<xsd:attribute name="cod" type="xsd:string" use="required">
+														<xsd:annotation>
+															<xsd:documentation>Código
+</xsd:documentation>
+														</xsd:annotation>
+													</xsd:attribute>
+													<xsd:attribute name="desc" type="xsd:string" use="optional">
+														<xsd:annotation>
+															<xsd:documentation>Descripción</xsd:documentation>
+														</xsd:annotation>
+													</xsd:attribute>
+												</xsd:complexType>
+											</xsd:element>
+										</xsd:sequence>
+									</xsd:complexType>
+								</xsd:element>
+							</xsd:sequence>
+							<xsd:attribute name="n" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Nombre</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="desc" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Descripción</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="90"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="long" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Longitud</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:nonNegativeInteger">
+										<xsd:maxInclusive value="999"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="comodin" type="om:tAtrSiNo" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Comodín</xsd:documentation>
+								</xsd:annotation>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Num">
+						<xsd:annotation>
+							<xsd:documentation>Parámetro de tipo numérico</xsd:documentation>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:attribute name="n" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Nombre</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="desc" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Descripción</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="90"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="long" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Longitud</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:nonNegativeInteger">
+										<xsd:maxInclusive value="999"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Fec">
+						<xsd:annotation>
+							<xsd:documentation>Parámetro de tipo fecha</xsd:documentation>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:attribute name="n" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Nombre
+</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="desc" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Descripción</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="90"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Ses">
+						<xsd:annotation>
+							<xsd:documentation>Parámetro de tipo sesión de intradiario</xsd:documentation>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:attribute name="n" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Nombre
+</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="desc" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Descripción</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="90"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Columnas">
+		<xsd:annotation>
+			<xsd:documentation>Columnas resultado de la consulta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+				<xsd:choice>
+					<xsd:element name="Txt">
+						<xsd:annotation>
+							<xsd:documentation>Columna de tipo texto</xsd:documentation>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:attribute name="n" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Nombre</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="desc" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Descripción</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="90"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="agregado" type="om:tAtrSiNo" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Agregado</xsd:documentation>
+								</xsd:annotation>
+							</xsd:attribute>
+							<xsd:attribute name="long" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Longitud</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:nonNegativeInteger">
+										<xsd:maxInclusive value="999"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Num">
+						<xsd:annotation>
+							<xsd:documentation>Columna de tipo numérico</xsd:documentation>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:attribute name="n" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Nombre</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="desc" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Descripción</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="90"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="agregado" type="om:tAtrSiNo" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Agregado</xsd:documentation>
+								</xsd:annotation>
+							</xsd:attribute>
+							<xsd:attribute name="long" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Longitud</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:nonNegativeInteger">
+										<xsd:maxInclusive value="999"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Fec">
+						<xsd:annotation>
+							<xsd:documentation>Columna de tipo fecha</xsd:documentation>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:attribute name="n" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Nombre</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="desc" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Descripción</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="90"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="agregado" type="om:tAtrSiNo" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Agregado</xsd:documentation>
+								</xsd:annotation>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Feh">
+						<xsd:annotation>
+							<xsd:documentation>Columna de tipo Fecha / Hora</xsd:documentation>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:attribute name="n" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Nombre</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="desc" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Descripción</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="90"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="agregado" type="om:tAtrSiNo" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Agregado</xsd:documentation>
+								</xsd:annotation>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Hor">
+						<xsd:annotation>
+							<xsd:documentation>Columna de tipo hora</xsd:documentation>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:attribute name="n" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Nombre</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="50"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="desc" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Descripcion</xsd:documentation>
+								</xsd:annotation>
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:maxLength value="90"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:attribute>
+							<xsd:attribute name="agregado" type="om:tAtrSiNo" use="optional">
+								<xsd:annotation>
+									<xsd:documentation>Agregado</xsd:documentation>
+								</xsd:annotation>
+							</xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tRespuestaConfiguracionConsulta">
+		<xsd:annotation>
+			<xsd:documentation>Tipo básico para respuesta a la configuración de una consulta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="om:Cabecera"/>
+			<xsd:element ref="om:Parametros"/>
+			<xsd:element ref="om:Columnas"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de respuesta a la configuración de una consulta</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

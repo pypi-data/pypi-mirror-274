@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.2">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="RespuestaEjecucionConsultaAnexoResponse">
+		<xsd:sequence>
+			<xsd:element name="RespuestaEjecucionConsultaAnexo" type="om:tRespuestaEjecucionConsultaAnexo"/>
+		</xsd:sequence>
+	</xsd:complexType>	
+	<xsd:element name="RespuestaEjecucionConsultaAnexo" type="om:tRespuestaEjecucionConsultaAnexo">
+		<xsd:annotation>
+			<xsd:documentation>Respuesta a la ejecución de una consulta encolumnada</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tRespuestaEjecucionConsultaAnexo">
+		<xsd:annotation>
+			<xsd:documentation>Tipo básico para respuesta a la ejecución de una consulta encolumnada</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="CodConsulta" type="om:tCodConsulta">
+				<xsd:annotation>
+					<xsd:documentation>Código de Consulta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Parametros">
+				<xsd:annotation>
+					<xsd:documentation>Parámetros de llamada a la consulta</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+						<xsd:choice>
+							<xsd:element name="Txt">
+								<xsd:annotation>
+									<xsd:documentation>Parámetro de tipo texto</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="n" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Nombre</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="50"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+									<xsd:attribute name="v" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Valor</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string"/>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Num">
+								<xsd:annotation>
+									<xsd:documentation>Parámetro de tipo númerico</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="n" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Nombre</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="50"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+									<xsd:attribute name="v" type="xsd:decimal" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Valor</xsd:documentation>
+										</xsd:annotation>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Fec">
+								<xsd:annotation>
+									<xsd:documentation>Parámetro de tipo fecha</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="n" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Nombre</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="50"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+									<xsd:attribute name="v" type="xsd:date" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Valor</xsd:documentation>
+										</xsd:annotation>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Ses">
+								<xsd:annotation>
+									<xsd:documentation>Parámetro de tipo Sesión de Intradiario</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="n" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Nombre</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="50"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+									<xsd:attribute name="v" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Valor</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:nonNegativeInteger">
+												<xsd:minInclusive value="1"/>
+												<xsd:maxInclusive value="25"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:choice>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="AtributosFicheroAnexo" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Nombre">
+							<xsd:annotation>
+								<xsd:documentation>Nombre del fichero</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:string" use="required">
+									<xsd:annotation>
+										<xsd:documentation>Valor</xsd:documentation>
+									</xsd:annotation>
+								</xsd:attribute>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="Tamano">
+							<xsd:annotation>
+								<xsd:documentation>Tamaño del fichero, indicando unidades en Bytes</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:nonNegativeInteger" use="required">
+									<xsd:annotation>
+										<xsd:documentation>Valor</xsd:documentation>
+									</xsd:annotation>
+								</xsd:attribute>
+								<xsd:attribute name="unidad" use="optional">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:NMTOKEN">
+											<xsd:enumeration value="Bytes"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:attribute>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="Fecha" type="om:tFecha">
+							<xsd:annotation>
+								<xsd:documentation>Fecha del fichero</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Respuesta" type="om:tRespuesta" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Código y texto de respuesta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de respuesta a la ejecución de una consulta encolumnada</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

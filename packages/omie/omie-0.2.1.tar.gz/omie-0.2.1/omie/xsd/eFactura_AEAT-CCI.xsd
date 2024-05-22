@@ -1,0 +1,1802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.asociacioncci.es/AEAT/2005/v1.2/eFactura_AEAT-CCI" targetNamespace="http://www.asociacioncci.es/AEAT/2005/v1.2/eFactura_AEAT-CCI" version="1.2">
+	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
+	<xs:element name="eFactura_AEAT-CCI">
+		<xs:annotation>
+			<xs:documentation>Elemento ORIGEN de Fichero de Facturas CCI</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Cabecera" type="CabeceraType">
+					<xs:annotation>
+						<xs:documentation>Cabecera del fichero xmlI</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Sujetos" type="SujetosType">
+					<xs:annotation>
+						<xs:documentation>Datos del emisor y receptor de la factura</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Facturas" type="FacturasType">
+					<xs:annotation>
+						<xs:documentation>Conjunto de facturas que contiene el fichero</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Extensiones" type="ExtensionesType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Podrán incorporarse nuevas definiciones estructuradas cuando sean de interés conjunto para emisores y receptores, y no estén ya definidas en el esquema de la factura.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="ds:Signature" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Conjunto de datos asociados a la factura que garantizarán la autoría y la integridad del mensaje. Se define como opcional para facilitar la verificación y el tránsito del fichero. No obstante, debe cumplimentarse este bloque de firma electrónica para que se considere una factura electrónica válida legalmente frente a terceros. </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<!--Raíz -->
+	</xs:element>
+	<!--XMLCCI -->
+	<xs:complexType name="CabeceraType">
+		<xs:sequence>
+			<xs:element name="VersionCodificacion" type="VersionCodificacionType" default="1.2">
+				<xs:annotation>
+					<xs:documentation>Código que indica versión utilizada. Existirá compatibilidad de versiones</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Modalidad" type="ModalidadType">
+				<xs:annotation>
+					<xs:documentation>Individual o Lote. Si es "individual" (I) los importes de los campos del grupo 1.5 coincidirán con sus correspondientes campos del grupo 3.1.5 y el campo 1.5.2 tendrá siempre el valor "1". Si es "lote" (L), el valor del campo 1.5.2 será siempre > "1".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TipoEmisorFactura" type="TipoEmisorFacturaType">
+				<xs:annotation>
+					<xs:documentation>Actor que firma la factura. Si toma el valor "TE" el grupo 1.4. será obligatorio de cumplimentar en todos sus apartados.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Tercero" type="TerceroType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>La factura puede ser generada y firmada por un Tercero</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Lote" type="LoteType"/>
+			<xs:element name="DatosCesionFactoring" type="DatosCesionFactoringType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Cabecera -->
+	<xs:complexType name="TerceroType">
+		<xs:sequence>
+			<xs:element name="IdentificacionFiscal" type="IdentificacionFiscalType"/>
+			<xs:choice>
+				<xs:element name="PersonaJuridica" type="PersonaJuridicaType"/>
+				<xs:element name="PersonaFisica" type="PersonaFisicaType"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LoteType">
+		<xs:sequence>
+			<xs:element name="IdentificadorLote" type="TextoMax70Type">
+				<xs:annotation>
+					<xs:documentation>Identificador del lote.Concatenación del nº de documento del emisor con el número de la primera factura y el número de serie caso de existir.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NumeroTotalFacturas" type="xs:long">
+				<xs:annotation>
+					<xs:documentation>Refleja, cuando es lote, el número de facturas del mismo.Siempre será valor "1" cuando el campo 1.2 (Modalidad) tenga el valor "I".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalFacturas" type="ImporteType">
+				<xs:annotation>
+					<xs:documentation>Suma de los importes 3.1.5.9 del Fichero.Este importe lo es a efectos de total de factura y fiscales, sin tener en cuenta subvenciones, anticipos y/o retenciones que pudieran haberse practicado.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalAPagar" type="ImporteType">
+				<xs:annotation>
+					<xs:documentation>Suma de los importes 3.1.5.13 del Fichero, con dos decimales.Es el importe que efectivamente se adeuda, una vez descontadoslos anticipos y sin tener en cuenta las retenciones.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalAEjecutar" type="ImporteType">
+				<xs:annotation>
+					<xs:documentation>Sumatorio de las diferencias de los importes (3.1.5.13 y 3.1.5.14.3) del fichero = Sumatorio de los Importes 3.1.5.15, con dos decimales. Es el importe que se adeuda minorado en un posible importe retenido en garantía de cumplimientos contractuales.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MonedaFacturacion" type="MonedaType">
+				<xs:annotation>
+					<xs:documentation>Código ISO/ALFA de la moneda en la que se emite la factura. Si difiere de la moneda EURO o del campo 3.1.2.5 será obligatorio indicar el contravalor y el tipo/fecha de cambio para los campos de base imponible y cuota, retenida como repercutida, así como en los totales 1.5.3, 1.5.4, y 1.5.5 ISO 4217. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DatosCesionFactoringType">
+		<xs:sequence>
+			<xs:element name="Cesionario" type="CesionarioType"/>
+			<xs:element name="DatosPago" type="DatosPagoType"/>
+			<xs:element name="ClausulasCesionFactoring" type="TextoMax2500Type">
+				<xs:annotation>
+					<xs:documentation>Texto de la cláusula</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CesionarioType">
+		<xs:sequence>
+			<xs:element name="IdentificacionFiscal" type="IdentificacionFiscalType"/>
+			<xs:choice>
+				<xs:element name="PersonaJuridica" type="PersonaJuridicaType"/>
+				<xs:element name="PersonaFisica" type="PersonaFisicaType"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Cabecera - DatosCesionFactoring -->
+	<xs:complexType name="DatosPagoType">
+		<xs:sequence>
+			<xs:element name="FechaPagoCesion" type="xs:date"/>
+			<xs:element name="FormaPagoCesion" type="TextoMax15Type">
+				<xs:annotation>
+					<xs:documentation>Definición de la forma en la que se hará efectivo el pago</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IBANCesionario" type="TextoLong34Type">
+				<xs:annotation>
+					<xs:documentation>Único formato admitido</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ReferenciaPago" type="TextoMax60Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--Sujetos -->
+	<xs:complexType name="SujetosType">
+		<xs:sequence>
+			<xs:element name="Emisor" type="EmpresaType">
+				<xs:annotation>
+					<xs:documentation>Datos básicos del fichero. Son comunes a la factura o facturas que se incluyen</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Receptor" type="EmpresaType">
+				<xs:annotation>
+					<xs:documentation>Datos básicos del fichero. Son comunes a la factura o facturas que se incluyen</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--Sujetos - Emisor y Receptor -->
+	<xs:complexType name="EmpresaType">
+		<xs:sequence>
+			<xs:element name="IdentificacionFiscal" type="IdentificacionFiscalType"/>
+			<xs:element name="Centros" type="CentrosType" minOccurs="0"/>
+			<xs:choice>
+				<xs:element name="PersonaJuridica" type="PersonaJuridicaType"/>
+				<xs:element name="PersonaFisica" type="PersonaFisicaType"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!--Facturas -->
+	<xs:complexType name="FacturasType">
+		<xs:sequence>
+			<xs:element name="Factura" type="FacturaType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FacturaType">
+		<xs:sequence>
+			<xs:element name="CabeceraFactura" type="CabeceraFacturaType">
+				<xs:annotation>
+					<xs:documentation>Para cada una de las facturas que pueden componer un Lote, recoge datos que determinan inequívocamente cada factura</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EmisionFactura" type="EmisionFacturaType"/>
+			<xs:element name="ImpuestosRepercutidos" type="ImpuestosType"/>
+			<xs:element name="ImpuestosRetenidos" type="ImpuestosType" minOccurs="0"/>
+			<xs:element name="TotalesFactura" type="TotalesFacturaType"/>
+			<xs:element name="Detalles" type="DetallesType"/>
+			<xs:element name="DatosCobro" type="VencimientosType" minOccurs="0"/>
+			<xs:element name="LiteralesLegales" type="LiteralesLegalesType" minOccurs="0"/>
+			<xs:element name="DatosAdicionales" type="DatosAdicionalesType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura -->
+	<xs:complexType name="CabeceraFacturaType">
+		<xs:sequence>
+			<xs:element name="NumeroFactura" type="TextoMax20Type">
+				<xs:annotation>
+					<xs:documentation>Número asignado por el Emisor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SerieFactura" type="TextoMax20Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Serie asignada por el Emisor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TipoDocumentoFactura" type="TipoDocumentoFacturaType">
+				<xs:annotation>
+					<xs:documentation>Puede ser una factura completa, abreviada, autofactura, anticipo, tique,…En este estándar no se va a contemplar el anticipo y el tique.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Clase" type="ClaseType">
+				<xs:annotation>
+					<xs:documentation>Este dato refleja si se trata de Original, copia, duplicado, rectificativa, etc. Una factura rectificativa sólo puede rectificar a una factura original.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Rectificativa" type="RectificativaType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EmisionFacturaType">
+		<xs:sequence>
+			<xs:element name="FechaExpedicion" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Fecha en la que se genera la factura con efectos fiscales. ISO 8601. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LugarExpedicion" type="LugarExpedicionType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Plaza en la que se expide el documento</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PeriodoFacturacion" type="PeriodoFechas" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Sólo cuando se requiera: Servicio prestado temporalmente o Factura Recapitulativa. Esta información será obligatoria cuando el dato 3.1.1.4 (Clase) contenga alguno de los valores: "OC" ó "CC". ISO 8601. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MonedaOperacion" type="MonedaType">
+				<xs:annotation>
+					<xs:documentation>Código ISO/ALFA de la moneda en la que se emite la factura. Si la moneda de la operación difiere de la moneda del impuesto (EURO), los campos del contravalor son obligatorios. ISO 4217.   </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MonedaImpuesto" type="MonedaType">
+				<xs:annotation>
+					<xs:documentation>Código ISO/ALFA de la moneda en la que se liquida el impuesto. Siempre EURO. ISO 4217. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Lengua" type="TextoMax10Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Denominación de la lengua en la que se emite el documento</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DetallesType">
+		<xs:sequence>
+			<xs:element name="Detalle" type="DetalleType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - CabeceraFactura -->
+	<xs:complexType name="RectificativaType">
+		<xs:sequence>
+			<xs:element name="NumeroFactura" type="TextoMax20Type">
+				<xs:annotation>
+					<xs:documentation>Núm. factura que se rectifica</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SerieFactura" type="TextoMax20Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Serie factura que se rectifica</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoMotivo" type="CodigoMotivoType">
+				<xs:annotation>
+					<xs:documentation>Código numérico del motivo de rectificación. "01" a "16" errores según reglamento RD 1496/2003; "80" a "85" errores según Artº 80 Ley 37/92 el IVA. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DescripcionMotivo" type="DescripcionMotivoType">
+				<xs:annotation>
+					<xs:documentation>Descripción del motivo de rectificación y que se corresponde con cada código. Ver tabla de códigos y descripciones. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PeriodoImpositivo" type="PeriodoFechas">
+				<xs:annotation>
+					<xs:documentation>Período natural en el que se produjeron los efectos fiscales de la factura a rectificar; y, por lo tanto, se tributó, y que ahora, es objeto de rectificación. ISO 8601. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CriterioRectificacion" type="CriterioRectificacionType">
+				<xs:annotation>
+					<xs:documentation>Código numérico que identifica el criterio empleado en cada caso para una rectificación. "01" - se reflejan todos los detalles a rectificar de la factura original. "02" - sólo se anotan los detalles ya rectificados. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DescripcionCriterioRectificacion" type="DescripcionCriterioRectificacionType">
+				<xs:annotation>
+					<xs:documentation>Descripción del criterio asociada al código indicado en el campo anterior. "01" - Rectificación modelo íntegro. "02" - Rectificación modelo por diferencias. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - EmisionFactura -->
+	<xs:complexType name="LugarExpedicionType">
+		<xs:sequence>
+			<xs:element name="CodigoPostal" type="CodigoPostalType">
+				<xs:annotation>
+					<xs:documentation>Asignado por Correos</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DescripcionLugarExpedicion" type="TextoMax20Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Texto</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - Detalles -->
+	<xs:complexType name="DetalleType">
+		<xs:sequence>
+			<xs:element name="ExpedienteContratacionEmisor" type="TextoMax20Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Contrato</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ReferenciaOperacionEmisor" type="TextoMax20Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Referencia Operación, Número de Pedido, Contrato, etc. Emisor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ExpedienteContratacionReceptor" type="TextoMax20Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Contrato</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ReferenciaOperacionReceptor" type="TextoMax20Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Referencia Operación, Número de Pedido, Contrato, etc. Receptor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OrdenPedido" type="xs:double" minOccurs="0"/>
+			<xs:element name="Albaranes" type="AlbaranesType" minOccurs="0"/>
+			<xs:element name="DescripcionDetalle" type="TextoMax60Type">
+				<xs:annotation>
+					<xs:documentation>Descripción del bien o servicio</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Cantidad" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Número de Unidades servidas/prestadas</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="UnidadMedida" type="UnidadesMedidaType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Unidad a que está referida la Cantidad. Recomendación 20 ONU. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PrecioUnitarioSinImpuestos" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Precio de la unidad de bien o servicio servido/prestado, en la moneda indicada en la Cabecera de la Factura. Siempre sin Impuestos. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CosteTotal" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Resultado: 3.1.6.1.8 x 3.1.6.1.10. Siempre con dos decimales </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Descuentos" type="DescuentosType" minOccurs="0"/>
+			<xs:element name="Cargos" type="CargosType" minOccurs="0"/>
+			<xs:element name="ImporteBruto" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Resultado: 3.1.6.1.11 - 3.1.6.1.12.1.3 + 3.1.6.1.13.1.3. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImpuestosRetenidos" type="ImpuestosType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Informativo</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImpuestosRepercutidos" type="ImpuestosType">
+				<xs:annotation>
+					<xs:documentation>Informativo</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PeriodoDetalle" type="PeriodoFechas" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Información sobre el periodo de prestación de un servicio. ISO 8601. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaOperacion" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Fecha concreta de prestación o entrega del bien o servicio. ISO 8601. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Observaciones" type="ObservacionesType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Libre para el emisor por cada detalle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Extensiones" type="ExtensionesType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Podrán incorporarse nuevas definiciones estructuradas cuando sean de interés conjunto para emisores y receptores, y no estén ya definidas en el esquema de la factura.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - Detalles - Albaranes -->
+	<xs:complexType name="AlbaranesType">
+		<xs:sequence>
+			<xs:element name="Albaran" type="AlbaranType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AlbaranType">
+		<xs:sequence>
+			<xs:element name="NumeroAlbaran" type="TextoMax30Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - Detalles - TotalesFactura -  -->
+	<xs:complexType name="TotalesFacturaType">
+		<xs:sequence>
+			<xs:element name="TotalImporteBruto" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Suma total de importes brutos de los detalles de la factura. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DescuentosGenerales" type="DescuentosType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Descuentos sobre el Total Impte.Bruto. Habrá tantos bloques de campos 3.1.5.2 como clases de descuentos diferentes se apliquen, a nivel de factura. Cuando existan diversas bases imponibles, se aplicarán proporcionalmente, efectúandose el redondeo final al céntimo sobre el tipo impositivo de mayor valor. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RecargosGenerales" type="CargosType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Cargos sobre el Total Importe Bruto, Habrá tantos bloques de campos 3.1.5.3 como clases de cargos/recargos se apliquen, a nivel de factura. Cuando existan diversas bases imponibles, se aplicarán proporcionalmente, efectuándose el redondeo final al céntimo sobre el tipo impositivo de mayor valor. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalDescuentosGenerales" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Sumatorio diferentes campos 3.1.5.2. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalCargosGenerales" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Sumatorio diferentes campos 3.1.5.3. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalImporteBrutoAntesImpuestos" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Resultado: 3.1.5.1 - 3.1.5.4 + 3.1.5.5. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalImpuestosRepercutidos" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Sumatorio diferentes 3.1.3.1.4. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalImpuestosRetenidos" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Sumatorio diferentes 3.1.4.1.4. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalFactura" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Resultado: 3.1.5.6 + 3.1.5.7 - 3.1.5.8. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Subvenciones" type="SubvencionesType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Por adquisición de determinados bienes. Administraciones Públicas. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Anticipos" type="AnticiposType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Pagos anticipados sobre el Total Facturas. Habrá tantos bloques 3.1.5.11 como clases de anticipos se apliquen a nivel factura.  </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalAnticipos" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Sumatorio de los campos 3.1.5.11.1.2. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalAPagar" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Resultado: 3.1.5.9 - (3.1.5.10.1.3 + 3.1.5.12). Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RetencionGarantia" type="RetencionGarantiaType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Cantidades que retiene el pagador hasta el buen fin de la operación</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TotalAEjecutar" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Resultado: 3.1.5.13 - 3.1.5.14.3. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - Detalles - TotalesFactura - Subvenciones -->
+	<xs:complexType name="SubvencionesType">
+		<xs:sequence>
+			<xs:element name="Subvencion" type="SubvencionType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SubvencionType">
+		<xs:sequence>
+			<xs:element name="DescripcionSubvencion" type="TextoMax250Type">
+				<xs:annotation>
+					<xs:documentation>Detalle de la Subvención aplicada</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PorcentajeSubvencion" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Porcentaje a aplicar al Total Factura. Los porcentajes se reflejan con 4 decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImporteSubvencion" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Importe a aplicar al Total Factura. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - Detalles - TotalesFactura - Anticipos -->
+	<xs:complexType name="AnticiposType">
+		<xs:sequence>
+			<xs:element name="Anticipo" type="AnticipoType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AnticipoType">
+		<xs:sequence>
+			<xs:element name="FechaAnticipo" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Fecha/s del/os anticipo/s. ISO 8601. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImporteAnticipo" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Importe de cada anticipo. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - Detalles - TotalesFactura - RetencionGarantia -->
+	<xs:complexType name="RetencionGarantiaType">
+		<xs:sequence>
+			<xs:element name="DescripcionRetencion" type="TextoMax30Type">
+				<xs:annotation>
+					<xs:documentation>Descripción finalidad de la Retención</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PorcentajeRetencion" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Porcentaje retención Total a Pagar. Los porcentajes se reflejan con 4 decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImporteRetencion" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Importe a retener sobre el Total a Pagar. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - DatosCobro -->
+	<xs:complexType name="VencimientosType">
+		<xs:sequence>
+			<xs:element name="Vencimiento" type="VencimientoType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="VencimientoType">
+		<xs:sequence>
+			<xs:element name="FechaVencimiento" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Fechas en las que se deben atender los pagos. ISO 8601 </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImporteVencimiento" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Importe a satisfacer en cada plazo. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FormaPago" type="FormaPagoType">
+				<xs:annotation>
+					<xs:documentation>Cada vencimiento/importe podrá tener un medio de pago concreto</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CuentaAbono" type="CuentaType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Único formato admitido. Cuando la forma de pago (3.1.7.1.3) sea "transferencia" este dato será obligatorio. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ReferenciaExpresaPago" type="TextoMax60Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Dato que precisa el Emisor para casar los pagos con cada factura</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CuentaCargo" type="CuentaType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Único formato admitido. Cuando la forma de pago (3.1.7.1.3) sea "recibo" este dato será obligatorio. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Observaciones" type="TextoMax60Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Libre para uso del Emisor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - LiteralesLegales -->
+	<xs:complexType name="LiteralesLegalesType">
+		<xs:sequence>
+			<xs:element name="Mencion" type="TextoMax250Type" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Literales legales establecidos: Donaciones, Subvenciones, Carácter irreversible subvenciones, Atención pago moneda prevista, Proveedores residentes, directiva 77/388/CEE de 17 de Mayo, Sexta Directiva del Consejo en materia de IVA, Operación Triangular, Operación en Cadena, Régimen Especial...., Artº 26 de la Directiva 77/388/CEE, Agencias de Viajes, etc. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - DatosAdicionales -->
+	<xs:complexType name="DatosAdicionalesType">
+		<xs:sequence>
+			<xs:element name="FacturaAsociada" type="TextoMax40Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Número y Serie de acuerdo Emisor/Receptor.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DocumentosRelacionados" type="DocumentosAdjuntosType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identificación de documentos Emisor/Receptor.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ObservacionesFactura" type="ObservacionesType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lo que considere oportuno el Emisor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Extensiones" type="ExtensionesType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Podrán incorporarse nuevas definiciones estructuradas cuando sean de interés conjunto para emisores y receptores, y no estén ya definidas en el esquema de la factura. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Facturas - Factura - DatosAdicionales - DocumentosRelacionados -->
+	<xs:complexType name="DocumentosAdjuntosType">
+		<xs:sequence>
+			<xs:element name="DocumentoAdjunto" type="DocumentoAdjuntoType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>[BASE-64] Contiene los documentos relacionados con la factura en el formato deseado (imagen, PDF, XML, etc.)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--<xs:complexType name="DocumentoAdjunto"/>-->
+	<xs:complexType name="DocumentoAdjuntoType">
+		<xs:sequence>
+			<xs:element name="CompresionDocAdjunto" type="CompresionDocumentoAdjuntoType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Algoritmo usado para comprimir el documento adjunto.Ampliar restricciones según convenga </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FormatoDocAdjunto" type="FormatoDocumentoAdjuntoType">
+				<xs:annotation>
+					<xs:documentation>Formato del documento adjunto. Ampliar restricciones según convenga</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EncodingDocAdjunto" type="EncodingDocumentoAdjuntoType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Algoritmo usado para codificar el documento adjunto</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DescripcionDocAdjunto" type="TextoMax250Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Descripción del documento</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DatosDocAdjunto" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Stream de datos del documento adjunto</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="CompresionDocumentoAdjuntoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ZIP"/>
+			<xs:enumeration value="GZIP"/>
+			<xs:enumeration value="NONE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EncodingDocumentoAdjuntoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BASE64"/>
+			<xs:enumeration value="BER"/>
+			<xs:enumeration value="DER"/>
+			<xs:enumeration value="NONE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FormatoDocumentoAdjuntoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="xml"/>
+			<xs:enumeration value="doc"/>
+			<xs:enumeration value="gif"/>
+			<xs:enumeration value="rtf"/>
+			<xs:enumeration value="pdf"/>
+			<xs:enumeration value="xls"/>
+			<xs:enumeration value="jpg"/>
+			<xs:enumeration value="bmp"/>
+			<xs:enumeration value="tiff"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////// -->
+	<!--Tipos complejos reusados /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<xs:complexType name="IdentificacionFiscalType">
+		<xs:sequence>
+			<xs:element name="TipoPersona" type="TipoPersonaType">
+				<xs:annotation>
+					<xs:documentation>Física o Jurídica. "F" - Física; "J" - Jurídica.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TipoResidencia" type="TipoResidenciaType">
+				<xs:annotation>
+					<xs:documentation>Identificación del tipo de residencia y/o extranjería. "E" - Extranjero; "R" - Residente; "U" - Residente en la Unión Europea.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NumeroDocumento" type="TextoMin3Max30Type">
+				<xs:annotation>
+					<xs:documentation>Código de Identificación Fiscal del sujeto en cuestión. Se trata de las composiciones de NIF / CIF que marca la Administración correspondiente, precedidas de las dos letras del país.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PersonaJuridicaType">
+		<xs:sequence>
+			<xs:element name="RazonSocial" type="TextoMax80Type"/>
+			<xs:element name="NombreComercial" type="TextoMax40Type" minOccurs="0"/>
+			<xs:element name="DatosRegistrales" type="DatosRegistralesType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Inscripción Registro, Tomo, Folio,…</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="DireccionNacional" type="DireccionType"/>
+				<xs:element name="DireccionExtranjero" type="DireccionExtranjeroType"/>
+			</xs:choice>
+			<xs:element name="DatosContacto" type="DatosContactoType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PersonaFisicaType">
+		<xs:sequence>
+			<xs:element name="Nombre" type="TextoMax40Type">
+				<xs:annotation>
+					<xs:documentation>Nombre de la persona física</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PrimerApellido" type="TextoMax40Type">
+				<xs:annotation>
+					<xs:documentation>Primer apellido de la persona física</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SegundoApellido" type="TextoMax40Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Segundo apellido de la persona física</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="DireccionNacional" type="DireccionType"/>
+				<xs:element name="DireccionExtranjero" type="DireccionExtranjeroType"/>
+			</xs:choice>
+			<xs:element name="DatosContacto" type="DatosContactoType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DatosRegistralesType">
+		<xs:sequence>
+			<xs:element name="Libro" type="TextoMax20Type" minOccurs="0"/>
+			<xs:element name="RMercantil" type="TextoMax20Type" minOccurs="0"/>
+			<xs:element name="Hoja" type="TextoMax20Type" minOccurs="0"/>
+			<xs:element name="Folio" type="TextoMax20Type" minOccurs="0"/>
+			<xs:element name="Seccion" type="TextoMax20Type" minOccurs="0"/>
+			<xs:element name="Tomo" type="TextoMax20Type" minOccurs="0"/>
+			<xs:element name="OtrosDatosRegistrales" type="TextoMax20Type" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DireccionType">
+		<xs:sequence>
+			<xs:element name="Direccion" type="TextoMax80Type">
+				<xs:annotation>
+					<xs:documentation>Calle, denominación, número, piso,…</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CP" type="CodigoPostalType">
+				<xs:annotation>
+					<xs:documentation>Código Postal asignado por Correos</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Poblacion" type="TextoMax50Type">
+				<xs:annotation>
+					<xs:documentation>Población correspondiente al C.P.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Provincia" type="TextoMax20Type">
+				<xs:annotation>
+					<xs:documentation>A la que corresponde la Población</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoPais" type="PaisType">
+				<xs:annotation>
+					<xs:documentation>ISO 3166 ALPHA-3. Al ser un domicilio ubicado en España siempre será "ESP".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DireccionExtranjeroType">
+		<xs:sequence>
+			<xs:element name="Direccion" type="TextoMax80Type">
+				<xs:annotation>
+					<xs:documentation>Tipo dirección, denominación, número,</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PoblacionCP" type="TextoMax50Type">
+				<xs:annotation>
+					<xs:documentation>Población y Cód. Postal en Extranjero</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Provincia" type="TextoMax20Type">
+				<xs:annotation>
+					<xs:documentation>Provincia, Estado, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoPais" type="PaisType">
+				<xs:annotation>
+					<xs:documentation>ISO 3166 ALPHA-3</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DatosContactoType">
+		<xs:sequence>
+			<xs:element name="Telefono" type="TextoMax15Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Número completo con prefijos del país</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Fax" type="TextoMax15Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Número completo con prefijos del país</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Web" type="TextoMax60Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Dirección de Internet</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Email" type="TextoMax60Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Dirección de Correo-e</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PersonasContacto" type="TextoMax40Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Apellidos y Nombre/Razón Social</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CnoCnae" type="CnoCnaeType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Código Asignado por el INE</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoPoblacionINE" type="TextoMax9Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Código INE</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OtrosDatosContacto" type="TextoMax60Type" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CentrosType">
+		<xs:sequence>
+			<xs:element name="Centro" type="CentroType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CentroType">
+		<xs:sequence>
+			<xs:element name="Numero" type="TextoMax10Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Número del Departamento Emisor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TipoRol" type="TipoRolType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indica la función del Centro/Dpto.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Nombre" type="TextoMax40Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De la persona responsable o de relación del centro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PrimerApellido" type="TextoMax40Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De la persona responsable o de relación del centro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SegundoApellido" type="TextoMax40Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>De la persona responsable o de relación del centro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="DireccionNacional" type="DireccionType"/>
+				<xs:element name="DireccionExtranjero" type="DireccionExtranjeroType"/>
+			</xs:choice>
+			<xs:element name="DatosContacto" type="DatosContactoType" minOccurs="0"/>
+			<xs:element name="GLNFisico" type="TextoMax14Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identificación del punto de conexión a la VAN EDI (Global Location Number). Código de barras de 13 posiciones estándar. Valores registrados por AECOC. Recoge el código de País (2p) España es "84" + Empresa (5p) + los restantes - el último es el producto + dígito de control. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PuntoOperacionalLogico" type="TextoMax14Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Código identificativo de la Empresa. Código de barras de 13 posiciones estándar. Valores registrados por AECOC. Recoge el código de País (2p) España es "84" + Empresa (5p) + los restantes - el último es el producto + dígito de control.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DescuentosType">
+		<xs:sequence>
+			<xs:element name="Descuento" type="DescuentoType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DescuentoType">
+		<xs:sequence>
+			<xs:element name="DescripcionDescuento" type="TextoMax30Type">
+				<xs:annotation>
+					<xs:documentation>Concepto por el que se aplica descuento.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PorcentajeDescuento" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Porcentaje a descontar del Total Importe Bruto (TIB). Los porcentajes se reflejan con 4 decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImporteDescuento" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Importe a descontar sobre el TIB. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CargosType">
+		<xs:sequence>
+			<xs:element name="Cargo" type="CargoType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CargoType">
+		<xs:sequence>
+			<xs:element name="DescripcionCargo" type="TextoMax30Type">
+				<xs:annotation>
+					<xs:documentation>Concepto por el que se aplica recargo</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PorcentajeCargo" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Porcentaje a cargar sobre el TIB. Los porcentajes se reflejan con 4 decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImporteCargo" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Importe a cargar sobre el TIB. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ImpuestosType">
+		<xs:sequence>
+			<xs:element name="Impuesto" type="ImpuestoType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ImpuestoType">
+		<xs:sequence>
+			<xs:element name="ClaseImpuesto" type="ClaseImpuestoType">
+				<xs:annotation>
+					<xs:documentation>Concepto Fiscal por el que se tributa</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PorcentajeImpuesto" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Porcentaje a aplicar en cada caso. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BaseImponible" type="ImporteType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Total Importe Bruto - Cargos + Recargos - Descuentos Globales/factura, por cada clase y porcentaje. Base imponible de los impuestos. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Cuota" type="ImporteType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Importe resultante de aplicar a la Base Imponible el porcentaje correspondiente. Siempre con dos decimales. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ImporteType">
+		<xs:sequence>
+			<xs:element name="ImporteTotal" type="xs:double">
+				<xs:annotation>
+					<xs:documentation>Importe en la moneda original de la facturación. Siempre que la divisa de facturación no sea EURO, deberán cumplimentarse los elementos del "Grupo". Cumplimiento Artº 10.1 del Reglamento sobre facturación. RD 1496/2003 de 28 de Noviembre.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:sequence minOccurs="0">
+				<xs:element name="TipoCambio" type="xs:double">
+					<xs:annotation>
+						<xs:documentation>Artº 79.once de la Ley 37/92 de 28 de diciembre del Impuesto sobre el Valor Añadido. Siempre con dos decimales. Cambio vendedor fijado por el Banco de España y vigente en el momento del devengo.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="FechaTipoCambio" type="xs:date">
+					<xs:annotation>
+						<xs:documentation>Fecha de publicación del tipo aplicado.ISO 8601. 	</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ContravalorEuros" type="xs:double">
+					<xs:annotation>
+						<xs:documentation>Importe equivalente en Euros. Siempre con dos decimales. </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExtensionesType">
+		<xs:sequence>
+			<xs:any namespace="##other" processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CuentaType">
+		<xs:sequence>
+			<xs:element name="NumeroCuentaIBAN" type="TextoMax40Type"/>
+			<xs:element name="EntidadFinanciera" type="TextoMax60Type" minOccurs="0"/>
+			<xs:element name="Oficina" type="TextoMax60Type" minOccurs="0"/>
+			<xs:choice minOccurs="0">
+				<xs:element name="DireccionOficinaNacional" type="DireccionType" minOccurs="0"/>
+				<xs:element name="DireccionOficinaExtranjero" type="DireccionExtranjeroType" minOccurs="0"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ObservacionesType">
+		<xs:sequence>
+			<xs:element name="Observacion" type="TextoMax60Type" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ThirdParty">
+		<xs:choice>
+			<xs:element name="Numero" type="TextoMin1Max10Type"/>
+			<xs:element name="GLN" type="TextoMin13Max14Type"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="SrcParty">
+		<xs:sequence>
+			<xs:element name="Centro" type="TextoMin1Max4Type"/>
+			<xs:element name="NumeroProveedor" type="TextoMin1Max10Type" minOccurs="0"/>
+			<xs:element name="GLN" type="TextoMin13Max14Type" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DstParty">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element name="Centro" type="TextoMin1Max4Type"/>
+				<xs:element name="NumeroCliente" type="TextoMin1Max10Type" minOccurs="0"/>
+				<xs:element name="GLN" type="TextoMin13Max14Type" minOccurs="0"/>
+			</xs:sequence>
+			<xs:element name="GLN" type="TextoMin13Max14Type"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="PeriodoFechas">
+		<xs:sequence>
+			<xs:element name="FechaInicio" type="xs:date"/>
+			<xs:element name="FechaFin" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!--Tipos simples /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<xs:simpleType name="CnoCnaeType">
+		<xs:restriction base="xs:string">
+			<xs:length value="5"/>
+			<xs:pattern value="\d{5}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="VersionCodificacionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1.2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CodigoPostalType">
+		<xs:restriction base="xs:string">
+			<xs:length value="5"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!--Textos simples /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<xs:simpleType name="TextoMax10Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax9Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax14Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="14"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax15Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="15"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax20Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax25Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="25"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax30Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax40Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="40"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax50Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax60Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="60"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax70Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax80Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="80"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax250Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="250"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMax2500Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2500"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoLong34Type">
+		<xs:restriction base="xs:string">
+			<xs:length value="34"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMin1Max4Type">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMin1Max10Type">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMin3Max30Type">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="3"/>
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoMin13Max14Type">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="13"/>
+			<xs:maxLength value="14"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!--Enumerations /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<xs:simpleType name="TipoRolType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Fiscal"/>
+			<xs:enumeration value="Receptor"/>
+			<xs:enumeration value="Pagador"/>
+			<xs:enumeration value="Comprador"/>
+			<xs:enumeration value="Cobrador"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TipoPersonaType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="F"/>
+			<xs:enumeration value="J"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TipoResidenciaType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="E"/>
+			<xs:enumeration value="R"/>
+			<xs:enumeration value="U"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TipoEmisorFacturaType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="EM"/>
+			<xs:enumeration value="RE"/>
+			<xs:enumeration value="TE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TipoDocumentoFacturaType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="FC"/>
+			<xs:enumeration value="FA"/>
+			<xs:enumeration value="AF"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ClaseType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OO"/>
+			<xs:enumeration value="OR"/>
+			<xs:enumeration value="OC"/>
+			<xs:enumeration value="CO"/>
+			<xs:enumeration value="CR"/>
+			<xs:enumeration value="CC"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CodigoMotivoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01"/>
+			<xs:enumeration value="02"/>
+			<xs:enumeration value="03"/>
+			<xs:enumeration value="04"/>
+			<xs:enumeration value="05"/>
+			<xs:enumeration value="06"/>
+			<xs:enumeration value="07"/>
+			<xs:enumeration value="08"/>
+			<xs:enumeration value="09"/>
+			<xs:enumeration value="10"/>
+			<xs:enumeration value="11"/>
+			<xs:enumeration value="12"/>
+			<xs:enumeration value="13"/>
+			<xs:enumeration value="14"/>
+			<xs:enumeration value="15"/>
+			<xs:enumeration value="16"/>
+			<xs:enumeration value="80"/>
+			<xs:enumeration value="81"/>
+			<xs:enumeration value="82"/>
+			<xs:enumeration value="83"/>
+			<xs:enumeration value="84"/>
+			<xs:enumeration value="85"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DescripcionMotivoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Número de la factura"/>
+			<xs:enumeration value="Serie de la factura"/>
+			<xs:enumeration value="Fecha expedición"/>
+			<xs:enumeration value="Nombre y apellidos/Razón Social-Emisor"/>
+			<xs:enumeration value="Nombre y apellidos/Razón Social-Receptor"/>
+			<xs:enumeration value="Identificación fiscal Emisor/obligado"/>
+			<xs:enumeration value="Identificación fiscal Receptor"/>
+			<xs:enumeration value="Domicilio Emisor/Obligado"/>
+			<xs:enumeration value="Domicilio Receptor"/>
+			<xs:enumeration value="Detalle Operación"/>
+			<xs:enumeration value="Porcentaje impositivo a aplicar"/>
+			<xs:enumeration value="Cuota tributaria a aplicar"/>
+			<xs:enumeration value="Fecha/Periodo a aplicar"/>
+			<xs:enumeration value="Clase de factura"/>
+			<xs:enumeration value="Literales legales"/>
+			<xs:enumeration value="Base imponible"/>
+			<xs:enumeration value="Cálculo de cuotas repercutidas"/>
+			<xs:enumeration value="Cálculo de cuotas retenidas"/>
+			<xs:enumeration value="Base imponible modificada por devolución de envases / embalajes"/>
+			<xs:enumeration value="Base imponible modificada por descuentos y bonificaciones"/>
+			<xs:enumeration value="Base imponible modificada por resolución firme, judicial o administrativa"/>
+			<xs:enumeration value="Base imponible modificada cuotas repercutidas no satisfechas. Auto declaración concurso"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CriterioRectificacionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01"/>
+			<xs:enumeration value="02"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DescripcionCriterioRectificacionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Rectificación íntegra"/>
+			<xs:enumeration value="Rectificación por diferencias"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="UnidadesMedidaType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Unidades"/>
+			<xs:enumeration value="Horas"/>
+			<xs:enumeration value="Kilogramos"/>
+			<xs:enumeration value="Litros"/>
+			<xs:enumeration value="Otros"/>
+			<xs:enumeration value="Cajas"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FormaPagoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Contado"/>
+			<xs:enumeration value="ReciboDomiciliado"/>
+			<xs:enumeration value="Recibo"/>
+			<xs:enumeration value="Transferencia"/>
+			<xs:enumeration value="LetraAceptada"/>
+			<xs:enumeration value="CreditoDocumentado"/>
+			<xs:enumeration value="ContratoAdjudicacion"/>
+			<xs:enumeration value="Letra"/>
+			<xs:enumeration value="PagareAOrden"/>
+			<xs:enumeration value="Pagare"/>
+			<xs:enumeration value="Cheque"/>
+			<xs:enumeration value="Reposicion"/>
+			<xs:enumeration value="Especiales"/>
+			<xs:enumeration value="Compensa"/>
+			<xs:enumeration value="Giro"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ClaseImpuestoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="IVA"/>
+			<xs:enumeration value="NO SUJETO"/>
+			<xs:enumeration value="IPSI"/>
+			<xs:enumeration value="IGIC"/>
+			<xs:enumeration value="IRPF"/>
+			<xs:enumeration value="Otro"/>
+			<xs:enumeration value="ITPAJD"/>
+			<xs:enumeration value="IE"/>
+			<xs:enumeration value="Ra"/>
+			<xs:enumeration value="IGTECM"/>
+			<xs:enumeration value="IECDPCAC"/>
+			<xs:enumeration value="IIIMAB"/>
+			<xs:enumeration value="ICIO"/>
+			<xs:enumeration value="IMVDN"/>
+			<xs:enumeration value="IMSN"/>
+			<xs:enumeration value="IMGSN"/>
+			<xs:enumeration value="IMPN"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PaisType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AFG"/>
+			<xs:enumeration value="ALB"/>
+			<xs:enumeration value="DZA"/>
+			<xs:enumeration value="ASM"/>
+			<xs:enumeration value="AND"/>
+			<xs:enumeration value="AGO"/>
+			<xs:enumeration value="AIA"/>
+			<xs:enumeration value="ATA"/>
+			<xs:enumeration value="ATG"/>
+			<xs:enumeration value="ARG"/>
+			<xs:enumeration value="ARM"/>
+			<xs:enumeration value="ABW"/>
+			<xs:enumeration value="AUS"/>
+			<xs:enumeration value="AUT"/>
+			<xs:enumeration value="AZE"/>
+			<xs:enumeration value="BHS"/>
+			<xs:enumeration value="BHR"/>
+			<xs:enumeration value="BGD"/>
+			<xs:enumeration value="BRB"/>
+			<xs:enumeration value="BLR"/>
+			<xs:enumeration value="BEL"/>
+			<xs:enumeration value="BLZ"/>
+			<xs:enumeration value="BEN"/>
+			<xs:enumeration value="BMU"/>
+			<xs:enumeration value="BTN"/>
+			<xs:enumeration value="BOL"/>
+			<xs:enumeration value="BIH"/>
+			<xs:enumeration value="BWA"/>
+			<xs:enumeration value="BVT"/>
+			<xs:enumeration value="BRA"/>
+			<xs:enumeration value="IOT"/>
+			<xs:enumeration value="BRN"/>
+			<xs:enumeration value="BGR"/>
+			<xs:enumeration value="BFA"/>
+			<xs:enumeration value="BDI"/>
+			<xs:enumeration value="KHM"/>
+			<xs:enumeration value="CMR"/>
+			<xs:enumeration value="CAN"/>
+			<xs:enumeration value="CPV"/>
+			<xs:enumeration value="CYM"/>
+			<xs:enumeration value="CAF"/>
+			<xs:enumeration value="TCD"/>
+			<xs:enumeration value="CHL"/>
+			<xs:enumeration value="CHN"/>
+			<xs:enumeration value="CXR"/>
+			<xs:enumeration value="CCK"/>
+			<xs:enumeration value="COL"/>
+			<xs:enumeration value="COM"/>
+			<xs:enumeration value="COG"/>
+			<xs:enumeration value="COK"/>
+			<xs:enumeration value="CRI"/>
+			<xs:enumeration value="CIV"/>
+			<xs:enumeration value="HRV"/>
+			<xs:enumeration value="CUB"/>
+			<xs:enumeration value="CYP"/>
+			<xs:enumeration value="CZE"/>
+			<xs:enumeration value="DNK"/>
+			<xs:enumeration value="DJI"/>
+			<xs:enumeration value="DMA"/>
+			<xs:enumeration value="DOM"/>
+			<xs:enumeration value="TMP"/>
+			<xs:enumeration value="ECU"/>
+			<xs:enumeration value="EGY"/>
+			<xs:enumeration value="SLV"/>
+			<xs:enumeration value="GNQ"/>
+			<xs:enumeration value="ERI"/>
+			<xs:enumeration value="EST"/>
+			<xs:enumeration value="ETH"/>
+			<xs:enumeration value="FLK"/>
+			<xs:enumeration value="FRO"/>
+			<xs:enumeration value="FJI"/>
+			<xs:enumeration value="FIN"/>
+			<xs:enumeration value="FRA"/>
+			<xs:enumeration value="FXX"/>
+			<xs:enumeration value="GUF"/>
+			<xs:enumeration value="PYF"/>
+			<xs:enumeration value="ATF"/>
+			<xs:enumeration value="GAB"/>
+			<xs:enumeration value="GMB"/>
+			<xs:enumeration value="GEO"/>
+			<xs:enumeration value="DEU"/>
+			<xs:enumeration value="GHA"/>
+			<xs:enumeration value="GIB"/>
+			<xs:enumeration value="GRC"/>
+			<xs:enumeration value="GRL"/>
+			<xs:enumeration value="GRD"/>
+			<xs:enumeration value="GLP"/>
+			<xs:enumeration value="GUM"/>
+			<xs:enumeration value="GTM"/>
+			<xs:enumeration value="GIN"/>
+			<xs:enumeration value="GNB"/>
+			<xs:enumeration value="GUY"/>
+			<xs:enumeration value="HTI"/>
+			<xs:enumeration value="HMD"/>
+			<xs:enumeration value="HND"/>
+			<xs:enumeration value="HKG"/>
+			<xs:enumeration value="HUN"/>
+			<xs:enumeration value="ISL"/>
+			<xs:enumeration value="IND"/>
+			<xs:enumeration value="IDN"/>
+			<xs:enumeration value="IRN"/>
+			<xs:enumeration value="IRQ"/>
+			<xs:enumeration value="IRL"/>
+			<xs:enumeration value="ISR"/>
+			<xs:enumeration value="ITA"/>
+			<xs:enumeration value="JAM"/>
+			<xs:enumeration value="JPN"/>
+			<xs:enumeration value="JOR"/>
+			<xs:enumeration value="KAZ"/>
+			<xs:enumeration value="KEN"/>
+			<xs:enumeration value="KIR"/>
+			<xs:enumeration value="PRK"/>
+			<xs:enumeration value="KOR"/>
+			<xs:enumeration value="KWT"/>
+			<xs:enumeration value="KGZ"/>
+			<xs:enumeration value="LAO"/>
+			<xs:enumeration value="LVA"/>
+			<xs:enumeration value="LBN"/>
+			<xs:enumeration value="LSO"/>
+			<xs:enumeration value="LBR"/>
+			<xs:enumeration value="LBY"/>
+			<xs:enumeration value="LIE"/>
+			<xs:enumeration value="LTU"/>
+			<xs:enumeration value="LUX"/>
+			<xs:enumeration value="MAC"/>
+			<xs:enumeration value="MKD"/>
+			<xs:enumeration value="MDG"/>
+			<xs:enumeration value="MWI"/>
+			<xs:enumeration value="MYS"/>
+			<xs:enumeration value="MDV"/>
+			<xs:enumeration value="MLI"/>
+			<xs:enumeration value="MLT"/>
+			<xs:enumeration value="MHL"/>
+			<xs:enumeration value="MTQ"/>
+			<xs:enumeration value="MRT"/>
+			<xs:enumeration value="MUS"/>
+			<xs:enumeration value="MYT"/>
+			<xs:enumeration value="MEX"/>
+			<xs:enumeration value="FSM"/>
+			<xs:enumeration value="MDA"/>
+			<xs:enumeration value="MCO"/>
+			<xs:enumeration value="MNG"/>
+			<xs:enumeration value="MSR"/>
+			<xs:enumeration value="MAR"/>
+			<xs:enumeration value="MOZ"/>
+			<xs:enumeration value="MMR"/>
+			<xs:enumeration value="NAM"/>
+			<xs:enumeration value="NRU"/>
+			<xs:enumeration value="NPL"/>
+			<xs:enumeration value="NLD"/>
+			<xs:enumeration value="ANT"/>
+			<xs:enumeration value="NCL"/>
+			<xs:enumeration value="NZL"/>
+			<xs:enumeration value="NIC"/>
+			<xs:enumeration value="NER"/>
+			<xs:enumeration value="NGA"/>
+			<xs:enumeration value="NIU"/>
+			<xs:enumeration value="NFK"/>
+			<xs:enumeration value="MNP"/>
+			<xs:enumeration value="NOR"/>
+			<xs:enumeration value="OMN"/>
+			<xs:enumeration value="PAK"/>
+			<xs:enumeration value="PLW"/>
+			<xs:enumeration value="PAN"/>
+			<xs:enumeration value="PNG"/>
+			<xs:enumeration value="PRY"/>
+			<xs:enumeration value="PER"/>
+			<xs:enumeration value="PHL"/>
+			<xs:enumeration value="PCN"/>
+			<xs:enumeration value="POL"/>
+			<xs:enumeration value="PRT"/>
+			<xs:enumeration value="PRI"/>
+			<xs:enumeration value="QAT"/>
+			<xs:enumeration value="REU"/>
+			<xs:enumeration value="ROM"/>
+			<xs:enumeration value="RUS"/>
+			<xs:enumeration value="RWA"/>
+			<xs:enumeration value="KNA"/>
+			<xs:enumeration value="LCA"/>
+			<xs:enumeration value="VCT"/>
+			<xs:enumeration value="WSM"/>
+			<xs:enumeration value="SMR"/>
+			<xs:enumeration value="STP"/>
+			<xs:enumeration value="SAU"/>
+			<xs:enumeration value="SEN"/>
+			<xs:enumeration value="SYC"/>
+			<xs:enumeration value="SLE"/>
+			<xs:enumeration value="SGP"/>
+			<xs:enumeration value="SVK"/>
+			<xs:enumeration value="SVN"/>
+			<xs:enumeration value="SLB"/>
+			<xs:enumeration value="SOM"/>
+			<xs:enumeration value="ZAF"/>
+			<xs:enumeration value="SGS"/>
+			<xs:enumeration value="ESP"/>
+			<xs:enumeration value="LKA"/>
+			<xs:enumeration value="SHN"/>
+			<xs:enumeration value="SPM"/>
+			<xs:enumeration value="SDN"/>
+			<xs:enumeration value="SUR"/>
+			<xs:enumeration value="SJM"/>
+			<xs:enumeration value="SWZ"/>
+			<xs:enumeration value="SWE"/>
+			<xs:enumeration value="CHE"/>
+			<xs:enumeration value="SYR"/>
+			<xs:enumeration value="TWN"/>
+			<xs:enumeration value="TJK"/>
+			<xs:enumeration value="TZA"/>
+			<xs:enumeration value="THA"/>
+			<xs:enumeration value="TGO"/>
+			<xs:enumeration value="TKL"/>
+			<xs:enumeration value="TON"/>
+			<xs:enumeration value="TTO"/>
+			<xs:enumeration value="TUN"/>
+			<xs:enumeration value="TUR"/>
+			<xs:enumeration value="TKM"/>
+			<xs:enumeration value="TCA"/>
+			<xs:enumeration value="TUV"/>
+			<xs:enumeration value="UGA"/>
+			<xs:enumeration value="UKR"/>
+			<xs:enumeration value="ARE"/>
+			<xs:enumeration value="GBR"/>
+			<xs:enumeration value="USA"/>
+			<xs:enumeration value="UMI"/>
+			<xs:enumeration value="URY"/>
+			<xs:enumeration value="UZB"/>
+			<xs:enumeration value="VUT"/>
+			<xs:enumeration value="VAT"/>
+			<xs:enumeration value="VEN"/>
+			<xs:enumeration value="VNM"/>
+			<xs:enumeration value="VGB"/>
+			<xs:enumeration value="VIR"/>
+			<xs:enumeration value="WLF"/>
+			<xs:enumeration value="ESH"/>
+			<xs:enumeration value="YEM"/>
+			<xs:enumeration value="YUG"/>
+			<xs:enumeration value="ZAR"/>
+			<xs:enumeration value="ZMB"/>
+			<xs:enumeration value="ZWE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MonedaType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ADP"/>
+			<xs:enumeration value="AED"/>
+			<xs:enumeration value="AFA"/>
+			<xs:enumeration value="ALL"/>
+			<xs:enumeration value="AMD"/>
+			<xs:enumeration value="ANG"/>
+			<xs:enumeration value="AOK"/>
+			<xs:enumeration value="ARA"/>
+			<xs:enumeration value="ARS"/>
+			<xs:enumeration value="ATS"/>
+			<xs:enumeration value="AUD"/>
+			<xs:enumeration value="AWG"/>
+			<xs:enumeration value="AZM"/>
+			<xs:enumeration value="BAD"/>
+			<xs:enumeration value="BBD"/>
+			<xs:enumeration value="BDT"/>
+			<xs:enumeration value="BEF"/>
+			<xs:enumeration value="BGL"/>
+			<xs:enumeration value="BHD"/>
+			<xs:enumeration value="BIF"/>
+			<xs:enumeration value="BMD"/>
+			<xs:enumeration value="BND"/>
+			<xs:enumeration value="BOB"/>
+			<xs:enumeration value="BRL"/>
+			<xs:enumeration value="BRR"/>
+			<xs:enumeration value="BSD"/>
+			<xs:enumeration value="BWP"/>
+			<xs:enumeration value="BYR"/>
+			<xs:enumeration value="BZD"/>
+			<xs:enumeration value="CAD"/>
+			<xs:enumeration value="CDP"/>
+			<xs:enumeration value="CHF"/>
+			<xs:enumeration value="CLP"/>
+			<xs:enumeration value="CNY"/>
+			<xs:enumeration value="COP"/>
+			<xs:enumeration value="CRC"/>
+			<xs:enumeration value="CUP"/>
+			<xs:enumeration value="CVE"/>
+			<xs:enumeration value="CYP"/>
+			<xs:enumeration value="CZK"/>
+			<xs:enumeration value="DEM"/>
+			<xs:enumeration value="DJF"/>
+			<xs:enumeration value="DKK"/>
+			<xs:enumeration value="DOP"/>
+			<xs:enumeration value="DRP"/>
+			<xs:enumeration value="DZD"/>
+			<xs:enumeration value="ECS"/>
+			<xs:enumeration value="ECU"/>
+			<xs:enumeration value="EEK"/>
+			<xs:enumeration value="EGP"/>
+			<xs:enumeration value="ESP"/>
+			<xs:enumeration value="ETB"/>
+			<xs:enumeration value="EUR"/>
+			<xs:enumeration value="FIM"/>
+			<xs:enumeration value="FJD"/>
+			<xs:enumeration value="FKP"/>
+			<xs:enumeration value="FRF"/>
+			<xs:enumeration value="GBP"/>
+			<xs:enumeration value="GEK"/>
+			<xs:enumeration value="GHC"/>
+			<xs:enumeration value="GIP"/>
+			<xs:enumeration value="GMD"/>
+			<xs:enumeration value="GNF"/>
+			<xs:enumeration value="GRD"/>
+			<xs:enumeration value="GTQ"/>
+			<xs:enumeration value="GWP"/>
+			<xs:enumeration value="GYD"/>
+			<xs:enumeration value="HKD"/>
+			<xs:enumeration value="HNL"/>
+			<xs:enumeration value="HRD"/>
+			<xs:enumeration value="HTG"/>
+			<xs:enumeration value="HUF"/>
+			<xs:enumeration value="IDR"/>
+			<xs:enumeration value="IEP"/>
+			<xs:enumeration value="ILS"/>
+			<xs:enumeration value="INR"/>
+			<xs:enumeration value="IQD"/>
+			<xs:enumeration value="IRR"/>
+			<xs:enumeration value="ISK"/>
+			<xs:enumeration value="ITL"/>
+			<xs:enumeration value="JMD"/>
+			<xs:enumeration value="JOD"/>
+			<xs:enumeration value="JPY"/>
+			<xs:enumeration value="KES"/>
+			<xs:enumeration value="KHR"/>
+			<xs:enumeration value="KIS"/>
+			<xs:enumeration value="KMF"/>
+			<xs:enumeration value="KPW"/>
+			<xs:enumeration value="KRW"/>
+			<xs:enumeration value="KWD"/>
+			<xs:enumeration value="KYD"/>
+			<xs:enumeration value="KZT"/>
+			<xs:enumeration value="LAK"/>
+			<xs:enumeration value="LBP"/>
+			<xs:enumeration value="LKR"/>
+			<xs:enumeration value="LRD"/>
+			<xs:enumeration value="LSL"/>
+			<xs:enumeration value="LTL"/>
+			<xs:enumeration value="LUF"/>
+			<xs:enumeration value="LVL"/>
+			<xs:enumeration value="LYD"/>
+			<xs:enumeration value="MAD"/>
+			<xs:enumeration value="MDL"/>
+			<xs:enumeration value="MGF"/>
+			<xs:enumeration value="MNC"/>
+			<xs:enumeration value="MNT"/>
+			<xs:enumeration value="MOP"/>
+			<xs:enumeration value="MRO"/>
+			<xs:enumeration value="MTL"/>
+			<xs:enumeration value="MUR"/>
+			<xs:enumeration value="MVR"/>
+			<xs:enumeration value="MWK"/>
+			<xs:enumeration value="MXN"/>
+			<xs:enumeration value="MXP"/>
+			<xs:enumeration value="MYR"/>
+			<xs:enumeration value="MZM"/>
+			<xs:enumeration value="NGN"/>
+			<xs:enumeration value="NIC"/>
+			<xs:enumeration value="NIO"/>
+			<xs:enumeration value="NIS"/>
+			<xs:enumeration value="NLG"/>
+			<xs:enumeration value="NOK"/>
+			<xs:enumeration value="NPR"/>
+			<xs:enumeration value="NZD"/>
+			<xs:enumeration value="OMR"/>
+			<xs:enumeration value="PAB"/>
+			<xs:enumeration value="PEI"/>
+			<xs:enumeration value="PEN"/>
+			<xs:enumeration value="PES"/>
+			<xs:enumeration value="PGK"/>
+			<xs:enumeration value="PHP"/>
+			<xs:enumeration value="PKR"/>
+			<xs:enumeration value="PLN"/>
+			<xs:enumeration value="PLZ"/>
+			<xs:enumeration value="PTE"/>
+			<xs:enumeration value="PYG"/>
+			<xs:enumeration value="QAR"/>
+			<xs:enumeration value="RMB"/>
+			<xs:enumeration value="ROL"/>
+			<xs:enumeration value="RUR"/>
+			<xs:enumeration value="RWF"/>
+			<xs:enumeration value="SAR"/>
+			<xs:enumeration value="SBD"/>
+			<xs:enumeration value="SCR"/>
+			<xs:enumeration value="SDP"/>
+			<xs:enumeration value="SEK"/>
+			<xs:enumeration value="SGD"/>
+			<xs:enumeration value="SHP"/>
+			<xs:enumeration value="SIT"/>
+			<xs:enumeration value="SKK"/>
+			<xs:enumeration value="SLL"/>
+			<xs:enumeration value="SOL"/>
+			<xs:enumeration value="SOS"/>
+			<xs:enumeration value="SRG"/>
+			<xs:enumeration value="STD"/>
+			<xs:enumeration value="SUR"/>
+			<xs:enumeration value="SVC"/>
+			<xs:enumeration value="SYP"/>
+			<xs:enumeration value="SZL"/>
+			<xs:enumeration value="THB"/>
+			<xs:enumeration value="TJR"/>
+			<xs:enumeration value="TMM"/>
+			<xs:enumeration value="TND"/>
+			<xs:enumeration value="TOP"/>
+			<xs:enumeration value="TPE"/>
+			<xs:enumeration value="TRL"/>
+			<xs:enumeration value="TTD"/>
+			<xs:enumeration value="TWD"/>
+			<xs:enumeration value="TZS"/>
+			<xs:enumeration value="UAK"/>
+			<xs:enumeration value="UGS"/>
+			<xs:enumeration value="USD"/>
+			<xs:enumeration value="UYP"/>
+			<xs:enumeration value="UYU"/>
+			<xs:enumeration value="VEB"/>
+			<xs:enumeration value="VND"/>
+			<xs:enumeration value="VUV"/>
+			<xs:enumeration value="WST"/>
+			<xs:enumeration value="XAF"/>
+			<xs:enumeration value="XCD"/>
+			<xs:enumeration value="XOF"/>
+			<xs:enumeration value="YER"/>
+			<xs:enumeration value="ZAR"/>
+			<xs:enumeration value="ZMK"/>
+			<xs:enumeration value="ZRZ"/>
+			<xs:enumeration value="ZWD"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ModalidadType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="I"/>
+			<xs:enumeration value="L"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

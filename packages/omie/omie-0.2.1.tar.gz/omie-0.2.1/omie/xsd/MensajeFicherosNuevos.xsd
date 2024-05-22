@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeFicherosNuevos" type="om:tMensajeFicherosNuevos">
+		<xsd:annotation>
+			<xsd:documentation>Ficheros nuevos a descargar</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeFicherosNuevos">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para los ficheros nuevos a descargar</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="UltimoSecuencial">
+				<xsd:annotation>
+					<xsd:documentation>Valor del último número secuencial al cual se ha actualizado el cliente.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v">
+						<xsd:annotation>
+							<xsd:documentation>Valor</xsd:documentation>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:nonNegativeInteger">
+								<xsd:totalDigits value="15"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Patron" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Lista de patrones de ficheros para los cuales se solicitan ficheros nuevos</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:annotation>
+							<xsd:documentation>Valor</xsd:documentation>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de ficheros nuevos a descargar</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

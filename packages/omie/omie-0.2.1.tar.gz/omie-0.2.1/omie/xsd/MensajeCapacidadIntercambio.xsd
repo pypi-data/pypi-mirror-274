@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Carles Menendez (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by F. García Julián (OMEL S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.2">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeCapacidadIntercambio" type="om:tMensajeCapacidadIntercambio">
+		<xsd:annotation>
+			<xsd:documentation>Capacidad y ocupación de importación y exportación</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeCapacidadIntercambio">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para capacidad y ocupación de importación y exportación</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo del contenido del mensaje (por ejemplo "CAPACIDAD_INTER_PBC_20061203","CAPACIDAD_INTER_PHF_2006120302" )</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje">
+				<xsd:annotation>
+					<xsd:documentation>Versión del contenido del mensaje (para diferentes versiones del mismo programa)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha/hora de generación de los datos en el servidor (no del envío del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdCapacidadIntercambio">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del tipo de capacidad de intercambio (CAPACIDAD_INTER_PBC, CAPACIDAD_INTER_PHF, etc.)</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:NMTOKEN">
+								<xsd:enumeration value="CAPACIDAD_INTER_PBC"/>
+								<xsd:enumeration value="CAPACIDAD_INTER_PVP"/>
+								<xsd:enumeration value="CAPACIDAD_INTER_PHF"/>
+								<xsd:enumeration value="CAPACIDAD_INTER_PHFC"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del OM u OS, que envía el programa. </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TipoMercado" type="om:tMercado">
+				<xsd:annotation>
+					<xsd:documentation>"MD": Diario  
+"MI": Intradiario
+"MC": Continuo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Sesion">
+				<xsd:annotation>
+					<xsd:documentation>Incluye Fecha y Número de Sesión
+Para documentos del continuo, Fecha de entrega</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="fecha" type="xsd:date" use="required"/>
+					<xsd:attribute name="num" use="optional">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:nonNegativeInteger">
+								<xsd:maxInclusive value="25"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Horizonte" type="om:tIntervaloTiempo">
+				<xsd:annotation>
+					<xsd:documentation>Intervalo temporal  (ISO 8601) de validez del Programa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SerieTemporal" type="om:tSerieTemporalCapacidadIntercambio" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tSerieTemporalCapacidadIntercambio">
+		<xsd:annotation>
+			<xsd:documentation>Describe los datos de capacidad y ocupación por cada frontera.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdSerieTemporal" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de la Serie, único por mensaje (se utilizará un valor secuencial por mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdFrontera" type="om:tFrontera">
+				<xsd:annotation>
+					<xsd:documentation>Código de Frontera</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "MWh"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Periodo" type="om:tPeriodoCapacidadIntercambio" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tPeriodoCapacidadIntercambio">
+		<xsd:annotation>
+			<xsd:documentation>Incluye todos los valores de horas y capacidades/ocupaciones para la Serie. En el primer Intradiario, existirá uno por frontera y día de la sesión.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Dia" type="om:tFecha" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha del periodo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Val" type="om:tValCapacidadIntercambio" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tValCapacidadIntercambio">
+		<xsd:annotation>
+			<xsd:documentation>Describe un valor individual de hora y sus capacidades y ocupaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Per" type="om:tPeriodo">
+				<xsd:annotation>
+					<xsd:documentation>Secuencial dentro del Intervalo. Indica el periodo horario dentro del día.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CapacImport" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Capacidad de Importación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="OcupacImport" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Ocupación de Importación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CapacLibreImport" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Capacidad Libre de Importación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CapacExport" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Capacidad de Exportación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="OcupacExport" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Ocupación de Exportación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CapacLibreExport" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Capacidad Libre de Exportación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema para mensajes de capacidad y ocupación de importación y exportación</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

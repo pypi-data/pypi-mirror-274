@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="RespuestaDatosUsuarioResponse" mixed="true">
+		<xsd:sequence>
+			<xsd:element name="RespuestaDatosUsuario" type="om:tRespuestaDatosUsuario"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="RespuestaDatosUsuario" type="om:tRespuestaDatosUsuario">
+		<xsd:annotation>
+			<xsd:documentation>Respuesta a los datos del Usuario</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IdAgente">
+		<xsd:annotation>
+			<xsd:documentation>Datos del Agente</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CodAgente" type="om:tIdRemitente">
+					<xsd:annotation>
+						<xsd:documentation>Código de Agente</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="DesAgente">
+					<xsd:annotation>
+						<xsd:documentation>Descripción del Agente</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor</xsd:documentation>
+							</xsd:annotation>
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="50"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="PerfilAgente">
+					<xsd:annotation>
+						<xsd:documentation>Perfil del Agente</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor</xsd:documentation>
+							</xsd:annotation>
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="5"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="DatosTarjeta">
+		<xsd:annotation>
+			<xsd:documentation>Datos de la Tarjeta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CodTarjeta">
+					<xsd:annotation>
+						<xsd:documentation>Código de la Tarjeta</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor</xsd:documentation>
+							</xsd:annotation>
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="16"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="PerfilTarjeta">
+					<xsd:annotation>
+						<xsd:documentation>Perfil de la Tarjeta: "C": Consulta, "A": Actualizacion</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor</xsd:documentation>
+							</xsd:annotation>
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:NMTOKEN">
+									<xsd:enumeration value="C">
+										<xsd:annotation>
+											<xsd:documentation>Consulta</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="A">
+										<xsd:annotation>
+											<xsd:documentation>Actualización</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="DatosTitular">
+					<xsd:annotation>
+						<xsd:documentation>Datos Personales del Titular de la Tarjeta</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Nombre">
+								<xsd:annotation>
+									<xsd:documentation>Nombre propio del Titular</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="v" use="optional">
+										<xsd:annotation>
+											<xsd:documentation>Valor</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="50"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Apellidos">
+								<xsd:annotation>
+									<xsd:documentation>Apellidos del Titular</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="v" use="optional">
+										<xsd:annotation>
+											<xsd:documentation>Valor</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="50"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="EMail">
+								<xsd:annotation>
+									<xsd:documentation>E-mail del Titular</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="v" use="optional">
+										<xsd:annotation>
+											<xsd:documentation>Valor</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="50"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Validez">
+					<xsd:annotation>
+						<xsd:documentation>Periodo de validez de la tarjeta</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="FechaAlta" type="om:tFecha">
+								<xsd:annotation>
+									<xsd:documentation>Fecha de Alta de la Tarjeta</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="FechaBaja" type="om:tFecha">
+								<xsd:annotation>
+									<xsd:documentation>Fecha de Baja de la Tarjeta</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Permisos">
+					<xsd:annotation>
+						<xsd:documentation>Permisos asociados a la tarjeta</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Permiso" maxOccurs="unbounded">
+								<xsd:annotation>
+									<xsd:documentation>Código de permiso y perfil del mismo</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="cod" use="required">
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:NMTOKEN">
+												<xsd:maxLength value="10"/>
+												<xsd:enumeration value="RMD">
+													<xsd:annotation>
+														<xsd:documentation>Reclamaciones al Mercado Diario</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="RMI">
+													<xsd:annotation>
+														<xsd:documentation>Reclamaciones al Mercado Intradiario</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="RLQ">
+													<xsd:annotation>
+														<xsd:documentation>Reclamaciones a las Liquidaciones</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="DOC">
+													<xsd:annotation>
+														<xsd:documentation>Datos de Ofertas y Casación</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="DS">
+													<xsd:annotation>
+														<xsd:documentation>Datos de Seguridad</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="DSI">
+													<xsd:annotation>
+														<xsd:documentation>Datos de Sistemas de Información</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="DF">
+													<xsd:annotation>
+														<xsd:documentation>Datos de Facturación</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="DL">
+													<xsd:annotation>
+														<xsd:documentation>Datos de Liquidaciones</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="DG">
+													<xsd:annotation>
+														<xsd:documentation>Datos Generales</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="ENVCSV"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+									<xsd:attribute name="perfil" use="required">
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:NMTOKEN">
+												<xsd:maxLength value="1"/>
+												<xsd:enumeration value="L">
+													<xsd:annotation>
+														<xsd:documentation>Lectura</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="M">
+													<xsd:annotation>
+														<xsd:documentation>Lectura/Modificación</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+												<xsd:enumeration value="N">
+													<xsd:annotation>
+														<xsd:documentation>Ninguno (sin acceso)</xsd:documentation>
+													</xsd:annotation>
+												</xsd:enumeration>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tRespuestaDatosUsuario">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para respuesta a los datos del Usuario</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="om:IdAgente"/>
+			<xsd:element ref="om:DatosTarjeta"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de respuesta a los datos del Usuario</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

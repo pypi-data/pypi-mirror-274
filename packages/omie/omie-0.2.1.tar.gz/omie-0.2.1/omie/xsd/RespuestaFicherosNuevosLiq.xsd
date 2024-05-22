@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by SAG-FGJ (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="RespuestaFicherosNuevosLiqResponse">
+		<xsd:sequence>
+			<xsd:element ref="om:RespuestaFicherosNuevosLiq"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tRespuestaFicherosNuevosLiq">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para los ficheros nuevos de Liquidaciones a descargar</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="NuevoSecuencial">
+				<xsd:annotation>
+					<xsd:documentation>Nuevo valor del número secuencial al cual se ha actualizado el cliente</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:nonNegativeInteger">
+								<xsd:maxInclusive value="999999999999999"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="NuevaFecha">
+				<xsd:annotation>
+					<xsd:documentation>Nueva fecha/hora de publicación a la cual se ha actualizado el cliente</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" type="xsd:dateTime"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element ref="om:FicheroLiq" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="RespuestaFicherosNuevosLiq" type="om:tRespuestaFicherosNuevosLiq">
+		<xsd:annotation>
+			<xsd:documentation>Ficheros nuevos de Liquidaciones a descargar</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FicheroLiq">
+		<xsd:annotation>
+			<xsd:documentation>Características de los ficheros nuevos de Liquidaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Nombre">
+					<xsd:annotation>
+						<xsd:documentation>Nombre completo del fichero</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor</xsd:documentation>
+							</xsd:annotation>
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="100"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="TipoDocumento">
+					<xsd:annotation>
+						<xsd:documentation>Tipo de documento (ZIP, PDF, ...)</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor</xsd:documentation>
+							</xsd:annotation>
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="30"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="CdAgente" type="om:tAgente">
+					<xsd:annotation>
+						<xsd:documentation>Código de agente</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="CdEmpresa" type="om:tIdEmpresa">
+					<xsd:annotation>
+						<xsd:documentation>Código de empresa</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Anno">
+					<xsd:annotation>
+						<xsd:documentation>Año al que pertenece el documento</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" type="xsd:gYear" use="required"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Mes">
+					<xsd:annotation>
+						<xsd:documentation>Mes al que pertenece el documento</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:nonNegativeInteger">
+									<xsd:minInclusive value="1"/>
+									<xsd:maxInclusive value="12"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Version">
+					<xsd:annotation>
+						<xsd:documentation>Versión del documento</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" type="xsd:string" use="required"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="FechaValidez" type="om:tFechaHora">
+					<xsd:annotation>
+						<xsd:documentation>Fecha y hora de publicación del fichero</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de respuesta de los ficheros nuevos de Liquidaciones a descargar</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

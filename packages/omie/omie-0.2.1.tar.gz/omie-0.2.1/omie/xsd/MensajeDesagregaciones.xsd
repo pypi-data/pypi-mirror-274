@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Fernando garcía Julián (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="MensajeDesagregacionesResponse">
+		<xsd:sequence>
+			<xsd:element name="MensajeDesagregaciones" type="om:tMensajeDesagregaciones"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="MensajeDesagregaciones" type="om:tMensajeDesagregaciones">
+		<xsd:annotation>
+			<xsd:documentation>Conjunto de desagregaciones por unidad de producción</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Desagregacion">
+		<xsd:annotation>
+			<xsd:documentation>Describe los datos de cada una de las desagregaciones individuales. Habrá uno por unidad de producción</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdDesagregacion" type="om:tId">
+					<xsd:annotation>
+						<xsd:documentation>Identificativo de la desagregación dentro del fichero, definido por quien envía el fichero (único por mensaje).</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdUnidad" type="om:tUnidad">
+					<xsd:annotation>
+						<xsd:documentation>Código de unidad ofertante</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Validez">
+					<xsd:annotation>
+						<xsd:documentation>Validez</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="TipoMercado" type="om:tMercado">
+								<xsd:annotation>
+									<xsd:documentation>MD: Mercado Diario
+MI: Mercado Intradiario</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="Sesion">
+								<xsd:annotation>
+									<xsd:documentation>Sesión para la que se desagrega</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="fecha" type="xsd:date" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Fecha de la sesión</xsd:documentation>
+										</xsd:annotation>
+									</xsd:attribute>
+									<xsd:attribute name="num" use="optional">
+										<xsd:annotation>
+											<xsd:documentation>Número de la sesión</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:nonNegativeInteger">
+												<xsd:maxInclusive value="25"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Código "MWh" por defecto</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Comentario" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Comentario libre</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="30"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element ref="om:Detalle" maxOccurs="unbounded">
+					<xsd:annotation>
+						<xsd:documentation>Detalle de las desagregaciones. Habrá uno por unidad física y día al que aplique la desagregación.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Detalle">
+		<xsd:annotation>
+			<xsd:documentation>Detalle de desagregaciones. Habrá uno por unidad física</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Dia" type="om:tFecha">
+					<xsd:annotation>
+						<xsd:documentation>Fecha</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdUnidad" type="om:tUnidad">
+					<xsd:annotation>
+						<xsd:documentation>Código de unidad física</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:Blq" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Blq">
+		<xsd:annotation>
+			<xsd:documentation>Bloques horarios de la desagregación. Para el Mercado Intradiario, puede haber hasta 2 bloques con el mismo periodo, siempre que sean de diferente signo (para compra y venta).</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Per" type="om:tPeriodo">
+					<xsd:annotation>
+						<xsd:documentation>Periodo horario del día</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Ctn" type="om:tCantidad">
+					<xsd:annotation>
+						<xsd:documentation>Cantidad de Energía, con su signo (positivo = venta, negativo = compra)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tMensajeDesagregaciones">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para las desagregaciones por unidad de producción</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía el mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:Desagregacion" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Describe los datos de cada una de las desagregaciones individuales. Habrá uno por unidad ofertante</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de  las desagregaciones del MD y MI por unidad de producción</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by XMLSpy 2008 Enterprise Ed., Installed for 10 users (with SMP from 2007-11-15 to 2009-11-15) (OMEL S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeDatosAgente" type="om:tMensajeDatosAgente">
+		<xsd:annotation>
+			<xsd:documentation>Mensaje de Datos del Agente</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DatosMensaje" type="xsd:anyType">
+		<xsd:annotation>
+			<xsd:documentation>Datos del mensaje</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeDatosAgente">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para los datos del agente</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía el mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:DatosMensaje">
+				<xsd:annotation>
+					<xsd:documentation>Datos del mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de Datos enviados por el Agente (para el envío de prueba de firma)</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

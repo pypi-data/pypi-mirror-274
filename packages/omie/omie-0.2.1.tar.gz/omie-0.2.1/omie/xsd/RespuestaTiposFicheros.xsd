@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by FGJ (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by F. García Julián (OMEL S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="RespuestaTiposFicherosResponse">
+		<xsd:sequence>
+			<xsd:element name="RespuestaTiposFicheros" type="om:tRespuestaTiposFicheros"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="RespuestaTiposFicheros" type="om:tRespuestaTiposFicheros">
+		<xsd:annotation>
+			<xsd:documentation>Tipos de ficheros para Descarga Automática y Multidescarga</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tRespuestaTiposFicheros">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para los tipos de ficheros para Descarga Automática y Multidescarga</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="PeriodoRefresco">
+				<xsd:complexType>
+					<xsd:attribute name="unidadPeriodo" type="xsd:string" use="required" fixed="s"/>
+					<xsd:attribute name="v" type="xsd:decimal" use="required"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="TipoFichero" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Características de un Tipo de  Fichero a descargar</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="IdTipoFichero">
+							<xsd:annotation>
+								<xsd:documentation>Identificador del tipo de Fichero</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="Descripcion">
+										<xsd:annotation>
+											<xsd:documentation>Descripción del tipo de fichero</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="v" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Valor</xsd:documentation>
+												</xsd:annotation>
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:string">
+														<xsd:maxLength value="100"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+									<xsd:element name="Patron">
+										<xsd:annotation>
+											<xsd:documentation>Patrón del tipo de fichero (prefijo del nombre del fichero)</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="v" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Valor</xsd:documentation>
+												</xsd:annotation>
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:string">
+														<xsd:maxLength value="30"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+									<xsd:element name="RestoNombre">
+										<xsd:annotation>
+											<xsd:documentation>Plantilla para el resto del nombre del fichero.</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="v" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Valor</xsd:documentation>
+												</xsd:annotation>
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:string">
+														<xsd:maxLength value="30"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="IdConsulta">
+							<xsd:annotation>
+								<xsd:documentation>Identificador de la conculta</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="CodConsulta" type="om:tCodConsulta">
+										<xsd:annotation>
+											<xsd:documentation>Código de consulta relacionada</xsd:documentation>
+										</xsd:annotation>
+									</xsd:element>
+									<xsd:element name="TipoConsulta" type="om:tTipoConsulta">
+										<xsd:annotation>
+											<xsd:documentation>Tipo de la consulta</xsd:documentation>
+										</xsd:annotation>
+									</xsd:element>
+									<xsd:element name="IdParametros">
+										<xsd:annotation>
+											<xsd:documentation>Identificación de los parámetros fecha, sesión y versión para la ejecución de la consulta.</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="numParametroFecha" use="required">
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:nonNegativeInteger">
+														<xsd:maxInclusive value="99"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+											<xsd:attribute name="numParametroSesion" use="optional">
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:nonNegativeInteger">
+														<xsd:maxInclusive value="99"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+											<xsd:attribute name="numParametroVersion" use="optional">
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:nonNegativeInteger">
+														<xsd:maxInclusive value="99"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+									<xsd:element name="SumaSesion" type="om:tSiNo" minOccurs="0">
+										<xsd:annotation>
+											<xsd:documentation>Identificativo (Si/No) de suma de la sesión de intradiario al número de la consulta.</xsd:documentation>
+										</xsd:annotation>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="Restricciones">
+							<xsd:annotation>
+								<xsd:documentation>Restricciones</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="Seccion">
+										<xsd:annotation>
+											<xsd:documentation>Sección a la que pertenece el tipo de fichero (Diario, Intradiario o Históricos)</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="v" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Valor</xsd:documentation>
+												</xsd:annotation>
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:NMTOKEN">
+														<xsd:enumeration value="D">
+															<xsd:annotation>
+																<xsd:documentation>Diario</xsd:documentation>
+															</xsd:annotation>
+														</xsd:enumeration>
+														<xsd:enumeration value="I">
+															<xsd:annotation>
+																<xsd:documentation>Intradiario</xsd:documentation>
+															</xsd:annotation>
+														</xsd:enumeration>
+														<xsd:enumeration value="H">
+															<xsd:annotation>
+																<xsd:documentation>Históricos</xsd:documentation>
+															</xsd:annotation>
+														</xsd:enumeration>
+														<xsd:enumeration value="L">
+															<xsd:annotation>
+																<xsd:documentation>Liquidaciones</xsd:documentation>
+															</xsd:annotation>
+														</xsd:enumeration>
+														<xsd:enumeration value="C">
+															<xsd:annotation>
+																<xsd:documentation>Continuo</xsd:documentation>
+															</xsd:annotation>
+														</xsd:enumeration>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+									<xsd:element name="TipoDescarga" type="om:tTipoDescarga" maxOccurs="2">
+										<xsd:annotation>
+											<xsd:documentation>Indicativos de carga automática y/o manual</xsd:documentation>
+										</xsd:annotation>
+									</xsd:element>
+									<xsd:element name="MaxNumFicheros">
+										<xsd:annotation>
+											<xsd:documentation>Máximo número de ficheros a notificar y descargar</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="v" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Valor</xsd:documentation>
+												</xsd:annotation>
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:nonNegativeInteger">
+														<xsd:maxInclusive value="999"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+									<xsd:element name="Confidencialidad">
+										<xsd:annotation>
+											<xsd:documentation>Tipo de confidencialidad de la consulta (Pública o Confidencial)</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="v" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Valor
+</xsd:documentation>
+												</xsd:annotation>
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:NMTOKEN">
+														<xsd:enumeration value="P">
+															<xsd:annotation>
+																<xsd:documentation>Pública</xsd:documentation>
+															</xsd:annotation>
+														</xsd:enumeration>
+														<xsd:enumeration value="C">
+															<xsd:annotation>
+																<xsd:documentation>Confidencial</xsd:documentation>
+															</xsd:annotation>
+														</xsd:enumeration>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de los tipos de ficheros para Descarga Automática y Multidescarga</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

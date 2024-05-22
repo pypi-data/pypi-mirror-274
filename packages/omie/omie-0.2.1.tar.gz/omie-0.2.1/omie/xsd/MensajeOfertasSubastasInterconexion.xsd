@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by OMEL S.A. (OMEL S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeOfertasSubastasInterconexion" type="om:tMensajeOfertasSubastasInterconexión">
+		<xsd:annotation>
+			<xsd:documentation>Conjunto de Ofertas a Subastas por la Interconexión</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OfertaSubasta">
+		<xsd:annotation>
+			<xsd:documentation>Describe los datos de cada una de las ofertas presentadas</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="cdAgente" type="om:tAgente">
+					<xsd:annotation>
+						<xsd:documentation>Código de Agente</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="cdSubasta" type="om:tCodSubasta">
+					<xsd:annotation>
+						<xsd:documentation>Código de la subasta</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="ClaseOferta" type="om:tClaseOferta">
+					<xsd:annotation>
+						<xsd:documentation>Clase de la Oferta "C"/"V"</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:Blq" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Blq">
+		<xsd:annotation>
+			<xsd:documentation>Bloques de la Oferta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Ctn" type="om:tCantidad">
+					<xsd:annotation>
+						<xsd:documentation>Energía de la oferta, sin signo</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Prc" type="om:tPrecioNegativo">
+					<xsd:annotation>
+						<xsd:documentation>Precio</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="num" use="required">
+				<xsd:annotation>
+					<xsd:documentation>Número de bloque</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:nonNegativeInteger">
+						<xsd:maxInclusive value="25"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tMensajeOfertasSubastasInterconexión">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para las ofertas de una sesión de una subasta por la interconexión</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía el mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:OfertaSubasta" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Oferta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de las ofertas presentadas a las diferentes sesiones de las subastas por la interconexión</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 U (http://www.xmlspy.com) by Fernando García Julián (OMEL, S.A.) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by XMLSPY 5 Enterprise Ed. Release 2, Installed Multi + SMP for 2 users (OMEL S.A.) -->
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeCBF" type="om:tMensajeCBF">
+		<xsd:annotation>
+			<xsd:documentation>Conjunto de Ejecuciones de CBFs</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeCBF">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para Definiciones de CBFs</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía el mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CBF" type="om:tCBF" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Definición de los Contratos Bilaterales Físicos.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tCBF">
+		<xsd:sequence>
+			<xsd:element name="IdDefCBF" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de la Definición de Contrato dentro del fichero, definido por quien envía el fichero (único por mensaje).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="NombreCorto">
+				<xsd:annotation>
+					<xsd:documentation>Nombre Corto del Contrato Bilateral Físico</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="8"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Descripcion" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Descripción del Contrato,  u otro comentario libre</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:maxLength value="30"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Unidad de Energía, "MWh" por defecto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="AgenteProd" type="om:tAgente">
+				<xsd:annotation>
+					<xsd:documentation>Agente de Producción</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="AgenteAdq" type="om:tAgente">
+				<xsd:annotation>
+					<xsd:documentation>Agente de Adquisición</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="AgenteRespEjecucion" type="om:tAgente">
+				<xsd:annotation>
+					<xsd:documentation>Agente Responsable de las Ejecuciones del Contrato.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="AgenteRespCostes" type="om:tTipoResponsableCostes">
+				<xsd:annotation>
+					<xsd:documentation>Agente Responsable de los Costes del Contrato. Puede ser el de Producción o Venta ("V"), el de Adquisición o Compra ("C"), o ambos ("A").</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TipoContrato" type="om:tTipoContrato">
+				<xsd:annotation>
+					<xsd:documentation>Tipo de Contrato Bilateral</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Validez">
+				<xsd:annotation>
+					<xsd:documentation>Vallidez del Contrato Bilateral</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="FechaInicio">
+							<xsd:annotation>
+								<xsd:documentation>Fecha de Inicio de Contrato</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:date" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="FechaFin">
+							<xsd:annotation>
+								<xsd:documentation>Fecha de Fin de Contrato</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:date" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="CondTec">
+				<xsd:annotation>
+					<xsd:documentation>Condiciones Técnicas</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="EnergiaMinima" type="om:tCantidad">
+							<xsd:annotation>
+								<xsd:documentation>Energía Mínima Horaria Total del Contrato</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="EnergiaMaxima" type="om:tCantidad">
+							<xsd:annotation>
+								<xsd:documentation>Energía Máxima Horaria Total del Contrato</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Nudos">
+				<xsd:annotation>
+					<xsd:documentation>Nudos físicos de la red en los que se realizan los consumos e insumos de las energías del contrato.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence maxOccurs="unbounded">
+						<xsd:element name="Nudo" type="om:tNudo">
+							<xsd:annotation>
+								<xsd:documentation>Identificador de nudo. Incluye código y tipo (Consumo o Suministro) </xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DetalleUnidades">
+				<xsd:annotation>
+					<xsd:documentation>Unidades Ofertantes que participan en el Contrato</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence minOccurs="2" maxOccurs="unbounded">
+						<xsd:element name="Unidad">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="IdUnidad" type="om:tUnidad">
+										<xsd:annotation>
+											<xsd:documentation>Indentificacion de la unidad ofertante.</xsd:documentation>
+										</xsd:annotation>
+									</xsd:element>
+									<xsd:element name="EnergiaMinima" type="om:tCantidad">
+										<xsd:annotation>
+											<xsd:documentation>Energía Mínima Horaria para la Unidad Ofertante</xsd:documentation>
+										</xsd:annotation>
+									</xsd:element>
+									<xsd:element name="EnergiaMaxima" type="om:tCantidad">
+										<xsd:annotation>
+											<xsd:documentation>Energía Máxima Horaria para la Unidad Ofertante</xsd:documentation>
+										</xsd:annotation>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by SAG-FGJ (OMEL S.A.) -->
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.2">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeCertificadosExportacion" type="om:tMensajeCertificadosExportacion">
+		<xsd:annotation>
+			<xsd:documentation>Mensaje de Certificados de Exportación</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	
+	<xsd:element name="ServicioConsultaFacturaResponse" type="xsd:anyType">
+		<xsd:annotation>
+			<xsd:documentation>Mensaje de Certificados de Exportación</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	
+	
+	<xsd:element name="Certificado">
+		<xsd:annotation>
+			<xsd:documentation>Describe los datos de cada uno de los certificados.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdCertificado" type="om:tId">
+					<xsd:annotation>
+						<xsd:documentation>Identificativo del certificado dentro del fichero, definido por quien envía el fichero (único por mensaje).</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Empresa" type="om:tEmpresa">
+					<xsd:annotation>
+						<xsd:documentation>Empresa para la que se genera el certificado.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Validez">
+					<xsd:annotation>
+						<xsd:documentation>Validez del certificado (año y mes)</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Ano" type="om:tIdNum">
+								<xsd:annotation>
+									<xsd:documentation>Año de validez</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="Mes" type="om:tIdNum">
+								<xsd:annotation>
+									<xsd:documentation>Mes de validez</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Código "MWh" por defecto</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="UniMonetaria" type="om:tUniMonetaria" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Moneda, "EURO" por defecto</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Cabecera">
+					<xsd:annotation>
+						<xsd:documentation>Texto de cabecera del certificado</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:Detalle" minOccurs="0" maxOccurs="unbounded">
+					<xsd:annotation>
+						<xsd:documentation>Detalles del Certificado</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="FacturasSuministradora" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Facturas entidad suministradora</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="IdFactura" type="om:tId" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="FacturasAdquiriente" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Facturas entidad adquiriente</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="IdFactura" type="om:tId" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Pie">
+					<xsd:annotation>
+						<xsd:documentation>Texto del pie del certificado</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tEmpresa">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para los datos de una Empresa</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdEmpresa" type="om:tIdEmpresa">
+				<xsd:annotation>
+					<xsd:documentation>Código de la Empresa.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="NombreEmpresa">
+				<xsd:annotation>
+					<xsd:documentation>Nombre de la Empresa.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" type="xsd:string" use="required"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="CIFEmpresa">
+				<xsd:annotation>
+					<xsd:documentation>CIF de la Empresa.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" type="xsd:string" use="required"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Localizacion" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Localización de la Empresa</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Direccion">
+							<xsd:annotation>
+								<xsd:documentation>Dirección</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:string" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="Localidad">
+							<xsd:annotation>
+								<xsd:documentation>Localidad</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:string" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="Provincia">
+							<xsd:annotation>
+								<xsd:documentation>Provincia</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:string" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="CodPostal">
+							<xsd:annotation>
+								<xsd:documentation>Código Postal</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:string" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="Pais">
+							<xsd:annotation>
+								<xsd:documentation>País</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:string" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tMensajeCertificadosExportacion">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para Certificados de Exportación</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" type="xsd:string"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía el mensaje (OMEL).  </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:Certificado" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tIntercambio">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para los datos de un intercambio</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Ctn" type="om:tCantidadSinMax">
+				<xsd:annotation>
+					<xsd:documentation>Energía intercambiada</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Imp" type="om:tImporte">
+				<xsd:annotation>
+					<xsd:documentation>Importe</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="Detalle">
+		<xsd:annotation>
+			<xsd:documentation>Detalle del Certificado</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Contraparte" type="om:tEmpresa">
+					<xsd:annotation>
+						<xsd:documentation>Empresa contraparte</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Ventas" type="om:tIntercambio" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Ventas como entidad suministradora</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Compras" type="om:tIntercambio" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Compras como entidad adquiriente de energía</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:annotation>
+		<xsd:documentation>Esquema correspondiente al mensaje de Certificados de Exportación</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeRetiradaEjecucionesCBFDefecto" type="om:tMensajeRetiradaEjecucionesCBFDefecto">
+		<xsd:annotation>
+			<xsd:documentation>Retirada de Ejecuciones de Contratos Bilaterales por defecto</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ParametrosRetirada">
+		<xsd:annotation>
+			<xsd:documentation>Describe los parámetros de retirada  de ejecuciones por defecto</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdRetirada" type="om:tId">
+					<xsd:annotation>
+						<xsd:documentation>Identificativo de la retirada dentro del fichero, definido por quien envía el fichero (único por mensaje).</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdCBF" type="om:tIdNum">
+					<xsd:annotation>
+						<xsd:documentation>Código del Contrato Bilateral Físico</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tMensajeRetiradaEjecucionesCBFDefecto">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para Retirada de Ejecuciones de Contratos Bilaterales por defecto</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía la solicitud de Retirada.  </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:ParametrosRetirada" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de Retirada de Ejecuciones de Contratos Bilaterales por defecto</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by Fernando García Julián (OMEL, S.A.) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeDesagregacionesCP" type="om:tMensajeDesagregacionesCP">
+		<xsd:annotation>
+			<xsd:documentation>Conjunto de desagregaciones por unidad de contratación a plazo</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DesagregacionCP">
+		<xsd:annotation>
+			<xsd:documentation>Describe los datos de cada una de las desagregaciones individuales. Habrá uno por unidad de contratación a plazo y fecha</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdDesagregacionCP" type="om:tId">
+					<xsd:annotation>
+						<xsd:documentation>Identificativo de la desagregación dentro del fichero, definido por quien envía el fichero (único por mensaje).</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdUnidad" type="om:tUnidad">
+					<xsd:annotation>
+						<xsd:documentation>Código de unidad de contratación a plazo</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Validez">
+					<xsd:annotation>
+						<xsd:documentation>Validez</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="TipoMercado" type="om:tMercado">
+								<xsd:annotation>
+									<xsd:documentation>MD: Mercado Diario</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="Sesion">
+								<xsd:annotation>
+									<xsd:documentation>Sesión para la que se desagrega</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="fecha" type="xsd:date" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Fecha de la sesión</xsd:documentation>
+										</xsd:annotation>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Código "MWh" por defecto</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Comentario" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Comentario libre</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="30"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element ref="om:Detalle" maxOccurs="unbounded">
+					<xsd:annotation>
+						<xsd:documentation>Detalle de las desagregaciones. Habrá uno por unidad ofertante.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Detalle">
+		<xsd:annotation>
+			<xsd:documentation>Detalle de desagregaciones. Habrá uno por unidad ofertante</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Dia" type="om:tFecha">
+					<xsd:annotation>
+						<xsd:documentation>Fecha</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdUnidad" type="om:tUnidad">
+					<xsd:annotation>
+						<xsd:documentation>Código de unidad ofertante</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:Blq" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Blq">
+		<xsd:annotation>
+			<xsd:documentation>Bloques </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Per" type="om:tPeriodo">
+					<xsd:annotation>
+						<xsd:documentation>Periodo horario del día</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Ctn" type="om:tCantidad">
+					<xsd:annotation>
+						<xsd:documentation>Cantidad de Energía</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tMensajeDesagregacionesCP">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para las desagregaciones por unidad de contratación a plazo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía el mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:DesagregacionCP" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Describe los datos de cada una de las desagregaciones individuales. Habrá uno por unidad ofertante y fecha</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de las desagregaciones de Contratación a Plazo en Unidades Ofertantes</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.omel.es/Schemas"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:umm="http://www.omel.es/Schemas"
+	elementFormDefault="qualified">
+	
+	<!--<xs:import namespace="http://www.acer.europa.eu/REMIT/REMITUMMCommonSchema_V1.xsd"
+		schemaLocation="REMITUMMCommonSchema_V1.xsd"/>-->
+	<xs:include schemaLocation="REMITUMMCommonSchema_V1.xsd"/>
+	
+	<xs:element name="REMITUrgentMarketMessages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="UMM" type="umm:UMM" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="tREMITUrgentMarketMessages">
+		<xs:sequence>
+			<xs:element name="UMM" type="umm:UMM"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="UMM">
+		<xs:sequence>
+			<xs:element name="messageId" minOccurs="1" maxOccurs="1">
+			<xs:annotation>
+				<xs:documentation>Field n. 1: This field aims to capture the identifier of the message issued by the market participant or by someone acting on its behalf. 
+					UMMs related to the same event may be updated several times before and during the event. Inside information publication may require a prognosis, for example regarding
+					the duration of the event. Such prognosis contains an element of uncertainty and should be based on all available data and analysis prepared with reasonable effort at the time of publication.
+					If the prognosis or the level or certainty changes over time, the publication should be updated accordingly.		
+				</xs:documentation>
+			</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="29"/>
+						<xs:maxLength value="29"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="event" type="umm:event" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Details of the event</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+						
+			<xs:element name="publicationDateTime" type="xs:dateTime" minOccurs="1" maxOccurs="1" >
+				<xs:annotation>
+					<xs:documentation>Field n.5: The field "Publication date/time" defines the point in time when the inside information was disclosed to the public though the UMM.
+						It should be generated automatically by the system when a UMM is published
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+						
+			<xs:element name="remarks" minOccurs="1" maxOccurs="1" >
+				<xs:annotation>
+					<xs:documentation>Field n.13: The field ‘Remarks’ provides more detailed information on the event that allows a full understanding of its potential impact on wholesale energy prices.
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>				
+			</xs:element>
+									
+			<xs:element name="marketParticipant" type="umm:marketParticipant" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Details of the Market Participant</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+								
+		</xs:sequence>
+	</xs:complexType>
+	
+	
+	<xs:complexType name="event">
+		<xs:sequence>
+			
+			<xs:element name="eventStatus" type="umm:eventStatus" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.2: The field ‘Event Status’ allows the distinction between UMMs that contain the most recent information on an event and can still influence trading decisions,
+						and UMMs that are already outdated or that were updated. 
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+						
+			<xs:element name="eventStart" type="xs:dateTime" minOccurs="1" maxOccurs="1" >
+				<xs:annotation>
+					<xs:documentation>Field n.6: The field "Event start" describes the expected (if future) or actual (if past) starting time and date of the relevant event.
+						This field together with the ‘Event stop’ field allows the knowledge of the timeframe of the event and the assessment of its potential impact on wholesale energy prices.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			
+			<xs:element name="eventStop" type="xs:dateTime" minOccurs="0" maxOccurs="1" >
+				<xs:annotation>
+					<xs:documentation>Field n.7: The field ‘Event stop’ describes the estimated (if future) or actual (if past) time and date at which the relevant event stops(ed).
+						This field together with the ‘Event start’ field provides the timeframe of the event and the assessment of its potential impact on wholesale energy prices.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+						
+			
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.4.4">
+	<xsd:annotation>
+		<xsd:documentation>Tipos básicos de OMEL</xsd:documentation>
+	</xsd:annotation>
+	<!-- O M E L   -   T I P O S   B A S I C O S -->
+	<xsd:complexType name="tId">
+		<xsd:annotation>
+			<xsd:documentation>Código que identifica un elemento de forma única dentro del documento.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string"/>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tIdNum">
+		<xsd:annotation>
+			<xsd:documentation>Número que identifica un elemento de forma única dentro del documento.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:nonNegativeInteger"/>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tVersionMensaje">
+		<xsd:annotation>
+			<xsd:documentation>Número de versión de un mensaje</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="xsd:nonNegativeInteger" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tIdRemitente">
+		<xsd:annotation>
+			<xsd:documentation>Tipo que identifica un remitente, como código de agente, código EIC, etc.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="16"/>
+					<xsd:pattern value="(\p{Lu}|\p{N}|\p{Pd}|\p{Pc}|\p{Zs}){1,16}"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tFecha">
+		<xsd:annotation>
+			<xsd:documentation>Fecha </xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="xsd:date" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tFechaHora">
+		<xsd:annotation>
+			<xsd:documentation>Fecha y hora</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="xsd:dateTime" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tTerminoFijo">
+		<xsd:annotation>
+			<xsd:documentation>Tipo en el que se expresa el término fijo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:nonNegativeInteger">
+					<xsd:totalDigits value="9"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tTerminoVariable">
+		<xsd:annotation>
+			<xsd:documentation>Tipo en el que se expresa el término variable</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:decimal">
+					<xsd:minInclusive value="0"/>
+					<xsd:fractionDigits value="3"/>
+					<xsd:maxInclusive value="999999999.999"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tGradiente">
+		<xsd:annotation>
+			<xsd:documentation>Tipo en el que se expresan los gradientes</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:decimal">
+					<xsd:minInclusive value="0"/>
+					<xsd:maxInclusive value="99999.9"/>
+					<xsd:fractionDigits value="1"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tUnidad">
+		<xsd:annotation>
+			<xsd:documentation>Identificación de unidad ofertante o física</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Código de la unidad</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="14"/>
+					<xsd:pattern value="(\p{Lu}|\p{N}|\p{Pd}|\p{Pc}|\p{Zs}|/){1,14}"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="codMin" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>Código del ministerio</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="50"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="area" type="om:tAtrArea" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>Área de la unidad</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="tipo" type="om:tAtrTipoUnidad" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>Tipo de unidad</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tPeriodo">
+		<xsd:annotation>
+			<xsd:documentation>Número de periodo dentro de un intervalo temporal (hora)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:positiveInteger">
+					<xsd:maxInclusive value="25"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tCantidad">
+		<xsd:annotation>
+			<xsd:documentation>Cantidad de energía</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:decimal">
+					<xsd:fractionDigits value="3"/>
+					<xsd:minInclusive value="-99999.999"/>
+					<xsd:maxInclusive value="99999.999"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tCantidadSinMax">
+		<xsd:annotation>
+			<xsd:documentation>Cantidad de energía (sin maximo)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:decimal">
+					<xsd:fractionDigits value="3"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tPrecio">
+		<xsd:annotation>
+			<xsd:documentation>Precio.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:decimal">
+					<xsd:fractionDigits value="3"/>
+					<xsd:minInclusive value="0"/>
+					<xsd:totalDigits value="8"/>
+					<xsd:maxInclusive value="99999.999"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tPrecioNegativo">
+		<xsd:annotation>
+			<xsd:documentation>Precio negativo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:decimal">
+					<xsd:fractionDigits value="3"/>
+					<xsd:minInclusive value="-99999.999"/>
+					<xsd:totalDigits value="8"/>
+					<xsd:maxInclusive value="99999.999"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tIntervaloTiempo">
+		<xsd:annotation>
+			<xsd:documentation>Intervalo de tiempo expresado por una fecha y hora inicial y otra final, en formato ISO 8601.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:pattern value="[2-9][0-9][0-9][0-9][\-][0-1][0-9][\-][0-3][0-9][T][0-2][0-9][:][0-6][0-9](Z|[\+][0-2][0-9][:][0-6][0-9])[/][2-9][0-9][0-9][0-9][\-][0-1][0-9][\-][0-3][0-9][T][0-2][0-9][:][0-6][0-9](Z|[\+][0-2][0-9][:][0-6][0-9])"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tCodTransaccion">
+		<xsd:annotation>
+			<xsd:documentation>Código y versión de una transacción (oferta, ejecución, declaración)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="codigo" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Código de la transacción</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:nonNegativeInteger">
+					<xsd:minInclusive value="0"/>
+					<xsd:maxInclusive value="9999999999"/>
+					<xsd:totalDigits value="10"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="version" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>Versión de la transacción</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:nonNegativeInteger">
+					<xsd:minInclusive value="0"/>
+					<xsd:maxInclusive value="999"/>
+					<xsd:totalDigits value="3"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tIdPrograma">
+		<xsd:annotation>
+			<xsd:documentation>Identificativo de programa</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrIdPrograma" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Identificativo del programa</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="t" type="om:tAtrTipoPrograma" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Tipo de programa</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="fuente" type="om:tAtrFuente" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Fuente que originó el programa</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tCodConsulta">
+		<xsd:annotation>
+			<xsd:documentation>Código de consulta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:nonNegativeInteger">
+					<xsd:maxInclusive value="9999"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tIdioma">
+		<xsd:annotation>
+			<xsd:documentation>Código de idioma</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:length value="2"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tSegmento">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de segmento en anotaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="8"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tSesionAnotaciones">
+		<xsd:annotation>
+			<xsd:documentation>Número de sesión de intradiario para anotaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:nonNegativeInteger">
+					<xsd:totalDigits value="2"/>
+					<xsd:minInclusive value="0"/>
+					<xsd:maxInclusive value="25"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tSignoImp">
+		<xsd:annotation>
+			<xsd:documentation>Signo de Importes en anotaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrSignoImp" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tSignoEne">
+		<xsd:annotation>
+			<xsd:documentation>Signo de Energías en anotaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrSignoEne" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tSignoPrecio">
+		<xsd:annotation>
+			<xsd:documentation>Signo de Precios en anotaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrSignoPrecio" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tCodigo">
+		<xsd:annotation>
+			<xsd:documentation>Códigos varios</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="8"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tCuenta">
+		<xsd:annotation>
+			<xsd:documentation>Código de cuenta de compensacion en anotaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="8"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tRespuesta">
+		<xsd:annotation>
+			<xsd:documentation>Código y texto de respuesta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="CodigoRespuesta">
+				<xsd:annotation>
+					<xsd:documentation>Código de respuesta</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" type="xsd:string" use="required">
+						<xsd:annotation>
+							<xsd:documentation>Valor</xsd:documentation>
+						</xsd:annotation>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="TextoRespuesta" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Textos descriptivos de la respuesta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tAgente">
+		<xsd:annotation>
+			<xsd:documentation>Identificación del Agente</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Código de Agente</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="5"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="desc" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>Descripción del agente</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="CIF" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>CIF del agente</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tNudo">
+		<xsd:annotation>
+			<xsd:documentation>Identificación de Nudo físico de la red</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Código de nudo</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="7"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="tipo" type="om:tAtrTipoNudo" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Tipo de nudo</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tIdGrupoEmpresarial">
+		<xsd:annotation>
+			<xsd:documentation>Identificación de Grupo Empresarial</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Código de grupo empresarial</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="7"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tIdEmpresa">
+		<xsd:annotation>
+			<xsd:documentation>Identificación de Empresa</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Código de empresa</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="8"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tImporte">
+		<xsd:annotation>
+			<xsd:documentation>Tipo en el que se expresan los importes</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:decimal">
+					<xsd:totalDigits value="16"/>
+					<xsd:fractionDigits value="2"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tCodSubasta">
+		<xsd:annotation>
+			<xsd:documentation>Código de Subasta por la Interconexión</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Código de subasta</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="20"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tCodProducto">
+		<xsd:annotation>
+			<xsd:documentation>Código de Producto</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Código de producto</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="20"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tTipoProducto">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de Producto</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Código de tipo de producto</xsd:documentation>
+			</xsd:annotation>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:maxLength value="20"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<!--O M E L   -   L I S T A S   D E   V A L O R E S-->
+	<xsd:complexType name="tMercado">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de mercado</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrMercado" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tUniEnergia">
+		<xsd:annotation>
+			<xsd:documentation>Unidades de energía</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrUniEnergia" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tUniMonetaria">
+		<xsd:annotation>
+			<xsd:documentation>Unidades monetarias</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrUniMonetaria" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tUniPrecio">
+		<xsd:annotation>
+			<xsd:documentation>Unidades de precio</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrUniPrecio" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tUniGradiente">
+		<xsd:annotation>
+			<xsd:documentation>Unidades para gradientes</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrUniGradiente" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tClaseOferta">
+		<xsd:annotation>
+			<xsd:documentation>Clases de Ofertas</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrClaseOferta" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tTipoTransaccion">
+		<xsd:annotation>
+			<xsd:documentation>Tipo y Subtipo de transacción</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="tipo" type="om:tAtrTipoTransaccion" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Tipo de transacción</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="subTipo" type="om:tAtrSubtipoTransaccion" use="required">
+			<xsd:annotation>
+				<xsd:documentation>Subtipo de transacción</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tAgregacion">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de agregacion</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrAgregacion" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tSiNo">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de elemento "booleano" (S, Y, N)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrSiNo" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tTipoConsulta">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de Consulta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrTipoConsulta" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tTipoDescarga">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de Descarga</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrTipoDescarga" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tTipoCasacion">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de Casación</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrTipoCasacion" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tTipoContrato">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de Contrato</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrTipoContrato" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tTipoResponsableCostes">
+		<xsd:annotation>
+			<xsd:documentation>Tipo de Agente responsable de los costes de un Contrato Bilateral</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrTipoResponsableCostes" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tFrontera">
+		<xsd:annotation>
+			<xsd:documentation>Código de Frontera</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrArea" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tClaseOfertaAnotacion">
+		<xsd:annotation>
+			<xsd:documentation>Clases de Ofertas de Anotaciones en Cuenta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrClaseOfertaAnotacion" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="tTipoUnidadLiq">
+		<xsd:annotation>
+			<xsd:documentation>Código numérico de tipo de unidad a efectos de liquidación</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:nonNegativeInteger"/>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="tEstadoLiq">
+		<xsd:annotation>
+			<xsd:documentation>Estado de Liquidación</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="v" type="om:tAtrEstadoLiq" use="required"/>
+	</xsd:complexType>
+	<!--TIPOS SIMPLES PARA LISTAS DE VALORES-->
+	<xsd:simpleType name="tAtrMercado">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipo de mercado (MD, MI)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="MD">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>MD: Mercado Diario</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MI">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>MI: Mercado Intradiario</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MC"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrUniEnergia">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para unidad de energía</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="MWh">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>MWh</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="kWh">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>kWh</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrUniMonetaria">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para unidad monetaria</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="cEURO"/>
+			<xsd:enumeration value="EURO"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrUniPrecio">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para unidad de precio</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="cEURO/kWh">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>cEur/MWh</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="cEURO/MWh"/>
+			<xsd:enumeration value="EURO/MWh"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrUniGradiente">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para unidad de gradiente</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="MW/min">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>MW/Min</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrClaseOferta">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para clase de oferta (C, V)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="C">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>C: Compra</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>V: Venta</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrTipoTransaccion">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipo de transacción</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="M">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>M: Mercado</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>B: Bilateral</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="R">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>R: Régimen Especial</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RM">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>RM: Redespachos al Mercado</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrSubtipoTransaccion">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para subtipo de transacción</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>0: Comercializador (Venta)</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>1: Productor</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>2: Régimen especial a distribución</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>3: Consumo de bombeo</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>4: Contrato bilateral</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>5: Contrato internacional</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>6: Distribuidor</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>7: Cliente cualificado</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>8: Comercializador</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="9">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>9: Agente externo</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>10: Régimen especial a mercado</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="11">
+				<xsd:annotation>
+					<xsd:documentation>11: Genérica</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="12">
+				<xsd:annotation>
+					<xsd:documentation>12: Genérica subasta de distribución</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="13">
+				<xsd:annotation>
+					<xsd:documentation>13: Distribuidor (venta por ajuste de demanda)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="14">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>14: Distribuidor (compra por incumplimiento de subastas CESUR)</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>15: Porfolio</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrAgregacion">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipo de agregación (UO, UF)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="UO">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>UO: Agregación por Unidad Ofertante</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="UF">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>UF: Agregación por unidad física</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CP">
+				<xsd:annotation>
+					<xsd:documentation>CP: Agregación por Unidad de Contratación a Plazo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="UP">
+				<xsd:annotation>
+					<xsd:documentation>UP: Agregación por unidad de programación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrSiNo">
+		<xsd:annotation>
+			<xsd:documentation>Atributo pare elemento "booleano" (S, Y, N)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="S">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>S: Si</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Y">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>Y: Si (yes)</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="N">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>N: No</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrTipoConsulta">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipos de consultas (ENCOL, PROGR, ANEXO)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="ENCOL">
+				<xsd:annotation>
+					<xsd:documentation>Consulta encolumnada</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PROGR">
+				<xsd:annotation>
+					<xsd:documentation>Consulta de tipo Programa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ANEXO">
+				<xsd:annotation>
+					<xsd:documentation>Consulta a fichero anexo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrTipoUnidad">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipo de unidad (UO, UF, RE, CP)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="UO">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>UO: Unidad Ofertante</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="UF">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>UF:Unidad Física</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RE">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>RE:Régimen Especial</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CP">
+				<xsd:annotation>
+					<xsd:documentation>CP: Unidad de Contratación a Plazo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="UP">
+				<xsd:annotation>
+					<xsd:documentation>UP: Unidad de programación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrArea">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para área</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>1: España</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>2: Portugal</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>3: Europa - Interconex Francia</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>4: Andorra</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>5: Africa - Interconex Marruecos</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrIdPrograma">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para Identificativo de Programa (PDBC, PIBC, ...)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="PDBC"/>
+			<xsd:enumeration value="PDBF"/>
+			<xsd:enumeration value="PIBCI"/>
+			<xsd:enumeration value="PIBCA"/>
+			<xsd:enumeration value="PHF"/>
+			<xsd:enumeration value="PDVD"/>
+			<xsd:enumeration value="PDVP"/>
+			<xsd:enumeration value="DESGLOSERE"/>
+			<xsd:enumeration value="DESGLOSEREINTRA"/>
+			<xsd:enumeration value="DESAGRERE"/>
+			<xsd:enumeration value="DESAGREREI"/>
+			<xsd:enumeration value="POSICIONESMP"/>
+			<xsd:enumeration value="PDBCE"/>
+			<xsd:enumeration value="PIBCIE"/>
+			<xsd:enumeration value="EACB"/>
+			<xsd:enumeration value="EACBI"/>
+			<xsd:enumeration value="EAUDI"/>
+			<xsd:enumeration value="CAPACIDADNOMINADA"/>
+			<xsd:enumeration value="CAPACIDADAUTORIZADAD"/>
+			<xsd:enumeration value="CAPACIDADAUTORIZADAI"/>
+			<xsd:enumeration value="PIBCIC"/>
+			<xsd:enumeration value="PIBCAC"/>
+			<xsd:enumeration value="PHFC"/>
+			<xsd:enumeration value="TRANSACCIONESMC"/>
+			<xsd:enumeration value="PIBCIC_PREV"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrTipoPrograma">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para Tipo de Programa (A, I)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="A">
+				<xsd:annotation>
+					<xsd:documentation>A: Acumulado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="I">
+				<xsd:annotation>
+					<xsd:documentation>I: Incremental</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrSignoImp">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para signo en el pago</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>derecho de cobro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="0">
+				<xsd:annotation>
+					<xsd:documentation>sin signo (casos de importe cero en segmento S.MAJ)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="-1">
+				<xsd:annotation>
+					<xsd:documentation>obligacion de pago</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrSignoEne">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para signo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>derechos de cobro con energia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="-1">
+				<xsd:annotation>
+					<xsd:documentation>obligaciones de pago con energia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="0">
+				<xsd:annotation>
+					<xsd:documentation>DC/OP que valoran banda, o son de reparto, o son de energía a sobre coste, o son de rectificación</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrSignoPrecio">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para signo de precio</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>derecho de cobro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="-1">
+				<xsd:annotation>
+					<xsd:documentation>obligacion de pago</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrFuente">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para fuente de un programa (OM, OS)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="OM"/>
+			<xsd:enumeration value="OS"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrTipoDescarga">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipo de descarga</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="A">
+				<xsd:annotation>
+					<xsd:documentation>Descarga Automática</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="M">
+				<xsd:annotation>
+					<xsd:documentation>Descarga Manual</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrTipoCasacion">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipo de casación</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Casación normal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrTipoContrato">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipo de Contrato Bilateral</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>CB Internacional entre agentes en una frontera</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Tránsito internacional entre agentes</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>CB internacional con un agente instrumental</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Tránsito internacional con un agente instrumental</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>CB nacional entre comercializadoras</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>CB nacional entre productor y consumidor</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>CB nacional entre productor en RE y consumidor</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Asimilación de ofertas a bilaterales</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrTipoResponsableCostes">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipo de Agente responsable de los costes de un Contrato Bilateral</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="V">
+				<xsd:annotation>
+					<xsd:documentation>Agente de Venta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C">
+				<xsd:annotation>
+					<xsd:documentation>Agente de Compra</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A">
+				<xsd:annotation>
+					<xsd:documentation>Ambos</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrTipoNudo">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para tipo de nudo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="0">
+				<xsd:annotation>
+					<xsd:documentation>Consumo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Suministro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrClaseOfertaAnotacion">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para clase de oferta de una anotación (C, V, Z)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="C">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>C: Compra</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="V">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>V: Venta</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Z">
+				<xsd:annotation>
+					<xsd:documentation>Z: Instrumental</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tAtrEstadoLiq">
+		<xsd:annotation>
+			<xsd:documentation>Atributo para estado de una liquidación (P, D)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="P">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>P: Provisional</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D">
+				<xsd:annotation>
+					<xsd:documentation>
+						<CodeDescription>
+							<Title>D: Definitiva</Title>
+						</CodeDescription>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!--ELEMENTOS SIMPLES-->
+	<xsd:element name="SeleccionIdioma" type="om:tIdioma">
+		<xsd:annotation>
+			<xsd:documentation>Elemento para la selección del idioma</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CodConsulta" type="om:tCodConsulta">
+		<xsd:annotation>
+			<xsd:documentation>Elemento para la configuración de una consulta</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TipoDescarga" type="om:tTipoDescarga">
+		<xsd:annotation>
+			<xsd:documentation>Elemento para la selección del tipo de descarga de ficheros</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="FechaHoraResponse">
+		<xsd:sequence>
+			<xsd:element name="FechaHora" type="om:tFechaHora"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

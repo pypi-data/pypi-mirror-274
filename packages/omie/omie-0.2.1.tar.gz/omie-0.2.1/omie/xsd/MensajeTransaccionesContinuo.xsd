@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by FGJ (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by F. García Julián (OMEL S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.2">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeTransaccionesContinuo" type="om:tMensajeTransaccionesContinuo">
+		<xsd:annotation>
+			<xsd:documentation>Transacciones del Mercado Continuo</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeTransaccionesContinuo">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para transacciones del Mercado Continuo</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo del contenido del mensaje (por ejemplo "TRANSACCIONESMC_IBGES_2018010301" "TRANSACCIONESMC_2018010301")</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje">
+				<xsd:annotation>
+					<xsd:documentation>Versión del contenido del mensaje (para diferentes versiones del mismo programa)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha/hora de generación de los datos en el servidor (no del envío del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdPrograma" type="om:tIdPrograma">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del programa, incluyendo un código (TRANSACCIONESMC), un tipo  (Incremental) y la fuente (OM).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del OM u OS, que envía el programa. </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TipoMercado" type="om:tMercado">
+				<xsd:annotation>
+					<xsd:documentation>"MC": Continuo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Ronda">
+				<xsd:annotation>
+					<xsd:documentation>Incluye Fecha y Número de Ronda</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="fecha" type="xsd:date" use="required"/>
+					<xsd:attribute name="num" use="optional">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:nonNegativeInteger">
+								<xsd:maxInclusive value="25"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Horizonte" type="om:tIntervaloTiempo">
+				<xsd:annotation>
+					<xsd:documentation>Intervalo temporal  (ISO 8601) de validez del Programa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Transaccion" type="om:tTransaccion" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tTransaccion">
+		<xsd:annotation>
+			<xsd:documentation>Describe los datos de cada transacción</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="CdTransaccion" type="om:tIdNum">
+				<xsd:annotation>
+					<xsd:documentation>Código de transacción</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CdContrato" type="om:tIdNum">
+				<xsd:annotation>
+					<xsd:documentation>Código de contrato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Periodo">
+				<xsd:annotation>
+					<xsd:documentation>Incluye Fecha y Número de periodo de entrega</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="fecha" type="xsd:date" use="required"/>
+					<xsd:attribute name="num" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:nonNegativeInteger">
+								<xsd:maxInclusive value="25"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClaseTransaccion" type="om:tClaseOferta">
+				<xsd:annotation>
+					<xsd:documentation>Clase de la Oferta "C"/"V"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdUnidad" type="om:tUnidad" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Código de unidad ofertante. Incluye atributo con Código del Ministerio y Área donde se localiza.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "MWh"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniPrecio" type="om:tUniPrecio" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "EURO/MWh"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaTransaccion" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha/hora de la transacción</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Ctn" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Cantidad de Energía</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Prc" type="om:tPrecioNegativo">
+				<xsd:annotation>
+					<xsd:documentation>Precio</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CdOferta" type="om:tIdNum" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Código de oferta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tPeriodoPrograma">
+		<xsd:annotation>
+			<xsd:documentation>Incluye todos los valores de horas y energías para la Serie. En el primer Intradiario, existirá uno por Serie y día de la sesión.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Dia" type="om:tFecha">
+				<xsd:annotation>
+					<xsd:documentation>Fecha del periodo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Val" type="om:tValPrograma" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tValPrograma">
+		<xsd:annotation>
+			<xsd:documentation>Describe un valor individual de hora y energía </xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Per" type="om:tPeriodo">
+				<xsd:annotation>
+					<xsd:documentation>Secuencial dentro del Intervalo. Indica el periodo horario dentro del día. No incluir para aquellos periodos que no tienen programa.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Ctn" type="om:tCantidad">
+				<xsd:annotation>
+					<xsd:documentation>Valor de Energía</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de Programas de operación de diferentes tipos</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

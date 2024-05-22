@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by carlos (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by Pilar Acero (OMEL S.A.) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="MensajeOfertasMIResponse">
+		<xsd:sequence>
+			<xsd:element name="MensajeOfertasMI" type="om:tMensajeOfertasMI"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="MensajeOfertasMI" type="om:tMensajeOfertasMI">
+		<xsd:annotation>
+			<xsd:documentation>Mensaje de Ofertas al Mercado Intradiario</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Oferta">
+		<xsd:annotation>
+			<xsd:documentation>Describe los datos de cada una de las ofertas individuales, una por cada Oferta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdOferta" type="om:tId">
+					<xsd:annotation>
+						<xsd:documentation>Identificativo de la oferta dentro del fichero, definido por quien envía el fichero (único por mensaje).</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdUnidad" type="om:tUnidad">
+					<xsd:annotation>
+						<xsd:documentation>Código de Unidad</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="NumOferta" type="om:tIdNum">
+					<xsd:annotation>
+						<xsd:documentation>Número de Oferta para la Unidad.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Validez">
+					<xsd:annotation>
+						<xsd:documentation>Validez</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="TipoMercado" type="om:tMercado">
+								<xsd:annotation>
+									<xsd:documentation>MI: Mercado Intradiario</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="Sesion">
+								<xsd:annotation>
+									<xsd:documentation>Sesión</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="fecha" type="xsd:date" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Fecha de la sesión</xsd:documentation>
+										</xsd:annotation>
+									</xsd:attribute>
+									<xsd:attribute name="num" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Número de la sesión</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:nonNegativeInteger">
+												<xsd:maxInclusive value="25"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="ClaseOferta" type="om:tClaseOferta">
+					<xsd:annotation>
+						<xsd:documentation>Clase de la Oferta "C"/"V"</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:CondEco" minOccurs="0"/>
+				<xsd:element ref="om:CondTec" minOccurs="0"/>
+				<xsd:element name="UniEnergia" type="om:tUniEnergia" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Código "MWh" por defecto</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="UniMonetaria" type="om:tUniMonetaria" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Moneda</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="UniPrecio" type="om:tUniPrecio">
+					<xsd:annotation>
+						<xsd:documentation>Unidad de Precios</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="UniGradiente" type="om:tUniGradiente" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Unidad de Gradientes. "MW/min</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="TipoNecesidad">
+					<xsd:annotation>
+						<xsd:documentation>Tipo de Necesidad </xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor</xsd:documentation>
+							</xsd:annotation>
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:NMTOKEN">
+									<xsd:enumeration value="10">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>10: Adq. de distribuidor &gt;10%</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="20">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>20: Adq. de distribuidor &gt;10%</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="30">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>30: Venta de distribuidor &lt; 10%</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="40">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>40: Venta de distribuidor &gt; 10%</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="50">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>50: Adq. de comercializador</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="60">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>60: Adq. de consumidor Cualif.</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="70">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>70: Venta de comercializador</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="80">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>80: Venta de consumidor Cualif.</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="90">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>90: Venta de unidad de bombeo</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="101">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>101: Compra por indisponibilidad</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="102">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>102: Compra por pruebas</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="103">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>103: Compra por infactibilidad</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="111">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>111: Venta por probabil. de vertido</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="112">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>112: Venta por pruebas</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="113">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>113: Venta por infactibilidad</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="120">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>120: Oferta de venta libre</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="130">
+										<xsd:annotation>
+											<xsd:documentation>
+												<CodeDescription>
+													<Title>130: Oferta de compra libre</Title>
+												</CodeDescription>
+											</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="61">
+										<xsd:annotation>
+											<xsd:documentation>61: Adq. de consumidor directo</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="81">
+										<xsd:annotation>
+											<xsd:documentation>81: Venta de consumidor directo</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="140">
+										<xsd:annotation>
+											<xsd:documentation>140: Adq. CUR &gt; 10%</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="141">
+										<xsd:annotation>
+											<xsd:documentation>141: Adq. CUR &lt; 10%</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="142">
+										<xsd:annotation>
+											<xsd:documentation>142: Venta CUR &gt; 10%</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+									<xsd:enumeration value="143">
+										<xsd:annotation>
+											<xsd:documentation>143: Venta CUR &lt; 10%</xsd:documentation>
+										</xsd:annotation>
+									</xsd:enumeration>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="DescNecesidad" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Desscripcion de la necesidad</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="required">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="30"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Comentario" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Descripción de la oferta,  u otro comentario libre</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" use="optional">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="30"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element ref="om:Detalle" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CondEco">
+		<xsd:annotation>
+			<xsd:documentation>Condición de ingresos mínimos</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="TerminoFijo" type="om:tTerminoFijo">
+					<xsd:annotation>
+						<xsd:documentation>Término fijo</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="TerminoVariable" type="om:tTerminoVariable">
+					<xsd:annotation>
+						<xsd:documentation>Término variable</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="CondTec">
+		<xsd:annotation>
+			<xsd:documentation>Datos Mercado Intradiario</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="om:Gradientes" minOccurs="0"/>
+				<xsd:element name="RechBlq1" type="om:tSiNo" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Indicativo de rechazo por bloque 1</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="EnergiaMaxima" type="om:tCantidad" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Energia máxima administrable</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="MinPerConsec" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Número mínimo de horas consecutivas</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" type="xsd:nonNegativeInteger" use="required"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="AcepCompBlq1" type="om:tSiNo" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Indicativo de aceptación completa del primer tramo por hora</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Gradientes">
+		<xsd:annotation>
+			<xsd:documentation>Condiciones de gradiente</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Parada" type="om:tGradiente" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Gradiente de parada</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Arranque" type="om:tGradiente" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Gradiente de arranque</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Bajada" type="om:tGradiente" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Gradiente de bajada</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Subida" type="om:tGradiente" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Gradiente de subida</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="MinimoTecnico" type="om:tCantidad" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Mínimo Técnico</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Detalle">
+		<xsd:annotation>
+			<xsd:documentation>Detalle de la Oferta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Dia" type="om:tFecha">
+					<xsd:annotation>
+						<xsd:documentation>Fecha del Periodo Ofertado</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:Blq" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Blq">
+		<xsd:annotation>
+			<xsd:documentation>Bloques de la Oferta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Per" type="om:tPeriodo">
+					<xsd:annotation>
+						<xsd:documentation>Periodo horario del día</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Ctn" type="om:tCantidad">
+					<xsd:annotation>
+						<xsd:documentation>Energía de la oferta, sin signo</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Prc" type="om:tPrecioNegativo">
+					<xsd:annotation>
+						<xsd:documentation>Precio</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="num" type="xsd:positiveInteger" use="required">
+				<xsd:annotation>
+					<xsd:documentation>Número de bloque</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tMensajeOfertasMI">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para Ofertas al Mercado Intradiario</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía la oferta.  </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:Oferta" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de Ofertas al Mercado Intradiario</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

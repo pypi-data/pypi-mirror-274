@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>	
+	<xsd:complexType name="RespuestaMensajesCortosActivosResponse">
+		<xsd:sequence>
+			<xsd:element name="RespuestaMensajesCortosActivos" type="om:tRespuestaMensajesCortosActivos"/>
+		</xsd:sequence>
+	</xsd:complexType>								
+	<xsd:element name="RespuestaMensajesCortosActivos" type="om:tRespuestaMensajesCortosActivos">
+		<xsd:annotation>
+			<xsd:documentation>Conjunto de respuestas a los Mensajes cortos  activos en el sistema</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Mensaje">
+		<xsd:annotation>
+			<xsd:documentation>Detalle del elemento</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="FechaAlta" type="om:tFechaHora">
+					<xsd:annotation>
+						<xsd:documentation>Fecha y hora de Alta del mensaje</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Texto">
+					<xsd:annotation>
+						<xsd:documentation>Descripción del mensaje</xsd:documentation>
+					</xsd:annotation>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:maxLength value="1024"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tRespuestaMensajesCortosActivos">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para las respuestas de Mensajes cortos activos en el sistema</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="om:Mensaje" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de las respuestas de Mensajes cortos activos en el sistema</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

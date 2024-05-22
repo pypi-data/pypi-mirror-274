@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.omel.es/Schemas"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:cm="http://www.omel.es/Schemas"
+	elementFormDefault="qualified">
+
+
+	<xs:simpleType name="eventStatus">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Active"/>
+			<xs:enumeration value="Dismissed"/>
+			<xs:enumeration value="Inactive"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="unavailabilityType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Planned"/>
+			<xs:enumeration value="Unplanned"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:simpleType name="fuelType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Biomass"/>
+			<xs:enumeration value="Fossil Brown coal/Lignite"/>
+			<xs:enumeration value="Fossil Coal-derived gas"/>
+			<xs:enumeration value="Fossil Gas"/>
+			<xs:enumeration value="Fossil Hard coal"/>
+			<xs:enumeration value="Fossil Oil"/>
+			<xs:enumeration value="Fossil Oil shale"/>
+			<xs:enumeration value="Fossil Peat"/>
+			<xs:enumeration value="Geothermal"/>
+			<xs:enumeration value="Hydro Pumped Storage"/>
+			<xs:enumeration value="Hydro Run-of-river and poundage"/>
+			<xs:enumeration value="Hydro Water Reservoir"/>
+			<xs:enumeration value="Marine"/>
+			<xs:enumeration value="Nuclear"/>
+			<xs:enumeration value="Other renewable"/>
+			<xs:enumeration value="Solar"/>
+			<xs:enumeration value="Waste"/>
+			<xs:enumeration value="Wind Offshore"/>
+			<xs:enumeration value="Wind Onshore"/>
+			<xs:enumeration value="Other"/>			
+		</xs:restriction>
+	</xs:simpleType>
+
+	
+	<xs:complexType name="affectedAsset">
+		<xs:sequence>
+			<xs:element name="name" minOccurs="1" maxOccurs="1" >
+		    	 <xs:annotation>
+			  		<xs:documentation>Field n.16: The field â€˜Affected Assetâ€™ identifies and locates the asset where the event is about to occur/is occurring/occurred using its official name.
+					The information included in the field shall relate to a specific production/consumption asset/unit or connection..
+			  		</xs:documentation>
+		    	</xs:annotation>
+		   	<xs:simpleType>
+				<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="50"/>
+				</xs:restriction>
+		     </xs:simpleType>				
+	        </xs:element>	
+			<xs:element name="eic" type="cm:eic" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Field n.16: This field identifies the affected asset or unit by its EIC code. It includes the EIC W, T or Z code of the facility that is unavailable.
+					The affected asset or unit EIC code has to be identified at the most granular level i.e. if the production unit for generation of electricity is made up of an aggregation
+					of generation units, the generation unit(s) that are unavailable needs to be identified.
+				</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="marketParticipant">
+		<xs:sequence>
+			<xs:element name="name" minOccurs="1" maxOccurs="1" >
+			<xs:annotation>
+				<xs:documentation>Field n.17: The official name of the market participant that falls under the obligation of Article 4 of REMIT, regarding the specific event.
+				</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+			  <xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="300"/>
+			  </xs:restriction>
+		    </xs:simpleType>				
+			</xs:element>
+			<xs:choice>
+				<xs:annotation>
+				<xs:documentation>Field n.18: The market participant shall identify itself or shall be identified by the third party reporting on its behalf using the ACER registration code which the market participant received or the unique market participant code which the market participant provided
+					while registering in accordance with Article 9 of Regulation (EU) No 1227/2011.
+				</xs:documentation>
+			   </xs:annotation>
+				<xs:element name="ace" type="cm:ace"/>
+				<xs:element name="lei" type="cm:lei"/>
+				<xs:element name="bic" type="cm:bic"/>
+				<xs:element name="eic" type="cm:eic"/>
+				<xs:element name="gln" type="cm:gln"/>
+			</xs:choice>
+		</xs:sequence>
+  </xs:complexType>
+	
+
+	<xs:simpleType name="eic">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="16"/>
+			<xs:minLength value="16"/>
+			<xs:pattern value="[0-9][0-9][XYZTWV].+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="ace">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="12"/>
+			<xs:minLength value="12"/>
+			<xs:pattern value="[A-Za-z0-9_]+\.[A-Z][A-Z]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="bic">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="11"/>
+			<xs:minLength value="11"/>
+			<xs:pattern value="[A-Za-z0-9_]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="bil">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="XBIL"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="gln">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="13"/>
+			<xs:minLength value="13"/>
+			<xs:pattern value="[A-Za-z0-9_-]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="lei">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+			<xs:minLength value="20"/>
+			<xs:pattern value="[A-Za-z0-9_]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="mic">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="4"/>
+			<xs:minLength value="4"/>
+			<xs:pattern value="[A-Za-z0-9_]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+		
+</xs:schema>

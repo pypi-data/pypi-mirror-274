@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:complexType name="InfoMercadosResponse">
+		<xsd:sequence>
+			<xsd:element name="InfoMercados" type="om:tInfoMercados"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tInfoMercados">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para la Información pública de los mercados</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Men" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Mensajes Web</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="num" type="xsd:nonNegativeInteger" use="required">
+						<xsd:annotation>
+							<xsd:documentation>Número de mensajes </xsd:documentation>
+						</xsd:annotation>
+					</xsd:attribute>
+					<xsd:attribute name="fUlt" type="xsd:dateTime" use="required">
+						<xsd:annotation>
+							<xsd:documentation>Fecha de aparición del último mensaje</xsd:documentation>
+						</xsd:annotation>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="MD">
+				<xsd:annotation>
+					<xsd:documentation>Información de Mercado Diario</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="om:Rec">
+							<xsd:annotation>
+								<xsd:documentation>Información de reclamaciones </xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="Ses">
+							<xsd:annotation>
+								<xsd:documentation>Información de sesiones  (MD)</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="Act">
+										<xsd:annotation>
+											<xsd:documentation>Datos de la sesión actual (sesión abierta MD) </xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="f" type="xsd:date" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Fecha de sesión</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+											<xsd:attribute name="n" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Número de casación</xsd:documentation>
+												</xsd:annotation>
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:nonNegativeInteger">
+														<xsd:maxInclusive value="25"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+											<xsd:attribute name="fhC" type="xsd:dateTime" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Fecha y hora de cierre</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+									<xsd:element name="Ult">
+										<xsd:annotation>
+											<xsd:documentation>Datos de la última sesión casada (MD)</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="f" type="xsd:date" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Fecha de sesión</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="MI">
+				<xsd:annotation>
+					<xsd:documentation>Información de Mercado Intradiario</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="om:Rec">
+							<xsd:annotation>
+								<xsd:documentation>Información de reclamaciones </xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="Ses">
+							<xsd:annotation>
+								<xsd:documentation>Información de sesiones (MI)</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="Act" minOccurs="0">
+										<xsd:annotation>
+											<xsd:documentation>Datos de  la sesión actual (sesión abierta MI)</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="f" type="xsd:date" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Fecha de sesión</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+											<xsd:attribute name="n" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Número de sesión</xsd:documentation>
+												</xsd:annotation>
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:nonNegativeInteger">
+														<xsd:maxInclusive value="25"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+											<xsd:attribute name="fhAp" type="xsd:dateTime" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Fecha de apertura</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+											<xsd:attribute name="hCi" type="xsd:time" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Hora de cierre</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+									<xsd:element name="Ini" minOccurs="0">
+										<xsd:annotation>
+											<xsd:documentation>Datos del inicio del horizonte de la sesión (MI)</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="f" type="xsd:date" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Fecha de inicio</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+											<xsd:attribute name="h" type="xsd:integer" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Hora de inicio</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+											<xsd:attribute name="hEf" type="xsd:time" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Hora efectiva de inicio</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+									<xsd:element name="Fin" minOccurs="0">
+										<xsd:annotation>
+											<xsd:documentation>Datos del fin del horizonte de la sesión (MI)</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="f" type="xsd:date" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Fecha de fin</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+											<xsd:attribute name="h" type="xsd:integer" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Hora de fin</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+											<xsd:attribute name="hEf" type="xsd:time" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Hora efectiva de fin</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+									<xsd:element name="Ult">
+										<xsd:annotation>
+											<xsd:documentation>Datos de la última sesión casada (MI)</xsd:documentation>
+										</xsd:annotation>
+										<xsd:complexType>
+											<xsd:attribute name="f" type="xsd:date" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Fecha sesión</xsd:documentation>
+												</xsd:annotation>
+											</xsd:attribute>
+											<xsd:attribute name="n" use="required">
+												<xsd:annotation>
+													<xsd:documentation>Número de sesión</xsd:documentation>
+												</xsd:annotation>
+												<xsd:simpleType>
+													<xsd:restriction base="xsd:nonNegativeInteger">
+														<xsd:maxInclusive value="25"/>
+													</xsd:restriction>
+												</xsd:simpleType>
+											</xsd:attribute>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+								<xsd:attribute name="max" use="required">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:nonNegativeInteger">
+											<xsd:maxInclusive value="25"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:attribute>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="InfoMercados" type="om:tInfoMercados">
+		<xsd:annotation>
+			<xsd:documentation>Información pública de los mercados</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Rec">
+		<xsd:annotation>
+			<xsd:documentation>Información sobre las reclamaciones</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:attribute name="a" type="xsd:boolean" use="required">
+				<xsd:annotation>
+					<xsd:documentation>Indica si existen reclamaciones abiertas</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="pCas" type="xsd:boolean" use="required">
+				<xsd:annotation>
+					<xsd:documentation>Indica si el periodo de reclamaciones a casación está abierto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="pOfe" type="xsd:boolean" use="required">
+				<xsd:annotation>
+					<xsd:documentation>Indica si el periodo de reclamaciones a ofertas está abierto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="fhC" type="xsd:dateTime" use="optional">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de cierrre del periodo de reclamaciones</xsd:documentation>
+				</xsd:annotation>
+			</xsd:attribute>
+			<xsd:attribute name="nC" use="optional">
+				<xsd:annotation>
+					<xsd:documentation>Número de sesión a la que hace referencia el periodo de reclamaciones (Intradiario)</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:nonNegativeInteger">
+						<xsd:maxInclusive value="25"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:annotation>
+		<xsd:documentation>Esquema para la Información pública de los mercados</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

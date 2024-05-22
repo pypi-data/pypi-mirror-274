@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="RespuestaExcedREDResponse">
+		<xsd:sequence>
+			<xsd:element name="RespuestaExcedRED" type="om:tRespuestaExcedRED"/>
+		</xsd:sequence>
+	</xsd:complexType>	
+	<xsd:element name="RespuestaExcedRED" type="om:tRespuestaExcedRED">
+		<xsd:annotation>
+			<xsd:documentation>Respuestas de excedentes de Régimen Especial a Distribución</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Respuesta">
+		<xsd:annotation>
+			<xsd:documentation>Código y texto de respuesta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CodigoRespuesta">
+					<xsd:annotation>
+						<xsd:documentation>Código de respuesta</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" type="xsd:string" use="required">
+							<xsd:annotation>
+								<xsd:documentation>Valor</xsd:documentation>
+							</xsd:annotation>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="TextoRespuesta" type="xsd:string" minOccurs="0" maxOccurs="unbounded">
+					<xsd:annotation>
+						<xsd:documentation>Textos descriptivos de la respuesta</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="RespuestaSerie">
+		<xsd:annotation>
+			<xsd:documentation>Respuestas por  declaración</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdExcedRED" type="om:tId">
+					<xsd:annotation>
+						<xsd:documentation>Identificativo dentro del fichero, definido por quien envía el fichero (único por mensaje). </xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="IdUnidad" type="om:tUnidad">
+					<xsd:annotation>
+						<xsd:documentation>Código de la unidad ofertante</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="CodTransaccion" type="om:tCodTransaccion" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Código y versión de la declaración insertada en Base de Datos</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:Respuesta" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tRespuestaExcedRED">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para las respuestas de excedentes de Régimen Especial a Distribución</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación de la respuesta (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía la respuesta (OMEL)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdMensajeOrigen" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje que se envió (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensajeOrigen" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje que se envió (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitenteOrigen" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envió el mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:Respuesta" maxOccurs="unbounded"/>
+			<xsd:element name="ResumenExcedRED">
+				<xsd:annotation>
+					<xsd:documentation>Datos resumen de proceso de las declaraciones</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="NumDeclaracionesProcesadas">
+							<xsd:annotation>
+								<xsd:documentation>Número total de declaraciones procesadas</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:nonNegativeInteger" use="required">
+									<xsd:annotation>
+										<xsd:documentation>Valor</xsd:documentation>
+									</xsd:annotation>
+								</xsd:attribute>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="NumDeclaracionesCorrectas">
+							<xsd:annotation>
+								<xsd:documentation>Número total de declaraciones correctas</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:nonNegativeInteger" use="required">
+									<xsd:annotation>
+										<xsd:documentation>Valor</xsd:documentation>
+									</xsd:annotation>
+								</xsd:attribute>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element ref="om:RespuestaSerie" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de respuestas de excedentes de Régimen Especial a Distribución</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

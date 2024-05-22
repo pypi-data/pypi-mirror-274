@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by SAG-FGJ (OMEL S.A.) -->
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeImportesAcumulados" type="om:tMensajeImportesAcumulados">
+		<xsd:annotation>
+			<xsd:documentation>Mensaje de importes acumulados por agente</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeImportesAcumulados">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para importes acumulados</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensaje" type="om:tVersionMensaje">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del emisor que envía el mensaje (OM)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TipoMercado" type="om:tMercado" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>MD: Mercado Diario
+MI: Mercado Intradiario</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Intervalo">
+				<xsd:annotation>
+					<xsd:documentation>Intervalo de fechas al que corresponden los datos acumulados</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="FechaInicio">
+							<xsd:annotation>
+								<xsd:documentation>Fecha inico del intervalo</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:date" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="FechaFin">
+							<xsd:annotation>
+								<xsd:documentation>Fecha fin del intervalo</xsd:documentation>
+							</xsd:annotation>
+							<xsd:complexType>
+								<xsd:attribute name="v" type="xsd:date" use="required"/>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SerieTemporal" type="om:tSerieTemporalImportesAcumulados" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Series temporales para los importes</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tSerieTemporalImportesAcumulados">
+		<xsd:annotation>
+			<xsd:documentation>Serie temporal</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdSerieTemporal" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de serie dentro del fichero.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdImporte">
+				<xsd:annotation>
+					<xsd:documentation>LIQ_RECUR_CNE, ...</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:NMTOKEN"/>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="IdAgente" type="om:tAgente">
+				<xsd:annotation>
+					<xsd:documentation>Código de Agente</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Version" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Versión del acumulado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdArea" type="om:tId" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Identificativo de Área a la que aplica la energía. En caso de no existir este elemento, se entiende que la información es el total de todas las áreas.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UniImporte" type="om:tUniMonetaria" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Por defecto "EURO"</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Importe" type="om:tImporte">
+				<xsd:annotation>
+					<xsd:documentation>Importe acumulado</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de energías totales por hora</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

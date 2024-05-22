@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="RespuestaFicherosNuevosResponse">
+		<xsd:sequence>
+			<xsd:element name="RespuestaFicherosNuevos" type="om:tRespuestaFicherosNuevos"/>
+		</xsd:sequence>
+	</xsd:complexType>						
+	<xsd:complexType name="tRespuestaFicherosNuevos">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para los ficheros nuevos a descargar</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="NuevoSecuencial">
+				<xsd:annotation>
+					<xsd:documentation>Nuevo valor del número secuencial al cual se ha actualizado el cliente, y fecha/hora de actualización.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:attribute name="v">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:nonNegativeInteger">
+								<xsd:maxInclusive value="999999999999999"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+					<xsd:attribute name="fecha" type="xsd:dateTime"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element ref="om:Fichero" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="RespuestaFicherosNuevos" type="om:tRespuestaFicherosNuevos">
+		<xsd:annotation>
+			<xsd:documentation>Ficheros nuevos a descargar</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Fichero">
+		<xsd:annotation>
+			<xsd:documentation>Características de los ficheros nuevos</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdFichero">
+					<xsd:annotation>
+						<xsd:documentation>Identificación del fichero</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Nombre">
+								<xsd:annotation>
+									<xsd:documentation>Nombre completo del fichero</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="v" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Valor</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="50"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Fecha" type="om:tFechaHora">
+								<xsd:annotation>
+									<xsd:documentation>Fecha y hora de publicación del fichero</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="Patron">
+								<xsd:annotation>
+									<xsd:documentation>Patrón del fichero (prefijo del nombre del fichero)</xsd:documentation>
+								</xsd:annotation>
+								<xsd:complexType>
+									<xsd:attribute name="v" use="required">
+										<xsd:annotation>
+											<xsd:documentation>Valor</xsd:documentation>
+										</xsd:annotation>
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="30"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:attribute>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Parametros">
+					<xsd:annotation>
+						<xsd:documentation>Valores de los parámetros fecha, sesión y versión para la ejecución de la consulta.</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="ParametroFecha" type="xsd:date" use="required"/>
+						<xsd:attribute name="ParametroSesion" use="optional">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:nonNegativeInteger">
+									<xsd:maxInclusive value="25"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+						<xsd:attribute name="ParametroVersion" use="optional">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:nonNegativeInteger">
+									<xsd:maxInclusive value="99"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de respuesta de los ficheros nuevos a descargar</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

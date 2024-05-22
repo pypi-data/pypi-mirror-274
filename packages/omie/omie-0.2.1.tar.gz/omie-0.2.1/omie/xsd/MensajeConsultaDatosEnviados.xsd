@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:om="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:element name="MensajeConsultaDatosEnviados" type="om:tMensajeConsultaDatosEnviados">
+		<xsd:annotation>
+			<xsd:documentation>Consulta de Ofertas o Ejecuciones de Contratos Bilaterales Físicos, por códigos y versiones.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="tMensajeConsultaDatosEnviados">
+		<xsd:annotation>
+			<xsd:documentation>Tipo global para Consulta de Ofertas o Ejecuciones de Contratos Bilaterales Físicos, por códigos y versiones.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="CodTransaccion" type="om:tCodTransaccion" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Códigos y versiones de Transacciones</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de Consulta de Ofertas o Ejecuciones de Contratos Bilaterales Físicos, por códigos y versiones.</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

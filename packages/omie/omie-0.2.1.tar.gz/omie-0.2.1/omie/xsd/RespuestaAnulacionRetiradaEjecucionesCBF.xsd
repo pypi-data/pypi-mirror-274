@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by F. Poveda (OMEL S.A.) -->
+<xsd:schema targetNamespace="http://www.omel.es/Schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:om="http://www.omel.es/Schemas" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1">
+	<xsd:include schemaLocation="tiposOMEL.xsd"/>
+	<xsd:complexType name="RespuestaAnulacionRetiradaEjecucionesCBFResponse">
+		<xsd:sequence>
+			<xsd:element name="RespuestaAnulacionRetiradaEjecucionesCBF" type="om:tRespuestaAnulacionRetiradaEjecucionesCBF"/>
+		</xsd:sequence>
+	</xsd:complexType>		
+	<xsd:element name="RespuestaAnulacionRetiradaEjecucionesCBF" type="om:tRespuestaAnulacionRetiradaEjecucionesCBF">
+		<xsd:annotation>
+			<xsd:documentation>Conjunto de respuestas a la Anulación o Retirada de Ejecuciones de Contratos Bilaterales</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Respuesta">
+		<xsd:annotation>
+			<xsd:documentation>Código y texto de respuesta</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="CodigoRespuesta">
+					<xsd:annotation>
+						<xsd:documentation>Código de la respuesta</xsd:documentation>
+					</xsd:annotation>
+					<xsd:complexType>
+						<xsd:attribute name="v" type="xsd:string" use="required"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="TextoRespuesta" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="RespuestaSerie">
+		<xsd:annotation>
+			<xsd:documentation>Respuestas por anulación/retirada</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdAnulacionRetirada" type="om:tId">
+					<xsd:annotation>
+						<xsd:documentation>Identificativo dentro del fichero, definido por quien envió la anulación/retirada (único por mensaje). </xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element ref="om:Detalle" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element ref="om:Respuesta"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="tRespuestaAnulacionRetiradaEjecucionesCBF">
+		<xsd:annotation>
+			<xsd:documentation>Tipo complejo para las respuestas de Anulación y Retirada de Ejecuciones de Contratos Bilaterales</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="IdMensaje" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación de la respuesta (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="FechaMensaje" type="om:tFechaHora">
+				<xsd:annotation>
+					<xsd:documentation>Fecha y hora de generación de los datos para el mensaje (no de envío del mensaje en sí)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitente" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envía la respuesta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdMensajeOrigen" type="om:tId">
+				<xsd:annotation>
+					<xsd:documentation>Identificación del mensaje que se envió (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="VerMensajeOrigen" type="om:tVersionMensaje" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Versión del mensaje que se envió (libre para el creador del mensaje)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IdRemitenteOrigen" type="om:tIdRemitente">
+				<xsd:annotation>
+					<xsd:documentation>Código del Agente que envió el mensaje</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="om:Respuesta"/>
+			<xsd:element ref="om:RespuestaSerie" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="Detalle">
+		<xsd:annotation>
+			<xsd:documentation>Detalle de las ejecuciones retiradas o anuladas</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="IdCBF" type="om:tIdNum">
+					<xsd:annotation>
+						<xsd:documentation>Código del Contrato Bilateral Físico</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="CodTransaccion" type="om:tCodTransaccion">
+					<xsd:annotation>
+						<xsd:documentation>Código y versión de Transacción</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:annotation>
+		<xsd:documentation>Esquema de Respuestas de Anulación y Retirada de Ejecuciones de Contratos Bilaterales</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>
