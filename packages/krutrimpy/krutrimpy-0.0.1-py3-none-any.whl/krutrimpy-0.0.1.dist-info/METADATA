@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: krutrimpy
+Version: 0.0.1
+Summary: An unofficial wrapper for Krutrim
+Home-page: https://github.com/Assassinumz/krutrimpy
+Author: Umraz Khan
+Author-email: kumraz858@gmail.com
+Keywords: ola,krutrim,olakrutrim,krutrim wrapper
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Krutrim Wrapper
+An unofficial wrapper for Krutrim written in python
+
+## Usage
+### Get an API Key
+1. Open https://cloud.olakrutrim.com/
+2. Register a new account
+3. Submit a request for API access
+4. Go to the sidebar and select Interface Service > API Keys to generate a new key
+
+### Example
+```py
+from krutrimpy import Krutrim
+
+k = Krutrim("<API_KEY>") 
+res = k.send("Hey There")
+
+print(res.response)
+```
