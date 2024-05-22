@@ -1,0 +1,10 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+pep8ext_naming-stubs/METADATA.toml
+pep8ext_naming-stubs/__init__.pyi
+pep8ext_naming-stubs/py.typed
+types_pep8_naming.egg-info/PKG-INFO
+types_pep8_naming.egg-info/SOURCES.txt
+types_pep8_naming.egg-info/dependency_links.txt
+types_pep8_naming.egg-info/top_level.txt
