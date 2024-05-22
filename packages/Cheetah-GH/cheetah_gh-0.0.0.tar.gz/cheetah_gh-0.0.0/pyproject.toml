@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+
+
+[project]
+name = "cheetah_GH"
+version = "0.0.0"
+authors = [{name = "James Parrott", email = "james.parrott@proton.me"}]
+description = "Runs Grasshopper components and stops Rhino from Python components. Optionally runs Rhino3D and Grasshopper from the command line."
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=2.7"
+keywords = ["Rhino", "Grasshopper", "control", "components", "runner", "tests"]
+license = {file = "LICENSE.md"}
+classifiers = [
+    "Programming Language :: Python",
+]
+dependencies = []
+
