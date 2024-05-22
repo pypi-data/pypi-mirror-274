@@ -1,0 +1,26 @@
+[project]
+name = "image-vectors"
+version = "0.1.1"
+description = "Create image embeddings easily."
+authors = [
+    {name = "Maximilian Wessendorf", email = "maxi-git@outlook.de"},
+]
+dependencies = [
+    "timm>=1.0.3",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "Apache 2.0"}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pdm.dev-dependencies]
+test = ["pytest"]
+
+[tool.pdm.scripts]
+test = "pytest"
+
+[tool.pdm]
+distribution = true
