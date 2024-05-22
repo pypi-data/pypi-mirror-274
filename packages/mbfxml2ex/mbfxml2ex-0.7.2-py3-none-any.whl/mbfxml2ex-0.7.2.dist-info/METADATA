@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: mbfxml2ex
+Version: 0.7.2
+Summary: Python client for generating Ex format model descriptions from MBF XML.
+Home-page: https://github.com/ABI-Software/mbfxml2ex
+Download-URL: 
+Author: Auckland Bioengineering Institute
+Author-email: h.sorby@auckland.ac.nz
+License: Apache Software License
+Keywords: MBF CMLibs Zinc
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: cmlibs.zinc >=4.0.0
+Requires-Dist: cmlibs.utils >=0.6.0
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: nose ; extra == 'test'
+Requires-Dist: packaging ; extra == 'test'
+
+
+MBF XML 2 Ex
+============
+
+This program converts MBF XML to Ex format suitable for CMLibs-Zinc.
+
+
+Install
+-------
+
+::
+
+  pip install mbfxml2ex
+
+Usage
+-----
+
+::
+
+  mbfxml2exconverter /path/to/input.xml
+
+For more information use the help::
+
+  mbfxml2exconverter --help
+
+Developing
+----------
+
+When developing install the required packages for running the tests with::
+
+  pip install .[test]
+
+Then run the tests with::
+
+  nosetests
+
+from the repository root directory.
+
+To see the coverage statistics for the package run::
+
+  nosetests --with-coverage --cover-package=mbfxml2ex
+
+For a nice HTML rendering of the coverage statistics run::
+
+  nosetests --with-coverage --cover-package=mbfxml2ex --cover-html
+
+To view the HTML coverage output::
+
+  cd cover
+  python -m http.server 9432
+
+Then, in a web browser navigate to http://localhost:9432
