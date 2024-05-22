@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pykolofinance
+Version: 1.0.2
+Summary: A utility package for kolomoni agency banking microservices
+Author: Daniel Ale
+Author-email: danielale9291@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: djangorestframework (>=3.15.1,<4.0.0)
+Requires-Dist: djangorestframework-simplejwt (>=5.3.1,<6.0.0)
+Requires-Dist: drf-spectacular (>=0.27.2,<0.28.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Shared Python Utilities
+
+Set AUTH_SERVICE_BASE_URL=
+
+To install 
+
+```bash
+poetry add pykolofinance
+```
+
+or 
+```bash
+pip install pykolofinance
+```
+
+## Usage
+1. Install the package 
+
+```bash
+poetry add pykolofinance
+```
+
+2. Add `pykolofinance` to installed apps in django
+3. update `REST_FRAMEWORK` settings as showing below
+
+```bash
+REST_FRAMEWORK = {
+    ...
+    # 'DATE_INPUT_FORMATS': ["%d/%m/%Y", ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        "pykolofinance.authentication.CustomJWTAuthentication",
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+    ...
+}
+```
