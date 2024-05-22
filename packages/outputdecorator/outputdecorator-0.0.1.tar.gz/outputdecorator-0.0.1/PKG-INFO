@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: outputdecorator
+Version: 0.0.1
+Summary: ''
+Home-page: https://github.com/saneksking
+Author: A.A. Suvorov
+Author-email: saneksking@gmail.com
+License: BSD 3-Clause License
+Project-URL: Documentation, https://github.com/saneksking/outputdecorator/blob/master/README.md
+Project-URL: Release notes, https://github.com/saneksking/outputdecorator/releases
+Keywords: saneksking,decoratoroutput,string decorator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# outputdecorator
+
+***
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/saneksking/outputdecorator)](https://github.com/saneksking/outputdecorator/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/outputdecorator?label=pypi%20downloads)](https://pypi.org/project/outputdecorator/)
+![GitHub top language](https://img.shields.io/github/languages/top/saneksking/outputdecorator)
+[![PyPI](https://img.shields.io/pypi/v/outputdecorator)](https://pypi.org/project/outputdecorator)
+[![GitHub](https://img.shields.io/github/license/saneksking/outputdecorator)](https://github.com/saneksking/outputdecorator/blob/master/LICENSE)
+[![PyPI - Format](https://img.shields.io/pypi/format/outputdecorator)](https://pypi.org/project/outputdecorator)
+***
+
+## Help:
+
+`pip install outputdecorator`
+
+```python
+from output_decorator import StringDecorator
+
+text = StringDecorator.string_decorate(text='Python', symbol='*', print_flag=False)
+print(text) # ************************************ Python ***********************************
+
+StringDecorator.string_decorate(text='Python', symbol='*', print_flag=True) 
+# Output: ************************************ Python ***********************************
+
+```
