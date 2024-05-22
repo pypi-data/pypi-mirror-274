@@ -1,0 +1,44 @@
+# `narwhals.Series`
+
+::: narwhals.series.Series
+    handler: python
+    options:
+      members:
+        - alias
+        - all
+        - any
+        - cast
+        - cum_sum
+        - diff
+        - drop_nulls
+        - dtype
+        - fill_null
+        - filter
+        - is_between
+        - is_duplicated
+        - is_empty
+        - is_first_distinct
+        - is_in
+        - is_last_distinct
+        - is_null
+        - is_sorted
+        - is_unique
+        - max
+        - mean
+        - min
+        - name
+        - null_count
+        - n_unique
+        - sample
+        - shape
+        - shift
+        - sort
+        - std
+        - sum
+        - to_frame
+        - to_numpy
+        - to_pandas
+        - unique
+        - value_counts
+      show_source: false
+      show_bases: false
