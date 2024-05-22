@@ -1,0 +1,66 @@
+# -*- coding: utf-8 -*-
+#
+# This file is subject to the terms and conditions defined in
+# file 'LICENSE.txt', which is part of this source code package.
+#
+
+
+_test = [
+'AnsysReader',
+'AnsysTools',
+'AnsysWriter',
+'AscReader',
+'Catalyst',
+'CGNSReader',
+'CGNSWriter',
+'CodeInterface',
+'CsvWriter',
+'FemReader',
+'FemmReader',
+'GeofReader',
+'GeoReader',
+'GeofWriter',
+'GmshReader',
+'GmshTools',
+'GmshWriter',
+'GReader',
+'InpReader',
+'JsonReader',
+'LSDynaReader',
+'LSDynaWriter',
+'MeshReader',
+'MeshWriter',
+'MeshFileConverter',
+#'OdbWriter',
+'OpenFoamReader',
+'PathControler',
+'PickleTools',
+'PostReader',
+'ProcastResultReader',
+'ProxyWriter',
+'ReaderBase',
+'SamcefReader',
+'SamcefWriter',
+'SamcefOutputReader',
+'StlReader',
+'StlWriter',
+'UniversalReader',
+'UniversalWriter',
+'UtReader',
+'UtWriter',
+'WriterBase',
+'Wormhole',
+'XdmfReader',
+'XdmfTools',
+'XdmfWriter',
+'ZebulonIO',
+'Parallel',
+"MeshTools",
+"IOFactory",
+"PipeIO",
+"ZsetTools",
+"VtkReader",
+"InpWriter"
+]
+
+__author__ = "Felipe Bordeu"
