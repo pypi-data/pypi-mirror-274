@@ -1,0 +1,1 @@
+"""cookiecutter-django-package-instance."""
