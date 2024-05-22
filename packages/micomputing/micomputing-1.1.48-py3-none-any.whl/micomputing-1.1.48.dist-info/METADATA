@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: micomputing
+Version: 1.1.48
+Summary: 'micomputing' is a package for medical image computing. 
+Home-page: https://github.com/Bertie97/PyZMyc/micomputing
+Author: Yuncheng Zhou
+Author-email: bertiezhou@163.com
+License: MIT Licence
+Keywords: pip,pymyc,micomputing,medical image,image registration,image similarities
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch (>=1.5.1)
+Requires-Dist: batorch
+Requires-Dist: matplotlib
+Requires-Dist: pycamia
+Requires-Dist: pyoverload
+Requires-Dist: nibabel
+Requires-Dist: pydicom
+Requires-Dist: SimpleITK
+
