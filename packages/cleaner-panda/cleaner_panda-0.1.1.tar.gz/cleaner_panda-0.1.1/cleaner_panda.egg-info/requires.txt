@@ -1,0 +1,10 @@
+unittest
+pandas
+numpy
+scikit-learn
+nltk
+category_encoders
+scipy
+bs4
+contractions
+datetime

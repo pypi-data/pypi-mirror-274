@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cleaner-panda
+Version: 0.1.1
+Summary: A package for handling various data preprocessing tasks
+Home-page: https://github.com/EmirhanSyl/cleaner-panda
+Author: asimtarik & emirs
+Author-email: support@cleanpanda.com
+License: UNKNOWN
+Download-URL: https://github.com/EmirhanSyl/cleaner-panda/archive/refs/tags/v0.1.1.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
