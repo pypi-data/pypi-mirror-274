@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+artkit/__init__.py
+artkit.egg-info/PKG-INFO
+artkit.egg-info/SOURCES.txt
+artkit.egg-info/dependency_links.txt
+artkit.egg-info/top_level.txt
