@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: python-project-manager
+Version: 1.1.0
+Summary: A Python package.
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: click ~=8.1.7
+Requires-Dist: colorama ~=0.4.6
+
