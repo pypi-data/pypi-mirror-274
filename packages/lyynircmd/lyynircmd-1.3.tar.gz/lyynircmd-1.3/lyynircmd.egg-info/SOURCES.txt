@@ -1,0 +1,8 @@
+LICENSE
+README.md
+lyynircmd.py
+setup.py
+lyynircmd.egg-info/PKG-INFO
+lyynircmd.egg-info/SOURCES.txt
+lyynircmd.egg-info/dependency_links.txt
+lyynircmd.egg-info/top_level.txt
