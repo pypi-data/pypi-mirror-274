@@ -1,0 +1,17 @@
+peopleprinter/__init__.py,sha256=FAT-4dADoqIOuY4qCsJXo80fVvcHVcRO3TNGV_Koypc,67
+peopleprinter/main.py,sha256=AVGHzeKUv3wx2GfUdhm-hV_tdJUAcpHSreiRGgJmUAA,3825
+peopleprinter/manufacturers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peopleprinter/manufacturers/HP/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peopleprinter/manufacturers/HP/major_hp.py,sha256=YdrJDIj9D6QgvKrYpISSf6msuJOH1fiYtjE25wKxfoA,2601
+peopleprinter/manufacturers/KYOCERA/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peopleprinter/manufacturers/KYOCERA/kyocera_3040.py,sha256=hIutt44HDdj8IdgTzqhsh4Vi6p1WgNvCkBlTxjXwJC8,3736
+peopleprinter/manufacturers/KYOCERA/major_kyocera.py,sha256=xmLhh2dXkJmQhzr72EcN3rXynmxWngXbuMEeJMqMMlI,2413
+peopleprinter/manufacturers/PANTUM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peopleprinter/manufacturers/PANTUM/major_pantum.py,sha256=pk7Tkm-dLDrIj-zMHxrBtbsR0AXv537xVPCWI4eRMFs,1018
+peopleprinter/manufacturers/Xerox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peopleprinter/manufacturers/Xerox/major_xerox.py,sha256=VNf125cDZBxdTJF96tpfeTv6pJgyGOnkNRdkur4Rcdo,3050
+peopleprinter/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peopleprinter-0.0.9.dist-info/METADATA,sha256=-4xgkoWWeZjWtjcJkSMmHYtKNF6UrSc3lML0pysVQdE,498
+peopleprinter-0.0.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+peopleprinter-0.0.9.dist-info/top_level.txt,sha256=waLafnDUsyNkmmVQrrHQZgj0MRlnWG6K13csjrxQb7k,14
+peopleprinter-0.0.9.dist-info/RECORD,,
