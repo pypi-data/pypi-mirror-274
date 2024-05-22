@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: propar
+Version: 1.0.0
+Summary: Run terminal commands easily!
+Author: Schkimansky
+Author-email: <ahmadchawla1432@gmail.com>
+Keywords: python,terminal,bash,command,commands,terminal command runner,execute command,run commands
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Propar
+ A pyhton library that allows you to run terminal/shell commands easily!
