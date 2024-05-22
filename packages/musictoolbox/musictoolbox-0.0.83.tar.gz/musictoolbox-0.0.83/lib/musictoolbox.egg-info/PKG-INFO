@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: musictoolbox
+Version: 0.0.83
+Summary: Utilities to help you groom your music collection
+Home-page: https://github.com/Rudd-O/musictoolbox
+Author: Manuel Amador (Rudd-O)
+Author-email: rudd-o@rudd-o.com
+License: GPLv2
+Keywords: mp3 ogg mkv transcoding aac mp4 video flv flac
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: mutagen
+Requires-Dist: networkx
+Requires-Dist: pyxdg
+Requires-Dist: psutil
+Requires-Dist: PyYAML
+Requires-Dist: packaging
+Requires-Dist: rgain3
+
+# Music toolbox
+
+This is a small toolbox of utilities written in Python 2 that help users groom their music collection.
+
+## What's in the box
+
+The box contains a number of utilities.  The main one is `syncplaylists`.
+
+### syncplaylists: the playlist synchronizer
+
+`syncplaylists` takes a number of file lists / playlists in the command line,
+and a destination directory, then synchronizes all the songs in the playlists
+to the destination directory, with optional modifications to the files and their
+names as they are copied to the destination directory.  `syncplaylists` preserves
+your music collection's directory structure, and allows you to define what
+formats you want your music to be transcoded to.
+
+Run `syncplaylists --help` for more information.
+
+`syncplaylists` accepts a simple YAML file in your home directory, by default read
+from file `transcoding.yaml` in `$HOME/.config/musictoolbox` (although you can change
+which file to use with the `-c` command line parameter).  The file must say how you
+want things to be transcoded (documentation on the config format is forthcoming):
+
+```
+# cat ~/.config/musictoolbox/transcoding.yaml
+policies:
+- source: ogg
+  # Ogg Vorbis and Ogg Opus files to be copied directly
+  pipeline: [copy]
+- source: *
+  # Everything else to transcode to MP3.  MP3 files
+  # themselves will be copied since the copy transcoder
+  # is the one with the cheapest "cost".
+  target: mp3
+```
+
+Once you've created the YAML config file, here's the quickstart version of how you
+actually *use* the tool:
+
+```
+[user@laptop ~/Music]$ syncplaylists -vd Playlists/*.m3u /mnt/usbdrive/Music/
+```
+
+That will copy all songs listed in all M3U playlists within your
+`~/Music/Playlists` folder directly into `/mnt/usbdrive/Music`, preserving
+the directory structure you have.
+
+Any playlist you specify as parameter can also be a symlink.  If they are, then
+any relative paths within the playlist will be resolved in relation to the target
+of the symlink, rather than the symlink itself.  This lets you symlink album
+playlists to a folder with favorite playlists of yours, and then use syncplaylists
+directly with those symlinked favorites.
+
+### genplaylist: the playlist generator
+
+`genplaylist` generates playlists.  Run `genplaylist --help` for more information.
+
+
+## Requirements / dependencies
+
+This is a list of requirements for most of these utilities to work:
+
+* python3-packaging
+* python3-networkx
+* python3-pyxdg
+* python3-psutil
+* python3-mutagen
+* ffmpeg
+* GStreamer
