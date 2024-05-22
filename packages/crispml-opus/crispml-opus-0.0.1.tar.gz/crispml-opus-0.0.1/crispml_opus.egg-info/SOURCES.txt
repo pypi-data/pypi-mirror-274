@@ -1,0 +1,8 @@
+setup.py
+crispml_opus/__init__.py
+crispml_opus/data.py
+crispml_opus.egg-info/PKG-INFO
+crispml_opus.egg-info/SOURCES.txt
+crispml_opus.egg-info/dependency_links.txt
+crispml_opus.egg-info/requires.txt
+crispml_opus.egg-info/top_level.txt
