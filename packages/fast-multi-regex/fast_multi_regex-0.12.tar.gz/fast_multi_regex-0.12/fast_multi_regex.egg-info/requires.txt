@@ -1,0 +1,9 @@
+hyperscan
+pydantic
+pyeda
+tsc-base
+fastapi
+uvicorn
+watchdog
+asyncio
+requests

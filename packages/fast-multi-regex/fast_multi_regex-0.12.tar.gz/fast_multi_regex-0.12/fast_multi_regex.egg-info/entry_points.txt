@@ -1,0 +1,2 @@
+[console_scripts]
+fast_multi_regex_server = fast_multi_regex.server:app_server
