@@ -1,0 +1,17 @@
+alchemical_clone/__init__.py,sha256=xcILy0YvxZv6bP-kaQpMNtxR9CiWCLgw_yoME4deFzw,447
+alchemical_clone/alchemical_column.py,sha256=-OS_6PJbQ3s0so7UF2jhUhI7jy8yvuPv69amtH5DK9U,2904
+alchemical_clone/alchemical_constraint.py,sha256=_H_82NgvmUqzmo2rNb52NoIlQs7gxhqr22BirZYCk8c,4372
+alchemical_clone/alchemical_index.py,sha256=JMMujTjhEB401mvYBI0NggrC31tx8V520WGScKGOkO8,1280
+alchemical_clone/alchemical_lab.py,sha256=2rOiA8GHq9h222g4IjlqDRzUf5zRgNspb6X5cqh8hMs,4206
+alchemical_clone/alchemical_table.py,sha256=Q5BWk0aYWgfx3EEbU-71Gww475X3XBCtQpoOJg2ySPg,6532
+alchemical_clone/generated_code.py,sha256=iUS3OzimeF1ZYFFceVKAHzIPNsxOJ9AK552O0_s_Oj4,167
+alchemical_clone/plugins/__init__.py,sha256=ePoLJGTtZoQl9xXh0GaqLCfGqUsUMP9JkfBk-pkDB84,130
+alchemical_clone/plugins/many_to_many.py,sha256=V0AvoUNwt0swxVYQuG8YY7yArfYFxX_k-GgiBXW351k,2052
+alchemical_clone/plugins/one_to_many.py,sha256=F1sipiTrC-A5OP2TzHa9PDn8_Tihhy0yQ1IU27ZBZr8,1836
+alchemical_clone/utils/__init__.py,sha256=uh-sa2qPifNmBEYz5skMpfddSaz3e3lEPWyuHUjXVSA,139
+alchemical_clone/utils/utils.py,sha256=qnjvNh5BkLEumkmSMThU8FdF81bBsNdOAqSULK0KjL4,1159
+alchemical_clone-0.0.1.dist-info/LICENSE,sha256=RgF7g0CRy-jep6znyz16tcIfsEDuJtsc9qKdJQ52OVw,1062
+alchemical_clone-0.0.1.dist-info/METADATA,sha256=24IBTIgeIDCBJDaUKCneNGTh6ZLhwc9sxdsH2155vYU,8389
+alchemical_clone-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+alchemical_clone-0.0.1.dist-info/top_level.txt,sha256=zjMW_B1KcojOb947vt3Es5cGEHHQB1EgbSc241HvJ_s,17
+alchemical_clone-0.0.1.dist-info/RECORD,,
