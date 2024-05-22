@@ -1,0 +1,13 @@
+# Project files
+.venv
+.vscode
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# dev/test/build
+cov_*
+dist
+.coverage
+.testing
+.tox
