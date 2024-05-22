@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: apple-vision-utils
+Version: 0.1.1
+Summary: Fast and accurate OCR on images and PDFs using Apple Vision framework directly from command line.
+Home-page: https://github.com/tddschn/apple-vision-utils
+License: MIT
+Keywords: ocr,apple-vision-framework
+Author: Teddy Xinyuan Chen
+Author-email: 45612704+tddschn@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Dist: pdf2image (>=1.17.0,<2.0.0)
+Requires-Dist: pyobjc-core (>=10.2,<11.0)
+Requires-Dist: pyobjc-framework-quartz (>=10.2,<11.0)
+Requires-Dist: pyobjc-framework-vision (>=10.2,<11.0)
+Requires-Dist: wurlitzer (>=3.1.0,<4.0.0)
+Project-URL: Bug Tracker, https://github.com/tddschn/apple-vision-utils/issues
+Project-URL: Repository, https://github.com/tddschn/apple-vision-utils
+Description-Content-Type: text/markdown
+
+
