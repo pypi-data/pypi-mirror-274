@@ -1,0 +1,7 @@
+termcolor~=2.4
+tomli~=2.0
+
+[docker]
+docker~=7.0
+requests<2.32
+types-requests<2.32
