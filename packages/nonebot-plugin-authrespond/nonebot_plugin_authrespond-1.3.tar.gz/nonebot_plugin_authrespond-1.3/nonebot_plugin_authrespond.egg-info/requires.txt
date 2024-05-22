@@ -1,0 +1,4 @@
+nonebot2
+nonebot-plugin-localstore
+nonebot-plugin-session
+nonebot-plugin-alconna
