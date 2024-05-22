@@ -1,0 +1,17 @@
+wattpad/__init__.py,sha256=jiX_LmEWn96V7Px7QYcDeKCvH7ZxcjESJ3ZC1Qce864,173
+wattpad/errors.py,sha256=RZbzEc5uFwjyjzG9Hrz5OaaTkUm9Dzt60RjMexa4CHM,726
+wattpad/backend/__init__.py,sha256=IygCGua39pO4Sx-9ibNdPOrIhBQJ3pDTar0eivk7FVI,25
+wattpad/backend/core.py,sha256=6A2G8tuePRTfQOc_87Z2XcFswVYbxHhg5khPM74PQak,2806
+wattpad/backend/query_builder.py,sha256=dZASWjzRoLzLMAtcvci6WNfJFNXV2VoSkmILtN6i5e4,2402
+wattpad/modals/__init__.py,sha256=65olwR1xNVAAcWKGIUYD-yK18Odx68xRQRSKhFnkn28,210
+wattpad/modals/part.py,sha256=YaNsC4SwlVikfm86UGZtESLTnQ84vJ34-iiHMSBgwdo,2034
+wattpad/modals/published_part.py,sha256=hYRLU_Bas9MK5aJoXlbr4icZJl30B7catSuiIFyiUIY,374
+wattpad/modals/rendered_part_skeleton.py,sha256=Ci3fv8sx_gQ4UH4cyl702Yg0F4vMi6_hFdGbf7xURcY,1800
+wattpad/modals/story.py,sha256=Zg3ehYDDNmhHd4iFvUKT77qFzVIrOf8_nbmtbFk54kM,3327
+wattpad/modals/tags.py,sha256=QePNWCSZ_IPi2tYkiD_amIdK4EG5T2iV07y4d8w0GP0,21
+wattpad/modals/user.py,sha256=HPT1XYaKVjKTRe4MZFD-WSxCLwj9qDSw6y3SttbdCtQ,502
+wattpad_api-1.0.0.dist-info/LICENSE.txt,sha256=cnyETi1x0VJoJvHKkvQDigidWbM8wT96ruhuRidZ030,1083
+wattpad_api-1.0.0.dist-info/METADATA,sha256=MxRV_nWcHuXB51M-CeqX-5EU9-f53-Cyg3Pv0RX39z8,2162
+wattpad_api-1.0.0.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+wattpad_api-1.0.0.dist-info/top_level.txt,sha256=EX2busfIjlukTEuFeX9TWzxxVha3hb6OLTSDL8Cj7ak,8
+wattpad_api-1.0.0.dist-info/RECORD,,
