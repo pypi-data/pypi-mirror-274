@@ -1,0 +1,13 @@
+model3501lib/__init__.py,sha256=rzG7_mplb5C_Xe7VYZ4llacz2MD7apf0-q3uTYCkH7o,557
+model3501lib/cdstress_off.py,sha256=KmhBs237k8pcrr-o_q8kBiPma8fJ38suQ1WVNLnpgg0,1502
+model3501lib/cdstress_on.py,sha256=U_MV1Zz8Sh-mSP5k_cOdAigWCOCxTkY_sJ0ArOxvfM4,1443
+model3501lib/emulate_charge.py,sha256=pcGQTt3E2ybFhht5B1iodZ0DOWl7aCEXRUs_4RxRG6c,3123
+model3501lib/getpower_role.py,sha256=ZiYOjh8rmjdnwd9pO6WgmOdGi-1ZXJBfH2HuaSbuOH4,2063
+model3501lib/getrdo.py,sha256=oV6JXW2wHQrap0Rgk2E33kBa9xNCdL9VqFBNgtHU6Vg,1762
+model3501lib/pdcaptive_cables.py,sha256=eWdPwuv0tYlBFuC_sLBsDawaOwZSKVkHdALCFkg5N_E,1582
+model3501lib/pdcharger_port.py,sha256=7KwVeX82auraVFKhFcMsRCxAWpqwtUE5zXJGpX9rxKc,1565
+model3501lib/set_speed.py,sha256=Fpk-RMYEzZgOpGCnRAJWUw-NgRtwu5xSw0OSQEL17yM,1523
+model3501api-1.0.1.dist-info/METADATA,sha256=ZZBv7A4ue7A1xh7suAVoS-mGCe5xcDpy_kfMDytKNRM,7042
+model3501api-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+model3501api-1.0.1.dist-info/top_level.txt,sha256=Mkj6vKW87k0i_AX-FymqhULTXME8JXvvNrNYUgswmzE,13
+model3501api-1.0.1.dist-info/RECORD,,
