@@ -1,0 +1,7 @@
+numpy
+requests
+io
+PIL
+os
+gradio
+minio

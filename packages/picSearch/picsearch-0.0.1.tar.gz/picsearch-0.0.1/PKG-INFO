@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: picSearch
+Version: 0.0.1
+Summary: picSearch
+Author: YHTest
+Author-email: yihua.wang@flex.com
+Keywords: python,Flex Flow,Machine Learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: io
+Requires-Dist: PIL
+Requires-Dist: os
+Requires-Dist: gradio
+Requires-Dist: minio
+
+picSearch
