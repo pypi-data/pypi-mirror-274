@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+project({{ component_name }})
+add_library({{ component_name }}_comp STATIC {{ component_name }}.cpp)
+target_include_directories({{ component_name }}_comp PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+file(GLOB children RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/*)
+foreach(child ${children})
+    if(IS_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/${child})
+        add_subdirectory(${child})
+        target_link_libraries({{ component_name }}_comp PRIVATE ${child}_comp)
+    endif()
+endforeach()

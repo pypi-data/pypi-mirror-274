@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_TOOLCHAIN_FILE {{ platform_name }})
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+project({{ project_name }}_project)
+
+add_compile_options(-Os -g0)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+add_subdirectory(components/{{ project_name }}) 
+add_executable(main main.cpp)
+target_link_libraries(main PRIVATE {{ project_name }}_comp)

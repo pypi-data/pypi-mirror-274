@@ -1,0 +1,48 @@
+# {{ component_name }}
+
+```puml
+@startuml
+skinparam backgroundColor #EEF2F7
+skinparam style strictuml
+component "{{ component_name }}" #LightBlue {
+
+    database T_{{ component_name }} #LightYellow [
+        T_{{ component_name }}
+        ===
+        foo <<int>>
+        ---
+        baz <<int>>
+    ]
+
+    portin "Input" #LightGreen
+    portout "Output" #LightGreen
+
+    "T_{{ component_name }}" ..> Output : data >
+    Input ..> "T_{{ component_name }}"
+    control "Processing" #Pink
+
+    "T_{{ component_name }}" <=> "Processing" : onChange >
+
+    rectangle "private functions" #LightGrey {
+
+    }
+
+}
+
+@enduml
+```
+## Description
+{{ description }}
+## Sourcecode
+{{ sourcecode_findings }}
+### include:
+{{ includes }}
+### data: T_{{ component_name }}
+{{ variables }}
+### processing 
+{{ action_flows }}
+## Requirements
+{{ treqs }}
+## Copyright notice
+{{ author }}   Licence: Apache 2.0
+{{ date }} {{ commit_hash }} 

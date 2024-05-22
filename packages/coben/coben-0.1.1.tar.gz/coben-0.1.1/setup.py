@@ -1,0 +1,46 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='coben',
+    version='0.1.1',
+    description='A tool to manage and streamline software project workflows.',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    author='Dieter Steuten',
+    author_email='dieter@dingste.de',
+    url='https://github.com/dingste/coben',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+        'mkdocs',
+        'plantuml',
+        'clang',
+        'psutil',
+        'mkdocs-plantuml',
+        'plantuml-markdown',
+        'mkdocs-include-markdown-plugin',
+        'mkdocs-extra-sass-plugin',
+        'mkdocs-git-revision-date-localized-plugin',
+        'mkdocs-material',
+        'mkdocs-material-extensions',
+        'mkdocs-with-pdf',
+        'weasyprint',
+        'regex',
+        'libsass',
+        'jinja2',
+        'mkdocs_puml',
+        'ruamel.yaml',
+        'click',
+    ],
+    entry_points={
+        'console_scripts': [
+            'coben=coben.coben:main',
+        ],
+    },
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: Apache Software License',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.6',
+)
