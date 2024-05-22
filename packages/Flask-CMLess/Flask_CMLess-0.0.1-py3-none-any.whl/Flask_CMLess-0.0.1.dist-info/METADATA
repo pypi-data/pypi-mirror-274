@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Flask-CMLess
+Version: 0.0.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask-login
+
+# Flask-CMLess
+Flask headless CMS solution
