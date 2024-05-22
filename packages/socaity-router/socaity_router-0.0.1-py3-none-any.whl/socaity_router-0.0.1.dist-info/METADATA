@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: socaity-router
+Version: 0.0.1
+Summary: A router for AI services running anywhere, locally, hosted, serverless and decentralized. Plays well with existing providers like runpod and famous libraries like fastapi.
+Author: SocAIty
+License-File: LICENSE
+Requires-Dist: uvicorn
+Requires-Dist: fastapi
+Requires-Dist: singleton-decorator ==1.0.0
+Requires-Dist: runpod >=1.6.0
+
