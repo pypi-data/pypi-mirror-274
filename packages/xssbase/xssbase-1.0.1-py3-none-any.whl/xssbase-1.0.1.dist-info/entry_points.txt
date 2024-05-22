@@ -1,0 +1,2 @@
+[console_scripts]
+xssbase = xssbase.cli:main

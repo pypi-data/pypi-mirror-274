@@ -1,0 +1,9 @@
+xssbase/__init__.py,sha256=zimeMhD6sGI3imCP4387rGLtFDQYs9NFgKUwf4ell3A,80
+xssbase/cli.py,sha256=TarttFXoQApHNgLpulBEYt6yejm2zxfByXI3ls6yjyg,1418
+xssbase/xssbase.py,sha256=zdZkCK6Ix3qATQ3ikwF9CCZdpdeRE1EcIzRBB-GF1tw,7551
+xssbase-1.0.1.dist-info/LICENSE,sha256=CmbH9ppfL0wJ5lmyqWyAHdFvcoSQpBDw1sAwuZ_dM1M,1065
+xssbase-1.0.1.dist-info/METADATA,sha256=4uY6ZgIjR6hsWnlNjDyyfThnhxRJk55rl3_AR3VL5e4,830
+xssbase-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xssbase-1.0.1.dist-info/entry_points.txt,sha256=aySNEpILr_b1eFlt8mvaNsFYfT5yLEdEoxPJoPxvJl4,45
+xssbase-1.0.1.dist-info/top_level.txt,sha256=Fwhx8fG0Bz7gv6YOc2JcnkTBJQRGazA9KCY6265hdA4,8
+xssbase-1.0.1.dist-info/RECORD,,
