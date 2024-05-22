@@ -1,0 +1,6 @@
+nipype2pydra
+mriqc
+nipy
+datalad
+nitime
+nirodents

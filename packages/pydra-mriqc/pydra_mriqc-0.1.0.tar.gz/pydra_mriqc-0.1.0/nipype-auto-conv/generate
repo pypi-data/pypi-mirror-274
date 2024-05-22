@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+conv_dir=$(dirname $0)
+nipype2pydra convert $conv_dir/specs $conv_dir/..
