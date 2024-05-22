@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: preprod
+Version: 0.1.0
+Summary: Easily creation of pre-production and production scripts to automete your deployment
+License: GPL-3
+Author: turulomio
+Author-email: turulomio@yahoo.es
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Description-Content-Type: text/markdown
+
+# preprod
+Easily creation of pre-production and production scripts to automete your deployment
+
+## Changelog
+
+### 0.1.0 (2024-05-21)
+- Basic functionality
