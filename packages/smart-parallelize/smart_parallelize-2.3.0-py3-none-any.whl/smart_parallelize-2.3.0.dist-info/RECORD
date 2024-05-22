@@ -1,0 +1,8 @@
+smart_parallelize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smart_parallelize/parallelize.py,sha256=plYOfJCvwet-j_a_DNRIDjVnCHE0ZIfX9lyZtSs-gWs,4202
+smart_parallelize/parallelize_DEP.py,sha256=jHuG6GW_KGMWUoaJDHsdCUdR9Fr61qpR_Yb8oriDrt0,4328
+smart_parallelize/parallelize_native.py,sha256=l34boPRvtRNiPHYqJqMTDdmdLKB3glvNwcwS7Tu7gyk,2317
+smart_parallelize/test.py,sha256=vNyXhUAMiDsWx5Fs7uaZV9nJnbqcRCB5V_zwNKSOnNE,1268
+smart_parallelize-2.3.0.dist-info/METADATA,sha256=iAQMYE-8LlELooR-KcWrjqA-o_kX1PxLdIistFtyj6Y,1034
+smart_parallelize-2.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+smart_parallelize-2.3.0.dist-info/RECORD,,
