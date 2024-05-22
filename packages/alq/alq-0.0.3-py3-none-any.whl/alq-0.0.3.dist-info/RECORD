@@ -1,0 +1,9 @@
+alq-0.0.3.data/scripts/alq,sha256=2eSh245C29cfJLTbDW3lcX5SpTeCy4RXM27h2ds-eqQ,292
+subfunctions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subfunctions/configuration.py,sha256=up7NE9oPB4OJeLiax878EwF_JwuXJn1mBozu0sW5Hx8,2177
+subfunctions/fileSystem.py,sha256=4n-ditDaah40FTfMFGyGYfmYJwSCqZwbQX6Pbwtjqt8,3490
+subfunctions/owncloud.py,sha256=RgIQMq3lAICIXLJ45mLliXEi0nvziDnhxb7zOjC41Iw,9877
+alq-0.0.3.dist-info/METADATA,sha256=G6bwjeSKt83q5Bkjq1T3PtAbaxg9k3v-ZRsj8_0RYoM,217
+alq-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alq-0.0.3.dist-info/top_level.txt,sha256=cj_wvsgatO_VDmqNS0IE7dJSF0CTwS6lwvbgnpfPtiI,13
+alq-0.0.3.dist-info/RECORD,,
