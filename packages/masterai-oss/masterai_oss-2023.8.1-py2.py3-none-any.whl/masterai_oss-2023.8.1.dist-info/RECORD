@@ -1,0 +1,10 @@
+masterai_oss/__init__.py,sha256=P9dQudZIlOU3zGYALg7IC_UDehOTvb99MhcuD-10m30,261
+masterai_oss/__version__.py,sha256=6gVs8s9zzZOkmxp8Wn4N7mUUlAUKq7z1zu4l2g3ik5M,101
+masterai_oss/models.py,sha256=4GjQgLQ_wmerz0nsUJb8y1Hn07P9dJdUtiyq5msZT2Y,9740
+masterai_oss/oss.py,sha256=xv-nbuBy3KEvjlfY0MtJNb4PcKRDCaFCgpkoJuIs3CE,10341
+masterai_oss/utils.py,sha256=5erLae8Qb3Rz3f8YePBen0FyfqjBmaQ__-ffmF6N-rg,958
+masterai_oss-2023.8.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+masterai_oss-2023.8.1.dist-info/METADATA,sha256=y1jpgfJb52txiiel8qocijPxxPZ9NZwHCG2PNJPasPo,1630
+masterai_oss-2023.8.1.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+masterai_oss-2023.8.1.dist-info/top_level.txt,sha256=fs3Gl7t5lAKX6RLvy5mzkBusvQrAhQhg-q8XC9nfA3Y,13
+masterai_oss-2023.8.1.dist-info/RECORD,,
