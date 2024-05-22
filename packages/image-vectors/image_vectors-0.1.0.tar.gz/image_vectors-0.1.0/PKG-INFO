@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: image-vectors
+Version: 0.1.0
+Summary: Create image embeddings easily.
+Author-email: Maximilian Wessendorf <maxi-git@outlook.de>
+License: Apache 2.0
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# image-vectors
