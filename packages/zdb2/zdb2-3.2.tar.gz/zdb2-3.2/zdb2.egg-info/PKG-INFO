@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: zdb2
+Version: 3.2
+Summary: A useless database connection based on ibm-db
+Home-page: https://github.com/zzt/zdb2.git
+Author: zhstack
+Author-email: zhstack@163.com
+License: MIT
+Keywords: zdb2
+License-File: LICENSE
+Requires-Dist: ibm-db

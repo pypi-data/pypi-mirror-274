@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+zdb2/__cls_aide_rst_base__.py
+zdb2/__cls_aide_sql_pgs__.py
+zdb2/__cls_db2_conn__.py
+zdb2/__init__.py
+zdb2.egg-info/PKG-INFO
+zdb2.egg-info/SOURCES.txt
+zdb2.egg-info/dependency_links.txt
+zdb2.egg-info/requires.txt
+zdb2.egg-info/top_level.txt
