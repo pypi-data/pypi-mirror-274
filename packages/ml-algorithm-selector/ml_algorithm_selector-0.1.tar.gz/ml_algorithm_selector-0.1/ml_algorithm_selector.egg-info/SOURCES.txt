@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ml_algorithm_selector/__init__.py
+ml_algorithm_selector/selector.py
+ml_algorithm_selector.egg-info/PKG-INFO
+ml_algorithm_selector.egg-info/SOURCES.txt
+ml_algorithm_selector.egg-info/dependency_links.txt
+ml_algorithm_selector.egg-info/entry_points.txt
+ml_algorithm_selector.egg-info/top_level.txt

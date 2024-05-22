@@ -1,0 +1,2 @@
+[console_scripts]
+ml-selector = ml_algorithm_selector.selector:main

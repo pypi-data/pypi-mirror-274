@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ml-algorithm-selector
+Version: 0.1
+Summary: A tool to help select machine learning algorithms based on scikit-learn cheat-sheet.
+Home-page: https://github.com/James-chrypto/ml_algorithm_selector
+Author: Jameson Augustin
+Author-email: jamesjamesonja@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ML Algorithm Selector
+
+This package helps users select the appropriate machine learning algorithm based on the scikit-learn cheat-sheet.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install ml_algorithm_selector
