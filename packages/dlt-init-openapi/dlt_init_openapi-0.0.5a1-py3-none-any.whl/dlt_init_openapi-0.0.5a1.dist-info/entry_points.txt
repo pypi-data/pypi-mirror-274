@@ -1,0 +1,3 @@
+[console_scripts]
+dlt-init-openapi=dlt_init_openapi.cli:app
+
