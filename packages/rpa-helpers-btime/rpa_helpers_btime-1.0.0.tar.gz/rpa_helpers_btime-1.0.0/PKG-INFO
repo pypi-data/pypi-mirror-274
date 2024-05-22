@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rpa-helpers-btime
+Version: 1.0.0
+Summary: Esse pacote irá oferecer todas as funcionalidades para auxiliar na programação de rpa.
+Author: Geovanne Zanata
+Author-email: geovanne.zanata@btime.com.br
+Keywords: log,loggers
+License-File: license.txt
+
+# LOGGER PARA GERENCIAMENTO DE RPA 
+
+Importe e use como decorator exemplo "@log("descriÃ§Ã£o da funÃ§Ã£o")
+
+* pip install rpa_helpers
