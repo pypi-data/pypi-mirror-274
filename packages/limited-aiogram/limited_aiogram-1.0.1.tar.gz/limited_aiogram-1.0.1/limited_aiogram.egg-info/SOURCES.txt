@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+limited_aiogram/__init__.py
+limited_aiogram/limit_caller.py
+limited_aiogram/limited_bot.py
+limited_aiogram.egg-info/PKG-INFO
+limited_aiogram.egg-info/SOURCES.txt
+limited_aiogram.egg-info/dependency_links.txt
+limited_aiogram.egg-info/requires.txt
+limited_aiogram.egg-info/top_level.txt
