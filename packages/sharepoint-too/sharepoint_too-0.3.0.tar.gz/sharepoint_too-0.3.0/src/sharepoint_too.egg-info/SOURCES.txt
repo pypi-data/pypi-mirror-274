@@ -1,0 +1,15 @@
+AUTHORS.md
+HISTORY.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/sharepoint_too/__init__.py
+src/sharepoint_too/session.py
+src/sharepoint_too.egg-info/PKG-INFO
+src/sharepoint_too.egg-info/SOURCES.txt
+src/sharepoint_too.egg-info/dependency_links.txt
+src/sharepoint_too.egg-info/requires.txt
+src/sharepoint_too.egg-info/top_level.txt
+tests/test_sharepoint_too.py
