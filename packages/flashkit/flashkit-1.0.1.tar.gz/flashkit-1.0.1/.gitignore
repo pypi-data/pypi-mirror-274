@@ -1,0 +1,8 @@
+__pycache__
+.mypy_cache
+dist/
+*.sw*
+*~
+*.bin
+*.rom
+*.srm
