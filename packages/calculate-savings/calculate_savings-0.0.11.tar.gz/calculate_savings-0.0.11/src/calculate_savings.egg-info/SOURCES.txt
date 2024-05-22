@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+src/.DS_Store
+src/calculate_savings.py
+src/calculate_savings.egg-info/PKG-INFO
+src/calculate_savings.egg-info/SOURCES.txt
+src/calculate_savings.egg-info/dependency_links.txt
+src/calculate_savings.egg-info/entry_points.txt
+src/calculate_savings.egg-info/top_level.txt
+src/data/hon-maikin-k-jissu.csv
