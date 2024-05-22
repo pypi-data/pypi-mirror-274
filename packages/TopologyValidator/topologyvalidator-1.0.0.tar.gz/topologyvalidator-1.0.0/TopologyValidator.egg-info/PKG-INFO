@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: TopologyValidator
+Version: 1.0.0
+Summary: Validates the converted topology against the given OpenAPI specifications
+Author: Sai Krishna Voruganti
+Author-email: saikrishnavoruganti@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: jsonref
+Requires-Dist: jsonschema
+
+This is the package for Validating topology against the given OpenAPI specificatins. 
