@@ -1,0 +1,9 @@
+taylorexpansion/__init__.py,sha256=vA_2brWgj6WPOViIDTkWHu4ae4G74c1_3MAVbtUewD4,53
+taylorexpansion/series.py,sha256=OW6RsasJfoiQlpL1LhapjEpJfinVhooU9pbll4m8-8Y,625
+tests/__init__.py,sha256=drVsquB50sFESxnuka0wzkHVo9AB0HpyA8tTX_g54wA,53
+tests/test_series.py,sha256=GTwg0Zaosu6__Lgr87xwAIpW8QzMByly-aqb2uVBG4c,416
+taylorexpansion-0.1.0.dist-info/LICENSE,sha256=knmLkIKj_6tTrTSVRg9Tq88Kww4UCPLt2I1RGXJv9sQ,1037
+taylorexpansion-0.1.0.dist-info/METADATA,sha256=dLQh94OnsECFLnRlghga_piNNFL1F3YiP068AiHCnoY,468
+taylorexpansion-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+taylorexpansion-0.1.0.dist-info/top_level.txt,sha256=qeDE3XzYqgORPO5FJNInV4BseVKnZAxDgpYM45NkOMo,22
+taylorexpansion-0.1.0.dist-info/RECORD,,
