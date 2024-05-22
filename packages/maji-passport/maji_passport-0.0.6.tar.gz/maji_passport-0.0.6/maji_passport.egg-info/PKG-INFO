@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: maji-passport
+Version: 0.0.6
+Summary: Maji Passport With custom authorisation
+Home-page: https://passport.maji.la/
+Author: ViktorTeodorih
+Author-email: Viktor Ivanov <viktorteodorihivanov@gmail.com>
+Project-URL: Homepage, https://gitlab.com/argo-media/argo-media-backend-ecosystem/maji-passport-library
+Project-URL: Issues, https://gitlab.com/argo-media/argo-media-backend-ecosystem/maji-passport-library/issues
+Keywords: maji passport python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django==3.2.14
+Requires-Dist: djangorestframework-jwt==1.11.0
+Requires-Dist: pyjwt==1.7.1
+Requires-Dist: djangorestframework==3.11.1
+Requires-Dist: django-countries-plus
+Requires-Dist: loguru==0.5.3
+Requires-Dist: httpx==0.18.1
+Requires-Dist: confluent-kafka==2.3.0
+Requires-Dist: Pillow>=7.2.0
+Requires-Dist: sentry_sdk
+Requires-Dist: drf-yasg[validation]
+
+# Maji Package
+
