@@ -1,0 +1,7 @@
+README.md
+setup.py
+e2t_oms_sdk.egg-info/PKG-INFO
+e2t_oms_sdk.egg-info/SOURCES.txt
+e2t_oms_sdk.egg-info/dependency_links.txt
+e2t_oms_sdk.egg-info/requires.txt
+e2t_oms_sdk.egg-info/top_level.txt
