@@ -1,0 +1,1 @@
+from src.utils.decorator_log import log
