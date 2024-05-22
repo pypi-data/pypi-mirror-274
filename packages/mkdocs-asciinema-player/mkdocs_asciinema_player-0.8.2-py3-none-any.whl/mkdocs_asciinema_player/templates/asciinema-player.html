@@ -1,0 +1,31 @@
+{% if mkap_theme == "night" %}
+    {% include "themes/night.html" %}
+    {% if terminal_font_family is not defined %}
+        {% set terminal_font_family = "Consolas" %}
+    {% endif %}
+{% elif mkap_theme == "blue" %}
+    {% include "themes/blue.html" %}
+    {% if terminal_font_family is not defined %}
+        {% set terminal_font_family = "ms-sans-serif-bold" %}
+    {% endif %}
+{% endif %}
+<script>
+    window.addEventListener("load", function(event) {
+        AsciinemaPlayer.create("{{ file_path }}", document.getElementById("{{ 'asciinema-player-' ~ match_id }}"), {
+            cols: {{ cols }},
+            rows: {{ rows }},
+            autoPlay: {{ auto_play | string | lower }},
+            preload: {{ preload | string | lower }},
+            loop: {{ loop | string | lower }},
+            startAt: "{{ start_at }}",
+            speed: {{ speed }},
+            theme: "{{ theme }}",
+            fit: "{{ fit }}",
+            controls: "{{ controls }}",
+            pauseOnMarkers: {{ pause_on_markers | string | lower }},
+            terminalFontSize: "{{ terminal_font_size }}",
+            terminalFontFamily: "{{ terminal_font_family }}",
+            terminalLineHeight: {{ terminal_line_height }},
+        });
+    });
+</script>
