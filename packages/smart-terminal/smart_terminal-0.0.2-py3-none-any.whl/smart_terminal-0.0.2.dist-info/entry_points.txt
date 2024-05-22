@@ -1,0 +1,2 @@
+[console_scripts]
+copilot = smart_terminal.cli_tool:cli
