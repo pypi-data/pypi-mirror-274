@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dialog-wati
+Version: 0.0.1.0
+Summary: 
+Author: Vinicius Mesel
+Author-email: 4984147+vmesel@users.noreply.github.com
+Requires-Python: >=3.11,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dialog-lib (>=0.0.1.3,<0.0.2.0)
+Description-Content-Type: text/markdown
+
+# [talkd/dialog](https://github.com/talkdai/dialog) Wati plugin
+
+[talkd/dialog](https://github.com/talkdai/dialog) plugin for integration with Wati.
+
+### Sample variables to be used inside the .env file
+
+```
+WATI_API_ENDPOINT=
+WATI_AUTH_KEY=
+```
