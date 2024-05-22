@@ -1,0 +1,4 @@
+digitalhub-core==0.5.0b1
+
+[pandas]
+pandas<2.2,>=1.2
