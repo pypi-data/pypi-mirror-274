@@ -1,0 +1,111 @@
+interactions:
+- request:
+    body: '{"name": "test_retrieve_document"}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '34'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/indexes
+  response:
+    body:
+      string: '{"id":8,"name":"test_retrieve_document","files":[],"created_at":"2024-05-21T09:54:23.440315Z"}'
+    headers:
+      content-length:
+      - '94'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 09:54:23 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"id": null, "uuid": null, "key": null, "content": "Hello", "metadata":
+      {"source": "test"}}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '91'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/indexes/8/index
+  response:
+    body:
+      string: '{"id":2,"uuid":"6ab00281-a041-4e54-94db-14f0dbc545e5","key":"6ab00281-a041-4e54-94db-14f0dbc545e5"}'
+    headers:
+      content-length:
+      - '99'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 09:54:23 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"q": "Hello", "k": 1, "filters": null}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '39'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/indexes/8/query
+  response:
+    body:
+      string: '[{"uuid":"a0b8f3cd-a4a2-4eea-84f2-5b86d7e9f971","content":"Hello","metadata":{"source":"test"},"document_id":null,"score":29.458036422729492,"source_uuids":["a0b8f3cd-a4a2-4eea-84f2-5b86d7e9f971"]}]'
+    headers:
+      content-length:
+      - '198'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 09:54:23 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/indexes/8
+  response:
+    body:
+      string: 'true'
+    headers:
+      content-length:
+      - '4'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 09:54:23 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+version: 1

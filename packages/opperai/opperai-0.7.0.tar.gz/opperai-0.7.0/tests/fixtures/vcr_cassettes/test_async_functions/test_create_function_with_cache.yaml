@@ -1,0 +1,142 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/by_path/test/sdk/test_create_function_with_cache_async
+  response:
+    body:
+      string: '{"errors":[{"type":"HTTPException","message":"Function not found","detail":"Function
+        not found"}]}'
+    headers:
+      content-length:
+      - '98'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:03 GMT
+      server:
+      - uvicorn
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{"id": null, "path": "test/sdk/test_create_function_with_cache_async",
+      "description": "Test function", "input_schema": null, "out_schema": null, "instructions":
+      "Do something", "model": null, "index_ids": [], "use_semantic_search": null,
+      "few_shot": null, "few_shot_count": null, "cache_configuration": {"exact_match_cache_ttl":
+      10, "semantic_cache_threshold": null, "semantic_cache_ttl": null}}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '395'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/functions
+  response:
+    body:
+      string: '{"path":"test/sdk/test_create_function_with_cache_async","instructions":"Do
+        something","id":35,"description":"Test function","input_schema":null,"out_schema":null,"few_shot":false,"few_shot_count":2,"dataset_uuid":"f2b18845-412e-41e5-949e-f72cd2679bc7","use_semantic_search":false,"model":"azure/gpt4-eu","language_model_id":8,"index_ids":[],"linked_function_ids":null,"revision":1,"cache_configuration":null}'
+    headers:
+      content-length:
+      - '409'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:03 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"parent_span_uuid": null, "messages": [{"role": "user", "content": "hello"}]}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '78'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/chat/test/sdk/test_create_function_with_cache_async
+  response:
+    body:
+      string: '{"span_id":"b68eb0cb-96ed-4897-8909-81eeb8f710a9","message":"Hello!
+        How can I assist you today? If you have any questions or need information
+        on a specific topic, feel free to ask.","json_payload":null,"context":null,"cached":false}'
+    headers:
+      content-length:
+      - '232'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:03 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"parent_span_uuid": null, "messages": [{"role": "user", "content": "hello"}]}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '78'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/chat/test/sdk/test_create_function_with_cache_async
+  response:
+    body:
+      string: '{"span_id":"7a4baddc-7c53-4be7-9a8e-f28c1afa8e81","message":"Hello!
+        How can I assist you today? If you have any questions or need information
+        on a specific topic, feel free to ask.","json_payload":null,"context":null,"cached":true}'
+    headers:
+      content-length:
+      - '231'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:07 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/functions/35
+  response:
+    body:
+      string: ''
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:07 GMT
+      server:
+      - uvicorn
+    status:
+      code: 204
+      message: No Content
+version: 1

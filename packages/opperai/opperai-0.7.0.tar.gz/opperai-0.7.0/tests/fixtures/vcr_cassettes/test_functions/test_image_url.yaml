@@ -1,0 +1,142 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/by_path/test/sdk/test_image
+  response:
+    body:
+      string: '{"errors":[{"type":"HTTPException","message":"Function not found","detail":"Function
+        not found"}]}'
+    headers:
+      content-length:
+      - '98'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:21 GMT
+      server:
+      - uvicorn
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{"id": null, "path": "test/sdk/test_image", "description": null, "input_schema":
+      null, "out_schema": null, "instructions": "describe the image", "model": "openai/gpt4-turbo",
+      "index_ids": [], "use_semantic_search": null, "few_shot": null, "few_shot_count":
+      null, "cache_configuration": null}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '291'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/functions
+  response:
+    body:
+      string: '{"path":"test/sdk/test_image","instructions":"describe the image","id":44,"description":null,"input_schema":null,"out_schema":null,"few_shot":false,"few_shot_count":2,"dataset_uuid":"6db40da6-c469-4c3b-bb65-fcd752a431fb","use_semantic_search":false,"model":"openai/gpt4-turbo","language_model_id":1,"index_ids":[],"linked_function_ids":null,"revision":1,"cache_configuration":null}'
+    headers:
+      content-length:
+      - '381'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:21 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/44
+  response:
+    body:
+      string: '{"path":"test/sdk/test_image","instructions":"describe the image","id":44,"description":null,"input_schema":null,"out_schema":null,"few_shot":false,"few_shot_count":2,"dataset_uuid":"6db40da6-c469-4c3b-bb65-fcd752a431fb","use_semantic_search":false,"model":"openai/gpt4-turbo","language_model_id":1,"index_ids":[],"linked_function_ids":null,"revision":1,"cache_configuration":{"exact_match_cache_ttl":0,"semantic_cache_threshold":0.95,"semantic_cache_ttl":0}}'
+    headers:
+      content-length:
+      - '459'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:21 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"parent_span_uuid": null, "messages": [{"role": "user", "content": [{"type":
+      "image_url", "image_url": {"url": "https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/e1/d3/e1d3fee9-9aaa-4599-ba67-1c71a6d0ed03/1200px-seymouria_fossil.jpg"}}]}]}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '251'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/chat/test/sdk/test_image
+  response:
+    body:
+      string: '{"span_id":"9b17ef15-368e-446d-b9ea-a338423bc54f","message":"The image
+        displays a fossil of a prehistoric reptile, possibly a dinosaur or similar
+        creature, embedded in a stone slab. The fossil is remarkably well-preserved,
+        showing intricate details. The skeleton is largely intact with a clearly recognizable
+        skull, spine, ribs, and limbs. The texture of the stone contrasts with the
+        darker coloration of the fossilized remains, emphasizing the form and structure
+        of the creature. The backdrop is a simple black, which highlights the fossil
+        and the subtleties of its preservation on the slab. This type of specimen
+        is essential for paleontological studies, offering insights into the anatomy
+        and possible lifestyle of extinct species.","json_payload":null,"context":null,"cached":false}'
+    headers:
+      content-length:
+      - '786'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:21 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/functions/44
+  response:
+    body:
+      string: ''
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:10:30 GMT
+      server:
+      - uvicorn
+    status:
+      code: 204
+      message: No Content
+version: 1

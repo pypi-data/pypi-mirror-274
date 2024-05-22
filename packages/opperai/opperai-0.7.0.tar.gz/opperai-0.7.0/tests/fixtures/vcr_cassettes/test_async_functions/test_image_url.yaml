@@ -1,0 +1,144 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/by_path/test/sdk/test_image
+  response:
+    body:
+      string: '{"errors":[{"type":"HTTPException","message":"Function not found","detail":"Function
+        not found"}]}'
+    headers:
+      content-length:
+      - '98'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:09:44 GMT
+      server:
+      - uvicorn
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{"id": null, "path": "test/sdk/test_image", "description": null, "input_schema":
+      null, "out_schema": null, "instructions": "describe the image", "model": "openai/gpt4-turbo",
+      "index_ids": [], "use_semantic_search": null, "few_shot": null, "few_shot_count":
+      null, "cache_configuration": null}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '291'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/functions
+  response:
+    body:
+      string: '{"path":"test/sdk/test_image","instructions":"describe the image","id":31,"description":null,"input_schema":null,"out_schema":null,"few_shot":false,"few_shot_count":2,"dataset_uuid":"d3fdeb37-9dc4-4e05-a090-904016c00727","use_semantic_search":false,"model":"openai/gpt4-turbo","language_model_id":1,"index_ids":[],"linked_function_ids":null,"revision":1,"cache_configuration":null}'
+    headers:
+      content-length:
+      - '381'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:09:44 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/31
+  response:
+    body:
+      string: '{"path":"test/sdk/test_image","instructions":"describe the image","id":31,"description":null,"input_schema":null,"out_schema":null,"few_shot":false,"few_shot_count":2,"dataset_uuid":"d3fdeb37-9dc4-4e05-a090-904016c00727","use_semantic_search":false,"model":"openai/gpt4-turbo","language_model_id":1,"index_ids":[],"linked_function_ids":null,"revision":1,"cache_configuration":{"exact_match_cache_ttl":0,"semantic_cache_threshold":0.95,"semantic_cache_ttl":0}}'
+    headers:
+      content-length:
+      - '459'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:09:44 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"parent_span_uuid": null, "messages": [{"role": "user", "content": [{"type":
+      "image_url", "image_url": {"url": "https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/e1/d3/e1d3fee9-9aaa-4599-ba67-1c71a6d0ed03/1200px-seymouria_fossil.jpg"}}]}]}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '251'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/chat/test/sdk/test_image
+  response:
+    body:
+      string: '{"span_id":"96558adf-59a6-4322-9ba8-6fa10fa268b1","message":"This image
+        features a fossil embedded in a flat stone slab, displayed under lighting
+        that highlights its details. The fossil appears to be that of a small reptilian
+        or lizard-like creature, possibly from a prehistoric era. You can clearly
+        see the skeletal structure, including the skull, spine, ribs, and limbs, which
+        are well-preserved and distinct. The texture of the stone slab is rough and
+        slightly uneven, providing a natural contrast to the dark fossil remains.
+        This kind of preservation suggests that the creature might have been rapidly
+        covered by sediment, aiding in the excellent preservation of its skeletal
+        features. Such fossils are crucial for scientific studies as they provide
+        valuable insights into the anatomy and evolutionary history of the species
+        they belonged to.","json_payload":null,"context":null,"cached":false}'
+    headers:
+      content-length:
+      - '898'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:09:44 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/functions/31
+  response:
+    body:
+      string: ''
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 10:09:52 GMT
+      server:
+      - uvicorn
+    status:
+      code: 204
+      message: No Content
+version: 1

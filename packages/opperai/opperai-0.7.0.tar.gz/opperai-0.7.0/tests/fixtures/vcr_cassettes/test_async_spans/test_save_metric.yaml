@@ -1,0 +1,79 @@
+interactions:
+- request:
+    body: '{"uuid": "bcf1b3b4-0b3b-4b3b-8b3b-0b3b4b3b4133", "project": "project",
+      "name": "name", "input": "input", "start_time": "2021-01-01T00:00:00"}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '141'
+    method: POST
+    uri: http://localhost:8000/v1/spans
+  response:
+    body:
+      string: '{"uuid":"bcf1b3b4-0b3b-4b3b-8b3b-0b3b4b3b4133"}'
+    headers:
+      content-length:
+      - '47'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 09:54:24 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"dimension": "dim", "value": 0.5, "comment": "comment"}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '56'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/spans/bcf1b3b4-0b3b-4b3b-8b3b-0b3b4b3b4133/metrics
+  response:
+    body:
+      string: '{"id":"65f56389-75bd-44fc-b6b3-0ad7f08dcc55","span_id":"bcf1b3b4-0b3b-4b3b-8b3b-0b3b4b3b4133","dimension":"dim","value":0.5,"comment":"comment","updated_at":null,"created_at":"2024-05-21T09:54:25.297498Z"}'
+    headers:
+      content-length:
+      - '205'
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 09:54:24 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/spans/bcf1b3b4-0b3b-4b3b-8b3b-0b3b4b3b4133
+  response:
+    body:
+      string: ''
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Tue, 21 May 2024 09:54:24 GMT
+      server:
+      - uvicorn
+    status:
+      code: 204
+      message: No Content
+version: 1
