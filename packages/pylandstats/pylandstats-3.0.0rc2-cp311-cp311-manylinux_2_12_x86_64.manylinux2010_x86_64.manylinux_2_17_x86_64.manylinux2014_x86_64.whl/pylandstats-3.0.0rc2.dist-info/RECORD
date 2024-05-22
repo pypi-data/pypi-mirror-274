@@ -1,0 +1,14 @@
+pylandstats-3.0.0rc2.dist-info/WHEEL,sha256=IGiW1AaaAZ8k5tQVxn84-GIHS98Ya3_3JZI5tlvjXgY,229
+pylandstats-3.0.0rc2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pylandstats-3.0.0rc2.dist-info/top_level.txt,sha256=Abve_Butb96z518pHLyH6KsCLUBwYt5wxA4-C4spuj8,12
+pylandstats-3.0.0rc2.dist-info/RECORD,,
+pylandstats-3.0.0rc2.dist-info/METADATA,sha256=1chaYrzJU-QxulaRI4hsP2SYZqQSoU3Ub9DOzluGIEU,7008
+pylandstats/__init__.py,sha256=qBi2XZEfawMbjJQCIJ8PUDLTEhZZL_fGClS1jvI6v_U,127
+pylandstats/spatiotemporal.py,sha256=qyYNbyfXxyUzaRO99ebjWCUnbdIR9S2b0h33lM-srHU,25291
+pylandstats/settings.py,sha256=8CGGj0kq-uAoVfKf79NxsSzei79OWZ_IUag8wF0vPCA,2692
+pylandstats/zonal.py,sha256=xIirc9Itgx5iRHU67_BjeV4_vt2jiSCGIBi_p0ZhomY,24455
+pylandstats/landscape.py,sha256=HRgxFZWVGCquXSmJFzWFnhabQk0iTVE12dgvrhaHTHc,146235
+pylandstats/multilandscape.py,sha256=jzrEexIgLQWWbkQXELxl2Dnc-TMFKhIfab7OuGH1RYo,15972
+pylandstats/__pythran__/landscape.cpp,sha256=I3-qElS2Q3OD_MT1zSRVFog0F46cvSWC0OlFxtp4A1I,25360
+pylandstats/__pythran__/landscape.py,sha256=6TDwoNKc-q_apvKJmG6YaBpYDvi6mmB0zU6niSrD3oA,2270
+pylandstats/__pythran__/landscape.cpython-311-x86_64-linux-gnu.so,sha256=lKVofUFxhy33umWmMwKIdebpN7vmAaoohmS3QrwAZhA,64432
