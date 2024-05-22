@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+udirect/predictiveModel.py
+udirect.egg-info/PKG-INFO
+udirect.egg-info/SOURCES.txt
+udirect.egg-info/dependency_links.txt
+udirect.egg-info/requires.txt
+udirect.egg-info/top_level.txt
