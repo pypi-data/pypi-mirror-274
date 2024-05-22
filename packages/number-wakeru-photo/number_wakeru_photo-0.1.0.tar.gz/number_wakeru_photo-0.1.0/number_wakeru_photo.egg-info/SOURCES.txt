@@ -1,0 +1,6 @@
+README.md
+setup.py
+number_wakeru_photo.egg-info/PKG-INFO
+number_wakeru_photo.egg-info/SOURCES.txt
+number_wakeru_photo.egg-info/dependency_links.txt
+number_wakeru_photo.egg-info/top_level.txt
