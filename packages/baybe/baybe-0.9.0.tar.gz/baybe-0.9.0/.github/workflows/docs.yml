@@ -1,0 +1,58 @@
+name: Documentation
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force'
+        default: false
+        required: false
+        type: boolean
+      tag:
+        description: 'Specify tag (empty builds branch HEAD)'
+        required: false
+        default: ''
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag || github.ref }}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.9"}
+      - name: Install tox
+        run: pip install tox-uv
+      - name: Build Docs ${{ inputs.force == true && '(Force)' || '' }}
+        run: tox -e docs-py39 ${{ inputs.force == true && '-- -f' || '' }}
+      - name: Upload docs artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: 'docs/build'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
