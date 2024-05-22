@@ -1,0 +1,7 @@
+bdkpython/__init__.py,sha256=ATeFkCbwx3hWmg2HKvxY6LX-KzEK4cnYyA-yjmX_jRw,27
+bdkpython/bdk.py,sha256=NhX4Vfw8FxfP_Mdq63543p78spQAXqiJXAbc5F4vVzU,331528
+bdkpython/libbdkffi.dylib,sha256=bxnriO2Kvy0ROXJKeBZ_byElPR6NvxxQRw_et8NbXSk,7134544
+bdkpython-1.0.0a11.dist-info/METADATA,sha256=hsEljJEwvULfsFin-8UccB6VVji_721GRnqxzlQiVOY,523
+bdkpython-1.0.0a11.dist-info/WHEEL,sha256=D_nwYoH6QxvBRMGQ_I0lKoD9edmRTdqgY1TJRcGPz9w,111
+bdkpython-1.0.0a11.dist-info/top_level.txt,sha256=BpjT6locJ4WJz-wFZu6kSG9cKeH8E64dUJlPeL425OY,10
+bdkpython-1.0.0a11.dist-info/RECORD,,
