@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pycamia
+Version: 1.0.40
+Summary: The main package and a background support of project PyCAMIA. 
+Home-page: https://github.com/Bertie97/PyZMyc/pycamia
+Author: Yuncheng Zhou
+Author-email: bertiezhou@163.com
+License: MIT Licence
+Keywords: pip,pymyc,pycamia,environment,path,touch
+Platform: any
+Description-Content-Type: text/markdown
