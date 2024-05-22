@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ts_tokenizer
+Version: 0.1.0
+Summary: An old fashioned rule-based tokenizer for Turkish
+Home-page: https://github.com/tanerim/ts_tokenizer
+Author: Taner Sezer
+Author-email: tanersezerr@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+TS Tokenizer
+# TsTokenizer
+A rule based (old-fashioned) Turkish Tokenizer.
