@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: snakesays
+Version: 1.2.3
+Summary: To display with effect of snake saying
+Home-page: https://github.com/ishan65/snakesays.git
+Author: Ishan Mahajan
+Author-email: imahajan0007@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/ishan65/snakesays.git
+Description-Content-Type: text/markdown
+
+# To display with effect of snake saying.
+
+### USAGE
+```
+> python.exe -m snakesay ishan
+
+    _______
+    (ishan)
+    -------
+             /
+            /
+       __  /
+      {00}
+      (__)\
+       ?? \\
+          _\\__
+         (_____)_
+         (______)Oo*
+```
