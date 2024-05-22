@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tinkoff_acquiring/__init__.py
+tinkoff_acquiring/client.py
+tinkoff_acquiring.egg-info/PKG-INFO
+tinkoff_acquiring.egg-info/SOURCES.txt
+tinkoff_acquiring.egg-info/dependency_links.txt
+tinkoff_acquiring.egg-info/requires.txt
+tinkoff_acquiring.egg-info/top_level.txt
