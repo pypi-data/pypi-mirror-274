@@ -1,0 +1,10 @@
+itk/ANTsWasmPython.py,sha256=GmBrUBxi71W6aQV9AHDJbGi83DBFImfi_16Mghu66D8,2354
+itk/Configuration/ANTsWasmConfig.py,sha256=9pfuSBWeST9Lgf0bsMwIhwzNfvXpkLXfO9HZqBTgR_A,4664
+itk/Configuration/ANTsWasm_snake_case.py,sha256=T0FqKJ4xOy-ae1IEtLOrMsH0XfsTFN9cAYti9er7Y08,47
+itk/_ANTsWasmPython.so,sha256=7_m4iTaCpyR1xny5vj6KLtp5WHGH0K1ajIlaGMEaoUk,31141448
+itk/itkANTSRegistrationPython.py,sha256=0V4jG59Et4EQ84fx0i3oGKQKQ6ikkQ_cuMrn9kccEco,470823
+itk_ants-0.4.0.dist-info/METADATA,sha256=kE6FHy2c7a8bsKVgF871r4dZ_Jgr8G9cJYg2Ro7-ahw,15149
+itk_ants-0.4.0.dist-info/WHEEL,sha256=rYz-3BqnjAguOLnnJaeAN1rwe_JLbFIcIlhycRaB-cI,112
+itk_ants-0.4.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itk_ants-0.4.0.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+itk_ants-0.4.0.dist-info/RECORD,,
