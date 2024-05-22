@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: RGBMatrixDriver
+Version: 0.1.2
+Summary: A driver middleware for LED matrix software compatible with rpi-rgb-led-matrix
+Project-URL: Homepage, https://github.com/ty-porter/RGBMatrixDriver
+Author-email: Tyler Porter <tyler.b.porter@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: LED,LED matrix,RPI,matrix,raspberry,raspberry pi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Other/Nonlisted Topic
+Requires-Dist: rgbmatrixemulator
+Description-Content-Type: text/markdown
+
+# `RGBMatrixDriver`
+
+[![pypi Badge](https://img.shields.io/pypi/v/RGBMatrixDriver)](https://pypi.org/project/RGBMatrixDriver/)
+
+`RGBMatrixDriver` is a driver middleware for `rpi-rgb-led-matrix`/`RGBMatrixEmulator` compatible display scripts.
