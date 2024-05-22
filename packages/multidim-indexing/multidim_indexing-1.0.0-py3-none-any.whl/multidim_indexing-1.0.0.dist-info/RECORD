@@ -1,0 +1,9 @@
+multidim_indexing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multidim_indexing/numpy_view.py,sha256=AzZgZT6dzu8l13RlkY54iWABnuLgQ4v7W5TdzRgfp5U,1547
+multidim_indexing/torch_view.py,sha256=ucFQOCT9al93TmMhLgjYGFCsTGR0dsgEPcjJqxQK6q8,2851
+multidim_indexing/view.py,sha256=OGlp1JHmDmM2jAHj9_np-B96KDZH3ACP18dtOdOR904,11699
+multidim_indexing-1.0.0.dist-info/LICENSE.txt,sha256=YuLBwTzYB36_NlGqDs_RmPigO1fk3IuWVbP7F4gJqGQ,1056
+multidim_indexing-1.0.0.dist-info/METADATA,sha256=DAmapCp-0M5hBInGz8Kb1LBvsCCIdDw2oBkCnWuul38,9056
+multidim_indexing-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+multidim_indexing-1.0.0.dist-info/top_level.txt,sha256=Qo6-ysieSR5wddnBXz9ox3Kkdk2RzLMhLa97sRL8PxY,18
+multidim_indexing-1.0.0.dist-info/RECORD,,
