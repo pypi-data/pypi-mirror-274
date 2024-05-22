@@ -1,0 +1,170 @@
+[build-system]
+requires = ["hatchling>=1.8.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "haystack-experimental"
+dynamic = ["version"]
+description = "Experimental components and features for the Haystack LLM framework."
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+authors = [{ name = "deepset.ai", email = "info@deepset.ai" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: Freely Distributable",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "haystack-ai",
+]
+[project.urls]
+"CI: GitHub" = "https://github.com/deepset-ai/haystack-experimental/actions"
+"GitHub: issues" = "https://github.com/deepset-ai/haystack-experimental/issues"
+"GitHub: repo" = "https://github.com/deepset-ai/haystack-experimental"
+Homepage = "https://github.com/deepset-ai/haystack-experimental"
+
+[tool.hatch.envs.default]
+dependencies = [
+  # Type check
+  "mypy",
+  # Test
+  "pytest",
+  "pytest-cov",
+  # Linting
+  "pylint",
+  "ruff",
+]
+
+[tool.hatch.envs.test]
+extra-dependencies = [
+  # List here dependencies behind lazy-import
+]
+
+[tool.hatch.envs.test.scripts]
+unit = 'pytest --cov-report xml:coverage.xml --cov="haystack-experimental" -m "not integration" {args:test}'
+integration = 'pytest --maxfail=5 -m "integration" {args:test}'
+typing = "mypy --install-types --non-interactive {args:haystack_experimental}"
+lint = [
+  "ruff check {args:haystack_experimental}",
+  "pylint -ry -j 0 {args:haystack_experimental}",
+]
+test-cov = "coverage run -m pytest {args:test}"
+cov-report = [
+  "- coverage combine",
+  "coverage xml",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[tool.hatch.envs.readme]
+detached = true  # To avoid installing the dependencies from the default environment
+dependencies = ["haystack-pydoc-tools"]
+
+[tool.hatch.envs.readme.scripts]
+sync = "./.github/utils/pydoc-markdown.sh"
+delete-outdated = "python ./.github/utils/delete_outdated_docs.py {args}"
+
+[tool.hatch.version]
+path = "haystack_experimental/version.py"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.sdist]
+include = ["/haystack-experimental", "/VERSION.txt"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["haystack-experimental"]
+
+[tool.codespell]
+ignore-words-list = "ans,astroid,nd,ned,nin,ue,rouge,ist"
+quiet-level = 3
+skip = "test/nodes/*,test/others/*,test/samples/*,e2e/*"
+
+[tool.pylint]
+ignore-paths = [
+  "haystack_experimental/__init__.py",
+  "haystack_experimental/version.py",
+]
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--strict-markers"
+markers = [
+  "integration: integration tests",
+]
+log_cli = true
+
+[tool.mypy]
+warn_return_any = false
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"
+exclude = ["test"]
+
+[tool.ruff.lint]
+select = [
+  "ASYNC", # flake8-async
+  "C4",    # flake8-comprehensions
+  "C90",   # McCabe cyclomatic complexity
+  "E501",  # Long lines
+  "EXE",   # flake8-executable
+  "F",     # Pyflakes
+  "INT",   # flake8-gettext
+  "PERF",  # Perflint
+  "PL",    # Pylint
+  "Q",     # flake8-quotes
+  "SIM",   # flake8-simplify
+  "SLOT",  # flake8-slots
+  "T10",   # flake8-debugger
+  "W",     # pycodestyle
+  "YTT",   # flake8-2020
+  "I",     # isort
+  # built-in shadowing
+  "A001", # builtin-variable-shadowing
+  "A002", # builtin-argument-shadowing
+  "A003", # builtin-attribute-shadowing
+  # docstring rules
+  "D102", # Missing docstring in public method
+  "D103", # Missing docstring in public function
+  "D209", # Closing triple quotes go to new line
+  "D205", # 1 blank line required between summary line and description
+  "D213", # summary lines must be positioned on the second physical line of the docstring
+  "D417", # undocumented-parameter
+  "D419", # undocumented-returns
+]
+
+ignore = [
+  "F401",    # unused-import
+  "PERF203", # `try`-`except` within a loop incurs performance overhead
+  "PERF401", # Use a list comprehension to create a transformed list
+  "PLR1714", # repeated-equality-comparison
+  "PLR5501", # collapsible-else-if
+  "PLW0603", # global-statement
+  "PLW1510", # subprocess-run-without-check
+  "PLW2901", # redefined-loop-name
+  "SIM108",  # if-else-block-instead-of-if-exp
+  "SIM115",  # open-file-with-context-handler
+  "SIM118",  # in-dict-keys
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 28
