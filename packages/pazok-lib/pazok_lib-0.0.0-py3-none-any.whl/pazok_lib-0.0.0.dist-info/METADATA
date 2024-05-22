@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pazok-lib
+Version: 0.0.0
+Summary: test
+Author: b_azo
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
+
