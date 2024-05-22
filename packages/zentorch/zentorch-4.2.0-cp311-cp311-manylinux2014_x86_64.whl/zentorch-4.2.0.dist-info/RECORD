@@ -1,0 +1,16 @@
+zentorch/_C.cpython-311-x86_64-linux-gnu.so,sha256=GrKPnlqHWLQJdsCDMPu1sp-feRgNHkJjgsKgjo829QI,55466200
+zentorch/__init__.py,sha256=xUA1514WM_xYHxSl2rHxgw2UlUXX1O4MCWHgPt-kfEs,411
+zentorch/_compile_backend.py,sha256=Dyf6YHXXe1fWYQyKOQNJEZ9MO15DeVZQZlQbkjZLikw,5212
+zentorch/_info.py,sha256=CHTBangfBlFJHEa18lz733B-o9jGXXC_IxQiXRupppU,451
+zentorch/_logging.py,sha256=mt-p3vQ1N7bNgskeSbkbxCk0I1QdsTRD9j0MaUF2MkQ,818
+zentorch/_meta_registrations.py,sha256=qQyOq-u4Cr5svyuDRwFSr1dSckSOEqd32UjJcKE_tDo,6378
+zentorch/_mkldnn.py,sha256=y0JO2QGcUBOtCNM9Sw3gdB1R_5QmpcizdW7PSQIwxVc,21336
+zentorch/_optimize.py,sha256=d-v-S48ZSaA4RwX6tVydRjCoxFIB8n3xHgPHXbMtePk,7191
+zentorch/_util.py,sha256=k72vVTRH1W6J81YmCVT5HF_r1wlgEG11qy8SFZ-Ecs0,594
+zentorch/_zentorch_custom_op_replacement.py,sha256=D6AzX8NKbKi2LIRIvtB7Moa86H5HlIbH8NN1OpfTe90,27262
+zentorch/_zentorch_op_replacement.py,sha256=Dnhox9vWP0uYmbRYypFoAWAkt6IS9tF_fcv9IETfYtQ,5850
+zentorch-4.2.0.dist-info/LICENCE,sha256=VVXpq32u-4ZDzGJGSYsjgx_U66ZajtWKcOQUm8EcmmM,13202
+zentorch-4.2.0.dist-info/METADATA,sha256=cSxf7Igk4VDDfLrIgkDeFgn1F0SXwZ-iYy6m2KUYtUM,2214
+zentorch-4.2.0.dist-info/WHEEL,sha256=R0u6GHm30_SKsWpCdc8XBoJJTyrO3z2Fad2hxCFeEjM,105
+zentorch-4.2.0.dist-info/top_level.txt,sha256=L8vDR_rlpFIiG0Ne3RUkgdTdpDcv8T8Gf_0N5hC77Ek,9
+zentorch-4.2.0.dist-info/RECORD,,
