@@ -1,0 +1,6 @@
+[tool.poetry]
+name = "data-ingestion-lib"
+version = "1.0.0"
+description = "Data ingestion module "
+authors = ["Dat Nguyen <dat.nguyen2@tyme.com>"]
+packages = [{include = "data_ingestion"}]
