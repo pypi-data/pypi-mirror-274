@@ -1,0 +1,2 @@
+[console_scripts]
+predict-neural = predict_v2_mk.predict:main
