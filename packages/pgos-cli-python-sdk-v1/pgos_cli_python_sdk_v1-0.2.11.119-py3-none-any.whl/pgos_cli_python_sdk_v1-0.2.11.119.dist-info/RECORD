@@ -1,0 +1,15 @@
+pgos_cli/__init__.py,sha256=8L6GJZfYAPOroxWSUWdCJsCuGEVy50VQ-W6JTyFBAdQ,74
+pgos_cli/pgos_asset_uploader.py,sha256=2_snXaEJH_5fmAySW1M4BBAObQeyBpVwWasreyJsTBw,1905
+pgos_cli/pgos_backend_apis.py,sha256=BLalKT9sXApWN4dwOPN9WqgFXj1kfkF56JDwhu3nYRU,6416
+pgos_cli/pgos_cli_client.py,sha256=au4O6Q1DpND-8y4DXNyCcsRokgjYIRLQi9TgQpdwz7w,3780
+pgos_cli/pgos_cli_config.py,sha256=ANgq2_vbeWnInNMr6t3Lvr--STJvGAmpwpDpy8VgTS4,4599
+pgos_cli/pgos_cmdline.py,sha256=4J8qwWN1YprwScu22yQbZtK8t5TVCNXJX9EEBrgKUt4,5716
+pgos_cli/pgos_tools.py,sha256=30X8LIZPtEqobqz9UPQSzgI0hXwTq1si21JXKCo3Qvs,3211
+pgos_cli/pgos_uploader_impl_cos.py,sha256=ATCzhnH1t_mLz-9qKxK6EOm7QVhZEqJWKC7KWAtbQKM,8972
+pgos_cli/pgos_uploader_impl_s3.py,sha256=K9MDrK7VDuh5w20p3_EKWnjnw5uY28ZgvPxiIz3LjzE,4935
+pgos_cli/win32_unicode_argv.py,sha256=1lPkNwpPNYwzJMdQOeHejYammbg-dDXAv8TC2F-J3sY,1296
+pgos_cli_python_sdk_v1-0.2.11.119.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgos_cli_python_sdk_v1-0.2.11.119.dist-info/METADATA,sha256=bccu9EXJKZ80LiOg3jbsWLnaoZfquQ4Pcupur9zE-Z8,820
+pgos_cli_python_sdk_v1-0.2.11.119.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pgos_cli_python_sdk_v1-0.2.11.119.dist-info/top_level.txt,sha256=h56GQFiMlXRDdacuP-jQIc1vcXbYs1UjBfn3Nj3028k,9
+pgos_cli_python_sdk_v1-0.2.11.119.dist-info/RECORD,,
