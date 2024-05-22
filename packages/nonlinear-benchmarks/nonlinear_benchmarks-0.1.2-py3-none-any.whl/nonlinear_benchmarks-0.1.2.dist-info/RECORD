@@ -1,0 +1,10 @@
+nonlinear_benchmarks/__init__.py,sha256=jSxnvuxNCRuFUdKwhxMC79K43xL1GWw8eBZf_jurqAg,891
+nonlinear_benchmarks/benchmarks.py,sha256=b73e3Qo4K5ozBApBxDTsAlRDnBU9AjOzt-l6fuXfy7k,13062
+nonlinear_benchmarks/error_metrics.py,sha256=iAE1yy_XpjzTbvYm_dEVX0uLzwGn54vwNNv-liQtCMI,5637
+nonlinear_benchmarks/not_splitted_benchmarks.py,sha256=r3jX5A-KKuv_e8UTJ8S1rCWSSX7qbOkO9x7S7zhPTAI,12335
+nonlinear_benchmarks/utilities.py,sha256=YGvDyLhSlZXVRtKR16ISMcALNXO38uQV0vUnBJhj_HE,9510
+nonlinear_benchmarks-0.1.2.dist-info/LICENSE,sha256=BqWbe545Sf5Wns2tvmpe9GktyJGfIlJcXrfMM4R1GQc,1505
+nonlinear_benchmarks-0.1.2.dist-info/METADATA,sha256=P8voU4_8IUZBMT4opNKV4stRsKnqXxfyB6_FZw1Ghaw,6793
+nonlinear_benchmarks-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nonlinear_benchmarks-0.1.2.dist-info/top_level.txt,sha256=hbY4rse6kcuFj2g5mW2r-Bl-uPpfQeElszey6KUt5Wk,21
+nonlinear_benchmarks-0.1.2.dist-info/RECORD,,
