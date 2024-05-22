@@ -1,0 +1,9 @@
+ivande_combiner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ivande_combiner/module.py,sha256=RTor0A6l2xSR9zH5s2DGOxYQp1m3t6R8eHd-DfGGv8w,53
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_module.py,sha256=7Um6GVeNJDp5olB6cfGr1uReN1ODDwSAFx29JV5o89g,182
+ivande_combiner-0.0.10.dist-info/LICENSE.txt,sha256=c_McBpsSOXWbHH9MYP7HjSU-pb5QumjlEaevWCzgnVc,1060
+ivande_combiner-0.0.10.dist-info/METADATA,sha256=1Va-E8KNvRctOgGi8k4Qq8W3qSE6Z6iyFVcI6lT2iwA,624
+ivande_combiner-0.0.10.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ivande_combiner-0.0.10.dist-info/top_level.txt,sha256=VvZpNCmI4mcgrmJsfL0_7_7lsm39vJQqvEMFNPq4H_c,22
+ivande_combiner-0.0.10.dist-info/RECORD,,
