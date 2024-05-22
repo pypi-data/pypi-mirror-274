@@ -1,0 +1,10 @@
+#VScode related stuff
+*.vscode
+
+#pipenv related stuff
+Pipfile
+Pipfile.lock
+
+#distribution package folder
+dist/
+rest_solace.egg-info/
