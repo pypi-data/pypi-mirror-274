@@ -1,0 +1,8 @@
+RAMA_CLASSIFY_MODEL_ADDRESS = 'https://disk.yandex.ru/d/4xtNt0zftHFFVg'
+RAMA_BEGICKAYA_DETECT_MODEL_ADDRESS = 'https://disk.yandex.ru/d/sE5iSXYWL3xEkQ'
+RAMA_RUZHIMMASH_DETECT_MODEL_ADDRESS = 'https://disk.yandex.ru/d/zAEw0_ALgtBg9Q'
+RAMA_RUZHIMMASH_TEXT_DETECT_MODEL_ADDRESS = 'https://disk.yandex.ru/d/rgthm-mMrbhOmw'
+RAMA_BEJICKAYA_TEXT_DETECT_MODEL_ADDRESS = 'https://disk.yandex.ru/d/QhicLdm2-PT6oA'
+TEXT_RECOGNIZE_RUZHIMMASH_MODEL_ADDRESS = 'https://disk.yandex.ru/d/C2hDMsbTZMnL8Q'
+TEXT_RECOGNIZE_BEGICKAYA_MODEL_ADDRESS = 'https://disk.yandex.ru/d/C2hDMsbTZMnL8Q'
+RAMA_PROD_CLASSIFY_MODEL_ADDRESS = 'https://disk.yandex.ru/d/8FI8TaTwaCfbSA'
