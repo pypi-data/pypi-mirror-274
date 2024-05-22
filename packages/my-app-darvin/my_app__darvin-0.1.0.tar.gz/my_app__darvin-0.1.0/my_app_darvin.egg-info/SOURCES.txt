@@ -1,0 +1,10 @@
+README.md
+setup.py
+my_app_darvin.egg-info/PKG-INFO
+my_app_darvin.egg-info/SOURCES.txt
+my_app_darvin.egg-info/dependency_links.txt
+my_app_darvin.egg-info/entry_points.txt
+my_app_darvin.egg-info/requires.txt
+my_app_darvin.egg-info/top_level.txt
+tests/__init__.py
+tests/test_module1.py
