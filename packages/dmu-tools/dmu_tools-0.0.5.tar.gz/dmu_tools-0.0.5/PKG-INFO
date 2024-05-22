@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: dmu_tools
+Version: 0.0.5
+Summary: Tools for DMU
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Di Pan <994485784@qq.com>
+License: MIT License
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7

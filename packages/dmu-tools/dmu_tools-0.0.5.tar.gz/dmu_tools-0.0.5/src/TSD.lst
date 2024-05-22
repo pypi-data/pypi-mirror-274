@@ -1,0 +1,2230 @@
+ DMU1                        Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+  
+  
+                                 DDDD    MM   MM  U     U 
+                                 D   D   M M M M  U     U 
+                                 D    D  M  M  M  U     U 
+                                 D    D  M     M  U     U 
+                                 D   D   M     M   U   U  
+                                 DDDD    M     M    UUU   
+  
+                                 Version: 6, Release: 5.2
+  
+                ___________________________________________________________________
+                |                                                                 |
+                | Package for Analyzing Multivariate Mixed Model developed by:    |
+                |                                                                 |
+                |                  Per Madsen & Just Jensen                       |
+                |                      Aarhus University                          |
+                |           Center for Quantitative Genetics and Genomics         |
+                |                   Research Centre Foulum                        |
+                |                        P.O. Box 50                              |
+                |                   DK-8830 Tjele, Denmark                        |
+                |                     Ph:  (45) 87158028                          |
+                |                  Email: Per.Madsen@agrsci.dk                    |
+                |                                                                 |
+                | The Center for Quantitative Genetics and Genomics (QGG) owns    |
+                | the source code of the dmu-package                              |
+                |                                                                 |
+                | The dmu-package is free of charge for research use. However,    |
+                | technical support can not be provided                           |
+                |                                                                 |
+                | Use of the package should be acknowledged in publications by    |
+                | reference to the the user guide                                 |
+                |                                                                 |
+                | You are not allowed to distribute modified versions of the      |
+                | dmu-package neither under the same nor under a different name   |
+                | without the approval from the authors                           |
+                |                                                                 |
+                | For commercial use of the dmu-package please contact QGG.       |
+                |_________________________________________________________________|
+  
+  
+
+         Execution host:      PCTX
+
+         Working directory:   c:\Users\99448\Desktop\data
+  
+         User comments
+  
+         ____________________________________________________________________________________
+         |                                                                                  |
+         | Predict DFI                                                                      |
+         | Model                                                                            |
+         | Too complex to be written                                                        |
+         |                                                                                  |
+         |__________________________________________________________________________________|
+  
+  
+         Type of analyse              :   1 (AI-REML)
+         Method for computation       :   1 (AI-REML with EM crash recovery)
+         Moderate amount of test information
+          
+  
+  
+         User specified files
+          
+         DATA                          : ./data.txt
+         VAR. STRUC. random factor   1 : ./ped.txt
+1DMU1                        Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+          
+          
+         Variable names (user specified)
+          
+         INTEGERS :   SEX      BATCH    STATION  ID       
+          
+         REALS    :   lg0      lg1      lg2      lg3      lg4      lg5      FCR      
+          
+                                                            
+                                                            
+                                 Model description (summary)
+                                 ---------------------------
+                                                            
+                                                          No of Class Variables
+            Dep.var  Weight   Effects    No of    ---------------------------------------
+  Trait       R.no    R.no    Absorbed   Covars     Total          Fixed         Random
+ --------   -------  ------   --------   ------   ---------      ---------      ---------
+ FCR            7       0         0        6        5           3           2
+  
+  
+                                Model description (detailed)
+                                ----------------------------
+                                                            
+  
+                  Trait                         Model
+                  --------   ---------------------------------------------------------------------
+ Trait / effect :  FCR      = SEX  + BATCH + STATION + ID   + ID   + lg0  + lg1  +                 
+ Type           :  NOR        F      F       F         R      R      FR     FR                     
+ Input no.      :  R7         I1     I2      I3        I4     I4     R1     R2                     
+ Random mat. no.:                                      1      2                                    
+  
+                              lg0(ID) +      lg0(ID) +      lg1(ID) +      lg1(ID) +      e        
+                              RR             RR             RR             RR             R        
+                              R1(I4)         R1(I4)         R2(I4)         R2(I4)                  
+                              1              2              1              2                       
+  
+  
+  
+  
+                          Structure of (co)variance matrices
+                          ----------------------------------
+
+                          Matrix no.    1
+  
+                          Variance structure A(x)G0
+                          Method to form A**(-1): 2 (Sire, Dam - no inbreeding)      
+                          Pedigree: ./ped.txt
+  
+                        Random identifier (effect)      Submodel/trait          RR-Regression
+                  Row/  --------------------------  -----------------------   -----------------
+                  Col    No.      Name  I-Input     No.       Name  R-Input      Name  R-Input
+                  ---   ----  --------  -------    -----  --------  -------  --------  -------
+                   1      1         ID     4         1         FCR     7                   0
+                   2      1         ID     4         1         FCR     7          lg0      1
+                   3      1         ID     4         1         FCR     7          lg1      2
+
+                          Matrix no.    2
+  
+                          Variance structure I(x)G0
+  
+                        Random identifier (effect)      Submodel/trait          RR-Regression
+                  Row/  --------------------------  -----------------------   -----------------
+                  Col    No.      Name  I-Input     No.       Name  R-Input      Name  R-Input
+                  ---   ----  --------  -------    -----  --------  -------  --------  -------
+                   1      2         ID     4         1         FCR     7                   0
+                   2      2         ID     4         1         FCR     7          lg0      1
+                   3      2         ID     4         1         FCR     7          lg1      2
+1DMU1                        Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+  
+  
+                          Structure of (co)variance matrices
+                         ---------------------------------- 
+  
+
+                          Matrix no.    3
+                          (Residual)
+  
+                          Variance structure I           
+                 
+                            Submodel/trait
+                  Row/  -----------------------
+                  Col    No.      Name  R-Input
+                  ---   ----  --------  -------
+                   1      1        FCR     7
+  
+                  Matrix no., Row and Col identifies (co)variance components
+  
+                 
+                 
+                NO PRIORS FOR (CO)VARIANCE COMPONENTS SPECIFIED
+                 
+                An identity matrix is assumed for all 
+                (co)variance matrices
+                 
+                 
+  
+  
+       Starting parameters for model
+  
+  
+  
+   Covariance matrix for random effect no:            1
+  
+               1              2              3
+     1        1.0000000
+     2        0.0000000      1.0000000
+     3        0.0000000      0.0000000      1.0000000
+  
+  
+  
+   Correlation matrix for random effect no:            1
+  
+               1              2              3
+     1         1.0000
+     2         0.0000         1.0000
+     3         0.0000         0.0000         1.0000
+  
+  
+  
+   Covariance matrix for random effect no:            2
+  
+               1              2              3
+     1        1.0000000
+     2        0.0000000      1.0000000
+     3        0.0000000      0.0000000      1.0000000
+  
+  
+  
+   Correlation matrix for random effect no:            2
+  
+               1              2              3
+     1         1.0000
+     2         0.0000         1.0000
+     3         0.0000         0.0000         1.0000
+  
+   Residual co-variance matrix   
+  
+               1
+     1        1.0000000
+  
+1DMU1                        Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+  
+  
+                                SUMMARY OF DATA FILE        
+                                                            
+              No of records processed                            :     56523
+  
+  
+                                DEPENDENT VARIABLES (TRAITS)
+  
+ Trait          R-input     N-obs      Average          S.D.           Min value        Max value
+ FCR               7        56523   0.53124912E-01   0.59386549       -2.3452001        2.3452001    
+  
+  
+  
+  
+                                COVARIABLES                 
+           Covariable
+         --------------
+ Trait   R-input Name          N-obs      Average          S.D.           Min value        Max value
+ FCR         1   lg0        56523    4717.4139        2597.4423        429.00000        8637.0000    
+             2   lg1        56523   0.70709997                  NaN   0.70709997       0.70709997    
+  
+  
+  
+                 Number of animal with data not in pedigree      168
+    The animals has been inserted Phantom Parent: -999999998
+  
+                 Pedigree information for random matrix            1
+  
+                 No of relatives inserted                       2185
+  
+                 Number of animals in pedigree                  8637
+                 Number of animals with data                     168
+  
+  
+  
+                                MODEL STATISTICS            
+                                                            
+                                                            
+           Number of overall and nested fixed regressions   
+                                                            
+ Trait    |         Regression   Level |         Regression   Level | 
+ -------- | ------------------ ------- | ------------------ ------- | 
+ FCR      |                lg0       1 |                lg1       1 | 
+  
+                                                            
+                                                            
+           Number of random regressions                     
+                                                            
+ Trait    |         Regression   Level |         Regression   Level |         Regression   Level | 
+ -------- | ------------------ ------- | ------------------ ------- | ------------------ ------- | 
+ FCR      |            lg0(ID)    8637 |            lg0(ID)     168 |            lg1(ID)    8637 | 
+                       lg1(ID)     168 | 
+  
+                                                            
+                                                            
+                No of levels for each fixed effect          
+                                                            
+ Trait    !  Effect     Level |  Effect     Level |  Effect     Level | 
+ -------- | -------- -------- | -------- -------- | -------- -------- | 
+ FCR      !      SEX        3 |    BATCH       15 |  STATION        5 | 
+  
+  
+  
+                Total no of fixed levels               25
+  
+  
+  
+             Random Factors with variance structure = I(x)G0
+  
+                                   Number of                
+                               -------------------          
+                    Factor !   Levels    Equations          
+                        2  !      168          504
+1DMU1                        Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+  
+  
+             Random Factors with variance structure = A(x)G0
+  
+                                   Number of                
+                               -------------------       Ln 
+                    Factor !   Levels    Equations       |A|
+                        1  !     8637        25911   -4355.737
+  
+  
+ Contents of the model description structure
+  
+ Trait no :            1
+  
+ model(i)%trait_name    : FCR     
+ model(i)%trait_type    :            1
+ model(i)%trait_inp_no  :            7
+ model(i)%trait_rci     :            3
+ model(i)%idelta        :            0
+ model(i)%wgt_inp_no    :            0
+ model(i)%wgt_rci       :            0
+ model(i)%wgt_name      :         
+ model(i)%l_mixture     :  F
+ model(i)%mix_inp_no    :            0
+ model(i)%mix_t_no      :            0
+ model(i)%mix_rci       :            0
+ model(i)%mix_name      :         
+ model(i)%n_absorb      :            0
+ model(i)%n_ef          :            5
+ model(i)%n_fixed       :            3
+ model(i)%n_random      :            2
+ model(i)%n_random_abs  :            0
+ model(i)%n_reg         :            6
+ model(i)%n_dif_reg     :            2
+ model(i)%n_f_reg       :            2
+ model(i)%n_f_o_reg     :            2
+ model(i)%n_f_n_reg     :            0
+ model(i)%n_r_n_reg     :            4
+ model(i)%n_cat         :            0
+ model(i)%ef_inp        :            1           2           3           4
+           4
+ model(i)%ef_rci        :            1           2           3           4
+           5
+ model(i)%reduce        :            0           0           0           0
+           0
+ model(i)%intercept     :  T T T T T
+ model(i)%ef_coeff      :    1.000000       1.000000       1.000000    
+   1.000000       1.000000    
+ model(i)%f_ef_inp      :            1           2           3
+ model(i)%f_ef_rci      :            1           2           3
+ model(i)%f_ef_name     : SEX     BATCH   STATION 
+ model(i)%f_intercept   :  T T T
+ model(i)%f_ef_coeff    :    1.000000       1.000000       1.000000    
+ model(i)%r_ef_inp      :            4           4
+ model(i)%r_ef_rci      :            4           5
+ model(i)%r_ef_name     : ID      ID      
+ model(i)%r_intercept   :  T T
+ model(i)%r_ef_coeff    :    1.000000       1.000000    
+ model(i)%merge_prev    :  F F
+ model(i)%reg_type      :            0           2           2           0
+           2           2
+ model(i)%reg_inp       :            1           1           1           2
+           2           2
+ model(i)%reg_mixture   :  F F F F F F
+ model(i)%reg_name      : lg0     lg0     lg0     lg1     lg1     lg1     
+ model(i)%reg_name_n    : lg0               lg0(ID)           lg0(ID)           
+ lg1               lg1(ID)           lg1(ID)           
+ model(i)%reg_rci       :            1           1           1           2
+           2           2
+ model(i)%n_times       :            3           3
+ model(i)%reg_n_inp     :            0           4           4           0
+           4           4
+ model(i)%reg_r_matno   :            0           1           2           0
+           1           2
+ model(i)%reg_rmat_pos  :            0           2           2           0
+           3           3
+ model(i)%reg_n_rci     :            0           4           5           0
+           4           5
+ model(i)%reg_n_ef_no   :            0           4           5           0
+           4           5
+ model(i)%reg_r_number  :            0           2           2           0
+           3           3
+ model(i)%reg_n_level   :            0           1           1           0
+           1           1
+ model(i)%r_ef_matno    :            1           2
+ model(i)%ass_rf        :            0           0
+  
+ Contents of the (co)variance matrices description structure
+  
+ (Co)variance matrix            1
+  
+ rmat(k)%n_cont         :            3
+ rmat(k)%n_rc           :            3
+ rmat(k)%rank           :            3
+ rmat(k)%n_traits       :            1
+ rmat(k)%n_r_eff        :            1
+ rmat(k)%n_random_id    :            1
+ rmat(k)%random_id_inp  :            4
+ rmat(k)%r_id_rci       :            4
+ rmat(k)%type           : PED         
+ rmat(k)%method         :            2
+ rmat(k)%ass_rf         :            0
+ rmat(k)%intercept      :  T
+ rmat(k)%m_n_rr         :            2
+ rmat(k)%l_rr           :  T
+ rmat(k)%trait_no       :            1
+ rmat(k)%trait_inp      :            7
+ rmat(k)%cont_rc      :            1           2           3
+ rmat(k)%cont_rc1     :            1           1           1
+ rmat(k)%cont_t_no    :            1           1           1
+ rmat(k)%cont_t_inp   :            7           7           7
+ rmat(k)%cont_t_rci   :            3           3           3
+ rmat(k)%cont_eff     :            1           1           1
+ rmat(k)%cont_eff_inp :            4           4           4
+ rmat(k)%cont_eff_rci :            4           4           4
+ rmat(k)%cont_rr_inp  :            0           1           2
+ rmat(k)%cont_rr_rci  :            0           1           2
+ rmat(k)%cont_coeff   :    1.00000000000000        1.00000000000000     
+   1.00000000000000     
+ rmat(k)%cont_rr_eff  :  F T T
+ rmat(k)%cont_id_name : ID      ID      ID      
+ rmat(k)%cont_t_name  : FCR     FCR     FCR     
+ rmat(k)%cont_rr_name :         lg0     lg1     
+ rmat(k)%merge_prev     :  F
+ rmat(k)%reduce         :            1
+ rmat(k)%rank_tn        :            1           1           1
+ rmat(k)%rank_ndt       :            1           1           1
+ rmat(k)%trait_blk_size :            3
+ rmat(k)%trait_blk_start:            1
+ rmat(k)%r_eff          :            1
+ rmat(k)%r_eff_inp      :            4
+ rmat(k)%t_r_id_rci     :            4
+ rmat(k)%n_rr           :            2
+ rmat(k)%t_no           :            1
+ rmat(k)%t_name         : FCR     
+ rmat(k)%rr_f_inp       :            1           2
+ rmat(k)%rr_f_rcr       :            1           2
+ rmat(k)%l_cv_rest        :  F F F F F F F F F
+ rmat(k)%l_cor_rest       :  F F F F F F F F F
+ rmat(k)%l_vratio_nom     :  F
+ rmat(k)%l_vratio_denon   :  F
+ rmat(k)%l_vratio_mat_rest:  F
+ rmat(k)%l_vratio_elem    :  F F F
+ rmat(k)%l_prior          :  F
+ rmat(k)%l_grp_prior      :  F
+ rmat(k)%cov_mat(i,1:i) :            1   1.00000000000000     
+ rmat(k)%cov_mat(i,1:i) :            2  0.000000000000000E+000
+   1.00000000000000     
+ rmat(k)%cov_mat(i,1:i) :            3  0.000000000000000E+000
+  0.000000000000000E+000   1.00000000000000     
+ rmat(k)%gdet             :    1.00000000000000     
+ rmat(k)%gif(i,1:i)     :            1   1.00000000000000     
+ rmat(k)%gif(i,1:i)     :            2  0.000000000000000E+000
+   1.00000000000000     
+ rmat(k)%gif(i,1:i)     :            3  0.000000000000000E+000
+  0.000000000000000E+000   1.00000000000000     
+  
+ (Co)variance matrix            2
+  
+ rmat(k)%n_cont         :            3
+ rmat(k)%n_rc           :            3
+ rmat(k)%rank           :            3
+ rmat(k)%n_traits       :            1
+ rmat(k)%n_r_eff        :            1
+ rmat(k)%n_random_id    :            1
+ rmat(k)%random_id_inp  :            4
+ rmat(k)%r_id_rci       :            5
+ rmat(k)%type           : I           
+ rmat(k)%method         :            0
+ rmat(k)%ass_rf         :            0
+ rmat(k)%intercept      :  T
+ rmat(k)%m_n_rr         :            2
+ rmat(k)%l_rr           :  T
+ rmat(k)%trait_no       :            1
+ rmat(k)%trait_inp      :            7
+ rmat(k)%cont_rc      :            1           2           3
+ rmat(k)%cont_rc1     :            1           1           1
+ rmat(k)%cont_t_no    :            1           1           1
+ rmat(k)%cont_t_inp   :            7           7           7
+ rmat(k)%cont_t_rci   :            3           3           3
+ rmat(k)%cont_eff     :            2           2           2
+ rmat(k)%cont_eff_inp :            4           4           4
+ rmat(k)%cont_eff_rci :            5           5           5
+ rmat(k)%cont_rr_inp  :            0           1           2
+ rmat(k)%cont_rr_rci  :            0           1           2
+ rmat(k)%cont_coeff   :    1.00000000000000        1.00000000000000     
+   1.00000000000000     
+ rmat(k)%cont_rr_eff  :  F T T
+ rmat(k)%cont_id_name : ID      ID      ID      
+ rmat(k)%cont_t_name  : FCR     FCR     FCR     
+ rmat(k)%cont_rr_name :         lg0     lg1     
+ rmat(k)%merge_prev     :  F
+ rmat(k)%reduce         :            1
+ rmat(k)%rank_tn        :            1           1           1
+ rmat(k)%rank_ndt       :            1           1           1
+ rmat(k)%trait_blk_size :            3
+ rmat(k)%trait_blk_start:            1
+ rmat(k)%r_eff          :            2
+ rmat(k)%r_eff_inp      :            4
+ rmat(k)%t_r_id_rci     :            5
+ rmat(k)%n_rr           :            2
+ rmat(k)%t_no           :            1
+ rmat(k)%t_name         : FCR     
+ rmat(k)%rr_f_inp       :            1           2
+ rmat(k)%rr_f_rcr       :            1           2
+ rmat(k)%l_cv_rest        :  F F F F F F F F F
+ rmat(k)%l_cor_rest       :  F F F F F F F F F
+ rmat(k)%l_vratio_nom     :  F
+ rmat(k)%l_vratio_denon   :  F
+ rmat(k)%l_vratio_mat_rest:  F
+ rmat(k)%l_vratio_elem    :  F F F
+ rmat(k)%l_prior          :  F
+ rmat(k)%l_grp_prior      :  F
+ rmat(k)%cov_mat(i,1:i) :            1   1.00000000000000     
+ rmat(k)%cov_mat(i,1:i) :            2  0.000000000000000E+000
+   1.00000000000000     
+ rmat(k)%cov_mat(i,1:i) :            3  0.000000000000000E+000
+  0.000000000000000E+000   1.00000000000000     
+ rmat(k)%gdet             :    1.00000000000000     
+ rmat(k)%gif(i,1:i)     :            1   1.00000000000000     
+ rmat(k)%gif(i,1:i)     :            2  0.000000000000000E+000
+   1.00000000000000     
+ rmat(k)%gif(i,1:i)     :            3  0.000000000000000E+000
+  0.000000000000000E+000   1.00000000000000     
+  
+ (Co)variance matrix            3
+  
+ rmat(k)%n_cont         :            0
+ rmat(k)%n_rc           :            1
+ rmat(k)%rank           :            1
+ rmat(k)%n_traits       :            1
+ rmat(k)%type           : I           
+ rmat(k)%grp_inp        :            0
+ rmat(k)%grp_rci        :            0
+ rmat(k)%grp_name       :         
+ rmat(k)%grp_nlev       :            1
+ rmat(k)%l_grp_prior    :  F
+ rmat(k)%trait_no       :            1
+ rmat(k)%trait_inp      :            7
+ rmat(k)%t_no           :            1
+ rmat(k)%t_name         : FCR     
+ rmat(k)%l_rcov_zero      :  F
+ rmat(k)%l_cv_rest        :  F
+ rmat(k)%l_cor_rest       :  F
+ rmat(k)%l_vratio_nom     :  F
+ rmat(k)%l_vratio_denon   :  F
+ rmat(k)%l_vratio_mat_rest:  F
+ rmat(k)%l_vratio_elem    :  F
+ rmat(k)%l_prior          :  F
+ rmat(k)%l_grp_prior      :  F
+ rmat(k)%het_gr_cov_mat(i,1:i):            1   1.00000000000000     
+ rmat(k)%hetgr_%rdet             :    1.00000000000000     
+
+
+
+ END OF DMU1    
+ DMU1: Finished with exit code 0
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+                   AI-REML -- Newton-Fisher REML Estimation 
+                                                            
+              Method to update parameters ..................           1
+               (AI-REML with EM crash recovery, FSPAK)      
+              Sparse solver - no of cores ..................           1
+              Convergence criteria norm of update vec. .....  1.0000000000E-07
+              Convergence criteria norm of gradient vec. ...  1.0000000000E-06
+              EM-step size (only used if imet = x1) ........          10
+              Print of solutions ...........................           1
+              FSPAK option (speed optimized) ...............           0
+                                                            
+                                                            
+              No. of parameters in Likelihood Function (L) .         13
+                                                            
+                            Initial Parameter vector for L  
+                                                            
+                                 No         Parameter       
+                                  1     1.00000000000000    
+                                  2     0.00000000000000    
+                                  3     1.00000000000000    
+                                  4     0.00000000000000    
+                                  5     0.00000000000000    
+                                  6     1.00000000000000    
+                                  7     1.00000000000000    
+                                  8     0.00000000000000    
+                                  9     1.00000000000000    
+                                 10     0.00000000000000    
+                                 11     0.00000000000000    
+                                 12     1.00000000000000    
+                                 13     1.00000000000000    
+                                                            
+                                                            
+                         Determinant of initial G-Matrice(s)
+                                  1     1.00000000000000    
+                                  2     1.00000000000000    
+                                                            
+       Det. of R-Matrices for all pattern of recorded traits
+                                  1     1.00000000000000    
+                                                            
+             Total no of equations in system ...............        26440
+             Total no of random equations ..................        26415
+             Total no of animal equations ..................        25911
+             Total no of other random equations ............          504
+                                                            
+             First Equation Number for Fixed Effects        
+
+             1   $       3       6      21
+                                                            
+                                                            
+             First Equation Number for Random factors       
+
+                 $      26   25937
+                                                            
+             First Equation Number for Regressions Effects  
+
+             1   $       1      27   25938       2      28   25939
+                                                            
+  
+  
+   Contributions to MME for first 10 observations
+  
+         No     Equation    Trait    Contribution
+  
+ OBS=            1
+ IINP :            1           1           3         168         165           1
+           1           1
+  
+ RINP :    429.0000      0.7071000     -7.0299998E-02
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+  
+ OBS=            2
+ IINP :            1           1           3         168         165           1
+           1           2
+  
+ RINP :    429.0000      0.7071000      0.9838000    
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+  
+ OBS=            3
+ IINP :            1           1           3         168         165           1
+           1           3
+  
+ RINP :    429.0000      0.7071000      0.4267000    
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+  
+ OBS=            4
+ IINP :            1           1           3         168         165           1
+           1           4
+  
+ RINP :    429.0000      0.7071000     -0.3936000    
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+  
+ OBS=            5
+ IINP :            1           1           3         168         165           1
+           1           5
+  
+ RINP :    429.0000      0.7071000     -0.8023000    
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+  
+ OBS=            6
+ IINP :            1           1           3         168         165           1
+           1           6
+  
+ RINP :    429.0000      0.7071000     -0.6333000    
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+  
+ OBS=            7
+ IINP :            1           1           3         168         165           1
+           1           7
+  
+ RINP :    429.0000      0.7071000     -6.5600000E-02
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+  
+ OBS=            8
+ IINP :            1           1           3         168         165           1
+           1           8
+  
+ RINP :    429.0000      0.7071000      0.5417000    
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+  
+ OBS=            9
+ IINP :            1           1           3         168         165           1
+           1           9
+  
+ RINP :    429.0000      0.7071000      0.8129000    
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+  
+ OBS=           10
+ IINP :            1           1           3         168         165           1
+           1          10
+  
+ RINP :    429.0000      0.7071000      0.5198000    
+  
+ RIIF :    1.00000000000000     
+  
+          1        1         1      429.00000    
+          2        2         1     0.70709997    
+          3        3         1      1.0000000    
+          4        6         1      1.0000000    
+          5       23         1      1.0000000    
+          6      527         1      1.0000000    
+          7      528         1      429.00000    
+          8      529         1     0.70709997    
+          9    26429         1      1.0000000    
+         10    26430         1      429.00000    
+         11    26431         1     0.70709997    
+              Random effect ................................            1
+              Number of elements read in A-inverse .........        23729
+                                                            
+              Random effect ................................            2
+              Number of elements read in A-inverse .........        23729
+                                                            
+                                                            
+              SIZE AND STRUCTURE OF MIXED MODEL EQUATIONS   
+                                                            
+                                                            
+              No of equations in system ....................      26440
+              No of fixed equations ........................         25
+              No of random equations .......................      26415
+              No of non-zero elements in MME................     201399
+              No of restriction assumed ....................          2
+ Warning! non full rank matrix
+ Value corresponds to a generalized inverse
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.278935101311860E-004  Rank:           10
+  
+              Rank of MME ..................................      26268
+              Extra restriction imposed due to dependencies.        170
+              No of elements needed in FSPAK work-vector ...    1859273
+                                                            
+                                                            
+              TIMING (IN SEC.) FOR FIRST EVALUATION         
+                                                            
+              Time to set up MME ...........................          0
+              Time to organize MME in IA, JA, A form .......          0
+              Time to solve MME ............................          0
+              Time to calculate sparse inverse of LHS ......          0
+              Time to setup first and second Derivative ....          0
+              Total time for current evaluation ............          0
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+                                                            
+                             SUMMARY OF MINIMIZATION PROCESS
+                                                            
+ Eval Criterion    !!Delta!!   !!Gradient!!                        Parameters
+ ---- ---------     ---------  ------------ |--------------------------------------------------------
+   1   22075.5     0.3508       0.1012E+05  |   0.99372      -0.28271E-08   0.98055      -0.44418E-02
+                                            |  -0.19991E-08   0.99686       0.67705      -0.78748E-05
+                                            |   0.11585E-07  -0.22836      -0.55683E-05   0.83853    
+                                            |   0.35456    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -7.270970047937725E-004  Rank:            8
+  
+   2  -1285.30     0.4250E-01    514.3      |   0.98549      -0.23616E-06   0.96148      -0.10260E-01
+                                            |  -0.16699E-06   0.99274       0.56245      -0.52492E-05
+                                            |   0.11525E-07  -0.30939      -0.37117E-05   0.78123    
+                                            |   0.35055    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.518949735382442E-004  Rank:           10
+  
+   3  -1315.86     0.2214E-01    122.6      |   0.97636      -0.44295E-06   0.94277      -0.16718E-01
+                                            |  -0.31321E-06   0.98818       0.50450      -0.39215E-05
+                                            |   0.11495E-07  -0.35037      -0.27729E-05   0.75225    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -3.030772329987139E-004  Rank:           10
+  
+   4  -1374.16     0.1425E-01    126.8      |   0.96676      -0.63177E-06   0.92444      -0.23507E-01
+                                            |  -0.44672E-06   0.98338       0.46952      -0.31201E-05
+                                            |   0.11476E-07  -0.37510      -0.22063E-05   0.73476    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -4.751723595980096E-004  Rank:            9
+  
+   5  -1387.32     0.1057E-01    130.5      |   0.95690      -0.80696E-06   0.90645      -0.30473E-01
+                                            |  -0.57060E-06   0.97845       0.44611      -0.25838E-05
+                                            |   0.11464E-07  -0.39166      -0.18270E-05   0.72306    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.569013958327446E-004  Rank:            9
+  
+   6  -1398.50     0.8670E-02    133.9      |   0.94693      -0.97111E-06   0.88882      -0.37525E-01
+                                            |  -0.68667E-06   0.97347       0.42934      -0.21996E-05
+                                            |   0.11455E-07  -0.40352      -0.15553E-05   0.71467    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -5.565274410086441E-004  Rank:            9
+  
+   7  -1408.50     0.7609E-02    137.2      |   0.93691      -0.11259E-05   0.87153      -0.44608E-01
+                                            |  -0.79613E-06   0.96846       0.41673      -0.19107E-05
+                                            |   0.11448E-07  -0.41243      -0.13511E-05   0.70837    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -5.093132845405454E-004  Rank:            9
+  
+   8  -1417.76     0.6970E-02    140.4      |   0.92691      -0.12725E-05   0.85458      -0.51684E-01
+                                            |  -0.89981E-06   0.96345       0.40691      -0.16857E-05
+                                            |   0.11443E-07  -0.41938      -0.11920E-05   0.70346    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -5.014994484401807E-004  Rank:            8
+  
+   9  -1447.24     0.6554E-02    143.6      |   0.91695      -0.14118E-05   0.83796      -0.58728E-01
+                                            |  -0.99831E-06   0.95847       0.39904      -0.15054E-05
+                                            |   0.11439E-07  -0.42494      -0.10645E-05   0.69952    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -5.004666698448360E-004  Rank:            9
+  
+  10  -1455.66     0.6261E-02    146.7      |   0.90705      -0.15445E-05   0.82166      -0.65722E-01
+                                            |  -0.10921E-05   0.95353       0.39259      -0.13577E-05
+                                            |   0.11436E-07  -0.42950      -0.96005E-06   0.69630    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.939329843337209E-004  Rank:            7
+  
+  11  -1463.82     0.6039E-02    149.9      |   0.89725      -0.16710E-05   0.80568      -0.72653E-01
+                                            |  -0.11816E-05   0.94863       0.38721      -0.12345E-05
+                                            |   0.11433E-07  -0.43330      -0.87294E-06   0.69361    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -6.437354209845870E-004  Rank:            9
+  
+  12  -1492.53     0.5861E-02    153.0      |   0.88755      -0.17918E-05   0.79001      -0.79512E-01
+                                            |  -0.12670E-05   0.94378       0.38266      -0.11302E-05
+                                            |   0.11431E-07  -0.43652      -0.79918E-06   0.69134    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.944477696508836E-004  Rank:            8
+  
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+                                                            
+ Eval Criterion    !!Delta!!   !!Gradient!!                        Parameters
+ ---- ---------     ---------  ------------ |--------------------------------------------------------
+  13  -1500.38     0.5709E-02    156.2      |   0.87797      -0.19073E-05   0.77464      -0.86291E-01
+                                            |  -0.13486E-05   0.93898       0.37876      -0.10408E-05
+                                            |   0.11429E-07  -0.43928      -0.73592E-06   0.68938    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.789315717249181E-004  Rank:            9
+  
+  14  -1508.11     0.5574E-02    159.4      |   0.86850      -0.20177E-05   0.75957      -0.92985E-01
+                                            |  -0.14267E-05   0.93425       0.37537      -0.96318E-06
+                                            |   0.11427E-07  -0.44168      -0.68107E-06   0.68769    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.515401654502632E-004  Rank:            8
+  
+  15  -1515.75     0.5452E-02    162.7      |   0.85916      -0.21234E-05   0.74480      -0.99590E-01
+                                            |  -0.15014E-05   0.92958       0.37241      -0.89528E-06
+                                            |   0.11425E-07  -0.44377      -0.63305E-06   0.68621    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.429833799014691E-004  Rank:            9
+  
+  16  -1523.32     0.5337E-02    166.0      |   0.84995      -0.22245E-05   0.73031      -0.10610    
+                                            |  -0.15730E-05   0.92497       0.36979      -0.83536E-06
+                                            |   0.11424E-07  -0.44562      -0.59068E-06   0.68490    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -4.385024355589487E-004  Rank:            7
+  
+  17  -1551.55     0.5229E-02    169.4      |   0.84087      -0.23214E-05   0.71610      -0.11252    
+                                            |  -0.16414E-05   0.92044       0.36747      -0.78209E-06
+                                            |   0.11423E-07  -0.44726      -0.55302E-06   0.68374    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.792430555021591E-005  Rank:           10
+  
+  18  -1559.03     0.5126E-02    172.8      |   0.83192      -0.24141E-05   0.70218      -0.11885    
+                                            |  -0.17070E-05   0.91596       0.36539      -0.73443E-06
+                                            |   0.11422E-07  -0.44874      -0.51932E-06   0.68270    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -3.412010335762445E-004  Rank:            8
+  
+  19  -1566.48     0.5026E-02    176.2      |   0.82311      -0.25028E-05   0.68852      -0.12508    
+                                            |  -0.17697E-05   0.91156       0.36351      -0.69155E-06
+                                            |   0.11421E-07  -0.45006      -0.48899E-06   0.68176    
+                                            |   0.35052    
+   (  # of steps towards EM :   9 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.899237384975868E-004  Rank:            9
+  
+  20  -1573.89     0.8661E-01    179.7      |   0.67093      -0.41234E-05   0.45303      -0.23268    
+                                            |  -0.29156E-05   0.83547       0.33380      -0.10750E-07
+                                            |   0.11405E-07  -0.47107      -0.76010E-08   0.66691    
+                                            |   0.35052    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -8.343383528876934E-005  Rank:            9
+  
+  21  -2068.32     0.5900E-01    273.5      |   0.56073      -0.45763E-05   0.29809      -0.31061    
+                                            |  -0.32359E-05   0.78037       0.33379      -0.10499E-07
+                                            |   0.11405E-07  -0.47108      -0.74233E-08   0.66690    
+                                            |   0.35051    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -3.865555441024759E-005  Rank:            8
+  
+  22  -2203.11     0.3902E-01    411.4      |   0.48744      -0.45318E-05   0.19613      -0.36243    
+                                            |  -0.32044E-05   0.74372       0.33377      -0.10148E-07
+                                            |   0.11405E-07  -0.47109      -0.71749E-08   0.66689    
+                                            |   0.35051    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.817924154469409E-005  Rank:            9
+  
+  23  -2357.36     0.2582E-01    617.4      |   0.43862      -0.42571E-05   0.12905      -0.39695    
+                                            |  -0.30102E-05   0.71932       0.33375      -0.96729E-08
+                                            |   0.11405E-07  -0.47110      -0.68389E-08   0.66688    
+                                            |   0.35050    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -4.446693705667348E-005  Rank:            9
+  
+  24  -2482.08     0.1706E-01    682.9      |   0.40604      -0.38616E-05   0.85178E-01  -0.41999    
+                                            |  -0.27306E-05   0.70303       0.33372      -0.90559E-08
+                                            |   0.11405E-07  -0.47112      -0.64026E-08   0.66687    
+                                            |   0.35048    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -7.910065122117448E-005  Rank:            9
+  
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+                                                            
+ Eval Criterion    !!Delta!!   !!Gradient!!                        Parameters
+ ---- ---------     ---------  ------------ |--------------------------------------------------------
+  25  -2610.89     0.1134E-01    1002.      |   0.38422      -0.34625E-05   0.56220E-01  -0.43542    
+                                            |  -0.24483E-05   0.69211       0.33369      -0.82964E-08
+                                            |   0.11405E-07  -0.47115      -0.58656E-08   0.66685    
+                                            |   0.35047    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -9.894876260578639E-006  Rank:            8
+  
+  26  -2737.01     0.7560E-02    1464.      |   0.36953      -0.30878E-05   0.37107E-01  -0.44581    
+                                            |  -0.21834E-05   0.68477       0.33365      -0.74203E-08
+                                            |   0.11405E-07  -0.47117      -0.52461E-08   0.66683    
+                                            |   0.35045    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.958579276916013E-005  Rank:            9
+  
+  27  -2859.81     0.5060E-02    2129.      |   0.35956      -0.27471E-05   0.24492E-01  -0.45285    
+                                            |  -0.19425E-05   0.67979       0.33361      -0.64811E-08
+                                            |   0.11405E-07  -0.47120      -0.45820E-08   0.66681    
+                                            |   0.35043    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -7.801461427911682E-006  Rank:            8
+  
+  28  -2978.64     0.3405E-02    3094.      |   0.35274      -0.24416E-05   0.16167E-01  -0.45768    
+                                            |  -0.17265E-05   0.67638       0.33357      -0.55473E-08
+                                            |   0.11405E-07  -0.47123      -0.39217E-08   0.66679    
+                                            |   0.35041    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -3.959072611799198E-006  Rank:            9
+  
+  29  -3092.89     0.2308E-02    4508.      |   0.34802      -0.21695E-05   0.10674E-01  -0.46102    
+                                            |  -0.15340E-05   0.67401       0.33353      -0.46820E-08
+                                            |   0.11405E-07  -0.47126      -0.33085E-08   0.66677    
+                                            |   0.35038    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -3.614392908003959E-006  Rank:            7
+  
+  30  -3202.08     0.1577E-02    6601.      |   0.34470      -0.19282E-05   0.70570E-02  -0.46336    
+                                            |  -0.13634E-05   0.67236       0.33350      -0.39268E-08
+                                            |   0.11405E-07  -0.47128      -0.27732E-08   0.66676    
+                                            |   0.35036    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -5.708531241483931E-007  Rank:            8
+  
+  31  -3305.81     0.1084E-02    9728.      |   0.34235      -0.17164E-05   0.46887E-02  -0.46503    
+                                            |  -0.12137E-05   0.67118       0.33347      -0.32976E-08
+                                            |   0.11405E-07  -0.47130      -0.23237E-08   0.66674    
+                                            |   0.35033    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -4.153591224733045E-006  Rank:            8
+  
+  32  -3424.17     0.7465E-03   0.1437E+05  |   0.34068      -0.15339E-05   0.31572E-02  -0.46621    
+                                            |  -0.10846E-05   0.67034       0.33345      -0.27913E-08
+                                            |   0.11405E-07  -0.47132      -0.19618E-08   0.66673    
+                                            |   0.35031    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.870886788392823E-006  Rank:            7
+  
+  33  -3514.41     0.5182E-03   0.2110E+05  |   0.33948      -0.13798E-05   0.21721E-02  -0.46706    
+                                            |  -0.97566E-06   0.66974       0.33343      -0.23954E-08
+                                            |   0.11405E-07  -0.47133      -0.16819E-08   0.66672    
+                                            |   0.35029    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.372276699509205E-006  Rank:            9
+  
+  34  -3596.38     0.3690E-03   0.3045E+05  |   0.33860      -0.12503E-05   0.15293E-02  -0.46768    
+                                            |  -0.88411E-06   0.66930       0.33342      -0.20901E-08
+                                            |   0.11405E-07  -0.47134      -0.14660E-08   0.66672    
+                                            |   0.35027    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -4.251280377221478E-009  Rank:           10
+  
+  35  -3670.69     0.2716E-03   0.4307E+05  |   0.33793      -0.11411E-05   0.10996E-02  -0.46815    
+                                            |  -0.80690E-06   0.66897       0.33341      -0.18518E-08
+                                            |   0.11405E-07  -0.47135      -0.12976E-08   0.66671    
+                                            |   0.35025    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.954257139758144E-007  Rank:            8
+  
+  36  -3759.33     0.2063E-03   0.5977E+05  |   0.33741      -0.10483E-05   0.80524E-03  -0.46851    
+                                            |  -0.74129E-06   0.66871       0.33340      -0.16628E-08
+                                            |   0.11405E-07  -0.47135      -0.11639E-08   0.66671    
+                                            |   0.35024    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.924391603186298E-007  Rank:            9
+  
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+                                                            
+ Eval Criterion    !!Delta!!   !!Gradient!!                        Parameters
+ ---- ---------     ---------  ------------ |--------------------------------------------------------
+  37  -3821.96     0.1611E-03   0.8151E+05  |   0.33700      -0.96887E-06   0.59909E-03  -0.46880    
+                                            |  -0.68509E-06   0.66851       0.33340      -0.15105E-08
+                                            |   0.11405E-07  -0.47136      -0.10562E-08   0.66670    
+                                            |   0.35023    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -6.779587378459693E-008  Rank:            7
+  
+  38  -3880.20     0.1288E-03   0.1095E+06  |   0.33667      -0.90028E-06   0.45194E-03  -0.46904    
+                                            |  -0.63658E-06   0.66834       0.33339      -0.13862E-08
+                                            |   0.11405E-07  -0.47136      -0.96836E-09   0.66670    
+                                            |   0.35022    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -8.935492491021929E-008  Rank:            7
+  
+  39  -3934.76     0.1051E-03   0.1450E+06  |   0.33640      -0.84064E-06   0.34513E-03  -0.46923    
+                                            |  -0.59442E-06   0.66820       0.33339      -0.12837E-08
+                                            |   0.11405E-07  -0.47136      -0.89582E-09   0.66670    
+                                            |   0.35021    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -5.142445040193265E-007  Rank:            9
+  
+  40  -3986.18     0.8730E-04   0.1899E+06  |   0.33617      -0.78845E-06   0.26647E-03  -0.46940    
+                                            |  -0.55751E-06   0.66809       0.33338      -0.11983E-08
+                                            |   0.11405E-07  -0.47137      -0.83546E-09   0.66670    
+                                            |   0.35020    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -6.996934638917113E-008  Rank:            9
+  
+  41  -4034.91     0.7357E-04   0.2459E+06  |   0.33597      -0.74249E-06   0.20776E-03  -0.46954    
+                                            |  -0.52501E-06   0.66799       0.33338      -0.11268E-08
+                                            |   0.11405E-07  -0.47137      -0.78494E-09   0.66670    
+                                            |   0.35019    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -7.899022052693692E-009  Rank:            8
+  
+  42  -4081.28     0.6281E-04   0.3153E+06  |   0.33580      -0.70178E-06   0.16344E-03  -0.46965    
+                                            |  -0.49623E-06   0.66791       0.33337      -0.10669E-08
+                                            |   0.11405E-07  -0.47137      -0.74255E-09   0.66669    
+                                            |   0.35019    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.900754156295535E-008  Rank:            9
+  
+  43  -4125.58     0.5423E-04   0.4008E+06  |   0.33566      -0.66553E-06   0.12962E-03  -0.46976    
+                                            |  -0.47060E-06   0.66784       0.33337      -0.10167E-08
+                                            |   0.11405E-07  -0.47137      -0.70702E-09   0.66669    
+                                            |   0.35018    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -3.673084555997203E-008  Rank:            9
+  
+  44  -4168.03     0.4728E-04   0.5053E+06  |   0.33553      -0.63310E-06   0.10357E-03  -0.46985    
+                                            |  -0.44766E-06   0.66777       0.33337      -0.97477E-09
+                                            |   0.11405E-07  -0.47137      -0.67741E-09   0.66669    
+                                            |   0.35018    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.981129634999052E-007  Rank:            8
+  
+  45  -4208.83     0.4158E-04   0.6324E+06  |   0.33542      -0.60393E-06   0.83324E-04  -0.46993    
+                                            |  -0.42704E-06   0.66772       0.33337      -0.94027E-09
+                                            |   0.11405E-07  -0.47138      -0.65301E-09   0.66669    
+                                            |   0.35018    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -3.345479427356968E-008  Rank:            7
+  
+  46  -4248.13     0.3685E-04   0.7860E+06  |   0.33532      -0.57759E-06   0.67465E-04  -0.47000    
+                                            |  -0.40842E-06   0.66767       0.33337      -0.91242E-09
+                                            |   0.11405E-07  -0.47138      -0.63331E-09   0.66669    
+                                            |   0.35017    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -6.361924852615819E-010  Rank:           10
+  
+  47  -4286.06     0.3288E-04   0.9708E+06  |   0.33523      -0.55371E-06   0.54949E-04  -0.47006    
+                                            |  -0.39153E-06   0.66762       0.33336      -0.89070E-09
+                                            |   0.11405E-07  -0.47138      -0.61796E-09   0.66669    
+                                            |   0.35017    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -4.928815008553716E-009  Rank:            8
+  
+  48  -4322.75     0.2952E-04   0.1192E+07  |   0.33515      -0.53198E-06   0.45003E-04  -0.47012    
+                                            |  -0.37616E-06   0.66758       0.33336      -0.87477E-09
+                                            |   0.11405E-07  -0.47138      -0.60669E-09   0.66669    
+                                            |   0.35017    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -9.950495083035727E-009  Rank:            8
+  
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+                                                            
+ Eval Criterion    !!Delta!!   !!Gradient!!                        Parameters
+ ---- ---------     ---------  ------------ |--------------------------------------------------------
+  49  -4358.30     0.2665E-04   0.1455E+07  |   0.33508      -0.51212E-06   0.37049E-04  -0.47017    
+                                            |  -0.36212E-06   0.66754       0.33336      -0.86442E-09
+                                            |   0.11405E-07  -0.47138      -0.59938E-09   0.66669    
+                                            |   0.35017    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -5.228386748215594E-011  Rank:            8
+  
+  50  -4392.78     0.2418E-04   0.1767E+07  |   0.33501      -0.49393E-06   0.30650E-04  -0.47021    
+                                            |  -0.34926E-06   0.66751       0.33336      -0.85958E-09
+                                            |   0.11405E-07  -0.47138      -0.59595E-09   0.66669    
+                                            |   0.35016    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -4.972818688693321E-009  Rank:            8
+  
+  51  -4426.28     0.2203E-04   0.2136E+07  |   0.33495      -0.47720E-06   0.25472E-04  -0.47026    
+                                            |  -0.33743E-06   0.66748       0.33336      -0.86025E-09
+                                            |   0.11405E-07  -0.47138      -0.59643E-09   0.66669    
+                                            |   0.35016    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -6.980419715368665E-009  Rank:            8
+  
+  52  -4458.87     0.2017E-04   0.2570E+07  |   0.33490      -0.46177E-06   0.21261E-04  -0.47029    
+                                            |  -0.32652E-06   0.66745       0.33336      -0.86656E-09
+                                            |   0.11405E-07  -0.47138      -0.60089E-09   0.66669    
+                                            |   0.35016    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.566409976098895E-009  Rank:            9
+  
+  53  -4490.59     0.1853E-04   0.3079E+07  |   0.33485      -0.44750E-06   0.17819E-04  -0.47033    
+                                            |  -0.31643E-06   0.66743       0.33336      -0.87869E-09
+                                            |   0.11405E-07  -0.47138      -0.60947E-09   0.66669    
+                                            |   0.35016    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.752130638127128E-008  Rank:            9
+  
+  54  -4521.52     0.1708E-04   0.3674E+07  |   0.33480      -0.43428E-06   0.14993E-04  -0.47036    
+                                            |  -0.30708E-06   0.66741       0.33336      -0.89694E-09
+                                            |   0.11405E-07  -0.47138      -0.62237E-09   0.66668    
+                                            |   0.35016    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.925793019646936E-008  Rank:            8
+  
+  55  -4551.68     0.1580E-04   0.4366E+07  |   0.33476      -0.42198E-06   0.12662E-04  -0.47039    
+                                            |  -0.29838E-06   0.66738       0.33336      -0.92165E-09
+                                            |   0.11405E-07  -0.47138      -0.63984E-09   0.66668    
+                                            |   0.35016    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -4.057945651760196E-010  Rank:           10
+  
+  56  -4581.13     0.1465E-04   0.5169E+07  |   0.33472      -0.41052E-06   0.10731E-04  -0.47042    
+                                            |  -0.29028E-06   0.66736       0.33336      -0.95326E-09
+                                            |   0.11405E-07  -0.47138      -0.66220E-09   0.66668    
+                                            |   0.35016    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -5.461278460074580E-009  Rank:            9
+  
+  57  -4609.91     0.1363E-04   0.6098E+07  |   0.33468      -0.39982E-06   0.91246E-05  -0.47045    
+                                            |  -0.28271E-06   0.66735       0.33335      -0.99229E-09
+                                            |   0.11405E-07  -0.47138      -0.68979E-09   0.66668    
+                                            |   0.35016    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -6.167380614741154E-010  Rank:            9
+  
+  58  -4638.04     0.1272E-04   0.7170E+07  |   0.33464      -0.38981E-06   0.77840E-05  -0.47047    
+                                            |  -0.27563E-06   0.66733       0.33335      -0.10393E-08
+                                            |   0.11405E-07  -0.47139      -0.72304E-09   0.66668    
+                                            |   0.35015    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.000328777482813E-010  Rank:           10
+  
+  59  -4665.57     0.1189E-04   0.8403E+07  |   0.33461      -0.38042E-06   0.66608E-05  -0.47050    
+                                            |  -0.26899E-06   0.66731       0.33335      -0.10950E-08
+                                            |   0.11405E-07  -0.47139      -0.76242E-09   0.66668    
+                                            |   0.35015    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -3.290854499433126E-009  Rank:            9
+  
+  60  -4692.51     0.1114E-04   0.9817E+07  |   0.33458      -0.37160E-06   0.57165E-05  -0.47052    
+                                            |  -0.26276E-06   0.66730       0.33335      -0.11601E-08
+                                            |   0.11405E-07  -0.47139      -0.80846E-09   0.66668    
+                                            |   0.35015    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.030227911977082E-009  Rank:            8
+  
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+                                                            
+ Eval Criterion    !!Delta!!   !!Gradient!!                        Parameters
+ ---- ---------     ---------  ------------ |--------------------------------------------------------
+  61  -4718.90     0.1046E-04   0.1144E+08  |   0.33455      -0.36329E-06   0.49200E-05  -0.47054    
+                                            |  -0.25688E-06   0.66728       0.33335      -0.12355E-08
+                                            |   0.11405E-07  -0.47139      -0.86174E-09   0.66668    
+                                            |   0.35015    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -6.047247845564418E-009  Rank:            9
+  
+  62  -4744.76     0.6728E-04   0.1328E+08  |   0.33437      -0.30870E-06   0.13393E-06  -0.47067    
+                                            |  -0.21828E-06   0.66719       0.33335      -0.18016E-08
+                                            |   0.11405E-07  -0.47139      -0.12620E-08   0.66668    
+                                            |   0.35016    
+   (  # of steps towards EM :   7 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -6.990967769211148E-012  Rank:            8
+  
+  63  -5359.71     0.3434E-03   0.4504E+09  |   0.33344       0.89876E-07   0.13485E-06  -0.47133    
+                                            |   0.63551E-07   0.66672       0.33333      -0.13592E-06
+                                            |   0.11405E-07  -0.47140      -0.96096E-07   0.66667    
+                                            |   0.35023    
+   (  # of steps towards EM :   4 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -1.948467473421066E-010  Rank:            9
+  
+  64  -5388.48     0.1074E-04   0.4475E+09  |   0.33344       0.87338E-07   0.13485E-06  -0.47133    
+                                            |   0.61753E-07   0.66672       0.33333      -0.13616E-06
+                                            |   0.11405E-07  -0.47140      -0.96278E-07   0.66667    
+                                            |   0.35019    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -3.537013942962314E-012  Rank:            9
+  
+  65  -5388.50     0.1501E-05   0.4475E+09  |   0.33344       0.84804E-07   0.13485E-06  -0.47133    
+                                            |   0.59962E-07   0.66672       0.33333      -0.13641E-06
+                                            |   0.11405E-07  -0.47140      -0.96444E-07   0.66666    
+                                            |   0.35019    
+   (  # of steps towards EM :   8 )
+  
+  
+     AI-Inform. matrix is not positive definite
+     smallest eigenvalue:  -2.762942511655973E-011  Rank:            9
+  
+  66  -5388.51     0.6190E-07   0.4475E+09  |   0.33344       0.82277E-07   0.13485E-06  -0.47133    
+                                            |   0.58170E-07   0.66672       0.33333      -0.13666E-06
+                                            |   0.11405E-07  -0.47140      -0.96617E-07   0.66666    
+                                            |   0.35019    
+   (  # of steps towards EM :   8 )
+  
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+  
+                Converged on norm of update vector          
+                                                            
+           -2LogL .......................................... -5.3885081617E+03 + constant
+                                                            
+           Norm of update vector ...........................  6.1898431456E-08
+                                                            
+           Norm of Gradient    .............................  4.4746720933E+08
+           (weighed by SD, divided by # parameters)         
+                                                            
+  
+  
+                           Model Statistics                 
+                           ----------------                 
+  
+             Deviance ......................................   9617.907141    
+             Scaled Deviance ...............................   27464.76519    
+             Pearson Chi-Square ............................ -0.3171331447E-08
+             Scaled Pearson Chi-Square ..................... -0.9055374839E-08
+             Degree of freedom for fixed effects ...........            24
+             Scaled Pearson Chi-Square .....................   400.7461309    
+                                                            
+                                                            
+                          Estimated (co)-variance components
+                          ----------------------------------
+                                                            
+             Parameter vector for L at convergence          
+  
+             AI-Information matrix is not positive definite.
+  
+             Asymptotic SE not calculated                   
+  
+                                                            
+               No          Parameter                        
+                                                            
+                1          0.333436    
+                2          0.822771E-07
+                3          0.134855E-06
+                4         -0.471328    
+                5          0.581702E-07
+                6          0.666724    
+                7          0.333328    
+                8         -0.136662E-06
+                9          0.114049E-07
+               10         -0.471396    
+               11         -0.966174E-07
+               12          0.666665    
+               13          0.350191    
+                                                            
+                                                            
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+  
+   FINAL PARAMETERS ESTIMATED
+  
+  
+  
+   Covariance matrix for random effect no:            1
+  
+               1              2              3
+     1        0.3334356
+     2        0.0000001      0.0000001
+     3       -0.4713277      0.0000001      0.6667242
+  
+  
+  
+   Correlation matrix for random effect no:            1
+  
+               1              2              3
+     1         1.0000
+     2         0.0004         1.0000
+     3        -0.9996         0.0002         1.0000
+  
+  
+  
+   Covariance matrix for random effect no:            2
+  
+               1              2              3
+     1        0.3333276
+     2       -0.0000001      0.0000000
+     3       -0.4713959     -0.0000001      0.6666645
+  
+  
+  
+   Correlation matrix for random effect no:            2
+  
+               1              2              3
+     1         1.0000
+     2        -0.0022         1.0000
+     3        -1.0000        -0.0011         1.0000
+  
+   Residual co-variance matrix   
+  
+               1
+     1        0.3501908
+  
+  
+  
+  
+  
+    Empirical BLUE (E_BLUE) for fixed and BLUP (E_BLUP) for random effects
+  
+  
+  
+   Regression coefficients
+  
+          Trait  Regression            Eq-no             E_BLUE           SE                                  
+            FCR  lg0                       1           0.105316E-04        0.302460E-04
+            FCR  lg1                       2          -0.156740            0.109731    
+  
+   First 250 equations for Trait: FCR       Fixed Effect: SEX     
+  
+           Code     N-obs           Eq-no             E_BLUE               SE                                  
+              1     52910               3           0.147153E-01        0.131681E-01
+              2      3560               4            0.00000             0.00000    
+              3        53               5           0.300273E-01        0.840939E-01
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+  
+   First 250 equations for Trait: FCR       Fixed Effect: BATCH   
+  
+           Code     N-obs           Eq-no             E_BLUE               SE                                  
+              1      3315               6           0.178926            0.745443E-01
+              2      7958               7           0.140558            0.741498E-01
+              3       562               8          -0.331003E-01        0.783543E-01
+              4      1781               9           0.221540            0.754687E-01
+              5     20119              10           0.131862            0.738198E-01
+              6      1667              11          -0.190444E-01        0.754029E-01
+              7      1427              12           0.167718            0.755318E-01
+              8     12030              13           0.133566            0.737362E-01
+              9      1579              14          -0.443469E-01        0.754444E-01
+             10         5              15           0.242708            0.275264    
+             11       117              16           0.168441            0.926029E-01
+             12      5204              17           0.880296E-01        0.741463E-01
+             13       604              18          -0.330719E-01        0.778975E-01
+             14        88              19           0.611873E-01        0.968251E-01
+             15        67              20            0.00000             0.00000    
+  
+   First 250 equations for Trait: FCR       Fixed Effect: STATION 
+  
+           Code     N-obs           Eq-no             E_BLUE               SE                                  
+              1      2819              21           0.870269E-02        0.153607E-01
+              2     30051              22          -0.500797E-01        0.292715E-01
+              3      8020              23           0.256003E-01        0.145949E-01
+              4      5620              24          -0.726088E-02        0.133302E-01
+              5     10013              25            0.00000             0.00000    
+  
+  First 250 Animal equations for Random Factor   1 (variance structure: A(x)G0)                                                                       
+  
+           Code  N-obs Number   Trait       Eq-no         E_BLUP                 SEP                           
+           5002      0   1      FCR          7061         0.00000             0.00000    
+           5002      0   2      FCR          7062         0.00000             0.00000    
+           5002      0   3      FCR          7063         0.00000             0.00000    
+           4835      0   1      FCR          6419         0.00000             0.00000    
+           4835      0   2      FCR          6420         0.00000             0.00000    
+           4835      0   3      FCR          6421         0.00000             0.00000    
+           4869      0   1      FCR          5492         0.00000             0.00000    
+           4869      0   2      FCR          5493         0.00000             0.00000    
+           4869      0   3      FCR          5494         0.00000             0.00000    
+           1985      0   1      FCR          6179         0.00000             0.00000    
+           1985      0   2      FCR          6180         0.00000             0.00000    
+           1985      0   3      FCR          6181         0.00000             0.00000    
+           4464      0   1      FCR          6422         0.00000             0.00000    
+           4464      0   2      FCR          6423         0.00000             0.00000    
+           4464      0   3      FCR          6424         0.00000             0.00000    
+           4391      0   1      FCR          6716         0.00000             0.00000    
+           4391      0   2      FCR          6717         0.00000             0.00000    
+           4391      0   3      FCR          6718         0.00000             0.00000    
+           5166      0   1      FCR          7067         0.00000             0.00000    
+           5166      0   2      FCR          7068         0.00000             0.00000    
+           5166      0   3      FCR          7069         0.00000             0.00000    
+            379      0   1      FCR          4703         0.00000             0.00000    
+            379      0   2      FCR          4704         0.00000             0.00000    
+            379      0   3      FCR          4705         0.00000             0.00000    
+           4523      0   1      FCR          5768         0.00000             0.00000    
+           4523      0   2      FCR          5769         0.00000             0.00000    
+           4523      0   3      FCR          5770         0.00000             0.00000    
+           4450      0   1      FCR          4988         0.00000             0.00000    
+           4450      0   2      FCR          4989         0.00000             0.00000    
+           4450      0   3      FCR          4990         0.00000             0.00000    
+           4753      0   1      FCR          6017         0.00000             0.00000    
+           4753      0   2      FCR          6018         0.00000             0.00000    
+           4753      0   3      FCR          6019         0.00000             0.00000    
+           4621      0   1      FCR          6557         0.00000             0.00000    
+           4621      0   2      FCR          6558         0.00000             0.00000    
+           4621      0   3      FCR          6559         0.00000             0.00000    
+           1864      0   1      FCR          6497         0.00000             0.00000    
+           1864      0   2      FCR          6498         0.00000             0.00000    
+           1864      0   3      FCR          6499         0.00000             0.00000    
+           4294      0   1      FCR          6842         0.00000             0.00000    
+           4294      0   2      FCR          6843         0.00000             0.00000    
+           4294      0   3      FCR          6844         0.00000             0.00000    
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+           Code  N-obs Number   Trait       Eq-no         E_BLUP                 SEP                           
+           4396      0   1      FCR          5495         0.00000             0.00000    
+           4396      0   2      FCR          5496         0.00000             0.00000    
+           4396      0   3      FCR          5497         0.00000             0.00000    
+           4012      0   1      FCR          5993         0.00000             0.00000    
+           4012      0   2      FCR          5994         0.00000             0.00000    
+           4012      0   3      FCR          5995         0.00000             0.00000    
+           3161      0   1      FCR          5672         0.00000             0.00000    
+           3161      0   2      FCR          5673         0.00000             0.00000    
+           3161      0   3      FCR          5674         0.00000             0.00000    
+           4732      0   1      FCR          6113         0.00000             0.00000    
+           4732      0   2      FCR          6114         0.00000             0.00000    
+           4732      0   3      FCR          6115         0.00000             0.00000    
+           4211      0   1      FCR          4844         0.00000             0.00000    
+           4211      0   2      FCR          4845         0.00000             0.00000    
+           4211      0   3      FCR          4846         0.00000             0.00000    
+           1717      0   1      FCR          5825         0.00000             0.00000    
+           1717      0   2      FCR          5826         0.00000             0.00000    
+           1717      0   3      FCR          5827         0.00000             0.00000    
+           1932      0   1      FCR          5873         0.00000             0.00000    
+           1932      0   2      FCR          5874         0.00000             0.00000    
+           1932      0   3      FCR          5875         0.00000             0.00000    
+           4796      0   1      FCR          6341         0.00000             0.00000    
+           4796      0   2      FCR          6342         0.00000             0.00000    
+           4796      0   3      FCR          6343         0.00000             0.00000    
+           1664      0   1      FCR          4433         0.00000             0.00000    
+           1664      0   2      FCR          4434         0.00000             0.00000    
+           1664      0   3      FCR          4435         0.00000             0.00000    
+           4844      0   1      FCR          6077         0.00000             0.00000    
+           4844      0   2      FCR          6078         0.00000             0.00000    
+           4844      0   3      FCR          6079         0.00000             0.00000    
+           4510      0   1      FCR          6221         0.00000             0.00000    
+           4510      0   2      FCR          6222         0.00000             0.00000    
+           4510      0   3      FCR          6223         0.00000             0.00000    
+           4385      0   1      FCR          6650         0.00000             0.00000    
+           4385      0   2      FCR          6651         0.00000             0.00000    
+           4385      0   3      FCR          6652         0.00000             0.00000    
+           5237      0   1      FCR          6719         0.00000             0.00000    
+           5237      0   2      FCR          6720         0.00000             0.00000    
+           5237      0   3      FCR          6721         0.00000             0.00000    
+           4116      0   1      FCR          6659         0.00000             0.00000    
+           4116      0   2      FCR          6660         0.00000             0.00000    
+           4116      0   3      FCR          6661         0.00000             0.00000    
+           3351      0   1      FCR          6857         0.00000             0.00000    
+           3351      0   2      FCR          6858         0.00000             0.00000    
+           3351      0   3      FCR          6859         0.00000             0.00000    
+           5089      0   1      FCR          6926         0.00000             0.00000    
+           5089      0   2      FCR          6927         0.00000             0.00000    
+           5089      0   3      FCR          6928         0.00000             0.00000    
+           4374      0   1      FCR          7079         0.00000             0.00000    
+           4374      0   2      FCR          7080         0.00000             0.00000    
+           4374      0   3      FCR          7081         0.00000             0.00000    
+           1750      0   1      FCR          7025         0.00000             0.00000    
+           1750      0   2      FCR          7026         0.00000             0.00000    
+           1750      0   3      FCR          7027         0.00000             0.00000    
+           4406      0   1      FCR          5567         0.00000             0.00000    
+           4406      0   2      FCR          5568         0.00000             0.00000    
+           4406      0   3      FCR          5569         0.00000             0.00000    
+           4942      0   1      FCR          5609         0.00000             0.00000    
+           4942      0   2      FCR          5610         0.00000             0.00000    
+           4942      0   3      FCR          5611         0.00000             0.00000    
+           4811      0   1      FCR          5675         0.00000             0.00000    
+           4811      0   2      FCR          5676         0.00000             0.00000    
+           4811      0   3      FCR          5677         0.00000             0.00000    
+           4547      0   1      FCR          6074         0.00000             0.00000    
+           4547      0   2      FCR          6075         0.00000             0.00000    
+           4547      0   3      FCR          6076         0.00000             0.00000    
+           4839      0   1      FCR          5726         0.00000             0.00000    
+           4839      0   2      FCR          5727         0.00000             0.00000    
+           4839      0   3      FCR          5728         0.00000             0.00000    
+           4896      0   1      FCR          4802         0.00000             0.00000    
+           4896      0   2      FCR          4803         0.00000             0.00000    
+           4896      0   3      FCR          4804         0.00000             0.00000    
+           4625      0   1      FCR          6185         0.00000             0.00000    
+           4625      0   2      FCR          6186         0.00000             0.00000    
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+           Code  N-obs Number   Trait       Eq-no         E_BLUP                 SEP                           
+           4625      0   3      FCR          6187         0.00000             0.00000    
+           4568      0   1      FCR          6209         0.00000             0.00000    
+           4568      0   2      FCR          6210         0.00000             0.00000    
+           4568      0   3      FCR          6211         0.00000             0.00000    
+           4544      0   1      FCR          6245         0.00000             0.00000    
+           4544      0   2      FCR          6246         0.00000             0.00000    
+           4544      0   3      FCR          6247         0.00000             0.00000    
+           4563      0   1      FCR          3848         0.00000             0.00000    
+           4563      0   2      FCR          3849         0.00000             0.00000    
+           4563      0   3      FCR          3850         0.00000             0.00000    
+           4043      0   1      FCR          5093         0.00000             0.00000    
+           4043      0   2      FCR          5094         0.00000             0.00000    
+           4043      0   3      FCR          5095         0.00000             0.00000    
+           4783      0   1      FCR          6305         0.00000             0.00000    
+           4783      0   2      FCR          6306         0.00000             0.00000    
+           4783      0   3      FCR          6307         0.00000             0.00000    
+           5080      0   1      FCR          5912         0.00000             0.00000    
+           5080      0   2      FCR          5913         0.00000             0.00000    
+           5080      0   3      FCR          5914         0.00000             0.00000    
+           4785      0   1      FCR          5240         0.00000             0.00000    
+           4785      0   2      FCR          5241         0.00000             0.00000    
+           4785      0   3      FCR          5242         0.00000             0.00000    
+           4885      0   1      FCR          6020         0.00000             0.00000    
+           4885      0   2      FCR          6021         0.00000             0.00000    
+           4885      0   3      FCR          6022         0.00000             0.00000    
+           5181      0   1      FCR          6455         0.00000             0.00000    
+           5181      0   2      FCR          6456         0.00000             0.00000    
+           5181      0   3      FCR          6457         0.00000             0.00000    
+           5189      0   1      FCR          6080         0.00000             0.00000    
+           5189      0   2      FCR          6081         0.00000             0.00000    
+           5189      0   3      FCR          6082         0.00000             0.00000    
+           3151      0   1      FCR          4448         0.00000             0.00000    
+           3151      0   2      FCR          4449         0.00000             0.00000    
+           3151      0   3      FCR          4450         0.00000             0.00000    
+           4546      0   1      FCR          6560         0.00000             0.00000    
+           4546      0   2      FCR          6561         0.00000             0.00000    
+           4546      0   3      FCR          6562         0.00000             0.00000    
+           4298      0   1      FCR          6593         0.00000             0.00000    
+           4298      0   2      FCR          6594         0.00000             0.00000    
+           4298      0   3      FCR          6595         0.00000             0.00000    
+           4203      0   1      FCR          6329         0.00000             0.00000    
+           4203      0   2      FCR          6330         0.00000             0.00000    
+           4203      0   3      FCR          6331         0.00000             0.00000    
+           3226      0   1      FCR          5252         0.00000             0.00000    
+           3226      0   2      FCR          5253         0.00000             0.00000    
+           3226      0   3      FCR          5254         0.00000             0.00000    
+           4786      0   1      FCR          5273         0.00000             0.00000    
+           4786      0   2      FCR          5274         0.00000             0.00000    
+           4786      0   3      FCR          5275         0.00000             0.00000    
+           4826      0   1      FCR          6761         0.00000             0.00000    
+           4826      0   2      FCR          6762         0.00000             0.00000    
+           4826      0   3      FCR          6763         0.00000             0.00000    
+           4220      0   1      FCR          4283         0.00000             0.00000    
+           4220      0   2      FCR          4284         0.00000             0.00000    
+           4220      0   3      FCR          4285         0.00000             0.00000    
+           4979      0   1      FCR          4526         0.00000             0.00000    
+           4979      0   2      FCR          4527         0.00000             0.00000    
+           4979      0   3      FCR          4528         0.00000             0.00000    
+           4579      0   1      FCR          6812         0.00000             0.00000    
+           4579      0   2      FCR          6813         0.00000             0.00000    
+           4579      0   3      FCR          6814         0.00000             0.00000    
+           5235      0   1      FCR          6884         0.00000             0.00000    
+           5235      0   2      FCR          6885         0.00000             0.00000    
+           5235      0   3      FCR          6886         0.00000             0.00000    
+           1885      0   1      FCR          6923         0.00000             0.00000    
+           1885      0   2      FCR          6924         0.00000             0.00000    
+           1885      0   3      FCR          6925         0.00000             0.00000    
+           1845      0   1      FCR          6956         0.00000             0.00000    
+           1845      0   2      FCR          6957         0.00000             0.00000    
+           1845      0   3      FCR          6958         0.00000             0.00000    
+           4258      0   1      FCR          7073         0.00000             0.00000    
+           4258      0   2      FCR          7074         0.00000             0.00000    
+           4258      0   3      FCR          7075         0.00000             0.00000    
+           5159      0   1      FCR          6995         0.00000             0.00000    
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+           Code  N-obs Number   Trait       Eq-no         E_BLUP                 SEP                           
+           5159      0   2      FCR          6996         0.00000             0.00000    
+           5159      0   3      FCR          6997         0.00000             0.00000    
+           4697      0   1      FCR          5966         0.00000             0.00000    
+           4697      0   2      FCR          5967         0.00000             0.00000    
+           4697      0   3      FCR          5968         0.00000             0.00000    
+           3291      0   1      FCR          5552         0.00000             0.00000    
+           3291      0   2      FCR          5553         0.00000             0.00000    
+           3291      0   3      FCR          5554         0.00000             0.00000    
+            203      0   1      FCR          5573         0.00000            0.577439    
+            203      0   2      FCR          5574         0.00000            0.367226E-03
+            203      0   3      FCR          5575         0.00000            0.816532    
+           5298      0   1      FCR          5588         0.00000             0.00000    
+           5298      0   2      FCR          5589         0.00000             0.00000    
+           5298      0   3      FCR          5590         0.00000             0.00000    
+           4348      0   1      FCR          6029         0.00000             0.00000    
+           4348      0   2      FCR          6030         0.00000             0.00000    
+           4348      0   3      FCR          6031         0.00000             0.00000    
+           4163      0   1      FCR          5645         0.00000             0.00000    
+           4163      0   2      FCR          5646         0.00000             0.00000    
+           4163      0   3      FCR          5647         0.00000             0.00000    
+           4029      0   1      FCR          5678         0.00000             0.00000    
+           4029      0   2      FCR          5679         0.00000             0.00000    
+           4029      0   3      FCR          5680         0.00000             0.00000    
+           4138      0   1      FCR          5687         0.00000             0.00000    
+           4138      0   2      FCR          5688         0.00000             0.00000    
+           4138      0   3      FCR          5689         0.00000             0.00000    
+           4725      0   1      FCR          4739         0.00000             0.00000    
+           4725      0   2      FCR          4740         0.00000             0.00000    
+           4725      0   3      FCR          4741         0.00000             0.00000    
+           4261      0   1      FCR          6095         0.00000             0.00000    
+           4261      0   2      FCR          6096         0.00000             0.00000    
+           4261      0   3      FCR          6097         0.00000             0.00000    
+           4152      0   1      FCR          5759         0.00000             0.00000    
+           4152      0   2      FCR          5760         0.00000             0.00000    
+           4152      0   3      FCR          5761         0.00000             0.00000    
+           4891      0   1      FCR          6137         0.00000             0.00000    
+           4891      0   2      FCR          6138         0.00000             0.00000    
+           4891      0   3      FCR          6139         0.00000             0.00000    
+           5296      0   1      FCR          6152         0.00000             0.00000    
+           5296      0   2      FCR          6153         0.00000             0.00000    
+           5296      0   3      FCR          6154         0.00000             0.00000    
+           5014      0   1      FCR          4352         0.00000             0.00000    
+           5014      0   2      FCR          4353         0.00000             0.00000    
+           5014      0   3      FCR          4354         0.00000             0.00000    
+           4410      0   1      FCR          6182         0.00000             0.00000    
+           4410      0   2      FCR          6183         0.00000             0.00000    
+           4410      0   3      FCR          6184         0.00000             0.00000    
+           4390      0   1      FCR          6197         0.00000             0.00000    
+           4390      0   2      FCR          6198         0.00000             0.00000    
+           4390      0   3      FCR          6199         0.00000             0.00000    
+           4232      0   1      FCR          4385         0.00000             0.00000    
+           4232      0   2      FCR          4386         0.00000             0.00000    
+           4232      0   3      FCR          4387         0.00000             0.00000    
+           5218      0   1      FCR          6248         0.00000             0.00000    
+           5218      0   2      FCR          6249         0.00000             0.00000    
+           5218      0   3      FCR          6250         0.00000             0.00000    
+           4794      0   1      FCR          6242         0.00000             0.00000    
+           4794      0   2      FCR          6243         0.00000             0.00000    
+           4794      0   3      FCR          6244         0.00000             0.00000    
+           4175      0   1      FCR          6254         0.00000             0.00000    
+  
+  First 250 equations for Random Factor   2 (variance structure: I(x)G0)                                                                       
+  
+           Code  N-obs  Number Trait      Eq-no          E_BLUP                SEP                             
+              1    404    1    FCR         25937       -0.206071E-04        0.577345    
+              1    404    2    FCR         25938        0.108583E-05        0.102590E-03
+              1    404    3    FCR         25939       -0.145700E-04        0.816495    
+              2    281    1    FCR         25940       -0.363529E-04        0.577345    
+              2    281    2    FCR         25941        0.190847E-05        0.102586E-03
+              2    281    3    FCR         25942       -0.257030E-04        0.816495    
+              3    252    1    FCR         25943       -0.170614E-04        0.577345    
+              3    252    2    FCR         25944        0.676705E-06        0.102578E-03
+              3    252    3    FCR         25945       -0.120634E-04        0.816495    
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+           Code  N-obs  Number Trait      Eq-no          E_BLUP                SEP                             
+              4    252    1    FCR         25946        0.505876E-05        0.577345    
+              4    252    2    FCR         25947       -0.520268E-06        0.102550E-03
+              4    252    3    FCR         25948        0.357646E-05        0.816495    
+              5    228    1    FCR         25949       -0.312373E-05        0.577345    
+              5    228    2    FCR         25950        0.287019E-07        0.102561E-03
+              5    228    3    FCR         25951       -0.220876E-05        0.816495    
+              6    395    1    FCR         25952        0.453491E-05        0.577345    
+              6    395    2    FCR         25953       -0.417008E-06        0.102566E-03
+              6    395    3    FCR         25954        0.320616E-05        0.816495    
+              7    414    1    FCR         25955        0.482991E-05        0.577345    
+              7    414    2    FCR         25956       -0.348950E-06        0.102583E-03
+              7    414    3    FCR         25957        0.341484E-05        0.816495    
+              8    405    1    FCR         25958        0.102139E-04        0.577345    
+              8    405    2    FCR         25959       -0.686086E-06        0.102537E-03
+              8    405    3    FCR         25960        0.722145E-05        0.816495    
+              9    398    1    FCR         25961        0.871240E-05        0.577345    
+              9    398    2    FCR         25962       -0.373443E-06        0.102573E-03
+              9    398    3    FCR         25963        0.616012E-05        0.816495    
+             10    358    1    FCR         25964        0.349885E-05        0.577345    
+             10    358    2    FCR         25965       -0.137169E-06        0.102544E-03
+             10    358    3    FCR         25966        0.247388E-05        0.816495    
+             11    400    1    FCR         25967        0.191298E-04        0.577345    
+             11    400    2    FCR         25968       -0.854379E-06        0.102635E-03
+             11    400    3    FCR         25969        0.135257E-04        0.816495    
+             12    393    1    FCR         25970       -0.900590E-05        0.577345    
+             12    393    2    FCR         25971        0.627310E-06        0.102574E-03
+             12    393    3    FCR         25972       -0.636737E-05        0.816495    
+             13    370    1    FCR         25973        0.642665E-04        0.577345    
+             13    370    2    FCR         25974       -0.358607E-05        0.102543E-03
+             13    370    3    FCR         25975        0.454388E-04        0.816495    
+             14    370    1    FCR         25976        0.618624E-04        0.577345    
+             14    370    2    FCR         25977       -0.352354E-05        0.102558E-03
+             14    370    3    FCR         25978        0.437390E-04        0.816495    
+             15    497    1    FCR         25979        0.429520E-04        0.577345    
+             15    497    2    FCR         25980       -0.213482E-05        0.102554E-03
+             15    497    3    FCR         25981        0.303689E-04        0.816495    
+             16    477    1    FCR         25982       -0.209533E-04        0.577345    
+             16    477    2    FCR         25983        0.140088E-05        0.102549E-03
+             16    477    3    FCR         25984       -0.148145E-04        0.816495    
+             17    492    1    FCR         25985       -0.321900E-05        0.577345    
+             17    492    2    FCR         25986        0.287325E-06        0.102555E-03
+             17    492    3    FCR         25987       -0.227583E-05        0.816495    
+             18    507    1    FCR         25988        0.663360E-04        0.577345    
+             18    507    2    FCR         25989       -0.374441E-05        0.102557E-03
+             18    507    3    FCR         25990        0.469020E-04        0.816495    
+             19    478    1    FCR         25991        0.450528E-04        0.577345    
+             19    478    2    FCR         25992       -0.249931E-05        0.102561E-03
+             19    478    3    FCR         25993        0.318540E-04        0.816495    
+             20    483    1    FCR         25994        0.363372E-04        0.577345    
+             20    483    2    FCR         25995       -0.205361E-05        0.102572E-03
+             20    483    3    FCR         25996        0.256917E-04        0.816495    
+             21    474    1    FCR         25997       -0.331393E-04        0.577345    
+             21    474    2    FCR         25998        0.185307E-05        0.102557E-03
+             21    474    3    FCR         25999       -0.234307E-04        0.816495    
+             22    494    1    FCR         26000       -0.550899E-04        0.577345    
+             22    494    2    FCR         26001        0.305888E-05        0.102554E-03
+             22    494    3    FCR         26002       -0.389506E-04        0.816495    
+             23    327    1    FCR         26003       -0.124399E-03        0.577345    
+             23    327    2    FCR         26004        0.696599E-05        0.102543E-03
+             23    327    3    FCR         26005       -0.879545E-04        0.816495    
+             24    491    1    FCR         26006       -0.732994E-04        0.577345    
+             24    491    2    FCR         26007        0.412694E-05        0.102568E-03
+             24    491    3    FCR         26008       -0.518253E-04        0.816495    
+             25    465    1    FCR         26009       -0.488193E-04        0.577345    
+             25    465    2    FCR         26010        0.281559E-05        0.102565E-03
+             25    465    3    FCR         26011       -0.345170E-04        0.816495    
+             26    509    1    FCR         26012       -0.565144E-04        0.577345    
+             26    509    2    FCR         26013        0.323771E-05        0.102533E-03
+             26    509    3    FCR         26014       -0.399577E-04        0.816495    
+             27    499    1    FCR         26015       -0.573545E-04        0.577345    
+             27    499    2    FCR         26016        0.319365E-05        0.102528E-03
+             27    499    3    FCR         26017       -0.405518E-04        0.816495    
+             28    381    1    FCR         26018        0.370500E-04        0.577345    
+             28    381    2    FCR         26019       -0.224743E-05        0.102537E-03
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+           Code  N-obs  Number Trait      Eq-no          E_BLUP                SEP                             
+             28    381    3    FCR         26020        0.261955E-04        0.816495    
+             29    382    1    FCR         26021        0.936886E-04        0.577345    
+             29    382    2    FCR         26022       -0.534576E-05        0.102541E-03
+             29    382    3    FCR         26023        0.662412E-04        0.816495    
+             30    329    1    FCR         26024       -0.201141E-04        0.577345    
+             30    329    2    FCR         26025        0.113994E-05        0.102578E-03
+             30    329    3    FCR         26026       -0.142214E-04        0.816495    
+             31    250    1    FCR         26027        0.269600E-04        0.577345    
+             31    250    2    FCR         26028       -0.158309E-05        0.102582E-03
+             31    250    3    FCR         26029        0.190617E-04        0.816495    
+             32    269    1    FCR         26030        0.320481E-04        0.577345    
+             32    269    2    FCR         26031       -0.192043E-05        0.102572E-03
+             32    269    3    FCR         26032        0.226591E-04        0.816495    
+             33    345    1    FCR         26033       -0.359628E-05        0.577345    
+             33    345    2    FCR         26034        0.672523E-07        0.102607E-03
+             33    345    3    FCR         26035       -0.254285E-05        0.816495    
+             34    408    1    FCR         26036       -0.262584E-04        0.577345    
+             34    408    2    FCR         26037        0.153625E-05        0.102565E-03
+             34    408    3    FCR         26038       -0.185656E-04        0.816495    
+             35    346    1    FCR         26039       -0.185023E-04        0.577345    
+             35    346    2    FCR         26040        0.953781E-06        0.102554E-03
+             35    346    3    FCR         26041       -0.130819E-04        0.816495    
+             36    333    1    FCR         26042       -0.719592E-05        0.577345    
+             36    333    2    FCR         26043        0.431846E-06        0.102574E-03
+             36    333    3    FCR         26044       -0.508775E-05        0.816495    
+             37    341    1    FCR         26045       -0.114083E-04        0.577345    
+             37    341    2    FCR         26046        0.706878E-06        0.102583E-03
+             37    341    3    FCR         26047       -0.806598E-05        0.816495    
+             38    375    1    FCR         26048       -0.107832E-04        0.577345    
+             38    375    2    FCR         26049        0.153119E-06        0.102712E-03
+             38    375    3    FCR         26050       -0.762462E-05        0.816495    
+             39    393    1    FCR         26051       -0.312895E-04        0.577345    
+             39    393    2    FCR         26052        0.172475E-05        0.102641E-03
+             39    393    3    FCR         26053       -0.221228E-04        0.816495    
+             40    356    1    FCR         26054       -0.580810E-05        0.577345    
+             40    356    2    FCR         26055        0.155246E-06        0.102574E-03
+             40    356    3    FCR         26056       -0.410673E-05        0.816495    
+             41    278    1    FCR         26057       -0.485525E-04        0.577345    
+             41    278    2    FCR         26058        0.293071E-05        0.102557E-03
+             41    278    3    FCR         26059       -0.343282E-04        0.816495    
+             42    232    1    FCR         26060        0.353677E-05        0.577345    
+             42    232    2    FCR         26061       -0.346064E-06        0.102588E-03
+             42    232    3    FCR         26062        0.250046E-05        0.816495    
+             43    228    1    FCR         26063       -0.369383E-04        0.577345    
+             43    228    2    FCR         26064        0.203475E-05        0.102577E-03
+             43    228    3    FCR         26065       -0.261168E-04        0.816495    
+             44    242    1    FCR         26066        0.590598E-05        0.577345    
+             44    242    2    FCR         26067       -0.321121E-06        0.102573E-03
+             44    242    3    FCR         26068        0.417575E-05        0.816495    
+             45    233    1    FCR         26069        0.789232E-05        0.577345    
+             45    233    2    FCR         26070       -0.633257E-06        0.102571E-03
+             45    233    3    FCR         26071        0.557995E-05        0.816495    
+             46    231    1    FCR         26072        0.607796E-04        0.577345    
+             46    231    2    FCR         26073       -0.352404E-05        0.102565E-03
+             46    231    3    FCR         26074        0.429733E-04        0.816495    
+             47    229    1    FCR         26075        0.361308E-04        0.577345    
+             47    229    2    FCR         26076       -0.202525E-05        0.102588E-03
+             47    229    3    FCR         26077        0.255458E-04        0.816495    
+             48    216    1    FCR         26078       -0.369272E-05        0.577345    
+             48    216    2    FCR         26079        0.304012E-06        0.102553E-03
+             48    216    3    FCR         26080       -0.261078E-05        0.816495    
+             49    230    1    FCR         26081       -0.155465E-04        0.577345    
+             49    230    2    FCR         26082        0.104893E-05        0.102751E-03
+             49    230    3    FCR         26083       -0.109917E-04        0.816495    
+             50    250    1    FCR         26084        0.159000E-06        0.577345    
+             50    250    2    FCR         26085        0.497816E-07        0.102540E-03
+             50    250    3    FCR         26086        0.112486E-06        0.816495    
+             51    247    1    FCR         26087       -0.227769E-05        0.577345    
+             51    247    2    FCR         26088        0.865338E-07        0.102593E-03
+             51    247    3    FCR         26089       -0.161046E-05        0.816495    
+             52    216    1    FCR         26090        0.932880E-05        0.577345    
+             52    216    2    FCR         26091       -0.523728E-06        0.102590E-03
+             52    216    3    FCR         26092        0.659581E-05        0.816495    
+             53    229    1    FCR         26093        0.296076E-04        0.577345    
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+           Code  N-obs  Number Trait      Eq-no          E_BLUP                SEP                             
+             53    229    2    FCR         26094       -0.168460E-05        0.102585E-03
+             53    229    3    FCR         26095        0.209336E-04        0.816495    
+             54    234    1    FCR         26096        0.609911E-04        0.577345    
+             54    234    2    FCR         26097       -0.337238E-05        0.102579E-03
+             54    234    3    FCR         26098        0.431230E-04        0.816495    
+             55    247    1    FCR         26099        0.127670E-04        0.577345    
+             55    247    2    FCR         26100       -0.820517E-06        0.102579E-03
+             55    247    3    FCR         26101        0.902661E-05        0.816495    
+             56    221    1    FCR         26102        0.111655E-04        0.577345    
+             56    221    2    FCR         26103       -0.546594E-06        0.102558E-03
+             56    221    3    FCR         26104        0.789454E-05        0.816495    
+             57    241    1    FCR         26105        0.464042E-06        0.577345    
+             57    241    2    FCR         26106       -0.543024E-07        0.102587E-03
+             57    241    3    FCR         26107        0.328063E-06        0.816495    
+             58    246    1    FCR         26108        0.162444E-04        0.577345    
+             58    246    2    FCR         26109       -0.828545E-06        0.102583E-03
+             58    246    3    FCR         26110        0.114855E-04        0.816495    
+             59    228    1    FCR         26111       -0.129767E-04        0.577345    
+             59    228    2    FCR         26112        0.872491E-06        0.102578E-03
+             59    228    3    FCR         26113       -0.917484E-05        0.816495    
+             60    240    1    FCR         26114        0.299417E-05        0.577345    
+             60    240    2    FCR         26115        0.132607E-06        0.102543E-03
+             60    240    3    FCR         26116        0.211733E-05        0.816495    
+             61    268    1    FCR         26117        0.250728E-04        0.577345    
+             61    268    2    FCR         26118       -0.122929E-05        0.102570E-03
+             61    268    3    FCR         26119        0.177276E-04        0.816495    
+             62    351    1    FCR         26120        0.864424E-04        0.577345    
+             62    351    2    FCR         26121       -0.447476E-05        0.102537E-03
+             62    351    3    FCR         26122        0.611184E-04        0.816495    
+             63    240    1    FCR         26123        0.180957E-05        0.577345    
+             63    240    2    FCR         26124       -0.365774E-06        0.102577E-03
+             63    240    3    FCR         26125        0.127914E-05        0.816495    
+             64    371    1    FCR         26126       -0.110581E-04        0.577345    
+             64    371    2    FCR         26127        0.104881E-05        0.102618E-03
+             64    371    3    FCR         26128       -0.781802E-05        0.816495    
+             65    295    1    FCR         26129        0.416892E-04        0.577345    
+             65    295    2    FCR         26130       -0.199830E-05        0.102560E-03
+             65    295    3    FCR         26131        0.294762E-04        0.816495    
+             66    117    1    FCR         26132       -0.452528E-04        0.577345    
+             66    117    2    FCR         26133        0.379409E-05        0.102711E-03
+             66    117    3    FCR         26134       -0.319940E-04        0.816495    
+             67    359    1    FCR         26135        0.554808E-05        0.577345    
+             67    359    2    FCR         26136       -0.443915E-06        0.102582E-03
+             67    359    3    FCR         26137        0.392255E-05        0.816495    
+             68    337    1    FCR         26138        0.693947E-05        0.577345    
+             68    337    2    FCR         26139       -0.418583E-06        0.102570E-03
+             68    337    3    FCR         26140        0.490643E-05        0.816495    
+             69    359    1    FCR         26141        0.879081E-05        0.577345    
+             69    359    2    FCR         26142       -0.302220E-06        0.102582E-03
+             69    359    3    FCR         26143        0.621564E-05        0.816495    
+             70    377    1    FCR         26144        0.909448E-05        0.577345    
+             70    377    2    FCR         26145       -0.346295E-06        0.102589E-03
+             70    377    3    FCR         26146        0.643032E-05        0.816495    
+             71    388    1    FCR         26147        0.833315E-05        0.577345    
+             71    388    2    FCR         26148       -0.214894E-06        0.102551E-03
+             71    388    3    FCR         26149        0.589213E-05        0.816495    
+             72    405    1    FCR         26150       -0.695756E-05        0.577345    
+             72    405    2    FCR         26151        0.771973E-06        0.102542E-03
+             72    405    3    FCR         26152       -0.491882E-05        0.816495    
+             73    367    1    FCR         26153        0.219435E-04        0.577345    
+             73    367    2    FCR         26154       -0.115743E-05        0.102584E-03
+             73    367    3    FCR         26155        0.155150E-04        0.816495    
+             74    126    1    FCR         26156        0.175979E-04        0.577345    
+             74    126    2    FCR         26157       -0.146860E-05        0.102622E-03
+             74    126    3    FCR         26158        0.124419E-04        0.816495    
+             75    356    1    FCR         26159        0.745841E-04        0.577345    
+             75    356    2    FCR         26160       -0.418032E-05        0.102570E-03
+             75    356    3    FCR         26161        0.527337E-04        0.816495    
+             76    243    1    FCR         26162       -0.937284E-05        0.577345    
+             76    243    2    FCR         26163        0.317057E-06        0.102578E-03
+             76    243    3    FCR         26164       -0.662718E-05        0.816495    
+             77    198    1    FCR         26165       -0.186976E-05        0.577345    
+             77    198    2    FCR         26166        0.819164E-07        0.102589E-03
+             77    198    3    FCR         26167       -0.132202E-05        0.816495    
+1DMUAI                       Multivariate Mixed Model Package                   5-09-2023 - 22:51:40
+
+           Code  N-obs  Number Trait      Eq-no          E_BLUP                SEP                             
+             78    225    1    FCR         26168        0.327686E-04        0.577345    
+             78    225    2    FCR         26169       -0.196467E-05        0.102563E-03
+             78    225    3    FCR         26170        0.231685E-04        0.816495    
+             79    277    1    FCR         26171       -0.298158E-04        0.577345    
+             79    277    2    FCR         26172        0.162071E-05        0.102559E-03
+             79    277    3    FCR         26173       -0.210810E-04        0.816495    
+             80    234    1    FCR         26174       -0.129037E-04        0.577345    
+             80    234    2    FCR         26175        0.600548E-06        0.102583E-03
+             80    234    3    FCR         26176       -0.912355E-05        0.816495    
+             81    357    1    FCR         26177       -0.108687E-05        0.577345    
+             81    357    2    FCR         26178       -0.159882E-06        0.102562E-03
+             81    357    3    FCR         26179       -0.768707E-06        0.816495    
+             82    366    1    FCR         26180       -0.257851E-04        0.577345    
+             82    366    2    FCR         26181        0.165569E-05        0.102563E-03
+             82    366    3    FCR         26182       -0.182308E-04        0.816495    
+             83    377    1    FCR         26183       -0.756598E-04        0.577345    
+             83    377    2    FCR         26184        0.446194E-05        0.102532E-03
+             83    377    3    FCR         26185       -0.534940E-04        0.816495    
+             84    383    1    FCR         26186       -0.263048E-04        0.577345    
+  
+  
+ Residuals has been computed and stored in the file: RESIDUAL
+ ------------------------------------------------------------
+  
+ File format: ASCII
+  
+ Description of variables
+  
+  no.  Type     Content
+   1 Integer*4  Record number (position) in the input file
+   2 Real*4     Observation for trait 1
+   3 Real*8     Predicted value for trait 1
+   4 Real*8     Residual for trait 1
+   5 Real*8     Diagonal elements of the "hat matrix"
+  
+ Values <=   0.0000000E+00  are missing values
+  
+  
+ DMUAI: Finished with exit code 0
