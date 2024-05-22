@@ -1,0 +1,12 @@
+itk_nornir-0.2.0.dist-info/WHEEL,sha256=dVUSuv_Q6uYZxyBUBHkCrpHwF8pdsP-qWoQk8Pk6Y60,116
+itk_nornir-0.2.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itk_nornir-0.2.0.dist-info/RECORD,,
+itk_nornir-0.2.0.dist-info/METADATA,sha256=m2OrM5Wk7BmR22Nc93mFgAKvd79VHN9yEO_TAg1DJao,15470
+itk_nornir-0.2.0.dist-info/licenses/LICENSE,sha256=qsc7MUj20dcRHbyjIJn2jSbGRMaBOuHk8F9leaomY_4,11360
+itk_nornir.libs/libtbb-3c88584c.so.12.9,sha256=ri35CP1D8lkH-PM8kpIJQtVejKg_td98V4cDy9AOcms,4138601
+itk/itkIRRefineGridPython.py,sha256=6YZrRs7plUJQZ_ZQjkNwM-26ipiJdmX8PXXnbAFC3Gg,37398
+itk/_NornirPython.abi3.so,sha256=9ju_m16h0QXoyxYL_CHGVZYEkhrH9B6PvJp_K5swKD8,2670033
+itk/NornirPython.py,sha256=bM0sXlzLQXWG6cx4pctQVMKRczJte60j2TXBD9xy11Y,2225
+itk/itkMinimalStandardRandomVariateGeneratorPython.py,sha256=kGROTHsLdFiKWtKSrwic6_QVdvDsazXIrWXpXCh4E-Y,5719
+itk/Configuration/NornirConfig.py,sha256=m5qTspnPAtU22-IrAc1Btd_KCXVS378bPZvppaiaIZE,2226
+itk/Configuration/Nornir_snake_case.py,sha256=PkFFFtE5r5B3W-e7ifIH7hqFK8Cyz-zOjG9P40BzXTk,44
