@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "braintumor-model-package"
+version = "0.1.0"
+description = "A brain tumor model package"
+authors = ["chibuikeeugene <chibuikeeugene@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+scikit-learn = "^1.4.2"
+tensorflow = "^2.16.1"
+kaggle = "^1.6.14"
+pydantic = "^2.7.1"
+strictyaml = "^1.7.3"
+loguru = "^0.7.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+pytest = "^8.2.1"
+seaborn = "^0.13.2"
+matplotlib = "^3.9.0"
+opencv-python = "^4.9.0.80"
+ffmpeg = "^1.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
