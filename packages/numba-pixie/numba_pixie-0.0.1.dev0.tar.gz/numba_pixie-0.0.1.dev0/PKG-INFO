@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: numba-pixie
+Version: 0.0.1.dev0
+Summary: Creates performance portable libraries with embedded source representations.
+Home-page: 
+License: BSD
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Compilers
+Requires-Python: >=3.9
+License-File: LICENSE
+License-File: LICENSES.third-party
+Requires-Dist: llvmlite<0.43,>=0.39
+Requires-Dist: setuptools
+
+======================================================
+PIXIE :: Portable Information eXchanged In Executables
+======================================================
+
+About
+=====
+
+Creates performance portable libraries with embedded source representations.
+
