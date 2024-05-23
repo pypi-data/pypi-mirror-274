@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+FinRobot.egg-info/PKG-INFO
+FinRobot.egg-info/SOURCES.txt
+FinRobot.egg-info/dependency_links.txt
+FinRobot.egg-info/requires.txt
+FinRobot.egg-info/top_level.txt
