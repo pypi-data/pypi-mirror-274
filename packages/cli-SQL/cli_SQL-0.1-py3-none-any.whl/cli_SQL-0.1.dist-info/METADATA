@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cli_SQL
+Version: 0.1
+Summary: Sets up a basic CLI application to connect with a SQL_Database
+Author: kunaalg
+Author-email: <kunaal@runcode.in>
+Keywords: python,Flask,App,SQL,CLI,Database
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: datetime
+Requires-Dist: argparse
+Requires-Dist: requests
+Requires-Dist: mysql.connector
+Requires-Dist: flask
+Requires-Dist: virtualenv
+
+
+Initiate the Virtual Env:
+
+
+
+virtualenv venv 
+
+
+
+
+
+
+
+Install the Package:
+
+
+
+Create a file called start.py
+
+
+
+from src.SQLcli import SQLcli
+
+
+
+Call the SQLcli() function 
+
