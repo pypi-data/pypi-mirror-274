@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: t00x
+Version: 0.0.1
+Summary: .
+Author: t00x t00x
+Author-email: t00x@t00x.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
