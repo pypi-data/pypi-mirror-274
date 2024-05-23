@@ -1,0 +1,9 @@
+README.md
+setup.py
+sdx_topology_validator/__init__.py
+sdx_topology_validator/sdx_topology_validator.py
+sdx_topology_validator.egg-info/PKG-INFO
+sdx_topology_validator.egg-info/SOURCES.txt
+sdx_topology_validator.egg-info/dependency_links.txt
+sdx_topology_validator.egg-info/requires.txt
+sdx_topology_validator.egg-info/top_level.txt
