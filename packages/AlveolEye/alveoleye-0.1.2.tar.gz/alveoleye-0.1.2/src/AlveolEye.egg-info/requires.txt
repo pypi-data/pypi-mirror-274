@@ -1,0 +1,10 @@
+numpy
+magicgui
+qtpy
+
+[testing]
+pytest
+pytest-cov
+pytest-qt
+napari
+qtpy
