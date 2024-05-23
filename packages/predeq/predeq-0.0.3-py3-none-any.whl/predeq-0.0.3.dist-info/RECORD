@@ -1,0 +1,7 @@
+predeq/__init__.py,sha256=jvgZpa0MZrvWE5sf-bPMZuPlfZvjDYHnd7B7xNF3JO0,51
+predeq/_predeq.py,sha256=cXVukqJlWKphmMu79xi6_1SF1xafnHGX95diZET0_VQ,8435
+predeq/recipes.py,sha256=u5kA6pBq4QyAd9CuBDHaUM6wCoIcmlYalcrVHTakfZ0,2750
+predeq-0.0.3.dist-info/METADATA,sha256=bn3s9DGwgBE262Drs9-JoF6DJKSRngIRTPPcQZter_4,2450
+predeq-0.0.3.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+predeq-0.0.3.dist-info/licenses/LICENSE,sha256=quLAPYQWg_GBDNy1v2cTABCKlzN3ZILrJkGbxngsJ7U,1072
+predeq-0.0.3.dist-info/RECORD,,
