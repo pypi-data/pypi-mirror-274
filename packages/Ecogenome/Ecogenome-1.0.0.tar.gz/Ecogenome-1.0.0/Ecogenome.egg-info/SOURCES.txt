@@ -1,0 +1,8 @@
+setup.py
+test.py
+Ecogenome.egg-info/PKG-INFO
+Ecogenome.egg-info/SOURCES.txt
+Ecogenome.egg-info/dependency_links.txt
+Ecogenome.egg-info/entry_points.txt
+Ecogenome.egg-info/requires.txt
+Ecogenome.egg-info/top_level.txt
