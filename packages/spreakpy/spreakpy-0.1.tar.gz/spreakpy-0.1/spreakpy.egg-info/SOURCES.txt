@@ -1,0 +1,5 @@
+setup.py
+spreakpy.egg-info/PKG-INFO
+spreakpy.egg-info/SOURCES.txt
+spreakpy.egg-info/dependency_links.txt
+spreakpy.egg-info/top_level.txt
