@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ml-switching-reg
+Version: 0.15.5
+Summary: A robust estimator to machine learning prediction misclassification
+License: MIT
+Author: Aleksandr Michuda
+Author-email: amichuda@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: linearmodels (>=4.26,<5.0)
+Requires-Dist: numba (>=0.59.1,<0.60.0)
+Requires-Dist: numba-stats (>=1.1.0,<2.0.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: patsy (>=0.5.2,<0.6.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
+Requires-Dist: statsmodels (>=0.13.2,<0.14.0)
