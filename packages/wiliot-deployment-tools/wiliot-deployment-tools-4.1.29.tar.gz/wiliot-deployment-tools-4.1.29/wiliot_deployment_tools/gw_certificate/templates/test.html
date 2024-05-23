@@ -1,0 +1,8 @@
+<div class="container">
+    <h3>{{ test_name }}: {% if test_pass >= pass_min %}<span class="pass">Pass</span>{% elif test_pass >= inconclusive_min %}<span class="inconclusive">Inconclusive</span>{% else %}<span class="fail">Fail</span>{% endif %}</h3>
+    <h4>Running Time: {{ running_time }}</h4>
+    {% for stage_html in stages %}
+        {{ stage_html }}
+    {% endfor %}
+</div>
+<br>
