@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hypercrawl-lite
+Version: 0.1.2
+Summary: A lightweight web scraper for extracting URLs from a webpage. This is utlrafastlite version of Hypercrawl
+Home-page: https://github.com/uditakhourii/hypercrawl-lite
+Author: Udit Akhouri
+Description-Content-Type: text/markdown
