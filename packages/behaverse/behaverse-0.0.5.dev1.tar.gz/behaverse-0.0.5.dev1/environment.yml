@@ -1,0 +1,23 @@
+name: behaverse
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python
+  - pip
+  - ruff
+  - pytest
+
+  - tqdm
+
+  # packaging
+  - flit
+
+  # data
+  - pandas
+
+  # documentation
+  - quarto
+  - quartodoc

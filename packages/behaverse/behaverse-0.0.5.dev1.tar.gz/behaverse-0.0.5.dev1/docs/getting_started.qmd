@@ -1,0 +1,35 @@
+---
+execute:
+  echo: true
+jupyter: python3
+---
+
+# Getting Started
+
+To access datasets via the API, you first need to install the `behaverse` Python package. You can do this by running the following command:
+
+```bash
+pip install behaverse
+```
+
+Make sure you have Python 3.10 or later installed on your system. We recommend using a virtual environment such as Mamba to manage your dependencies.
+
+
+# Usage
+
+The `behaverse` package provides a simple API to access datasets. You can use the `behaverse` package to download datasets, load them into memory, and access the data. Here is an example of how to use the package to list available datasets, download a dataset, select a subset of the dataset, and load it into memory:
+
+```{python}
+from behaverse import list_datasets, download_dataset, load_dataset
+from IPython.display import display
+
+# List available datasets
+print(list_datasets())
+
+# Open a dataset, select a subset of the data, and load it into memory
+dataset = open_dataset('P500_L1m').select(subject_id=['001', '002']).load()
+display(dataset.subjects)
+display(dataset.study_flow)
+display(dataset.response)
+describe_dataset(dataset)
+```

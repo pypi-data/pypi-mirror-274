@@ -1,0 +1,15 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "flake8.args": [
+        "--toml-config=pyproject.toml"
+    ],
+    "isort.args": [
+        "--settings-path=pyproject.toml"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+   "files.watcherExclude": {
+        "**/tmp/": true
+   }
+}

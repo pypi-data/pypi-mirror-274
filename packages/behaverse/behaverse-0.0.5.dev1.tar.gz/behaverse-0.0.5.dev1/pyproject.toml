@@ -1,0 +1,73 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+addopts = "-ra -s"
+testpaths = ["src", "tests"]
+python_files = ["*_test.py", "test_*.py", "tests.py", "test.py"]
+
+[project]
+name = "behaverse"
+authors = [
+    {name = "xCIT Development Team", email = "contact@xcit.org"},
+]
+maintainers = [
+    {name = "Morteza Ansarinia", email = "ansarinia@me.com"},
+    {name = "Hoorieh Afkari", email = "hoorieh.afkari@uni.lu"},
+    {name = "Pedro Cardoso-Leite", email = "pedro.cardosoleite@uni.lu"},
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+requires-python = ">=3.10"
+dynamic = ["version", "description"]
+
+dependencies = [
+    "pandas",
+    "tqdm",
+    "requests"
+]
+
+[project.optional-dependencies]
+dvc = ["dvc>3","dvc-ssh"]
+test = [
+    "pytest"
+]
+
+[project.urls]
+Homepage = "https://behaverse.org"
+Documentation = "https://behaverse.github.io"
+Repository = "https://github.com/behaverse/behaverse"
+
+[tools.flit.module]
+name = "behaverse"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+# Add "Q" to the list of enabled codes.
+select = ["F", "Q", "E", "W", "B", "A", "N", "D"]
+ignore = []
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+docstring-quotes = "double"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.codespell]
+ignore-words-list = "behaverse, xcit, p500"
