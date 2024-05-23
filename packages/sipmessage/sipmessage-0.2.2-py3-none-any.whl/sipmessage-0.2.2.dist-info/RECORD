@@ -1,0 +1,11 @@
+sipmessage/__init__.py,sha256=2e-4PDddpUcyQF5jrVArbpIRawQ_Hq5i7kbZRmCoic4,318
+sipmessage/address.py,sha256=E509-DdFoZUWtYUUNKDKqSRr-hi3KNWyzV0rO5gaTK4,2091
+sipmessage/parameters.py,sha256=kG150H9hSm1WCZdb-fzZPBDCC42h7F-N7w5jZlqG-G0,739
+sipmessage/py.typed,sha256=sow9soTwP9T_gEAQSVh7Gb8855h04Nwmhs2We-JRgZM,7
+sipmessage/uri.py,sha256=RPBvfbiyKWOPrhyrxx0EZmcCZ3Kfd-XekXpU2YZ6w6w,3075
+sipmessage/via.py,sha256=sWlCo_-4W_sxu945neIaDk6AcEqdsXfPWy4JL8_M810,1280
+sipmessage-0.2.2.dist-info/LICENSE,sha256=DD5LT_ZPvYNHlVtngdMvFLLM9BGMXkXOi511xl2C_Oo,1295
+sipmessage-0.2.2.dist-info/METADATA,sha256=F23QMI3xAe845dNtAIJxDsKBSmma_hapYcMkBFgY5uc,2219
+sipmessage-0.2.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sipmessage-0.2.2.dist-info/top_level.txt,sha256=BYw0OcqRwUIAgRyDF3GmyU7-QGh83otmI4tmamhCc8E,11
+sipmessage-0.2.2.dist-info/RECORD,,
