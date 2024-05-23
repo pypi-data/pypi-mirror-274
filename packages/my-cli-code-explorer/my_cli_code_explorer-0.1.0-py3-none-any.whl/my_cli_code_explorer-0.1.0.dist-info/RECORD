@@ -1,0 +1,10 @@
+my_cli_app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_cli_app/main.py,sha256=CxH0wRgZ11GDKf-fY6gymzHiqfa4c2QqtUZ2vLcRB98,1076
+my_cli_code_explorer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_cli_code_explorer/main.py,sha256=CxH0wRgZ11GDKf-fY6gymzHiqfa4c2QqtUZ2vLcRB98,1076
+my_cli_code_explorer-0.1.0.dist-info/LICENSE,sha256=YfWXih434nIa3nCxF0wFsyyzOgWG4AXJrUwVzsH3ZBA,16
+my_cli_code_explorer-0.1.0.dist-info/METADATA,sha256=rn19fWvch9T9qSr5LlPvpMBapwOK7ZzHHZ86hrqnat8,292
+my_cli_code_explorer-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+my_cli_code_explorer-0.1.0.dist-info/entry_points.txt,sha256=ScQCTRvKi7vEAOjeqQkUbU5M0pOmI5F6t_Xzh-YjSkc,71
+my_cli_code_explorer-0.1.0.dist-info/top_level.txt,sha256=qgxqUPMupUfbx1jxkub58g7PLC8_ARRKIiL2CXGTiwQ,21
+my_cli_code_explorer-0.1.0.dist-info/RECORD,,
