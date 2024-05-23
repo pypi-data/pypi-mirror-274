@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "approx-umap"
+version = "0.2.0"
+description = "Modification of the UMAP algorithm to allow for fast approximate projections of new data points."
+authors = [
+    "Pierre Guetschel <pierre.guetschel@donders.ru.nl>",
+    "Peter Wassenaar <peter.wassenaar@ru.nl>",
+]
+readme = "README.md"
+packages = [{ include = "approx_umap" }]
+license = "BSD-3-Clause"
+repository = "https://github.com/PierreGtch/approx-umap"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.13"
+umap-learn = "^0.5.5"
+docstring-inheritance = "^2.2.0"
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+
+
+[tool.poetry.group.parametric_umap.dependencies]
+tensorflow = "^2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
