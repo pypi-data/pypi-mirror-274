@@ -1,0 +1,10 @@
+adri_storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adri_storage/client.py,sha256=R1rxOdCGD7jhVeKC5c8B6gMFaPROqga9a4Lnj47_pNk,1098
+adri_storage/client_enums.py,sha256=-XB512wowa81z5--czDaFIb9vBZiKk4XNPq1C8MwABU,88
+adri_storage/client_factory.py,sha256=YOGoWoUAhoA1ZnIsoirghBp3TvEZGf5FLxpz-RgDKpw,2000
+adri_storage/local_client.py,sha256=2adAcxm2HPVMbz-Bmt6PFIYsGr5BezeI0V4zDyuLlA8,7692
+adri_storage/s3_client.py,sha256=-BjDRZzCdfdO2YU86xgIH-V36o5GDwzcHbr2iTltvtM,4775
+adri_storage-0.0.4.dist-info/METADATA,sha256=PMr_5Zc7pyQ7a2GcOmAVzMDMc4p1bdpPLyDj9LkiC0U,455
+adri_storage-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+adri_storage-0.0.4.dist-info/top_level.txt,sha256=_Qlt4PMAOiMLtn0JOdSrGu4BgvZriW1O5j94Y7MiY0M,13
+adri_storage-0.0.4.dist-info/RECORD,,
