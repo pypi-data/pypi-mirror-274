@@ -1,0 +1,4 @@
+pyserial
+plotly
+google
+tqdm
