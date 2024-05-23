@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: slcfg
+Version: 0.3.1
+Summary: Simple Layered Configuration library
+License: MIT
+Author: Florian Daude
+Author-email: floriandaude@hotmail.fr
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
