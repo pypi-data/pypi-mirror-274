@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+app_explorer/arithmeticops.egg-info/PKG-INFO
+app_explorer/arithmeticops.egg-info/SOURCES.txt
+app_explorer/arithmeticops.egg-info/dependency_links.txt
+app_explorer/arithmeticops.egg-info/top_level.txt
+tests/test_operation.py

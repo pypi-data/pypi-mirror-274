@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: arithmeticops
+Version: 0.0.1
+Summary: A simple Python package
+Home-page: https://bitbucket.vih.infineon.com/scm/~paridasubidk/arithmeticops.git
+Author: subid kumar
+Author-email: subidkumar.parida-EE@infineon.com
+Project-URL: repository, https://bitbucket.vih.infineon.com/scm/~paridasubidk/arithmeticops
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Arithmetic Package
+ A simple python package for basic arithmetic operations.
+
+ ## installation
+
+ ```sh
+ pip install arithmeticops
+
+```
+## Usage
+
+```python
+from arithmeticops import add, subtract, multiply
+
+print(add(1,2)) # prints 3
+print(subtract(4,6)) # prints 10
+print(multiply(2,3)) # prints 6
+
+
+ 
