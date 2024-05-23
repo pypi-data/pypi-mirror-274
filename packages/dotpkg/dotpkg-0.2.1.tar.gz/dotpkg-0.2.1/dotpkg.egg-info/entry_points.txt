@@ -1,0 +1,2 @@
+[console_scripts]
+dotpkg = dotpkg:main

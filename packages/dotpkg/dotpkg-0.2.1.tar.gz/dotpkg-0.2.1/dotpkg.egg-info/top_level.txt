@@ -1,0 +1,6 @@
+bin
+dist
+dotpkg
+schemas
+scripts
+tests

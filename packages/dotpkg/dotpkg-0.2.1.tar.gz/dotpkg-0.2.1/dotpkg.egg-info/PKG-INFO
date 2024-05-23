@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: dotpkg
+Version: 0.2.1
+Summary: Package manager for your dotfiles
+License: MIT License
+        
+        Copyright (c) 2022 fwcd
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/fwcd/dotpkg
+Project-URL: Repository, https://github.com/fwcd/dotpkg
+Keywords: package-manager,dotfiles
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Dotpkg
+
+[![PyPI](https://img.shields.io/pypi/v/dotpkg)](https://pypi.org/project/dotpkg)
+[![Check](https://github.com/fwcd/dotpkg/actions/workflows/check.yml/badge.svg)](https://github.com/fwcd/dotpkg/actions/workflows/check.yml)
+
+A package manager for your dotfiles.
+
+## Why Dotpkg?
+
+- **Lightweight**: Pure Python 3.10 with no dependencies
+- **JSON-configurable**: Easy to write, includes a schema for code completion
+- **Cross-platform**: Runs on Linux, macOS and Windows
+- **Flexible**: Configurable target locations, ignore lists, rename rules and more
+
+## Usage
+
+First make sure to have Python 3.10+ installed. To create a dotfile package, set up a folder with the following layout (the top-level folder is assumed to be some folder, e.g. a Git repo, where you store all of your dotfiles):
+
+```
+dotfiles
+└─my-package
+  ├─dotpkg.json
+  ├─.some-dotfile-one
+  ├─.some-dotfile-two
+    ...
+```
+
+A minimal `dotpkg.json` is structured as follows:
+
+```json
+{
+  "name": "my-package",
+  "description": "Description of my package"
+}
+```
+
+Navigating into `dotfiles` and running `dotpkg install my-package` will then symlink `.some-dotfile-one` and `.some-dotfile-two` into your home directory.
+
+> Note that when running on Windows, unprivileged users might not be able to create symlinks, a feature that `dotpkg` relies on. Enabling `Developer Mode` in your Windows Settings (from an administrator account) will permit this. Also, you may need to substitute `python3 [path/to/dotpkg]` for `dotpkg` since Windows does not support Unix-style shebangs.
+
+Optionally, you can specify keys such as `requiresOnPath` too, which will only install the package if a given binary is found on your `PATH` (useful if your config targets some application). Additionally, `targetDir` configures the search path to symlink the files into some other directory than your home (`dotpkg` will use the first directory that exists, this is useful to cross-platform packages).
+
+For example, a package that manages configurations for Visual Studio Code could look like this:
+
+```json
+{
+  "name": "vscode",
+  "description": "Visual Studio Code settings and keybindings",
+  "requiresOnPath": ["code"],
+  "targetDir": [
+    "${home}/.config/Code",
+    "${home}/Library/Application Support/Code",
+    "${home}/AppData/Roaming/Code"
+  ]
+}
+```
+
+A full JSON schema for the `dotpkg.json` manifests can be found [here](dotpkg.schema.json).
+
+> Note that you can add the schema to your VSCode settings to get autocompletion in `dotpkg.json` files by specifying `json.schemas`:
+
+```json
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["dotpkg.json"],
+      "url": "https://raw.githubusercontent.com/fwcd/dotpkg/main/dotpkg.schema.json"
+    }
+  ]
+}
+```
+
+Alternatively, you can specify the schema individually in each `dotpkg.json`:
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/fwcd/dotpkg/main/dotpkg.schema.json"
+}
+```
