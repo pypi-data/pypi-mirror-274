@@ -1,0 +1,10 @@
+teklia_toolbox/__init__.py,sha256=JGtkWENZ9Gkfi5diMyzMf_RQFCFjJ1f78gDkrj4zqaY,114
+teklia_toolbox/config.py,sha256=qvU2tJitbIRJIbYDYsJoPEtItv8jEWEu1PB7ZGSdfNs,4082
+teklia_toolbox/pagexml.py,sha256=fxmON1XpaNeJgVQETzQc8tVjEFZH7Fe5FCZg5hTGo8U,6972
+teklia_toolbox/requests.py,sha256=oUxY7TXpqyY2-AGzUwpYDGPhAT_k_UOoSnEG-gpN_Ck,1680
+teklia_toolbox/time.py,sha256=vSrw2HPq_ODkswMABI2oJO0hd3bpFbKLC-8B3112JWc,435
+teklia_toolbox/xml.py,sha256=PlyXORykE1-GT-CDj1-QS8p38wRh9y20zVDMewIG4RA,2550
+teklia_toolbox-0.1.5.dist-info/METADATA,sha256=Z1JLSu0ytu3Php9YJt-IO6sD02Qb_cNHGOcIARSuIV8,229
+teklia_toolbox-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+teklia_toolbox-0.1.5.dist-info/top_level.txt,sha256=cIIYjEBvu4_t3xdKD3ptmX0OcbMmkfRCV5S7POVHZEY,15
+teklia_toolbox-0.1.5.dist-info/RECORD,,

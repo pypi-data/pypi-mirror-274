@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: teklia-toolbox
+Version: 0.1.5
+Author: Teklia
+Author-email: contact@teklia.com
+Requires-Python: >=3.10
+Requires-Dist: arkindex-client ==1.0.16
+Requires-Dist: lxml ==5.2.1
+Requires-Dist: PyYAML >=5.4.1
+
