@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mvlearnPanorama
+Version: 0.0.1
+Summary: mvlearnPanorama implements MVC algorithms with GPU acceleration and memory optimization for large datasets
+Author: QCRI (Vrunda Sukhadia)
+Author-email: <sukhadiavrunda@gmail.com>
+Keywords: multi-view,clustering,mvc,mvlearn
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: torch
+Requires-Dist: joblib
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
