@@ -1,0 +1,3 @@
+[console_scripts]
+csmas = your_package.__init__:main
+
