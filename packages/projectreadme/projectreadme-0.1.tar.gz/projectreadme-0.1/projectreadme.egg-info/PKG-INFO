@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: projectreadme
+Version: 0.1
+Summary: A package for generating Project README files for a github project
+Home-page: https://github.com/Anmol-STRS/projectreadmegenerator
+Author: Anmol Dhiman
+Author-email: anmoldhimand666@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: google-generativeai
+Requires-Dist: python-dotenv
+
+This is a test file
