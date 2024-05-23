@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "snakesays"
+version = "1.2.5"
+description = "To display with effect of snake saying"
+authors = ["Ishan Mahajan <imahajan0007@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/ishan65/snakesays.git"
+repository = "https://github.com/ishan65/snakesays.git"
+
+[tool.poetry.scripts]
+snakesays = "snakesays.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+
+
+[[tool.poetry.source]]
+name = "snakesays"
+url = "https://github.com/ishan65/snakesays.git"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
