@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: hypercrawler
+Version: 0.1.1
+Summary: A simple asynchronous web crawler for scraping all URLs within a domain
+Home-page: https://github.com/uditakhourii/hypercrawl
+Author: Udit Akhouri
+Author-email: udit_2312res708@iitp.ac.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
