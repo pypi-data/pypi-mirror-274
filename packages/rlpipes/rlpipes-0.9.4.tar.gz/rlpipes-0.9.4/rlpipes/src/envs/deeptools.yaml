@@ -1,0 +1,6 @@
+# Original
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - deeptools
