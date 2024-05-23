@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dotpkg"
+version = "0.2.0"
+description = "Package manager for your dotfiles"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+classifiers = ["Topic :: Utilities"]
+keywords = ["package-manager", "dotfiles"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/fwcd/dotpkg"
+Repository = "https://github.com/fwcd/dotpkg"
+
+[project.scripts]
+dotpkg = "dotpkg:main"
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.pyright]
+include = ["dotpkg"]
