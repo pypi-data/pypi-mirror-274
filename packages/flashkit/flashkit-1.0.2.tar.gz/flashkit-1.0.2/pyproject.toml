@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flashkit"
+version = "1.0.2"
+authors = [
+  { name="Joey Parrish", email="joey.parrish@gmail.com" },
+]
+description = "Drive the Krikzz FlashKit Programmer MD to flash Sega Genesis carts from the command-line."
+readme = "README.md"
+# This comes from the usage of require=True in argparse's add_subparsers()
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/joeyparrish/flashkit-md-py"
+Issues = "https://github.com/joeyparrish/flashkit-md-py/issues"
+
+[project.scripts]
+flashkit = "flashkit.flashkit:main"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  ".github",
+  ".gitignore",
+]
