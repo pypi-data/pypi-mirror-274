@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mne-rsa
+Version: 0.91
+Summary: Code for performing Representational Similarity Analysis on MNE-Python data structures.
+Author-email: Marijn van Vliet <w.m.vanvliet@gmail.com>
+License: BSD-3-Clause
+Keywords: rsa,meg,eeg,neuroimaging,mne-python
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: mne
