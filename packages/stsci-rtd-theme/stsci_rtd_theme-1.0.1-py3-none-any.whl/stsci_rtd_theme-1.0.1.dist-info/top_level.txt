@@ -1,0 +1,2 @@
+dist
+stsci_rtd_theme

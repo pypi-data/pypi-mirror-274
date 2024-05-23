@@ -1,0 +1,17 @@
+stsci_rtd_theme/__init__.py,sha256=UqTZf13j-dIyGY1_WYq68smXrBIg23G_FJNr52P-syI,259
+stsci_rtd_theme/layout.html,sha256=jbYns29IIryHBgqtn0nfz8phT2QNGtRuYmKr9J0OkW0,1372
+stsci_rtd_theme/theme.conf,sha256=CrQylPPfVdoJTtk_mduJJYN6s_cMWYItv4Ze5_vqWEg,213
+stsci_rtd_theme/static/stsci.css,sha256=0-u8AuYv8LXCvAizG9dTaEp7Pz8VFUKEb3QagCozYS4,123323
+stsci_rtd_theme/static/stsci_pri_combo_mark_white.png,sha256=nwBoNEddkjSEJdg2uWISvGhkjmDNe8ZTzxnQYFj22fM,65413
+stsci_rtd_theme/static/fonts/Lato-Bold.ttf,sha256=1_C38lcPLyi1BNoRgbTXGxQgsQvixP1pCSfxyO47GcM,73332
+stsci_rtd_theme/static/fonts/Lato-Regular.ttf,sha256=6CVCrtgpP0n8g8Sq6lZrH2tPx6mrXaEeb7m8CXO1Mks,75152
+stsci_rtd_theme/static/fonts/RobotoSlab-Bold.ttf,sha256=Rg3toPoWiVKzf_33hVyrWWhjqdb4Zk4rxWWh_yywpnw,126676
+stsci_rtd_theme/static/fonts/RobotoSlab-Regular.ttf,sha256=sLjrL3GCnaqnb10hhOZaOhLSM9VLqldM2ldO6SK_cmA,125936
+stsci_rtd_theme/static/fonts/fontawesome-webfont.woff,sha256=ugxZ3rVFD1y0Gz-TYJ7i0NmVQVh33foiPoqKdTNHTwc,98024
+stsci_rtd_theme-1.0.1.dist-info/LICENSE,sha256=B2J1K583Ze276n8ZGBNe2iFd7oMpmjXj4tefVqxFu70,1504
+stsci_rtd_theme-1.0.1.dist-info/LICENSE.rst,sha256=hWR_loHxr2R_W4Q77gKJp-h1OajKUZn2NVsW56K87mw,1430
+stsci_rtd_theme-1.0.1.dist-info/METADATA,sha256=jV0z2EtGFIcd8UGJTeuBqRqfCsCrKf5nNKsl_gtYZ7g,4729
+stsci_rtd_theme-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+stsci_rtd_theme-1.0.1.dist-info/entry_points.txt,sha256=mjkIYVHGvoeTalwPNUoqYgkqtZOaKkXHGIFeNuaexKE,55
+stsci_rtd_theme-1.0.1.dist-info/top_level.txt,sha256=yvYqEQTnpweCIXm4IIvRvvoh_uwHuS8JVaxPcl2Jhf4,21
+stsci_rtd_theme-1.0.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[sphinx.html_themes]
+stsci_rtd_theme = stsci_rtd_theme
