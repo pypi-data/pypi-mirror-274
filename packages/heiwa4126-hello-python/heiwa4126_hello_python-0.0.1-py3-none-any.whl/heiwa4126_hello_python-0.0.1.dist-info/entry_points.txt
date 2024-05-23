@@ -1,0 +1,2 @@
+[console_scripts]
+heiwa4126-hello-python = heiwa4126_hello_python:hello

@@ -1,0 +1,68 @@
+Metadata-Version: 2.3
+Name: heiwa4126-hello-python
+Version: 0.0.1
+Summary: An example python project
+Project-URL: Documentation, https://github.com/heiwa4126/hello-python#readme
+Project-URL: Issues, https://github.com/heiwa4126/hello-python/issues
+Project-URL: Source, https://github.com/heiwa4126/hello-python
+Author-email: heiwa4126 <heiwa4126@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: demo,helloworld
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# heiwa4126-hello-python
+
+[![PyPI - Version](https://img.shields.io/pypi/v/heiwa4126-hello-python.svg)](https://pypi.org/project/heiwa4126-hello-python)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/heiwa4126-hello-python.svg)](https://pypi.org/project/heiwa4126-hello-python)
+
+---
+
+Just another useless repository for drill.
+
+Python 練習用の意味のないレポジトリ。
+
+## Installation
+
+```sh
+pip install heiwa4126-hello-python
+```
+
+## Usage
+
+```sh
+heiwa4126-hello-python
+```
+
+or
+
+```python
+from heiwa4126_hello_python import hello
+
+hello()
+```
+
+## 開発のしかた
+
+Hatch を使っているので、`pip install hatch`でインストール。
+
+次にプロジェクトをクローンして、ディレクトリに移動して、
+
+```sh
+hatch run main
+# update something
+hatch fmt
+hatch test -a
+hatch version patch
+hatch build
+hatch publish -r test
+hatch publish
+```
