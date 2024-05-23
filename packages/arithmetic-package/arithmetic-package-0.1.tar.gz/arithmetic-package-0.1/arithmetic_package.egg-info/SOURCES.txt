@@ -1,0 +1,8 @@
+README.md
+setup.py
+arithmetic/__init__.py
+arithmetic/operations.py
+arithmetic_package.egg-info/PKG-INFO
+arithmetic_package.egg-info/SOURCES.txt
+arithmetic_package.egg-info/dependency_links.txt
+arithmetic_package.egg-info/top_level.txt
