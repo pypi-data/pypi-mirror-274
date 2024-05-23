@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: dnbf4py
+Version: 0.0.1
+Summary: Serializer/Deserializer for dotnet's BinaryFormatter format.
+Project-URL: Documentation, https://github.com/yntha/dnbf4py#readme
+Project-URL: Issues, https://github.com/yntha/dnbf4py/issues
+Project-URL: Source, https://github.com/yntha/dnbf4py
+Author-email: yntha <126660548+yntha@users.noreply.github.com>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# dnbf4py
+
+[![PyPI - Version](https://img.shields.io/pypi/v/dnbf4py.svg)](https://pypi.org/project/dnbf4py)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dnbf4py.svg)](https://pypi.org/project/dnbf4py)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install dnbf4py
+```
+
+## License
+
+`dnbf4py` is distributed under the terms of the [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later.html) license.
