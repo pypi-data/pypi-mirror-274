@@ -1,0 +1,5 @@
+[markdown.extensions]
+d2_img = d2.img:D2ImgExtension
+
+[mkdocs.plugins]
+d2 = d2.plugin:Plugin
