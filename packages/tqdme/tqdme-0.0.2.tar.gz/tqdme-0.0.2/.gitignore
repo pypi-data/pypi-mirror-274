@@ -1,0 +1,5 @@
+.DS_Store
+
+__*__
+.pytest_cache
+dist
