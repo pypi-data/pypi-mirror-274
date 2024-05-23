@@ -1,0 +1,9 @@
+inherit_docstring/__init__.py,sha256=xz4rTtMWLTsXGiqEJmH2wFqyYgtdvvvn7lWsLvOidxw,126
+inherit_docstring/__version__.py,sha256=IHT4mKrIr8eV-C3HtmIVD85iGVH25n2ohoff31kaJ1A,93
+inherit_docstring/decorator.py,sha256=z7UCLAoI2b8MsOkyw54Uw5EYGQepjsCm1rT6ONEvvlY,862
+inherit_docstring/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inherit_docstring/utils.py,sha256=5EViDHjAIPMDRK25HGjx4Ic379bboikOqgNTw6jcZlI,4356
+inherit_docstring-0.1.4.dist-info/LICENSE,sha256=KPHimGp4ehdaHn7s0RrnWAqKefaRTu5b_zUz7cGVuo8,11337
+inherit_docstring-0.1.4.dist-info/METADATA,sha256=u42NlETy-pf7tj_vaDntbquxqh0FA49Qom5VJTasbow,5122
+inherit_docstring-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+inherit_docstring-0.1.4.dist-info/RECORD,,
