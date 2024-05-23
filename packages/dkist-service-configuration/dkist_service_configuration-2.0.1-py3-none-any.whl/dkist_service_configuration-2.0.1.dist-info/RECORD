@@ -1,0 +1,12 @@
+dkist_service_configuration/__init__.py,sha256=kX8rSW1IMBoR6KSSKMvJPADM-xGtA8VWDASem94YT4w,145
+dkist_service_configuration/_version.py,sha256=llBMh-GtSPemevJ46pFdqzJYvqrJ0mS-b_e99BsAPEQ,411
+dkist_service_configuration/logging.py,sha256=d8XfytdRPq_OIJ8n5PQDm8ZsjDbnd5O3xB8YfFmbx8k,1688
+dkist_service_configuration/settings.py,sha256=07tN_QokkVUloi4LgSIeC6xxlsqu-gSeO0T7ZIjSNj4,1987
+dkist_service_configuration/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dkist_service_configuration/tests/test_logging.py,sha256=qKe9AbHoFKxeSC84MK9WHIgnq4REeP1LuYd5l-Vnk_c,279
+dkist_service_configuration/tests/test_settings.py,sha256=Pg614gZTT2SnjlwOFDtzkSiKZT1H4IuApjQNZz_3MVA,1701
+dkist_service_configuration-2.0.1.dist-info/LICENSE,sha256=_ozkdNXQyan7N48u3YKadigAFoygGu6z6tWRvvCJoVk,1063
+dkist_service_configuration-2.0.1.dist-info/METADATA,sha256=eFcdrhryTshwz57aOtIy7u8TLDOzfYMjrUmHYqdYQSQ,2125
+dkist_service_configuration-2.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dkist_service_configuration-2.0.1.dist-info/top_level.txt,sha256=xosmCHAZnlPgSbFZ3_iySoR5NGldSnQZrhwjyzQU8AY,28
+dkist_service_configuration-2.0.1.dist-info/RECORD,,
