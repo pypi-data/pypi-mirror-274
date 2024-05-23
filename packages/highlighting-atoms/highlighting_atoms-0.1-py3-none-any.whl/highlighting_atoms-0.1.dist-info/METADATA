@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: highlighting_atoms
+Version: 0.1
+Summary: Highlighting atoms function
+Home-page: https://github.com/phi-grib/highlighting_atoms
+Download-URL: https://github.com/phi-grib/highlighting_atoms
+Author: Pablo Rodríguez Belenguer
+Author-email: parodbe@gmail.com
+License: GNU
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This application allows you to highglight the fingerprints of your choice, which can be useful for example if you obtain the importance of the variables through a Machine Learning model.
