@@ -1,0 +1,10 @@
+invenio_subjects_mesh/__init__.py,sha256=ndThJ21EgX6RopiP58rpz2HQbWsd_cPrtJn-ydyPDpE,306
+invenio_subjects_mesh/vocabularies/__init__.py,sha256=Jan6XCvJwfPkOh2K9HsMvKN2aL3uNbfYaGyWcesfwHI,251
+invenio_subjects_mesh/vocabularies/subjects_mesh.csv,sha256=1ZNQ-o8Ja5m8tYgUg0mIjbuLbJAgl6P-qYsPJCPSQD8,53592529
+invenio_subjects_mesh/vocabularies/vocabularies.yaml,sha256=GZNfEe-5B10X0xcJxR780orv7Z7H0mu5lWUxug8agTg,180
+invenio_subjects_mesh-2024.3.4.dist-info/LICENSE,sha256=VvMGg1sN8IqzzzRa_ZraLkZR9I6iEQsSy9nKNMdaj-c,1081
+invenio_subjects_mesh-2024.3.4.dist-info/METADATA,sha256=f-ZrKhuM2BfICPRSRVW774caTdhr_Dn_TPVC5Q6QPlA,6281
+invenio_subjects_mesh-2024.3.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+invenio_subjects_mesh-2024.3.4.dist-info/entry_points.txt,sha256=4xamFFjsBf_WrRjt9Febo4zrw9TLxdS6_4DhJPZcjxE,90
+invenio_subjects_mesh-2024.3.4.dist-info/top_level.txt,sha256=SpHNrufleAPuIRn9EavLDoK-RPlNWBgvCeVj7EC-VzA,22
+invenio_subjects_mesh-2024.3.4.dist-info/RECORD,,
