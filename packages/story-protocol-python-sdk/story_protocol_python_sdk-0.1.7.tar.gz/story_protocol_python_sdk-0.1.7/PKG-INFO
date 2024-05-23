@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: story_protocol_python_sdk
+Version: 0.1.7
+Summary: A Python SDK for interacting with the Story Protocol.
+Home-page: https://github.com/storyprotocol/python-sdk
+Author: Andrew Chung
+Author-email: andrew@storyprotocol.xyz
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: web3>=5.0.0
+Requires-Dist: pytest
+Requires-Dist: python-dotenv
+
+# Story Protocol SDK
+
+Welcome to the documents for Story Protocol Python SDK. The Python SDK provides the APIs for developers to build applications with Story Protocol. By using the SDK, developers can create the resources like IP assets and perform actions to interact with the resource.
+
+## How to use Story Protocol SDK in Your Project
