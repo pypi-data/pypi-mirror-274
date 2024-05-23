@@ -1,0 +1,3 @@
+[console_scripts]
+apicat=apicat.cli:index
+

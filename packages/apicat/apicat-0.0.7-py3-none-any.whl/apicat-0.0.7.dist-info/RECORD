@@ -1,0 +1,8 @@
+apicat/__init__.py,sha256=ZUHU1jVPWmHuCMTB3pZNhM5Z2Lt4y-7D4FPwhwVnhNs,2566
+apicat/cli.py,sha256=t2xLnNvCEW-H-tPjMNQ_lsH6zd8JZV8NNFjMV6xpaxE,2007
+apicat/config.py,sha256=OEQ5x0ZvmNSPnQ3D-LBsNwLhtmmTxfJOCRVkf5aVAvA,1144
+apicat/core.py,sha256=Bl8vxJKHq6z-CNP_Wb8llf81TZfGsgLOPQyXxNA1hHs,873
+apicat-0.0.7.dist-info/entry_points.txt,sha256=C0SesdH7KUspUH1l_nZdBNwCcLoflmd-RVQdp1Hptww,43
+apicat-0.0.7.dist-info/METADATA,sha256=6t7Hr_odM8FwGHoxbG1kKektRgmiVw73FycDeIrOY8Y,1332
+apicat-0.0.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+apicat-0.0.7.dist-info/RECORD,,
