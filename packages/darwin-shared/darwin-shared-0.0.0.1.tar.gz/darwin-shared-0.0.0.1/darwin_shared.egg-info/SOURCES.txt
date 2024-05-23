@@ -1,0 +1,7 @@
+README.md
+setup.py
+darwin-shared/__init__.py
+darwin_shared.egg-info/PKG-INFO
+darwin_shared.egg-info/SOURCES.txt
+darwin_shared.egg-info/dependency_links.txt
+darwin_shared.egg-info/top_level.txt
