@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pinnsjax
+Version: 0.0.2
+Summary: An implementation of PINNs in JAX.
+Home-page: https://github.com/rezaakb/pinns-jax
+Author: Reza Akbarian Bafghi
+Author-email: reza.akbarianbafghi@coloardo.edu
+License-File: LICENSE
