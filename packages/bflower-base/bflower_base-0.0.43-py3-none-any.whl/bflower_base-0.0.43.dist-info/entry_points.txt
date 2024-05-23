@@ -1,0 +1,3 @@
+[console_scripts]
+bflower-base=bflower.__main__:main
+
