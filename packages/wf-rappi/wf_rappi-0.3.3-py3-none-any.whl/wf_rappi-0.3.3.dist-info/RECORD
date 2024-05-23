@@ -1,0 +1,14 @@
+estawf_rappi copia/__init__.py,sha256=Tv4WRcqTteJfizmRulQyLswpkHKg-B0v5ExLCJJKLpM,61
+estawf_rappi copia/data_processing.py,sha256=7pIvxR6VFdFNCDAxjt2tXG8VpgInAhdg4JIzvBw0ea8,6455
+estawf_rappi copia/dbconn.py,sha256=PwVHFBENJGbHSVE12VM_2dzvrhTl4GeJF7kyLyeYhM4,1396
+estawf_rappi copia/export.py,sha256=avIr3nuZT1-7wIXOqsnuNlXHLoDuc2PU-58pN4U8Dvc,70
+estawf_rappi copia/fetch_data.py,sha256=qKPh9WCxNcLCqsEWdAJp_tnK7ozvZ6ldR_fuZsVfdyU,12003
+estawf_rappi copia/main.py,sha256=qqcrGM8BvTvbfTmr2BgMPJdNbRyzxO4rimYE4EUeqFY,2582
+estawf_rappi copia/modeling.py,sha256=cZLRZkMeUOuD9LOih4WdEG9eTae9mkKzuoI_1keM3Tc,1610
+estawf_rappi copia/order_distribution.py,sha256=SUO8sweHZBE1IETlUyx3cJsEuRHKLzagPoPLmInVL_4,8092
+estawf_rappi copia/wfm_functions.py,sha256=EpBmCpL01sk46GzTJnOPhPx-hc-lZGFP0bdeXdPWNGA,2748
+wf_rappi-0.3.3.dist-info/METADATA,sha256=1grVjaSvxOw8Pxqa1VlWiM4aOV7-ga9MfuGLFe8uYZY,2242
+wf_rappi-0.3.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+wf_rappi-0.3.3.dist-info/entry_points.txt,sha256=ez_j5rlLV2ecJ7OjYKqri1RpM_XuB2KST6o9xSdRucY,75
+wf_rappi-0.3.3.dist-info/top_level.txt,sha256=c7LkXRsdO18cSl0Y3ZDHizdhAkc93y83QYYoS7itWX8,19
+wf_rappi-0.3.3.dist-info/RECORD,,
