@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: clar-cloc
+Version: 0.1.0
+Summary: A CLI tool to count lines in Clarity (.clar) files
+Home-page: https://github.com/yourusername/clar_cloc
+Author: Kristian Apostolov
+Author-email: kristianapostolovcontacts@gmail.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: tabulate
+Requires-Dist: setuptools
+
+# Clarity Line Counter
+
+A CLI tool to count lines in Clarity (.clar) files.
+
+## Installation
+
+You can install the tool using `pip`:
+
+```bash
+pip3.12 install git+https://github.com/CrisCodesCrap/clar_cloc.git
+```
+
+## Usage
+
+To use the tool, navigate to the directory containing the .clar files and run:
+
+```bash
+clar-cloc --exclude-dirs "exclude_this,and_this"
+```
+
+- `--exclude-dirs` (optional): Comma-separated list of directories to exclude.

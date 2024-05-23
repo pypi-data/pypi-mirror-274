@@ -1,0 +1,11 @@
+README.md
+setup.py
+clar_cloc/__init__.py
+clar_cloc/cli.py
+clar_cloc/count.py
+clar_cloc.egg-info/PKG-INFO
+clar_cloc.egg-info/SOURCES.txt
+clar_cloc.egg-info/dependency_links.txt
+clar_cloc.egg-info/entry_points.txt
+clar_cloc.egg-info/requires.txt
+clar_cloc.egg-info/top_level.txt
