@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+equinix.egg-info/PKG-INFO
+equinix.egg-info/SOURCES.txt
+equinix.egg-info/dependency_links.txt
+equinix.egg-info/requires.txt
+equinix.egg-info/top_level.txt
