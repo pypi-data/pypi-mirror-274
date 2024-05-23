@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: camera-ui-python-types
+Version: 0.1.47
+Summary: camera.ui python types
+Author-email: seydx <dev@seydx.com>
+Maintainer-email: seydx <dev@seydx.com>
+Project-URL: Homepage, https://github.com/seydx/camera.ui
+Project-URL: Documentation, https://github.com/seydx/camera.ui
+Project-URL: Repository, https://github.com/seydx/camera.ui
+Project-URL: Bug Tracker, https://github.com/seydx/camera.ui/issues
+Project-URL: Changelog, https://github.com/seydx/camera.ui/blob/master/CHANGELOG.md
+Keywords: camera.ui,python,types
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: typing-extensions
+Requires-Dist: reactivex
+Provides-Extra: pillow
+Requires-Dist: Pillow ; (sys_platform != "linux" or platform_machine != "x86_64") and extra == 'pillow'
+Requires-Dist: pillow-simd ; (sys_platform == "linux" and platform_machine == "x86_64") and extra == 'pillow'
+
+## @camera.ui/python-types
