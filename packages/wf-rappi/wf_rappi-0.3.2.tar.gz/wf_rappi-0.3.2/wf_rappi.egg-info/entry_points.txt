@@ -1,0 +1,2 @@
+[console_scripts]
+wf-rappi = wf_rappi.data_processing:read_and_sort_orders
