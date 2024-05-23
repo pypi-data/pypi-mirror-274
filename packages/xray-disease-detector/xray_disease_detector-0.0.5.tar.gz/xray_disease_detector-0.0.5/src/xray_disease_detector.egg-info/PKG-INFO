@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: xray-disease-detector
+Version: 0.0.5
+Summary: A package for detecting diseases in X-ray images using a pre-trained PyTorch model
+Home-page: https://github.com/KONMIO34/xray_disease_detector
+Author: Gong Zhan
+Author-email: gongzhan34@yahoo.co.jp
+Project-URL: Bug Tracker, https://github.com/KONMIO34/xray_disease_detector/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# XRay Disease Detector
+
+XRay Disease Detector is a Python package for detecting diseases in X-ray images using a pre-trained PyTorch model.
+
+## Installation
+
+You can install the package using pip:
+
+```sh
+pip install xray_disease_detector
