@@ -1,0 +1,9 @@
+friendlytagloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+friendlytagloader/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+friendlytagloader/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+friendlytagloader/templatetags/friendly_loader.py,sha256=SF4WspU1PCvbXCQHlVwj7f36N-sz4WXoDBZ2aH-QNjk,4972
+django_friendly_tag_loader-1.3.2.dist-info/LICENSE,sha256=5pYEHLIzdfFpVrOHluHn7y6aewyZmF4a8sVdTk6x8zA,1070
+django_friendly_tag_loader-1.3.2.dist-info/METADATA,sha256=Owi6RuBr_pAGlAd110i4VFPx2JFDpKVaGlO279wpuog,3358
+django_friendly_tag_loader-1.3.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_friendly_tag_loader-1.3.2.dist-info/top_level.txt,sha256=-fwfd61f3c7fvnhlqdItoGbXh_MnoZ0C_FS9H1laPCs,18
+django_friendly_tag_loader-1.3.2.dist-info/RECORD,,
