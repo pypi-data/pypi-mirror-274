@@ -1,0 +1,12 @@
+neon_nodes/__init__.py,sha256=u6Uk0YweNBnWHvmIPKZUIQpQjqUf_HRsU1PP1Ah45Yk,2048
+neon_nodes/version.py,sha256=cxSRbVzsp4lufClt_WkI2GAll673vwICmUglipuvVQE,1856
+neon_nodes/voice_client.py,sha256=eCLd6IjSzl-2RP07GQRfnTeH7lrCyg6CiRpkR7xhVVY,10810
+neon_nodes/websocket_client.py,sha256=pTLfBfoRGfO3fAEPHeA0_BCzeONH2wq4gJDfMcGfmWA,12437
+neon_nodes/res/error.wav,sha256=DLdF_cBOKqV9-3ytVoMN-7DQYW7r5cr7cV-UiDNZsYQ,189942
+neon_nodes/res/start_listening.wav,sha256=zK0SMMc21d3e6oJ9XORK-zbow4rHFixo7OA8swllsUA,67090
+neon_nodes-0.0.2a1.dist-info/LICENSE.md,sha256=6omeVSVshpc337BRGzhEQ22HCfrhcJ2QZA_5Ikyfx4I,1626
+neon_nodes-0.0.2a1.dist-info/METADATA,sha256=sW8QR70g79HLEvmwXWsWKltYdl0NsdT8M9lzLvoXMsI,2230
+neon_nodes-0.0.2a1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+neon_nodes-0.0.2a1.dist-info/top_level.txt,sha256=iByj7j2birQDEybh64kQOWCp0iYWGlSqdvzOM6kZs_w,11
+neon_nodes-0.0.2a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+neon_nodes-0.0.2a1.dist-info/RECORD,,
