@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+packManager/LISENCE
+packManager/__init__.py
+packManager/setup.py
+packManager.egg-info/PKG-INFO
+packManager.egg-info/SOURCES.txt
+packManager.egg-info/dependency_links.txt
+packManager.egg-info/top_level.txt
