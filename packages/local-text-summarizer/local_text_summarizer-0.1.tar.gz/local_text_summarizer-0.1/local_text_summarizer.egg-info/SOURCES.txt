@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+local_text_summarizer.egg-info/PKG-INFO
+local_text_summarizer.egg-info/SOURCES.txt
+local_text_summarizer.egg-info/dependency_links.txt
+local_text_summarizer.egg-info/entry_points.txt
+local_text_summarizer.egg-info/requires.txt
+local_text_summarizer.egg-info/top_level.txt
+locat_text_summarizer/__init__.py
+locat_text_summarizer/summarize.py
