@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+packages/win_onnx/__init__.py
+packages/win_onnx/winml.cp310-win_amd64.pyd
+packages/win_onnx/winml.cp311-win_amd64.pyd
+packages/win_onnx/winml.cp312-win_amd64.pyd
+packages/win_onnx/winml.cp38-win_amd64.pyd
+packages/win_onnx/winml.cp39-win_amd64.pyd
+packages/win_onnx/winml.pyi
+packages/win_onnx.egg-info/PKG-INFO
+packages/win_onnx.egg-info/SOURCES.txt
+packages/win_onnx.egg-info/dependency_links.txt
+packages/win_onnx.egg-info/not-zip-safe
+packages/win_onnx.egg-info/requires.txt
+packages/win_onnx.egg-info/top_level.txt
