@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: yc-aws-wrapper
+Version: 0.0.1
+Summary: yc-aws-wrapper.
+Home-page: https://github.com/mcode-cc/python-yandex-cloud-sdk-wrapper/
+Author: MCode GmbH
+Author-email: python-yandex-cloud-sdk-wrapper@mcode.cc
+License: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+Project-URL: Bug Tracker, https://github.com/mcode-cc/python-yandex-cloud-sdk-wrapper/issues
+Keywords: Wrapper for yandex cloud services
+Platform: Any
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: System :: Networking
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3 ==1.27.1
+Requires-Dist: botocore ==1.30.1
+
+yc-aws-wrapper
+=
+### About:
+A little sugar for working with Yandex cloud services. May also be compatible with other AWS clones.   
+The wrapper is written for your own needs and primarily for working with Yandex Cloud, ready for criticism and suggestions.
+
+To run tests, in addition to the necessary environment variables, you need S3_BUCKET the location of your test bucket
+
+#### ENV:  
+- **REQUIRED**
+  >AWS_REGION: region  
+  AWS_ACCESS_KEY_ID: key id  
+  AWS_SECRET_ACCESS_KEY: secret from key id  
+- **SITUATIONAL**:
+  > [SERVICE]_ENDPOINT_URL: endpoint for the service, example for yandex sqs: `SQS_ENDPOINT_URL=https://message-queue.api.cloud.yandex.net`    
+- **ADDITIONAL**:
+  - ***Kinesis***:  
+    >KINESIS_FOLDER:   
+    KINESIS_DATABASE:  
+    KINESIS_STREAM_NAME:  
