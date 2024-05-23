@@ -1,0 +1,8 @@
+pyserial
+tabulate
+
+[test]
+hypothesis
+
+[urwid]
+urwid

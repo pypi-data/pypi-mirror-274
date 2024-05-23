@@ -1,0 +1,6 @@
+# Ignore these directories
+__pycache__
+doc/manuals
+.hypothesis
+dist
+turboctl.egg-info
