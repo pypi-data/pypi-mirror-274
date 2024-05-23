@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: benchmarking-qrc
+Version: 0.0.4
+Summary: Benchmarking QRC measures the ability to store information of 
+Home-page: https://github.com/gllodra12/Benchmarking_QRC
+Author: Guillem Llodrà
+Author-email: gllodra1225@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: openfermion ~=1.1.0
+
+# Benchmarking QRC
+  
+[![DOI](https://zenodo.org/badge/516001326.svg)](https://zenodo.org/badge/latestdoi/516001326)
+
+This repository contains the code to analyse the role of particle statistics in Quantum Reservoir Computing (paper soon in arxiv).
+
+You can run this code interactively with [Google Colab](https://colab.research.google.com/github/gllodra12/Benchmarking_QRC).
