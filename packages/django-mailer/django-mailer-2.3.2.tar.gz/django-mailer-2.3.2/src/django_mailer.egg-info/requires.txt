@@ -1,0 +1,2 @@
+Django>=2.2
+lockfile>=0.8
