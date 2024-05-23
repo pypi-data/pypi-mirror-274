@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: velocitas-lib
+Version: 0.0.4
+License-File: LICENSE
+License-File: NOTICE-3RD-PARTY-CONTENT.md
+License-File: NOTICE.md
+Requires-Dist: requests >=2.31.0
+Requires-Dist: types-requests
+
