@@ -1,0 +1,6 @@
+datetime
+argparse
+requests
+mysql.connector
+flask
+virtualenv
