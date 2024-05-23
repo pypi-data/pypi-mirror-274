@@ -1,0 +1,17 @@
+matprops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matprops/props.py,sha256=sszlinydyyY2C8bKJGkDI0FLBY9-Nmba-VSVgNUzFoQ,5318
+resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resources/configs/__init__.py,sha256=rWX9okkN9zgypJzfwPbGUx5Qks3Uh0BhnWx-80nSVLk,53
+resources/configs/constants.py,sha256=4I85VVKolYqwQKVVhFUVQ-qRjCf8QnJL1T-Oox4Fhc8,2478
+resources/configs/props.py,sha256=c6jOXmOUFZJPmtkfi5d43hjZTPBQO7gBiUNBqmAFWEE,4808
+resources/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resources/utils/figure.py,sha256=plYSNhmKAjyo3QCp1fE8DUshAvFUbvbuGdAFHuMN79o,402
+resources/utils/props.py,sha256=1RkuAZr7iD6Eo4z8U8oA1VJRH5o_4T2tDIPlrZcUxN8,540
+validation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validation/pil.py,sha256=zfEB3HiTs6a-toZCzYFj2ElHVNIL_A_A_rE9h_curuo,890
+validation/prop_test.py,sha256=quObsdaRsEk0FLBefHsXnYiB_0kfCFPSUUwKBcFJ2Mw,249
+matprops-1.0.4.3.dist-info/LICENSE,sha256=ZaFqWQD58-5Pud-oekFNyyh1ii2cwqCc28lxd3pl6aM,1074
+matprops-1.0.4.3.dist-info/METADATA,sha256=XQ7bNbiMgnEyHZwj2cwKSk_c94TeUsqv4JZ-o0fapK4,3148
+matprops-1.0.4.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+matprops-1.0.4.3.dist-info/top_level.txt,sha256=e8A-7Hnpej6I6j_JFiGCWcbCyXTTzYOmWg9iMKNdiXs,30
+matprops-1.0.4.3.dist-info/RECORD,,
