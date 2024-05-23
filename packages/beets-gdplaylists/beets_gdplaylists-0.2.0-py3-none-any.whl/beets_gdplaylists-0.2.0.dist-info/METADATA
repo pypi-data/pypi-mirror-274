@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: beets-gdplaylists
+Version: 0.2.0
+Summary: beets plugin to create Grateful Dead playlists
+Author-email: Ross Hendry <rhendry@gmail.com>
+Project-URL: Repository, https://github.com/chooban/beets-gogd
+Keywords: beets,grateful dead,plex,playlists
+Platform: ALL
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beets >=1.6.0
+Requires-Dist: plexapi >=4.15.0
+Requires-Dist: pyyaml >=6
+Provides-Extra: dev
+Requires-Dist: musicbrainzngs >=0.7.0 ; extra == 'dev'
+
+# beets-gogd-plex
+
+A plugin for [beets](beets) to create playlists for live Grateful Dead releases in your library.
