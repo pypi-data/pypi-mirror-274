@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test_mitre_data.py
+ttpnav/__init__.py
+ttpnav/mitre_data.py
+ttpnav.egg-info/PKG-INFO
+ttpnav.egg-info/SOURCES.txt
+ttpnav.egg-info/dependency_links.txt
+ttpnav.egg-info/requires.txt
+ttpnav.egg-info/top_level.txt
