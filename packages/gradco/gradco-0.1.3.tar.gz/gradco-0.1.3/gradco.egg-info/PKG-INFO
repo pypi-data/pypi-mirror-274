@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gradco
+Version: 0.1.3
+Summary: GRaphled-orbit ADjacency COunter (GRADCO).
+Author: Sam Windels
+Author-email: sam.windels@gmail.com
+Requires-Python: >=3.10
+License-File: LICENSE
