@@ -1,0 +1,6 @@
+pyAirlock
+A Python library for Airlock products REST APIs
+Copyright (c) 2018-2024 Urs Zurbuchen <info@airlock.com>
+
+pyAirlock is released under the terms of the GNU General Public License (v3).
+Please consult http://www.gnu.org/licenses/gpl.html for terms and conditions.
