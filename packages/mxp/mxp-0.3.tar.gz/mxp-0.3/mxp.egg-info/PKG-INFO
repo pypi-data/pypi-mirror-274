@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mxp
+Version: 0.3
+Summary: qPCR fileformat reader
+Home-page: http://www.imt.uni-marburg.de
+Author: Florian Finkernagel
+Author-email: finkernagel@imt.uni-marburg.de
+Keywords: qPCR,MXP
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: olefile
+Requires-Dist: pandas
+Requires-Dist: natsort
+
+Support code to read qPCR machine file formats,
+such as the .mxp file format created by MxPro.
+
+Currently reads files from 300 and 305 machines.

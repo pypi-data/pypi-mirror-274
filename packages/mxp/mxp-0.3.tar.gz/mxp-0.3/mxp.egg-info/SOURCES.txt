@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mxp/__init__.py
+mxp/tests.py
+mxp.egg-info/PKG-INFO
+mxp.egg-info/SOURCES.txt
+mxp.egg-info/dependency_links.txt
+mxp.egg-info/requires.txt
+mxp.egg-info/top_level.txt
