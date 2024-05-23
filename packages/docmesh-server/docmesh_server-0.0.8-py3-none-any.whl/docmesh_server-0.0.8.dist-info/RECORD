@@ -1,0 +1,15 @@
+docmesh_server/__init__.py,sha256=JGsiEC4pEqasIRccScHN1bRSND77NDrB8uS54s3DpOQ,64
+docmesh_server/database.py,sha256=Da-WRZX-DOq-ZDOh2zrPNGeY3hTnrofD6ZPxFlv2ijI,707
+docmesh_server/dependencies.py,sha256=c6IXtaYkyNu9BYIW5e5kZt1qwkndl_wvFoahi6jVQOs,1220
+docmesh_server/main.py,sha256=BVUahRI4str2btjlakVgpcFqBZD_uQg16tQtmQXofCM,1090
+docmesh_server/internals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docmesh_server/internals/admin.py,sha256=YRZvaLZlIxs5Xtm1HHuUPCzAnlJmG6OVLebiXg9HjrA,1361
+docmesh_server/internals/collections.py,sha256=NQz7Rn6SNfza6OWyGtOsVCNGPPiOx-fpXb-hSZ6AKrY,2131
+docmesh_server/internals/embeddings.py,sha256=t7PW0BzTNfwBEg2hsszdMYbTnssPoVOyhTVZCnPSE8w,960
+docmesh_server/internals/venues.py,sha256=qrTIfkhE4L4R1VmrIaW9qqPg-lVL7ZBGEov3r_QXlPk,1604
+docmesh_server/routers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docmesh_server/routers/agents.py,sha256=ALuiRqzSwkAFeSE-TGvAncnJavuIHWDkQSY-4KNN8oQ,1138
+docmesh_server/routers/papers.py,sha256=ms0jh4s2rKQ6Roo8j8Tyc8pfOByM4cEcGRnvNGrzySE,2466
+docmesh_server-0.0.8.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+docmesh_server-0.0.8.dist-info/METADATA,sha256=4cMvWBcWyFMeeX8X2bEjnhGD_Zt9gPHbVB_3NXFZ-JY,586
+docmesh_server-0.0.8.dist-info/RECORD,,
