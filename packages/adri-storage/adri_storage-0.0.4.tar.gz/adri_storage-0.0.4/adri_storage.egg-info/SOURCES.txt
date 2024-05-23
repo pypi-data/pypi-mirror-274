@@ -1,0 +1,12 @@
+pyproject.toml
+adri_storage/__init__.py
+adri_storage/client.py
+adri_storage/client_enums.py
+adri_storage/client_factory.py
+adri_storage/local_client.py
+adri_storage/s3_client.py
+adri_storage.egg-info/PKG-INFO
+adri_storage.egg-info/SOURCES.txt
+adri_storage.egg-info/dependency_links.txt
+adri_storage.egg-info/requires.txt
+adri_storage.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adri_storage"
+version = "0.0.4"
+authors = [
+  { name="Khalid Rasool", email="khalid.rasool@adri.nz" },
+  { name="Eslam Allam", email="eslam.allam@adri.nz" }
+]
+description = "ADRI Storage Python SDK"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "boto3 ==1.18.0",
+    "botocore ==1.21.0",
+    "requests ==2.26.0",
+]
