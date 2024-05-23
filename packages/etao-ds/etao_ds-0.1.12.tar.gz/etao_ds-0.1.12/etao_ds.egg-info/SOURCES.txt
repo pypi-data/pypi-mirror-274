@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+etao_ds.egg-info/PKG-INFO
+etao_ds.egg-info/SOURCES.txt
+etao_ds.egg-info/dependency_links.txt
+etao_ds.egg-info/top_level.txt
