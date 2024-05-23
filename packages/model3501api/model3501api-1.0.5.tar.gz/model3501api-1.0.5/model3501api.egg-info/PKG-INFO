@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: model3501api
+Version: 1.0.5
+Summary: API for MCCI Type C Super MUTT Model 3501
+Home-page: https://github.com/mcci-usb/model3501lib
+Author: MCCI Corporation
+Author-email: vinayn@mcci.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyusb
+
+MCCI Model 3501 SuperMUTT Python based library for control and operation
