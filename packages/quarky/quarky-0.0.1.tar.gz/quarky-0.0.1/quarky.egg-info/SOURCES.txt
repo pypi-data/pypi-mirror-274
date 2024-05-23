@@ -1,0 +1,5 @@
+pyproject.toml
+quarky.egg-info/PKG-INFO
+quarky.egg-info/SOURCES.txt
+quarky.egg-info/dependency_links.txt
+quarky.egg-info/top_level.txt
