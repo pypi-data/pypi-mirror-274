@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: profile-zoominfo-graphql-imp-local
+Version: 0.0.13
+Home-page: https://github.com/circles-zone/profile-zoominfo-graphql-imp-local-python-package
+Author: Circles
+Author-email: info@circlez.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: zoomus >=1.2.1
+Requires-Dist: language-remote >=0.0.20
+Requires-Dist: logger-local >=0.0.135
+Requires-Dist: profile-local >=0.0.64
+Requires-Dist: python-sdk-remote >=0.0.93
+
+Profile ZoomInfo GraphQL Implementation Local Python Package
