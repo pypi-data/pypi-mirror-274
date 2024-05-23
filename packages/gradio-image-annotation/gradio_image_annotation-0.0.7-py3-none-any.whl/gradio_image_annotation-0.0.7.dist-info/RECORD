@@ -1,0 +1,13 @@
+gradio_image_annotation/__init__.py,sha256=rtUcY7vH0x7NZ-r9koXlV0QGRgu2OSbRn7Rd-fAyRKc,81
+gradio_image_annotation/image_annotator.py,sha256=pjMhuDjrBb-W1asX_50BV0ebHJYbu3Fle3wabF1u3lU,14309
+gradio_image_annotation/image_annotator.pyi,sha256=6SDWO5RrKtp6Q9UfuVKMAcjufS8IR01NAV_zAZEiWh8,29516
+gradio_image_annotation/templates/component/__vite-browser-external-DYxpcVy9.js,sha256=-MRWAx5QAcDNpIN82e46M9eb7roSDsYz7J2ZBjL7KqY,41
+gradio_image_annotation/templates/component/index.js,sha256=YJS2P0q0UoAzHVr24nDKg9k7jTUGcVym1Divjt84ByA,248135
+gradio_image_annotation/templates/component/style.css,sha256=yCUIp5oIiNJw7vkfmwcoGI_hLkAiNJESeNHx1r1_rHA,24083
+gradio_image_annotation/templates/component/wrapper-6f348d45-DjpFDl6n.js,sha256=uPNnQU--XHALoU33W5WrS2HgofMx5SodK-Ydh2S7W0U,78062
+gradio_image_annotation/templates/example/index.js,sha256=0WpDXq0azUu2BC_jExsYOYbicHl0ST8UDgiTIOiCdCU,81736
+gradio_image_annotation/templates/example/style.css,sha256=Nasuf3wqUDO_rsrMkTTylx7MFThcphgRxEEZGnh70Bs,21565
+gradio_image_annotation-0.0.7.dist-info/METADATA,sha256=m-ZsrOxR42MRL0kB-vKe-dF7ABScRJYgbUa-zDI3lMw,13705
+gradio_image_annotation-0.0.7.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+gradio_image_annotation-0.0.7.dist-info/licenses/LICENSE,sha256=vtQnXyZg4Gvb4BT5EYedPO0faJSPCgrw36r8YL-r_yE,1069
+gradio_image_annotation-0.0.7.dist-info/RECORD,,
