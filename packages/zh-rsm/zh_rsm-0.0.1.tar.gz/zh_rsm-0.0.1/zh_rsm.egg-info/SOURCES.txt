@@ -1,0 +1,7 @@
+README.md
+setup.py
+rsm/__init__.py
+zh_rsm.egg-info/PKG-INFO
+zh_rsm.egg-info/SOURCES.txt
+zh_rsm.egg-info/dependency_links.txt
+zh_rsm.egg-info/top_level.txt
