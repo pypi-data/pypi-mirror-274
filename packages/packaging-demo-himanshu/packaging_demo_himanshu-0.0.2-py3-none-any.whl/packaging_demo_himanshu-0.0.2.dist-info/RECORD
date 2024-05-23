@@ -1,0 +1,11 @@
+packaging_demo/__init__.py,sha256=rWWgBXhOQakEGEip4jZgZsmGHkIU08m01PRgPUfmHdg,17
+packaging_demo/colorized_demo.py,sha256=qNBZpxW3Ty3XICVx1-x70-0Z8FpFoykZFvCldAyH-yg,110
+packaging_demo/my_file.py,sha256=-3TNpQNDo3at0RSTOUHlhpqotXbInRvOmUbFRH3upOw,231
+packaging_demo/my_other_file.py,sha256=D2WDBhqCRiboMzbrj1UbtlSOVstbUKb6pZBmcJhrRrg,56
+packaging_demo/states_info.py,sha256=bMFsBxVToW4jTWQdFAUUo-FEp1ka3vpD4pVz2OSMJiA,837
+packaging_demo/my_folder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_demo/my_folder/my_nested_file.py,sha256=NiPi7ViB8-RLLT7TLxMBba5EUQcMBsYuTM95c6-uDtw,216
+packaging_demo_himanshu-0.0.2.dist-info/METADATA,sha256=MOS7oGu2vAXffhTQsJ_P4qtCSFKircmmDuXokrRaqNY,885
+packaging_demo_himanshu-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+packaging_demo_himanshu-0.0.2.dist-info/top_level.txt,sha256=JQYuoHLSBUdWNZjDus5DYc3ohopasuGzDPZpph3ynKg,15
+packaging_demo_himanshu-0.0.2.dist-info/RECORD,,
