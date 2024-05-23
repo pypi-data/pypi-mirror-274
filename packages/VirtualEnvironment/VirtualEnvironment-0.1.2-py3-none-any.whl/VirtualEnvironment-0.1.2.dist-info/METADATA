@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: VirtualEnvironment
+Version: 0.1.2
+Summary: Sets up a CLI app to write a file through an application.
+Author: kunaalg
+Author-email: <kunaal@runcode.in>
+Keywords: python,FileWriter,App,Javascript,Function,math
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: datetime
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: virtualenv
+
+
+A Virtual Environment Builder & Virtual Environment Writer
+
+
+
+from src.VirtEnv import BuildVenv
+
+
+
+
+

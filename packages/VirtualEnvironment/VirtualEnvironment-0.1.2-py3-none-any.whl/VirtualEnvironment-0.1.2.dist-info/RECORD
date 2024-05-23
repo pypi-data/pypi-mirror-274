@@ -1,0 +1,11 @@
+VirtualEnvironment-0.1.2.data/data/src/VirtEnv/VirtEnv.py,sha256=4_r0mTnmPjSNktdYhnuO6pYtOGFyftT8FFpYh83fgJQ,163
+VirtualEnvironment-0.1.2.data/data/src/VirtualEnvWriter.py/VirtualEnvWriter.py,sha256=2zDIAQeCKuEFGYcUHe8s1NEDd5vkH_qGQlqPM-1GdGI,170
+VirtualEnvironment-0.1.2.data/scripts/run.sh,sha256=0fbUDEO62I4JWhQv_Esus0DQ4Y0f9tXzxd9LTC3GJww,308
+src/VirtEnv.py,sha256=4_r0mTnmPjSNktdYhnuO6pYtOGFyftT8FFpYh83fgJQ,163
+src/VirtualEnvWriter.py,sha256=2zDIAQeCKuEFGYcUHe8s1NEDd5vkH_qGQlqPM-1GdGI,170
+src/__init__.py,sha256=QcBEHl_jObYYkltw3rjxyBYGyQsPyCTtjdjmy-2G65M,56
+VirtualEnvironment-0.1.2.dist-info/LICENCE,sha256=XWS4SkiORFuzv5b5eWM6RERQj1DikLNnOr95lWU5Alo,1083
+VirtualEnvironment-0.1.2.dist-info/METADATA,sha256=_9UYX_MqV3Ol4n8QGWUBhKXwAufPZBCyNby4U8LMMtU,802
+VirtualEnvironment-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+VirtualEnvironment-0.1.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+VirtualEnvironment-0.1.2.dist-info/RECORD,,
