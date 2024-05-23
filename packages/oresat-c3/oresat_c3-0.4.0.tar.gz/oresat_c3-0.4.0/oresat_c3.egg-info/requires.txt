@@ -1,0 +1,7 @@
+bitstring
+cfdp-py
+dataclasses-json
+oresat-configs
+oresat-olaf>=3.5.0
+smbus2
+spacepackets
