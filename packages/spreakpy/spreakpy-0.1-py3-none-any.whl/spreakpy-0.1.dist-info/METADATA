@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: spreakpy
+Version: 0.1
+Summary: A voice and audio package
+Home-page: https://github.com/PrathamGhaywat/spreakpy
+Author: P.Ghaywat
+Author-email: Pratham.Ghaywat@outlook.com
+Requires: pyttsx3
+Requires: googletrans
+Requires: PyPDF2
+Requires: gTTS
+Requires: os
+Requires: nltk
+Requires: pocketsphinx
+Requires: scipy
+
+A python package that uses famous tts and audio packages to simplfy them and give a devloper less work to do
