@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pylwr
+Version: 1.0.14
+Summary: 各种包使用的二次封装
+Home-page: https://gitee.com/linwanrui/pylwr
+Author: linwr
+Author-email: linwr <953297255@qq.com>
+Project-URL: Homepage, https://gitee.com/linwanrui/pylwr
+Project-URL: Bug Tracker, https://gitee.com/linwanrui/pylwr/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python第三方包二次封装
+
+应该会用到一些其他依赖
+
+## 注意
+
+由于oracledb的原因，python版本需要大于3.7
+
+## 封装依赖
+
+```shell
+pip install build
+pip install openpyxl
+pip install twine
+pip install pymysql
+pip install oracledb
+pip install scapy
+pip install psutil
+pip install loguru
+pip install dataclasses-json
+```
+
+## 安装
+
+```shell
+pip install pylwr
+```
+
+打包与上传
+
+```shell
+Remove-Item -Path "dist" -Recurse -Force ; python -m build
+Remove-Item -Path "build" -Recurse -Force ; python setup.py sdist bdist_wheel
+python -m twine upload dist\*
+```
