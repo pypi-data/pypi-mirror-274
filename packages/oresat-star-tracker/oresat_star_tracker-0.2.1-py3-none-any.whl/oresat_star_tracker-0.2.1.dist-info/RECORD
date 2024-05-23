@@ -1,0 +1,12 @@
+oresat_star_tracker/__init__.py,sha256=vyqnNvLKfx6snEyhqMGRTH4TLsmjLxLNw7K-2Np2ePs,173
+oresat_star_tracker/__main__.py,sha256=eKZfB_Pib-GB6KIzB_2OlvrWGDDQTtORTReHbcFNYtg,872
+oresat_star_tracker/_version.py,sha256=MxUhzLJIZQfEpDTTcKSxciTGrMLd5v2VmMlHa2HGeo0,411
+oresat_star_tracker/camera.py,sha256=QC9UmATPF9Cuf9GmWFTca8Su-b7MJeAAJ0lrsl0kOxc,2373
+oresat_star_tracker/star_tracker_service.py,sha256=wKKVMczW9ebPEvs_giNwg-IzjJPHB_QsdMHD51ucPU8,11656
+oresat_star_tracker/templates/star_tracker.html,sha256=D_hzJdbPlntiUXWP8FEmrY8YsYB6SGdlrqvl2Z9aeUY,7612
+oresat_star_tracker-0.2.1.dist-info/LICENSE,sha256=Fp_XVIMnwKysTtNBBaIzWM1GQdZ1kOpUsYcpbFHDURE,1084
+oresat_star_tracker-0.2.1.dist-info/METADATA,sha256=IUlpw-Iehb3RBlup1lzsVS6OXWGTz8aTUNM1kiXEWtI,2467
+oresat_star_tracker-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+oresat_star_tracker-0.2.1.dist-info/entry_points.txt,sha256=Gwa0KS_jghNi6WqNw4isR6HWGRV9BwCZepbBExNvb7I,74
+oresat_star_tracker-0.2.1.dist-info/top_level.txt,sha256=4IC2Ui7GOzje_bI3Tf3_rhS9FQl_Mje6i6Pb-wsXoCY,20
+oresat_star_tracker-0.2.1.dist-info/RECORD,,
