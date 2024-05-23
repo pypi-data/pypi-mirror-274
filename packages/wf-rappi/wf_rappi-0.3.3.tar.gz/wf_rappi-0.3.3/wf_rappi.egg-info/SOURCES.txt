@@ -1,0 +1,16 @@
+setup.py
+estawf_rappi copia/__init__.py
+estawf_rappi copia/data_processing.py
+estawf_rappi copia/dbconn.py
+estawf_rappi copia/export.py
+estawf_rappi copia/fetch_data.py
+estawf_rappi copia/main.py
+estawf_rappi copia/modeling.py
+estawf_rappi copia/order_distribution.py
+estawf_rappi copia/wfm_functions.py
+wf_rappi.egg-info/PKG-INFO
+wf_rappi.egg-info/SOURCES.txt
+wf_rappi.egg-info/dependency_links.txt
+wf_rappi.egg-info/entry_points.txt
+wf_rappi.egg-info/requires.txt
+wf_rappi.egg-info/top_level.txt
