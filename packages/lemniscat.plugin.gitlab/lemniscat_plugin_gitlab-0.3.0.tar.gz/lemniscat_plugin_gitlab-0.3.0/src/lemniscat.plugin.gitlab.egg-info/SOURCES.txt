@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/lemniscat.plugin.gitlab.egg-info/PKG-INFO
+src/lemniscat.plugin.gitlab.egg-info/SOURCES.txt
+src/lemniscat.plugin.gitlab.egg-info/dependency_links.txt
+src/lemniscat.plugin.gitlab.egg-info/requires.txt
+src/lemniscat.plugin.gitlab.egg-info/top_level.txt
+src/lemniscat/plugin/gitlab/__init__.py
+src/lemniscat/plugin/gitlab/gitLab.py
+src/lemniscat/plugin/gitlab/main.py
+src/lemniscat/plugin/gitlab/plugin.yaml
+src/lemniscat/plugin/gitlab/requirements.txt
