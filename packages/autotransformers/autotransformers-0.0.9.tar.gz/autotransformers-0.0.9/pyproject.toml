@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "autotransformers"
+version = "0.0.9"
+description = "a Python package for automatic training and benchmarking of Language Models."
+authors = [
+    "LenguajeNatural.AI <avaca@lenguajenatural.ai>"
+]
+license = "CC BY-NC-SA 4.0"
+readme = "README.md"
+homepage = "https://lenguajenatural.ai"
+repository = "https://github.com/lenguajenatural-ai/autotransformers"
+keywords = ["large-language-models", "language-models", "natural-language-processing", "nlp", "transformers", "hyperparameter-tuning", "automatic-training"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9.13"
+datasets = "^2.17.1"
+transformers = {extras = ["torch"], version = "4.38.2"}
+bitsandbytes = "^0.42.0"
+peft = "^0.8.2"
+trl = "^0.7.11"
+optuna = "^3.0.2"
+scikit-learn = "^1.0.2"
+nltk = "^3.7"
+rouge_score = "^0.1.2"
+tensorboard = "^2.10.1"
+tensorboardX = "^2.5.1"
+sentencepiece = "^0.1.97"
+apscheduler = "^3.6.3"
+seaborn = "^0.12.0"
+nlpaug = "^1.1.11"
+simpletransformers = "^0.61.10"
+pandas = "^1.3.5"
+tqdm = "^4.64.1"
+evaluate = "^0.2.2"
+more-itertools = "^8.14.0"
+polyfuzz = "^0.4.0"
+seqeval = "^1.2.2"
+accelerate = "0.27.2"
+scipy = "^1.11.0"
+einops = "^0.6.1"
+pytest = "^7.1.3"
+
+[tool.poetry.dev-dependencies]
+sphinxemoji = "^0.2.0"
+sphinx = "^5.3.0"
+sphinx-rtd-theme = "^1.1.1"
+readthedocs-sphinx-search = "^0.3.2"
+sphinxcontrib-applehelp = "^1.0.2"
+sphinxcontrib-devhelp = "^1.0.2"
+sphinxcontrib-htmlhelp = "^2.0.0"
+sphinxcontrib-jsmath = "^1.0.1"
+sphinxcontrib-qthelp = "^1.0.3"
+sphinxcontrib-serializinghtml = "^1.1.5"
+numpydoc = "^1.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
