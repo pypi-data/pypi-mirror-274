@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test_validator.py
+vin_validator/__init__.py
+vin_validator/validator.py
+vin_validator.egg-info/PKG-INFO
+vin_validator.egg-info/SOURCES.txt
+vin_validator.egg-info/dependency_links.txt
+vin_validator.egg-info/requires.txt
+vin_validator.egg-info/top_level.txt
