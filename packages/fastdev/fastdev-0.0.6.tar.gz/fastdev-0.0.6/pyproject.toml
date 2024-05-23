@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastdev"
+version = "0.0.6"
+authors = [{ name = "Jianglong Ye", email = "jianglong.yeh@gmail.com" }]
+description = "Type less, code more"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "typing-extensions",
+    "fastcore",
+    "msgspec[toml,yaml]",
+    "rich",
+    "fsspec",
+    "universal_pathlib",
+    "huggingface_hub[cli,hf_transfer]",
+    "GitPython",
+]
+
+[project.optional-dependencies]
+dev = ["build", "twine", "ipython", "ruff", "pytest", "mypy", "types-PyYAML"]
+doc = ["sphinx", "furo", "docutils", "sphinx-autoapi", "m2r2", "setuptools"]
+
+[project.urls]
+Repository = "https://github.com/jianglongye/fastdev"
+
+[tool.ruff]
+exclude = ["playground", "tests"]
+line-length = 120
+
+[tool.mypy]
+exclude = ["playground", "tests", "dexycb.py"]
+ignore_missing_imports = true
