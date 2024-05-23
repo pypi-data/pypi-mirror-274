@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: llm-microscope
+Version: 0.0.1
+Summary: Official implementation of the LLM-analysis functions for the paper "Your Transformer is Secretly Linear"
+Home-page: https://github.com/AIRI-Institute/LLM-Microscope
+Author: Matvey Mikhalchuk
+Author-email: mikhalchuk@airi.net
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch >=2.1.0
+
+# LLM-Microscope
+
+This package contains the official implementation of the functions for 
+LLM features analysis for the paper [Your Transformer is Secretly 
+Linear](https://arxiv.org/abs/2405.12250).
+
+
