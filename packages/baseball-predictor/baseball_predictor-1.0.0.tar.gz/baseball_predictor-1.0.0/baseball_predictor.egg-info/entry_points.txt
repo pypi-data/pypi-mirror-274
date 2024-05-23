@@ -1,0 +1,2 @@
+[console_scripts]
+baseball_predictor = baseball_predictor.app:main

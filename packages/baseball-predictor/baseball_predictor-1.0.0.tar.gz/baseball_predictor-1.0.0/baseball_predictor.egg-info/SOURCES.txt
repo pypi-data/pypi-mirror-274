@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+baseball_predictor.egg-info/PKG-INFO
+baseball_predictor.egg-info/SOURCES.txt
+baseball_predictor.egg-info/dependency_links.txt
+baseball_predictor.egg-info/entry_points.txt
+baseball_predictor.egg-info/not-zip-safe
+baseball_predictor.egg-info/requires.txt
+baseball_predictor.egg-info/top_level.txt

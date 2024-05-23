@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: baseball_predictor
+Version: 1.0.0
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: streamlit
