@@ -1,0 +1,11 @@
+__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+papers_dl.py,sha256=_Q0QcBQC835bJaM7ziFIIMRGrSFoHyYKM8MAQ53zu4Q,3735
+parse.py,sha256=XUxR_hE2dB24ocLLdCUwTaryodAi0q9rw8IasF_v6r4,2384
+scihub.py,sha256=dAmhdMoei3ZZU4Ciji7C3zouvO5xSNPyNNvyBtSckSM,7881
+version.py,sha256=TvNLr5O3E4Xhbm2O1k29yxfS8T2WSS5s7XXog8OYhwM,20
+papers_dl-0.0.6.dist-info/LICENSE,sha256=YIBNfGgk3v3n85eIGBpTMYIsb0zwCsi3Ng4KbWaJWNQ,1070
+papers_dl-0.0.6.dist-info/METADATA,sha256=TPVnrrxk1rnDng9Ie_dONA8ayWMAnOdWeaorR_TmhpU,2640
+papers_dl-0.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+papers_dl-0.0.6.dist-info/entry_points.txt,sha256=gEpygZ-R0aSY4mV7-Ti3FTXXMuf4juVTeQZVJCf96WQ,45
+papers_dl-0.0.6.dist-info/top_level.txt,sha256=mTgLtk-9_gc2XUenolzYW84W80KhRkiZ4VbZbmsxIlE,40
+papers_dl-0.0.6.dist-info/RECORD,,
