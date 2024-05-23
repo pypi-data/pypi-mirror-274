@@ -1,0 +1,15 @@
+mdxcanvas/__init__.py,sha256=qc1nrmPK3uchdmrR7pOfPWHIeKr6IDhQ1YaVc0s79ps,156
+mdxcanvas/canvas_creator.py,sha256=ntI2sPHHJLM6yLZ5VY05y8JqsUVmzIrErtlN279hIJY,26881
+mdxcanvas/deploy.py,sha256=e1Hj-jPWXTyX-toSoTRImbVwET4VKkS1N26Zc7yAVO8,1053
+mdxcanvas/document_schema.py,sha256=lv6KJuDd6e6kwMwc2LMf0RCtfUlPwP4C7YY_11q4Ep0,3393
+mdxcanvas/extensions.py,sha256=L0QkxpPBKCEOJjmE9Hnw4KeyJtAH6HPFfU-JEsgG4sU,2446
+mdxcanvas/jinja_parser.py,sha256=V7j7kY3mt5dNm6gdCbgryOUJeJliQvA3PhTbwlXHPss,2689
+mdxcanvas/parser.py,sha256=gyJVvWq6GVLmX71lP7tzDhdn46UUafTLZQicWG4-3L0,25520
+mdxcanvas/question_schema.py,sha256=ayGKYwxw1zm2Kb9rthCW8LPDYDcjbbFqao1cYa1k68Y,559
+mdxcanvas/templating.py,sha256=2321J1N1E5W_U9HbYQlupg7R9hkcM2r7gAdFq7Bmht4,1878
+mdxcanvas/yaml_parser.py,sha256=Yt2p7FjmnKZET3pQNYMC_wTAqI9Wr-322vrfJcHz1uE,15263
+mdxcanvas-0.2.0.dist-info/LICENSE,sha256=oB3hA0YO-CaRruKFNFX39MzraymCi9a4WIYfwEYhiSM,1065
+mdxcanvas-0.2.0.dist-info/METADATA,sha256=TkL8s-kZEXf3hpq_NLasi3EZg6ivFkF54XV4OVsUd4w,754
+mdxcanvas-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+mdxcanvas-0.2.0.dist-info/entry_points.txt,sha256=lmpwKohyYxY8TgIvIYvvPb1lldfA3bUYu4QOqBFgHmw,52
+mdxcanvas-0.2.0.dist-info/RECORD,,
