@@ -1,0 +1,9 @@
+aplr_cpp.pypy310-pp73-x86_64-linux-gnu.so,sha256=XVxHL7ewhez3w1d8vDLJfbJGGrwYXok2ZELYy9a3c_w,1093969
+aplr.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+aplr-10.0.0.dist-info/WHEEL,sha256=3Y5qWT1hb5eppjOJHywCVkGE5nhDErnd4HkIuOfKfwk,166
+aplr-10.0.0.dist-info/top_level.txt,sha256=DXVC0RIFGpzVnPeKWAZTXQdJheOEZL51Wip6Fx7zbR4,14
+aplr-10.0.0.dist-info/RECORD,,
+aplr-10.0.0.dist-info/METADATA,sha256=40rCD5E6Em56IZdafbMWBYJoCG-lk_0o24fEuGIIzIg,2043
+aplr-10.0.0.dist-info/LICENSE,sha256=g4qcQtkSVPHtGRi3T93DoFCrssvW6ij_emU-2fj_xfY,1113
+aplr/__init__.py,sha256=rRfTgNWnYZlFatyA920lWqBcjwmQUI7FcvEPFUTJgzE,20
+aplr/aplr.py,sha256=yxKO0Zs7vWGZzy_EXCFOdAdHDTGmRRZjSsEa_099gt4,22275
