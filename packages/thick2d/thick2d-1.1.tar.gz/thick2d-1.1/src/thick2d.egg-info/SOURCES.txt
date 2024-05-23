@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/optimize_struct.py
+src/optimize_struct_qe.py
+src/predict_thickness_2D.py
+src/read_write.py
+src/thick2d
+src/write_inputs.py
+src/thick2d.egg-info/PKG-INFO
+src/thick2d.egg-info/SOURCES.txt
+src/thick2d.egg-info/dependency_links.txt
+src/thick2d.egg-info/requires.txt
+src/thick2d.egg-info/top_level.txt
