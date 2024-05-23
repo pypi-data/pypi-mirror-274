@@ -1,0 +1,13 @@
+hdx/location/Countries & Territories Taxonomy MVP - C&T Taxonomy with HXL Tags.csv,sha256=wzb5SO55bFYiznmmkdPtz_2qnxmCbACYVuPBw_qMy4s,76222
+hdx/location/__init__.py,sha256=e8kW6TpCo4e2X3HLqq8cU1nSYQxFPEVWpc19LR_p-ng,419
+hdx/location/_version.py,sha256=5OoUNztOnC6PdDRrbR-g3ywy74s6L6xRlt5nq2dAL38,411
+hdx/location/adminlevel.py,sha256=DyYeJuvRCtAtgP0S4T7yO15sI6tnNjwgTdTuv1xjIDc,30519
+hdx/location/country.py,sha256=ROSUChkeS78pNJbueLF_W3Nh7a8IaV0wkhrX22qHO7k,32557
+hdx/location/currency.py,sha256=04qqdEXdEHsMt25ZniGA3a7MucB2FzcrAENIbm2U0Gk,20070
+hdx/location/names.py,sha256=a3ExU-XGyNnWaO7aoay9-prAnTAMfB18AXAi20jiQuI,696
+hdx/location/phonetics.py,sha256=-CChGKRPNXNeV1a1-B16AZE5WZA6T2Y2-Ll5M2TFRxA,2012
+hdx/location/wfp_exchangerates.py,sha256=tHhqXVOtLxBrym283pUKpSKywDzTEwVkaSzpXsXBxQk,3449
+hdx_python_country-3.7.2.dist-info/METADATA,sha256=hSroMIGSL4KVuFx2AaPjlUyKXtuCJV9YEiWi0047jSc,3809
+hdx_python_country-3.7.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+hdx_python_country-3.7.2.dist-info/licenses/LICENSE,sha256=nFnLKrWlg4a8nMeNDVtfSvja93eDZ4i6fw7xwlXB1cA,1307
+hdx_python_country-3.7.2.dist-info/RECORD,,
