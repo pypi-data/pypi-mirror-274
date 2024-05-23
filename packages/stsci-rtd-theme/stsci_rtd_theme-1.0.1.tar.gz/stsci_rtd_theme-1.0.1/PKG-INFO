@@ -1,0 +1,144 @@
+Metadata-Version: 2.1
+Name: stsci-rtd-theme
+Version: 1.0.1
+Summary: STScI Branded Sphinx theme
+Author-email: STScI <help@stsci.edu>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2017, AURA
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of the copyright holder nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: repository, https://github.com/spacetelescope/stsci_rtd_theme
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.rst
+Requires-Dist: sphinx>=1.3
+Requires-Dist: sphinx-rtd-theme
+
+# `stsci-rtd-theme`
+
+This is a Sphinx theme for packages maintained by the Space Telescope Sciences Institute (STScI).
+
+![Example](stsci_rtd_theme_example.png)
+
+This theme inherits from `sphinx-rtd-theme`; however, the CSS styling has been altered for easier reading on a variety
+of platforms and browsers.
+
+## Installation
+
+You can apply this theme to your current documents by installing the latest release from PyPI:
+
+```shell
+pip install stsci-rtd-theme
+```
+
+If you need the most up-to-date version of the `master` branch, you can install directly from GitHub:
+
+```shell
+pip install https://github.com/spacetelescope/stsci_rtd_theme.git
+```
+
+If you wish to modify the source code, you should clone the repository locally and install editable (`-e`):
+
+```shell
+git clone https://github.com/spacetelescope/stsci_rtd_theme.git
+cd stsci_rtd_theme
+pip install -e .
+```
+
+### Sphinx configuration
+
+If you haven't already created your Sphinx documentation, you can start sphinx with
+`sphinx-quickstart` and follow the guided steps. When you are finished, add these lines to your `docs/conf.py` file:
+
+```python
+# docs/conf.py
+
+import stsci_rtd_theme
+
+html_theme = 'stsci_rtd_theme'
+html_theme_path = [stsci_rtd_theme.get_html_theme_path()]
+```
+
+### ReadTheDocs configuration
+
+Add the following lines to your `docs/conf.py` file:
+
+```python
+# docs/conf.py
+
+import sphinx
+import os
+from packaging.version import Version
+
+
+def setup(app):
+    app.add_css_file("stsci.css")
+
+
+extensions = [
+    ...
+]
+
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+if on_rtd:
+    extensions.append('sphinx.ext.mathjax')
+elif Version(sphinx.__version__) < Version('1.4'):
+    extensions.append('sphinx.ext.pngmath')
+else:
+    extensions.append('sphinx.ext.imgmath')
+```
+
+Finally, make sure to include `stsci-rtd-theme` to the `docs` extra, or alternatively add `stsci-rtd-theme` to
+a `rtd-requirements.txt` file. Then, in `.readthedocs.yaml`, include the following (depending on which of the two methods
+are used to define the `stsci-rtd-theme` dependency):
+
+```yaml
+# .readthedocs.yaml
+install:
+  - method: pip
+    path: .
+    extra_requirements:
+      - docs
+```
+
+```yaml
+# .readthedocs.yaml
+install:
+  - requirements: .rtd-requirements.txt
+  - method: pip
+    path: .
+```
