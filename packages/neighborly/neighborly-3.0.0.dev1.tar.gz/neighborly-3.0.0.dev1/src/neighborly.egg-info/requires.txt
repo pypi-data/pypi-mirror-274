@@ -1,0 +1,17 @@
+esper==2.*
+ordered-set==4.*
+tabulate==0.9.*
+PyYAML==6.0.*
+tqdm==4.*
+pydantic==2.*
+pandas==2.*
+
+[development]
+isort
+black
+black[d]
+build
+pytest
+pytest-cov
+sphinx
+sphinx_rtd_theme
