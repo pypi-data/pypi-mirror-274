@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: data_preprocessing_lib_rbb
+Version: 0.0.1b0
+Summary: A data preprocessing library in Python
+Home-page: https://github.com/rafetbartug
+Author-email: rafetbartug@gmail.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: nltk
+Requires-Dist: scikit-learn
+
+# Data Preprocessing Library
+
+A comprehensive data preprocessing library in Python. This library provides various functions for data cleaning, transformation, and manipulation operations, designed to make your data preprocessing tasks easier and more efficient.
+
+## Features
+
+- **Handling Missing Values**: Mean, median, constant imputation, and deletion.
+- **Outlier Detection and Correction**: IQR method with threshold.
+- **Data Standardization and Normalization**: Min-Max and Standard normalization.
+- **Text Cleaning and Manipulation**: Remove stopwords, lowercase conversion, punctuation removal, lemmatization (requires NLTK).
+- **Feature Engineering**: Create new features from existing ones.
+- **Data Type Conversion**: Convert to numeric, categorical, and datetime.
+- **Encoding Categorical Data**: One-hot encoding and label encoding.
+- **Date and Time Manipulation**: Extract date components, calculate date differences.
+
+## Usage
+
+**Here's an example of how to use the library:**
+
+- # Load the data
+    - data = pd.read_csv('synthetic_sample_data.csv')
+
+- # Handling missing values
+    - missing_handler = MissingValueHandler(strategy="mean")
+    - data = missing_handler.fit_transform(data)
+
+- # Outlier detection and correction
+    - outlier_handler = OutlierHandler(method="iqr", threshold=1.5)
+    - data = outlier_handler.fit_transform(data)
+
+- # Data standardization
+    - scaler = Scaler(method="standard")
+    - data = scaler.fit_transform(data)
+
+- # Text cleaning
+    - text_cleaner = TextCleaner(remove_stopwords=True, lemmatize=True)
+      - if 'Summary' in data.columns:
+            data['Summary'] = data['Summary'].astype(str).apply(text_cleaner.clean)
+
+- # Encoding categorical data
+    - if 'Genre' in data.columns:
+        data, _ = CategoricalEncoder.label_encode(data, 'Genre')
+    - if 'Shooting Location' in data.columns:
+        data, _ = CategoricalEncoder.one_hot_encode(data, 'Shooting Location')
+
+  - # Date and time manipulation
+      - if 'Release Date' in data.columns:
+        data = DateTimeHandler.convert_to_datetime(data, 'Release Date', format='%d/%m/%Y')
+        data = DateTimeHandler.extract_date_component(data, 'Release Date', 'year')
+
+  - # Feature engineering
+      - if 'Budget in USD' in data.columns and 'Awards' in data.columns:
+            data = FeatureEngineer.add_difference(data, 'Budget in USD', 'Awards', 'Budget_Awards_Diff')
+      - if 'Rating' in data.columns and 'Popular' in data.columns:
+            data = FeatureEngineer.add_product(data, 'Rating', 'Popular', 'Rating_Times_Popular')
+
+- # Data type conversion
+    - if 'Rating' in data.columns:
+        data = DataTypeConverter.to_numeric(data, 'Rating')
+    - if 'Genre' in data.columns:
+        data = DataTypeConverter.to_categorical(data, 'Genre')
+
+    print(data.head())
+
+
+## Licence
+
+-   This project is licensed under the **MIT License**.
+
+## Contact
+
+- **Author**: Rafet BartuÄŸ BartÄ±nlÄ±
+- **Email**: rafetbartug@gmail.com
+
+## Installation
+
+- To install the library, use the following command:
+
+```bash
+pip install data_preprocessing_lib_rbb
+```
+
+ # Veri Ã–n Ä°ÅŸleme KÃ¼tÃ¼phanesi
+
+Python'da bir veri Ã¶n iÅŸleme kÃ¼tÃ¼phanesi. Bu kÃ¼tÃ¼phane, veri temizleme, dÃ¶nÃ¼ÅŸtÃ¼rme ve manipÃ¼lasyon iÅŸlemleri iÃ§in Ã§eÅŸitli fonksiyonlar sunar, veri Ã¶n iÅŸleme gÃ¶revlerinizi daha kolay ve verimli hale getirmek iÃ§in tasarlanmÄ±ÅŸtÄ±r.
+
+## Ã–zellikler
+
+- **Handling Missing Values**: Ortalama, medyan, sabit deÄŸer ile doldurma ve silme.
+- **Outlier Detection and Correction**:  IQR yÃ¶ntemi ile eÅŸik deÄŸer kullanarak aykÄ±rÄ± deÄŸer tespiti ve dÃ¼zeltilmesi.
+- **Data Standardization and Normalization**: Min-Max ve Standart normalizasyon iÅŸlemleri.
+- **Text Cleaning and Manipulation**: Durdurma kelimelerini Ã§Ä±karma, kÃ¼Ã§Ã¼k harfe Ã§evirme, noktalama iÅŸaretlerini Ã§Ä±karma, kelimeyi kÃ¶kÃ¼ne indirgeme (NLTK kÃ¼tÃ¼phanesinin kullanÄ±mÄ±nÄ± gerektirir).
+- **Feature Engineering**:  Mevcut Ã¶zelliklerden yeni Ã¶zellikler oluÅŸturma.
+- **Data Type Conversion**: SayÄ±sal, kategorik ve gÃ¼n/saat dÃ¶nÃ¼ÅŸÃ¼mleri.
+- **Encoding Categorical Data**: One-hot kodlama ve label kodlama.
+- **Date and Time Manipulation**:  Tarih bileÅŸenlerini Ã§Ä±karma, tarih farklarÄ±nÄ± hesaplama.
+
+## KullanÄ±m
+
+**KÃ¼tÃ¼phaneyi nasÄ±l kullanacaÄŸÄ±nÄ±za dair bir Ã¶rnek:**
+
+- # Veriyi yÃ¼kle
+    - data = pd.read_csv('synthetic_sample_data.csv')
+
+- # Eksik deÄŸerlerin iÅŸlenmesi
+    - missing_handler = MissingValueHandler(strategy="mean")
+    - data = missing_handler.fit_transform(data)
+
+- # AykÄ±rÄ± deÄŸerlerin tespiti ve dÃ¼zeltilmesi
+    - outlier_handler = OutlierHandler(method="iqr", threshold=1.5)
+    - data = outlier_handler.fit_transform(data)
+
+- # # Verinin standartlaÅŸtÄ±rÄ±lmasÄ±
+    - scaler = Scaler(method="standard")
+    - data = scaler.fit_transform(data)
+
+- # Metin temizleme
+    - text_cleaner = TextCleaner(remove_stopwords=True, lemmatize=True)
+      - if 'Summary' in data.columns:
+            data['Summary'] = data['Summary'].astype(str).apply(text_cleaner.clean)
+
+- # Kategorik verilerin kodlanmasÄ±
+    - if 'Genre' in data.columns:
+        data, _ = CategoricalEncoder.label_encode(data, 'Genre')
+    - if 'Shooting Location' in data.columns:
+        data, _ = CategoricalEncoder.one_hot_encode(data, 'Shooting Location')
+
+  - # Tarih ve zaman manipÃ¼lasyonu
+      - if 'Release Date' in data.columns:
+        data = DateTimeHandler.convert_to_datetime(data, 'Release Date', format='%d/%m/%Y')
+        data = DateTimeHandler.extract_date_component(data, 'Release Date', 'year')
+
+  - # Ã–zellik mÃ¼hendisliÄŸi
+      - if 'Budget in USD' in data.columns and 'Awards' in data.columns:
+            data = FeatureEngineer.add_difference(data, 'Budget in USD', 'Awards', 'Budget_Awards_Diff')
+      - if 'Rating' in data.columns and 'Popular' in data.columns:
+            data = FeatureEngineer.add_product(data, 'Rating', 'Popular', 'Rating_Times_Popular')
+
+  - # Veri tipi dÃ¶nÃ¼ÅŸÃ¼mÃ¼
+      - if 'Rating' in data.columns:
+          data = DataTypeConverter.to_numeric(data, 'Rating')
+      - if 'Genre' in data.columns:
+          data = DataTypeConverter.to_categorical(data, 'Genre')
+
+      print(data.head())
+
+
+## Lisans
+
+- Bu proje **MIT LisansÄ±** altÄ±nda lisanslanmÄ±ÅŸtÄ±r.
+
+## Ä°letiÅŸim
+
+- **Author**: Rafet BartuÄŸ BartÄ±nlÄ±
+- **Email**: rafetbartug@gmail.com
+
+## Kurulum
+
+- KÃ¼tÃ¼phaneyi kurmak iÃ§in aÅŸaÄŸÄ±daki komutu kullanÄ±n:
+
+```bash
+pip install data_preprocessing_lib_rbb
+```
