@@ -1,0 +1,3 @@
+[console_scripts]
+rct229=rct229.cli:cli
+
