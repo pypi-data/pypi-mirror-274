@@ -1,0 +1,4 @@
+mkdocs>=1.5.3
+
+[tongyi]
+dashscope
