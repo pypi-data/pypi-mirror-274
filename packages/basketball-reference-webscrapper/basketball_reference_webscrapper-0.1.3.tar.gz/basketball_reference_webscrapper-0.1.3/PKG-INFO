@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: basketball-reference-webscrapper
+Version: 0.1.3
+Summary: Python package for Basketball Reference that gathers data by scraping the website
+Author: Yannick Flores
+Author-email: yannick.flores1992@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (==4.12.*)
+Requires-Dist: numpy (==1.26.*)
+Requires-Dist: pandas (==2.*)
+Requires-Dist: pylint (>=2.15.10,<3.0.0)
+Requires-Dist: pytest
+Requires-Dist: requests (==2.32.*)
+Description-Content-Type: text/markdown
+
+# basketball-reference-webscrapper
+A python package for Basketball Reference that gathers data by scraping the website.
+
