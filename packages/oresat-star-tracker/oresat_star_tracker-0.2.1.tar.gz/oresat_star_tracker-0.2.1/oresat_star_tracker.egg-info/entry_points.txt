@@ -1,0 +1,2 @@
+[console_scripts]
+oresat-star-tracker = oresat_star_tracker.__main__:main

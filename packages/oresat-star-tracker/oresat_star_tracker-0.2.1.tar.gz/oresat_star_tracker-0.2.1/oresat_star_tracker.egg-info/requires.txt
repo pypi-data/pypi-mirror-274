@@ -1,0 +1,7 @@
+imagecodecs
+numpy
+imageio
+opencv-python-headless==4.6.0.66
+oresat-configs
+oresat-olaf>=3.0.0
+tifffile
