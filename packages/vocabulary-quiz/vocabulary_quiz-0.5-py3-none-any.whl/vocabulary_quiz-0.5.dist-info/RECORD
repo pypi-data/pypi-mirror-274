@@ -1,0 +1,16 @@
+App/__init__.py,sha256=E2AiNdroxcqwRO-A5hmouTtWMoZop7m1QwjtZRbjBU0,215
+App/__main__.py,sha256=876xZTqhPeDBD2GKKr8pKX33Af8PhFTosAI8bYQsFgQ,61
+App/app.py,sha256=OHoW_ca6wuvf6T4m7ejkSDbd-Z6tiMe-w7PzVlce8eo,5461
+App/routes.py,sha256=IuNPV6DkmU287hx4npt_Cz7rdZNgewvmmCbaGZPWl1g,5288
+App/static/style.css,sha256=bLdxZ7iF0FaLewOktNL2VGpPe5m-2Kd5wzF-hnarKKM,766
+App/templates/index.html,sha256=Fk8U5jxyps13ftQ7Rf5Inw4g9DaXBPqp8NGurWEoXus,1259
+App/templates/quiz.html,sha256=NAJj8aFQ8qH0adsQrXuz3k0zd5sQxR1ebE2GH7W14Z4,717
+App/templates/result.html,sha256=ZgDswcVthow4XlBm2IO2w6VUpUqLZ783hnuVrYbpcBc,250
+App/templates/scores.html,sha256=O6-BHmXC9KWNTfjmZ7Xnabu3xVrXkxZy8loLo7QW9vU,590
+App/templates/start_quiz.html,sha256=ILGTYUxwRjPmAKNGAqchus_8JdZuO0x7v50JfoWi1Sg,598
+App/templates/view_scores.html,sha256=Zhd1Zx73vpHBxE74-zwu4B0t302DVN7H1uBeooeWxdE,113
+vocabulary_quiz-0.5.dist-info/METADATA,sha256=TlK3fDi7J6kU_tglL4Vxf-s-TgrTtOeDef8MVsmLj64,133
+vocabulary_quiz-0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vocabulary_quiz-0.5.dist-info/entry_points.txt,sha256=YnbiAkxbezwXF_Z2GDbzFUVuR288l5riNB4b8F7U7PI,54
+vocabulary_quiz-0.5.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+vocabulary_quiz-0.5.dist-info/RECORD,,
