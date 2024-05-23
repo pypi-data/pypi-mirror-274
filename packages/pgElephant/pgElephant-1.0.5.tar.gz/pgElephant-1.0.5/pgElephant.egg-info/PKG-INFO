@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pgElephant
+Version: 1.0.5
+Summary: PostgreSQL Database Manager
+Author: Ryan Souza Anselmo
+Author-email: ryansouza.cwb@gmail.com
+License: MIT License
+        
+        Copyright (c) 2024 Ryan Souza
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Keywords: pgElephant
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pgElephant
+PostgreSQL Database Manager
+
+# CREATE ADMIN
+bank = PostgreSQL(dbname='my_db',user='my_user',password=my_password)
+
+# CONNECT
+bank.connect()
+
+# CHECK
+version = bank.version()
+
+# GET ALL VALUES IN ONE TABLE
+value_all = bank.get_all(table='users')
+
+# GET A ID
+value_single = bank.get_single(id='my_id',table='users')
+
+# GET A SINGLE LINE
+value_first = bank.get_first(unique='ryansouza.cwb@gmail.com',table='users',column='email')
+
+# COMMIT
+bank.commit()
+
+# DISCONNECT
+bank.disconnect()

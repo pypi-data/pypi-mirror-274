@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pgElephant/__init__.py
+pgElephant/postgres.py
+pgElephant.egg-info/PKG-INFO
+pgElephant.egg-info/SOURCES.txt
+pgElephant.egg-info/dependency_links.txt
+pgElephant.egg-info/requires.txt
+pgElephant.egg-info/top_level.txt
