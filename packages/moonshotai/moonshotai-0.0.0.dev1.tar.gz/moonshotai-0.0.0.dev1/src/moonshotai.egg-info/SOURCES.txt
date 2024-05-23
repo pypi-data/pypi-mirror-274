@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/moonshotai/__init__.py
+src/moonshotai/version.py
+src/moonshotai.egg-info/PKG-INFO
+src/moonshotai.egg-info/SOURCES.txt
+src/moonshotai.egg-info/dependency_links.txt
+src/moonshotai.egg-info/requires.txt
+src/moonshotai.egg-info/top_level.txt

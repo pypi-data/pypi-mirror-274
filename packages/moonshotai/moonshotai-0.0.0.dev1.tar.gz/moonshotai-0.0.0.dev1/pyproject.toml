@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/moonshotai/moonshotai-python"
+Repository = "https://github.com/moonshotai/moonshotai-python"
+
+[project]
+name = "moonshotai"
+version = "0.0.0.dev1"
+description = "The official Python library for the MoonshotAI API"
+readme = "README.md"
+requires-python = ">=3.7.1"
+authors = [{ name = "MoonshotAI", email = "support@moonshot.cn" }]
+
+dependencies = [
+  "httpx>=0.23.0, <1",
+  "pydantic>=1.9.0, <3",
+  "typing-extensions>=4.7, <5",
+]
+
+classifiers = [
+  "Typing :: Typed",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Operating System :: POSIX",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Microsoft :: Windows",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "License :: OSI Approved :: Apache Software License",
+]
+
+[tool.black]
+line-length = 160
+target-version = ['py39']
+include = '\.pyi?$'

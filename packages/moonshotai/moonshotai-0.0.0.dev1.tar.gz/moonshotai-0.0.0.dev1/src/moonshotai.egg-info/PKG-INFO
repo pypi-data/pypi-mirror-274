@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: moonshotai
+Version: 0.0.0.dev1
+Summary: The official Python library for the MoonshotAI API
+Author-email: MoonshotAI <support@moonshot.cn>
+Project-URL: Homepage, https://github.com/moonshotai/moonshotai-python
+Project-URL: Repository, https://github.com/moonshotai/moonshotai-python
+Classifier: Typing :: Typed
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx<1,>=0.23.0
+Requires-Dist: pydantic<3,>=1.9.0
+Requires-Dist: typing-extensions<5,>=4.7
+
+# MoonshotAI Python API library
+
+The official Python library for the MoonshotAI API
