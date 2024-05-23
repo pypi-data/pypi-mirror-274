@@ -1,0 +1,28 @@
+# Copyright (C) 2020 Sebastian Pipping <sebastian@pipping.org>
+# Licensed under GPL v3 or later
+
+name: Run the test suite
+
+on:
+- pull_request
+- push
+
+jobs:
+  run-tests:
+    name: Run the test suite
+    strategy:
+      matrix:
+        python-version: [3.8, 3.12]  # no particular need for in-between versions
+        runs-on: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.runs-on }}
+    steps:
+    - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29  # v4.1.6
+    - uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d  # v5.1.0
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Run the test suite
+      run: |
+        set -x
+        python3 --version
+        pip3 install -U setuptools  # for Python >=3.12
+        python3 setup.py test
