@@ -1,0 +1,13 @@
+kframe/__about__.py,sha256=n5TxtGKJol89_ntIXQn4lkoibNgkLRzUZTxpn48sgKg,25
+kframe/__init__.py,sha256=Y-M0GeEDfeyN6WcKBmreIQA1UZJ7A0TCneXxyyJM5FA,31
+kframe/api/__init__.py,sha256=Doxs4AOCavEXqhe24TFAiPvRcn6p9vOKVkp0tSQCngg,109
+kframe/api/apitools.py,sha256=yR3nAJBFzAU7rdZ08R3tHEM89SuQe6YH4zqJ6zs7ZdI,4601
+kframe/config/__init__.py,sha256=Ll__5V0r76-UD3e4y7l-p6vw-UPwVEeckeRSqXKGa5k,221
+kframe/config/configattr.py,sha256=nszn8wY2vjIZFLf90hI4FhTQKKQkfFxaoXnYz6c73Ms,6174
+kframe/config/configentity.py,sha256=Zbr-rQskHagVCRYY21xKKkQiT8YReS3IUJpQNl6qm8g,14336
+kframe/model/__init__.py,sha256=djiWKY_2DBPvloTIDe-KBP9-i-RRKFwb5pxN8Z275D4,98
+kframe/model/managedb.py,sha256=lp0j3xe77LedLufdTKGUvvaPFvFFoYKdn24UFwwcvhk,12521
+kframe-0.5.0rc1.dist-info/METADATA,sha256=N7Y3gcxHh_pjbldGNEgw37NGOKJeyQJw5BYgE7-fSzo,2424
+kframe-0.5.0rc1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+kframe-0.5.0rc1.dist-info/licenses/LICENSE.txt,sha256=gZhqPk9EQ2o3B4yDK3FMdgMdN0U8ny2G4gM6A0szC2o,2829
+kframe-0.5.0rc1.dist-info/RECORD,,
