@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: grasp_planning
+Version: 0.5.8
+Summary: "Grasp and Motion Planning Python Package."
+Home-page: https://github.com/TomasMerva/gomp.git
+License: MIT
+Author: Tomas Merva
+Author-email: tmerva7@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: casadi (>=3.6,<4.0)
+Requires-Dist: forwardkinematics (>=1.2.0)
+Requires-Dist: numpy (>=1.15.3,<2.0.0)
+Requires-Dist: scipy (<=1.10.1)
+Requires-Dist: spatial-casadi (>=1.1.0,<2.0.0)
+Project-URL: Repository, https://github.com/TomasMerva/gomp.git
+Description-Content-Type: text/markdown
+
+This package provides grasp and motion planning using CasADi and IPOPT. 
+
+## Installation
+```bash
+pip3 install grasp_planning
+```
+
+
+## Usage
+Check examples
+
+
