@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: boringcalculator
+Version: 1.0
+Home-page: https://boringcalculator.com
+Author: Dariel Fierro
+Author-email: eldarielmario@gmail.com
+License: Copyright © 2023 Boring Calculator - All rights reserved.
+Requires-Python: >=3.8, <3.12
+Requires-Dist: colorama
+Requires-Dist: termcolor
+Requires-Dist: sympy
+Requires-Dist: coloredlogs
+
