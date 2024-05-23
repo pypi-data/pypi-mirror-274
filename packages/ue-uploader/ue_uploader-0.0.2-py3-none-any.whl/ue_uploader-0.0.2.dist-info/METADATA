@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ue-uploader
+Version: 0.0.2
+Summary: Uploader tool for flashing firmware onto the CH552 device. v0.0.2
+Author: Master
+Author-email: name@email.com
+License: GPL-3.0 License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tk
+
+# CH552 v2 Firmware Uploader
+
+This tool allows you to flash, erase, and verify the firmware on your development board. To recognize the device, you only need to install the `libusb-win32` driver using Zadig.
+
+- Download Zadig from [Zadig](https://zadig.akeo.ie/)
+
+### Installation
+
+```bash
+pip install ue-uploader
+```
+
+### Test
+
+```bash
+python -m ue-uploader
+```
