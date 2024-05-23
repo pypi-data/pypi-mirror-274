@@ -1,0 +1,9 @@
+README.md
+setup.py
+pygame_canvas/__init__.py
+pygame_canvas/pygame_canvas.py
+pygame_canvas.egg-info/PKG-INFO
+pygame_canvas.egg-info/SOURCES.txt
+pygame_canvas.egg-info/dependency_links.txt
+pygame_canvas.egg-info/requires.txt
+pygame_canvas.egg-info/top_level.txt
