@@ -1,0 +1,10 @@
+gopappy/__init__.py,sha256=aWnRnF5TUBHC_2RdGczq36VyxBiPAviva2RjtMVjCFg,21
+gopappy/api.py,sha256=c1FHv_HbCQkujVKzT3v4wFtlp1dtZ9y_yO5HBZc__F4,966
+gopappy/auth.py,sha256=iHUD8wkCSZaN-9CB1cgYkA12RgdiDfZqT0WjKYgVEfM,3350
+gopappy/cli.py,sha256=V4QY6Buebwd-A5OVwDQ_IelM1W2jXIe0GPgEDhzURKk,4444
+gopappy/colorize.py,sha256=QwGkEhGRzRprJjyONIMFo11fu3_a5t3mMg9y_PR6X88,393
+gopappy-1.6.0.dist-info/LICENSE,sha256=1hVkStSH9VsmTSzE-I_mGfPfx9W66QYQGJe_o_QmL44,1077
+gopappy-1.6.0.dist-info/METADATA,sha256=HqWAgzOQN_iwas9c8uea5dkSZVSm-38h6uU6vFMmDCM,1619
+gopappy-1.6.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gopappy-1.6.0.dist-info/entry_points.txt,sha256=6KsM9dzJWMjjMpA72jNrBaaxz3O8aPsK4dDs4_PbirE,43
+gopappy-1.6.0.dist-info/RECORD,,
