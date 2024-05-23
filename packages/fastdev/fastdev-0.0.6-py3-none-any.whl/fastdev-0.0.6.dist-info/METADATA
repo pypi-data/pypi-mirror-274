@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: fastdev
+Version: 0.0.6
+Summary: Type less, code more
+Author-email: Jianglong Ye <jianglong.yeh@gmail.com>
+License: MIT
+Project-URL: Repository, https://github.com/jianglongye/fastdev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typing-extensions
+Requires-Dist: fastcore
+Requires-Dist: msgspec[toml,yaml]
+Requires-Dist: rich
+Requires-Dist: fsspec
+Requires-Dist: universal-pathlib
+Requires-Dist: huggingface-hub[cli,hf_transfer]
+Requires-Dist: GitPython
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: types-PyYAML ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: furo ; extra == 'doc'
+Requires-Dist: docutils ; extra == 'doc'
+Requires-Dist: sphinx-autoapi ; extra == 'doc'
+Requires-Dist: m2r2 ; extra == 'doc'
+Requires-Dist: setuptools ; extra == 'doc'
+
+![](https://fastdev.jianglongye.com/_static/logo.svg)
+
+<p align="center">
+    <em><a href="https://fastdev.jianglongye.com">Documentation</a></em>
+    &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+    <em><code>pip install fastdev</code></em>
+</p>
+
+---
+
+> Type Less, Code More
+
+## Features
+
+- **Reasearch oriented**, provide a set of tools for vision and robotics research
+- **User friendly**, provide simple-yet-flexible APIs to reduce boilerplate code
+- **Strong typed**, provide type checking and code completion
+
+## Installation
+
+The package is available on PyPI, you can install it via pip:
+
+```shell
+pip install fastdev
+```
+
+Or you can install the latest version from the source code:
+
+```shell
+pip install "git+https://github.com/jianglongye/fastdev.git"
+```
