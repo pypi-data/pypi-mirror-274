@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+khmersegment/__init__.py
+khmersegment.egg-info/PKG-INFO
+khmersegment.egg-info/SOURCES.txt
+khmersegment.egg-info/dependency_links.txt
+khmersegment.egg-info/requires.txt
+khmersegment.egg-info/top_level.txt
