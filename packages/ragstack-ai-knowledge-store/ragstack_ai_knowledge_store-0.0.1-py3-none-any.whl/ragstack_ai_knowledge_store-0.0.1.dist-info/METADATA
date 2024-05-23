@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ragstack-ai-knowledge-store
+Version: 0.0.1
+Summary: DataStax RAGStack Knowledge Store
+Home-page: https://github.com/datastax/ragstack-ai
+License: BUSL-1.1
+Author: DataStax
+Requires-Python: >=3.9,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cassio (>=0.1.7,<0.2.0)
+Requires-Dist: langchain-core (>=0.2,<0.3)
+Project-URL: Documentation, https://docs.datastax.com/en/ragstack
+Project-URL: Repository, https://github.com/datastax/ragstack-ai
+Description-Content-Type: text/markdown
+
+# RAGStack Knowledge Store
+
+Hybrid Knowledge Store combining vector similarity and edges between chunks.
+
+## Documentation
+
+[DataStax RAGStack Documentation](https://docs.datastax.com/en/ragstack/docs/index.html)
+
+[Quickstart](https://docs.datastax.com/en/ragstack/docs/quickstart.html)
+
+[Examples](https://docs.datastax.com/en/ragstack/docs/examples/index.html)
