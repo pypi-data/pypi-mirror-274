@@ -1,0 +1,19 @@
+.gitignore
+Examples.ipynb
+LICENSE
+README.md
+citation.CFF
+magFunctions.py
+pyproject.toml
+requirements.txt
+stations.csv
+.github/workflows/python-publish.yml
+magplots.egg-info/PKG-INFO
+magplots.egg-info/SOURCES.txt
+magplots.egg-info/dependency_links.txt
+magplots.egg-info/requires.txt
+magplots.egg-info/top_level.txt
+output/2016-01-24 00:00:00_.csv
+output/Example_PowerSpectrum_2016-01-24_Bx.png
+output/Example_TimeDomain_2016-01-24_Bx.png
+output/Example_WavePower_2016-01-24_Bx.png
