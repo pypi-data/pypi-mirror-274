@@ -1,0 +1,9 @@
+README.md
+license.txt
+setup.py
+multiprocessed_socket/multiprocessed-socket.py
+multiprocessed_socket.egg-info/PKG-INFO
+multiprocessed_socket.egg-info/SOURCES.txt
+multiprocessed_socket.egg-info/dependency_links.txt
+multiprocessed_socket.egg-info/requires.txt
+multiprocessed_socket.egg-info/top_level.txt
