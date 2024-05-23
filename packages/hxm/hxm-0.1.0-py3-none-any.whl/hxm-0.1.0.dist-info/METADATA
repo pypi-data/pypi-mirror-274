@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hxm
+Version: 0.1.0
+Summary: HongXiongMao Portfolio Management Toolkit
+License: MIT
+Author: djmcnay
+Author-email: djmcnay@gmail.com
+Requires-Python: >3.11,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# hxm
+The HongXiongMao PM Toolbox
+
