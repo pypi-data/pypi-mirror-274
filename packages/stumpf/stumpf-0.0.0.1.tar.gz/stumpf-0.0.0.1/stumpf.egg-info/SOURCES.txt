@@ -1,0 +1,7 @@
+README.md
+setup.py
+stumpf/__init__.py
+stumpf.egg-info/PKG-INFO
+stumpf.egg-info/SOURCES.txt
+stumpf.egg-info/dependency_links.txt
+stumpf.egg-info/top_level.txt
