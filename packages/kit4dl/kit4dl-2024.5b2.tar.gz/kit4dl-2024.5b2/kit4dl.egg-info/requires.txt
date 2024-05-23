@@ -1,0 +1,14 @@
+lightning>=2.2.4
+torch>=2.1.0
+torchmetrics>=1.1.0
+numpy<=1.25.3,>=1.17.2
+pydantic>2.4.0
+scikit-learn
+colormath
+tqdm<4.67.0,>=4.57.0
+typing-extensions>=4.8.0
+Jinja2<3.2.0
+typer[all]
+
+[:python_version < "3.11"]
+toml

@@ -1,0 +1,62 @@
+[base]
+seed = 0
+experiment_name = "point_clout_segmentation"
+
+[logging]
+level = "info"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+type = "csv"
+save_dir = "csv_metrics"
+
+[model]
+# The directory with conf.toml file is added to path, so we can treat .py
+# files there as the importable modules
+target = "net::SimpleSegmentationNetwork"
+input_dims = 6
+output_dims = 14
+
+[training]
+epochs = 20
+epoch_schedulers = [
+    {target = "torch.optim.lr_scheduler::CosineAnnealingLR", T_max = 20}
+]
+accumulate_grad_batches = 5
+
+[training.checkpoint]
+path = "{{ PROJECT_DIR }}/chckpt"
+monitor = {"metric" = "JaccardIndexMacro", "stage" = "val"}
+filename = "{epoch}_{val_jaccardindexmacro:.2f}_cnn"
+mode = "max"
+save_top_k = 3
+
+[training.optimizer]
+target = "torch.optim::Adam"
+lr = 0.001
+weight_decay = 0.02
+
+[training.criterion]
+target = "torch.nn::CrossEntropyLoss"
+
+[validation]
+run_every_epoch = 1
+
+[dataset]
+target = "datamodule::S3DISDatamodule"
+
+[dataset.train]
+test_area = 5
+
+[dataset.validation]
+test_area = 5
+
+[dataset.train.loader]
+batch_size = 1
+num_workers = 4
+
+[dataset.validation.loader]
+batch_size = 1
+num_workers = 4
+
+[metrics]
+JaccardIndexMacro = {target = "torchmetrics::JaccardIndex", task = "multiclass", num_classes = 14, average = "macro"}
+JaccardIndexMicro = {target = "torchmetrics::JaccardIndex", task = "multiclass", num_classes = 14, average = "micro"}
