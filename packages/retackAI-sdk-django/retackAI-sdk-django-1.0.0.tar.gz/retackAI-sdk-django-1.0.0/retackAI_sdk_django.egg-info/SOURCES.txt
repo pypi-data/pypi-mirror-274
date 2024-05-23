@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+retackAI_sdk/__init__.py
+retackAI_sdk/retack_client.py
+retackAI_sdk_django.egg-info/PKG-INFO
+retackAI_sdk_django.egg-info/SOURCES.txt
+retackAI_sdk_django.egg-info/dependency_links.txt
+retackAI_sdk_django.egg-info/requires.txt
+retackAI_sdk_django.egg-info/top_level.txt
