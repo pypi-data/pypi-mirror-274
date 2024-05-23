@@ -1,0 +1,5 @@
+psbase-0.1.0.dist-info/METADATA,sha256=MqF-6wOyOgYj22ceFzZ_SqGUcrIifXQDl_yWtBMITUQ,284
+psbase-0.1.0.dist-info/WHEEL,sha256=5HyBAIXy6w_lmX9AQnFspp6An6SPZJwRKkYM1H8iHP0,95
+psbase/__init__.py,sha256=v5huTA-G5rZ0919hReHzodsH1OK4Fw-nJgc1artjx4w,107
+psbase/psbase.cp310-win_amd64.pyd,sha256=voWN6SLW8KoFzUwm1r_5wCpWsgJ4qAXKsXQE2CMeczs,397824
+psbase-0.1.0.dist-info/RECORD,,
