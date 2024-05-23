@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: dfkernel
+Version: 3.0.0a1
+Summary: Dataflow Python Kernel for Jupyter
+Project-URL: Homepage, https://github.com/dataflownb/dfkernel
+Author-email: Dataflow Notebook Development Team <dataflownb@users.noreply.github.com>
+License: ## BSD 3-Clause License ###
+        
+        Copyright (c) 2017-2020, Dataflow Notebook Development Team
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of the copyright holder nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+        ## IPython and Jupyter Dependencies ##
+        
+        This code extends the IPython and Jupyter projects. In a few cases, code from those projects is included in this repository. That code remains subject to those licenses.
+License-File: LICENSE.md
+Keywords: Dataflow,Jupyter,Kernel,Python
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: ipykernel>=6
+Requires-Dist: ipython>=7.17.0
+Requires-Dist: jupyter-client>=6.1.12
+Requires-Dist: jupyter-core!=5.0.*,>=4.12
+Requires-Dist: nest-asyncio>=1.4
+Requires-Dist: notebook>=5.0
+Requires-Dist: packaging
+Requires-Dist: psutil
+Requires-Dist: pyzmq>=24
+Requires-Dist: tornado>=6.1
+Requires-Dist: traitlets>=4.1.0
+Description-Content-Type: text/markdown
+
+# Dataflow Kernel for Jupyter/Python
+
+[![License](https://img.shields.io/badge/License-BSD3-blue.svg)](https://github.com/dataflownb/dfkernel/blob/master/LICENSE)
+[![PyPI version](https://badge.fury.io/py/dfkernel.svg)](https://badge.fury.io/py/dfkernel)
+<!--
+[![Build Status](https://travis-ci.org/dataflownb/dfkernel.svg?branch=master)](https://travis-ci.org/dataflownb/dfkernel)
+[![Documentation Status](https://readthedocs.org/projects/dfkernel/badge)](http://dfkernel.readthedocs.io/)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dataflownb/dfexamples/master)
+-->
+
+This package is part of the [Dataflow Notebooks](https://dataflownb.github.io) project and provides the Dataflow Python kernel for Jupyter, and is intended to be used with [JupyerLab](https://github.com/jupyterlab/jupyterlab/)
+in concert with the [dfnotebook-extension](https://github.com/dataflownb/dfnotebook-extension).
+This kernel seeks to elevate *outputs* as memorable waypoints during exploratory computation. To that end,
+
+- Cell identifiers are **persistent** across sessions and are random UUIDs to signal they do not depend on top-down order.
+- As with standard IPython, outputs are designated by being written as expressions or assignments on the **last line** of a cell.
+- Each output is identified by its variable name if one is specified (e.g. `a`, `c,d = 4,5`), and the cell identifier if not (e.g. `4 + c`)
+- Variable names **can be reused** across cells.
+- Cells are executed as closures so only the outputs are accessible from other cells.
+- An output can then be referenced in three ways:
+    1. unscoped: `foo` refers to the most recent execution output named `foo`
+    2. persistent: `foo$ba012345` refers to output `foo` from cell `ba012345`
+    3. tagged: `foo$bar` refers to output `foo` from the cell tagged as `bar`
+- All output references are transformed to **persistent** names upon execution.
+- Output references implicitly define a dataflow in a directed acyclic graph, and the kernel automatically executes dependencies.
+
+## Example Notebook
+
+<img src="https://dataflownb.github.io/assets/images/dfnotebook.svg" width="640" alt="Dataflow Notebook Example">
+
+## Installation
+
+These instructions **only install the kernel**. Please see the 
+[dfnotebook-extension](https://github.com/dataflownb/dfnotebook-extension)
+instructions for full instructions.
+
+### PyPI
+
+`pip install dfkernel`
+
+### From source
+
+1. `git clone https://github.com/dataflownb/dfkernel`
+2. `cd dfkernel`
+3. `pip install -e .`
+4. `python -m dfkernel install [--user|--sys-prefix]`
+
+Note that `--sys-prefix` works best for conda environments.
+
+### Dependencies
+
+* IPython >= 7.0
+* JupyterLab >= 2.0
+* ipykernel >= 4.8.2
+
+## Previous Versions
+
+dfkernel 1.0 worked with Jupyter Notebook, but we have decided to support JupyterLab in the future. Documentation and tutorials for v1.0 are below, but still need to be updated for v2.0.
+
+### v1.0 Documentation
+
+#### General
+- [readthedocs](http://dfkernel.readthedocs.io/en/latest/)
+- [tutorial](http://dfkernel.readthedocs.io/en/latest/dfkernel-tutorial.html)
+
+#### Advanced Usage
+- [Dependency Viewer Tutorial](http://dfkernel.readthedocs.io/en/latest/dep-view-tutorial.html)
+- [Dependency Workings and Cell Toolbar](http://dfkernel.readthedocs.io/en/latest/dependency-cell-toolbar.html)
+- [Notebook Interactions](http://dfkernel.readthedocs.io/en/latest/notebook-interactions.html)
+- [Cell Statuses](http://dfkernel.readthedocs.io/en/latest/dfkernel-statuses.html)
