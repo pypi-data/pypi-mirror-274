@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cf_datapreprocessor
+Version: 0.3.0
+Summary: A data preprocessor for machine learning projects.
+Author: fatmanur caliskan, cihan yilmaz
+Author-email: fatmanur.caliskan@stu.fsm.edu.tr, cihan.yilmaz@stu.fsm.edu.tr
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: nltk
