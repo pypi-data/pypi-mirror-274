@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgemoji/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgemoji/converttools.py,sha256=Febx-ilDpiGRxnwJXa5-WRliM1YJ41da_ruWS4VRPas,403
+tgemoji/preprocess.py,sha256=enwJEQr-7JlsSmot1uMg6X8wvyMVJVMm_uqn7lwX8Q4,619
+tgemoji-0.1.0.dist-info/LICENSE,sha256=6d0PSA2ubacZjN2JDJfqGGPptlo-oEOlRfLj_a2QeMs,1087
+tgemoji-0.1.0.dist-info/METADATA,sha256=59poAlZ_n8TFXYD-W2z9gSWv3lr3wyZ4ogb3C1Z_4bI,473
+tgemoji-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tgemoji-0.1.0.dist-info/top_level.txt,sha256=AQ8-Hl0fwBM26uJ-mE2DZPbhnjWTlDJOKRHL1rEZ-gU,14
+tgemoji-0.1.0.dist-info/RECORD,,
