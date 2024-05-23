@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: roche_datachapter_lib
+Version: 0.0.427
+Summary: Esta biblioteca de código esta pensada para compartir funcionalidades entre todos los procesos ETL que desarrollemos con Python
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Lucas Frías <lucasmatiasfrias@live.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Requires-Dist: chardet
+Requires-Dist: flask
+Requires-Dist: flask-sqlalchemy
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: openpyxl
+Requires-Dist: oracledb
+Requires-Dist: pandas
+Requires-Dist: pkginfo
+Requires-Dist: psycopg2-binary
+Requires-Dist: pymssql
+Requires-Dist: pymysql
+Requires-Dist: pyodbc
+Requires-Dist: sqlalchemy-hana
+Requires-Dist: sqlalchemy-redshift
+Description-Content-Type: text/markdown
+
+# Roche Data Chapeter LIB
+
+## Description
+It contains the base structure that includes the configuration parameters of the different databases using environment variables on the server, a static data_transformer class to perform the data transformation and another static class to perform connection to Google services through the Google REST API.
+
+## Usage
+It is intended to be used as a requirement library at any Python ETL proyect.
+
+## Support
+- Ignacio Castillo (ignacio.castillo@roche.com)
+- Lucas Frías (lucas.frias@roche.com)
+- Uciel Bustamante (uciel.bustamante@contractors.roche.com)
+- Sara Fernandez (sara.fernandez.sf1@roche.com)
+
+## Authors and acknowledgment
+Lucas Frías (lucas.frias@roche.com)
