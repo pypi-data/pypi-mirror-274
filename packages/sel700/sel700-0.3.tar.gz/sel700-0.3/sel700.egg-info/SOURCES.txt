@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+sel700/sel700.py
+sel700.egg-info/.pypirc
+sel700.egg-info/PKG-INFO
+sel700.egg-info/SOURCES.txt
+sel700.egg-info/dependency_links.txt
+sel700.egg-info/top_level.txt
