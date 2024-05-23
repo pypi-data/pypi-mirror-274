@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+cvat_sdk_i_digit.egg-info/PKG-INFO
+cvat_sdk_i_digit.egg-info/SOURCES.txt
+cvat_sdk_i_digit.egg-info/dependency_links.txt
+cvat_sdk_i_digit.egg-info/requires.txt
+cvat_sdk_i_digit.egg-info/top_level.txt
