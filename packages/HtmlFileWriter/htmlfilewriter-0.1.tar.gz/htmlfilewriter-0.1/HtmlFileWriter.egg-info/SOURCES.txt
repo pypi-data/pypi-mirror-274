@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+HtmlFileWriter.egg-info/PKG-INFO
+HtmlFileWriter.egg-info/SOURCES.txt
+HtmlFileWriter.egg-info/dependency_links.txt
+HtmlFileWriter.egg-info/requires.txt
+HtmlFileWriter.egg-info/top_level.txt
+src/__init__.py
+src/html_writer.py

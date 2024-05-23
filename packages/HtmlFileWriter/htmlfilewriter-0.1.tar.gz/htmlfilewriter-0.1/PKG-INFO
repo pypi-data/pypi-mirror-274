@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: HtmlFileWriter
+Version: 0.1
+Summary: Sets up and writes an HTML File using a filewriter.
+Author: kunaalg
+Author-email: <kunaal@runcode.in>
+Keywords: python,FileWriter,App,HTML,Function,math
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: datetime
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: virtualenv
+
+
+A Command Line Interface based FileWriter Function , that takes a user input and writes files. 
+
+open a new file called start.py
+
+from html_writer import create_index_html
+
+create_index_html()
+
+else,
+create a new file called run.py and enter the following code and deploy:
+
+//run.py
+
+#!/bin/bash
+
+bash chmod +x run.sh
