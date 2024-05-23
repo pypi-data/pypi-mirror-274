@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: spicextract
+Version: 0.1.0
+Summary: Util for easy download SPICE file for Proxmox VMs
+Home-page: https://github.com/lHumaNl/SpiceXtract
+Author: lHumaNl
+Author-email: fisher_sam@mail.ru
+License: MIT
+Keywords: spice proxmox vm downloader
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+# SpiceXtract
+
+SpiceXtract is a command-line utility that facilitates the easy download of SPICE files for virtual machines hosted on
+Proxmox. This tool is especially useful for developers and IT professionals who manage VMs and need to quickly access
+SPICE connection files.
+
+## Features
+
+- Simple CLI for downloading SPICE files.
+- Support for multiple Proxmox nodes and VMs.
+- Secure password handling and optional SSL verification.
+
+## Requirements
+
+- Python 3.6 or later.
+- `requests` and `urllib3` libraries.
+
+## Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/lHumaNl/SpiceXtract.git
+cd SpiceXtract
+pip install -r requirements.txt
+```
+
+Alternatively, you can install the package using pip:
+
+```bash
+pip install spicextract
+```
+
+## Usage
+
+To use SpiceXtract, run the following command with the required parameters:
+
+```bash
+spicextract -s <server-url> -u <username> -p <password> -n <node> -i <vm_id> -o <output_file_name> [-v]
+```
+
+#### Arguments Table
+
+| Argument              | Description                                                           |
+|-----------------------|-----------------------------------------------------------------------|
+| `-s`, `--server`      | Proxmox host URL.                                                     |
+| `-u`, `--username`    | Proxmox username (must include authentication realm, e.g., user@pam). |
+| `-p`, `--password`    | Proxmox password.                                                     |
+| `-n`, `--node`        | Proxmox node.                                                         |
+| `-i`, `--vm_id`       | VM ID.                                                                |
+| `-o`, `--output_file` | Output SPICE file name (.vv extension is appended if not present).    |
+| `-v`, `--ssl_verify`  | Optional. Verifies the SSL connection if flagged.                     |

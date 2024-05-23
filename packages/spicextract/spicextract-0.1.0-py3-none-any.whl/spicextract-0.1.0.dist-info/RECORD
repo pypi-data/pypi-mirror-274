@@ -1,0 +1,11 @@
+version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+spicextract/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spicextract/main.py,sha256=v3Mkk6WzPVdwxKBRGwFqSB_lImlANFpSD6jWZlPTSXQ,496
+spicextract/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spicextract/common/args_parser.py,sha256=TMji3DDd0puDCESy2Iy044RD3kngsCU7FR_TRfXNOlM,2247
+spicextract/common/proxmox_exporter.py,sha256=Qneu01CZGhZFQXG0CI4FWCOOSoxn9CGv_xgzZNfDBfo,2952
+spicextract-0.1.0.dist-info/METADATA,sha256=mzpaubMTJsA5v0iZvjWdIWe2XmG0NrZMQZ9zPaTllWc,2534
+spicextract-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+spicextract-0.1.0.dist-info/entry_points.txt,sha256=kALdu2lFfNFDSJVACd28W4tRqaRUf-nFzErwTgB28cs,54
+spicextract-0.1.0.dist-info/top_level.txt,sha256=DKqguZex7tA2E7fzLe3S0ei4D8I_FnrAZSqbjJm1kJA,12
+spicextract-0.1.0.dist-info/RECORD,,

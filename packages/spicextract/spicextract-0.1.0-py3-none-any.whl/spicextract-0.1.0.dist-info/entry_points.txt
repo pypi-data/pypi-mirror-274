@@ -1,0 +1,2 @@
+[console_scripts]
+spicextract = spicextract.main:main
