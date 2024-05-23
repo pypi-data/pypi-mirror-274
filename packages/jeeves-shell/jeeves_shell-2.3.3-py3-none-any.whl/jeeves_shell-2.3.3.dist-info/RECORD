@@ -1,0 +1,11 @@
+jeeves_shell/__init__.py,sha256=Z_7smX6rkD_mUgoaXVe6lvofq3zNl5p5oADeCPIl0eY,39
+jeeves_shell/cli.py,sha256=5tRbiyIze5P4z5JAv1tQVl7nUkWk1BlhWD47z2Kzpsg,1314
+jeeves_shell/discover.py,sha256=sS86h4tnT2ZRucYAlzmkoguskvNjQ0d5bzFoAv2cLq4,4795
+jeeves_shell/entry_points.py,sha256=3EaD2AmSof-FFrQlGOACtzlvX2GFDmETY7bFJWxwd6Q,189
+jeeves_shell/errors.py,sha256=GKmL-pjSFivFlDNESsnzXeLb0WYHxBsK2lBGoELIJ84,1942
+jeeves_shell/import_by_path.py,sha256=6lp0f4Ty8Bsy7-s8fnfkDkHqX3N0RztbS1ccq9lj8fw,255
+jeeves_shell/jeeves.py,sha256=v8PJqFpe7EHiibYfQLUh6fDR_UQ1Wuux5X_tp07wB64,307
+jeeves_shell-2.3.3.dist-info/METADATA,sha256=EwgqkX9GlgHmRpg9tMQWC3MBLemizSRCIKU-tMHHCHI,2985
+jeeves_shell-2.3.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+jeeves_shell-2.3.3.dist-info/entry_points.txt,sha256=SnmyQhloubRHRi6utDeOodjVicGBts46MvZ0cNf95BQ,42
+jeeves_shell-2.3.3.dist-info/RECORD,,
