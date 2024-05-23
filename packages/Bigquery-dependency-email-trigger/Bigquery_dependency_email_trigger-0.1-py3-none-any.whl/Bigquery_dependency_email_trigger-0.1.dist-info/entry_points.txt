@@ -1,0 +1,2 @@
+[console_scripts]
+Bigquery_dependency_email_trigger = Bigquery_dependency_email_trigger:bigquery_dependency_email_trigger

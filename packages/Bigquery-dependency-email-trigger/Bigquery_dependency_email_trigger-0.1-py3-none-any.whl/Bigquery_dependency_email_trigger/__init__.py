@@ -1,0 +1,1 @@
+from .main import bigquery_dependency_email_trigger
