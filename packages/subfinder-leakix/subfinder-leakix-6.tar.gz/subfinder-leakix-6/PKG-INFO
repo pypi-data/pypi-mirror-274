@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: subfinder-leakix
+Version: 6
+Summary: Extracts subdomains from a given domain using various techniques
+Home-page: https://github.com/Jhonsonwannaa/subfinder-by-leakix
+Author: Jhonson12
+Author-email: wannaajhonson@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE

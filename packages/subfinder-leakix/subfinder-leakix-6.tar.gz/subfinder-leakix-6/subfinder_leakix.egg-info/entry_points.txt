@@ -1,0 +1,2 @@
+[console_scripts]
+subfinder-leakix = main:main
