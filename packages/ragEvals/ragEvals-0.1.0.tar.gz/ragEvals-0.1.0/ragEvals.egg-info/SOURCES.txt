@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+ragEvals/__init__.py
+ragEvals/evaluator.py
+ragEvals/test_evaluator.py
+ragEvals.egg-info/PKG-INFO
+ragEvals.egg-info/SOURCES.txt
+ragEvals.egg-info/dependency_links.txt
+ragEvals.egg-info/requires.txt
+ragEvals.egg-info/top_level.txt
