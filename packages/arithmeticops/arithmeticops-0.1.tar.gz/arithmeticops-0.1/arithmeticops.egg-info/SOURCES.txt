@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+arithmeticops.egg-info/PKG-INFO
+arithmeticops.egg-info/SOURCES.txt
+arithmeticops.egg-info/dependency_links.txt
+arithmeticops.egg-info/top_level.txt
+src/__init__.py
+src/operation.py
+tests/__init__.py
+tests/test_operation.py
