@@ -1,0 +1,9 @@
+License
+README.md
+setup.py
+torchcat/__init__.py
+torchcat.egg-info/PKG-INFO
+torchcat.egg-info/SOURCES.txt
+torchcat.egg-info/dependency_links.txt
+torchcat.egg-info/requires.txt
+torchcat.egg-info/top_level.txt
