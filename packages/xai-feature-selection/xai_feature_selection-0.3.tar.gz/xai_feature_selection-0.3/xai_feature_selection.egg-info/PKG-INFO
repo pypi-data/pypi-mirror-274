@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: xai-feature-selection
+Version: 0.3
+Summary: Feature selection using XAI
+Author: Yaganteeswarudu Akkem
+Author-email: yaganteeswaritexpert@gmail.com
+Keywords: machine learning,feature selection,explainable artificial intelligence,XAI
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# feature selection
+Advanced feature selection using explainable AI 
+
+Developed by Yaganteeswarudu Akkem , L Saran Kaanth , Sujith Kumar Reddy
+
+## Examples of How To Use Feature selection
+
+Install package by using below syntax 
+pip install xai-feature-selection==0.3
+
+
+Consume package by using below syntax 
+from xai_feature_selection.feature_selection import FeatureSelect
+from xai_feature_selection.model_prediction import Model
+
+
+Currently xai_feature_selection built to work for classification and regression problems 
+
+Use below algorithms to test regession  
+ 1)LinearRegression
+ 2)RandomForestRegressor
+Use below algorithm for  classification 
+ 1)LogisticRegression
+
+Below is the syntax to retrieve best features after calculating feature importance 
+
+file_path: location of csv file in your system 
+
+predict_columns : in classification or regression , column which is going to be predicted 
+
+model_type_choice  : 0 - Regression
+                     1 - Classification
+
+model_choice  :
+
+               For regression 
+               0 - LinearRegression
+               1 - RandomForestRegressor
+               for classification 
+               0 - LogisticRegression
+
+
+Once all parameters choosen , simply use below syntax to call Model , to calculate LIME and SHAP values and finally Feature select method will return important features
+
+                if predict_columns and file_path:
+                    model = Model(
+                        model_type=model_type_choice,
+                        model_choice=model_choice,
+                        data_file_path=file_path,
+                        predict_columns=predict_columns,
+                    )
+                    model.train()
+                    lime_data, shap_data = model.explain()
+                    feature_handler = FeatureSelect(
+                        shap_data=shap_data, lime_data=lime_data
+                    )
+                    feature_handler.prepare_weights()
+                    feature_handler.calculate_feature_values()
+                    feature_handler.get_best_feature_data()
+                    print(feature_handler.get_best_feature_data())
+
+### Note : 
+Its very important if you pass more appropriate pre-processed data ( without null values , outliers and so on ) , you will expect more better features from algorithm 
+
+
+
+
+
+
+
