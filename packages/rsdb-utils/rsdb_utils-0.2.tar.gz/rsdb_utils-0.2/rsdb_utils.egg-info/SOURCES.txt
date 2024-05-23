@@ -1,0 +1,13 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+rsdb_utils/__init__.py
+rsdb_utils/utils.py
+rsdb_utils.egg-info/PKG-INFO
+rsdb_utils.egg-info/SOURCES.txt
+rsdb_utils.egg-info/dependency_links.txt
+rsdb_utils.egg-info/requires.txt
+rsdb_utils.egg-info/top_level.txt
+rsdb_utils/rsdb-schema/case_study_schema.json
+tests/tests.py
