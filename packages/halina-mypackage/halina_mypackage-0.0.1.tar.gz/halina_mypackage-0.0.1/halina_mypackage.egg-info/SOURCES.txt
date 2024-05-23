@@ -1,0 +1,7 @@
+setup.py
+halina_mypackage/__init__.py
+halina_mypackage/calculator.py
+halina_mypackage.egg-info/PKG-INFO
+halina_mypackage.egg-info/SOURCES.txt
+halina_mypackage.egg-info/dependency_links.txt
+halina_mypackage.egg-info/top_level.txt
