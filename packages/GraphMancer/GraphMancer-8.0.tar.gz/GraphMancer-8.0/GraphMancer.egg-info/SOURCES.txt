@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+GraphMancer/GraphMancer.py
+GraphMancer/__init__.py
+GraphMancer.egg-info/PKG-INFO
+GraphMancer.egg-info/SOURCES.txt
+GraphMancer.egg-info/dependency_links.txt
+GraphMancer.egg-info/top_level.txt
