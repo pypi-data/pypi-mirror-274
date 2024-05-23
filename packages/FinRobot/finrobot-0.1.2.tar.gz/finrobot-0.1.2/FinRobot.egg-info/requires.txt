@@ -1,0 +1,15 @@
+pyautogen>=0.2.19
+ipython
+huggingface_hub
+matplotlib
+finnhub-python
+yfinance
+mplfinance
+backtrader
+numpy
+pandas
+pyPDF2
+setuptools>=41.4.0
+wheel>=0.33.6
+tushare
+pandas_datareader
