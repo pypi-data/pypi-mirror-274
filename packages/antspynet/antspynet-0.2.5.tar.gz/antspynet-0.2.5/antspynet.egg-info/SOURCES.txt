@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+antspynet/__init__.py
+antspynet.egg-info/PKG-INFO
+antspynet.egg-info/SOURCES.txt
+antspynet.egg-info/dependency_links.txt
+antspynet.egg-info/requires.txt
+antspynet.egg-info/top_level.txt

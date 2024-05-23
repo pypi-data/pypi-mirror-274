@@ -1,0 +1,8 @@
+numpy
+tensorflow
+keras
+antspyx>=0.4.2
+scikit-learn
+requests
+statsmodels
+matplotlib
