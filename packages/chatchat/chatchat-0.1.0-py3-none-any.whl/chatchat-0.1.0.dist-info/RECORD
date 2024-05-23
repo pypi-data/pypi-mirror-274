@@ -1,0 +1,10 @@
+chatchat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatchat/alibaba.py,sha256=yPfYvw0rfvhgFkrvW3j2PY_EeX0bT65BRNorgddZLnU,1834
+chatchat/baidu.py,sha256=wnDaUhoot3DhU96we8XdOMSAgcdb-i1vnZKUVFaGvrY,3901
+chatchat/base.py,sha256=AatE6JafnLXjxsyZ0tWUf3_Os1JDeGEnmFsNZs1GtXI,302
+chatchat/xunfei.py,sha256=hpdqgflDtiMgsZu3kxfkxbo9ZpIPeLALs31fE7GTQLw,6012
+chatchat-0.1.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+chatchat-0.1.0.dist-info/METADATA,sha256=SQjJTDlLC_mJmHPwSY16RyrqbnCOe-muaNVijVj6GrM,519
+chatchat-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+chatchat-0.1.0.dist-info/top_level.txt,sha256=v_x_SqGwMnhdx487_sy09jEfr6ndj5JVfat7_cSyZnA,9
+chatchat-0.1.0.dist-info/RECORD,,
