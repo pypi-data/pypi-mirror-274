@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: df-processors
+Version: 0.1.2
+Summary: A Python library that provides utilities to process your pandas DataFrame.
+Home-page: https://github.com/khuyentran1401/df-processors.git
+Author: khuyentran1401
+Author-email: khuyentran1476@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: scikit-learn (>=1.4.2,<2.0.0)
+Requires-Dist: scipy (>=1.13.0,<2.0.0)
+Project-URL: Documentation, https://github.com/khuyentran1401/df-processors/blob/main/README.md
+Project-URL: Repository, https://github.com/khuyentran1401/df-processors.git
+Description-Content-Type: text/markdown
+
+# df-processors
+
+A Python library that provides utilities to process your pandas DataFrame.
