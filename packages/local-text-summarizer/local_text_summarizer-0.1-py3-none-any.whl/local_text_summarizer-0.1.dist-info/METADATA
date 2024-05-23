@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: local_text_summarizer
+Version: 0.1
+Summary: A package for simple local text summarization.
+Home-page: https://github.com/tunahorse/local_text_summarizer
+Author: Fabian Anguiano
+Author-email: fabiananguiano@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nltk
+
+# Text Summarizer
+
+A Python package for simple local text summarization with nltk.
+
+## Installation
+
+```
+pip install local_text_summarizer
+```
+
+## Usage
+
+```
+summarize "Your text here"
+```
