@@ -1,0 +1,199 @@
+2024-05-22 69a3954 Daniel Graham
+    Tagged version 6.2.7.
+
+2024-05-22 25c994b Daniel Graham
+    Fixed date vs datetime bug
+
+2024-05-22 84dce1d Daniel Graham
+    Tagged version 6.2.6.
+
+2024-05-22 3c75e39 Daniel Graham
+    Removed more logging.debug statements
+
+2024-05-22 3ed355b Daniel Graham
+    Finishing repeating tasks now seems correct. Cleaned up
+    logging.debug statements.
+
+2024-05-22 fa11ab4 Daniel Graham
+    Next pass at finishing repeated tasks correctly
+
+2024-05-19 94b7683 Daniel Graham
+    Fixed bug in completing repeating task when @s doesn't fit the
+    recurrence rule
+
+2024-05-19 b8e0c42 Daniel Graham
+    @s inclusion fix for past due repeating tasks
+
+2024-05-18 34730e7 Daniel Graham
+    Tagged version 6.2.5.
+
+2024-05-18 b2713d0 Daniel Graham
+    Fixed bug in which pressing 'E' without an item selected, would
+    open the last item
+
+2024-05-18 4b525cd Daniel Graham
+    template tweaks
+
+2024-05-17 0d351be Daniel Graham
+    Fixed bug in allowing invalid duplicate entries
+
+2024-05-10 d71ca52 Daniel Graham
+    Tagged version 6.2.4.
+
+2024-05-10 d5e475a Daniel Graham
+    Fixed bug in processing alerts for tasks with @s and @+ entries
+    but without @r
+
+2024-05-09 3026c51 Daniel Graham
+    Minor tweaks
+
+2024-05-07 4cd650d Daniel Graham
+    README video link tweak
+
+2024-05-06 e060977 Daniel Graham
+    More video link tweaks.
+
+2024-05-06 4cd33f1 Daniel Graham
+    README tweaks
+
+2024-05-06 e12dfd3 Daniel Graham
+    Moved m4v video to YouTube (unlisted)
+
+2024-05-06 c5802f9 Daniel Graham
+    Switched to standard definition (480p) for slide show
+
+2024-05-06 e01f168 Daniel Graham
+    First pass at m4v video for README
+
+2024-05-06 80b038f Daniel Graham
+    README tweaks
+
+2024-05-06 804789b Daniel Graham
+    Tagged version 6.2.3.
+
+2024-05-06 de9a6fa Daniel Graham
+    Bug fix in show_goals
+
+2024-05-06 b4ad835 Daniel Graham
+    Tagged version 6.2.2.
+
+2024-05-06 e802430 Daniel Graham
+    Added goals.txt to the output associated with keep_current
+
+2024-05-06 c3d0360 Daniel Graham
+    Show average as 0 instead of 0.0 in goals view
+
+2024-05-06 4caaed7 Daniel Graham
+    Tagged version 6.2.1.
+
+2024-05-06 272ef22 Daniel Graham
+    Fixed sorting bug in do next view
+
+2024-05-05 bd65af8 Daniel Graham
+    README tweaks
+
+2024-05-05 e337b72 Daniel Graham
+    README tweaks
+
+2024-05-05 68b9823 Daniel Graham
+    README tweaks
+
+2024-05-05 1789fb5 Daniel Graham
+    Merge branch 'working'
+
+2024-05-05 abf7a33 Daniel Graham
+    First pass at adding goals to README
+
+2024-05-05 a58c62f Daniel Graham
+    Merge branch 'working'
+
+2024-05-05 92a4a5b Daniel Graham
+    Updated implementing_goals
+
+2024-05-05 f71fd6c Daniel Graham
+    Updates for implementing_goals
+
+2024-05-04 65f93a4 Daniel Graham
+    Updated docs/implementing_goals.md
+
+2024-05-04 8601216 Daniel Graham
+    Updated docs/implementing_goals.md
+
+2024-05-04 6ffaa2f Daniel Graham
+    Tagged version 6.2.0. Added a new item type, goal, and a
+    corresponding goal view.
+
+2024-05-04 bd93aab Daniel Graham
+    Merge branch 'working' into goals
+
+2024-05-04 9aa9c5f Daniel Graham
+    Tagged version 6.1.27.
+
+2024-05-04 eebce81 Daniel Graham
+    Fixed bug in including s as a possible pastdue in a task with an r
+    entry.
+
+2024-05-03 893a055 Daniel Graham
+    Cleaned up comments
+
+2024-05-03 c6021f9 Daniel Graham
+    Cleaned up comments. Changed min width for weekday in statusbar to
+    50. Fixed regex for quota and goal history. Include weekday 0
+    (Mon) in active but don't warn about 0 completions. Removed
+    show_active_view from alarm loop. Removed show_message
+    confirmation for toggle active and increment count.
+
+2024-05-03 e6e4a65 Daniel Graham
+    Show completions needed to get on schedule in goals instead of
+    days remaining and the average number of completions instead of
+    the total.
+
+2024-05-02 fadef79 Daniel Graham
+    Added type characters and colors for goals. Sort active/inactive
+    goals by done/quota.
+
+2024-05-02 feab252 Daniel Graham
+    Added goal view and removed goal counts from agenda view. Color
+    active goals according to progress. Added commands to toggle
+    active/paused and to end goal.
+
+2024-05-01 41242dd Daniel Graham
+    Changed binding for goto link from g to G
+
+2024-05-01 f1c68f0 Daniel Graham
+    Corrected typo
+
+2024-05-01 de6647c Daniel Graham
+    Merged working isocalendar fix
+
+2024-05-01 af63365 Daniel Graham
+    Tagged version 6.1.26.
+
+2024-05-01 e9c92ac Daniel Graham
+    Fixed bug in converting (year, week number, weekday number) dates
+    to (year, month, monthday).
+
+2024-05-01 83b2926 Daniel Graham
+    First pass at displaying goal history.
+
+2024-04-30 c513048 Daniel Graham
+    Added itemtype ~ for goal. Set allowed and required and
+    implemented formatting and processing for @q and @h. Displays on
+    current day similar to inbox items and pressing F increments the
+    ticker for done. Still to do - display in completions.
+
+2024-04-28 3458834 Daniel Graham
+    First pass at implementing goals.
+
+2024-04-27 909b86d Daniel Graham
+    Beginning work on weekly goals
+
+2024-04-26 5f1a37a Daniel Graham
+    Tagged version 6.1.25.
+
+2024-04-26 9e3f1c3 Daniel Graham
+    Changed the default for settings.update_command to use pipx if etm
+    was installed using pipx and, otherwise, to use pip.
+
+2024-04-24 25c29af Daniel Graham
+    Tagged version 6.1.24.
