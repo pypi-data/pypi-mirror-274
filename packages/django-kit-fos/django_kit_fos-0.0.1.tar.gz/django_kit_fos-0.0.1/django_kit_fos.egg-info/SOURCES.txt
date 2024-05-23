@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_kit_fos/__init__.py
+django_kit_fos/main.py
+django_kit_fos.egg-info/PKG-INFO
+django_kit_fos.egg-info/SOURCES.txt
+django_kit_fos.egg-info/dependency_links.txt
+django_kit_fos.egg-info/requires.txt
+django_kit_fos.egg-info/top_level.txt
