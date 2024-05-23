@@ -1,0 +1,7 @@
+README.md
+setup.py
+cdk-s3bucket-ng/__init__.py
+cdk_s3bucket_ng.egg-info/PKG-INFO
+cdk_s3bucket_ng.egg-info/SOURCES.txt
+cdk_s3bucket_ng.egg-info/dependency_links.txt
+cdk_s3bucket_ng.egg-info/top_level.txt
