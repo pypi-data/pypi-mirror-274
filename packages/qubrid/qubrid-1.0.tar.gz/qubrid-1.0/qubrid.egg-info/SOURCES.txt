@@ -1,0 +1,7 @@
+README.md
+setup.py
+qubrid/__init__.py
+qubrid.egg-info/PKG-INFO
+qubrid.egg-info/SOURCES.txt
+qubrid.egg-info/dependency_links.txt
+qubrid.egg-info/top_level.txt
