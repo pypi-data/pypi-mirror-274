@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ansys-turbogrid-api
+Version: 0.4.2
+Home-page: https://github.com/ansys-internal/ansys-api-turbogrid
+Author: ANSYS, Inc.
+Author-email: pyansys.core@ansys.com
+Maintainer: ANSYS, Inc.
+Maintainer-email: pyansys.core@ansys.com
+License: MIT
+Project-URL: Documentation, https://github.com/ansys-internal/ansys-api-turbogrid/#readme
+Project-URL: Source, https://github.com/ansys-internal/ansys-api-turbogrid/
+Project-URL: Tracker, https://github.com/ansys-internal/ansys-api-turbogrid/issues/
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ansys-platform-instancemanagement ~=1.0
+
+### PyTurboGrid
+
+This Python package contains the PyTurboGrid back end. It is a private repo.
+
+Installation Steps:
+1. From a clean python install (not a venv) (in vscode, do this in a terminal):
+    a. pip install poetry
+    b. poetry lock
+    c. poetry install --with doc,test
+2. Access and set up autocomplete for your environment:
+    a. poetry shell (you will now be in your environment)
+    b. (vscode) In the bottom left when viewing a py file, select the python version then on the top of the screen,
+        navigate to the venv poetry created. On a windows machine it's: 
+        "C:\Users\[USER]\AppData\Local\pypoetry\Cache\virtualenvs\ansys-turbogrid-api-_-E_GTd6-py3.10"
+        (Pin virtualenvs to the quick access to make this step easier for other repos.)
+    
+3. Running examples:
+    a. Env var "AWP_ROOT" + turbogrid_version must be set ("AWP_ROOT251")
+    b. (vscode) in the terminal, you can put the relative path of a py file preceded by "python".
+        Relative paths can be had by right clicking a file in the explorer or quick access bar on top.
+
+4. Tests:
+    a. Direct (python launches and owns TGEngine.exe process)
+       - python -u -m pytest -vs -m [TG | TGCAD] --execution_mode=DIRECT --local_cfxtg_path="c:/Program Files/ANSYS Inc/v242/TurboGrid/bin/cfxtg" --client_log_level=INFO -n 16
+    b. Remote (conftest launches TG)
+        - python -u -m pytest -vs -m [TG | TGCAD] --execution_mode=REMOTE --remote_command="c:/Program Files/ANSYS Inc/v241/TurboGrid/bin/cfxtg" --client_log_level=INFO
+    c. Containerized. Accessing the container requires logging into the ghcr with your PAT with ansys-internal enabled (ghp_ key)
+       - pull ghcr.io/ansys/ansys-api-turbogrid/tglin_reduced (point-data only) or ghcr.io/ansys/ansys-api-turbogrid/tglin_reduced_ndf (for all CAD)
+       - python -u -m pytest -vs -m [TG | TGCAD] --execution_mode=CONTAINERIZED --license_file=watartifactory.win.ansys.com:8080 --image_name=[tglin_reduced | tglin_reduced_ndf]:241 --cfxtg_command_name=cfxtgpynoviewer --ssh_key_filename="[path-to-git-source]/ansys-api-turbogrid/image_files/tg_container_key" --cfx_version=241 --client_log_level=DEBUG -n 1
