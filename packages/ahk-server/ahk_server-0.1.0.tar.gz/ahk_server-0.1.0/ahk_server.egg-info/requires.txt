@@ -1,0 +1,5 @@
+ahk
+fastapi
+
+[binary]
+ahk-binary==2023.9.0
