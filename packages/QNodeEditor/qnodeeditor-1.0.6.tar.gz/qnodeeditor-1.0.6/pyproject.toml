@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "QNodeEditor"
+version = "1.0.6"
+description = "Node editor for PyQt5"
+readme = "README.md"
+authors = [{ name = "Jasper Jeuken" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["node", "editor", "pyqt5", "pyqt", "pyside2", "pyside", "socket", "edge", "graph",
+    "connection", "nodes", "qnode", "qnodeeditor"]
+dependencies = [
+    "PyQt5 ~= 5.15.10",
+    "networkx ~= 3.2.1"
+]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/JasperJeuken/QNodeEditor"
+Github = "https://github.com/JasperJeuken/QNodeEditor"
+Documentation = "https://qnodeeditor.readthedocs.io/en/latest/"
+
+[project.optional-dependencies]
+docs = ["sphinx-toolbox", "pydata-sphinx-theme", "sphinx-design", "sphinx-qt-documentation"]
+
+[tool.setuptools.packages.find]
+include = ['QNodeEditor*']
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+QNodeEditor = ["QNodeEditor/themes/fonts/**/*.ttf", "QNodeEditor/themes/img/*.svg"]
