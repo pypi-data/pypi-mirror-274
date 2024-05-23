@@ -1,0 +1,11 @@
+humanfirst/__init__.py,sha256=0-wnXHS0HxL6h6QyEOe4lMpv3RgM_o8O_pWDAqekikE,107
+humanfirst/apis.py,sha256=UIza4PbI2DYYrV-e3sb5HRMu7T62JFMtKNAYT_opy-w,61065
+humanfirst/nlg.py,sha256=EdrQaJKxXTSbAIXNhjw85hlXjv244PIngMCocekl6RA,740
+humanfirst/objects.py,sha256=pdlOeHc6sRNbdPXllK1OmzzCP6Cf84J7dJxN_YxSLUU,30292
+humanfirst/config/logging.conf,sha256=QRY43vnvEs79YH3uoBtt6tnoMFBmLroepsJ1fxm97UU,691
+humanfirst/config/setup.cfg,sha256=Zm8ouDyrc6OPKkeutjq52wq3Ocj821uLmPtoWx2ASVA,170
+humanfirst-1.1.0.dist-info/LICENSE,sha256=RdeL9Z29vUgcetAiKFVwKUtVcytrxIiEGrmHHpOV8yM,1070
+humanfirst-1.1.0.dist-info/METADATA,sha256=fERz6AhtbvmL7tO2RIBhgW30WG3lDo95-wNIAdX72Zc,1714
+humanfirst-1.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+humanfirst-1.1.0.dist-info/top_level.txt,sha256=8_JmUs0E_Cw0jNR-6_iO54OqA4nUe9hYRJJZLB4V0UE,11
+humanfirst-1.1.0.dist-info/RECORD,,
