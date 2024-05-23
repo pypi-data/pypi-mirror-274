@@ -1,0 +1,36 @@
+[tool.ruff]
+exclude = [".git", "__pycache__"]
+
+[tool.ruff.lint]
+ignore = ["E501"]
+select = [
+    # pycodestyle
+    "E",
+    "W",
+    # Pyflakes
+    "F",
+    # Flake8 Debugger
+    "T1",
+    # Isort
+    "I",
+    # Implicit Optional
+    "RUF013",
+    # Invalid pyproject.toml
+    "RUF200",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # flake8-use-pathlib
+    "PTH",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore `pytest-composite-assertion` rules of `flake8-pytest-style` linter for non-test files
+"teklia_toolbox/**/*.py" = ["PT018"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["arkindex", "teklia_toolbox"]
+known-third-party = ["pytest", "setuptools", "tenacity"]
