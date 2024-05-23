@@ -1,0 +1,2 @@
+[console_scripts]
+ttfb = wolfsoftware.ttfb.main:main
