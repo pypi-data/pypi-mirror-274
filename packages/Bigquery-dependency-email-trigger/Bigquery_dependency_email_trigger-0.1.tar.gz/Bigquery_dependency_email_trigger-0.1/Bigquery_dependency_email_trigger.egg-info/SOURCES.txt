@@ -1,0 +1,9 @@
+README.md
+setup.py
+Bigquery_dependency_email_trigger/__init__.py
+Bigquery_dependency_email_trigger/main.py
+Bigquery_dependency_email_trigger.egg-info/PKG-INFO
+Bigquery_dependency_email_trigger.egg-info/SOURCES.txt
+Bigquery_dependency_email_trigger.egg-info/dependency_links.txt
+Bigquery_dependency_email_trigger.egg-info/entry_points.txt
+Bigquery_dependency_email_trigger.egg-info/top_level.txt
