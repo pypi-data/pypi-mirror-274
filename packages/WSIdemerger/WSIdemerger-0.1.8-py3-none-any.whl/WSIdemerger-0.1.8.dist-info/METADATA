@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: WSIdemerger
+Version: 0.1.8
+Summary: A package for extracting image patches from SVS files and performing color normalization
+Home-page: https://github.com/yourusername/WSI_Preprocessing
+Author: Thirteen
+Author-email: 506607814@qq.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: openslide-python
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: tqdm
+Requires-Dist: opencv-python
+Requires-Dist: staintools
+
+
+# WSIdemerger
+
+WSIdemerger is a Python package for extracting image patches from SVS files and performing color normalization.
+
+## Installation
+
+You can install the package using pip:
+
+```sh
+pip install WSIdemerger
+```
+
+## Usage
+
+### Extract Patches from SVS
+
+```python
+from WSIdemerger.Patches_generation import extract_patches_from_svs
+
+input_path = 'path_to_your_svs_file'
+output_path = 'path_to_output_directory'
+excel_path = 'path_to_output_excel_file'
+patch_size = 512
+target_magnification = 20
+saturation_threshold = 50
+
+extract_patches_from_svs(input_path, output_path, excel_path, patch_size, target_magnification, saturation_threshold)
+```
+
+### Normalize Images
+
+```python
+from WSIdemerger.Colour_standardisation import normalize_images
+
+input_folder = 'path_to_input_images'
+reference_image_path = 'path_to_reference_image'
+output_folder = 'path_to_output_directory'
+
+normalize_images(input_folder, reference_image_path, output_folder)
+```
