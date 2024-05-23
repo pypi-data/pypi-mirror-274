@@ -1,0 +1,13 @@
+bamRefine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bamRefine/__main__.py,sha256=F0zRnwceRJ0qO3OIMRqqIsTHdwmJYwxBMmE66MFHxwk,8874
+bamRefine/functions.py,sha256=ILjpHjwfcRK9_4D-iBzAhAEpH8vfVKnbyclSj9KyY4Y,10542
+bamRefine/man/man1/bamrefine.1,sha256=kHAn0j0SOM4yiO43ksQmVnpf-fELIwQ5aYYWzRKJZhU,3450
+bamRefine/sample_data/omitColumn_sampleSNPs.bed,sha256=q7TdIzn5jIil29JLbHYM1fQssyMK5xZ09f-Ay0GT4Lo,780
+bamRefine/sample_data/sampleSNPs.bed,sha256=6FStQytUG8yFb19yZ0vNo0Dg7ojansJft3t6kRsCrO8,1236
+bamRefine/sample_data/sampleSNPs.snp,sha256=_WT_l4sp1rotcpJHJcx-ux1iRbzR-JeaHjCTRpCy8Qk,1790
+bamrefine-0.2.0.dist-info/LICENSE,sha256=29beSSWAbzOkMI6EaaLtTtMqCj3-BXH7YF-oAED4hYQ,1518
+bamrefine-0.2.0.dist-info/METADATA,sha256=NLKYaXEms0ZCI_0yVAAr7MvxfkmJFceetcFht07XKa0,7929
+bamrefine-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bamrefine-0.2.0.dist-info/entry_points.txt,sha256=GNy5r9-zbXStc1wKMJssmL6bXBBXGJO_M3O48z_wmCg,135
+bamrefine-0.2.0.dist-info/top_level.txt,sha256=TU96kJlRWw8cYsTYk_j07JGjbpWy48c1YOMVzPFwFw8,10
+bamrefine-0.2.0.dist-info/RECORD,,

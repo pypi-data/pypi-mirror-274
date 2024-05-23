@@ -1,0 +1,4 @@
+[console_scripts]
+bamrefine = bamRefine.__main__:main
+bamrefine_man = bamRefine.__main__:man
+bamrefine_proc = bamRefine.functions:main
