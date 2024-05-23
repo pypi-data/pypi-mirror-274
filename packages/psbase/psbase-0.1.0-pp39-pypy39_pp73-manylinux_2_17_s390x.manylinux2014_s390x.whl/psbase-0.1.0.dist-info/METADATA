@@ -1,0 +1,8 @@
+Metadata-Version: 2.3
+Name: psbase
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: PacSpedd Base Modul
+Requires-Python: >=3.8
