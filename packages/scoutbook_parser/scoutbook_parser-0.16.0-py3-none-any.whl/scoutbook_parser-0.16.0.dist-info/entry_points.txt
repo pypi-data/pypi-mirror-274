@@ -1,0 +1,2 @@
+[console_scripts]
+sbparse = scoutbook_parser:__main__.main
