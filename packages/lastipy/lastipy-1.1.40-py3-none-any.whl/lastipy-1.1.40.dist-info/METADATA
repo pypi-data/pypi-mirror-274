@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lastipy
+Version: 1.1.40
+Summary: Lastipy is a Python library combining the APIs of Spotify and Last.fm, with scripts for creating customized recommendation playlists, automatically saving new releases, etc.
+Home-page: http://github.com/evanjamesjackson/lastipy
+Author: Evan Jackson
+Author-email: evan@jacksonnet.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: spotipy
+Requires-Dist: iso8601
+Requires-Dist: python-dateutil
+Requires-Dist: pytest
+Requires-Dist: wheel
+Requires-Dist: black
+
+UNKNOWN
+
