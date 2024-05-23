@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bibliotheca
+Version: 0.0.1
+Summary: Bibliotheca
+Author-email: Alexander Fedotov <alex.fedotov@aol.com>
+Project-URL: Homepage, https://github.com/alxfed/bibliotheca
+Project-URL: Bug Tracker, https://github.com/alxfed/bibliotheca/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyGithub >=2.3.0
+Requires-Dist: PyYAML >=6.0.1
+
+# Bibliotheca
+Βιβλιοθήκη - library.
+<pre>
+  pip install bibliotheca
+</pre>
+Then:
+```Python
+  # Python
+  import bibliotheca
+```
