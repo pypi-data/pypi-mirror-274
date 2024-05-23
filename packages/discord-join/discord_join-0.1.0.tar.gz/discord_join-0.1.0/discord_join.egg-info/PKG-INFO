@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: discord-join
+Version: 0.1.0
+Summary: A python of discord joiner
+Home-page: https://github.com/LaciaHax/discord_joiner
+Author: Lacia Hax
+Author-email: yuitanmiruku@outlook.jp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+discord joiner lib
+
+usage
+```
+from discord_join import joiner
+
+token = 'YOUR_DISCORD_TOKEN'
+invite = 'INVITE_CODE'
+response = joiner(token, invite)
+print(response)
+```

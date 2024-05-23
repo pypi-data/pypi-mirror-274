@@ -1,0 +1,7 @@
+README.md
+setup.py
+discord_join.egg-info/PKG-INFO
+discord_join.egg-info/SOURCES.txt
+discord_join.egg-info/dependency_links.txt
+discord_join.egg-info/requires.txt
+discord_join.egg-info/top_level.txt
