@@ -1,0 +1,11 @@
+README.rst
+setup.py
+nlpx/__init__.py
+nlpx/_text_cnn.py
+nlpx/models.py
+nlpx/text_token.py
+nlpx.egg-info/PKG-INFO
+nlpx.egg-info/SOURCES.txt
+nlpx.egg-info/dependency_links.txt
+nlpx.egg-info/not-zip-safe
+nlpx.egg-info/top_level.txt
