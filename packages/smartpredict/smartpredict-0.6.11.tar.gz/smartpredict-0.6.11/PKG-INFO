@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: smartpredict
+Version: 0.6.11
+Summary: An advanced machine learning library for effortless model training, evaluation, and selection.
+Home-page: https://github.com/SubaashNair/SmartPredict
+Author: Subashanan Nair
+Author-email: subaashnair12@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: shap
+Requires-Dist: optuna
+Requires-Dist: xgboost
+Requires-Dist: lightgbm
+Requires-Dist: catboost
+Requires-Dist: tensorflow
+Requires-Dist: torch
+
+
+
+# Changelog
+
+## [0.6.11] - 2024-05-23
+### Updated
+- Updated dependencies to latest versions:
+  - scikit-learn
+  - numpy
+  - pandas
+  - shap
+  - optuna
+  - xgboost
+  - lightgbm
+  - catboost
+  - tensorflow
+  - torch
+
+## [0.6.10] - 2024-05-22
+### Added
+- Initial release of SmartPredict.
+
+## [0.6.0] - 2024-05-01
+### Added
+- Core functionalities for model training, evaluation, and selection.
+- Support for scikit-learn, numpy, pandas, shap, optuna, xgboost, lightgbm, catboost, tensorflow, and torch.
