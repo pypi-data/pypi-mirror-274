@@ -1,0 +1,17 @@
+robobosim/RoboboSim.py,sha256=vRzRpHJHaMNiKTFESNQ9mkE_0j0MZzTJiMdWtWVzADY,5217
+robobosim/State.py,sha256=5FkStCZflmSZZR4OXcUyC9dAOQC3b5w11vP0KsKktZs,246
+robobosim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robobosim/remotelib.py,sha256=5KFhZTvGJIoDbKPFXdEEaxwy_vRkJOiLH1XPIvtyrZU,5458
+robobosim/processors/AGVProcessor.py,sha256=Q1YvLZluUlWSCPfw5OKmxpB3MLnjDxBucWtUIr-Anrg,1313
+robobosim/processors/AbstractProcessor.py,sha256=RYGeeOggkgilWfQdJMmpcYLyUzjQlq1QuFWE29rqGk4,1012
+robobosim/processors/ControlProcessor.py,sha256=KhDZdMEB4NJqHEH9hyBV3LD2nkmQn0PHIZZKRsu5IDA,482
+robobosim/processors/LocationProcessor.py,sha256=zQoOkzROJvGq4_29aHh61yCvi-Sw-3aC1FgbocEU3WQ,1934
+robobosim/processors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robobosim/utils/ConnectionState.py,sha256=hxxOOuIkkzhRLgUz0iTcdMpjYiXWR2LLO60rpypeNiw,138
+robobosim/utils/Message.py,sha256=nGlL-ADmZpNILjyObqu8WDk8r7L5kapVGZPdSVIkBqo,919
+robobosim/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robobosim-1.5.0.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+robobosim-1.5.0.dist-info/METADATA,sha256=U9RDVe8Zj6203prctxPcQUJx_djx1qfWtRXX--1kFvU,1498
+robobosim-1.5.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+robobosim-1.5.0.dist-info/top_level.txt,sha256=IfVxNtII8uErG71eDeCkJHQl73erg0pOKeDbfFwYyvw,10
+robobosim-1.5.0.dist-info/RECORD,,
