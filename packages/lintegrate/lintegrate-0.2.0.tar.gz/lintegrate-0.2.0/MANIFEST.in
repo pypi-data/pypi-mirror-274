@@ -1,0 +1,10 @@
+include src/*.h
+include src/*.c
+include src/lintegrate/*.pyx
+include src/lintegrate/*.py
+include LICENSE
+include gsl-config.bat
+include pyproject.toml
+prune .github
+prune conda
+exclude .git*
