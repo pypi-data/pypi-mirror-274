@@ -1,0 +1,3 @@
+requests
+pyOpenSSL<=23.2.0
+signxml<=3.2.1
