@@ -1,0 +1,10 @@
+fabricplus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fabricplus/connection.py,sha256=p2cneVpP9JcRgb0JwOS3GDzxaomm1ITHpEQHs3oTqxQ,17195
+fabricplus/paramiko_modifications/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fabricplus/paramiko_modifications/client.py,sha256=bNOq23oY9T2kliZN9eiB5lfKBU59pi1LEFxRDWaZvEk,13644
+fabricplus/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fabricplus/transfer.py,sha256=_z8PkC8BGeDHOs0t7jAKmmR0CPmz8QZgf9333SVTm-A,2463
+fabricplus-0.1.0.dist-info/LICENSE,sha256=j4AHlSrXytXyVykP2OxmdfddgpjFFa9v7s3OTYdUE-A,1074
+fabricplus-0.1.0.dist-info/METADATA,sha256=aDbsD_J3M7dFTSBid1Ljonyd-yig2pY8OXTtmsfKOak,10945
+fabricplus-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fabricplus-0.1.0.dist-info/RECORD,,
