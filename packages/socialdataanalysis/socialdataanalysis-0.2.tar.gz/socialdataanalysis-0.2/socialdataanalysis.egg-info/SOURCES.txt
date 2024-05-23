@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+socialdataanalysis/__init__.py
+socialdataanalysis/funcoes_personalizadas.py
+socialdataanalysis.egg-info/PKG-INFO
+socialdataanalysis.egg-info/SOURCES.txt
+socialdataanalysis.egg-info/dependency_links.txt
+socialdataanalysis.egg-info/requires.txt
+socialdataanalysis.egg-info/top_level.txt
