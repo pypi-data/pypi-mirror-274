@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: QNodeEditor
+Version: 1.0.6
+Summary: Node editor for PyQt5
+Author: Jasper Jeuken
+License: Copyright (c) 2023, Jasper Jeuken
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of the copyright holder nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Project-URL: Homepage, https://github.com/JasperJeuken/QNodeEditor
+Project-URL: Github, https://github.com/JasperJeuken/QNodeEditor
+Project-URL: Documentation, https://qnodeeditor.readthedocs.io/en/latest/
+Keywords: node,editor,pyqt5,pyqt,pyside2,pyside,socket,edge,graph,connection,nodes,qnode,qnodeeditor
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt5 ~=5.15.10
+Requires-Dist: networkx ~=3.2.1
+Provides-Extra: docs
+Requires-Dist: sphinx-toolbox ; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme ; extra == 'docs'
+Requires-Dist: sphinx-design ; extra == 'docs'
+Requires-Dist: sphinx-qt-documentation ; extra == 'docs'
+
+# QNodeEditor
+
+![pylint](https://img.shields.io/badge/pylint-9.58-yellow?logo=python&logoColor=white)
+[<img src="https://img.shields.io/badge/github--blue?logo=github" alt="Github badge">](https://github.com/JasperJeuken/QNodeEditor)
+[<img src="https://img.shields.io/badge/PyPi--blue?logo=pypi" alt="PyPi badge">](https://pypi.org/project/QNodeEditor/)
+[<img src="https://img.shields.io/badge/Documentation--blue?logo=readthedocs" alt="readthedocs badge">](https://qnodeeditor.readthedocs.io/en/latest/)
+[<img src="https://readthedocs.org/projects/qnodeeditor/badge/" alt="readthedocs badge 2">](https://qnodeeditor.readthedocs.io/en/latest/)
+
+QNodeEditor is a collection of widgets that enables you to easily create 
+and use a node editing environment in PyQt5.
+
+| <img src="https://raw.githubusercontent.com/JasperJeuken/QNodeEditor/main/images/demo.gif" alt="Example node scene being edited" width="100%"/> |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------:|
+|                                            <div width="100%">*Example node scene being edited*</div>                                            |
+
+|  <img src="https://raw.githubusercontent.com/JasperJeuken/QNodeEditor/main/images/themes.jpg" alt="drawing" width="100%"/>   |
+|:----------------------------------------------------------------------------------------------------------------------------:|
+|                                <div width="100%">*QNodeEditor supports flexible themes*</div>                                |
+
+## Installing
+Install the package using the following command:
+
+```
+pip install QNodeEditor
+```
+
+## Requirements
+The QNodeEditor package requires the following packages:
+- [PyQt5](https://pypi.org/project/PyQt5/)
+- [networkx](https://pypi.org/project/networkx/)
+
+## Usage
+For a full guide on how to use QNodeEditor, check out the [Documentation](https://qnodeeditor.readthedocs.io/en/latest/).
+Here you can find tips on how to get started, as well as the API documentation for QNodeEditor.
+
+### Example
+Below is some sample code for creating a node that performs an addition of two values.
+```python
+from QNodeEditor import Node
+
+class AddNode(Node):
+    code = 0  # Unique code for each node type
+    
+    def create(self):
+        self.title = 'Addition'  # Set the node title
+        
+        self.add_label_output('Output')  # Add output socket
+        self.add_value_input('Value 1')  # Add input socket for first value
+        self.add_value_input('Value 2')  # Add input socket for second value
+        
+    def evaluate(self, values: dict):
+        result = values['Value 1'] + values['Value 2']  # Add 'Value 1' and 'Value 2'
+        self.set_output_value('Output', result)         # Set as value for 'Output'
+```
+<img src="https://raw.githubusercontent.com/JasperJeuken/QNodeEditor/main/images/addition_node.jpg" alt="Example node" width="300">
+
+This node can now be used in a scene. When it is evaluated, it will take `Value 1` and `Value 2`, add them, and set it as the value of `Output`.
+
+This is a simple node, but the package is flexible. You can place any widgets inside the node, and define the logic as you wish. You can also attach
+to signals emitted by the scene, such as when two nodes are connected together.
+
+A node scene evaluates the scene asynchronously, meaning the interface will not freeze while a calculation is performed. If an error occurs, it is signalled,
+and you can handle it as you want.
+
+## License
+This package uses the MIT License (see the [LICENSE](./LICENSE) file).
+
+The package is inspired by the [pyqt-node-editor](https://gitlab.com/pavel.krupala/pyqt-node-editor)
+(MIT license) package by Pavel Křupala.
