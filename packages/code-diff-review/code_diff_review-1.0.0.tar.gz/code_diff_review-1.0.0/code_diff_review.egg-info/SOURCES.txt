@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+code_diff_review.egg-info/PKG-INFO
+code_diff_review.egg-info/SOURCES.txt
+code_diff_review.egg-info/dependency_links.txt
+code_diff_review.egg-info/entry_points.txt
+code_diff_review.egg-info/requires.txt
+code_diff_review.egg-info/top_level.txt
+src/__init__.py
+src/publishers.py
+src/script.py
