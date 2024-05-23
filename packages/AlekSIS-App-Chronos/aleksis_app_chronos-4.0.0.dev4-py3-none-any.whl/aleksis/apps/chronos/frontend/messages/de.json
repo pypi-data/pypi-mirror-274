@@ -1,0 +1,50 @@
+{
+  "chronos": {
+    "event": {
+      "amend": {
+        "cancelled": "Fällt aus",
+        "comment": "Kommentar",
+        "delete_button": "Zurücksetzen",
+        "delete_dialog": "Sind Sie sicher, dass Sie diese Vertretung löschen wollen?",
+        "delete_success": "Die Vertretung wurde erfolgreich gelöscht.",
+        "edit_button": "Ändern",
+        "rooms": "Räume",
+        "subject": "Fach",
+        "teachers": "Lehrkräfte",
+        "title": "Stunde ändern"
+      },
+      "current_changes": "Aktuelle Änderungen",
+      "no_room": "Kein Raum",
+      "no_teacher": "Keine Lehrkraft"
+    },
+    "lessons": {
+      "menu_title_daily": "Tagesstunden"
+    },
+    "menu_title": "Stundenpläne",
+    "substitutions": {
+      "menu_title": "Vertretungen"
+    },
+    "supervisions": {
+      "menu_title_daily": "Aufsichten",
+      "title": "Aufsicht"
+    },
+    "timetable": {
+      "menu_title": "Stundenpläne",
+      "menu_title_all": "Alle Stundenpläne",
+      "menu_title_my": "Mein Stundenplan",
+      "next": "Nächster Stundenplan",
+      "no_timetable_selected": {
+        "description": "Wählen Sie auf der linken Seite einen Stundenplan aus, um ihn hier anzuzeigen",
+        "title": "Kein Stundenplan ausgewählt"
+      },
+      "prev": "Vorheriger Stundenplan",
+      "search": "Stundenpläne suchen",
+      "select": "Stundenplan auswählen",
+      "types": {
+        "groups": "Gruppen",
+        "rooms": "Räume",
+        "teachers": "Lehrkräfte"
+      }
+    }
+  }
+}
