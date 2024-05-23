@@ -1,0 +1,14 @@
+integrals_test.cpython-310-x86_64-linux-gnu.so,sha256=zLTWkl8z47ODCy-Q8S6-eDx8lqbQ-QaOfYgijd7lHJ4,258160
+boringcalculator/__init__.cpython-310-x86_64-linux-gnu.so,sha256=PjR0BAXT-6dwMaBZ207IyhZed0PTndD2WS_16LcYG94,83560
+boringcalculator/core/processing.cpython-310-x86_64-linux-gnu.so,sha256=OJUWX953bnyHc5FnIkby3F73fxY3d8HP4NlnInmxyNc,1853672
+boringcalculator/core/__init__.cpython-310-x86_64-linux-gnu.so,sha256=Yke0jZ4lL0m8vUiLiL_39GfEr6CCYDgrhsiKrivj-tw,74136
+boringcalculator/tools/duplicates.cpython-310-x86_64-linux-gnu.so,sha256=5GjAc3jEUnXvWiE7LFrZbSS3wmVtO0TNfMgX_p6ul2U,308448
+boringcalculator/tools/__init__.cpython-310-x86_64-linux-gnu.so,sha256=aZbl9JFQfQHF0kjxaOSDLinIa8Qxu8m09Hfo-o3DSxc,82136
+boringcalculator/parsing/__init__.cpython-310-x86_64-linux-gnu.so,sha256=cTJvsuvHBzfbrirUU1pMzdP_5XBDvXRoF-Y9Yt3sa-4,880768
+boringcalculator/commands/__main__.cpython-310-x86_64-linux-gnu.so,sha256=21Q4wVaqBPxINtYbv2Srv6gIF8qeNdw75OK4Jo5vmYM,249608
+boringcalculator/commands/__init__.cpython-310-x86_64-linux-gnu.so,sha256=LJmsQtBmDJ4PzURHXBR0jKKC0Xy_R_39LRICr2JLhrc,74032
+boringcalculator-1.0.dist-info/entry_points.txt,sha256=n-g5int3YRv_gWMBCnZ-Lj34KgYb7oBwO0LishZzFv4,70
+boringcalculator-1.0.dist-info/METADATA,sha256=1pQE3-Vs1h3x8d-04FoXojsAcfSduLx7HXRqc5gxhp0,354
+boringcalculator-1.0.dist-info/top_level.txt,sha256=h8A4oVRsE_Ss9gvcRO6B0MUZ37LUycC0zR0xnOvQg1E,32
+boringcalculator-1.0.dist-info/WHEEL,sha256=CzQQWV-lNyM92gr3iaBk8dvO35YDHRxgzkZ-dxumUIM,152
+boringcalculator-1.0.dist-info/RECORD,,
