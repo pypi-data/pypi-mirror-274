@@ -1,0 +1,9 @@
+ignoro-1.2.2.dist-info/METADATA,sha256=T8PkmS9UR8cUwKfgaVWHn2OADkHDRRpA6pvHNJiiy2g,7281
+ignoro-1.2.2.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+ignoro-1.2.2.dist-info/entry_points.txt,sha256=6T0KCsl04TS7zZQWP8dnSGxSAgckyG8f0PFM5kZns_g,43
+ignoro-1.2.2.dist-info/licenses/LICENSE,sha256=TII1oB94A4t88EvLhYIPAHcdG2S2VQjLH4O7f9PF_0U,1073
+ignoro/__init__.py,sha256=AdLzn_6rmzDMtG85SkRtB_Wilu88JPFE9_VjfTBq0wg,149
+ignoro/api.py,sha256=YnrfSjqkQ-hwXUGdPM5mhBC0abSQ5WvP9RGJOEiaQxo,13148
+ignoro/cli.py,sha256=GdlL140FUdtQILsw_MyxV7_dz5cDjHM0N4PZi6zJALQ,12450
+ignoro/exceptions.py,sha256=601oC_JzWzhc9uR3nl9j6WmkJ-1tmPxityQruBg48x8,174
+ignoro-1.2.2.dist-info/RECORD,,
