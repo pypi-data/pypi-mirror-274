@@ -1,0 +1,3 @@
+[console_scripts]
+countASAP = countASAP.asap_process:run
+pullEXs = countASAP.get_tests:getit
