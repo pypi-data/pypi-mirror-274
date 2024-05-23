@@ -1,0 +1,2 @@
+[console_scripts]
+dicomsort = pydicomsorter.cli:main
