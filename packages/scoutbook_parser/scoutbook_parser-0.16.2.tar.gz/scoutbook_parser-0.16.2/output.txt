@@ -1,0 +1,795 @@
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned 5
+ic| rank: 'Eagle'
+resulting rank:  Eagle 6
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned 5
+ic| rank: 'Eagle'
+resulting rank:  Eagle 6
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned 5
+ic| rank: 'Eagle'
+resulting rank:  Eagle 6
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned 5
+ic| rank: 'Eagle'
+resulting rank:  Eagle 6
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned 5
+ic| rank: 'Eagle'
+resulting rank:  Eagle 6
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned 5
+ic| rank: 'Eagle'
+resulting rank:  Eagle 6
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned 5
+ic| rank: 'Eagle'
+resulting rank:  Eagle 6
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
+Higher rank being assigned 5
+ic| rank: 'Eagle'
+resulting rank:  Eagle 6
+Higher rank being assigned None
+ic| rank: 'Scout'
+resulting rank:  Scout 0
+Higher rank being assigned 0
+ic| rank: 'Tenderfoot'
+resulting rank:  Tenderfoot 1
+Higher rank being assigned 1
+ic| rank: 'Second Class'
+resulting rank:  Second Class 2
+Higher rank being assigned 2
+ic| rank: 'First Class'
+resulting rank:  First Class 3
+Higher rank being assigned 3
+ic| rank: 'Star'
+resulting rank:  Star 4
+Higher rank being assigned 4
+ic| rank: 'Life'
+resulting rank:  Life 5
