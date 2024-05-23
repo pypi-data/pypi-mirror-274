@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pybehave
+Version: 1.0.19
+Summary: Pybehave
+Author-email: Evan Dastin-van Rijn <dasti006@umn.edu>, Joel Nielsen <niels641@umn.edu>, Alik Widge <awidge@umn.edu>
+Project-URL: Homepage, https://github.com/tne-lab/py-behav-box-v2
+Project-URL: Bug Tracker, https://github.com/tne-lab/py-behav-box-v2/issues
+Project-URL: Documentation, https://py-behav-box-v2.readthedocs.io/en/latest/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: msgspec
+Requires-Dist: pygame
+Requires-Dist: screeninfo
+Requires-Dist: PyQt5
+Requires-Dist: psutil
+Provides-Extra: bo
+Requires-Dist: matplotlib ; extra == 'bo'
+Provides-Extra: full
+Requires-Dist: pyzmq ; extra == 'full'
+Requires-Dist: pywin32 ; extra == 'full'
+Requires-Dist: opencv-python ; extra == 'full'
+Requires-Dist: imutils ; extra == 'full'
+Requires-Dist: qasync ; extra == 'full'
+Requires-Dist: pyserial ; extra == 'full'
+Requires-Dist: nidaqmx ; extra == 'full'
+Requires-Dist: hikload ; extra == 'full'
+Requires-Dist: matplotlib ; extra == 'full'
+Provides-Extra: hikvision
+Requires-Dist: hikload ; extra == 'hikvision'
+Provides-Extra: ni
+Requires-Dist: nidaqmx ; extra == 'ni'
+Provides-Extra: oe
+Requires-Dist: pyzmq ; extra == 'oe'
+Provides-Extra: serial
+Requires-Dist: pyserial ; extra == 'serial'
+Provides-Extra: video
+Requires-Dist: opencv-python ; extra == 'video'
+Requires-Dist: imutils ; extra == 'video'
+Requires-Dist: qasync ; extra == 'video'
+Provides-Extra: whisker
+Requires-Dist: pywin32 ; extra == 'whisker'
+
