@@ -1,0 +1,9 @@
+matplotlib
+numpy
+opencv-python
+pandas
+scikit-learn
+SimpleITK
+pandas
+collections
+scikit-image
