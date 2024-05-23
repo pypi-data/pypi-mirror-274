@@ -1,0 +1,10 @@
+google-auth
+google-cloud-core
+google-cloud-storage
+google-api-python-client
+
+[dev]
+flake8
+mock
+pytest
+bumpversion
