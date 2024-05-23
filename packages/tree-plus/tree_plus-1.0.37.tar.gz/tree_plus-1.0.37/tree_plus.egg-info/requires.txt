@@ -1,0 +1,11 @@
+tiktoken
+PyYAML
+click
+rich
+tomli
+natsort>=7.1
+
+[dev]
+pytest
+pytest-dotenv
+pytest-xdist
