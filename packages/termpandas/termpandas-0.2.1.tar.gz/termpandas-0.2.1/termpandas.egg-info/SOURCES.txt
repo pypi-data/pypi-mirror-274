@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+termpandas/__init__.py
+termpandas/scrollable.py
+termpandas.egg-info/PKG-INFO
+termpandas.egg-info/SOURCES.txt
+termpandas.egg-info/dependency_links.txt
+termpandas.egg-info/requires.txt
+termpandas.egg-info/top_level.txt
+tests/tests.py
