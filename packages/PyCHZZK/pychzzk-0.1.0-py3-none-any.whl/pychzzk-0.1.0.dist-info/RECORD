@@ -1,0 +1,10 @@
+PyCHZZK/__init__.py,sha256=1jkgUYQxYeyKXBDkLOkelL8UMbwo_xqY9QE5o0vibwg,50
+PyCHZZK/_http.py,sha256=wlPz591Ad7xHSBHD1Z69XavetXhlFq1muFQC9rqDCK0,953
+PyCHZZK/api.py,sha256=3x1Gj3FSAjlL-t-tmVjbtE4Gr7vTNWbrX-ygGU9tWyY,2225
+PyCHZZK/utils.py,sha256=hLRUISNt37ZXQXALHJfJfSjgjDklEH_bzIt6jvSVmHw,140
+PyCHZZK/enums/__init__.py,sha256=rIF2697KnDLmu5K1E-jjSEihJvH9SdQWHQTutsj_LYo,52
+PyCHZZK/enums/fields.py,sha256=-RKszkXStyF7KI6q4SPTs1NDiUccegfkJ0azF_nZNxA,303
+pychzzk-0.1.0.dist-info/LICENSE,sha256=7os0s05y1H8N1XnPydCmoDQ2tEkLFe4Dr76jhSBrHkU,1065
+pychzzk-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pychzzk-0.1.0.dist-info/METADATA,sha256=OZPsIRy6PabbtfQwXf1XeFBj58w6RR0wh2hBCca64nk,1122
+pychzzk-0.1.0.dist-info/RECORD,,
