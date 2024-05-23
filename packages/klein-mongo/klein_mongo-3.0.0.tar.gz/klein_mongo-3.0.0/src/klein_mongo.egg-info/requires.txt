@@ -1,0 +1,2 @@
+klein_config>=3.0.0
+pymongo[srv]>=4.4.1
