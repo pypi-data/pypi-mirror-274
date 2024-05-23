@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "joaodemo123"
+version = "0.1.2"
+description = ""
+authors = ["Joao <joaoperry@gmail.com>"]
+readme = "README.md"
+packages = [{include = "demo123", from = "src"}]
+license = "MIT License"
+keywords = ["testing"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Console",
+  "License :: Public Domain",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
