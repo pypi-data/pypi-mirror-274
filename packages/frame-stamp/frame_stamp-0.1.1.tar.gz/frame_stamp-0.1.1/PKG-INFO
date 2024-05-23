@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: frame-stamp
+Version: 0.1.1
+Summary: Adding technical information to images using a template.
+Author: paulwinex
+Author-email: paulwinex@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pillow (>=10.2.0,<11.0.0)
+Requires-Dist: pyside6 (>=6.6.2,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Frame Stamp
+
+A tool for render technical information over image using template with render context
+
+Quick example:
+
+```python
+from frame_stamp.stamp import FrameStamp
+
+input_file = '...'
+output_file = '...'
+# template for stamping
+template = {}
+# render context
+variables = {}
+# frame stamp instance
+fs = FrameStamp(input_file, template, variables)
+# render
+fs.render(save_path=output_file)
+```
+
+### Open UI
+
+Activate Virtual env and run command.
+
+```shell
+./frame_stamp/bin/open_viewer.sh 
+```
+
+### TODO
+
+- font finding
+- alignment for grid
+- add templates in yaml and py format
+- limit column with
+- fit ceil content
+- Tiling and repeat
+- Triangles
+- Gradient fill
+- random function shortcut
+
