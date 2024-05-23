@@ -1,0 +1,8 @@
+webframe_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webframe_py/app.py,sha256=-h7gvfnERQl1sxaKCv5DFvMbCwUW26kaOf1AakmaxUY,4063
+webframe_py/middleware.py,sha256=382hye1NhJ6TnN89uAPk0Xb5BQ-HxRrD6jY9BmPHVKI,708
+webframe_py/response.py,sha256=XkC5WjSpy-AoOnQd92g6awh51dE1dCZB4-R-MX4CXxg,982
+webframe_py-0.1.1.dist-info/METADATA,sha256=bebUvNpm71iOzfHPBPXdVXmR9N6DSoGEyqoRco5fx-A,1092
+webframe_py-0.1.1.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+webframe_py-0.1.1.dist-info/top_level.txt,sha256=US2O2j2vXG93HfBtuR4Gc3MRamgiT2QupgDS5Dg_QFg,12
+webframe_py-0.1.1.dist-info/RECORD,,
