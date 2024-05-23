@@ -1,0 +1,17 @@
+@page {
+  size: 78mm 170mm;
+  margin: 3mm;
+}
+
+body {
+  margin-top: 10mm;
+  font-size: 7pt;
+}
+
+.right {
+  float: right;
+}
+
+table {
+  width: 100%;
+}
