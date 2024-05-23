@@ -1,0 +1,808 @@
+{
+  "query": "ti = plastic",
+  "num_results": 10000,
+  "begin": 1,
+  "end": 100,
+  "results": [
+    {
+      "family_id": "78617299",
+      "id_type": "docdb",
+      "country": "CA",
+      "doc_number": "3237865",
+      "kind": "A1",
+      "docdb_number": "CA3237865A1"
+    },
+    {
+      "family_id": "88510860",
+      "id_type": "docdb",
+      "country": "CA",
+      "doc_number": "3215798",
+      "kind": "A1",
+      "docdb_number": "CA3215798A1"
+    },
+    {
+      "family_id": "62222386",
+      "id_type": "docdb",
+      "country": "PL",
+      "doc_number": "3398771",
+      "kind": "T3",
+      "docdb_number": "PL3398771T3"
+    },
+    {
+      "family_id": "85657843",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "11984624",
+      "kind": "B1",
+      "docdb_number": "US11984624B1"
+    },
+    {
+      "family_id": "91033235",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024101836",
+      "kind": "A1",
+      "docdb_number": "WO2024101836A1"
+    },
+    {
+      "family_id": "91031794",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024098416",
+      "kind": "A1",
+      "docdb_number": "WO2024098416A1"
+    },
+    {
+      "family_id": "85611200",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024098535",
+      "kind": "A1",
+      "docdb_number": "WO2024098535A1"
+    },
+    {
+      "family_id": "88837346",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024158145",
+      "kind": "A1",
+      "docdb_number": "US2024158145A1"
+    },
+    {
+      "family_id": "77292581",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024157604",
+      "kind": "A1",
+      "docdb_number": "US2024157604A1"
+    },
+    {
+      "family_id": "81079414",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024157338",
+      "kind": "A1",
+      "docdb_number": "US2024157338A1"
+    },
+    {
+      "family_id": "63407208",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024159923",
+      "kind": "A1",
+      "docdb_number": "US2024159923A1"
+    },
+    {
+      "family_id": "91028857",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024159333",
+      "kind": "A1",
+      "docdb_number": "US2024159333A1"
+    },
+    {
+      "family_id": "90246135",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024159331",
+      "kind": "A1",
+      "docdb_number": "US2024159331A1"
+    },
+    {
+      "family_id": "80781021",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024159206",
+      "kind": "A1",
+      "docdb_number": "US2024159206A1"
+    },
+    {
+      "family_id": "88697510",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024158705",
+      "kind": "A1",
+      "docdb_number": "US2024158705A1"
+    },
+    {
+      "family_id": "90738205",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024158620",
+      "kind": "A1",
+      "docdb_number": "US2024158620A1"
+    },
+    {
+      "family_id": "88966135",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024158570",
+      "kind": "A1",
+      "docdb_number": "US2024158570A1"
+    },
+    {
+      "family_id": "91028767",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024158324",
+      "kind": "A1",
+      "docdb_number": "US2024158324A1"
+    },
+    {
+      "family_id": "88779050",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024158318",
+      "kind": "A1",
+      "docdb_number": "US2024158318A1"
+    },
+    {
+      "family_id": "88837530",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024162575",
+      "kind": "A1",
+      "docdb_number": "US2024162575A1"
+    },
+    {
+      "family_id": "84783570",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024162589",
+      "kind": "A1",
+      "docdb_number": "US2024162589A1"
+    },
+    {
+      "family_id": "75202930",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2023010452",
+      "kind": "A",
+      "docdb_number": "MX2023010452A"
+    },
+    {
+      "family_id": "80736068",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2023010582",
+      "kind": "A",
+      "docdb_number": "MX2023010582A"
+    },
+    {
+      "family_id": "74875212",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2023007725",
+      "kind": "A",
+      "docdb_number": "MX2023007725A"
+    },
+    {
+      "family_id": "74191474",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2023007197",
+      "kind": "A",
+      "docdb_number": "MX2023007197A"
+    },
+    {
+      "family_id": "82703559",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2023009301",
+      "kind": "A",
+      "docdb_number": "MX2023009301A"
+    },
+    {
+      "family_id": "80625483",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2023009798",
+      "kind": "A",
+      "docdb_number": "MX2023009798A"
+    },
+    {
+      "family_id": "63254102",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2023010668",
+      "kind": "A",
+      "docdb_number": "MX2023010668A"
+    },
+    {
+      "family_id": "87575882",
+      "id_type": "docdb",
+      "country": "CA",
+      "doc_number": "3237901",
+      "kind": "A1",
+      "docdb_number": "CA3237901A1"
+    },
+    {
+      "family_id": "83558124",
+      "id_type": "docdb",
+      "country": "CA",
+      "doc_number": "3237282",
+      "kind": "A1",
+      "docdb_number": "CA3237282A1"
+    },
+    {
+      "family_id": "65200767",
+      "id_type": "docdb",
+      "country": "PL",
+      "doc_number": "3740318",
+      "kind": "T3",
+      "docdb_number": "PL3740318T3"
+    },
+    {
+      "family_id": "59778903",
+      "id_type": "docdb",
+      "country": "PL",
+      "doc_number": "3655345",
+      "kind": "T3",
+      "docdb_number": "PL3655345T3"
+    },
+    {
+      "family_id": "90971224",
+      "id_type": "docdb",
+      "country": "PL",
+      "doc_number": "442738",
+      "kind": "A1",
+      "docdb_number": "PL442738A1"
+    },
+    {
+      "family_id": "70554000",
+      "id_type": "docdb",
+      "country": "HR",
+      "doc_number": "P20240214",
+      "kind": "T1",
+      "docdb_number": "HRP20240214T1"
+    },
+    {
+      "family_id": "90931716",
+      "id_type": "docdb",
+      "country": "RS",
+      "doc_number": "20220953",
+      "kind": "A1",
+      "docdb_number": "RS20220953A1"
+    },
+    {
+      "family_id": "90931426",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024097362",
+      "kind": "A1",
+      "docdb_number": "WO2024097362A1"
+    },
+    {
+      "family_id": "90929401",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024092706",
+      "kind": "A1",
+      "docdb_number": "WO2024092706A1"
+    },
+    {
+      "family_id": "90929099",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024092355",
+      "kind": "A1",
+      "docdb_number": "WO2024092355A1"
+    },
+    {
+      "family_id": "82740732",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2023008392",
+      "kind": "A",
+      "docdb_number": "MX2023008392A"
+    },
+    {
+      "family_id": "90894258",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024154215",
+      "kind": "A1",
+      "docdb_number": "US2024154215A1"
+    },
+    {
+      "family_id": "51015963",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024150063",
+      "kind": "A1",
+      "docdb_number": "US2024150063A1"
+    },
+    {
+      "family_id": "86282487",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024149683",
+      "kind": "A1",
+      "docdb_number": "US2024149683A1"
+    },
+    {
+      "family_id": "81307000",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024149537",
+      "kind": "A1",
+      "docdb_number": "US2024149537A1"
+    },
+    {
+      "family_id": "77657922",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024149535",
+      "kind": "A1",
+      "docdb_number": "US2024149535A1"
+    },
+    {
+      "family_id": "57758490",
+      "id_type": "docdb",
+      "country": "PT",
+      "doc_number": "3565724",
+      "kind": "T",
+      "docdb_number": "PT3565724T"
+    },
+    {
+      "family_id": "77930106",
+      "id_type": "docdb",
+      "country": "CA",
+      "doc_number": "3236922",
+      "kind": "A1",
+      "docdb_number": "CA3236922A1"
+    },
+    {
+      "family_id": "80595296",
+      "id_type": "docdb",
+      "country": "CA",
+      "doc_number": "3236981",
+      "kind": "A1",
+      "docdb_number": "CA3236981A1"
+    },
+    {
+      "family_id": "79830977",
+      "id_type": "docdb",
+      "country": "CA",
+      "doc_number": "3237224",
+      "kind": "A1",
+      "docdb_number": "CA3237224A1"
+    },
+    {
+      "family_id": "64459076",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240049847",
+      "kind": "A",
+      "docdb_number": "KR20240049847A"
+    },
+    {
+      "family_id": "84425375",
+      "id_type": "docdb",
+      "country": "CR",
+      "doc_number": "20230594",
+      "kind": "A",
+      "docdb_number": "CR20230594A"
+    },
+    {
+      "family_id": "84425167",
+      "id_type": "docdb",
+      "country": "CR",
+      "doc_number": "20230595",
+      "kind": "A",
+      "docdb_number": "CR20230595A"
+    },
+    {
+      "family_id": "82358477",
+      "id_type": "docdb",
+      "country": "PL",
+      "doc_number": "4185449",
+      "kind": "T3",
+      "docdb_number": "PL4185449T3"
+    },
+    {
+      "family_id": "82118914",
+      "id_type": "docdb",
+      "country": "ZA",
+      "doc_number": "202306645",
+      "kind": "B",
+      "docdb_number": "ZA202306645B"
+    },
+    {
+      "family_id": "90885132",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240054023",
+      "kind": "A",
+      "docdb_number": "KR20240054023A"
+    },
+    {
+      "family_id": "90884884",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240056139",
+      "kind": "A",
+      "docdb_number": "KR20240056139A"
+    },
+    {
+      "family_id": "90884685",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240055986",
+      "kind": "A",
+      "docdb_number": "KR20240055986A"
+    },
+    {
+      "family_id": "90884548",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240056344",
+      "kind": "A",
+      "docdb_number": "KR20240056344A"
+    },
+    {
+      "family_id": "90737986",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240053231",
+      "kind": "A",
+      "docdb_number": "KR20240053231A"
+    },
+    {
+      "family_id": "90669705",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240053088",
+      "kind": "A",
+      "docdb_number": "KR20240053088A"
+    },
+    {
+      "family_id": "90884274",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240053089",
+      "kind": "A",
+      "docdb_number": "KR20240053089A"
+    },
+    {
+      "family_id": "90884092",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240053090",
+      "kind": "A",
+      "docdb_number": "KR20240053090A"
+    },
+    {
+      "family_id": "90883028",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "102661554",
+      "kind": "B1",
+      "docdb_number": "KR102661554B1"
+    },
+    {
+      "family_id": "90882950",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240048711",
+      "kind": "A",
+      "docdb_number": "KR20240048711A"
+    },
+    {
+      "family_id": "90882792",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240049456",
+      "kind": "A",
+      "docdb_number": "KR20240049456A"
+    },
+    {
+      "family_id": "90844321",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "20240050034",
+      "kind": "A",
+      "docdb_number": "KR20240050034A"
+    },
+    {
+      "family_id": "90844300",
+      "id_type": "docdb",
+      "country": "KR",
+      "doc_number": "102658534",
+      "kind": "B1",
+      "docdb_number": "KR102658534B1"
+    },
+    {
+      "family_id": "88836477",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "11970605",
+      "kind": "B1",
+      "docdb_number": "US11970605B1"
+    },
+    {
+      "family_id": "88517542",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024141129",
+      "kind": "A1",
+      "docdb_number": "US2024141129A1"
+    },
+    {
+      "family_id": "83048341",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024141138",
+      "kind": "A1",
+      "docdb_number": "US2024141138A1"
+    },
+    {
+      "family_id": "88517542",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "2024139789",
+      "kind": "A1",
+      "docdb_number": "US2024139789A1"
+    },
+    {
+      "family_id": "90833025",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "D1024600",
+      "kind": "S",
+      "docdb_number": "USD1024600S"
+    },
+    {
+      "family_id": "90832389",
+      "id_type": "docdb",
+      "country": "US",
+      "doc_number": "D1024764",
+      "kind": "S",
+      "docdb_number": "USD1024764S"
+    },
+    {
+      "family_id": "49622822",
+      "id_type": "docdb",
+      "country": "AU",
+      "doc_number": "2024202118",
+      "kind": "A1",
+      "docdb_number": "AU2024202118A1"
+    },
+    {
+      "family_id": "90831628",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024091381",
+      "kind": "A1",
+      "docdb_number": "WO2024091381A1"
+    },
+    {
+      "family_id": "90831412",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024091081",
+      "kind": "A1",
+      "docdb_number": "WO2024091081A1"
+    },
+    {
+      "family_id": "90829569",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024087141",
+      "kind": "A1",
+      "docdb_number": "WO2024087141A1"
+    },
+    {
+      "family_id": "90829501",
+      "id_type": "docdb",
+      "country": "MY",
+      "doc_number": "201231",
+      "kind": "A",
+      "docdb_number": "MY201231A"
+    },
+    {
+      "family_id": "82118914",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2023007731",
+      "kind": "A",
+      "docdb_number": "MX2023007731A"
+    },
+    {
+      "family_id": "90825885",
+      "id_type": "docdb",
+      "country": "MX",
+      "doc_number": "2022002302",
+      "kind": "A",
+      "docdb_number": "MX2022002302A"
+    },
+    {
+      "family_id": "90825341",
+      "id_type": "docdb",
+      "country": "ZA",
+      "doc_number": "202309380",
+      "kind": "B",
+      "docdb_number": "ZA202309380B"
+    },
+    {
+      "family_id": "69177000",
+      "id_type": "docdb",
+      "country": "ZA",
+      "doc_number": "202208038",
+      "kind": "B",
+      "docdb_number": "ZA202208038B"
+    },
+    {
+      "family_id": "83847859",
+      "id_type": "docdb",
+      "country": "ZA",
+      "doc_number": "202308318",
+      "kind": "B",
+      "docdb_number": "ZA202308318B"
+    },
+    {
+      "family_id": "90825299",
+      "id_type": "docdb",
+      "country": "HU",
+      "doc_number": "P2200418",
+      "kind": "A1",
+      "docdb_number": "HUP2200418A1"
+    },
+    {
+      "family_id": "90825108",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "I833656",
+      "kind": "B",
+      "docdb_number": "TWI833656B"
+    },
+    {
+      "family_id": "90627870",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "I833389",
+      "kind": "B",
+      "docdb_number": "TWI833389B"
+    },
+    {
+      "family_id": "90823799",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "M651695",
+      "kind": "U",
+      "docdb_number": "TWM651695U"
+    },
+    {
+      "family_id": "88753474",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "M651049",
+      "kind": "U",
+      "docdb_number": "TWM651049U"
+    },
+    {
+      "family_id": "90823348",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "M651104",
+      "kind": "U",
+      "docdb_number": "TWM651104U"
+    },
+    {
+      "family_id": "90823290",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "M651078",
+      "kind": "U",
+      "docdb_number": "TWM651078U"
+    },
+    {
+      "family_id": "90823284",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "M651068",
+      "kind": "U",
+      "docdb_number": "TWM651068U"
+    },
+    {
+      "family_id": "84363069",
+      "id_type": "docdb",
+      "country": "CA",
+      "doc_number": "3235790",
+      "kind": "A1",
+      "docdb_number": "CA3235790A1"
+    },
+    {
+      "family_id": "80446795",
+      "id_type": "docdb",
+      "country": "CA",
+      "doc_number": "3236276",
+      "kind": "A1",
+      "docdb_number": "CA3236276A1"
+    },
+    {
+      "family_id": "90822854",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "202405064",
+      "kind": "A",
+      "docdb_number": "TW202405064A"
+    },
+    {
+      "family_id": "86732062",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "202404853",
+      "kind": "A",
+      "docdb_number": "TW202404853A"
+    },
+    {
+      "family_id": "90822810",
+      "id_type": "docdb",
+      "country": "TW",
+      "doc_number": "202404813",
+      "kind": "A",
+      "docdb_number": "TW202404813A"
+    },
+    {
+      "family_id": "74550685",
+      "id_type": "docdb",
+      "country": "PL",
+      "doc_number": "4103490",
+      "kind": "T3",
+      "docdb_number": "PL4103490T3"
+    },
+    {
+      "family_id": "90790628",
+      "id_type": "docdb",
+      "country": "PL",
+      "doc_number": "131036",
+      "kind": "U1",
+      "docdb_number": "PL131036U1"
+    },
+    {
+      "family_id": "90790589",
+      "id_type": "docdb",
+      "country": "PL",
+      "doc_number": "442543",
+      "kind": "A1",
+      "docdb_number": "PL442543A1"
+    },
+    {
+      "family_id": "90738205",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024086147",
+      "kind": "A1",
+      "docdb_number": "WO2024086147A1"
+    },
+    {
+      "family_id": "90737986",
+      "id_type": "docdb",
+      "country": "WO",
+      "doc_number": "2024085310",
+      "kind": "A1",
+      "docdb_number": "WO2024085310A1"
+    }
+  ]
+}
