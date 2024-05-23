@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: automethylML
+Version: 0.1.0
+Summary: pipline and version control for classifying methylation data
+Home-page: https://github.com/PhillipMaire/automethylML
+Author: Phillip Maire
+Author-email: phillip.maire@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# automethylML
+ 
