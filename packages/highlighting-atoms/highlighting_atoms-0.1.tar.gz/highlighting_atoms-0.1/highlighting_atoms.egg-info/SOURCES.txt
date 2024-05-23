@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+highlighting_atoms/__init__.py
+highlighting_atoms/highlighting_atoms.py
+highlighting_atoms.egg-info/PKG-INFO
+highlighting_atoms.egg-info/SOURCES.txt
+highlighting_atoms.egg-info/dependency_links.txt
+highlighting_atoms.egg-info/top_level.txt
