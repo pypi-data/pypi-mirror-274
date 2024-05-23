@@ -1,0 +1,9 @@
+setup.py
+ludoman/__init__.py
+ludoman/plots.py
+ludoman/streams.py
+ludoman.egg-info/PKG-INFO
+ludoman.egg-info/SOURCES.txt
+ludoman.egg-info/dependency_links.txt
+ludoman.egg-info/requires.txt
+ludoman.egg-info/top_level.txt
