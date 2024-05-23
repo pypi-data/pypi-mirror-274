@@ -1,0 +1,9 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_validator.py,sha256=2pqEpyRVKUlQgC7COH617AqKjHoML6PUom6Gwdm58wE,471
+vin_validator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vin_validator/validator.py,sha256=dQLQJ-3nUH4-b3-u-tpjcnOrEp_YxUfbY2tIhucvprI,475
+vin_validator-0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vin_validator-0.1.dist-info/METADATA,sha256=fvtyM2BupzgLwPDkcGcJMwJ_yPeqoTIbyW5yM96M8-g,1001
+vin_validator-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vin_validator-0.1.dist-info/top_level.txt,sha256=wOfS8zFwlIyO87t-ID8dP88t0qVZABbOtgP-vcv18hk,20
+vin_validator-0.1.dist-info/RECORD,,
