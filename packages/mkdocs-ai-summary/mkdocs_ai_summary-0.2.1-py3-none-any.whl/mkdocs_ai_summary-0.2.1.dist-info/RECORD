@@ -1,0 +1,10 @@
+mkdocs_ai_summary/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_ai_summary/chatgpt_api.py,sha256=kt6GGmeysbLoBMIulK2eW1Saw0hFiiIHa6yIJp-XbLs,1830
+mkdocs_ai_summary/plugin.py,sha256=Qwlfgq_zA1BxnkBuPGkxDBUoKm5YsRk4zCDQ1492CZ4,3977
+mkdocs_ai_summary/tongyi_api.py,sha256=HNjtUz2xfAfVOyCRtBhIRJ00Cj7jt0P8hBMIFAjtmAI,2245
+mkdocs_ai_summary-0.2.1.dist-info/LICENSE,sha256=vrNbqM0kOyD_E9z3dSq0GOmozo-ca2tQM_oRlmupo5M,1067
+mkdocs_ai_summary-0.2.1.dist-info/METADATA,sha256=4jhZHbGZuezEQFlS9G-iDuhHdTzikiVEkOdov8gzJNE,4711
+mkdocs_ai_summary-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mkdocs_ai_summary-0.2.1.dist-info/entry_points.txt,sha256=NWjIf6dJe0sqstMDT1BmM4v-K-q9eGudDUdCA8_zmH4,71
+mkdocs_ai_summary-0.2.1.dist-info/top_level.txt,sha256=aEO3V_MYzSLOP-Ley57cPy412531Ybz8mkjC6c_OBfk,18
+mkdocs_ai_summary-0.2.1.dist-info/RECORD,,
