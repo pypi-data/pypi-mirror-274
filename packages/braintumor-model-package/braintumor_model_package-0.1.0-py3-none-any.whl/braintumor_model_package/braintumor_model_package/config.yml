@@ -1,0 +1,35 @@
+# Package Overview
+package_name: braintumor_model_package
+
+# Dataset Folders
+train_data_file: Train
+test_data_file: Test
+# pipeline_save_file: str
+
+# Model parameters and variables
+modelname: braintumor_cnn_model
+
+img_size: 150
+
+batch_size: 32
+
+random_state:  101
+
+test_size: 0.2
+
+epoch: 10 
+
+class_names: 
+  pituitary: 3 
+  notumor: 2 
+  glioma: 0 
+  meningioma: 1
+
+learning_rate: 0.001
+
+drop_rate: 0.3
+
+dense_layer_first_inner_size: 128
+
+# for test purposes
+sample_test_image: Te-me_0019.jpg
