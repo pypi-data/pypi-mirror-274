@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: apeboiy
+Version: 0.0.8
+Summary: Shared AppleBoiy's packages.
+Author-email: AppleBoiy <contact.chaipat@gmail.com>
+Project-URL: Homepage, https://github.com/AppleBoiy
+Keywords: appleboiy,shared,packages
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Requires-Dist: numpy>=1.21.0
+
+# Example Package
+
+This is a simple example package.
+
+You can read more [here.](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+
+pypi: [pypi/AppleBoiy](https://pypi.org/manage/project/apeboiy/releases/)
