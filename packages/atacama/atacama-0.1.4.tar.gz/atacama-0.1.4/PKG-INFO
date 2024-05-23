@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: atacama
+Version: 0.1.4
+Summary: Python API for LLM
+License: MIT
+Author: Virtualitics Engineering
+Author-email: dev@virtualitics.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.2,<3.0.0)
+Project-URL: Documentation, https://python-poetry.org/docs/
+Description-Content-Type: text/markdown
+
+# This is the public readme
