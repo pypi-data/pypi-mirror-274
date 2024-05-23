@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hikac
+Version: 0.0.10
+Summary: A hikvision access control request manager
+Home-page: https://github.com/yusufjonc07/hikac
+Author: YusufAxmad
+Author-email: studentyusufaxmad@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# ID Generator
+A package used to generate random ids of variable lengths and types.
+
+## How to use
+_After installing the package use following import:_ <br>
+
+**from idgenerator import generate_password,generate_guid,generate_credit_card_number,
+    generate_pin_number,
+    generate_object_id**
+
+_Then use following commands:_
+
+**password = generate_password(length= 'your_desired_length')<br>**
+
+**guid = generate_guid()<br>**
+
+**credit_card_number = generate_credit_card_number(length='your_desired_length') <br>**
+
+**pin = generate_pin_number(length='your_desired_length') <br>**
+
+**objid = generate_object_id() <br>**
+
