@@ -1,0 +1,161 @@
+use std::collections::BTreeMap;
+
+use pep508_rs::VerbatimUrl;
+use uv_normalize::PackageName;
+
+use crate::{
+    BuiltDist, DirectorySourceDist, Dist, InstalledDirectUrlDist, InstalledDist, LocalEditable,
+    Name, Requirement, RequirementSource, ResolvedDist, SourceDist,
+};
+
+/// A set of packages pinned at specific versions.
+#[derive(Debug, Default, Clone)]
+pub struct Resolution(BTreeMap<PackageName, ResolvedDist>);
+
+impl Resolution {
+    /// Create a new resolution from the given pinned packages.
+    pub fn new(packages: BTreeMap<PackageName, ResolvedDist>) -> Self {
+        Self(packages)
+    }
+
+    /// Return the remote distribution for the given package name, if it exists.
+    pub fn get_remote(&self, package_name: &PackageName) -> Option<&Dist> {
+        match self.0.get(package_name) {
+            Some(dist) => match dist {
+                ResolvedDist::Installable(dist) => Some(dist),
+                ResolvedDist::Installed(_) => None,
+            },
+            None => None,
+        }
+    }
+
+    /// Iterate over the [`PackageName`] entities in this resolution.
+    pub fn packages(&self) -> impl Iterator<Item = &PackageName> {
+        self.0.keys()
+    }
+
+    /// Iterate over the [`ResolvedDist`] entities in this resolution.
+    pub fn distributions(&self) -> impl Iterator<Item = &ResolvedDist> {
+        self.0.values()
+    }
+
+    /// Return the number of distributions in this resolution.
+    pub fn len(&self) -> usize {
+        self.0.len()
+    }
+
+    /// Return `true` if there are no pinned packages in this resolution.
+    pub fn is_empty(&self) -> bool {
+        self.0.is_empty()
+    }
+
+    /// Return the set of [`Requirement`]s that this resolution represents.
+    pub fn requirements(&self) -> impl Iterator<Item = Requirement> + '_ {
+        self.0.values().map(Requirement::from)
+    }
+
+    /// Return an iterator over the [`LocalEditable`] entities in this resolution.
+    pub fn editables(&self) -> impl Iterator<Item = LocalEditable> + '_ {
+        self.0.values().filter_map(|dist| match dist {
+            ResolvedDist::Installable(Dist::Source(SourceDist::Directory(
+                DirectorySourceDist {
+                    path,
+                    url,
+                    editable: true,
+                    ..
+                },
+            ))) => Some(LocalEditable {
+                url: url.clone(),
+                path: path.clone(),
+                extras: vec![],
+            }),
+            ResolvedDist::Installed(InstalledDist::Url(InstalledDirectUrlDist {
+                path,
+                url,
+                editable: true,
+                ..
+            })) => Some(LocalEditable {
+                url: VerbatimUrl::from_url(url.clone()),
+                path: path.clone(),
+                extras: vec![],
+            }),
+            _ => None,
+        })
+    }
+}
+
+impl From<&ResolvedDist> for Requirement {
+    fn from(resolved_dist: &ResolvedDist) -> Self {
+        let source = match resolved_dist {
+            ResolvedDist::Installable(dist) => match dist {
+                Dist::Built(BuiltDist::Registry(wheels)) => RequirementSource::Registry {
+                    specifier: pep440_rs::VersionSpecifiers::from(
+                        pep440_rs::VersionSpecifier::equals_version(
+                            wheels.best_wheel().filename.version.clone(),
+                        ),
+                    ),
+                    index: None,
+                },
+                Dist::Built(BuiltDist::DirectUrl(wheel)) => {
+                    let mut location = wheel.url.to_url();
+                    location.set_fragment(None);
+                    RequirementSource::Url {
+                        url: wheel.url.clone(),
+                        location,
+                        subdirectory: None,
+                    }
+                }
+                Dist::Built(BuiltDist::Path(wheel)) => RequirementSource::Path {
+                    path: wheel.path.clone(),
+                    url: wheel.url.clone(),
+                    editable: false,
+                },
+                Dist::Source(SourceDist::Registry(sdist)) => RequirementSource::Registry {
+                    specifier: pep440_rs::VersionSpecifiers::from(
+                        pep440_rs::VersionSpecifier::equals_version(sdist.version.clone()),
+                    ),
+                    index: None,
+                },
+                Dist::Source(SourceDist::DirectUrl(sdist)) => {
+                    let mut location = sdist.url.to_url();
+                    location.set_fragment(None);
+                    RequirementSource::Url {
+                        url: sdist.url.clone(),
+                        location,
+                        subdirectory: sdist.subdirectory.clone(),
+                    }
+                }
+                Dist::Source(SourceDist::Git(sdist)) => RequirementSource::Git {
+                    url: sdist.url.clone(),
+                    repository: sdist.git.repository().clone(),
+                    reference: sdist.git.reference().clone(),
+                    precise: sdist.git.precise(),
+                    subdirectory: sdist.subdirectory.clone(),
+                },
+                Dist::Source(SourceDist::Path(sdist)) => RequirementSource::Path {
+                    path: sdist.path.clone(),
+                    url: sdist.url.clone(),
+                    editable: false,
+                },
+                Dist::Source(SourceDist::Directory(sdist)) => RequirementSource::Path {
+                    path: sdist.path.clone(),
+                    url: sdist.url.clone(),
+                    editable: sdist.editable,
+                },
+            },
+            ResolvedDist::Installed(dist) => RequirementSource::Registry {
+                specifier: pep440_rs::VersionSpecifiers::from(
+                    pep440_rs::VersionSpecifier::equals_version(dist.version().clone()),
+                ),
+                index: None,
+            },
+        };
+        Requirement {
+            name: resolved_dist.name().clone(),
+            extras: vec![],
+            marker: None,
+            source,
+            origin: None,
+        }
+    }
+}
