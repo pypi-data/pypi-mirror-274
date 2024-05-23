@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: hikac
+Version: 0.0.12
+Summary: A hikvision access control request manager
+Home-page: https://github.com/yusufjonc07/hikac
+Author: YusufAxmad
+Author-email: studentyusufaxmad@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# HIKVISION AC REQUEST MANAGER
+A package used to get needy data from Hikvision ac device request.
+
+## How to use
+_After installing the package use following import:_ <br>
+
+**from hikac import get_data_from_ac_event
+
+_In Your Api router, you can also use like that:_
+
+**@attandance_router.post("/attandance/face-id", include_in_schema=False)
+**async def get_attandance_users_list(
+**    req: Request,
+**    db: Session = ActiveSession,
+**):
+**    try:
+**        # use the class to collect nececary items of dict
+**        eventData = await get_data_from_ac_event(req)
+**
+**        if eventData.attendanceStatus:
+**            await makeDavomat(eventData.employeeId, eventData.attendanceStatus, eventData.dateTime, eventData.deviceName, db)
+**
+**            return "success"
+**    except Exception as e:
+**        print(e.args)
+**
+
+
