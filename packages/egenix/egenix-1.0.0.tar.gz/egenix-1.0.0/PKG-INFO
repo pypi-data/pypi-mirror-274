@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: egenix
+Version: 1.0.0
+Summary: eGenix.com Namespace Package
+Author-email: "eGenix.com Software, Skills and Services GmbH" <info@egenix.com>
+Maintainer-email: "eGenix.com Software, Skills and Services GmbH" <info@egenix.com>
+License: Apache-2.0 license
+Project-URL: Homepage, https://github.com/eGenix
+Project-URL: Repository, https://github.com/eGenix
+Keywords: egenix,namespace
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities 
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+
+
+# eGenix.com Namespace Package
+
+This namespace package will host future eGenix.com library releases as sub-packages.
+
+# License
+
+(c) Copyright 2024, eGenix.com Software, Skills and Services GmbH, Germany.
+This software is licensed under the Apache License, Version 2.0.
+Please see the LICENSE file for details.
+
+# Contact
+
+For inquiries related to the package, please write to info@egenix.com.

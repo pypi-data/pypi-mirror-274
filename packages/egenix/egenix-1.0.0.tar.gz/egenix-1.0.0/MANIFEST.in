@@ -1,0 +1,7 @@
+include *.py
+include *.txt
+include env.*sh
+include LICENSE
+include Makefile
+include pyproject*.toml
+include README.md
