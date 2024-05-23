@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: giza-sdk
+Version: 0.1.0
+Summary: Metapackage for installing Giza packages
+Home-page: https://github.com/gizatechxyz/giza-sdk
+License: MIT
+Author: Tu Nombre
+Author-email: tuemail@example.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: giza-agents (>=0.4.0)
+Requires-Dist: giza-cli (>=0.17.0)
+Requires-Dist: giza-datasets (>=0.3.0)
+Project-URL: Repository, https://github.com/gizatechxyz/giza-sdk
+Description-Content-Type: text/markdown
+
+# giza-sdk
+
+giza-sdk is a metapackage designed to simplify the installation and management of the Giza ecosystem of packages. It bundles three primary packages essential for Giza-related development.
+
+Packages Included:
+
+	
+1.	[**giza-cli**](https://docs.gizatech.xyz/products/platform): A command-line interface for interacting with Giza services and tools.
+2.  [**giza-agents**](https://docs.gizatech.xyz/products/ai-agents): Giza Agents is a framework for trust-minimized integration of machine learning into on-chain strategy and action.
+3.	[**giza-datasets**](https://docs.gizatech.xyz/products/datasets):A package for managing and interacting with datasets in Giza.
+
+
+## Installation
+
+To install the giza-sdk and all included packages, run:
+
+```bash
+pipx install giza-sdk
+```
+
+## Usage
+
+Now everything is available under the name giza! Here are some examples:
+
+```python
+from giza.datasets import DatasetsLoader
+from giza import cli
+from giza.agents import GizaAgent
+```
+
+## Uninstallation
+
+To uninstall giza-sdk along with its dependencies, run:
+
+```python
+pip uninstall giza-sdk
+```
+
+## License
+
+This project is licensed under the MIT License.
