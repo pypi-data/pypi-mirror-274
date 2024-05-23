@@ -1,0 +1,8 @@
+docker network bridge
+
+if npm error:
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+gradio cc install
+gradio cc dev --host 0.0.0.0
