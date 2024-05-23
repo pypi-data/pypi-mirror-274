@@ -1,0 +1,14 @@
+fast_deep_rnn/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+fast_deep_rnn/_modidx.py,sha256=GFfqs-WtmozPkhhhEtMwa9Fu-xfxKX3a2xh1d114AgM,54931
+fast_deep_rnn/common_core.py,sha256=FTKzyNJv9kyKNpPTwPlT7D-_-yoPcNi8AqLApVnU_70,6402
+fast_deep_rnn/core.py,sha256=zj-twk7xzVp9fcZ4ReDLFndq-eP6rwE0whZFlBi6H8Q,16640
+fast_deep_rnn/core_v2.py,sha256=gzXIhqOFZYcPp-Uyjftli8ZNCxt8v45ByQoVMBPEoSY,18145
+fast_deep_rnn/sort_training.py,sha256=phCs99_5hf8F_6o1VgD-N1Y04uxy6G77jNtb6DCmI1Q,2092
+fast_deep_rnn/old/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_deep_rnn/old/core.py,sha256=r2WyHdIJ985-GiIUwROeB9egJAGQgxIeno2UHHMm3L0,3309
+fast_deep_rnn-0.0.2.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+fast_deep_rnn-0.0.2.dist-info/METADATA,sha256=McAHj3b0TWkGz8eSEazxSEtIe00k1CjpBTU1AB6xMCE,2082
+fast_deep_rnn-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fast_deep_rnn-0.0.2.dist-info/entry_points.txt,sha256=PFyommfTD8cIlY0fwQWnyrmIijLt6op-DWUaXr9kJto,48
+fast_deep_rnn-0.0.2.dist-info/top_level.txt,sha256=0ZyH5J2UzTbA4bEVK5TjuHbnEYcV8DAxL6usYfp97wE,14
+fast_deep_rnn-0.0.2.dist-info/RECORD,,
