@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: torchcat
+Version: 0.0.2
+Summary: 用于简化 torch 模型训练的工具
+Home-page: https://zhuanlan.zhihu.com/p/26159930
+Author: kaiyu
+Author-email: 2971934557@qq.com
+License-File: License
+Requires-Dist: numpy
+Requires-Dist: torchsummary
+
