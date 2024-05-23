@@ -1,0 +1,16 @@
+polars_evm/__init__.py,sha256=AoKF_9AKxf4x4VxdjiWMV-V5OwKQi4bhse_Dby4XcHo,160
+polars_evm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polars_evm/_helpers/__init__.py,sha256=pAyqPIrdBu4pa08otBTWYKpwYIXZK938CtIeHmMRgvI,84
+polars_evm/_helpers/encoding_conversions.py,sha256=QlxEUk07b727VgzoZF3BB9CSJ9Vpnq5sM1vlcB8HaKE,2426
+polars_evm/_helpers/formatting.py,sha256=V8zFSWBD-sEQ3S_k9WxroA25PbTRHmQNV7GF4HQG_Pw,155
+polars_evm/_helpers/hashes.py,sha256=Vxxswg6tBXuNRon2godUzB5ItiSqa_GZ2Es6GRcAjwc,1093
+polars_evm/namespaces/__init__.py,sha256=NyxK9Ei_VczZ5yM0z-UlV4o2Ynz0d2IydG_Egcbn4BU,121
+polars_evm/namespaces/df_namespace.py,sha256=XPBTkM_PilEHdMNWQ1jHRtEqM_QCv3o672Ju4-Q4GWs,935
+polars_evm/namespaces/expr_namespace.py,sha256=fDlLc4vBVBgwlw2UoASu0Rnf0uWkdaw1n-mvYKI_rlI,1067
+polars_evm/namespaces/lazyframe_namespace.py,sha256=ahqETYOofXBuU9f69MUx-nP-afyBotVkKFeQOJw5eEA,1614
+polars_evm/namespaces/series_namespace.py,sha256=dLA0bjiq63LGH0n2xJI_zZN_DpgW9UHhSV2G8xW5D5I,1001
+polars_evm-0.1.4.dist-info/LICENSE-APACHE,sha256=pg7qgXUUUxZo1-AHZXMUSf4U0FnTJJ4LyTs23kX3WfI,10847
+polars_evm-0.1.4.dist-info/LICENSE-MIT,sha256=ZkoVnIZkHXggAt4VkBSHSHtzI4nAQ0IoBY9C5HOYQVA,1095
+polars_evm-0.1.4.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+polars_evm-0.1.4.dist-info/METADATA,sha256=yOmiwBjWwLEPRZ74mxr2Trli4c7VQP7rLwxxay3NiSc,3443
+polars_evm-0.1.4.dist-info/RECORD,,
