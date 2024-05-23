@@ -1,0 +1,5 @@
+[tool.taskipy.tasks]
+clean = { cmd = "echo 'Limpando pastas e arquivos necessários para publicação do pacote.' && rm -f --recursive build/ && rm -f --recursive dist/ && rm -f --recursive *.egg-info", help = "Limpa pastas e arquivos para publicação do pacote." }
+build = { cmd = "echo 'Construindo pacote.' && python setup.py sdist bdist_wheel", help = "Constroi pastas e arquivos do pacote." }
+publish-pypi = { cmd = "echo 'Publicando pacote.' && twine upload dist/*", help = "Publica pacote no PyPi." }
+publish = { cmd = "task clean && task build && task publish-pypi", help = "Limpa, constroi e publica nova versão do pacote no PyPi." }
