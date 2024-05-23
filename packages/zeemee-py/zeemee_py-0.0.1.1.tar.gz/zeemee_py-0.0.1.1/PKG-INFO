@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: zeemee_py
+Version: 0.0.1.1
+Summary: Python packages for ZeeMee data-team
+Author-email: Mayur Waghela <mayur@zeemee.com>
+Project-URL: Homepage, https://github.com/zeemee/data-team
+Project-URL: Issues, https://github.com/zeemee/data-team/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas==2.2.2
+Requires-Dist: psycopg2==2.9.9
+Requires-Dist: pyyaml==6.0.1
+Requires-Dist: redshift-connector==2.1.1
+Requires-Dist: pyathena==3.8.2
+Requires-Dist: build==1.2.1
+Requires-Dist: twine==5.0.0
+Requires-Dist: duckdb==0.10.2
+
+# data-team
+
+## data folder requirements
+```
+Home
+|_data/
+     |_ certificates/ (slate certificates)
+     |_ config.yml
+     |_ prediction_model/ (pickle files for model)
+```
+
+## Installation
+for test.pypi installation testing, use the following command-extra index points to pypi for installing 
+additional dependencies:
+```
+python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ zeemee_python
+```
+
+## Future Updates:
+```
+reports/touchpoint_report: 
+-remove dependency on postwrangler files. Entire report to be made from database tables.
+- org_additional field name changes: tp_status = weekly_tuesday_1, 
+```
+
+## Frequency in order of run
+```
+daily
+     - slack_daily_new_accounts
+     - all_partner_data
+     - additional_fields_all_partner_data
+     - one pager data
+     - virtual_events
+     - prediction model for daily schools
+     - organization_data table
+     - org_data_tracker table
+     - touchpoint report for daily schools
+     - touchpoint_dash for daily schools
+     
+weekly
+     - touchpoint_dash for weekly schools
+     - touchpoint report for weekly schools
+     - interest report
+     - vaccum redshift tables
+```
+
+
+
+
+
+
+
+
+
+------ Following set up to be replicated in redshift_data_team_table_updated folder code and then code below 
+------ to be deprecated
+
+- data_team_etl: 
+     Contains Athena table update code. Each table has its own folder. This is the logical sequence of functions in each folder:
+     
+     calculate_values > create_one_school_data > process_for_config_schools > perform_athena_update 
+          
+     These functions are combined in main_stitch function and this main stitch function are to be run through a file named launch_xxxxx . This ensure local changes are picked up by cron job without the need to recreate the job. This is an Rstudio issue.
+     Each folder has the above logical sequence of functions for following cases. We will use all_partner_data_part1 (ap1) as the example to show those cases-
+     - ap1
+     - ap1_by_gender
+     - ap1_for_old_cohort
+     - ap1_by_gender_for_old_cohort
+     - ap1_for_single_file (to be added)
+     
+     We decided to keep the table update code separately in each table folder as each table could have different basis for joining/deleting rows. At present, we only have org table that doesn't use student_type and start_term to join/filter data. But we could have more such cases in future
+     
+     We don't consider gender while deleting rows while updating the table. This is because we should be deleting all gender rows related to a specific school and replace them with new gender rows everytime. We shouldn't delete a specific gender row for a specific school and update just that. 
+     
+Additions planned:
+- old cohort data (move old_cohort_data folder under data-team so backfill and old cohort update code will also be tracked)
+- zeemee_analytics/ data_analytics (this will have code related to daily analytics update like slack webhook in comms channel, dashboard email code, etc)
+- full_pipeline code (this section will need some clean up before we add it to it. Ensure .gitignore is properly updated for big files and sensitive data)
+          

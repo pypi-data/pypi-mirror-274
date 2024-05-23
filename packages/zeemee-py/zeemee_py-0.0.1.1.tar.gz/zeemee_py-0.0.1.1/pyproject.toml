@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=69.5.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zeemee_py"
+version = "0.0.1.1"
+authors = [
+  { name="Mayur Waghela", email="mayur@zeemee.com" },
+]
+description = "Python packages for ZeeMee data-team"
+readme = "README.md"
+requires-python = ">=3.11.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+     "pandas==2.2.2",
+     "psycopg2==2.9.9",
+     "pyyaml==6.0.1",
+     "redshift-connector==2.1.1",
+     "pyathena==3.8.2",
+     "build==1.2.1",
+     "twine==5.0.0",
+     "duckdb==0.10.2"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.urls]
+Homepage = "https://github.com/zeemee/data-team"
+Issues = "https://github.com/zeemee/data-team/issues"
