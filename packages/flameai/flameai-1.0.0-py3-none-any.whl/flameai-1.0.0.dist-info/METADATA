@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: flameai
+Version: 1.0.0
+Summary: Deep Learning Toolkit.
+Project-URL: repository, https://github.com/luochang212/flameai
+Project-URL: bug-tracker, https://github.com/luochang212/flameai/issues
+Project-URL: documentation, https://luochang212.github.io/posts/flameai
+Author: luochang
+Author-email: luochang212@gmail.com
+License: Apache-2.0
+License-File: LICENSE
+Keywords: deep learning,flameai
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Requires-Dist: matplotlib>=3.8.4
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: optuna>=3.6.1
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: scikit-learn>=1.5.0
+Requires-Dist: scipy>=1.13.0
+Requires-Dist: seaborn>=0.13.2
+Description-Content-Type: text/markdown
+
+# flameai
