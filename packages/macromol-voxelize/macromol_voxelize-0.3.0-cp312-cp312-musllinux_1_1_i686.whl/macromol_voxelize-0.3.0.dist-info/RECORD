@@ -1,0 +1,12 @@
+macromol_voxelize.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+macromol_voxelize.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+macromol_voxelize/__init__.py,sha256=m76nL7b3ze4Rlww6cxm6N1tOhl3IqyZWdwrefTIz8pg,71
+macromol_voxelize/_voxelize.cc,sha256=Oz8jOSm4Z0guaVucUdV62aWxHdhBunYyvp36eAOpO8M,15238
+macromol_voxelize/pymol.py,sha256=_8sWbrOu2LFOtX4uCJ6CN3xXZSV-OGUkW13j8fEfL5s,11871
+macromol_voxelize/_voxelize.cpython-312-i386-linux-musl.so,sha256=RHlP1rPMM_ZG6FCdIF172Z2dTKEmMYMvh0xaO3t5Ddw,384465
+macromol_voxelize/voxelize.py,sha256=6yCXaBQKjGjVr7DOp82nRUy3yH7DNfi0ntNJjGVehKs,14352
+macromol_voxelize-0.3.0.dist-info/WHEEL,sha256=IKrDIzQ3rB6UMluXz0mlxa4dJRc8csRO7VVYq_Shvsc,111
+macromol_voxelize-0.3.0.dist-info/LICENSE.txt,sha256=GzeCzK17hhQQDNow0_r0L8OfLpeTKQjFQwBQU7ZUymg,32473
+macromol_voxelize-0.3.0.dist-info/top_level.txt,sha256=hXHmyxrk9Yk8gQ4y4idXgkNEtZzqpy77KtB-cM52RZQ,18
+macromol_voxelize-0.3.0.dist-info/RECORD,,
+macromol_voxelize-0.3.0.dist-info/METADATA,sha256=DfIWa7HOaoW4dKoEN0zSdUT1fQc0lESlD1LVmSMhpEM,6140
