@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: asciidraw
+Version: 0.1.2
+Summary: asciidraw is a simple python library to draw ascii art diagrams.
+Home-page: https://github.com/APN-Pucky/asciidraw
+Author: Alexander Puck Neuwirth
+Author-email: alexander@neuwirth-informatik.de
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama
+Requires-Dist: termcolor
+Project-URL: Repository, https://github.com/APN-Pucky/asciidraw
+Description-Content-Type: text/markdown
+
+# asciidraw
+
+A simple ASCII drawing tool.
+
+## Documentation and Examples
+
+A very simple example can be found in the `debug` directory.
+
