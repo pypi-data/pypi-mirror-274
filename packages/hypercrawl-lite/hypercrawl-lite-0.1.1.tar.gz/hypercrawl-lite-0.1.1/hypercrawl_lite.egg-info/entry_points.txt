@@ -1,0 +1,2 @@
+[console_scripts]
+hypercrawl-lite = hypercrawl_lite.scraper:main
