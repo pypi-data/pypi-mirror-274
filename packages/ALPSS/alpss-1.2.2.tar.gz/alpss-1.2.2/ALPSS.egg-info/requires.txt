@@ -1,0 +1,12 @@
+findiff
+scipy==1.13.0
+ipython
+matplotlib
+pandas
+numpy
+watchdog
+opencv-python
+notebook
+ipykernel
+
+[all]
