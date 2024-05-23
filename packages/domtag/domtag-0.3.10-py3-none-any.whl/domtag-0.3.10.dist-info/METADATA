@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: domtag
+Version: 0.3.10
+Home-page: https://github.com/cognaize/domtag
+Author: cognaize
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: numpy
+
+# Changelog
+All notable changes to this project will be documented in this file.
+### [0.3.10]
+- Handle cases where page-break a comment indicates the page-break
+
+### [0.3.9]
+- In `from_zip_to_json` update fix error where unique_anchor is None
+### [0.3.8]
+-  In `from_zip_to_json` update handle absence of Metalinks.json file
+
+### [0.3.7]
+-  In `from_zip_to_json` update to keep `contextref` and `name` attributes during merge
+
+### [0.3.6]
+-  In `from_zip_to_json` update financial table detection with children elements
+
+### [0.3.5]
+- In `from_zip_to_json` add filtering of financial tables based on metalinks file
+
+### [0.3.4]
+-  In `from_zip_to_json` fix merge issue in `is_row_merge_case` method
+
+### [0.3.3]
+- In `from_zip_to_json` row size mismatch handling in `create_table_html_empty_cell_grid` method
+
+### [0.3.2]
+- In `xbrl_parser` fix error when tr is empty in `_is_anchor` method
+- In `xbrl_parser` fix error when padding is missing from `unique_paddings` list
+
+### [0.3.1]
+- In `xbrl_parser` Add handling for paddings/margins given as
+  integers in HTML
+
+### [0.3.0]
+- In `xbrl_parser` Save page breaks in the `source.html` file 
+
+### [0.2.9]
+- In `xbrl_parser` Annotate page breaks
+
+### [0.2.8]
+- In `xbrl_parser` Fix border attribute error
+
+### [0.2.7]
+- Handle HtmlExtractor._merge_cells index error
+
+### [0.2.6]
+- In `xbrl_parser` Add tr and td ids in json data
+- In `xbrl_parser` Make cosmetic changes to html table extractor
+- In `xbrl_parser` replace uuid1 with uuid4
+
+### [0.2.5]
+- In `xbrl_parser` Add random uuid to all html tags
+
+### [0.2.4]
+- In `xbrl_parser` Add table flip functionality
+
+### [0.2.3]
+- Add case handling for only numeric cells regex
+
+### [0.2.2]
+- Fix handling of tables that only contain non-numeric 
+
+### [0.2.1]
+- In `xbrl_parser` Update the heuristics for merging irregular cells
+
+### [0.2.0]
+- Add handling of indentations using empty td cells
+- Add handling of tag attributes with lxml parser
+
+### [0.1.10]
+- In `xbrl_parser` Remove hidden cells
+
+### [0.1.9]
+- In `xbrl_parser` Change html parser to lxml (from xml)
+
+### [0.1.8]
+- In `xbrl_parser` Handle cases where indent is given to child text block
+- In `xbrl_parser` Handle processing of tables that have at least one numeric \
+  value 
+
+### [0.1.7]
+- In `xbrl_parser` Handle cases where border value is not identified
+
+### [0.1.6]
+- In `xbrl_parser` fix border attribute checks
+
+### [0.1.5]
+- In `xbrl_parser` add border-top and border-bottom information
+
+### [0.1.4]
+- In `xbrl_parser` activate remove empty tables
+- In `xbrl_parser` Change some attributes of output json to camelCase
+
+### [0.1.3]
+- In `xbrl_parser` remove empty tables
+
+### [0.1.2]
+- In `xbrl_parser` add bold and italic information
+
+### [0.1.1]
+- In `xbrl_parser` merge tables using heuristics, add left padding
+
+### [0.1.0]
+- In `xbrl_parser` read zip from folder instead of full filepath and save outputs in the same folder
+- In `xbrl_parser` add table ids in output html and json files
+
+### [0.0.9]
+- In `xbrl_parser` skip merge logic if the table is empty or has inconsistent number of tds
+
+### [0.0.8]
+- In `xbrl_parser` merge th tags into one with the corresponding colspan value
+
+### [0.0.7]
+- In `xbrl_parser` fix tables with empty merges
+
+### [0.0.6]
+- Prevent taking the bold text as a title if it's inside a table
+
+### [0.0.5]
+- Take the first bold text above the table as title
+
+### [0.0.4]
+- Fix list index out of range error for table title extraction
+
+### [0.0.3]
+- Extract table titles and store in json output
+- Fix value extraction from table cells
+
+### [0.0.2]
+- Store thead trs in a list for table json output
+
+### [0.0.1] - Initial version of the package
+- Extract tables information into a json file from a htm/html file or a zip of htmls

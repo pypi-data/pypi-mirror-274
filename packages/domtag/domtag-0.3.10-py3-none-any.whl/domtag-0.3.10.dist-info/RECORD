@@ -1,0 +1,15 @@
+domtag/__init__.py,sha256=24YnPw_jqYjTrqq3kX81kL7ikzuZOs6_L815sqSZOJ4,134
+domtag/common.py,sha256=Ad_90ntDV9EL7o7-iiXUM8eIO3ayVR-QsH4ErRmjjTE,3087
+domtag/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+domtag/utils/enums.py,sha256=rv0-AXM0O1voTt7BiIAlulYZntbW_XKCxcjJcwLcrRc,210
+domtag/utils/storage_config.py,sha256=AsM8VgmHW4kQ8DtP0qX9nKx23bP3plOHhc5jr5zLKcQ,77
+domtag/xbrl_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+domtag/xbrl_parser/calculation_arc_to_tree.py,sha256=j5F1kzbup3T231JHLHpZln4muqQCLQJ7KCdGTRLP4y8,1474
+domtag/xbrl_parser/concepts.py,sha256=UBKWFBbmwrcO7AweWeMXHVuZIPH0ghpqA5bcj5_h4nU,359
+domtag/xbrl_parser/definition_arc_to_tree.py,sha256=Q2rjDRfEZJwIYVQRh7FBSUqwJTD30pxGL9RMqSK-Mpw,644
+domtag/xbrl_parser/from_zip_to_json.py,sha256=-tM1wSKtv94yHv0tGZkn2JGSHvJAj7IHsTRH4g-FlP8,39017
+domtag/xbrl_parser/xbrl_gaap_parser.py,sha256=PZgHV4KpzOSWHtOe_YCRfD1-O3P4ZY8uoKLq9aaOXYE,9389
+domtag-0.3.10.dist-info/METADATA,sha256=OhX3PHo6S4V0d4xnHNxoaU69j5fZaIaLB3NlbDtVXF8,3941
+domtag-0.3.10.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+domtag-0.3.10.dist-info/top_level.txt,sha256=EgmmfXzjlpWXM3Q5JX2EJVBntUHHJP14gtdjYzfo7S0,7
+domtag-0.3.10.dist-info/RECORD,,
