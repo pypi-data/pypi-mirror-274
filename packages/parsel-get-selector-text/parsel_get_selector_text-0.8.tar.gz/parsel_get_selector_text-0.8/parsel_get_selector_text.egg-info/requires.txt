@@ -1,0 +1,3 @@
+ftfy
+parsel
+beautifulsoup4

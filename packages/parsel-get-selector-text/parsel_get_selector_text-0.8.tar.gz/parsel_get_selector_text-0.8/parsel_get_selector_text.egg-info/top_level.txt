@@ -1,0 +1,1 @@
+parsel_get_selector_text
