@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=67.4.0", "Cython>=0.29.33"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sosap"
+version = "0.2.0"
+authors = [{ name = "Seanghay Yath", email = "seanghay.dev@gmail.com" }]
+
+description = "Python binding for Phonetisaurus"
+readme = "README.md"
+requires-python = ">=3.7"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Cython",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+repository = "https://github.com/seanghay/sosap"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.cibuildwheel]
+# Setuptools bug causes collision between pypy and cpython artifacts
+before-build = "rm -rf {project}/build"
+
+[tool.cibuildwheel.linux]
+archs = ["auto64"]
