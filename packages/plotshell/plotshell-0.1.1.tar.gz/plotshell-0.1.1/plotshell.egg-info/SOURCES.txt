@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+plot/__init__.py
+plot/config.py
+plot/main.py
+plotshell.egg-info/PKG-INFO
+plotshell.egg-info/SOURCES.txt
+plotshell.egg-info/dependency_links.txt
+plotshell.egg-info/entry_points.txt
+plotshell.egg-info/requires.txt
+plotshell.egg-info/top_level.txt
