@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pyHomie
+Version: 0.0.4
+Summary: A Python library for Homie Convention
+Home-page: https://github.com/ms412/pyHomie
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Author: Markus Schiesse
+Author-email: M.Schiesser@gmail.com
+License: MIT
+Keywords: mqtt,paho-mqtt,homie
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Freeware
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Home Automation
+Description-Content-Type: text/markdown
+
+
+## Motivation
+
+easy to use and flexible library in python for <a href="https://homieiot.github.io">homie</a> convention
+
+Python 3
+Homie 4.0.0
+
+configuration of homie device is mainly carried out in a Yaml file
+
+mqtt configuration in section mqtt
+~~~~yaml
+mqtt:
+    host: 192.168.2.20
+    port: 1889 <optional>
+    user: markus <optional>
+    passwd: Geheim <optional>
+~~~~
+homie section
+~~~~yaml
+homie:
+    device01:
+        topic: homieTest
+        id: device01
+        name: Dishwasher
+        node01:
+            name: Program
+            switch01:
+                name: Power1
+                type: switch
+                settable: True
+            float02:
+                name: Power2
+                type: string
+                settable: True
+        node02:
+            name: Program
+            string21:
+                name: Power1
+                type: string
+                settable: True
+            switch22:
+                name: Power2
+                type: switch
+                settable: True
+~~~~
+## Example
+
+~~~~python
+import pyhomie
+
+if __name__ == "__main__":
+    homie = pyhomie()
+    homie.init('config.yaml')
+    homie.run()
+    homie.switch01('True')
+~~~~
