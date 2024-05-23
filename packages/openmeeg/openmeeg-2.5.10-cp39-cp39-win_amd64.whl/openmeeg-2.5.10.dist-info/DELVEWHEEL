@@ -1,0 +1,2 @@
+Version: 1.6.0
+Arguments: ['C:\\hostedtoolcache\\windows\\Python\\3.10.11\\x64\\Scripts\\delvewheel', 'repair', '--add-path=D:\\a\\openmeeg\\openmeeg\\install\\bin', '--no-mangle=libquadmath-0.dll;libgcc_s_seh-1.dll', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-79b2_96l\\cp39-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-79b2_96l\\cp39-win_amd64\\built_wheel\\openmeeg-2.5.10-cp39-cp39-win_amd64.whl']
