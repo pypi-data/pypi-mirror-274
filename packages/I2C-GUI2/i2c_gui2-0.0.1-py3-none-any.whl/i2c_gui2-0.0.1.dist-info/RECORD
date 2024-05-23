@@ -1,0 +1,9 @@
+i2c_gui2/__init__.py,sha256=SxV0XnljFN5ECtca8udBLiXC4aFp0c7fi63sXBcZkv0,1185
+i2c_gui2/etroc1_gui.py,sha256=TkrBqIv-7JxCTxS6eZMkCgGPAAH0rCNKU9jpWHYHNrI,1679
+i2c_gui2/etroc2_gui.py,sha256=h0vmJY-iTkBSeRocR-fTINzZExXVZ5MvSTVXREe8oEc,1679
+i2c_gui2-0.0.1.dist-info/METADATA,sha256=OnWF_I7i5REGRHAcc_M7NefCKgf5hbScI71EAUs8pXU,1041
+i2c_gui2-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+i2c_gui2-0.0.1.dist-info/entry_points.txt,sha256=lxkBqJxO7NwjPPUCOrCD0A1EvV_ZKmMlr26LUROZ6ys,94
+i2c_gui2-0.0.1.dist-info/licenses/AUTHORS.rst,sha256=gHmVYGC5181LnlkZuaMAxabve0cMtFglWKj6F5Z3iKo,82
+i2c_gui2-0.0.1.dist-info/licenses/LICENSE,sha256=DOoxdSr6mo7VDvSOuedvLt1RIDg1xrogX8KCND2Lcyw,898
+i2c_gui2-0.0.1.dist-info/RECORD,,
