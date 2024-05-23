@@ -1,0 +1,4 @@
+1. If dates are not in ISO8601 format then the database breaks
+3. add the ability to query from FF and FRED
+7. Update all errors thrown
+8. add warning for duplicate columns in DBP vars dtypes
