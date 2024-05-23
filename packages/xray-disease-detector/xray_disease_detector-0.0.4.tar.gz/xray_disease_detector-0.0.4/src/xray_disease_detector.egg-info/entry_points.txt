@@ -1,0 +1,2 @@
+[console_scripts]
+xray_disease_detector = xray_disease_detector:main
