@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rocketflightsim
+Version: 0.1.0
+Summary: A lightweight rocket flight simulator.
+Home-page: https://github.com/werocketry/RocketFlightSim
+Author: Giorgio Chassikos, Western Engineering Rocketry Team
+Author-email: werocketry@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RocketFlightSim
+
+RocketFlightSim (RFS) is a light-weight flight simulator for experimental rockets. It currently supports simulation of single-stage rockets in the troposphere, from takeoff to apogee. Simple airbrakes can added to the rocket to induce drag. 
