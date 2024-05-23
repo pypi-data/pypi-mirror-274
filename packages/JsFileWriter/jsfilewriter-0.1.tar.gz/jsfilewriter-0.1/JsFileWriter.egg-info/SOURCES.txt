@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+JsFileWriter.egg-info/PKG-INFO
+JsFileWriter.egg-info/SOURCES.txt
+JsFileWriter.egg-info/dependency_links.txt
+JsFileWriter.egg-info/requires.txt
+JsFileWriter.egg-info/top_level.txt
+src/__init__.py
+src/js_writer.py
