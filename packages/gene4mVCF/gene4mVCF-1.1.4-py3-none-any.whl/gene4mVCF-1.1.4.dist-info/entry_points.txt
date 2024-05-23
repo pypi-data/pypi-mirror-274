@@ -1,0 +1,2 @@
+[console_scripts]
+gene4mVCF = gene4mVCF.fetchgenes:main
