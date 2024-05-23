@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+EmLiLetter.egg-info/PKG-INFO
+EmLiLetter.egg-info/SOURCES.txt
+EmLiLetter.egg-info/dependency_links.txt
+EmLiLetter.egg-info/entry_points.txt
+EmLiLetter.egg-info/requires.txt
+EmLiLetter.egg-info/top_level.txt
+emli/__init__.py
+emli/alltypes.py
+emli/emli.glade
+emli/emli.py
+emli/gui.py
+emli/mail.py
+emli/reader.py
