@@ -1,0 +1,2 @@
+[console_scripts]
+static-stig = static_stig.stig_runner:main

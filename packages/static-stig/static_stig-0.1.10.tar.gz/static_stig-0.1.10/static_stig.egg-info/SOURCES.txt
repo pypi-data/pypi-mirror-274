@@ -1,0 +1,8 @@
+README.md
+setup.py
+static_stig/stig_runner.py
+static_stig.egg-info/PKG-INFO
+static_stig.egg-info/SOURCES.txt
+static_stig.egg-info/dependency_links.txt
+static_stig.egg-info/entry_points.txt
+static_stig.egg-info/top_level.txt
