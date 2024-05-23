@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+Tool.py
+aa.txt
+setup.py
+pkgtestlib/__init__.py
+pkgtestlib/testlibone.py
+pkgtestlib.egg-info/PKG-INFO
+pkgtestlib.egg-info/SOURCES.txt
+pkgtestlib.egg-info/dependency_links.txt
+pkgtestlib.egg-info/top_level.txt

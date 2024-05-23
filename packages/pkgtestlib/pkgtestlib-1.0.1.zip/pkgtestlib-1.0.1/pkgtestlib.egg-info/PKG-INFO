@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pkgtestlib
+Version: 1.0.1
+Home-page: https://github.com/bjlhx15
+Author: bjlhx15
+Author-email: bjlhx15@163.com
+License: MIT
+Requires-Python: >=3.5
+License-File: LICENSE.txt
+
+**打包测试文件**
+
+说明文件
+
