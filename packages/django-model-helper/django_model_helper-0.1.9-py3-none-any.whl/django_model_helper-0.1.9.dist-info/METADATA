@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: django-model-helper
+Version: 0.1.9
+Summary: Helpful django abstract models collection.
+Author: Li HuiTao
+Maintainer: Li HuiTao
+License: MIT
+Keywords: django-model-helper
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zenutils
+Requires-Dist: bizerror
+Requires-Dist: PyYAML
+Requires-Dist: globallock
+Requires-Dist: django
+Requires-Dist: django-safe-fields
+Requires-Dist: django-redis
+
+# django-model-helper
+
+Helpful django abstract models collection.
+
+## 抽象类列表
+
+1. WithAddModTimeFields
+1. WithArgsKwargsFields
+1. WithConfigFields
+1. WithCountFields
+1. WithDeletedStatusFields
+1. WithDisplayOrderFields
+1. WithEnabledStatusFields
+1. WithExpireTimeFields
+1. WithHotspotFields
+1. WithJsonDataFields
+1. WithLockStatusFields
+1. WithSimpleResultFields
+1. WithSimpleNRRDStatusFields
+1. WithUidFields
+1. WithVisibleFields
+
+## 版本记录
+
+### v0.1.0
+
+- 版本首发。
+
+### v0.1.1
+
+- WithExpireTimeFields添加default_expires属性。
+- WithUidFields添加uidgen属性，用于生成uid默认值。
+
+### v0.1.5
+
+- 添加WithVisibleFields抽象类。
+- 添加WithHotspotFields抽象类。
+
+### v0.1.9
+
+- 添加WithArgsKwargsFields抽象类。
+- 修正强制要求`GLOBAL_LOCK_CONFIG`配置项的问题。
