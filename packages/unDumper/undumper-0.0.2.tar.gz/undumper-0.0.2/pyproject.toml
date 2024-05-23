@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "unDumper"
+version = "0.0.2"
+description = "A fast and memory-efficient LAMMPS dump file reader with great developer experience"
+authors = [
+    "Mohid Farooqi <mu2farooqi@uwaterloo.ca>",
+    "Xander Gouws <xander.gouws@uwaterloo.ca>",
+]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyyaml = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
