@@ -1,0 +1,6 @@
+mdutils
+numpy
+matplotlib
+sectionproperties
+concreteproperties
+requests
