@@ -1,0 +1,13 @@
+# NLP and LLMs
+spacy
+gliner
+gliner-spacy
+transformers
+bitsandbytes
+lingua-language-detector
+guidance==0.1.14
+sentencepiece
+# File readers
+textract
+# Monitoring
+tqdm
