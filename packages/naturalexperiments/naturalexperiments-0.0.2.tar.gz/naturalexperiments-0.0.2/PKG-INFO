@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: naturalexperiments
+Version: 0.0.2
+Summary: Estimators and datasets for treatment effect estimation in natural experiments.
+Home-page: https://github.com/rtealwitter/naturalexperiments
+Author: R. Teal Witter
+Author-email: rtealwitter@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# naturalexperiments
+Estimators and datasets for treatment effect estimation in natural experiments.
