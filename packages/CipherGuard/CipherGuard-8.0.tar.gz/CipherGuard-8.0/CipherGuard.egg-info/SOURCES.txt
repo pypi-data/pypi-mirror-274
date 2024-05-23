@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+CipherGuard/CipherGuard.py
+CipherGuard/__init__.py
+CipherGuard.egg-info/PKG-INFO
+CipherGuard.egg-info/SOURCES.txt
+CipherGuard.egg-info/dependency_links.txt
+CipherGuard.egg-info/top_level.txt
