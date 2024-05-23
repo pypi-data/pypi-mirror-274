@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: primer-paquete-jmbv
+Version: 0.0.1
+Summary: El primer paqquete de Python que he creado
+Home-page: https://github.com/juanmabv/primer_paquete
+Author: Juan Manuel Batista Velásquez
+Author-email: juanmabatistav@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Documentación de mi primer paquete
+
+1. crear README.md
+2. crear LICENSE.txt
+   1. entrar en [esta página](https://choosealicense.com/)
+   2. elegir una licencia (por ejemplo [MIT License](https://choosealicense.com/licenses/mit/))
+   3. copiarla y pegarla en LICENSE.txt
+3. crear setup.py
