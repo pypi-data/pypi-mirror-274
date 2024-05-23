@@ -1,0 +1,11 @@
+cocoro/__init__.py,sha256=z9tcHIy6tgcOA1RbTB1usJdNXKdc1yvUrcZyUZCaD9Y,112
+cocoro/__main__.py,sha256=ZrqJtgVmwat5iD7jDS4Q8V83SbgM1BGVOrTHrYLv11U,87
+cocoro/__version__.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+cocoro/cli.py,sha256=KCiAG7wDyVPdGF0vRQFhVieNzbDw6UFlSk03kRL-Ahc,1455
+cocoro/core.py,sha256=YTLd3nbu5WwycF4UYJhuQwgsCDKcWH-uKu1ZMYJeN04,9524
+cocoro/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cocoro-0.1.5.dist-info/LICENSE,sha256=1Y1jgN8yUdPrFbSxAklakC-gdHZTuaifon9zD--GNR0,11355
+cocoro-0.1.5.dist-info/METADATA,sha256=Z1oNTG5zhjaVIhvAyx_gv3DTaOk7l9W_GQPaEz9KPp4,5533
+cocoro-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cocoro-0.1.5.dist-info/entry_points.txt,sha256=BM6NG3lhOryBnACqmhnwcXejrfyfVfJ8LYumet_Zcb0,38
+cocoro-0.1.5.dist-info/RECORD,,
