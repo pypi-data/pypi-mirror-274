@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dyna-store
+Version: 0.0.2
+Summary: Dynamic metadata storage
+Home-page: https://github.com/brightnetwork/dyna-store
+License: MIT
+Keywords: id,meta,store,high-cardinality,metadata
+Author: brightnetwork
+Author-email: dev@brightnetwork.co.uk
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pydantic (>=2,<3)
+Project-URL: Documentation, https://github.com/brightnetwork/dyna-store
+Project-URL: Repository, https://github.com/brightnetwork/dyna-store
+Description-Content-Type: text/markdown
+
+[![image](https://img.shields.io/pypi/v/dyna-store.svg)](https://pypi.python.org/pypi/dyna-store)
+[![image](https://img.shields.io/pypi/l/dyna-store.svg)](https://pypi.python.org/pypi/dyna-store)
+[![image](https://img.shields.io/pypi/pyversions/dyna-store.svg)](https://pypi.python.org/pypi/dyna-store)
+[![Code Coverage](https://img.shields.io/codecov/c/github/brightnetwork/dyna-store)](https://app.codecov.io/gh/brightnetwork/dyna-store)
+[![Actions status](https://github.com/brightnetwork/dyna-store/workflows/test/badge.svg)](https://github.com/brightnetwork/dyna-store/actions)
+
+## `dyna-store`
+
+Efficient handling of high cardinality metadata.
+
