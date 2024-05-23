@@ -1,0 +1,14 @@
+giverny/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+giverny/turbulence_dataset.py,sha256=lR68KcEdLOfj4fiYdJDszExdLo7Lzc3z9h3bQA7nBcY,115748
+giverny/turbulence_gizmos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+giverny/turbulence_gizmos/basic_gizmos.py,sha256=qXogEm3op60x06CIjK7u_IABtBWHmN_Hjq74iwU28rg,69541
+giverny/turbulence_gizmos/constants.py,sha256=GKJyRVbZO2mJkqckxR3KAqNOK63EjZI1xVvJKdDXzyI,2690
+giverny/turbulence_gizmos/getCutout.py,sha256=eYh59YTjkRXjVLXS_jlEx2BhMZjgEe0lqlmQyHOcWDg,5511
+giverny/turbulence_gizmos/getData.py,sha256=s9NYwsYYXMJqPumWTNtM07_brynHNOozHjGOML1J1zk,4571
+giverny/turbulence_gizmos/variable_dy_grid_ys.py,sha256=dNQLXJ_t6gc533Ti173PQXI-8DarTzIr2UruTGvjoLQ,54312
+giverny/turbulence_toolkit.py,sha256=Ya9am8prhWthAtbh0orGM5QUGKc4l64iDjqmHCpnPa4,38365
+giverny/version.py,sha256=f_VXcj--MhwjDb8cw2KA58sfuzFN4zZXGuOOHTCOVO4,21
+giverny-2.2.7.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+giverny-2.2.7.dist-info/METADATA,sha256=2iY34ZcIiF57L6Tx3q17RqcCfHqBXJr9_uKOS0AZ9rY,3802
+giverny-2.2.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+giverny-2.2.7.dist-info/RECORD,,
