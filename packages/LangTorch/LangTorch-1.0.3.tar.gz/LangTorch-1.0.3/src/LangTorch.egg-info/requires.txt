@@ -1,0 +1,14 @@
+numpy
+torch>=2.1.0
+aiohttp
+nest_asyncio
+openai>=1.2.4
+tiktoken
+pandas
+retry
+pyparsing
+pypandoc
+transformers
+omegaconf
+hydra-core
+markdown-it-py
