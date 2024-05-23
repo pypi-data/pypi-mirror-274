@@ -1,0 +1,11 @@
+clip_mmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clip_mmd/calculation.py,sha256=ZDP_mmPe4z800fClsZhwA9Oenq6xU3I325y9Za9TBtg,4107
+clip_mmd/cli.py,sha256=5GH2kbZgFDPAZPzDvKuiDecYSKTHLvACYLbBzAWXzNo,3241
+clip_mmd/data.py,sha256=8scf2mTj8OTA9EZbz6y-Youl0sxLmXbHYOXOaleKWKE,2895
+clip_mmd/logic.py,sha256=ZT6rm7rioPVwIdTve5AfiknJBvF3jaRfRsYRaaJzI7Y,5551
+clip_mmd-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+clip_mmd-0.0.2.dist-info/METADATA,sha256=mx9ctwE3oneyJXSlGxe7LbXLr2ZeByIvBxKxQL7CpVg,3856
+clip_mmd-0.0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+clip_mmd-0.0.2.dist-info/entry_points.txt,sha256=6qmTVwzWhg2FyJ3y2wN3pxKOnzJ5_3lBrL5l1OQCEDw,47
+clip_mmd-0.0.2.dist-info/top_level.txt,sha256=FSekSLEkxywvxDJwCm9TEaBsWaS4SMIf_p1yphX8Qpo,9
+clip_mmd-0.0.2.dist-info/RECORD,,
