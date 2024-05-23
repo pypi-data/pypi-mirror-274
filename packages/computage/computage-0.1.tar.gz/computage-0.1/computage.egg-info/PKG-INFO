@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: computage
+Version: 0.1
+Summary: A library for fullstack aging clocks design and benchmarking.
+Author-email: dmitrii.kriukov@skoltech.ru
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: huggingface_hub

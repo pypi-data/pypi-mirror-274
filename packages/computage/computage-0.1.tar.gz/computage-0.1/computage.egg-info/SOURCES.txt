@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+computage/__init__.py
+computage/settings.py
+computage.egg-info/PKG-INFO
+computage.egg-info/SOURCES.txt
+computage.egg-info/dependency_links.txt
+computage.egg-info/not-zip-safe
+computage.egg-info/requires.txt
+computage.egg-info/top_level.txt

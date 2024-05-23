@@ -1,0 +1,8 @@
+scikit-learn
+scipy
+statsmodels
+pandas
+numpy
+tqdm
+matplotlib
+huggingface_hub
