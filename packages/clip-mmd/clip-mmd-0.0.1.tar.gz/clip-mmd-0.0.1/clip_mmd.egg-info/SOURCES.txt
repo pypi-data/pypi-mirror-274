@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+clip_mmd/__init__.py
+clip_mmd/calculation.py
+clip_mmd/cli.py
+clip_mmd/data.py
+clip_mmd/logic.py
+clip_mmd.egg-info/PKG-INFO
+clip_mmd.egg-info/SOURCES.txt
+clip_mmd.egg-info/dependency_links.txt
+clip_mmd.egg-info/entry_points.txt
+clip_mmd.egg-info/requires.txt
+clip_mmd.egg-info/top_level.txt
