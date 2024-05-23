@@ -1,0 +1,17 @@
+numpy
+fastapi
+
+[dev]
+packaging-demo-himanshu[release,static-code-qa,test]
+
+[release]
+build
+twine
+pre-commit
+
+[static-code-qa]
+pre-commit
+
+[test]
+pytest
+pytest-cov
