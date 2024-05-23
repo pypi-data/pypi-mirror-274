@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: TDTPy
+Version: 0.10.4
+Summary: Module for communicating with TDT's System 3 hardware
+Author-email: Brad Buran <bburan@alum.mit.edu>, Brad Buran <info@bradburan.com>, Eric Larson <larson.eric.d@gmail.com>
+Maintainer-email: Brad Buran <bburan@alum.mit.edu>, Eric Larson <larson.eric.d@gmail.com>
+License: Copyright © 2011-2015, authors of TDTpy
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+            * Redistributions of source code must retain the above copyright
+              notice, this list of conditions and the following disclaimer.
+            * Redistributions in binary form must reproduce the above copyright
+              notice, this list of conditions and the following disclaimer in the
+              documentation and/or other materials provided with the distribution.
+            * Neither the names of MNE-Python authors nor the names of any
+              contributors may be used to endorse or promote products derived from
+              this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY
+        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+        LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+        ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: homepage, http://tdtpy.readthedocs.org
+Project-URL: repository, https://github.com/labsn/tdtpy
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: pywin32
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: setuptools>=65
+Requires-Dist: importlib_metadata; python_version < "3.8"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+
+=====
+TDTPy
+=====
+
+.. image:: https://zenodo.org/badge/doi/10.5281/zenodo.17651.svg   
+   :target: http://dx.doi.org/10.5281/zenodo.17651
+
+TDTPy is a Python wrapper around `Tucker-Davis Technologies`_ `ActiveX library`_
+[PDF link] (known as RPcoX) for communicating with their System 3 hardware (e.g.
+the RP2.1, RX6, RZ6, etc.).
+
+In addition to the standard operations (loading
+circuits, configuring tags and reading/writing to hardware buffers), TDTPy
+offers a number of high-level features that are not included in the ActiveX
+library:
+
+* **Handling type conversion** between analog and digital units (e.g. converting
+  seconds to number of DSP cycles based on the CPU frequency of the hardware).
+* **Remote procedure call (RPC) server** for allowing multiple processes and/or programs
+  to communicate with the hardware across the same connection. The drivers
+  provided by TDT do not handle concurrency issues. To handle these issues, we
+  have created a RPC server that handles concurrency issues, allowing multiple
+  programs to talk to the hardware simultaneously. The programs can either run
+  on the same computer or on a separate computer.
+* If you use the RPC server, your client code can run on **any platform** (e.g. Mac
+  OSX, Unix, Solaris, etc); however, the server must run on a Windows-based
+  computer.
+* **Simple reads and writes.** The hardware buffers are implemented as "ring
+  buffers" with various features such as multichannel storage and data
+  compression. TDTPy automatically detects the configuration of the hardware
+  buffer and returns a buffer object (`DSPBuffer`) that you can read/write
+  to without having to deal with the intricacies of the hardware buffer itself.
+* **Robust error handling.** Some methods in the ActiveX library will fail silently
+  (e.g. if you try to access a nonexistent tag, attempt to write more data than
+  the hardware buffer can hold, or wire up a tag to a static port). When the
+  RPvds circuit is first loaded to the hardware, TDTPy will inspect the
+  microcode (i.e. the RPvds circuit) and store some information about the tags
+  and buffers available. All subsequent operations are validated against this
+  metadata before being passed to the ActiveX library. If an invalid operation
+  is attempted, a DSPError is raised with the appropriate message.
+
+.. _Tucker-Davis Technologies: http://www.tdt.com
+.. _System 3: http://www.tdt.com/products.htm 
+.. _ActiveX library: http://www.tdt.com/T2Download/manuals/ActiveX_User_Reference.pdf
+
+The minimum required dependencies to run the software are:
+
+  - Python >= 3.7
+  - NumPy >= 1.8
+  - pywin32
+
+-------
+License
+-------
+TDTPy is distributed under the BSD license.
+
+------------
+Contributors
+------------
+* Brad Buran (New York University, Oregon Health & Science University)
+* Eric Larson (University of Washington)
+* Decibel Therapeutics, Inc.
