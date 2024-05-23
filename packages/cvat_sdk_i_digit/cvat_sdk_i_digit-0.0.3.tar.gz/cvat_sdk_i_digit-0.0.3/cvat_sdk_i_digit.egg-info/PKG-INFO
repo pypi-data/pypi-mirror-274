@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cvat_sdk_i_digit
+Version: 0.0.3
+Author-email: Шумелев Дмитрий Игоревич <cmit.dima@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: cvat-sdk>=2.13.0
+Requires-Dist: pydantic-settings>=2.0.2
+Requires-Dist: passlib>=1.7.4
+Requires-Dist: pandas>=2.2.2
