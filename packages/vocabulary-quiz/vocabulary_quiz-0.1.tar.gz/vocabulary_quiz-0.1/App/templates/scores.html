@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Scores for {{ username }}</h1>
+    {% if scores %}
+        <ul>
+            {% for score in scores %}
+                <li>Date: {{ score.Date }}, Correct: {{ score.Correct }}, Total: {{ score.Total }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No scores found for this user.</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
