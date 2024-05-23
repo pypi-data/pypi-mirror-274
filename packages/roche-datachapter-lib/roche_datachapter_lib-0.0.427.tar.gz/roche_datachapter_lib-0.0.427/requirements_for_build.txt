@@ -1,0 +1,3 @@
+pkginfo==1.10.0
+build
+twine
