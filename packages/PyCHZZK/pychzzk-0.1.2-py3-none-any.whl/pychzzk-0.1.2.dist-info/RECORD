@@ -1,0 +1,11 @@
+PyCHZZK/__init__.py,sha256=uUyA5XgZRxLW3RnQHz9-M-bf1ZOt8mh2udShEsUwc9k,50
+PyCHZZK/_http.py,sha256=wlPz591Ad7xHSBHD1Z69XavetXhlFq1muFQC9rqDCK0,953
+PyCHZZK/api.py,sha256=NChQZ8_z2IBUfF-4qyMqkMlYLPmdw-Wy2v_8eVWgAyw,4499
+PyCHZZK/utils.py,sha256=hLRUISNt37ZXQXALHJfJfSjgjDklEH_bzIt6jvSVmHw,140
+PyCHZZK/enums/__init__.py,sha256=rIF2697KnDLmu5K1E-jjSEihJvH9SdQWHQTutsj_LYo,52
+PyCHZZK/enums/fields.py,sha256=-RKszkXStyF7KI6q4SPTs1NDiUccegfkJ0azF_nZNxA,303
+PyCHZZK/exceptions/__init__.py,sha256=TrOl8QQ6G1nP9wfJ6BE70c5J_hqN1vOqgvR-DedoX4g,485
+pychzzk-0.1.2.dist-info/LICENSE,sha256=7os0s05y1H8N1XnPydCmoDQ2tEkLFe4Dr76jhSBrHkU,1065
+pychzzk-0.1.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pychzzk-0.1.2.dist-info/METADATA,sha256=1I-HlaBRfQx9eJqwnXjCDZx1aKtoKZDxL3a8iN3AOoc,1641
+pychzzk-0.1.2.dist-info/RECORD,,
