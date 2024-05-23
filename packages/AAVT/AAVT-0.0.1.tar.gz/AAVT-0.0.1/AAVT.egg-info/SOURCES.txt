@@ -1,0 +1,14 @@
+AAVT.egg-info/PKG-INFO
+AAVT.egg-info/SOURCES.txt
+AAVT.egg-info/dependency_links.txt
+AAVT.egg-info/requires.txt
+AAVT.egg-info/top_level.txt
+test/test.py
+w/__init__.py
+w/blog.py
+w/merge.py
+w/translate.py
+w/whisper_faster.py
+w/whisper_openai.py
+w/utils/__init__.py
+w/utils/srt.py
