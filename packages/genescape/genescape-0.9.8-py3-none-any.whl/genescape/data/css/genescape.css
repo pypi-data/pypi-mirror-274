@@ -1,0 +1,102 @@
+:root {
+    --border-color: #77ddaa;
+    --input-back-color: #fcfcfc;
+}
+
+#input_list {
+    min-height: 200px;
+    border: var(--border-color) solid 1px;
+}
+
+#csv_data {
+    min-height: 10px;
+    visibility: hidden;
+}
+
+#svgtree {
+    display: block;
+}
+
+#error_msg {
+    color: red;
+}
+
+#graph_root {
+    width: 100%;
+    min-height: 50px;
+    max-height: 1200px;
+    overflow: visible;
+    border-top: var(--border-color) solid 1px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.shiny-data-grid {
+    border: var(--border-color) solid 1px;
+}
+
+
+#dot_data {
+    height: 10px;
+    visibility: hidden;
+}
+
+#main {
+    min-width: 100%;
+}
+
+.left-aligned-label .control-label {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 6em;
+    color: red;
+}
+
+#zoom_buttons .btn {
+    margin: 0.5em;
+}
+
+.shiny-data-grid-summary {
+    color: deeppink;
+}
+
+code {
+    font-size: inherit;
+}
+
+.info_msg {
+    display: inline-block;
+}
+
+blockquote {
+   color: orangered;
+}
+
+.left-aligned {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 80px 1fr; /* 150px for labels and remaining space for inputs */
+    gap: 10px;
+    margin-bottom: 10px; /* Adds bottom margin for spacing between groups */
+}
+
+.left-aligned .form-group {
+    display: contents; /* Makes .form-group elements behave like they're part of the parent grid */
+}
+
+.left-aligned .form-group .control-label {
+    text-align: left; /* Aligns the text right, closer to the input */
+}
+
+.left-aligned .form-group .shiny-input-text {
+    width: 100%; /* Fills the cell allocated by the grid */
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom:1em;
+}
+
+
