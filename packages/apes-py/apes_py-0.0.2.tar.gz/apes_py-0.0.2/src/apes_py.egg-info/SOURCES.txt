@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/apes-py/__init__.py
+src/apes-py/example.py
+src/apes_py.egg-info/PKG-INFO
+src/apes_py.egg-info/SOURCES.txt
+src/apes_py.egg-info/dependency_links.txt
+src/apes_py.egg-info/top_level.txt
