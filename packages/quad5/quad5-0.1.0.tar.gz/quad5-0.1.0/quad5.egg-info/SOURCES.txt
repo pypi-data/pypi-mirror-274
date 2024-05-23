@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+quad5/__init__.py
+quad5/quadratic_approximation.py
+quad5.egg-info/PKG-INFO
+quad5.egg-info/SOURCES.txt
+quad5.egg-info/dependency_links.txt
+quad5.egg-info/requires.txt
+quad5.egg-info/top_level.txt
