@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: clockwise
+Version: 1.0.2
+Summary: A simple timing library for Python.
+Author: Simon Schaefer
+Author-email: simon.k.schaefer@gmail.com
+Requires-Python: >=3.0
+License-File: LICENSE

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+clockwise/__init__.py
+clockwise/interface.py
+clockwise/io.py
+clockwise.egg-info/PKG-INFO
+clockwise.egg-info/SOURCES.txt
+clockwise.egg-info/dependency_links.txt
+clockwise.egg-info/top_level.txt
