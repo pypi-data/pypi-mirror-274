@@ -1,0 +1,9 @@
+omnipath
+infercnvpy
+anndata
+decoupler
+hdf5plugin
+scanpy
+scrublet
+adjustText
+wget

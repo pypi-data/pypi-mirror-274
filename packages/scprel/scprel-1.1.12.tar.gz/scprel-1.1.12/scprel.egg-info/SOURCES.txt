@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+scprel/__init__.py
+scprel/functions.py
+scprel.egg-info/PKG-INFO
+scprel.egg-info/SOURCES.txt
+scprel.egg-info/dependency_links.txt
+scprel.egg-info/requires.txt
+scprel.egg-info/top_level.txt
