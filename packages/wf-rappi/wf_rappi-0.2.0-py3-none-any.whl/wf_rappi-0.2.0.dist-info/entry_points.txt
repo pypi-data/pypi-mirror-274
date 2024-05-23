@@ -1,0 +1,2 @@
+[console_scripts]
+wf-rappi = wf_rappi.main:distribute_orders
