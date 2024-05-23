@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+sxolar/__init__.py
+sxolar.egg-info/PKG-INFO
+sxolar.egg-info/SOURCES.txt
+sxolar.egg-info/dependency_links.txt
+sxolar.egg-info/requires.txt
+sxolar.egg-info/top_level.txt
+sxolar/api/__init__.py
+sxolar/api/arxiv.py
+sxolar/api/search.py
+sxolar/api/tests/__init__.py
+sxolar/api/tests/test_arxiv.py
+sxolar/api/tests/test_search.py
