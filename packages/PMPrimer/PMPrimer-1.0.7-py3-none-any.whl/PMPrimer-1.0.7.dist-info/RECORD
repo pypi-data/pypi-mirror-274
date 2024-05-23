@@ -1,0 +1,17 @@
+piece/__auxiliary__.py,sha256=SNzr0CNFb-3LvZXjO526LH5jkcdvkbYnH-ESslOcxlM,211
+piece/__init__.py,sha256=fLjGRqmvPJWx9duUmHO4TckLA37-N8HZaIkpTkdDiyw,15
+piece/piecebase.py,sha256=sh_-zDPy40db2qvd8xTw32p1gYsjra13vYbnyzU5GpA,11431
+piece/piecedataprogress.py,sha256=xIc6YDKw_62ZTA96GHHgbr2seqZHqdJw7VR4POZjdb0,9104
+piece/piecedefine.py,sha256=e5bBnUXrudvgg67EIXX5pea27-LeRR7v0JiHBQKRm34,1328
+piece/piecedesign.py,sha256=CXymjZB3rheMS32baOoyJLqh9REcnFlfw-p8EDgOSsQ,10894
+piece/pieceevaluate.py,sha256=lB9xBABNgbk-t5WyusdN_5eohdlqLCUniTlDLZMLPtk,19300
+piece/piecemain.py,sha256=q3b8nRFtbPfjGzTsFkM6xs-B1ZcuLOJGO1nKBhzwRQQ,31580
+piece/piecentry.py,sha256=m6PIFuotUUM6btuJa5kzd1gIPyecJ0HhmvAtw3kQKMw,6819
+piece/static/muscle5.1.linux_intel64,sha256=K9gpKKXMcrUIa2CSijqCCgzgZsqfvA_s0VQ-68qYHnY,2920768
+piece/static/muscle5.1.win64.exe,sha256=rDR-4tVI9PjAFxYnQ-IaSVS5HvCnxS-7dIgIfpVRu2I,832512
+PMPrimer-1.0.7.dist-info/LICENSE,sha256=wlWWuMqqq2KgicYpS518cWieeGJsj08MAdLjJpK0gy8,1087
+PMPrimer-1.0.7.dist-info/METADATA,sha256=OxVnaaslMWJ6pmclSyMdJS-lHY-59YNqrDYh0wa2KI4,10805
+PMPrimer-1.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+PMPrimer-1.0.7.dist-info/entry_points.txt,sha256=Ja4n8UrtjpfADV9jh1jnX1N_e82P9nxuB-ICWXM1QzY,51
+PMPrimer-1.0.7.dist-info/top_level.txt,sha256=0DE8sET3tp0vjvNBusM2Wd4yJ-SJhwu0o4koZQkBBx8,6
+PMPrimer-1.0.7.dist-info/RECORD,,
