@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyDataBridgeX
+Version: 0.0.1
+Summary: Your go-to solution for database connectivity in Python
+Author: Ranuga Disansa Gamage
+Author-email: go2ranuga@gmail.com
+Keywords: python,database,connectivity,firebase,backend,development
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: typing
+
+PyDataBridge is your go-to solution for database connectivity in Python. Whether you're working with Firebase or other databases, PyDataBridge offers a versatile and intuitive package for seamless integration. Simplify your backend development and unleash the power of Python with PyDataBridge.

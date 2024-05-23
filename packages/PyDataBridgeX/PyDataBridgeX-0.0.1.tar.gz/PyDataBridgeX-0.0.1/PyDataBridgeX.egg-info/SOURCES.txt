@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+PyDataBridgeX.egg-info/PKG-INFO
+PyDataBridgeX.egg-info/SOURCES.txt
+PyDataBridgeX.egg-info/dependency_links.txt
+PyDataBridgeX.egg-info/requires.txt
+PyDataBridgeX.egg-info/top_level.txt
