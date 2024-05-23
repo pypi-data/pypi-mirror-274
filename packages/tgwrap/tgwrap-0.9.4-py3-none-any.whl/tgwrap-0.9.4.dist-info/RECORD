@@ -1,0 +1,11 @@
+tgwrap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgwrap/analyze.py,sha256=TJvAKVIbWl8-8oxpTwXVBWU72q_XQKzUTlyMZ25cV2M,8728
+tgwrap/cli.py,sha256=ACQe3ghlCLSNw_V4mM3e3Vf93RPjDq-WT0rbEcE1YqY,29725
+tgwrap/deploy.py,sha256=-fSk-Ix_HqrXY7KQX_L27TnFzIuhBHYv4xYJW6zRDN4,10243
+tgwrap/main.py,sha256=ib3Jq1lOymem6qwbrXdPEspMFOlh-t5Kv7WeISjrkVE,81360
+tgwrap/printer.py,sha256=dkcOCPIPB-IP6pn8QMpa06xlcqPFVaDvxnz-QEpDJV0,2663
+tgwrap-0.9.4.dist-info/LICENSE,sha256=VT-AVxIXt3EQTC-7Hy1uPGnrDNJLqfcgLgJD78fiyx4,1065
+tgwrap-0.9.4.dist-info/METADATA,sha256=u7BHLxVw_SfxBmgd0PQNPfCtY3c3bERNwlRbBTHxv5w,13235
+tgwrap-0.9.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tgwrap-0.9.4.dist-info/entry_points.txt,sha256=H8X0PMPmd4aW7Y9iyChZ0Ug6RWGXqhRUvHH-6f6Mxz0,42
+tgwrap-0.9.4.dist-info/RECORD,,
