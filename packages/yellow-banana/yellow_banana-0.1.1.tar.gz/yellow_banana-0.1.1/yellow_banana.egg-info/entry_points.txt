@@ -1,0 +1,3 @@
+[console_scripts]
+yellow_banana = yellow_banana.main:main
+
