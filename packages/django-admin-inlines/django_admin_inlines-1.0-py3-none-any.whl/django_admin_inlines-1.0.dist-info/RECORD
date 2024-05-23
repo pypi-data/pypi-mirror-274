@@ -1,0 +1,10 @@
+inline_actions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inline_actions/actions.py,sha256=kDCIgG4JSvllVVN5RzjV9aMChw7GrZhvSwyHI7xtoGg,1425
+inline_actions/admin.py,sha256=QfZ2A1yibu7c9VMiLQrvJHJdt3ZFqCkevv1ctP4jR6A,10489
+inline_actions/static/inline_actions/css/inline_actions.css,sha256=3bczi7yV3nb1ZTVSUJnr2U-rotNTAwyEH89kqDEc6fg,245
+inline_actions/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inline_actions/templatetags/inline_action_tags.py,sha256=3_Kvn-Dtf0aUGzPMJJfVzIWtNtcykbLAh6KqNGKNvE0,810
+django_admin_inlines-1.0.dist-info/LICENSE,sha256=nOrnrA4tJvnkQYJQ5JUfC3-LADUz1VZgrhIf7evgZq8,1542
+django_admin_inlines-1.0.dist-info/METADATA,sha256=NRiJcChiXP-U1kV_bwxxG3-a4cA_4TfzvOCkwyBC2lk,14410
+django_admin_inlines-1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_admin_inlines-1.0.dist-info/RECORD,,
