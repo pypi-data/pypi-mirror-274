@@ -1,0 +1,10 @@
+vnpy_datarecorder/__init__.py,sha256=D6etBHvB8Zkppb7Vh9YznH7wj03uLMSdW4_OE1U3j6I,1801
+vnpy_datarecorder/engine.py,sha256=4lVyPV0y3AymetxgMB3UFJ8epsYW70EMXfxLY9uUAuM,10528
+vnpy_datarecorder/ui/__init__.py,sha256=cRQAHHCrW12A7dAmzR9k8aiZZdUbOlVeNljWn_QRaw8,37
+vnpy_datarecorder/ui/recorder.ico,sha256=yhkCQkwFtglsnx1G3M_ieyYYgxtSXadUstBLROcotqY,67646
+vnpy_datarecorder/ui/widget.py,sha256=iyktMx8lVfEh7Bvwymz9_Wc0arSchryMu2gUx1qSawI,7058
+vnpy_datarecorder-1.0.7.dist-info/LICENSE,sha256=4VJliaS3oGXhJzrIX5QErBiWtKEYRlNh38Y63aImIes,1107
+vnpy_datarecorder-1.0.7.dist-info/METADATA,sha256=E4C_6F6PYb6rIrHGQmeZWiKR6aRCzK5MI46tcgUPER8,2035
+vnpy_datarecorder-1.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vnpy_datarecorder-1.0.7.dist-info/top_level.txt,sha256=YE6GTShbtoijlB4vnYK8vl0MAHEqrThDJ3wUApuNyko,18
+vnpy_datarecorder-1.0.7.dist-info/RECORD,,
