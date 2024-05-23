@@ -1,0 +1,54 @@
+Metadata-Version: 2.3
+Name: portrait
+Version: 0.0.2b0
+Summary: Compute and visualize observations phase coverage
+Author: Lionel Garcia
+License-Expression: MIT
+License-File: LICENSE
+Keywords: astronomy,image processing,jax
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: jax>=0.2.25
+Requires-Dist: jaxlib
+Requires-Dist: numpy>=1.23.5
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: black; extra == 'docs'
+Requires-Dist: docutils; extra == 'docs'
+Requires-Dist: jupyterlab; extra == 'docs'
+Requires-Dist: lightkurve; extra == 'docs'
+Requires-Dist: matplotlib; extra == 'docs'
+Requires-Dist: myst-nb; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-book-theme; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: twine; extra == 'docs'
+Description-Content-Type: text/markdown
+
+# portrait
+
+<p align="center">
+  Observation metrics for periodic events
+  <br>
+  <p align="center">
+    <a href="https://github.com/lgrcia/portrait">
+      <img src="https://img.shields.io/badge/github-lgrcia/portrait-blue.svg?style=flat" alt="github"/></a>
+    <a href="">
+      <img src="https://img.shields.io/badge/license-MIT-lightgray.svg?style=flat" alt="license"/></a>
+    <a href="https://portrait.readthedocs.io">
+      <img src="https://img.shields.io/badge/documentation-black.svg?style=flat" alt="documentation"/></a>
+  </p>
+</p>
+
+A Python package to compute and visualize observation metrics for periodic events.
+
+In Astronomy, *portrait* is useful to answer the following questions:
+- How much of an orbit with period $P$ has been observed given certain observation times? ([tutorial](docs/coverage))
+- What period $P$ matches with this list of events? ([tutorial](docs/periodmatch))
+- How a certain target must be observed to cover all orbits with periods lower than $P$ days? 
