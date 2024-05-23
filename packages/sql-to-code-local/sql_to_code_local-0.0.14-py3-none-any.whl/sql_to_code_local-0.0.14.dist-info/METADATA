@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sql-to-code-local
+Version: 0.0.14
+Summary: PyPI Package for Circles sql-to-code-local Local Python
+Home-page: https://github.com/circ-zone/sql2code-local-python-package
+Author: Circles
+Author-email: info@circles.life
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: mysql-connector >=2.2.9
+Requires-Dist: python-dotenv >=1.0.0
+Requires-Dist: logger-local >=0.0.71
+Requires-Dist: pytest >=7.4.3
+Requires-Dist: PyMySQL >=1.1.0
+Requires-Dist: database-mysql-local >=0.0.179
+
+PyPI Package for Circles sql-to-code-local Local Python
