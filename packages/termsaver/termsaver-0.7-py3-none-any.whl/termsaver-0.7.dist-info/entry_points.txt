@@ -1,0 +1,3 @@
+[console_scripts]
+termsaver = termsaver:entryPoint
+
