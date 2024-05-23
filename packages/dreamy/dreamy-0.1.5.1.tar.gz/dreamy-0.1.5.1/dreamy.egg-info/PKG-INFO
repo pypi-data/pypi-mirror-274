@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dreamy
+Version: 0.1.5.1
+Summary: DReAMy is a python library to automatically analyse (for now only) textual dream reports. At the moment, annotations are exclusively based on different [Hall & Van de Castle](https://link.springer.com/chapter/10.1007/978-1-4899-0298-6_2) features, but we are looking forward to expanding our set. For more details on the theretcal aspect, please refer to the [pre-print](https://arxiv.org/abs/2302.14828).
+Home-page: https://github.com/lorenzoscottb/DReAMy
+Author: lorenzoscottb (Lorenzo Bertolini)
+Author-email: <lorenzoscottb@gmail.com>
+License: Apache-2.0
+Keywords: NLP,LLMs,annotation,dream
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: MacOS :: MacOS X
