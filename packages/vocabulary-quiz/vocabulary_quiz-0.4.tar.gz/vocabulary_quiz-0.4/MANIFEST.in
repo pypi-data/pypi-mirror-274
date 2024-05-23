@@ -1,0 +1,4 @@
+include words.csv
+include scores.csv
+recursive-include app/static *
+recursive-include app/templates *
