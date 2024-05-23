@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+ivande_combiner/__init__.py
+ivande_combiner/transformers.py
+ivande_combiner.egg-info/PKG-INFO
+ivande_combiner.egg-info/SOURCES.txt
+ivande_combiner.egg-info/dependency_links.txt
+ivande_combiner.egg-info/requires.txt
+ivande_combiner.egg-info/top_level.txt
+tests/__init__.py
+tests/test_transformers.py
