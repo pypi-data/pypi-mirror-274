@@ -1,0 +1,6 @@
+setup.py
+poyrazgtanima.egg-info/PKG-INFO
+poyrazgtanima.egg-info/SOURCES.txt
+poyrazgtanima.egg-info/dependency_links.txt
+poyrazgtanima.egg-info/requires.txt
+poyrazgtanima.egg-info/top_level.txt
