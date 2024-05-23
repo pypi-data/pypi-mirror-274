@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tests/test_test.py
+yapscda/__init__.py
+yapscda/test.py
+yspscda.egg-info/PKG-INFO
+yspscda.egg-info/SOURCES.txt
+yspscda.egg-info/dependency_links.txt
+yspscda.egg-info/top_level.txt
