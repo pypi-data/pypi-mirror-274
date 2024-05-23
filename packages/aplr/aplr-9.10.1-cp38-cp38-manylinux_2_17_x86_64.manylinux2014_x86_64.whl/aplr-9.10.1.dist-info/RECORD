@@ -1,0 +1,9 @@
+aplr_cpp.cpython-38-x86_64-linux-gnu.so,sha256=4WagNvdBOumkNv3jdxObyVOVJOxsKsf3DYoGJxAGVGc,31887825
+aplr.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+aplr-9.10.1.dist-info/WHEEL,sha256=zTDqV7OR0em6fvysya0bwC-51Mb7EQ0x5PBJySRF2iQ,148
+aplr-9.10.1.dist-info/top_level.txt,sha256=DXVC0RIFGpzVnPeKWAZTXQdJheOEZL51Wip6Fx7zbR4,14
+aplr-9.10.1.dist-info/RECORD,,
+aplr-9.10.1.dist-info/METADATA,sha256=-HoVWDIndu82y54tlPL_e0pbkNdZE2qE0MQ9ekqSR4o,2043
+aplr-9.10.1.dist-info/LICENSE,sha256=g4qcQtkSVPHtGRi3T93DoFCrssvW6ij_emU-2fj_xfY,1113
+aplr/__init__.py,sha256=rRfTgNWnYZlFatyA920lWqBcjwmQUI7FcvEPFUTJgzE,20
+aplr/aplr.py,sha256=kDj8yKp5ZPW2cG-vcadPKdWu2f01AUfoME2ruayWfic,22309
