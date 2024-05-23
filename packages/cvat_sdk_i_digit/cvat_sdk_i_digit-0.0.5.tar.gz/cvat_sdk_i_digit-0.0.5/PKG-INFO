@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cvat_sdk_i_digit
+Version: 0.0.5
+Author-Email: =?utf-8?b?0KjRg9C80LXQu9C10LIg0JTQvNC40YLRgNC40Lkg0JjQs9C+0YDQtdCy0LjRhw==?= <cmit.dima@gmail.com>
+Requires-Python: >=3.11
+Requires-Dist: cvat-sdk>=2.13.0
+Requires-Dist: pydantic-settings>=2.0.2
+Requires-Dist: passlib>=1.7.4
+Requires-Dist: pandas>=2.2.2
