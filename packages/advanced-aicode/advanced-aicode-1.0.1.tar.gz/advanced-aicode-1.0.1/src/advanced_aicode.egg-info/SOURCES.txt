@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.testing.txt
+setup.py
+src/advanced_aicode.egg-info/PKG-INFO
+src/advanced_aicode.egg-info/SOURCES.txt
+src/advanced_aicode.egg-info/dependency_links.txt
+src/advanced_aicode.egg-info/entry_points.txt
+src/advanced_aicode.egg-info/requires.txt
+src/advanced_aicode.egg-info/top_level.txt
+src/aicode/__init__.py
+src/aicode/main.py
+src/aicode/openaicfg.py
+src/aicode/assets/example.txt
