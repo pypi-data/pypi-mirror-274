@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/disk_api.egg-info/PKG-INFO
+src/disk_api.egg-info/SOURCES.txt
+src/disk_api.egg-info/dependency_links.txt
+src/disk_api.egg-info/requires.txt
+src/disk_api.egg-info/top_level.txt
+src/diskapi/__init__.py
+src/diskapi/exceptions.py
