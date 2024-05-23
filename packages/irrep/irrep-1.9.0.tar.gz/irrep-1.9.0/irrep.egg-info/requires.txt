@@ -1,0 +1,9 @@
+Click
+fortio
+irreptables
+lazy_property
+monty
+numpy
+ruamel.yaml
+scipy>=1.0
+spglib>=1.14
