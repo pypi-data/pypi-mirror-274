@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+primer_paquete_jmbv/__init__.py
+primer_paquete_jmbv/test.py
+primer_paquete_jmbv.egg-info/PKG-INFO
+primer_paquete_jmbv.egg-info/SOURCES.txt
+primer_paquete_jmbv.egg-info/dependency_links.txt
+primer_paquete_jmbv.egg-info/top_level.txt
