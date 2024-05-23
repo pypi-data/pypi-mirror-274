@@ -1,0 +1,8 @@
+pandas==2.2.2
+psycopg2==2.9.9
+pyyaml==6.0.1
+redshift-connector==2.1.1
+pyathena==3.8.2
+build==1.2.1
+twine==5.0.0
+duckdb==0.10.2
