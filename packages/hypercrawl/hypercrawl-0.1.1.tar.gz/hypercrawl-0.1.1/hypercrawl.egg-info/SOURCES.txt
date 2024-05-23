@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hypercrawl/__init__.py
+hypercrawl/domain_scraper.py
+hypercrawl.egg-info/PKG-INFO
+hypercrawl.egg-info/SOURCES.txt
+hypercrawl.egg-info/dependency_links.txt
+hypercrawl.egg-info/requires.txt
+hypercrawl.egg-info/top_level.txt
