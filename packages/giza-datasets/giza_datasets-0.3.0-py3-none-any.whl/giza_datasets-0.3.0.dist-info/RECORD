@@ -1,0 +1,11 @@
+giza/datasets/__init__.py,sha256=n-rTxwFNRlSQ2k96oJIDAoYzQzk269oEeejGKHYmsMM,136
+giza/datasets/cache_manager.py,sha256=DNdD2xln55cY6DFFK0l_VDpIJnLwvE6JMIPJbGWz4t4,2854
+giza/datasets/constants.py,sha256=hfBhhBGYIlZfYG6od4h8l9KK9zGL4cibaO41WKUoT_0,151371
+giza/datasets/defillama_constants.py,sha256=q04cNOlg2f2MFub0-eT0-sCk0gOP-M1JXzZczXrjIWk,635
+giza/datasets/hub.py,sha256=-5Pt7q7nOcJY8qxE8T2wqBD5mweGhpADm8Q4bjrQMZM,3240
+giza/datasets/loaders.py,sha256=aip-gMTaL3iB60ceShVfsviJCoOrJCzCkLEdhlwEb6c,5984
+giza/datasets/models.py,sha256=VJIjXyKMLo7xVSCVCVYsGcLq_tzAXx01Feh8Xm5iBog,1442
+giza_datasets-0.3.0.dist-info/LICENSE,sha256=b16jAJNLODDDHpkCRJl2uXdzi6aOf5G9YU8jraOnsPw,1074
+giza_datasets-0.3.0.dist-info/METADATA,sha256=KdLm8DcSX1lCSiqGIrcVPHemkU0h2ipHOOO3l60X6Kw,4537
+giza_datasets-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+giza_datasets-0.3.0.dist-info/RECORD,,
