@@ -1,0 +1,6 @@
+pyproject.toml
+tacui/__init__.py
+tacui.egg-info/PKG-INFO
+tacui.egg-info/SOURCES.txt
+tacui.egg-info/dependency_links.txt
+tacui.egg-info/top_level.txt
