@@ -1,0 +1,7 @@
+setup.py
+wf_rappi.egg-info/PKG-INFO
+wf_rappi.egg-info/SOURCES.txt
+wf_rappi.egg-info/dependency_links.txt
+wf_rappi.egg-info/entry_points.txt
+wf_rappi.egg-info/requires.txt
+wf_rappi.egg-info/top_level.txt
