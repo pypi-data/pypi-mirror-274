@@ -1,0 +1,10 @@
+win_onnx/__init__.py,sha256=k-Jkr5bDzAVeRMG8ZdIhlIWSFMlfl5yxyYHCGyHhJ18,190
+win_onnx/winml.cp310-win_amd64.pyd,sha256=I4f86xRYOFtU8_bwHZEYK0Qb52_-rojHTN7biLxOBf4,279552
+win_onnx/winml.cp38-win_amd64.pyd,sha256=6xfjSdJa2Ycu5a2VG1SWw7nDJ0oOab3QP2njgiftqBY,280064
+win_onnx/winml.cp39-win_amd64.pyd,sha256=bboS0RD2MAw-vX3f5o07W2AOGPXU1UqtkN_OBCpdbHE,271360
+win_onnx/winml.pyi,sha256=zddl7ZzeuvVoz6pu3pGxmNnsaldlbjzC9KP-4SqudP0,2346
+win_onnx-0.1.1.dist-info/LICENSE,sha256=DyUr37t2XaHimJzozg9yEAoluJB4u3utQ5S-X03keEE,2161
+win_onnx-0.1.1.dist-info/METADATA,sha256=h2mtIJzzKnbLNA5VlvQtkbJU-TzS81v5AftjuET0uWQ,513
+win_onnx-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+win_onnx-0.1.1.dist-info/top_level.txt,sha256=NUyp2-oLi2MQJu0F6Hf-37rHADdrPJaO4I6ul2rUdXQ,9
+win_onnx-0.1.1.dist-info/RECORD,,
