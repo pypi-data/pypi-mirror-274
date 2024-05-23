@@ -1,0 +1,15 @@
+ivers/__init__.py,sha256=9gUx1F4g7W40dYMvf8PqPGePiIpJW_YOFUL7ASn_Vgo,50
+ivers/allforfree.py,sha256=cNjsVo_TIv1Dixg9Klu06Tp2_Rd2kI8209COwDE81FI,4355
+ivers/leaky.py,sha256=3-FwoQ7OwqbQlc-RBH8sfgoG9d838feVjXltLg-ujSc,4130
+ivers/stratify.py,sha256=HzBLXxvcf_Y3x9juHZrw3U372IKhO8cb4o3NKlD1rY4,12622
+ivers/temporal.py,sha256=febdtyIOdUL5LLSHPS-Gg-v28i54HX2dWjrljrmBsK8,9329
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_stratify.py,sha256=rJV2t9dlpaTrmVsLAgcQ0elDmzPN28RdP_fu2Qfxtug,3199
+test/test_stratify_cv.py,sha256=L0AJPiMTyUELvpzrIpqGhMWIWdRNdnhdMhzqMYp1chs,3022
+test/test_temporal_allforfree.py,sha256=ozfKMfBSUhECsKT6wFllYO53h4iTuIkCtZpqOE3e_Qg,2230
+test/test_temporal_leaky.py,sha256=q76mtxqx1CGcgmrjCQ30HBcM7Uk-pfK-5pnz-We6Euw,3887
+ivers-0.1.1.dist-info/LICENSE,sha256=rGOGs-5Dz5Lbcl1-DfoPLGWvOGQk4Cq4eUIWHz0AwDU,1098
+ivers-0.1.1.dist-info/METADATA,sha256=9g0QP7n7ZA-MtKwgwJSzROw-TgfQUc6iQGh-LtPC0ng,3309
+ivers-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ivers-0.1.1.dist-info/top_level.txt,sha256=Tq406Z_l02A6nkaRq2BL6v1X2YITzw7SEqWB9i42hGs,11
+ivers-0.1.1.dist-info/RECORD,,
