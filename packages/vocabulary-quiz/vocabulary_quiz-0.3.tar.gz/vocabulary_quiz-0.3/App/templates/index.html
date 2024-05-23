@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocabulary Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Vocabulary Quiz</h1>
+    <form action="{{ url_for('main.start_quiz') }}" method="post" onsubmit="return validateForm()">
+        <label for="username">Enter your username:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">Start Quiz</button>
+    </form>
+    <form action="{{ url_for('main.view_scores_route') }}" method="post" onsubmit="return validateForm()">
+        <label for="view_username">Enter your username to view scores:</label>
+        <input type="text" id="view_username" name="username" required>
+        <button type="submit">View Scores</button>
+    </form>
+    <script>
+        function validateForm() {
+            const username = document.getElementById('username').value;
+            const viewUsername = document.getElementById('view_username').value;
+            if (!username && !viewUsername) {
+                alert("Username cannot be empty.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
