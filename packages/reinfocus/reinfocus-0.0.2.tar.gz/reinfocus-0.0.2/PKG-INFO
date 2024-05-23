@@ -1,0 +1,84 @@
+Metadata-Version: 2.3
+Name: reinfocus
+Version: 0.0.2
+Summary: Environments where agents can focus cameras on rendered objects.
+Project-URL: Homepage, https://github.com/jeffwhunter/reinfocus
+Project-URL: Issues, https://github.com/jeffwhunter/reinfocus/issues
+Author-email: Jeff Hunter <jhunter57@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Requires-Dist: gymnasium~=0.29.0
+Requires-Dist: matplotlib~=3.8.2
+Requires-Dist: numba~=0.59.0
+Requires-Dist: numpy~=1.26.4
+Requires-Dist: opencv-python~=4.9.0.80
+Provides-Extra: examples
+Requires-Dist: ipywidgets~=8.1.2; extra == 'examples'
+Requires-Dist: notebook~=7.1.3; extra == 'examples'
+Requires-Dist: optuna~=3.6.1; extra == 'examples'
+Requires-Dist: pygame~=2.5.2; extra == 'examples'
+Requires-Dist: pyyaml~=6.0.1; extra == 'examples'
+Requires-Dist: rl-zoo3~=2.3.0; extra == 'examples'
+Requires-Dist: tensorboard~=2.16.2; extra == 'examples'
+Description-Content-Type: text/markdown
+
+Reinfocus
+------------------
+
+![Python versions](https://img.shields.io/pypi/pyversions/reinfocus)
+[![PyPI](https://img.shields.io/pypi/v/reinfocus)](https://pypi.org/project/reinfocus/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](
+    https://github.com/jeffwhunter/reinfocus/blob/main/LICENSE)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](
+    https://github.com/psf/black)
+
+`reinfocus` is a python package that makes it easy to create reinforcement learning
+environments that use ray tracing to simulate camera focus. See the
+[examples](https://github.com/jeffwhunter/reinfocus/examples) for an impression of how it
+can be used.
+
+<p align="center">
+    <img src="./ppo-DiscreteSteps-v0.gif">
+    <br/>
+    <em>
+        A ppo trained agent acting in DiscreteSteps-v0. The checkerboard target is
+        positioned at some depth, and the agent decides what depth to focus on. It
+        receives as input the focus depth, focus value, and the change in both those since
+        the last time step.
+    </em>
+</p>
+
+Installation
+------------------
+To install `reinfocus`, use `pip install reinfocus`.
+
+For GPU support, install
+[the lastest NVIDIA graphics drivers](https://www.nvidia.com/Download/index.aspx). Next
+you will need to install `cudatoolkit`; how you do that depends on what type of python
+installation you use:
+ * [anaconda](https://www.anaconda.com/) or
+ [variants](https://docs.anaconda.com/free/miniconda/) (recommended): use
+ `conda install cudatoolkit`
+ * [plain python](https://www.python.org/downloads/release/python-3110/) (untested):
+ install [`cudatoolkit`](https://developer.nvidia.com/cuda-downloads), then set
+ [`CUDA_HOME`](
+    https://numba.readthedocs.io/en/stable/cuda/overview.html#cudatoolkit-lookup)
+
+Special Thanks
+------------------
+`reinfocus.graphics` is a [`numba`](
+https://numba.readthedocs.io/en/stable/cuda/index.html) translation of the wonderful [Ray
+Tracing in One Weekend in CUDA](https://github.com/rogerallen/raytracinginoneweekendincuda
+) by [Roger Allan](https://github.com/rogerallen).

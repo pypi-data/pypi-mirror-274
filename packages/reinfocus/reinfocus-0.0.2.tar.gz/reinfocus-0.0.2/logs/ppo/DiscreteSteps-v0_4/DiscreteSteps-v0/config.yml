@@ -1,0 +1,34 @@
+!!python/object/apply:collections.OrderedDict
+- - - batch_size
+    - 128
+  - - clip_range
+    - 0.3
+  - - ent_coef
+    - 3.8956538955451175e-05
+  - - frame_stack
+    - 5
+  - - gae_lambda
+    - 0.99
+  - - gamma
+    - 0.9
+  - - learning_rate
+    - 0.00041329091836013265
+  - - max_grad_norm
+    - 1
+  - - n_envs
+    - 8
+  - - n_epochs
+    - 5
+  - - n_steps
+    - 16
+  - - n_timesteps
+    - 500000.0
+  - - normalize
+    - true
+  - - policy
+    - MlpPolicy
+  - - policy_kwargs
+    - dict( ortho_init=False, activation_fn=nn.ReLU, net_arch=dict(pi=[256, 256],
+      vf=[256, 256]) )
+  - - vf_coef
+    - 0.34198934126143576

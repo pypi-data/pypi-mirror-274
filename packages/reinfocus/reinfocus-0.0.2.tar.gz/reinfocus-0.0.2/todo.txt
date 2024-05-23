@@ -1,0 +1,23 @@
+use hyperparameters from vectorized run to test training of vectorized and non-vectorized
+    vectorized hyperparams: check
+    vectorized training seems to work
+
+checklist
+    non-vectorized hyperparameters for ppo DiscreteSteps-v0 - DONE
+        do non-vectorized hyperparameters work for vectorized?
+            if yes, add commented vec_env_wrapper to tuned DiscreteSteps-v0 params
+        are non-vectorized hyperparameters similar to vectorized ones? - NOPE
+    vectorized lstm hyperparameters for unstacked DiscreteSteps-v0 - DONE
+    non-vectorized hyperparameters for ppo ContinuousJumps-v0
+
+make gif of single best agent, not both discrete and continuous
+    --last agent in ppo discrete steps 5
+
+later
+
+environment factories, duplication in custom_environments is a big nono
+
+render:
+Would other memory types be faster?
+Would cuda/numba fastmath be faster?
+Use numba.jit for GPU / CPU compatibility
