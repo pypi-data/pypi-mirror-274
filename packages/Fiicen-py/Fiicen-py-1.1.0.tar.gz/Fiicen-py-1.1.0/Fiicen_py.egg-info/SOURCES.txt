@@ -1,0 +1,8 @@
+README.md
+setup.py
+Fiicen_py.egg-info/PKG-INFO
+Fiicen_py.egg-info/SOURCES.txt
+Fiicen_py.egg-info/dependency_links.txt
+Fiicen_py.egg-info/top_level.txt
+fiicen_py/__init__.py
+fiicen_py/main.py
