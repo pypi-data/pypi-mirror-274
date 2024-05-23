@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: oguzhan_gokcekoca_preprocessing
+Version: 0.1
+Summary: A comprehensive data preprocessing library for Python.
+Home-page: https://github.com/yourusername/data_preprocessing_lib
+Author: Oğuzhanzi Ömerzi Tahazi
+Author-email: omerkumek03@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: nltk
+Requires-Dist: scikit-learn
