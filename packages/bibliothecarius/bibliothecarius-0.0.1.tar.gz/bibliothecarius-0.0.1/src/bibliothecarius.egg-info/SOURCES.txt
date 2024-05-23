@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/bibliothecarius/__init__.py
+src/bibliothecarius.egg-info/PKG-INFO
+src/bibliothecarius.egg-info/SOURCES.txt
+src/bibliothecarius.egg-info/dependency_links.txt
+src/bibliothecarius.egg-info/top_level.txt
