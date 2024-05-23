@@ -1,0 +1,8 @@
+numpy
+requests
+spotipy
+iso8601
+python-dateutil
+pytest
+wheel
+black
