@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: python-download
+Version: 0.0.1
+Summary: Python functions for download.
+Home-page: https://github.com/ChenyangGao/web-mount-packs/tree/main/python-module/python-download
+License: MIT
+Keywords: python-download,posixpath
+Author: ChenyangGao
+Author-email: wosiwujm@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp_client_request
+Requires-Dist: http_response
+Requires-Dist: python-asynctools
+Requires-Dist: python-concurrenttools
+Requires-Dist: python-filewrap
+Requires-Dist: python-http_request
+Requires-Dist: python-iterutils
+Requires-Dist: python-urlopen
+Requires-Dist: requests_request
+Project-URL: Repository, https://github.com/ChenyangGao/web-mount-packs/tree/main/python-module/python-download
+Description-Content-Type: text/markdown
+
+# Python functions for download..
+
+## Installation
+
+You can install from [pypi](https://pypi.org/project/python-download/)
+
+```console
+pip install -U python-download
+```
+
+## Usage
+
+```python
+import download
+```
+
