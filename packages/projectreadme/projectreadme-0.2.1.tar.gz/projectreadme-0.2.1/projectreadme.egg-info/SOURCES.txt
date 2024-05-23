@@ -1,0 +1,12 @@
+README.md
+setup.py
+projectreadme.egg-info/PKG-INFO
+projectreadme.egg-info/SOURCES.txt
+projectreadme.egg-info/dependency_links.txt
+projectreadme.egg-info/entry_points.txt
+projectreadme.egg-info/requires.txt
+projectreadme.egg-info/top_level.txt
+projectreadmegenerator/__init__.py
+projectreadmegenerator/customuserinput.py
+projectreadmegenerator/generator.py
+projectreadmegenerator/storage.py
