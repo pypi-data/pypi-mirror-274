@@ -1,0 +1,7 @@
+nptyping
+numpy
+pandas
+pyarrow
+pyedflib
+resampy
+termcolor
