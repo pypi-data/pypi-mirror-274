@@ -1,0 +1,12 @@
+LICENCE
+README.md
+run.sh
+setup.py
+VirtualEnvironment.egg-info/PKG-INFO
+VirtualEnvironment.egg-info/SOURCES.txt
+VirtualEnvironment.egg-info/dependency_links.txt
+VirtualEnvironment.egg-info/requires.txt
+VirtualEnvironment.egg-info/top_level.txt
+src/VirtEnv.py
+src/VirtualEnvWriter.py
+src/__init__.py
