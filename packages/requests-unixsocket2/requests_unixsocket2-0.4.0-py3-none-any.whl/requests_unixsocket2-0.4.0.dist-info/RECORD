@@ -1,0 +1,8 @@
+requests_unixsocket/__init__.py,sha256=kJXUviwbneFJI1YNkDLRBv7nPsCJhD8nEHlPzMaMCP4,2148
+requests_unixsocket/adapters.py,sha256=FeLsn2VjSGcSyW9pg-22JyVkAnUnsizlI-gXePBjKrw,2853
+requests_unixsocket/tests/test_requests_unixsocket.py,sha256=dEA7uHh2_4xAHQLUdSHBWUGzuxksjlC-LWlBLZ0jy4A,5659
+requests_unixsocket/testutils.py,sha256=j391z43MmR97QB5VDlURyOajTdCQUGpKHyP4a4Pv08Y,3220
+requests_unixsocket2-0.4.0.dist-info/LICENSE,sha256=DWTC53SLjCHhwvx2n4z3d-q8r4eChCyjrWsvqBSwEzQ,1430
+requests_unixsocket2-0.4.0.dist-info/METADATA,sha256=QVh5qvtFir96aPSN1pM2Esp3yCXoji8Ynwck3AFoNew,3871
+requests_unixsocket2-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+requests_unixsocket2-0.4.0.dist-info/RECORD,,
