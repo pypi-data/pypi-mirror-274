@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: efaqa_corpus_zh
+Version: 1.2
+Summary: Emotional First Aid Dataset, 心理咨询问答语料库
+Home-page: https://github.com/chatopera/efaqa-corpus-zh
+Author: Hai Liang Wang
+Author-email: hain@chatopera.com
+License: Chunsong Public License, version 1.0
+Keywords: corpus,psychological,machine-learning,deep-learning,NLP,question-answering
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+License-File: LICENSE
+
+
+efaqa-corpus-zh
+=====================
+
+Emotional First Aid Dataset, 心理咨询问答语料库
+
+Welcome
+-------
+
+据我们所知，这是心理咨询领域首个开放的QA语料库：
+
+-  该语料库的内容由现实世界的用户提出，高质量的答案由心理咨询专业人士或网友提供。
+   所以这是一个具有真正价值的语料，而不是玩具。
+
+-  该语料库可用于训练聊天机器人。
+   另一方面，这种语料库的其他用法也是可能的。
+   例如，通过分类标记，训练模式识别不同咨询问题。
+
+欢迎任何进一步增加此数据集的想法。
+
+阅读 `详细文档 <https://github.com/chatopera/efaqa-corpus-zh>`__
+

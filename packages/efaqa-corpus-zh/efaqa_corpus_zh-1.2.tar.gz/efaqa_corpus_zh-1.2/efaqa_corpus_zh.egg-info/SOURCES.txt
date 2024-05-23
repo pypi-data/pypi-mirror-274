@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+efaqa_corpus_zh/__init__.py
+efaqa_corpus_zh.egg-info/PKG-INFO
+efaqa_corpus_zh.egg-info/SOURCES.txt
+efaqa_corpus_zh.egg-info/dependency_links.txt
+efaqa_corpus_zh.egg-info/requires.txt
+efaqa_corpus_zh.egg-info/top_level.txt
+efaqa_corpus_zh/data/__init__.py
