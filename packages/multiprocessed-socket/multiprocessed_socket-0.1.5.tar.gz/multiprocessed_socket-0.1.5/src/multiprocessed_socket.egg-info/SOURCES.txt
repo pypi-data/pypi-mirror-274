@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/multiprocessed_socket/__init__.py
+src/multiprocessed_socket/multiprocessed_socket.py
+src/multiprocessed_socket.egg-info/PKG-INFO
+src/multiprocessed_socket.egg-info/SOURCES.txt
+src/multiprocessed_socket.egg-info/dependency_links.txt
+src/multiprocessed_socket.egg-info/requires.txt
+src/multiprocessed_socket.egg-info/top_level.txt
