@@ -1,0 +1,15 @@
+pydicomsorter/__init__.py,sha256=C2-M7ntz_0L7-sdaaJOAGjjbMZrBwTPMQnPD5vIIkx4,215
+pydicomsorter/cli.py,sha256=Q4ZvSDxfdMonNZrDSCmy0nVBM2WFscERMZzRkJygUC0,1809
+pydicomsorter/dicomsort.py,sha256=f6VRzjjG3vhoYQiZ6h5CfHMCqjE76SXqZeuxDcC1Wrk,1322
+pydicomsorter/io.py,sha256=euY-pbChp3W59SnTxVSxNK4tAhYfh3E-C-PBgObUyU0,1441
+pydicomsorter/options.py,sha256=aA36sIrwKTAJ7Db148WUmOFfFxIvtJX-bkUzAMnrUpg,890
+pydicomsorter/parser.py,sha256=Gyy337-c4IXZ7FqMIkRHYUZ1Kk6qIeKrcOKWjsKHzFs,2829
+pydicomsorter/tags4format.py,sha256=ti4JawgxirCpr_uaMKz2hxZqcpq8gaKlJFBtrBUkuU8,1837
+pydicomsorter/sandbox/__init__.py,sha256=ZN1VNxvj6aWpBX7h_OCVKQtxTMlxc-p2bOf6C9TxPXY,50
+pydicomsorter/sandbox/dicomsort.py,sha256=-T4ekE2c5qykvcqNIeIHIH8sSe6YVW1lAgJAGH53HqM,3847
+pydicomsorter/sandbox/diffwork.py,sha256=Ptk3soiMNnVVt5K0kUR8fYN6N_cZe1y96rCO08Pow9o,2188
+pydicomsorter-0.8.0.dist-info/METADATA,sha256=ZYHbBvKhraUW0wFta775IvvwIIZtXzPxx0nad-SZCQg,2562
+pydicomsorter-0.8.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+pydicomsorter-0.8.0.dist-info/entry_points.txt,sha256=NgNeOGla5XaN2IOOKpKn5SP3ztOjQ37LIxC-JEpt4iI,53
+pydicomsorter-0.8.0.dist-info/licenses/LICENSE,sha256=dUhuoK-TCRQMpuLEAdfme-qPSJI0TlcH9jlNxeg9_EQ,1056
+pydicomsorter-0.8.0.dist-info/RECORD,,
