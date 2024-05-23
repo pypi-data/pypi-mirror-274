@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "joaodemo123"
+version = "0.1.0"
+description = ""
+authors = ["Joao <joaoperry@gmail.com>"]
+readme = "README.md"
+packages = [{include = "demo123", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
