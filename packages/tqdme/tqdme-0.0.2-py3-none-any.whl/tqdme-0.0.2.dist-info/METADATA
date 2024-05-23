@@ -1,0 +1,104 @@
+Metadata-Version: 2.3
+Name: tqdme
+Version: 0.0.2
+Summary: Forward progress from tqdm to a public website
+Project-URL: Homepage, https://github.com/tqdme/tqdme
+Project-URL: Bug Tracker, https://github.com/tqdme/tqdme/issues
+Author-email: Garrett Flynn <garrettmflynn@gmail.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, Garrett Flynn
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Keywords: bar,meter,progress,progressbar,progressmeter,time,tqdm
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Requires-Dist: requests
+Requires-Dist: tqdm>=4.49.0
+Provides-Extra: server
+Requires-Dist: flask; extra == 'server'
+Requires-Dist: flask-cors; extra == 'server'
+Requires-Dist: flask-socketio; extra == 'server'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Description-Content-Type: text/markdown
+
+# tqdme
+ 
+
+## Environment Variables
+- `TQDME_URL` - URL to the TQDME server. Default: `http://tqdm.me`
+- `TQDME_DISPLAY` - Show TQDM progress bars in the terminal. Default: `True`
+- `TQDME_VERBOSE` - Print debug messages. Default: `False`
+
+## Usage
+
+### tqdm Replacement
+Use `tqdme` as a drop-in replacement for `tqdm` in your Python scripts.
+```python
+import time
+# from tqdm import tqdm
+from tqdme import tqdme
+
+num_iterations = 100 # Define the number of iterations
+
+for i in tqdme(range(num_iterations)):
+    time.sleep(0.1)  # Sleep for 0.1 seconds
+```
+
+### Relay Server (Flask + SocketIO)
+
+> **Note:** The `tqdme` server assumes you have provided an `index.html` file in the `base` directory. 
+
+```python
+from tqdme.server import Server
+from flask import send_from_directory
+from pathlib import Path
+
+script_directory = Path(__file__).parent.resolve()
+
+server = Server(script_directory, 'localhost', 3768)
+
+app = server.app
+
+@server.app.route('/src/<path:path>')
+def get_static_assets(path):
+    return send_from_directory(server.base / 'src', path)
+
+server.run()
+```
