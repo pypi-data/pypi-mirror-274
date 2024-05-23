@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+qdataclass/__init__.py
+qdataclass/__init__.pyi
+qdataclass/py.typed
+qdataclass/qdataclass.py
+qdataclass/qdataclass.pyi
+qdataclass.egg-info/PKG-INFO
+qdataclass.egg-info/SOURCES.txt
+qdataclass.egg-info/dependency_links.txt
+qdataclass.egg-info/top_level.txt
