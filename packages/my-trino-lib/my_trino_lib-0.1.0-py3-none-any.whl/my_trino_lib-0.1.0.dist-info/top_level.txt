@@ -1,0 +1,2 @@
+my_trino_lib
+tests
