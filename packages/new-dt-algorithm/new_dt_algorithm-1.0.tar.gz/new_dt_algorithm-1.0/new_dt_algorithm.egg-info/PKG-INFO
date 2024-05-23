@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: new-dt-algorithm
+Version: 1.0
+Summary: A package containing NewAlgorithm, that can be used for decision tree
+Author: Rajesh balouda
+Author-email: rbaloudaa@gmail.com
+License: MIT
