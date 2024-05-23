@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/snowflake/__init__.py
+src/snowflake/permissions.py
+src/snowflake/version.py
+src/snowflake_native_apps_permission_stub.egg-info/PKG-INFO
+src/snowflake_native_apps_permission_stub.egg-info/SOURCES.txt
+src/snowflake_native_apps_permission_stub.egg-info/dependency_links.txt
+src/snowflake_native_apps_permission_stub.egg-info/requires.txt
+src/snowflake_native_apps_permission_stub.egg-info/top_level.txt
+src/snowflake_native_apps_permission_stub.egg-info/zip-safe

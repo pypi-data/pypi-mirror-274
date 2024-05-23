@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: snowflake-native-apps-permission-stub
+Version: 0.1.9
+Summary: Snowflake Native App Permission SDK Stub
+Home-page: UNKNOWN
+Author: Snowflake, Inc
+Author-email: support@snowflake.com
+License: UNKNOWN
+Keywords: Snowflake db database cloud warehouse permissions sdk native apps
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: SQL
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE.txt
+
+This package provides a set of stub functions that replaces the permissions SDK for local testing
+
