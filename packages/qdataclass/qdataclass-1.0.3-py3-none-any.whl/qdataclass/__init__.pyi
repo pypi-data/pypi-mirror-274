@@ -1,0 +1,3 @@
+from .qdataclass import qDataClass as qDataClass
+
+def registerQmlType(uri, versionMajor: int = 1, versionMinor: int = 0): ...
