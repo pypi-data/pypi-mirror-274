@@ -1,0 +1,8 @@
+README.md
+setup.py
+hypercrawl_lite.egg-info/PKG-INFO
+hypercrawl_lite.egg-info/SOURCES.txt
+hypercrawl_lite.egg-info/dependency_links.txt
+hypercrawl_lite.egg-info/entry_points.txt
+hypercrawl_lite.egg-info/requires.txt
+hypercrawl_lite.egg-info/top_level.txt
