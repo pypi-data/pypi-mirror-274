@@ -1,0 +1,7 @@
+README.md
+setup.py
+plantit-cli/__init__.py
+plantit_cli.egg-info/PKG-INFO
+plantit_cli.egg-info/SOURCES.txt
+plantit_cli.egg-info/dependency_links.txt
+plantit_cli.egg-info/top_level.txt
