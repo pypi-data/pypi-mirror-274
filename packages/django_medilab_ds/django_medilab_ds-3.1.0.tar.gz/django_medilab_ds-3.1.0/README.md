@@ -1,0 +1,98 @@
+### django-medilab-ds
+
+#### Introduction 
+demiansoft homepage templates
+
+
+---
+#### Requirements
+
+Django >= 4.2.11
+libsass>=0.23.0
+django-analyticsds >= 0.3.1
+django-calendards >= 0.4.0
+django-modalds >= 0.1.0
+django-utilsds >= 0.6.0
+
+
+---
+#### Install
+
+settings.py  
+```  
+INSTALLED_APPS = [    
+    'django_analyticsds',  
+	'django_utilsds',  
+	'django_calendards',  
+	'django_modalds', 
+	
+	'django_medilab_ds',
+]
+
+...
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, '_static/'),
+]
+
+MEDIA_URL = '/media/'  
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  
+X_FRAME_OPTIONS = 'SAMEORIGIN'  
+  
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
+
+```
+
+in the shell
+```
+>> pip install django-medilab-ds
+>> python manage.py makemigrations django_calendards django_modalds
+>> python manage.py migrate
+>> python manage.py createsuperuser
+```
+
+
+urls.py
+```
+from django.contrib import admin  
+from django.urls import path, include  
+from django.conf import settings  
+from django.conf.urls.static import static  
+  
+urlpatterns = [  
+    path('admin/', admin.site.urls),  
+    path('', include('django_medilab_ds.urls')),  
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+```
+
+---
+#### Composition
+
+프로젝트 내의 \_data 폴더 안에 herobizds.py 파일을 생성하고 다음과 같은 형식으로 작성한다.(예제 파일 참조)
+
+```
+context = {
+}
+
+context.update(base)
+context.update(seo)
+context.update(header)
+context.update(hero)
+context.update(why_us)
+context.update(about)
+context.update(counts)
+context.update(services)
+context.update(appointment)
+context.update(departments)
+context.update(doctors)
+context.update(faq)
+context.update(testimonials)
+context.update(gallery)
+context.update(contact)
+context.update(footer)
+
+
+
+```
+---
+
