@@ -1,0 +1,2 @@
+include CHANGES.rst LICENSE MANIFEST.in Makefile bootstrap.py buildout.cfg tox.ini
+recursive-include tests *.py
