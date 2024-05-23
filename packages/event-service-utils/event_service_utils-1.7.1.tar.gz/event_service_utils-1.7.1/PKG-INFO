@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: event_service_utils
+Version: 1.7.1
+Summary: Event service utils
+Author: Felipe Arruda Pontes
+Author-email: felipe.arruda.pontes@insight-centre.org
+License: Apache License, Version 2.0
+License-File: LICENSE
+
+# Event Service Utils
+This is a python module that generic utilities to connect to the event service network.
+
