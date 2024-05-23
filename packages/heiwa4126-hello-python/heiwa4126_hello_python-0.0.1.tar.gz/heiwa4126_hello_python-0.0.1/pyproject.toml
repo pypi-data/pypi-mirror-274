@@ -1,0 +1,83 @@
+[build-system]
+requires = [ "hatchling" ]
+build-backend = "hatchling.build"
+
+[project]
+name = "heiwa4126-hello-python"
+dynamic = [ "version" ]
+description = "An example python project"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = [
+  "demo",
+  "helloworld",
+]
+authors = [
+  { name = "heiwa4126", email = "heiwa4126@gmail.com" },
+]
+classifiers = [
+  # "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  # "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [  ]
+
+[project.urls]
+Documentation = "https://github.com/heiwa4126/hello-python#readme"
+Issues = "https://github.com/heiwa4126/hello-python/issues"
+Source = "https://github.com/heiwa4126/hello-python"
+
+[tool.hatch.version]
+path = "src/heiwa4126_hello_python/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/heiwa4126_hello_python tests}"
+
+[tool.coverage.run]
+source_pkgs = [
+  "heiwa4126_hello_python",
+  "tests",
+]
+branch = true
+parallel = true
+omit = [
+  "src/heiwa4126_hello_python/__about__.py",
+]
+
+[tool.coverage.paths]
+heiwa4126_hello_python = [
+  "src/heiwa4126_hello_python",
+  "*/heiwa4126-hello-python/src/heiwa4126_hello_python",
+]
+tests = [
+  "tests",
+  "*/heiwa4126-hello-python/tests",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.ruff.lint]
+ignore = [ "T201" ]
+
+[tool.hatch.envs.default.scripts]
+main = "python src/heiwa4126_hello_python/main.py"
+ex1 = "python examples/ex1.py"
+
+[project.scripts]
+heiwa4126-hello-python = "heiwa4126_hello_python:hello"
