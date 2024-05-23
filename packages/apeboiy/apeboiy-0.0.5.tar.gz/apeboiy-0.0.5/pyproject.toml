@@ -1,0 +1,27 @@
+[project]
+name = "apeboiy"
+version = "0.0.5"
+authors = [
+    { "name"="AppleBoiy", "email"="contact.chaipat@gmail.com"}
+]
+description = "Shared AppleBoiy's packages."
+readme = "README.md"
+keywords = ["appleboiy", "shared", "packages"]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.25.1",
+    "numpy>=1.21.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/AppleBoiy"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
