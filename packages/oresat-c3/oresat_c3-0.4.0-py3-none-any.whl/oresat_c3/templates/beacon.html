@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <button onclick="sendBeacon()">Send Beacon</button>
+  <script>
+    async function sendBeacon() {
+      writeValue("beacon","send_now", true);
+    }
+  </script>
+{% endblock %}
