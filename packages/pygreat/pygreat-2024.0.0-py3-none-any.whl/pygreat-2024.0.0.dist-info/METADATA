@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pygreat
+Version: 2024.0.0
+Summary: Python library for talking with libGreat devices
+Author-email: Great Scott Gadgets <dev@greatscottgadgets.com>
+License: BSD
+Project-URL: Source, https://greatscottgadgets.com/greatfet
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Security
+Description-Content-Type: text/markdown
+Requires-Dist: pyusb
+Requires-Dist: future
+Requires-Dist: backports.functools-lru-cache
+
+# libgreat host-side libraries
+
+This folder contains an experimental host-side python utility. It should work with
+both python2 and python3.
