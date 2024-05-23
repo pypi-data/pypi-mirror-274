@@ -1,0 +1,13 @@
+giza/agents/__init__.py,sha256=JwFLSwGxR_QOb3Mfms0CZx3Qdh_bZFJi4C6nM0AV9dQ,395
+giza/agents/action.py,sha256=mslj3AxHB1iGQC44kuIf9xZWDkiS1hYWgWJZsafEsuI,5991
+giza/agents/agent.py,sha256=LHMVuq-r6M8kfjowjQvl8pPrQgl_GKxfHBGsXSRpCX0,17879
+giza/agents/deployments.py,sha256=9xG-Rfj_V7_zdtOIryNEdl1uvHd6jLHNu1y6ivQoQ9k,630
+giza/agents/logger.py,sha256=8fJERuy2dgBghtnEt7oqXnfmq_TJhFLVWLmhJc0n4MA,252
+giza/agents/logging.yaml,sha256=-W1bumVIdaai32_2KBc09uKDjpf_Bq_5rPNOItcJgMg,3051
+giza/agents/model.py,sha256=B9IYa2-Lej_SY0IhsJBTzLBGP9rjam6ElxtAKs8N5RM,18146
+giza/agents/task.py,sha256=dxMCL9hmNWODaEfUFh3sKdx_7u-RbqtqcjdGtwbN3qY,576
+giza/agents/utils.py,sha256=QaOntTPSiIq4ebl0--Wutz0iegtFo6AN0RUdTlJhSxk,1974
+giza_agents-0.4.0.dist-info/LICENSE,sha256=RbXHn7MC0YFsm0uZxFEPBqcDkHkjl3JkOdUzKoel3Do,1074
+giza_agents-0.4.0.dist-info/METADATA,sha256=VL053-kQd5PzjhUQUcXxE1wN-Iyt-P-2ARJiXiVQzaI,5553
+giza_agents-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+giza_agents-0.4.0.dist-info/RECORD,,
