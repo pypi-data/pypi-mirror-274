@@ -1,0 +1,67 @@
+2024-05-22 11:55:42,627 [MainThread  ] [INFO ]  Log base created
+2024-05-22 11:55:42,628 [MainThread  ] [WARNI]  base:Suscpicious configuration: no database_class_id set - 
+2024-05-22 11:55:42,629 [MainThread  ] [ERROR]  Publishing log event failed 'JBase' object has no attribute 'mqtt_client'
+2024-05-22 11:55:42,632 [MainThread  ] [WARNI]  base:Suscpicious configuration: no mqtt_class_id set - 
+2024-05-22 11:55:42,633 [MainThread  ] [ERROR]  Publishing log event failed 'JBase' object has no attribute 'mqtt_client'
+2024-05-22 11:55:42,634 [MainThread  ] [INFO ]  base:base instantiated - 
+2024-05-22 11:55:42,635 [MainThread  ] [ERROR]  Publishing log event failed 'JBase' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,574 [MainThread  ] [INFO ]  Log parent created
+2024-05-22 11:55:52,577 [MainThread  ] [WARNI]  parent:Suscpicious configuration: no database_class_id set - 
+2024-05-22 11:55:52,578 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,579 [MainThread  ] [WARNI]  parent:Suscpicious configuration: no mqtt_class_id set - 
+2024-05-22 11:55:52,581 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,582 [MainThread  ] [INFO ]  parent:parent instantiated - 
+2024-05-22 11:55:52,582 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,584 [MainThread  ] [INFO ]  Log child created
+2024-05-22 11:55:52,584 [MainThread  ] [INFO ]  Log child created
+2024-05-22 11:55:52,586 [MainThread  ] [INFO ]  Log group created
+2024-05-22 11:55:52,586 [MainThread  ] [INFO ]  Log group created
+2024-05-22 11:55:52,586 [MainThread  ] [INFO ]  Log group created
+2024-05-22 11:55:52,588 [MainThread  ] [WARNI]  group:Suscpicious configuration: no database_class_id set - 
+2024-05-22 11:55:52,588 [MainThread  ] [WARNI]  group:Suscpicious configuration: no database_class_id set - 
+2024-05-22 11:55:52,588 [MainThread  ] [WARNI]  group:Suscpicious configuration: no database_class_id set - 
+2024-05-22 11:55:52,590 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,590 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,590 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,595 [MainThread  ] [WARNI]  group:Suscpicious configuration: no mqtt_class_id set - 
+2024-05-22 11:55:52,595 [MainThread  ] [WARNI]  group:Suscpicious configuration: no mqtt_class_id set - 
+2024-05-22 11:55:52,595 [MainThread  ] [WARNI]  group:Suscpicious configuration: no mqtt_class_id set - 
+2024-05-22 11:55:52,598 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,598 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,598 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,600 [MainThread  ] [INFO ]  group:group instantiated - 
+2024-05-22 11:55:52,600 [MainThread  ] [INFO ]  group:group instantiated - 
+2024-05-22 11:55:52,600 [MainThread  ] [INFO ]  group:group instantiated - 
+2024-05-22 11:55:52,602 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,602 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 11:55:52,602 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,454 [MainThread  ] [INFO ]  Log parent created
+2024-05-22 17:40:12,454 [MainThread  ] [WARNI]  parent:Suscpicious configuration: no database_class_id set - 
+2024-05-22 17:40:12,456 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,459 [MainThread  ] [WARNI]  parent:Suscpicious configuration: no mqtt_class_id set - 
+2024-05-22 17:40:12,460 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,461 [MainThread  ] [INFO ]  parent:parent instantiated - 
+2024-05-22 17:40:12,461 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,463 [MainThread  ] [INFO ]  Log child created
+2024-05-22 17:40:12,463 [MainThread  ] [INFO ]  Log child created
+2024-05-22 17:40:12,465 [MainThread  ] [INFO ]  Log group created
+2024-05-22 17:40:12,465 [MainThread  ] [INFO ]  Log group created
+2024-05-22 17:40:12,465 [MainThread  ] [INFO ]  Log group created
+2024-05-22 17:40:12,467 [MainThread  ] [WARNI]  group:Suscpicious configuration: no database_class_id set - 
+2024-05-22 17:40:12,467 [MainThread  ] [WARNI]  group:Suscpicious configuration: no database_class_id set - 
+2024-05-22 17:40:12,467 [MainThread  ] [WARNI]  group:Suscpicious configuration: no database_class_id set - 
+2024-05-22 17:40:12,469 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,469 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,469 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,471 [MainThread  ] [WARNI]  group:Suscpicious configuration: no mqtt_class_id set - 
+2024-05-22 17:40:12,471 [MainThread  ] [WARNI]  group:Suscpicious configuration: no mqtt_class_id set - 
+2024-05-22 17:40:12,471 [MainThread  ] [WARNI]  group:Suscpicious configuration: no mqtt_class_id set - 
+2024-05-22 17:40:12,473 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,473 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,473 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,476 [MainThread  ] [INFO ]  group:group instantiated - 
+2024-05-22 17:40:12,476 [MainThread  ] [INFO ]  group:group instantiated - 
+2024-05-22 17:40:12,476 [MainThread  ] [INFO ]  group:group instantiated - 
+2024-05-22 17:40:12,478 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,478 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'
+2024-05-22 17:40:12,478 [MainThread  ] [ERROR]  Publishing log event failed 'JGroup' object has no attribute 'mqtt_client'

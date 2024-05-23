@@ -1,0 +1,66 @@
+
+[build-system]
+requires = ["setuptools"] 
+build-backend = "setuptools.build_meta"  
+
+
+[project]
+
+name = "juham"
+version = "0.0.1"
+#dynamic = ["version"]
+description = "Juha's Ultimate Home Automation Masterpiece"
+
+readme = "README.md"
+
+requires-python = ">=3.8"
+
+license = {file = "LICENSE.md"}
+
+keywords = ["home", "automation", "juham"]
+
+authors = [
+  {name = "J Meskanen", email = "juham.api@gmail.com" }
+]
+
+maintainers = [
+  {name = "J. Meskanen", email = "juham.api@gmail.com" }
+]
+
+#[tool.setuptools.dynamic]
+#version = {attr = "juham.__version__"}
+
+
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development",
+  "License :: Public Domain",
+  "Programming Language :: Python :: 3.8",
+]
+
+dependencies = [
+  "paho-mqtt >= 1",
+  "influxdb3-python >= 0.3.0",
+  "requests >= 2.31",
+  "pytz >= 2024.1"
+]
+
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+
+
+
+[project.urls]
+"Homepage" = "https://meskanen.com"
+"Bug Reports" = "https://meskanen.com"
+"Funding" = "https://meskanen.com"
+"Say Thanks!" = "http://meskanen.com"
+"Source" = "https://meskanen.com"
+
+
+[project.scripts]
+
+
+

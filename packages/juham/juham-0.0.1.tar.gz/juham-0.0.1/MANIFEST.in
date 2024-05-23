@@ -1,0 +1,13 @@
+include README.md
+
+include CHANGELOG.md
+
+include LICENSE.md
+
+recursive include examples *
+recursive-include tests *
+recursive-include docs *
+
+# files to be excluded
+global-exclude *~
+global-exclude #*
