@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: apeboiy
+Version: 0.0.12
+Summary: Shared AppleBoiy's packages.
+Author-email: AppleBoiy <contact.chaipat@gmail.com>
+Project-URL: Homepage, https://github.com/AppleBoiy
+Keywords: appleboiy,shared,packages
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Requires-Dist: numpy>=1.21.0
+
+# Shared python package
+
+This package contains shared Python scripts and modules that are used across multiple projects.
+
+## List of repositories using this package
+Each repository that uses this package is listed below:
+
+> [!IMPORTANT]
+> Each of them has a specific use case for the shared scripts and modules.
+> please refer to the README.md file in each repository for more information.
+
+- [predict-on-cloud](https://github.com/AppleBoiy/predict-on-pointcloud) - [plyreader](./src/apeboiy/ply/README.md)
+
+## License
+This package is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
