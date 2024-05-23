@@ -1,0 +1,4 @@
+cvat-sdk>=2.13.0
+pydantic-settings>=2.0.2
+passlib>=1.7.4
+pandas>=2.2.2
