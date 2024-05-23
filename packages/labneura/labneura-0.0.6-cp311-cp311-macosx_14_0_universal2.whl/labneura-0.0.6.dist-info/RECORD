@@ -1,0 +1,11 @@
+labneura.cpython-311-darwin.so,sha256=cn5ku6VbWP4Gnl76lVDN-QfJdZDhzT4Yg2UxY9-8Bwc,918016
+mlcpp.cpython-311-darwin.so,sha256=KjLveAk7aJEnfGQrmxHhc6eAojgmwp74vOu7edcmiak,918008
+mlpackage.cpython-311-darwin.so,sha256=fBkawL946izD4z-_ucNbhJhfL1IoCpNfQvaf-nI4qlQ,918016
+labneura/__init__.py,sha256=8uNUHfxZJNs907FyFrNwiG5Ws19hkXshdSd3UvwqnP8,16
+labneura/ml/__init__.py,sha256=A66neLdvWPgZZZ2iZ5-xNZgmXiM6jxz9xS7BWhwXvsM,47
+labneura/ml/linear_regression.py,sha256=NLFKMRHRZ6Mb7BiEItblGS7djsEYL9Wp3PBJmoVq4A0,261
+labneura-0.0.6.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labneura-0.0.6.dist-info/METADATA,sha256=Tv9xxUNCyMlBi9eNDGOxMha-5Lk_x8uMG07PQSydHGY,217
+labneura-0.0.6.dist-info/WHEEL,sha256=hZKvTiSMKDRPs-sBmP6To6ff23V_qWVqVhLxN3WyyJw,115
+labneura-0.0.6.dist-info/top_level.txt,sha256=FyljdrcKloiuNzdLmNbdyPlRV2sP6HRUUoZkUA-ps1M,19
+labneura-0.0.6.dist-info/RECORD,,
