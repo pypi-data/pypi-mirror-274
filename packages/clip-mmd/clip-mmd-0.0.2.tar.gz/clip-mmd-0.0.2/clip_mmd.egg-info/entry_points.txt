@@ -1,0 +1,2 @@
+[console_scripts]
+clip-mmd = clip_mmd.cli:main
