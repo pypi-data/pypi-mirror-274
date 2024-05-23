@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: VeriFact
+Version: 0.0.4
+Summary: Pip package for Verifact
+Home-page: https://github.com/mungg/VeriScore
+Author: Yixio Song
+Author-email: yixiaosong@umass.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: anthropic
+Requires-Dist: tiktoken
+Requires-Dist: tqdm
+
+# VeriScore
