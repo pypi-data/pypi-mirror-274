@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: packManager
+Version: 1.2.0
+Summary: A package manager for python
+Home-page: https://chicken-muggets.github.io/packManager/
+Author: Chicken Muggets
+License: MIT
+Project-URL: Documentation, https://github.com/chicken-muggets/PackInst/wiki
+Project-URL: Source, https://github.com/chicken-muggets/PackInst
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10,
+Description-Content-Type: text/markdown
+
+# PackInst
+PackInst is a pip package made to make installing python packages easier.
+
+It allows you to install packages quicker than python allows you to on your own. This can help when distributing large scale projects where you want to automatically import all of the nessasary librarys or see if they are already imported
