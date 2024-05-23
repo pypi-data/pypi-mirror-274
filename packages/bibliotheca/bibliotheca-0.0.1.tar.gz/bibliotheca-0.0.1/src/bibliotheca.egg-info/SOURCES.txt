@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/bibliotheca/__init__.py
+src/bibliotheca/githf.py
+src/bibliotheca/machina.yaml
+src/bibliotheca.egg-info/PKG-INFO
+src/bibliotheca.egg-info/SOURCES.txt
+src/bibliotheca.egg-info/dependency_links.txt
+src/bibliotheca.egg-info/requires.txt
+src/bibliotheca.egg-info/top_level.txt
