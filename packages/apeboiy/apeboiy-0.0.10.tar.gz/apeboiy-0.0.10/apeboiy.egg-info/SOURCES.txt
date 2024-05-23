@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+apeboiy.egg-info/PKG-INFO
+apeboiy.egg-info/SOURCES.txt
+apeboiy.egg-info/dependency_links.txt
+apeboiy.egg-info/requires.txt
+apeboiy.egg-info/top_level.txt
+tests/__init__.py
+tests/plyreader_test.py
