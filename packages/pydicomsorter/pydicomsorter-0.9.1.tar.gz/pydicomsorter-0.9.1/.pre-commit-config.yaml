@@ -1,0 +1,34 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-toml
+      - id: check-yaml
+      - id: check-json
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: pretty-format-json
+  - repo: local
+    hooks:
+      - id: pixi-install
+        name: Run pixi install
+        entry: bash -c 'pixi install --all && git add pixi.lock'
+        language: system
+        files: ^src/pydicomsorter/.*\.py$|^pyproject\.toml$|^pixi\.lock$
+      # - id: pixi-run-tests
+      #   name: Run pixi tests
+      #   entry: bash -c 'pixi run test'
+      #   language: system
+      #   files: ^src/.*\.py$|^pyproject\.toml$
+      - id: pixi-run-lint
+        name: Run pixi lint
+        entry: bash -c 'pixi run lint'
+        language: system
+        files: ^src/.*\.py$|^pyproject\.toml$|^config/ruff\.toml%
+      - id: pixi-run-doc-build
+        name: Run pixi doc build
+        entry: bash -c 'pixi run doc-build'
+        language: system
+        files: ^src/.*\.py$|^pyproject\.toml$|^docs/.*|^config/mkdocs\.(yml|yaml)$
