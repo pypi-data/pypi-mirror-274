@@ -1,0 +1,9 @@
+numpy
+scikit-learn
+joblib
+pandas
+requests
+biopython
+loguru
+tensorflow==2.15.0
+keras==2.15.0
