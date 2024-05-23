@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyAirlock"
+version = "0.9.0"
+description = "Python library for Airlock product REST APIs"
+readme = "README.md"
+authors = [{ name = "Urs Zurbuchen", email = "info@airlock.com" }]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+keywords = ["airlock"]
+dependencies = [
+    "pyyaml",
+    "colorama",
+    "requests",
+    "pdoc3",
+]
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+
+[project.urls]
+"Official Website" = "https://www.airlock.com"
+Homepage = "https://github.com/alalazu/pyAirlock"
+
