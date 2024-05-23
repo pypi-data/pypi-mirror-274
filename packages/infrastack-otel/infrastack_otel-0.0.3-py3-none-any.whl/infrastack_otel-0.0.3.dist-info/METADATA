@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: infrastack-otel
+Version: 0.0.3
+Summary: Infrastack instrumentation for LLM frameworks
+Author-email: Frank Kuehnel <hello@infrastack.ai>
+Maintainer-email: Frank Kuehnel <frank@infrastack.ai>, Aykut Gedik <hello@infrastack.ai>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/infrastackai/otel
+Project-URL: Issues, https://github.com/infrastackai/otel/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: inflection >=0.4.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc >=1.24.0
+Requires-Dist: opentelemetry-instrumentation >=0.45b0
+Requires-Dist: wrapt >=1.16.0
+
