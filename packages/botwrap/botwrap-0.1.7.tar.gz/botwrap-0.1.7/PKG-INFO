@@ -1,0 +1,170 @@
+Metadata-Version: 2.1
+Name: botwrap
+Version: 0.1.7
+Summary: A convenient wrapper for the OpenAI API.
+Home-page: https://github.com/BizPrincess/botwrap
+Author: BizPrincess
+Author-email: professionallyjami@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp==3.9.3
+Requires-Dist: attrs==23.2.0
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: certifi==2023.11.17
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: Flask==3.0.1
+Requires-Dist: httpx==0.26.0
+Requires-Dist: Jinja2==3.1.3
+Requires-Dist: openai==1.29.0
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: requests==2.31.0
+Requires-Dist: urllib3==2.1.0
+Requires-Dist: python-dotenv==1.0.0
+
+### `README.md`
+
+Hereâ€™s a comprehensive `README.md` for your project:
+
+```markdown
+# Botwrap
+
+Botwrap is a convenient wrapper for the OpenAI API, designed to simplify interactions with OpenAI's advanced language models. It provides an intuitive interface for managing assistants, threads, messages, and more, making it easy for developers to integrate OpenAI's capabilities into their applications.
+
+## Features
+
+- Create and manage assistants
+- Handle threads and messages
+- Utilize tools like code interpreters and file search
+- Simplified API interactions with error logging
+- Easy setup and configuration
+
+## Installation
+
+You can install Botwrap via pip:
+
+```bash
+pip install botwrap
+```
+
+## Usage
+
+### Initialization
+
+To start using Botwrap, you need to initialize the `OpenAIWrapper` with your API key:
+
+```python
+import asyncio
+from openaiwrapper.api_client import OpenAIAPIClient
+
+async def main():
+    api_key = 'your_openai_api_key'
+    profile_path = 'path_to_your_profile.json'
+    
+    async with OpenAIAPIClient(api_key=api_key) as client:
+        # Perform operations with the client
+        ...
+
+asyncio.run(main())
+```
+
+### Create a New Assistant
+
+```python
+async def create_assistant_example():
+    api_key = 'your_openai_api_key'
+    
+    async with OpenAIWrapper(api_key=api_key) as wrapper:
+        assistant = await wrapper.create_assistant(
+            name="Test Assistant",
+            model="gpt-4o",
+            instructions="Provide helpful and concise responses.",
+            tools=[{"type": "code_interpreter"}, {"type": "file_search"}],
+            tool_resources={}
+        )
+        print("Assistant created:", assistant)
+
+asyncio.run(create_assistant_example())
+```
+
+### Create a Thread for an Existing Assistant
+
+```python
+async def create_thread_example():
+    api_key = 'your_openai_api_key'
+    assistant_id = 'existing_assistant_id'
+    initial_message = "Hello, how can you assist me today?"
+    
+    async with OpenAIWrapper(api_key=api_key) as wrapper:
+        thread_response = await wrapper.create_thread_for_existing_assistant(
+            assistant_id=assistant_id,
+            initial_message=initial_message
+        )
+        print("Thread created:", thread_response)
+
+asyncio.run(create_thread_example())
+```
+
+### Reply to an Existing Thread
+
+```python
+async def reply_to_thread_example():
+    api_key = 'your_openai_api_key'
+    thread_id = 'existing_thread_id'
+    message = "Can you help me with my project?"
+    
+    async with OpenAIWrapper(api_key=api_key) as wrapper:
+        response = await wrapper.reply_to_existing_thread(thread_id=thread_id, message=message)
+        print("Replied to thread:", response)
+
+asyncio.run(reply_to_thread_example())
+```
+
+### Upload a File
+
+```python
+async def upload_file_example():
+    api_key = 'your_openai_api_key'
+    file_path = 'path_to_your_file.txt'
+    
+    async with OpenAIWrapper(api_key=api_key) as wrapper:
+        response = await wrapper.upload_file(file_path=file_path, purpose="answers")
+        print("File uploaded:", response)
+
+asyncio.run(upload_file_example())
+```
+
+## Configuration
+
+Botwrap can be configured via environment variables. You can create a `.env` file in your project directory to set these variables:
+
+```env
+OPENAI_API_KEY=your_openai_api_key
+LOG_FILE=api_calls.log
+ENVIRONMENT=development
+```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or issues, please open an issue on the [GitHub repository](https://github.com/BizPrincess/botwrap).
+
+```
