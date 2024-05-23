@@ -1,0 +1,113 @@
+[tool.poetry]
+name = "rsserpent-rev"
+version = "0.1.4"
+
+authors = ["Queensferry <queensferry.me@gmail.com>"]
+description = "🐍 This snake helps you reconnect the Web, with RSS feeds!"
+license = "MIT"
+readme = "README.md"
+
+homepage = "https://github.com/RSSerpent-Rev/RSSerpent"
+repository = "https://github.com/RSSerpent-Rev/RSSerpent"
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: News/Diary",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+keywords = ["rss"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+arrow = "^1.1.1"
+fake-useragent = "^0.1.11"
+httpx = "^0.27.0"
+importlib-metadata = "^4.5.0"
+Jinja2 = "^3.0.1"
+playwright = "^1.44.0"
+pydantic = {extras = ["email"], version = "^1.8.2"}
+pyquery = "^1.4.3"
+starlette = "0.37.2"
+mike = "^1.1.2"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.15.0"
+uvicorn = "^0.29.0"
+# testing
+coverage-conditional-plugin = "^0.5.0"
+hypothesis = "^6.23.0"
+pytest = "^7.0.1"
+pytest-asyncio = "^0.18.1"
+pytest-cov = "^3.0.0"
+pytest-randomly = "^3.10.1"
+pytest-xdist = "^2.4.0"
+requests = "^2.26.0"
+# documentation
+mkdocs = "^1.2.1"
+mkdocs-git-revision-date-plugin = "^0.3.1"
+mkdocs-material = "^8.0.4"
+mkdocs-static-i18n = "^1.2"
+
+[tool.black]
+include = '\.pyi?$'
+target-version = ["py310"]
+
+[tool.coverage.run]
+include = ["rsserpent/*"]
+plugins = ["coverage_conditional_plugin"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "if TYPE_CHECKING:",
+    "pragma: no cover"
+]
+
+[tool.coverage.coverage_conditional_plugin.rules]
+is_not_linux = "sys_platform != 'linux'"
+
+[tool.isort]
+balanced_wrapping = true
+combine_as_imports = true
+lines_after_imports = 2
+profile = "black"
+
+[tool.mypy]
+plugins = ["pydantic.mypy"]
+pretty = true
+python_version = 3.10
+show_error_codes = true
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["pyquery.*"]
+ignore_missing_imports = true
+
+[tool.nitpick]
+style = ["./styles/main.toml", "./styles/local.toml"]
+cache = "never"
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[tool.pytest.ini_options]
+addopts = "--cov"
+asyncio_mode = "auto"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

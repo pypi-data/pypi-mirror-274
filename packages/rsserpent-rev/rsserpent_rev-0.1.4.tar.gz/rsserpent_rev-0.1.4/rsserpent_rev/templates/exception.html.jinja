@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://ghproxy.imciel.com/https://raw.githubusercontent.com/RSSerpent-Rev/RSSerpent/master/docs/__asset__/logo-200.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            height: 100vh;
+            justify-content: flex-start;
+            overflow: auto;
+            padding: 20vh 0;
+            text-align: center;
+        }
+        main a {
+            color: green!important;
+        }
+        main h1 {
+            padding-bottom: 1em;
+        }
+        main div {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            margin: 1em 0;
+            width: 44em;
+            text-align: left;
+        }
+        main div pre {
+            white-space: pre-wrap;
+        }
+        main img {
+            filter: grayscale(1);
+            -webkit-filter: grayscale(1);
+            max-width: 12em;
+        }
+        main p {
+            font-size: 1em;
+            padding: .3em 0;
+        }
+    </style>
+    <title>RSSerpent Crashed (T⌓T)</title>
+</head>
+<body>
+    <main>
+        <img alt="RSSerpent" src="https://ghproxy.imciel.com/https://raw.githubusercontent.com/RSSerpent-Rev/RSSerpent/master/docs/__asset__/logo-200.png" />
+        <h1>Something is wrong with <a href="https://github.com/RSSerpent-Rev/RSSerpent">RSSerpent</a>...</h1>
+        <p>If you believe this is a bug 🐛 of RSSerpent, please create an <a href="https://github.com/RSSerpent-Rev/RSSerpent/issues/new">issue</a>.</p>
+        <div>
+            <p>Path: <code>{{request.path}}</code></p>
+            <p>Message: <code>{{exception | string}}</code></p>
+            <details>
+                <summary>Traceback:</summary>
+                <pre>{{traceback}}</pre>
+            </details>
+        </div>
+        <p>
+            <a href="https://rsserpent-rev.github.io/RSSerpent/latest/">Document</a> |
+            <a href="https://github.com/RSSerpent-Rev/RSSerpent/issues">Issue</a> |
+            <a href="https://t.me/rsserpent_rev">Telegram</a>
+        </p>
+    </main>
+</body>
+</html>
