@@ -1,0 +1,9 @@
+gmail_filter_manager/__init__.py,sha256=7aSNDyY00yoC0YvlJ4ux8h5GEsFpPxInWd0jstqXS2Q,107
+gmail_filter_manager/gfm_extract.py,sha256=jukaqXMdTL3toG90-KGnur3H0SVDPN4Jna6iHxoctqI,1495
+gmail_filter_manager/gfm_make.py,sha256=5UHyJx2XQ2MZJz_pCZLTyPx8bKI5TwDxSa2xZjlmOJg,2002
+gmail_filter_manager/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gmail_filter_manager-0.1.2.dist-info/LICENSE,sha256=1qo8U-nQfE8OBC9KRLiR7SAYO7rigLozJDbe2vPAYTQ,1063
+gmail_filter_manager-0.1.2.dist-info/METADATA,sha256=YhaSnD2G3o4ZlirWuWdIbhqzAdR8ZNiRXKsgRN0ja8w,11404
+gmail_filter_manager-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gmail_filter_manager-0.1.2.dist-info/entry_points.txt,sha256=bJoPtulJgwKQyLDNbX2uNfEXYitN3Llw-N-nXqOn4p4,103
+gmail_filter_manager-0.1.2.dist-info/RECORD,,

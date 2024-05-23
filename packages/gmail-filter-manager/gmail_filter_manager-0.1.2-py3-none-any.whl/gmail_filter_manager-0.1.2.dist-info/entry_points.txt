@@ -1,0 +1,4 @@
+[console_scripts]
+gfm_extract=gmail_filter_manager:gfm_extract
+gfm_make=gmail_filter_manager:gfm_make
+
