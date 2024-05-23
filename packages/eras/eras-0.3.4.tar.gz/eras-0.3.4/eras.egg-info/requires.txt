@@ -1,0 +1,4 @@
+openai==1.26.0
+keyboard==0.13.5
+python-dotenv==1.0.0
+asyncio==3.4.3
