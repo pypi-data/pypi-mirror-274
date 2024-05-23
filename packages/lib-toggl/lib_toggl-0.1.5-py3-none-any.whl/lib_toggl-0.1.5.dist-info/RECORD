@@ -1,0 +1,12 @@
+lib_toggl/__init__.py,sha256=FPwRTmbTIN56DreXjeStFMJ2mc8wegGv5Vox2yXOwGw,87
+lib_toggl/account.py,sha256=sKHVB4sqi-WG61TLj1n-AGxR7GZpU6ECyb6W7sqv_TY,758
+lib_toggl/client.py,sha256=6ZBF-CN2Xc_jzIQ54V85ecxxNa7e9JIn2rpbVVNj9RM,29959
+lib_toggl/const.py,sha256=D-06rT4DWpqw1-6RFKPyHbbJ6K0KTA_wseFRAJ0ry2k,371
+lib_toggl/organization.py,sha256=IkVCIcJ3cemF0bemM2GmETdtWOnSNvRju_a0eiR52yc,559
+lib_toggl/tags.py,sha256=-JRjpihWfEO3dJMWiSOFb0Wwd9ZkP6G8H5Ur4_PIj0E,1621
+lib_toggl/time_entries.py,sha256=i9LYVpxK4J9M75UeVYcq0DkYhnZs6sQABFq5JWZMt0M,9195
+lib_toggl/workspace.py,sha256=vWfbiRdgKISDkJcZ0QBoFKHRaepBc7Xxdwiq4McZ6hU,5688
+lib_toggl-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lib_toggl-0.1.5.dist-info/METADATA,sha256=CrKqsnJsAfXVq2zd3EB7Up7bCj7EjKJTt694UH03-j0,3658
+lib_toggl-0.1.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+lib_toggl-0.1.5.dist-info/RECORD,,
