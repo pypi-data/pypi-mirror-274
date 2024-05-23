@@ -1,0 +1,14 @@
+integrals_test.pypy310-pp73-x86_64-linux-gnu.so,sha256=aOX_A2umQfYlBVH0E8NWu5IVkILi0bgvcPMe06Mv0As,50432
+boringcalculator/__init__.pypy310-pp73-x86_64-linux-gnu.so,sha256=RGwxmLOEVOBUEimxY0yfOKLjwDt0_T_h8bbWXjM1OnQ,28504
+boringcalculator/core/processing.pypy310-pp73-x86_64-linux-gnu.so,sha256=r0v9DVyY-qxOfupW6SmltmQx8LsUG1S1adn2Ndu5K-w,208912
+boringcalculator/core/__init__.pypy310-pp73-x86_64-linux-gnu.so,sha256=jWNoQIBE18n_CJ8qdFQokBvARiFmUXm99nWJef8a3Tw,23584
+boringcalculator/tools/__init__.pypy310-pp73-x86_64-linux-gnu.so,sha256=qAifsGt2T72dTSRWgMuLazfoTdlJaUjeNTG3qiktvIM,28224
+boringcalculator/tools/duplicates.pypy310-pp73-x86_64-linux-gnu.so,sha256=n3m4mCclzFGldRTkx7JrANP1CjoNdn1itETO7uXoyr0,55976
+boringcalculator/parsing/__init__.pypy310-pp73-x86_64-linux-gnu.so,sha256=wQUvWcwr2Wcc_d43EY0Cv6sEIZ0t7zGeEK2kTED425k,141144
+boringcalculator/commands/__init__.pypy310-pp73-x86_64-linux-gnu.so,sha256=r3aqKgy5UQnlV7a1WQJc7fTbnnorErMtZV-OaU6ewLc,23536
+boringcalculator/commands/__main__.pypy310-pp73-x86_64-linux-gnu.so,sha256=UWlkzKteXYB0dKI029dfSt134KWstht2swCWSZKviIA,55352
+boringcalculator-1.0.dist-info/entry_points.txt,sha256=n-g5int3YRv_gWMBCnZ-Lj34KgYb7oBwO0LishZzFv4,70
+boringcalculator-1.0.dist-info/METADATA,sha256=1pQE3-Vs1h3x8d-04FoXojsAcfSduLx7HXRqc5gxhp0,354
+boringcalculator-1.0.dist-info/top_level.txt,sha256=h8A4oVRsE_Ss9gvcRO6B0MUZ37LUycC0zR0xnOvQg1E,32
+boringcalculator-1.0.dist-info/WHEEL,sha256=aH6OZYlsA034UTM0IElGoqugNQxnf7qynpwZiRwB_Vc,253
+boringcalculator-1.0.dist-info/RECORD,,
