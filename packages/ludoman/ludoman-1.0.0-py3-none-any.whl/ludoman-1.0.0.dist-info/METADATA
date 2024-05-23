@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ludoman
+Version: 1.0.0
+Summary: Some additional libraries for binance trading: custom websocket managing, ploting graphs
+Author: Zakhar Maksymiv
+Author-email: zakhar.maksymiv@gmail.com
+Requires-Dist: python-binance
+Requires-Dist: matplotlib
+
