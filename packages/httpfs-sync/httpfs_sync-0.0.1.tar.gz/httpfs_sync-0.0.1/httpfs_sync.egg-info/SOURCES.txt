@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+httpfs_sync/__init__.py
+httpfs_sync/core.py
+httpfs_sync/file.py
+httpfs_sync/util.py
+httpfs_sync/version.py
+httpfs_sync.egg-info/PKG-INFO
+httpfs_sync.egg-info/SOURCES.txt
+httpfs_sync.egg-info/dependency_links.txt
+httpfs_sync.egg-info/requires.txt
+httpfs_sync.egg-info/top_level.txt
+httpfs_sync/tests/__init__.py
+httpfs_sync/tests/test_spec.py
