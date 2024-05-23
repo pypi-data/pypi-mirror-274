@@ -1,0 +1,12 @@
+scikit-learn
+scipy
+statsmodels
+pandas
+numpy
+tqdm
+matplotlib
+seaborn
+huggingface_hub
+pyarrow
+fastparquet
+plottable
