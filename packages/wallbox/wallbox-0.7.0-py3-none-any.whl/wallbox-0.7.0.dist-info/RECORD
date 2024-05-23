@@ -1,0 +1,9 @@
+wallbox/__init__.py,sha256=MaGpCY_slCUw4EJFqs1Egbt5KIcxm96sOG77z77paAA,106
+wallbox/bearerauth.py,sha256=8DfMYnDli3-EJ2ar6N3f33ei8Lvv4sc2vrs71LtN_OI,243
+wallbox/statuses.py,sha256=a4zDvIGK98bvSfKlR7RkYZcejoXwvA4Hzd0adxl1ur8,355
+wallbox/wallbox.py,sha256=I5at1xbRprjVxSwy9PnCH0NBV088SVlLX_mDXZqgrHo,9318
+wallbox-0.7.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+wallbox-0.7.0.dist-info/METADATA,sha256=aWJch0h8oZIHSdJeuOeSn631VR-yhVKYcuEfbnJWLm8,4990
+wallbox-0.7.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+wallbox-0.7.0.dist-info/top_level.txt,sha256=N_qax_ezuECbwSAuWi7JK0AGlBo_CcwRJ0-Edmg3ERM,8
+wallbox-0.7.0.dist-info/RECORD,,
