@@ -1,0 +1,13 @@
+./.gitignore,sha256=f5yDAMg1SvKqgN4Iy7yhULW40D1W2lPwZaoscLtQfqk,34
+./LICENSE,sha256=pEbyGaq-NmeFBES71fEbfpMYibTV2_O8B0_gDyXxEkw,1057
+./PKG-INFO,sha256=WcXJZKYACNcSqW-d3o1eTblCs3HlioznYNlknS-Q2jo,3458
+./README.md,sha256=AyAAqWShOveVDkS_xqyj7337Ubv6-2-osEgYcCnXX_s,1002
+./VERSION.md,sha256=klIfw8vZZL3J9YSpkbif3apXVO0cyW1tQkRTOGacEwU,5
+./main.py,sha256=b_3ZYbb6_vZC44NSOFrOyppK_d1SjcSaK83MIA4IDec,696
+./pyproject.toml,sha256=SldQi_ZIEywRlO9Ljy9WVy32A7AElpa9R8wdMXbHDJw,1385
+./.github/workflows/release.yml,sha256=l4pa-rwOAzeCV33INHyFqvK4QWV9WBKs5guJ6MT5EPs,921
+isvirtual-1.0.0.dist-info/METADATA,sha256=WcXJZKYACNcSqW-d3o1eTblCs3HlioznYNlknS-Q2jo,3458
+isvirtual-1.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+isvirtual-1.0.0.dist-info/entry_points.txt,sha256=x-G5D8TvPPCHzXlgxideUggIqa9ZIIo_2SE0FxFKBOE,54
+isvirtual-1.0.0.dist-info/licenses/LICENSE,sha256=pEbyGaq-NmeFBES71fEbfpMYibTV2_O8B0_gDyXxEkw,1057
+isvirtual-1.0.0.dist-info/RECORD,,

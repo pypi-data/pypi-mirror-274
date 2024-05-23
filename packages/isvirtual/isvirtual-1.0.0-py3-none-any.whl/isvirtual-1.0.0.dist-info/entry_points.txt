@@ -1,0 +1,2 @@
+[console_scripts]
+isvirtual = main:is_virtual_env_cli
