@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/bamRefine/__init__.py
+src/bamRefine/__main__.py
+src/bamRefine/functions.py
+src/bamRefine/man/man1/bamrefine.1
+src/bamRefine/sample_data/omitColumn_sampleSNPs.bed
+src/bamRefine/sample_data/sampleSNPs.bed
+src/bamRefine/sample_data/sampleSNPs.snp
+src/bamrefine.egg-info/PKG-INFO
+src/bamrefine.egg-info/SOURCES.txt
+src/bamrefine.egg-info/dependency_links.txt
+src/bamrefine.egg-info/entry_points.txt
+src/bamrefine.egg-info/requires.txt
+src/bamrefine.egg-info/top_level.txt
+tests/test_flagReads.py
