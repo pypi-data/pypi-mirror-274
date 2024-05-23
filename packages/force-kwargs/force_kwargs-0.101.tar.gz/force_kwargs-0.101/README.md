@@ -1,0 +1,37 @@
+# force_kwargs
+
+A simple Python decorator to enforce the use of keyword arguments in functions, limiting the number of positional arguments allowed.
+
+## Installation
+
+`pip install force_kwargs`
+
+## Usage
+
+Import the `force_kwargs` function and use it as a decorator on your functions to limit the number of positional arguments that can be passed.
+
+You can specify the number of allowed positional arguments with the `n_allowed_args` parameter.
+
+### Example
+
+```python
+from force_kwargs import force_kwargs
+
+@force_kwargs(n_allowed_args=2)
+def add(a, b, do_print):
+	res = a + b
+	if do_print:
+		print(res)
+	return res
+
+add(1, 2, do_print=True)  # `3`.
+add(1, 2, False)  # SyntaxError.
+```
+
+## License
+
+No License since this code is extremely basic.
+
+Feel free to do what ever you want with this code.
+
+:D
