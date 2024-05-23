@@ -1,0 +1,9 @@
+ipykernel
+numpy
+pandas
+matplotlib
+scikit-learn
+lets_plot
+
+[dev]
+nbdev
