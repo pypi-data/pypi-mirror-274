@@ -1,0 +1,6 @@
+include LICENSE.md
+include README.md
+include setup.py
+include *requirements.txt
+graft tests
+graft logfire
