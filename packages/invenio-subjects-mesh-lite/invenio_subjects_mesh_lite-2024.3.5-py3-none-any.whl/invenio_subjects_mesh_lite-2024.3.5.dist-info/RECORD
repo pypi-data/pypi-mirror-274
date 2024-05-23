@@ -1,0 +1,10 @@
+invenio_subjects_mesh_lite/__init__.py,sha256=OMjv34qKJaCfpWkviS2Flm5-x102etEeCDeZxwfg-fk,279
+invenio_subjects_mesh_lite/vocabularies/__init__.py,sha256=Jan6XCvJwfPkOh2K9HsMvKN2aL3uNbfYaGyWcesfwHI,251
+invenio_subjects_mesh_lite/vocabularies/subjects_mesh.csv,sha256=dhggAfb_Y8vciCGouNM8EGoezitE9eFbhZZj9MJZAtY,1871337
+invenio_subjects_mesh_lite/vocabularies/vocabularies.yaml,sha256=GZNfEe-5B10X0xcJxR780orv7Z7H0mu5lWUxug8agTg,180
+invenio_subjects_mesh_lite-2024.3.5.dist-info/LICENSE,sha256=pvn4sHeXv1itkPsbMsOgqg14rm28oYDUbLm8UNiCYbE,1086
+invenio_subjects_mesh_lite-2024.3.5.dist-info/METADATA,sha256=KOLVVerzpz1grvVXc3u1O8J7JXtR2uJFwYxRtOJGBlg,6254
+invenio_subjects_mesh_lite-2024.3.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+invenio_subjects_mesh_lite-2024.3.5.dist-info/entry_points.txt,sha256=e7moK0iCK4p9usRWiwQIHW_zjN3P9d5fxtx-WZW7-a0,100
+invenio_subjects_mesh_lite-2024.3.5.dist-info/top_level.txt,sha256=V6HkvobY26xog1stvPmVbhG5Xh3fclE4LtcTajmeu3c,27
+invenio_subjects_mesh_lite-2024.3.5.dist-info/RECORD,,
