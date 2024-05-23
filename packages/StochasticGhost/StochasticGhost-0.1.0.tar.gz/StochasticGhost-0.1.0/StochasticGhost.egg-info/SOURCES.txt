@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+StochasticGhost.egg-info/PKG-INFO
+StochasticGhost.egg-info/SOURCES.txt
+StochasticGhost.egg-info/dependency_links.txt
+StochasticGhost.egg-info/requires.txt
+StochasticGhost.egg-info/top_level.txt
