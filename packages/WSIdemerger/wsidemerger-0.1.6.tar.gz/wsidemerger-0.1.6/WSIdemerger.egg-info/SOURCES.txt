@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+WSIdemerger/Colour_standardisation.py
+WSIdemerger/Patches_generation.py
+WSIdemerger/__init__.py
+WSIdemerger/utils.py
+WSIdemerger.egg-info/PKG-INFO
+WSIdemerger.egg-info/SOURCES.txt
+WSIdemerger.egg-info/dependency_links.txt
+WSIdemerger.egg-info/requires.txt
+WSIdemerger.egg-info/top_level.txt

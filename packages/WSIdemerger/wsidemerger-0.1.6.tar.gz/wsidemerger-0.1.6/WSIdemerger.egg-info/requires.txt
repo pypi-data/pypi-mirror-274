@@ -1,0 +1,8 @@
+pandas
+openslide-python
+Pillow
+numpy
+scikit-image
+tqdm
+opencv-python
+staintools

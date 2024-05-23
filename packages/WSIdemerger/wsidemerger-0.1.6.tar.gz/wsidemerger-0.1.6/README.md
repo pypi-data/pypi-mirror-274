@@ -1,0 +1,83 @@
+# WSIdemerger
+
+This package provides functionalities for extracting image patches from SVS files and performing color normalization on images.
+
+## Installation
+
+To install this package, use:
+
+```sh
+pip install WSIdemerger
+```
+![img.png](img.png)
+## Usage
+
+### Key Verification
+
+To use this package, you will need to input a key for verification. When you run the functions from this package, you will be prompted to enter the key. Ensure you have the correct key to proceed.
+
+### Extract Patches
+To extract patches from SVS files, use the process_svs_files function:
+
+```sh
+from WSIdemerger import process_svs_files
+
+# Define the paths
+base_path = 'path/to/your/svs/files'
+output_base = 'path/to/output/folder'
+threshold = 50  # Saturation threshold for saving patches
+patch_size = 512  # Size of the patches
+target_magnification = 20  # Target magnification level
+
+# Process SVS files to extract patches
+process_svs_files(base_path, output_base, saturation_threshold=threshold, patch_size=patch_size, target_magnification=target_magnification)
+```
+
+### Normalize Images
+
+To normalize images using a reference image, use the normalize_images function:
+```sh
+from WSIdemerger import normalize_images
+
+# Define the paths
+input_folder = 'path/to/your/input/images'
+reference_image_path = 'path/to/your/reference/image.png'
+output_folder = 'path/to/output/folder'
+
+# Normalize images
+normalize_images(input_folder, reference_image_path, output_folder)
+```
+
+### Example
+Here is a complete example of how to use both functionalities:
+
+1、Extract patches from SVS files and save them to a specified directory.
+
+2、Normalize the extracted patches using a reference image.
+
+```sh
+from WSIdemerger import process_svs_files, normalize_images
+
+# Step 1: Extract patches
+base_path = 'path/to/your/svs/files'
+output_base = 'path/to/output/folder'
+threshold = 50  # Saturation threshold for saving patches
+patch_size = 512  # Size of the patches
+target_magnification = 20  # Target magnification level
+
+process_svs_files(base_path, output_base, saturation_threshold=threshold, patch_size=patch_size, target_magnification=target_magnification)
+
+# Step 2: Normalize the extracted patches
+input_folder = 'path/to/output/folder'
+reference_image_path = 'path/to/your/reference/image.png'
+output_folder = 'path/to/normalized/output/folder'
+
+normalize_images(input_folder, reference_image_path, output_folder)
+```
+
+## Contributing
+
+If you would like to contribute to this package, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License.
