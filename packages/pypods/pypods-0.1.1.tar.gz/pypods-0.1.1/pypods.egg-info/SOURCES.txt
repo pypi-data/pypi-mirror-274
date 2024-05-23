@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pypods/__init__.py
+pypods/errors.py
+pypods/ns.py
+pypods/pods.py
+pypods.egg-info/PKG-INFO
+pypods.egg-info/SOURCES.txt
+pypods.egg-info/dependency_links.txt
+pypods.egg-info/requires.txt
+pypods.egg-info/top_level.txt
