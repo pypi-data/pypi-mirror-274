@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling", "versioningit"]
+build-backend = "hatchling.build"
+
+[project]
+name = "odio"
+authors = [{name = "The Contributors"}]
+description = "A library for the import / export of ODF documents."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["odf", "ods", "odt"]
+license = {text = "MIT No Attribution"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT No Attribution License (MIT-0)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/tlocke/odio"
+
+[tool.hatch.version]
+source = "versioningit"
+default-version = "0.0.0"
+
+[tool.flake8]
+application-names = ["odio"]
+ignore = ["E203", "W503"]
+max-line-length = 88
+exclude = [".git", "__pycache__", "build", "dist", "venv", ".tox"]
+application-import-names = ["odio"]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+envlist = py
+
+[testenv]
+commands =
+    black --check .
+    flake8 .
+    python -m pytest -x -v -W error test
+deps =
+    pytest
+    pytest-mock
+    black
+    flake8
+    flake8-alphabetize
+		flake8-pyproject
+"""
