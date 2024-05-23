@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: composition_vectorizer
+Version: 0.1.2.2
+Summary: Converts string composition to numpy arrays
+Home-page: https://github.com/dovahkiin0022/composition_vectorizer.git
+Author: Arindam Debnath
+Author-email: debnath@psu.edu
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# composition_vectorizer
+This package contains functions to convert chemical compositions (in string) to vector arrays for machine learning tasks
