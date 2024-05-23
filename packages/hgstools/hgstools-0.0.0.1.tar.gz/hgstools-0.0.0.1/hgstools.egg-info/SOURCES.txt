@@ -1,0 +1,7 @@
+README.md
+setup.py
+hgstools/__init__.py
+hgstools.egg-info/PKG-INFO
+hgstools.egg-info/SOURCES.txt
+hgstools.egg-info/dependency_links.txt
+hgstools.egg-info/top_level.txt
