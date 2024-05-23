@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: AAVT
+Version: 0.0.4
+Summary: A Python package for Video Translate and Some Tools for Video
+Home-page: https://github.com/Chenyme/Chenyme-AAVT
+Author: chenyme（Orange橙子）
+Author-email: chenyme03@gmail.com
+License: UNKNOWN
+Description: # Chenyme-AAVT 
+        > AI Auto Video(Audio) Translation
+        
+        Thank you very much for visiting my AI Auto Video-Audio Translation project! This project aims to provide an easy-to-use, fully automatic video translation tool to help you quickly recognize voices and translate subtitles, then merge the translated subtitles with the original video, allowing you to achieve video translation more efficiently.
+        
+        It is recommended to use the Faster-whisper and Large models to obtain the best sentence segmentation and recognition experience.
+        
+        Attention: Before enabling GPU acceleration, you need to download CUDA and PyTorch, and ensure that the PyTorch version matches CUDA. Otherwise, if the program identification fails, GPU acceleration will be disabled by default.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
