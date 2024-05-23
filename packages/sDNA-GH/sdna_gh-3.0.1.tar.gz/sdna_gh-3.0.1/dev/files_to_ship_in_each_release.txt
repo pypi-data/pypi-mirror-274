@@ -1,0 +1,4 @@
+sDNA_GH\*
+README.md
+README.pdf
+license.md
