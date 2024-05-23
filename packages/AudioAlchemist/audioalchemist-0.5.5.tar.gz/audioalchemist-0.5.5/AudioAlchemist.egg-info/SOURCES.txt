@@ -1,0 +1,8 @@
+setup.py
+AudioAlchemist/__init__.py
+AudioAlchemist/audio_alchemist.py
+AudioAlchemist.egg-info/PKG-INFO
+AudioAlchemist.egg-info/SOURCES.txt
+AudioAlchemist.egg-info/dependency_links.txt
+AudioAlchemist.egg-info/requires.txt
+AudioAlchemist.egg-info/top_level.txt
