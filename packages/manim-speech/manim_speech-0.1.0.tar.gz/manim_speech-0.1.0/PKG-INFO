@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: manim_speech
+Version: 0.1.0
+Summary: Manim plugin for adding speech to videos.
+Author-email: Celeste Ma <mtcelestema@proton.me>
+License: MIT License
+        
+        Copyright (c) 2024 Celeste Ma
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/MtCelesteMa/manim-speech
+Project-URL: Bug Tracker, https://github.com/MtCelesteMa/manim-speech/issues
+Keywords: manim,speech,voiceover,tts
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: manim
+Requires-Dist: pydantic
+Requires-Dist: mutagen
+Requires-Dist: polib
+Provides-Extra: openai
+Requires-Dist: openai; extra == "openai"
+Provides-Extra: elevenlabs
+Requires-Dist: elevenlabs; extra == "elevenlabs"
+Provides-Extra: whisper
+Requires-Dist: openai-whisper; extra == "whisper"
+Provides-Extra: assemblyai
+Requires-Dist: assemblyai; extra == "assemblyai"
+Provides-Extra: deepl
+Requires-Dist: deepl; extra == "deepl"
+Provides-Extra: chinese
+Requires-Dist: opencc; extra == "chinese"
+
+# Manim Speech
+
+Manim plugin for adding speech to videos.
+
+Special thanks to [osolmaz](https://github.com/osolmaz) and others who worked on [Manim Voiceover](https://github.com/ManimCommunity/manim-voiceover), which Manim Speech is heavily based on.
+
+## Installation
+
+Manim Speech can be installed via pip using the following command:
+```shell
+pip install "manim_speech[*optional_dependency_sets*]"
+```
+
+Where `*optional_dependency_sets*` is a list of optional dependency sets for Manim Speech.
+
+## Features
+
+* Adding AI-generated voiceovers to Manim animations.
+* Translating text between languages.
+
+### Services
+
+| Service Name | Optional Dependency Set | Is Local | Text-To-Speech | Speech-To-Text | Translation |
+|--------------|-------------------------|----------|----------------|----------------|-------------|
+| OpenAI       | `openai`                | No       | Yes            | Yes            | No          |
+| ElevenLabs   | `elevenlabs`            | No       | Yes            | No             | No          |
+| Whisper      | `whisper`               | Yes      | No             | Yes            | No          |
+| AssemblyAI   | `assemblyai`            | No       | No             | Yes            | No          |
+| DeepL        | `deepl`                 | No       | No             | No             | Yes         |
+
+**Note:** Translating to Traditional Chinese (`zh_tw`) using the DeepL service requires the `chinese` optional dependency set to be installed.
+
+## Usage Examples
+
+Creating a basic scene with a voiceover with Manim Speech:
+```python
+import manim
+import manim_speech
+from manim_speech.services import openai as openai_service
+
+class MeaningOfLife(manim_speech.VoiceoverScene):
+    def construct(self) -> None:
+        self.set_tts_service(openai_service.OpenAITTSService())
+        self.set_stt_service(openai_service.OpenAISTTService())
+
+        with self.voiceover("What is the meaning of life?") as speech_data:
+            txt = manim.Text("The meaning of life is 42.")
+            self.play(manim.Write(txt), run_time=speech_data.duration)
+            self.wait_for_voiceover()
+            self.play(manim.FadeOut(txt))
+```
+
+The same scene, but translated into Traditional Chinese:
+```python
+import manim
+import manim_speech
+from manim_speech.services import openai as openai_service
+from manim_speech.services import deepl as deepl_service
+
+class MeaningOfLife(manim_speech.VoiceoverScene, manim_speech.TranslationScene):
+    def construct(self) -> None:
+        self.set_tts_service(openai_service.OpenAITTSService())
+        self.set_stt_service(openai_service.OpenAISTTService())
+        self.set_translation_service(deepl_service.DeepLTranslationService())
+
+        self.translate(__file__, "meaning_of_life", "en", "zh_tw")
+        _ = self._
+
+        with self.voiceover(_("What is the meaning of life?")) as speech_data:
+            txt = manim.Text(_("The meaning of life is 42."))
+            self.play(manim.Write(txt), run_time=speech_data.duration)
+            self.wait_for_voiceover()
+            self.play(manim.FadeOut(txt))
+```
