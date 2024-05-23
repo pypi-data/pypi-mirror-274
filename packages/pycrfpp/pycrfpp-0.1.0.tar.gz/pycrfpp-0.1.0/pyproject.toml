@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "ninja", "cmake>=3.12"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycrfpp"
+version = "0.1.0"
+authors = [{ name = "Seanghay Yath", email = "seanghay.dev@gmail.com" }]
+description = "Python binding for CRF++"
+readme = "README.md"
+requires-python = ">=3.7"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Cython",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+repository = "https://github.com/seanghay/pycrfpp"
+
+[tool.cibuildwheel]
+# Setuptools bug causes collision between pypy and cpython artifacts
+before-build = "rm -rf {project}/build"
+
+[tool.cibuildwheel.linux]
+archs = ["auto64"]

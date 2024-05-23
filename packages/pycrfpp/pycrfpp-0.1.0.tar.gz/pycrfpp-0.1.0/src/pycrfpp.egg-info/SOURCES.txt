@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pycrfpp.egg-info/PKG-INFO
+src/pycrfpp.egg-info/SOURCES.txt
+src/pycrfpp.egg-info/dependency_links.txt
+src/pycrfpp.egg-info/not-zip-safe
+src/pycrfpp.egg-info/top_level.txt
