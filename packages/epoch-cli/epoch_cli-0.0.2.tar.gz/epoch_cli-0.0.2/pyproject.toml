@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "epoch-cli"
+version = "0.0.2"
+description = "Command line interface for Epoch task scheduler"
+authors = [
+    "Shubhransh Jagota <mailtoshubhransh@gmail.com>",
+    "Tushar Naik <tushar.knaik@gmail.com>"
+]
+maintainers = [
+    "Tushar Naik <tushar.knaik@gmail.com>",
+    "Santanu Sinha <santanu.sinha@gmail.com>",
+    "Santanu Sinha <santanu@phonepe.com>",
+]
+readme = "README.md"
+packages = [{include = "epochplugins"}, {include = "*.py"}]
+license = "Apache-2.0"
+repository = "https://github.com/PhonePe/epoch-cli"
+keywords = ["container", "docker", "podman", "distributed-systems", "container-orchestrator"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Topic :: System :: Clustering",
+    "Topic :: System :: Distributed Computing"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Requests = "2.31.0"
+tabulate = "0.9.0"
+tenacity = "8.2.3"
+urllib3 = "1.26.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+epoch = "epoch:run"
