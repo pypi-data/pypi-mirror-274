@@ -1,0 +1,17 @@
+aguasgaia/__init__.py,sha256=1us5F6y7gMwc76f4QBiDxGq6DL2RuRwnHweKw0gDUKo,33
+aguasgaia/aguasgaia.py,sha256=-UzZOamMRwA0_Zsl4PV-Wyw695ayP-HHCEkLrD3e728,5954
+aguasgaia/const.py,sha256=IZuaRIqDKRXXOxxoJXzH8nnnY84SAmG3O7mYLi8Pk5k,701
+aguasgaia/models/__init__.py,sha256=StN5kr3VKLMiFDbIm6I8ukU4oWtakH_-6jglzEBBg8o,105
+aguasgaia/models/consumption.py,sha256=WqY2Upl9Dw967hn0Lr2VHJt3_jfshhb_61lCxkVCDOM,1253
+aguasgaia/models/invoice.py,sha256=PcbCa8jFCs8cu1SWplBspVCm5lLd92r2qbFsx1bEp90,1139
+aguasgaia/models/subscription.py,sha256=FnDq14hbhJuuon0i5QRH8sq7HnfL1uKgLjYh4CQaCx8,529
+src/aguasgaia/__init__.py,sha256=1us5F6y7gMwc76f4QBiDxGq6DL2RuRwnHweKw0gDUKo,33
+src/aguasgaia/models/__init__.py,sha256=jRlogJWrOyG34v0FnSJZg7f-ujT02DxAh1myUb1a96s,65
+src/aguasgaia/models/consumption.py,sha256=WqY2Upl9Dw967hn0Lr2VHJt3_jfshhb_61lCxkVCDOM,1253
+src/aguasgaia/models/invoice.py,sha256=PcbCa8jFCs8cu1SWplBspVCm5lLd92r2qbFsx1bEp90,1139
+tests/aguasgaia_test.py,sha256=qNKrwV_205kXsen8W_bOSEPjT2uA_IeHLOsOFP9QGYI,4866
+aguasgaia-0.0.18.dist-info/LICENSE,sha256=SwAva9-Hde7eO-plQRu4cWEYjevqzrUm_7GYKe-gDZI,558
+aguasgaia-0.0.18.dist-info/METADATA,sha256=IhlldEbQK3jMPIzV1ywoguk7LFr6VE3DUy5YFqLYfv4,1279
+aguasgaia-0.0.18.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aguasgaia-0.0.18.dist-info/top_level.txt,sha256=eGlkEVU4YHOAHBq4K_E43kfWSLxWdFZzyFja4wV-xPU,20
+aguasgaia-0.0.18.dist-info/RECORD,,
