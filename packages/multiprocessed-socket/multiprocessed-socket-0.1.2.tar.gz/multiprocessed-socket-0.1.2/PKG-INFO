@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: multiprocessed-socket
+Version: 0.1.2
+Summary: Creates a socket in a new process
+Author: Jackson Frame
+Author-email: frame_jackson@yahoo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: license.txt
+Requires-Dist: netifaces
