@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django-kit-fos
+Version: 0.0.101
+Summary: Python library to couple Svelte with Django. Use SvelteKit with Django, the easy way.
+Home-page: https://github.com/friendofsvelte/django-kit-fos
+Project-URL: Documentation, https://github.com/friendofsvelte/django-kit
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+
+# Django for SvelteKit
+
+Couple with Django backend with SvelteKit, and use em seamlessly.
