@@ -1,0 +1,9 @@
+midas_open_parser/__init__.py,sha256=UEvr4iy67cmxLpGxWe_lQg0mAvSf714M_De2RzhEj8Y,614
+midas_open_parser/badc_csv.py,sha256=pX-j5TWSg96ipp5lKXxfxCl8JgUgSLc-coj6V8IXjaQ,2030
+midas_open_parser/midas.py,sha256=BmhAhe9hIdozgDrQP9XkEsALmVQPoJ1pu_GWQ_Rh37o,7271
+midas_open_parser/test.py,sha256=lsMkL7q3eO537w85wXj2-FMg6bqdJ08lbjSO0XqIaeU,986
+midas_open_parser-0.1.12.dist-info/LICENSE.txt,sha256=pHNhvwk5h-x9CPZ891_RGEEjO7bQxzob5WUNRAuxFj4,1067
+midas_open_parser-0.1.12.dist-info/METADATA,sha256=tDgjccZ618FqdgEaBNDEfEcXEkw5L2jE_yCVA6U0ULM,4466
+midas_open_parser-0.1.12.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+midas_open_parser-0.1.12.dist-info/top_level.txt,sha256=tF8QbmmGYbbE14dHJAOnoiYV7zfba0B4xSY-OorySS0,18
+midas_open_parser-0.1.12.dist-info/RECORD,,
