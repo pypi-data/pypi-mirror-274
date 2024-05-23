@@ -1,0 +1,2 @@
+[console_scripts]
+Cheetah_GH = Cheetah_GH.gh_and_py_runner:main
