@@ -1,0 +1,5 @@
+setup.py
+pyerualjetwork.egg-info/PKG-INFO
+pyerualjetwork.egg-info/SOURCES.txt
+pyerualjetwork.egg-info/dependency_links.txt
+pyerualjetwork.egg-info/top_level.txt
