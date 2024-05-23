@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+VeriFact.egg-info/PKG-INFO
+VeriFact.egg-info/SOURCES.txt
+VeriFact.egg-info/dependency_links.txt
+VeriFact.egg-info/requires.txt
+VeriFact.egg-info/top_level.txt
