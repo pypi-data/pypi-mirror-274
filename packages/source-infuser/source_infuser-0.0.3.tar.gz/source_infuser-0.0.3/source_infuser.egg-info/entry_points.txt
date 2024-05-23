@@ -1,0 +1,4 @@
+[console_scripts]
+psi = source_infuser.scripts.infuser:main
+source_infuser = source_infuser.scripts.infuser:main
+
