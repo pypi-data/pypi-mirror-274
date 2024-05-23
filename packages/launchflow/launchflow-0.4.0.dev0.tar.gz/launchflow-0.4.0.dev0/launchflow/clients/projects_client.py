@@ -1,0 +1,118 @@
+from typing import Optional
+
+import httpx
+
+from launchflow.config import config
+from launchflow.exceptions import LaunchFlowRequestFailure
+from launchflow.models.flow_state import FlowState
+
+
+class ProjectsAsyncClient:
+    def __init__(
+        self,
+        http_client: httpx.AsyncClient,
+        base_url: str,
+        api_key: Optional[str] = None,
+    ):
+        self.http_client = http_client
+        self.url = f"{base_url}/v2/projects"
+        self._api_key = api_key
+
+    @property
+    def access_token(self):
+        if self._api_key is not None:
+            return self._api_key
+        else:
+            return config.get_access_token()
+
+    async def create(self, project_name: str, account_id: str):
+        response = await self.http_client.post(
+            f"{self.url}?account_id={account_id}",
+            json={"name": project_name},
+            headers={"Authorization": f"Bearer {self.access_token}"},
+        )
+        if response.status_code != 200:
+            raise LaunchFlowRequestFailure(response)
+        return FlowState.model_validate(response.json())
+
+    async def get(self, project_name: str):
+        response = await self.http_client.get(
+            f"{self.url}/{project_name}",
+            headers={"Authorization": f"Bearer {self.access_token}"},
+        )
+        if response.status_code != 200:
+            raise LaunchFlowRequestFailure(response)
+        return FlowState.model_validate(response.json())
+
+    async def list(self, account_id: str):
+        response = await self.http_client.get(
+            f"{self.url}?account_id={account_id}",
+            headers={"Authorization": f"Bearer {self.access_token}"},
+        )
+        if response.status_code != 200:
+            raise LaunchFlowRequestFailure(response)
+        return [
+            FlowState.model_validate(project) for project in response.json()["projects"]
+        ]
+
+    async def delete(self, project_name: str):
+        response = await self.http_client.delete(
+            f"{self.url}/{project_name}",
+            headers={"Authorization": f"Bearer {self.access_token}"},
+        )
+        if response.status_code != 200:
+            raise LaunchFlowRequestFailure(response)
+        return response.json()
+
+
+class ProjectsSyncClient:
+    def __init__(self, http_client: httpx.Client, api_key: Optional[str] = None):
+        self.http_client = http_client
+        self.url = f"{config.settings.launch_service_address}/v2/projects"
+        self._api_key = api_key
+
+    @property
+    def access_token(self):
+        if self._api_key is not None:
+            return self._api_key
+        else:
+            return config.get_access_token()
+
+    def create(self, project_name: str, account_id: str):
+        response = self.http_client.post(
+            f"{self.url}?account_id={account_id}",
+            json={"name": project_name},
+            headers={"Authorization": f"Bearer {self.access_token}"},
+        )
+        if response.status_code != 200:
+            raise LaunchFlowRequestFailure(response)
+        return FlowState.model_validate(response.json())
+
+    def get(self, project_name: str):
+        response = self.http_client.get(
+            f"{self.url}/{project_name}",
+            headers={"Authorization": f"Bearer {self.access_token}"},
+        )
+        if response.status_code != 200:
+            raise LaunchFlowRequestFailure(response)
+        return FlowState.model_validate(response.json())
+
+    def list(self, account_id: str):
+        response = self.http_client.get(
+            f"{self.url}?account_id={account_id}",
+            headers={"Authorization": f"Bearer {self.access_token}"},
+        )
+        if response.status_code != 200:
+            raise LaunchFlowRequestFailure(response)
+        return [
+            FlowState.model_validate(project) for project in response.json()["projects"]
+        ]
+
+    def delete(self, project_name: str):
+        response = self.http_client.delete(
+            f"{self.url}/{project_name}",
+            headers={"Authorization": f"Bearer {self.access_token}"},
+        )
+        if response.status_code != 200:
+            raise LaunchFlowRequestFailure(response)
+        return response.json()
