@@ -1,0 +1,7 @@
+README.md
+setup.py
+discord_invite.egg-info/PKG-INFO
+discord_invite.egg-info/SOURCES.txt
+discord_invite.egg-info/dependency_links.txt
+discord_invite.egg-info/requires.txt
+discord_invite.egg-info/top_level.txt
