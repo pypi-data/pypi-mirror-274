@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flameai"
+version = "1.0.0"
+description = "Deep Learning Toolkit."
+readme = "README.md"
+keywords = [
+  "deep learning",
+  "flameai",
+]
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "luochang" },
+  { email = "luochang212@gmail.com" },
+]
+requires-python = ">=3.8"
+dependencies = [
+  "numpy>=1.26.4",
+  "pandas>=2.2.0",
+  "scipy>=1.13.0",
+  "scikit-learn>=1.5.0",
+  "matplotlib>=3.8.4",
+  "seaborn>=0.13.2",
+  "optuna>=3.6.1",
+]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX",
+  "Operating System :: Unix",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+
+[project.urls]
+repository = "https://github.com/luochang212/flameai"
+bug-tracker = "https://github.com/luochang212/flameai/issues"
+documentation = "https://luochang212.github.io/posts/flameai"
