@@ -1,0 +1,12 @@
+README.md
+setup.py
+my_trino_lib/__init__.py
+my_trino_lib/connection.py
+my_trino_lib/queries.py
+my_trino_lib.egg-info/PKG-INFO
+my_trino_lib.egg-info/SOURCES.txt
+my_trino_lib.egg-info/dependency_links.txt
+my_trino_lib.egg-info/requires.txt
+my_trino_lib.egg-info/top_level.txt
+tests/__init__.py
+tests/test_connection.py

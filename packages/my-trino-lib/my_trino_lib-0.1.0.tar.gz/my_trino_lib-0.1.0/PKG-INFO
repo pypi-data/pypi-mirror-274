@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: my_trino_lib
+Version: 0.1.0
+Summary: A library for connecting to Trino and performing SQL operations.
+Home-page: https://github.com/yourusername/my_trino_lib
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# My Trino Library
+
+## Description
+
+`my_trino_lib` is a Python library designed to facilitate connections to Trino and perform SQL operations. It provides a simple interface for connecting to a Trino database and executing queries.
+
+## Installation
+
+```bash
+pip install .
+
+
+
