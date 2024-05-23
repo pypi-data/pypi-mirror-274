@@ -1,0 +1,12 @@
+deceit>=0.8
+
+[dev]
+pytest
+coverage
+flake8
+raft
+twine
+pytest-aspec
+ipython
+bumpversion
+convocations

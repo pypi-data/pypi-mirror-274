@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: scourge
+Version: 0.5
+Summary: scourge
+Home-page: https://bitbucket.org/dbuy/scourge
+Author: dev
+Author-email: developers@directbuy.com
+License: BSD
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: deceit>=0.8
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: raft; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: pytest-aspec; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: bumpversion; extra == "dev"
+Requires-Dist: convocations; extra == "dev"
+
+# scourge
+
+scourge, named after a group of starlings, lets you get summary tracking
+information from various carriers.  currently supported carriers:
+
+* ups
+* fedex
+* pilot
+* metropolitan
+* non-stop delivery
+
+used for wismo and wigmo.  powered by angry penguins.
+
+# notes
+
+* the summary tracking results are limited to dates because the ups api 
+  only provides localized date/time information and does not provide time
+  zone information
+* the ups api does not provide invoice information 
+
+# contributing
+
+## getting started
+
+```bash
+git clone git@github.com:angry-penguins/scourge
+make setup
+```
+
+to test you will need an aws sso profile for `angry_penguins` in your aws 
+config.  you can read more about the sso setup in confluence.
+
+```bash
+aws configure --profile=angry_penguins set region us-east-2
+```
