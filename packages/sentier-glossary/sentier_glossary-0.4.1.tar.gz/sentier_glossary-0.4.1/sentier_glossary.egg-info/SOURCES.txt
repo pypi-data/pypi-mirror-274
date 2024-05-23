@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+sentier_glossary/__init__.py
+sentier_glossary/main.py
+sentier_glossary/settings.py
+sentier_glossary.egg-info/PKG-INFO
+sentier_glossary.egg-info/SOURCES.txt
+sentier_glossary.egg-info/dependency_links.txt
+sentier_glossary.egg-info/requires.txt
+sentier_glossary.egg-info/top_level.txt
