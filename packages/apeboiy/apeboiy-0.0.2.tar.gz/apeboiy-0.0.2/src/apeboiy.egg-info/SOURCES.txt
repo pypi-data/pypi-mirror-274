@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/apeboiy/__init__.py
+src/apeboiy/example.py
+src/apeboiy/plyreader.py
+src/apeboiy.egg-info/PKG-INFO
+src/apeboiy.egg-info/SOURCES.txt
+src/apeboiy.egg-info/dependency_links.txt
+src/apeboiy.egg-info/requires.txt
+src/apeboiy.egg-info/top_level.txt
