@@ -1,0 +1,12 @@
+httpfs_sync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpfs_sync/core.py,sha256=QcQYjMrvwYja6h0ksni4LOcx05el-1Eal3kNffDhPbk,16097
+httpfs_sync/file.py,sha256=KOPzudqg5PcvsikXigXv4Ls1ylOGWU08wTfDBS8Nd-M,7480
+httpfs_sync/util.py,sha256=_W603ucmrkYEzHcJjrmx9vCZF0t2i2tOLBMj77sIGmo,1148
+httpfs_sync/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+httpfs_sync/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpfs_sync/tests/test_spec.py,sha256=A0qPeVxvIJynyJvLmEg1-SCwxQEOIifYSW5gewjtXto,1393
+httpfs_sync-0.0.1.dist-info/LICENSE,sha256=xjVAKFwnejovJEwOlc3IEe9wehJEIPT2LK5ppApA36E,1073
+httpfs_sync-0.0.1.dist-info/METADATA,sha256=SjDuDvdzthaUEpd35EHmI6t_kZzGZJqSKylcOnKULQE,3159
+httpfs_sync-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+httpfs_sync-0.0.1.dist-info/top_level.txt,sha256=Tjad8NWze_Zd5eqBBeIlXhhuGPn1wWvxChMZYPGdkgU,12
+httpfs_sync-0.0.1.dist-info/RECORD,,
