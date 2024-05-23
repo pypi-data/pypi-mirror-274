@@ -1,0 +1,19 @@
+import dlt
+
+from {{ package_name}} import {{ source_name }}
+
+
+if __name__ == "__main__":
+    pipeline = dlt.pipeline(
+        pipeline_name="{{ package_name}}_pipeline",
+        destination='duckdb',
+        dataset_name="{{ dataset_name }}",
+        progress="log",
+        export_schema_path="schemas/export"
+    )
+    source = {{ source_name }}()
+    {% if global_limit %}
+    source.add_limit({{global_limit}})
+    {% endif %}
+    info = pipeline.run(source)
+    print(info)
