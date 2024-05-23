@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pynenv
+Version: 0.2.2
+Summary: General helper functions for environments
+Author: Nik Sheridan
+Author-email: niksheridan@duck.com
+Requires-Python: >=3,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Pynenv
+
+Richer featured environment variable grabber.
+
+## Install
+
+```bash
+pip install pynenv
+```
+
+## Example Useage
+
+```python
+from pynenv.environment import get_environment_variable, json2file, yaml2file
+
+my_env_var = get_environment_variable('SOME_VAR')
+json_dict = json
+```
+
+## Build
+
+* Adjust version in ```pyproject.toml```
+* Run ```poetry build```
+* Run ```poetry publish```
+
